@@ -121,29 +121,9 @@ To adjust the stack and settings, use [Docker specific environment variables](/e
 Execute commands in your Docker stack by calling `rails` or `rake` via one of the following methods by using
 `bundle exec`.
 
-:::: tabs
+:::: tabs key:docker-portainer
 
-=== Via Portainer GUI
-
-In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
-on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
-**Connect**.
-
-![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
-
-Run the interactive Rails console by executing:
-
-```sh
-bundle exec rails c
-```
-
-Directly execute a specific command:
-
-```sh
-bundle exec rails r '...your rails command here...'
-```
-
-=== Via console
+=== Docker Compose
 
 Directly execute a specific command:
 
@@ -168,5 +148,25 @@ If you need to retrieve information from the Rails server, you can, for example,
 place `pp` (pretty print) in front of your Rails command. This leads to an
 output in your terminal.
 :::
+
+=== Portainer
+
+In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
+on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
+**Connect**.
+
+![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
+
+Run the interactive Rails console by executing:
+
+```sh
+bundle exec rails c
+```
+
+Directly execute a specific command:
+
+```sh
+bundle exec rails r '...your rails command here...'
+```
 
 ::::

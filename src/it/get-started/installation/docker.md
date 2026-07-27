@@ -133,51 +133,51 @@ specifiche di Docker](/it/reference/environment-variables).
 Esegui comandi nel tuo stack Docker chiamando `rails` o `rake` tramite uno
 dei seguenti metodi.
 
-:::: tabs
+:::: tabs key:docker-portainer
 
-=== Tramite l'interfaccia grafica di Portainer
+=== Docker Compose
 
-Nella tua interfaccia grafica di Portainer, vai alla vista dei container e seleziona il container Rails in esecuzione dal tuo stack Zammad. Fai clic sull'icona **Console di esecuzione** nella colonna "Azioni rapide", seleziona il punto di ingresso standard `/bin/bash` e fai clic su
-**Connetti**.
-
-
-![Esecuzione della console di Portainer](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
-
-Esegui la console interattiva di Rails eseguendo:
+Directly execute a specific command:
 
 ```sh
-bundle exec rails c
+docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
-Esegui direttamente un comando specifico:
-
-```sh
-bundle exec rails r '...il tuo comando Rails qui...'
-```
-
-=== Tramite console
-
-Esegui direttamente un comando specifico:
-
-```sh
-docker compose run --rm zammad-railsserver bundle exec rails r '...il tuo comando Rails qui...'
-```
-
-Esegui la console interattiva di Rails per inserire manualmente i comandi Rails:
+Run the interactive Rails console to manually enter Rails commands:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails c
 ```
 
-Tramite `docker compose exec`:
+Via `docker compose exec`:
 
 ```sh
-docker componi exec zammad-railsserver bundle exec rails r '...il tuo comando rails qui...'
+docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::: tip
 Se devi recuperare informazioni dal server Rails, puoi, ad esempio,
 inserire `pp` (pretty print) davanti al tuo comando Rails. Questo genera un output nel tuo terminale.
 :::
+
+=== Portainer
+
+In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
+on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
+**Connect**.
+
+![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
+
+Run the interactive Rails console by executing:
+
+```sh
+bundle exec rails c
+```
+
+Directly execute a specific command:
+
+```sh
+bundle exec rails r '...your rails command here...'
+```
 
 ::::
