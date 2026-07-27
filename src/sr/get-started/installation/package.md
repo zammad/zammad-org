@@ -9,9 +9,8 @@ title: Пакет
 
 ## Подржани оперативни системи
 
-For package installation, the following Linux distributions are supported:
-<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
-adjust it over there -->
+За инсталацију пакета, подржане су следеће дистрибуције Linux платформе:
+
 | Distribution         | Version              |
 | -------------------- | :------------------- |
 | CentOS/RHEL          | 9, 10                |
@@ -170,8 +169,6 @@ separated to keep the install instructions as lean as possible.
 Packager.io можда није доступан из окружења са искључиво IPv6 адресама, тако да
 имајте ово на уму приликом извршавања корака испод.
 :::
-<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or
-adjust it over there -->
 :::: tabs key:distros
 
 === Ubuntu

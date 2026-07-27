@@ -9,9 +9,8 @@ title: Pacote
 
 ## Sistemas operacionais suportados
 
-Para instalação via pacote, as seguintes distribuições Linux são suportadas:
-<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
-adjust it over there -->
+For package installation, the following Linux distributions are supported:
+
 | Distribution         | Version              |
 | -------------------- | :------------------- |
 | CentOS/RHEL          | 9, 10                |
@@ -172,8 +171,6 @@ possível.
 O Packager.io pode não estar acessível a partir de ambientes somente IPv6, então certifique-se
 de considerar isso ao realizar as etapas abaixo.
 :::
-<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or
-adjust it over there -->
 :::: tabs key:distros
 
 === Ubuntu

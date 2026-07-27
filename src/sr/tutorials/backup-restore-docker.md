@@ -80,4 +80,37 @@ BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
    temporarily unavailable in search results. Use one of the commands below,
    depending on your deployment method.
 
-<!--@include: ../get-started/update.md{243,276}-->
+::: tabs key:docker-portainer
+
+=== Docker Compose
+
+Without specifying CPU cores:
+
+```sh
+docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
+```
+
+With specifying CPU cores to use (example 8):
+
+```sh
+docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
+```
+
+=== Portainer
+
+Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
+standard entrypoint `/bin/bash` and run:
+
+Without specifying CPU cores to use:
+
+```sh
+bundle exec rake zammad:searchindex:rebuild
+```
+
+With specifying CPU cores to use (example 8):
+
+```sh
+bundle exec rake zammad:searchindex:rebuild[8]
+```
+
+:::

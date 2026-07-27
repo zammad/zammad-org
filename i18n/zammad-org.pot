@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-24 08:42+0200\n"
+"POT-Creation-Date: 2026-07-27 11:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -457,7 +457,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
-#: src/en/get-started/installation/package.md:65
+#: src/en/get-started/installation/package.md:64
 #: src/en/tutorials/backup-restore.md:33
 #, markdown-text, no-wrap
 msgid "Basics"
@@ -7844,39 +7844,46 @@ msgid "The following operating systems are supported:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:26
+#: src/en/get-started/host-upgrade-repo-migration.md:31
+#: src/en/get-started/installation/package.md:20
 #, markdown-text, no-wrap
-msgid "<!--@include: /installation/package.md{15,20}-->\n"
+msgid ""
+"| Distribution         | Version              |\n"
+"| -------------------- | :------------------- |\n"
+"| CentOS/RHEL          | 9, 10                |\n"
+"| Debian               | 11, 12 & 13          |\n"
+"| OpenSUSE Leap / SLES | 15 & 16              |\n"
+"| Ubuntu               | 22.04, 24.04 & 26.04 |\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:27
+#: src/en/get-started/host-upgrade-repo-migration.md:32
 #: src/en/get-started/update.md:33
 #, markdown-text, no-wrap
 msgid "Stop Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:29
+#: src/en/get-started/host-upgrade-repo-migration.md:34
 #: src/en/get-started/update.md:35 src/en/tutorials/migrate-host.md:54
 #, no-wrap
 msgid "sudo systemctl stop zammad\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/host-upgrade-repo-migration.md:33
+#: src/en/get-started/host-upgrade-repo-migration.md:38
 #, markdown-text, no-wrap
 msgid "Host Upgrade Steps"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:35
+#: src/en/get-started/host-upgrade-repo-migration.md:40
 #, markdown-text, no-wrap
 msgid "Disable Updates for Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:37
+#: src/en/get-started/host-upgrade-repo-migration.md:42
 #, no-wrap
 msgid ""
 "\n"
@@ -7907,13 +7914,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:65
+#: src/en/get-started/host-upgrade-repo-migration.md:70
 #, markdown-text, no-wrap
 msgid "Perform Host Upgrade"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:69
+#: src/en/get-started/host-upgrade-repo-migration.md:74
 #, markdown-text
 msgid ""
 "Perform the host upgrade according to the documentation of your operating "
@@ -7922,13 +7929,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:70
+#: src/en/get-started/host-upgrade-repo-migration.md:75
 #, markdown-text, no-wrap
 msgid "Reboot Host"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:75
+#: src/en/get-started/host-upgrade-repo-migration.md:80
 #, markdown-text
 msgid ""
 "In case you did not reboot your system after the upgrade, make sure to "
@@ -7938,19 +7945,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/host-upgrade-repo-migration.md:76
+#: src/en/get-started/host-upgrade-repo-migration.md:81
 #, markdown-text, no-wrap
 msgid "Adjust Package Repository"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:78
+#: src/en/get-started/host-upgrade-repo-migration.md:83
 #, markdown-text, no-wrap
 msgid "Remove Old Repository"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:81
+#: src/en/get-started/host-upgrade-repo-migration.md:86
 #, markdown-text
 msgid ""
 "Remove the old repository configuration file or disable/delete the old "
@@ -7958,7 +7965,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:82
+#: src/en/get-started/host-upgrade-repo-migration.md:87
 #, no-wrap
 msgid ""
 "\n"
@@ -7997,13 +8004,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:118
+#: src/en/get-started/host-upgrade-repo-migration.md:123
 #, markdown-text, no-wrap
 msgid "Remove Old Repository Key"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:122
+#: src/en/get-started/host-upgrade-repo-migration.md:127
 #, markdown-text
 msgid ""
 "Remove the old repository key from your system. Depending on your operating "
@@ -8011,7 +8018,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:123
+#: src/en/get-started/host-upgrade-repo-migration.md:128
 #, no-wrap
 msgid ""
 "\n"
@@ -8060,13 +8067,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:167
+#: src/en/get-started/host-upgrade-repo-migration.md:172
 #, markdown-text, no-wrap
 msgid "Add New Repository"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:171
+#: src/en/get-started/host-upgrade-repo-migration.md:176
 #, markdown-text
 msgid ""
 "If the repository key is different for the old and new version your "
@@ -8075,21 +8082,174 @@ msgid ""
 "directly."
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:173
-#, markdown-text, no-wrap
-msgid "<!--@include: /installation/package.md{172,296}-->\n"
+#. type: Fenced div block (tabs key:distros)
+#: src/en/get-started/host-upgrade-repo-migration.md:177
+#: src/en/get-started/installation/package.md:171
+#, no-wrap
+msgid ""
+"\n"
+"=== Ubuntu\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
+"\\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 "
+"/usr/share/keyrings/zammad.gpg\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 22.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 24.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 26.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
+"\\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 "
+"/usr/share/keyrings/zammad.gpg\n"
+"```\n"
+"\n"
+"Add repository (Debian 11):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Debian 12):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Debian 13):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"Add repository (OpenSUSE/SLES 15):\n"
+"\n"
+"```sh\n"
+"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+"  "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
+"```\n"
+"\n"
+"Add repository (OpenSUSE/SLES 16):\n"
+"\n"
+"```sh\n"
+"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+"  "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo\"\n"
+"```\n"
+"\n"
+"===CentOS/RHEL\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
+"```\n"
+"\n"
+"Add repository (CentOS/RHEL 9):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
+"Add repository (CentOS/RHEL 10):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo\" "
+"\\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:174
+#: src/en/get-started/host-upgrade-repo-migration.md:277
+#: src/en/get-started/installation/package.md:271
+#, markdown-text, no-wrap
+msgid "Install Zammad"
+msgstr ""
+
+#. type: Fenced div block (tabs key:distros)
+#: src/en/get-started/host-upgrade-repo-migration.md:279
+#, no-wrap
+msgid ""
+"\n"
+"=== Ubuntu\n"
+"\n"
+"```sh\n"
+"sudo apt update\n"
+"```\n"
+"\n"
+"```sh\n"
+"sudo apt install zammad\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"```sh\n"
+"sudo apt update\n"
+"```\n"
+"\n"
+"```sh\n"
+"sudo apt install zammad\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:303
 #: src/en/get-started/update.md:44
 #, markdown-text, no-wrap
 msgid "Update Zammad"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/get-started/host-upgrade-repo-migration.md:176
+#: src/en/get-started/host-upgrade-repo-migration.md:305
 #, no-wrap
 msgid ""
 "If there is a new Zammad version available and you want to update to it, "
@@ -8099,7 +8259,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:182
+#: src/en/get-started/host-upgrade-repo-migration.md:311
 #, markdown-text
 msgid ""
 "Re-enable updates for Zammad and update Zammad to the latest version "
@@ -8107,7 +8267,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:183
+#: src/en/get-started/host-upgrade-repo-migration.md:312
 #, no-wrap
 msgid ""
 "\n"
@@ -8180,15 +8340,15 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:253
+#: src/en/get-started/host-upgrade-repo-migration.md:382
 #: src/en/get-started/update.md:194
 #, markdown-text, no-wrap
 msgid "Start Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:255
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/host-upgrade-repo-migration.md:384
+#: src/en/get-started/installation/package.md:326
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
@@ -8815,23 +8975,13 @@ msgid "Supported Operating Systems"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:21
-#, markdown-text, no-wrap
-msgid ""
-"For package installation, the following Linux distributions are supported:\n"
-"<!-- table included in host-upgrade.md; referenced with line numbers "
-"15-20. Make sure to keep it or\n"
-"adjust it over there -->\n"
-"| Distribution         | Version              |\n"
-"| -------------------- | :------------------- |\n"
-"| CentOS/RHEL          | 9, 10                |\n"
-"| Debian               | 11, 12 & 13          |\n"
-"| OpenSUSE Leap / SLES | 15 & 16              |\n"
-"| Ubuntu               | 22.04, 24.04 & 26.04 |\n"
+#: src/en/get-started/installation/package.md:13
+#, markdown-text
+msgid "For package installation, the following Linux distributions are supported:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:25
+#: src/en/get-started/installation/package.md:24
 #, markdown-text
 msgid ""
 "If your distribution is not supported, feel free to use a different "
@@ -8840,7 +8990,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:28
+#: src/en/get-started/installation/package.md:27
 #, markdown-text
 msgid ""
 "To follow the installation steps below, tools like curl, gnupg and others "
@@ -8848,7 +8998,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:29
+#: src/en/get-started/installation/package.md:28
 #, no-wrap
 msgid ""
 "\n"
@@ -8891,13 +9041,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:67
+#: src/en/get-started/installation/package.md:66
 #, markdown-text, no-wrap
 msgid "Ensure Correct Locale"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:69
+#: src/en/get-started/installation/package.md:68
 #, no-wrap
 msgid ""
 "\n"
@@ -8988,14 +9138,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:157
+#: src/en/get-started/installation/package.md:156
 #: src/en/tutorials/install-elasticsearch.md:84
 #, markdown-text, no-wrap
 msgid "Install Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:162
+#: src/en/get-started/installation/package.md:161
 #, markdown-text
 msgid ""
 "The recommended method is to use [Elastic's official "
@@ -9004,7 +9154,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:165
+#: src/en/get-started/installation/package.md:164
 #, markdown-text
 msgid ""
 "Alternatively, you can follow [our example "
@@ -9013,13 +9163,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:166
+#: src/en/get-started/installation/package.md:165
 #, markdown-text, no-wrap
 msgid "Add Zammad Repository"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:168
+#: src/en/get-started/installation/package.md:167
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make "
@@ -9027,147 +9177,8 @@ msgid ""
 "to consider this when performing the steps below.\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/installation/package.md:174
-#, markdown-text, no-wrap
-msgid ""
-"<!-- repo instructions included in host-upgrade.md; referenced with line "
-"numbers 171-283. Make sure to keep it or\n"
-"adjust it over there -->\n"
-msgstr ""
-
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:174
-#, no-wrap
-msgid ""
-"\n"
-"=== Ubuntu\n"
-"Add repository key:\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
-"\\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 "
-"/usr/share/keyrings/zammad.gpg\n"
-"```\n"
-"\n"
-"Add repository (Ubuntu 22.04):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" "
-"\\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
-"```\n"
-"\n"
-"Add repository (Ubuntu 24.04):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" "
-"\\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
-"```\n"
-"\n"
-"Add repository (Ubuntu 26.04):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list\" "
-"\\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
-"```\n"
-"\n"
-"=== Debian\n"
-"\n"
-"Add repository key:\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
-"\\\n"
-"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 "
-"/usr/share/keyrings/zammad.gpg\n"
-"```\n"
-"\n"
-"Add repository (Debian 11):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" "
-"\\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
-"```\n"
-"\n"
-"Add repository (Debian 12):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" "
-"\\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
-"```\n"
-"\n"
-"Add repository (Debian 13):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" "
-"\\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
-"```\n"
-"\n"
-"=== OpenSUSE/SLES\n"
-"\n"
-"Add repository (OpenSUSE/SLES 15):\n"
-"\n"
-"```sh\n"
-"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
-"  "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
-"```\n"
-"\n"
-"Add repository (OpenSUSE/SLES 16):\n"
-"\n"
-"```sh\n"
-"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
-"  "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo\"\n"
-"```\n"
-"\n"
-"===CentOS/RHEL\n"
-"Add repository key:\n"
-"\n"
-"```sh\n"
-"sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
-"```\n"
-"\n"
-"Add repository (CentOS/RHEL 9):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
-"  -o /etc/yum.repos.d/zammad.repo\n"
-"```\n"
-"\n"
-"Add repository (CentOS/RHEL 10):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo\" "
-"\\\n"
-"  -o /etc/yum.repos.d/zammad.repo\n"
-"```\n"
-"\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/get-started/installation/package.md:274
-#, markdown-text, no-wrap
-msgid "Install Zammad"
-msgstr ""
-
-#. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:276
+#: src/en/get-started/installation/package.md:273
 #, no-wrap
 msgid ""
 "\n"
@@ -9210,13 +9221,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:316
+#: src/en/get-started/installation/package.md:313
 #, markdown-text, no-wrap
 msgid "Manage Services of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:319
+#: src/en/get-started/installation/package.md:316
 #, markdown-text
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
@@ -9224,19 +9235,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:324
+#: src/en/get-started/installation/package.md:321
 #, markdown-text
 msgid "zammad: includes the services below"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:324
+#: src/en/get-started/installation/package.md:321
 #, markdown-text
 msgid "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:324
+#: src/en/get-started/installation/package.md:321
 #, markdown-text
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
@@ -9244,13 +9255,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:324
+#: src/en/get-started/installation/package.md:321
 #, markdown-text
 msgid "**zammad-websocket**: WebSocket server for session related information"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:326
+#: src/en/get-started/installation/package.md:323
 #, markdown-text
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
@@ -9258,13 +9269,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:328
+#: src/en/get-started/installation/package.md:325
 #, markdown-text
 msgid "Example to start Zammad with all sub-services:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:334
+#: src/en/get-started/installation/package.md:331
 #, markdown-text
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
@@ -9272,7 +9283,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:335
+#: src/en/get-started/installation/package.md:332
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:142
 #, markdown-text, no-wrap
@@ -9280,7 +9291,7 @@ msgid "Next Steps"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:340
+#: src/en/get-started/installation/package.md:337
 #, markdown-text
 msgid ""
 "[Connect Zammad with "
@@ -9288,25 +9299,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:340
+#: src/en/get-started/installation/package.md:337
 #, markdown-text
 msgid "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:340
+#: src/en/get-started/installation/package.md:337
 #, markdown-text
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:338
 #, markdown-text, no-wrap
 msgid "Dependencies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:347
+#: src/en/get-started/installation/package.md:344
 #, markdown-text
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
@@ -9316,47 +9327,47 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:350
 #, markdown-text
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:350
 #, markdown-text
 msgid "Node.js"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:353
+#: src/en/get-started/installation/package.md:350
 #: src/en/reference/environment-variables.md:140
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:353
-#: src/en/get-started/installation/package.md:374
+#: src/en/get-started/installation/package.md:350
+#: src/en/get-started/installation/package.md:371
 #: src/en/reference/environment-variables.md:186
 #, markdown-text, no-wrap
 msgid "Nginx"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:353
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:350
+#: src/en/get-started/installation/package.md:376
 #, markdown-text, no-wrap
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:351
 #, markdown-text, no-wrap
 msgid "Database Server"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:356
 #, markdown-text
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
@@ -9366,7 +9377,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:360
+#: src/en/get-started/installation/package.md:357
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure "
@@ -9379,13 +9390,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:367
+#: src/en/get-started/installation/package.md:364
 #, markdown-text, no-wrap
 msgid "Reverse Proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:368
 #, markdown-text
 msgid ""
 "The following reverse proxies are supported in their currently maintained "
@@ -9393,13 +9404,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:374
+#: src/en/get-started/installation/package.md:371
 #, markdown-text
 msgid "Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:378
+#: src/en/get-started/installation/package.md:375
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -9409,7 +9420,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:386
+#: src/en/get-started/installation/package.md:383
 #, markdown-text
 msgid ""
 "[Redis](https://redis.io/){target=_blank} is required for realtime "
@@ -9421,7 +9432,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:389
+#: src/en/get-started/installation/package.md:386
 #, markdown-text
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
@@ -9429,7 +9440,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:390
+#: src/en/get-started/installation/package.md:387
 #, no-wrap
 msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a "
@@ -9439,7 +9450,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:392
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -9447,7 +9458,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:402
+#: src/en/get-started/installation/package.md:399
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -9458,19 +9469,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:404
+#: src/en/get-started/installation/package.md:401
 #, markdown-text
 msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:406
+#: src/en/get-started/installation/package.md:403
 #, markdown-text
 msgid "Elasticsearch version history for Zammad:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:407
+#: src/en/get-started/installation/package.md:404
 #, no-wrap
 msgid ""
 "\n"
@@ -9490,13 +9501,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:424
+#: src/en/get-started/installation/package.md:421
 #, markdown-text, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:428
+#: src/en/get-started/installation/package.md:425
 #, markdown-text
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
@@ -9506,7 +9517,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:432
+#: src/en/get-started/installation/package.md:429
 #, markdown-text
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
@@ -9517,7 +9528,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:432
 #, markdown-text
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
@@ -9526,7 +9537,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:438
+#: src/en/get-started/installation/package.md:435
 #, markdown-text
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
@@ -9535,13 +9546,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:436
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:444
+#: src/en/get-started/installation/package.md:441
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -9986,7 +9997,7 @@ msgid "Rebuild Elasticsearch Index <Badge type=\"tip\" text=\"optional\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/update.md:181
+#: src/en/get-started/update.md:181 src/en/get-started/update.md:242
 #, markdown-text
 msgid ""
 "Only needed if the release note tells you to rebuild the Elasticsearch "
@@ -10088,18 +10099,9 @@ msgstr ""
 msgid "docker compose pull\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/get-started/update.md:243
-#, markdown-text, no-wrap
-msgid ""
-"Only needed if the release note tells you to rebuild the Elasticsearch "
-"index.\n"
-"<!--referenced in tutorials/backup-restore-docker.md {243,276}. If content "
-"moves, adjust line numbers over there-->\n"
-msgstr ""
-
 #. type: Fenced div block (tabs key:docker-portainer)
 #: src/en/get-started/update.md:243
+#: src/en/tutorials/backup-restore-docker.md:68
 #, no-wrap
 msgid ""
 "\n"
@@ -24893,12 +24895,6 @@ msgid ""
 "running, but search performance is degraded and some data may be temporarily "
 "unavailable in search results. Use one of the commands below, depending on "
 "your deployment method."
-msgstr ""
-
-#. type: Plain text
-#: src/en/tutorials/backup-restore-docker.md:68
-#, markdown-text, no-wrap
-msgid "<!--@include: ../get-started/update.md{243,276}-->\n"
 msgstr ""
 
 #. type: Title #

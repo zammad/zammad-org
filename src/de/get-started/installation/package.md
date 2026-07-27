@@ -9,9 +9,9 @@ title: Paket
 
 ## Unterstützte Betriebssysteme
 
-Für Paketinstallationen werden die folgenden Linux-Distributionen unterstützt:
-<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
-adjust it over there -->
+Für die Paket-Installation werden die folgenden Linux-Distributionen
+unterstützt:
+
 | Distribution         | Version              |
 | -------------------- | :------------------- |
 | CentOS/RHEL          | 9, 10                |
@@ -173,8 +173,6 @@ Installationsanweisungen übersichtlich zu halten.
 Es kann sein, dass Packager.io aus reinen IPv6-Umgebungen nicht erreichbar ist, daher sollten Sie
 dies bei der Durchführung der folgenden Schritte berücksichtigen.
 :::
-<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or
-adjust it over there -->
 :::: tabs key:distros
 
 === Ubuntu

@@ -238,8 +238,9 @@ docker compose up -d
 
 ### Ricostruisci l'indice Elasticsearch <Badge type="tip" text="opzionale" />
 
-Only needed if the release note tells you to rebuild the Elasticsearch index.
-<!--referenced in tutorials/backup-restore-docker.md {243,276}. If content moves, adjust line numbers over there-->
+Necessario solo se le note di rilascio ti dicono di ricostruire l'indice
+Elasticsearch.
+
 ::: tabs key:docker-portainer
 
 === Docker Compose

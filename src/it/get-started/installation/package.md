@@ -9,16 +9,14 @@ title: Pacchetto
 
 ## Sistemi operativi supportati
 
-Per l'installazione del pacchetto, sono supportate le seguenti distribuzioni Linux:
-<!-- tabella inclusa in host-upgrade.md; a cui si fa riferimento alle righe 15-20. Assicurarsi di mantenerla o
-modificarla lì -->
+For package installation, the following Linux distributions are supported:
 
-| Distribuzione         | Versione             |
-| --------------------- | :------------------- |
-| CentOS/RHEL           | 9, 10                |
-| Debian                | 11, 12 & 13          |
-| OpenSUSE Leap / SLES  | 15 & 16              |
-| Ubuntu                | 22.04, 24.04 & 26.04 |
+| Distribution         | Version              |
+| -------------------- | :------------------- |
+| CentOS/RHEL          | 9, 10                |
+| Debian               | 11, 12 & 13          |
+| OpenSUSE Leap / SLES | 15 & 16              |
+| Ubuntu               | 22.04, 24.04 & 26.04 |
 
 Se la tua distribuzione non è supportata, puoi utilizzare un metodo di
 installazione diverso o valutare l'utilizzo del [servizio cloud di
@@ -121,8 +119,6 @@ possibile.
 Packager.io potrebbe non essere accessibile da ambienti solo IPv6, quindi assicurati
 di considerare questo aspetto.
 :::
-<!-- istruzioni del repository incluse in host-upgrade.md; a cui si fa riferimento alle righe 171-283. Assicurati di mantenerle o
-modificarle lì -->
 :::: tabs key:distros
 
 === Ubuntu

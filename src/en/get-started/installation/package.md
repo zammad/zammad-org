@@ -10,8 +10,7 @@ order: 2
 ## Supported Operating Systems
 
 For package installation, the following Linux distributions are supported:
-<!-- table included in host-upgrade.md; referenced with line numbers 15-20. Make sure to keep it or
-adjust it over there -->
+
 | Distribution         | Version              |
 | -------------------- | :------------------- |
 | CentOS/RHEL          | 9, 10                |
@@ -169,8 +168,6 @@ which is separated to keep the install instructions as lean as possible.
 Packager.io may not be accessible from IPv6-only environments, so make sure
 to consider this when performing the steps below.
 :::
-<!-- repo instructions included in host-upgrade.md; referenced with line numbers 171-283. Make sure to keep it or
-adjust it over there -->
 :::: tabs key:distros
 
 === Ubuntu

@@ -22,7 +22,12 @@ Always make sure to have a [backup](/en/tutorials/backup-restore) of your data b
 
 The following operating systems are supported:
 
-<!--@include: /installation/package.md{15,20}-->
+| Distribution         | Version              |
+| -------------------- | :------------------- |
+| CentOS/RHEL          | 9, 10                |
+| Debian               | 11, 12 & 13          |
+| OpenSUSE Leap / SLES | 15 & 16              |
+| Ubuntu               | 22.04, 24.04 & 26.04 |
 
 ## Stop Zammad
 
@@ -169,7 +174,131 @@ sudo rpm -e <key-name>
 If the repository key is different for the old and new version your distribution or your distribution expects it in a
 different location, add the new one. Otherwise, you can add the new repository configuration directly.
 
-<!--@include: /installation/package.md{172,296}-->
+:::: tabs key:distros
+
+=== Ubuntu
+Add repository key:
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+```
+
+Add repository (Ubuntu 22.04):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Ubuntu 24.04):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Ubuntu 26.04):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+=== Debian
+
+Add repository key:
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+```
+
+Add repository (Debian 11):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Debian 12):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Debian 13):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+=== OpenSUSE/SLES
+
+Add repository (OpenSUSE/SLES 15):
+
+```sh
+sudo curl -o /etc/zypp/repos.d/zammad.repo \
+  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
+```
+
+Add repository (OpenSUSE/SLES 16):
+
+```sh
+sudo curl -o /etc/zypp/repos.d/zammad.repo \
+  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo"
+```
+
+===CentOS/RHEL
+Add repository key:
+
+```sh
+sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
+```
+
+Add repository (CentOS/RHEL 9):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
+  -o /etc/yum.repos.d/zammad.repo
+```
+
+Add repository (CentOS/RHEL 10):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \
+  -o /etc/yum.repos.d/zammad.repo
+```
+
+::::
+
+### Install Zammad
+
+::: tabs key:distros
+
+=== Ubuntu
+
+```sh
+sudo apt update
+```
+
+```sh
+sudo apt install zammad
+```
+
+=== Debian
+
+```sh
+sudo apt update
+```
+
+```sh
+sudo apt install zammad
+```
+
+:::
 
 ### Update Zammad
 
