@@ -57,12 +57,6 @@ environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increase
 **not recommended**.
 :::
 
-Click on details to watch a screencast showing the basic steps using Bruno as client.
-
-::: details
-<video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
-:::
-
 ### Create a request
 
 All requests and responses are in JSON format. This means all information must be encapsulated in brackets and have a
@@ -99,12 +93,6 @@ value as ID.
 
 Starting with line 4 in the code block above is the actual request. This simple example just fetches the attributes
 `firstname` and `lastname` from the user with the ID 2.
-
-Click on details to watch a screencast showing a basic request using a variable in Bruno.
-
-::: details
-<video controls="controls" src="/public/videos/graphql-user-request-variable.mp4" />
-:::
 
 To create or change data, replace the `query` by `mutation` in the request body.
 

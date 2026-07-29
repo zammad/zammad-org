@@ -65,13 +65,6 @@ d’ambiente `ZAMMAD_GRAPHQL_INTROSPECTION` su `true`. Farlo aumenta la potenzia
 **sconsigliato**.
 :::
 
-Fai clic su dettagli per guardare uno screencast che mostra i passaggi di
-base usando Bruno come client.
-
-::: details
-<video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
-:::
-
 ### Create a request
 
 Tutte le richieste e risposte sono in formato JSON. Ciò significa che tutte
@@ -107,13 +100,6 @@ ecc. Zammad si aspetta un valore numerico come ID.
 
 A partire dalla riga 4 nel blocco di codice sopra c'è la richiesta vera e
 propria. Questo semplice esempio.
-
-Fai clic su dettagli per guardare uno screencast che mostra una richiesta di
-base usando una variabile in Bruno.
-
-::: details
-<video controls="controls" src="/public/videos/graphql-user-request-variable.mp4" />
-:::
 
 Per creare o modificare dati, sostituisci `query` con `mutation` nel corpo
 della richiesta.

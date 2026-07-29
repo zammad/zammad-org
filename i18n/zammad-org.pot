@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-27 15:46+0200\n"
+"POT-Creation-Date: 2026-07-29 09:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1108,7 +1108,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/contribute/style-guide.md:128 src/en/reference/graphql.md:111
+#: src/en/contribute/style-guide.md:128 src/en/reference/graphql.md:99
 #, markdown-text, no-wrap
 msgid "Examples"
 msgstr ""
@@ -11963,7 +11963,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:115
+#: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:103
 #: src/en/reference/rest-api/articles.md:142
 #: src/en/reference/rest-api/articles.md:159
 #: src/en/reference/rest-api/articles.md:178
@@ -16284,30 +16284,14 @@ msgid ""
 "**not recommended**.\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/graphql.md:61
-#, markdown-text
-msgid ""
-"Click on details to watch a screencast showing the basic steps using Bruno "
-"as client."
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/graphql.md:62
-#, no-wrap
-msgid ""
-"<video controls=\"controls\" "
-"src=\"/public/videos/graphql-client-setup-bruno.mp4\" />\n"
-msgstr ""
-
 #. type: Title ###
-#: src/en/reference/graphql.md:66
+#: src/en/reference/graphql.md:60
 #, markdown-text, no-wrap
 msgid "Create a request"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:70
+#: src/en/reference/graphql.md:64
 #, markdown-text
 msgid ""
 "All requests and responses are in JSON format. This means all information "
@@ -16315,7 +16299,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:73
+#: src/en/reference/graphql.md:67
 #, markdown-text
 msgid ""
 "Let's have a look at a request to fetch information from Zammad. Such a "
@@ -16324,13 +16308,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:75
+#: src/en/reference/graphql.md:69
 #, markdown-text
 msgid "Basic example to fetch users with their first and last name:"
 msgstr ""
 
 #. type: Fenced code block (gql :line-numbers)
-#: src/en/reference/graphql.md:76
+#: src/en/reference/graphql.md:70
 #, no-wrap
 msgid ""
 "query userName (\n"
@@ -16344,7 +16328,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:89
+#: src/en/reference/graphql.md:83
 #, markdown-text
 msgid ""
 "The `$userId` from line 2 defines a variable which is used as an ID. In the "
@@ -16353,7 +16337,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (json)
-#: src/en/reference/graphql.md:90
+#: src/en/reference/graphql.md:84
 #, no-wrap
 msgid ""
 "{\n"
@@ -16362,7 +16346,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:99
+#: src/en/reference/graphql.md:93
 #, markdown-text
 msgid ""
 "The value above is in the global ID format of Zammad's GraphQL "
@@ -16372,7 +16356,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:102
+#: src/en/reference/graphql.md:96
 #, markdown-text
 msgid ""
 "Starting with line 4 in the code block above is the actual request. This "
@@ -16381,23 +16365,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:104
-#, markdown-text
-msgid ""
-"Click on details to watch a screencast showing a basic request using a "
-"variable in Bruno."
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/graphql.md:105
-#, no-wrap
-msgid ""
-"<video controls=\"controls\" "
-"src=\"/public/videos/graphql-user-request-variable.mp4\" />\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/graphql.md:110
+#: src/en/reference/graphql.md:98
 #, markdown-text
 msgid ""
 "To create or change data, replace the `query` by `mutation` in the request "
@@ -16405,7 +16373,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/graphql.md:114
+#: src/en/reference/graphql.md:102
 #, markdown-text
 msgid ""
 "The examples use variables for the different object types. Make sure to set "
@@ -16413,7 +16381,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/reference/graphql.md:115
+#: src/en/reference/graphql.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -16422,7 +16390,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:115
+#: src/en/reference/graphql.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -16437,7 +16405,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:115
+#: src/en/reference/graphql.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -16446,7 +16414,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:115
+#: src/en/reference/graphql.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -16461,7 +16429,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:115
+#: src/en/reference/graphql.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -16470,7 +16438,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tabs)
-#: src/en/reference/graphql.md:115
+#: src/en/reference/graphql.md:103
 #, no-wrap
 msgid ""
 "\n"
@@ -16485,19 +16453,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/graphql.md:161
+#: src/en/reference/graphql.md:149
 #, markdown-text, no-wrap
 msgid "Appendix"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/graphql.md:163
+#: src/en/reference/graphql.md:151
 #, markdown-text, no-wrap
 msgid "Global ids"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/graphql.md:165
+#: src/en/reference/graphql.md:153
 #, no-wrap
 msgid ""
 "\n"
@@ -16506,19 +16474,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/graphql.md:173
+#: src/en/reference/graphql.md:161
 #, markdown-text
 msgid "`gid://zammad/Ticket/{ID}`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/graphql.md:173
+#: src/en/reference/graphql.md:161
 #, markdown-text
 msgid "`gid://zammad/User/{ID}`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/graphql.md:173
+#: src/en/reference/graphql.md:161
 #, markdown-text
 msgid "`gid://zammad/Organization/{ID}`"
 msgstr ""

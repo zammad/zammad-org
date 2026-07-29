@@ -72,13 +72,6 @@ Umgebungsvariable `ZAMMAD_GRAPHQL_INTROSPECTION` auf `true`. Dies vergrößert d
 **nicht empfohlen**.
 :::
 
-Klicken Sie auf Details, um einen Screencast zu sehen, der die grundlegenden
-Schritte mit dem Client Bruno zeigt.
-
-::: details
-<video controls="controls" src="/public/videos/graphql-client-setup-bruno.mp4" />
-:::
-
 ### Create a request
 
 Alle Requests und Responses sind im JSON-Format. Das bedeutet, dass alle
@@ -120,13 +113,6 @@ etc. Zammad erwartet einen numerischen Wert als ID.
 Die eigentliche Anfrage beginnt mit Zeile 4 im obigen Codeblock. In diesem
 einfachen Beispiel werden lediglich die Attribute `firstname` und `lastname`
 von dem Benutzer mit der ID 2 abgerufen.
-
-Klicken Sie auf Details, um einen Screencast zu sehen, der einen einfachen
-Request unter Verwendung einer Variable in Bruno zeigt.
-
-::: details
-<video controls="controls" src="/public/videos/graphql-user-request-variable.mp4" />
-:::
 
 Um Daten zu erstellen oder zu ändern, ersetzen Sie `query` durch `mutation`
 im Request.
