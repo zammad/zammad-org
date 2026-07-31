@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-29 09:38+0200\n"
+"POT-Creation-Date: 2026-07-31 12:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3723,17 +3723,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:37
+#: src/en/documentation/use/basics/work-with-tickets.md:38
 #, markdown-text
 msgid ""
-"To choose another article type, use the **Channel** tab switcher and choose "
-"a different type. Click on the lock toggle to change the article's "
-"visibility. Articles with internal visibility are displayed with a dashed "
-"blue border."
+"To choose another article type, use the channel tabs (labeled **Note**, "
+"**Phone**, **Email** etc.) and pick a different type. Use the **Visibility** "
+"switch to toggle the article between internal and public visibility.  "
+"Articles with internal visibility are highlighted with a dashed blue border; "
+"public articles have no highlighting."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:39
+#: src/en/documentation/use/basics/work-with-tickets.md:40
 #, markdown-text
 msgid ""
 "![Screenshot shows article type selector and visibility "
@@ -3741,7 +3742,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:43
+#: src/en/documentation/use/basics/work-with-tickets.md:44
 #, markdown-text
 msgid ""
 "To write and edit text, make use of the powerful editor features. You can "
@@ -3752,7 +3753,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:46
+#: src/en/documentation/use/basics/work-with-tickets.md:47
 #, markdown-text
 msgid ""
 "Every new article appears at the end of the conversation, which means below "
@@ -3761,7 +3762,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:50
+#: src/en/documentation/use/basics/work-with-tickets.md:51
 #, markdown-text
 msgid ""
 "You might wonder now how to delete articles. The answer is you can only "
@@ -3772,38 +3773,40 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/work-with-tickets.md:51
+#: src/en/documentation/use/basics/work-with-tickets.md:52
 #, markdown-text, no-wrap
 msgid "Add an article from scratch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:57
+#: src/en/documentation/use/basics/work-with-tickets.md:58
 #, markdown-text
 msgid ""
-"Click on the `Add internal note` button below the ticket's articles. This "
-"opens the editor with activated **Note** type and internal visibility. You "
-"can change the type or visibility if you like. To answer the customer "
-"directly or to forward a specific article, use the corresponding buttons "
-"under an article. Read the next section for more information."
+"Below the last article, click the `Add internal note` button (or `Add reply` "
+"if you are a customer). This opens the editor with the appropriate channel "
+"and visibility selected. You can change the type or visibility if you "
+"like. To answer the customer directly or to forward a specific article, use "
+"the corresponding buttons under an article. Read the next section for more "
+"information."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:59
+#: src/en/documentation/use/basics/work-with-tickets.md:60
 #, markdown-text
 msgid ""
-"![Screenshot shows the Add internal note button below the ticket's "
-"articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
+"![Screenshot shows the action row under the last article in the ticket "
+"detail "
+"view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/work-with-tickets.md:60
+#: src/en/documentation/use/basics/work-with-tickets.md:61
 #, markdown-text, no-wrap
 msgid "Respond to an article"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:64
+#: src/en/documentation/use/basics/work-with-tickets.md:65
 #, markdown-text
 msgid ""
 "To forward or reply to an article, use one of the response buttons under an "
@@ -3812,7 +3815,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:71
+#: src/en/documentation/use/basics/work-with-tickets.md:72
 #, markdown-text
 msgid ""
 "**Reply**: Allows you to answer the article. The recipient is automatically "
@@ -3822,7 +3825,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:71
+#: src/en/documentation/use/basics/work-with-tickets.md:72
 #, markdown-text
 msgid ""
 "**Reply all**: Same as above but uses all recipient addresses from the "
@@ -3831,7 +3834,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:71
+#: src/en/documentation/use/basics/work-with-tickets.md:72
 #, markdown-text
 msgid ""
 "**Forward**: This means you can forward the original message to a third "
@@ -3840,7 +3843,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:73
+#: src/en/documentation/use/basics/work-with-tickets.md:74
 #, markdown-text
 msgid ""
 "![Screenshot shows article reply "
@@ -3848,7 +3851,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:82
+#: src/en/documentation/use/basics/work-with-tickets.md:83
 #, markdown-text
 msgid ""
 "Zammad even allows you to **quote text** from an existing article. This is "
@@ -3866,7 +3869,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:85
+#: src/en/documentation/use/basics/work-with-tickets.md:86
 #, markdown-text
 msgid ""
 "If the ticket has a long article history, see [Handling of Large "
@@ -3874,13 +3877,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/work-with-tickets.md:86
+#: src/en/documentation/use/basics/work-with-tickets.md:87
 #, markdown-text, no-wrap
 msgid "Handling of large tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:90
+#: src/en/documentation/use/basics/work-with-tickets.md:91
 #, markdown-text
 msgid ""
 "When working on tickets with long article histories - like long email "
@@ -3889,7 +3892,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:102
+#: src/en/documentation/use/basics/work-with-tickets.md:103
 #, markdown-text
 msgid ""
 "A floating ticket actions toolbar on the bottom right corner of the article "
@@ -3898,13 +3901,15 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/work-with-tickets.md:102
+#: src/en/documentation/use/basics/work-with-tickets.md:103
 #, markdown-text
-msgid "**Add internal note**: opens the article reply form to write a note."
+msgid ""
+"**Add internal note** (or **Add reply** if you are a customer): opens the "
+"article reply form to write a note."
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/work-with-tickets.md:102
+#: src/en/documentation/use/basics/work-with-tickets.md:103
 #, markdown-text
 msgid ""
 "**Scroll to start** and **Scroll to end**: jump to the top or bottom of the "
@@ -3913,7 +3918,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/basics/work-with-tickets.md:102
+#: src/en/documentation/use/basics/work-with-tickets.md:103
 #, markdown-text
 msgid ""
 "The toolbar appears whenever the article list is taller than your screen so "
@@ -3921,7 +3926,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:102
+#: src/en/documentation/use/basics/work-with-tickets.md:103
 #, markdown-text
 msgid ""
 "A **pinned reply form** so the editor stays visible while you scroll through "
@@ -3933,7 +3938,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:104
+#: src/en/documentation/use/basics/work-with-tickets.md:105
 #, markdown-text
 msgid ""
 "![Screenshot shows the article reply form pinned to the bottom of the ticket "
@@ -3942,13 +3947,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:105
+#: src/en/documentation/use/basics/work-with-tickets.md:106
 #, markdown-text, no-wrap
 msgid "Rename a ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:110
+#: src/en/documentation/use/basics/work-with-tickets.md:111
 #, markdown-text
 msgid ""
 "To rename a ticket, simply click on the title in the header bar and start "
@@ -3958,13 +3963,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:111
+#: src/en/documentation/use/basics/work-with-tickets.md:112
 #, markdown-text, no-wrap
 msgid "Copy ticket number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:117
+#: src/en/documentation/use/basics/work-with-tickets.md:118
 #, markdown-text
 msgid ""
 "To copy the ticket number including a link to the ticket (e.g. to paste it "
@@ -3976,7 +3981,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:119
+#: src/en/documentation/use/basics/work-with-tickets.md:120
 #, markdown-text
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy "
@@ -3984,7 +3989,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:123
+#: src/en/documentation/use/basics/work-with-tickets.md:124
 #, markdown-text
 msgid ""
 "But wait, there is even a keyboard shortcut for that! Simply press [[.]] in "
@@ -3994,13 +3999,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:124
+#: src/en/documentation/use/basics/work-with-tickets.md:125
 #, markdown-text, no-wrap
 msgid "Simultaneous ticket processing"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:129
+#: src/en/documentation/use/basics/work-with-tickets.md:130
 #, markdown-text
 msgid ""
 "It can happen that two or more agents open a ticket at the same time. To "
@@ -4010,7 +4015,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:131
+#: src/en/documentation/use/basics/work-with-tickets.md:132
 #, markdown-text
 msgid ""
 "![Screenshot shows other agents viewing/editing the "
@@ -4018,7 +4023,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:134
+#: src/en/documentation/use/basics/work-with-tickets.md:135
 #, markdown-text
 msgid ""
 "Make sure to communicate with your colleagues to prevent these problems "
@@ -4027,13 +4032,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:138
+#: src/en/documentation/use/basics/work-with-tickets.md:139
 #, markdown-text
 msgid "Avatar: Another agent is viewing the ticket."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:138
+#: src/en/documentation/use/basics/work-with-tickets.md:139
 #, markdown-text
 msgid ""
 "Faded avatar: Another agent opened the ticket but is currently not actively "
@@ -4041,7 +4046,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/work-with-tickets.md:138
+#: src/en/documentation/use/basics/work-with-tickets.md:139
 #, markdown-text
 msgid ""
 "Avatar with pencil icon: Another agent is currently actively working on this "
@@ -4049,7 +4054,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:141
+#: src/en/documentation/use/basics/work-with-tickets.md:142
 #, markdown-text
 msgid ""
 "There are even more icons which represent additional states of the other "
@@ -4058,19 +4063,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/basics/work-with-tickets.md:142
+#: src/en/documentation/use/basics/work-with-tickets.md:143
 #, markdown-text, no-wrap
 msgid "Ticket actions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:145
+#: src/en/documentation/use/basics/work-with-tickets.md:146
 #, markdown-text
 msgid "Additional actions are available in the ::a:: menu in the ticket sidebar."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:149
+#: src/en/documentation/use/basics/work-with-tickets.md:150
 #, markdown-text, no-wrap
 msgid ""
 "History\n"
@@ -4080,7 +4085,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:153
+#: src/en/documentation/use/basics/work-with-tickets.md:154
 #, markdown-text, no-wrap
 msgid ""
 "Merge\n"
@@ -4091,13 +4096,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:156
+#: src/en/documentation/use/basics/work-with-tickets.md:157
 #, markdown-text
 msgid "Change customer : Reassign the ticket to another customer."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:161
+#: src/en/documentation/use/basics/work-with-tickets.md:162
 #, markdown-text
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "

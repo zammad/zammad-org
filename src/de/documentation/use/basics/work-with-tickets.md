@@ -48,11 +48,11 @@ Kundenartikel antworten, Sie können aus verschiedenen Artikeltypen wählen:
 - **E-Mail**: Senden Sie eine E-Mail an eine beliebige Person zu diesem
   Ticket. Der Titel des Tickets wird als Betreff der E-Mail verwendet.
 
-Um einen anderen Artikeltyp auszuwählen, verwenden Sie den **Kanal**
-Tab-Umschalter und wählen Sie einen anderen Typ aus. Klicken Sie auf das
-Schloss-Symbol, um die Sichtbarkeit des Artikels zu ändern. Artikel mit
-interner Sichtbarkeit werden mit einem gestrichelten blauen Rahmen
-angezeigt.
+To choose another article type, use the channel tabs (labeled **Note**,
+**Phone**, **Email** etc.) and pick a different type. Use the **Visibility**
+switch to toggle the article between internal and public visibility.
+Articles with internal visibility are highlighted with a dashed blue border;
+public articles have no highlighting.
 
 ![Der Screenshot zeigt die Auswahl für den Artikeltyp und den Schalter für
 die
@@ -78,16 +78,16 @@ sehen, müssen Sie deren Sichtbarkeit zunächst auf "intern" umstellen.
 
 ### Add an article from scratch
 
-Klicken Sie auf die Schaltfläche `Interne Notiz hinzufügen` unter den
-Artikeln des Tickets. Dadurch wird der Editor mit aktiviertem **Notiz**-Typ
-und interner Sichtbarkeit geöffnet. Sie können den Typ oder die Sichtbarkeit
-bei Bedarf ändern. Um den Kunden direkt zu antworten oder einen bestimmten
-Artikel weiterzuleiten, verwenden Sie die entsprechenden Schaltflächen unter
-einem Artikel. Lesen Sie den nächsten Abschnitt für weitere Informationen.
+Below the last article, click the `Add internal note` button (or `Add reply`
+if you are a customer). This opens the editor with the appropriate channel
+and visibility selected. You can change the type or visibility if you
+like. To answer the customer directly or to forward a specific article, use
+the corresponding buttons under an article. Read the next section for more
+information.
 
-![Screenshot zeigt die Schaltfläche Interne Notiz hinzufügen unter den
-Artikeln des
-Tickets](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the action row under the last article in the ticket
+detail
+view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Respond to an article
 
@@ -140,8 +140,8 @@ Nachrichten zurückgreifen müssen – bietet Zammad zwei praktische Funktionen:
   Artikelliste zeigt je nach Scrollposition und dem Status des Tickets
   Schnellaktionen an. Sie enthält Schaltflächen mit Symbolen für die
   folgenden Aktionen:
-  - **Interne Notiz hinzufügen**: Öffnet das Antwortformular, in dem Sie
-    eine Notiz verfassen können.
+  - **Add internal note** (or **Add reply** if you are a customer): opens
+    the article reply form to write a note.
   - **Zum Start scrollen** und **Zum Ende scrollen**: Springen Sie zum
     Anfang oder zum Ende der Artikel-Liste. Falls ungelesene Artikel
     vorhanden sind, zeigt die **Zum Ende scrollen**-Schaltfläche einen

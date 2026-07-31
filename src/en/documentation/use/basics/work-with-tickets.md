@@ -32,8 +32,9 @@ article types:
 - **Call**: Note down a summary of a phone call you had with the customer.
 - **Email**: Send an email to anyone about the ticket. The title of the ticket is used for the subject of the email.
 
-To choose another article type, use the **Channel** tab switcher and choose a different type. Click on the lock toggle
-to change the article's visibility. Articles with internal visibility are displayed with a dashed blue border.
+To choose another article type, use the channel tabs (labeled **Note**, **Phone**, **Email** etc.) and pick a
+different type. Use the **Visibility** switch to toggle the article between internal and public visibility.
+Articles with internal visibility are highlighted with a dashed blue border; public articles have no highlighting.
 
 ![Screenshot shows article type selector and visibility toggle](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
 
@@ -50,12 +51,12 @@ communication type (emails, calls) must be changed to "internal" visibility firs
 
 ### Add an article from scratch
 
-Click on the `Add internal note` button below the ticket's articles. This opens the editor with activated **Note**
-type and internal visibility. You can change the type or visibility if you like. To answer the customer directly or
-to forward a specific article, use the corresponding buttons under an article. Read the next section for more
-information.
+Below the last article, click the `Add internal note` button (or `Add reply` if you are a customer). This opens
+the editor with the appropriate channel and visibility selected. You can change the type or visibility if you
+like. To answer the customer directly or to forward a specific article, use the corresponding buttons under an
+article. Read the next section for more information.
 
-![Screenshot shows the Add internal note button below the ticket's articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the action row under the last article in the ticket detail view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Respond to an article
 
@@ -90,7 +91,7 @@ messages - Zammad provides two conveniences:
 
 - A floating ticket actions toolbar on the bottom right corner of the article list shows quick actions, depending on
   your scroll position and the ticket state. It contains buttons with icons for the following actions:
-  - **Add internal note**: opens the article reply form to write a note.
+  - **Add internal note** (or **Add reply** if you are a customer): opens the article reply form to write a note.
   - **Scroll to start** and **Scroll to end**: jump to the top or bottom of the article list. If there are unread
     articles, the **Scroll to end button** displays a badge and changes to **Scroll to unread article**.
   - The toolbar appears whenever the article list is taller than your screen so that crucial actions stay

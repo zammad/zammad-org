@@ -45,10 +45,11 @@ cliente, você pode escolher entre diferentes tipos de artigo:
 - **Email**: envie um email para qualquer pessoa sobre o ticket. O título do
   ticket é usado como assunto do email.
 
-Para escolher outro tipo de artigo, use o seletor de abas **Channel** e
-escolha um tipo diferente. Clique na chave de cadeado para alterar a
-visibilidade do artigo. Artigos com visibilidade interna são exibidos com
-uma borda azul tracejada.
+To choose another article type, use the channel tabs (labeled **Note**,
+**Phone**, **Email** etc.) and pick a different type. Use the **Visibility**
+switch to toggle the article between internal and public visibility.
+Articles with internal visibility are highlighted with a dashed blue border;
+public articles have no highlighting.
 
 ![Captura de tela mostra o seletor de tipo de artigo e a chave de
 visibilidade](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
@@ -71,15 +72,16 @@ visibilidade "interna".
 
 ### Add an article from scratch
 
-Clique no botão `Add internal note` abaixo dos artigos do ticket. Isso abre
-o editor com o tipo **Note** ativado e visibilidade interna. Você pode
-alterar o tipo ou a visibilidade se quiser. Para responder ao cliente
-diretamente ou encaminhar um artigo específico, use os botões
-correspondentes abaixo de um artigo. Leia a próxima seção para mais
-informações.
+Below the last article, click the `Add internal note` button (or `Add reply`
+if you are a customer). This opens the editor with the appropriate channel
+and visibility selected. You can change the type or visibility if you
+like. To answer the customer directly or to forward a specific article, use
+the corresponding buttons under an article. Read the next section for more
+information.
 
-![Captura de tela mostra o botão Add internal note abaixo dos artigos do
-ticket](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the action row under the last article in the ticket
+detail
+view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Respond to an article
 
@@ -127,8 +129,8 @@ oferece duas facilidades:
 - Uma barra de ações de ticket flutuante no canto inferior direito da lista
   de artigos mostra ações rápidas, dependendo da sua posição de rolagem e do
   estado do ticket. Ela contém botões com ícones para as seguintes ações:
-  - **Add internal note**: abre o formulário de resposta do artigo para
-    escrever uma nota.
+  - **Add internal note** (or **Add reply** if you are a customer): opens
+    the article reply form to write a note.
   - **Scroll to start** e **Scroll to end**: pula para o topo ou final da
     lista de artigos. Se houver artigos não lidos, o botão **Scroll to end**
     exibe um selo e muda para **Scroll to unread article**.

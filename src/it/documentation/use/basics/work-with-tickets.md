@@ -44,10 +44,11 @@ puoi scegliere tra diversi tipi di articolo:
 - **Email**: Invia un'email a chiunque riguardo al ticket. Il titolo del
   ticket viene usato come oggetto dell'email.
 
-Per scegliere un altro tipo di articolo, usa il selettore di schede
-**Canale** e scegli un tipo diverso. Fai clic sul pulsante lucchetto per
-modificare la visibilità dell'articolo. Gli articoli con visibilità interna
-vengono visualizzati con un bordo blu tratteggiato.
+To choose another article type, use the channel tabs (labeled **Note**,
+**Phone**, **Email** etc.) and pick a different type. Use the **Visibility**
+switch to toggle the article between internal and public visibility.
+Articles with internal visibility are highlighted with a dashed blue border;
+public articles have no highlighting.
 
 ![Screenshot che mostra il selettore del tipo di articolo e il pulsante di
 visibilità](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
@@ -71,14 +72,16 @@ modificati in visibilità "interna".
 
 ### Add an article from scratch
 
-Click on the `Add internal note` button below the ticket's articles. This
-opens the editor with activated **Note** type and internal visibility. You
-can change the type or visibility if you like. To answer the customer
-directly or to forward a specific article, use the corresponding buttons
-under an article. Read the next section for more information.
+Below the last article, click the `Add internal note` button (or `Add reply`
+if you are a customer). This opens the editor with the appropriate channel
+and visibility selected. You can change the type or visibility if you
+like. To answer the customer directly or to forward a specific article, use
+the corresponding buttons under an article. Read the next section for more
+information.
 
-![Screenshot shows the Add internal note button below the ticket's
-articles](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the action row under the last article in the ticket
+detail
+view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
 ### Respond to an article
 
@@ -125,7 +128,8 @@ two conveniences:
   article list shows quick actions, depending on your scroll position and
   the ticket state. It contains buttons with icons for the following
   actions:
-  - **Add internal note**: opens the article reply form to write a note.
+  - **Add internal note** (or **Add reply** if you are a customer): opens
+    the article reply form to write a note.
   - **Scroll to start** and **Scroll to end**: jump to the top or bottom of
     the article list. If there are unread articles, the **Scroll to end
     button** displays a badge and changes to **Scroll to unread article**.
