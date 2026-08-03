@@ -23,6 +23,9 @@ fi
 
 cd zammad-docker-compose
 
+# Check if stack is already running, and if so, stop it first.
+docker compose ps -q | grep -q . && docker compose down --timeout 0 --volumes
+
 if [ -n "$CI" ]
 then
   cat - > docker-compose.override.yml <<COMPOSE_OVERRIDE_FILE

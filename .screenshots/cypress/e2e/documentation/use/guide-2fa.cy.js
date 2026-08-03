@@ -15,7 +15,7 @@ describe('2FA usage guide', () => {
     })
   })
 
-  // NB: Will work only once per stack, because the recovery codes are one-time usage only.
+  // NB: Will work up to 50 times per stack, because the recovery codes are one-time usage only.
   it('2FA methods profile overview', () => {
     cy.visit('/desktop/login')
     cy.env(['AGENT2_LOGIN', 'AGENT2_PASS']).then(({ AGENT2_LOGIN, AGENT2_PASS }) => {

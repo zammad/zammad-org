@@ -802,21 +802,17 @@ Overview.create_if_not_exists(
 puts 'Configuring two-factor authentication...'
 
 morganreed = User.find_by(login: 'morgan@fastlane.inc')
+UserInfo.current_user_id = morganreed.id
 User::TwoFactorPreference.create!(user_id: morganreed.id, method: 'authenticator_app', configuration: { 'secret' => 'NKBGKAQNCXWU4ZH4SHZYVQQCQTBX7R2V', 'provisioning_uri' => 'otpauth://totp/Zammad%20Test%20System:admin%40example.com?secret=NKBGKAQNCXWU4ZH4SHZYVQQCQTBX7R2V&issuer=Zammad%20Test%20System', 'last_otp_at' => 1746454920 })
-User::TwoFactorPreference.create!(user_id: morganreed.id, method: 'recovery_codes', configuration: {
-  'codes' => [
-    '$argon2id$v=19$m=65536,t=3,p=4$uRtckgylemDjbKb0FTQ6pQ$sazQRf86CuJT/fzq5scKk/Cy2qidyfKOMJaLW4ouIBg', # 7f80b91f6bcd7b60
-    '$argon2id$v=19$m=65536,t=3,p=4$ncK8XK8zIvwshgGYpPSZqw$Qzb1W3qDtz2V1v7m0OE+W3HFiq7MsDlRT/OxCmHMuP8', # 5f23ad69c7b530f9
-    '$argon2id$v=19$m=65536,t=3,p=4$y/swr8so6vXOGW1hHDA2Dw$NaqS5PEk72fLLZqQBm4kX9DEPAzKAJOZvnJJTR//pos', # f9ee3eaff694365b
-    '$argon2id$v=19$m=65536,t=3,p=4$dtqm/ML1B7W1o523wFteIA$CMINVCb8BunDtyHSGprqQV6FY2FFVzq4AnzATXLaHg4', # 73f13414acc09cf7
-    '$argon2id$v=19$m=65536,t=3,p=4$MT85w3g7S1GsmJ1g0tFFUQ$myRU7KIDyehZLLr68lLTjtXWZhNiMZRfvZJ9tBxnv1o', # 0ec23def11bc38ee
-    '$argon2id$v=19$m=65536,t=3,p=4$2/u/whiDMYsfbFW0Z6YzYQ$QyXYVsErzP523jMOGbNJOWlcujfl+Rw70gLb+2XGTb0', # 0ea42690902f1a23
-    '$argon2id$v=19$m=65536,t=3,p=4$JRS7BMxSdK9cqY+VWmi+Qw$LWEa7z/DnwUIhhCiBzRoKwTKj+jV+f9jetSGzejFGEg', # fe33e8892114af53
-    '$argon2id$v=19$m=65536,t=3,p=4$6U2q178w5jT8TQXNWJRWQQ$6sNxtn6Lh2G+FB4zzgKwsOZKnxdxHl3QKf0HFDsYi28', # bead7283243ae683
-    '$argon2id$v=19$m=65536,t=3,p=4$HUQelGsec6FD5ay/EwB9fA$ccO4CfIXAK4YavVpQbIZoJrhfUNcCJjs4twYJ1HOKBM', # 5ef45d866343c5db
-    '$argon2id$v=19$m=65536,t=3,p=4$K8CKUNU2M1Dox/a7DBsLug$mLUIgpJzXdE+L+a3hCiEUuzgr6Vk4JT5IQpl9NG9xDI', # 745ea9b42f3a1c5e
-  ],
-})
+# Recovery codes have to be hashed at seed time using the live
+# application_secret (PasswordHash.crypt peppers with it). A pre-baked
+# argon2id hardcoded in the file will not verify once db:seed has run
+# with a different secret. Render a known plaintext (the recovery code
+# the Cypress 2FA guide expects) and repeat it many times so the test
+# can be run multiple times against the same stack instance.
+known_code  = '7f80b91f6bcd7b60'
+hashed_codes = Array.new(50) { PasswordHash.crypt(known_code) }
+User::TwoFactorPreference.create!(user_id: morganreed.id, method: 'recovery_codes', configuration: { 'codes' => hashed_codes })
 
 puts 'Setting up system...'
 
@@ -898,14 +894,11 @@ Cti::Log.create(
   created_at:   Time.zone.now,
 )
 
-puts 'Enabling AI features...'
+puts 'Enabling AI providers...'
 
-# Enable AI features
+SeedHelpers.set_setting_without_validation(name: 'ai_provider', value: true)
 
-SeedHelpers.set_setting_without_validation(name: 'ai_provider', value: 'zammad_ai')
-SeedHelpers.set_setting_without_validation(name: 'ai_provider_config', value: { 'token' => 'foobar' }) # just a fake token to trigger the feature
-Setting.set('ai_assistance_ticket_summary', true)
-Setting.set('ai_assistance_text_tools', true)
+puts 'Enabling ticket duplicate detection feature...'
 
 # Enable ticket duplicate detection feature with 'customer_id' as the attribute to check for duplicates.
 SeedHelpers.set_setting_without_validation(name: 'ticket_duplicate_detection', value: true)
