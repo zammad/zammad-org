@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-03 11:57+0200\n"
+"POT-Creation-Date: 2026-08-04 13:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15748,15 +15748,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:296
-#, markdown-text
+#: src/en/reference/glossary.md:297
+#, markdown-text, no-wrap
 msgid ""
-"Navigation tab : One element of the primary navigation like **Overviews** or "
-"**Knowledge Base**."
+"Navigation tab\n"
+": One element of the primary navigation like **Overviews** or\n"
+"  **Knowledge Base**.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:301
+#: src/en/reference/glossary.md:302
 #, markdown-text, no-wrap
 msgid ""
 "Nagios\n"
@@ -15766,7 +15767,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:306
+#: src/en/reference/glossary.md:307
 #, markdown-text, no-wrap
 msgid ""
 "On-Premise\n"
@@ -15776,7 +15777,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:312
+#: src/en/reference/glossary.md:313
 #, markdown-text, no-wrap
 msgid ""
 "Organization\n"
@@ -15788,7 +15789,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:318
+#: src/en/reference/glossary.md:319
 #, markdown-text, no-wrap
 msgid ""
 "Owner\n"
@@ -15800,7 +15801,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:324
+#: src/en/reference/glossary.md:325
 #, markdown-text, no-wrap
 msgid ""
 "Parent/child relationship\n"
@@ -15812,7 +15813,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:330
+#: src/en/reference/glossary.md:331
 #, markdown-text, no-wrap
 msgid ""
 "Placetel\n"
@@ -15825,7 +15826,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:335
+#: src/en/reference/glossary.md:336
 #, markdown-text, no-wrap
 msgid ""
 "  Integrating a Placetel account with Zammad provides users with a call "
@@ -15836,7 +15837,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:340
+#: src/en/reference/glossary.md:341
 #, markdown-text, no-wrap
 msgid ""
 "Primary navigation\n"
@@ -15846,7 +15847,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:345
+#: src/en/reference/glossary.md:346
 #, markdown-text, no-wrap
 msgid ""
 "Priority\n"
@@ -15857,7 +15858,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:353
+#: src/en/reference/glossary.md:354
 #, markdown-text, no-wrap
 msgid ""
 "Release\n"
@@ -15872,7 +15873,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:357
+#: src/en/reference/glossary.md:358
 #, markdown-text, no-wrap
 msgid ""
 "  In our [release notes](https://zammad.com/en/releases){target=_blank} you "
@@ -15883,7 +15884,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:361
+#: src/en/reference/glossary.md:362
 #, markdown-text, no-wrap
 msgid ""
 "Role\n"
@@ -15892,7 +15893,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:368
+#: src/en/reference/glossary.md:369
 #, markdown-text, no-wrap
 msgid ""
 "  _Admins_ have the most rights: they can define roles, permissions,\n"
@@ -15905,13 +15906,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:370
+#: src/en/reference/glossary.md:371
 #, markdown-text, no-wrap
 msgid "  You can even add new roles to your Zammad.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:374
+#: src/en/reference/glossary.md:375
 #, markdown-text, no-wrap
 msgid ""
 "Secondary navigation\n"
@@ -15921,7 +15922,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:378
+#: src/en/reference/glossary.md:379
 #, markdown-text, no-wrap
 msgid ""
 "Flyout\n"
@@ -15931,7 +15932,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:383
+#: src/en/reference/glossary.md:384
 #, markdown-text, no-wrap
 msgid ""
 "Sidebar tab\n"
@@ -15942,13 +15943,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:385
+#: src/en/reference/glossary.md:386
 #, markdown-text, no-wrap
 msgid "  An active sidebar tab is the currently opened sidebar tab.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:391
+#: src/en/reference/glossary.md:392
 #, markdown-text, no-wrap
 msgid ""
 "Sipgate\n"
@@ -15961,7 +15962,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:398
+#: src/en/reference/glossary.md:399
 #, markdown-text, no-wrap
 msgid ""
 "SLA\n"
@@ -15974,7 +15975,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:402
+#: src/en/reference/glossary.md:403
 #, markdown-text, no-wrap
 msgid ""
 "  You can easily set up SLAs in Zammad and define parameters such as the "
@@ -15985,7 +15986,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:408
+#: src/en/reference/glossary.md:409
 #, markdown-text, no-wrap
 msgid ""
 "S/MIME\n"
@@ -15999,7 +16000,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:413
+#: src/en/reference/glossary.md:414
 #, markdown-text, no-wrap
 msgid ""
 "SSO\n"
@@ -16011,7 +16012,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:420
+#: src/en/reference/glossary.md:421
 #, markdown-text, no-wrap
 msgid ""
 "State\n"
@@ -16027,7 +16028,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:424
+#: src/en/reference/glossary.md:425
 #, markdown-text, no-wrap
 msgid ""
 "Taskbar\n"
@@ -16037,7 +16038,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:428
+#: src/en/reference/glossary.md:429
 #, markdown-text, no-wrap
 msgid ""
 "Taskbar tab\n"
@@ -16046,7 +16047,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:436
+#: src/en/reference/glossary.md:437
 #, markdown-text, no-wrap
 msgid ""
 "Tags\n"
@@ -16063,7 +16064,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:439
+#: src/en/reference/glossary.md:440
 #, markdown-text, no-wrap
 msgid ""
 "  Tags can be queried in conditions in an automation and assigned\n"
@@ -16071,7 +16072,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:447
+#: src/en/reference/glossary.md:448
 #, markdown-text, no-wrap
 msgid ""
 "Text module\n"
@@ -16087,7 +16088,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:450
+#: src/en/reference/glossary.md:451
 #, markdown-text, no-wrap
 msgid ""
 "  For example, here at Zammad, we have a text module with the shortcut\n"
@@ -16095,7 +16096,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:455
+#: src/en/reference/glossary.md:456
 #, markdown-text, no-wrap
 msgid ""
 "(Ticket) template\n"
@@ -16107,7 +16108,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:461
+#: src/en/reference/glossary.md:462
 #, markdown-text, no-wrap
 msgid ""
 "User\n"
@@ -16119,7 +16120,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:467
+#: src/en/reference/glossary.md:468
 #, markdown-text, no-wrap
 msgid ""
 "Webhooks\n"
@@ -16132,13 +16133,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:470
-#, markdown-text
-msgid "Zammad : Zammad is the greatest helpdesk in the world. Period."
+#: src/en/reference/glossary.md:472
+#, markdown-text, no-wrap
+msgid ""
+"Zammad\n"
+": Zammad is the greatest helpdesk in the world.\n"
+"  Period.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/glossary.md:471
+#: src/en/reference/glossary.md:473
 #, markdown-text, no-wrap
 msgid "</VPGlossary>\n"
 msgstr ""

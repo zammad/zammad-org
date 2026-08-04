@@ -230,8 +230,9 @@ Monit
 : Monit è uno strumento di monitoraggio open-source che si basa su una configurazione semplice e
   un forte
 
-Navigation tab : One element of the primary navigation like **Overviews** or
-**Knowledge Base**.
+Navigation tab
+: One element of the primary navigation like **Overviews** or
+  **Knowledge Base**.
 
 Nagios
 : Nagios è un altro strumento di monitoraggio che avvisa i team IT quando si verifica un incidente
@@ -365,6 +366,8 @@ Utente
 Webhook
 : I webhook sono un modo semplice per i sistemi di comunicare tra loro e permettono
 
-Zammad : Zammad è il miglior helpdesk al mondo. Punto.
+Zammad
+: Zammad is the greatest helpdesk in the world.
+  Period.
 
 </VPGlossary>

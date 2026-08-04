@@ -292,7 +292,8 @@ Monit
   a ticket is created every time you receive an email in Monit.
 
 Navigation tab
-: One element of the primary navigation like **Overviews** or **Knowledge Base**.
+: One element of the primary navigation like **Overviews** or
+  **Knowledge Base**.
 
 Nagios
 : Nagios is another monitoring tool that alerts IT teams when an incident
@@ -466,6 +467,7 @@ Webhooks
   (e.g. sending a notification for new and updated tickets to your Mattermost).
 
 Zammad
-: Zammad is the greatest helpdesk in the world. Period.
+: Zammad is the greatest helpdesk in the world.
+  Period.
 
 </VPGlossary>

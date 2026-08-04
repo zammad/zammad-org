@@ -291,8 +291,9 @@ Monit
   a strong community. You can integrate it with Zammad - this way,
   a ticket is created every time you receive an email in Monit.
 
-Navigation tab : One element of the primary navigation like **Overviews** or
-**Knowledge Base**.
+Navigation tab
+: One element of the primary navigation like **Overviews** or
+  **Knowledge Base**.
 
 Nagios
 : Nagios is another monitoring tool that alerts IT teams when an incident
@@ -465,6 +466,8 @@ Webhooks
   They allow you to inform a third party system about new information in Zammad
   (e.g. sending a notification for new and updated tickets to your Mattermost).
 
-Zammad : Zammad is the greatest helpdesk in the world. Period.
+Zammad
+: Zammad is the greatest helpdesk in the world.
+  Period.
 
 </VPGlossary>
