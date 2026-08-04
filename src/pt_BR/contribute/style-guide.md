@@ -169,16 +169,20 @@ Algumas regras importantes e personalizadas são mencionadas abaixo.
 
 #### Texto e interface
 
-| Type                      | Highlighting in documentation | Markdown syntax                 |
-|-------------------------- |-------------------------------|---------------------------------|
-| Labeled buttons           | `Sign in`                     | `` `Sign in` ``                 |
-| Fields and UI elements    | **Name**                      | `**Name**`                      |
-| Locations/paths           | _Settings > Channels > Email_ | `_Settings > Channels > Email_` |
-| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         |
-| Add button                | ::+::                         | `::+::`                         |
-| Delete button             | ::x::                         | `::x::`                         |
-| Action menu               | ::a::                         | `::a::`                         |
-| Copy to clipboard button  | ::c::                         | `::c::`                         |
+| Type                                      | Highlighting in documentation | Markdown syntax                     |
+|-------------------------------------------|-------------------------------|-------------------------------------|
+| Labeled buttons                           | `Sign in`                     | `` `Sign in` ``                     |
+| Fields, labeled UI elements, menu items   | **Name**                      | `**Name**`                          |
+| Breadcrumb paths / navigation chains      | _Settings > Channels > Email_ | `_Settings > Channels > Email_`     |
+| File and directory paths                  | `/opt/zammad`                 | `` `/opt/zammad` ``                 |
+| Placeholder values for configuration      | `<your-fqdn>`                 | `` `<your-fqdn>` ``                 |
+| Placeholder values for API requests       | `{ticket id}`                 | `` `{ticket id}` ``                 |
+| Commandline config values, ports, keys    | `9200`                        | `` `9200` ``                        |
+| Keyboard shortcuts                        | [[x]]                         | `[[x]]`                             |
+| Add button                                | ::+::                         | `::+::`                             |
+| Delete button                             | ::x::                         | `::x::`                             |
+| Action menu                               | ::a::                         | `::a::`                             |
+| Copy to clipboard button                  | ::c::                         | `::c::`                             |
 
 #### Heading structure
 

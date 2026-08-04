@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-31 12:30+0200\n"
+"POT-Creation-Date: 2026-08-03 11:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1120,39 +1120,46 @@ msgid "Text and UI"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:142
+#: src/en/contribute/style-guide.md:146
 #, markdown-text, no-wrap
 msgid ""
-"| Type                      | Highlighting in documentation | Markdown "
-"syntax                 |\n"
-"|-------------------------- "
-"|-------------------------------|---------------------------------|\n"
-"| Labeled buttons           | `Sign in`                     | `` `Sign in` "
-"``                 |\n"
-"| Fields and UI elements    | **Name**                      | `**Name**`                      "
-"|\n"
-"| Locations/paths           | _Settings > Channels > Email_ | `_Settings > "
-"Channels > Email_` |\n"
-"| Keyboard shortcuts        | [[x]]                         | `[[x]]`                         "
-"|\n"
-"| Add button                | ::+::                         | `::+::`                         "
-"|\n"
-"| Delete button             | ::x::                         | `::x::`                         "
-"|\n"
-"| Action menu               | ::a::                         | `::a::`                         "
-"|\n"
-"| Copy to clipboard button  | ::c::                         | `::c::`                         "
-"|\n"
+"| Type                                      | Highlighting in documentation "
+"| Markdown syntax                     |\n"
+"|-------------------------------------------|-------------------------------|-------------------------------------|\n"
+"| Labeled buttons                           | `Sign in`                     "
+"| `` `Sign in` ``                     |\n"
+"| Fields, labeled UI elements, menu items   | **Name**                      "
+"| `**Name**`                          |\n"
+"| Breadcrumb paths / navigation chains      | _Settings > Channels > Email_ "
+"| `_Settings > Channels > Email_`     |\n"
+"| File and directory paths                  | `/opt/zammad`                 "
+"| `` `/opt/zammad` ``                 |\n"
+"| Placeholder values for configuration      | `<your-fqdn>`                 "
+"| `` `<your-fqdn>` ``                 |\n"
+"| Placeholder values for API requests       | `{ticket id}`                 "
+"| `` `{ticket id}` ``                 |\n"
+"| Commandline config values, ports, keys    | `9200`                        "
+"| `` `9200` ``                        |\n"
+"| Keyboard shortcuts                        | [[x]]                         "
+"| `[[x]]`                             |\n"
+"| Add button                                | ::+::                         "
+"| `::+::`                             |\n"
+"| Delete button                             | ::x::                         "
+"| `::x::`                             |\n"
+"| Action menu                               | ::a::                         "
+"| `::a::`                             |\n"
+"| Copy to clipboard button                  | ::c::                         "
+"| `::c::`                             |\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:143
+#: src/en/contribute/style-guide.md:147
 #, markdown-text, no-wrap
 msgid "Heading structure"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:147
+#: src/en/contribute/style-guide.md:151
 #, markdown-text
 msgid ""
 "Every documentation file must include exactly one title on top level (like "
@@ -1161,49 +1168,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:149
+#: src/en/contribute/style-guide.md:153
 #, markdown-text
 msgid "Example:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:151
+#: src/en/contribute/style-guide.md:155
 #, markdown-text
 msgid "`# Title of page`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:153
+#: src/en/contribute/style-guide.md:157
 #, markdown-text
 msgid "`## Section 1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:155
+#: src/en/contribute/style-guide.md:159
 #, markdown-text
 msgid "`### Section 1.1`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:157
+#: src/en/contribute/style-guide.md:161
 #, markdown-text
 msgid "`### Section 1.2`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:159
+#: src/en/contribute/style-guide.md:163
 #, markdown-text
 msgid "`## Section 2`"
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:160
+#: src/en/contribute/style-guide.md:164
 #, markdown-text, no-wrap
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:164
+#: src/en/contribute/style-guide.md:168
 #, markdown-text
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
@@ -1212,13 +1219,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:166 src/en/contribute/style-guide.md:265
+#: src/en/contribute/style-guide.md:170 src/en/contribute/style-guide.md:269
 #, markdown-text, no-wrap
 msgid "**Usage:**\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:167
+#: src/en/contribute/style-guide.md:171
 #, no-wrap
 msgid ""
 "\n"
@@ -1229,13 +1236,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:175
+#: src/en/contribute/style-guide.md:179
 #, markdown-text, no-wrap
 msgid "Custom boxes"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:177
+#: src/en/contribute/style-guide.md:181
 #, no-wrap
 msgid ""
 "This is an info box.\n"
@@ -1245,8 +1252,8 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:193
-#: src/en/contribute/style-guide.md:209 src/en/contribute/style-guide.md:225
+#: src/en/contribute/style-guide.md:181 src/en/contribute/style-guide.md:197
+#: src/en/contribute/style-guide.md:213 src/en/contribute/style-guide.md:229
 #, no-wrap
 msgid ""
 "\n"
@@ -1254,14 +1261,14 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info|details|info)
-#: src/en/contribute/style-guide.md:177
+#: src/en/contribute/style-guide.md:181
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr ""
 
 #. type: Fenced div block (danger|details)
-#: src/en/contribute/style-guide.md:177 src/en/contribute/style-guide.md:193
-#: src/en/contribute/style-guide.md:209 src/en/contribute/style-guide.md:225
+#: src/en/contribute/style-guide.md:181 src/en/contribute/style-guide.md:197
+#: src/en/contribute/style-guide.md:213 src/en/contribute/style-guide.md:229
 #, no-wrap
 msgid ""
 "```\n"
@@ -1269,7 +1276,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid ""
 "This is a tip.\n"
@@ -1279,13 +1286,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip|details|tip)
-#: src/en/contribute/style-guide.md:193
+#: src/en/contribute/style-guide.md:197
 #, no-wrap
 msgid "This is a tip box.\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:209
+#: src/en/contribute/style-guide.md:213
 #, no-wrap
 msgid ""
 "This is a warning.\n"
@@ -1295,13 +1302,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning|details|warning)
-#: src/en/contribute/style-guide.md:209
+#: src/en/contribute/style-guide.md:213
 #, no-wrap
 msgid "This is a warning box.\n"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:225
+#: src/en/contribute/style-guide.md:229
 #, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
@@ -1311,13 +1318,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger|details|warning)
-#: src/en/contribute/style-guide.md:225
+#: src/en/contribute/style-guide.md:229
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:241
+#: src/en/contribute/style-guide.md:245
 #, no-wrap
 msgid ""
 "This is a details block.\n"
@@ -1328,13 +1335,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|details)
-#: src/en/contribute/style-guide.md:241
+#: src/en/contribute/style-guide.md:245
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:241
+#: src/en/contribute/style-guide.md:245
 #, no-wrap
 msgid ""
 "\n"
@@ -1343,13 +1350,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:255
+#: src/en/contribute/style-guide.md:259
 #, markdown-text, no-wrap
 msgid "Definition lists"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:259
+#: src/en/contribute/style-guide.md:263
 #, markdown-text, no-wrap
 msgid ""
 "First term <Badge type=\"info\" text=\"tag1\" />\n"
@@ -1357,7 +1364,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:263
+#: src/en/contribute/style-guide.md:267
 #, markdown-text, no-wrap
 msgid ""
 "Second term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" "
@@ -1367,7 +1374,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:266
+#: src/en/contribute/style-guide.md:270
 #, no-wrap
 msgid ""
 "\n"
@@ -1380,26 +1387,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:276
+#: src/en/contribute/style-guide.md:280
 #, markdown-text, no-wrap
 msgid "Highlighting with boxes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:279
+#: src/en/contribute/style-guide.md:283
 #, markdown-text
 msgid "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:281 src/en/documentation/introduction.md:29
+#: src/en/contribute/style-guide.md:285 src/en/documentation/introduction.md:29
 #: src/en/documentation/use/start.md:40 src/en/get-started/get-zammad.md:32
 #, markdown-text, no-wrap
 msgid "<VPDocFeatures />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:283
+#: src/en/contribute/style-guide.md:287
 #, markdown-text
 msgid ""
 "The definition of the content is done via frontmatter, see following example "
@@ -1407,7 +1414,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (yml)
-#: src/en/contribute/style-guide.md:284
+#: src/en/contribute/style-guide.md:288
 #, no-wrap
 msgid ""
 "\n"
@@ -1433,7 +1440,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:309
+#: src/en/contribute/style-guide.md:313
 #, markdown-text, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference "
@@ -1442,13 +1449,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:310
+#: src/en/contribute/style-guide.md:314
 #, markdown-text, no-wrap
 msgid "Theme specific images"
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:314
+#: src/en/contribute/style-guide.md:318
 #, markdown-text
 msgid ""
 "To target specific image assets to a single theme, you can assign "
@@ -1456,7 +1463,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (md)
-#: src/en/contribute/style-guide.md:315
+#: src/en/contribute/style-guide.md:319
 #, no-wrap
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
@@ -1464,7 +1471,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:321
+#: src/en/contribute/style-guide.md:325
 #, markdown-text
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "

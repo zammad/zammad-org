@@ -166,16 +166,20 @@ Alcune regole importanti e personalizzate sono menzionate di seguito.
 
 #### Testo e interfaccia utente
 
-| Tipo                      | Evidenziazione nella documentazione | Sintassi Markdown               |
-|---------------------------|-------------------------------------|---------------------------------|
-| Pulsanti con etichetta    | `Accedi`                            | `` `Accedi` ``                  |
-| Campi ed elementi UI      | **Nome**                            | `**Nome**`                      |
-| Posizioni/percorsi        | _Impostazioni > Canali > Email_     | `_Impostazioni > Canali > Email_` |
-| Scorciatoie tastiera      | [[x]]                               | `[[x]]`                         |
-| Pulsante aggiungi         | ::+::                               | `::+::`                         |
-| Pulsante elimina          | ::x::                               | `::x::`                         |
-| Menu azioni               | ::a::                               | `::a::`                         |
-| Pulsante copia appunti    | ::c::                               | `::c::`                         |
+| Type                                      | Highlighting in documentation | Markdown syntax                     |
+|-------------------------------------------|-------------------------------|-------------------------------------|
+| Labeled buttons                           | `Sign in`                     | `` `Sign in` ``                     |
+| Fields, labeled UI elements, menu items   | **Name**                      | `**Name**`                          |
+| Breadcrumb paths / navigation chains      | _Settings > Channels > Email_ | `_Settings > Channels > Email_`     |
+| File and directory paths                  | `/opt/zammad`                 | `` `/opt/zammad` ``                 |
+| Placeholder values for configuration      | `<your-fqdn>`                 | `` `<your-fqdn>` ``                 |
+| Placeholder values for API requests       | `{ticket id}`                 | `` `{ticket id}` ``                 |
+| Commandline config values, ports, keys    | `9200`                        | `` `9200` ``                        |
+| Keyboard shortcuts                        | [[x]]                         | `[[x]]`                             |
+| Add button                                | ::+::                         | `::+::`                             |
+| Delete button                             | ::x::                         | `::x::`                             |
+| Action menu                               | ::a::                         | `::a::`                             |
+| Copy to clipboard button                  | ::c::                         | `::c::`                             |
 
 #### Heading structure
 

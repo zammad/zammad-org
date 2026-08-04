@@ -162,16 +162,20 @@ order: 2
 
 #### Текст и интерфејс
 
-| Тип                        | Истицање у документацији.     | Markdown синтакса               |
-|----------------------------|-------------------------------|---------------------------------|
-| Наслови дугмића            | `Пријава`                     | `` `Пријава` ``                 |
-| Поља и елементи интерфејса | **Назив**                     | `**Назив**`                     |
-| Локације/путање            | _Подешавања > Канали > Имејл_ | `_Подешавања > Канали > Имејл_` |
-| Пречице на тастатури       | [[x]]                         | `[[x]]`                         |
-| Дугме за додавање          | ::+::                         | `::+::`                         |
-| Дугме за брисање           | ::x::                         | `::x::`                         |
-| Дугме за мени радњи        | ::a::                         | `::a::`                         |
-| Дугме за копирање текста   | ::c::                         | `::c::`                         |
+| Type                                      | Highlighting in documentation | Markdown syntax                     |
+|-------------------------------------------|-------------------------------|-------------------------------------|
+| Labeled buttons                           | `Sign in`                     | `` `Sign in` ``                     |
+| Fields, labeled UI elements, menu items   | **Name**                      | `**Name**`                          |
+| Breadcrumb paths / navigation chains      | _Settings > Channels > Email_ | `_Settings > Channels > Email_`     |
+| File and directory paths                  | `/opt/zammad`                 | `` `/opt/zammad` ``                 |
+| Placeholder values for configuration      | `<your-fqdn>`                 | `` `<your-fqdn>` ``                 |
+| Placeholder values for API requests       | `{ticket id}`                 | `` `{ticket id}` ``                 |
+| Commandline config values, ports, keys    | `9200`                        | `` `9200` ``                        |
+| Keyboard shortcuts                        | [[x]]                         | `[[x]]`                             |
+| Add button                                | ::+::                         | `::+::`                             |
+| Delete button                             | ::x::                         | `::x::`                             |
+| Action menu                               | ::a::                         | `::a::`                             |
+| Copy to clipboard button                  | ::c::                         | `::c::`                             |
 
 #### Heading structure
 

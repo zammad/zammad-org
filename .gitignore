@@ -9,3 +9,6 @@ dist
 .screenshots/zammad-stack/zammad-docker-compose
 .screenshots/cypress/downloads
 src/public/screenshots/cypress
+
+# Local-only Vale config (lives outside the repo at $HOME/zammad-org-vale/).
+.local-vale
