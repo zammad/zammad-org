@@ -33,7 +33,8 @@ const sections = computed(() => {
       lastDefinition = definition
     } else if (node.type === 'dd') {
       if (!lastDefinition) return
-      lastDefinition.detailNodes = node.children
+      if (typeof node.children !== 'string') lastDefinition.detailNodes = node.children
+      else lastDefinition.detailText = node.children
     }
   })
 
@@ -74,9 +75,12 @@ const sections = computed(() => {
         </template>
         <dt v-else>{{ definition.term }}</dt>
         <dd>
-          <template v-for="detailNode in definition.detailNodes" :key="detailNode.uid">
+          <template v-if="definition.detailNodes" v-for="detailNode in definition.detailNodes" :key="detailNode.uid">
             <component :is="detailNode" />
           </template>
+          <p v-else-if="definition.detailText">
+            {{ definition.detailText }}
+          </p>
         </dd>
       </template>
     </dl>

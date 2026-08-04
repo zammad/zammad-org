@@ -4,7 +4,7 @@
     "@mdit/plugin-icon": "^1.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.0",
-    "markdown-it-deflist": "^3.0.0",
+    "markdown-it-deflist": "^4.0.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-kbd": "^3.0.0",
     "vitepress": "^1.6.3",
