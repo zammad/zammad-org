@@ -1,105 +1,105 @@
 ---
 order: 2
-title: 'Connect and configure Elasticsearch'
+title: 'Повежи и конфигуриши Elasticsearch'
 ---
 
-# Connect and configure Elasticsearch
+# Повежи и конфигуриши Elasticsearch
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-This guide shows you how to connect Zammad with Elasticsearch.
+Овај водич показује како да повежете Zammad са Elasticsearch-ом.
 
-## Connect Elasticsearch with Zammad
+## Први кораци са Zammad-ом
 
-### Set the Elasticsearch URL
+### Поставите Elasticsearch URL
 
-Set the Elasticsearch server address; adapt it to your scenario.
+Поставите адресу Elasticsearch сервера; прилагодите је вашем сценарију.
 
 ```sh
 zammad run rails r "Setting.set('es_url', 'https://localhost:9200')"
 ```
 
-### Set the Elasticsearch user and password
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
 ```sh
 zammad run rails r "Setting.set('es_user', 'elastic')"
 ```
 
-Replace `<password>` with the one you got during the installation of Elasticsearch. In case you need to create a new
-password, run `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+Замените `<password>` оном које сте добили током инсталације Elasticsearch-а. У случају да вам треба нова
+лозинка, покрените `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 
 ```sh
 zammad run rails r "Setting.set('es_password', '<password>')"
 ```
 
-### Add certificate to Zammad
+### Миграција на Zammad
 
-#### Add it via rails console
+#### Rails команде
 
-In case you are installing a new Zammad and didn't run through the getting
-started wizard already, add the certificate via console:
+У случају да инсталирате нови Zammad и нисте већ прошли кроз чаробњак за
+почетак, додајте сертификат преко конзоле:
 
 ```sh
 sudo cat /etc/elasticsearch/certs/http_ca.crt | zammad run rails r "SSLCertificate.create!(certificate: STDIN.read)"
 ```
 
-#### Add it via UI
+#### Додајте преко корисничког интерфејса
 
-In case you already have a running and configured Zammad, you can add the certificate in Zammad's admin settings
-(_Settings > Security > SSL Certificates_) as an alternative. To show and copy the auto-generated certificate from
-Elasticsearch, run:
+У случају да већ имате покренут и конфигурисан Zammad, сертификат можете додати у административним подешавањима Zammad-а
+(_Подешавања > Безбедност > SSL сертификати_) као алтернативу. Да бисте приказали и копирали аутоматски генерисани сертификат са
+Elasticsearch-а, покрените:
 
 ```sh
 sudo cat /etc/elasticsearch/certs/http_ca.crt
 ```
 
-To add it in Zammad, either upload the certificate file or paste the content
-in the dialog. Make sure to copy/paste the delimiters (e.g. `-----BEGIN
-CERTIFICATE-----`) too.
+Да бисте га додали у Zammad, отпремите фајл сертификата или налепите садржај
+у дијалогу. Уверите се да копирате/налепите и делимитере (нпр. `-----BEGIN
+CERTIFICATE-----`).
 
-### Build/rebuild the searchindex
+### Креирај/Обнови индекс претраге
 
-Without specifying CPU cores to use:
+Без навођења језгара процесора која ће се користити:
 
 ```sh
 zammad run rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Са навођењем језгара процесора која ће се користити (пример 8):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-## Optional settings
+## Опционална подешавања
 
-We collected some useful settings you may want to apply. For further
-information please have a look at [Elastic's
-documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
+Сакупили смо нека корисна подешавања која бисте могли желети да
+примените. За додатне информације погледајте [Elastic
+документацију](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html){target=_blank}.
 
-### Index namespacing
+### Именски простор индекса
 
-Useful when connecting multiple services or Zammad instances to a single
-Elasticsearch server (to prevent name collisions during indexing).
+Корисно приликом повезивања више сервиса или Zammad инстанци на један
+Elasticsearch сервер (да би се спречило сударање имена током индексирања).
 
 ```sh
 zammad run rails r "Setting.set('es_index', Socket.gethostname.downcase + '_zammad')"
 ```
 
-### File-attachment indexing rules
+### Правила индексирања фајл-прилога
 
-Zammad supports searching in file attachments, which means Elasticsearch has
-to index those, too. Limiting such indexing can help preserve system
-resources.
+Zammad подржава претрагу у фајл-прилогима, што значи да их Elasticsearch
+такође мора индексирати. Ограничавање таквог индексирања може помоћи да се
+сачувају системски ресурси.
 
-Files with these extensions will not be indexed:
+Фајлови са овим екстензијама неће бити индексирани:
 
 ```sh
 zammad run rails r "Setting.set('es_attachment_ignore',\
 [ '.png', '.jpg', '.jpeg', '.mpeg', '.mpg', '.mov', '.bin', '.exe', '.box', '.mbox' ] )"
 ```
 
-Files larger than this size (in MB) will not be indexed:
+Фајлови већи од ове величине (у MB) неће бити индексирани:
 
 ```sh
 zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
@@ -107,104 +107,106 @@ zammad run rails r "Setting.set('es_attachment_max_size_in_mb', 50)"
 
 ### Asciifold
 
-By default, the [Asciifold feature of
-Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
-is enabled. This can be useful if you deal with text which includes
-diacritics and/or umlauts.
+Подразумевано, [функција Asciifold у
+Elasticsearch-у](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
+је укључена. Ово може бити корисно ако радите са текстом који садржи
+дијакитике и/или умлаутове.
 
-In case you need a more exact search, you can turn it off via [Rails
-console](/en/reference/rails-commands#disable-asciifold).
+Ако вам треба прецизније претраживање, можете је искључити путем [Rails
+конзоле](/en/reference/rails-commands#disable-asciifold).
 
 ## Решавање проблема
 
 ::: tip
-Troubleshooting unsuccessful or issue not described?
+Неуспешно решавање проблема или неразматрани случај?
 
-If you can't solve your issue using the provided troubleshooting steps
-or can't find your particular issue described here, feel free to
-[ask the community](https://community.zammad.org){target=_blank} for technical
-assistance.
+Ако не можете да решите свој проблем користећи наведене кораке за отклањање грешака
+или не пронађете опис свог специфичног случаја овде, слободно се
+[јавите заједници](https://community.zammad.org){target=_blank} ради техничке
+помоћи.
 :::
 
-### Data missing from the web-UI / search data missing or incomplete
+### Недостајући подаци у Web интерфејсу / Претраживање: Подаци недостају или су непотпуни
 
-A commonly reported issue is data missing from the Web-UI. This could be
-tickets, articles, users or anything else [indexed by
-Elasticsearch](/en/reference/es-indexed-attributes)  and can be caused by
-missing or incomplete indexes.
+Чест проблем је недостатак података у Web интерфејсу. То могу бити тикети,
+чланци, корисници или било шта друго [индексирано од стране
+Elasticsearch-а](/en/reference/es-indexed-attributes), а може бити
+узроковано недостатком или непотпуношћу индекса.
 
-If you are experiencing this issue and installed Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch), please follow
-these steps to make sure Elasticsearch is working correctly.
+Ако се суочавате са овим проблемом и инсталирали сте Elasticsearch према
+нашем [водичу за инсталацију](/en/tutorials/install-elasticsearch), молимо
+вас да пратите ове кораке како бисте се уверили да Elasticsearch ради
+исправно.
 
-#### Step 1: Verify Elasticsearch is running
+#### Корак 1: Проверите да ли је Elasticsearch укључен (у раду)
 
 ```sh
-sudo systemctl status elasticsearch
+systemctl статус elasticsearch
 ```
 
-This should output something like the following, make sure it says `Active:
-active (running)`:
+Ово би требало да испише нешто слично доњем примеру, проверите да ли пише
+`Active: active (running)`:
 
 ```sh
 ● elasticsearch.service - Elasticsearch
-   Loaded: loaded (/lib/systemd/system/elasticsearch.service; enabled; vendor preset: enabled)
-   Active: active (running) since Tue 2021-07-20 09:38:21 UTC; 1h 4min ago
-   Docs: https://www.elastic.co
-   Main PID: 1790 (java)
+   Учитано: учитано (/lib/systemd/system/elasticsearch.service; омогућено; подразумевано произвођача: омогућено)
+   Активно: активно (покренуто) од уторак 2021-07-20 09:38:21 UTC; пре 1h 4min
+   Документација: https://www.elastic.co
+   Главни PID: 1790 (јава)
 ```
 
-Otherwise, try restarting it and check again:
+У супротном, покушајте да га рестартујете и проверите поново:
 
 ```sh
-sudo systemctl restart elasticsearch
+systemctl рестарт elasticsearch
 ```
 
 ::: warning
-If this fails, your Elasticsearch installation is probably broken.
-Try completely purging and reinstalling Elasticsearch according to
-our [installation guide](/en/tutorials/install-elasticsearch).
+Ако ово не успе, вероватно је ваш Elasticsearch инсталација оштећена.
+Покушајте да потпуно уклоните и поново инсталирате Elasticsearch према
+нашем [водичу за инсталацију](/en/tutorials/install-elasticsearch).
 :::
 
-#### Step 2: Verify Zammad can access Elasticsearch and rebuild the indexes
+#### Корак 2: Проверите да ли Zammad може приступити Elasticsearch-у и поново изградити индексе
 
-Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with
-a specified number of CPU cores to use for re-indexing (example `[8]`):
+Присилно натерајте Zammad да избрише и поново изгради Elasticsearch индексе,
+опционо са одређеним бројем CPU језгара за поновно индексирање (пример
+`[8]`):
 
 ```sh
 zammad run rake zammad:searchindex:rebuild[8]
 ```
 
-This should start rebuilding the indexes and output its progress:
+Ово би требало да покрене поновну градњу индекса и испише њихов напредак:
 
 ```sh
-Dropping indexes... done.
-Deleting pipeline... done.
-Creating indexes... done.
-Creating pipeline... done.
-Reloading data...
+Брисање индекса... готово.
+Брисање пипелине-а... готово.
+Креирање индекса... готово.
+Креирање пипелине-а... готово.
+Поновно учитавање података...
    - Chat::Session...
-      done in 0 seconds.
+      готово за 0 секунди.
    - Cti::Log...
-      done in 0 seconds.
+      готово за 0 секунди.
 
 [...]
 ```
 
-Depending on the system performance and amount of data, this can take a
-while to complete. Please let this task finish completely and wait until it
-drops you back to the console.
+У зависности од перформанси система и количине података, ово може
+потрајати. Молимо вас да дозволите овом задатку да се комплетно заврши и
+сачекате док се не вратите на конзолу.
 
-If this fails or throws an error, there might be something else wrong with
-your installation. Make sure you followed the complete Elasticsearch set up
-and integration procedure according to our [installation
-guide](/en/tutorials/install-elasticsearch).
+Ако ово не успе или избаци грешку, нешто друго је вероватно лоше подешено у
+вашој инсталацији. Уверите се да сте пратили комплетну процедуру подешавања
+и интеграције Elasticsearch-а према нашем [водичу за
+инсталацију](/en/tutorials/install-elasticsearch).
 
 ::: tip
-In many situations where you're not successful with above steps, you
-may want to check Elasticsearch's log file:
+У многим ситуацијама када не успете са горе наведеним корацима,
+могли бисте да проверите Elasticsearch дневник (лог):
 `/var/log/elasticsearch/elasticsearch.log`.
 :::
 
-After completing these steps, you should have verified your Elasticsearch
-installation is running and rebuilt the indexes.
+Након завршетка ових корака, требало би да сте потврдили да вам је
+Elasticsearch инсталиран и покренут, као и да су индекси поново изграђени.

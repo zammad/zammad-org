@@ -1,9 +1,9 @@
 ---
 order: 2
-title: 'Ticket basics'
+title: Ticket-Grundlagen
 ---
 
-# Ticket basics
+# Ticket-Grundlagen
 
 Neu bei Ticket-Systemen? Dann lesen Sie weiter über die Grundlagen. Dies
 hilft Ihnen, die wichtigsten Konzepte zu verstehen und mit Zammad
@@ -41,7 +41,7 @@ Das bedeutet, dass Sie mit Zammad auf ähnliche Weise arbeiten können wie mit
 Ihrem E-Mail Client. Mit dem Unterschied, dass ein Ticket zusätzliche
 Attribute hat. Lesen Sie weiter, um mehr zu erfahren.
 
-## Ticket attributes
+## Ticket Attribute
 
 Zusätzlich zu den Artikeln verfügen Tickets über einige zusätzliche
 Metainformationen, die als Attribute bezeichnet werden. Verwenden Sie die

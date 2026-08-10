@@ -51,7 +51,7 @@ permissões adequadamente.
 Certifique-se de copiá-lo antes de fechar a caixa de diálogo, pois você não
 pode visualizá-lo novamente. Caso algo dê errado, basta criar um novo token.
 
-### Prepare your client
+### Prepare seu cliente
 
 Abra seu cliente de API e configure-o.
 
@@ -67,7 +67,7 @@ a variável de ambiente `ZAMMAD_GRAPHQL_INTROSPECTION` como `true`. Fazer isso a
 **não é recomendado**.
 :::
 
-### Create a request
+### Criar uma solicitação
 
 Todas as solicitações e respostas estão em formato JSON. Isso significa que
 todas as informações devem ser encapsuladas em chaves e ter uma estrutura
@@ -165,7 +165,7 @@ de defini-la ao usar os exemplos.
 
 ## Apêndice
 
-### Global ids
+### IDs globais
 
 ::: info
 

@@ -1,24 +1,24 @@
 ---
 order: 6
-title: 'Configure database server'
+title: 'Сервис базе података'
 ---
 
-# Configure database server
+# Сервис базе података
 
-This page should only enlighten the relevant parts for Zammad and is not
-meant to be a complete guide. It is only relevant for you if you are running
-an existing PostgreSQL server and want to run Zammad's database there as
-well.
+Ова страна треба само да појасни делове релевантне за Zammad и није намењена
+као комплетан приручник. Релевантна је само ако већ покрећете PostgreSQL
+сервер и желите да на њему поставите и Zammad базу података.
 
 ::: warning
-If you use database connection pooling software like PgBouncer, make sure to use a pooling mode that is fully
-compatible with PostgreSQL. Typically this is called "session connection pooling". Transaction-based connection pooling
-is not supported and may lead to errors during database migrations.
+Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу
+да користите начин организације који је потпуно подржан у оквиру PostgreSQL. Обично је под
+називом „session connection pooling”. Начин организација на основу трансакција није
+подржан и може довести до грешака приликом миграције базе података.
 :::
 
-Below you can the locations of the relevant PostgreSQL configuration files
-to adjust. Keep in mind that versions may differ from your setup - adapt
-where needed.
+У наставку се налазе локације релевантних PostgreSQL конфигурацијских
+фајлова које треба подесити. Имајте на уму да се верзије могу разликовати од
+вашег окружења - прилагодите где је потребно.
 
 ::: tabs
 
@@ -34,9 +34,9 @@ where needed.
 /var/lib/pgsql/data/postgresql.conf
 ```
 
-=== Others
+=== Остали
 
-Can't find your configuration files? You can run the following command to get the path:
+Не можете пронаћи своје конфигурацијске фајлове? Покрените следећу команду за добијање путање:
 
 ``` sh
 sudo -u postgres psql -c 'SHOW config_file'
@@ -44,76 +44,76 @@ sudo -u postgres psql -c 'SHOW config_file'
 
 :::
 
-## Adjust pool size
+## Прилагодите величину поол-а
 
-Within `database.yml` (`config/` directory) you can define the allowed pool
-size. By default each Zammad process takes up to `50` connections (`pool:
-50`).
+У оквиру `database.yml` (директоријум `config/`) можете дефинисати дозвољену
+величину поол-а. Подразумевано, сваки Zammad процес заузима до `50` веза
+(`pool: 50`).
 
-This should be fairly enough for _every_ use case. If you experience
-database connection timeouts or similar pool errors, this usually indicates
-to other issues that are relevant to your PostgreSQL.
+Ово би требало да буде сасвим довољно за _сваки_ случај употребе. Ако
+доживљавате тиме-оутове везе са базом података или сличне грешке поол-а, то
+обично указује на друге проблеме релевантне за ваш PostgreSQL.
 
-## Adjust `max_connections` (mandatory)
+## Прилагодите `max_connections` (обавезно)
 
-Zammad uses up to 200 connections by default. Depending on your setup and
-load, you may want to change this value.
+Zammad подразумевано користи до 200 веза. У зависности од вашег окружења и
+оптерећења, можда ће бити потребно променити ову вредност.
 
-### Determine value
+### Одредите вредност
 
-To help you determine a number, Zammad ships a function to calculate a
-suggestion. If executed, it asks you to input some integer values and
-additionally uses internally known values for the calculation. Be aware that
-the suggestion is instance specific. That means you must run the calculation
-on the system you want to adjust the `max_connection` value.
+Да би вам помогао да одредите број, Zammad долази са функцијом за
+израчунавање предлога. Након покретања, тражи унос одређених целобројних
+вредности и додатно користи интерно познате вредности за прорачун. Имајте на
+уму да је предлог специфичан за инстанцу. To значи да морате покренути
+прорачун на систему где желите да подесите `max_connection` вредност.
 
-Run it by using the command:
+Покрените га користећи команду:
 
 ``` sh
 rake zammad:db:max_connections
 ```
 
-### Adjust value
+### Прилагодите вредност
 
-Raise maximum allowed number of connections:
+Повећајте максимални дозвољени број веза:
 
 ``` sh
-sed -i "/max_connections/c\max_connections = 2000" <postgresql-configuration-file>
+сед -и "/max_connections/c\\max_connections = 2000" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Примените промене рестартовањем PostgreSQL и Zammad-а (у овом редоследу):
 
 ```sh
-sudo systemctl restart postgresql zammad
+systemctl рестарт postgresql заммад
 ```
 
-## Adjust PostgreSQL for bigger instances (optional)
+## Прилагодите PostgreSQL за веће инстанце (опционо)
 
 ::: warning
-Check below settings first and ensure your system is able to provide the requirements! Below settings are what we found
-to be useful, everything else is out of scope of this documentation!
+Проверите прво подешавања у наставку и обезбедите да ваш систем може да испуни захтеве! Подешавања у наставку су она која смо
+пронали корисним, све остало је ван оквира ове документације!
 :::
 
-Some caching improvements:
+Нека побољшања кеширања:
 
 ``` sh
-sed -i "/shared_buffers/c\shared_buffers = 2GB" <postgresql-configuration-file>
+сед -и "/shared_buffers/c\\схаред_буфферс = 2GB" <postgresql-configuration-file>
 ```
 
 ```sh
-sed -i "/temp_buffers/c\temp_buffers = 256MB" <postgresql-configuration-file>
+сед -и "/temp_buffers/c\\темп_буфферс = 256MB" <postgresql-configuration-file>
 ```
 
 ```sh
-sed -i "/work_mem/c\work_mem = 10MB" <postgresql-configuration-file>
+сед -и "/work_mem/c\\work_mem = 10MB" <postgresql-configuration-file>
 ```
 
 ```sh
-sed -i "/max_stack_depth/c\max_stack_depth = 5MB" <postgresql-configuration-file>
+сед -и "/max_stack_depth/c\\max_stack_depth = 5MB" <postgresql-configuration-file>
 ```
 
-Apply changes by restarting PostgreSQL and Zammad (in this order):
+Примените промене рестартовањем PostgreSQL и Zammad-а (у овом редоследу):
 
 ```sh
-sudo systemctl restart postgresql zammad
+systemctl рестарт postgresql заммад
 ```

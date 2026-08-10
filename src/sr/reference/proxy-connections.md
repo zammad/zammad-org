@@ -1,64 +1,66 @@
 ---
 order: 10
-title: 'Proxy and connections'
+title: 'Proxy и конекције'
 ---
 
-# Proxy and connections
+# Proxy и конекције
 
 ## Proxy
 
-This section covers the proxy configuration via environment variables. As an
-alternative, the proxy configuration is also possible via Zammad UI. You can
-find more information about that in the network section of the admin
-documentation.
+Овај одељак обухвата конфигурацију proxy-ja путем променљивих окружења. Као
+алтернативу, конфигурација proxy-ja могућа је и преко Zammad
+интерфејса. Више информација можете пронаћи у мрежном одељку админс
+документације.
 
-|                                             | GUI configuration | Environment variable       |
-|---------------------------------------------|-------------------|----------------------------|
-| Host OS access required                     | No                | Yes                        |
-| Automatically excluded loopback addresses   | Yes               | No                         |
-| Configuration check                         | Yes               | Manually via test script   |
-| Exceptions                                  | Yes               | No                         |
+| Тип                  | Истицање у документацији      | Markdown синтакса               |
+|----------------------|-------------------------------|---------------------------------|
+| Означени дугмићи     | `Пријава`                     | \`Пријава\`                     |
+| Поља и елементи      | **Назив**                     | \*\*Назив\*\*                   |
+| Путања/локације      | _Подешавања > Канали > Имејл_ | \_Подешавања > Канали > Имејл\_ |
+| Пречице на тастатури | [[x]]                         | \[\[x\]\]                       |
+| Дугме за додавање    | ::+::                         | \:\:\+\:\:                      |
+| Дугме за брисање     | ::x::                         | \:\:\x\:\:                      |
+| Дугме за мени радњи  | ::a::                         | \:\:\a\:\:                      |
 
-The following environment variables can be used to configure proxy
-settings. Adjust the values according to your environment.
+За конфигурацију поставки proxy-ja могу се користити следеће променљиве
+окружења. Прилагодите вредности у складу са вашим окружењем.
 
 `HTTP_PROXY`
-: Variable for HTTP traffic. Set it to the address of your proxy server, including the port. Does not work in Docker
-  context. Example:
+: Променљива за HTTP промет. Поставите је на адресу вашег proxy сервера, укључујући и порт. Не ради у
+  Docker контексту. Пример:
 
   ```sh
   export HTTP_PROXY="http://127.0.0.1:8080"
   ```
 
 `HTTPS_PROXY`
-: Variable for HTTPS traffic. Set it to the address of your proxy server, including the port. Does not work in Docker
-  context. Example:
+: Променљива за HTTPS промет. Поставите је на адресу вашег proxy сервера, укључујући и порт. Не ради у
+  Docker контексту. Пример:
 
   ```sh
   export HTTPS_PROXY="http://127.0.0.1:8080"
   ```
 
 `NO_PROXY`
-: Variable for addresses that should be accessed directly and without proxy. Expects a comma separated list of addresses
-  and supports wildcards. Use a leading `.` as wildcard for subdomains, e.g. `.example.com` would match
-  example.com and all of its subdomains. Make sure to include loopback addresses to exclude them from being routed via
-  proxy. Example:
+: Променљива за адресе које треба приступити директно и без proxy-ja. Очекује листу адреса раздвојених зарезима
+  и подржава заменске знакове. Користите водећи `.` као заменски знак за субдомене, нпр. `.example.com` ће се поклопити са
+  example.com и свим његовим поддомаинима. Обавезно укључите лоопбацк адресе како бисте их искључили из рутирања преко
+  proxy-ja. Пример:
 
   ```sh
   export NO_PROXY="localhost,127.0.0.1,.example.com"
   ```
 
 `ES_JAVA_OPTS`
-: Variable for setting a proxy for Elasticsearch. By default, Elasticsearch does not communicate to external systems
-  during the operation. However, there can be cases where this is needed. Example:
+: Променљива за подешавање proxy-ja за Elasticsearch. Подразумевано, Elasticsearch не комуницира са спољним системима
+  током операције. Међутим, постоје случајеви када је ово потребно. Пример:"
 
   ```sh
   export ES_JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8080"
   ```
 
 ::: tip
-Depending on your environment, you might want to use the lower case variants of the variables as well. If in doubt, set
-both variants by additionally specifying them with the values of the upper case variants, for example:
+У зависности од окружења, можда ћете желети да користите и варијанте променљивих малим словима. Ако нисте сигурни, поставите обе варијанте наводећи им вредности оних великим словима, на пример:
 
 ```sh
 export http_proxy=$HTTP_PROXY
@@ -66,35 +68,36 @@ export http_proxy=$HTTP_PROXY
 
 :::
 
-## External connections
+## Удаљени сервиси
 
-During installation and operation of Zammad, some connections to online
-services are required. Depending on your installation method and Zammad
-configuration, a connection to the following services is made (maybe also
-helpful for firewall configuration):
+Током инсталације и рада система Zammad, потребне су одређене конекције ка
+онлине сервисима. У зависности од методе инсталације и конфигурације
+Zammad-а, успоставља се веза са следећим сервисима (што може бити корисно и
+за конфигурацију firewall-a):
 
-| Address                      | Comment                                               |
-|------------------------------|-------------------------------------------------------|
-| dl.packager.io               | Download of OS package (package installation)         |
-| go.packager.io               | As above; new package hosting service                 |
-| geo.zammad.com               | Used for geo data                                     |
-| google.com                   | Download of feast days for the calendar               |
-| index.rubygems.org           | Download of gems for ruby                             |
-| registry.npmjs.org           | Download of js dependencies                           |
+| Тип                  | Истицање у документацији      | Markdown синтакса               |
+|----------------------|-------------------------------|---------------------------------|
+| Означени дугмићи     | `Пријава`                     | \`Пријава\`                     |
+| Поља и елементи      | **Назив**                     | \*\*Назив\*\*                   |
+| Путања/локације      | _Подешавања > Канали > Имејл_ | \_Подешавања > Канали > Имејл\_ |
+| Пречице на тастатури | [[x]]                         | \[\[x\]\]                       |
+| Дугме за додавање    | ::+::                         | \:\:\+\:\:                      |
+| Дугме за брисање     | ::x::                         | \:\:\x\:\:                      |
+| Дугме за мени радњи  | ::a::                         | \:\:\a\:\:                      |
 
-You can use a script to check the connection state of your system. It tries
-to connect to the services mentioned above and shows the result. If every
-connection was successful, it displays a checkmark for each contacted
-service. Run it either by fetching it from the Zammad repository or by
-executing the local version on your Zammad machine.
+Можете користити скрипту за проверу стања мрежних конекција вашег
+система. Она покушава да се повеже са горе наведеним сервисима и приказује
+резултат. Ако су све конекције успешне, приказиваће квачицу за сваки
+контактирани сервис. Покрените је тако што ћете је преузети из Zammad
+repo-зиторијума или извршити локалну верзију на вашем Zammad серверу.
 
-**Fetch script from remote:**
+**Преузмите скрипту са удаљеног repo-зиторијума:**
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/zammad/zammad/refs/heads/stable/contrib/packager.io/test_download_dependencies_connection.sh | sh
+https://github.com/zammad/zammad-org/issues
 ```
 
-**Use local script:**
+**Користите локалну скрипту:**
 
 ```sh
 /opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh

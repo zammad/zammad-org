@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Work with tickets'
+title: 'Arbeiten an Tickets'
 ---
 
-# Work with tickets
+# Arbeiten an Tickets
 
 Sie haben den Weg zu einem existierenden Ticket gefunden, herzlichen
 Glückwunsch! Schauen wir uns nun an, was Sie alles tun können.
@@ -26,14 +26,14 @@ explizite Aktualisierung des Tickets erforderlich. Klicken Sie dazu auf die
 Schaltfläche `Aktualisieren` auf der rechten Seite der Fußleiste, wenn Sie
 mit Ihren Änderungen zufrieden sind.
 
-## Changing ticket attributes
+## Ticket-Attribute ändern
 
 Wie Sie vielleicht wissen, gibt es zusätzliche Ticket-Attribute wie Gruppe,
 Priorität und Besitzer, die Sie einstellen können. Schauen Sie sich dazu die
 [Ticket-Grundlagen](/de/documentation/use/basics/ticket-basics) an, sofern
 Sie diese noch nicht gelesen haben.
 
-## Create a new article
+## Einen neuen Artikel erstellen
 
 Egal, ob Sie einen komplett neuen Artikel erstellen oder auf einen
 Kundenartikel antworten, Sie können aus verschiedenen Artikeltypen wählen:
@@ -48,11 +48,11 @@ Kundenartikel antworten, Sie können aus verschiedenen Artikeltypen wählen:
 - **E-Mail**: Senden Sie eine E-Mail an eine beliebige Person zu diesem
   Ticket. Der Titel des Tickets wird als Betreff der E-Mail verwendet.
 
-To choose another article type, use the channel tabs (labeled **Note**,
-**Phone**, **Email** etc.) and pick a different type. Use the **Visibility**
-switch to toggle the article between internal and public visibility.
-Articles with internal visibility are highlighted with a dashed blue border;
-public articles have no highlighting.
+Um einen anderen Artikeltyp auszuwählen, verwenden Sie die Kanal-Tabs (mit
+der Bezeichnung **Notiz**, **Telefon**, **E-Mail** usw.) und wählen Sie
+einen anderen Typ aus. Klicken Sie auf das Schloss-Symbol, um die
+Sichtbarkeit des Artikels zu ändern. Artikel mit interner Sichtbarkeit
+werden mit einem gestrichelten blauen Rahmen angezeigt.
 
 ![Der Screenshot zeigt die Auswahl für den Artikeltyp und den Schalter für
 die
@@ -76,20 +76,21 @@ haben und die nicht älter als 10 Minuten sind. Um die Funktion **Artikel
 löschen** für Kommunikations-Artikel (E-Mails, Anrufe) im ::a:: Menü zu
 sehen, müssen Sie deren Sichtbarkeit zunächst auf "intern" umstellen.
 
-### Add an article from scratch
+### Leeren Artikel hinzufügen
 
-Below the last article, click the `Add internal note` button (or `Add reply`
-if you are a customer). This opens the editor with the appropriate channel
-and visibility selected. You can change the type or visibility if you
-like. To answer the customer directly or to forward a specific article, use
-the corresponding buttons under an article. Read the next section for more
-information.
+Klicken Sie unterhalb des letzten Artikels auf die Schaltfläche `Interne
+Notiz hinzufügen` (oder auf `Antwort hinzufügen`, falls Sie Kunde
+sind). Dadurch wird der Editor geöffnet, wobei der entsprechende Kanal und
+die Sichtbarkeit bereits ausgewählt sind. Sie können den Typ oder die
+Sichtbarkeit bei Bedarf ändern. Um dem Kunden direkt zu antworten oder einen
+bestimmten Artikel weiterzuleiten, verwenden Sie die entsprechenden
+Schaltflächen unter einem Artikel. Weitere Informationen finden Sie im
+nächsten Abschnitt.
 
-![Screenshot shows the action row under the last article in the ticket
-detail
-view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot zeigt die Aktionsleiste unter dem letzten Artikel in der
+Ticket-Detailansicht](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Respond to an article
+### Auf einen Artikel antworten
 
 Um einen Artikel weiterzuleiten oder zu beantworten, verwenden Sie eine der
 Antwort-Schaltflächen unter dem Artikel oder im ::a:: Menü. Das Verhalten
@@ -130,7 +131,7 @@ Wenn das Ticket eine lange Artikelhistorie hat, lesen Sie in [Bearbeitung
 großer Tickets](#bearbeitung-großer-tickets) weiter, um mehr über die von
 Zammad bereitgestellten Komfortfunktionen zu erfahren.
 
-### Handling of large tickets
+### Bearbeitung großer Tickets
 
 Bei der Bearbeitung von Tickets mit umfangreicher Artikelhistorie – wie
 beispielsweise bei langen E-Mail-Verläufen, bei denen Sie auf frühere
@@ -140,8 +141,8 @@ Nachrichten zurückgreifen müssen – bietet Zammad zwei praktische Funktionen:
   Artikelliste zeigt je nach Scrollposition und dem Status des Tickets
   Schnellaktionen an. Sie enthält Schaltflächen mit Symbolen für die
   folgenden Aktionen:
-  - **Add internal note** (or **Add reply** if you are a customer): opens
-    the article reply form to write a note.
+  - **Interne Notiz hinzufügen** (oder **Antwort hinzufügen**, falls Sie
+    Kunde sind): öffnet das Antwortformular, um eine Notiz zu verfassen.
   - **Zum Start scrollen** und **Zum Ende scrollen**: Springen Sie zum
     Anfang oder zum Ende der Artikel-Liste. Falls ungelesene Artikel
     vorhanden sind, zeigt die **Zum Ende scrollen**-Schaltfläche einen
@@ -162,7 +163,7 @@ Nachrichten zurückgreifen müssen – bietet Zammad zwei praktische Funktionen:
 der Ticket-Detailansicht angeheftet
 ist](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
-## Rename a ticket
+## Ein Ticket umbenennen
 
 Um ein Ticket umzubenennen, klicken Sie einfach auf den Titel in der
 Kopfleiste und beginnen Sie zu tippen. Dieser Titel wird in der
@@ -170,7 +171,7 @@ E-Mail-Kommunikation als Betreff verwendet und erscheint an verschiedenen
 Stellen, z.B. in Übersichten. Bestätigen Sie mit [[enter]] oder klicken Sie
 auf die Schaltfläche auf der rechten Seite.
 
-## Copy ticket number
+## Ticket-Nummer kopieren
 
 Um die Ticketnummer einschließlich eines Links zum Ticket zu kopieren
 (z.B. um sie in eine Chat-App einzufügen), verwenden Sie das Symbol ::c::
@@ -190,7 +191,7 @@ Zwischenablage kopiert. Um auch den Titel des Tickets zu übernehmen, drücken
 Sie zweimal [[.]].  Beispiel: `Ticket#31004: Einarbeitung eines neuen
 Kollegen`.
 
-## Simultaneous ticket processing
+## Gleichzeitige Ticketbearbeitung
 
 Es kann vorkommen, dass zwei oder mehr Agenten ein Ticket gleichzeitig
 öffnen. Um Bearbeitungskonflikte zu vermeiden und zu verhindern, dass Kunden
@@ -216,7 +217,7 @@ darstellen (z.B. Ticketanzeige über die mobile Benutzeroberfläche oder
 Benutzer außer Haus). Fahren Sie einfach mit der Maus darüber, wenn Sie sich
 nicht sicher sind, was es bedeutet.
 
-## Ticket actions
+## Ticket-Aktionen
 
 Weitere Aktionen sind über das ::a:: Menü in der Seitenleiste des Tickets
 verfügbar.
@@ -229,7 +230,7 @@ Zusammenfassen
 : Übertragen Sie alle Nachrichten/Notizen in ein anderes Ticket. Nützlich, wenn Sie mehr als ein Ticket zu einem einzelnen Kundenproblem haben.
   Siehe [Tickets zusammenfassen](/de/documentation/use/advanced-features#tickets-zusammenfassen) für weitere Informationen.
 
-Change customer : Reassign the ticket to another customer.
+Kunden ändern: Weisen Sie das Ticket einem anderen Kunden zu.
 
 -----
 

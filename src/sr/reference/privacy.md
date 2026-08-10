@@ -1,123 +1,122 @@
 ---
 order: 99
-title: 'Data retention and external services'
+title: 'Чување података и спољни сервиси'
 ---
 
-# Data retention and external services
+# Чување података и спољни сервиси
 
-How long does Zammad store user data? How can I manage its user data
-retention behavior? To which services connects Zammad?
+Колико дуго Zammad чува корисничке податке? Како могу управљати понашањем
+задржавања корисничких података? Којим сервисима се повезује Zammad?
 
 ## Чување података
 
-The following data is stored locally on the production system:
+Следећи подаци су чувани локално на продукцијском систему:
 
-### Tickets and users
+### Rails команде
 
-By default, Zammad never automatically deletes tickets or users.
+Подразумевано, Zammad никада аутоматски не брише тикете или кориснике.
 
-To enable **automatic** deletion of tickets after a given interval,
-use Zammad's scheduler. You can configure it in Zammad's admin interface under
-_Manage > Scheduler_.
+Да бисте омогућили **аутоматско** брисање тикета након одређеног интервала,
+користите Zammad-ов сцхедулер. Можете га конфигурисати у админсинтерфејсу Zammad-а под
+_Управљај > Scheduler_.
 
-To **manually** delete users and all their associated tickets (e.g. in
-compliance with a "Right to Forget" request under the GDPR), you can use
-the data privacy functions in the admin panel under _System > Data Privacy_
-or [use the console](/en/reference/rails-commands#deleting-records).
+Да бисте **ручно** обрисали кориснике и све њихове повезане тикете (нпр. у
+складу са захтевом за 'Право на заборав' према GDPR), можете користити
+функције заштите података у админсинтерфејсу под _Систем > Заштита података_
+и [користити конзолу](/en/reference/rails-commands#deleting-records).
 
-### Chat sessions
+### Rails команде
 
-Once a chat session has been marked **closed**, it is scheduled for
-automatic deletion 12 months later. IP address logs for chat sessions can be
-deleted manually by following the [steps from the rails console
-page](/en/reference/rails-commands#remove-ip-address-logs).
+Када се сесија чата означи као **затворена**, планира се аутоматско брисање
+након 12 месеци. Записи IP адреса за сесије чата могу се обрисати ручно
+праћењем [корака са странице раилс
+конзоле](/en/reference/rails-commands#remove-ip-address-logs).
 
-### CTI caller log
+### CTI запис позиваоца
 
-The caller log shows only the 60 most recent entries. Each entry in the
-caller log is automatically deleted after 12 months.
+Запис позиваоца приказује само 60 најновијих уноса. Сваки унос у запису
+позиваоца аутоматски се брише након 12 месеци.
 
-### Log files
+### Фајлови дневника
 
-Zammad writes log files to disk (typically under `/opt/zammad/log/`).
+Zammad пише фајлове дневника на диск (типично испод `/opt/zammad/log/`).
 
-Package installations will set up a separate system utility called
-`logrotate` to rename and archive (or _rotate_) log files on a nightly basis
-and remove old logs after 14 days.
+Инсталације пакета ће поставити посебни системски алат под називом
+`logrotate` за преименовање и архивирање (или _ротацију_) фајлова дневника
+на ноћној бази и уклањање старих дневника након 14 дана.
 
-If installing from source, it is strongly recommended to configure
-`logrotate` or a similar log management utility; Zammad will not purge old
-logs on its own.
+При инсталацији из изворног кода, снажно се препоручује конфигурисање
+`logrotate` или сличног алата за управљање дневником; Zammad неће сам
+уклањати старе дневнике.
 
-### User sessions
+### Rails команде
 
-Zammad maintains session information about every user currently logged in.
+Zammad чува информације о сесији за сваког тренутно пријављеног корисника.
 
-This information is automatically purged when a user logs out, and can
-be viewed or manually deleted via the admin panel (under _System >
-Sessions_). Users may also delete their own session information via the
-user preferences menu, under _Devices_.
+Ове информације се аутоматски бришу при одјављивању корисника и могу се
+погледати или ручно обрисати преко админсинтерфејса (под _Систем >
+Сесије_). Корисници такође могу обрисати сопствене информације о сесији кроз
+менију поставки корисника, под _Уређаји_.
 
-Session information includes IP address (and possibly geographic location),
-browser, time of original login, and time of last visit.
+Информације о сесији укључују IP адресу (и могуће географску локацију),
+прегледач, време првог пријављивања и време последњег посете.
 
-### Data privacy tasks
+### Задаци заштите података
 
-Each entry in the data privacy task list is automatically deleted after 12
-months.
+Сваки унос у листи задатака заштите података аутоматски се брише након 12
+месеци.
 
-## External services
+## Удаљени сервиси
 
-Zammad utilizes third party web services for certain functions, meaning
-that user data may occasionally be sent or exposed to third parties.
-These functions can be individually disabled in the admin panel under
-_Settings > System > Services_.
+Zammad користи услуге трећих страна за одређене функције, што значи
+да се кориснички подаци повремено могу слати или излагати трећим странама.
+Ове функције се могу појединачно онемогућити у админсинтерфејсу под
+_Поставке > Систем > Услуге_.
 
 ::: info
-By default, the third party services that Zammad relies on are mostly
-ones hosted and managed by the Zammad Foundation itself, but Zammad
-can be extended to interface with other services instead.
+Подразумевано, услуге трећих страна на које се Zammad ослања су углавном
+е оне који су хостовани и управљани од стране саме Zammad Фондације, али се Zammad
+може проширити тако да уместо њих користи друге сервисе.
 
-The source code for these third party service integrations can be
-found in
-[our repository](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
+Изворни код за ове интеграције са услугама трећих страна може се
+наћи у
+[нашем repo-зиторијуму](https://github.com/zammad/zammad/tree/develop/lib/service){target=_blank}.
 :::
 
-### Images
+### Слике
 
-No private images or personally-identifying information are stored on
+Не чувају се приватне слике ни лично идентификациони подаци на
 images.zammad.com.
 
-The Images service caches publicly-available images from sources like
-Gravatar and serves them to the Zammad application as user avatars and
-organization logos. These images are discovered using MD5 digests of user
-email addresses and organization domain names. User avatars are cached for 7
-days; organization logos are cached for 30 days.
+Услуга Слике кешира јавно доступне слике са извора као што је Gravatar и
+доставља их Zammad апликацији као корисничке аватаре и логотипе
+организација. Ове слике се откривају коришћењем MD5 хешева емаил адреса
+корисника и домена организација. Кориснички аватар-и се кеширају 7 дана;
+логотипи организација се кеширају 30 дана.
 
-### GeoCalendar
+### Календар
 
-No user information is stored or cached on geo.zammad.com.
+На geo.zammad.com не чувају се нити кеширају информације о корисницима.
 
-As part of its service-level agreement (SLA) functionality, Zammad requires
-detailed, localized calendar information (e.g. to set the time zone and
-accommodate national holidays and daylight savings time).  The GeoCalendar
-service is used to retrieve this information.
+Као део функционалности уговора о нивоу услуга (SLA), Zammad захтева
+детаљне, локализоване календарске информације (нпр. за постављање временске
+зоне и прилагођавање државних празника и преласка на летње рачунање
+времена). За прикупљање ових информација користи се услуга GeoCalendar.
 
 ### GeoIP
 
-No user information is stored or cached on geo.zammad.com.
+На geo.zammad.com не чувају се нити кеширају информације о корисницима.
 
-One of Zammad's security features is to track user sessions based on the
-user's browser and country of origin. Suspicious login activity from a
-different browser or country may trigger Zammad to dispatch an alert email
-to the affected user. The GeoIP service is used to associate IP addresses to
-a geographic origin.
+Једна од сигурносних функција Zammad-а је праћење корисничких сесија на
+основу прегледача и земље порекла корисника. Сумњива активност пријављивања
+са другог прегледача или земље може потаћи Zammad да пошаље алармну поруку
+емаилом дотичном кориснику. Услуга GeoIP се користи за повезивање IP адреса
+са географским пореклом.
 
-### Geolocation
+### Администрација
 
-Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned
-it off. If you provide an address (or parts of an address) in a user object,
-there is a lookup of coordinates from OSM which are stored in Zammad's
-database. Have a look at their [privacy
-policy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} for
-more information.
+Услуга геолокације Zammad-а ослања се на OpenStreetMap (OSM) осим ако је
+није искључили. Ако у објекту корисника наведете адресу (или делове адресе),
+врши се претрага координата из OSM-а које се чувају у бази података
+Zammad-а. За више информација погледајте њихову [политику
+приватности](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank}.

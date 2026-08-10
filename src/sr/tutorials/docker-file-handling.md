@@ -1,113 +1,116 @@
 ---
 order: 8
-title: 'Docker file handling examples'
+title: 'Примери руковања датотекама у Docker-у'
 ---
 
-# Docker file handling examples
+# Примери руковања датотекама у Docker-у
 
-If you're not sure how to handle the backup files and how to create the
-`restore` directory in the Docker volume, you can find some examples below.
+Ако нисте сигурни како да обрадите фајлове за бацкуп и како да креирате
+`restore` директоријум у Docker волумену, испод можете наћи неколико
+примера.
 
-## Restore inside the same stack
+## Враћање унутар истог стацк-а
 
-**Requires:** console access to the zammad-backup container.
+**Захтева:** приступ конзоли заммад-бацкуп контејнера.
 
-If you want to restore a backup from the same stack, you just have to create
-the directory and copy/move the files into it. The following example starts
-the **zammad-backup** container and copies _all_ .gz files from the backup
-directory into the restore directory:
+Ако желите да вратите бацкуп из истог стацк-а, потребно је само да креирате
+директоријум и копирате/помесните фајлове у њега. Следећи пример покреће
+**заммад-бацкуп** контејнер и копира _све_ .гз фајлове из бацкуп
+директоријума у ресторе директоријум:
 
 ``` sh
 docker compose run --rm zammad-backup bash -c "mkdir /var/tmp/zammad/restore; cp /var/tmp/zammad/*.gz /var/tmp/zammad/restore -v"
 ```
 
-Now start the stack to execute the restore process.
+Сада покрените стацк да изврши процес враћања.
 
-## Restore from another installation
+## Инсталација у сопственој режији
 
-**Requires:** console access to the host system and the zammad-backup container.
+**Захтева:** приступ конзоли хостсистема и заммад-бацкуп контејнера.
 
-To **obtain** your backup files from another Docker Compose deployment, one
-way is to copy it to the host system with `docker compose cp`:
+Да бисте **добили** своје бацкуп фајлове из друге Docker Compose deployement
+инсталације, један начин је да их копирате на хостсистем помоћу `docker
+compose cp`:
 
 ``` sh
 docker compose cp zammad-backup:/var/tmp/zammad/ /path/to/your/host/directory/
 ```
 
-In case you are searching for your backup files from a package installation,
-have a look at the [Backup & Restore
-(Package)](/en/tutorials/backup-restore) section. You don't need a full dump
-for restoring your backup.
+У случају да тражите своје бацкуп фајлове из инсталације преко пакета,
+погледајте секцију [Backup & Restore
+(Пакет)](/en/tutorials/backup-restore). Не треба вам комплетна копија за
+враћање бацкуп-а.
 
-To **restore** the backup, place your files in a folder called `restore` on
-the host system. This folder is mounted temporarily to `/restore` in the
-backup container. The directory then gets copied to the actual directory:
+Да бисте **вратили** бацкуп, поставите своје фајлове у фолдер који се зове
+`restore` на хостсистему. Овај фолдер је привремено монтиран на `/restore` у
+бацкуп контејнеру. Директоријум се затим копира у прави директоријум:
 
 ``` sh
 docker compose run --rm -v /path/to/your/host/directory:/restore zammad-backup bash -c "cp -rv /restore /var/tmp/zammad/"
 ```
 
-Now start the stack to execute the restore process.
+Сада покрените стацк да изврши процес враћања.
 
-## Use a web GUI
+## Коришћење Web GUI-ја
 
-**Requires:** console access to the host system or Portainer access with the permission to deploy a container.
+**Захтева:** приступ конзоли хостсистема или Portainer приступ са дозволом за deployovanje контејнера.
 
-This can be useful if you use Portainer to deploy Zammad and have limited
-access to the host system.
+Ово може бити корисно ако користите Portainer за deployovanje Zammad-а и
+имате ограничен приступ хостсистему.
 
-Our example uses the tool
-[filebrowser](https://filebrowser.org/){target=_blank}, but any similar tool
-should work too. If you'd like to use such a tool permanently, make sure to
-provide additional volumes for persistence (e.g. for their database).
+Наш пример користи алат [filebrowser](https://filebrowser.org/), али би
+требао да ради и било који сличан алат. Ако желите трајно да користите такав
+алат, обезбедите додатне волуме-е за перзистентност (нпр. за њихову базу
+података).
 
 ::: info
 
-The steps below cover the restore process by uploading files. To get your backup files in the same way from another
-stack, you can follow steps 1-4 below and simply map the **zammad-backup** volume of your _old_ stack. Then you can
-download the files, stop and remove the filebrowser container and redeploy it, following the steps below.
+Кораци испод покривају процес враћања путем отпремања фајлова. Да бисте на исти начин добили своје бацкуп фајлове из другог
+стацк-а, можете пратити кораке 1-4 испод и само мапирати **заммад-бацкуп** волуме вашег _старог_ стацк-а. Затим можете
+downloadovati фајлове, зауставити и уклонити filebrowser контејнер и поново га deployovati, пратећи кораке испод.
 
 :::
 
-1. Deploy filebrowser
+1. Deployujte filebrowser
 
    ::: tabs
 
-   === Via console
+   === Преко конзоле
 
-   Deploy the container and provide the volume of **zammad-backup** and
-   a port under which you want to access the web UI:
+   Deployujte контејнер и обезбедите волуме од **заммад-бацкуп** и
+   порт на којем желите да приступите web GUI-ју:
 
    ``` sh
    docker run -v zammad-docker-compose_zammad-backup:/srv -p 8089:80 filebrowser/filebrowser
    ```
 
-   === Via Portainer
+   === Преко Портаинера
 
-   In your Portainer web UI, go to **Containers** in the left menu and
-   click the `Add container` button.
+   У вашем Portainer web GUI-ју, идите на **Containers** у левом менију и
+   кликните на дугме `Add container`.
 
-   Add the following information:
+   Додајте следеће информације:
 
-   - Name: enter a name which is not already in use.
+   - Name: унесите име које већ није у употреби.
    - Image: `filebrowser/filebrowser`
-   - Map additional port: choose a port and map it to port `80` in the container.
-   - Advanced container settings:
-     - Switch to **Volumes** and click the `map additional volume` button.
-     - Enter `/srv` in the container section and select the volume containing `zammad-backup`
-   - Finally, click on **Deploy the container**.
+   - Map аддитионал порт: изаберите порт и мапирајте га на порт `80` у контејнеру.
+   - Advanced цонтаинер сеттингс:
+     - Пребаците се на **Volumes** и кликните на дугме `map additional volume`.
+     - Унесите `/srv` у секцији контејнера и изаберите волуме који садржи `zammad-backup`
+   - На крају, кликните на **Deploy тхе цонтаинер**.
 
    :::
 
-2. After the container is started, go to the web interface by using the IP
-   address and the port you defined.
-3. Log in with the default credentials `admin` / `admin`.
-4. You should now see at least 2 .gz files including a timestamp.
-5. Create a `New folder` by using the button on the left side. Name it
-   **restore**.
-6. Enter this folder and upload your backup files (on the top right corner
-   with the up arrow). If the upload fails, it might be required to change
-   the permissions of the files (e.g. readable for everyone).
+2. Након што је контејнер покренут, идите на web интерфејс користећи IP
+   адресу и порт који сте дефинисали.
+3. Улогујте се са подразумеваним креденцијалима `admin` / `admin`.
+4. Сада би требало да видите најмање 2 .гз фајла укључујући временску
+   ознаку.
+5. Креирајте `Novi folder` користећи дугме на левој страни. Назовите га
+   **ресторе**.
+6. Уђите у овај фолдер и отпремите своје бацкуп фајлове (у горњем десном
+   углу са стрелицом нагоре). Ако отпремање не успе, можда ће бити потребно
+   променити дозволе за фајлове (нпр. читљиве за свакога).
 
-Now start the stack to execute the restore process. After that, you can
-safely delete the renamed folder and stop the filebrowser.
+Сада покрените стацк да изврши процес враћања. Након тога, можете безбедно
+обрисати преименовани фолдер и зауставити filebrowser.

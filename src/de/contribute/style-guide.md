@@ -38,7 +38,7 @@ Beiträge](contribute) werfen oder in einem
 [Github-Issue](https://github.com/zammad/zammad-org/issues){target=_blank}
 fragen, um loszulegen.
 
-## Audience assumptions
+## Annahmen zur Leserschaft
 
 In der Dokumentation wird davon ausgegangen, dass **Benutzer** ein
 grundlegendes Verständnis für die Verwendung von Webbrowsern haben und mit
@@ -78,7 +78,7 @@ codeähnlichen Detailebene), muss auch die Relevanz berücksichtigt
 werden. Wenn Bereiche mit einem gängigen Anwendungsfall fehlen, sollte
 beabsichtigt werden, diese zu ergänzen.
 
-## Style and rules
+## Stil und Regeln
 
 Die nächsten Abschnitte behandeln allgemeine Dinge, die beim Schreiben der
 Dokumentation zu beachten sind. Danach finden Sie einen Abschnitt mit
@@ -100,9 +100,10 @@ strukturieren können.
 
 - Verwenden Sie kurze und klare Sätze und fokussieren Sie sich auf
   Informationen statt auf Komplexität.
-- Use sentence case for page titles and headings. Capitalize the first word
-  and the first letter of any proper noun (e.g. Zammad, Elasticsearch,
-  Docker, GitLab) and acronym (SLA, SSO, API, JSON, etc.).
+- Verwenden Sie bei Seitentiteln und Überschriften die "Sentence
+  case"-Schreibweise. Schreiben Sie das erste Wort sowie den ersten
+  Buchstaben aller Eigennamen (z.B. Zammad, Elasticsearch, Docker, GitLab)
+  und Abkürzungen (SLA, SSO, API, JSON usw.) groß.
 - Verwenden Sie eine Breadcrumb-Trennung für Pfade und Orte mit `>` als
   Trennzeichen und formatieren Sie den Pfad kursiv, z.B. _Einstellungen >
   Kanäle > Chat_.
@@ -188,7 +189,7 @@ aufgeführt.
 | Action menu                               | ::a::                         | `::a::`                             |
 | Copy to clipboard button                  | ::c::                         | `::c::`                             |
 
-#### Heading structure
+#### Gliederung mit Überschriften
 
 Jede Dokumentationsdatei muss genau einen Titel auf der obersten Ebene
 enthalten (z.B. `# Titel`). Die darunter liegenden Ebenen sollten immer
@@ -305,26 +306,26 @@ Dies ist der Inhalt, der im ausgeklappten Zustand angezeigt wird.
 
 #### Definitionslisten
 
-First term <Badge type="info" text="tag1" />
-: This is the definition of the first term.
+Erster Begriff <Badge type="info" text="tag1" />
+: Dies ist die Definition des ersten Begriffs.
 
-Second term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
-: This is one definition of the second term.
-: This is another definition of the second term.
+Zweiter Begriff <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+: Dies ist eine Definition des zweiten Begriffs.
+: Dies ist eine weitere Definition des zweiten Begriffs.
 
 **Verwendung:**
 
 ::: details
 
 ```md
-First term <Badge type="info" text="tag1" />
-: This is the definition of the first term
-  with another line.
+Erster Begriff <Badge type="info" text="tag1" />
+: Dies ist die Definition des ersten Begriffs
+  mit einer weiteren Zeile.
 ```
 
 :::
 
-#### Highlighting with boxes
+#### Hervorhebung mit Boxen
 
 Um verschiedene Optionen oder Varianten hervorzuheben, können anklickbare
 Kästen verwendet werden.
@@ -360,7 +361,7 @@ features:
 Um sie innerhalb des Inhaltsbereichs zu platzieren, fügen Sie einfach den Verweis `<VPDocFeatures />` an der Stelle ein, an der sie dargestellt
 werden sollen.
 
-#### Theme specific images
+#### Theme-abhängige Bilder
 
 Um bestimmte Bilder auf ein einzelnes Theme anzuwenden, können Sie dem
 entsprechenden Bild die CSS-Klasse `.dark-only` oder `.light-only` zuweisen:

@@ -1,9 +1,9 @@
 ---
 order: 3
-title: 'Environment variables'
+title: Umgebungsvariablen
 ---
 
-# Environment variables
+# Umgebungsvariablen
 
 Unten finden Sie die wichtigsten Umgebungsvariablen mit Standardwerten (als <Badge type="tip" text="badge" />), falls zutreffend.
 Die Variablen für Docker- und Paketinstallationen können in einigen Fällen unterschiedlich sein. Sie können dazu ein weiteres
@@ -212,12 +212,12 @@ senden kann.
 : Port des Zammad Rails-Servers.
 
 `ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type="tip" text="zammad-websocket" />
-: Host name of Zammad's WebSocket server.
+: Hostname des Zammad-WebSocket-Servers.
 
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
-: Port of Zammad's WebSocket server.
+: Port des WebSocket-Servers von Zammad.
 
-## Performance tuning
+## Leistungsoptimierung
 
 Jede der unten aufgeführten Einstellungen bringt ihre eigenen Kompromisse
 mit sich. Es gibt hier keine empfohlenen Werte; die optimale Konfiguration
@@ -263,7 +263,7 @@ Datenbank-Verbindungen verwenden. Bitte beachten Sie die
 : Threads, die von **einem** "Delayed Jobs Worker" verwendet werden (falls Sie mehr als einen Worker-Prozess haben,
   wird dies mit deren Anzahl multipliziert). Die maximale Anzahl von Threads beträgt `16`.
 
-## HTTP client settings
+## HTTP Client Einstellungen
 
 Globale HTTP-Timeout-Einstellungen. Diese Variablen steuern das
 Standard-Timeout-Verhalten für den internen HTTP-Client von Zammad bei der
@@ -283,7 +283,7 @@ Integrationen).
   Lesen der Antwort. Dies ist eine zusätzliche harte Obergrenze zusätzlich zu `ZAMMAD_HTTP_OPEN_TIMEOUT` und
  `ZAMMAD_HTTP_READ_TIMEOUT`.
 
-## How to set environment variables
+## Umgebungsvariablen setzen
 
 Es hängt davon ab, wie Sie Zammad installiert haben (Paket,
 Docker). Entweder setzen Sie sie über den Befehl `zammad config`, wie Sie

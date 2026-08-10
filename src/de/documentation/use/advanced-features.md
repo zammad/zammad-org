@@ -1,16 +1,16 @@
 ---
 order: 4
-title: 'Advanced features'
+title: 'Erweiterte Funktionen'
 ---
 
-# Advanced features
+# Erweiterte Funktionen
 
 Dies Seite ist eine Sammlung verschiedener hilfreicher Tools, für die keine
 eigene Seite erforderlich ist. Lesen Sie einfach weiter, durchsuchen Sie die
 Seite oder navigieren Sie mit Hilfe des Inhaltsverzeichnisses auf der
 rechten Seite zu dem von Ihnen gewünschten Abschnitt.
 
-## Ticket update behavior
+## Verhalten bei Ticket-Aktualisierung
 
 ![Screenshot zeigt Menü über Verhalten nach
 Aktualisierung](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
@@ -45,7 +45,7 @@ Wenn sich Ihre Situation von Ticket zu Ticket unterscheidet, können Sie **Tab b
 [[shift]] [[c]] verwenden, um den Status des Tickets auf geschlossen zu setzen und den Tab des Tickets zu schließen.
 :::
 
-## Text modules
+## Textbausteine
 
 ![Screenshot zeigt
 Textbaustein-Feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
@@ -73,7 +73,7 @@ Sie können einen auswählen, indem Sie ihn anklicken oder die Pfeiltasten
 nach oben und unten, gefolgt von [[enter]], auf Ihrer Tastatur benutzen. Es
 gibt einige Textbausteine in Zammad, die standardmäßig mitgeliefert werden.
 
-## Insert knowledge base article
+## Knowledge Base Artikel einfügen
 
 ![Screenshot zeigt das Einfügen eines Knowledge Base
 Artikels](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
@@ -92,7 +92,7 @@ schreiben Sie einfach [[?]][[?]] in den Editor. Auf beiden Wegen können Sie
 nach dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen
 oder Wörter eingeben.
 
-## Mention a user
+## Einen Benutzer erwähnen
 
 ![Screenshot zeigt die Erwähnung eines
 Benutzers](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
@@ -114,7 +114,7 @@ Zammad zeigt eine Liste mit allen möglichen Übereinstimmungen an, aus der
 Sie eine auswählen können, indem Sie darauf klicken oder die Auf- und
 Ab-Pfeiltasten gefolgt von [[enter]] auf Ihrer Tastatur verwenden.
 
-## Subscribe to a ticket
+## Ein Ticket abonnieren
 
 ![Screenshot zeigt die Funktion zum Ticket
 abonnieren](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
@@ -221,7 +221,7 @@ Es gibt zwei Funktionen, die nicht direkt sichtbar sind:
   andere Tickets verweisen, gelten nur diejenigen als erledigt, die
   geschlossen sind (mit einem grünen Kreis).
 
-## Ticket templates
+## Ticket-Vorlagen
 
 **Warum?**
 
@@ -236,7 +236,7 @@ Schaltfläche `Vorlage anwenden ^`, wenn eine Vorlage verfügbar ist. Wählen
 Sie die Vorlage, die Sie anwenden möchten, und nehmen Sie gegebenenfalls
 Änderungen vor.
 
-## Shared drafts
+## Gemeinsame Entwürfe
 
 **Warum?**
 
@@ -261,7 +261,7 @@ Schaltfläche `Entwurf verfügbar` auf der linken Seite der Fußzeile.
 Das Anwenden eines Entwurfs überschreibt Ihre nicht gespeicherten Änderungen!
 :::
 
-## Monitoring ticket escalations
+## Überwachung von Ticket-Eskalationen
 
 **Warum?**
 
@@ -301,7 +301,7 @@ Administrator. Wenn Sie keine Zeitstempel für die Eskalation sehen, ist
 entweder das Ticket nicht SLA-relevant oder die Funktion ist nicht
 konfiguriert.
 
-## Bulk actions
+## Mehrfach-Aktionen
 
 **Warum?**
 
@@ -383,7 +383,7 @@ Sie ein anderes, nicht ausgewähltes Ticket einbeziehen möchten, beginnen Sie
 mit dem Ziehen von dort aus, damit auch dieses Ticket in der Mehrfach-Aktion
 berücksichtigt wird.
 
-## Merge tickets
+## Ticket zusammenfassen
 
 ![Screenshot zeigt das Seitenmenü zum Zusammenfassen von
 Tickets](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
@@ -418,7 +418,7 @@ weiterhin mit den folgenden Änderungen:
 - Der Status hat sich auf "zusammengefasst" geändert
 - Das Ticket ist mit seinem "Eltern"-Ticket verknüpft
 
-## Split tickets
+## Tickets abspalten
 
 ![Screenshot zeigt das Menü zum Abspalten von
 Artikeln](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
@@ -444,7 +444,7 @@ Das soeben erstellte Ticket ist im ursprünglichen Ticket als "Kind"-Ticket
 verlinkt. Das ursprüngliche Ticket ist im abgespaltenen Ticket als
 "Eltern"-Ticket verknüpft.
 
-## Link tickets
+## Tickets verknüpfen
 
 **Warum?**
 
@@ -467,7 +467,7 @@ können. Außerdem können Sie zwischen verschiedenen Link-Typen wählen:
   standardmäßig verwendet, wenn ein Ticket geteilt oder zusammengefasst
   wird.
 
-## Duplicate detection
+## Duplikaterkennung
 
 ![Screenshot zeigt Warnung der Duplikaterkennung während der
 Ticketerstellung](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
@@ -537,7 +537,7 @@ sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen.
 ![Screenshot zeigt die Übersicht der
 Zeiterfassung](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
-## User detail panel
+## Benutzerinfo
 
 **Warum?**
 
@@ -560,7 +560,7 @@ Die Krone im Screenshot steht übrigens für den VIP-Status des Kunden, der in
 der Kundendetailansicht und in den Admin-Einstellungen eingestellt werden
 kann.
 
-## User detail page
+## Benutzer-Detailseite
 
 ![Screenshot zeigt
 Benutzer-Detailseite](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
@@ -584,7 +584,7 @@ Ticket-Detailansicht). Dadurch öffnet sich ein neuer Tab mit der
 Kunden-Detailseite. Falls Sie auch Admin-Rechte haben, können Sie über das
 ::a:: Menü sogar eine Löschaufgabe für diesen Benutzer erstellen.
 
-## Organization detail page
+## Organisations-Detailseite
 
 ![Screenshot zeigt
 Organisations-Detailseite](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
@@ -607,7 +607,7 @@ Klicken Sie einfach auf einen Organisationsavatar (z.B. in der Kopfzeile der
 Ticket-Detailansicht neben dem Benutzeravatar). Dies öffnet die
 Organisations-Detailseite als neuen Tab.
 
-## External issues and assets
+## Externe Issues und Inventar
 
 **Warum?**
 
@@ -630,7 +630,7 @@ einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element
 mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken,
 werden Sie zu diesem im jeweiligen System weitergeleitet.
 
-## Highlight text
+## Text hervorheben
 
 **Warum?**
 

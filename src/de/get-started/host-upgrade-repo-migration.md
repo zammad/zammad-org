@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'Host upgrade and repository migration'
+title: 'Host-Upgrade und Paketquellenmigration'
 ---
 
-# Host upgrade and repository migration
+# Host-Upgrade und Paketquellenmigration
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
@@ -39,7 +39,7 @@ Die folgenden Betriebssysteme werden unterstützt:
 sudo systemctl stop zammad
 ```
 
-## Host upgrade steps
+## Host-Upgrade-Schritte
 
 ### Aktualisierungen für Zammad deaktivieren
 
@@ -87,7 +87,7 @@ mit den nächsten Schritten fortfahren.
 
 ## Paketquelle anpassen
 
-### Remove old repository
+### Alte Paketquelle entfernen
 
 Entfernen Sie die alte Konfigurationsdatei der Paketquelle oder
 deaktivieren/löschen Sie die alte Paketquelle in Ihrem Paketmanager.
@@ -128,7 +128,7 @@ sudo rm /etc/yum.repos.d/zammad.repo
 
 :::
 
-### Remove old repository key
+### Alten Paketquellen-Schlüssel entfernen
 
 Entfernen Sie den alten Paketquellen-Schlüssel von Ihrem System. Je nach
 Betriebssystem und Version ist der Ort bzw. die Methode unterschiedlich.
@@ -177,7 +177,7 @@ sudo rpm -e <key-name>
 
 :::
 
-### Add new repository
+### Neue Paketquelle hinzufügen
 
 Wenn der Paketquellen-Schlüssel für die alte und die neue Version Ihrer
 Distribution unterschiedlich ist oder Ihre Distribution diesen an einem

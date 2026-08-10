@@ -1,45 +1,45 @@
 ---
 order: 4
-title: 'Host upgrade and repository migration'
+title: 'Надоградња хоста и миграција repo-зиторијума'
 ---
 
-# Host upgrade and repository migration
+# Надоградња хоста и миграција repo-зиторијума
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-This page covers the required steps for a host upgrade and to switch to
-Zammad's new package repositories. If you just want to update Zammad itself,
-please refer to [Updating Zammad](update). To just switch to the new
-repositories without a host upgrade, skip the host upgrade steps.
+Ова страница покрива потребне кораке за надоградњу хоста и прелазак на нове
+пакетне repo-зиторијуме Zammad-а. Ако желите само да ажурирате Zammad,
+погледајте [Ажурирање Zammad-а](update). Да бисте се пребацили само на нове
+repo-зиторијуме без надоградње хоста, прескочите кораке за надоградњу хоста.
 
-Starting with Zammad 7, packages are being built using a new toolchain and
-hosted under another URL. The packages are being built via old toolchain as
-well (except for Debian 13) for some time, but we encourage you to switch to
-the new repositories in a timely manner. This means you need to add a new
-repository key and change your repository configuration.
+Почев од Zammad-а 7, пакети се граде новом алатном линијом и хостују на
+другој URL адреси. Пакети ће се градити и старом алатном линијом (осим за
+Debian 13) још неко време, али вас подстичемо да правовремено пређете на
+нове repo-зиторијуме. То значи да морате додати нови кључ repo-зиторијума и
+променити конфигурацију.
 
 ::: warning
-Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.
+Увек се уверите да имате [резервну копију](/en/tutorials/backup-restore) података пре извршавања надоградње.
 :::
 
-The following operating systems are supported:
+Следеће опције проксија приступа су подржане:
 
-| Distribution         | Version              |
-| -------------------- | :------------------- |
-| CentOS/RHEL          | 9, 10                |
-| Debian               | 11, 12 & 13          |
-| OpenSUSE Leap / SLES | 15 & 16              |
-| Ubuntu               | 22.04, 24.04 & 26.04 |
+| Дистрибуција  | Верзија             |
+| ------------- | :-----------------  |
+| CentOS/RHEL   | 8 и 9               |
+| Debian        | 11 и 12             |
+| OpenSUSE/SLES | Leap 15.x / 15      |
+| Ubuntu        | 20.04, 22.04, 24.04 |
 
-## Stop Zammad
+## Преузмите Zammad
 
 ```sh
-sudo systemctl stop zammad
+systemctl старт заммад
 ```
 
-## Host upgrade steps
+## Кораци надоградње хоста
 
-### Disable updates for Zammad
+### Коришћење Zammad-а
 
 ::: tabs key:distros
 
@@ -69,25 +69,24 @@ sudo dnf upgrade --exclude zammad
 
 :::
 
-### Perform host upgrade
+### Извршите надоградњу хоста
 
-Perform the host upgrade according to the documentation of your operating
-system. Because this is an advanced task, we don't provide detailed steps
-here. After upgrading your operating system, proceed with the next steps.
+Извршите надоградњу хоста према документацији вашег оперативног система. С
+обзиром на то што је ово напредан задатак, не пружамо детаљне кораке
+овде. Након надоградње оперативног система, наставите са следећим корацима.
 
-### Reboot host
+### Рестартујте хост
 
-In case you did not reboot your system after the upgrade, make sure to
-reboot your system now. Afterwards, check if everything is running as
-expected. In case Zammad starts automatically, stop it again before
-proceeding with the next steps.
+Ако нисте рестартовали систем након надоградње, сада га обавезно
+рестартујте. Затим проверите да ли све ради како треба. Ако се Zammad
+покрене аутоматски, поново га зауставите пре наставка са следећим корацима.
 
-## Adjust package repository
+## Додајте Zammad репозиториј
 
-### Remove old repository
+### Додајте Zammad репозиториј
 
-Remove the old repository configuration file or disable/delete the old
-repository in your package manager.
+Уклоните стари фајл конфигурације repo-зиторијума или онемогућите/обришите
+стари repo-зиторијум у управљачу пакета.
 
 ::: tabs key:distros
 
@@ -125,10 +124,10 @@ sudo rm /etc/yum.repos.d/zammad.repo
 
 :::
 
-### Remove old repository key
+### Додајте Zammad репозиториј
 
-Remove the old repository key from your system. Depending on your operating
-system and version, the location or method differs.
+Уклоните стари кључ repo-зиторијума са вашег система. Зависно од оперативног
+система и верзије, локација или метод се разликују.
 
 ::: tabs key:distros
 
@@ -146,13 +145,13 @@ sudo rm /etc/apt/trusted.gpg.d/pkgr-zammad.gpg
 
 === OpenSUSE/SLES
 
-List the keys of your system:
+Прикажите листе кључева на вашем систему:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
+Обришите кључ/кључеве везане за Zammad (и само њих!), замените `<key-name>` стварним ID-ом кључа:
 
 ```sh
 sudo rpm -e <key-name>
@@ -160,13 +159,13 @@ sudo rpm -e <key-name>
 
 === CentOS/RHEL
 
-List the keys of your system:
+Прикажите листе кључева на вашем систему:
 
 ```sh
 rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
 ```
 
-Delete the key(s) related to Zammad (and only those!), replace `<key-name>` with the actual key ID:
+Обришите кључ/кључеве везане за Zammad (и само њих!), замените `<key-name>` стварним ID-ом кључа:
 
 ```sh
 sudo rpm -e <key-name>
@@ -174,109 +173,99 @@ sudo rpm -e <key-name>
 
 :::
 
-### Add new repository
+### Додајте Zammad репозиториј
 
-If the repository key is different for the old and new version your
-distribution or your distribution expects it in a different location, add
-the new one. Otherwise, you can add the new repository configuration
-directly.
+Ако се кључ repo-зиторијума разликује између старе и нове верзије вашег
+дистрибуција или га ваше дистрибуција очекује на другој локацији, додајте
+нови. У супротном, можете директно додати нову конфигурацију
+repo-зиторијума.
 
 :::: tabs key:distros
 
 === Ubuntu
-Add repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
-  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
+gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 
-Add repository (Ubuntu 22.04):
+Ubuntu 20.04
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Add repository (Ubuntu 24.04):
+Ubuntu 22.04
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Add repository (Ubuntu 26.04):
+Ubuntu 24.04
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 === Debian
-
-Add repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
-  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
+   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 
-Add repository (Debian 11):
+Debian 11
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Add repository (Debian 12):
+Debian 12
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
-  -o /etc/apt/sources.list.d/zammad.list
-```
-
-Add repository (Debian 13):
-
-```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 === OpenSUSE/SLES
-
-Add repository (OpenSUSE/SLES 15):
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo curl -o /etc/zypp/repos.d/zammad.repo \
-  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
+sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 
-Add repository (OpenSUSE/SLES 16):
+OpenSUSE 15.x / SLES15
 
 ```sh
-sudo curl -o /etc/zypp/repos.d/zammad.repo \
-  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo"
+sudo wget -O /etc/zypp/repos.d/zammad.repo \
+https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 
 ===CentOS/RHEL
-Add repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
+sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 
-Add repository (CentOS/RHEL 9):
+CentOS 8 / RHEL 8
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
-  -o /etc/yum.repos.d/zammad.repo
+sudo wget -O /etc/yum.repos.d/zammad.repo \
+https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
 
-Add repository (CentOS/RHEL 10):
+CentOS 9 / RHEL 9
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \
-  -o /etc/yum.repos.d/zammad.repo
+sudo wget -O /etc/yum.repos.d/zammad.repo \
+https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
 
 ::::
@@ -285,55 +274,54 @@ sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10
 
 ::: tabs key:distros
 
-=== Ubuntu
+=== Debian & Ubuntu
 
 ```sh
-sudo apt update
+sudo dpkg -r --force-depends zammad
 ```
 
 ```sh
 sudo apt install zammad
 ```
 
-=== Debian
+=== openSUSE
 
-```sh
-sudo apt update
+``` sh
+sudo zypper remove -R zammad
 ```
 
 ```sh
-sudo apt install zammad
+sudo zypper install zammad
 ```
 
 :::
 
-### Update Zammad
+### Коришћење Zammad-а
 
 ::: tip
-If there is a new Zammad version available and you want to update to it, check the
-[release notes](https://zammad.com/en/product/releases){target=_blank} for any required additional steps.
+Ако је доступна нова верзија Zammad-а и желите да се ажурирате, проверите [белешке уз издање](https://zammad.com/en/product/releases) за било какве додатне потребне кораке.
 :::
 
-Re-enable updates for Zammad and update Zammad to the latest version
-available for your operating system.
+Поново омогужите ажурирања за Zammad и ажурирајте га на најновију верзију
+доступну за ваш оперативни систем.
 
 ::: tabs key:distros
 
 === Ubuntu
 
-Update package index:
+Ажурирајте индекс пакета:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Поново омогући ажурирања за Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Ажурирај Zammad:
 
 ```sh
 sudo apt upgrade zammad
@@ -341,19 +329,19 @@ sudo apt upgrade zammad
 
 === Debian
 
-Update package index:
+Ажурирајте индекс пакета:
 
 ```sh
 sudo apt update
 ```
 
-Re-enable updates for Zammad:
+Поново омогући ажурирања за Zammad:
 
 ```sh
 sudo apt-mark unhold zammad
 ```
 
-Update Zammad:
+Ажурирај Zammad:
 
 ```sh
 sudo apt upgrade zammad
@@ -361,19 +349,19 @@ sudo apt upgrade zammad
 
 === OpenSUSE/SLES
 
-Update package index:
+Ажурирајте индекс пакета:
 
 ```sh
 sudo zypper refresh
 ```
 
-Re-enable updates for Zammad:
+Поново омогући ажурирања за Zammad:
 
 ```sh
 sudo zypper removelock zammad
 ```
 
-Update Zammad:
+Ажурирај Zammad:
 
 ```sh
 sudo zypper update zammad
@@ -387,8 +375,8 @@ sudo dnf upgrade zammad
 
 :::
 
-### Start Zammad
+### Преузмите Zammad
 
 ```sh
-sudo systemctl start zammad
+systemctl старт заммад
 ```

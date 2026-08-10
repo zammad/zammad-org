@@ -6,16 +6,16 @@ title: Тикет
 # Тикет
 
 ::: warning
-Ticket endpoints depend on group permissions and if the user you're
-using is an **agent**. Because of this tickets may or may not be
-available.
+Ендпоинти за тикета зависе од дозвола групе и тога да ли је корисник који
+е користите **оператер**. Због тога тикета могу или не морати бити
+доступне.
 :::
 
-## List
+## Преглед листе
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/tickets`
+`GET`-Захтев послат: `/api/v1/tickets`
 
 ::: details
 
@@ -23,11 +23,11 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}`
+`GET`-Захтев послат: `/api/v1/tickets/{ticket id}`
 
 ::: details
 
@@ -35,27 +35,27 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`POST`-Request sent: `/api/v1/tickets`
+`POST`-Захтев послат: `/api/v1/tickets`
 
 ::: tip
-**On behalf of users**
+**У име корисника**
 
-If you want to create tickets on behalf of other users, use the
-`customer_id` attribute. `ticket.agent` is mandatory for this. Use
-`guess:{email address}` to save an API call if you don't know the
-user's ID or want to create the user in question
+Ако желите да креирате тикета у име других корисника, користите атрибут
+`customer_id`. Дозвола `ticket.agent` је обавезна за ово. Користите
+`guess:{adresa e-pošte}` да бисте уштедели API позив ако не знате ID
+корисника или желите да креирате поменутог корисника
 (`"customer_id": "guess:jane@doe.com"`).
 
-**Add mention subscription right away**:
+**Одмах додајте претплату на помињања:**
 
-Add the `mentions` attribute to your ticket payload and provide an
-array of user ids to directly subscribe them during ticket creation.
+Додајте атрибут `mentions` у payload ваше тикета и наведите
+низ ID-јева корисника да бисте их директно претплатили током креирања тикета.
 
-E.g.: `"mentions": [1, 5, 7, 8],`
+Нпр.: `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -75,27 +75,27 @@ E.g.: `"mentions": [1, 5, 7, 8],`
 ::::
 
 ::: tip
-For more article attributes and options have a look into
-[articles](/en/reference/rest-api/articles).
+За више атрибута чланака и опција погледајте
+[чланци](/en/reference/rest-api/articles).
 :::
 
 ## Освежавање
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket id}`
+`PUT`-Захтев послат: `/api/v1/tickets/{ticket id}`
 
 ::: tip
-**Suppress notifications:** To update a ticket without triggering agent notifications (email and in-app), add the
-following HTTP header to your request:
+**Онемогући обавештења:** Да бисте освежили тикет без активирања обавештења оператерима (имејл и у апликацији), додајте
+следећи HTTP заглавље у ваш захтев:
 
 ```plain
 X-Zammad-Suppress-Notifications: true
 ```
 
-This is useful for automated integrations that update tickets via webhooks or triggers to avoid notification loops. The
-header only affects admin and agent accounts and is ignored for customers. It also works for the
-`POST /api/v1/ticket_articles` endpoint.
+Корисно је за аутоматске интеграције које освежавају тикете путем webhooka или окидача како би се избегло кружење обавештења. Ово
+заглавље утиче само на админска и агентска налога и игнорише се за кориснике. Функционише и за
+`POST /api/v1/ticket_articles` ендпоинт.
 :::
 
 ::::: details
@@ -107,11 +107,11 @@ header only affects admin and agent accounts and is ignored for customers. It al
 <<< @/fixtures/rest-api/tickets/put-ticket-id-req.json
 
 ::: info
-Above example provides an article. This article is a _new article_ and
-does not affect any existing ones.
+Горњи пример даје чланак. Овај чланак је _нови чланак_ и
+дне не утиче на постојеће.
 :::
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/tickets/put-ticket-id-res.json
 
@@ -119,29 +119,29 @@ does not affect any existing ones.
 :::::
 
 ::: tip
-**Adding attachments**
+**Додавање привитака**
 
-Attachment payloads are identical to the `POST` method, just use `PUT`
-instead.
+Оквири података за привитке су идентични `POST` методи, само користите `PUT`
+уместо ње.
 :::
 
-## Delete
+## Обриши
 
-Required permission: `admin`
+Потребна дозвола: `admin`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`
+`DELETE`-захтев послат: `/api/v1/tickets/{ticket id}`
 
 ::: danger
 
-**This is a permanent removal**:
+**Ово је трајно уклањање**:
 
-Please note that removing tickets cannot be undone. All data (e.g.
-articles & attachments) will be lost.
+Имајте на уму да се укидање карата не може поништити. Сви подаци (нпр.
+чланци и привици) биће изгубљени.
 :::
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json
 

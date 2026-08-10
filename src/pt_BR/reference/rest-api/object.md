@@ -77,7 +77,7 @@ Solicitação `POST` enviada: `/api/v1/object_manager_attributes`
 :::
 ::::
 
-### Date time
+### Data e hora
 
 :::: details
 
@@ -158,7 +158,7 @@ dados. Por exemplo: email exige que um endereço de email seja fornecido.
 ::::
 :::::
 
-### Tree select
+### Seleção em árvore
 
 :::: details
 
@@ -256,7 +256,7 @@ Solicitação `DELETE` enviada: `/api/v1/object_manager_attributes/{id}`
 
 :::
 
-## Execute database migrations
+## Executar migrações do banco de dados
 
 Permissão necessária: `admin.object`
 

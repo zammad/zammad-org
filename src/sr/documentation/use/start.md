@@ -1,19 +1,19 @@
 ---
 features:
   - 
-    details: 'If you are new to Zammad and ticketing software in general, first read the basics here.'
+    details: 'Ако сте нови у Zammad-у и софтверу за управљање тикетима уопште, прво прочитајте основе овде.'
     icon: 🙋
-    link: /en/documentation/use/basics/zammad-ui
-    title: 'Zammad beginner'
+    link: /sr/documentation/manage-zammad/general
+    title: 'Zammad почетник'
   - 
-    details: 'If you are already familiar with the basics, read on here or jump directly to the relevant section in the navigation sidebar.'
+    details: 'Уколико су вам основе већ познате, читајте даље овде или пређите директно на одговарајући одељак у бочној траци навигације.'
     icon: 🧑‍✈️
-    link: /en/documentation/use/advanced-features
-    title: 'Advanced user'
+    link: /sr/documentation/use/general
+    title: 'Напредни корисник'
   - 
-    details: 'As an administrator, head over to the Manage Zammad section.'
+    details: 'Као администратор, пређите на одељак Управљање Zammad-ом.'
     icon: 🧑‍🔧
-    link: /en/documentation/manage/start
+    link: /sr/documentation/manage-zammad/start
     title: Администратор
 order: 1
 title: Почетак
@@ -28,17 +28,18 @@ title: Почетак
 које нису очигледне на први поглед. Ове функције су описане у овој
 документацији као и нека општа објашњења и савети.
 
-This documentation is divided into different sections. Currently you are on
-the landing page of the user documentation.  Use the left sidebar to
-navigate to the desired section or use the search in the header or activate
-it by using its keyboard shortcut [[ctrl]] [[k]].
+Ова документације је подељена на различите одељке. Тренутно читате одељак
+_Уопштено_ у делу
+_Документација > Коришћење Zammad-a_. Користите бочну траку са леве стране
+за навигацију на жељене информације или претражите у
+заглављу. Можете чак покренути претрагу коришћењем пречице [[Ctrl]] [[k]] на
+тастатури.
 
 ::: tip
 
-This user documentation is embedded in a comprehensive documentation of Zammad. To make sure users are not overwhelmed
-by technical content, the search is limited to this section and the navigation sidebar only shows the structure inside
-the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a
-page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).
+Ова корисничка документација је уграђена у опсежну документацију Zammad-а. Да се корисници не осећају преплављено	ехничким садржајем, претрага је ограничена на овај одељак, а навигациона бочна трака приказује само структуру унутар
+одељка. Да бисте видели целу структуру документације и/или претраживали целокупну документацију, једноставно пребаците се на
+страницу изван одељка корисничке документације (нпр. кликом на **Zammad Hub** у горњем левом углу).
 
 :::
 

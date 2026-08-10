@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'AI features'
+title: 'Recursos de IA'
 ---
 
-# AI features
+# Recursos de IA
 
 ## Introdução
 
@@ -16,7 +16,7 @@ Os recursos de IA precisam ser configurados e ativados pelo seu administrador. S
 Mais informações sobre como configurar e ativar isso podem ser encontradas na seção de administração.
 :::
 
-## Ticket summary
+## Resumo do ticket
 
 O recurso de resumo do ticket faz o que o nome diz: resume o conteúdo do
 ticket. Isso pode economizar muito tempo ao lidar com tickets grandes e/ou
@@ -39,7 +39,7 @@ seguintes seções:
 - Eventos futuros (opcional)
 - Sentimento do cliente (opcional)
 
-## Writing assistant tools
+## Ferramentas do assistente de escrita
 
 As ferramentas de assistente de escrita com IA são projetadas para
 simplificar e aprimorar seu fluxo de trabalho de resposta a tickets enquanto
@@ -78,7 +78,7 @@ as tenha adicionado.
 - **Rewrite complex section and make it easy to understand**: remove partes
   desnecessárias e reescreve seu texto de forma clara e compreensível.
 
-## AI agents
+## Agentes de IA
 
 Os agentes de IA podem ser configurados para trabalhar em certos tipos de
 tarefas rotineiras. Em geral, esse recurso opera nos bastidores, mas se
@@ -99,7 +99,7 @@ Zammad. Exemplo de uma entrada de histórico de um agente de IA:
 ![Captura de tela mostra a entrada de histórico do ticket do agente de
 IA](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
-### Simultaneous work detection
+### Detecção de trabalho simultâneo
 
 Agentes de IA que estão trabalhando atualmente em um ticket são exibidos
 como outros agentes na seção de usuários ao vivo na barra inferior. Isso
@@ -112,7 +112,7 @@ Avatar de agente de IA:
 ![Captura de tela mostra o avatar de um agente de
 IA](/screenshots/documentation/use/ai/ai-live-user.png)
 
-### Overview indicator
+### Indicador na visão geral
 
 Um agente de IA em execução é indicado na coluna de status nas visões
 gerais. O círculo de status muda para um círculo gradiente azul/rosa:

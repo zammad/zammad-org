@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Docker Compose scenarios'
+title: 'Cenários do Docker Compose'
 ---
 
-# Docker Compose scenarios
+# Cenários do Docker Compose
 
 ## Visão geral
 
@@ -34,7 +34,7 @@ Os seguintes cenários são suportados e explicados mais abaixo:
 Você pode encontrar os arquivos no [repositório
 Zammad-Docker-Compose](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
-## General usage
+## Uso geral
 
 ::: tabs
 
@@ -62,12 +62,12 @@ adicionando arquivos adicionais de acordo com o exemplo acima.
 
 :::
 
-## Making the stack available via HTTPS
+## Disponibilizando a stack via HTTPS
 
 Se você configurar o Zammad para uso em produção, ele precisa ser protegido
 usando uma conexão HTTPS. Há diferentes cenários para conseguir isso:
 
-### Add Cloudflare tunnel
+### Adicionar túnel Cloudflare
 
 Se você quiser publicar o Zammad de forma bem conveniente, pode usar um
 túnel [Cloudflare](https://www.cloudflare.com/){target=_blank}.
@@ -81,7 +81,7 @@ túnel [Cloudflare](https://www.cloudflare.com/){target=_blank}.
 - Forneça seu token de túnel do Cloudflare à stack do Zammad usando a
   variável de ambiente `CLOUDFLARE_TUNNEL_TOKEN`
 
-### Add Nginx proxy manager
+### Adicionar Nginx Proxy Manager
 
 Uma configuração muito comum para publicar serviços web é usar um proxy
 reverso, que lida com a terminação SSL. Uma ferramenta comum é o Nginx Proxy
@@ -97,7 +97,7 @@ você. Se você já tem um proxy reverso em execução, vá para a próxima seç
 - Configure um novo proxy host no seu NPM e siga as etapas para obter um
   certificado SSL
 
-### Add external Docker network to Nginx
+### Adicionar uma rede Docker externa ao Nginx
 
 Se você já tem um proxy reverso que cuida da terminação SSL, esse cenário é
 útil. Ele adiciona uma rede Docker externa ao serviço Nginx incluído no
@@ -109,7 +109,7 @@ da rede da stack do Zammad.
 - Forneça o nome da sua rede externa usando a variável de ambiente
   `ZAMMAD_NGINX_EXTERNAL_NETWORK`
 
-## Using external services
+## Usando serviços externos
 
 ### Desativar o serviço do Elasticsearch
 
@@ -127,7 +127,7 @@ do Zammad para economizar recursos.
   - `ELASTICSEARCH_USER`
   - `ELASTICSEARCH_PASS`
 
-## Making services externally available
+## Disponibilizando serviços externamente
 
 Esses cenários destinam-se a conectar aplicações externas aos serviços do
 Zammad. Dependendo de onde seu serviço externo está hospedado, você pode
@@ -146,7 +146,7 @@ Se você quiser usar TLS, precisa se conectar ao Elasticsearch via proxy reverso
 
 :::
 
-### Add external Docker network to Elasticsearch
+### Adicionar uma rede Docker externa ao Elasticsearch
 
 Um caso de uso comum para isso é usar uma ferramenta de
 relatórios/visualização como o Grafana no mesmo host, em outra stack. Como
@@ -158,7 +158,7 @@ outra stack precisa ser adicionada ao container Elasticsearch do Zammad.
 - Forneça o nome da sua rede externa usando a variável de ambiente
   `ZAMMAD_ELASTICSEARCH_EXTERNAL_NETWORK`
 
-### Add host port to Elasticsearch
+### Adicionar uma porta de host ao Elasticsearch
 
 Caso você queira expor o serviço do Elasticsearch da stack do Zammad na
 rede, você pode atribuir uma porta de host ao container. Isso é útil se você
@@ -169,9 +169,9 @@ precisar acessar o container do Elasticsearch a partir de um host diferente.
 - A porta padrão para o Elasticsearch é `9200`. Altere-a para outra porta
   usando a variável de ambiente `ELASTICSEARCH_EXPOSE_HTTP_PORT`
 
-## Additional scenarios
+## Cenários adicionais
 
-### Disable backup service
+### Desativar o serviço de backup
 
 Caso você queira lidar com backups de outra forma, pode desativar o serviço
 de backup integrado na stack para economizar recursos.
@@ -197,7 +197,7 @@ os recursos de IA imediatamente.
 Para usá-lo no Zammad, adicione o nome do serviço e a porta
 (`http://ollama:11434`) à configuração do provedor.
 
-### Limit resources
+### Limitar recursos
 
 Se você quiser limitar os recursos de hardware que a stack do Zammad pode
 usar, use o cenário `scenarios/apply-resource-limits.yml`. Valores padrão de
@@ -206,12 +206,12 @@ pode encontrar esses valores padrão no arquivo `.env.dist`. Forneça as
 variáveis alteradas que deseja usar como variáveis de ambiente e implante a
 stack.
 
-### Other use cases
+### Outros casos de uso
 
 Seu cenário ainda não está coberto? Sinta-se à vontade para sugerir seu caso
 de uso. Planejamos adicionar mais casos de uso comuns à stack no futuro.
 
-## Customize the stack locally
+## Personalizar a stack localmente
 
 Às vezes é necessário aplicar alterações locais à stack Docker do Zammad,
 por exemplo, para incluir serviços adicionais. Se você planeja fazer isso,

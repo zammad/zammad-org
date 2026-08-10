@@ -1,15 +1,15 @@
 ---
 order: 8
-title: 'Docker file handling examples'
+title: 'Docker Datei-Handling-Beispiele'
 ---
 
-# Docker file handling examples
+# Docker Datei-Handling-Beispiele
 
 Wenn Sie nicht sicher sind, wie Sie mit den Sicherungsdateien umgehen und
 wie Sie das Verzeichnis `restore` im Docker-Volume erstellen, finden Sie
 unten einige Beispiele.
 
-## Restore inside the same stack
+## Wiederherstellung innerhalb eines Stacks
 
 **Erfordert:** Konsolenzugriff auf den Container zammad-backup.
 
@@ -25,7 +25,7 @@ docker compose run --rm zammad-backup bash -c "mkdir /var/tmp/zammad/restore; cp
 
 Starten Sie nun den Stack, um den Wiederherstellungsprozess durchzuführen.
 
-## Restore from another installation
+## Wiederherstellen von einer anderen Installation
 
 **Erfordert:** Konsolenzugriff auf das Hostsystem und den Container zammad-backup.
 
@@ -54,7 +54,7 @@ docker compose run --rm -v /path/to/your/host/directory:/restore zammad-backup b
 
 Starten Sie nun den Stack, um den Wiederherstellungsprozess durchzuführen.
 
-## Use a web GUI
+## Verwendung einer Web-GUI
 
 **Erfordert:** Konsolenzugriff auf das Hostsystem oder Portainer-Zugriff mit der Berechtigung, einen Container zu starten.
 

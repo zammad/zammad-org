@@ -1,9 +1,9 @@
 ---
 order: 99
-title: 'Data retention and external services'
+title: 'Retenção de dados e serviços externos'
 ---
 
-# Data retention and external services
+# Retenção de dados e serviços externos
 
 Por quanto tempo o Zammad armazena dados de usuário? Como posso gerenciar o
 comportamento de retenção de dados de usuário? A quais serviços o Zammad se
@@ -13,7 +13,7 @@ conecta?
 
 Os seguintes dados são armazenados localmente no sistema de produção:
 
-### Tickets and users
+### Tickets e usuários
 
 Por padrão, o Zammad nunca exclui automaticamente tickets ou usuários.
 
@@ -64,12 +64,12 @@ menu de preferências do usuário, em _Devices_.
 As informações de sessão incluem endereço IP (e possivelmente localização
 geográfica), navegador, hora do login original e hora da última visita.
 
-### Data privacy tasks
+### Tarefas de privacidade de dados
 
 Cada entrada na lista de tarefas de privacidade de dados é excluída
 automaticamente após 12 meses.
 
-## External services
+## Serviços externos
 
 O Zammad utiliza serviços web de terceiros para certas funções, o que significa
 que dados de usuário podem ocasionalmente ser enviados ou expostos a terceiros.

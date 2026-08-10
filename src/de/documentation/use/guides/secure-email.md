@@ -1,9 +1,9 @@
 ---
 order: 3
-title: 'Secure email'
+title: 'Sichere E-Mail'
 ---
 
-# Secure email
+# Sichere E-Mail
 
 Zammad unterstützt zwei Systeme für sichere E-Mail-Kommunikation:
 
@@ -37,7 +37,7 @@ um mehr darüber zu erfahren und häufige Fehler zu erkennen.
 verschlüsselt
 wird](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
 
-## Signing & encryption
+## Signatur & Verschlüsselung
 
 Signatur
 : Eine Signatur ist ein Nachweis dafür, dass eine Nachricht auf ihrem Weg nicht manipuliert wurde. Sie gewährleistet die **Integrität**
@@ -47,7 +47,7 @@ Verschlüsselung
 : Bei der Verschlüsselung wird eine Nachricht so unleserlich gemacht, dass sie nur vom vorgesehenen Empfänger wieder entschlüsselt werden kann. Sie gewährleistet die **Vertraulichkeit**
   sowie den **Datenschutz** der Nachricht .
 
-## Incoming email
+## Eingehende E-Mail
 
 Das Schloss- und Haken-Symbol oben in einer Nachricht zeigen den Status der
 Verschlüsselung und der Signatur an. Klicken Sie auf einen eingehenden
@@ -58,7 +58,7 @@ anzuzeigen.
 ![Screenshot zeigt Verschlüsselungs- und Signatur-Icons in einem eingehenden
 E-Mail-Artikel](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
 
-### Status icons for incoming emails
+### Icons für eingehende E-Mails
 
 | Symbol | Bedeutung |
 |---|---|
@@ -67,7 +67,7 @@ E-Mail-Artikel](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/
 | ![Symbol "Signiert"](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Erfolgreich verifiziert.** Sie können sicher sein, dass die E-Mail authentisch ist und der Inhalt nicht verändert wurde. |
 | ![Symbol "Nicht signiert"](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Die Signaturüberprüfung ist fehlgeschlagen.** Bewegen Sie den Mauszeiger über das Symbol, um weitere Informationen zu erhalten. |
 
-## Outgoing email
+## Ausgehende E-Mails
 
 Verwenden Sie die Schaltflächen `Verschlüsseln` und `Signieren`, um die
 Verschlüsselung und Signatur für ausgehende E-Mails zu aktivieren. Diese
@@ -81,7 +81,7 @@ Email-Artikel-Editor](/screenshots/cypress/documentation/use/guide-secure-email.
 Ausgehende E-Mails können nur für einen einzelnen Empfänger verschlüsselt werden.
 :::
 
-### Status icons for outgoing emails
+### Icons für ausgehende E-Mails
 
 | Symbol | Bedeutung |
 |---|---|
@@ -127,7 +127,7 @@ Zertifikatsspeicher von Zammad hinzuzufügen.
 Bitten Sie Ihren Administrator, den privaten Schlüssel Ihrer Organisation im
 Zertifikatsspeicher von Zammad zu überprüfen.
 
-### Multiple security types configured
+### Mehrere Sicherheitsmethoden konfiguriert
 
 Möglicherweise werden Ihnen die Schaltflächen `PGP` und `S/MIME`
 angezeigt. Dies ist der Fall, wenn beide Optionen in Ihrem System

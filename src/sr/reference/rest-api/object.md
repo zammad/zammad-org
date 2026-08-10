@@ -6,18 +6,18 @@ title: Објекат
 # Објекат
 
 ::: danger
-Adjusting objects via API can cause serious issues with your instance.
-Proceed with absolute caution and ensure to adjust any of Zammad's
-default fields.
+Подешавање објеката путем API-ја може изазвати озбиљне проблеме на вашој инстанци.
+Поступајте изузетно опрезно и проверите да не модификујете ниједно од Zammad-ових
+подразумеваних поља.
 
-If you want to hide fields, consider Zammad's core workflows instead!
+Ако желите да сакријете поља, уместо тога искористите основне токове рада у Zammad-у!
 :::
 
-## List
+## Преглед листе
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`GET`-Request sent: `/api/v1/object_manager_attributes`
+`GET`-захтев послат: `/api/v1/object_manager_attributes`
 
 ::: details
 
@@ -25,11 +25,11 @@ Required permission: `admin.object`
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`GET`-Request sent: `/api/v1/object_manager_attributes/{id}`
+`GET`-захтев послат: `/api/v1/object_manager_attributes/{id}`
 
 ::: details
 
@@ -37,57 +37,57 @@ Required permission: `admin.object`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`POST`-Request sent: `/api/v1/object_manager_attributes`
+`POST`-захтев послат: `/api/v1/object_manager_attributes`
 
-### Boolean
+### Логички тип
 
 :::: details
 
 ::: tabs key:regres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-res.json
 
 :::
 ::::
 
-### Date
+### Датум
 
 :::: details
 
 ::: tabs key:regres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-date-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-date-res.json
 
 :::
 ::::
 
-### Date time
+### Датум и време
 
 :::: details
 
 ::: tabs key:regres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-datetime-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-datetime-res.json
 
@@ -100,28 +100,28 @@ Required permission: `admin.object`
 
 ::: tabs key:regres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-integer-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-integer-res.json
 
 :::
 ::::
 
-### Select
+### за одабир
 
 :::: details
 
 ::: tabs key:regres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-select-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-select-res.json
 
@@ -134,41 +134,41 @@ Required permission: `admin.object`
 
 :::: tabs key:regres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-text-req.json
 
 ::: tip
 
-Zammad input fields can have 4 different types:
+Поља за унос у Zammad-у могу бити 4 различита типа:
 
 - `email`
 - `tel`
 - `text`
-- `url` (does not support link-templates)
+- `url` (не подржава линк предлошке)
 
-Depending on the chosen input type, Zammad expects different formats of
-data. E.g.: email demands an email address to be provided.
+Зависно од изабраног типа уноса, Zammad очекује различите формате
+података. На пример: емаил захтева да буде наведена адреса имејла.
 :::
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-text-res.json
 
 ::::
 :::::
 
-### Tree select
+### за одабир
 
 :::: details
 
 ::: tabs key:regres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-treeselect-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-treeselect-res.json
 
@@ -176,11 +176,10 @@ data. E.g.: email demands an email address to be provided.
 ::::
 
 :::: info
-Please note that above payloads cover ticket objects. This is fine in
-most situations, except if you're looking at the default object
-permissions. This is why we're listing these separate for you to view.
+Имајте на уму да горе наведени payloadi обухватају објекте карата. То је у реду за
+већину ситуација, осим ако прегледате подразумевана права приступа објектима. Зато су наведени одвојено ради вашег прегледа.
 
-The attribute `object` controls which context is being used:
+Атрибут `object` контролише који се контекст користи:
 
 - `Ticket`
 - `User`
@@ -189,19 +188,19 @@ The attribute `object` controls which context is being used:
 
 ::: tabs
 
-=== Ticket
+=== Тикета
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-screens-ticket-req.json
 
-=== User
+=== Корисник
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-screens-user-req.json
 
-=== Organization
+=== Организација
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-screens-organization-req.json
 
-=== Group
+=== Група
 
 <<< @/fixtures/rest-api/object_manager_attributes/post-screens-group-req.json
 
@@ -210,44 +209,43 @@ The attribute `object` controls which context is being used:
 
 ## Освежавање
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-Except on the request method, payloads or updating and creating objects are
-identical. For full payload samples thus scroll up to `create_object`.
+Осим у методама захтева, payloadi за ажурирање и креирање објеката су
+идентични. За потпуне примере payloada пређите на `create_object`.
 
-Zammad will return two attributes during update: `data_option` and
-`data_option_new`. The first attribute contains the current active values
-and the second one the new to be values (they'll become active after
-executing the database migrations).
+Zammad ће приликом ажурирања вратити два атрибута: `data_option` и
+`data_option_new`. Први атрибут садржи тренутне активне вредности, а други
+нове вредности (које постају активне након извршења миграција базе
+података).
 
-`PUT`-Request sent: `/api/v1/object_manager_attributes/{id}`
+`PUT`-захтев послат: `/api/v1/object_manager_attributes/{id}`
 
 ::::: details
 
 :::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Ensure to provide `data_option`. Zammad is very picky if you leave out
-this attribute. Please note that changing the object type _after_
-creation is not possible.
+Обавезно наведите `data_option`. Zammad строхо захтева да овај атрибут буде присутан. Имајте на уму да је мењање типа објекта _након_
+креирања немогуће.
 :::
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-res.json
 
 ::::
 :::::
 
-## Delete
+## Обриши
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`
+`DELETE`-захтев послат: `/api/v1/object_manager_attributes/{id}`
 
 ::: details
 
@@ -255,18 +253,18 @@ Required permission: `admin.object`
 
 :::
 
-## Execute database migrations
+## Изврши миграције базе података
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
 ::: warning
-After executing the database migrations, a restart of Zammad is
-_mandatory_. If not deactivated via
-[auto shutdown setting](/en/reference/rails-commands#auto-shutdown-setting),
-Zammad automatically restarts - expect a short downtime.
+Након извршавања миграција базе података, поновно покретање Zammad-а је
+_обавезно_. Ако није онемогућено путем
+[поставке аутоматског гашења](/en/reference/rails-commands#auto-shutdown-setting),
+Zammad се аутоматски рестартује - очекујте кратку недоступност.
 :::
 
-`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`
+`POST`-захтев послат: `/api/v1/object_manager_attributes_execute_migrations`
 
 ::: details
 

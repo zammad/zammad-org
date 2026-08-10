@@ -2,94 +2,96 @@
 order: 3
 ---
 
-# Webserver configuration
+# Конфигурација web сервера
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-Configure your webserver to reverse-proxy the Zammad application server.
-This guide covers obtaining an SSL certificate, adjusting the sample
-configuration for Nginx and Apache 2 and reloading the webserver to apply
-the changes.
+Подесите свој веб сервер да буде обрнути прокси за Zammad апликативни
+сервер. Овај водич покрива добављање SSL сертификата, прилагођавање примера
+подешавања за Nginx и Apache 2 и поновно учитавање веб сервера да би се
+промене примениле.
 
-You can find sample configuration files for your webserver within the
-`contrib/` directory of your Zammad installation. There are two example
-files per webserver: `zammad.conf` (plain HTTP) and `zammad_ssl.conf`
-(HTTPS). The non-SSL file is intended for local testing only and must not be
-used in production. During a package installation of Zammad, the package
-automatically copies the non-SSL `zammad.conf` to your webserver's config
-directory. For production use, replace it with `zammad_ssl.conf` and follow
-the steps on this page.
+Примере датотека подешавања за свој веб сервер можете наћи у `contrib/`
+директоријуму своје Zammad инсталације. Постоје две датотеке примера по веб
+серверу: `zammad.conf` (обичан HTTP) и `zammad_ssl.conf` (HTTPS). Датотека
+без SSL-а је намењена само локалном тестирању и не сме се користити у
+производном окружењу. Током инсталације Zammad-а путем пакета, пакет
+аутоматски копира `zammad.conf` без SSL-а у директоријум подешавања вашег
+веб сервера. За производну употребу, замените је са `zammad_ssl.conf` и
+пратите кораке на овој страни.
 
 ::: info
-**Docker Compose / Kubernetes users:**
+**Корисници Docker Compose-а / Kubernetes-а:**
 
-Skip this page. Configure the webserver port, hostname and scheme via the
-`NGINX_*` and `ZAMMAD_RAILSSERVER_*` variables on the
-[environment variables page](/en/reference/environment-variables).
+Прескочите ову страну. Подесите порт веб сервера, назив сервера и шему преко
+`NGINX_*` и `ZAMMAD_RAILSSERVER_*` променљивих на
+[страни са променљивама окружења](/en/reference/environment-variables).
 :::
 
-## Obtain an SSL certificate
+## Набавите SSL сертификат
 
-Zammad requires HTTPS in production. Use one of the options below to obtain
-a certificate before continuing with the webserver configuration.
+Zammad захтева HTTPS у производном окружењу. Употребите једну од опција
+испод да добавите сертификат пре него што наставите са подешавањем веб
+сервера.
 
-### Commercial certificate authority
+### Комерцијални орган за издавање сертификата
 
-Buy an annual certificate from any trusted public CA. A few common options
-are [Sectigo](https://sectigo.com/ssl-certificates-tls){target=_blank},
-[GlobalSign](https://www.globalsign.com/en/managed-ssl){target=_blank} or
-[DigiCert](https://www.digicert.com/tls-ssl/){target=_blank}. Install the
-resulting certificate, key and chain on your server as you would for any
-HTTPS service, then continue with the webserver configuration below.
+Купите годишњи сертификат од било ког поузданог јавног CA. Неколико
+уобичајених опција су
+[Sectigo](https://sectigo.com/ssl-certificates-tls){target=_blank},
+[GlobalSign](https://www.globalsign.com/en/managed-ssl){target=_blank} или
+[DigiCert](https://www.digicert.com/tls-ssl/){target=_blank}. Инсталирајте
+добијени сертификат, кључ и ланац на свој сервер као што бисте то урадили за
+било који HTTPS сервис, а затим наставите са подешавањем веб сервера испод.
 
 ### Let's Encrypt
 
-Let's Encrypt issues free, automatically renewable certificates. Two clients
-are commonly used.
+Let's Encrypt издаје бесплатне сертификате које је могуће аутоматски
+обнављати. Обично се користе два клијента.
 
 ::: tabs
 
 === Certbot
 
-Certbot is the most widely used ACME client. Follow the upstream
-[Certbot installation instructions](https://certbot.eff.org/instructions){target=_blank},
-select your distribution and the matching webserver plugin in the
-selector and complete the install. Once installed, request a certificate
-by replacing `<webserver>` with `nginx` or `apache` and
-`zammad.example.com` with your subdomain:
+Certbot је најшире коришћен ACME клијент. Пратите изворна
+[упутства за инсталацију Certbot-а](https://certbot.eff.org/instructions){target=_blank},
+изаберите своју дистрибуцију и одговарајући прикључак за веб сервер у
+бирачу и завршите инсталацију. Након инсталације, затражите сертификат
+тако што ћете заменити `<webserver>` са `nginx` или `apache` и
+`zammad.example.com` својим поддоменом:
 
 ```sh
 sudo certbot --<webserver> -d zammad.example.com
 ```
 
-Certbot will issue the certificate, ask whether to redirect HTTP to HTTPS
-(choose `[1] not redirect` if you plan to use the Zammad sample
-configuration, which already handles the redirect, otherwise choose
-`[2] redirect`) and arrange automatic renewal once the certificate has
-less than 30 days of validity remaining.
+Certbot ће издати сертификат, питати да ли да преусмери HTTP на HTTPS
+(изаберите `[1] not redirect` ако планирате да користите пример Zammad
+подешавања, које већ обрађује преусмеравање, у супротном изаберите
+`[2] redirect`) и организовати аутоматско обнављање када сертификату
+остане мање од 30 дана важности.
 
 === acme.sh
 
-[acme.sh](https://github.com/acmesh-official/acme.sh){target=_blank} is
-a lightweight shell-based ACME client and an alternative to Certbot, but
-it no longer uses Let's Encrypt by default. Set the default CA to Let's
-Encrypt before issuing a certificate:
+[acme.sh](https://github.com/acmesh-official/acme.sh){target=_blank} је
+лаган ACME клијент заснован на љусци и алтернатива Certbot-у, али
+подразумевано више не користи Let's Encrypt. Поставите подразумевани CA на Let's
+Encrypt пре издавања сертификата:
 
 ```sh
 acme.sh --set-default-ca --server letsencrypt
 ```
 
-Issue the certificate by replacing `<webserver-plugin>` with `nginx`,
-`apache` or `standalone` and `zammad.example.com` with your subdomain:
+Издајте сертификат тако што ћете заменити `<webserver-plugin>` са `nginx`,
+`apache` или `standalone` и `zammad.example.com` својим поддоменом:
 
 ```sh
 acme.sh --issue --<webserver-plugin> -d zammad.example.com
 ```
 
-Install the certificate to a directory of your choice (e.g.
-`/etc/ssl/private/`) and reload the webserver after each renewal.
-Replace `<webserver-service>` in the command below with the matching
-systemd service name (`nginx`, `apache2` or `httpd`):
+Инсталирајте сертификат у директоријум по свом избору (нпр.
+`/etc/ssl/private/`) и поново учитајте веб сервер после сваког обнављања.
+Замените `<webserver-service>` у команди испод одговарајућим
+називом systemd сервиса (`nginx`, `apache2` или `httpd`):
 
 ```sh
 acme.sh --install-cert -d zammad.example.com \
@@ -99,67 +101,67 @@ acme.sh --install-cert -d zammad.example.com \
     --reloadcmd     "sudo systemctl force-reload <webserver-service>"
 ```
 
-See the
-[acme.sh documentation](https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert){target=_blank}
-for further use cases.
+Погледајте
+[документацију acme.sh](https://github.com/acmesh-official/acme.sh/wiki/How-to-issue-a-cert){target=_blank}
+за додатне случајеве употребе.
 
 :::
 
-## Adjust the webserver configuration
+## Прилагођавање конфигурације web сервера
 
-<!-- markdownlint-disable MD036 -->
+,
 
 :::: tabs
 
 === Nginx (default)
 
-**Get the sample config into place**
+**Постављање примера подешавања**
 
-Copy the SSL sample configuration to your Nginx config directory:
+Копирајте пример SSL подешавања у директоријум подешавања вашег Nginx-а:
 
 ```sh
 sudo cp /opt/zammad/contrib/nginx/zammad_ssl.conf \
     /etc/nginx/sites-available/zammad.conf
 ```
 
-Most common Nginx config directories:
+Најчешћи Nginx директоријуми подешавања:
 
 - `/etc/nginx/conf.d/`
 - `/etc/nginx/vhosts.d/`
 - `/etc/nginx/sites-available/`
 
-**Adjust server name and certificate paths**
+**Прилагодите назив сервера и путање сертификата**
 
-Adjust the just copied file with a text editor of your choice (e.g.
-vi or nano). Locate both `server_name` directives (one in the HTTP
-server block on port 80, one in the HTTPS server block on port 443)
-and adjust `example.com` to the subdomain you have chosen for your
-Zammad instance.
+Прилагодите управо копирану датотеку текстуалним уређивачем по свом избору (нпр.
+vi или nano). Пронађите обе `server_name` директиве (једну у HTTP
+блоку сервера на порту 80, једну у HTTPS блоку сервера на порту 443)
+и прилагодите `example.com` поддомену који сте изабрали за своју
+Zammad инстанцу.
 
-Now you'll need to adjust the path and file names for your SSL
-certificates you obtained on the prior steps. Adjust the following
-directives to match your setup:
+Сада ћете морати да прилагодите путању и називе датотека својих SSL
+сертификата које сте добили у претходним корацима. Прилагодите следеће
+директиве својој поставци:
 
-- `ssl_certificate` (your SSL certificate)
-- `ssl_certificate_key` (the certificate's private key)
-- `ssl_trusted_certificate` (the public CA certificate)
+- `ssl_certificate` (ваш SSL сертификат)
+- `ssl_certificate_key` (тајни кључ сертификата)
+- `ssl_trusted_certificate` (јавни CA сертификат)
 
-To improve HTTPS security, also configure a Diffie-Hellman parameter
-file and point `ssl_dhparam` at it:
+Да бисте побољшали HTTPS безбедност, подесите и датотеку Diffie-Hellman
+параметара и усмерите `ssl_dhparam` на њу:
 
 ```sh
 sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096
 ```
 
-**Reload and verify**
+**Поновно учитавање и провера**
 
-Verify the configuration:
+Проверите подешавање:
 
 ```sh
 sudo nginx -t
 ```
 
-Reload Nginx:
+Поново учитајте Nginx:
 
 ```sh
 sudo systemctl reload nginx
@@ -167,23 +169,23 @@ sudo systemctl reload nginx
 
 === Apache 2
 
-**Enable the required modules**
+**Укључите неопходне модуле**
 
-Zammad requires modules that are not enabled by default. On Ubuntu,
-Debian and openSUSE use `a2enmod`:
+Zammad захтева модуле који нису подразумевано укључени. На Ubuntu-у,
+Debian-у и openSUSE-у користите `a2enmod`:
 
 ```sh
 sudo a2enmod proxy proxy_html proxy_http proxy_wstunnel headers ssl
 ```
 
-For HTTP/2 support also enable:
+За подршку за HTTP/2 укључите и:
 
 ```sh
 sudo a2enmod h2 proxy_http2 mpm_event
 ```
 
-On CentOS / RHEL add the matching `LoadModule` lines to
-`/etc/httpd/conf/httpd.conf` instead:
+На CentOS-у / RHEL-у уместо тога додајте одговарајуће `LoadModule` линије у
+`/etc/httpd/conf/httpd.conf`:
 
 ```apache
 LoadModule headers_module modules/mod_headers.so
@@ -193,135 +195,136 @@ LoadModule proxy_http_module modules/mod_proxy_http.so
 LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so
 ```
 
-Restart Apache after enabling the modules:
+Поново покрените Apache након укључивања модула:
 
 ```sh
 sudo systemctl restart apache2
 ```
 
-**Get the sample config into place**
+**Постављање примера подешавања**
 
-Copy the SSL sample configuration to your Apache config directory:
+Копирајте пример SSL подешавања у директоријум подешавања вашег Apache-а:
 
 ```sh
 sudo cp /opt/zammad/contrib/apache2/zammad_ssl.conf \
     /etc/apache2/sites-available/zammad.conf
 ```
 
-Most common Apache config directories:
+Најчешћи Apache директоријуми подешавања:
 
 - `/etc/apache2/conf.d/`
 - `/etc/httpd/vhosts.d/`
 - `/etc/apache2/sites-available/`
 
-The package installation attempts to copy this file for you. Do not
-rename it.
+Инсталација путем пакета покушава да копира ову датотеку за вас. Не
+преименујте је.
 
-**Adjust server name and certificate paths**
+**Прилагодите назив сервера и путање сертификата**
 
-Adjust the just copied file with a text editor of your choice (e.g.
-vi or nano). Locate any `ServerName` directive and adjust `example.com`
-to the subdomain you have chosen for your Zammad instance. The first
-`ServerName` (in the HTTP VirtualHost) defaults to `example.com` and
-the second (in the HTTPS VirtualHost) to `localhost`.
+Прилагодите управо копирану датотеку текстуалним уређивачем по свом избору (нпр.
+vi или nano). Пронађите било коју `ServerName` директиву и прилагодите `example.com`
+поддомену који сте изабрали за своју Zammad инстанцу. Прва
+`ServerName` (у HTTP VirtualHost-у) подразумевано је `example.com`, а
+друга (у HTTPS VirtualHost-у) `localhost`.
 
-Now you'll need to adjust the path and file names for your SSL
-certificates you obtained on the prior steps. Adjust the following
-directives to match your setup:
+Сада ћете морати да прилагодите путању и називе датотека својих SSL
+сертификата које сте добили у претходним корацима. Прилагодите следеће
+директиве својој поставци:
 
-- `SSLCertificateFile` (your SSL certificate)
-- `SSLCertificateKeyFile` (the certificate's private key)
-- `SSLCertificateChainFile` (the public CA certificate)
+- `SSLCertificateFile` (ваш SSL сертификат)
+- `SSLCertificateKeyFile` (тајни кључ сертификата)
+- `SSLCertificateChainFile` (јавни CA сертификат)
 
-To improve HTTPS security, also configure a Diffie-Hellman parameter
-file and point `SSLOpenSSLConfCmd DHParameters` at it:
+Да бисте побољшали HTTPS безбедност, подесите и датотеку Diffie-Hellman
+параметара и усмерите `SSLOpenSSLConfCmd DHParameters` на њу:
 
 ```sh
 sudo openssl dhparam -out /etc/ssl/dhparam.pem 4096
 ```
 
-**Enable the site**
+**Укључите сајт**
 
-On Ubuntu, Debian and openSUSE:
+На Ubuntu-у, Debian-у и openSUSE-у:
 
 ```sh
 sudo a2ensite zammad
 ```
 
-On CentOS / RHEL:
+На CentOS-у / RHEL-у:
 
 ```sh
 sudo ln -s /etc/httpd/sites-available/zammad_ssl.conf /etc/httpd/sites-enabled/
 ```
 
-Make sure `IncludeOptional sites-enabled/*.conf` is present in
-`/etc/apache2/apache2.conf` (Ubuntu, Debian, openSUSE) or
+Проверите да ли је `IncludeOptional sites-enabled/*.conf` присутно у
+`/etc/apache2/apache2.conf` (Ubuntu, Debian, openSUSE) или
 `/etc/httpd/conf/httpd.conf` (CentOS / RHEL).
 
-**Reload and verify**
+**Поновно учитавање и провера**
 
-Reload Apache and verify the configuration:
+Поново учитајте Apache и проверите подешавање:
 
 ```sh
 sudo systemctl reload apache2
 ```
 
-=== Local testing or other proxy servers
+=== Локално тестирање или други прокси сервери
 
-Zammad's main application listens on port `3000` and the WebSocket
-server on port `6042`. If you put your own reverse proxy in front of
-Zammad, forward both.
+Zammad-ова главна апликација слуша на порту `3000`, а WebSocket
+сервер на порту `6042`. Ако постављате сопствени обрнути прокси испред
+Zammad-а, преусмерите оба.
 
-If the default ports conflict with other applications on your host, see
-the [environment variables page](/en/reference/environment-variables) to
-change them.
+Ако су подразумевани портови у конфликту са другим апликацијама на вашем серверу, погледајте
+[страну са променљивама окружења](/en/reference/environment-variables) да
+их промените.
 
 ::: warning
-Do not expose Zammad directly to the internet. Zammad only provides
-plain HTTP and would be reachable without authentication.
+Не излажите Zammad директно интернету. Zammad пружа само
+обичан HTTP и био би доступан без аутентификације.
 :::
 
 ::::
 
-<!-- markdownlint-enable MD036 -->
+,
 
-Now visit your configured Zammad domain in a browser to reach the Zammad
-UI. If you don't see Zammad's setup wizard or Zammad UI at all, check the
-[Troubleshooting section](#troubleshooting) below.
+Сада посетите свој подешени Zammad домен у прегледачу да бисте дошли до
+Zammad интерфејса. Ако уопште не видите Zammad-овог чаробњака за подешавање
+или Zammad интерфејс, погледајте [одељак Решавање
+проблема](#troubleshooting) испод.
 
 ## Решавање проблема
 
-### Default landing page instead of Zammad
+### Подразумевана почетна страна уместо Zammad-а
 
-If you reach the webserver's default landing page rather than Zammad, your
-`zammad.conf` may be overruled by another config file. Check the vhost
-directory for `000-default.conf` or `default.conf` and disable it.
+Ако дођете до подразумеване почетне стране веб сервера уместо до Zammad-а,
+вашу `zammad.conf` можда преиначује друга датотека подешавања. Проверите
+vhost директоријум за `000-default.conf` или `default.conf` и искључите је.
 
-### DNS not resolving
+### DNS се не разрешава
 
-If the subdomain does not resolve, double-check the DNS records for your
-domain and wait for them to propagate. Replace the `zammad.example.com` in
-the following command with your configured domain of Zammad and check if the
-domain points to the right server:
+Ако се поддомен не разрешава, још једном проверите DNS записе за свој домен
+и сачекајте да се прошире. Замените `zammad.example.com` у следећој команди
+својим подешеним Zammad доменом и проверите да ли домен упућује на прави
+сервер:
 
 ```sh
 host zammad.example.com
 ```
 
-### CSRF token errors
+### Грешке CSRF токена
 
-If users cannot log in because of CSRF token errors, your webserver chain
-may not pass the original connection type to Zammad. Tell the proxy directly
-that the connection is HTTPS.
+Ако корисници не могу да се пријаве због грешака CSRF токена, ваш ланац веб
+сервера можда не прослеђује Zammad-у оригиналну врсту конекције. Реците
+проксију директно да је конекција HTTPS.
 
 Nginx
-: Within your virtual host configuration, locate
-  `proxy_set_header X-Forwarded-Proto` and replace `$scheme` with
+: У подешавању свог виртуелног хоста пронађите
+  `proxy_set_header X-Forwarded-Proto` и замените `$scheme` са
   `https`.
 
 Apache 2
-: Within your virtual host configuration, just above the first
-  `ProxyPass` directive, insert:
+: У подешавању свог виртуелног хоста, непосредно пре прве
+  `ProxyPass` директиве, убаците:
 
   ```apache
   RequestHeader set X_FORWARDED_PROTO 'https'

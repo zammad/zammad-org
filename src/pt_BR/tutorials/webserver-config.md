@@ -2,7 +2,7 @@
 order: 3
 ---
 
-# Webserver configuration
+# Configuração do servidor web
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
@@ -28,12 +28,12 @@ variáveis `NGINX_*` e `ZAMMAD_RAILSSERVER_*` na
 [página de variáveis de ambiente](/pt_BR/reference/environment-variables).
 :::
 
-## Obtain an SSL certificate
+## Obter um certificado SSL
 
 O Zammad requer HTTPS em produção. Use uma das opções abaixo para obter um
 certificado antes de continuar com a configuração do servidor web.
 
-### Commercial certificate authority
+### Autoridade certificadora comercial
 
 Compre um certificado anual de qualquer CA pública confiável. Algumas opções
 comuns são
@@ -107,7 +107,7 @@ para mais casos de uso.
 
 :::
 
-## Adjust the webserver configuration
+## Ajustar a configuração do servidor web
 
 <!-- markdownlint-disable MD036 -->
 
@@ -294,14 +294,14 @@ problemas](#troubleshooting) abaixo.
 
 ## Solução de problemas
 
-### Default landing page instead of Zammad
+### Página de destino padrão em vez do Zammad
 
 Se você chegar à página de destino padrão do servidor web em vez do Zammad,
 seu `zammad.conf` pode estar sendo sobreposto por outro arquivo de
 configuração. Verifique o diretório vhost por `000-default.conf` ou
 `default.conf` e desative-o.
 
-### DNS not resolving
+### DNS não resolvendo
 
 Se o subdomínio não resolver, verifique novamente os registros DNS do seu
 domínio e aguarde a propagação. Substitua o `zammad.example.com` no comando
@@ -312,7 +312,7 @@ aponta para o servidor correto:
 host zammad.example.com
 ```
 
-### CSRF token errors
+### Erros de token CSRF
 
 Se os usuários não conseguirem fazer login devido a erros de token CSRF, a
 cadeia do seu servidor web pode não estar passando o tipo de conexão

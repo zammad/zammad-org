@@ -5,14 +5,14 @@ title: 'Firewall & SELinux'
 
 # Firewall & SELinux
 
-This is just a collection of snippets which might be useful for you. Feel
-free to skip parts and/or adapt it to your needs.
+Ово је само збирка исечака који би вам могли бити од користи. Слободно
+прескочите делове и/или прилагодите их својим потребама.
 
 ## SELinux
 
 ::: info
-The following commands only work on Ubuntu, Debian and CentOS. If you use a
-different distribution, please have a look at their documentation.
+Следеће команде раде само на Ubuntu-у, Debian-у и CentOS-у. Ако користите
+различиту дистрибуцију, молимо погледајте њихову документацију.
 :::
 
 ```sh
@@ -37,13 +37,13 @@ sudo chmod -R a+r /opt/zammad/public/
 
 ## Firewall
 
-Ensure to open ports `80` and `443` (TCP & UDP) beside of the ports you
-need. Below you can find a few examples for different distributions. If you
-are using a different distribution, please have a look at their
-documentation.
+Уверите се да сте отворили порте `80` и `443` (TCP & UDP) поред портова које
+вам требају. Испод можете пронаћи неколико примера за различите
+дистрибуције. Ако користите другу дистрибуцију, погледајте њихову
+документацију.
 
-Please note that the examples below only cover the distribution’s default
-firewall. It may not cover your case.
+Напомена: Примери испод покривају само подразумевани firewall
+дистрибуције. Можда не покрива ваш случај.
 
 :::: tabs
 
@@ -64,13 +64,13 @@ sudo ufw reload
 ===Debian
 
 ::: info
-We’re covering `nftables` in this part - `iptables` is discouraged
-starting from Debian 10 (Buster). Our example uses the `input` chain, yours
-may be a different one!
+У овом делу обрађујемо `nftables` - `iptables` се не препоручује
+почев од Debian 10 (Buster). Наш пример користи ланац `input`, ваш
+може бити другачији!
 :::
 
-Add the following lines to `/etc/nftables.conf` or your specific rule file.
-Ensure to add these lines to your input-chain.
+Додајте следеће линије у `/etc/nftables.conf` или ваш специфични фајл са правилима.
+Побрините се да додате ове линије у свој инпут-цхаин.
 
 ```sh
 sudo tcp dport { http, https } accept
@@ -80,8 +80,8 @@ sudo tcp dport { http, https } accept
 sudo udp dport { http, https } accept
 ```
 
-The result can look like the following. Keep in mind that your environment
-could require different / more rules.
+Резултат може изгледати као што је приказано испод. Имајте на уму да ваше окружење
+може захтевати другачија / више правила.
 
 ```sh
 table inet filter {
@@ -103,7 +103,7 @@ table inet filter {
 }
 ```
 
-To load the rules, run:
+Да бисте учитали правила, покрените:
 
 ```sh
 sudo systemctl reload nftables

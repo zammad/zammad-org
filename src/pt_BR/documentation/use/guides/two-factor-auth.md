@@ -1,9 +1,9 @@
 ---
 order: 9
-title: 'Two-factor authentication'
+title: 'Autenticação de dois fatores'
 ---
 
-# Two-factor authentication
+# Autenticação de dois fatores
 
 A autenticação de dois fatores (2FA) melhora a segurança da sua conta do
 Zammad adicionando uma camada extra de verificação além da senha. Ela exige
@@ -36,7 +36,7 @@ processo de configuração, que inclui etapas específicas. Continue usando um
 [Aplicativo autenticador](#authentication-app) ou uma [Chave de
 segurança](#security-key).
 
-### Authentication app
+### Aplicativo autenticador
 
 O método de aplicativo autenticador é um tipo de autenticação de dois
 fatores que usa um aplicativo móvel para gerar códigos de uso único para
@@ -72,7 +72,7 @@ De volta ao Zammad, informe o código fornecido no campo **Security Code** e
 clique em **Set Up**. Continue configurando outro método de 2FA ([chave de
 segurança](#security-key)) ou veja como [fazer login com 2FA](#sign-in).
 
-### Security key
+### Chave de segurança
 
 O método de chaves de segurança é um tipo de autenticação de dois fatores
 que usa a Web Authentication API no navegador para verificar sua
@@ -153,7 +153,7 @@ Você pode usar um único código de recuperação apenas uma vez! Caso você es
 que os gere novamente para sua conta.
 :::
 
-## Generate recovery codes
+## Gerar códigos de recuperação
 
 Códigos de recuperação são códigos de segurança de uso único que podem ser
 usados para fazer login caso você perca o acesso aos seus outros métodos de
@@ -177,7 +177,7 @@ qualquer momento, o que invalida os códigos existentes e fornece uma lista
 de códigos novos. Você pode fazer isso clicando no botão `Regenerate
 recovery codes` nas configurações de 2FA do seu perfil.
 
-## Set a default 2FA method
+## Definir um método de 2FA padrão
 
 Para definir um método de dois fatores já configurado como padrão, use o
 menu de ações ::a:: ao lado dele nas configurações de 2FA do seu perfil e
@@ -193,7 +193,7 @@ Um método de autenticação de dois fatores padrão é apenas seu método
 preferido durante o processo de login. Você sempre terá a opção de tentar
 fazer login usando outro método.
 
-## Edit a 2FA method
+## Editar um método de 2FA
 
 ![Captura de tela mostra o menu de ações para um método de 2FA já
 configurado](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
@@ -207,7 +207,7 @@ pelo processo de configuração. Normalmente, editar um método simplesmente o
 renova e substitui a configuração antiga, mas alguns métodos suportam
 funções avançadas (por exemplo, adicionar várias chaves de segurança).
 
-## Remove a 2FA method
+## Remover um método de 2FA
 
 Para remover um método de dois fatores já configurado, use o menu de ações
 ::a:: ao lado dele e escolha **Remove**. Em uma caixa de diálogo modal, você

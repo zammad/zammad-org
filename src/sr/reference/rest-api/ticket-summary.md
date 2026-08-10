@@ -1,29 +1,27 @@
 ---
 order: 20
-title: 'Ticket summary'
+title: 'Сажети опис тикета'
 ---
 
-# Ticket summary
+# Сажети опис тикета
 
-## Show/Trigger
+## Прикажи/Покрени
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`
+`POST`-захтев послат: `/api/v1/tickets/{ticket id}/summarize`
 
-The ticket summarize endpoint uses `POST` because creating and fetching the
-summary happen in a single operation:
+Крајња тачка за сажимање тикета користи `POST` јер се креирање и дохваћање
+сажетка одвијају у једној операцији:
 
-- If a summary exists, it is returned.
-- If a summary does not exist, creation is triggered in the background
-  (async job).
+- Ако сажетак постоји, враћа се.
+- Ако сажетак не постоји, креирање је покренуто у позадини (async задатак).
 
-Using `GET` would be incorrect since the call may also create data. If you
-want a summary to exist, call the endpoint; if it's not ready yet, retry
-after at least 30 seconds.
+Коришћење `GET` би било неисправно јер позив такође може креирати
+податке. Ако желите да сажетак постоји, позовите ендпоинт; ако још није
+спреман, покушајте поново након најмање 30 секунди.
 
-Sample response if the generation of a new summary was just triggered by the
-request:
+Пример одговора ако је генерисање новог сажетка управо покренуто захтевом:
 
 ::: details
 
@@ -31,8 +29,8 @@ request:
 
 :::
 
-Sample response for an existing summary (e.g. for the same ticket like above
-after waiting until creation has finished):
+Пример одговора за постојећи сажетак (нпр. за исту тикет као изнад након
+чекања да се креирање заврши):
 
 ::: details
 

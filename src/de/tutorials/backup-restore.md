@@ -1,9 +1,9 @@
 ---
 order: 7
-title: 'Backup & restore (package)'
+title: 'Backup & Restore (Paket)'
 ---
 
-# Backup & restore (package)
+# Backup & Restore (Paket)
 
 Zammad liefert Skripte zur Sicherung und Wiederherstellung bei
 Paket-Installationen mit, die Sie verwenden können.
@@ -53,7 +53,7 @@ Standardkonfiguration durchzuführen:
 1. Ausführen von `/opt/zammad/contrib/backup/zammad_backup.sh` (als `root`
    oder `zammad` Benutzer)
 
-## Backup configuration
+## Backup-Konfiguration
 
 Einzelheiten zu den Konfigurationsparametern mit Standardwerten finden Sie
 weiter unten.
@@ -87,9 +87,9 @@ weiter unten.
   testen wieder ab.
   :::
 
-## Restore backups
+## Sicherungen wiederherstellen
 
-### Important information
+### Wichtige Informationen
 
 Bitte lesen Sie die folgenden Informationen sorgfältig durch, bevor Sie mit
 der Wiederherstellung Ihrer Daten beginnen.
@@ -115,7 +115,7 @@ Wenn Ihr Szenario anders ist als oben beschrieben, konsultieren Sie bitte die
 [bezahlte Support-Optionen](https://zammad.com/de/services/professional-services){target=_blank}.
 :::
 
-### Copy backup files to a fitting location
+### Kopieren von Sicherungsdateien an einen passenden Ort
 
 Stellen Sie sicher, dass der Benutzer, den Sie für die Wiederherstellung
 verwenden, berechtigt ist, die Sicherungsdateien zu lesen und in
@@ -139,13 +139,13 @@ latest_zammad_files.tar.gz
 Kopieren Sie diese an einen passenden Ort, der für den Benutzer, der das
 Wiederherstellungsskript ausführt, zugänglich ist.
 
-### Configure backup script
+### Backup-Skript konfigurieren
 
 Bei einer Neuinstallation ist dies erforderlich. Sie müssen mindestens ein
 Verzeichnis angeben, in dem Ihre Backups gespeichert werden. Siehe
 [Backup-Konfiguration](#backup-konfiguration) für weitere Informationen.
 
-### Clean up the storage folder
+### Aufräumen des Speicherordners
 
 Falls Sie in einer Produktivumgebung mit aktivierte
 Dateisystem-Speichermethode wiederherstellen, sollten Sie den Inhalt des
@@ -153,7 +153,7 @@ Verzeichnisses `/opt/zammad/storage/` innerhalb des Volumes bereinigen. Der
 Wiederherstellungsprozess fügt dort nur Dateien hinzu bzw. überschreibt sie,
 es findet keine Bereinigung statt.
 
-### Run the restore
+### Die Wiederherstellung ausführen
 
 Beachten Sie, dass das Wiederherstellen von Sicherungskopien Ihre `database.yml` überschreiben kann. Sie können
 dies überprüfen, indem Sie in die Datei `[...]_zammad_files.tar.gz` schauen. Wenn es
@@ -228,7 +228,7 @@ CREATE DATABASE
 # Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!
 ```
 
-### Additional steps
+### Zusätzliche Schritte
 
 - Falls Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden
   Sie diese jetzt an.
@@ -240,14 +240,14 @@ CREATE DATABASE
   verminderten Suchleistung und kann zu vorübergehend nicht gefundenen Daten
   führen.
 
-## Troubleshooting backup & restore
+## Fehlerbehebung Sicherung & Wiederherstellung
 
 Nachstehend finden Sie einige häufig auftretende Probleme. Falls Ihr Problem
 nicht aufgeführt ist, wenden Sie sich bitte an die [Zammad
 Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank},
 um nach Unterstützung zu fragen.
 
-### Exit codes
+### Exit Codes
 
 Unsere Sicherungs- und Wiederherstellungsskripte enthalten Exit-Codes, die
 Ihnen helfen, eine Lösung zu finden. Eine vollständiges Handling aller
@@ -263,7 +263,7 @@ ausgegeben werden.
 | `2` | Es gab einen Fehler im Zusammenhang mit der Datenbank. Dies geschieht in der Regel entweder, wenn Ihr Datenbankserver die Anforderungen des Skripts nicht erfüllt, wenn die Anmeldedaten ungültig sind oder wenn Datenbank-Dumps "kaputt" sind. |
 | `3` | Es gab Probleme mit Datei-/Ordnerberechtigungen.                                                                                                                                      |
 
-### Common problems
+### Häufige Probleme
 
 #### Password authentication failed / peer authentication failed
 
@@ -315,7 +315,7 @@ Prüfen und passen Sie Ihre
 Einstellung zur Speicherung von Anhängen mittels [Rails-Befehlen](/de/reference/rails-commands#storage-provider-einstellungen)
 oder in der Verwaltungsoberfläche von Zammad unter _Einstellungen > System > Speicherung_ an.
 
-## Helper script
+## Hilfsskript
 
 ### Warnung
 
@@ -324,7 +324,7 @@ Skripte ausführen, deren Anwendungsbereich Sie nicht verstehen.
 
 Seien Sie sich bewusst, dass Sie diese Skripte auf eigenes Risiko ausführen.
 
-### Database helper: (Re)set password
+### Datenbank Hilfsskript: Passwort (neu) setzen
 
 #### Einschränkungen
 

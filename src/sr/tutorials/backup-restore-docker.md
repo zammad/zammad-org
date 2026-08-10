@@ -1,42 +1,44 @@
 ---
 order: 6
-title: 'Backup & restore (Docker)'
+title: 'Резервна копија и њено враћање'
 ---
 
-# Backup & restore (Docker)
+# Резервна копија и њено враћање
 
-This section shows some basics about the backup and restore process for a
-Docker Compose based deployment of Zammad.
+Овај одељак приказује неке основе о процесу израде и враћања резервних
+копија за постављање Zammad-а засновано на Docker Compose-у.
 
-If you are familiar with volume based backup and restore procedures in
-Docker, and perhaps already use a different method or tool, then you can
-keep using it. A backup would typically mean shutting down the stack to
-ensure all in-memory files get written to disk, then backing up the volume
-contents, and then starting the stack again. When using such method, you can
-consider using the [disable-backup-service
-scenario](/en/reference/docker-compose-scenarios) so that the built-in
-backup and restore mechanism of Zammad is not activated.
+Ако сте упознати са процедурама израде и враћања резервних копија заснованих
+на волуменима у Docker-у, и можда већ користите другачији метод или алат,
+можете да га и даље користите. Резервна копија обично значи заустављање
+стека да би се обезбедило да се све датотеке из радне меморије запишу на
+диск, затим израду резервне копије садржаја волумена и потом поновно
+покретање стека. Када користите такав метод, можете размотрити употребу
+[сценарија disable-backup-service](/en/reference/docker-compose-scenarios)
+како се уграђени механизам Zammad-а за резервне копије и враћање не би
+активирао.
 
-The rest of this page describes the built-in backup and restore mechanism of
-Zammad's Docker Compose stack.
+Остатак ове стране описује уграђени механизам за резервне копије и враћање у
+Zammad-овом Docker Compose стеку.
 
-If you're familiar with Docker, the sections below include the information
-you'll need. The [Docker file handling](/en/tutorials/docker-file-handling)
-page covers some examples about how to handle the backup files and to copy
-it into a Docker volume to restore it.
+Ако сте упознати са Docker-ом, одељци испод садрже информације које ће вам
+бити потребне. Страна [Рад са Docker
+датотекама](/en/tutorials/docker-file-handling) покрива неке примере о томе
+како да рукујете датотекама резервних копија и да их копирате у Docker
+волумен ради враћања.
 
-## Backup
+## Zammad
 
-By default, a backup is created at 3 o'clock each night. The backup is
-stored in the volume of the **zammad-backup** container under
-`/var/tmp/zammad`. To trigger a one-time backup manually, use one of the
-commands below, depending on your deployment method.
+Подразумевано, резервна копија се прави у 3 часа сваке ноћи. Резервна копија
+се чува у волумену контејнера **zammad-backup** под `/var/tmp/zammad`. Да
+бисте једнократно ручно покренули израду резервне копије, употребите једну
+од команди испод, у зависности од вашег метода постављања.
 
 ::: tabs key:docker-portainer
 
 === Docker Compose
 
-In your Docker Compose directory, run:
+У свом Docker Compose директоријуму покрените:
 
 ```sh
 docker compose run --rm --env BACKUP_ONCE=true zammad-backup
@@ -44,8 +46,8 @@ docker compose run --rm --env BACKUP_ONCE=true zammad-backup
 
 === Portainer
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) for the
-**zammad-backup** container with the standard entrypoint `/bin/bash` and run:
+Отворите [конзолу преко Portainer-овог графичког интерфејса](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) за
+контејнер **zammad-backup** са стандардном улазном тачком `/bin/bash` и покрените:
 
 ```sh
 BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
@@ -53,61 +55,62 @@ BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
 
 :::
 
-## Restore
+## Резервна копија и њено враћање
 
-1. Start the new stack at least once so a Zammad database is available.
-2. Stop the stack.
-3. In case you restore to a production stack with activated file system
-   storage, you should purge the content of the directory
-   `/opt/zammad/storage/` inside the volume. The restore process only
-   adds/overwrites files there, no cleanup will take place.
-4. Copy or move the backup files to `/var/tmp/zammad/restore/` inside the
-   volume of the **zammad-backup** container. Be aware that the restore
-   process always uses the latest backup according to the timestamp of the
-   file name. Only backups from package and Docker installations are
-   supported by this built-in backup method. Don't provide the
-   `latest_zammad_*.gz` files because they link to an unknown location for
-   the restore process.
-5. Start the stack. The restore process is triggered in the `zammad-backup`
-   service if the `restore` directory is detected and the backup files are
-   in place. As a part of this process, the Rails cache will be cleared.
-   All other containers wait for the restore to finish before they resume
-   their normal operations.
-6. After the restore process has finished, the `restore` directory got
-   renamed. You can safely delete it now.
-7. Rebuild the Elasticsearch index. You can use Zammad while the rebuild is
-   running, but search performance is degraded and some data may be
-   temporarily unavailable in search results. Use one of the commands below,
-   depending on your deployment method.
+1. Покрените нови стек најмање једном да би Zammad база података била
+   доступна.
+2. Корак 3: Покретање stack-а
+3. У случају да враћате резервну копију у производни стек са укљученим
+   складиштењем на систему датотека, требало би да очистите садржај
+   директоријума `/opt/zammad/storage/` унутар волумена. Процес враћања само
+   додаје/пребрисује датотеке тамо, чишћење се не врши.
+4. Копирајте или преместите датотеке резервне копије у
+   `/var/tmp/zammad/restore/` унутар волумена контејнера
+   **zammad-backup**. Имајте на уму да процес враћања увек користи најновију
+   резервну копију према временској ознаци у називу датотеке. Овај уграђени
+   метод резервних копија подржава само резервне копије из инсталација путем
+   пакета и Docker-а. Не прилажите `latest_zammad_*.gz` датотеке јер оне
+   воде на непознату локацију за процес враћања.
+5. Покрените стек. Процес враћања се покреће у сервису `zammad-backup` ако
+   се открије директоријум `restore` и ако су датотеке резервне копије на
+   месту. Као део овог процеса, Rails кеш ће бити очишћен. Сви остали
+   контејнери чекају да се враћање заврши пре него што наставе са својим
+   уобичајеним радом.
+6. Након што се процес враћања заврши, директоријум `restore` је
+   преименован. Сада га можете безбедно избрисати.
+7. Поново изградите Elasticsearch индекс. Zammad можете користити док се
+   поновна изградња извршава, али су перформансе претраге смањене и неки
+   подаци могу привремено бити недоступни у резултатима претраге. Употребите
+   једну од команди испод, у зависности од вашег метода постављања.
 
 ::: tabs key:docker-portainer
 
 === Docker Compose
 
-Without specifying CPU cores:
+Без навођења језгара процесора:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Са навођењем језгара процесора која ће се користити (пример 8):
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
 ```
 
-=== Portainer
+=== Portainer GUI
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
-standard entrypoint `/bin/bash` and run:
+Отворите [консолу путем Portainer GUI-ја](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) са стандардним
+entrypoint `/bin/bash` и покрените:
 
-Without specifying CPU cores to use:
+Без навођења језгара процесора:
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Са навођењем језгара процесора која ће се користити (пример 8):
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild[8]

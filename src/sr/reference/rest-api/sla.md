@@ -3,31 +3,31 @@ order: 16
 title: SLA
 ---
 
-# Service-level agreements (SLA)
+# Уговори о нивоу услуге (SLA)
 
 ::: tip
-SLAs depend on [Zammad's calendars](/en/reference/rest-api/calendar).
+SLA зависи од [календара Zammad-а](/en/reference/rest-api/calendar).
 :::
 
-## List
+## Преглед листе
 
-Required permission: `admin.sla`
+Потребна дозвола: `admin.sla`
 
-`GET`-Request sent: `/api/v1/slas`
+`GET`-Захтев послат: `/api/v1/slas`
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/slas/get-res.json
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `admin.sla`
+Потребна дозвола: `admin.sla`
 
-`GET`-Request sent: `/api/v1/slas/{id}`
+`GET`-Захтев послат: `/api/v1/slas/{id}`
 
 ::: details
 
@@ -35,21 +35,21 @@ Required permission: `admin.sla`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.sla`
+Потребна дозвола: `admin.sla`
 
-`POST`-Request sent: `/api/v1/slas`
+`POST`-Захтев послат: `/api/v1/slas`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/slas/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/slas/post-res.json
 
@@ -58,40 +58,40 @@ Required permission: `admin.sla`
 
 ## Освежавање
 
-Required permission: `admin.sla`
+Потребна дозвола: `admin.sla`
 
-`PUT`-Request sent: `/api/v1/slas/{id}`
+`PUT`-Захтев послат: `/api/v1/slas/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/slas/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/slas/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Обриши
 
-Required permission: `admin.sla`
+Потребна дозвола: `admin.sla`
 
-`DELETE`-Request sent: `/api/v1/slas/{id}`
+`DELETE`-Захтев послат: `/api/v1/slas/{id}`
 
 ::: danger
-**This is a permanent removal!**
+**Ово је трајно брисање!**
 
-Please note that removing SLA configurations cannot be undone.
+Имајте на уму да уклањање конфигурација SLA не може бити поништено.
 :::
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/slas/delete-id-res.json
 

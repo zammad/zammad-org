@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'First steps in Zammad'
+title: 'Erste Schritte in Zammad'
 ---
 
-# First steps in Zammad
+# Erste Schritte in Zammad
 
 Herzlichen Glückwunsch, es scheint, als hätten Sie Zammad erfolgreich
 installiert. Um mit dem frisch installierten Zammad zu beginnen, springen
@@ -14,13 +14,13 @@ Sie zum nächsten Abschnitt. Alternativ haben Sie folgende Möglichkeiten:
 - [Zammad aus einer vorhandenen Sicherung
   wiederherstellen](/de/tutorials/backup-restore)
 
-## Getting started wizard
+## Einrichtungsassistent
 
 Wenn Sie die Webseite von Zammad zum ersten Mal besuchen, werden Sie von
 seinem Einrichtungsassistenten begrüßt. Er wird Sie durch die ersten
 wichtigen Schritte führen.
 
-### Step 1: Create your first administrator account
+### Schritt 1: Erstellen Ihres ersten Administratorkontos
 
 Geben Sie die erforderlichen Informationen im Dialogfeld an. Ihre E-Mail
 Adresse und Ihr Passwort sind wichtig. Dies sind Ihre Zugangsdaten für die
@@ -32,14 +32,14 @@ Zammad wendet standardmäßig die folgende Passwort-Richtlinie an:
 - Mindestens 2 GROSSE und 2 kleine Buchstaben
 - Eine oder mehrere Ziffern
 
-### Step 2: Provide company information
+### Schritt 2: Firmeninformationen hinzufügen
 
 Sie können hier ein individuelles Logo Ihrer Firma hochladen. Die
 Instanzadresse wird automatisch erkannt und muss nur dann angepasst werden,
 falls sie falsch ist. Wenn Sie den Dialog überspringen, können Sie die
 Anpassung auch später vornehmen.
 
-### Step 3: Email notification channel
+### Schritt 3: E-Mail-Benachrichtigungskanal
 
 Standardmäßig verwendet Zammad sendmail. Dies kann hier auf SMTP geändert
 werden.
@@ -47,7 +47,7 @@ werden.
 Zammad verwendet standardmäßig `noreply@<Ihre-fqdn>` als Absenderadresse. Die SMTP-Einrichtung
 kann hier fehlschlagen - Sie können diesen Schritt mit der Auswahl von sendmail überspringen und später anpassen!
 
-### Step 4: Your first email channel <Badge type="info" text="optional" />
+### Schritt 4: Ihr erster E-Mail-Kanal <Badge type="info" text="optional" />
 
 Wenn Sie sofort loslegen wollen, können Sie Ihr E-Mail Konto bereits
 verbinden.
@@ -61,7 +61,7 @@ fürs Erste.
 Nach Beendigung des Assistenten sind Sie automatisch mit dem gerade
 erstellten Konto angemeldet.
 
-## Next steps
+## Nächste Schritte
 
 Die folgende Liste sollte Ihnen helfen, den richtigen Weg zu finden. Sie
 sollten sie jedoch an Ihre Bedürfnisse anpassen. Weitere Informationen

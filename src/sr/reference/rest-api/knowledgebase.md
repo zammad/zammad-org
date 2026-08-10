@@ -1,27 +1,27 @@
 ---
 order: 7
-title: 'Knowledge base'
+title: 'База знања'
 ---
 
-# Knowledge base
+# База знања
 
-Zammad has multiple knowledge base related endpoints. The most important -
-but not all - are covered in this documentation. You can find the general
-ones about the knowledge base itself below, followed by the sub-endpoints
-for [answers](#answers) and [categories](#categories).
+Zammad има више крајњих тачака повезаних са базом знања. Најважније - али не
+и све - су обухваћене у овој документацији. Опште крајње тачке за саму базу
+знања можете пронаћи испод, праћене подкрајњим тачкама за
+[одговоре](#answers) и [категорије](#categories).
 
-## Knowledge base general
+## Опште о бази знања
 
 ::: info
-The request and response examples include the knowledge base ID `1`. Your ID may be different, for example if you
-created a knowledge base before, dropped it and created a new one.
+Примери захтева и одговора укључују ID базе знања `1`. Ваш ID може бити другачији, на пример ако сте
+некада раније креирали базу знања, избрисали је па креирали нову.
 :::
 
 ### Преглед
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/init`
+`POST`-захтев послат: `/api/v1/knowledge_bases/init`
 
 ::: details
 
@@ -29,11 +29,11 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Show
+### Прикажи
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.reader` или `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}`
+`GET`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}`
 
 ::: details
 
@@ -41,32 +41,32 @@ Required permission: `knowledge_base.reader` or `knowledge_base.editor`
 
 :::
 
-### Change settings
+### Zammad тим
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/manage/{ID of your KB}`
+`PATCH`-захтев послат: `/api/v1/knowledge_bases/manage/{ID of your KB}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/patch-manage.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/patch-manage-response.json
 
 :::
 ::::
 
-### Show permissions
+### Rails команде
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
+`GET`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
 
 ::: details
 
@@ -74,83 +74,83 @@ Required permission: `knowledge_base.editor`
 
 :::
 
-### Change permissions
+### Rails команде
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
+`PUT`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/permissions`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/put-permissions.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/put-permissions-response.json
 
 :::
 ::::
 
-## Categories
+## Категорије
 
-### Reorder sub-categories
+### Промена редоследа прегледа
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-захтев послат: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/reorder_categories`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder-response.json
 
 :::
 ::::
 
-### Reorder root categories
+### Промена редоследа прегледа
 
 ::: info
-You have to provide the order of all top level categories, i.e.
-categories with no category as parent (parent: `>> Homepage <<`).
+Морате навести редослед свих категорија првог нивоа, тј.
+категорија без родитељске категорије (родитељ: `>> Početna stranica <<`).
 :::
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-захтев послат: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/reorder_root_categories`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder-root.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/patch-reorder-root-response.json
 
 :::
 ::::
 
-### Show
+### Прикажи
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.reader` или `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
+`GET`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
 of category}`
 
 ::: details
@@ -159,54 +159,54 @@ of category}`
 
 :::
 
-### Create
+### Креирај
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories`
+`POST`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/categories`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/post-categories.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/post-categories-response.json
 
 :::
 ::::
 
-### Change
+### Измене
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-захтев послат: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories-response.json
 
 :::
 ::::
 
-### Delete
+### Обриши
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`DELETE`-захтев послат: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}`
 
 ::: details
@@ -215,11 +215,11 @@ KB}/categories/{ID of category}`
 
 :::
 
-### Show permissions
+### Rails команде
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
+`GET`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
 of category}/permissions`
 
 ::: details
@@ -228,62 +228,61 @@ of category}/permissions`
 
 :::
 
-### Change permissions
+### Rails команде
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PUT`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
+`PUT`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/categories/{ID
 of category}/permissions`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/put-categories-permissions.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/put-categories-permissions-response.json
 
 :::
 ::::
 
-## Answers
+## Одговори
 
-### Reorder answers
+### Промена редоследа прегледа
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your
+`PATCH`-захтев послат: `/api/v1/knowledge_bases/{ID of your
 KB}/categories/{ID of category}/reorder_answers`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/patch-categories-reorder-answers-response.json
 
 :::
 ::::
 
-### Show
+### Прикажи
 
-Required permission: `knowledge_base.reader` or `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.reader` или `knowledge_base.editor`
 
-`GET`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of
+`GET`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of
 answer}`
 
 ::: tip
-If you want to get the content of an answer, add the parameters `?full=1&include_contents=1` to the query URL. The
-request for the following response included the parameters.
+Ако желите да добијете садржај одговора, додајте параметре `?full=1&include_contents=1` у URL упита. Захтев за следећи одговор укључио је ове параметре.
 :::
 
 :::: details
@@ -292,54 +291,54 @@ request for the following response included the parameters.
 
 :::
 
-### Create
+### Креирај
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`POST`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers`
+`POST`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/answers`
 
 ::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/post-answers.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/post-answers-response.json
 
 :::
 ::::
 
-### Change
+### Измене
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`PATCH`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
+`PATCH`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
 of answer}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/knowledgebase/patch-answers.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/knowledgebase/patch-answers-response.json
 
 :::
 ::::
 
-### Delete
+### Обриши
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
+`DELETE`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
 of answer}`
 
 ::: details
@@ -348,49 +347,49 @@ of answer}`
 
 :::
 
-### Manage publication status
+### Управљање статусом објаве
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
 ::: info
-Responses are omitted here. You can expect to get a response like for showing an answer with a populated value for
-`archived_at`, `published_at` or `internal_at`, depending on which request you execute.
+Одговори су овде изостављени. Очекујте одговор као приказ одговора са попуњеном вредношћу за
+`archived_at`, `published_at` или `internal_at`, у зависности од тога који захтев извршите.
 :::
 
 :::: details
 
 ::: tabs
 
-=== Publish internally
+=== Објави интерно
 
-`POST`-Request sent:
+`POST`-захтев послат:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/internal`
 
-=== Publish publicly
+=== Објави јавно
 
-`POST`-Request sent:
+`POST`-захтев послат:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/publish`
 
-=== Archive
+=== Архивирај
 
-`POST`-Request sent:
+`POST`-захтев послат:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/archive`
 
-=== Unarchive
+=== Уклони из архиве
 
-`POST`-Request sent:
+`POST`-захтев послат:
 `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID of answer}/unarchive`
 
 :::
 ::::
 
-### Manage attachments
+### Управљање каналима
 
-Required permission: `knowledge_base.editor`
+Потребна дозвола: `knowledge_base.editor`
 
-Add attachment:
+Додај привитак:
 
-`POST`-Request with payload sent: `/api/v1/knowledge_bases/{ID of your
+`POST`-захтев са payloadom послат: `/api/v1/knowledge_bases/{ID of your
 KB}/answers/{ID of answer}/attachments`
 
 ::: details
@@ -399,9 +398,9 @@ KB}/answers/{ID of answer}/attachments`
 
 :::
 
-Delete attachment:
+Обриши привитак:
 
-`DELETE`-Request sent: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
+`DELETE`-захтев послат: `/api/v1/knowledge_bases/{ID of your KB}/answers/{ID
 of answer}/attachments/{ID of attachment}`
 
 ::: details

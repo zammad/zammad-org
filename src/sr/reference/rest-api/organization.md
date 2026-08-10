@@ -5,15 +5,15 @@ title: Организација
 
 # Организација
 
-## List
+## Преглед листе
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Потребна дозвола: `ticket.agent` **или** `admin.organization`
 
 ::: info
-Technically, customers can only see their own organization if applicable.
+Технички, клијенти могу видети само своју организацију, где је то применљиво.
 :::
 
-`GET`-Request sent: `/api/v1/organizations`
+`GET`-захтев послат: `/api/v1/organizations`
 
 ::: details
 
@@ -21,14 +21,14 @@ Technically, customers can only see their own organization if applicable.
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `ticket.agent` **or** `admin.organization`
+Потребна дозвола: `ticket.agent` **или** `admin.organization`
 
-`GET`-Request sent: `/api/v1/organizations/{id}`
+`GET`-захтев послат: `/api/v1/organizations/{id}`
 
 ::: info
-Technically, any users in question can only see their own organization.
+Технички, поменути корисници могу видети само своју организацију.
 :::
 
 ::: details
@@ -37,21 +37,21 @@ Technically, any users in question can only see their own organization.
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.organization`
+Потребна дозвола: `admin.organization`
 
-`POST`-Request sent: `/api/v1/organizations`
+`POST`-захтев послат: `/api/v1/organizations`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/organizations/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/organizations/post-res.json
 
@@ -60,47 +60,47 @@ Required permission: `admin.organization`
 
 ## Освежавање
 
-Required permission: `admin.organization`
+Потребна дозвола: `admin.organization`
 
-`PUT`-Request sent: `/api/v1/organizations/{id}`
+`PUT`-захтев послат: `/api/v1/organizations/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/organizations/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/organizations/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Обриши
 
-Required permission: `admin.organization`
+Потребна дозвола: `admin.organization`
 
-`DELETE`-Request sent: `/api/v1/organizations/{id}`
+`DELETE`-Захтев послат: `/api/v1/organizations/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Ово је трајно брисање**
 
-Please note that removing organizations cannot be undone.
+Имајте на уму да уклањање организација не може бити поништено.
 
-Removing organizations with references in e.g. activity streams or users
-is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Уклањање организација са референцама нпр. у токовима активности или корисницима
+није могуће путем API-ја - то ће бити означено са
+`"error": "Nije moguće obrisati, objekat ima reference."`. Ово _није_ грешка.
 
-Consider using Zammad's Data Privacy feature via UI for
-more control instead.
+Уместо тога размислите о коришћењу Zammad-ове функције за заштиту података путем UI-а за
+више контроле.
 :::
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/organizations/delete-id-res.json
 

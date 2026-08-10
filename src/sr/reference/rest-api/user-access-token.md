@@ -1,15 +1,15 @@
 ---
 order: 21
-title: 'User access token'
+title: 'Приступни токен корисника'
 ---
 
-# User access token
+# Приступни токен корисника
 
-## List
+## Преглед листе
 
-Required permission: `user_preferences.access_token`
+Потребна дозвола: `user_preferences.access_token`
 
-`GET`-Request sent: `/api/v1/user_access_token`
+`GET`-захтев послат: `/api/v1/user_access_token`
 
 ::: details
 
@@ -17,41 +17,41 @@ Required permission: `user_preferences.access_token`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `user_preferences.access_token`
+Потребна дозвола: `user_preferences.access_token`
 
-`POST`-Request sent: `/api/v1/user_access_token`
+`POST`-захтев послат: `/api/v1/user_access_token`
 
 ::::: details
 
 :::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/user_access_token/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/user_access_token/post-res.json
 
 ::: info
-Above returned `token` is the API token. This value is provided once
-after creation and can't be retrieved after.
+Горе наведени враћени `token` је API токен. Ова вредност се даје једном
+након креирања и не може се касније повући.
 :::
 
 ::::
 :::::
 
-## Delete
+## Обриши
 
-Required permission: `user_preferences.access_token`
+Потребна дозвола: `user_preferences.access_token`
 
-`DELETE`-Request sent: `/api/v1/user_access_token/{id}`
+`DELETE`-захтев послат: `/api/v1/user_access_token/{id}`
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/user_access_token/delete-id-res.json
 

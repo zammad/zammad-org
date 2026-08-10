@@ -3,11 +3,11 @@ order: 2
 title: Paket
 ---
 
-# Package installation
+# Paket-Installation
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-## Supported operating systems
+## Unterstützte Betriebssysteme
 
 Für die Paket-Installation werden die folgenden Linux-Distributionen
 unterstützt:
@@ -65,7 +65,7 @@ sudo dnf install curl epel-release
 
 ## Grundlagen
 
-### Ensure correct locale
+### Korrekte Sprache/Gebietsschema sicherstellen
 
 ::: tabs key:distros
 
@@ -167,7 +167,7 @@ Beispiel-Setup](/de/tutorials/install-elasticsearch) für Elasticsearch 9
 folgen, das Sie auf einer anderen Seite finden, um die
 Installationsanweisungen übersichtlich zu halten.
 
-### Add Zammad repository
+### Zammad-Paketquelle hinzufügen
 
 ::: info
 Es kann sein, dass Packager.io aus reinen IPv6-Umgebungen nicht erreichbar ist, daher sollten Sie
@@ -315,7 +315,7 @@ sudo dnf install zammad
 
 :::
 
-### Manage services of Zammad
+### Zammad Services verwalten
 
 Zammad verwendet drei Dienste. Diese Dienste können einzeln oder alle auf
 einmal verwaltet werden, indem der übergeordnete Dienst **zammad** verwendet
@@ -326,7 +326,8 @@ wird.
     Webanwendung)
   - **zammad-worker**: Hintergrund-Worker - relevant für alle verzögerten
     Aufgaben sowie Hintergrundaufgaben
-  - **zammad-websocket**: WebSocket server for session related information
+  - **zammad-websocket**: WebSocket-Server für sitzungsbezogene
+    Informationen
 
 Verwalten Sie die Dienste mit den `systemctl`-Befehlen `start`, `restart`,
 `stop`, `status`.
@@ -340,7 +341,7 @@ sudo systemctl start zammad
 Um einen Dienst anzuhalten, neu zu starten oder dessen Status zu prüfen,
 passen Sie den Befehl wie oben beschrieben an.
 
-### Next steps
+### Nächste Schritte
 
 - [Zammad mit Elasticsearch
   verbinden](/de/tutorials/connect-config-elasticsearch)
@@ -361,7 +362,7 @@ Elasticsearch, das nicht automatisch installiert wird.
 - Nginx
 - Redis
 
-### Database server
+### Datenbank-Server
 
 Zammad speichert seinen Inhalt in einer Datenbank. Das unterstützte
 Datenbanksystem ist [PostgreSQL](https://www.postgresql.org/){target=_blank}
@@ -375,7 +376,7 @@ einen Pooling-Modus verwenden, der vollständig mit PostgreSQL kompatibel ist. T
 nicht unterstützt und kann bei Datenbankmigrationen zu Fehlern führen.
 :::
 
-### Reverse proxy
+### Reverse Proxy
 
 Die folgenden Reverse-Proxys werden in ihren aktuell gepflegten Versionen
 unterstützt:

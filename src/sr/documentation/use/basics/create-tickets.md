@@ -1,73 +1,72 @@
 ---
 order: 4
-title: 'Create tickets'
+title: 'Отварање тикета'
 ---
 
-# Create tickets
+# Отварање тикета
 
-When a customer messages you over a channel which is fetched by Zammad, a
-ticket is created automatically (unless Zammad recognizes it as a follow-up,
-then it gets added as an article to an existing ticket). However, there
-might be cases where you need to create a ticket manually. Examples:
+Када вам клијент пошаље поруку преко канала који подржава Zammad, тикет се
+аутоматски креира (осим ако га Zammad препозна као наставак комуникације,
+тада се додаје као чланак постојећем тикету). Међутим, могући су случајеви
+када морате ручно креирати тикет. Примери:
 
 - Клијент вас позове телефоном.
 - Примите папирно писмо од клијента.
 - Клијент посети вашу физичку локацију.
 - Желите да проактивно обавестите клијента слањем поруке.
 
-In situations like these, you need to create a new ticket manually and click
-the ::+:: button at the bottom of the primary navigation. This shows a
-ticket create screen where you can add all needed information.
+У оваквим ситуацијама морате ручно креирати нови тикет и кликнути на дугме
+::+:: на дну навигационе траке. Ово ће приказати екран за креирање тикета
+где можете унети све потребне информације.
 
-![Screenshot shows ticket create
-screen](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
+![Снимак екрана приказује бочну траку спајања
+тикета](/screenshots/cypress/documentation/use/basics.cy.js/ticket-create.png)
 
-## Type selector
+## за одабир
 
 У екрану отварања тикета, можете одабрати различите врсте чланака:
 
-- Received call: for issues initiated by a customer over the phone.
-- Outbound call: for issues initiated by an agent over the phone.
-- Send email: for issues initiated by an agent over email.
+- Примљен позив: за проблеме које је клијент иницирао телефоном.
+- Излазни позив: за проблеме које је иницирао оператер телефоном.
+- Пошаљи емаил: за проблеме које је иницирао оператер путем емаила.
 
 Када одаберете **Пошаљи имејл поруку**, клијент ће примити имејл поруку са
 одговарајућим насловом и текстом као садржај.
 
 ## Наслов
 
-This is the title of a ticket which is shown in many places in Zammad. For
-example, this gets displayed in overviews.  It is also used as the subject
-for email communication. For emails, a ticket identifier is automatically
-appended (e.g. `Ticket#901234 - I need help!`).
+Ово је наслов тикета који се приказује на многим местима у Zammad-у. На
+пример, овде се приказује у прегледима. Такође се користи као предмет за
+емаил комуникацију. За емаилове аутоматски се додаје идентификатор тикета
+(нпр. `Ticket#901234 - Treba mi pomoć!`).
 
 ## Клијент
 
-Enter a name or email address of a customer to search for existing
-accounts. You can even search for organizations and their members. Select an
-option from the dropdown menu or create a new customer by clicking the `+
-Create new Customer` button on the right side of the field. This opens a
-dialog where you can provide all relevant information of the customer. A
-ticket can only have one customer.
+Унесите име или емаил адресу клијента за претрагу постојећих налога. Можете
+чак и претраживати организације и њихове чланове. Изаберите опцију са
+падајућег менија или креирајте новог клијента кликом на дугме `+ Kreiraj
+novog kupca` на десној страни поља. Ово отвара дијалог где можете унети све
+релевантне информације о клијенту. Тикет може имати само једног клијента.
 
-After setting a customer in the ticket create dialog, the customer sidebar
-automatically opens. You can see additional customer meta information
-including a hint about the currently opened tickets of the customer.
+Након постављања клијента у дијалогу за креирање тикета, аутоматски се
+отвара бочна трака клијента. Можете видети додатне метаподатке о клијенту,
+укључујући назнаку о тренутно отвореним тикетима клијента.
 
 ## Текст
 
-This is the content section where the currently known details of the issue
-gets written down. For the "Send Email" type, this is the content/message of
-the email. To learn more about the editor and its features, check the
-[editor documentation](/en/documentation/use/guides/editor).
+Ово је секција за садржај где се бележе тренутно познати детаљи проблема. За
+тип "Пошаљи емаил", ово је садржај/порука емаила. Да сазнате више о едитору
+и његовим функцијама, погледајте [документацију о
+едитору](/en/documentation/use/guides/editor).
 
-## Ticket attributes
+## Атрибути тикета
 
-As you may know, there are additional ticket attributes such as group,
-priority and owner that you can set. If you haven't read the [ticket
-basics](ticket-basics) yet, check it out to learn more.
+Као што вероватно знате, постоје додатни атрибути тикета као што су група,
+приоритет и власник које можете подесити. Ако још нисте прочитали [основе
+тикета](ticket-basics), погледајте их да сазнате више.
 
 -----
 
-After you provided the relevant information, finally create the ticket with
-a click on the `Create` button. Read on [how to work with existing
-tickets](work-with-tickets).
+Након што сте унели релевантне информације, на крају креирајте тикет кликом
+на дугме `Kreiraj`. Наставите са читањем [како радити са постојећим
+тикетима](work-with-tickets).

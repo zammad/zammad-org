@@ -1,9 +1,9 @@
 ---
 order: 9
-title: 'Two-factor authentication'
+title: 'Двофакторска аутентификација'
 ---
 
-# Two-factor authentication
+# Двофакторска аутентификација
 
 Двофакторска аутентификација (2FA) повишава безбедност вашег Zammad налога
 додавањем додатног слоја верификације поред лозинке. Захтева од вас да
@@ -12,65 +12,66 @@ title: 'Two-factor authentication'
 безбедносни кључ), да би потвдили да сте овлашћена особа која може да
 приступи налогу.
 
-Two-Factor Authentication is an **optional feature**. Administrators must
-activate it to be visible in your profile settings. The 2FA usage may be
-even enforced by your admin. In this case, you can't use Zammad unless you
-set up at least one 2FA method.
+Двофакторска аутентификација је **опциона функција**. Администратори је
+морају активирати да би била видљива у подешавањима вашег профила. Коришћење
+2FA може бити намештено од стране администратора. У том случају, не можете
+користити Zammad док не поставите бар један 2FA метод.
 
 ## Подешавање
 
-If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it
-up. Depending on the enabled two-factor methods, you may see one or more options in the table.
+Ако је администратор система омогућио ову функцију, можете отићи на _Аватар > Профил > Двофакторска аутентификација_ да је поставите.
+Зависно од омогућених двофакторских метода, у табели ћете видети једну или више опција.
 
-To set up a two-factor method, use the ::+:: button and follow the steps.
+Да бисте поставили двофакторски метод, користите дугме ::+:: и пратите
+кораке.
 
-![Screenshot shows 2FA methods in user profile
-settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 У дијалогу ћете бити упитани да потврдите вашу тренутну лозинку.
 
-Depending on the chosen two-factor method, you will be guided through the
-setup process, which includes specific steps.  Continue with using an
-[Authentication App](#authentication-app) or a [Security
-Key](#security-key).
+У зависности од изабраног двофакторског метода, бићете вођени кроз процес
+постављања, који укључује одређене кораке. Наставите употребом [апликације
+за аутентификацију](#authentication-app) или [безбедносног
+кључа](#security-key).
 
-### Authentication app
+### Апликација за аутентификацију
 
 Метод апликација за аутентификацију је врста двофакторске аутентификације
 која користи мобилну апликацију за генерисање једнократних кодова за
 верификацију налога. Након подешавања апликације за аутентификацију на свом
 уређају, повезаћете је са својим Zammad налогом.
 
-![Screenshot shows app authentication
-configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)
 
 Прво, проверите да ли сте инсталирали апликацију за аутентификацију на свом
 мобилном уређају. Препоручене апликације су:
 
-- [Google
-  Authenticator](https://support.google.com/accounts/answer/1066447){target=_blank}
-- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/){target=_blank}
+- [Google Authenticator](https://support.google.com/accounts/answer/1066447)
+- [Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/)
 - [Microsoft
-  Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a){target=_blank}
+  Authenticator](https://support.microsoft.com/en-us/account-billing/download-and-install-the-microsoft-authenticator-app-351498fc-850a-45da-b7b6-27e523b8702a)
 
-Next, open the authenticator app on your device and find a **Scan QR Code**
-action, or similar. Point your camera to the Zammad screen and scan the
-shown QR code in the middle.
+Затим отворите аутентичаторску апликацију на свом уређају и пронађите опцију
+**Скенирај QR код** или сличну. Усмерите камеру ка екрану Zammad-а и
+скенирајте приказани QR код у средини.
 
 ::: tip
-If your device is not able to scan the QR code, first click on it to reveal your secret. Next, add a manual entry to
-your authenticator app and enter the provided secret when asked.
+Ако ваш уређај не може да скенира QR код, прво кликните на њега да бисте открили свој тајни кључ. Затим додајте ручни унос у
+вашу аутентичаторску апликацију и унесите наведени тајни кључ када вам затражи.
 :::
 
-Your authenticator app should immediately add the new entry for your Zammad
-account, and a 6-digit code will be displayed next to it together with a
-timer.
+Ваша аутентичаторска апликација би требало одмах да дода нови унос за ваш
+Zammad налог, а поред њега ће се приказати 6-цифрени код заједно са
+тајмером.
 
-Back in Zammad, enter the provided code to the **Security Code** field and
-click on **Set Up**. Go on either by setting up another 2FA method
-([security key](#security-key)) or check how to [log in with 2FA](#sign-in).
+Вратите се у Zammad, унесите наведени код у поље **Сигурносни код** и
+кликните на **Подеси**. Наставите са подешавањем другог 2FA метода
+([сигурносни кључ](#security-key)) или погледајте како се [улоговати са
+2FA-ом](#sign-in).
 
-### Security key
+### Безбедносни кључ
 
 Метод безбедносних кључева је врста двофакторске аутентификације која
 користи Web Authentication API претраживача за верификацију вашег
@@ -78,51 +79,50 @@ click on **Set Up**. Go on either by setting up another 2FA method
 безбедносних кључева са својим Zammad налогом, а затим их можете користити
 током процеса пријављивања.
 
-Initially, you will be presented with an empty flyout instructing you to
-**Set Up** your first key.
+У почетку ћете видети празан бочни панел који вас упућује да **Подесите**
+свој први кључ.
 
-![Screenshot shows security key authentication
-configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)
 
-Then, enter a descriptive **Name for this security key** you will be
-registering with your account, so you could later identify it in the
-list. Then, click on **Next**.
+Затим унесите описно **Име за овај сигурносни кључ** које ћете регистровати
+уз свој налог, како бисте га касније могли идентификовати на листи. Затим
+кликните на **Следеће**.
 
 Затим, у зависности од вашег претраживача, биће вам представљене различите
 опције. Изаберите ону која се односи на жељени безбедносни кључ и пратите
 упутства на екрану.
 
-![Screenshot shows security key authentication
-configuration](/screenshots/documentation/use/two-factor-auth-usage/2fa-passkey-auth.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/two-factor-auth-usage/2fa-passkey-auth.png)
 
 Претраживач може од вас тражити да ступите у интеракцију са кључем или
 уређајем како бисте могли да докажете да га физички поседујете (нпр. да
 унесете његов PIN да бисте га откључали).
 
 ::: warning
-You will have limited time (measured in tens of seconds) to register your key. Better to have it ready before you
-proceed!
+Имаћете ограничено време (мерено у десетинама секунди) да региструјете свој кључ. Боље га је припремити унапред пре него што
+наставите!
 :::
 
-If the registration was successful, the modal dialog will close and you are
-good to go. In case of errors, you will be able to **Retry** the
-registration of the key.
+Ако је регистрација успешна, дијалог ће се затворити и можете наставити. У
+случају грешке, моћи ћете да **поновите** регистрацију кључа.
 
 Када се подесе, безбедносним кључевима се може управљати тако што ћете
 изабрати акцију **Измени** поред метода редакторске аутентификације.
 
-You have an option to remove a key or set up additional ones. There is no
-limit in number of security keys you can set up, but keep in mind you cannot
-register an already registered key for your account. Removal of the last
-security key will effectively remove the complete security keys method for
-your account.
+Имате опцију да уклоните кључ или подесите додатне. Не постоји ограничење у
+броју сигурносних кључева које можете поставити, али имајте на уму да не
+можете регистровати већ регистрован кључ за свој налог. Уклањање последњег
+сигурносног кључа ће ефективно уклонити цео метод сигурносних кључева за ваш
+налог.
 
 ## Пријава
 
-When you set up two-factor authentication for your Zammad account, during
-the next sign-in you will be asked to provide the same two-factor method
-after entering correct username and password. Depending on the chosen
-two-factor method, this may be a security code, hardware key, etc.
+Када поставите двофакторску аутентификацију за свој Zammad налог, током
+следећег уласка биће вам затражено да наведете исти двофакторски метод након
+уноса исправног корисничког имена и лозинке. Зависно од изабраног
+двофакторског метода, то може бити сигурносни код, хардверски кључ итд.
 
 У случају да приликом пријављивања имате проблема са својим жељени методом
 двофакторске аутентификације, можете се пребацити на други, под условом да
@@ -133,23 +133,24 @@ two-factor method, this may be a security code, hardware key, etc.
 двофакторске аутентификације или је ваш администратор онемогућио ову
 функцију.
 
-![Log in screen with link to "Try another
-method"](/screenshots/documentation/use/two-factor-auth-usage/2fa-link-another-method.png)
+![Ekran za prijavu sa linkom za "Pokušaj drugog
+metoda"](/screenshots/documentation/use/two-factor-auth-usage/2fa-link-another-method.png)
 
-Alternatively, you can also use one of your recovery codes, which are
-auto-generated for your account during the initial setup of the two-factor
-authentication. Click on **Or use one of your recovery codes**, enter one of
-your unused codes and click on **Sign in**.
+Алтернативно, можете користити и један од својих кодова за повратни приступ,
+који су аутоматски генерисани за ваш налог током почетног подешавања
+двофакторске аутентификације. Кликните на **Или употребите један од ваших
+кодова за повратни приступ**, унесите један од својих неискоришћених кодова
+и кликните на **Пријави се**.
 
-![Log in screen with recovery codes
-link](/screenshots/documentation/use/two-factor-auth-usage/2fa-login-recovery-codes.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/two-factor-auth-usage/2fa-login-recovery-codes.png)
 
 ::: warning
-You can use a single recovery code only once! In case you exhaust the list of your recovery codes, it is recommended
-you regenerate them for your account.
+Један код за повратни приступ можете искористити само једном! У случају да потрошите листу својих кодова за повратни приступ, препоручује се
+да их регенеришете за свој налог.
 :::
 
-## Generate recovery codes
+## Генерисање шифри за опоравак
 
 Шифре за опоравак су једнократни безбедносни кодови који се могу користити
 за пријављивање ако изгубите приступ другим методама двофакторске
@@ -159,49 +160,50 @@ you regenerate them for your account.
 аутоматски генерисане за вас током постављања вашег почетног метода
 двофакторске аутентификације.
 
-You will be asked to print out or save the generated recovery codes in a
-safe place. Once used, a recovery code cannot be reused.
+Биће вам затражено да одштампате или сачувате генерисане кодове за повратни
+приступ на сигурном месту. Једном искоришћени, код за повратни приступ се не
+може поново употребити.
 
-![Screenshot shows output of recovery codes during 2FA
-setup](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
-You also have an option to regenerate your recovery codes at any time, which
-invalidates already existing recovery codes and provides you with a list of
-fresh codes. You can do this by clicking on `Regenerate recovery codes`
-button in your profile's 2FA settings.
+Такође имате опцију да у било ком тренутку регенеришете своје кодове за
+повратни приступ, чиме се поништавају већ постојећи кодови и добијате листу
+нових кодова. То можете урадити кликом на дугме `Regeneriši kodove za
+povratni pristup` у 2FA подешавањима свог профила.
 
-## Set a default 2FA method
+## Постављање подразумеваног метода двофакторске аутентификације
 
-To set an already set up two-factor method as default, use the ::a:: actions
-menu next to it in your profile's 2FA settings and choose **Set as
-default**.
+Да бисте поставили већ подешен двофакторски метод као подразумевани,
+користите ::a:: мени акција поред њега у 2FA подешавањима свог профила и
+изаберите **Постави као подразумевани**.
 
-In order to identify your current default two-factor authentication method,
-look for a small blue badge next to the method name.
+Да бисте идентификовали тренутни подразумевани двофакторски метод
+аутентификације, потражите малу плаву значку поред назива метода.
 
-![Screenshot shows list of 2FA methods and default
-method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)
+![Снимак екрана који приказује пројекте превода у Weblate
+менију](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)
 
-A default two-factor authentication method is just your preferred method
-during the sign-in process. You will always have an option to try signing in
-using another method.
+Подразумевани двофакторски метод аутентификације је само ваш преферирани
+метод током процеса пријаве. Увек ћете имати опцију да покушате са
+улоговањем користећи други метод.
 
-## Edit a 2FA method
+## Уреди 2FA метод
 
-![Screenshot shows the action menu for an already set up 2FA
-method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
 
-To edit an already set up two-factor method, use the ::a:: actions menu next
-to it and choose **Edit**. In a modal dialog, you will be asked to confirm
-your current password.
+Да бисте изменили већ подешен двофакторски метод, користите ::a:: мени
+акција поред њега и изаберите **Измени**. У дијалогу ће вам бити затражено
+да потврдите тренутну лозинку.
 
 У зависности од изабраног метода двофакторске аутентификације, бићете поново
 вођени кроз процес постављања. Обично ће уређивање методе једноставно
 обновити и заменити старију поставку, али неке методе подржавају и напредне
 функције (нпр. додавање више безбедносних кључева).
 
-## Remove a 2FA method
+## Уклањање метода двофакторске аутентификације
 
-To remove an already set up two-factor method, use the ::a:: actions menu
-next to it and choose **Remove**. In a modal dialog, you will be asked to
-confirm the removal with your current password.
+Да бисте уклонили већ подешен двофакторски метод, користите ::a:: мени
+акција поред њега и изаберите **Уклони**. У дијалогу ће вам бити затражено
+да потврдите уклањање тренутном лозинком.

@@ -5,28 +5,28 @@ title: 'Списак задатака'
 
 # Списак задатака
 
-Zammad has different checklist endpoints:
+Zammad има различите ендпоинт-е за цхецклисте:
 
-- [Checklists](#checklists)
-- [Checklist items](#checklist-items)
-- [Checklist templates](#checklist-templates)
+- [Цхецклисте](#checklists)
+- [Ставке цхецклисте](#checklist-items)
+- [Шаблони цхецклисти](#checklist-templates)
 
 ::: info
-_Checklist templates_ include their items whereas the _standard
-checklist_ has a separate item endpoint.
+_Шаблони цхецклисти_ укључују своје ставке док _стандардна
+цхецклиста_ има засебан ендпоинт за ставке.
 :::
 
 ## Спискови задатака
 
 ::: info
-To add checklist items, use the [checklist items endpoint](#checklist-items).
+Да бисте додали ставке цхецклисте, користите [ендпоинт за ставке цхецклисте](#checklist-items).
 :::
 
-### Show
+### Прикажи
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklists/{checklist id}`
+`GET`-захтев послат: `/api/v1/checklists/{checklist id}`
 
 ::: details
 
@@ -35,24 +35,24 @@ Required permission: `ticket.agent`
 :::
 
 ::: tip
-You can find the `checklist_id` attribute of a ticket by sending a `GET` request to `/api/v1/tickets/{ticket id}`.
+Атрибут `checklist_id` тикета можете пронаћи слањем `GET` захтева на `/api/v1/tickets/{ticket id}`.
 :::
 
-### Create
+### Креирај
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/checklists`
+`POST`-захтев послат: `/api/v1/checklists`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/checklists/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/checklists/post-res.json
 
@@ -61,30 +61,30 @@ Required permission: `ticket.agent`
 
 ### Освежавање
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/checklists/{checklist id}`
+`PATCH`-захтев послат: `/api/v1/checklists/{checklist id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/checklists/patch-checklist-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/checklists/patch-checklist-id-res.json
 
 :::
 ::::
 
-### Delete
+### Обриши
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/checklists/{checklist id}`
+`DELETE`-захтев послат: `/api/v1/checklists/{checklist id}`
 
 ::: details
 
@@ -92,13 +92,13 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist items
+## Ставке цхецклисте
 
-### Show
+### Прикажи
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+`GET`-захтев послат: `/api/v1/checklist_items/{checklist item id}`
 
 ::: details
 
@@ -106,21 +106,21 @@ Required permission: `ticket.agent`
 
 :::
 
-### Create
+### Креирај
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/checklist_items`
+`POST`-захтев послат: `/api/v1/checklist_items`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/checklist_items/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/checklist_items/post-res.json
 
@@ -129,30 +129,30 @@ Required permission: `ticket.agent`
 
 ### Освежавање
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+`PATCH`-захтев послат: `/api/v1/checklist_items/{checklist item id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/checklist_items/patch-checklist-item-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/checklist_items/patch-checklist-item-id-res.json
 
 :::
 ::::
 
-### Delete
+### Обриши
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/checklist_items/{checklist item id}`
+`DELETE`-захтев послат: `/api/v1/checklist_items/{checklist item id}`
 
 ::: details
 
@@ -160,13 +160,13 @@ Required permission: `ticket.agent`
 
 :::
 
-## Checklist templates
+## Шаблони цхецклисти
 
-### List
+### Преглед листе
 
-Required permission: `admin.checklists`
+Потребна дозвола: `admin.checklists`
 
-`GET`-Request sent: `/api/v1/checklist_templates`
+`GET`-захтев послат: `/api/v1/checklist_templates`
 
 ::: details
 
@@ -174,11 +174,11 @@ Required permission: `admin.checklists`
 
 :::
 
-### Show
+### Прикажи
 
-Required permission: `admin.checklists` or `ticket.agent`
+Потребна дозвола: `admin.checklists` или `ticket.agent`
 
-`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+`GET`-захтев послат: `/api/v1/checklist_templates/{checklist template id}`
 
 ::: details
 
@@ -186,21 +186,21 @@ Required permission: `admin.checklists` or `ticket.agent`
 
 :::
 
-### Create
+### Креирај
 
-Required permission: `admin.checklists`
+Потребна дозвола: `admin.checklists`
 
-`POST`-Request sent: `/api/v1/checklist_templates`
+`POST`-захтев послат: `/api/v1/checklist_templates`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/checklist_templates/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/checklist_templates/post-res.json
 
@@ -209,30 +209,31 @@ Required permission: `admin.checklists`
 
 ### Освежавање
 
-Required permission: `admin.checklists`
+Потребна дозвола: `admin.checklists`
 
-`PATCH`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+`PATCH`-захтев послат: `/api/v1/checklist_templates/{checklist template id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/checklist_templates/patch-checklist-template-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/checklist_templates/patch-checklist-template-id-res.json
 
 :::
 ::::
 
-### Delete
+### Обриши
 
-Required permission: `admin.checklists`
+Потребна дозвола: `admin.checklists`
 
-`DELETE`-Request sent: `/api/v1/checklist_templates/{checklist template id}`
+`DELETE`-захтев послат: `/api/v1/checklist_templates/{checklist template
+id}`
 
 ::: details
 

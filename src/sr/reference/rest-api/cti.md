@@ -3,121 +3,121 @@ order: 5
 title: CTI
 ---
 
-# Generic CTI
+# Општи CTI
 
 ## Увод
 
-This page describes the generic CTI API scopes and functionalities.
+Ова страница описује опсег и функционалности API-ја за општи CTI.
 
 ::: warning
 
-- Authentication on this endpoint works fundamentally different compared to
-  the rest of the API.
-- API clients _do not_ work with the CTI endpoints unless explicitly stated
-  by the client vendor!
-- The CTI endpoints are relevant for PBX systems only.
+- Аутентификација на овом ендпоинту ради фундаментално другачије у поређењу са
+  осталим деловима API-ја.
+- API клијенти _не раде_ са CTI ендпоинтима осим ако експлицитно није наведено
+  од стране произвођача клијента!
+- CTI ендпоинти су релевантни само за PBX системе.
 :::
 
 ## Функције
 
-Here's a small condensed list of the possibilities this CTI API provides.
+Ево кратког и сажетог списка могућности које овај CTI API пружа.
 
 ### Долазнo
 
-- Caller log functions for your agents.
-- Blocking of caller IDs during signaling.
+- Функције дневника позивача за ваше оператере.
+- Блокирање бројева позивача током сигнализације.
 
 ### Одлазнo
 
-- Caller log functions for your agents.
-- Set outbound caller IDs depending on the caller ID target.
+- Функције дневника позивача за ваше оператере.
+- Подешавање одлазних бројева позивача у зависности од циља броја позивача.
 
-### Endpoint
+### Путања
 
-The endpoint can be found in the generic CTI integration and contains a
-unique token which acts as authentication. Make sure to keep this endpoint
-URL safe.
+Крајња тачка се може пронаћи у интеграцији за општи CTI и садржи јединствени
+токен који служи за аутентификацију. Побрините се да је ова URL адреса
+крајње тачке безбедна.
 
 ::: info
-Generic CTI configuration and the correct endpoint can be found in your
-Zammad in the admin interface under _System > Integrations > CTI (generic)_.
+Конфигурација за општи CTI и исправан ендпоинт могу се пронаћи у вашем
+Zammad-у у администраторском интерфејсу под _Систем > Интеграције > CTI (опште)_.
 
-Please also note the there listed requirements and limitations.
-All options that require returns (e.g. blocking, manipulating outgoing
-caller IDs) rely on configurations within the Zammad CTI integration
-page.
+Такође, имајте на уму наведене захтеве и ограничења.
+Све опције које захтевају одговоре (нпр. блокирање, манипулисање одлазним
+бројевима позивача) ослањају се на конфигурације у оквиру Zammad CTI интеграције
+странице.
 :::
 
 ::: tip
-There are two options how to `POST` the relevant data to Zammad:
+Постоје две опције како послати релевантне податке на Zammad путем `POST` методе:
 
-- JSON (recommended)
-- Form-data
+- JSON (препоручено)
+- Form-дата
 :::
 
-### Events
+### Догађаји
 
-There are several events in terms of an ongoing call. These actions always
-come from your PBX system and may be:
+Постоји више догађаја везаних за током позива. Ове акције увек потичу из
+вашег PBX система и могу бити:
 
-- "newCall" event (initiation of a call)
-- "hangup" event (call ending)
-- "answer" event (aka picking up the phone)
+- "newCall" догађај (иницијализација позива)
+- "хангуп" догађај (завршетак позива)
+- "answer" догађај (такође познат као подизање слушалке)
 
-In some situations Zammad may provide a return on your PBX calls (e.g. a
-reject) if you blocked a specific caller. Zammad will never initiate
-specific actions with your PBX. Zammad is a passive component in all
-described cases.
+У неким ситуацијама Zammad може послати одговор на ваше PBX позиве
+(нпр. одбијање) ако сте блокирали одређеног позивача. Zammad никада неће
+иницирати специфичне акције са вашим PBX-om. Zammad је пасивни компонент у
+свим описаним случајевима.
 
-### Used examples
+### Коришћени примери
 
-**Example:**
-Below calls have been sent with the following configuration. This is
-important for you to understand the responses we are showing here.
+**Пример:**
+У наставку су послати позиви са следећом конфигурацијом. Ово је
+важно за вас да бисте разумели одговоре које приказујемо овде.
 
-**Outbound:**
+**Одлазни:**
 
-- Destination caller ID `4989*` set outbound caller ID `498999998145` with
-  note "All from munich"
-- Destination caller ID `4930*` set outbound caller ID `493023125877` "All
-  from Berlin"
+- Циљани број позивача `4989*` подешава одлазни број позивача `498999998145`
+  са напоменом "Сви из Минхена"
+- Циљани број позивача `4930*` подешава одлазни број позивача `493023125877`
+  "Сви из Berlin-а"
 
-**Other settings:**
+**Остала подешавања:**
 
-- Default caller ID for outbound calls `496990009111`
+- Подразумевани број позивача за одлазне позиве `496990009111`
 
-## New call event
+## Догађај Новог Позива
 
 ### Уопштено
 
 Доступни `атрибути` и <Badge type="info" text="примери" />:
 
 `event` <Badge type="info" text="newCall"/>
-: Tell Zammad there is a new call.
+: Обавестите Zammad да постоји нови позив.
 
 `from` <Badge type="info" text="4930555716000"/>
-: Number that initiated the call. Can be `anonymous` as well.
+: Број који је иницирао позив. Може бити и `anoniman`.
 
 `to` <Badge type="info" text="4930555716000"/>
-: Number that is being called.
+: Број који се зове.
 
 `direction` <Badge type="info" text="in"/>
-: The call direction. If your agent initiates a call, this will be `out`. Calls
-from external side to you are `in`.
+: Смер позива. Ако ваш оператер иницира позив, ово ће бити `out`. Позиви
+са спољне стране ка вама су `in`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070"/>
-: An ID that is unique for the call. Zammad will use this ID to identify an
-  existing call with following actions (e.g. like answering or hanging up).
+: ID који је јединствен за позив. Zammad ће користити овај ID да идентификује
+  постојећи позив уз следеће акције (нпр. као одговор или прекид).
 
 `user` <Badge type="info" text="John Doe"/>
-: The user(s) real name involved. You may have to provide array style (`[]`)
-  params depending on the call method you choose. If the direction is `out`,
-  this is the name of the calling person(s). If the direction is `in`, this
-  is the name of the called person(s).
+: Стварно име учесника. Можда ћете морати да доставите параметре у облику низа (`[]`)
+  у зависности од методе позива коју одаберете. Ако је смер `out`,
+  ово је име особе/особа које звони. Ако је смер `in`, ово
+  је име особе/особа која се зове.
 
 `queue` <Badge type="info" text="support"/>
-: An optional queue name, this option is relevant for the caller log filter.
-  This value is optional.
+: Опционо име реда чекања, ова опција је релевантна за филтер дневника позивача.
+  Ова вредност је опциона.
 
 ### Одлазнo
 
@@ -127,35 +127,35 @@ from external side to you are `in`.
 
 === JSON
 
-`POST`-Request sent:
+Послат `POST` захтев:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-req.json
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-res.json
 
-Sample curl command:
+Пример цурл команде:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-req.sh
 
-=== Form-data
+=== Form-дата
 
-`POST`-Request sent:
+Послат `POST` захтев:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
 Payload:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req
 
-Returns:
+Повратне вредности:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-res.json
 
-Sample curl command:
+Пример цурл команде:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-form-req.sh
 
@@ -174,106 +174,107 @@ Payload:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-req.json
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-res.json
 
-Sample curl command:
+Пример цурл команде:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-req.sh
 
-=== Form-data
+=== Form-дата
 
 Payload:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-form-req
 
-Returns:
+Повратне вредности:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-res.json
 
-Sample curl command:
+Пример цурл команде:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-form-req.sh
 
 :::
 ::::
 
-### Situation specific responses
+### Одговори Специфични за Ситуацију
 
-Depending on the chosen call direction, Zammad will return either a
-(optionally) configured call ID or (optionally) block a caller. If your
-Zammad hasn't configured one or both options, the return will be empty.
+У зависности од одабраног смера позива, Zammad ће вратити или (опционо)
+конфигурисан ID позива или (опционо) блокирати позивача. Ако ваш Zammad није
+конфигурисао једну или обе опције, одговор ће бити празан.
 
 ::: info
-This has to be supported by your PBX in order to work.
+Ово мора да буде подржано од стране вашег PBX-a како би функционисало.
 :::
 
-#### Reject blocked caller ids
+#### Одбијање блокираних бројева позивача
 
-If an incoming new call matches a to block number, Zammad will return the
-following.
+Ако долазећи нови позив одговара броју за блокирање, Zammad ће вратити
+следеће.
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-blocked-res.json
 
-If no to block number matches, Zammad will return the following.
+Ако се не поклопи ниједан број за блокирање, Zammad ће вратити следеће.
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
 ::: warning
-Your PBX still needs to end the call (hangup event). Other wise the
-call will not just appear within Zammad's caller log but also appear as
-ringing call.
+Ваш PBX и даље мора да заврши позив (догађај хангуп). У супротном
+позив неће само се појавити у Zammad дневнику позивача, већ ће се појавити као
+позив у звону.
 :::
 
-#### Set specific outgoing caller ID
+#### Подешавање специфичног одлазног броја позивача
 
-In case your instance has a matching overwriting caller ID configured,
-Zammad will return the following payload.
+У случају да ваша инстанца има конфигурисан одговарајући пребрисани број
+позивача, Zammad ће вратити следећи payload.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-caller-id-res.json
 
-If no overwrite match is found or you haven't configured anything, Zammad
-will return the following.
+Ако се не пронађе подударност за пребрисивање или ништа нисте конфигурисали,
+Zammad ће вратити следеће.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-## Call answer event
+## Догађај Одговарања на Позив
 
 ### Уопштено
 
 Доступни `атрибути` и <Badge type="info" text="примери" />:
 
 `event` <Badge type="info" text="answer" />:
-: Tell Zammad that someone answered the call.
+: Обавестите Zammad да је неко одговорио на позив.
 
-`from` <Badge type="info" text="493055571600" />:
-: Number that initiated the call.
+Први термин <Badge type="info" text="tag1" />
+: Ово је дефиниција првог термина.
 
 `to` <Badge type="info" text="493055571600" />:
-: Number that is being called.
+: Број који се бира.
 
 `direction` <Badge type="info" text="in" />:
-: The call direction - if your agent initiates a call, this will be `out`.
+: Смер позива - ако ваш оператер иницира позив, ово ће бити `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
-: An ID that is unique for the call. Zammad will use this ID to identify an
-  existing call with following actions (e.g. like answering or hanging up).
+: ID који је јединствен за позив. Zammad ће користити овај ID за идентификацију
+  постојећег позива при даљим акцијама (нпр. одговарање или прекид).
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
+:   Zammad ће потражити корисника са датом вредношћу, следећи атрибути се процењују редом:
       - `user.phone`
       - `user.login`
       - `user.if`
-    This value is optional.
+    Ова вредност је опционална.
 
 `user` <Badge type="info" text="John Doe" />:
-: The user(s) real name involved. You may have to provide array style (`[]`)
-  params depending on the call method you choose. If the direction is `out`,
-  this is the name of the calling person(s). If the direction is `in`, this is
-  the name of the called person(s). This value is optional.
+: Право име (имена) укљученог корисника. Можда ћете морати да наведете параметре у облику низа (`[]`)
+  у зависности од изабране методе позива. Ако је смер `out`,
+  ово је име позивајуће особе/особа. Ако је смер `in`, ово је
+  име биране особе/особа. Ова вредност је опционална.
 
-There are two options on how to `POST` the relevant data to Zammad.
+Постоје две могућности за слање одговарајућих података на Zammad путем
+`POST` методе.
 
 ### Одлазнo
 
@@ -283,35 +284,35 @@ There are two options on how to `POST` the relevant data to Zammad.
 
 === JSON
 
-`POST`-Request sent:
+Послат `POST`-захтев:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-req.json
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-req.sh
 
-=== Form-data
+=== Form-дата
 
-`POST`-Request sent:
+Послат `POST`-захтев:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req
 
-Returns:
+Враћа се:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-answer-form-req.sh
 
@@ -326,72 +327,72 @@ Sample curl command:
 
 === JSON
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-req.json
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-req.sh
 
-=== Form-data
+=== Form-дата
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-form-req
 
-Returns:
+Враћа се:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-answer-form-req.sh
 
 :::
 ::::
 
-## Call hangup
+## Прекид позива
 
 ### Уопштено
 
 `event` <Badge type="info" text="hangup" />:
-: Tell Zammad that someone answered the call.
+: Обавестите Zammad да је позив прекинут.
 
-`from` <Badge type="info" text="493055571600" />:
-: Number that initiated the call.
+Први термин <Badge type="info" text="tag1" />
+: Ово је дефиниција првог термина.
 
 `to` <Badge type="info" text="493055571600" />:
-: Number that is being called.
+: Број који се бира.
 
 `direction` <Badge type="info" text="in" />:
-: The call direction - if your agent initiates a call, this will be `out`.
+: Смер позива - ако ваш оператер иницира позив, ово ће бити `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
-: An ID that is unique for the call. Zammad will use this ID to identify an
-  existing call with following actions (e.g. like answering or hanging up).
+: ID који је јединствен за позив. Zammad ће користити овај ID за идентификацију
+  постојећег позива при даљим акцијама (нпр. одговарање или прекид).
 
 `cause`
-:   This defines the reason of the hangup. Zammad evaluates the cause and indicates
-    e.g. missed calls accordingly in the caller log. Possible values are:
-    - `normalClearing` (one of the parties hung up after the call was established)
-    - `busy` (the called party was busy)
-    - `cancel` (the caller hung up before the called party picked up)
-    - `noAnswer` (the called party rejected the call. E.g. through a DND setting)
-    - `congestion` (the called party could not be reached)
-    - `notFound` (the called number does not exist or called party is offline)
-    - `forwarded` (the call was forwarded to a different party)
+:   Ово дефинише разлог прекида позива. Zammad процењује узрок и приказује
+    нпр. пропуштене позиве у дневнику позиваца. Могуће вредности су:
+    - `normalClearing` (једна од страна је прекинула везу након успостављања позива)
+    - `busy` (бирена страна је била заузета)
+    - `cancel` (позивач је прекинуо везу пре него што је бирена страна одговорила)
+    - `noAnswer` (бирена страна је одбила позив, нпр. путем DND подешавања)
+    - `congestion` (бирена страна није могла бити достигнута)
+    - `notFound` (бирени број не постоји или бирена страна је ван мреже)
+    - `forwarded` (позив је преусмерен на другу страну)
 
 `answeringNumber` <Badge type="info" text="493055571600" />:
-:   Zammad will look up for a user with given value, the following attributes will be evaluated in given order:
+:   Zammad ће потражити корисника са датом вредношћу, следећи атрибути се процењују редом:
     - `user.phone`
     - `user.login`
     - `user.if`
-    This value is optional.
+    Ова вредност је опционална.
 
 ### Одлазнo
 
@@ -401,35 +402,35 @@ Sample curl command:
 
 === JSON
 
-`POST`-Request send:
+Послат `POST`-захтев:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.json
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-req.sh
 
-=== Form-data
+=== Form-дата
 
-`POST`-Request sent:
+Послат `POST`-захтев:
 `https://{FQDN-Zammad}/api/v1/cti/{instance specific token}`
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req
 
-Returns:
+Враћа се:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-hangup-form-req.sh
 
@@ -444,29 +445,29 @@ Sample curl command:
 
 === JSON
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.json
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-req.sh
 
-=== Form-data
+=== Form-дата
 
-Payload:
+Подаци:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json
 
-Sample curl command:
+Пример цУРЛ команде:
 
 <<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh
 

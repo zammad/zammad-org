@@ -1,9 +1,9 @@
 ---
 order: 6
-title: 'Backup & restore (Docker)'
+title: 'Backup e restauração (Docker)'
 ---
 
-# Backup & restore (Docker)
+# Backup e restauração (Docker)
 
 Esta seção mostra alguns fundamentos sobre o processo de backup e
 restauração para uma implantação do Zammad baseada em Docker Compose.
@@ -29,16 +29,16 @@ restaurá-los.
 
 ## Backup
 
-By default, a backup is created at 3 o'clock each night. The backup is
-stored in the volume of the **zammad-backup** container under
-`/var/tmp/zammad`. To trigger a one-time backup manually, use one of the
-commands below, depending on your deployment method.
+Por padrão, um backup é criado às 3 horas todas as noites. O backup é
+armazenado no volume do container **zammad-backup**, em
+`/var/tmp/zammad`. Para disparar um backup avulso manualmente, use um dos
+comandos abaixo, dependendo do seu método de implantação.
 
 ::: tabs key:docker-portainer
 
 === Docker Compose
 
-In your Docker Compose directory, run:
+No seu diretório do Docker Compose, execute:
 
 ```sh
 docker compose run --rm --env BACKUP_ONCE=true zammad-backup
@@ -46,8 +46,8 @@ docker compose run --rm --env BACKUP_ONCE=true zammad-backup
 
 === Portainer
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) for the
-**zammad-backup** container with the standard entrypoint `/bin/bash` and run:
+Abra o [console via interface gráfica do Portainer](/pt_BR/get-started/installation/docker#how-to-run-commands-in-the-stack) para o
+container **zammad-backup** com o ponto de entrada padrão `/bin/bash` e execute:
 
 ```sh
 BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
@@ -78,22 +78,23 @@ BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
    antes de retomar suas operações normais.
 6. Depois que o processo de restauração terminar, o diretório `restore` terá
    sido renomeado. Você pode excluí-lo com segurança agora.
-7. Rebuild the Elasticsearch index. You can use Zammad while the rebuild is
-   running, but search performance is degraded and some data may be
-   temporarily unavailable in search results. Use one of the commands below,
-   depending on your deployment method.
+7. Reconstrua o índice do Elasticsearch. Você pode usar o Zammad enquanto a
+   reconstrução está em andamento, mas o desempenho da pesquisa fica
+   degradado e alguns dados podem ficar temporariamente indisponíveis nos
+   resultados de pesquisa. Use um dos comandos abaixo, dependendo do seu
+   método de implantação.
 
 ::: tabs key:docker-portainer
 
 === Docker Compose
 
-Without specifying CPU cores:
+Sem especificar núcleos de CPU:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Especificando núcleos de CPU a usar (exemplo 8):
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
@@ -101,16 +102,16 @@ docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:r
 
 === Portainer
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
-standard entrypoint `/bin/bash` and run:
+Abra o [console via interface gráfica do Portainer](/pt_BR/get-started/installation/docker#how-to-run-commands-in-the-stack) com o
+ponto de entrada padrão `/bin/bash` e execute:
 
-Without specifying CPU cores to use:
+Sem especificar núcleos de CPU a usar:
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Especificando núcleos de CPU a usar (exemplo 8):
 
 ```sh
 bundle exec rake zammad:searchindex:rebuild[8]

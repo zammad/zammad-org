@@ -1,15 +1,15 @@
 ---
 order: 4
-title: 'Advanced features'
+title: 'Напредне функције'
 ---
 
-# Advanced features
+# Напредне функције
 
 Ова страница садржи збирку различитих корисних алата који не изискују
 посебне странице. Само наставите да читате, претражите страницу или идите на
 жељени одељак помоћу садржаја са десне стране.
 
-## Ticket update behavior
+## Понашање при освежавању тикета
 
 ![Снимак екрана приказује мени понашања након
 освежавања](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
@@ -40,7 +40,7 @@ title: 'Advanced features'
 [[shift]] [[c]] за промену стања тикета на затворено и затварање прозора тикета.
 :::
 
-## Text modules
+## Текстуални исечак
 
 ![Снимак екрана приказује функцију текстуалних
 исечака](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
@@ -67,7 +67,7 @@ title: 'Advanced features'
 а затим притиском на [[enter]] на вашој тастатури. Zammad долази са неким
 подразумеваним текстуалним исечцима.
 
-## Insert knowledge base article
+## Убацивање чланка базе знања
 
 ![Снимак екрана приказује убацивање чланка базе
 знања](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
@@ -84,7 +84,7 @@ title: 'Advanced features'
 [[?]][[?]] у текст. Оба начина вам омогућавају да претражите жељени чланак
 базе знања куцањем неких знакова или речи.
 
-## Mention a user
+## Помињање корисника
 
 ![Снимак екрана приказује помињање
 корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
@@ -106,7 +106,7 @@ Zammad приказује листу свих корисника који одг
 их одабрати кликом или коришћењем стрелица на горе и доле а затим притиском
 на [[enter]] на вашој тастатури.
 
-## Subscribe to a ticket
+## Претплатите се на тикет
 
 ![Снимак екрана приказује функцију
 претплате](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
@@ -119,11 +119,10 @@ Zammad приказује листу свих корисника који одг
 
 **Како?**
 
-Activate the **Subscribe me** toggle in the ticket sidebar to get
-notifications. If you have been mentioned in a ticket, you are automatically
-subscribed. Switch the toggle off to stop the notification. The avatars
-displayed show you who has subscribed to the ticket and is therefore
-notified of updates.
+Укључите прекидач „Претплати се” у траци тикета са стране за добијање
+обавештења. Уколико сте већ поменути у тикету, већ сте
+претплаћени. Искључите прекидач за заустављање обавештења. Сличице испод вам
+приказују ко је претплаћен на тикет и ко је обавештен о освежавањима.
 
 ## Макрои
 
@@ -203,7 +202,7 @@ Zammad администратор га је искључио. Списак за�
   референциране тикета у вашем списку, само они који су затворени (са
   зеленим кругом) ће бити сматрани као обављени.
 
-## Ticket templates
+## Шаблони тикета
 
 **Зашто?**
 
@@ -217,7 +216,7 @@ Zammad администратор га је искључио. Списак за�
 уколико су доступни шаблони. Одаберите шаблон који желите и примените жељене
 измене.
 
-## Shared drafts
+## Заједнички нацрти
 
 **Зашто?**
 
@@ -241,7 +240,7 @@ QA процес, уместо додавања интерног чланка. У
 Примена нацрта преиначиће ваше неснимљене измене!
 :::
 
-## Monitoring ticket escalations
+## Надгледање ескалација тикета
 
 **Зашто?**
 
@@ -276,7 +275,7 @@ SLA функција захтева подешавање од стране ва�
 видите датуме ескалације, или тикет није покривен са SLA или функција није
 укључена.
 
-## Bulk actions
+## Масовне радње
 
 **Зашто?**
 
@@ -292,7 +291,7 @@ SLA функција захтева подешавање од стране ва�
 
 На оба места можете покренути масовне радње на различите начине:
 
-- By using the flyout
+- Коришћењем панела са стране
 - Коришћењем механизма превуци и пусти
 
 За коришћење масовне радње, прво одаберите тикете које желите да
@@ -314,14 +313,14 @@ SLA функција захтева подешавање од стране ва�
 обраду других тикета.  Међутим, док се масовна радња не заврши, нећете бити
 у могућности да покренете нову масовну радњу.
 
-**Flyout:**
+**Одлазни:**
 
-![Screenshot shows the bulk action
-flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Снимак екрана приказује бочни панел масовне
+радње](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
 
-After you selected tickets, click the `Bulk Action` button in the top right
-corner and change/add attributes by using the fields in the right
-flyout. The available changes you can apply to tickets are:
+По одабиру тикета, кликните на дугме `Mасовна радња` у горњем десном углу и
+промените/додајте атрибуте коришћењем поља у бочном панелу са десне
+стране. Доступни атрибути тикета које можете изменити су:
 
 - Промена групе
 - Промена власника
@@ -350,10 +349,10 @@ flyout. The available changes you can apply to tickets are:
 случају да сте одабрали све релевантне.  За укључивање још неког неодабраног
 тикета, започните превлачење изнад њега и биће укључен у масовну радњу.
 
-## Merge tickets
+## Спајање тикета
 
-![Screenshot shows the ticket merge
-flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Снимак екрана приказује бочну траку спајања
+тикета](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
 
 **Зашто?**
 
@@ -368,11 +367,10 @@ flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-me
 
 **Како?**
 
-Go to the ticket you want to merge into another one. In the ticket sidebar,
-use the ::a:: menu and select `Merge`. This opens a flyout in which you can
-select a ticket by clicking on it or enter a ticket number in search field.
-When you selected a target ticket, confirm by using the `Merge` button at
-the bottom.
+Идите на тикет који желите да спојите са другим. У траци тикета, одаберите
+`Споји` у падајућем менију ::a::. Ово ће отворити бочни панел у коме можете
+одабрати тикет кликом на исти или уносом броја тикета у поље за
+претрагу. Када одаберете циљни тикет, потврдите дугметом `Споји` при дну.
 
 На крају, чланци ће бити пребачени у одабрани тикет. Тикет на коме сте
 извршили радњу спајања и даље постоји са следећим изменама:
@@ -381,7 +379,7 @@ the bottom.
 - Стање је промењено у „спојено”
 - Тикет је повезан са својим „надређеним” тикетом
 
-## Split tickets
+## Раздељивање тикета
 
 ![Снимак екрана приказује радњу чланка за раздељивање у падајућем
 менију](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
@@ -404,7 +402,7 @@ the bottom.
 Управо отворени тикет ће бити повезан са оригиналним као
 подређени. Оригинални тикет је повезан са раздељеним као надређени.
 
-## Link tickets
+## Повезивање тикета
 
 **Зашто?**
 
@@ -414,17 +412,17 @@ the bottom.
 
 **Како?**
 
-In the ticket sidebar, add a link to another ticket by clicking the ::+::
-button in the **Related tickets** section.  This opens a flyout in which you
-can select a ticket by clicking on it or enter a ticket number in search
-field.  Additionally, you can choose between different link types:
+У панелу тикета, додајте везу на други тикет кликом на дугме ::+:: у одељку
+**Повезани тикети**.  Ово ће отворити траку са стране у којој можете
+одабрати тикет кликом на исти или уносом броја тикета у поље за претрагу.
+Додатно, можете изабрати између различитих типова веза:
 
 - **Нормално:** за сродне тикете који немају хијерархију.
 - **Надређени/подређени**: за сродне тикете где је основни проблем а други
   је задатак. Ова врста везе се подразумевано користи приликом раздељивања
   или спајања тикета.
 
-## Duplicate detection
+## Откривање дупликата
 
 ![Снимак екрана приказује упозорење на дупликат приликом отварања
 тикета](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
@@ -449,7 +447,7 @@ field.  Additionally, you can choose between different link types:
 на линк тикета да видите о чему се ради. У случају да није дупликат,
 једноставно игноришите упозорење и наставите са отварањем тикета.
 
-## Time accounting
+## Обрачун времена
 
 **Зашто?**
 
@@ -487,7 +485,7 @@ field.  Additionally, you can choose between different link types:
 ![Снимак екрана приказује приказ обрачуна
 времена](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
-## User detail panel
+## Панел са детаљима корисника
 
 **Зашто?**
 
@@ -507,7 +505,7 @@ field.  Additionally, you can choose between different link types:
 Иначе, иконица круне на снимку екрана представља VIP стање клијента, које
 можете бити укључено у детаљном приказу клијента и администраторском панелу.
 
-## User detail page
+## Страница корисничког профила
 
 ![Снимак екрана који приказује страницу са детаљима
 корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
@@ -521,20 +519,20 @@ field.  Additionally, you can choose between different link types:
 - Видите график недавних тикета
 - Додајте или уредите напомену
 - Уредите корисника (путем менија ::a::)
-- See a history of changes (via ::a:: menu)
-- Create a new ticket with this user as customer
+- Види историју измена (преко мени ::a::)
+- Направите нови тикет са овим корисником као клијентом
 
 **Како?**
 
-Simply click on a user avatar (e.g. in the header of the ticket detail
-view). This opens a new tab with the customer detail page. In case you also
-have admin permissions, you can even create a deletion job for a user from
-the ::a:: menu.
+Само кликните на аватар корисника (нпр. у заглављу прегледа детаља
+тикета). Ово отвара нови картиц са страницом детаља клијента. Ако имате и
+администраторска овлашћења, преко менија ::a:: можете чак креирати задатак
+брисања за корисника.
 
-## Organization detail page
+## Организација
 
-![Screenshot shows organization detail
-page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
+![Снимак екрана приказује страницу са детаљима
+организације](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
 
 **Зашто?**
 
@@ -545,7 +543,7 @@ page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organizatio
 - Видите график недавних тикета целе организације
 - Додајте или уредите напомену
 - Уредите организацију (преко менија ::a::)
-- See a history of changes (via ::a:: menu)
+- Види историју измена (преко мени ::a::)
 - Додате новог корисника као члана ове организације
 
 **Како?**
@@ -554,7 +552,7 @@ page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organizatio
 детаљног приказа тикета поред аватар сличице корисника). Ово ће отворити
 нови прозор са страницом са детаљима организације.
 
-## External issues and assets
+## Екстерни проблеми и средства
 
 **Зашто?**
 
@@ -565,33 +563,33 @@ Gitlab проблеме, можете се повезати са овим екс
 
 **Како?**
 
-![Screenshot shows Gitlab content sidebar with "Link Issue"
-button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+![Снимак екрана који приказује мени радњи
+макроа](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
-If activated, simply open a ticket and choose the right content sidebar tab
-with the respective icon (see Gitlab example in screenshot above). Click the
-button to link to an issue by entering the URL of it or select the item from
-a select field (i-doit). Afterwards, you can see the linked item with
-additional metadata. By clicking on the linked item, you are redirected to
-it in the respective system.
+Ако је активирано, само отворите тикет и изаберите одговарајући картицу
+бочне траке за садржај са одговарајућом иконом (види пример Gitlab на слици
+изнад). Кликните дугме да повежете са проблемом уносом његове URL адресе или
+изаберите ставку са падајућег менија (i-doit). Након тога, можете видети
+повезани елемент уз додатне метаподатке. Кликом на повезани елемент
+преусмерени сте ка њему у одговарајућем систему.
 
-## Highlight text
+## Истакни текст
 
 **Зашто?**
 
-It allows you to give your colleagues a hint about important aspects of the
-ticket and to make sure important parts aren't getting overlooked. Be aware
-that this feature is not about text highlighting for new articles, it is
-about highlighting text in existing articles for you and other agents.
+Омогућава вам да колегама указете на важне аспекте тикета и осигурате да се
+ниједан кључни детаљ не пропусти. Имајте на уму да ова функција није за
+истицање текста у новим чланцима, већ за истицање текста у постојећим
+чланцима за вас и друге оператере.
 
 **Како?**
 
-![Screenshot shows highlight menu from ticket detail
-view](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)
 
-Use the highlighting tool with the pencil icon in the upper right corner in
-the ticket detail view. To highlight text, either select text first and then
-click the button. As an alternative, you can click the highlighting button
-first and then select text. You can choose a different color by using the
-down arrow on the right side of the button. To remove the highlighting,
-simply choose the rubber icon from the color menu.
+Користите алат за истицање са иконом оловке у горњем десном углу прегледа
+детаља тикета. Да бисте истакли текст, прво изаберите текст а затим кликните
+дугме. Као алтернативу, можете прво кликнути дугме за истицање, па изабрати
+текст. Различиту боју можете изабрати помоћу стрелице надоле на десној
+страни дугмета. Да бисте уклонили истицање, једноставно изаберите икону
+гумице из менија за боје.

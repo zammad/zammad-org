@@ -1,14 +1,14 @@
 ---
 order: 13
-title: 'Single sign-on with Kerberos'
+title: 'Single Sign-on mit Kerberos'
 ---
 
-# Single sign-on for Kerberos <Badge type="warning" text="on-premise only"/>
+# Single Sign-On für Kerberos <Badge type="warning" text="nur on-premise"/>
 
 In dieser Anleitung wird beschrieben, wie Sie Single Sign-On mit Microsoft
 Active Directory einrichten.
 
-## Conceptual overview
+## Konzeptübersicht
 
 Wie jede andere Webanwendung hat auch Zammad seine eigene Logik, um Benutzer
 anzumelden, ihre Passwörter zu speichern, sie zu authentifizieren und ihre
@@ -25,7 +25,7 @@ Wenn Sie nicht über diese IT-Infrastruktur verfügen, aber trotzdem eine Ein-Kl
 Anmeldung wünschen, können Sie Alternativen wie Github, Google, Facebook und andere nutzen.
 :::
 
-## How does it work?
+## Wie funktioniert das?
 
 Einmal aktiviert, stellt das Single Sign-On Feature einen Endpunkt unter
 `https://your.zammad.host/auth/sso` bereit. Wenn der Zammad-Server an diesem
@@ -86,7 +86,7 @@ dass Ihre Active Directory- und Zammad-Benutzerkonten immer synchronisiert sind.
 finden Sie in der Verwaltungsoberfläche von Zammad unter
 _Einstellungen > Sicherheit > Anwendungen von Drittanbietern_.
 
-## Step 1: Configure active directory
+## Schritt 1: Active Directory konfigurieren
 
 Im Kerberos-Authentifizierungsschema muss der **Authentifizierungsserver**
 (Active Directory) gemeinsame Geheimnisse mit dem **Service** (Zammad)
@@ -106,7 +106,7 @@ ausreichend.
 ![Screenshot Active Directory Service Account
 Einstellungen](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
-### 1b. Reset password
+### 1b. Passwort zurücksetzen
 
 Passwort des Service Accounts zurücksetzen, nachdem die Option "This account
 supports Kerberos AES 256 bit encryption" aktiviert wurde.
@@ -162,7 +162,7 @@ Die letzte Zeile ist zu beachten:
 - die Versionsnummer des geheimen Schlüssels mit vorangestelltem `vno`
   (**3**)
 
-## Step 2: Remove NGINX, set up Apache + Kerberos
+## Schritt 2: NGINX entfernen, Apache + Kerberos einrichten
 
 Als nächstes muss der Zammad-Host so konfiguriert werden, dass er Kerberos
 unterstützt (und die vom Active Directory-Server bereitgestellten
@@ -177,7 +177,7 @@ Kerberos-Unterstützung durch ein Plug-in-Modul bietet.
 Alle Befehle in diesem Abschnitt müssen als root (oder mit `sudo`) ausgeführt werden.
 :::
 
-### 2a. Turn off NGINX
+### 2a. NGINX ausschalten
 
 ::: warning
 Dadurch ist Ihre Zammad-Instanz **offline**, bis Apache vollständig
@@ -223,13 +223,13 @@ sudo systemctl start nginx
 
 :::
 
-### 2b. Pre-configure Apache
+### 2b. Apache vorkonfigurieren
 
 Diese Dokumentation setzt eine bereits funktionierende Apache-Konfiguration
 voraus.  Sie sollten einen Blick in die [Webserver
 Konfiguration](/de/tutorials/webserver-config) werfen, bevor Sie fortfahren.
 
-### 2c. Install further Apache dependencies
+### 2c. Weitere Apache-Abhängigkeiten installieren
 
 ::: tabs
 
@@ -261,7 +261,7 @@ sudo zypper install krb5-client apache2-mod_auth_kerb
 
 :::
 
-### 2d. Enable Apache modules
+### 2d. Apache-Module aktivieren
 
 SSO erfordert Module, die standardmäßig nicht aktiviert sind. Standardmäßig
 können Sie dafür `a2enmod` verwenden.
@@ -348,7 +348,7 @@ Beispielkonfiguration:
          <domain> = <DOMAIN>
 ```
 
-### 2f. Generate keytab
+### 2f. Keytab generieren
 
 Apache benötigt eine Kerberos _keytab_ (Schlüsseltabelle), um seine
 gemeinsamen Geheimnisse mit dem Domain Controller zu verwalten.
@@ -498,7 +498,7 @@ The configuration for CentOS and OpenSUSE below contains two
 
 :::
 
-### 2g. Restart Apache to apply changes
+### 2g. Apache neu starten, um Änderungen zu übernehmen
 
 ```sh
 sudo systemctl restart apache2
@@ -514,7 +514,7 @@ _Einstellungen > Sicherheit > Anwendungen von Drittanbietern_.
 um sich anzumelden.
 :::
 
-## Step 4: Configure client system (Windows only)
+## Schritt 4: Client-System konfigurieren (nur Windows)
 
 Für die vollständige SSO-Erfahrung (d.h. für die passwortlose Anmeldung mit
 einem Klick) müssen Benutzer von Zammad:
@@ -566,7 +566,7 @@ Browser und nicht in den Windows-Einstellungen festgelegt wird.
   von fünf Minuten zueinander synchronisiert? Kerberos ist ein
   zeitkritisches Protokoll!
 
-### Errors in Apache logs
+### Fehler in Apache-Protokollen
 
 ::: tip
 **Versuchen Sie, das Apache-Log-Level vorübergehend zu erhöhen.**

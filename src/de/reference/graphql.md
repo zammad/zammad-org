@@ -56,7 +56,7 @@ Achten Sie darauf, dass Sie es vor dem Schließen des Dialogs kopieren, da
 Sie es nicht noch einmal sehen können. Falls Sie es versäumt haben,
 erstellen Sie einfach ein neues Token.
 
-### Prepare your client
+### Client vorbereiten
 
 Öffnen Sie Ihren API Client und richten Sie ihn ein.
 
@@ -72,7 +72,7 @@ Umgebungsvariable `ZAMMAD_GRAPHQL_INTROSPECTION` auf `true`. Dies vergrößert d
 **nicht empfohlen**.
 :::
 
-### Create a request
+### Einen Request erstellen
 
 Alle Requests und Responses sind im JSON-Format. Das bedeutet, dass alle
 Informationen in Klammern gekapselt sein und eine hierarchische Struktur
@@ -170,7 +170,7 @@ Sie sicher, dass Sie diese bei der Verwendung der Beispiele setzen.
 
 ## Anhang
 
-### Global ids
+### Global IDs
 
 ::: info
 

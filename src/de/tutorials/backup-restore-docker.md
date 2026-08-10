@@ -1,9 +1,9 @@
 ---
 order: 6
-title: 'Backup & restore (Docker)'
+title: 'Backup & Restore (Docker)'
 ---
 
-# Backup & restore (Docker)
+# Backup & Restore (Docker)
 
 Dieser Abschnitt zeigt einige Grundlagen zum Sicherungs- und
 Wiederherstellungsprozess für eine auf Docker Compose basierte Installation
@@ -31,16 +31,17 @@ es wiederherzustellen.
 
 ## Backup
 
-By default, a backup is created at 3 o'clock each night. The backup is
-stored in the volume of the **zammad-backup** container under
-`/var/tmp/zammad`. To trigger a one-time backup manually, use one of the
-commands below, depending on your deployment method.
+Standardmäßig wird jede Nacht um 3 Uhr eine Sicherung erstellt. Die
+Sicherung wird im Volume des Containers **zammad-backup** im Verzeichnis
+`/var/tmp/zammad` gespeichert. Um eine einmalige Sicherung manuell
+auszuführen, verwenden Sie je nach Installationsmethode einen der folgenden
+Befehle.
 
 ::: tabs key:docker-portainer
 
 === Docker Compose
 
-In your Docker Compose directory, run:
+Führen Sie in Ihrem Docker-Compose-Verzeichnis folgenden Befehl aus:
 
 ```sh
 docker compose run --rm --env BACKUP_ONCE=true zammad-backup
@@ -48,8 +49,8 @@ docker compose run --rm --env BACKUP_ONCE=true zammad-backup
 
 === Portainer
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) for the
-**zammad-backup** container with the standard entrypoint `/bin/bash` and run:
+Öffnen Sie die [Konsole über die Portainer-Benutzeroberfläche](/de/get-started/installation/docker#ausfuhren-von-befehlen-im-stack) für den
+**zammad-backup** Container mit dem Standard-Entrypoint `/bin/bash` und führen Sie Folgendes aus:
 
 ```sh
 BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
@@ -75,48 +76,50 @@ BACKUP_ONCE=true bin/docker-entrypoint zammad-backup
    dieser eingebauten Backup-Methode unterstützt. Kopieren Sie nicht die
    Dateien `latest_zammad_*.gz`, da sie auf einen für den
    Wiederherstellungsprozess unbekannten Ort verweisen.
-5. Start the stack. The restore process is triggered in the `zammad-backup`
-   service if the `restore` directory is detected and the backup files are
-   in place. As a part of this process, the Rails cache will be cleared.
-   All other containers wait for the restore to finish before they resume
-   their normal operations.
+5. Starten Sie den Stack. Der Wiederherstellungsprozess wird im Dienst
+   `zammad-backup` ausgelöst, wenn das Verzeichnis `restore` erkannt wird
+   und die Sicherungsdateien vorhanden sind. Im Rahmen dieses Vorgangs wird
+   der Rails-Cache geleert. Alle anderen Container warten, bis die
+   Wiederherstellung abgeschlossen ist, bevor sie ihren normalen Betrieb
+   wieder aufnehmen.
 6. Nachdem der Wiederherstellungsprozess abgeschlossen ist, wurde das
    Verzeichnis `restore` umbenannt. Sie können es jetzt löschen.
-7. Rebuild the Elasticsearch index. You can use Zammad while the rebuild is
-   running, but search performance is degraded and some data may be
-   temporarily unavailable in search results. Use one of the commands below,
-   depending on your deployment method.
+7. Erstellen Sie den Elasticsearch-Index neu. Sie können Zammad während des
+   Neuaufbaus weiterhin nutzen, allerdings ist die Suchleistung
+   beeinträchtigt und einige Daten sind in den Suchergebnissen
+   möglicherweise vorübergehend nicht verfügbar. Verwenden Sie abhängig von
+   Ihrer Installationsmethode einen der folgenden Befehle.
 
 ::: tabs key:docker-portainer
 
 === Docker Compose
 
-Without specifying CPU cores:
+Ohne Angabe von CPU-Kernen:
 
-```sh
+``````sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Mit Angabe der zu verwendenden CPU-Kerne (Beispiel: 8):
 
-```sh
+``````sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
 ```
 
 === Portainer
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
-standard entrypoint `/bin/bash` and run:
+Öffnen Sie die [Konsole über die Portainer-Benutzeroberfläche](/de/get-started/installation/docker#ausfuhren-von-befehlen-im-stack) mit dem
+Standard-Entrypoint `/bin/bash` und führen Sie Folgendes aus:
 
-Without specifying CPU cores to use:
+Ohne Angabe der zu verwendenden CPU-Kerne:
 
-```sh
+``````sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Mit Angabe der zu verwendenden CPU-Kerne (Beispiel: 8):
 
-```sh
+``````sh
 bundle exec rake zammad:searchindex:rebuild[8]
 ```
 

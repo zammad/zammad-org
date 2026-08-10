@@ -1,22 +1,22 @@
 ---
 order: 17
-title: States
+title: Статуси
 ---
 
-# States
+# Статуси
 
 ::: warning
-Creating, changing or removing states via below endpoints is not
-recommended! You can do this in Zammad's UI. To do so, go to the
-admin interface to _System > Objects > Ticket_.
+Креирање, мењање или брисање статуса путем доњих ендпоинта није
+препоручено! Ово можете урадити у Zammad UI-ју. Да бисте то учинили, идите на
+админ интерфејс и одаберите _System > Objects > Ticket_.
 :::
 
-## List
+## Преглед листе
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Потребна дозвола: `admin.object` **или** `ticket.agent` **или**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_states`
+`GET`-Захтев послат: `/api/v1/ticket_states`
 
 ::: details
 
@@ -24,12 +24,12 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Потребна дозвола: `admin.object` **или** `ticket.agent` **или**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_states/{id}`
+`GET`-Захтев послат: `/api/v1/ticket_states/{id}`
 
 ::: details
 
@@ -37,18 +37,18 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`POST`-Request sent: `/api/v1/ticket_states`
+`POST`-Захтев послат: `/api/v1/ticket_states`
 
 ::: info
-Below payload makes use of `state_type_id` which is a instance
-specific set of IDs. State types indicate how the state will work.
+Доњи payload користи `state_type_id` који је инстанци-специфичан
+скуп ID-јева. Типови статуса указују на начин рада статуса.
 
-As there's no endpoint for retrieving these, please use the
-[Rails console](/en/reference/rails-commands).
+С обзиром да не постоји ендпоинт за њихово преузимање, користите
+[Rails конзолу](/en/reference/rails-commands).
 :::
 
 :::: details
@@ -68,9 +68,9 @@ As there's no endpoint for retrieving these, please use the
 
 ## Освежавање
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`PUT`-Request sent: `/api/v1/ticket_states/{id}`
+`PUT`-Захтев послат: `/api/v1/ticket_states/{id}`
 
 :::: details
 
@@ -87,28 +87,28 @@ Required permission: `admin.object`
 :::
 ::::
 
-## Delete
+## Обриши
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/ticket_states/{id}`
+`DELETE`-Захтев послат: `/api/v1/ticket_states/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Ово је трајно уклањање**
 
-Please note that removing ticket states cannot be undone.
+Имајте на уму да уклањање статуса карата не може бити поништено.
 
-Removing ticket states with references in tickets is not possible via
-API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Уклањање статуса карата са референцама у тикетима није могуће путем
+API-ја - што ће бити означено као
+`"error": "Can't delete, object has references."`. Ово _није_ буг.
 
-Consider either setting said state to `active: false` or adjust all
-tickets with the to remove state to another state.
+Размотрите постављање тог статуса на `active: false` или ажурирање свих
+тицкетс with тхе то ремове стате то анотхер стате.
 :::
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/ticket_states/delete-id-res.json
 

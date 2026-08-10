@@ -1,15 +1,15 @@
 ---
 order: 15
-title: 'Shared drafts'
+title: 'Заједнички нацрти'
 ---
 
-# Shared drafts
+# Заједнички нацрти
 
-## Show
+## Прикажи
 
-Required permission: `ticket.agent`.
+Потребна дозвола: `ticket.agent`.
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`GET`-Захтев послат: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details
 
@@ -17,21 +17,21 @@ Required permission: `ticket.agent`.
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `ticket.agent`.
+Потребна дозвола: `ticket.agent`.
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`PUT`-Захтев послат: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/tickets/shared_draft/put-ticket-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/tickets/shared_draft/put-ticket-id-res.json
 
@@ -40,30 +40,30 @@ Required permission: `ticket.agent`.
 
 ## Освежавање
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`PATCH`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`PATCH`-Захтев послат: `/api/v1/tickets/{ticket id}/shared_draft`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/tickets/shared_draft/patch-ticket-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/tickets/shared_draft/patch-ticket-id-res.json
 
 :::
 ::::
 
-## Remove
+## Обриши
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket id}/shared_draft`
+`DELETE`-Захтев послат: `/api/v1/tickets/{ticket id}/shared_draft`
 
 ::: details
 

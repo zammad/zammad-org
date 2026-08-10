@@ -1,221 +1,220 @@
 ---
 order: 5
-title: 'Docker Compose scenarios'
+title: 'Радно Docker Compose окружење'
 ---
 
-# Docker Compose scenarios
+# Радно Docker Compose окружење
 
 ## Преглед
 
-If the "vanilla" Zammad stack doesn't cover your use-case, you can use one
-of the pre-defined scenarios. We don't recommend to change the Compose files
-locally, because it will be hard to keep track of upstream changes for the
-stack then. This is why you should either use Portainer's repository build
-method or clone the repository and update it regularly, when using Docker
-Compose.
+Ако \"ванила\" Zammad стацк не покрива ваш случај употребе, можете користити
+један од унапред дефинисаних сценарија. Не препоручујемо мењање Compose
+фајлова локално, јер ће тада бити тешко пратити упстреам промене за
+стацк. Зато треба да користите методу изградње repo-зиторијума у Portainer-у
+или да клонирате repo и редовно га ажурирате, када користите Docker Compose.
 
-The following scenarios are supported and explained further below:
+Следеће опције проксија приступа су подржане:
 
-- [Making the stack available via
-  HTTPS](#making-the-stack-available-via-https)
-  - Add a Cloudflare tunnel service to the stack
-  - Add a Nginx Proxy Manager (NPM) to the stack
-  - Add an external Docker network to Nginx
-- [Using external services](#using-external-services)
-  - Disable Elasticsearch service
-- [Making services externally
-  available](#making-services-externally-available)
-  - Add an external Docker network to Elasticsearch
-  - Add an host port to Elasticsearch
-- [Additional scenarios](#additional-scenarios)
-  - Disable the backup service
-  - Add an Ollama instance to the stack
-  - Limit hardware resources of the stack
+- [Омогућавање доступности стацк-а путем
+  HTTPS-а](#making-the-stack-available-via-https)
+  - Додајте Cloudflare туннел сервис у стацк
+  - Додајте Nginx Proxy Manager (NPM) у стацк
+  - Додајте спољну Docker мрежу у Nginx
+- [Коришћење спољних сервиса](#using-external-services)
+  - Elasticsearch инсталација
+- [Омогућавање доступности сервиса
+  споља](#making-services-externally-available)
+  - Elasticsearch инсталација
+  - Elasticsearch инсталација
+- [Додатни сценарији](#additional-scenarios)
+  - Онемогућите сервис за резервне копије
+  - Додајте Ollama инстанцу у стацк
+  - Ограничите хардверске ресурсе стацк-а
 
-You can find the files in the [Zammad-Docker-Compose
-repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
+Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad
+репозиторију](https://github.com/zammad/zammad-docker-compose){target=_blank}.
 
-## General usage
+## Уопштено
 
 ::: tabs
 
 === Portainer
 
-Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
+Пратите [општи приручник за deployment](/en/get-started/installation/docker) и примените следеће промене.
 
-Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
-can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
-`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
+Испод поља "Compose патх" кликните на дугме `Add file`. Ово отвара секцију "Additional патхс" где можете
+дефинисати сценарио који желите да користите. Додајте `scenarios/{scenario you want to use}.yml` и замените задњи део у
+`{}` заградама именом једног од фајлова сценарија. Можете чак и комбиновати сценарије додавањем додатних путања.
 
-![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)
+![Portainer konfiguracija dodatnih putanja](/screenshots/get-started/installation/portainer-additional-paths.png)
 
 === Docker Compose
 
-Follow the first 2 steps of the [general deployment guide](/en/get-started/installation/docker). To start the stack with
-one or more additional scenarios, use the following command for step 3 in the cloned repository folder instead:
+Пратите прва 2 корака из [општег приручника за deployment](/en/get-started/installation/docker). За покретање стацк-а са
+једним или више додатних сценарија, користите следећу команду уместо корака 3 у клонираном фолдеру repo-зиторијума:
 
 ``` sh
 docker compose -f docker-compose.yml -f scenarios/{scenario you want to use}.yml up -d
 ```
 
-Replace the part in `{}` brackets with the file name of one of the scenario files. You can even combine the scenarios
-by adding additional files according to the example above.
+Замените део унутар `{}` заграда именом фајла једног од сценарија. Можете чак и комбиновати сценарије
+додавањем додатних фајлова у складу са горе наведеним примером.
 
 :::
 
-## Making the stack available via HTTPS
+## Омогућавање доступности стека путем HTTPS-а
 
-If you set up Zammad for production use, it needs to be secured by using an
-HTTPS connection. There are different scenarios for achieving this:
+Ако постављате Zammad за производну употребу, потребно га је заштитити
+коришћењем HTTPS конекције. Постоје различити сценарији за постизање овога.
 
-### Add Cloudflare tunnel
+### Додај Cloudflare Туннел
 
-If you want to publish Zammad in a very convenient way, you can use a
-[Cloudflare](https://www.cloudflare.com/){target=_blank} tunnel.
+Ако желите да објавите Zammad на врло практичан начин, можете користити
+[Cloudflare](https://www.cloudflare.com/) тунел.
 
-- Use the scenario file `scenarios/add-cloudflare-tunnel.yml` for deployment
-- Add a sub-domain to an already existing domain in your Cloudflare
-  dashboard
-- Create a tunnel for this subdomain and configure it to forward traffic to
-  your zammad-nginx service with `http://zammad-nginx:8080`
-- Provide your Cloudflare tunnel token to the Zammad stack by using the
-  environment variable `CLOUDFLARE_TUNNEL_TOKEN`
+- Користите фајл сценарија `scenarios/add-cloudflare-tunnel.yml` за
+  deploysku инсталацију
+- Додај поддомен већ постојећем домену у свом Cloudflare панелу
+- Креирај тунел за овај поддомен и конфигурирај га да усмерава саобраћај ка
+  zammad-nginx сервису са `http://zammad-nginx:8080`
+- Унесите свој Cloudflare туннел токен у Zammad стацк користећи променљиву
+  окружења `CLOUDFLARE_TUNNEL_TOKEN`
 
-### Add Nginx proxy manager
+### Додај Nginx Proxy Manager
 
-A very common setup of publishing web services is to use a reverse proxy,
-which handles the SSL termination. One common tool is the Nginx Proxy
-Manager (NPM), which can be configured via UI quite simply. If you don't
-have a reverse proxy already, this might be a useful scenario for you. If
-you already have a running reverse proxy, head over to the next section.
+Веома чест начин постављања web сервиса је коришћење реверсе proxija који се
+бави SSL терминацијом. Један од често коришћених алата је Nginx Proxy
+Manager (NPM), који се може конфигурисати кроз интерфејс прилично
+једноставно. Ако још немате реверсе proxy, ово вам може бити користан
+сценарио. Ако већ имате покренут реверсе proxy, пређите на следећи одељак.
 
-- Use the scenario file `scenarios/add-nginx-proxy-manager.yml` for
-  deployment
-- Provide your FQDN for Zammad by using the environment variable
-  `ZAMMAD_FQDN`
-- Configure your DNS. The chosen Zammad FQDN should point to the IP address
-  of the NPM host
-- Configure a new proxy host in your NPM and follow the steps to get an SSL
-  certificate
+- Користите фајл сценарија `scenarios/add-nginx-proxy-manager.yml` за
+  deploysku инсталацију
+- Унесите свој FQDN за Zammad користећи променљиву окружења `ZAMMAD_FQDN`
+- Конфигуришите свој DNS. Изабрани Zammad FQDN треба да показује на IP
+  адресу NPM хоста
+- Конфигуришите нови proxy хост у свом NPM-у и следите кораке да бисте
+  добили SSL сертификат
 
-### Add external Docker network to Nginx
+### Додајте спољну Docker мрежу у Nginx
 
-If you already have a reverse proxy which takes care about the SSL
-termination, this scenario is helpful. It adds an external Docker network to
-Zammad's included Nginx service to be able to access it from a reverse proxy
-that is not part of the Zammad stack's network.
+Ако већ имате реверсе proxy који се брине о SSL терминацији, овај сценарио
+је користан. Он додаје спољну Docker мрежу на Zammad-ов укључени Nginx
+сервис како би се могао приступити из реверсе proxija који није део мреже
+Zammad стацк-а.
 
-- Use the scenario file `scenarios/add-external-network-to-nginx.yml` for
-  deployment
-- Provide the name of your external network by using the environment
-  variable `ZAMMAD_NGINX_EXTERNAL_NETWORK`
+- Користите фајл сценарија `scenarios/add-external-network-to-nginx.yml` за
+  deploysku инсталацију
+- Унесите име своје спољне мреже користећи променљиву окружења
+  `ZAMMAD_NGINX_EXTERNAL_NETWORK`
 
-## Using external services
+## Коришћење спољних сервиса
 
-### Disable Elasticsearch service
+### Elasticsearch инсталација
 
-Do you have an Elasticsearch instance already running and want to use it for
-Zammad, too? Then you can disable the Elasticsearch service in the Zammad
-stack to save resources.
+Да ли већ имате покренуту Elasticsearch инстанцу и желите да је користите и
+за Zammad? Тада можете онемогућити Elasticsearch сервис у Zammad стацк-у
+како бисте уштедели ресурсе.
 
-- Use the scenario file `scenarios/disable-elasticsearch-service.yml` for
-  deployment - this will turn off the built-in service for Elasticsearch
-- Use the following environment variables to provide information about the
-  connection to your existing Elasticsearch instance:
+- Користите фајл сценарија `scenarios/disable-elasticsearch-service.yml` за
+  deploysku инсталацију - ово ће искључити уграђени сервис за Elasticsearch
+- Користите следеће променљиве окружења да унесете информације о конекцији
+  на вашу постојећу Elasticsearch инстанцу:
   - `ELASTICSEARCH_SCHEMA`
   - `ELASTICSEARCH_HOST`
   - `ELASTICSEARCH_PORT`
   - `ELASTICSEARCH_USER`
   - `ELASTICSEARCH_PASS`
 
-## Making services externally available
+## Омогућавање спољне доступности сервиса
 
-These scenarios are meant to connect from external applications to Zammad
-services. Depending on where your external service is hosted, you can use
-one of the following scenarios.
+Ови сценарији су намењени за повезивање спољних апликација са Zammad
+сервисима. У зависности од тога где је хостован ваш спољни сервис, можете
+користити један од следећих сценарија.
 
 ::: danger
 
-When exposing Elasticsearch outside the stack, make sure to set the variable `ELASTICSEARCH_PASS` to a custom value
-first! Otherwise this is a big security issue because the Elasticsearch index contains most of Zammad's data.
+Када излажете Elasticsearch ван стацк-а, обавезно прво подесите променљиву `ELASTICSEARCH_PASS` на прилагођену вредност!
+У супротном, ово представља велики безбедносни проблем јер Elasticsearch индекс садржи већину Zammad-ових података.
 
 :::
 
 ::: tip
 
-If you want to use TLS, you have to connect to Elasticsearch via reverse proxy.
+Ако желите да користите TLS, морате се повезати на Elasticsearch путем реверсе proxija.
 
 :::
 
-### Add external Docker network to Elasticsearch
+### Elasticsearch инсталација
 
-A common use case for this is to use a reporting/visualization tool like
-Grafana on the same host in another stack.  Because such tools need to
-access the Elasticsearch index, the network of the other stack has to be
-added to Zammad's Elasticsearch container.
+Чест пример употребе је коришћење алата за извештавање/висуализацију као што
+је Grafana на истом хосту у другом стацк-у. Пошто такви алати морају да
+приступе Elasticsearch индексу, мрежа другог стацк-а мора бити додата у
+Zammad-ов Elasticsearch контејнер.
 
-- Use the scenario file
-  `scenarios/add-external-network-to-elasticsearch.yml` for deployment
-- Provide the name of your external network by using the environment
-  variable `ZAMMAD_ELASTICSEARCH_EXTERNAL_NETWORK`
+- Користите фајл сценарија
+  `scenarios/add-external-network-to-elasticsearch.yml` за deploysku
+  инсталацију
+- Унесите име своје спољне мреже користећи променљиву окружења
+  `ZAMMAD_ELASTICSEARCH_EXTERNAL_NETWORK`
 
-### Add host port to Elasticsearch
+### Elasticsearch инсталација
 
-In case you want to expose the Elasticsearch service of the Zammad stack in
-the network, you can assign a host port to the container. This is useful if
-you need to access the Elasticsearch container from a different host.
+У случају да желите да изложите Elasticsearch сервис Zammad стацк-а у мрежи,
+можете доделити хост порт контејнеру. Ово је корисно ако требате да
+приступите Elasticsearch контејнеру са другог хоста.
 
-- Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for
-  deployment
-- The default port for Elasticsearch is `9200`. Change it to another port by
-  using the environment variable `ELASTICSEARCH_EXPOSE_HTTP_PORT`
+- Користите фајл сценарија `scenarios/add-hostport-to-elasticsearch.yml` за
+  deploysku инсталацију
+- Подразумевани порт за Elasticsearch је `9200`. Промените га на други порт
+  користећи променљиву окружења `ELASTICSEARCH_EXPOSE_HTTP_PORT`
 
-## Additional scenarios
+## Додатни сценарији
 
-### Disable backup service
+### Онемогућите сервис за резервне копије
 
-In case you want to handle backups in a different way, you can disable the
-built in backup service in the stack to save resources.
+У случају да желите другачије да управљате бацкуп-овима, можете онемогућити
+уграђени бацкуп сервис у стацк-у како бисте уштедели ресурсе.
 
-You can do so by just using the scenario file
-`scenarios/disable-backup-service.yml` for deployment.
+То можете урадити само коришћењем фајла сценарија
+`scenarios/disable-backup-service.yml` за deploysku инсталацију.
 
-### Add Ollama
+### Додај Ollama
 
-You can spin up an additional [Ollama](https://ollama.com/){target=_blank}
-container to use Zammad's AI features on your machine.
+Можете подићи додатни [Ollama](https://ollama.com/) контејнер како бисте
+користили AI функционалности Zammad-а на свом рачунару.
 
 ::: info
-This is intended for development or testing purposes as running a productive LLM stack is complex.
+Ово је намењено за развој или тестирање, јер је покретање продукцијског LLM стацк-а комплексно.
 :::
 
-To deploy an Ollama container inside the Zammad stack, use the scenario file
-`scenarios/add-ollama.yml`. This creates an Ollama container which
-automatically pulls and serves `Llama3.2` to be ready to use/test AI
-features out of the box.
+Да бисте deploysali Ollama контејнер унутар Zammad стацк-а, користите фајл
+сценарија `scenarios/add-ollama.yml`. Овај прави Ollama контејнер који
+аутоматски преузима и сервира `Llama3.2`, тако да је спреман за коришћење и
+тестирање AI функција без додатне конфигурације.
 
-To use it in Zammad, add the service name and port (`http://ollama:11434`)
-to the provider configuration.
+Да бисте га користили у Zammad-у, додајте име сервиса и порт
+(`http://ollama:11434`) у конфигурацију провидера.
 
-### Limit resources
+### Ограничи ресурсе
 
-If you want to limit the hardware resources the Zammad stack is allowed to
-use, use the `scenarios/apply-resource-limits.yml` scenario. Default values
-for CPU and memory usage for each container in the stack are applied
-then. You can find these default values in the `.env.dist` file. Provide the
-changed variables you want to use as environment variables and deploy the
-stack.
+Ако желите да ограничите хардверске ресурсе које Zammad стацк сме да
+користи, користите сценариј `scenarios/apply-resource-limits.yml`. Тада се
+примењују подразумеване вредности за коришћење CPU-а и меморије за сваки
+контејнер у стацк-у. Ове подразумеване вредности можете пронаћи у
+`.env.dist` фајлу. Унесите промењене променљиве које желите да користите као
+променљиве окружења и deploysajte стацк.
 
-### Other use cases
+### Остале намене
 
-Your scenario is not covered yet? Feel free to suggest your use case. We
-plan to add more common use cases to the stack in future.
+Ваш сценарио још није покривен? Слободно предложите своју намену. Планирамо
+да додамо још уобичајених сценарија коришћења у стацк-у убудуће.
 
-## Customize the stack locally
+## Прилагођавање Zammad stack-а
 
-Sometimes it's necessary to apply local changes to the Zammad Docker stack,
-e.g. to include additional services. If you plan to do so, we recommend that
-you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications. Docker
-Compose will [automatically load this file and merge its changes into your
-stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
+Понекад је неопходно применити локалне измене за Zammad docker stack,
+нпр. укључити додатне сервисе. Уколико планирате то да урадите,
+препоручујемо да не мењате `docker-compose.yml` датотеку, већ да додате
+локалну `docker-compose.override.yml` која укључује све ваше измене. Docker
+compose ће [аутоматски учитати ову датотеку и применити измене на ваш
+stack](https://docs.docker.com/compose/multiple-compose-files/merge/).

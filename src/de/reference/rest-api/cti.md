@@ -72,7 +72,7 @@ haben. Zammad wird jedoch niemals eine Aktion an Ihrer Telefonanlage
 initiieren. Zammad ist in allen beschriebenen Fällen eine passive
 Komponente.
 
-### Used examples
+### Verwendete Beispiele
 
 **Beispiel:**
 Die nachstehenden Anrufe wurden mit der folgenden Konfiguration gesendet. Dies ist
@@ -89,7 +89,7 @@ wichtig für Sie, um die hier gezeigten Antworten zu verstehen.
 
 - Standard-Anrufer-ID für ausgehende Anrufe `496990009111`
 
-## New call event
+## Neues Anrufereignis
 
 ### Allgemein
 
@@ -202,7 +202,7 @@ Beispiel curl Befehl:
 :::
 ::::
 
-### Situation specific responses
+### Situationsbezogene Antworten
 
 Je nach gewählter Rufrichtung gibt Zammad entweder eine (optional)
 konfigurierte Call ID zurück oder blockiert einen Anrufer (optional) . Wenn
@@ -213,7 +213,7 @@ Rückgabewert leer.
 Dies muss von Ihrer Telefonanlage unterstützt werden, damit es funktioniert.
 :::
 
-#### Reject blocked caller ids
+#### Ablehnen blockierter Anrufer IDs
 
 Wenn ein eingehender neuer Anruf mit einer zu blockierenden Nummer
 übereinstimmt, gibt Zammad folgendes zurück.
@@ -243,7 +243,7 @@ konfiguriert haben, gibt Zammad Folgendes zurück.
 
 <<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json
 
-## Call answer event
+## Anrufannahme-Ereignis
 
 ### Allgemein
 
@@ -361,7 +361,7 @@ Beispiel curl Befehl:
 :::
 ::::
 
-## Call hangup
+## Beenden eines Anrufs
 
 ### Allgemein
 

@@ -1,24 +1,24 @@
 ---
 order: 2
-title: 'Ticket basics'
+title: 'Основе тикета'
 ---
 
-# Ticket basics
+# Основе тикета
 
-New to ticket systems? Then read on about the basics. This helps you to
-understand the main concepts and to get started with Zammad. If you are
-already familiar with ticket systems, you can jump directly to the next
-pages about finding, creating and working with tickets.
+Нови сте у системима за тикете? Тада наставите са читањем о основама. Ово
+вам помаже да разумете главне концепте и започнете рад са Zammad-ом. Ако већ
+познаје системе за тикете, можете прескочити директно на наредне странице о
+проналажењу, креирању и раду са тикетима.
 
 ## Увод
 
-In Zammad, **tickets** are used to track customer service requests. The
-first time a customer contacts you about something, Zammad creates a new
-ticket. Each message sent between you and the customer is added to that
-ticket until the issue is resolved, the customer is happy and the ticket is
-finally closed. Such a single message in a ticket is called an
-**article**. Basically, you can think of a **ticket** as a **conversation**
-between you and a customer about a single issue.
+У Zammad-у се **тикети** користе за праћење тикета корисничке
+службе. Приликом првог контакта клијента са вама у вези нечега, Zammad
+креира нови тикет. Свака порука послата између вас и клијента додаје се том
+тикету док се проблем не реши, клијент не буде задовољан и тикет се коначно
+не затвори. Таква појединачна порука у тикету назива се **чланак**. У
+суштини, **тикет** можете посматрати као **разговор** између вас и клијента
+о једном проблему.
 
 Уколико сте потпуно нови у водама тикетинг система и до сада сте решавали
 захтеве клијента уз помоћ имејл клијента, можете помислити да је тикет
@@ -39,23 +39,23 @@ between you and a customer about a single issue.
 имејл клијенту. Осим што тикет има додатне атрибуте. Читајте даље да сазнате
 више.
 
-## Ticket attributes
+## Атрибути тикета
 
 Поред чланака, тикети поседују и неке додатне мета податке који се зову
 атрибути. Користите **бочну траку тикета** за преглед и измену атрибута
 тикета.
 
-![Screenshot shows ticket
-sidebar](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)
 
-To hide the sidebar, click the collapse button with the arrow on the left
-side of the sidebar. Click on one of the tabs to bring it back. The
-available options depend on your privileges and the configuration of your
-system.
+Да сакријете бочну траку, кликните на дугме за преклапање са стрелицом на
+левој страни бочне траке. Кликом на једну од картица поново је
+приказујете. Доступне опције зависе од ваших овлашћења и конфигурације
+система.
 
-It is even possible to create custom fields for tickets (for groups, users
-and organizations too). You think such a custom field makes sense? Talk with
-your Zammad admin, it can be set up easily.
+Могуће је чак креирати и прилагођена поља за тикете (и за групе, кориснике и
+организације). Да ли мислите да би такво прилагођено поље имало смисла?
+Разговарајте са вашим Zammad администратором, може се лако подесити.
 
 ### Стање
 
@@ -63,27 +63,25 @@ your Zammad admin, it can be set up easily.
 решен или не). Можете га сматрати репрезентацијом прогреса на путу
 решења. Подразумевано, доступна су следећа стања:
 
-- **New**: State for new tickets on which no one has worked on. When
-  updating a ticket for the first time, it automatically switches to open.
+- **Ново**: Статус за нове тикете на којима нико још није радио. Приликом
+  ажурирања тикета по први пут, аутоматски прелази у статус отворен.
 - **Отворено**: Стање за тикете који још нису решени и захтевају обраду.
 - **Чека на затварање**: Стање за тикете који су практично решени али не
   желите одмах да их затворите. Ово стање захтева да унесете датум и време
   када ће тикет бити аутоматски затворен.
-- **Pending Reminder**: State for open tickets which you want to get
-  reminded about at a certain date and time. Requires you to enter a date
-  and time at which you want to get notified. For example useful if you had
-  a question to a third party and want to make sure that this issue won't be
-  forgotten.
-- **Merged**: State for a ticket which was merged into another ticket. Check
-  the [linked tickets](/en/documentation/use/advanced-features#link-tickets)
-  to see the related ticket.
+- **Чека на подсетник**: Стање за отворене тикете за које желите да вас
+  подсетимо на одређен датум и време. Захтева да унесете датум и време када
+  желите да будете обавештени. Нпр. корисно је уколико сте послали питање
+  трећем лицу и желите да се осигурате да овај проблем неће бити заборављен.
+- **Спојено**: Статус за тикет који је спојен у други тикет. Погледајте
+  [повезане тикете](/en/documentation/use/advanced-features#link-tickets) да
+  видите повезани тикет.
 
-Zammad's ticket states are color coded. This helps you to understanding the
-state of the ticket much faster in general - without having a look into
-details.
+Статуси тикета у Zammad-у су означени бојама. Ово вам помаже да брже
+уопштено схватите статус тикета - без дубљег уласка у детаље.
 
-![Screenshot shows different color-coded
-states](/screenshots/documentation/use/overviews/states.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/overviews/states.png)
 
 ### Приоритет
 
@@ -94,39 +92,39 @@ states](/screenshots/documentation/use/overviews/states.png)
 - 2 нормалан
 - 3 висок
 
-In case these priorities aren't enough, ask your Zammad admin to create
-additional ones. The default priorities allow you to immediately recognize
-the importance of your tickets because they are color coded:
+У случају да ови приоритети нису довољни, затражите од Zammad администратора
+да креира додатне. Подразумевани приоритети вам омогућавају да одмах
+препознате важност ваших тикета јер су означени бојама:
 
-![Screenshot shows different color-coded
-priorities](/screenshots/documentation/use/overviews/priorities.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/overviews/priorities.png)
 
 Можта се питате чему служи приоритет тикета. Сам по себи, заправо ништа не
 чини осим наглашавања. Међутим, Zammad администратори могу да подесе разне
 врсте аутоматизаиција и статистика на основу приоритета.
 
-Be aware that customers can't set a priority for their own
-tickets. Otherwise, some might set their tickets always to high and hope for
-an immediate escalation.
+Имајте на уму да клијенти не могу постављати приоритет за своје сопствене
+тикете. У супротном, неки би увек постављали висок приоритет и очекивали
+хитну ескалацију.
 
 ### Ознаке
 
-Tags are custom labels that can be assigned to tickets to make it easier to
-find them in the future.  They can be used in conditions like in triggers
-and in overviews and they can also be assigned automatically by macros,
-schedulers and triggers. Of course you can search for the text of the tags
-and you will find the tickets which have the tag assigned.
+Ознаке су један од начина категоризације тикета. О ознакама можете
+размишљати као о некој врсти тагова. Могу се користити у условима окидача и
+прегледа и могу бити додељени аутоматски од стране макроа, планера и
+окидача.  Наравно, можете вршити претрагу по тексту ознаке и пронаћи тикете
+који имају додељену ознаку.
 
-![Screenshot shows tag area in ticket side
-bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)
 
-In the ticket sidebar, you can find a section which is labeled as
-**Tags**. Add a tag by clicking on the ::+:: button.  Depending on your
-Zammad's configuration, you can create new tags by simply type and confirm
-them with [[enter]] or [[tab]]. In any case, you can choose from already
-available tags. Start typing and you see a list with matching
-suggestions. To remove it, click the ::x:: button on the right side of the
-tag. This button only shows up when you move the mouse over the tag.
+У бочној траци тикета можете пронаћи секцију која је означена као
+**Тагови**. Додајте таг кликом на дугме ::+::. Зависно од конфигурације
+вашег Zammad-а, нове тагове можете креирати једноставним куцаањем и
+потврђивањем са [[enter]] или [[tab]]. У сваком случају, можете изабрати
+између већ доступних тагова. Почните да куцате и видећете листу са
+одговарајућим предлозима. Да бисте га уклонили, кликните на дугме ::X:: на
+десној страни тага.
 
 ### Група
 
@@ -139,19 +137,19 @@ tag. This button only shows up when you move the mouse over the tag.
 
 ### Власник
 
-This is the person who is currently responsible for the ticket. In case you
-need information from another colleague, you can either change the owner to
-this person or mention the person in an article by typing [[@]][[@]] and
-selecting the user. In the latter case, the user gets notified and is
-automatically subscribed to receive notifications on ticket updates.
+Ово је особа која је тренутно одговорна за тикет. У случају да вам је
+потребна информација од другог колеге, можете или променити власника на ту
+особу или поменути ту особу у чланку куцајући [[@]][[@]] и изабирајући
+корисника. У другом случају, корисник ће бити обавештен и аутоматски
+претплаћен на добијање обавештења о ажурирањима тикета.
 
 За промену власника на особу која има приступ само некој другој групи
 тикета, морате прво променити групу.
 
 -----
 
-Now that you know the basics, head over to one of the following pages:
+Сада када знате основе, пређите на једну од наредних страница:
 
-- [Find Tickets](/en/documentation/use/basics/find-tickets)
-- [Create tickets](/en/documentation/use/basics/create-tickets)
-- [Work with tickets](/en/documentation/use/basics/work-with-tickets)
+- [Пронађите тикете](/en/documentation/use/basics/find-tickets)
+- [Креирај тикете](/en/documentation/use/basics/create-tickets)
+- [Рад са тикетима](/en/documentation/use/basics/work-with-tickets)

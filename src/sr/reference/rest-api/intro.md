@@ -5,101 +5,101 @@ title: Увод
 
 # Увод
 
-Zammad provides a powerful REST-API[^1] which allows all operations that are
-available via UI as well.
+Zammad нуди моћан REST-API[^1] који омогућава све операције доступне и путем
+корисничког интерфејса.
 
-This page gives you a first impression for things that generally count for
-all endpoints and how to adapt.
+Ова страница пружа први утисак о стварима које важе за све крајње тачке и
+начин прилагођавања.
 
-## API clients
+## Клијенти за API
 
-There are API clients available. Please note that these clients may not
-provide access to all available endpoints listed here.
+Доступни су клијенти за API. Имајте у виду да ови клијенти можда неће
+омогућити приступ свим наведеним крајњим тачкама овде.
 
 - [Ruby
-  Client](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
-  (official)
+  клијент](https://github.com/zammad/zammad-api-client-ruby){target=_blank}
+  (званични)
 - [PHP
-  Client](https://github.com/zammad/zammad-api-client-php){target=_blank}
-  (official)
-- [Python Client](https://pypi.org/project/zammad-py/){target=_blank} (third
-  party)
-- [.NET Client](https://github.com/Asesjix/Zammad-Client){target=_blank}
-  (third party)
-- [Android
-  API-Client](https://github.com/KirkBushman/zammad-android){target=_blank}
-  (third party)
-- [Go Client](https://github.com/AlessandroSechi/zammad-go){target=_blank}
-  (third party; API client only, no "ready to use" app)
+  клијент](https://github.com/zammad/zammad-api-client-php){target=_blank}
+  (званични)
+- [Python клијент](https://pypi.org/project/zammad-py/){target=_blank}
+  (треће лице)
+- [.NET клијент](https://github.com/Asesjix/Zammad-Client){target=_blank}
+  (треће лице)
+- [Android API
+  клијент](https://github.com/KirkBushman/zammad-android){target=_blank}
+  (треће лице)
+- [Go клијент](https://github.com/AlessandroSechi/zammad-go){target=_blank}
+  (треће лице; само API клијент, без апликације „готове за употребу”)
 
 ## Аутентификација
 
-Zammad supports three different authentication methods for its API.
+Zammad подржава три различите методе аутентификације за свој API.
 
-### HTTP basic authentication (username/password)
+### HTTP основна аутентификација (корисничко име/лозинка)
 
-The username / password must be provided as HTTP header in the HTTP call.
-This authentication method can be disabled and may not be available in your
-system.
+Корисничко име / лозинка морају бити прослеђени као HTTP заглавље у HTTP
+захтеву. Ова метода аутентификације може бити онемогућена и можда није
+доступна у вашем систему.
 
 ```sh
 curl -u {username}:{password} https://{fqdn}/{endpoint}
 ```
 
 ::: warning
-We strongly suggest against using basic authentication. Use access
-tokens when ever possible!
+Одстојимо од коришћења основне аутентификације. Користите токене за приступ
+где год је то могуће!
 :::
 
-### HTTP token authentication (access token)
+### HTTP токенска аутентификација (токен за приступ)
 
-The access token must be provided as HTTP header in the HTTP call.  Each
-user can create several access tokens in their user preferences.  This
-authentication method can be disabled and may not be available in your
-system.
+Токен за приступ мора бити прослеђен као HTTP заглавље у HTTP захтеву. Сваки
+корисник може креирати више токена за приступ у својим корисничким
+подешавањима. Ова метода аутентификације може бити онемогућена и можда није
+доступна у вашем систему.
 
 ```sh
 curl -H "Authorization: Token token={your_token}" https://{fqdn}/{endpoint}
 ```
 
-### OAuth2 (token access)
+### OAuth2 (приступ путем токена)
 
-The token must be provided as HTTP header in your calls.  This allows 3rd
-party applications to authenticate against Zammad.
+Токен мора бити прослеђен као HTTP заглавље у вашим захтевима. Ово омогућава
+апликацијама трећих страна да се аутентификују код Zammad-а.
 
 ```sh
 curl -H "Authorization: Bearer {your_token}" https://{fqdn}/{endpoint}
 ```
 
-## Endpoints and example data
+## Крајње тачке и примери података
 
-For simplicity we'll not provide specific commands on the next pages, but
-instead tell the possible call method (e.g. `GET`) and the endpoint to use
-(e.g. `/api/v1/users`). In case Zammad expects information within these
-endpoint urls, we'll put them into curly braces like so:
-`/api/v1/users/{user id}`
+Због једноставности на наредним страницама нећемо наводити специфичне
+команде, већ ћемо навести могућу методу позива (нпр. `GET`) и крајњу тачку
+за коришћење (нпр. `/api/v1/users`). У случају да Zammad очекује информације
+унутар URL-ова ових крајњих тачака, ставићемо их у витичасте заграде на
+следећи начин: `/api/v1/users/{user id}`
 
-The response format will be a complete JSON response from a default Zammad
-instance. Please keep in mind that you may see more fields or general
-information in case you added objects or other information.
+Формат одговора биће комплетна JSON порука од подразумеваног инстанцу
+Zammad-а. Имајте на уму да можете видети више поља или опште информације
+уколико сте додали објекте или друге податке.
 
-## Content type
+## Врста садржаја
 
-Zammad returns JSON payloads whenever you retrieve data. If you're going to
-provide data, no matter of the general request type, don't forget to provide
-the content type `application/json` as well.
+Zammad враћа JSON payload-e сваки пут када преузимате податке. Ако ћете
+прослеђивати податке, без обзира на врсту захтева, не заборавите да наведете
+и тип садржаја `application/json`.
 
-## Response payloads (expand)
+## Одговори payload-a (Прошири)
 
-Zammad always returns information including hints to all relations. If you
-need more information than that (because IDs may not be enough) you can also
-extend your endpoint calls with `?expand=true`.
+Zammad увек враћа информације укључујући упуте за све релације. Ако вам је
+потребно више информација од тога (јер ID-јеви можда нису довољни), можете
+проширити позиве на крајњу тачку са `?expand=true`.
 
-This switch will provide even more information - at least named relations on
-top of the ID ones. Below you can find two examples, one for ticket and one
-for user:
+Овај прекидач ће пружити још више информација - најмање именске релације
+поред ID-ја. Испод се могу наћи два примера, један за тикет и један за
+корисника:
 
-**User payload:**
+**Payload корисника:**
 
 :::: details
 ::: tabs
@@ -115,7 +115,7 @@ for user:
 :::
 ::::
 
-**Ticket payload:**
+**Payload тикета:**
 
 :::: details
 ::: tabs
@@ -132,138 +132,138 @@ for user:
 ::::
 
 ::: tip
-Please note that Core Workflows may restrict access to attributes or
-values.
+Имајте на уму да Core Workflows могу ограничити приступ атрибутима или
+вредностима.
 :::
 
-## Pagination
+## Превод
 
-As Zammad limits the number of returned objects for performance reasons, you
-may have to use pagination at some points.
+Пошто Zammad ограничава број враћених објеката из перформанси, можда ћете
+морати да користите пагинацију у одређеним тренутцима.
 
 ::: info
-**Number of returned objects:** Zammad has hard limits for the
-maximum returned objects. You can't raise these limits.
+**Број враћених објеката:** Zammad има строга ограничења за максималан број
+враћених објеката. Не можете повећати ова ограничења.
 
-**Number of total to return objects:** Zammad does not provide a total count of
-objects available for your query, unless you explicitly request it. To include
-the amount of search results, use the `with_total_count` or `only_total_count`
-parameter.
+**Укупан број објеката за повратак:** Zammad не пружа укупан број
+објеката доступних за ваше упите, осим ако их експлицитно не затражите. Да бисте укључили
+број резултата претраге, користите параметар `with_total_count` или `only_total_count`.
 :::
 
-In order to use pagination you'll need two get options: `per_page` and
-`page`. Combine them to receive 5 results from the first result page:
-`?page=1&per_page=5` - increase page count to get more results.
+Да бисте користили пагинацију, потребне су вам две ГЕТ опције: `per_page` и
+`page`. Комбинујте их да бисте добили 5 резултата са прве странице:
+`?page=1&per_page=5` - повећајте број странице да бисте добили више
+резултата.
 
-## Search via API
+## Претрага
 
-### Endpoint search
+### Претрага ендпоинта
 
-Some endpoints support a search query. These are:
+Неки ендпоинти подржавају упит за претрагу. То су:
 
-- `Groups <group>`
-- `Organizations <organization>`
-- `Roles <role>`
-- `Tickets <ticket>`
-- `Users <user>`
+- `Grupe <group>`
+- Организације
+- `Uloge <role>`
+- Стање тикета
+- `Korisnici <user>`
 
-The following endpoints support a search query as well, but they are not
-explicitly covered in this documentation:
+Следећи ендпоинти такође подржавају упит за претрагу, али нису експлицитно
+покривени у овој документацији:
 
-- Chat Sessions
-- Knowledge base
+- Rails команде
+- База знања
 - Макрои
 - Преглед
 - Шаблони
 - Текстуални исечак
 
-#### Search example
+#### Пример претраге
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome`
+`GET`-захтев послат: `/api/v1/tickets/search?query=welcome`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-basic-search-res.json
 :::
 
-#### Expand parameter
+#### Параметар expand
 
-If you want to have additional related information, you can use the `expand`
-parameter. Using it resolves the IDs and outputs values/names in addition.
+Ако желите да имате додатне повезане информације, можете користити параметар
+`expand`. Његовом употребом се разрешавају ID-јеви и излазе вредности/имена
+додатно.
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`
+`GET`-захтев послат: `/api/v1/tickets/search?query=welcome&expand=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-expand-search-res.json
 :::
 
-#### Full parameter
+#### Параметар фулл
 
-You can even extend the response by using the `full` parameter. Be aware
-that this response can be huge. It outputs all assets including related
-attributes and a `total_count` of search results as well.
+Можете чак проширити одговор коришћењем параметра `full`. Имајте на уму да
+овај одговор може бити огроман. Враћа све ресурсе укључујући повезане
+атрибуте и `total_count` резултата претраге такође.
 
-`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`
+`GET`-захтев послат: `/api/v1/tickets/search?query=welcome&full=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-full-search-res.json
 :::
 
-#### With total count parameter
+#### Параметар са укупним бројем
 
-Using this parameter will additionally output the amount of search results.
-It can be combined with `full` and `expand`.
+Коришћење овог параметра додатно приказује број резултата претраге. Може се
+комбиновати са `full` и `expand`.
 
-`GET`-Request sent:
+`GET`-захтев послат:
 `/api/v1/tickets/search?query=welcome&full=true&with_total_count=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json
 :::
 
-#### Only total count parameter
+#### Параметар само укупног броја
 
-Using this `only_total_count` parameter will output only the amount of
-search results.
+Коришћење овог параметра `only_total_count` приказује само број резултата
+претраге.
 
-`GET`-Request sent:
+`GET`-захтев послат:
 `/api/v1/tickets/search?query=welcome&only_total_count=true`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-total-count-res.json
 :::
 
-### Global search
+### Затвори претрагу
 
-If you need to search not only in a specific object type, you can do so by
-using the global search without specifying an object. The response may
-include users, tickets, organizations, knowledge base articles and answers
-and chats, depending on your system and content. This global search behaves
-like the search in Zammad's UI in the left task bar. The available
-parameters are different to the ones for the endpoint search.
+Ако требате да претражујете не само у одређеној врсти објекта, то можете
+урадити коришћењем глобалне претраге без навођења објекта. Одговор може
+укључивати кориснике, тикете, организације, чланке базе знања, одговоре и
+разговоре, зависно од вашег система и садржаја. Ова глобална претрага понаша
+се као претрага у Zammad-овом интерфејсу у левој траци задатка. Доступни
+параметри су различити од оних за ендпоинт претрагу.
 
-`GET`-Request sent: `/api/v1/search?query=welcome`
+`GET`-захтев послат: `/api/v1/search?query=welcome`
 
 ::: details
 <<< @/fixtures/rest-api/intro/get-global-search-res.json
 :::
 
-### Condition based search
+### Претрага на основу услова
 
-You can even use conditions like for triggers and schedulers to search via
-API. If you don't want to build such conditions manually, you can find a
-hint below how to quickly build a condition structure via UI and fetch it
-for your API request.
+Можете чак користити услове као за окидаче и распоређиваче да претражујете
+преко API-ја. Ако не желите да градите такве услове ручно, испод можете наћи
+савет како брзо изградити структуру услова путем интерфејса и преузети је за
+ваш API захтев.
 
-So, how do I build such a condition based request?
+Дакле, како да направим овакав захтев заснован на условима?
 
-- In Zammad, go to the admin interface and create a condition, e.g. by
-  creating a new overview or trigger. It can be inactive so you won't have
-  any unwanted actions or changes.
-- Go to the `Rails console </admin/console>`, either by using `rails c` /
-  `zammad run rails c` or adding the prefix `rails r` / `zammad run rails r`
-  in front of the commands below, depending on your setup.
-- Search for the created condition, adjust the following examples to your
-  needs:
+- У Zammad-у, идите у администраторски интерфејс и креирајте услов,
+  нпр. креирањем новог прегледа или окидача. Може бити неактиван тако да
+  неће имати никакве нежељене акције или промене.
+- Идите у `Rails konzolu </admin/console>`, било коришћењем `rails c` /
+  `zammad run rails c` или додавањем префикса `rails r` / `zammad run rails
+  r` испред команди испод, зависно од вашег подешавања.
+- Пронађите креирани услов, прилагодите следеће примере својим потребама:
 
 ``` ruby
 puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to_json
@@ -273,61 +273,62 @@ puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to
 puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').to_json
 ```
 
-This leads to an output like the following:
+Ово води до излаза као што је следећи:
 
 ::: details
 <<< @/fixtures/rest-api/intro/condition-based-search.json
 :::
 
-Use this as payload in your `POST`-Request in an endpoint search. The
-response includes the same objects as the trigger or overview you created.
+Користите ово као payload у вашем `POST`-захтеву за ендпоинт
+претрагу. Одговор укључује исте објекте као и окидач или преглед који сте
+креирали.
 
-## Sorting search results
+## Сортирање резултата претраге
 
-Zammad allows you to sort your search results by field if needed.
+Zammad вам омогућава да сортирате резултате претраге по пољу ако је
+потребно.
 
 ### `sort_by`
 
-Append `?sort_by={row name}` to your query to sort by a specific row that
-appears in the search result.
+Додајте `?sort_by={row name}` у упит да бисте сортирали по одређеном реду
+који се појављује у резултату претраге.
 
 ### `order_by`
 
-Append `?order_by={direction}` to your query to switch in between ascending
-and descending order.
+Додајте `?order_by={direction}` у упит да бисте пребацили између узлазног и
+силазног редоследа.
 
-Directions are: `asc` and `desc`.
+Смјерови су: `asc` и `desc`.
 
 ::: tip
-Usually you'll want to combine both parameters in your searches -
-e.g.: `?query={search string}&sort_by={row name}&order_by={direction}`
+Обично ћете жељети да комбинујете оба параметра у претрази -
+нпр.: `?query={search string}&sort_by={row name}&order_by={direction}`
 :::
 
-## Actions on behalf of other users
+## Акције у име других корисника
 
-**Requirement:** the user used for running the query on behalf requires
-`admin.user` permission.
+**Услов:** корисник који се користи за извршавање упита у име другог мора имати дозволу
+`admin.user`.
 
-Running API queries on behalf of other users allows you to e.g. create
-tickets by a different user.
+Извршавање API упита у име других корисника вам омогућава нпр. креирање
+тикета од стране другог корисника.
 
-To do so, add a new HTTP header named `From` to your request. The value of
-this header can be one of the following:
+Да бисте то урадили, додајте ново HTTP заглавље под називом `From` свом
+захтеву. Вредност овог заглавља може бити једна од следећих:
 
-- user ID
-- user login
-- user email
+- ID корисника
+- корисничко име
+- емаил корисника
 
-`From` is available for all endpoints.
+`From` је доступно за све крајње тачке.
 
-## Encoding
+## Кодирање
 
-The API expects UTF-8 encoding. Keep in mind that especially when using URLs
-with get options (e.g. `?query=this`) you may need to encode your URL
-accordingly.
+API очекује UTF-8 кодирање. Имајте на уму да ћете посебно приликом коришћења
+URL адреса са опцијама (нпр. `?query=this`) можда морати да кодирате ваш URL
+на одговарајући начин.
 
-If you want to learn more about URL encoding, [this Wikipedia
-article](https://en.wikipedia.org/wiki/Percent-encoding){target=_blank} may
-be of help
+Ако желите сазнати више о URL кодирању, [чланак на
+Wikipediji](https://en.wikipedia.org/wiki/Percent-encoding) вам може помоћи
 
-[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)
+[^1]: **Re**презентацијски **С**тање **Т**рансфер - **А**пликационо **П**рограмско **И**нтерфејс)

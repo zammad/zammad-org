@@ -1,16 +1,16 @@
 ---
 order: 13
-title: Priorities
+title: Приоритети
 ---
 
-# Priorities
+# Приоритети
 
-## List
+## Преглед листе
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Потребна дозвола: `admin.object` **или** `ticket.agent` **или**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities`
+`GET`-Захтев послат: `/api/v1/ticket_priorities`
 
 ::: details
 
@@ -18,12 +18,12 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `admin.object` **or** `ticket.agent` **or**
+Потребна дозвола: `admin.object` **или** `ticket.agent` **или**
 `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_priorities/{id}`
+`GET`-Захтев послат: `/api/v1/ticket_priorities/{id}`
 
 ::: details
 
@@ -31,21 +31,21 @@ Required permission: `admin.object` **or** `ticket.agent` **or**
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`POST`-Request sent: `/api/v1/ticket_priorities`
+`POST`-Захтев послат: `/api/v1/ticket_priorities`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/ticket_priorities/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/ticket_priorities/post-res.json
 
@@ -54,47 +54,47 @@ Required permission: `admin.object`
 
 ## Освежавање
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`PUT`-Request sent: `/api/v1/ticket_priorities/{id}`
+`PUT`-Захтев послат: `/api/v1/ticket_priorities/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/ticket_priorities/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/ticket_priorities/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Обриши
 
-Required permission: `admin.object`
+Потребна дозвола: `admin.object`
 
-`DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`
+`DELETE`-Захтев послат: `/api/v1/ticket_priorities/{id}`
 
 ::: danger
-**This is a permanent removal**
+**Ово је трајно брисање**
 
-Please note that removing priorities cannot be undone.
+Имајте на уму да уклањање приоритета не може бити поништено.
 
-Removing ticket priorities with references in tickets is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Уклањање приоритета карата са референцама у тикетима није могуће
+путем API-ја - то ће бити означено са
+`"error": "Nije moguće obrisati, objekat ima reference."`. Ово _није_ грешка.
 
-Consider either setting said priority to `active: false` or adjust all
-tickets with the to remove priority to another priority.
+Размислите о подешавању тог приоритета на `active: false` или о промени свих
+карата са приоритетом који се уклања на други приоритет.
 :::
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/ticket_priorities/delete-id-res.json
 

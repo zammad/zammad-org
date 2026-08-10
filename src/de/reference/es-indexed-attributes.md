@@ -3,10 +3,10 @@ order: 4
 outline:
   - 2
   - 2
-title: 'Elasticsearch indexed attributes'
+title: 'Elasticsearch indizierte Attribute'
 ---
 
-# Elasticsearch indexed attributes
+# Elasticsearch indizierte Attribute
 
 Sie finden unten eine Liste der wichtigsten Objektattribute, die von
 Elasticsearch (ES) indiziert werden. Mit anderen Worten: Wenn Sie ein
@@ -444,7 +444,7 @@ ID des Benutzers, der das Ticket aktualisiert hat.
 
 Beispiele: `1`, `3`
 
-## Ticket priority
+## Ticket-Priorität
 
 Der folgende Index enthält folgende Informationen: `*_ticket_priority`
 
@@ -515,7 +515,7 @@ ID des Benutzers, der die letzte Aktualisierung durchgeführt hat.
 
 Beispiel: `1`
 
-## Ticket state
+## Ticket-Status
 
 Der folgende Index enthält folgende Informationen: `*_ticket_state`
 
@@ -1193,7 +1193,7 @@ ID des Benutzers, der die Gruppe aktualisiert hat.
 
 Beispiel: `3`
 
-## CTI log
+## CTI-Protokoll
 
 Der folgende Index enthält folgende Informationen: `*_cti_log`
 
@@ -1328,7 +1328,7 @@ Letzte Aktualisierung des Eintrags.
 
 Beispiel: `"2025-02-25T08:49:40.647Z"`
 
-## Chat session
+## Chat-Sitzungen
 
 Der folgende Index enthält folgende Informationen: `*_chat_session`
 

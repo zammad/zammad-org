@@ -10,7 +10,7 @@ importantes - mas não todos - são cobertos nesta documentação. Você encontr
 abaixo os gerais sobre a base de conhecimento em si, seguidos pelos
 subendpoints para [respostas](#answers) e [categorias](#categories).
 
-## Knowledge base general
+## Base de conhecimento geral
 
 ::: info
 Os exemplos de solicitação e resposta incluem o ID de base de conhecimento `1`. Seu ID pode ser diferente, por exemplo, se você
@@ -41,7 +41,7 @@ Solicitação `GET` enviada: `/api/v1/knowledge_bases/{ID of your KB}`
 
 :::
 
-### Change settings
+### Alterar configurações
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -63,7 +63,7 @@ KB}`
 :::
 ::::
 
-### Show permissions
+### Mostrar permissões
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -76,7 +76,7 @@ KB}/permissions`
 
 :::
 
-### Change permissions
+### Alterar permissões
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -100,7 +100,7 @@ KB}/permissions`
 
 ## Categorias
 
-### Reorder sub-categories
+### Reordenar subcategorias
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -122,7 +122,7 @@ KB}/categories/{ID of category}/reorder_categories`
 :::
 ::::
 
-### Reorder root categories
+### Reordenar categorias raiz
 
 ::: info
 Você precisa fornecer a ordem de todas as categorias de nível superior, ou seja,
@@ -219,7 +219,7 @@ KB}/categories/{ID of category}`
 
 :::
 
-### Show permissions
+### Mostrar permissões
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -232,7 +232,7 @@ KB}/categories/{ID of category}/permissions`
 
 :::
 
-### Change permissions
+### Alterar permissões
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -256,7 +256,7 @@ KB}/categories/{ID of category}/permissions`
 
 ## Respostas
 
-### Reorder answers
+### Reordenar respostas
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -353,7 +353,7 @@ KB}/answers/{ID of answer}`
 
 :::
 
-### Manage publication status
+### Gerenciar status de publicação
 
 Permissão necessária: `knowledge_base.editor`
 
@@ -389,7 +389,7 @@ Solicitação `POST` enviada:
 :::
 ::::
 
-### Manage attachments
+### Gerenciar anexos
 
 Permissão necessária: `knowledge_base.editor`
 

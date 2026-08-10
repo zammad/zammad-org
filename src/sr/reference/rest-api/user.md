@@ -6,16 +6,16 @@ title: Корисник
 # Корисник
 
 ::: info
-Please note that below samples were provided with `admin` and
-`ticket.agent` permissions. Some attributes / information may not be
-available in specific situations.
+Имајте на уму да су доњи примери дати са дозволама `admin` и
+`ticket.agent`. Одређени атрибути / информације могу бити недоступни
+у специфичним ситуацијама.
 :::
 
-## Me - current user
+## Актуелно издање
 
-Required permission: any
+Потребна дозвола: било која
 
-`GET`-Request sent: `/api/v1/users/me`
+`GET`-захтев послат: `/api/v1/users/me`
 
 ::: details
 
@@ -23,11 +23,11 @@ Required permission: any
 
 :::
 
-## List
+## Преглед листе
 
-Required permission: `ticket.agent` **or** `admin.user`
+Потребна дозвола: `ticket.agent` **или** `admin.user`
 
-`GET`-Request sent: `/api/v1/users`
+`GET`-захтев послат: `/api/v1/users`
 
 ::: details
 
@@ -35,16 +35,16 @@ Required permission: `ticket.agent` **or** `admin.user`
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `ticket.agent` **or** `admin.user` **or**
-`ticket.customer` (shared organization)
+Потребна дозвола: `ticket.agent` **или** `admin.user` **или**
+`ticket.customer` (подељена организација)
 
 ::: info
-Technically, any listings will return user's own information only.
+Технички гледано, свака листа вратиће само информације о тренутном кориснику.
 :::
 
-`GET`-Request sent: `/api/v1/users/{id}`
+`GET`-захтев послат: `/api/v1/users/{id}`
 
 ::: details
 
@@ -52,40 +52,40 @@ Technically, any listings will return user's own information only.
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.user` **or** `ticket.agent`
+Потребна дозвола: `admin.user` **или** `ticket.agent`
 
-`POST`-Request sent: `/api/v1/users`
+Послат `POST` захтев: `/api/v1/users`
 
 ::: tip
-**This depends on permissions**
+**Ово зависи од дозвола**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under _Manage > Roles_ and check which is selected as **Default at signup**.
+Оператери не могу да постављају корисничке лозинке, улоге или групне дозволе. Уместо тога
+Zammad ће применити подразумевану улогу при регистрацији. Проверите Zammad-ов администраторски интерфејс
+под _Управљање > Улоге_ и погледајте која је одабрана као **Подразумевана при регистрацији**.
 
-Technically, unauthenticated user creation is possible if you manage
-to provide the required CSRF token (out of scope of this
-documentation). If you don't want that, consider
-disabling user registration under _Settings > Security > Base_ by setting
-**New user accounts** to no.
+Технички, креирање корисника без аутентификације је могуће ако успете
+да обезбедите неопходан CSRF токен (изван опсега ове
+документације). Ако то не желите, размотрите
+искључивање регистрације корисника под _Подешавања > Безбедност > Основно_ постављањем
+**Нови кориснички налози** на не.
 :::
 
 ::: tip
-Unsure which attributes you can use or set? Run a GET query on any
-fitting user existing in your instance already.
+Нисте сигурни које атрибуте можете да користите или поставите? Покрените GET упит на било ком
+одговарајућем кориснику који већ постоји у вашој инстанци.
 :::
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/users/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/users/post-res.json
 
@@ -94,73 +94,74 @@ fitting user existing in your instance already.
 
 ## Освежавање
 
-Required permission: `admin.user` **or** `ticket.agent`
+Потребна дозвола: `admin.user` **или** `ticket.agent`
 
-`PUT`-Request sent: `/api/v1/users/{id}`
+Послат `PUT` захтев: `/api/v1/users/{id}`
 
 ::: tip
-**This depends on permissions**
+**Ово зависи од дозвола**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under _Manage > Roles_ and check which is selected as **Default at signup**.
+Оператери не могу да постављају корисничке лозинке, улоге или групне дозволе. Уместо тога
+Zammad ће применити подразумевану улогу при регистрацији. Проверите Zammad-ов администраторски интерфејс
+под _Управљање > Улоге_ и погледајте која је одабрана као **Подразумевана при регистрацији**.
 :::
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/users/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/users/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Обриши
 
 ::: danger
-**This is a permanent removal**
+**Ово је трајно уклањање**
 
-Please note that removing users cannot be undone. Zammad will also
-remove references - thus potentially tickets!
+Имајте на уму да се уклањање корисника не може опозвати. Zammad ће такође
+уклонити референце - па потенцијално и тикете!
 :::
 
-Technically, you can delete users via `/api/v1/users/{id}`. However, we
-strongly encourage you to use the data privacy in Zammad's UI or the data
-privacy endpoint instead (see section below). Using one of them makes sure
-that related information like tickets are deleted as well.
+Технички, кориснике можете избрисати преко `/api/v1/users/{id}`. Међутим,
+снажно вам препоручујемо да уместо тога користите приватност података у
+Zammad-овом интерфејсу или крајњу тачку за приватност података (погледајте
+одељак испод). Употребом једног од њих обезбеђујете да се и повезане
+информације као што су тикети такође избришу.
 
-### Via data privacy endpoint
+### Преко крајње тачке за приватност података
 
-Required permission: `admin.data_privacy`
+Неопходна дозвола: `admin.data_privacy`
 
-`POST`-Request sent: `/api/v1/data_privacy_task`
+Послат `POST` захтев: `/api/v1/data_privacy_task`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/users/post-privacy-task-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/users/post-privacy-task-res.json
 
 :::
 ::::
 
-### Via user endpoint <Badge type="danger" text="not recommended" />
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Required permission: `admin.user`
+Неопходна дозвола: `admin.user`
 
-`DELETE`-Request sent: `/api/v1/users/{id}`
+Послат `DELETE` захтев: `/api/v1/users/{id}`
 
 ::: details
 

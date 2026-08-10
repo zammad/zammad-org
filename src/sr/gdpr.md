@@ -6,10 +6,10 @@ layout: home
 
 > Општа правила о заштити података
 
-## Zammad GmbH privacy policy
+## Zammad GmbH полиса приватности
 
-This privacy policy describes how your personal information is collected,
-used and shared when you visit <https://www.zammad.org> (the "site").
+Ова полиса приватности описује како се ваше лични подаци прикупљају, користе
+и деле када посећујете https://www.zammad.org („сајт”).
 
 ## Лични подаци које прикупљамо
 
@@ -101,8 +101,8 @@ used and shared when you visit <https://www.zammad.org> (the "site").
 
 ## Контактирајте нас
 
-For more information about our privacy practices, if you have questions, or
-if you would like to make a complaint, please contact us by email at
-<info@zammad.org> or by mail using the details provided below:
+За више информација о нашој пракси заштите приватности, уколико имате питања
+или уколико желите да поднесете жалбу, молимо вас да нас контактирате преко
+имејл адресе info@zammad.org или путем поште преко детаља испод:
 
 Marienstraße 18, Berlin, BE, 10117, Germany

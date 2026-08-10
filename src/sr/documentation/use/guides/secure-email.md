@@ -1,9 +1,9 @@
 ---
 order: 3
-title: 'Secure email'
+title: 'Безбедна пошта'
 ---
 
-# Secure email
+# Безбедна пошта
 
 Zammad подржава два система безбедне имејл комуникације:
 
@@ -15,9 +15,9 @@ Zammad подржава два система безбедне имејл ком
 
 ## Предуслови
 
-- Both features are optional. If you don't see the `Encrypt` and `Sign`
-  buttons in the email article editor, your administrator has not activated
-  them yet.
+- Амбас царацтерíстицас сон опционалес. Си но вес лос ботонес ``Cifrar`` y
+  ``Firmar`` ен ел едитор де артíцулос пор цоррео елецтрóницо, ту
+  администрадор аúн но лос ха ацтивадо.
 - PGP и S/MIME раде само ако их користи и друга страна.
 - Ваш администратор је одговоран за додавање свих потребних сертификата и
   кључева у административном панелу Zammad-а.
@@ -31,99 +31,99 @@ Zammad подржава два система безбедне имејл ком
 искљученим шифровањем и укљученим потписивањем). Наставите са читањем да
 бисте сазнали више о уобичајеним грешкама.
 
-![Screenshot showing outgoing email which just gets signed and not
-encrypted](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signing-only.png)
 
-## Signing & encryption
+## Потписивање и шифровање
 
-Signing
-: Signing is a proof that a message has not been manipulated on its way. It guarantees message **integrity** and
-  **authenticity**.
+Фирма
+: Ла фирма ес уна пруеба де que ун менсаје но ха сидо манипуладо дуранте су трáнсито. Гарантиза ла **интегридад** y ла
+  **аутентицидад** дел менсаје.
 
-Encryption
-: Encryption scrambles a message so that it can only be unscrambled by the intended recipient. It guarantees message
-  **privacy** and **data security**.
+Цифрадо
+: Ел цифрадо десордена ун менсаје пара que соло пуеда сер десцифрадо пор ел дестинатарио превисто. Гарантиза ла
+  **привацидад** y ла **сегуридад де лос датос** дел менсаје.
 
-## Incoming email
+## Долазна имејл порука
 
 Иконице катанца и штикле при врху поруке служе као индикатори статуса
 шифровања и потписивања. Кликните на чланак долазне поруке да бисте
 проширили њене детаље. Унутар детаља, пређите курсором преко безбедносног
 статуса за више информација.
 
-![Screenshot showing Encrypted and Signed status icons on an incoming email
-article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-incoming-article.png)
 
-### Status icons for incoming emails
+### Иконице статуса долазних имејл порука
 
-| Icon | Meaning |
+| Ицоно | Сигнифицадо |
 |---|---|
-| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Encrypted for you.** Even if intercepted by a third party, they will not be able to read it. |
-| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Cannot be decrypted.** Zammad lacks the required key to decrypt this message. |
-| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |
-| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |
+| ![Icono cifrado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Цифрадо пара ти.** Инцлусо си ес интерцептадо пор ун терцеро, но подрá леерло. |
+| ![Icono sin cifrar](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Но се пуеде десцифрар.** Zammad цареце де ла цлаве нецесариа пара десцифрар есте менсаје. |
+| ![Icono firmado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Верифицадо цоррецтаменте.** Пуедес естар сегуро де que ес аутéнтицо y ел цонтенидо но ха сидо модифицадо. |
+| ![Icono sin firmar](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Еррор ен ла верифицациóн де ла фирма.** Паса ел цурсор собре ел ицоно пара обтенер мáс информациóн. |
 
-## Outgoing email
+## Одлазна имејл порука
 
-Use the `Encrypt` and `Sign` buttons to turn on encryption and signing for
-outgoing emails. They are available for new tickets and replies. Hover over
-the buttons to show details.
+Користите дугмиће ``Шифровање`` и ``Потписивање`` за укључивање шифровања и
+потписивање одлазних имејл порука. Доступни су на новим тикетима и на
+одговорима. Пређите курсором миша преко дугмића за детаље.
 
-![Screenshot showing the Encrypt and Sign toggle buttons in the email reply
-editor](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-outgoing-article.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-outgoing-article.png)
 
 ::: info
-Outgoing emails can only be encrypted for a single recipient.
+Лос цорреос салиентес соло се пуеден цифрар пара ун дестинатарио úницо.
 :::
 
-### Status icons for outgoing emails
+### Иконице статуса одлазних имејл порука
 
-| Icon | Meaning |
+| Ицоно | Сигнифицадо |
 |---|---|
-| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Will be encrypted.** Even if intercepted by a third party, they will not be able to read it. |
-| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Will not be encrypted.** |
-| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Will be signed.** Recipients can verify that it came from you and that the content has not been modified. |
-| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Will not be signed.** |
+| ![Icono cifrado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Се цифрарá.** Инцлусо си ес интерцептадо пор ун терцеро, но подрá леерло. |
+| ![Icono sin cifrar](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Но се цифрарá.** |
+| ![Icono firmado](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Се фирмарá.** Лос дестинатариос подрáн верифицар que провиене де ти y que ел цонтенидо но ха сидо модифицадо. |
+| ![Icono sin firmar](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Но се фирмарá.** |
 
 ## Решавање проблема
 
 ### Потпис: Није могуће пронаћи сертификат за верификацију
 
-![Screenshot showing Security error warning banner on an
-article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-error-banner.png)
+![Снимак екрана приказује убацивање чланка базе
+знања](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-error-banner.png)
 
 Без сертификата пошиљаоца, Zammad не може проверити потпис поруке. Замолите
 свог администратора да дода сертификат пошиљаоца у Zammad-ово складиште
 сертификата.
 
 ::: warning
-Always verify certificates in-person or over the phone! The whole point of signature verification is to alert you when
-someone is trying to pretend to be someone they are not. Never accept a certificate from someone online without
-verifying it first.
+¡Верифица сиемпре лос цертифицадос ен персона о пор телéфоно! Ел објетиво принципал де ла верифицациóн де фирмас ес алертарте цуандо
+алгуиен интента хацерсе пасар пор отра персона. Нунца ацептес ун цертифицадо де алгуиен ен лíнеа син
+верифицарло примеро.
 :::
 
 ### Шифровање: Није могуће пронаћи приватни кључ за дешифровање
 
-This message was encrypted with a certificate that does not match any on
-file.  Without a matching private key, Zammad cannot decrypt the message.
-Ask your administrator to verify your organization's private key in Zammad's
-certificate store, and ask the sender to double-check the public key they
-used to encrypt the message.
+Есте менсаје фуе цифрадо цон ун цертифицадо que но цоинциде цон нингуно
+регистрадо. Син уна цлаве привада цоинциденте, Zammad но пуеде десцифрар ел
+менсаје. Солицита а ту администрадор que verifique ла цлаве привада де ту
+организациóн ен ел алмацéн де цертифицадос де Zammad y пиде ал ремитенте que
+verifique нуеваменте ла цлаве пúблица утилизада пара цифрар ел менсаје.
 
-### The `Encrypt` button is disabled
+### Дугме ``Шифровање`` је онемогућено
 
 Замолите свог администратора да дода сертификат примаоца у Zammad-ово
 складиште сертификата.
 
-### The `Sign` button is disabled
+### Дугме ``Потписивање`` је онемогућено
 
 Замолите свог администратора да потврди приватни кључ ваше организације у
 Zammad-овом складишту сертификата.
 
-### Multiple security types configured
+### Конфигурисано више типова безбедности
 
-You might see both `PGP` and `S/MIME` buttons. This happens when both
-systems are configured in your system and a customer is using both as
-well. In this case, you have an additional button to switch between PGP and
-S/MIME security types. Just pick one, make sure encryption and signing is
-enabled and send your email.
+Можда ћете видети дугмад ``PGP`` и ``S/MIME``. Ово се дешава када су оба
+система конфигурисана у вашем систему и клијент их такође користи. У том
+случају, имате додатно дугме за пребацивање између PGP и С/MIME типова
+безбедности. Само изаберите један, проверите да су енкрипција и потписивање
+омогућени и пошаљите своју поруку.

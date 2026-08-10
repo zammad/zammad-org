@@ -23,9 +23,9 @@ Diese Seite beinhaltet ausschließlich die Aktualisierung von Zammad. Wenn Sie I
 sehen Sie sich die Seite [Host-Upgrade und Paketquellen-Migration](host-upgrade-repo-migration) an.
 :::
 
-## Update package installation
+## Paket-Installation aktualisieren
 
-### Check dependencies
+### Abhängigkeiten prüfen
 
 Bevor Sie fortfahren, überprüfen Sie, ob Ihre Systemumgebung den
 Anforderungen von Zammad entspricht (siehe
@@ -169,7 +169,7 @@ sudo dnf upgrade
 
 :::
 
-### Additional steps
+### Zusätzliche Schritte
 
 Auch die Aktualisierung von Elasticsearch kann relevant sein. Stellen Sie
 sicher, dass Sie eine unterstützte Version von Elasticsearch installiert
@@ -182,7 +182,7 @@ auf [deren
 Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html){target=_blank}
 und folgen Sie den Anweisungen.
 
-### Rebuild Elasticsearch index <Badge type="tip" text="optional" />
+### Elasticsearch-Index erneuern <Badge type="tip" text="optional" />
 
 Wird nur benötigt, wenn Sie in den Release-Notes aufgefordert werden, den
 Elasticsearch-Index neu zu erstellen.
@@ -205,7 +205,7 @@ zammad run rake zammad:searchindex:rebuild[8]
 sudo systemctl start zammad
 ```
 
-## Update Docker installation
+## Docker-Installation aktualisieren
 
 ::: warning
 Aktualisierungen des Docker Compose Stacks können zusätzliche Schritte erfordern
@@ -219,7 +219,7 @@ Wenn Sie Zammad auf eine bestimmte Version aktualisieren möchten, verwenden Sie
 und geben die gewünscht Version an.
 :::
 
-### Updating Portainer based installations
+### Portainer-basierte Installation aktualisieren
 
 Klicken Sie in Ihrem Zammad-Stack auf `Pull and redeploy`, aktivieren Sie
 **Re-pull image and redeploy** und klicken Sie auf `Update`.
@@ -227,7 +227,7 @@ Klicken Sie in Ihrem Zammad-Stack auf `Pull and redeploy`, aktivieren Sie
 ![Hervorhebung der Stack-Aktualisierung in
 Portainer](/screenshots/get-started/installation/portainer-stack-update.png)
 
-### Updating Docker Compose based installations
+### Docker Compose-basierte Installation aktualisieren
 
 ```sh
 cd zammad-docker-compose
@@ -245,7 +245,7 @@ docker compose pull
 docker compose up -d
 ```
 
-### Rebuild Elasticsearch index <Badge type="tip" text="optional" />
+### Elasticsearch-Index erneuern <Badge type="tip" text="optional" />
 
 Wird nur benötigt, wenn Sie in den Release-Notes aufgefordert werden, den
 Elasticsearch-Index neu zu erstellen.
@@ -254,32 +254,32 @@ Elasticsearch-Index neu zu erstellen.
 
 === Docker Compose
 
-Without specifying CPU cores:
+Ohne Angabe von CPU-Kernen:
 
-```sh
+``````sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Mit Angabe der zu verwendenden CPU-Kerne (Beispiel: 8):
 
-```sh
+``````sh
 docker compose run --rm zammad-railsserver bundle exec rake zammad:searchindex:rebuild[8]
 ```
 
 === Portainer
 
-Open the [console via Portainer's GUI](/en/get-started/installation/docker#how-to-run-commands-in-the-stack) with the
-standard entrypoint `/bin/bash` and run:
+Öffnen Sie die [Konsole über die Portainer-Benutzeroberfläche](/de/get-started/installation/docker#ausfuhren-von-befehlen-im-stack) mit dem
+Standard-Entrypoint `/bin/bash` und führen Sie Folgendes aus:
 
-Without specifying CPU cores to use:
+Ohne Angabe der zu verwendenden CPU-Kerne:
 
-```sh
+``````sh
 bundle exec rake zammad:searchindex:rebuild
 ```
 
-With specifying CPU cores to use (example 8):
+Mit Angabe der zu verwendenden CPU-Kerne (Beispiel: 8):
 
-```sh
+``````sh
 bundle exec rake zammad:searchindex:rebuild[8]
 ```
 

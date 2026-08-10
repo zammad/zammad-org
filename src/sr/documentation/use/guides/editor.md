@@ -1,111 +1,112 @@
 ---
 order: 3
-title: Editor
+title: 'Смарт Едитор'
 ---
 
-# Editor
+# Смарт Едитор
 
-The Zammad editor provides a rich text editing experience for creating
-articles. It should be self-explanatory and simple to use. Because of the
-importance of this central element in Zammad, this page covers some features
-which may not be visible at the first glance.
+Zammad едитор пружа богато искуство уређивања текста за креирање
+чланака. Требало би да буде јасан и једноставан за коришћење. Због важности
+овог централног елемента у Zammad-у, ова страница обрађује неке функције
+које можда нису видљиве на први поглед.
 
-![Screenshot shows Zammad's
-editor](/screenshots/cypress/documentation/use/guide-editor.cy.js/editor-overview.png)
+![Снимак екрана који приказује мени радњи
+макроа](/screenshots/cypress/documentation/use/guide-editor.cy.js/editor-overview.png)
 
-## Special functions
+## Посебне функције
 
-Zammad's editor includes some smart features. You can find them on the left
-side of the toolbar in the editor. Because they are already described
-somewhere else, we only refer to these places here to avoid duplicate
-content.
+Zammad едитор укључује неке паметне функције. Можете их пронаћи на левој
+страни алатне траке у едитору. Пошто су већ описане негде другде, овамо само
+упућујемо на те делове како бисмо избегли дуплицирање садржаја.
 
-- [AI assistant text tools](ai#writing-assistant-tools )
-- [Mention users](../advanced-features#mention-a-user)
-- [Insert text modules](../advanced-features#text-modules)
-- [Insert knowledge base
-  articles](../advanced-features#insert-knowledge-base-article)
+- [Текстуални алати AI асистента](ai#writing-assistant-tools )
+- [Помени кориснике](../advanced-features#mention-a-user)
+- [Уметни текстуалне модуле](../advanced-features#text-modules)
+- [Уметни чланке из базе
+  знања](../advanced-features#insert-knowledge-base-article)
 
-## Pasting complex content
+## Налепљивање сложеног садржаја
 
-When pasting content from other sources, especially documents containing
-tables, complex formatting or images, be aware that the appearance in Zammad
-might differ. The editor attempts to preserve your formatting if possible,
-but inconsistencies can occur. If you face such a situation, try to
-copy/paste the content one by one or paste plain text and apply the
-formatting in the editor (see [formatting section](#apply-formatting)
-below).
+Када налепите садржај из других извора, посебно документе који садрже
+табеле, сложено форматирање или слике, имајте на уму да изглед у Zammad-у
+може бити другачији. Едитор покушава да сачува ваше форматирање ако је
+могуће, али могу се јавити недоследности. Ако се нађете у таквој ситуацији,
+покушајте да копирате/налепите садржај редом или налепите обичан текст и
+примените форматирање у едитору (види [одељак за
+форматирање](#apply-formatting) испод).
 
-## Paragraphs
+## Пасуси
 
-To separate paragraphs in the editor, use the [[enter]] key **once**. This
-gets rendered as paragraphs either with an empty line or without, depending
-on the recipient's used software. If you add an additional empty line, this
-can get rendered as two empty lines on client side.
+Да бисте раздвојили пасусе у едитору, користите тастер [[enter]]
+**једном**. Ово се приказује као пасуси или са празном линијом или без ње, у
+зависности од софтвера који прима користи. Ако додате још једну празну
+линију, ово се може приказати као две празне линије на страни клијента.
 
-## Cite text
+## Цитирање текста
 
-You may want to quote text of your customer to exactly refer your answer to
-and your customer doesn't lose track in long conversations. To use this
-feature, simply select the text you want to cite and click on the `reply` or
-`forward` button next to the article. If you already inserted text, it gets
-preserved and the selected text gets inserted additionally. This means you
-can repeat this to cite different sections without losing your written text.
+Можда ћете хтети да цитирате текст свог клијента како бисте тачно упутили
+одговор и ваш клијент не би изгубио ток у дугим разговорима. Да бисте
+користили ову функцију, једноставно означите текст који желите да цитирате и
+кликните на дугме `odgovori` или `prosledi` поред чланка. Ако сте већ
+уметнули текст, он се задржава, а изабрани текст се додатно убацује. To
+значи да ово можете понављати за цитирање различитих одељака без губитка
+вашег написаног текста.
 
-## Apply formatting
+## Форматирање текста
 
-You can format text in the editor in different ways:
+Текст у едитору можете форматирати на различите начине:
 
-- Use the integrated toolbar
-- Use keyboard shortcuts
-- Use [Markdown](https://www.markdownguide.org){target=_blank} syntax
+- Користите интегрисану алатну траку
+- Пречице на тастатури
+- Користите [Markdown](https://www.markdownguide.org) синтаксу
 
-The editor **toolbar** includes buttons for common formatting
-tasks. Hovering over each button will display a tooltip explaining its
-function. As an alternative you can use **keyboard shortcuts** (see next two
-sections). Either activate the formatting in advance or select the text
-after writing and use the formatting you want to apply.
+**Алатна трака** едитора укључује дугмад за уобичајене задатке
+форматирања. Прекивањем миша преко сваког дугмета приказаће се алатни опис
+који објашњава његову функцију. Као алтернативу можете користити **пречаце
+на тастатури** (види следећа два одељка). Форматирање можете активирати
+унапред или означити текст након писања и применити форматирање које желите.
 
-### General keyboard shortcuts
+### Пречице на тастатури
 
-The editor also supports keyboard shortcuts to streamline your
-workflow. These shortcuts are common across many text processing
-tools. Important shortcuts are:
+Едитор такође подржава пречаце на тастатури за оптимизацију вашег радног
+процеса. Ови пречаци су уобичајени у многим алатима за обраду текста. Важни
+пречаци су:
 
- Shortcut/command              | Formatting
+ Пречац/наредба              | Форматирање
 -------------------------------|---------------
-[[ctrl]] + [[b]]               | **Bold**
-[[ctrl]] + [[i]]               | _Italics_
-[[ctrl]] + [[u]]               | <u>Underline</u>
+[[ctrl]] + [[b]]               | **Подебљано**
+[[ctrl]] + [[i]]               | _Курзив_
+[[ctrl]] + [[u]]               | <u>Задено</u>
 
-Have a look at the keyboard shortcuts in Zammad where you can find all
-shortcuts. Open it via the [avatar
-menu](/en/documentation/use/user-profile#avatar-menu) in the bottom left
-corner or type [[?]].
+Погледајте пречаце на тастатури у Zammad-у где можете пронаћи све
+пречаце. Отворите га путем [аватар
+менија](/en/documentation/use/user-profile#avatar-menu) у доњем левом углу
+или укуцајте [[?]].
 
-Have a look at the next section to use even more formatting via
-keyboard. Regardless if you are used to write Markdown or not, some of them
-might still be helpful in your daily work.
+Погледајте следећи одељак да бисте користили још више форматирања путем
+тастатуре. Без обзира на то да ли сте навикли на писање MarkDown-a или не,
+неки од њих могу вам бити корисни у свакодневном раду.
 
-### Markdown usage
+### Коришћење Markdown-a
 
-For users familiar with Markdown syntax, the editor provides basic support
-for formatting content with Markdown. When using Markdown syntax, it gets
-immediately applied immediately or after the closing limiter so you can see
-the result directly in the editor. To go back to standard text, simply use
-the same limiter again or use [[enter]], depending on the option.
+Корисницима упућеним у Markdown синтаксу, едитор пружа основну подршку за
+форматирање садржаја помоћу MarkDown-a. Када користите Markdown синтаксу,
+она се одмах примењује или након затварајуће ознаке тако да можете видети
+резултат директно у едитору. Да бисте се вратили на стандардан текст,
+једноставно поново употребите исту ознаку или користите [[enter]], у
+зависности од опције.
 
-It is not intended to support all Markdown features, but to help users
-getting things done more easily. Therefore, the most important things are
-supported like headings, lists, links, code blocks and more. Have a look at
-the non-exhaustive formatting examples below.
+Није циљ подржати све функције Markdown-a, већ помоћи корисницима да лакше
+обаве своје задатке. Зато су подржане најважније функције попут наслова,
+листа, линкова, блокова кода и слично. Погледајте испод примере форматирања
+који нису исцрпни.
 
-Markdown Syntax                | Formatting
+Markdown синтакса                | Форматирање
 -------------------------------|---------------
-`**`                           | Limiter for **bold**
-`_`                            | Limiter for _italics_
-`#`, `##`, `###`               | Heading, level depending on number of `#`
-`>`                            | Quoted
-`` ` ``                        | Limiter for `inline code`
-`` ``` ``                      | Code block
-`---`                          | Horizontal line as divider
+`**`                           | Ограничава **болд**
+`_`                            | Ограничава _италицс_
+`#`, `##`, `###`               | Наслов, ниво зависи од броја `#`
+`>`                            | Цитат
+`` ` ``                        | Ograničava `инлине цоде`
+`` ``` ``                      | Блок кода
+`---`                          | Хоризонтална линија као раздјелник

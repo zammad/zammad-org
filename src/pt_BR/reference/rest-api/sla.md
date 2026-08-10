@@ -3,7 +3,7 @@ order: 16
 title: SLA
 ---
 
-# Service-level agreements (SLA)
+# Acordos de Nível de Serviço (SLA)
 
 ::: tip
 SLAs dependem dos [calendários do Zammad](/pt_BR/reference/rest-api/calendar).

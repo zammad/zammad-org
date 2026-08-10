@@ -1,84 +1,85 @@
 ---
 order: 4
-title: 'First steps in Zammad'
+title: 'Миграција на Zammad'
 ---
 
-# First steps in Zammad
+# Миграција на Zammad
 
-Congratulations, it seems you successfully installed Zammad. To start with
-your fresh installed Zammad, head over to the next section. Alternatively,
-you have other options:
+Честитамо, чини се да сте успешно инсталирали Zammad. Да бисте почели са
+свеже инсталираним Zammad-ом, пређите на следећи одељак. Алтернативно, имате
+друге опције:
 
-- [Migrate from another supported ticketing system](/en/tutorials/migrate)
-- [Restore Zammad from an existing backup](/en/tutorials/backup-restore)
+- [Мигрирајте са другог подржаног система за тикете](/en/tutorials/migrate)
+- [Вратите Zammad из постојеће резервне
+  копије](/en/tutorials/backup-restore)
 
-## Getting started wizard
+## Први кораци
 
-If you visit Zammad's web page the first time, you'll be greeted by its
-Getting Started Wizard. It will guide you through the first most important
-things.
+Када први пут посетите Zammad-ову веб страницу, дочекаће вас чаробњак за
+почетак рада. Водиће вас кроз најважније прве кораке.
 
-### Step 1: Create your first administrator account
+### Корак 1: Креирајте свој први администраторски налог
 
-Fill in the required information in the dialog. Your email address and
-password are important. These are your credentials to log in.
+Попуните тражене информације у дијалогу. Ваша адреса имејла и лозинка су
+важне. То су ваши подаци за пријаву.
 
-Zammad applies the following password policy by default:
+Zammad подразумевано примењује следећу политику лозинки:
 
-- 10 characters or more
-- At least 2 UPPER and 2 lower characters
-- One or more digits
+- 10 карактера или више
+- Најмање 2 велика и 2 мала слова
+- Један или више бројева
 
-### Step 2: Provide company information
+### Корак 2: Унесите информације о компанији
 
-You can upload a custom logo of your company here. The instance address is
-detected automatically and only requires adjustment in case it is detected
-wrong. If you skip it, you can adjust these things later too.
+Овде можете отпремити прилагођени лого ваше компаније. Адреса инстанце се
+детектује аутоматски и захтева подешавање само у случају да је погрешно
+детектована. Ако прескочите ово, ове ствари можете касније подесити такође.
 
-### Step 3: Email notification channel
+### Корак 3: Канал за нотификације имејла
 
-By default, Zammad uses sendmail. This can be changed to SMTP here.
+Подразумевано, Zammad користи сендмаил. Ово се овде може променити на SMTP.
 
-Zammad uses `noreply@<your-fqdn>` as sender address by default. SMTP setups
-might fail - you can skip this step with choosing sendmail and adjust it later!
+Zammad подразумевано користи `noreply@<your-fqdn>` као адресу пошиљаоца. Поставке SMTP-а
+могу не успети - можете прескочити овај корак бирањем сендмаил и касније га подесити!
 
-### Step 4: Your first email channel <Badge type="info" text="optional" />
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-If you want to start right away, you can connect your email account already.
+Ако желите да одмах почнете, већ можете повезати свој емаил налог.
 
 ::: danger
-By default, Zammad reacts to fetched emails (e.g. deletes them and sends
-automatically generated answers) If that’s not what you want, skip this step
-for now.
+Подразумевано, Zammad реагује на дохваћене имејл поруке (нпр. брише их и шаље
+аутоматски генерисане одговоре). Ако то није оно што желите, прескочите овај корак
+тренутно.
 :::
 
-After finishing the wizard you are automatically logged in to the just
-created account.
+Након завршетка чаробњака, аутоматски сте пријављени на управо креирани
+налог.
 
-## Next steps
+## Следећи кораци
 
-The list below might help you to find the right way. However, you should
-adapt it to your needs. You can find additional information across this
-documentation.
+Листа испод вам може помоћи да пронађете прави пут. Међутим, требало би је
+прилагодити својим потребама. Додатне информације можете пронаћи у овој
+документацији.
 
-- Configure your required groups
-- Adjust triggers as needed
-- Add postmaster filters if needed
-- Configure SLAs if needed
-- Add email / social media channels & signatures
-- Go back to group settings to add outgoing email addresses
-- Add Text Modules
-- Add Organizations
-- Configure roles if needed
-- Consider third party logins or LDAP integration for easier logins
-- Add agent accounts
-- Consider backup strategies for Zammad
+- Конфигуришите своје потребне групе
+- Подесите окидаче по потреби
+- Додајте филтере postmaster-а ако је потребно
+- Конфигурација веб сервера
+- Додајте канале имејла / друштвених мрежа и потписе
+- Вратите се на подешавања група да додате излазне адресе имејла
+- Додавање текстуалних исечака
+- Додајте организације
+- Конфигурација веб сервера
+- Размотрите пријаве путем трећих страна или LDAP интеграцију за лакше
+  пријављивање
+- Додајте налоге агената
+- Размотрите стратегије резервног копирања за Zammad
 
 ::: tip
 
-**Are you still lost?**
+**И даље сте збуњени?**
 
-If you need help or you'll need to get in production a lot faster, you can also
-book workshops with one of our
-[Zammad consultants](https://zammad.com/en/company/contact){target=_blank}.
+Ако вам је потребна помоћ или ћете рад у продукцији требати покренути много брже, можете такође
+резервисати радионице са једним од наших
+[Zammad консултаната](https://zammad.com/en/company/contact){target=_blank}.
 :::

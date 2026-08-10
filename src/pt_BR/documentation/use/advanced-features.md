@@ -1,15 +1,15 @@
 ---
 order: 4
-title: 'Advanced features'
+title: 'Recursos avançados'
 ---
 
-# Advanced features
+# Recursos avançados
 
 Esta página apresenta uma coleção de várias ferramentas úteis que não
 precisam de páginas próprias separadas. Continue lendo, pesquise na página
 ou navegue até a seção desejada usando o sumário à direita.
 
-## Ticket update behavior
+## Comportamento de atualização do ticket
 
 ![Captura de tela mostra o comportamento após o menu de
 atualização](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
@@ -40,7 +40,7 @@ Se a sua situação varia de ticket para ticket, você pode deixar **Stay on tab
 [[shift]] [[c]] para mudar o estado do ticket para fechado e fechar a aba do ticket.
 :::
 
-## Text modules
+## Módulo de texto
 
 ![Captura de tela mostra o recurso de módulos de
 texto](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
@@ -68,7 +68,7 @@ Você pode escolher um clicando nele ou usando as setas para cima e para
 baixo seguidas de [[enter]] no seu teclado. Existem alguns módulos de texto
 no Zammad que vêm por padrão.
 
-## Insert knowledge base article
+## Inserir artigo da base de conhecimento
 
 ![Captura de tela mostra a inserção de artigo da base de
 conhecimento](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
@@ -86,7 +86,7 @@ Use o botão na barra de ferramentas do editor ou simplesmente escreva
 [[?]][[?]] no editor. Ambas as formas permitem pesquisar o artigo de base de
 conhecimento desejado digitando alguns caracteres ou palavras.
 
-## Mention a user
+## Mencionar um usuário
 
 ![Captura de tela mostra a menção a um
 usuário](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
@@ -108,7 +108,7 @@ O Zammad exibe uma lista com todas as correspondências possíveis, onde você
 pode escolher uma clicando nela ou usando as setas para cima e para baixo
 seguidas de [[enter]] no seu teclado.
 
-## Subscribe to a ticket
+## Inscrever-se em um ticket
 
 ![Captura de tela mostra o recurso de
 inscrição](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
@@ -208,7 +208,7 @@ Há dois recursos que não são diretamente visíveis:
   apenas aqueles que estão fechados (com um círculo verde) são considerados
   concluídos.
 
-## Ticket templates
+## Modelos de ticket
 
 **Por quê?**
 
@@ -222,7 +222,7 @@ Na tela de criação de ticket, você encontra um botão `Apply Template ^` na
 barra de rodapé, se um modelo estiver disponível. Selecione o modelo que
 deseja aplicar e aplique as alterações desejadas.
 
-## Shared drafts
+## Rascunhos compartilhados
 
 **Por quê?**
 
@@ -247,7 +247,7 @@ no lado esquerdo do rodapé.
 Aplicar um rascunho sobrescreve suas alterações não salvas!
 :::
 
-## Monitoring ticket escalations
+## Monitorando escalonamentos de ticket
 
 **Por quê?**
 
@@ -285,7 +285,7 @@ O recurso de SLA requer uma configuração do seu administrador. Caso você não
 veja carimbos de hora de escalonamento, o ticket não é relevante para SLA ou
 o recurso não está configurado.
 
-## Bulk actions
+## Ações em massa
 
 **Por quê?**
 
@@ -362,7 +362,7 @@ selecionados, caso você tenha selecionado todos os relevantes. Para incluir
 outro ticket não selecionado, comece a arrastar a partir dele, e ele também
 será incluído no processamento em lote.
 
-## Merge tickets
+## Mesclar tickets
 
 ![Captura de tela mostra o painel flutuante de mesclagem de
 ticket](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
@@ -393,7 +393,7 @@ qual você executou a mesclagem ainda existe, com as seguintes alterações:
 - O estado mudou para "merged"
 - O ticket é vinculado ao seu ticket "pai"
 
-## Split tickets
+## Dividir tickets
 
 ![Captura de tela mostra o menu de ação de divisão do
 artigo](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
@@ -416,7 +416,7 @@ pode alterar tudo conforme suas necessidades e depois clicar em `Create`.
 O ticket recém-criado é vinculado ao original como filho. O ticket original
 é vinculado ao ticket dividido como pai.
 
-## Link tickets
+## Vincular tickets
 
 **Por quê?**
 
@@ -437,7 +437,7 @@ tipos de vínculo:
   principal e o outro é uma subtarefa. Esse tipo de vínculo é usado por
   padrão quando um ticket é dividido ou mesclado.
 
-## Duplicate detection
+## Detecção de duplicados
 
 ![Captura de tela mostra o aviso de ticket duplicado durante a criação de
 ticket](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
@@ -504,7 +504,7 @@ os tipos de atividade.
 ![Captura de tela mostra a visão geral de contabilização de
 tempo](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
 
-## User detail panel
+## Painel de detalhes do usuário
 
 **Por quê?**
 
@@ -526,7 +526,7 @@ A propósito, a coroa na captura de tela representa o estado VIP do cliente,
 que pode ser definido na visualização de detalhes do cliente e nas
 configurações de administração.
 
-## User detail page
+## Página de detalhes do usuário
 
 ![Captura de tela mostra a página de detalhes do
 usuário](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
@@ -551,7 +551,7 @@ detalhes do cliente. Caso você também tenha permissões de administrador,
 você pode até criar uma tarefa de exclusão para um usuário a partir do menu
 ::a::.
 
-## Organization detail page
+## Página de detalhes da organização
 
 ![Captura de tela mostra a página de detalhes da
 organização](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
@@ -574,7 +574,7 @@ Basta clicar em um avatar de organização (por exemplo, no cabeçalho da
 visualização de detalhes do ticket, ao lado do avatar do usuário). Isso abre
 uma nova aba com a página de detalhes da organização.
 
-## External issues and assets
+## Issues e ativos externos
 
 **Por quê?**
 
@@ -596,7 +596,7 @@ a URL dela ou selecionando o item em um campo de seleção (i-doit). Depois,
 você pode ver o item vinculado com metadados adicionais. Ao clicar no item
 vinculado, você é redirecionado a ele no respectivo sistema.
 
-## Highlight text
+## Destacar texto
 
 **Por quê?**
 

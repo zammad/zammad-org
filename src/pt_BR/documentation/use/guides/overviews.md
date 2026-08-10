@@ -29,7 +29,7 @@ exemplo:
 Selecionar uma visão geral na navegação de segundo nível mostra uma tabela
 que inclui os tickets correspondentes.
 
-## Usage and features
+## Uso e recursos
 
 As visões gerais podem ser definidas pelos administradores com base em
 regras e condições. Isso significa que, se um ticket foi alterado e a
@@ -58,7 +58,7 @@ comece a trabalhar em um ticket.
 Se você sentir falta de uma visão geral ou quiser configurações diferentes, avise seu administrador do Zammad!
 :::
 
-### Color coded state and priority
+### Estado e prioridade com código de cores
 
 Para visualizar diferentes estados e prioridades de ticket, as entradas na
 tabela têm código de cores.
@@ -90,7 +90,7 @@ ticket](/screenshots/documentation/use/overviews/priorities.png)
 - 2 normal: azul
 - 3 alta: vermelho
 
-### Open a ticket
+### Abrir um ticket
 
 Abra um ticket simplesmente clicando na linha. Isso abre o ticket como uma
 aba na sua barra de tarefas e mostra a visualização de detalhes do
@@ -101,7 +101,7 @@ Se uma visão geral contém mais de um ticket e você abre um dos tickets, você
 encontra setas no cabeçalho da visualização de detalhes do ticket para
 alternar para o próximo/anterior ticket dessa visão geral.
 
-### Bulk actions
+### Ações em massa
 
 Execute ações em massa selecionando vários tickets e usando o painel
 flutuante de ação em massa ou arrastando-os com o mouse para acionar a
@@ -109,7 +109,7 @@ sobreposição de ação em massa. Você encontra mais informações sobre isso 
 seção [Ações em massa](../advanced-features#bulk-actions) na página de
 recursos avançados.
 
-### Reorder overviews
+### Reordenar visões gerais
 
 Se a ordem das visões gerais não refletir seu processo de trabalho, ou você
 simplesmente prefira uma ordem diferente, você pode reorganizá-las para sua

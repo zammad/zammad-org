@@ -1,181 +1,189 @@
 ---
 order: 7
-title: 'Backup & restore (package)'
+title: 'Резервна копија и њено враћање'
 ---
 
-# Backup & restore (package)
+# Резервна копија и њено враћање
 
-Zammad ships scripts in package installations for backup & restore which you
-can use.
+Zammad у инсталацијама путем пакета долази са скриптама за израду и враћање
+резервних копија које можете користити.
 
 ::: warning
-These scripts do not come with any warranty and may not work in your specific
-use case. This depends on the configuration and installation type of your
-instance.
+Ове скрипте не долазе са икаквом гаранцијом и можда неће функционисати у вашем
+конкретном случају употребе. То зависи од подешавања и врсте инсталације ваше
+инстанце.
 
-You should always regularly test and review the functionality! If the script
-functionality or scope is not working for your cases, feel free to copy these
-to a independent location and adjust the scripts as needed.
+Увек треба редовно да тестирате и проверавате функционалност! Ако функционалност
+или обим скрипте не одговара вашим случајевима, слободно их копирајте
+на независну локацију и прилагодите скрипте по потреби.
 :::
 
-There are some limitations you should know:
+Постоје нека ограничења која треба да знате:
 
-- These scripts won't work in container based installations.
-- They only work for PostgreSQL installations.
-- The backup is always a full dump (no incremental backup).
-- Partial backup and restore (e.g. only specific data like tickets, users)
-  is not possible.
-- Switching database system is not possible.
-- System settings (like environment variables) are not backed up.
-- Restore to an older Zammad version is not possible.
-- Do not restore backup files from custom scripts with the provided scripts
-  by Zammad. This might cause problems.
+- Ове скрипте не функционишу у инсталацијама заснованим на контејнерима.
+- Функционишу само за PostgreSQL инсталације.
+- Резервна копија је увек потпуни испис (без инкременталне резервне копије).
+- Делимична израда и враћање резервне копије (нпр. само одређени подаци као
+  што су тикети, корисници) није могућа.
+- Промена система базе података није могућа.
+- Системска подешавања (као што су променљиве окружења) се не чувају у
+  резервној копији.
+- Враћање на старију верзију Zammad-а није могуће.
+- Не враћајте датотеке резервних копија из прилагођених скрипти помоћу
+  скрипти које обезбеђује Zammad. То може изазвати проблеме.
 
 ## Основе
 
-The scripts are located in `/opt/zammad/contrib/backup`. The following files
-are relevant:
+Скрипте се налазе у `/opt/zammad/contrib/backup`. Релевантне су следеће
+датотеке:
 
-- Backup configuration file: `config.dist`
-- Script for backing up your data: `zammad_backup.sh`
-- Script for restoring your data: `zammad_restore.sh`
+- Датотека подешавања резервне копије: `config.dist`
+- Скрипта за израду резервне копије ваших података: `zammad_backup.sh`
+- Скрипта за враћање ваших података: `zammad_restore.sh`
 
-To execute a backup based on the default configuration, follow the steps
-below:
+Да бисте израдили резервну копију на основу подразумеваног подешавања,
+пратите кораке испод:
 
-1. Copy the `config.dist` file to `config`.
-1. Change default parameters in the config file if needed. See [Backup
-   Configuration](#backup-configuration) for details.
-1. Stop Zammad `systemctl stop zammad`
-1. Execute `/opt/zammad/contrib/backup/zammad_backup.sh` (as `root` or
-   `zammad` user)
+1. Копирајте датотеку `config.dist` у `config`.
+1. Промените подразумеване параметре у датотеци подешавања ако је
+   потребно. За детаље погледајте [Подешавање резервне
+   копије](#backup-configuration).
+1. Први кораци са Zammad-ом
+1. Извршите `/opt/zammad/contrib/backup/zammad_backup.sh` (као корисник
+   `root` или `zammad`)
 
-## Backup configuration
+## Подешавања
 
-You can find details about the configuration parameters with default values
-below.
+Детаље о параметрима подешавања са подразумеваним вредностима можете наћи
+испод.
 
 `BACKUP_DIR` <Badge type="info" text="/var/tmp/zammad_backup"/>
-: Location where the script writes the backup files to. The directory will be
-  created if it does not exist. Make sure you have enough space because the
-  script writes full dumps.
+: Локација на коју скрипта записује датотеке резервних копија. Директоријум ће
+  бити креиран ако не постоји. Обезбедите довољно простора јер
+  скрипта записује потпуне исписе.
 
 `HOLD_DAYS` <Badge type="info" text="10"/>
-: Define how many days the backup script should keep old backups. This value
-  contains a 60 minutes grace period (e.g. 10 days plus 1 hour) for safety
-  reasons. Old backups are removed before creating the a new backup.
+: Одредите колико дана скрипта за резервне копије треба да чува старе копије. Ова вредност
+  садржи додатних 60 минута (нпр. 10 дана плус 1 сат) из безбедносних
+  разлога. Старе резервне копије се уклањају пре израде нове.
 
-  Examples:
-    - `1` will keep backups of the last 25 hours
-    - `-1` will remove all available backups (except the new one)
+  Ејемплос:
+    - `1` цонсерварá цопиас де сегуридад де лас úлтимас 25 хорас
+    - `-1` елиминарá тодас лас цопиас де сегуридад диспониблес (excepto ла нуева)
 
 `FULL_FS_DUMP` <Badge type="info" text="yes"/>
-:   - `yes`: the backup includes also application files.
-    - `no`: the backup includes only user data.
+:   - `yes`: ла цопиа де сегуридад incluye тамбиéн лос арцхивос де ла аплицациóн.
+    - `no`: ла цопиа де сегуридад соло incluye датос дел усуарио.
 
-  In any case, it includes the Zammad database and the attachments, if you
-  stored them in the file system. If you are in doubt, set this to no.
+  Ен cualquier цасо, incluye ла басе де датос де Zammad y лос арцхивос адјунтос, си естос се
+  алмаценарон ен ел система де арцхивос. Ен цасо де дуда, естаблéзцало ен но.
 
 `DEBUG` <Badge type="info" text="no"/>
-: Setting this option to `yes` will output useful debug messages.
+: Естаблецер еста опциóн ен `yes` мострарá менсајес де депурациóн úтилес.
   ::: warning
-  This option potentially returns sensitive information to standard output! Do
-  not use this option in production environments or ensure to turn it off after
-  testing.
+  ¡Еста опциóн подрíа деволвер информациóн сенсибле а ла салида естáндар! Но
+  утилице еста опциóн ен енторнос де продуцциóн о асегúресе де десацтиварла деспуéс
+  де лас пруебас.
   :::
 
-## Restore backups
+## Рестаурар цопиас де сегуридад
 
-### Important information
+### Важне информације
 
-Please read the following information carefully before starting to restore
-your data.
+Леа атентаменте ла сигуиенте информациóн антес де цомензар а рестаурар сус
+датос.
 
-- This section is **not** about **migrating from one host to another**. You
-  can find instructions about this topic on the [Migrate Zammad
-  page](migrate-host).
-- This guide expects a fully installed Zammad version
-- It also expects you to restore Zammad on the same host and Zammad version
-- The restore process stops & restarts Zammad. Therefore you have to run the
-  restore script with appropriate permissions (e.g. as root).
-- PostgreSQL based installations will drop and re-create the database!
-- At least twice the backed up Zammad instance size of free storage is
-  required. If you have the dump only, factor 3 could be a good number.
+- Еста сецциóн **но** трата собре **миграр де ун сервидор а отро**. Пуеде
+  енцонтрар инструцционес ал респецто ен ла [пáгина Миграр
+  Zammad](migrate-host).
+- Еста гуíа асуме уна версиóн де Zammad цомплетаменте инсталада
+- Тамбиéн асуме que рестаурарá Zammad ен ел мисмо сервидор y ла мисма
+  версиóн де Zammad
+- Ел процесо де рестаурациóн детиене y реинициа Zammad. Пор ло танто, дебе
+  ејецутар ел сцрипт де рестаурациóн цон лос пермисос адецуадос (пор
+  ејемпло, цомо роот).
+- ¡Лас инсталационес басадас ен PostgreSQL елиминарáн y волверáн а цреар ла
+  басе де датос!
+- Се requiere ал менос ел добле дел тамаñо де ла инстанциа де Zammad
+  респалдада ен алмаценамиенто либре. Си соло тиене ел волцадо, ун фацтор де
+  3 подрíа сер ун буен нúмеро.
 
 ::: tip
-If your scenario is different as described above, please consult the
+Си су есценарио ес диференте ал десцрито антериорменте, цонсулте ла
 [Zammad Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-or consider
-[paid support options](https://zammad.com/en/services/professional-services){target=_blank}.
+о цонсидере лас
+[опционес де сопорте де паго](https://zammad.com/en/services/professional-services){target=_blank}.
 :::
 
-### Copy backup files to a fitting location
+### Цопиар арцхивос де цопиа де сегуридад а уна убицациóн адецуада
 
-Ensure that the user you're using for restoration is allowed to read the
-backup files and to write to `/opt/zammad/`.
+Асегúресе де que ел усуарио que утилиза пара ла рестаурациóн тенга пермисо
+пара леер лос арцхивос де цопиа де сегуридад y есцрибир ен `/opt/zammad/`.
 
-The Zammad backup consists of two files. They are named like this:
+Ла цопиа де сегуридад де Zammad цонста де дос арцхивос. Се номбран де ла
+сигуиенте манера:
 
 ```plain
 <timestamp>_zammad_db.psql.gz
 <timestamp>_zammad_files.tar.gz
 ```
 
-There are also two symlinks in your backup directory pointing to the newest
-backup created:
+Тамбиéн hay дос енлацес симбóлицос ен су дирецторио де цопиа де сегуридад
+que апунтан а ла úлтима цопиа цреада:
 
 ```plain
 latest_zammad_db.psql.gz
 latest_zammad_files.tar.gz
 ```
 
-Copy them to a fitting location which is accessible for the user who
-executes the restore script.
+Цóпиелос а уна убицациóн адецуада аццесибле пара ел усуарио que ејецута ел
+сцрипт де рестаурациóн.
 
-### Configure backup script
+### Цонфигурар сцрипт де цопиа де сегуридад
 
-For a new installation, this is required. At least you have to provide a
-directory where your backups are stored. See [Backup
-Configuration](#backup-configuration) for more information.
+Пара уна нуева инсталациóн, есто ес облигаторио. Ал менос дебе пропорционар
+ун дирецторио донде се алмаценен сус цопиас де сегуридад. Цонсулте
+[Цонфигурациóн де цопиа де сегуридад](#backup-configuration) пара мáс
+информациóн.
 
-### Clean up the storage folder
+### Лимпиар ла царпета де алмаценамиенто
 
-In case you restore to a production environment with activated filesystem
-storage, you should purge the content of the directory
-`/opt/zammad/storage/` inside the volume. The restore process only
-adds/overwrites files there, no cleanup will take place.
+Ен цасо де рестаурар ен ун енторно де продуцциóн цон алмаценамиенто ен
+система де арцхивос ацтивадо, дебе пургар ел цонтенидо дел дирецторио
+`/opt/zammad/storage/` дентро дел волумен. Ел процесо де рестаурациóн соло
+агрега/собресцрибе арцхивос аллí, но се реализарá нингуна лимпиеза.
 
-### Run the restore
+### Резервна копија и њено враћање
 
-Be aware that restoring backups can overwrite your `database.yml`. You can
-check that by looking into the `[...]_zammad_files.tar.gz` file. If there
-is a `database.yml` in the directory _config > database_, ensure to save the
-original version **before restoring**.
+Тенга ен цуента que рестаурар цопиас де сегуридад пуеде собресцрибир су `database.yml`. Пуеде
+верифицарло ревисандо ел арцхиво `[...]_zammad_files.tar.gz`. Си existe
+ун `database.yml` ен ел дирецторио _цонфиг > датабасе_, асегúресе де гуардар ла
+версиóн оригинал **антес де рестаурар**.
 
-The restore works in two possible ways, depending on how interactive you
-want to go:
+Ла рестаурациóн фунциона де дос формас посиблес, депендиендо де qué тан
+интерацтиво десеа сер:
 
 :::: tabs
 
-=== Interactive restore (recommended)
-Run the script:
+=== Рестаурациóн интерацтива (рецомендада)
+Ејецуте ел сцрипт:
 
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh
 ```
 
-Provide the requested information to the script and wait for the restore
-process to finish. Depending on the size of your backup and host performance,
-this may take some time.
+Пропорционе ла информациóн солицитада ал сцрипт y еспере а que ел процесо де рестаурациóн
+тéрмине. Депендиендо дел тамаñо де су цопиа де сегуридад y ел рендимиенто дел сервидор,
+есто подрíа тардар ун тиемпо.
 
-=== Non-interactive restore
+=== Рестаурациóн но интерацтива
 
 ::: warning
-Only use the following option if you know what you're doing! The following
-command will overwrite existing data without further prompts!
+¡Соло утилице ла сигуиенте опциóн си сабе ло que естá хациендо! Ел сигуиенте
+цомандо собресцрибирá лос датос existentes син мáс адвертенциас!
 :::
-When called with a timestamp argument (matching the backups filename),
-Zammad will proceed immediately to restoring the specified backup.
+Ал ејецутарсе цон ун аргументо де марца де тиемпо (que цоинцида цон ел номбре дел арцхиво де цопиа),
+Zammad процедерá инмедиатаменте а рестаурар ла цопиа еспецифицада.
 
 ```sh
 /opt/zammad/contrib/backup/zammad_restore.sh 20170507121848
@@ -183,7 +191,7 @@ Zammad will proceed immediately to restoring the specified backup.
 
 ::::
 
-The result should look like this:
+Ел ресултадо деберíа версе асí:
 
 ```ansi
 # Zammad restore started - Fri Jan 21 17:54:13 CET 2022!
@@ -220,130 +228,133 @@ CREATE DATABASE
 # Zammad restored successfully - Fri Jan 21 17:54:34 CET 2022!
 ```
 
-### Additional steps
+### Додатни кораци
 
-- If you've set any environmental settings, please re-apply them now.
-- If not already done, [install
-  Elasticsearch](/en/tutorials/install-elasticsearch) now.
-- [Connect Elasticsearch with Zammad and rebuild its search
-  index](/en/tutorials/connect-config-elasticsearch). The rebuild can safely
-  run during your work, but will cause a degraded search performance and may
-  lead to temporarily not found data.
+- Си цонфигурó алгúн ајусте де енторно, аплíquelos нуеваменте ахора.
+- Си аúн но ло ха хецхо, [инстале
+  Elasticsearch](/en/tutorials/install-elasticsearch) ахора.
+- [Цонецте Elasticsearch цон Zammad y reconstruya су íндице де
+  бúsqueda](/en/tutorials/connect-config-elasticsearch). Ла рецонструцциóн
+  пуеде ејецутарсе цон сегуридад миентрас трабаја, перо цаусарá ун
+  рендимиенто де бúsqueda деградадо y подрíа генерар датос но енцонтрадос
+  темпоралменте.
 
-## Troubleshooting backup & restore
+## Резервна копија и њено враћање
 
-You can find some common problems below. If your issue is not listed, feel
-free to consult the [Zammad
+Пуеде енцонтрар алгунос проблемас цомунес а цонтинуациóн. Си су проблема но
+естá листадо, цонсулте ла [Zammad
 Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-for technical assistance.
+пара обтенер асистенциа тéцница.
 
-### Exit codes
+### Цóдигос де салида
 
-Our backup & restore scripts come with exit codes to help you finding a
-solution. However, we do not guarantee a complete error handling.
+Нуестрос сцриптс де цопиа де сегуридад y рестаурациóн виенен цон цóдигос де
+салида пара ayudarle а енцонтрар уна солуциóн. Син ембарго, но гарантизамос
+ун манејо де еррорес цомплето.
 
-Beside the exit codes, there are also error messages returned to standard
-out.
+Адемáс де лос цóдигос де салида, тамбиéн се девуелвен менсајес де еррор а ла
+салида естáндар.
 
-| Code | Description / Situation                                                                                                                                                                |
+| Цóдиго | Десцрипциóн / Ситуациóн                                                                                                                                                                |
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `0`  | The script finished successfully (or the error is not handled).                                                                                                                        |
-| `1`  | This is a general error. Most often used for script aborts due to incorrect information provided or information missing.                                                               |
-| `2`  | There was an error with database handling. This usually either happens if your database server does not meet script requirements, login data being invalid or "broken‟ database dumps. |
-| `3`  | There were issues with file / folder permissions.                                                                                                                                      |
+| `0`  | Ел сцрипт финализó цоррецтаменте (о ел еррор но се манеја).                                                                                                                        |
+| `1`  | Ес ун еррор генерал. Се уса цон mayor фрецуенциа пара абортос дел сцрипт дебидо а информациóн инцоррецта пропорционада о информациóн фалтанте.                                                               |
+| `2`  | Хубо ун еррор ал манејар ла басе де датос. Есто суеле оцуррир си су сервидор де басе де датос но цумпле цон лос requisitos дел сцрипт, лос датос де иницио де сесиóн сон инвáлидос о hay волцадос де басе де датос "ротос‟". |
+| `3`  | Хубо проблемас цон лос пермисос де арцхивос / царпетас.                                                                                                                                      |
 
-### Common problems
+### Проблемас цомунес
 
-#### Password authentication failed / peer authentication failed
+#### Еррор де аутентицациóн пор цонтрасеñа / Еррор де аутентицациóн пеер
 
-This indicates that the password of your Zammad DB user is either different
-from your `database.yml` or the wrong database server may be contacted.
+Есто индица que ла цонтрасеñа дел усуарио де су БД де Zammad ес диференте а
+ла де су `database.yml` о que се естá цонтацтандо ал сервидор де басе де
+датос инцоррецто.
 
-If your Zammad instance is running, it can be caused by falling back to
-socket connection which is why you didn't notice.
+Си су инстанциа де Zammad естá ен ејецуциóн, пуеде деберсе а ун ретроцесо а
+ла conexióн пор соцкет, мотиво пор ел цуал но се дио цуента.
 
-**What to do?**
+**¿Qué хацер?**
 
-Ensure that the provided user credentials are correct. You can also consider
-to use the `reset_db_password` script, you can find in the backup directory.
+Асегúресе де que лас цреденциалес дел усуарио пропорционадас сеан
+цоррецтас. Тамбиéн пуеде цонсидерар усар ел сцрипт `reset_db_password`, que
+енцонтрарá ен ел дирецторио де цопиа де сегуридад.
 
-#### Ident authentication failed for user
+#### Еррор де аутентицациóн Ident пара ел усуарио
 
-This indicates your database server does require `ident` authentication.
-That authentication method is not supported by our scripts.
+Есто индица que су сервидор де басе де датос requiere аутентицациóн
+`ident`. Есе мéтодо де аутентицациóн но естá сопортадо пор нуестрос сцриптс.
 
-**What to do?**
+**¿Qué хацер?**
 
-Check the `pg_hba.conf` of your PostgreSQL-Server and adjust it if needed.
+Verifique ел `pg_hba.conf` де су сервидор PostgreSQL y ајúстело си ес
+нецесарио.
 
-Usually, authentication can be allowed like this:
+Пор ло генерал, ла аутентицациóн се пуеде пермитир де ла сигуиенте манера:
 
 ```sh
-# THIS IS A SAMPLE AND MAY NOT FIT YOUR ENVIRONMENT
+# ОВО ЈЕ ПРИМЕР И МОЖДА НЕ ЋЕ ПАСТИ У ВАШЕ ОКРУЖЕЊЕ
 host    all             all             127.0.0.1/32            md5
 host    all             all             ::1/128                 md5
 ```
 
-Please consult the official [PostgreSQL
-documentation](https://www.postgresql.org/docs/){target=_blank} for this, as
-this is out of our documentation scope.
+Молимо вас да се за ово обратите званичној [документацији
+PostgreSQL-a](https://www.postgresql.org/docs/){target=_blank}, јер ово није
+у оквиру наше документације.
 
-#### WARNING: You don't seem to have any attachments in the file system
+#### УПОЗОРЕЊЕ: Изгледа да немате никакве прилоге у фајл систему
 
-This indicate that your instance currently does not save attachments to file
-system.
+Ово указује на то да ваша инстанца тренутно не чува прилоге на фајл систем.
 
-This warning will be shown once before creating an empty directory to allow
-the backup process to continue successfully.
+Ово упозорење ће бити приказано једном пре креирања празног директоријума да
+би процес бекапа успешно наставио.
 
-Check and adjust your
-[storage settings via console](/en/reference/rails-commands#storage-provider-setting)
-or in Zammad's admin interface under _Settings > System > Storage_.
+Проверите и прилагодите своје
+[подешавања складиштења преко конзоле](/en/reference/rails-commands#storage-provider-setting)
+или у административном интерфејсу Zammad-а под _Подешавања > Систем > Складиште_.
 
-## Helper script
+## Помоћни скрипт
 
-### Warning
+### Упозорење
 
-A script can potentially be destructive! You should **never** run scripts
-which scopes you don't understand.
+Скрипт може потенцијално бити деструктиван! Никада не смеете покретати
+скрипте чије опсеге не разумете.
 
-Be aware that you are running these scripts at your own risk.
+Имајте на уму да покрећете ове скрипте на своју одговорност.
 
-### Database helper: (Re)set password
+### Помоћни алат за базу података: Постави/Ресетуј лозинку
 
 #### Ограничења
 
-- This script is working for PostgreSQL installations only.
-- Only local database servers are supported (script changes user).
-- This script requires to be run as `root` or similar privileged user.
-- Be aware that the script will automatically stop and start Zammad!
+- Овај скрипт ради само за PostgreSQL инсталације.
+- Подржани су само локални сервери базе података (скрипт мења корисника).
+- Овај скрипт захтева да се покрене као `root` или сличан привилеговани
+  корисник.
+- Имајте на уму да ће скрипт аутоматски зауставити и покренути Zammad!
 
 #### Опсези
 
-The scope of this script are mostly package installations and especially
-CentOS and SUSE operating systems. It might work on source code /
-development installations as well, but this highly depends on your setup and
-is out of scope.
+Опсег овог скрипта је углавном инсталација пакета и посебно CentOS и SUSE
+оперативни системи. Може радити и на инсталацијама из изворног кода /
+развоју, али то веома зависи од вашег окружења и није у опсегу.
 
-#### Functionality
+#### Функционалност
 
-The script will do the following actions automatically for you, depending on
-the situation. It will ask for your confirmation before performing actions.
+Скрипт ће аутоматски извршити следеће радње за вас, у зависности од
+ситуације. Захтеваће вашу потврду пре извршавања радњи.
 
-- If `database.yml` contains an empty password line, a new password will be
-  generated and set for the database user of Zammad. It will also be saved
-  to the configuration file.
-- If `database.yml` contains a password, it will be used to set the password
-  of the Zammad database user.
+- Ако `database.yml` садржи празну лозинку, нова лозинка ће бити генерисана
+  и постављена за корисника базе података Zammad-а. Такође ће бити сачувана
+  у конфигурационом фајлу.
+- Ако `database.yml` садржи лозинку, она ће бити коришћена за постављање
+  лозинке корисника базе података Zammad-а.
 
 #### Употреба
 
-Run the script with the command below and follow the instructions. No
-specific configuration is required.
+Покрените скрипт командом испод и пратите упутства. Није потребна специфична
+конфигурација.
 
 ```sh
 /opt/zammad/contrib/backup/zammad_db_user_helper.sh
 ```
 
-If errors occur, the script will try to bring Zammad back online before
-exiting.
+У случају грешака, скрипт ће покушати да врати Zammad у рад пре изласка.

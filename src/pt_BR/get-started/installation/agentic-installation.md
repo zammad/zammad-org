@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Agentic installation'
+title: 'Instalação agêntica'
 ---
 
-# Agentic installation
+# Instalação agêntica
 
 ::: danger
 Esteja ciente de que as etapas de configuração para agentes de IA não cobrem tópicos de segurança, rede e configuração (por exemplo, certificados
@@ -34,7 +34,7 @@ Instruções:
 https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/install-docker.md
 ```
 
-## Installation via package manager
+## Instalação via gerenciador de pacotes
 
 Este arquivo cobre uma instalação via gerenciador de pacotes, incluindo o
 Elasticsearch.

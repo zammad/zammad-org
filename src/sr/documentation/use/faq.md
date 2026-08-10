@@ -1,165 +1,170 @@
 ---
 order: 10
 outline:
-  - 2
-  - 2
+  - ','
+  - ','
 title: FAQ
 ---
 
 # FAQ
 
-[[TOC]]
+,
 
 ## Уопштено
 
-### How to find tickets?
+### Ваши додељени тикети
 
-It depends on your use case. Zammad offers many possibilities to search and
-access tickets.
+То зависи од вашег случаја употребе. Zammad нуди много могућности за
+претрагу тикета и приступ њима.
 
-If you **search for a specific ticket or content**, the search is the best
-way. You can find the search field in the top area of the navigation sidebar
-or activate it by using the keyboard shortcut [[s]]. The search even shows
-the tickets you recently closed from your taskbar, maybe you can already
-find what you are searching for there. There is a separate [search
-page](./guides/search) for more information.
+Уколико **тражите одређен тикет или садржај**, претрага је најбољи
+начин. Поље претраге можете пронаћи при врху бочне траке навигације или га
+активирајте пречицом [[s]] на тастатури. Претрага вам чак приказује и тикете
+које сте недавно затворили из своје радне траке, можда већ тамо можете
+пронаћи оно што тражите. Постоји посебна [страна претраге](./guides/search)
+са више информација.
 
-If you want to **start working on tickets**, take a look at [the
-overviews](./guides/overviews), which are basically a list of current
-tickets. These overviews should put you in a position where you can easily
-distinguish between what needs to be done, what is in progress and what is
-currently on hold. In case you face issues with these overviews, your Zammad
-admin should be able to help.
+Уколико желите да **почнете да радите на тикетима**, погледајте
+[прегледе](./guides/overviews), који су у основи листа актуелних тикета. Ови
+прегледи треба да вас доведу у позицију у којој лако можете разликовати шта
+треба да се уради, шта је у току и шта тренутно чека. У случају да имате
+проблема са овим прегледима, ваш Zammad администратор би требало да може да
+помогне.
 
-### How to get notified for ticket changes?
+### ,
 
-Adjust the [notification settings in your
-profile](user-profile#notifications). You can distinguish between the action
-(e.g. ticket creation), the notification channel (email and/or browser),
-your relation to the ticket (e.g. if you are the owner) and limit the
-notifications to a specific group.
+Подесите [подешавања обавештења у вашим личним
+подешавањима](user-profile#notifications). Моћете направите разлику између
+радње (нпр. отварање тикета), канала обавештења (имејл и/или претраживач),
+ваш однос према тикету (нпр. да ли
+сте његов власник) и ограничивање обавештења на одговорајућу групу.
 
-### Why is the ticket open again? I closed it already
+### Зашто је тикет поново отворен? Већ сам га затворио
 
-Depending on the settings of your Zammad instance, the reasons can
-differ. But usually the reason is that a customer replied to the ticket
-after it was set to closed. Another reason could be that a colleague
-re-opened it. If you can't see an article which fits to the description, you
-can take a look at the ticket history to find out more. Do so by opening the
-::a:: menu in the ticket sidebar tab and select **History**.
+У зависности од подешавања ваше Zammad инстанце, узрок се може
+разликовати. Али обично је разлог што је клијент
+одговорио на тикет накош што је био затворен. Још један резлог може бити то
+што га је колега поново отворио. Уколико не
+видите чланак који објашњава ситуацију, погледајте у историјат тикета за
+више информација. Исти се може
+отворити преко ::a:: менија у бочној траци тикета и одабиром радње
+**Историјат**.
 
-Your Zammad admin can adjust what should happen when a customer replies
-after a ticket got closed.
+Ваш Zammad администратор може подесити шта се тачно дешава када клијент
+одговори на затворени тикет.
 
-### What does the customer see in the ticket?
+Ваш Zammad администратор може да прилагоди шта треба да се деси када клијент
+одговори након што је тикет затворен.
 
-By default, customers only have a reduced interface. They can create
-tickets, view their own tickets (and maybe their colleague's too, depending
-on the setting) and access their profile settings. Even the ticket detail
-view only includes relevant elements for the customer. Elements, which have
-an internal purpose (like group, priority, internal notes, are not visible
-to the customer.
+### Шта клијент види у тикету?
+
+Подразумевано, клијенти имају само поједностављен интерфејс. Могу да
+отварају тикете, прегледају сопствене тикете (а можда и тикете својих
+колега, у зависности од подешавања) и да приступе подешавањима свог
+профила. Чак и детаљни приказ тикета садржи само елементе релевантне за
+клијента. Елементи који имају интерну намену (као што су група, приоритет,
+интерне напомене) нису видљиви клијенту.
 
 ::: warning
-The explanation above is based on the default Zammad settings. Be aware that the configuration of your system might be
-different. If in doubt, you should ask your admin.
+Објашњење изнад заснива се на подразумеваним Zammad подешавањима. Имајте на уму да подешавање вашег система може бити
+другачије. Ако сте у недоумици, требало би да питате свог администратора.
 :::
 
-### I can't log in. What can I do?
+### ,
 
-- Forgot your password? Try resetting it in the login screen under the
-  **Forgot password?** link by providing your email address.
-- Lost the possibility to provide your 2nd factor for
-  2-factor-authentication (2FA)? Use a recovery code and set up a new 2FA
-  method. See [2FA page](./guides/two-factor-auth) for more information.
-- Lost your 2FA recovery codes? Get in touch with your Zammad admin. This
-  also applies if your problem is not mentioned here.
+- Заборавили сте лозинку? Пробајте да је поништите на екрану за пријаву
+  преко линка **Forgot password?** уносом своје имејл адресе.
+- Изгубили сте могућност да унесете други фактор за двофакторску
+  аутентификацију (2FA)? Употребите код за поврат и подесите нови метод
+  двофакторске аутентификације. Погледајте [страну о
+  2FA](./guides/two-factor-auth) за више информација.
+- Изгубили сте своје кодове за поврат за 2FA? Обратите се свом Zammad
+  администратору. Ово важи и ако ваш проблем није поменут овде.
 
-### How can I use keyboard shortcuts?
+### Пречице на тастатури
 
-Just use them! You can find an overview of the available shortcuts by
-pressing [[?]] on your keyboard or open the overview from the [avatar
-menu](user-profile#avatar-menu) (click on your avatar in the bottom left
-corner and select **Keyboard shortcuts**).
+Само их користите! Преглед доступних пречаца можете наћи притиском на [[?]]
+на тастатури или отворити преглед из [аватар
+менија](user-profile#avatar-menu) (кликните на свог аватара у доњем левом
+углу и изаберите **Пречаце на тастатури**).
 
-Some of them depend on the location you are or action you perform
-(e.g. being in the editor or in the ticket detail view).
+Неки од њих зависе од локације на којој се налазите или радње коју
+извршавате (нпр. када сте у едитору или у приказу детаља тикете).
 
-### How to switch between dark and light mode for the user interface?
+### Како да пребаците корисничко сучеље између тамног и светлог режима?
 
-You can switch between light, dark and automatic mode (tries to adapt to
-your browser) in the [avatar menu](user-profile#avatar-menu). Open it by
-clicking your avatar in the bottom left corner and switch the toggle to the
-desired state or use the keyboard shortcut [[d]]. If no input field is
-activated, it cycles between the different modes.
+Пребацивање између светлог, тамног и аутоматског режима (покушава да се
+прилагоди вашем претраживачу) можете обавити у [аватар
+менију](user-profile#avatar-menu). Отворите га кликом на аватара у доњем
+левом углу и пребаците прекидач у жељени положај или користите пречац на
+тастатури [[d]]. Ако није активирано ниједно поље за унос, режими се
+циклички мењају.
 
-## User profile
+## Кориснички профил
 
-### How to change my profile/avatar image?
+### Како да променим слику профила/аватара?
 
-Go to the [avatar section](user-profile#avatar) in you profile settings by
-opening the avatar menu in the bottom left corner and select **Profile
-settings**. There you can upload an image, capture a photo (if your device
-has a camera) or delete already present images.
+Идите на [одељак аватара](user-profile#avatar) у подешавањима профила тако
+што ћете отворити аватар мени у доњем левом углу и изабрати **Подешавања
+профила**. Ту можете отпремити слику, снимити фотографију (ако уређај има
+камеру) или обрисати већ постојеће слике.
 
-### How to change the language of the Zammad user interface?
+### Како да променим језик корисничког сучеља Zammad-а?
 
-Go to the [language section](user-profile#language) in you profile settings
-by opening the avatar menu in the bottom left corner and select **Profile
-settings**.
+Идите на [одељак језика](user-profile#language) у подешавањима профила тако
+што ћете отворити аватар мени у доњем левом углу и изабрати **Подешавања
+профила**.
 
-### What should I do before going on vacation?
+### Шта треба да урадим пре одласка на одмор?
 
-Go to the [out of office section](user-profile#out-of-office) in you profile
-settings by opening the avatar menu in the bottom left corner and select
-**Profile settings**. There you can define a replacement agent.
+Идите на [одељак ван рада](user-profile#out-of-office) у подешавањима
+профила тако што ћете отворити аватар мени у доњем левом углу и изабрати
+**Подешавања профила**. Тамо можете одредити заменског оператера.
 
-### How to adjust the order of the overviews?
+### Управљајте и користите прегледе тикета
 
-Read on in the [overview guide](guides/overviews#reorder-overviews).
+Прочитајте даље у [водичу за преглед](guides/overviews#reorder-overviews).
 
-## Work on tickets
+## Рад на тикетима
 
-### How to assign somebody to a ticket?
+### Ваши додељени тикети
 
-In the ticket sidebar tab, you can find an **Owner** field. Choose from the
-offered agents and make sure to leave an internal note so the other agent
-knows what it is about.
+На картици бочне траке тикете можете пронаћи поље **Власник**. Изаберите
+између понуђених агената и обавезно оставите интерни коментар како би други
+оператер знао о чему се ради.
 
-If you only have a question or need some information, you could also just
-[mention a colleague](advanced-features#mention-a-user) in an article by
-using [[@]][[@]] and raise your question.
+Ако само имате питање или вам је потребна информација, можете и само
+[поменути колегу](advanced-features#mention-a-user) у чланку коришћењем
+[[@]][[@]] и поставити своје питање.
 
-### How to delete a ticket?
+### Како да обришем тику?
 
-First of all, tickets can't be deleted by agents. This is done for the
-reason of transparency and to prevent deletion by accident and arbitrary
-deletion. However, if customers want their data to be deleted (e.g. due to a
-GDPR deletion request), this can be done in Zammad. Contact your Zammad
-admin and ask to execute the deletion job.
+Пре свега, оператере не могу да обришу тикете. То је због транспарентности и
+спречавања случајног или произвољног брисања. Међутим, ако клијенти желе да
+им се подаци обришу (нпр. због захтева за брисање према GDPR-у), то се може
+учинити у Zammad-у. Контактирајте свог администратора Замма и затражите
+извршавање посла брисања.
 
-### How to use text templates?
+### Користите текстуалне шаблоне
 
-Use Zammad's [text modules](advanced-features#text-modules) by typing
-[[:]][[:]] in the article editor or choose it from the editor toolbar. If
-you need to have additional modules, ask your Zammad admin to add it for
-you.
+Користите [текстуалне модуле](advanced-features#text-modules) у Zammad-у
+тако што ћете куцати [[:]][[:]] у едитору чланка или их изаберите са алатне
+траке. Ако вам требају додатни модули, затражите од администратора да их
+дода за вас.
 
-### How to ask a colleague for help in the ticket?
+### Како да замолим колегу за помоћ у тики?
 
-The best way to do this is to [mention a
-colleague](advanced-features#mention-a-user) in an article by using
-[[@]][[@]] and raise your question. This triggers a notification for your
-colleague. Depending on your internal processes, switching the owner of the
-ticket could also be a possible option.
+Најбољи начин је да [поменете колегу](advanced-features#mention-a-user) у
+чланку помоћу [[@]][[@]] и поставите питање. То шаље обавештење вашем
+колеги. У зависности од ваших интерних процеса, промена власника тикете може
+бити такође могућа опција.
 
-### How to cite the customer's email or parts of it?
+### Како да цитирам имејл клијента или њен део?
 
-To partially or selective cite the article or parts of it, mark the text,
-you want to cite, and click on the `Reply` button next to the article. This
-can be done even multiple times (e.g. to answer different parts of the
-ticket).
+Да бисте делимично или селективно цитирали чланак или његов део, означите
+текст који желите да цитирате и кликните на дугме `Odgovori` поред
+чланка. Ово се може учинити више пута (нпр. за одговарање на различите
+делове тикете).
 
-The citation of the whole article depends on how your Zammad is
-configured. If you want to apply changes to this behavior, ask your admin to
-change it.
+Цитирање целог чланка зависи од конфигурације вашег Замма. Ако желите да
+промените ово понашање, затражите од администратора да га измени.

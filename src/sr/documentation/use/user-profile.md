@@ -1,148 +1,150 @@
 ---
 order: 7
-title: 'User profile'
+title: 'Кориснички профил'
 ---
 
-# User profile
+# Кориснички профил
 
-Adjust your account and personal settings in your user profile. Some of the
-options may not be available, depending on how your system is configured and
-your permissions. Open it from the avatar menu in the sidebar. Read on for
-more details.
+Подесите подешавања налога и лична подешавања у свом корисничком
+профилу. Неке од опција можда неће бити доступне, зависно од конфигурације
+вашег система и ваших дозвола. Отворите га из менија аватара на бочној
+траци. Прочитајте даље за више детаља.
 
-## Avatar menu
+## Кориснички мени
 
-To open the avatar menu, click on your avatar icon in the bottom left corner
-in the sidebar. This icon either shows your initials or a profile picture.
+Да бисте отворили мени аватара, кликните на иконицу свог аватара у доњем
+левом углу на бочној траци. Ова иконица приказује ваше иницијале или
+профилну слику.
 
-![Screenshot shows user detail
-panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
 
-The menu contains the following entries:
+Прикупљамо податке о уређају коришћењем следећих технологија:
 
-- **Link(s) to documentation**: depending on your roles you can see one or
-  more documentation links.
-- **Appearance**: switch between dark, light and automatic mode. The
-  automatic mode displays Zammad according to your web browser's current
-  preference.
-- **Keyboard shortcuts**: opens a popup with the available keyboard
-  shortcuts. Alternatively, press [[?]] on your keyboard to show it too.
-- **Profile settings**: opens your profile settings where you can adjust
-  your avatar, password, notification settings and much more, see next
-  section.
+- **Повезани линк(ови) ка документацији**: зависно од ваших улога, можете
+  видети један или више линкова ка документацији.
+- **Изглед**: пребацујте се између тамног, светлог и аутоматског
+  режима. Аутоматски режим приказује Zammad у складу са тренутним
+  преференцијама вашег web прегледача.
+- **Пречице на тастатури**: отвара искачући прозор са доступним пречицама на
+  тастатури. Алтернативно, притисните [[?]] на тастатури да га такође
+  прикажете.
+- **Подешавања профила**: отвара подешавања вашег профила где можете
+  подесити свој аватар, лозинку, подешавања обавештења и много тога више,
+  погледајте следећи одељак.
 
-## Profile settings
+## Подешавање профила
 
-![Screenshot shows user profile
-settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Изглед
 
-Change the appearance of Zammad. Available options:
+Промените изглед Zammad-а. Доступне опције:
 
 - Тамни изглед
 - Светли изглед
-- Automatic mode
+- Аутоматски режим
 
-The last option tries to detect your browser's preference. It depends on
-your web browser if it works.
+Последња опција покушава да детектује преференције вашег
+прегледача. Функционише ли то, зависи од вашег web прегледача.
 
 ::: tip
-If you want to switch quickly between dark and light mode, you can also use the toggle in the
-[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing [[d]].
+Ако желите брзо пребацивање између тамног и светлог режима, можете користити прекидач у
+[менију аватара](#avatar-menu) или употребити пречицу на тастатури тако што ћете једноставно притиснути [[d]].
 :::
 
 ### Језик
 
-Choose the language in which Zammad's UI is displayed.
+Изаберите језик у којем се приказује Zammad UI.
 
 ### Аватар
 
-Adjust your avatar image. By default, the initials of your user are
-displayed on a colored background. If you want to add an image, simply
-upload one or use your camera, if you have one.
+Подесите своју слику аватара. Подразумевано, иницијали вашег корисника се
+приказују на обојеној позадини. Ако желите да додате слику, једноставно је
+отпремите или користите камеру, ако је имате.
 
-After capturing or uploading an image, you can crop it. Have a look at the
-preview at the top of the right flyout.
+Након фотографисања или отпремања слике, можете је исећи. Погледајте преглед
+на врху десног бочног панела.
 
-### Out of office
+### Ван канцеларије
 
-Define absence periods (e.g. for your vacation) and designate a substitute
-to handle your tickets while you are away.
+Дефинишите периоде одсуства (нпр. за ваш одмор) и одредите замену за
+руковање вашим тикетима док сте одсутни.
 
-Your designated substitute will receive updates on new tickets and changes
-to existing ones while you're away.  Additionally, your custom overviews are
-available for this agent to keep track of your tickets. You receive
-notifications while you are absent, too.
+Ваш именовани заменик примаће ажурирања о новим тикетима и изменама
+постојећих док сте одсутни. Додатно, ваша прилагођена прегледа доступна су
+овом оператеру ради праћења ваших тикета. Добијате обавештења током ваше
+одсутности, такође.
 
 ### Лозинка
 
-Change the password of your account. To update it, provide your old
-password, the new password and confirm the new one by typing it again.
+Промените лозинку вашег налога. Да бисте је ажурирали, унесите стару
+лозинку, нову лозинку и потврдите нову тако што ћете је поново укуцати.
 
-### Two-factor authentication
+### Двофакторска аутентификација
 
-Set up a two-factor authentication (2FA) to increase the security of your
-account. Your admin must have activated at least one 2FA method. It may be
-even enforced to use a 2FA method by your admin.
+Подесите двофакторску аутентификацију (2FA) за повећање безбедности вашег
+налога. Ваш администратор мора бити активирао барем једну 2FA методу. Могуће
+је да вам је администратиор обавезао коришћење 2FA методе.
 
-After following the [2FA guide](./guides/two-factor-auth), you have to
-provide your second factor at the next login.  If you can't provide your
-configured 2FA method, contact your admin to reset it.
+Након праћења [приручника за 2FA](./guides/two-factor-auth), мораћете да
+унесете други фактор при следећем уласку у систем. Ако не можете да
+користите конфигурисану 2FA методу, контактирајте администратора да је
+ресетује.
 
 ### Уређаји
 
-Here you can find a list of all devices logged into your Zammad account. If
-necessary, you can revoke the access by clicking the delete icon in the
-"Actions" column. This ends the session on this device and requires a new
-login on this device.
+Овде можете пронаћи листу свих уређаја на којима је извршено улазак у ваш
+Zammad налог. У потреби, можете опозвати приступ кликом на икону за брисање
+у колони "Радње". Ово прекида сесију на овом уређају и захтева поновно
+улазак.
 
-### Token access
+### Приступ путем кључа
 
-Generate a personal access token for a third party application to access the
-Zammad API. After clicking the `New Personal Access Token` button, you can
-set a name, an expiration date and configure the permissions for this token.
+Генеришите лични приступни токен за апликацију треће стране како бисте
+приступили Zammad API-ју. Након клика на дугме `Novi lični pristupni token`,
+можете поставити назив, датум истека и конфигурисати дозволе за овај токен.
 
-After creating the token, it gets displayed in a dialog only once. Make sure
-to copy it because there is no possibility to access it again.
+Након креирања токена, он ће се приказати у дијалогу само једном. Обавезно
+га копирајте јер нема могућности поновног приступа.
 
-![Screenshot shows flyout with created token and copy
-button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
 ### Обавештења
 
-Adjust the notifications you get. You can adjust:
+Подесите обавештења која добијате. Можете подесити:
 
-- For which ticket actions you get notified (e.g. for new tickets, for
-  escalated tickets)
-- For which ticket you get notified based on the assignment and your
-  relation to it (e.g. only yours, not assigned, subscribed tickets)
-- On which way you get notified (only in browser or additionally via email)
-- For tickets in which group you get notified
+- За које акције на тикету желите да будете обавештени (нпр. за нове тикете,
+  за ескалиране тикете)
+- За који тикет желите да будете обавештени на основу додељивања и ваше везе
+  са њим (нпр. само ваши, недодељени, тикети које пратите)
+- На који начин желите да будете обавештени (само у прегледачу или додатно
+  путем имејла)
+- За тикете из које групе желите да будете обавештени
 
-Additionally, you can select a notification sound or disable it.
+Додатно, можете одабрати звук обавештења или га онемогућити.
 
 ::: tip
-To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.
-This is requested when Zammad tries to send you a notification the first time.
+Да бисте примали обавештења путем звука и нотификација на оперативном систему, морате дозволити Zammad-у да вам шаље обавештења.
+Ово се тражи када Zammad први пут покуша да вам пошаље обавештење.
 
-If you refused it and want to allow it now, look for an icon in the address bar where you can adjust the permissions of
-the site. It depends on your web browser, how to do it exactly. If you can't find it, search for it in the web or have
-a look at your browser's settings.
+Ако сте одбили захтев и сада желите да га дозволите, потражите икону у адресној траци где можете подесити дозволе
+за сајт. Начин зависи од вашег web прегледача. Ако је не пронађете, претражите интернет или погледајте поставке прегледача.
 :::
 
 ### Прегледи
 
-Change the order of overviews for your account. Simply drag & drop them by
-clicking the handles on the left side.  If your admin changes the order,
-your custom order remains. You can switch back to your admin's order by
-clicking the `Reset Overview Order` button.
+Промените редослед прегледа за ваш налог. Једноставно превуците их кликом на
+ручице са леве стране. Ако администратор промени редослед, ваш прилагођени
+редослед остаје непромењен. Можете се вратити на редослед администратора
+кликом на дугме `Resetuj redosled pregleda`.
 
 ### Календар
 
-Zammad allows you to subscribe to a calendar feed (ical) to see tickets in
-your favorite calendar application.  Use either the upper **Combined
-subscription URL** to subscribe to all tickets or the lower **Direct
-subscription URL**.  By choosing the latter, you can define which tickets
-based on ticket you want to include based on the state and assignment
-status.
+Zammad вам омогућава да се претплатите на календар (ицал) како бисте видели
+тикете у вашој омиљеној апликацији. Користите горњу **Комбиновани URL за
+претплату** за претплату на све тикете или доњу **Директни URL за
+претплату**. Одабиром друге опције, можете одредити које тикете желите да
+укључите на основу статуса и додељивања.

@@ -64,7 +64,7 @@ dovresti adattarlo al tuo.
 - Aggiungi canali email / social media e firme
 - Torna alle impostazioni del gruppo per aggiungere indirizzi email in
   uscita
-- Aggiungi moduli di testo
+- Aggiungere Moduli di Testo
 - Aggiungi organizzazioni
 - Configura i ruoli se necessario
 - Considera login di terze parti o integrazione LDAP per accessi più

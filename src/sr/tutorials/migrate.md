@@ -5,118 +5,104 @@ title: 'Миграција на Zammad'
 
 # Миграција на Zammad
 
-You can migrate the following data from another ticketing system to Zammad:
+Можете мигрирати следеће податке из другог тицкетинг система у Zammad:
 
-- Tickets and their Articles
-- Groups / Queues
+- Тикете и њихове чланке
+- Групе / Редове чекања
 - Организације
-- Agents and Customers (if applicable)
+- Оператере и кориснике (ако је применљиво)
 
-After migrating to Zammad, you should first adjust your FQDN settings and HTTP
-type in Zammad's admin interface under _Settings > System > Base_.
-This is important because the getting started wizard is skipped by the
-migration.
+Након миграције на Zammad, прво подесите FQDN и HTTP
+врсту у администраторском интерфејсу Zammad-а под _Подешавања > Систем > Основно_.
+Ово је важно јер чаробњак за почетак рада није позван током миграције.
 
-After that, you may want to continue with the [First
-Steps](/en/tutorials/first-steps) to configure Zammad. This has to be done
-after migration.
+Затим можете наставити са [првим корацима](/en/tutorials/first-steps) за
+конфигурисање Zammad-а. Ово је неопходно урадити након миграције.
 
-## General limitations
+## Општа ограничења
 
-There are some general limitations which you can find below. There could
-also be limitations, depending from which system you are coming. These are
-covered in the specific sections.
+Испод можете пронаћи нека општа ограничења. Могућа су и друга ограничења, у
+зависности од система са којег мигрирате. Она су обрађена у посебним
+секцијама.
 
-General limitations for all migrations:
+Општа ограничења за све миграције:
 
-- Migrations are only possible on new instances.
-- Migrations are only possible from one source. Several migration sources on
-  one instance are not supported.
-- Zammad can't migrate object types it doesn't know, migrations will fail.
-- Zammad migrates all or nothing. This means that you can't deselect
-  specific information specific groups, tickets or users.
+- Миграције су могуће само на новим инстанцама.
+- Миграције су могуће само са једног извора. Више извора миграције на једној
+  инстанци није подржано.
+- Zammad не може да мигрира објекте које не препознаје, па ће миграција бити
+  неуспешна.
+- Zammad мигрира све или ништа. То значи да не можете искључити специфичне
+  информације, групе, тикете или кориснике.
 
-## Specific migration guides
+## Специфична упутства за миграцију
 
 ::: info
 
-**Missing a migration source?**
+**Недостаје вам извор за миграцију?**
 
-If your system it not mentioned yet, you'll have two options. You can either
-use Zammad's powerful API or drop our
-[sales team a message](https://zammad.com/en/company/contact){target=_blank} for a custom
-development or even migrator sponsoring.
+Ако ваш систем није наведен, имаћете две опције. Можете користити моћан API од Zammad-а или послати поруку нашем [тиму за продају](https://zammad.com/en/company/contact){target=_blank} ради прилагођеног развоја или чак спонзорисане миграције.
 
-Migrations are available for hosted setups too! Contact support for further
-information!
+Миграције су доступне и за хостоване поставке! Контактирајте подршку за више информација!
 :::
 
 ### Freshdesk
 
 #### Ограничења
 
-Please note Freshdesk specific limitations below. These are additional
-limitations to the general ones listed.
+Имајте на уму следећа ограничења специфична за Freshdesk испод. Ово су
+додатна ограничења уз опште наведена.
 
-- Differential migrations are not supported! The general suggestion is to
-  run a test import before to learn how long the migration will take.
-- Important: Please note that migration speed highly depends on your
-  Freshdesk plan (API rate limits apply).
-- Due to API limitations, Zammad will not show the total number of objects
-  to import, but instead correct them in steps of 100.
-- Your Freshdesk plan has to provide API support. This may not apply to all
-  available plans.
-- User passwords are not migrated and will require the user to use the
-  password reset link on Zammad's login page.
+- Диференцијалне миграције нису подржане! Општа препорука је да урадите
+  тестно учитавање унапред како бисте сазнали колико ће трајати миграција.
+- Важно: Имајте на уму да брзина миграције у великој мери зависи од вашег
+  Freshdesk пакета (важе API ограничења учитавања).
+- Због API ограничења, Zammad неће приказати укупан број објеката за
+  учитавање, већ ће их исправљати у корацима од 100.
+- Ваш Freshdesk пакет мора да подржава API. Ово не важи за све доступне
+  пакете.
+- Лозинке корисника се не мигрирају и корисник ће морати да користи везу за
+  ресетовање лозинке на Zammad-овој страни за пријаву.
 
 #### Предуслови
 
-Zammad requires API access which is why you'll need to [create an API
-key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key){target=_blank}
-for the migration. The migrator will request your Freshdesk subdomain and
-API key.
+Zammad захтева API приступ због чега ћете морати да [креирате API
+кључ](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key){target=_blank}
+за миграцију. Мигратор ће затражити ваш Freshdesk поддомен и API кључ.
 
 ::: warning
-Ensure to retrieve the API key with a full administrator account. Less
-privileged users will end in a broken migration.
+Уверите се да преузимате API кључ користећи потпуни администраторски налог. Корисници са мање привилегија ће довести до неуспеле миграције.
 :::
 
-#### Import
+#### Увоз
 
-In general, you have two options on how to migrate data. If you have a
-fairly big instance with a lot of data, you may want to consider using the
-console over the browser version.
+Опште говорећи, имате две опције за миграцију података. Ако имате прилично
+велику инстанцу са много података, можда ћете размотрити коришћење конзоле
+уместо верзије у претраживачу.
 
 :::: tabs
 
-=== Via Browser
+=== Преко претраживача
 
-After installing Zammad and
-[configuring your webserver](./webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Након инсталирања Zammad-а и [конфигурисања вашег web сервера](./webserver-config), отворите у претраживачу домен (FQDN) вашег Zammad-а и следите чаробњака за миграцију. Можете га пронаћи на екрану за пријаву кликом на везу "Или мигрирајте са другог система" на дну.
 
-Depending on the number of users, tickets and Freshdesk plan this may take a
-while.
+Зависно од броја корисника, карата и Freshdesk пакета ово може потрајати.
 
-Seeing the message "_Interrupted by scheduler restart. Please restart manually
-or wait till next execution time._"?
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
+Да ли видите поруку "_Прекинуто рестартовањем заказивача. Молимо вас да рестартујете ручно или сачекате следеће време извршавања._"?
+Ако се ова порука појави након уносања ваших података за пријаву, молимо вас да будете стрпљиви.
+Миграција би требало да почне у року од 5 минута.
 
-If you receive above message after the migration begun, please consider using
-the console approach instead and reset the installation.
+Ако добијете горе наведену поруку након што је миграција започела, размотрите уместо тога коришћење приступа путем конзоле и ресетујте инсталацију.
 
-=== Via Console
+=== Преко конзоле
 
-Open console:
+Отворите конзолу:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Подесите променљиве, замените вредности у `{}` својим:
 
 ```ruby
 subdomain = '{freshdesk subdomain}.freshdesk.com'
@@ -126,7 +112,7 @@ subdomain = '{freshdesk subdomain}.freshdesk.com'
 token = '{freshdesk token}'
 ```
 
-Update Zammad settings for freshdesk import:
+Ажурирајте Zammad подешавања за фресхдеск увоз:
 
 ```ruby
 Setting.set('import_freshdesk_endpoint', "https://#{subdomain}/api/v2")
@@ -144,13 +130,13 @@ Setting.set('import_backend', 'freshdesk')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Проверите своју конфигурацију у тестном покретању:
 
 ```ruby
 Sequencer.process('Import::Freshdesk::ConnectionTest')
 ```
 
-Run the migration:
+Покрените миграцију:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Freshdesk')
@@ -162,22 +148,22 @@ AsyncImportJob.perform_later(job)
 
 ::: tip
 
-Want to see the progress of the migration?
+Желите ли да видите прогрес миграције?
 
-Use
+Користите
 
 ```ruby
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
 
-which gives you an output of the current state of the job.
+што ће вам приказати тренутно стање посла.
 
 :::
 ::::
 
-#### After migration
+#### Након миграције
 
-Run the following commands:
+Покрените следеће команде:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -191,78 +177,69 @@ Setting.set('system_init_done', true)
 Rails.cache.clear
 ```
 
-Log in with the user whose API token you provided. Use the admins email
-address and API token provided during the migration to login.
+Пријавите се са корисником чији сте API токен навели. Користите админ имејл
+адресу и API токен пружене током миграције за пријаву.
 
-All other users will have to use the password reset function or login
-methods like LDAP or one click logins.
+Сви остали корисници ће морати да користе функцију за ресетовање лозинке или
+методе пријаве попут LDAP-а или пријаве једним кликом.
 
 ### Kayako
 
-Please note Freshdesk specific limitations below. These are additional
-limitations to the general ones listed.
+Имајте на уму следећа ограничења специфична за Freshdesk испод. Ово су
+додатна ограничења уз опште наведена.
 
-- Differential migrations are not supported! The general suggestion is to
-  run a test import before to learn how long the migration will take.
-- Selfhosted installations (Kayako classic) are not supported.
-- The following ticket field customizations are being ignored (affects
-  “Scale” plan):
-  - Custom ticket states
-  - Custom ticket priorities
-  - Custom ticket types
-- Important: Please note that migration speed highly depends on your Kayako
-  plan (API rate limits apply).
-- Your Kayako plan has to provide API support. This may not apply to all
-  available plans.
-- User passwords are not migrated and will require the user to use the
-  password reset link on Zammad's login page.
+- Диференцијалне миграције нису подржане! Општа препорука је да урадите
+  тестно учитавање унапред како бисте сазнали колико ће трајати миграција.
+- Самостално хостоване инсталације (Kayako Classic) нису подржане.
+- Следеће прилагодбе поља карата се игноришу (утиче на "Scale" пакет):
+  - Стање тикета
+  - Приоритет тикета
+  - Прилагођени типови карата
+- Важно: Имајте на уму да брзина миграције у великој мери зависи од вашег
+  Kayako пакета (важе API ограничења учитавања).
+- Ваш Kayako пакет мора да подржава API. Ово не важи за све доступне пакете.
+- Лозинке корисника се не мигрирају и корисник ће морати да користи везу за
+  ресетовање лозинке на Zammad-овој страни за пријаву.
 
 #### Предуслови
 
-Zammad requires API access which is why the migrator will request your
-Kayako-URL, email address and password.
+Zammad захтева API приступ због чега ће мигратор затражити ваш Kayako URL,
+имејл адресу и лозинку.
 
 ::: warning
-Ensure to provide an user account with full administrative permissions. Less
-privileged users will end in a broken migration.
+Уверите се да наведете кориснички налог са пуним администраторским дозволама. Корисници са мање привилегија ће довести до неуспеле миграције.
 :::
 
-#### Import
+#### Увоз
 
-In general, you have two options on how to migrate data. If you have a
-fairly big instance with a lot of data, you may want to consider using the
-console over the browser version.
+Опште говорећи, имате две опције за миграцију података. Ако имате прилично
+велику инстанцу са много података, можда ћете размотрити коришћење конзоле
+уместо верзије у претраживачу.
 
 :::: tabs
 
-=== Via Browser
+=== Преко претраживача
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Након инсталирања Zammad-а и [конфигурисања вашег web сервера](/en/tutorials/webserver-config), отворите у претраживачу домен (FQDN) вашег Zammad-а и следите чаробњака за миграцију. Можете га пронаћи на екрану за пријаву кликом на везу "Или мигрирајте са другог система" на дну.
 
-Depending on the number of users, tickets and Kayako plan this may take a while.
+Зависно од броја корисника, карата и Kayako пакета ово може потрајати.
 
-Seeing the message "_Interrupted by scheduler restart. Please restart manually
-or wait till next execution time._"?
+Да ли видите поруку "_Прекинуто рестартовањем заказивача. Молимо вас да рестартујете ручно или сачекате следеће време извршавања._"?
 
-If this message appears after providing your credentials, please be patient.
-The migration should start within 5 minutes.
+Ако се ова порука појави након уносања ваших података за пријаву, молимо вас да будете стрпљиви.
+Миграција би требало да почне у року од 5 минута.
 
-If you receive above message after the migration begun, please consider
-using the console approach instead and reset the installation.
+Ако добијете горе наведену поруку након што је миграција започела, размотрите уместо тога коришћење приступа путем конзоле и ресетујте инсталацију.
 
-=== Via Console
+=== Преко конзоле
 
-Open console:
+Отворите конзолу:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Подесите променљиве, замените вредности у `{}` својим:
 
 ```ruby
 subdomain = '{kayako subdomain}.kayako.com'
@@ -276,7 +253,7 @@ email = '{kayako admin email address}'
 password = '{kayako admin password}'
 ```
 
-Update Zammad settings for Kayako import:
+Ажурирајте Zammad подешавања за Kayako увоз:
 
 ```ruby
 Setting.set('import_kayako_endpoint', "https://#{subdomain}/api/v1")
@@ -298,13 +275,13 @@ Setting.set('import_backend', 'kayako')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Проверите своју конфигурацију у тестном покретању:
 
 ```ruby
 Sequencer.process('Import::Kayako::ConnectionTest')
 ```
 
-Run the migration:
+Покрените миграцију:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Kayako')
@@ -316,22 +293,22 @@ AsyncImportJob.perform_later(job)
 
 ::: tip
 
-Want to see the progress of the migration?
+Желите ли да видите прогрес миграције?
 
-Use
+Користите
 
 ```ruby
 pp ImportJob.find_by(name: 'Import::Kayako')
 ```
 
-which gives you an output of the current state of the job.
+што ће вам приказати тренутно стање посла.
 
 :::
 ::::
 
-#### After migration
+#### Након миграције
 
-Run the following commands:
+Покрените следеће команде:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -345,93 +322,94 @@ Setting.set('system_init_done', true)
 Rails.cache.clear
 ```
 
-Log in with the user whose login credentials you provided. Use the admins
-email address and password provided during the migration to login.
+Пријавите се са корисником чије сте пријавне податке навели. Користите админ
+имејл адресу и лозинку пружене током миграције за пријаву.
 
-All other users will have to use the password reset function or login
-methods like LDAP or one click logins.
+Сви остали корисници ће морати да користе функцију за ресетовање лозинке или
+методе пријаве попут LDAP-а или пријаве једним кликом.
 
-### OTRS
+### Са OTRS
 
 #### Ограничења
 
-Additional limitations to the general one:
+Додатна ограничења уз општа:
 
-- Supported OTRS versions are: 3.1 - 6.x
-- Password migration works for OTRS >= 3.3 only (on older instances a
-  password reset within Zammad will be required)
-- If you plan to import a differential migration after the main one, do not
-  change any data in Zammad!
-- Only customers of tickets are imported
-- Zammad expects your OTRS timestamps to be UTC and won't adjust them
+- Подржане OTRS верзије су: 3.1 - 6.x
+- Миграција лозинки ради само за OTRS >= 3.3 (на старијим инстанцама ће бити
+  потребан ресет лозинке унутар Zammad-а)
+- Ако планирате да увезете диференцијалну миграцију након главне, не мењајте
+  ниједне податке у Zammad-у!
+- Увозе се само клијенти карата
+- Zammad очекује да ваши OTRS временски жигови буду у UTC формату и неће их
+  прилагођавати
 
 #### Предуслови
 
-**Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the OTRS migration plugin):**
+**Инсталирајте Znuny4OTRS-Repo која одговара вашој OTRS верзији (зависност миграционог додатка за OTRS):**
 
 - [OTRS
-  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm){target=_blank}
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-6.0.76.opm)
 - [OTRS
-  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm){target=_blank}
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-5.0.56.opm)
 - [OTRS
-  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm){target=_blank}
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-4.0.25.opm)
 - [OTRS
-  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm){target=_blank}
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-Repo-3.3.2.opm)
 
-**Install OTRS migration plugin that matches your OTRS version:**
+**Инсталирајте миграциони додатак за OTRS који одговара вашој OTRS верзији:**
 
 - [OTRS
-  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm){target=_blank}
+  6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-6.0.7.opm)
 - [OTRS
-  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm){target=_blank}
+  5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-5.0.4.opm)
 - [OTRS
-  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm){target=_blank}
+  4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-4.1.12.opm)
 - [OTRS
-  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm){target=_blank}
+  3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-ZammadMigrator-3.0.33.opm)
 
 ::: tip
-In some cases restarting your webserver may help to solve internal server
-errors.
+У неким случајевима рестартовање вашег web сервера може помоћи да решите интерне грешке сервера.
 :::
 
-### Timeout adjustments
+### Прилагођавање временских ограничења
 
-If your import runs in a timeout or you already know that this could be an
-issue, you can adjust timeouts via environment variables. To do so, set the
-environment variables `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` and
-`ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` with a higher timeout in seconds. If not
-set, the defaults apply:
+Ако се ваш увоз заврши временским ограничењем или већ знате да то може бити
+проблем, временска ограничења можете прилагодити преко променљивих
+окружења. Да бисте то урадили, поставите променљиве окружења
+`ZAMMAD_OTRS_IMPORT_READ_TIMEOUT` и `ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` на
+веће временско ограничење у секундама. Ако нису постављене, примењују се
+подразумеване вредности:
 
 |                                    | Zammad < 7.0 | Zammad ≥ 7.0  |
 |------------------------------------|--------------|---------------|
 | `ZAMMAD_OTRS_IMPORT_READ_TIMEOUT`  | 120          | 600           |
 | `ZAMMAD_OTRS_IMPORT_TOTAL_TIMEOUT` | 360          | 1200          |
 
-#### Import
+#### Увоз
 
 ::: tabs
 
-=== Via Browser
+=== Преко прегледача
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Након инсталирања Zammad-а и
+[подешавања вашег веб сервера](/en/tutorials/webserver-config), идите на
+FQDN свог Zammad-а у прегледачу и пратите чаробњака за миграцију. Можете га наћи
+на екрану за пријаву кликом на линк „Or migrate from another system”
+при дну.
 
-Depending on the size of your OTRS installation this may take a while. In such
-a case, consider using the command line version of this feature. This also
-applies if you experience timeouts during the migration.
+У зависности од величине ваше OTRS инсталације, ово може потрајати. У том
+случају размотрите употребу верзије ове функције за командну линију. Ово важи
+и ако наиђете на временска ограничења током миграције.
 
-=== Via Console
+=== Преко конзоле
 
-Open console:
+Отворите конзолу:
 
 ```ruby
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Поставите променљиве, замените вредности у `{}` својим:
 
 ```ruby
 Setting.set('import_otrs_endpoint', 'https://{domain}/otrs/public.pl?Action=ZammadMigrator')
@@ -445,16 +423,16 @@ Setting.set('import_otrs_endpoint_key', '{xxx}')
 Setting.set('import_mode', true)
 ```
 
-Run a full migration:
+Покрените потпуну миграцију:
 
 ```ruby
 Import::OTRS.start
 ```
 
-Run a differential migration (only possible after finishing an earlier full
-migration):
+Покрените диференцијалну миграцију (могуће само након завршене претходне потпуне
+миграције):
 
-All steps from "Set variables" +
+Сви кораци од „Поставите променљиве” +
 
 ```ruby
 Setting.set('system_init_done', false)
@@ -466,9 +444,9 @@ Import::OTRS.diff_worker
 
 :::
 
-#### After migration
+#### Након миграције
 
-Run the following commands:
+Покрените следеће команде:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -486,59 +464,58 @@ Rails.cache.clear
 
 #### Ограничења
 
-Additional limitations to the general one:
+Додатна ограничења уз општа:
 
-- Differential migrations are not supported! The general suggestion is to
-  run a test import before to learn how long the migration will take.
-- Important: Please note that migration speed highly depends on your Zendesk
-  plan (API rate limits apply).
-- Your Zendesk plan has to provide API support. This may not apply to all
-  available plans.
-- User passwords are not migrated and will require the user to use the
-  password reset link on the login page.
-- Objects with cyrillic strings can't be migrated. Make sure to rename them
-  before starting the migration.
+- Диференцијалне миграције нису подржане! Општа препорука је да урадите
+  тестно учитавање унапред како бисте сазнали колико ће трајати миграција.
+- Важно: Имајте на уму да брзина миграције у великој мери зависи од вашег
+  Zendesk пакета (примењују се ограничења брзине API-ја).
+- Ваш Zendesk пакет мора да пружа подршку за API. Ово можда не важи за све
+  доступне пакете.
+- Корисничке лозинке се не мигрирају и корисник ће морати да употреби линк
+  за поништавање лозинке на страни за пријаву.
+- Објекти са ћириличним текстом не могу да се мигрирају. Обавезно их
+  преименујте пре почетка миграције.
 
 #### Предуслови
 
-Zammad requires API access which is why you’ll need to [create an API
-key](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token){target=_blank}
-for the migration. The migrator will request your Zendesk-URL, email address
-and API key.
+Zammad захтева приступ API-ју, због чега ћете морати да [креирате API
+кључ](https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token){target=_blank}
+за миграцију. Алат за миграцију ће затражити вашу Zendesk URL адресу, имејл
+адресу и API кључ.
 
 ::: warning
-Ensure to retrieve the API key with a full administrator account. Less
-privileged users will end in a broken migration.
+Уверите се да преузимате API кључ користећи потпуни администраторски налог. Корисници са мање привилегија ће довести до неуспеле миграције.
 :::
 
-#### Import
+#### Увоз
 
-In general, you have two options on how to migrate data. If you have a
-fairly big instance with a lot of data, you may want to consider using the
-console over the browser version.
+Опште говорећи, имате две опције за миграцију података. Ако имате прилично
+велику инстанцу са много података, можда ћете размотрити коришћење конзоле
+уместо верзије у претраживачу.
 
 :::: tabs
 
-=== Via Browser
+=== Преко прегледача
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Након инсталирања Zammad-а и
+[подешавања вашег веб сервера](/en/tutorials/webserver-config), идите на
+FQDN свог Zammad-а у прегледачу и пратите чаробњака за миграцију. Можете га наћи
+на екрану за пријаву кликом на линк „Or migrate from another system”
+при дну.
 
-Depending on the the number of users, tickets and Zendesk plan, this may take a
-while.
+У зависности од броја корисника, тикета и Zendesk пакета, ово може
+потрајати.
 
-=== Via Console
+=== Преко конзоле
 
-Open console:
+Отворите конзолу:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Поставите променљиве, замените вредности у `{}` својим:
 
 ```ruby
 subdomain = '{zendesk url}'
@@ -553,7 +530,7 @@ token = '{zendesk token}'
 
 ```
 
-Update Zammad settings:
+Освежите Zammad подешавања:
 
 ```ruby
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
@@ -575,13 +552,13 @@ Setting.set('import_backend', 'zendesk')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Проверите своје подешавање пробним покретањем:
 
 ```ruby
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
-Run the migration:
+Покрените миграцију:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Zendesk')
@@ -593,23 +570,23 @@ AsyncImportJob.perform_later(job)
 
 ::: tip
 
-Want to see the progress of the migration?
+Желите ли да видите прогрес миграције?
 
-Use
+Користите
 
 ```ruby
 pp ImportJob.find_by(name: 'Import::Freshdesk')
 ```
 
-which gives you an output of the current state of the job.
+што ће вам приказати тренутно стање посла.
 
 :::
 
 ::::
 
-#### After migration
+#### Након миграције
 
-Run the following commands:
+Покрените следеће команде:
 
 ```ruby
 Setting.set('import_mode', false)
@@ -623,8 +600,8 @@ Setting.set('system_init_done', true)
 Rails.cache.clear
 ```
 
-Log in with the user whose API token you provided. Use the admins email
-address and API token provided during the migration to login.
+Пријавите се са корисником чији сте API токен навели. Користите админ имејл
+адресу и API токен пружене током миграције за пријаву.
 
-All other users will have to use the password reset function or login
-methods like LDAP or one click logins.
+Сви остали корисници ће морати да користе функцију за ресетовање лозинке или
+методе пријаве попут LDAP-а или пријаве једним кликом.

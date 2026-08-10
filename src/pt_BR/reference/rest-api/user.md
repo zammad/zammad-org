@@ -11,7 +11,7 @@ Observe que os exemplos abaixo foram fornecidos com permissões `admin` e
 disponíveis em situações específicas.
 :::
 
-## Me - current user
+## Eu - usuário atual
 
 Permissão necessária: any
 
@@ -136,7 +136,7 @@ interface do Zammad ou o endpoint de privacidade de dados em vez disso (veja
 a seção abaixo). Usar um deles garante que informações relacionadas, como
 tickets, também sejam excluídas.
 
-### Via data privacy endpoint
+### Via endpoint de privacidade de dados
 
 Permissão necessária: `admin.data_privacy`
 
@@ -157,7 +157,7 @@ Solicitação `POST` enviada: `/api/v1/data_privacy_task`
 :::
 ::::
 
-### Via user endpoint <Badge type="danger" text="not recommended" />
+### Via endpoint de usuário <Badge type="danger" text="not recommended" />
 
 Permissão necessária: `admin.user`
 

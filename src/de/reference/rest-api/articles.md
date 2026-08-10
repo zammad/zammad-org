@@ -101,7 +101,7 @@ in der Lage sind, die Artikel zu lesen (ähnlich wie Zammads Trigger,
 die in Tickets angezeigt werden).
 :::
 
-## List articles by ticket
+## Artikel je Ticket auflisten
 
 Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
@@ -113,7 +113,7 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
 :::
 
-## List specific article
+## Spezifische Artikel auflisten
 
 Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 
@@ -137,7 +137,7 @@ Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
 `ticket.agent` ist hierfür zwingend erforderlich.
 :::
 
-### Plain article
+### Einfacher Artikel
 
 :::: details
 
@@ -154,7 +154,7 @@ Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
 :::
 ::::
 
-### Article with attached files
+### Artikel mit angehängten Dateien
 
 :::: details
 
@@ -171,7 +171,7 @@ Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
 :::
 ::::
 
-### Article with inline images
+### Artikel mit Inline-Bildern
 
 Inline-Bilder können durch Angabe von Daten-URIs in Ihrem HTML-Markup
 verwendet werden.
@@ -191,7 +191,7 @@ verwendet werden.
 :::
 ::::
 
-## Receive attachments
+## Anhänge empfangen
 
 Jetzt, wo Sie all diese schicken Anhänge in Ihren Tickets haben, möchten Sie
 vielleicht bestimmte Anhänge herunterladen.

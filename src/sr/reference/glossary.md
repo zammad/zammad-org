@@ -11,463 +11,454 @@ title: Речник
 <VPGlossary>
 
 Admin
-: An admin(istrator) is a user in Zammad who has special rights and manages your
-  Zammad. An admin can, for example, configure user permissions, time recording
-  settings, automation and text modules.
-  If you're looking for someone to adjust anything in your Zammad, your admin
-  is the right person to ask for.
+: Администратор је корисник у Zammad-у који има посебна права и управља вашим
+  Zammad-ом. Администратор може на пример да конфигурише дозволе корисника, подешавања
+  евидентирања времена, аутоматизацију и модуле за текст.
+  Ако тражите особу која ће прилагодити било шта у вашем Zammad-у, ваш администратор
+  је особа коју треба да контактирате.
 
-Agent
-: An agent is a user in Zammad who works on tickets and responds to customer
-  inquiries. Agents can be admins too, meaning that they can change settings,
-  user permissions and so on (see above).
+Оператер
+: Оператер је корисник у Zammad-у који ради на случајевима и одговара на упите
+  клијената. Оператери могу бити и администратори, што значи да могу да мењају подешавања,
+  дозволе корисника и слично (види горе).
 
 API
-: An API (Application Programming Interface) is a set of rules and protocols
-  that allow different software applications to communicate with each other.
-  It allows you to connect third party systems with your Zammad (e.g. social
-  media, messengers, monitoring tools).
+: API (Програмерски интерфејс апликације) је скуп правила и протокола
+  који омогућавају различитим софтверским апликацијама да комуницирају једна са другом.
+  Омогућава вам да повезете системе трећих страна са својим Zammad-ом (нпр. друштвене
+  мреже, месинџере, алате за мониторинг).
 
-  You can learn more on our
-  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
-  as well as in our [API reference](/en/reference/rest-api/intro).
+  Више можете сазнати на нашој
+  [ландинг страници API-ја](https://zammad.com/en/product/features/rest-api){target=_blank}
+  као и у нашем [референтном приручнику за API](/en/reference/rest-api/intro).
 
-Article
-: Each item within a ticket is called article. Ticket articles
-  can be internal (only agents can see them) or public
-  (customers can see them too; e.g. public notes or outgoing emails) and include
-  formatted text as well as attachments and inline images.
+Чланак
+: Свака ставка унутар тикета назива се чланак. Чланци у тикетима
+  могу бити интерни (видљиви само оператерима) или јавни
+  (видљиви и клијентима; нпр. јавне напомене или одлазне имејл поруке) и укључују
+  форматирани текст као и прилоге и уграђене слике.
 
-Automation
-: There are many processes that can be automated with Zammad.
-  This means that certain actions take place automatically.
-  An automation can be time-based or action-based and should cover every
-  conceivable automation scenario.
-  An example could be the recurring deletion of customers who are no longer
-  needed or the assignment of groups based on ticket attributes.
+Аутоматизација
+: Постоји много процеса који се могу аутоматизовати помоћу Zammad-а.
+  То значи да се одређене радње извршавају аутоматски.
+  Аутоматизација може бити временски или акционо базирана и треба да покрије сваки
+  замисливи сценарио аутоматизације.
+  Пример може бити периодично брисање корисника који више нису потребни
+  или додељивање група на основу атрибута случаја.
 
-Autosave
-: Zammad's autosave feature makes sure that no work is lost. So if your browser
-  crashes, simply log in again and resume where you were before.
-  Learn more on our
-  [Autosave landing page](https://zammad.com/en/product/features/autosave){target=_blank}.
+Аутоматско чување
+: Функција аутоматског чувања у Zammad-у осигурава да се рад не изгуби. Дакле, ако ваш претраживач
+  падне, једноставно се поново улогујте и наставите тачно одакле сте стали.
+  Сазнајте више на нашој
+  [ландинг страници за аутоматско чување](https://zammad.com/en/product/features/autosave){target=_blank}.
 
-Branding
-: Every company has a different identity. This is why Zammad lets you add your
-  logo, signature, links and other things!
+Брендирање
+: Свака компанија има другачији идентитет. Због тога вам Zammad омогућава да додате свој
+  лого, потпис, линкове и друге елементе!
 
-Changelog
-: With every new release comes a new changelog. It is basically a list of all
-  the things that have changed, from new enhancements to bug fixes.
+Дневник промена
+: Свако ново издање доноси нови дневник промена. То је заправо списак свега
+  што се променило, од нових побољшања до исправки грешака.
 
   Све их можете пронаћи на нашој
   [GitHub страни](https://github.com/zammad/zammad/blob/stable/CHANGELOG.md){target=_blank}!
 
 Checkmk
-: Checkmk is a powerful IT monitoring tool that can send real-time status
-  alerts to Zammad via email or REST API. Set these alerts up in Checkmk,
-  and Zammad will automatically create, update and close tickets based on
-  the health of your system.
+: Checkmk је моћан алат за IT мониторинг који може да шаље упозорења о статусу
+  у реалном времену до Zammad-а путем електронске поште или REST API-ја. Подесите ова упозорења у Checkmk-у,
+  а Zammad ће аутоматски стварати, ажурирати и затварати случајеве на основу
+  здравља вашег система.
 
 Clearbit
-: Clearbit is a service designed to collect information on your
-  contacts. Thus, new queries from unknown users in Zammad can be automatically
-  enriched with information such as company, number of employees,
-  annual turnover, industry and much more.
+: Clearbit је сервис дизајниран за прикупљање информација о вашим
+  контактима. Тако се нови упити непознатих корисника у Zammad-у могу аутоматски
+  обогатити информацијама попут компаније, броја запослених,
+  годишњег промета, индустрије и много тога другог.
 
-Conflict warning
-: When two agents edit the same ticket at the same time, a lot can go wrong -
-  from duplicate replies to overwritten messages. Zammad helps you to avoid
-  this with its integrated conflict warning. So if you see another agent's
-  avatar and a little pen at the bottom of your ticket, it means the other agent
-  is currently editing it.
+Упозорење на сукоб
+: Када два оператера истовремено уређују исти случај, много тога може поћи по злу -
+  од дупликата одговора до преписаних порука. Zammad вам помаже да избегнете
+  ово захваљујући интегрисаном упозорењу на сукоб. Дакле, ако видите аватар другог оператера
+  и малу оловку на дну случаја, то значи да га други оператер тренутно уређује.
 
-Content sidebar
-: Right sidebar in the ticket view which includes the sidebar tabs and the
-  active sidebar (if opened).
+Садржај траке
+: Десна трака у приказу тикета која укључује картице траке и
+  активну траку (ако је отворена).
 
-Core workflows
-: This feature allows you to configure dynamic fields and ticket masks based on
-  attribute available in Zammad. For example you can disable or hide fields,
-  make them visible based on other fields or attributes, make them mandatory and
-  much more!
+Основни радни токови
+: Ова функција омогућава вам конфигурисање динамичких поља и маски тикета на основу
+  атрибута доступних у Zammad-у. На пример, можете онемогућити или сакрити поља,
+  учинити их видљивим на основу других поља или атрибута, учинити их обавезним и
+  много више!
 
 CTI
-: CTI stands for Computer Telephony Integration and allows you to collect
-  detailed information on all your incoming and outgoing calls.
-  This includes, for example, a call log, an overview of which agent is
-  currently on a call, a caller ID search, and even a Do-Not-Disturb-Mode.
+: CTI означава Computer Telephony Integration и омогућава прикупљање
+  детаљних информација о свим вашим улазним и излазним позивима.
+  То укључује, на пример, евиденцију позива, преглед којег оператера је
+  тренутно на позиву, претрагу броја позиваоца, па чак и Do-Not-Disturb-Mode.
 
-Custom development (CD)
-: We are constantly working on improving Zammad, and we keep adding new
-  features with every single release. However, sometimes our customers might
-  require a very specific new feature, addition, or adjustment that is either
-  very urgent or very particular to their individual use case.
-  This is when a custom development can take place: We offer the customer to
-  develop the desired feature at a price that we agree upon previously
-  (which is based on the expected hours needed for completion).
+Прилагођени развој (CD)
+: Континуирано радимо на унапређењу Zammad-а и додајемо нове
+  функције са сваким издањем. Међутим, понекад наши клијенти могу
+  захтевати веома специфичну нову функцију, додатак или прилагодбу која је или
+  веома хитна или веома специфична за њихов појединачни случај употребе.
+  Тада може доћи до прилагођеног развоја: нудимо клијенту да
+  развије жељену функцију по цени на коју се унапред договоримо
+  (која је заснована на очекиваном броју сати потребних за завршетак).
 
-Customer
-: A customer is a person you communicate with via Zammad.
-  For each customer there is a profile page showing all the tickets and more
-  information. Customers can be assigned to one or more organizations.
-  Each customer can access their individual
-  Customer Interface, where they see all their tickets with the current
-  status and live updates.
+Клијент
+: Клијент је особа с којом комуницирате путем Zammad-а.
+  За сваког клијента постоји страна профила која приказује све тикете и више
+  информација. Клијенти се могу доделити једној или више организација.
+  Сваки клијент може приступити свом индивидуалном
+  Корисничком интерфејсу, где види све своје тикете са тренутним
+  статусом и ажурирањима у реалном времену.
 
-Dashboard
-: The dashboard is the individual welcome page in Zammad and gives
-  you feedback about your work.
-  Here you can find all sorts of overviews, such as the open tickets,
-  the average waiting time, or the reopening rate. You can also see what your
-  colleagues are doing by checking the Activity Stream.
+Контролна табла
+: Контролна табла је индивидуална почетна страна у Zammad-у и даје
+  повратне информације о вашем раду.
+  Овде можете пронаћи разне прегледе, као што су отворени тикети,
+  просек времена чекања или стопа поновног отварања. Такође можете видети шта ваши
+  колеге раде провером активности токова.
 
-Dialog
-: A dialog is a element which pops up in the middle of the screen because of its
-  importance. An example could be the dialog which asks you to save or discard
-  your unsaved changes.
+Дијалог
+: Дијалог је елемент који се појављује у средини екрана због своје
+  важности. Пример може бити дијалог који вас пита да ли желите да сачувате или одбаците
+  несаучуване измене.
 
-Documentation
-: You probably have noticed already: you are reading a part of Zammad's
-  documentation. 😉
+Документација
+: Вероватно сте већ приметили: читате део документације Zammad-а. 😉
 
 Elasticsearch
-: Zammad offers an Elasticsearch integration (a free and open search engine)
-  that makes the search process within Zammad super fast and powerful. You
-  can even connect a reporting tool like Grafana to your Elasticsearch to
-  create powerful reports and statistics.
+: Zammad нуди интеграцију са Elasticsearch-ом (бесплатним и отвореним системом за претрагу)
+  који чини процес претраге унутар Zammad-а изузетно брзим и моћним. Можете
+  чак повезати алат за извештавање као што је Grafana са вашим Elasticsearch-ом да
+  креирате напредне извештаје и статистике.
 
-Escalation
-: An escalation is what happens after the deadline for a ticket has passed. You
-  can configure it within Zammad's SLA (Service Level Agreement) feature. An
-  escalated ticket is marked red in your taskbar and the overviews.
+Ескалација
+: Ескалација је оно што се дешава након што истекне рок за тике. Можете
+  га подесити унутар Zammad-ове SLA (Service Level Agreement) функције. Тике
+  који је ескалиран означен је црвено у вашој траци задатака и прегледима.
 
-Exchange integration
-: The Exchange integration allows you to sync your contacts from your
-  Exchange address book to Zammad. Every time a contact is updated
-  in Exchange, it will be reflected in Zammad. This gives you direct
-  access to all your contacts in your Zammad.
+Интеграција са Exchangem
+: Интеграција са Exchangem омогућава синхронизацију ваших контаката из именика
+  Exchanga у Zammad. Сваки пут када се контакт ажурира
+  у Exchange-u, то ће се одразити у Zammad-у. Ово вам даје директан
+  приступ свим вашим контактима унутар Zammad-а.
 
-External authentication
-: External authentication is an easy, one-click option for your users to log
-  into Zammad. It has various benefits: not only is it faster but it also
-  means that your users will have to remember fewer passwords.
-  Zammad currently supports more than ten login providers, such as Facebook,
-  GitHub, GitLab, Google, or Microsoft.
+Спољашна аутентификација
+: Спољашна аутентификација је једноставна опција једним кликом за ваше кориснике да се
+  пријаве у Zammad. Има бројне предности: није само бржа, већ значи
+  да ће ваши корисници морати да памте мање лозинки.
+  Zammad тренутно подржава више од десет провајдера пријављивања, као што су Facebook,
+  GitHub, GitLab, Google или Microsoft.
 
-Feature
-: A feature is a specific capability or functionality that Zammad provides to
-  you such as our integrations, productivity tools or additional channels.
-  We keep adding new features with every release.
+Функционалност
+: Функционалност је специфична могућност или функција коју Zammad пружа
+  вама, као што су наше интеграције, алати за продуктивност или додатни канали.
+  Свако издање доноси нове функционалности.
 
-Feature request
-: You can let us know if you are missing a particular feature in Zammad.
-  We collect all of your wishes in our community forum in the
-  [feature request category](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
-  If a request comes in regularly and we think that it would be a
-  great addition, we'll put it on our roadmap and start working on it.
+Захтев за функционалност
+: Можете нам јавити ако вам недостаје одређена функционалност у Zammad-у.
+  Сва ваша жеља сакупљамо на нашем заједничком форуму у
+  [категорији за захтеве](https://community.zammad.org/c/stuff-you-like-zammad-to-have-feel-free-to-discuss-and-add-proposals/6/all){target=_blank}.
+  Ако се захтев редовно јавља и сматрамо да би био
+  одличан додатак, ставити ћемо га на наш пут развоја и почети да радимо на њему.
 
-Feature sponsoring
-: If an organization urgently requires one of the features on the list,
-  they can fast-forward the development and put it on top of the list by
-  sponsoring it, which means that they cover the costs for the development.
+Спонзорисање функционалности
+: Ако организација хитно захтева једну од функционалности са листе,
+  може убрзати развој и ставити је на врх листе спонзоришући је, што значи да покривају трошкове развоја.
 
 GitHub
-: GitHub is a service for the version management of software development
-  projects. It uses Git, a software that tracks changes in file sets.
-  Here at Zammad, we use it to maintain and enhance our code.
+: GitHub је услуга за управљање верзијама софтверских развојних
+  пројеката. Користи Git, програм који прати измене у скуповима фајлова.
+  У Zammad-у га користимо за одржавање и унапређење нашег кода.
 
-  As Zammad is an open-source project, many developers and tech-lovers from all
-  over the world contribute to it. GitHub is where we coordinate all of this.
-  Follow the link to find [our repositories](https://github.com/zammad){target=_blank}.
+  Пошто је Zammad пројекат отвореног кода, многи програмери и љубитељи технологије са свих
+  делова света му доприносе. GitHub је место где координирамо све ово.
+  Притисните на линк да пронађете [наше repo-зиторијуме](https://github.com/zammad){target=_blank}.
 
-  Besides our own repos, Zammad also has an integration for GitHub.
-  Using it allows you to show all relevant information about your
-  issues directly in a sidebar tab, such as status or assignees.
+  Поред сопствених repo-зиторијума, Zammad такође има интеграцију за GitHub.
+  Њено коришћење вам омогућава да прикажете све релевантне информације о вашим
+  проблемима директно у картици бочне траке, као што су статус или додељени.
 
 GitLab
-: GitLab is similar to GitHub.
-  Here at Zammad, we use it for our internal development.
+: GitLab је сличан GitHub-у.
+  У Zammad-у га користимо за наш интерни развој.
 
-  There is also an integration that allows users to connect GitLab to Zammad
-  so that all their issues and their corresponding changes are reflected in
-  Zammad's sidebar tab as well.
+  Постоји и интеграција која омогућава корисницима да повежу GitLab са Zammad-ом
+  тако да се сви њихови проблеми и одговарајуће измене одражавају у
+  картици бочне траке Zammad-а.
 
 Grafana
-: Grafana is an open-source reporting tool. It Elasticsearch as data source.
-  Hosted customers with a Plus plan can use it to get detailed statistics of
-  their instance. Self hosting Zammad users can use Grafana as well.
+: Grafana је алат за извештавање отвореног кода. Користи Elasticsearch као извор података.
+  Хостовани корисници са Plus планом могу га користити за детаљне статистике своје
+  инстанце. Корисници Zammad-а који хостују сами такође могу користити Grafana.
 
-Groups
-: Groups are a synonym for departments or processing groups.
-  Incoming tickets can be assigned to groups.
-  Within the group, an owner can be defined, who is then responsible for
-  this ticket. The access to tickets is controlled via the roles. In a role you
-  can define which permission it has based on the different groups.
-  The possible permissions are "read", "create", "change", "overview" and
-  "full" (or none of them).
+Групе
+: Групе су синоним за одељења или групе за обраду.
+  Долазни тикети се могу доделити групама.
+  Унутар групе може се дефинисати власник, који тада одговара за
+  тај тике. Приступ тикетима контролише се путем улога. У улози можете
+  дефинисати које дозволе има на основу различитих група.
+  Могуће дозволе су "читање", "креирање", "измена", "преглед" и
+  "пуни" (или ниједна од њих).
 
-  If you have worked with the OTRS system in the past, you might remember the
-  principle of "queues". The groups in Zammad are the same as the queues in
-  OTRS.
+  Ако сте раније радили са системом OTRS, можда се сећате
+  принципа "редова". Групе у Zammad-у су исте као редови у
+  OTRS-у.
 
 Icinga
-: Icinga is a monitoring system that monitors the availability of an
-  organization's entire system infrastructure.
-  It can be integrated into Zammad so that it triggers a ticket in case
-  of a warning situation.
+: Icinga је систем за мониторисање који прати доступност целе
+  системске инфраструктуре организације.
+  Може се интегрисати у Zammad тако да покреће тике у случају
+  ситуације упозорења.
 
 i-doit
-: i-doit is a CMDB (Configuration Management Data Base).
-  It helps you to keep an eye on every piece of the physical and digital
-  infrastructure. A corresponding integration makes it possible to connect
-  it to Zammad, where it adds a new tab to Zammad's ticket sidebar so
-  you can link to existing i-doit objects for easy reference.
-  It also allows you to create Zammad tickets in i-doit.
+: i-doit је CMDB (Configuration Management Data Base).
+  Помаже вам да одржавате преглед над сваким делом физичке и дигиталне
+  инфраструктуре. Одговарајућа интеграција омогућава повезивање
+  са Zammad-ом, где додаје нову картицу у бочну траку тикета Zammad-а тако
+  да можете линковати постојеће i-doit објекте за лакши преглед.
+  Такође вам омогућава креирање Zammad тикета унутар i-doit-а.
 
-Issue-tracking system
-: Issue trackers are usually systems that track processes on a technical level.
-  Two of the best-known examples are GitHub and GitLab.
+Систем за праћење проблема
+: Системии за праћење проблема су обично системи који прате процесе на техничком нивоу.
+  Два најпознатија примера су GitHub и GitLab.
 
-  Zammad is also often referred to as an issue-tracking system.
-  However, as a helpdesk, it focuses on communication at the customer
-  level rather than the technical level.
+  Zammad се такође често назива системом за праћење проблема.
+  Међутим, као хелпдеск, фокусира се на комуникацију на нивоу клијента,
+  а не на техничком нивоу.
 
 Kibana <Badge type="info" text="on-premise only" />
-: Kibana is a browser-based open-source reporting tool that focuses on data
-  evaluation. It was developed by Elastic, which is why it is not a surprise
-  that it uses data from Elasticsearch for its analytics.
+: Kibana је алат за извештавање отвореног кода заснован на browseru који се фокусира на евалуацију података.
+  Развио га је Elastic, због чега није изненађујуће
+  што користи податке из Elasticsearch-а за своју аналитику.
 
-  Kibana can be integrated with Zammad, allowing for helpdesk data to be
-  mapped in the reporting tool.
+  Kibana се може интегрисати са Zammad-ом, омогућавајући мапирање података хелпдеска у алату за извештавање.
 
-Knowledge base
-: Think of a very extensive set of FAQs - that's exactly what the
-  Zammad knowledge base is. It collects all important information:
-  definitions, processes, how-tos, organizational charts, etc.
+База знања
+: Замислите веома обиман скуп FAQ-ova - то је тачно оно што је
+  база знања Zammad-а. Сакупља сву важну информацију:
+  дефиниције, процесе, упутства, организационе шеме итд.
 
-  Knowledge base articles can be either internal or external, so you can
-  either show them to the world (good for information on your product or
-  service, for example) or keep them for your team (e.g. for internal processes
-  or team info).
+  Чланци базе знања могу бити или интерни или екстерни, тако да их можете
+  приказати свету (добро за информације о вашем производу или
+  услузи, на пример) или задржати за ваш тим (нпр. за интерне процесе
+  или информације о тиму).
 
 LDAP
-: A Lightweight Directory Access Protocol (LDAP) helps provide information
-  about your users within Zammad. Authentication of users against the LDAP
-  and LDAP role mapping to Zammad roles are also possible.
+: Протокол за приступ именику укратко (LDAP) помаже у обезбеђивању информација
+  о вашим корисницима унутар Zammad-а. Аутентификација корисника према LDAP-у
+  и мапирање LDAP улога на Zammad улоге су такође могуће.
 
-Macro
-: A macro is a series of actions. By starting the macro, the actions are
-  triggered and executed, so users don't have to work through each
-  individual step separately. It saves an enormous amount of time and ensures
-  that no step is forgotten.
+Макро
+: Макро је низ акција. Покретањем макра покрећу се и извршавају акције, па корисници не морају ручно да пролазе кроз сваки
+  појединачни корак. Штеди огромну количину времена и осигурава
+  да се ниједан корак не заборави.
 
-  You can define your own macros and perform actions based on all available
-  attributes in the ticket.
+  Можете дефинисати сопствене макре и извршавати акције на основу свих доступних
+  атрибута у тикету.
 
-Main content
-: The middle section of the Zammad layout. Depending on the view you have
-  selected, it shows the dashboard, overviews, the ticket detail view, the
-  create-ticket form or other screens.
+Главни садржај
+: Средњи део Zammad распореда. У зависности од приказа који сте
+  изабрали, приказује контролну таблу, прегледе, детаљни приказ тикета,
+  форму за отварање тикета или друге екране.
 
-Main content footer
-: The action row at the bottom of the Main Content area. It holds the primary
-  actions of the currently active view, such as `Create`, `Apply Template` or
-  `Discard Changes` on the create-ticket form.
+Подножје главног садржаја
+: Ред са радњама на дну области главног садржаја. Садржи примарне
+  радње тренутно активног приказа, као што су `Create`, `Apply Template` или
+  `Discard Changes` на форми за отварање тикета.
 
-Mentions
-: Mentions are a Zammad feature that allows you to tag another agent in a
-  ticket. Just type [[@]][[@]] and the name. The selected person will be notified
-  and will be watching the ticket from now on.
+Помињања
+: Помињања су функционалност Zammad-а која вам омогућава да означите другог оператера у тикету.
+  Само укуцајте [[@]][[@]] и име. Изабрана особа ће бити обавештена
+  и пратиће тике од сада па надаље.
 
-Migrator / migration wizard
-: If a company wants to switch from another helpdesk software to Zammad,
-  they often have one concern: What about their existing data?
-  That's why we have built our migration wizards that help with migrating all
-  data.
+Migrator / Чаробњак за миграцију
+: Ако компанија жели да пређе са другог хелпдеск софтвера на Zammad,
+  често има једну бригу: Шта ћемо са њиховим постојећим подацима?
+  Зато смо изградили наше чаробњаке за миграцију који помажу при миграцији свих
+  података.
 
 Monit
-: Monit is an open-source monitoring tool that relies on a simple setup and
-  a strong community. You can integrate it with Zammad - this way,
-  a ticket is created every time you receive an email in Monit.
+: Monit је алат за мониторисање отвореног кода који се ослања на једноставно подешавање и
+  јаку заједницу. Можете га интегрисати са Zammad-ом - на овај начин,
+  тике се креира сваки пут када примите емаил у Monit-у.
 
-Navigation tab
-: One element of the primary navigation like **Overviews** or
-  **Knowledge Base**.
+Навигациони језичак
+: Један елемент примарне навигације као што су **Прегледи** или
+  **База знања**.
 
 Nagios
-: Nagios is another monitoring tool that alerts IT teams when an incident
-  happens. It can be integrated with Zammad so that a ticket is created in
-  case of an alert.
+: Nagios је још један алат за мониторисање који обавештава IT тимове када се деси инцидент.
+  Може се интегрисати са Zammad-ом тако да се тике креира у
+  случају алармирања.
 
 On-Premise
-: This term means that Zammad is not provided as a cloud service of the
-  company Zammad, but runs on a server which is controlled by a user or
-  customer of Zammad. Self hosting means the same.
+: Овај термин значи да Zammad није доступан као цлоуд сервис компаније
+  Zammad, већ се покреће на серверу који контролише корисник или
+  клијент Zammad-а. Самостално хостовање значи исто.
 
-Organization
-: An organization is a grouping of customers that operate within the same
-  company or company group.
-  A customer, whose organization is "sharing", has access to all tickets of its
-  organization.
+Организација
+: Организација је груписање клијената који послују у оквиру исте
+  компаније или групе компанија.
+  Клијент чија је организација "дељење" има приступ свим тикетима своје
+  организације.
 
-Owner
-: The owner of a ticket is the person responsible for and working on it.
-  The owner can be changed to another agent.
-  In this case, it is recommended to leave a handover note in the ticket so
-  that the new owner knows what to do.
+Власник
+: Власник тикета је особа одговорна за њега и која на њему ради.
+  Власника се може променити у другог оператера.
+  У овом случају, препоручује се оставити белешку о предаји у тикету тако
+  да нови власник зна шта треба да уради.
 
-Parent/child relationship
-: If one ticket results in other subtasks (or additional correspondences),
-  you can split it into several tickets. The main one will then be the parent
-  ticket and the tickets with related subtopics are children.
-  By the way: in the same way, you can also merge two tickets into one.
+Однос родитељ/дете
+: Ако један тике резултира другим подзадацима (или додатним кореспонденцијама),
+  можете га поделити на неколико тикета. Главни ће тада бити родитељски
+  тике, а тикети са повезаним подтемама су деца.
+  Успут: на исти начин, можете и спојити два тикета у један.
 
 Placetel
-: Placetel is a Cloud Telephone System that allows users to make phone calls
-  via VoIP. Use your regular phone number and call someone directly on their
-  mobile or landline while still having all communication in one place
-  in Zammad.
+: Placetel је цлоудсистема за телефонске позиве која корисницима омогућава да обављају телефонске позиве
+  преко VoIP-а. Користите свој редовни број телефона и зовите некога директно на њихов
+  мобилни или фиксни, док и даље имате сву комуникацију на једном месту
+  у Zammad-у.
 
-  Integrating a Placetel account with Zammad provides users with a call log,
-  making the history of their correspondences even more accurate.
-  Callers are identified directly by their caller ID - a key function that
-  saves agents a lot of time when assigning callers.
+  Интеграција Placetel налога са Zammad-ом даје корисницима евиденцију позива,
+  чинећи историју њихове кореспонденције још прецизнијом.
+  Позиваоци се идентификују директно преко идентификатора броја позиваоца - кључна функција која
+  штеди оператерима много времена при додељивању позиваоца.
 
-Primary navigation
-: The primary navigation is the left sidebar in Zammad which contains the
-  taskbar, the search, notifications, knowledge base and eventually more,
-  depending on your system.
+Навигациона трака
+: Навигациона трака је лева бочна трака у Zammad-у која садржи картице навигације,
+  претрагу, обавештења и много више ставки, у зависности од вашег система.
 
-Priority
-: Every ticket gets assigned a priority. By default, the priority is 2 (normal).
-  Additionally there are the priorities 1 (low) and 3 (high). You can even
-  add more priorities to your Zammad.
+Приоритет
+: Сваки тике добија додељен приоритет. Подразумевано, приоритет је 2 (нормалан).
+  Поред тога постоје приоритети 1 (низак) и 3 (висок). Можете чак
+  додати више приоритета у ваш Zammad.
 
-Release
-: Every few months, we release a new version of Zammad which is called a
-  release. Every release adds new features to our software. There are major and
-  minor releases:
-  major releases (such as Zammad 1.0, 2.0, etc.) bring major changes.
-  Minor releases (such as 1.1, 2.1, etc.) are released in the meantime and bring
-  smaller updates.
+Издање
+: Свака неколико месеци објављујемо нову верзију Zammad-а која се назива
+  издање. Свако издање додаје нове функционалности нашем софтверу. Постоје главна и
+  споредна издања:
+  главна издања (као што су Zammad 1.0, 2.0, итд.) доносе велике промене.
+  Споредна издања (као што су 1.1, 2.1, итд.) се објављују у међувремену и доносе
+  мања ажурирања.
 
-  In our [release notes](https://zammad.com/en/releases){target=_blank} you can
-  find what features are included in new versions and also important information
-  about what to consider before updating Zammad.
+  У нашим [белешкама о издању](https://zammad.com/en/releases){target=_blank} можете
+  пронаћи које су функционалности укључене у новим верзијама, као и важне информације
+  о томе шта треба узети у обзир пре ажурирања Zammad-а.
 
-Role
-: Every user has an assigned role. By default there are three roles:
-  admin, agent, and customer.
+Улога
+: Сваки корисник има додељену улогу. Подразумевано постоје три улоге:
+  админ, оператер и клијент.
 
-  _Admins_ have the most rights: they can define roles, permissions,
-  and settings for the entire team and instance.
-  _Agents_ can view and edit tickets, but not change any settings other than
-  those of their own profiles.
-  _Customers_ can view their ticket's processing status in their
-  customer interface.
+  _Администратори_ имају највећа права: могу дефинисати улоге, дозволе,
+  и подешавања за цео тим и инстанцу.
+  _Агенти_ могу да прегледају и уређују тикета, али не могу мењати никаква подешавања осим
+  оних у својим сопственим профилима.
+  _Купци_ могу да прате статус обраде својих карата у свом
+  корисничком интерфејсу.
 
-  You can even add new roles to your Zammad.
+  Можете чак додати и нове улоге на свој Zammad.
 
-Secondary navigation
-: Refers to an additional menu next to the navigation (e.g. when opening profile
-  settings).
+Навигација другог нивоа
+: Односи се на додатни мени поред навигације (нпр. при отварању подешавања
+  профила).
 
-Flyout
-: The panel that slides in from the right side of the screen for actions such
-  as linking or merging tickets and bulk actions.
+Бочна трака (Панел)
+: Ово је панел који се приказује са десне стране за радње као што су повезивање
+  карата или спајање карата.
 
-Sidebar tab
-: In the content sidebar, there are different tabs like "Customer",
-  "Organization" and "Ticket", depending on your system and ticket. These are
-  called sidebar tabs.
+Картица бочне траке
+: У садржајној бочној траци постоје различите картице као што су "Клијент",
+  "Организација" и "Тикет", у зависности од вашег система и тикета. Оне се
+  називају картицама бочне траке.
 
-  An active sidebar tab is the currently opened sidebar tab.
+  Активна картица бочне траке је тренутно отворена картица бочне траке.
 
 Sipgate
-: Sipgate is a SaaS solution for internet telephony.
-  The Zammad integration for Sipgate provides users with a detailed call
-  overview. If you have a customer that wants to get connected to a certain
-  agent, the caller log will tell you if this colleague is currently available.
+: Sipgate је SaaS решење за интернет телефонију.
+  Zammad интеграција за Sipgate корисницима пружа детаљан преглед позива.
+  Ако имате клијента који жели да се повеже са одређеним
+  оператером, евиденција позива ће вам показати да ли је овај колега тренутно доступан.
 
 SLA
-: A Service Level Agreement (SLA) is a contract between an end-user and a
-  company that defines the minimum expected service requirements including
-  quality, availability, and punctuality.
-  They are used to set expectations and hold companies accountable for keeping
-  their promises.
+: Споразум о нивоу услуга (SLA) је уговор између крајњег корисника и
+  компаније који дефинише минималне очекиване захтеве за услугу укључујући
+  квалитет, доступност и тачност.
+  Користе се за постављање очекивања и одређивање одговорности компанија за испуњавање
+  њихових обећања.
 
-  You can easily set up SLAs in Zammad and define parameters such as the time
-  for the first response, an update, and a solution. Once the deadline has been
-  reached, the ticket will escalate.
+  SLA можете лако подесити у Zammad-у и дефинисати параметре као што је време
+  за први одговор, ажурирање и решење. Чим истекне рок, тикет ће бити ескалирана.
 
-S/MIME
-: S/MIME is the most widely-supported method for secure email communication.
-  By activating and configuring this integration in Zammad, outgoing messages
-  can be signed and encrypted and incoming messages can be decrypted and their
-  signature checked.
+С/MIME
+: С/MIME је највише подржавани метод за безбедну електронску комуникацију.
+  Активирањем и конфигурисањем ове интеграције у Zammad-у, излазне поруке
+  могу бити потписане и шифроване, а долазне поруке дешифроване и провера њихових
+  потписа.
 
 SSO
-: Single-sign-on (SSO) allows you to access all your systems and devices with
-  just one login. There are various providers that make this process easy and
-  secure. Zammad currently supports SSO via different providers.
+: Јединствено пријављивање (SSO) омогућава вам приступ свим вашим системима и уређајима уз
+  само једно улоговање. Постоји много различитих пружалаца услуга који олакшавају овај процес и
+  чине га безбедним. Zammad тренутно подржава SSO путем различитих пружалаца.
 
-State
-: Every ticket has a state which reflects the current progress of resolving the
-  issue. The state of a ticket can be changed manually or automatically based
-  on automation or SLA. Each state has a state type. There are four state types
-  by default and they are color-coded. You can even add additional states to
-  your Zammad.
+Статус
+: Свака тикет има статус који одражава тренутни напредак у решавању
+  проблема. Статус тикета се може мењати ручно или аутоматски на основу
+  аутоматизације или SLA. Сваки статус има свој тип статуса. Постоје четири типа статуса
+  подразумевано и они су означени бојама. Можете чак додати и додатне статусе на
+  свој Zammad.
 
-Taskbar
-: The section of the primary navigation which contains the taskbar tabs for
-  your opened tickets, users, organizations and the detailed search.
+Радна трака
+: Део примарне навигације који садржи прозоре радне траке за
+  ваше отворене тикете, кориснике, организације и детаљну претрагу.
 
-Taskbar tab
-: A single tab in the taskbar. Clicking the tab brings the corresponding
-  ticket, user, organization or search into the main content area.
+Прозор радне траке
+: Један прозор у радној траци. Клик на прозор доводи одговарајући
+  тикет, корисника, организацију или претрагу у област главног садржаја.
 
-Tags
-: Tags help you to categorize tickets. You can define them based on your use
-  case. For example, if you're a retail business, your tags could be based on
-  your product categories to help you organize tickets by the type of product
-  they refer to.
-  But they could also be based on the type of request, e.g. refund, delivery
-  issue, complaint.
+Ознаке
+: Ознаке вам помажу да категоризујете тикета. Можете их дефинисати на основу ваше
+  употребе. На пример, ако сте трговинска компанија, ваше ознаке могу бити базиране на
+  категоријама производа како бисте организовали тикета по типу производа
+  на који се односе.
+  Али могу бити базиране и на типу захтева, нпр. поврат новца, проблем са
+  испоруком, притужба.
 
-  Tags can be queried in conditions in an automation and assigned
-  automatically, for example depending on keywords in the ticket title.
+  Ознаке се могу упитивати у условима аутоматизације и додељивати
+  аутоматски, на пример на основу кључних речи у наслову тикета.
 
-Text module
-: If you find that you send the same answers over and over again,
-  you can save yourself a lot of work and create a text module.
-  This way, you just need to type the [[:]][[:]] shortcut in an article and all
-  available text modules are shown from which you can select the desired one.
-  You can limit the search results by adding parts of the text module's name,
-  keywords or content after the [[:]][[:]].
+Текстуални модул
+: Ако уочите да шаљете исте одговоре изнова и изнова,
+  можете себи уштедети много посла тако што ћете креирати текстуални модул.
+  На овај начин, потребно је само да укуцате пречицу [[:]][[:]] у чланак и сви
+  доступни текстуални модули ће се приказати из којих можете изабрати жељени.
+  Можете ограничити резултате претраге додавањем делова назива текстуалног модула,
+  кључних речи или садржаја након [[:]][[:]].
 
-  For example, here at Zammad, we have a text module with the shortcut
-  `::ilff`, which turns into `I look forward to your feedback`.
+  На пример, овде у Zammad-у имамо текстуални модул са пречицом
+  `::ilff`, који се претвара у `Veselim se vašem odzivu`.
 
-(Ticket) template
-: If you create many similar tickets, you can create a template for them. This
-  is helpful for introductions to your product/service or for drawing up an
-  offer.
+Шаблон (тикета)
+: Ако креирате много сличних карата, можете за њих направити шаблон. Ово
+  је корисно за представке вашег производа/услуге или за састављање
+  понуде.
 
-User
-: A user is any user of the ticket system. Each user has assigned
-  permissions, which allow them to access certain areas and information.
-  Users can have various roles, with the standard options being agent, admin,
-  and customer.
+Корисник
+: Корисник је било који корисник система за тикета. Сваки корисник има додељене
+  дозволе које му омогућавају приступ одређеним областима и информацијама.
+  Корисници могу имати различите улоге, при чему су стандардне опције оператер, администратор,
+  и клијент.
 
-Webhooks
-: Webhooks are an easy way for systems to communicate with each
-  other and allow you to send data to any other application.
-  They allow you to inform a third party system about new information in Zammad
-  (e.g. sending a notification for new and updated tickets to your Mattermost).
+Webhook-ovi
+: Webhook-ovi су једноставан начин за комуникацију система међусобно
+  и омогућавају вам слање података било којој другој апликацији.
+  Омогућавају да обвестите систем треће стране о новим информацијама у Zammad-у
+  (нпр. слање нотификације за нове и ажуриране тикета на ваш Mattermost).
 
-Zammad
-: Zammad is the greatest helpdesk in the world.
-  Period.
+Zammad : Zammad је најбољи хелпдеск на свету. Тачка.
 
 </VPGlossary>

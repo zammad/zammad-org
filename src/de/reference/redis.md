@@ -1,9 +1,9 @@
 ---
 order: 9
-title: 'Redis variables'
+title: 'Redis Variablen'
 ---
 
-# Redis variables
+# Redis Variablen
 
 Zammad benötigt Redis, um zu funktionieren. Während der Paketinstallation
 wird es automatisch installiert, sofern nicht bereits eine
@@ -12,7 +12,7 @@ ein Redis Service enthalten. Beide Szenarien funktionieren standardmäßig und
 sollten keine Anpassungen erfordern, es sei denn, Ihr Setup weicht davon ab
 oder Sie möchten explizit Anpassungen vornehmen.
 
-## Standard setup
+## Standard Setup
 
 Für eine Redis-Standardinstallation können Sie eine Variable angeben:
 `REDIS_URL`. Diese Variable kann IP/URL, einen Port, einen Benutzernamen und
@@ -21,7 +21,7 @@ ein Passwort enthalten. Beispiele:
 - `redis://redis.example.com:1234`
 - `redis://user:password@redis.example.com`
 
-## Sentinel setup
+## Sentinel Setup
 
 Für die Variablen in der Tabelle sind keine Standardwerte festgelegt. Falls
 Sie Zammad mit einem Redis Sentinel Cluster verbinden wollen, ist nur die

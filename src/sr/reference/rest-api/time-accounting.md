@@ -1,15 +1,15 @@
 ---
 order: 20
-title: 'Time accounting'
+title: 'Обрачун времена'
 ---
 
-# Time accounting
+# Обрачун времена
 
-## List
+## Преглед листе
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Потребна дозвола: `ticket.agent` **или** `admin.time_accounting`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
+`GET`-захтев послат: `/api/v1/tickets/{ticket id}/time_accountings`
 
 ::: details
 
@@ -17,11 +17,11 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Потребна дозвола: `ticket.agent` **или** `admin.time_accounting`
 
-`GET`-Request sent: `/api/v1/tickets/{ticket
+`GET`-захтев послат: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 ::: details
@@ -30,21 +30,21 @@ id}/time_accountings/{timeaccounting id}`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `ticket.agent` **or** `admin.time_accounting`
+Потребна дозвола: `ticket.agent` **или** `admin.time_accounting`
 
-`POST`-Request sent: `/api/v1/tickets/{ticket id}/time_accountings`
+`POST`-захтев послат: `/api/v1/tickets/{ticket id}/time_accountings`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/tickets/time_accountings/post-ticket-id-res.json
 
@@ -53,36 +53,36 @@ Required permission: `ticket.agent` **or** `admin.time_accounting`
 
 ## Освежавање
 
-Required permission: `admin.time_accounting`
+Потребна дозвола: `admin.time_accounting`
 
-`PUT`-Request sent: `/api/v1/tickets/{ticket
+`PUT`-захтев послат: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-timeaccounting-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/tickets/time_accountings/put-ticket-id-timeaccounting-id-res.json
 
 :::
 ::::
 
-## Remove
+## Обриши
 
-Required permission: `admin.time_accounting`
+Потребна дозвола: `admin.time_accounting`
 
-`DELETE`-Request sent: `/api/v1/tickets/{ticket
+`DELETE`-захтев послат: `/api/v1/tickets/{ticket
 id}/time_accountings/{timeaccounting id}`
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/tickets/time_accountings/delete-ticket-id-timaccounting-id-res.json
 

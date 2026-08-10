@@ -1,9 +1,9 @@
 ---
 order: 20
-title: 'Ticket summary'
+title: 'Resumo do ticket'
 ---
 
-# Ticket summary
+# Resumo do ticket
 
 ## Mostrar/Acionar
 

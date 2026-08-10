@@ -5,11 +5,11 @@ title: Улога
 
 # Улоге
 
-## List
+## Преглед листе
 
-Required permission: `admin.role`
+Потребна дозвола: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles`
+`GET` -Захтев послат: `/api/v1/roles`
 
 ::: details
 
@@ -17,11 +17,11 @@ Required permission: `admin.role`
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `admin.role`
+Потребна дозвола: `admin.role`
 
-`GET` -Request sent: `/api/v1/roles/{id}`
+`GET` -Захтев послат: `/api/v1/roles/{id}`
 
 ::: details
 
@@ -29,21 +29,21 @@ Required permission: `admin.role`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.role`
+Потребна дозвола: `admin.role`
 
-`POST` -Request sent: `/api/v1/roles`
+`POST` -Захтев послат: `/api/v1/roles`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/roles/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/roles/post-res.json
 
@@ -52,19 +52,19 @@ Required permission: `admin.role`
 
 ## Освежавање
 
-Required permission: `admin.role`
+Потребна дозвола: `admin.role`
 
-`PUT` -Request sent: `/api/v1/roles/{id}`
+`PUT` -Захтев послат: `/api/v1/roles/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/roles/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/roles/put-id-res.json
 

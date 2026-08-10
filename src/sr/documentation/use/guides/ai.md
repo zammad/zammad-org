@@ -1,9 +1,9 @@
 ---
 order: 4
-title: 'AI features'
+title: Функције
 ---
 
-# AI features
+# Функције
 
 ## Увод
 
@@ -11,11 +11,11 @@ Zammad постаје све паметнији! Проширујемо Zammad-�
 помогнемо у ефикаснијој обради тикета подршке. ✨🚀
 
 ::: info
-The AI features have to be configured and activated by your administrator. If you can't see it, it is not configured.
-More information about how to configure and activate it can be found in the admin section.
+Функције вештачке интелигенције мора подесити и активирати ваш администратор. Ако је не видите, она није подешена.
+Више информација о томе како је конфигурисати и активирати можете пронаћи у одељку за администраторе.
 :::
 
-## Ticket summary
+## Сажети опис тикета
 
 Функција сажетог описа тикета се понаша у складу са својим именом: резимира
 садржај тикета. Ово може бити велика уштеда времена при великих тикета и/или
@@ -25,9 +25,8 @@ More information about how to configure and activate it can be found in the admi
 освежавању тикета и или отварањем детаљног прегледа тикета или бочне траке
 сажетог описа тикета, у зависности од подешавања.
 
-![Screenshot shows Zammad's ticket detail view with highlighted ticket
-summary banner and summary
-sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
 
 У зависности од ваше Zammad конфигурације, сажети опис може садржати следеће
 одељке:
@@ -38,24 +37,22 @@ sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary
 - Предстојећи догађаји (опционо)
 - Расположење клијента (опционо)
 
-## Writing assistant tools
+## Алатке помоћника писања
 
-The AI-powered writing assistant tools are designed to simplify and enhance
-your ticket response workflow while you create an article.  To use such a
-tool, you first have to select text you want to apply the changes to. After
-that, click the `Writing Assistant Tools` button at the left side of the
-editor toolbar and choose one of the following tools, depending on what you
-want to perform.
+За коришћење излистаних функција, прво морате да обележите текст на који
+желите да се измене примене. Након тога, кликните на **Smart Editor** дугме
+при дну новог чланка и изаберите једну од следећих функција, у зависности од
+жељеног понашања.
 
-![Screenshot shows Zammad's smart editor
-menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
+![Снимак екрана који приказује мени радњи
+макроа](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
 
 ::: warning
 
-- Be aware that your text gets replaced when you select one of the text tools. If you are not satisfied with the result,
-  try using the undo feature by pressing [[ctrl]] + [[z]].
-- Always double-check the response. Although the feature was carefully developed, there may still be minor problems in
-  individual cases due to the nature of neural networks.
+- Имајте на уму да се ваш текст замењује када изаберете један од текстуалних алата. Ако нисте задовољни резултатом,
+  покушајте да користите опцију за поништавање притискањем [[ctrl]] + [[z]].
+- Увек проверите одговор двапут. Иако је функција пажљиво развијена, у појединачним случајевима и даље могу постојати мањи проблеми
+  због природе неуронских мрежа.
 
 :::
 
@@ -76,27 +73,27 @@ Zammad долази са подразумеваним алаткама помо�
 - **Препиши сложени одељак и учини га лаким за разумевање**: Уклања
   необавезне делове и преписује ваш текст у јасном и разумљивом стилу.
 
-## AI agents
+## AI агенти
 
-AI agents can be configured to work on certain types of routine tasks. In
-general, this feature operates behind the scenes but if configured, you may
-notice it in some situations (see examples below). In case your admin
-created a macro with an AI agent action, you can even run it manually. Ask
-your admin for details and have a look at the [macro
-description](/en/documentation/use/advanced-features#macros) in the advanced
-features page.
+Оператери вештачке интелигенције могу бити подешени за рад на одређеним
+врстама рутинских задатака. Генерално, ова функција ради у позадини, али ако
+је конфигурисана, можете је приметити у неким ситуацијама (види примера
+испод). Ако је ваш администратор креирао макро са акцијом оператера вештачке
+интелигенције, можете га чак покренути и ручно. Затражите детаље од
+администратора и погледајте [опис
+макроа](/en/documentation/use/advanced-features#macros) на страници за
+напредне функције.
 
 ### Историјат тикета
 
-If an AI agent applied changes, you can see a ticket history entry telling
-you the name of the AI agent. If you notice ongoing issues with what the AI
-agent did, inform your Zammad admin. Example of a history entry of an AI
-agent:
+Уколико AI агент освежи тикет, можете то и видети у евиденцији историјата
+тикета под називом AI агента. Уколико приметите проблеме са начином рада AI
+агента, обавестите о томе свог Zammad администратора.
 
-![Screenshot shows AI agent ticket history
-entry](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
-### Simultaneous work detection
+### Откривање истовремене обраде
 
 AI агенти који тренутно раде на тикету су приказани као и други оператери у
 доњој траци присутних корисника. Ово ће вам помоћи да избегнете истовремени
@@ -105,14 +102,14 @@ AI агенти који тренутно раде на тикету су при
 
 Сличица AI агента:
 
-![Screenshot shows avatar of an AI
-agent](/screenshots/documentation/use/ai/ai-live-user.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/documentation/use/ai/ai-live-user.png)
 
-### Overview indicator
+### Индикатор прегледа
 
 AI агент који се извршава има индикатор у колони стања у прегледима. Кружић
 стања ће бити приказан у плаво-љубичастом градијенту:
 
-![Screenshot shows a status circle in overviews indicating an AI agent is
-currently working on
-it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)
+![Snimak ekrana prikazuje krug statusa u pregledima koji ukazuje da agent
+veštačke inteligencije trenutno radi na
+njoj](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)

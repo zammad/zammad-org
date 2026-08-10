@@ -1,36 +1,36 @@
 ---
 order: 9
-title: 'Redis variables'
+title: 'Променљиве окружења'
 ---
 
-# Redis variables
+# Променљиве окружења
 
-Zammad requires Redis to work. During package installation, it is installed
-automatically unless there is a Redis installation on the host already. In
-the Docker Compose stack, there is a Redis Service included. Both scenarios
-work out of the box and should not require adjustments unless your setup
-differs or you want to explicitly make adjustments.
+Zammad захтева Redis за рад. Током инсталације пакета, инсталира се
+аутоматски осим ако већ постоји Redis на хост-у. У Docker Compose склопу
+укључен је Redis сервис. Оба сценарија раде без додатних подешавања и не би
+требало захтевати промене осим ако ваша конфигурација није другачија или
+желите експлицитно да прилагодите.
 
-## Standard setup
+## Стандардна инсталација
 
-For a Redis standard deployment, you can provide one variable:
-`REDIS_URL`. This variable can include IP/URL, a port, a username and
-password. Examples:
+За стандардну Redis инсталацију, можете поставити једну променљиву:
+`REDIS_URL`. Ова променљива може садржати IP/URL, порт, корисничко име и
+лозинку. Примери:
 
 - `redis://redis.example.com:1234`
 - `redis://user:password@redis.example.com`
 
-## Sentinel setup
+## Sentinel инсталација
 
-The variables in the table don't have default values set. In case you want
-to connect Zammad to a Redis Sentinel cluster, only `REDIS_SENTINELS`
-variable is mandatory, the others are optional.
+Променљиве у табели немају задате подразумеване вредности. У случају да
+желите да повежете Zammad са Redis Sentinel кластером, само променљива
+`REDIS_SENTINELS` је обавезна, остале су опционо.
 
- Variable                    | Description                                                                                                                                      |
+ Варијабла                    | Опис                                                                                                                                      |
 -----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
- `REDIS_SENTINELS`           | Mandatory when using a Sentinel setup; comma separated IPs/URLs; optional port. Examples: `sentinel1.example.com:26380`, `sentinel2.example.com` |
- `REDIS_SENTINEL_NAME`       | Name of Sentinel setup; fallback to `mymaster` if not provided                                                                                   |
- `REDIS_SENTINEL_USERNAME`   | Username for Sentinel                                                                                                                            |
- `REDIS_SENTINEL_PASSWORD`   | Password for Sentinel                                                                                                                            |
- `REDIS_USERNAME`            | Username for Redis                                                                                                                               |
- `REDIS_PASSWORD`            | Password for Redis                                                                                                                               |
+ `REDIS_SENTINELS`           | Обавезно при коришћењу Сентинеле; IP-ови/URL-ови раздвојени зарезом; опциони порт. Примери: `sentinel1.example.com:26380`, `sentinel2.example.com` |
+ `REDIS_SENTINEL_NAME`       | Назив Сентинеле; подразумевано `mymaster` ако није наведено                                                                                   |
+ `REDIS_SENTINEL_USERNAME`   | Корисничко име за Sentinel                                                                                                                            |
+ `REDIS_SENTINEL_PASSWORD`   | Лозинка за Sentinel                                                                                                                            |
+ `REDIS_USERNAME`            | Корисничко име за Redis                                                                                                                               |
+ `REDIS_PASSWORD`            | Лозинка за Redis                                                                                                                               |

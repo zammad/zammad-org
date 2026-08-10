@@ -6,14 +6,14 @@ title: Календар
 # Календар
 
 ::: tip
-Calendars belong to [Zammad's SLA calculation](/en/reference/rest-api/sla).
+Календар се односи на [израчунавање SLA-а у Zammad-у](/en/reference/rest-api/sla).
 :::
 
-## List
+## Преглед листе
 
-Required permission: `admin.calendar`
+Потребна дозвола: `admin.calendar`
 
-`GET`-Request sent: `/api/v1/calendars`
+`GET`-захтев послат: `/api/v1/calendars`
 
 ::: details
 
@@ -21,11 +21,11 @@ Required permission: `admin.calendar`
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `admin.calendar`
+Потребна дозвола: `admin.calendar`
 
-`GET`-Request sent: `/api/v1/calendars/{id}`
+`GET`-захтев послат: `/api/v1/calendars/{id}`
 
 ::: details
 
@@ -33,21 +33,21 @@ Required permission: `admin.calendar`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.calendar`
+Потребна дозвола: `admin.calendar`
 
-`POST`-Request sent: `/api/v1/calendars`
+`POST`-захтев послат: `/api/v1/calendars`
 
 :::: details
 
 ::: tabs key:req-res
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/calendars/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/calendars/post-res.json
 
@@ -56,40 +56,40 @@ Required permission: `admin.calendar`
 
 ## Освежавање
 
-Required permission: `admin.calendar`
+Потребна дозвола: `admin.calendar`
 
-`PUT`-Request sent: `/api/v1/calendars/{id}`
+`PUT`-захтев послат: `/api/v1/calendars/{id}`
 
 :::: details
 
 ::: tabs key:req-res
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/calendars/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/calendars/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Обриши
 
-Required permission: `admin.calendar`
+Потребна дозвола: `admin.calendar`
 
-`DELETE`-Request sent: `/api/v1/calendars/{id}`
+`DELETE`-захтев послат: `/api/v1/calendars/{id}`
 
 ::: danger
 
-**This is a permanent removal**:
+**Ово је трајно уклањање**:
 
-Please note that removing Calendar configurations cannot be undone.
+Имајте на уму да се конфигурације календара не могу поништити.
 
-Removing calendars with references in SLA configurations is not possible
-via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Уклањање календара са референцама у SLA конфигурацијама није могуће
+преко API-ја - то ће бити означено као
+`"error": "Can't delete, object has references."`. Ово _није_ буг.
 :::
 
 ::: details

@@ -7,75 +7,75 @@ title: 'GraphQL API'
 
 ## Увод
 
-In addition to Zammad's [REST API](rest-api/intro), you can fetch,
-manipulate and create data via the powerful and open-source [GraphQL
-API](https://graphql.org/){target=_blank} too.
+Поред [REST API-ја](rest-api/intro) у Zammad-у, можете преузимати, мењати и
+креирати податке путем моћног и отвореног изворног [GraphQL
+API-ја](https://graphql.org/).
 
-This documentation isn't intended to cover everything about GraphQL. It
-should give you a basic understanding about how you can fetch and
-create/manipulate data to build upon. For a comprehensive guide, have a look
-at [GraphQL's documentation](https://graphql.org/learn/){target=_blank}.
+Ова документација не покрива све о GraphQL-u. Треба да вам пружи основно
+разумевање како можете преузимати и креирати/мењати податке за даље
+изградње. За исцрпне упутства, погледајте [документацију
+GraphQL-a](https://graphql.org/learn/).
 
-GraphQL is used by many web services, even big ones. It became some kind of
-industry standard because of its efficiency and features. You can precisely
-request the data you require which minimizes unnecessary data transfers and
-searching the needle in a haystack.
+GraphQL користе многе веб сервисе, укључујући и велике. Постао је врста
+индустријског стандарда због своје ефикасности и функција. Можете прецизно
+затражити податке који су вам потребни, чиме се минимизирају непотребни
+преноси података и штеди време.
 
-Fetching the Zammad GraphQL schema (called introspection) enables
-autocomplete and client-side validation while writing requests.
+Преузимање GraphQL шеме Zammad-а (названо интроспекција) омогућава
+аутоматско допуњавање и валидацију на клијентској страни док пишете захтеве.
 
 ## Први кораци
 
-Following the next steps enables you to successfully send a simple request
-and receive data from Zammad.
+Праћењем следећих корака омогућићете себи успешно слање једноставног захтева
+и примање података из Zammad-а.
 
-### Clients
+### Клијенти
 
-To send request and receive responses, you need an API client. If you are
-already dealing with APIs, skip this section.  If you are new to the topic,
-search for a client which fits your needs. Depending on your operating
-system, you may have different options. Some examples for popular clients
-with GraphQL support are:
+За слање захтева и примање одговора потребан вам је API клијент. Ако већ
+радите са API-јима, прескочите овај део.  Ако сте нови у овој теми,
+потражите клијента који одговара вашим потребама. Зависно од оперативног
+система, можете имати различите опције. Неки примери популарних клијената са
+GraphQL подршком су:
 
-- [Bruno](https://www.usebruno.com/downloads){target=_blank}
-- [Insomnia](https://insomnia.rest/download){target=_blank}
-- [Postman](https://www.postman.com/downloads/){target=_blank}
+- [Bruno](https://www.usebruno.com/downloads)
+- [Insomnia](https://insomnia.rest/download)
+- [Postman](https://www.postman.com/downloads/)
 
 ### Аутентификација
 
-If not already present, create a [token in the Zammad
-profile](/en/documentation/use/user-profile#token-access) you want to use as
-API user. Depending what you want to achieve via API, set the permissions
-accordingly.
+Ако већ није присутан, креирајте [токен у профилу
+Zammad-а](/en/documentation/use/user-profile#token-access) који желите да
+користите као API корисник. Зависно од онога што желите постићи путем
+API-ја, подесите дозволе одговарајуће.
 
-Make sure to copy it before closing the dialog because you can't view it
-again. In case it went wrong, simply create a new token.
+Обавезно га копирајте пре затварања дијалога јер га нећете моћи поново
+видети. У случају грешке, једноставно креирајте нови токен.
 
-### Prepare your client
+### Припремите ваш клијент
 
-Open your API client and set it up.
+Отворите ваш API клијент и подесите га.
 
-- Add your token from Zammad as bearer token.
-- Create a request and add your Zammad domain with `/graphql` suffix,
-  e.g. `https://fastlane.inc/graphql`.
-- Fetch Zammad's GraphQL schema from introspection or load it from file.
+- Додајте ваш токен из Zammad-а као беарер токен.
+- Креирајте захтев и додајте свој Zammad домен са суфиксом `/graphql`,
+  нпр. `https://fastlane.inc/graphql`.
+- Преузмите GraphQL шему Zammad-а из интроспекције или је учитајте из
+  датотеке.
 
 ::: warning
-The schema introspection is enabled for Zammad in development environment. To enable it for production systems, set the
-environment variable `ZAMMAD_GRAPHQL_INTROSPECTION` to `true`. Doing so increases the potential attack surface and is
-**not recommended**.
+Интроспекција шеме је омогућена за Zammad у развојном окружењу. Да бисте је омогућили за продукциона система, подесите
+окружењску променљиву `ZAMMAD_GRAPHQL_INTROSPECTION` на `true`. Ово повећава потенцијалну површину напада и
+**се не препоручује**.
 :::
 
-### Create a request
+### Отворите нови тикет
 
-All requests and responses are in JSON format. This means all information
-must be encapsulated in brackets and have a hierarchical structure.
+Сви захтеви и одговори су у JSON формату. То значи да сва информација мора
+бити упакована у заграде и имати хијерархијску структуру.
 
-Let's have a look at a request to fetch information from Zammad. Such a
-request starts with the string `query`, followed by an object you want to
-query.
+Погледајмо захтев за преузимање информација из Zammad-а. Такав захтев почиње
+са низом `query`, праћеним објектом који желите да упитате.
 
-Basic example to fetch users with their first and last name:
+Основан пример за преузимање корисника са њиховим именом и презименом:
 
 ```gql :line-numbers
 query userName (
@@ -88,9 +88,9 @@ query userName (
 }
 ```
 
-The `$userId` from line 2 defines a variable which is used as an ID. In the
-variables section of your client, provide the value for it. In this example,
-the variables section looks like this:
+Променљива `$userId` са друге линије дефинише варијаблу која се користи као
+ID. У секцији за променљиве вашег клијента, наведите њену вредност. У овом
+примеру, секција за променљиве изгледа овако:
 
 ```json
 {
@@ -98,62 +98,62 @@ the variables section looks like this:
 }
 ```
 
-The value above is in the global ID format of Zammad's GraphQL
-implementation. Depending on which object type you want to deal with,
-replace the `User` by another object like `Ticket`, `Organization`, `Group`,
-etc. Zammad expects a numeric value as ID.
+Горња вредност је у глобалном ID формату GraphQL имплементације
+Zammad-а. Зависно од тога који тип објекта желите да обрађујете, замените
+`User` другим објектом као што је `Ticket`, `Organization`, `Group`,
+итд. Zammad очекује нумеричку вредност као ID.
 
-Starting with line 4 in the code block above is the actual request. This
-simple example just fetches the attributes `firstname` and `lastname` from
-the user with the ID 2.
+Почињући од четврте линије у горе наведеном блок кода је стварни
+захтев. Овај једноставан пример само преузима атрибуте `firstname` и
+`lastname` од корисника са ID-јем 2.
 
-To create or change data, replace the `query` by `mutation` in the request
-body.
+За креирање или измену података, замените `query` са `mutation` у телу
+захтева.
 
 ## Примери
 
-The examples use variables for the different object types. Make sure to set
-it when using the examples.
+Примери користе варијабле за различите типове објеката. Обавезно поставите
+варијабле приликом коришћења примера.
 
 :::: tabs
 
-==== Ticket
+=== Тикет
 
 ::: tabs
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/graphql/ticket-req.gql
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/graphql/ticket-res.json
 
 :::
 
-==== User
+=== Тикет
 
 ::: tabs
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/graphql/user-req.gql
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/graphql/user-res.json
 
 :::
 
-==== Organization
+=== Организација
 
 ::: tabs
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/graphql/organization-req.gql
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/graphql/organization-res.json
 
@@ -161,13 +161,13 @@ it when using the examples.
 
 ::::
 
-## Appendix
+## Прилог
 
-### Global ids
+### Затвори претрагу
 
 ::: info
 
-Replace the `{ID}` with a numeric value.
+Замените `{ID}` нумеричком вредношћу.
 
 :::
 

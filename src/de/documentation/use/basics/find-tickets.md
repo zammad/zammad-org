@@ -1,14 +1,14 @@
 ---
 order: 3
-title: 'Find tickets'
+title: 'Tickets finden'
 ---
 
-# Find tickets
+# Tickets finden
 
 Es gibt verschiedene Möglichkeiten, Tickets zu finden, abhängig von Ihrem
 Anwendungsfall.
 
-## Via overviews
+## In Übersichten
 
 Wenn Sie nach neuen Tickets suchen, an denen Sie arbeiten möchten, sollten
 Sie zunächst einen Blick in die Übersichten werfen. Sie können den Bereich
@@ -25,7 +25,7 @@ Ticket in welcher Übersicht erscheint.
 Eine detaillierte Erklärung finden Sie in der [Beschreibung der
 Übersichten](/de/documentation/use/guides/overviews).
 
-## Via search
+## Per Suche
 
 Sollten Sie jedoch nach einem bestimmten Ticket suchen, das vielleicht in
 den Übersichten angezeigt wird oder auch nicht, können Sie die Suchfunktion

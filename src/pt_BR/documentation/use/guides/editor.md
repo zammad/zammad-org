@@ -13,7 +13,7 @@ recursos que podem não ser visíveis à primeira vista.
 ![Captura de tela mostra o editor do
 Zammad](/screenshots/cypress/documentation/use/guide-editor.cy.js/editor-overview.png)
 
-## Special functions
+## Funções especiais
 
 O editor do Zammad inclui alguns recursos inteligentes. Você os encontra no
 lado esquerdo da barra de ferramentas no editor. Como já são descritos em
@@ -26,7 +26,7 @@ conteúdo duplicado.
 - [Inserir artigos da base de
   conhecimento](../advanced-features#insert-knowledge-base-article)
 
-## Pasting complex content
+## Colando conteúdo complexo
 
 Ao colar conteúdo de outras fontes, especialmente documentos contendo
 tabelas, formatação complexa ou imagens, esteja ciente de que a aparência no
@@ -44,7 +44,7 @@ software usado pelo destinatário. Se você adicionar uma linha vazia
 adicional, isso pode ser renderizado como duas linhas vazias do lado do
 cliente.
 
-## Cite text
+## Citar texto
 
 Você pode querer citar o texto do seu cliente para se referir exatamente à
 sua resposta e para que seu cliente não perca o fio em conversas
@@ -54,7 +54,7 @@ texto, ele é preservado, e o texto selecionado é inserido
 adicionalmente. Isso significa que você pode repetir isso para citar
 diferentes seções sem perder o texto já escrito.
 
-## Apply formatting
+## Aplicar formatação
 
 Você pode formatar texto no editor de diferentes formas:
 
@@ -68,7 +68,7 @@ função. Como alternativa, você pode usar **atalhos de teclado** (veja as
 próximas duas seções). Ative a formatação previamente ou selecione o texto
 depois de escrever e use a formatação que deseja aplicar.
 
-### General keyboard shortcuts
+### Atalhos de teclado gerais
 
 O editor também suporta atalhos de teclado para agilizar seu fluxo de
 trabalho. Esses atalhos são comuns em muitas ferramentas de processamento de
@@ -89,7 +89,7 @@ Dê uma olhada na próxima seção para usar ainda mais formatação via
 teclado. Independentemente de você estar acostumado a escrever em Markdown
 ou não, alguns deles ainda podem ser úteis no seu trabalho diário.
 
-### Markdown usage
+### Uso de Markdown
 
 Para usuários familiarizados com a sintaxe Markdown, o editor oferece
 suporte básico para formatar conteúdo com Markdown. Ao usar a sintaxe

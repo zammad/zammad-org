@@ -5,161 +5,164 @@ title: Претрага
 
 # Претрага
 
-In Zammad, you can search for basically all available information like:
+У Zammad-у можете претраживати готово сву доступну информацију као што су:
 
 - Предмет и садржај поруке
 - Имена и имејл адресе
 - Текст у датотекама прилога
 - Детаљи корисника и организација (као што су напомене, називи, итд)
 
-Depending on what you are searching for and the amount of data in your
-Zammad instance, you can search in different ways. Read on to learn about
-the search basics, followed by the detailed search and the usage of
-Elasticsearch syntax.
+У зависности од тога шта тражите и количине података у вашој Zammad
+инстанци, можете претраживати на различите начине. Прочитајте даље да
+сазнате основе претраге, затим детаљну претрагу и коришћење Elasticsearch
+синтаксе.
 
-## Basic search
+## Преко претраге
 
-The search is located in the top left corner of the primary
-navigation. Either select it via mouse or use the keyboard shortcut
-[[s]]. After activation, you can see the tickets which got recently closed
-from your taskbar as well as your recent search queries. To search, simply
-type a term. The search then displays all matching items for which you have
-at least view or read permissions, grouped by type like users and
-tickets. Selecting one of those results opens the item as tab in the
-taskbar.
+Претрага се налази у горњем левом углу примарног навигационог
+трака. Изаберите је мишем или користите пречицу на тастатури [[s]]. Након
+активације, можете видети тицкете који су недавно затворени са ваше траке
+задатака, као и ваша скорашња упита за претрагу. Да бисте претраживали,
+једноставно укуцајте термин. Претрага затим приказује све одговарајуће
+ставке за које имате барем дозволу за преглед или читање, груписане по типу
+као што су корисници и тицкете. Изабирањем једног од резултата отвара се
+ставка као картица у примарном навигационом траку.
 
-![Screenshot shows search results in primary
-navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
-If you press [[enter]] or click on `detailed search`, Zammad opens the
-detailed search as a tab in the primary navigation. There you can narrow
-down your search by selecting a specific object type (e.g. organization),
-use advanced filters or even use Elasticsearch syntax. Read on for more
-information.
+Ако притиснете [[enter]] или кликнете на `detailed search`, Zammad отвара
+детаљну претрагу као картицу у примарном навигационом траку. Тамо можете
+сузити претрагу бирањем одређеног типа објекта (нпр. организација),
+коришћењем напредних филтера или чак Elasticsearch синтаксе. Прочитајте даље
+за више информација.
 
-## Detailed search
+## Следећи кораци
 
-Sometimes, a simple search term may not give you the results you are looking
-for. Zammad provides different options to narrow down the search in the
-detailed search page.
+Понекад једноставан термин за претрагу можда неће дати резултате које
+тражите. Zammad пружа различите опције за сужавање претраге на страници
+детаљне претраге.
 
-![Screenshot shows detailed
-search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
-### Sort the results
+### Орденар лос ресултадос
 
-To sort the results based on the column's values, click on a column
-header. The sorting is indicated by an arrow. Click on the column again to
-change the sorting from ascending to descending and back.
+Пара орденар лос ресултадос сегúн лос валорес де ла цолумна, хаз цлиц ен ел
+енцабезадо де уна цолумна. Ел орден се индица цон уна флецха. Хаз цлиц ен ла
+цолумна нуеваменте пара цамбиар ел орден де асценденте а десценденте y
+вицеверса.
 
-### Limit search to object type
+### Лимитар бúsqueda ал типо де објето
 
-Limit the search to an object type by using the **Search entity** tab
-selector below the search field (e.g. user or ticket). This limits the
-search to the selected object type and its related data. For example, when
-you select **Ticket**, the search also returns tickets where the owner or
-customer matches the search term.
+Лимита ла бúsqueda а ун типо де објето утилизандо ел селецтор де пестаñас
+**Бусцар ентидад** дебајо дел цампо де бúsqueda (п. еј., усуарио о
+тицкет). Есто лимита ла бúsqueda ал типо де објето селецционадо y а сус
+датос релационадос. Пор ејемпло, цуандо селецционас **Ticket**, ла бúsqueda
+тамбиéн девуелве тицкетс донде ел пропиетарио о ел цлиенте цоинциден цон ел
+тéрмино де бúsqueda.
 
-### Use advanced filters
-<!--Screenshot skipped for now. Will be added after more attributes are available-->
-In comparison to the search field, you can filter the search results based on specific attributes and their values.
-To do so, click on the `Advanced filters` button on the right side, which opens an area where you can specify additional
-conditions based on specific attributes and their values. Choose an attribute and enter or select a value which the
-search results have to match. Each attribute is available only once. When using more than one filter, be aware that
-they all have to be met because they are logically connected by an AND operator. This also applies to the search term
-in the main search field.
+### Напредне функције
+<!--Цаптура де панталла омитида пор ахора. Се аñадирá цуандо haya мáс атрибутос диспониблес-->
+Ен цомпарациóн цон ел цампо де бúsqueda, пуедес филтрар лос ресултадос басáндоте ен атрибутос еспецíфицос y сус валорес.
+Пара хацерло, хаз цлиц ен ел ботóн `Filtros avanzados` ен ел ладо дерецхо, ло que абре ун áреа донде пуедес еспецифицар цондиционес
+адиционалес басадас ен атрибутос y сус валорес. Елиге ун атрибуто е ингреса о селецциона ун валор que лос
+ресултадос де бúsqueda дебен цоинцидир. Цада атрибуто соло естá диспонибле уна вез. Ал усар мáс де ун филтро, тен ен цуента que
+тодос дебен цумплирсе porque естáн цонецтадос лóгицаменте пор ун операдор AND. Есто тамбиéн се аплица ал тéрмино де бúsqueda
+ен ел цампо принципал де бúsqueda.
 
-Remove a single filter by clicking the ::x:: next to the value field. To
-remove all filters, click the `x` in the main search bar at the top next to
-the `x filter(s)` label.
+Елимина ун филтро индивидуал хациендо цлиц ен ::x:: јунто ал цампо де
+валор. Пара елиминар тодос лос филтрос, хаз цлиц ен `x` ен ла барра де
+бúsqueda принципал ен ла парте супериор јунто а ла etiqueta `x filtro(s)`.
 
-In case you want to store or share your filter, you can do so by copying the
-URL. It includes the complete filter. Be aware that the search results may
-be different for other users due to divergent permissions.
+Си десеас гуардар о цомпартир ту филтро, пуедес хацерло цопиандо ла
+URL. Incluye ел филтро цомплето. Тен ен цуента que лос ресултадос де
+бúsqueda пуеден сер диферентес пара отрос усуариос дебидо а пермисос
+дистинтос.
 
-If you still haven't found what you are looking for, you can benefit from
-the search being powered by Elasticsearch.  You can find some examples in
-the next section.
+Уколико не можете да пронађете жељене информације, пробајте да започенете
+претрагу из заглавља стране.
 
-## Using Elasticsearch syntax
+## Elasticsearch
 
-This topic has its own section because it is an advanced topic for power
-users. By using Elasticsearch syntax, you can exactly filter your data for
-specific attribute values. Basically, all indexed attributes are
-supported. Read on to find examples how to use it or head over to the
-[indexed attributes by Elasticsearch
-page](/en/reference/es-indexed-attributes) where you can find a list with
-additional attributes.
+Есте тема тиене су пропиа сецциóн porque ес ун тема аванзадо пара усуариос
+experimentados. Медианте ел усо де ла sintaxis де Elasticsearch, пуедес
+филтрар exactamente тус датос пара валорес де атрибутос
+еспецíфицос. Бáсицаменте, се адмитен тодос лос атрибутос indexados. Сигуе
+leyendo пара вер ејемплос де цóмо усарло о дирíгете а ла [пáгина де
+атрибутос indexados пор Elasticsearch](/en/reference/es-indexed-attributes)
+донде енцонтрарáс уна листа цон атрибутос адиционалес.
 
-### Important information
+### Важне информације
 
-- Make sure to select the relevant object in the **Search entity**
-  switcher. For example `customer.lastname` is available for tickets, but
-  not for users.
-- When combining an Elasticsearch query with advanced filters, be aware that
-  all of the advanced filter conditions and the search syntax are logically
-  connected by AND, so only results which match all of the advanced filter
-  conditions and your search term will be displayed.
-- To provide values containing a space, wrap them in `"`,
-  e.g. `priority.name:"2 normal"`.
+- Асегúрате де селецционар ел објето релеванте ен ел цамбиадор **Бусцар
+  ентидад**. Пор ејемпло, `customer.lastname` естá диспонибле пара тицкетс,
+  перо но пара усуариос.
+- Ал цомбинар уна цонсулта де Elasticsearch цон филтрос аванзадос, тен ен
+  цуента que тодас лас цондиционес дел филтро аванзадо y ла sintaxis де
+  бúsqueda естáн цонецтадас лóгицаменте пор AND, пор ло que соло се
+  мострарáн лос ресултадос que цоинцидан цон тодас лас цондиционес дел
+  филтро аванзадо y ту тéрмино де бúsqueda.
+- Пара пропорционар валорес que цонтенган ун еспацио, енциéрралос ен `"`,
+  п. еј., `priority.name:"2 normal"`.
 
-### Logic operators and ranges
+### Операдорес лóгицос y рангос
 
-You can combine conditions by using `AND` & `OR` as logical operators. Use
-`TO` to specify ranges for values with an order (e.g. integer or
-date). Include a limit of the specified range by using square
-brackets. Exclude it by using curly brackets. You can even combine those
-brackets, e.g. to include the lower limit and to exclude the upper
-limit. Nested terms can be achieved by separating them with parentheses
-`()`.
+Пуедес цомбинар цондиционес утилизандо `AND` y `OR` цомо операдорес
+лóгицос. Уса `TO` пара еспецифицар рангос пара валорес цон орден (п. еј.,
+ентерос о фецхас). Incluye ун лíмите дел ранго еспецифицадо усандо
+цорцхетес. Exclúyelo усандо ллавес. Инцлусо пуедес цомбинар естос цорцхетес,
+п. еј., пара инцлуир ел лíмите инфериор y excluir ел супериор. Лос тéрминос
+анидадос се пуеден лограр сепарáндолос цон парéнтесис `()`.
 
-`AND` & `OR` with parentheses:
+`AND` y `OR` цон парéнтесис:
 
 ```plain
 owner.lastname:brooks AND tags:(internal OR onboarding)
 ```
 
-`TO` with asterisk wildcard:
+`TO` цон цомодíн де астерисцо:
 
 ```plain
 state.name:open AND article_count: [5 TO *]
 ```
 
-`TO` with excluding one limit of a range:
+`TO` excluyendo ун лíмите де ун ранго:
 
 ```plain
 article.created_at:[2025-03-21 TO 2026-05-19}
 ```
 
-### Fuzzy search
+### Претрага
 
-If you are not sure about the exact spelling of a value, use the tilde (`~`)
-as suffix to perform a fuzzy search.
+Си но естáс сегуро де ла ортографíа exacta де ун валор, утилиза ла тилде
+(`~`) цомо суфијо пара реализар уна бúsqueda дифуса (fuzzy).
 
 ```plain
 owner.firstname:lawren~
 ```
 
-### Negating search
+### Навигациона трака
 
-If you want to exclude specified values, you can use negation `!`. To negate
-more than one term, use parentheses for all of them.
+Си десеас excluir валорес еспецíфицос, пуедес усар ла негациóн `!`. Пара
+негар мáс де ун тéрмино, уса парéнтесис пара тодос еллос.
 
-Exclude owner with last name "brooks":
+Excluir пропиетарио цон апеллидо "броокс":
 
 ```plain
 !owner.lastname:brooks
 ```
 
-Exclude multiple conditions:
+Excluir мúлтиплес цондиционес:
 
 ```plain
 owner.lastname:brooks AND !(tags:internal OR tags:onboarding)
 ```
 
-### Regex
+### Регуларни израз
 
-You can even use regex to search. Wrap the regex term in `/`.
+Инцлусо пуедес усар regex пара бусцар. Енциерра ел тéрмино де ла regex ен
+`/`.
 
 ```plain
 customer.lastname:/(bra?.n|doe)/

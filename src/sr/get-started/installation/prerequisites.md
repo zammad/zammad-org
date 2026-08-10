@@ -7,7 +7,7 @@ title: Предуслови
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-## Server hardware
+## Серверски хардвер
 
 Хардверски предуслови зависе од сценарија. Ово отежава специфичне предлоге
 за CPU и радну меморију који су прилагођени свим ситуацијама. У сваком
@@ -25,7 +25,7 @@ title: Предуслови
 - 6 CPU језгара
 - 6 GB RAM (+6 GB за Elasticsearch)
 
-## Server software
+## Серверски софтвер
 
 На основу типа инсталације, постоје неки предуслови. Укључени су у упутства
 за инсталацију:
@@ -34,36 +34,36 @@ title: Предуслови
 - [Docker](docker)
 - [Kubernetes](kubernetes)
 
-## Client requirements
+## Предуслови клијента
 
-### Browser
+### Прегледач
 
-Because Zammad is a web application, only an up-to-date browser is
-needed. The following browsers are supported in their latest stable version:
+Пошто је Zammad веб апликација, неопходан је само ажуриран
+претраживач. Подржани су следећи претраживачи:
 
-- Firefox
-- Chrome (and Chromium-based)
-- Opera
-- Safari
+- Firefox 78+
+- Chrome (и базирани на chromium платформи) 83+
+- Opera 69+
+- Safari 14.1+
 
-This does not mean that Zammad will not work with other browsers or older
-versions, just that we do not test against or provide support for them.
+Ово не значи да Zammad неће радити са другим прегледачима или старијим
+верзијама, већ само да их не тестирамо и не пружамо подршку за њих.
 
-### Network
+### Мрежа
 
-Be aware that communication between client and server uses WebSockets. Some
-firewalls and proxies may filter these connections. This could reduce
-performance or prevent real-time updates.
+Комуникација између клијента и сервера је заснована на web sockets. Неки
+firewall системи филтрирају ове конекције. Ово може довести то смањених
+перформанси претраживача.
 
-### Display
+### Екран
 
-Zammad adapts its layout to different screen sizes. For the best experience,
-we recommend using a display with sufficient screen size and
-resolution. When using small screens, Zammad collapses elements like the
-sidebar to maintain usability. If these measures are not sufficient, a toast
-warning shows up at the top of the screen. You can hide it by clicking the
-corresponding button.
+Zammad прилагођава свој распоред различитим величинама екрана. За најбоље
+искуство препоручујемо употребу екрана са довољном величином и
+резолуцијом. При употреби малих екрана, Zammad скупља елементе као што је
+бочна трака да би сачувао употребљивост. Ако ове мере нису довољне, при врху
+екрана се појављује искачуће упозорење. Можете га сакрити кликом на
+одговарајуће дугме.
 
-The standard desktop interface is intended for screens at least 640 px
-wide. On narrower screens, use the [mobile
-view](/en/documentation/use/guides/mobile-view).
+Стандардни интерфејс за рачунаре је намењен екранима ширине најмање 640
+px. На ужим екранима користите [мобилни
+приказ](/en/documentation/use/guides/mobile-view).

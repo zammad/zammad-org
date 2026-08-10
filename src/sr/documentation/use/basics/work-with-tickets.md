@@ -1,36 +1,35 @@
 ---
 order: 5
-title: 'Work with tickets'
+title: 'Обрада тикета'
 ---
 
-# Work with tickets
+# Обрада тикета
 
 Честитамо, пронашли сте пут до постојећег тикета! Хајде сада да видимо шта и
 како можете урадити са њим.
 
-Generally, working on existing tickets means keeping up with a customer
-correspondence in a thread/conversation in the ticket detail view. Any time
-you open a ticket, a new tab will appear in your taskbar. To close a tab (in
-the sense of remove it from the taskbar, not setting the ticket state to
-closed), just click the ::X:: button in the tab. Zammad automatically saves
-your changes in opened ticket tabs, no matter if you already applied the
-changes or just edited things and switched to somewhere else. This means it
-is no problem to create a new ticket while editing an existing one. Simply
-switch back to the other tab.
+Уопштено, рад са постојећим тикетима значи праћење кореспонденције са
+клијентом у низу/разговору у прегледу детаља тикета. Сваки пут када отворите
+тикет, на левој страни навигационе траке појавиће се нова картица. Да бисте
+затворили картицу (у смислу да је уклоните из навигационе траке, а не да
+подесите статус тикета на затворен), само кликните на дугме ::X:: у
+картици. Zammad аутоматски чува ваше измене у отвореним картицама тикета,
+без обзира да ли сте већ применили измене или сте само едитовали ствари и
+прешли негде другде. To значи да није проблем креирати нови тикет док
+едитујете постојећи. Једноставно се вратите на другу картицу.
 
-For the most changes (except tags or title renaming, for example), an
-explicit update of the ticket is needed. So make sure to click the `Update`
-button on the right side of the footer bar when you are happy with your
-changes.
+За већину измена (осим тагова или промене наслова, на пример), потребно је
+експлицитно ажурирање тикета. Зато се уверите да кликнете дугме `Ažuriraj`
+на десној страни доње траке када сте задовољни својим изменама.
 
-## Changing ticket attributes
+## Измена атрибута тикета
 
-As you may know, there are additional ticket attributes such as group,
-priority and owner that you can set. If you haven't read
-[ticket-basics](/en/documentation/use/basics/ticket-basics) yet, check it
-out to learn more.
+Као што можда знате, постоје додатне карактеристике тикета као што су група,
+приоритет и власник које можете подесити. Ако још нисте прочитали
+[тицкет-басицс](/en/documentation/use/basics/ticket-basics), погледајте га
+да сазнате више.
 
-## Create a new article
+## Отворите нови тикет
 
 Без обзира да ли додајете нови чланак од нуле или одговарате на постојећи
 чланак клијента, можете изабрати између различитих врста чланака:
@@ -41,52 +40,49 @@ out to learn more.
   видети напомену.
 - **Позив**: Забележите резиме телефонског позива који сте имали са
   клијентом.
-- **Email**: Send an email to anyone about the ticket. The title of the
-  ticket is used for the subject of the email.
+- **Имејл**: Пошаљите имејл било коме у вези с тикетом. Назив тикета користи
+  се као предмет имејла.
 
-To choose another article type, use the channel tabs (labeled **Note**,
-**Phone**, **Email** etc.) and pick a different type. Use the **Visibility**
-switch to toggle the article between internal and public visibility.
-Articles with internal visibility are highlighted with a dashed blue border;
-public articles have no highlighting.
+Да бисте одабрали други тип чланка, користите прекидач картице **Канал** и
+одаберите другачији тип. Кликните на прекидач браве да промените видљивост
+чланка. Чланци са унутрашњом видљивошћу приказују се испрекиданом плавом
+ивицом.
 
-![Screenshot shows article type selector and visibility
-toggle](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
+![Снимак екрана приказује радњу чланка за раздељивање у падајућем
+менију](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
 
-To write and edit text, make use of the powerful editor features. You can
-use the toolbar or keyboard shortcuts to format text and trigger special
-functions. Because of the amount of features and their importance, you can
-find more information on the separate [editor
-page](/en/documentation/use/guides/editor).
+За писање и уређивање текста искористите моћне функције едитора. Можете
+користити траку са алаткама или пречице на тастатури да форматирате текст и
+покренете посебне функције. Због обима функција и њихове важности, више
+информација можете пронаћи на засебној [страници за
+уређивање](/en/documentation/use/guides/editor).
 
-Every new article appears at the end of the conversation, which means below
-the existing articles. To see detailed information of an article, just click
-on an existing article which opens additional meta information.
+Сваки нови чланак појављује се на крају разговора, односно испод постојећих
+чланака. Да бисте видели детаљне информације о чланку, само кликните на
+постојећи чланак што отвара додатне метаподатке.
 
-You might wonder now how to delete articles. The answer is you can only
-delete articles that you have created yourself and which are not older than
-10 minutes. To see the **Delete article** function in the ::a:: menu,
-articles of a communication type (emails, calls) must be changed to
-"internal" visibility first.
+Можда се питате како да обришете чланке. Одговор је да можете обрисати само
+оне које сте сами креирали и који нису старији од 10 минута. Да бисте видели
+функцију **Обриши чланак** у мени-ју ::a::, чланци комуникационог типа
+(имејлови, позиви) морају прво бити промењени на
 
-### Add an article from scratch
+### Додавање чланка од нуле
 
-Below the last article, click the `Add internal note` button (or `Add reply`
-if you are a customer). This opens the editor with the appropriate channel
-and visibility selected. You can change the type or visibility if you
-like. To answer the customer directly or to forward a specific article, use
-the corresponding buttons under an article. Read the next section for more
-information.
+Испод последњег чланка кликните на дугме `Add internal note` (или `Add
+reply` ако сте клијент). Ово отвара уређивач са одабраним одговарајућим
+каналом и видљивошћу. Можете променити врсту или видљивост ако желите. Да
+бисте одговорили клијенту директно или проследили одређени чланак,
+употребите одговарајуће дугмиће под чланком. Прочитајте следећи одељак за
+више информација.
 
-![Screenshot shows the action row under the last article in the ticket
-detail
-view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Снимак екрана приказује радњу чланка за раздељивање у падајућем
+менију](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Respond to an article
+### Одговори на чланак
 
-To forward or reply to an article, use one of the response buttons under an
-article or in the ::a:: menu. The behavior is similar to the behavior of an
-email client.
+Да бисте проследили чланак или одговорили на њега, употребите једно од
+дугмића за одговор под чланком или у ::a:: менију. Понашање је слично
+понашању имејл клијента.
 
 - **Одговори**: Омогућава одговор на чланак. Прималац ће бити аутоматски
   унешен. Одговор се шаље на истом каналу као и долазна порука. Ово вам
@@ -99,90 +95,90 @@ email client.
   или било коме. Оригинална порука и прилози ће бити укључени у ваш нови
   чланак.
 
-![Screenshot shows article reply
-actions](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
+![Снимак екрана приказује радњу чланка за раздељивање у падајућем
+менију](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
 
-Zammad even allows you to **quote text** from an existing article. This is
-especially helpful if an answer refers to different parts of the original
-message or the text is pretty long. This feature is limited to communication
-type articles like email where the response buttons are available. To quote
-text, simply select the text you want to quote and use the **Reply** or
-**Reply all** function. This adds the selected text with a timestamp in your
-article editor where you can answer it. You can use the quoting even
-multiple times to quote different parts of the text. Just select another
-part of the text, click on the same response action as before and it gets
-added as another quote to your editor.  You can split quotations by using
-[[enter]] or [[shift]] + [[enter]] in the editor and disable quote format
-for your text.
+Zammad вам чак омогућава да **цитирате текст** из постојећег чланка. Ово је
+посебно корисно ако се одговор односи на различите делове оригиналне поруке
+или ако је текст доста дуг. Ова функција је ограничена на чланке
+комуникационог типа као што је имејл, где су дугмићи за одговор доступни. Да
+бисте цитирали текст, једноставно изаберите текст који желите да цитирате и
+употребите функцију **Reply** или **Reply all**. Ово додаје изабрани текст
+са временском ознаком у ваш уређивач чланка где на њега можете
+одговорити. Цитирање можете употребити и више пута да бисте цитирали
+различите делове текста. Само изаберите други део текста, кликните на исту
+радњу за одговор као и пре и он ће бити додат као још један цитат у ваш
+уређивач. Цитате можете разделити помоћу [[enter]] или [[shift]] + [[enter]]
+у уређивачу и искључити формат цитата за свој текст.
 
-If the ticket has a long article history, see [Handling of Large
-Tickets](#handling-of-large-tickets) for the conveniences Zammad provides.
+Ако тикет има дугу историју чланака, погледајте [Рад са великим
+тикетима](#handling-of-large-tickets) за олакшице које Zammad пружа.
 
-### Handling of large tickets
+### По достигнутим подсетницима тикета
 
-When working on tickets with long article histories - like long email
-threads where you need to refer back to earlier messages - Zammad provides
-two conveniences:
+Када радите на тикетима са дугом историјом чланака - као што су дуги имејл
+разговори у којима морате да се враћате на претходне поруке - Zammad пружа
+две олакшице:
 
-- A floating ticket actions toolbar on the bottom right corner of the
-  article list shows quick actions, depending on your scroll position and
-  the ticket state. It contains buttons with icons for the following
-  actions:
-  - **Add internal note** (or **Add reply** if you are a customer): opens
-    the article reply form to write a note.
-  - **Scroll to start** and **Scroll to end**: jump to the top or bottom of
-    the article list. If there are unread articles, the **Scroll to end
-    button** displays a badge and changes to **Scroll to unread article**.
-  - The toolbar appears whenever the article list is taller than your screen
-    so that crucial actions stay accessible.
-- A **pinned reply form** so the editor stays visible while you scroll
-  through the articles. To pin or unpin the reply form, click the pin icon
-  in the header of the article reply form. The pinned form sticks to the
-  bottom of the ticket detail view. Resize the height by dragging the line
-  on the top edge of the pinned reply form. The pin state as well as the
-  panel size are saved in your browser.
+- Плутајућа трака радњи тикета у доњем десном углу листе чланака приказује
+  брзе радње, у зависности од положаја при померању и стања тикета. Садржи
+  дугмиће са иконицама за следеће радње:
+  - **Додај интерну напомену** (или **Додај одговор** ако сте клијент):
+    отвара форму за одговор на чланак да бисте написали напомену.
+  - **Помери на почетак** и **Помери на крај**: скочите на врх или дно листе
+    чланака. Ако постоје непрочитани чланци, дугме **Помери на крај**
+    приказује значку и мења се на **Помери на непрочитани чланак**.
+  - Трака се појављује кад год је листа чланака виша од вашег екрана, како
+    би кључне радње остале доступне.
+- **Прикачена форма за одговор** тако да уређивач остаје видљив док се
+  померате кроз чланке. Да бисте прикачили или откачили форму за одговор,
+  кликните на иконицу прибадаче у заглављу форме за одговор на
+  чланак. Прикачена форма остаје на дну детаљног приказа тикета. Висину
+  промените превлачењем линије на горњој ивици прикачене форме за
+  одговор. Стање прикачености као и величина панела чувају се у вашем
+  прегледачу.
 
-![Screenshot shows the article reply form pinned to the bottom of the ticket
-detail
-view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
+![Снимак екрана приказује радњу чланка за раздељивање у падајућем
+менију](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
-## Rename a ticket
+## Промена наслова тикета
 
-To rename a ticket, simply click on the title in the header bar and start
-typing. This title is used as subject in email communication and shows up in
-several places like overviews. Confirm with [[enter]] or click the button on
-the right side.
+Да бисте преименовали тикет, једноставно кликните на наслов у траци заглавља
+и почните да куцате. Овај наслов се користи као предмет у имејл комуникацији
+и приказује се на неколико места, као што су прегледи. Потврдите помоћу
+[[enter]] или кликните на дугме са десне стране.
 
-## Copy ticket number
+## Копирање броја тикета
 
-To copy the ticket number including a link to the ticket (e.g. to paste it
-in a third party chat app), use the ::c:: icon next to the ticket title. It
-copies the complete ticket number with the ticket identifier to your
-clipboard, e.g.  `Ticket#50071`. If pasting the content to a target which
-can handle HTML, a link to the ticket is included. If you just want to paste
-the ticket number, use plain pasting via [[ctrl]] [[shift]] [[v]] instead.
+Да бисте копирали број тикета укључујући и линк до тикета (нпр. да бисте га
+налепили у апликацију за ћаскање трећег лица), употребите ::c:: иконицу
+поред наслова тикета. Она копира комплетан број тикета са идентификатором
+тикета у вашу привремену меморију, нпр. `Ticket#50071`. Ако садржај лепите
+на место које може да обради HTML, укључује се и линк до тикета. Ако желите
+да налепите само број тикета, употребите обично лепљење преко [[ctrl]]
+[[shift]] [[v]].
 
-![Screenshot shows ticket header with highlighted ticket number copy
-button](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
+![Снимак екрана приказује одељак ознака у траци тикета са
+стране](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
 
-But wait, there is even a keyboard shortcut for that! Simply press [[.]] in
-the ticket detail view and the ticket number is copied to your clipboard. To
-include the ticket title as well, press [[.]] twice.  Example:
-`Ticket#31004: Onboarding new colleague`.
+Али чекајте, за то постоји чак и пречица на тастатури! Једноставно
+притисните [[.]] у детаљном приказу тикета и број тикета ће бити копиран у
+вашу привремену меморију. Да бисте укључили и наслов тикета, притисните
+[[.]] два пута. Пример: `Ticket#31004: Onboarding new colleague`.
 
-## Simultaneous ticket processing
+## Симултана обрада тикета
 
-It can happen that two or more agents open a ticket at the same time. To
-prevent edit conflicts and customers receiving contradictory answers, Zammad
-shows you who is viewing or editing the ticket currently. You can find this
-information in the bottom bar where avatars of all agents are displayed.
+Може се десити да два или више оператера отворе тикет у исто време. Да би се
+спречили конфликти при уређивању и да клијенти не би добијали противречне
+одговоре, Zammad вам приказује ко тренутно гледа или уређује тикет. Ову
+информацију можете наћи у доњој траци где су приказани аватари свих
+оператера.
 
-![Screenshot shows other agents viewing/editing the
-ticket](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
+![Снимак екрана приказује друге оператере како гледају/уређују
+тикет](/screenshots/documentation/use/advanced-features/simultaneous-work-detection.png)
 
-Make sure to communicate with your colleagues to prevent these problems
-before they arise. Depending on the additional icon and if the avatar icon
-is faded, it means:
+У зависности од одговарајуће иконица и да ли је аватар сличица изблеђена,
+пронађите додатно значење:
 
 - Аватар сличица: други оператер гледа тикет.
 - Избледела аватар сличица: други оператер има отворен тикет али га тренутно
@@ -190,27 +186,28 @@ is faded, it means:
 - Аватар сличица са иконицом оловке: други оператер тренутно активно ради на
   овом тикету.
 
-There are even more icons which represent additional states of the other
-agents (e.g. viewing ticket by mobile UI or is out-of-office). Just hover
-with the mouse if you are unsure what it means.
+Постоји још иконица које представљају додатна стања других оператера
+(нпр. гледање тикета преко мобилног интерфејса или одсуство из
+канцеларије). Само пређите мишем преко њих ако нисте сигурни шта значе.
 
-## Ticket actions
+## Радње тикета
 
-Additional actions are available in the ::a:: menu in the ticket sidebar.
+Промените назив кликом на наслов или коришћењем падајућег менија ::a:: у
+заглављу траке.
 
-History
-: See a comprehensive list of updates to the ticket, performed by any user, since its creation. Useful to check who did
-  what and when.
+Историја
+: Погледајте свеобухватну листу освежавања тикета, која је извршио било који корисник, од његовог отварања. Корисно за проверу ко је шта
+  урадио и када.
 
-Merge
-: Migrate all messages/notes to another ticket. Useful if you have more than one ticket about a single customer issue.
-  See [Merge Tickets](/en/documentation/use/advanced-features#merge-tickets) for details.
+Спајање
+: Пренесите све поруке/напомене у други тикет. Корисно ако имате више од једног тикета о истом проблему клијента.
+  За детаље погледајте [Спајање тикета](/en/documentation/use/advanced-features#merge-tickets).
 
-Change customer : Reassign the ticket to another customer.
+Промена клијента : Доделите тикет другом клијенту.
 
 -----
 
-You now know the basics and how to work with tickets in general. However,
-there are many more features in Zammad which can be very useful in your
-daily work. Read on in [Advanced
-Features](/en/documentation/use/advanced-features) to learn more.
+Сада знате основе и како се уопште ради са тикетима. Међутим, у Zammad-у
+постоји још много функција које могу бити веома корисне у вашем свакодневном
+раду. Читајте даље у [Напредним
+функцијама](/en/documentation/use/advanced-features) да бисте сазнали више.

@@ -1,63 +1,63 @@
 ---
 order: 5
-title: 'Reporting with Grafana'
+title: 'Извештавање помоћу Grafana-е'
 ---
 
-# Reporting with Grafana
+# Извештавање помоћу Grafana-е
 
 ::: info
-This guide is about Grafana. If you want to use another tool, check if it
-supports Elasticsearch indexes. If yes, then you are good to go!
+Овај водич се односи на Grafana-у. Ако желите да користите други алат, проверите да ли
+подржава Elasticsearch индексе. Ако да, онда можете да почнете!
 :::
 
-Grafana is a third party analytics/visualization application you can connect
-to Zammad (precisely: Elasticsearch). It can access the Elasticsearch index
-and visualize your Zammad data.
+Grafana је аналитичка/визуализациона апликација трећег лица коју можете
+повезати са Zammad-ом (прецизније: са Elasticsearch-ом). Може да приступи
+Elasticsearch индексу и визуализује ваше Zammad податке.
 
-This guide will provide you some steps to get started. For a deeper insight
-you should consider having a look at [Elasticsearch's indexed
-attributes](/en/reference/es-indexed-attributes) and to read the
-[documentation of Grafana](https://grafana.com/docs/){target=_blank}.
+Овај водич ће вам пружити неке кораке за почетак. За дубљи увид требало би
+да размотрите да погледате [индексиране атрибуте
+Elasticsearch-а](/en/reference/es-indexed-attributes) и да прочитате
+[документацију Grafana-е](https://grafana.com/docs/){target=_blank}.
 
-This guide expects all requirements to be up and running. We will not cover
-core configurations of each tool. Please also note that we can't support you
-with configuration of your specific third party tool.
+Овај водич подразумева да су сви захтеви подешени и покренути. Нећемо
+покривати основна подешавања сваког алата. Такође имајте на уму да не можемо
+да вам помогнемо са подешавањем вашег конкретног алата трећег лица.
 
 ## Предуслови
 
-You need:
+Потребно вам је:
 
-- A running instance of Grafana (hosted or self-hosted) in version 10.3 or
-  higher
-- Read access to your Elasticsearch index
-- A Zammad instance in version 4 or higher
+- Покренута инстанца Grafana-е (хостована или самостално хостована) у
+  верзији 10.3 или вишој
+- Приступ за читање вашем Elasticsearch индексу
+- Zammad инстанца у верзији 4 или вишој
 
 ::: warning
-Never expose Elasticsearch to the public if you're not sure how
-to do it. Especially **never** without authentication! Zammad
-stores **very sensitive** information within the Elasticsearch
-Index.
+Никада не излажите Elasticsearch јавности ако нисте сигурни како
+то да урадите. Посебно **никада** без аутентификације! Zammad
+чува **веома осетљиве** информације у Elasticsearch
+индексу.
 :::
 
-## Setting up required data sources
+## Потребни извори података
 
-**Before we start:** The data sources always follow the same scheme. We
-reduced below information to `name`, `time field name` and `index name`.
-Everything else relies on your environment and is out of our scope.
+**Пре него што почнемо:** Извори података увек прате исту шему. Информације
+испод смо свели на `name`, `time field name` и `index name`.
+Све остало зависи од вашег окружења и изван је нашег опсега.
 
 :::: tip
-Replace `zammad_production_` with your fitting prefix.
+Замените `zammad_production_` својим одговарајућим префиксом.
 
-Click on details to see how to query the index.
+Кликните на детаље да видите како да упитате индекс.
 
 ::: details
-Adjust the following command to your environment:
+Прилагодите следећу команду свом окружењу:
 
 ```sh
 curl http://localhost:9200/_aliases?pretty=true
 ```
 
-This will return an output like the following:
+Ово ће вратити излаз као што је следећи:
 
 ```json
 {
@@ -103,140 +103,142 @@ This will return an output like the following:
 :::
 ::::
 
-### ES - chat sessions
+### `ES - Sesije ćaskanja`
 
-- Index name: `zammad_production_chat_session`
-- Time field name: `created_at`
+- Назив индекса: `zammad_production_chat_session`
+- Назив временског поља: `created_at`
 
-### ES - CTI log
+### `ES - CTI log`
 
-- Index name: `zammad_production_cti_log`
-- Time field name: `start_at`
+- Назив индекса: `zammad_production_cti_log`
+- Назив временског поља: `start_at`
 
-### ES - ticket articles
+### `ES - Članci tikea`
 
-- Index name: `zammad_production_ticket`
-- Time field name: `article.created_at`
+- Назив индекса: `zammad_production_ticket`
+- Назив временског поља: `article.created_at`
 
-### ES - tickets by closed_at
+### `ES - Tiketi po closed_at`
 
-- Index name: `zammad_production_ticket`
-- Time field name: `close_at`
+- Назив индекса: `zammad_production_ticket`
+- Назив временског поља: `close_at`
 
-### ES - tickets by created_at
+### `ES - Tiketi po created_at`
 
-- Index name: `zammad_production_ticket`
-- Time field name: `created_at`
+- Назив индекса: `zammad_production_ticket`
+- Назив временског поља: `created_at`
 
-### ES - tickets by first_response_at
+### `ES - Tiketi po closed_at`
 
-- Index name: `zammad_production_ticket`
-- Time field name: `first_response_at`
+- Назив индекса: `zammad_production_ticket`
+- Назив временског поља: `first_response_at`
 
-With above data sources you basically have everything you need to start
-building your own dashboards.
+Са изворима података изнад у основи имате све што вам је потребно да почнете
+да градите сопствене контролне табле.
 
-## Quick start with dashboard template
+## Брзи почетак са шаблоном контролне табле
 
-If you want to get inspired, you can use our sample dashboards as mentioned
-below. These dashboards can also be found on
-[GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
+Ако желите да се инспиришете, можете користити наше примере контролних табли
+као што је наведено испод. Ове контролне табле можете наћи и на
+[GitHub-у](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
-### Importing a dashboard
+### Увоз контролне табле
 
-In Grafana, select _➕ > Import_ (or any other place which offers you to import
-a dashboard) and either upload the json file you
-downloaded from Github or use the grafana.com ID, provided as badge
-like <Badge type="tip" text="12345"/> attached to the next sections titles.
+У Grafana-и изаберите _➕ > Import_ (или било које друго место које вам нуди увоз
+контролне табле) и или отпремите json датотеку коју сте
+преузели са Github-а или употребите grafana.com ID, наведен као значка
+као што је <Badge type="tip" text="12345"/> приложена насловима следећих одељака.
 
-During importing you can provide a dashboard name and folder. You'll also be
-asked to map the data sources to your environment. If you used our data
-source names above, you can simply search for the same name.
+Током увоза можете навести назив контролне табле и фасциклу. Такође ће вам
+бити затражено да мапирате изворе података на своје окружење. Ако сте
+користили наше називе извора података изнад, можете једноставно потражити
+исти назив.
 
-### Ticket statistics dashboard <Badge type="tip" text="14222"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-![Grafana Ticket Dashboard](/screenshots/tutorials/reporting/tickets.png)
+![Пример снимка екрана (пуна
+страна)](/screenshots/tutorials/reporting/tickets.png)
 
-#### Dashboard graphs
+#### Пасуси
 
-- ticket opening and closing[^1]
-- created articles
-- ticket SLA (in time _and_ violation) per type[^1][^2]
+- отварање и затварање тикета[^1]
+- креирани чланци
+- SLA тикета (на време _и_ прекршај) по врсти[^1][^2]
 
-#### Ticket and article meta information
+#### Временска ознака креирања поруке.
 
-- ticket group distribution
-- sender ratio (e.g. Customer / Agent)[^3]
-- article type ratio (e.g. email, phone)[^3]
-- article content type
-- escalation ratios[^1]
-- average first response, update time and close time[^2]
-- top 10 of:
-  - organization of ticket customer[^1]
-  - ticket customers[^1]
-  - ticket owners[^1]
-  - average accounted time on ticket
-  - ticket tags[^1]
-- last 10 escalated tickets
+- расподела група тикета
+- однос пошиљалаца (нпр. Клијент / Оператер)[^3]
+- однос типова чланака (нпр. имејл, телефон)[^3]
+- Водич кроз стил и садржај
+- стопе ескалације[^1]
+- просечно време првог одговора, ажурирања и затварања[^2]
+- најбољих 10 за:
+  - организација корисника тикета[^1]
+  - корисници тикета[^1]
+  - власници тикета[^1]
+  - просечно време зарачунато по тикеу
+  - ознаке тикета[^1]
+- последњих 10 ескалираних тикета
 
-#### Required data sources
+#### Потребни извори података
 
-- `ES - Ticket Articles`
-- `ES - Tickets by created_at`
-- `ES - Tickets by closed_at`
+- `ES - Članci tikea`
+- `ES - Tiketi po created_at`
+- `ES - Tiketi po closed_at`
 
-### Chat-session statistics dashboard <Badge type="tip" text="14224"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-![Grafana Chat
+! [Grafana Chat
 Dashboard](/screenshots/tutorials/reporting/chat-sessions.png)
 
-#### Dashboard graphs
+#### Пасуси
 
-Chat session creations.
+Креирање сесија ћаскања.
 
-#### Chat session meta information
+#### Дељење ваших личних података
 
-- top 10 of:
-  - chat tags
-  - chat agents
-  - chat exit pages
-  - city origins
-- chat topic ratio
-- average number of messages within chat-sessions
-- average chatting time
-- world map with chat origin countries
+- најбољих 10 за:
+  - ознаке ћаскања
+  - оператери за ћаскање
+  - Следећа страна
+  - порекло по градовима
+- однос тема ћаскања
+- просечан број порука у сесијама ћаскања
+- просечно време ћаскања
+- светска мапа са земљама порекла ћаскања
 
-#### Required data sources
+#### Потребни извори података
 
-- `ES - Chat Sessions`
+- `ES - Sesije ćaskanja`
 
-### CTI-log statistics dashboard <Badge type="tip" text="14223"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-![Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)
+! [Grafana Call Dashboard](/screenshots/tutorials/reporting/calls.png)
 
-#### Dashboard graphs
+#### Пасуси
 
-Number of calls per direction (in / out).
+Број позива по смеру (улазни / излазни).
 
-#### Chat session meta information
+#### Дељење ваших личних података
 
-- call ratio (in / out)
-- average waiting time
-- average talking time
-- top 10 of:
-  - callers (in)
-  - call answerers (in)
+- однос позива (улазни / излазни)
+- просечно време чекања
+- просечно време разговора
+- најбољих 10 за:
+  - позиваоци (улазни)
+  - примаоци позива (улазни)
 
-#### Required data sources
+#### Потребни извори података
 
-- `ES - CTI Log`
+- `ES - CTI log`
 
-[^1]: Some values are not available as time series information. This
-    means we can only display the _last_ value of the field in question.
+[^1]: Неки подаци нису доступни као информације временског низа. Ово
+    значи да можемо приказати само _задњу_ вредност поља у питању.
 
-[^2]: Requires SLA function to be active. Negative values indicate SLA
-    violations.
+[^2]: Захтева активну функцију SLA. Негативне вредности указују на нарушавање SLA
+    прописа.
 
-[^3]: Specific reference IDs are not the same on every instance and thus
-    the panel may not work or show incorrect data. Check the panels
-    description on how to find our the relations on your system.
+[^3]: Спецификовани ID-ови референци нису исти за сваки примерак и стога
+    панел можда неће радити или приказивати нетачне податке. Проверите опис панела
+    како бисте сазнали везе на свом систему.

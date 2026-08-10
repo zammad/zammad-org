@@ -1,26 +1,26 @@
 ---
 order: 10
-title: Notification
+title: Администрација
 ---
 
-# Online notification
+# Online обавештење
 
 ::: info
-The availability of notification highly depends on the users
-permission and chosen notification settings.
+Доступност обавештења у великој мери зависи од дозвола корисника
+и одабраних подешавања обавештења.
 
-Please note that the best results are always achieved with _Agents_.
+Имајте на уму да се најбољи резултати увек постижу са _Агентима_.
 :::
 
-## List
+## Преглед листе
 
-Required permission: `any`
+Потребна дозвола: `any`
 
-`GET`-Request sent: `/api/v1/online_notifications?expand=true`
+`GET`-захтев послат: `/api/v1/online_notifications?expand=true`
 
 ::: tip
-Use the expand request to know the affected objects. Otherwise you'll
-need to find out what ID stands for which object type.
+Користите упит `expand` да бисте сазнали које објекте погађа. У супротном ћете
+мораће да утврдите који ID одговара којем типу објекта.
 :::
 
 ::: details
@@ -29,11 +29,11 @@ need to find out what ID stands for which object type.
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `any`
+Потребна дозвола: `any`
 
-`GET`-Request sent: `/api/v1/online_notifications/{id}`
+`GET`-захтев послат: `/api/v1/online_notifications/{id}`
 
 ::: details
 
@@ -43,30 +43,30 @@ Required permission: `any`
 
 ## Освежавање
 
-Required permission: `any`
+Потребна дозвола: `any`
 
-`PUT`-Request sent: `/api/v1/online_notifications/{id}`
+`PUT`-захтев послат: `/api/v1/online_notifications/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/online_notifications/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/online_notifications/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Обриши
 
-Required permission: `any`
+Потребна дозвола: `any`
 
-`DELETE`-Request sent: `/api/v1/online_notifications/{id}`
+`DELETE`-захтев послат: `/api/v1/online_notifications/{id}`
 
 ::: details
 
@@ -74,11 +74,11 @@ Required permission: `any`
 
 :::
 
-## Mark all as read
+## Означи све као прочитано
 
-Required permission: `any`
+Потребна дозвола: `any`
 
-`POST`-Request sent: `/api/v1/online_notifications/mark_all_as_read`
+`POST`-захтев послат: `/api/v1/online_notifications/mark_all_as_read`
 
 ::: details
 

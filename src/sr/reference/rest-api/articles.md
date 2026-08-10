@@ -7,102 +7,102 @@ title: Чланак
 
 ## Уопштено
 
-Some attributes of articles might not be straight forward or come with
-fairly many options - below list hopefully helps you on this journey.
+Нека својства чланака можда нису једноставна и могу имати доста опција -
+испод наведени списак би требало да вам помогне у томе.
 
 ### `content_type`
 
-Zammad supports `text/html` for HTML formatted text or `text/plain` for
-plain text. This allows you to have better formatting options if you need
-them.
+Zammad подржава `text/html` за HTML форматирани текст или `text/plain` за
+обичан текст. Ово вам омогућава боље опције форматирања ако су вам потребне.
 
-Zammad web UI usually uses `text/html`.
+Zammad web интерфејс обично користи `text/html`.
 
 ### `type`
 
-Zammad supports a huge number of article types. Below list may be incomplete
-depending on your instance and possibly installed add-ons / custom changes.
+Zammad подржава велики број типова чланака. Испод наведени списак може бити
+непотпун у зависности од ваше инсталације и евентуално инсталираних додатака
+/ прилагођених измена.
 
-If not stated otherwise, all article types below are **communication
-articles** and thus affecting SLA calculation in Zammad defaults.
+Ако није другачије наведено, сви типови чланака испод су **комуникациони
+чланци** и тиме утичу на израчунавање SLA у подразумеваним поставкама
+Zammad-а.
 
-The difference is that communication articles provide the option to reply
-automatically. Which actions exactly are available depends on the article
-type and e.g. recipient lists.
+Разлика је у томе што комуникациони чланци омогућавају аутоматско
+одговарање. Које тачно акције су доступне зависи од типа чланка и нпр. листа
+примилаца.
 
 `email`
-: This allows you to create incoming or outgoing email articles.
-  However, this highly depends on the chosen `sender`.
+: Ово вам омогућава креирање долазних или одлазних имејл чланака.
+  Међутим, ово у великој мери зависи од изабраног `sender`.
 
-`phone` : Indicates phone notes.
+`phone` : Означава телефонске белешке.
 
 `web`
-: Usually used by customers only. This type is being used when ever your
-  customer uses the web UI to create articles.
+: Обично га користе само клијенти. Овај тип се користи када ваш
+  клијент користи web интерфејс за креирање чланака.
 
 `note`
-: When ever a communication does not fit (e.g.: internal notes) choose
-  note. Zammad also uses this article type as default fall back.
+: Када комуникација не одговара (нпр: интерне белешке) изаберите
+  белешку. Zammad такође користи овај тип чланка као подразумевани резервни.
 
-  This is **not a communication article**.
+  Ово није **комуникациони чланак**.
 
-`sms` : This type is being used for Zammad's SMS integration.
+`sms` : Овај тип се користи за Zammad-ову SMS интеграцију.
 
 `chat`
-: This article type is technically a place holder and is only available
-  via API.
+: Технички, овај тип чланка је плацехолдер и доступан је искључиво
+  путем API-ја.
 
 `fax`
-: This article type is technically a place holder and is only available
-  via API.
+: Технички, овај тип чланка је плацехолдер и доступан је искључиво
+  путем API-ја.
 
-`twitter status` & `twitter direct-message`
-: These articles types are used by Zammad's twitter channel. Technically
-  you can use these to automatically respond to existing requests via
-  twitter.
+`twitter status` и `twitter direct-message`
+: Ови типови чланака користи их Twitter канал Zammad-а. Технички,
+  можете их користити за аутоматско одговарање на постојеће захтеве путем
+  Twitter-a.
 
-`facebook feed post` & `facebook feed comment`
-: These articles types are used by Zammad's Facebook channel. Technically
-  you can use these to automatically respond to existing requests via
-  Facebook.
+`facebook feed post` и `facebook feed comment`
+: Ови типови чланака користи Facebook канал Zammad-а. Технички,
+  можете их користити за аутоматско одговарање на постојеће захтеве путем
+  Facebook-а.
 
 `telegram personal-message`
-: Used by Zammad's Telegram channel. Technically you can use these to
-  automatically respond to existing requests via Telegram.
+: Користи га Telegram канал Zammad-а. Технички, можете их користити за
+  аутоматско одговарање на постојеће захтеве путем Telegram-а.
 
 ### `internal`
 
-This attribute allows you to set the visibility of your articles. For
-internal visible only use `true`, for visibly for your customers as well use
-`false`.
+Овај атрибут вам омогућава да подесите видљивост чланака. За видљивост само
+интерно користите `true`, а за видљивост и клијентима користите `false`.
 
 ::: warning
-**Visibility: internal doesn't mean it's silent**
+**Видљивост: интерно не значи да је тихо**
 
-If you set an article to `internal: true` but choose to send an email,
-please be aware that said email is still being sent out!
+Ако поставите чланак на `internal: true`, али изаберете да пошаљете имејл,
+имајте у виду да ће тај имејл и даље бити послат!
 :::
 
 ### `sender`
 
-Indicates which use did create the article. You can choose from:
+Означава који је корисник креирао чланак. Можете изабрати:
 
 - `Agent`
-- `Customer`
+- Прилагођени оквири
 - `System`
 
 ::: warning
-Depending of above selection, some article types may not be available
-or behave different. Please be aware that `System` causes users not
-being able to read the bodies (this works similar to Zammads trigger
-displaying in tickets).
+У зависности од горе наведеног избора, неки типови чланака можда неће бити доступни
+или ће се понашати другачије. Имајте у виду да `System` онемогућава корисницима
+да читају садржај (ово функционише слично Zammad-овим окидачима
+који се приказују у тикетима).
 :::
 
-## List articles by ticket
+## Приказ чланака по тикету
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_articles/by_ticket/{ticket id}`
+`GET`-захтев послат: `/api/v1/ticket_articles/by_ticket/{ticket id}`
 
 ::: details
 
@@ -110,11 +110,11 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## List specific article
+## Приказ специфичног чланка
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/ticket_articles/{article id}`
+`GET`-захтев послат: `/api/v1/ticket_articles/{article id}`
 
 ::: details
 
@@ -122,82 +122,83 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`POST`-Request sent: `/api/v1/ticket_articles`
+`POST`-захтев послат: `/api/v1/ticket_articles`
 
 ::: tip
-If you want to create articles on behalf of other users (e.g. for a
-phone note), use the `origin_by_id` attribute. `ticket.agent`
-permission is mandatory for this.
+Ако желите да креирате чланке у име других корисника (нпр. за белешку
+телевфонског позива), користите атрибут `origin_by_id`. За ово је обавезна дозвола
+`ticket.agent`.
 :::
 
-### Plain article
+### Чланак
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/ticket_articles/post-plain-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/ticket_articles/post-plain-res.json
 
 :::
 ::::
 
-### Article with attached files
+### Чланак са приложеним фајловима
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/ticket_articles/post-file-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/ticket_articles/post-file-res.json
 
 :::
 ::::
 
-### Article with inline images
+### Чланак са уграђеним сликама
 
-Inline images can be used by providing data URIs in your HTML markup.
+Уграђене слике се могу користити тако што ћете навести дата URI-јеве у вашем
+HTML коду.
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/ticket_articles/post-inline-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/ticket_articles/post-inline-res.json
 
 :::
 ::::
 
-## Receive attachments
+## Дохватање прилога
 
-Now that you have all those fancy attachments within your tickets, you may
-want to download specific ones.
+Сада када имате све те прилоге унутар ваших тикета, можда ћете хтети да
+преузмете неке од њих.
 
-`GET`-Request sent: `/api/v1/ticket_attachment/{ticket id}/{article
+`GET`-захтев послат: `/api/v1/ticket_attachment/{ticket id}/{article
 id}/{attachment id}`
 
-Response: `{image file}`
+Одговор: `{fajl slike}`
 
 ::: tip
-If you're not sure which articles a ticket contains, please
-[list](#list-articles-by-ticket) affected articles first.
+Ако нисте сигурни које чланке садржи тикет, прво их
+[молимо излистајте](#list-articles-by-ticket).
 :::

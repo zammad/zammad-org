@@ -3,27 +3,27 @@ order: 2
 title: Пакет
 ---
 
-# Package installation
+# Инсталација пакета
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-## Supported operating systems
+## Подржани оперативни системи
 
 За инсталацију пакета, подржане су следеће дистрибуције Linux платформе:
 
-| Distribution         | Version              |
-| -------------------- | :------------------- |
-| CentOS/RHEL          | 9, 10                |
-| Debian               | 11, 12 & 13          |
-| OpenSUSE Leap / SLES | 15 & 16              |
-| Ubuntu               | 22.04, 24.04 & 26.04 |
+| Дистрибуција  | Верзија             |
+| ------------- | :-----------------  |
+| CentOS/RHEL   | 8 и 9               |
+| Debian        | 11 и 12             |
+| OpenSUSE/SLES | Leap 15.x / 15      |
+| Ubuntu        | 20.04, 22.04, 24.04 |
 
 Уколико ваша дистрибуција тренутно није подржана, пробајте други метод
 инсталације или размотрите претплату на [Zammad сервис у
 облаку](https://zammad.com/en/pricing){target=_blank}.
 
-To follow the installation steps below, tools like curl, gnupg and others
-are required. If they are not present on your system, install them:
+Да бисте пратили кораке инсталације испод, потребни су алати као што су
+цурл, гнупг и други. Ако их нема на вашем систему, инсталирајте их:
 
 ::: tabs key:distros
 
@@ -41,9 +41,7 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-OpenSUSE doesn't require any additional steps here!
-
-SLES 15 requires additional repositories to be activated. To do so, run the following commands.
+Само SLES - није обавезно за OpenSUSE:
 
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
@@ -56,14 +54,14 @@ sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(u
 === CentOS/RHEL
 
 ```sh
-sudo dnf install curl epel-release
+sudo yum install wget epel-release
 ```
 
 :::
 
 ## Основе
 
-### Ensure correct locale
+### Обезбедите исправан locale
 
 ::: tabs key:distros
 
@@ -159,11 +157,11 @@ sudo localectl set-locale LANG=en_US.UTF-8
 водич](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html){target=_blank}
 за инсталацију Elasticsearch.
 
-Alternatively, you can follow [our example
-setup](/en/tutorials/install-elasticsearch) of Elasticsearch 9, which is
-separated to keep the install instructions as lean as possible.
+Алтернативно, можете погледати [наш
+пример](/en/tutorials/install-elasticsearch) за Elasticsearch 7, који се
+налази на посебној страници да би упутство остало што прегледније.
 
-### Add Zammad repository
+### Додајте Zammad репозиториј
 
 ::: info
 Packager.io можда није доступан из окружења са искључиво IPv6 адресама, тако да
@@ -172,99 +170,89 @@ Packager.io можда није доступан из окружења са ис
 :::: tabs key:distros
 
 === Ubuntu
-Add repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
-  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
+gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 
-Add repository (Ubuntu 22.04):
+Ubuntu 20.04
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Add repository (Ubuntu 24.04):
+Ubuntu 22.04
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Add repository (Ubuntu 26.04):
+Ubuntu 24.04
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 === Debian
-
-Add repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
-  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
+   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
 ```
 
-Add repository (Debian 11):
+Debian 11
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
-Add repository (Debian 12):
+Debian 12
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
-  -o /etc/apt/sources.list.d/zammad.list
-```
-
-Add repository (Debian 13):
-
-```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
-  -o /etc/apt/sources.list.d/zammad.list
+echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
+   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
 ```
 
 === OpenSUSE/SLES
-
-Add repository (OpenSUSE/SLES 15):
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo curl -o /etc/zypp/repos.d/zammad.repo \
-  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
+sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 
-Add repository (OpenSUSE/SLES 16):
+OpenSUSE 15.x / SLES15
 
 ```sh
-sudo curl -o /etc/zypp/repos.d/zammad.repo \
-  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo"
+sudo wget -O /etc/zypp/repos.d/zammad.repo \
+https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
 ```
 
 ===CentOS/RHEL
-Add repository key:
+Инсталирајте кључ репозиторија:
 
 ```sh
-sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
+sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
 ```
 
-Add repository (CentOS/RHEL 9):
+CentOS 8 / RHEL 8
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
-  -o /etc/yum.repos.d/zammad.repo
+sudo wget -O /etc/yum.repos.d/zammad.repo \
+https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
 ```
 
-Add repository (CentOS/RHEL 10):
+CentOS 9 / RHEL 9
 
 ```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \
-  -o /etc/yum.repos.d/zammad.repo
+sudo wget -O /etc/yum.repos.d/zammad.repo \
+https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
 ```
 
 ::::
@@ -296,7 +284,7 @@ sudo apt install zammad
 === OpenSUSE/SLES
 
 ```sh
-sudo zypper refresh
+sudo zypper ref
 ```
 
 ```sh
@@ -306,41 +294,47 @@ sudo zypper install zammad
 ===CentOS/RHEL
 
 ```sh
-sudo dnf install zammad
+sudo yum install zammad
+```
+
+Услед ограничења packager.io, биће вам неопходне пермисије за јавне датотеке на CentOS:
+
+```sh
+sudo chmod -R 755 /opt/zammad/public/
 ```
 
 :::
 
-### Manage services of Zammad
+### Управљање Zammad сервисима
 
-Zammad uses three services. These services can be managed individually or
-all at once by using the parent **zammad**.
+Zammad користи три сервиса. Они могу бити (ре)стартовани и стопирани за
+основним `zammad` процесом:
 
-- zammad: includes the services below
-  - **zammad-web**: internal puma server (relevant for displaying the web
-    app)
-  - **zammad-worker**: background worker - relevant for all delayed- and
-    background jobs
-  - **zammad-websocket**: WebSocket server for session related information
+- заммад: укључује следеће сервисе
+  - Само интерни puma сервис (одговоран за приказ веб апликације):
+  - Само позадински процес - одговоран за извршавање свих одложених и
+    задатке у позадини:
+  - Само websocker сервис за информације о сесији:
 
-Manage the services with `systemctl`'s commands `start`, `restart`, `stop`,
-`status`.
+Управљајте сервисима командама `start`, `restart`, `stop`, `status` програма
+`systemctl`.
 
-Example to start Zammad with all sub-services:
+Пример за покретање Zammad-а са свим под-сервисима:
 
 ```sh
-sudo systemctl start zammad
+systemctl старт заммад
 ```
 
-To stop or restart a service or to check its status, adjust the command as
-mentioned above.
+Да бисте зауставили или поново покренули сервис или проверили његов статус,
+прилагодите команду како је наведено горе.
 
-### Next steps
+### Следећи кораци
 
-- [Connect Zammad with
-  Elasticsearch](/en/tutorials/connect-config-elasticsearch)
-- [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
-- [Configure the webserver](/en/tutorials/webserver-config)
+- Повежите Zammad са Elasticsearch ([основни
+  водич](/sr/tutorials/connect-config-elasticsearch))
+- Подесите ваша SELinux правила и firewall ([основни
+  водич](/sr/tutorials/firewall-selinux))
+- Подесите веб сервис ([основни водич](/sr/tutorials/webserver-config))
 
 ## Предуслови
 
@@ -355,12 +349,12 @@ mentioned above.
 - Nginx
 - Redis
 
-### Database server
+### Сервис базе података
 
-Zammad stores its content in a database. The supported database system is
-[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no
-PostgreSQL server could be detected, it will be installed automatically
-during the package installation.
+Zammad чува свој садржај у бази података. Подржани систем база података је
+[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 или новији. Ако
+PostgreSQL сервер није детектован, биће аутоматски инсталиран током
+инсталације пакета.
 
 ::: warning
 Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу
@@ -369,47 +363,45 @@ during the package installation.
 подржан и може довести до грешака приликом миграције базе података.
 :::
 
-### Reverse proxy
+### Прокси приступа
 
-The following reverse proxies are supported in their currently maintained
-versions:
+Следеће опције проксија приступа су подржане:
 
 - Nginx
 - Apache
 
-The installation script tries to detect a Apache or Nginx during the
-installation. In case none is found, Nginx is automatically installed.  You
-can find a basic example in [our Webserver configuration
-guide](/en/tutorials/webserver-config).
+Скрипт за инсталацију покушава да детектује Apache или Nginx током
+инсталације. У случају да ниједан није пронађен, Nginx се аутоматски
+инсталира. Основан пример можете наћи у [нашем водичу за конфигурацију web
+сервера](/en/tutorials/webserver-config).
 
 ### Redis
 
-[Redis](https://redis.io/){target=_blank} is required for realtime
-communication via web socket.  Zammad requires Redis 7 or newer.  It gets
-installed automatically (package) or is included in the stack (Docker
-Compose) with a working configuration.  However, the installation and
-configuration is out of scope of this documentation. Please follow the
-official guides and ensure to set it up in a secure way.
+За комуникацију у реалном времену преко web сокета потребан је
+[Redis](https://redis.io/). Zammad захтева Redis 7 или новији.  Аутоматски
+се инсталира (пакет) или је укључен у стацк-у (Docker Compose) са радном
+конфигурацијом.  Међутим, инсталација и конфигурација су изван опсега ове
+документације. Пратите званичне водиче и осигурајте да га поставите на
+сигуран начин.
 
-Available environment variables for standard and Sentinel setups are briefly
-mentioned in the [Redis Variables](/en/reference/redis) page.
+Доступне променљиве окружења за стандардна и Sentinel подешавања су кратко
+поменуте на страници [Redis Варијабле](/en/reference/redis).
 
 ::: info
-CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a drop-in-replacement for Redis.
-During the Zammad installation on those distros, it gets installed automatically as a dependency.
+CentOS и RHEL 10 користе [Valkey](https://valkey.io/) као замену за Redis. Током инсталације Zammad-а на тим дистрибуцијама, аутоматски се инсталира као зависност.
 :::
 
-### Elasticsearch <Badge type="info" text="optional"/> <Badge type="danger" text="highly recommended"/>
+### Elasticsearch <Badge type="info" text="opciono"/> <Badge type="danger" text="toplo preporučeno"/>
 
-Elasticsearch is not automatically installed. Because it is crucial for a
-proper Zammad setup, it is included in the installation instructions
-above. If you want to connect Zammad to an already existing Elasticsearch
-instance, make sure to use a supported version and have a look at our
-[config example](/en/tutorials/connect-config-elasticsearch).
+Elasticsearch се не инсталира аутоматски. Пошто је кључан за исправно
+подешавање Zammad-а, укључен је у горе наведена упутства за инсталацију. Ако
+желите да повежете Zammad са већ постојећом Elasticsearch инстанцом,
+проверите да ли користите подржану верзију и погледајте наш [пример
+конфигурације](/en/tutorials/connect-config-elasticsearch).
 
-Supported Elasticsearch versions are `8.11` - `9.x`.
+Подржане Elasticsearch верзије су `8.11` - `9.x`.
 
-Elasticsearch version history for Zammad:
+Први кораци са Zammad-ом
 
 ::: details
 
@@ -430,28 +422,28 @@ Elasticsearch version history for Zammad:
 
 ### Memcached
 
-Zammad heavily relies on caching to improve performance. This cache can be
-stored in the file system without relying on externals services. However,
-this is only possible if all services of Zammad are running on the same file
-system!
+Zammad се у великој мери ослања на кеширање за побољшање перформанси. Овај
+кеш може бити сачуван у фајл систему без ослањања на екстерне
+сервисе. Међутим, ово је могуће само ако сви Zammad-ови сервиси раде на
+истом фајл систему!
 
-In all other cases like deploying Zammad via containers (Docker or
-Kubernetes) or on separate cluster nodes, a
-[Memcached](https://memcached.org/){target=_blank} service is required to
-store the cache and serve it to all Zammad instances.  The Docker and
-Kubernetes stacks already include this service.
+У свим осталим случајевима попут деплоувања Zammad-а путем контејнера
+(Docker или Kubernetes) или на одвојеним чворовима кластера, потребан је
+[Memcached](https://memcached.org/){target=_blank} сервис за чување кеша и
+ислуживање свим Zammad инстанцама.  Docker и Kubernetes стацк-ови већ
+укључују овај сервис.
 
-However, even local file system installations may benefit from Memcached's
-performance improvements. You might want to have a look at our [performance
-tuning](/en/reference/environment-variables#performance-tuning) section too.
+Међутим, чак и локалне инсталације на фајл систему могу имати користи од
+Memcached-ових побољшања перформанси. Такође бисте могли погледати нашу
+секцију [подешавање
+перформанси](/en/reference/environment-variables#performance-tuning).
 
-The installation and configuration is out of scope of this documentation. In
-case you have to install Memcached manually, please follow the [official
-documentation of Memcached](https://docs.memcached.org/){target=_blank}.
+Инсталација и конфигурација су изван опсега ове документације. У случају да
+морате ручно инсталирати Memcached, пратите [званичну документацију
+Memcached-а](https://docs.memcached.org/){target=_blank}.
 
-### GnuPG <Badge type="info" text="optional"/>
+### GnuPG <Badge type="info" text="opciono"/>
 
-If you want to use the PGP integration for sending and receiving signed and
-encrypted emails, you need to install the GnuPG-Tool. Please have a look at
-the official [GnuPG
-website](https://www.gnupg.org/index.html){target=_blank}.
+Ако желите да користите PGP интеграцију за слање и примање потписаних и
+шифрованих емаилова, морате инсталирати GnuPG-алат. Погледајте званичну
+[GnuPG веб страницу](https://www.gnupg.org/index.html){target=_blank}.

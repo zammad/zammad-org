@@ -18,25 +18,25 @@ ferramentas e ajuda contextual. Use-os sempre que necessário.
 ![Captura de tela mostra a visualização de detalhes do
 ticket](/screenshots/cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)
 
-## Main UI elements
+## Principais elementos da UI
 
 A captura de tela acima mostra uma visualização de detalhes do ticket no
 Zammad. Continue lendo para uma descrição dos diferentes elementos
 principais do Zammad.
 
-Primary navigation
-: This is the whole left sidebar which includes the search, notifications, overviews, the taskbar, your avatar, the
-  ticket create button and maybe more, depending on your system (see next section).
+Navegação principal
+: esta é toda a barra lateral esquerda, que inclui a pesquisa, notificações, visões gerais, a barra de tarefas, seu avatar, o
+  botão de criar ticket e talvez mais, dependendo do seu sistema (veja a próxima seção).
 
-Ticket detail view
-: This is where you handle your customer requests. It appears in the main content in the middle of the screen when a
-  ticket tab is selected in the navigation sidebar.
+Visualização de detalhes do ticket
+: é aqui que você lida com as solicitações dos seus clientes. Aparece no conteúdo principal, no meio da tela, quando uma
+  aba de ticket é selecionada na barra lateral de navegação.
 
 Sidebar
 : esta é a barra lateral direita na visualização de detalhes do ticket. Contém abas de barra lateral como clientes e checklists e
   exibe a aba atualmente selecionada.
 
-## Primary navigation
+## Navegação principal
 
 A barra lateral de navegação principal é o seu local central para acessar
 todas as principais partes do Zammad. Você pode não ver todas elas, pois
@@ -45,22 +45,22 @@ está sempre visível. Isso significa que, se você não souber onde está,
 sempre pode voltar ao painel, suas visões gerais ou um ticket aberto, por
 exemplo.
 
-Search and notification area
-: Includes the search where you can search for users, organizations, tickets and basically every in Zammad available
-  information. Next to the search you can find the Zammad logo. In case there is a notification, it shows you a badge
-  with a count about how many notifications you got.
+Área de pesquisa e notificação
+: inclui a pesquisa, onde você pode pesquisar usuários, organizações, tickets e basicamente qualquer informação disponível no
+  Zammad. Ao lado da pesquisa, você encontra o logo do Zammad. Caso haja uma notificação, ele mostra um selo
+  com uma contagem de quantas notificações você tem.
 
-Navigation tabs
-: Allows you to switch to different Zammad screens like the dashboard, overviews, knowledge base or phone screen
-  depending on your system.
+Abas de navegação
+: permite que você mude para diferentes telas do Zammad, como o painel, visões gerais, base de conhecimento ou tela de telefone,
+  dependendo do seu sistema.
 
-Taskbar tabs
-: You can find tabs for your opened tickets, users, organizations and the detailed search in the taskbar. So if you
-  read about a user tab, this means an opened user tab in your sidebar.
+Abas da barra de tarefas
+: você encontra abas para seus tickets, usuários, organizações abertos e a pesquisa detalhada na barra de tarefas. Então, se você
+  ler sobre uma aba de usuário, isso significa uma aba de usuário aberta na sua barra lateral.
 
-Bottom bar
-: Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and
-  a reporting button as well.
+Barra inferior
+: configurações de perfil e botão de criar novo ticket. Caso você tenha permissões adicionais, também pode haver um botão de configurações e
+  um botão de relatórios.
 
 O Zammad salva imediatamente seu progresso de trabalho atual, para que você
 possa alternar facilmente entre as diferentes áreas do Zammad e não precise
@@ -77,9 +77,9 @@ correspondente no lado direito da barra lateral.
 
 <!-- markdownlint-disable MD007 -->
 
-Ticket tab
-: This tab shows the ticket information like owner, group, priority and state and lets you edit these values.
-  Additionally, the following actions are available when you click on the ::a:: button in the top section:
+Aba de ticket
+: essa aba mostra as informações do ticket, como responsável, grupo, prioridade e estado, e permite que você edite esses valores.
+  Além disso, as seguintes ações estão disponíveis ao clicar no botão ::a:: na seção superior:
 
   - History: mostra uma caixa de diálogo com o histórico do ticket atual. É
     aqui que você pode encontrar quando e quais ações foram realizadas e por
@@ -88,10 +88,10 @@ Ticket tab
     emails sobre o mesmo assunto.
   - Change customer: define outro cliente para o ticket.
 
-Customer tab
-: View customer details including a reference to the customer's other tickets. You can change the ticket customer here
-  as well by clicking on the ::a:: button in the top section.
+Aba de cliente
+: veja os detalhes do cliente, incluindo uma referência aos outros tickets do cliente. Você também pode alterar o cliente do ticket aqui,
+  clicando no botão ::a:: na seção superior.
 
-Organization tab
-: This tab is only shown if the customer is member of an organization. It shows the organization's details including all
-  members. By clicking on the ::a:: button in the top section, you can edit the organization.
+Aba de organização
+: essa aba só é exibida se o cliente for membro de uma organização. Ela mostra os detalhes da organização, incluindo todos os
+  membros. Ao clicar no botão ::a:: na seção superior, você pode editar a organização.

@@ -7,18 +7,18 @@ title: Група
 
 ::: info
 
-- Please note that `follow_up_possible` may not work as expected. The
-  possible values are `yes` or `new_ticket`!
-- If you want to create or update **subgroups**, use `::` as delimiter
-  for the names. You also have to name the complete hierarchy in the
-  name. Example: `Sales::Europe::South`
+- Имајте у виду да `follow_up_possible` можда неће радити очекивано. Могуће
+  вредности су `yes` или `new_ticket`!
+- Ако желите да креирате или ажурирате **подгрупе**, користите `::` као раздвајач
+  за називе. Такође морате навести целу хијерархију у
+  називу. Пример: `Sales::Europe::South`
 :::
 
-## List
+## Преглед листе
 
-Required permission: `admin.group`
+Потребна дозвола: `admin.group`
 
-`GET`-Request sent: `/api/v1/groups`
+`GET`-захтев послат на: `/api/v1/groups`
 
 ::: details
 
@@ -26,11 +26,11 @@ Required permission: `admin.group`
 
 :::
 
-## Show
+## Прикажи
 
-Required permission: `admin.group`
+Потребна дозвола: `admin.group`
 
-`GET`-Request sent: `/api/v1/groups/{id}`
+`GET`-захтев послат на: `/api/v1/groups/{id}`
 
 ::: details
 
@@ -38,21 +38,21 @@ Required permission: `admin.group`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `admin.group`
+Потребна дозвола: `admin.group`
 
-`POST`-Request sent: `/api/v1/groups`
+`POST`-захтев послат на: `/api/v1/groups`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/groups/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/groups/post-res.json
 
@@ -61,43 +61,43 @@ Required permission: `admin.group`
 
 ## Освежавање
 
-Required permission: `admin.group`
+Потребна дозвола: `admin.group`
 
-`PUT`-Request sent: `/api/v1/groups/{id}`
+`PUT`-захтев послат на: `/api/v1/groups/{id}`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/groups/put-id-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/groups/put-id-res.json
 
 :::
 ::::
 
-## Delete
+## Обриши
 
-Required permission: `admin.group`
+Потребна дозвола: `admin.group`
 
-`DELETE`-Request sent: `/api/v1/groups/{id}`
+`DELETE`-захтев послат на: `/api/v1/groups/{id}`
 
 ::: danger
 
-**This is a permanent removal**:
+**Ово је трајно брисање**:
 
-Please note that removing groups cannot be undone.
+Имајте у виду да се брисање група не може поништити.
 
-Removing organizations with references in e.g. activity streams or
-tickets is not possible via API - this will be indicated by
-`"error": "Can't delete, object has references."`. This is _not_ a bug.
+Брисање организација са референцама (нпр. у токовима активности или
+тикетима) није могуће путем API-ја - то ће бити означено као
+`"error": "Can't delete, object has references."`. Ово _није_ грешка.
 
-Consider setting affected groups to inactive instead or ensure to move
-all existing tickets to new groups.
+Размислите о постављању задужених група у статус неактивно или обезбедите премештање
+свих постојећих тикета на нове групе.
 
 :::
 

@@ -1,9 +1,9 @@
 ---
 order: 6
-title: 'Configure database server'
+title: 'Datenbank-Server konfigurieren'
 ---
 
-# Configure database server
+# Datenbank-Server konfigurieren
 
 Diese Seite soll nur die für Zammad relevanten Teile beleuchten und ist
 nicht als vollständige Anleitung gedacht. Sie ist nur dann für Sie relevant,
@@ -46,7 +46,7 @@ $ sudo -u postgres psql -c 'SHOW config_file'
 
 :::
 
-## Adjust pool size
+## Poolgröße anpassen
 
 In der Datei `database.yml` (Verzeichnis `config/`) können Sie die zulässige
 Poolgröße festlegen. Standardmäßig nimmt jeder Zammad-Prozess bis zu `50`
@@ -61,7 +61,7 @@ Regel auf andere Probleme Ihres PostgreSQL-Servers hin.
 Zammad verwendet standardmäßig bis zu 200 Verbindungen. Abhängig von Ihrer
 Umgebung und Auslastung möchten Sie diesen Wert eventuell ändern.
 
-### Determine value
+### Wert bestimmen
 
 Um Ihnen bei der Ermittlung eines Wertes zu helfen, bietet Zammad eine
 Funktion zur Berechnung eines Vorschlags. Wenn sie ausgeführt wird, fordert
@@ -76,7 +76,7 @@ Führen Sie sie mit dem Befehl aus:
 rake zammad:db:max_connections
 ```
 
-### Adjust value
+### Wert anpassen
 
 Erhöhen Sie die maximal zulässige Anzahl von Verbindungen:
 

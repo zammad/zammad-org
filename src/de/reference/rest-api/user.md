@@ -11,7 +11,7 @@ Bitte beachten Sie, dass die folgenden Beispiele mit den Berechtigungen `admin` 
 verfügbar.
 :::
 
-## Me - current user
+## Me - Aktueller Benutzer
 
 Erforderliche Berechtigung: beliebig
 
@@ -137,7 +137,7 @@ in der Benutzeroberfläche von Zammad oder den Privacy-Endpunkt zu verwenden
 stellt sicher, dass auch zugehörige Informationen wie Tickets gelöscht
 werden.
 
-### Via data privacy endpoint
+### Per Data Privacy-Endpunkt
 
 Erforderliche Berechtigung: `admin.data_privacy`
 
@@ -158,7 +158,7 @@ Erforderliche Berechtigung: `admin.data_privacy`
 :::
 ::::
 
-### Via user endpoint <Badge type="danger" text="not recommended" />
+### Per User Endpunkt <Badge type="danger" text="not recommended" />
 
 Erforderliche Berechtigung: `admin.user`
 

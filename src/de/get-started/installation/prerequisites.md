@@ -7,7 +7,7 @@ title: Voraussetzungen
 
 <!--@include: @/de/modules/zammad-services-hint.md-->
 
-## Server hardware
+## Server-Hardware
 
 Die Hardwareanforderungen variieren je nach Szenario. Das macht es schwer,
 spezifische CPU- und Speicherangaben zu nennen, die für alle Anwendungsfälle
@@ -26,7 +26,7 @@ Für ein Beispielszenario mit bis zu 40 Agenten könnte ein gute Basis sein:
 - 6 CPU-Kerne
 - 6 GB RAM (+6 GB für Elasticsearch)
 
-## Server software
+## Server-Software
 
 Je nach Installationsart gibt es einige Voraussetzungen. Diese sind in den
 jeweiligen Installationsanweisungen enthalten:
@@ -35,7 +35,7 @@ jeweiligen Installationsanweisungen enthalten:
 - [Docker](docker)
 - [Kubernetes](kubernetes)
 
-## Client requirements
+## Anforderungen an Clients
 
 ### Browser
 
@@ -51,21 +51,23 @@ Version unterstützt:
 Das bedeutet nicht, dass Zammad mit anderen Browsern oder älteren Versionen
 nicht funktioniert, sondern nur, dass wir sie nicht testen und supporten.
 
-### Network
+### Netzwerk
 
-Be aware that communication between client and server uses WebSockets. Some
-firewalls and proxies may filter these connections. This could reduce
-performance or prevent real-time updates.
+Bitte beachten Sie, dass die Kommunikation zwischen Client und Server über
+WebSockets erfolgt. Einige Firewalls und Proxys filtern diese Verbindungen
+möglicherweise heraus. Dies könnte zu Leistungseinbußen führen oder
+Echtzeit-Aktualisierungen verhindern.
 
-### Display
+### Anzeige
 
-Zammad adapts its layout to different screen sizes. For the best experience,
-we recommend using a display with sufficient screen size and
-resolution. When using small screens, Zammad collapses elements like the
-sidebar to maintain usability. If these measures are not sufficient, a toast
-warning shows up at the top of the screen. You can hide it by clicking the
-corresponding button.
+Zammad passt sein Layout an unterschiedliche Bildschirmgrößen an. Für ein
+optimales Erlebnis empfehlen wir die Verwendung eines Bildschirms mit
+ausreichender Größe und Auflösung. Bei der Nutzung kleiner Bildschirme
+blendet Zammad Elemente wie die Seitenleiste aus, um die
+Benutzerfreundlichkeit zu gewährleisten. Sollten diese Maßnahmen nicht
+ausreichen, erscheint oben auf dem Bildschirm eine Warnmeldung. Sie können
+diese ausblenden, indem Sie auf die entsprechende Schaltfläche klicken.
 
-The standard desktop interface is intended for screens at least 640 px
-wide. On narrower screens, use the [mobile
-view](/en/documentation/use/guides/mobile-view).
+Die Standard-Desktop-Oberfläche ist für Bildschirme mit einer Breite von
+mindestens 640 px ausgelegt. Auf schmaleren Bildschirmen nutzen Sie bitte
+die [Mobilansicht](/de/documentation/use/guides/mobile-view).

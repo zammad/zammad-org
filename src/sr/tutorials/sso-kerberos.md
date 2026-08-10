@@ -1,126 +1,123 @@
 ---
 order: 13
-title: 'Single sign-on with Kerberos'
+title: 'Јединствена пријава са Керберосом'
 ---
 
-# Single sign-on for Kerberos <Badge type="warning" text="on-premise only"/>
+# Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-This guide will discuss how to set up single sign-on using Microsoft Active
-Directory.
+Овај водич ће објаснити како поставити јединствену пријаву коришћењем
+Microsoft Active Directoryja.
 
-## Conceptual overview
+## Преглед функција
 
-Like every other web application out there, Zammad has its own logic for
-signing users up, storing their passwords, authenticating them, and managing
-their sessions.
+Као и свака друга веб апликација, Zammad има сопствену логику за
+регистрацију корисника, чување лозинки, аутентификацију и управљање
+сесијама.
 
-If your IT department keeps its own user identity store (like Active
-Directory), Zammad's SSO support allows you to leverage that existing auth
-system so that anyone with an account on your local intranet will 1)
-automatically have an account in Zammad and 2) be able to log in with a
-single click.
+Ако ваше IT одељење одржава сопствено складиште идентитета корисника (попут
+Active Directoryja), SSO подршка у Zammad-у омогућава искоришћавање тог
+постојећег система аутентификације, тако да свако ко има налог на вашој
+локалној интранету 1) аутоматски ће имати налог у Zammad-у и 2) моћи ће да
+се пријави једним кликом.
 
 ::: tip
-If you don't have this IT infrastructure but still want one-click
-login, you can use alternatives like Github, Google, Facebook and more.
+Ако немате ову IT инфраструктуру, али желите пријаву једним кликом,
+могуће је користити алтернативе као што су GitHub, Google, Facebook и друге.
 :::
 
-## How does it work?
+## Како то уствари функционише?
 
-Once enabled, single sign-on activates an endpoint at
-`https://your.zammad.host/auth/sso`. When the Zammad server receives a GET
-request at this endpoint with a valid username in **any one of the
-following** entities, it creates a new session for that user:
+Након активирања, јединствена пријава омогућава ендпоинт на
+`https://your.zammad.host/auth/sso`. Када Zammad сервер прими GET захтев на
+овом ендпоинту са валидним корисничким именом у **било ком** од следећих
+поља, креира нову сесију за тог корисника:
 
-- an `X-Forwarded-User` request header
-- a `REMOTE_USER` web server environment variable
-- an `HTTP_REMOTE_USER` web server environment variable
+- `X-Forwarded-User` заглавље захтева
+- променљива окружења веб сервера `REMOTE_USER`
+- променљива окружења веб сервера `HTTP_REMOTE_USER`
 
 ::: info
-**Wait. SSO allows you to sign in with only a username?**
+**Чек. SSO омогућава пријаву само корисничким именом?**
 
-In principle, yes.
+У принципу, да.
 
-**How is that okay?**
+**Како је то у реду?**
 
-In this guide, we configure our web server (Apache) to intercept all
-requests to the `/auth/sso` endpoint. Instead of forwarding them to
-Zammad, Apache initiates a three-sided login process (_Kerberos
-authentication_) between the itself, the user, and the Active
-Directory server.
+У овом водичу конфигурисали смо веб сервер (Apache) да прекине све
+захтеве ка `/auth/sso` ендпоинту. Уместо да их проследи на
+Zammad, Apache иницира процес пријаве са три стране (_Kerberos
+аутентификација_) између себе, корисника и сервера Active
+Directoryja.
 
-If Active Directory doesn't recognize the user or their password,
-Zammad never sees the request, and the session is never created.
+Ако Active Directory не препозна корисника или његову лозинку,
+Zammad никада не види захтев и сесија се никада не креира.
 
-**What does this all mean?**
+**Шта све ово значи?**
 
-It means there are many ways you could set up SSO—you don't need to
-follow this guide or even use Active Directory or Kerberos—but if you
-don't know what you're doing, you're going to end up with a _massive_
-security hole.
+То значи да постоји много начина како можете поставити SSO—не морате
+пратити овај водич нити користити Active Directory или Kerberos—али ако
+не знате шта радите, на крају ћете имати _огроман_
+пропуст у безбедности.
 :::
 
 ## Први кораци
 
 ::: tip
-**Too busy to handle it on your own?**
+**Превише сте заузети да то урадите сами?**
 
-We've got you covered. Our experts offer custom-tailored workshops to
-get your team up and running fast and with confidence.
-[Just drop us a line](https://zammad.com/contact){target=_blank}!
+Ту смо за вас. Наши стручњаци нуде прилагођене радионице које ће ваш тим брзо покренути и оснажити.
+[Јавите нам се](https://zammad.com/contact){target=_blank}!
 :::
 
-You will need:
+Требаће вам:
 
-- a Microsoft Active Directory environment with
-  - root access
-  - support for AES 256-bit encryption
-- a Zammad host with
-  - root access
-  - a fully-qualified domain name (FQDN)
-- some familiarity with system administration (e.g. Apache configuration)
+- Microsoft Active Directory окружење са
+  - роот приступ
+  - подршка за AES енкрипцију на 256 бита
+- Додајте Zammad репозиториј
+  - роот приступ
+  - комплетно квалификовано име домена (FQDN)
+- одређено познавање администрације система (нпр. конфигурација Апацха)
 
-For best results, set up the LDAP integration to make sure
-your Active Directory and Zammad user accounts are always in sync. You
-can find it in Zammad's admin interface under
+За најбоље резултате подесите LDAP интеграцију како бисте осигурали да су ваши Active Directory и Zammad налози увек синхронизовани. Можете је пронаћи у админ интерфејсу Zammad-а под
 _Settings > Security > Third-party Applications_.
 
-## Step 1: Configure active directory
+## Корак 1: Клонирање GitHub репозиторија
 
-In the Kerberos authentication scheme, the **authentication server** (Active
-Directory) needs to maintain shared secrets with the **service**
-(Zammad). To make this possible, we need to register a **service principal
-name** (SPN) for Zammad on Active Directory.
+У Kerberos шеми аутентификације, **сервер за аутентификацију** (Active
+Directory) мора да одржава заједничке тајне са **услугом** (Zammad). Да би
+се то омогућило, на Active Directory-u морамо регистровати **сервице
+принципал наме** (SPN) за Zammad.
 
 ::: info
-These directions have been confirmed on Windows Server 2016.
+Ове упуте су потврђене на Windows Серверу 2016.
 :::
 
-### 1a. Create a service account
+### 1a. Креирајте сервисни налог
 
-You may use an existing service account if you have one. Admin privileges
-are not required; a normal user account will do.
+Можете искористити постојећи сервисни налог ако га имате. Администратор
+овлашћења нису потребна; обичан кориснички налог је довољан.
 
-![Screenshot Active Directory service account
-settings](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
+![Skrinsot podešavanja servisnog naloga u Active
+Directory-u](/screenshots/tutorials/sso-kerberos/active-directory-service-account-settings.png)
 
-### 1b. Reset password
+### 1b. Ресетуј лозинку
 
-Reset service account password after enabling the "This account supports
-Kerberos AES 256 bit encryption".
+Ресетујте лозинку сервисног налога након укључивања опције "Овај налог
+подржава Kerberos AES 256 бит енкрипцију".
 
-### 1c. Register a SPN for Zammad
+### 1c. Региструјте SPN за Zammad
 
-Replace the following placeholders in the commands below:
+Замените следеће плацехолдер-е у командама испод:
 
 - `<zammad-host>`: Zammad FQDN
-- `<service-acct>`: Service account logon name
-- `<password>`: Password of the service account (Option `/pass *` did prove
-  to not work)
-- `<domain>`: Windows domain
-- `<master-domain-controller>`: Master domain controller IP/FQD
+- `<service-acct>`: Корисничко име за пријаву сервисног налога
+- `<password>`: Лозинка сервисног налога (Опција `/pass *` се показала као
+  нефункционална)
+- `<domain>`: Windows домен
+- `<master-domain-controller>`: IP/FQD master доменског контролера
 
-The commands below will prompt for the users password:
+Команде испод ће тражити лозинку корисника:
 
 ```sh
 setspn -s HTTP/<zammad-host> <service-acct>
@@ -136,9 +133,9 @@ ktpass /princ HTTP/<zammad-host>@<DOMAIN> \
         /out zammad.keytab
 ```
 
-### 1d. Note the secret key and version number
+### 1d. Забележите тајни кључ и верзионски број
 
-The output of the command above contains important data for Step 2e below:
+Излаз горње команде садржи важне податке за Корак 2e испод:
 
 ```sh
 Using legacy password setting method
@@ -153,49 +150,49 @@ Keytab version: 0x502
 keysize 67 <service-acct>@<domain> ptype 1 (KRB5_NT_PRINCIPAL) vno 3 etype 0x12 (AES256-SHA1) keylength 32 (0x5ee827c30c736dd4095c9cbe146eabc216415b1ddb134db6aabd61be8fdf7fb1) # [!code focus]
 ```
 
-On the last line, take note of:
+На последњој линији, обратите пажњу на:
 
-- the secret key in parentheses at the end (**0x5ee827...**)
-- the secret key version number preceded by `vno` (**3**)
+- тајни кључ у загради на крају (**0x5ee827...**)
+- верзионски број тајног кључа који претходи `vno` (**3**)
 
-## Step 2: Remove NGINX, set up Apache + Kerberos
+## Корак 2: Уклоните NGINX, подесите Apache + Kerberos
 
-Next, the Zammad host must be configured to support Kerberos (and to accept
-auth credentials provided by the Active Directory server).
+Затим, хост за Zammad мора бити конфигурисан да подржава Kerberos (и да
+прихвати аутентификационе креденцијале које пружа Active Directory сервер).
 
-In most cases, you would have to recompile NGINX from source with an extra
-module to enable Kerberos support. To get around this, we will use Apache,
-which offers Kerberos support through a plug-in module instead.
+У већини случајева морали бисте прецомпајлирати NGINX из изворног кода са
+додатним модулом да омогућите подршку за Kerberos. Да бисмо заобишли овај
+проблем, користићемо Apache, који нуди подршку за Kerberos путем плугин
+модула.
 
 ::: info
-All commands in this section must be run as root (or with `sudo`).
+Све команде у овом одељку морају се извршити као роот (или са `sudo`).
 :::
 
-### 2a. Turn off NGINX
+### 2a. Искључите NGINX
 
 ::: warning
-This will take your Zammad instance **offline** until Apache is fully
-configured and running.
+Ово ће довести вашу Zammad инстанцу **оффлине** док се Apache у потпуности не конфигурише и не покрене.
 :::
 
-Turn off Nginx:
+Искључите Nginx:
 
 ```sh
-sudo systemctl stop nginx
+systemctl стоп nginx
 ```
 
-Keep it off after reboot:
+Задржите искљученим након поновног покретања:
 
 ```sh
-sudo systemctl disable nginx
+$ systemctl дисабле nginx
 ```
 
-If you wish to minimize downtime, you can save this step for last; just bear
-in mind that Apache will not start if the port it wants to listen on is
-being used by NGINX.
+Ако желите да смањите време неактивности, овај корак можете оставити за
+крај; само имајте на уму да се Apache неће покренути ако порт који жели да
+користи већ користи NGINX.
 
-If you can't complete this tutorial for any reason, simply turn off Apache
-and restore NGINX:
+Ако из било ког разлога не можете да довршите овај водич, једноставно
+искључите Apache и поново активирајте NGINX:
 
 ::: details
 
@@ -217,13 +214,13 @@ sudo systemctl start nginx
 
 :::
 
-### 2b. Pre-configure Apache
+### 2b. Предконфигурација Apache-а
 
-This documentation expects an already working Apache configuration.  You
-should have a look at the [webserver configuration
-guide](/en/tutorials/webserver-config) before continuing.
+Ова документација подразумева већ функционалну Apache конфигурацију. Пре
+наставка, погледајте водич за [конфигурацију web
+сервера](/en/tutorials/webserver-config).
 
-### 2c. Install further Apache dependencies
+### 2c. Инсталирајте додатне зависности за Apache
 
 ::: tabs
 
@@ -255,10 +252,10 @@ sudo zypper install krb5-client apache2-mod_auth_kerb
 
 :::
 
-### 2d. Enable Apache modules
+### 2d. Омогућите Apache модуле
 
-SSO requires modules that are not enabled by default. By default you can use
-`a2enmod` to do so.
+SSO захтева модуле који нису омогућени подразумевано. Подразумевано можете
+искористити `a2enmod` за ту сврху.
 
 ::: tabs
 
@@ -282,10 +279,9 @@ a2enmod auth_kerb rewrite
 sudo systemctl restart apache2
 ```
 
-=== via configuration file (CentOS)
+=== виа цонфигуратион филе (CentOS)
 
-add/uncomment the appropriate `LoadModule` statements in your Apache
-config:
+Додајте или укључите одговарајуће `LoadModule` директиве у вашој Apache конфигурацији:
 
 ```apache
 # /etc/httpd/conf/httpd.conf
@@ -296,80 +292,80 @@ LoadModule rewrite_module modules/mod_rewrite.so
 
 :::
 
-### 2e. Configure Kerberos
+### 2e. Конфигуришите Kerberos
 
-Kerberos realm configuration is how you tell the Zammad server how to reach
-the _domain controller_ (Active Directory server).
+Конфигурација Kerberos домене одређује начин на који ће Zammad сервер
+комуницирати са _контролером домене_ (сервером Active Directory).
 
-Replace the following placeholders in the sample config below:
+Замените следеће плацехолдер-е у примеру конфигурације испод:
 
-- `<domain>`: Windows domain
-- `<domain-controller>`: Domain controller IP/FQDN(s)
-- `<master-domain-controller>`: Master domain controller IP/FQDN (must not
-  be read-only, but can be the same as `<domain-controller>`)
+- `<domain>`: Windows домен
+- `<domain-controller>`: IP/FQDN(и) контролера домене
+- `<master-domain-controller>`: IP/FQDN главног контролера домене (не сме
+  бити само за читање, али може бити исти као `<domain-controller>`)
 
 ```ini
 # /etc/krb5.conf
 
-[libdefaults]
-   default_realm = <DOMAIN>
+[либдефаултс]
+   дефаулт_реалм = <DOMAIN>
 
-   default_tkt_enctypes = aes256-cts-hmac-sha1-96
-   default_tgs_enctypes = aes256-cts-hmac-sha1-96
-   permitted_enctypes = aes256-cts-hmac-sha1-96
+   default_tkt_enctypes = aes256-цтс-хмац-sha1-96
+   default_tgs_enctypes = aes256-цтс-хмац-sha1-96
+   permitted_enctypes = aes256-цтс-хмац-sha1-96
 
    kdc_timesync = 1
    ccache_type = 4
-   forwardable = false
-   proxiable = false
-   fcc-mit-ticketflags = false
+   forwardable = фалсе
+   proxiable = фалсе
+   фцц-мит-тицкетфлагс = фалсе
 
-[realms]
-         # multiple KDCs ok (one `kdc = ...` definition per line)
+[реалмс]
+         # више КДЦ дозвољено (једна `kdc = ...` дефиниција по линији)
          <DOMAIN> = {
-                  kdc = <domain-controller>
-                  admin_server = <master-domain-controller>
-                  default_domain = <domain>
+                  кдц = <domain-controller>
+                  админ_сервер = <master-domain-controller>
+                  дефаулт_домаин = <domain>
 
-                  # below is only for GSSAPI
-                  auth_to_local = RULE:[1:$1@$0](.*@<domain>)s/@<domain>$//
-                  auth_to_local = DEFAULT
+                  # испод важи само за GSSAPI
+                  аутх_то_лоцал = RULE:[1:$1@$0](.*@<domain>)с/@<domain>$//
+                  аутх_то_лоцал = DEFAULT
          }
 
-[domain_realm]
+[домаин_реалм]
          .<domain> = <DOMAIN>
          <domain> = <DOMAIN>
 ```
 
-### 2f. Generate keytab
+### 2f. Генеришите keytab
 
-Apache needs a Kerberos _keytab_ (key table) to manage its shared secrets
-with the domain controller.
+Apache-у је потребан Kerberos _keytab_ (табела кључева) за управљање
+заједничким тајнама са контролером домене.
 
-Replace the following placeholders in the commands below:
+Замените следеће плацехолдер-е у командама испод:
 
 - `<zammad-host>`: Zammad FQDN
-- `<domain>`: Windows domain
-- `<secret-key>`: Secret key (**omit the leading** `0x`)
-- `<vno>`: Secret key version number
+- `<domain>`: Windows домен
+- `<secret-key>`: Тајни кључ (**изоставите почетно** `0x`)
+- `<vno>`: Верзија тајног кључа
 
-The secret key and version number were found in `sso-register-spn` (Step 1d)
-above.
+Тајни кључ и број верзије пронађени су у `sso-register-spn` (Корак 1d)
+изнад.
 
-Enter ktutil:
+Унесите команду ктутил:
 
 ```sh
 ktutil
 ```
 
-Add keytab:
+Додајте keytab:
 
 ```sh
 ktutil: addent -key -p HTTP/<zammad-host>@<DOMAIN> -k <vno> -e aes256-cts
 Key for HTTP/<zammad-host>@<domain> (hex): <secret-key>
 ```
 
-Confirm the entry was added successfully:
+Потврдите да је унос успешно додат:
 
 ```sh
 ktutil: list
@@ -378,20 +374,20 @@ slot KVNO Principal
    1    3 HTTP/<zammad-host>@<DOMAIN>
 ```
 
-Write keytab to disk:
+Запишите keytab на диск:
 
 ```sh
 ktutil: wkt /root/zammad.keytab
 ```
 
-Leave ktutil:
+Напустите ктутил:
 
 ```sh
 ktutil: quit
 ```
 
-Then, place the keytab in the Apache config directory and set the
-appropriate permissions:
+Затим, поставите keytab у директоријум за конфигурацију Apache-а и подесите
+одговарајућа права:
 
 ::: tabs
 
@@ -425,15 +421,15 @@ sudo chmod 640 /etc/httpd/zammad.keytab
 
 :::
 
-### 2g. Configure Apache
+### 2g. Конфигуришите Apache
 
-Add the following directive to the end of the virtual host configuration
-file to create your Kerberos SSO endpoint at `/auth/sso`:
+Додајте следећу директиву на крај датотеке конфигурације виртуелног домена
+да бисте креирали своју Kerberos SSO крајњу тачку на `/auth/sso`:
 
-Replace the following placeholders in the command below:
+Замените следеће плацехолдер-е у конфигурацији испод:
 
 - `<zammad-host>`: Zammad FQDN
-- `<domain>`: Windows domain
+- `<domain>`: Windows домен
 
 ::: tabs
 
@@ -445,7 +441,7 @@ Replace the following placeholders in the command below:
 <LocationMatch "/auth/sso">
    SSLRequireSSL
    AuthType GSSAPI
-   AuthName "Your Zammad"
+   AuthName "Vaš Zammad"
    GssapiBasicAuth On
    GssapiCredStore keytab:/etc/apache2/zammad.keytab
    GssapiLocalName On
@@ -460,8 +456,8 @@ Replace the following placeholders in the command below:
 
 === CentOS & OpenSUSE
 
-The configuration for CentOS and OpenSUSE below contains two
-`Krb5KeyTab` lines! Keep only the one you need.
+Концепција за CentOS и опенСУСЕ испод садржи две
+`Krb5KeyTab` линије! Задржите само ону коју вам треба.
 
 ``` apache
 # /etc/apache2/sites-available/zammad.conf
@@ -469,14 +465,14 @@ The configuration for CentOS and OpenSUSE below contains two
 <LocationMatch "/auth/sso">
    SSLRequireSSL
    AuthType Kerberos
-   AuthName "Your Zammad"
+   AuthName "Vaš Zammad"
    KrbMethodNegotiate On
    KrbVerifyKDC On
    KrbMethodK5Passwd On
    KrbAuthRealms <DOMAIN>
-   KrbLocalUserMapping on                 # strips @REALM suffix from REMOTE_USER variable
+   KrbLocalUserMapping on                 # uklanja @REALM sufiks iz promenljive REMOTE_USER
    KrbServiceName HTTP/<zammad-host>@<DOMAIN>
-   Krb5KeyTab /etc/apache2/zammad.keytab  # Ubuntu, Debian, & openSUSE
+   Krb5KeyTab /etc/apache2/zammad.keytab  # Ubuntu, Debian i openSUSE
    Krb5KeyTab /etc/httpd/zammad.keytab    # CentOS
    require valid-user
 
@@ -489,138 +485,141 @@ The configuration for CentOS and OpenSUSE below contains two
 
 :::
 
-### 2g. Restart Apache to apply changes
+### 2g. Рестартујте Apache да примените промене
 
 ```sh
-sudo systemctl restart apache2
+systemctl рестарт apache2
 ```
 
 ## Корак 3: Укључите SSO пријаву за Zammad
 
-Next, enable "Authentication via SSO" in Zammad's Admin Panel under
-_Settings > Security > Third-party Applications_
+Затим, омогућите "Аутентификацију путем SSO" у Администраторском панелу Zammad-а под
+_Сетиње > Безбедност > Апликације трећих страна_
 
 ::: tip
-On older versions of Zammad, visit `https://your.zammad.host/auth/sso`
-to sign in.
+На старијим верзијама Zammad-а посетите `https://vaš.zammad.host/auth/sso`
+да се пријавите.
 :::
 
-## Step 4: Configure client system (Windows only)
+## Корак 4: Конфигуришите клијентски систем (само за Windows)
 
-For the full SSO experience (i.e. for passwordless one-click sign-in),
-Zammad users must:
+За потпуно искуство SSO (односно, пријаву једним кликом без лозинке),
+корисници Zammad-а морају:
 
-1. be on the Active Directory server's local intranet; and
-2. modify their network settings for the Zammad host to be treated as a
-   local intranet server.
+1. бити на локалном интранету сервера Active Directory; и
+2. изменити своја мрежна подешавања за домаћина Zammad-а да би се третирао
+   као сервер локалног интранета.
 
-Without this step, users must enter their Active Directory credentials
-during SSO.
+Без овог корака, корисници морају унети своја креденцијала Active Directory
+током SSO.
 
 :::: tabs
 
 === IE / Edge / Chromium
 
 ::: tip
-This setting can be centrally managed across the entire intranet using
-a **group policy object** (GPO).
+Ово подешавање се може централно управљати на целом интранету користећи
+**објекат групне политике** (GPO).
 :::
 
-1. Add your Zammad FQDN in Internet Options under _Security > Local
-   Intranet > Sites > Advanced_.
-2. Select "Require server verification (https:) for all sites in this
-   zone".
-3. Under _Security level for this zone > Custom level... > Settings
-   \> User Authentication > Logon_, select "Automatic logon only in
-   Intranet Zone".
+1. У Опцијама интернета додајте FQDN свог Zammad-а под _Безбедност > Локални
+   интранет > Сајтови > Напредно_.
+2. Означите "Захтевај проверу сервера (хттпс:) за све сајтове у овој
+   зони".
+3. У оквиру _Ниво безбедности за ову зону > Прилагођени ниво... > Подешавања
+   \> Корисничка аутентификација > Пријава_, изаберите "Аутоматска пријава само у
+   зони интранета".
 
 === Firefox
 
 ::: info
-This option cannot be centrally managed because it is set in the
-browser rather than Windows Settings.
+Ова опција се не може централно управљати јер се подешава у
+претраживачу, а не у Windows Подешавањима.
 :::
 
-1. Enter `about:config` in the address bar. Click **Accept the risk and
-   continue**.
-2. Search for the `network.negotiate-auth.trusted-uris` option.
-3. Double-click to edit, then add your Zammad FQDN.
-4. Restart Firefox to apply your changes.
+1. У адресну траку унесите `about:config`. Кликните **Прихваташ ризик и
+   настављам**.
+2. Пронађите опцију `network.negotiate-auth.trusted-uris`.
+3. Двапут кликните за уређивање и додајте FQDN свог Zammad-а.
+4. Рестартујте Firefox да примените промене.
 
 ::::
 
 ## Решавање проблема
 
-- Are all relevant FQDNs/hostnames reachable from your Active Directory and
-  Zammad servers (including each other's)?
-- Are the system clocks of your Active Directory and Zammad servers
-  synchronized within five minutes of each other? Kerberos is a
-  time-sensitive protocol!
+- Да ли су сви релевантни FQDN/хостнаме-и доступни са сервера Active
+  Directory и Zammad (укључујући међусобно)?
+- Да ли су системски сатови сервера Active Directory и Zammad синхронизовани
+  у оквиру пет минута један од другог? Kerberos је протокол осетљив на
+  време!
 
-### Errors in Apache logs
+### Грешке у Apache логовима
 
 ::: tip
-**Try raising your Apache log level temporarily.**
+**Покушајте привремено повисити ниво логовања Apache-а.**
 
-Add `LogLevel debug` to your virtual host configuration, then restart
-the service to apply the changes.
+Додајте `LogLevel debug` у конфигурацију виртуелног домена, затим рестартујте
+сервис да примените промене.
 :::
 
-#### An unsupported mechanism was requested
+#### Затражен је неподржан механизам
 
-Does your Active Directory service account have **Kerberos AES 256-bit
-encryption** enabled?
+Да ли ваш сервисни налог Active Directory има омогућено **Kerberos AES
+енкрипцију од 256 бита**?
 
-If for some reason your server does not support AES 256-bit encryption, the
-LDAP Wiki has [more information about Kerberos encryption
-types](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
+Ако из неког разлога ваш сервер не подржава AES енкрипцију од 256 бита, LDAP
+Wiki пружа [више информација о типовима Kerberos
+енкрипције](https://ldapwiki.com/wiki/MsDS-SupportedEncryptionTypes){target=_blank}.
 
-#### Failed to verify krb5 credentials: Key version is not available
+#### Неуспешна провера krb5 креденцијала: Верзија кључа није доступна
 
-Did you use the exact **version number** (`vno`) provided by `ktpass`
-when `generating your keytab <sso-generate-keytab>`?
+Да ли сте користили тачан **број верзије** (`vno`) који је пружио `ktpass`
+приликом `generisanja vašeg keytab-a <sso-generate-keytab>`?
 
-Try generating it again, just to be sure.
+Покушајте да га поново генеришете, само да будете сигурни.
 
-#### Unspecified GSS failure. Minor code may provide more information (, no key table entry found for HTTP/FQDN@DOMAIN)
+#### Непозната грешка GSS-а. Мањи код може пружити више информација (, Није пронађен унос у табели кључева за HTTP/FQDN@DOMAIN)
 
-Does the **service name** you provided to `setspn` exactly match the one
-you used when `generating your keytab <sso-generate-keytab>`?
+Да ли се **назив сервиса** који сте унели у `setspn` тачно поклапа са оним
+који сте користили приликом `generisanja vašeg keytab-a <sso-generate-keytab>`?
 
-Try generating it again, just to be sure.
+Покушајте да га поново генеришете, само да будете сигурни.
 
-#### No key table entry found for HTTP/FQDN@DOMAIN
+#### Запис у keytab-u за HTTP/FQDN@DOMAIN није пронађен
 
-Does your virtual host configuration's `KrbServiceName` setting exactly
-match the **service name** you provided to `setspn`?
+Да ли подешавање `KrbServiceName` ваше конфигурације виртуелног домаћина
+тачно одговара **називу сервиса** који сте унели у `setspn`?
 
-This setting is case-sensitive.
+Подешавање је осетљиво на велика и мала слова.
 
-#### Warning: Received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration
+#### Упозорење: примљени токен вероватно је NTLM, који није подржан од стране Kerberos модула. Проверите своју IE конфигурацију
 
-Is your Zammad host accessible at an FQDN? This error may indicate that you
-configured your Zammad host as a numeric IP address instead.
+Да ли је ваш Zammad хост доступан путем FQDN-a? Ова грешка може указивати на
+то да сте уместо тога конфигурисали Zammad хост као нумеричку IP адресу.
 
-#### Cannot decrypt ticket for HTTP/FQDN@DOMAIN
+#### Није могуће дешифровати тикет за HTTP/FQDN@DOMAIN
 
-Did you make sure to change the password on your Active Directory service
-account _after enabling 256-bit AES encryption?_
+Да ли сте се побринули да промените лозинку на свом корисничком налогу
+сервиса у Active Directory-u _након омогућавања AES енкрипције од 256
+бита?_?
 
-And did you make sure to register the SPN (with `ktpass`) and generate your
-keytab (with `ktutil`) _after changing your password?_
+И да ли сте се побринули да региструјете SPN (са `ktpass`) и генеришете свој
+keytab (са `ktutil`) _након промене лозинке?_?
 
-Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.
-If no output is returned, you're good - if you see "kinit:
-Preauthentication failed while getting initial credentials" your
-credentials provided were wrong or you used `/pass *` during ktpass
-command.
+Покушајте да покренете `kinit -k -t <putanja do keytaba> HTTP/<zammad-host>@<DOMAIN>`.
+Ако нема излаза, све је у реду - ако видите "кинит:
+Неуспешна провера аутентификације при дохватању почетних акредитива" ваши
+унесени подаци су нетачни или сте користили `/pass *` током ктпасс
+команде.
 
-#### Failed when verifying KDC" and "failed to verify krb5 credentials: Decrypt integrity check failed
+#### Није успела провера KDC-а" и "није успела провера krb5 акредитива: Није успела провера интегритета дешифровања
 
-Ensure `KrbServiceName` is the correct ServiceName provided via setspn.
+Проверите да ли је `KrbServiceName` тачан ServiceName достављен путем
+сетспн.
 
-Ensure your Active Directory supports the encryption method configured.
+Проверите да ли ваш Active Directory подржава конфигурисану методу
+енкрипције.
 
-If all above is correct and the rest of FAQ also is ensured, make sure your
-client does not cache the results. `klist purge` clears the clients cache -
-a reboot of your client would do too.
+Ако је све горе наведено тачно и сва остала питања у FAQ-u су решена,
+побрините се да ваш клијент не кешира резултате. `klist purge` брише кеш
+клијента - рестартовање клијента би такође помогло.

@@ -1,9 +1,9 @@
 ---
 order: 9
-title: 'Migrate Zammad to new host'
+title: 'Zammad zu einem neuen Host migrieren'
 ---
 
-# Migrate Zammad to new host
+# Zammad zu einem neuen Host migrieren
 
 Dies ist nur eine Beschreibung der grundlegenden Schritte zur Durchführung
 einer Migration auf einen neuen Host. Ihre Umgebung kann anders sein, daher
@@ -26,12 +26,12 @@ Migration von Zammad SaaS? Springen Sie zu
 einen Anhangs-Dump erhalten!
 :::
 
-## Step 1: Note down your environmental adjustments
+## Schritt 1: Notieren Sie Ihre Umgebungseinstellungen
 
 Falls Sie Umgebungsvariablen oder ähnliches gesetzt haben, sollten Sie diese
 nun sichern.
 
-## Step 2: Install Zammad on the destination host
+## Schritt 2: Installieren Sie Zammad auf dem Zielhost
 
 Um die Wiederherstellung so einfach wie möglich zu gestalten, installieren
 Sie bitte die gleiche Version wie Ihre Ursprungsinstanz. Sie können
@@ -39,17 +39,17 @@ ggf. erwägen, die alte Instanz vor der Migration zu aktualisieren. Die
 folgende Anleitung geht davon aus, dass Sie die gleiche Version von Zammad
 auf Ihrem alten und neuen Host haben.
 
-## Step 3: Activate maintenance mode
+## Schritt 3: Aktivieren des Wartungsmodus
 
 Dadurch werden alle Sitzungen von Agenten und Kunden beendet. Aktivieren Sie es in Zammads Admin
 Bereich unter _System > Wartung_.
 
-## Step 4: Disable your communication channels
+## Schritt 4: Deaktivieren Sie Ihre Kommunikationskanäle
 
 Das Wiederherstellungsskript startet Zammad automatisch. Das Deaktivieren
 trägt dazu bei, Datenverluste und Inkonsistenzen zu vermeiden.
 
-## Step 5: Stop and disable Zammad
+## Schritt 5: Zammad beenden und deaktivieren
 
 Stellen Sie sicher, dass keine Daten _vor_ der Sicherung geändert werden.
 
@@ -72,7 +72,7 @@ Ihre Daten gesichert haben. Dies ist für die Wiederherstellung wichtig.
 Wenn Sie den einfachsten Weg gehen wollen, erwägen Sie nur Ihre Daten zu
 sichern.
 
-## Step 7: Transfer your backup files
+## Schritt 7: Transfer der Sicherungsdateien
 
 Speichern Sie Ihre Sicherungsdateien in einem Verzeichnis und geben Sie den
 Pfad in der Datei `config` an. Unter
@@ -80,7 +80,7 @@ Pfad in der Datei `config` an. Unter
 erfahren Sie, wie Sie die Konfigurationsdatei an Ihre Bedürfnisse anpassen
 können.
 
-## Step 8: Restore your backup
+## Schritt 8: Wiederherstellung der Sicherung
 
 Folgen Sie der
 [Wiederherstellungsanleitung](/de/tutorials/backup-restore#backup-wiederherstellen)
@@ -90,13 +90,13 @@ Host wiederherzustellen.
 Stellen Sie sicher, dass Sie Zammad nach Abschluss der Wiederherstellung
 beenden.
 
-## Step 9: Run required maintenance tasks after restoring
+## Schritt 9: Erforderliche Wartungsaufgaben nach der Wiederherstellung ausführen
 
 Nach erfolgreicher Wiederherstellung fahren Sie bitte unten fort, abhängig
 davon, ob Sie nur Ihre Daten gesichert haben oder eine vollständige
 Dateisystem-Sicherung haben.
 
-### Data dump
+### Datensicherung
 
 #### Schritt 9.1: Löschen Sie den Cache
 
@@ -104,7 +104,7 @@ Dateisystem-Sicherung haben.
 zammad run rails r "Rails.cache.clear"
 ```
 
-### Full filesystem dump
+### Vollständige Dateisystem-Sicherung
 
 ::: info
 Dieser Schritt ist nur erforderlich, wenn einer der folgenden Punkte erfüllt ist:
@@ -121,7 +121,7 @@ Version überschrieben werden.
 Zammad-Dateien sind distributions- und versionsspezifisch!
 :::
 
-#### Step 9.1: Uninstall and reinstall Zammad without resolving dependencies
+#### Schritt 9.1: Deinstallation und Neuinstallation von Zammad ohne Auflösen der Abhängigkeiten
 
 ::: tabs
 
@@ -164,13 +164,13 @@ root@zammad:/# apt update && apt install zammad
 
 :::
 
-#### Step 9.2: Clear the cache
+#### Schritt 9.1: Löschen des Caches
 
 ```sh
 zammad run rails r "Rails.cache.clear"
 ```
 
-#### Step 9.3: Ensure Zammad is running
+#### Schritt 9.3: Ausführung von Zammad sicherstellen
 
 ``` sh
 sudo systemctl status zammad
@@ -189,7 +189,7 @@ Bitte stellen Sie sicher, dass Ihr E-Mail-Benachrichtigungskanal und Ihre
 FQDN-Konfiguration korrekt sind.
 :::
 
-## Step 10: Apply missing environmental settings
+## Schritt 10: Fehlende Umgebungseinstellungen übernehmen
 
 Wenn Sie irgendwelche Umgebungseinstellungen vorgenommen haben, wenden Sie
 diese jetzt wieder an. Sie haben diese in [Schritt
@@ -200,7 +200,7 @@ Elasticsearch](/de/tutorials/install-elasticsearch) und führen Sie nach der
 Installation die Schritte für [verbinden und konfigurieren von
 Elasticsearch](/de/tutorials/connect-config-elasticsearch) aus.
 
-## Step 11: Re-enable channels and deactivate maintenance mode
+## Schritt 11: Kanäle wieder aktivieren und den Wartungsmodus deaktivieren
 
 Setzen Sie die zuvor deaktivierten Kanäle wieder auf aktiv, wenn Sie sicher
 sind, dass alles erfolgreich war. An diesem Punkt beginnt Zammad damit

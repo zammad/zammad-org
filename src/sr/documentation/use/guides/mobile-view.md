@@ -1,50 +1,50 @@
 ---
 order: 5
-title: 'Use mobile view'
+title: 'Користи мобилни приказ'
 ---
 
-# Use mobile view
+# Користи мобилни приказ
 
-## Intro
+## Увод
 
-The development of a dedicated mobile view for Zammad was driven by the
-increasing need for access while on the move.  The desktop application
-offers responsive functionality for smaller screens, but it was determined
-to be too complex for optimal mobile use. This mobile view focuses on
-presenting the most critical information in a touch-friendly and modern
-design, prioritizing a streamlined user experience.
+Развој посебног мобилног приказа за Zammad условљен је све већом потребом за
+приступом док сте у покрету. Десктоп апликација нуди респонзивну
+функционалност за мање екране, али је утврђено да је превише комплексна за
+оптималну употребу на мобилним уређајима. Овај мобилни приказ се фокусира на
+презентовање најкритичнијих информација у додиру пријатељском и модерном
+дизајну, стављајући приоритет на поједностављено корисничко искуство.
 
 ::: info
-We intentionally do not provide specific instructions and comprehensive documentation for the mobile view! The overall
-UX should be intuitive and self-explanatory in most cases.
+Намерно не пружамо специфична упутства и опсежну документацију за мобилни приказ! Целокупно
+UX треба да буде интуитивно и самообјашњиво у већини случајева.
 :::
 
-You can find screenshots below to get an impression how the mobile view
-looks like.
+Слике екрана испод можете користити да стекнете утисак како мобилни приказ
+изгледа.
 
 ::: tabs
 
-=== Login & Home
+=== Пријава & Почетна
 
-| Login | Home |
+| Пријава | Почетна |
 |:-------------------------:|:-------------------------:|
 | ![Screenshot shows login screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/login.png) | ![Screenshot shows home screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/home.png) |
 
-=== Search & Overview
+=== Претрага & Преглед
 
-| Search | Overview |
+| Претрага | Преглед |
 |:-------------------------:|:-------------------------:|
 | ![Screenshot shows search screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/search.png) | ![Screenshot shows overview screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/overview.png) |
 
-=== Ticket Details
+=== Детаљи тицкета
 
-| Articles | Details |
+| Чланци | Детаљи |
 |:-------------------------:|:-------------------------:|
 | ![Screenshot shows ticket screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/ticket-articles.png) | ![Screenshot shows ticket detail view of Zammad's mobile view](/screenshots/documentation/use/mobile-view/ticket-details.png) |
 
-=== Notifications & Account
+=== Обавештења & Рачун
 
-| Notifications | Account |
+| Обавештења | Рачун |
 |:-------------------------:|:-------------------------:|
 | ![Screenshot shows notifications screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/notifications.png) | ![Screenshot shows account settings screen of Zammad's mobile view](/screenshots/documentation/use/mobile-view/profile.png) |
 
@@ -68,35 +68,36 @@ looks like.
 Мобилном приказу такође тренутно недостају неке функције које пружа основни
 приказ:
 
-- Time accounting
+- Обрачун времена
 - Раздели чланак
-- Link tickets and see linked tickets
-- Execution of macros
+- Повежи тицкете и прикажи повезане тицкете
+- Извршавање макроа
 - Историјат тикета
-- Template creation & shared drafts
+- Креирање предложака и заједничких скица
 
 Додатно, одређене функције су намерно изостављене да би се побољшао фокус на
 важне информације:
 
-- Most management features (except ticket user and organization management)
-- Most knowledge base features (except ticket integration)
-- Most user profile functions (except avatar and language preferences)
+- Већина функција за управљање (осим управљања корисницима тицкета и
+  организацијама)
+- Већина функција базе знања (осим интеграције са тицкетом)
+- Већина функција корисничког профила (осим аватара и поставки језика)
 - Извештаји
-- Caller log
-- Live chat
+- Дневник позива
+- Разговор уживо
 
-## Switch the views
+## Промени приказе
 
-Zammad implements a mobile device detection, which results in automatic
-redirection to mobile view. Even with this mechanism in place, it's possible
-to explicitly switch between the views by using app links.
+Zammad имплементира детекцију мобилних уређаја, што доводи до аутоматског
+преусмеравања на мобилни приказ. Чак и уз овај механизам, могуће је
+експлицитно пребацивање између приказа коришћењем линкова апликације.
 
-In both desktop and mobile view login screens, you can find a link below the
-`Sign in` button to explicitly switch to the other view (see login
-screenshot from above as an example).
+На екранима за пријаву и у десктоп и у мобилном приказу, можете пронаћи линк
+испод дугмета `Prijava` за експлицитно пребацивање на други приказ
+(погледајте слику екрана за пријаву изнад као пример).
 
-While you are signed in and want to switch from the mobile to the desktop
-view, go to your profile by selecting your avatar at the bottom and select
-**Continue to desktop** (see account screenshot from above as an
-example). The other way round is similar: in the avatar menu, you can find
-an entry to switch to the mobile view.
+Док сте пријављени и желите да пребаците са мобилног на десктоп приказ,
+идите на свој профил тако што ћете изабрати свој аватар на дну и кликнути на
+**Настави на десктоп** (погледајте слику рачуна изнад као пример). Обрнуто
+је слично: у менију аватара можете пронаћи ставку за пребацивање на мобилни
+приказ.

@@ -1,39 +1,39 @@
 ---
 order: 4
 outline:
-  - 2
-  - 2
-title: 'Elasticsearch indexed attributes'
+  - ','
+  - ','
+title: 'Индексирани атрибути у Elasticsearch-у'
 ---
 
-# Elasticsearch indexed attributes
+# Индексирани атрибути у Elasticsearch-у
 
-You can find a list of the main object attributes indexed by Elasticsearch
-(ES) below. In other words, if you wish to find a ticket, article, or user
-via the Zammad search box, ES can search in any of the fields below.
+Списак главних атрибута објеката које индексира Elasticsearch (ES) налази се
+испод. Другим речима, ако желите да пронађете тикет, чланак или корисника
+путем Zammad поља за претрагу, ES може да тражи у било ком од доњих поља.
 
 ::: info
 
-- This page lists Zammad's default object attributes which are indexed by ES. There are some more ES indexes, mainly
-  about objects in the admin interface of Zammad. They are out of scope of this documentation.
-- Attributes marked as <Badge type="info" text="SLA"/> are only set if the ticket is affected by SLA calculation.
-  Please note that some attributes may not be set if specific conditions are not met.
-- Also note that some attributes may be reset to `null` if no longer applicable.
-- All timestamps provided by Zammad are UTC by default. This also applies to times provided by ES.
+- Ова страница наводи подразумевана атрибута објеката које индексира ES. Постоји још неколико ES индекса, углавном
+  о објектима у админ интерфејсу Zammad-а. Они су изван обима ове документације.
+- Атрибути означени као <Badge type="info" text="SLA"/> се постављају само ако је тикет погођен SLA прорачуном.
+  Имајте на уму да неки атрибути могу бити непостављени ако испуњени нису специфични услови.
+- Такође имајте на уму да се неки атрибути могу ресетовати на `null` ако више нису релевантни.
+- Сва тиместамп вредности које даје Zammad су подразумевано у UTC временском појасу. Ово такође важи и за време које даје ES.
 
 :::
 
 ## Преглед
 
-You can find details about each object attribute in the next section. In
-this section, you can get a quick overview about the most important objects
-and how they look as complete JSON output.
+Детаље о сваком атрибуту објекта можете пронаћи у следећем одељку. У овом
+одељку можете добити брз преглед најважнијих објеката и како изгледају као
+комплетни JSON излаз.
 
 :::: tabs
 
-=== Ticket
+=== Тикет
 
-Open details to show complete ticket structure: <Badge type="danger" text="Huge content ahead!"/>
+Отворите детаље да прикажете комплетну структуру тикета: <Badge type="danger" text="Veliki sadržaj sledi!"/>
 
 ::: details
 
@@ -41,10 +41,9 @@ Open details to show complete ticket structure: <Badge type="danger" text="Huge 
 
 :::
 
-=== Article
+=== Чланак
 
-The following structure is already included in the ticket index (see first tab) and added here separately for
-overview reasons. Open details to see the article content:
+Следећа структура је већ укључена у индекс тикета (види прву картицу) и додата је овде одвојено из разлога прегледности. Отворите детаље да видите садржај чланка:
 
 ::: details
 
@@ -52,9 +51,9 @@ overview reasons. Open details to see the article content:
 
 :::
 
-=== User
+=== Корисник
 
-Open details to show complete user structure:
+Отворите детаље да прикажете комплетну структуру корисника:
 
 ::: details
 
@@ -62,9 +61,9 @@ Open details to show complete user structure:
 
 :::
 
-=== Organization
+=== Организација
 
-Open details to show complete organization structure:
+Отворите детаље да прикажете комплетну структуру организације:
 
 ::: details
 
@@ -76,12 +75,12 @@ Open details to show complete organization structure:
 
 ## Тикет
 
-The following index contains below mentioned information: `*_ticket`
+Следећи индекс садржи доле наведене информације: `*_ticket`
 
-### `article`
+### Чланак
 
-Array with all articles belonging to the ticket. See [article
-section](#article-1) for details.
+Низ са свим чланцима који припадају тикету. За детаље погледајте [одељак о
+чланку](#article-1).
 
 ::: details
 
@@ -89,15 +88,15 @@ section](#article-1) for details.
 
 :::
 
-### `article_count`
+### Водич кроз стил и садржај
 
-Number of articles within the ticket.
+Број чланака унутар тикета.
 
 Пример: `1`
 
-### `checklist`
+### Списак задатака
 
-Complete checklist structure and elements.
+Комплетна структура и елементи цхецклиста.
 
 ::: details
 
@@ -107,33 +106,33 @@ Complete checklist structure and elements.
 
 ### `close_at`
 
-First close time, set once. See `last_close_at` for the last close time (if
-ticket was reopened and closed again).
+Прво време затварања, поставља се једном. За последње време затварања
+погледајте `last_close_at` (ако је тикет поново отворен и затворен).
 
-Example: `"2025-03-20T06:48:46.438Z"`
+Пример: `"2025-03-20T06:48:46.438Z"`
 
-### `close_diff_in_min` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Depends on `close_in_min` and tells how many minutes the ticket was closed
-relative to SLAs solution time.
+Зависи од `close_in_min` и показује колико минута је тикет био затворен у
+односу на SLA време решења.
 
-Examples: `239`, `-5`
+Примери: `239`, `-5`
 
-### `close_escalation_at` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Timestamp when the ticket would escalate in case solution time is violated.
+Timestamp када би тикет ескалирао у случају кршења времена решења.
 
-Examples: `null`, `"2025-02-03T15:50:20.673Z"`
+Примери: `null`, `"2025-02-03T15:50:20.673Z"`
 
-### `close_in_min` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Value in minutes for how long the ticket was open based on business hours.
+Вредност у минутима за дужину отвореног тикета на основу пословних сати.
 
-Examples: `null`, `11`
+Примери: `null`, `11`
 
 ### `create_article_sender`
 
-Sender of the article (System, Agent, Customer)
+Пошиљалац поруке (Систем, Агенат, Клијент)
 
 ::: details
 
@@ -143,13 +142,13 @@ Sender of the article (System, Agent, Customer)
 
 ### `create_article_sender_id`
 
-ID of the user that created the article.
+ID корисника који је креирао поруку.
 
 Примери: `1`, `2`
 
 ### `create_article_type`
 
-Information of first article of a ticket.
+Информације о првој поруци тикета.
 
 ::: details
 
@@ -159,20 +158,20 @@ Information of first article of a ticket.
 
 ### `create_article_type_id`
 
-ID of the type of the first article.
+ID типа прве поруке.
 
 Пример: `5`
 
 ### `created_at`
 
-Timestamp of ticket creation.
+Временска ознака креирања тикета.
 
-Example: `"2025-02-24T16:17:27.210Z"`
+Пример: `"2025-02-24T16:17:27.210Z"`
 
 ### `created_by`
 
-Details of the user who created the ticket. Have a look at the [user
-section](#user) for more information.
+Детаљи корисника који је креирао тикет. Погледајте [одељак о
+корисницима](#user) за више информација.
 
 ::: details
 
@@ -182,51 +181,52 @@ section](#user) for more information.
 
 ### `created_by_id`
 
-ID of user who created the ticket.
+ID корисника који је креирао тикет.
 
 Пример: `3`
 
-### `customer`
+### Прилагођени оквири
 
-Details of the customer of the ticket. Have a look at the [user
-section](#user) for more information.
+Детаљи клијента тикета. Погледајте [одељак о корисницима](#user) за више
+информација.
 
-### `customer_id`
+### Прилагођени оквири
 
-ID of customer who created the ticket.
+ID клијента који је креирао тикет.
 
 Пример: `8`
 
-### `escalation_at` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Timestamp of the next applicable escalation, independent of escalation type.
+Временска ознака следеће применљиве ескалације, независно од типа
+ескалације.
 
-Examples: `null`, `"2025-02-24T16:28:38.535Z"`
+Примери: `null`, `"2025-02-24T16:28:38.535Z"`
 
-### `first_response_at` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Timestamp of the first response to the customer (communication type).
+Временска ознака првог одговора клијенту (тип комуникације).
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Примери: `null`, `"2025-02-24T16:28:38.303Z"`
 
-### `first_response_diff_in_min` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Depends on `first_response_in_min` and tells how many minutes the first
-response took relative to the first response time of your SLA.
+Зависи од `first_response_in_min` и означава за колико минута је достигнут
+први одговор у односу на време првог одговора из вашег SLA.
 
-Examples: `null`, `10`, `-6`
+Примери: `null`, `10`, `-6`
 
-### `first_response_in_min` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Value in minutes about how long the first response took based on the
-business hours.
+Вредност у минутима за дужину времена потребног за први одговор на основу
+пословних сати.
 
-Examples: `null`, `11`
+Примери: `null`, `11`
 
-### `group`
+### Група
 
-Details of the group of the ticket. Have a look at the [group
-section](#group-1) for more information.
+Детаљи групе тикета. Погледајте [одељак о групама](#group-1) за више
+информација.
 
 ::: details
 
@@ -236,63 +236,64 @@ section](#group-1) for more information.
 
 ### `group_id`
 
-ID of the current group
+ID тренутне групе
 
 Пример: `1`
 
 ### `id`
 
-ID of the Ticket
+Рад на тикетима
 
-Examples: `1`, `111`
+Примери: `1`, `111`
 
 ### `last_close_at`
 
-Last close time, set on each closing of ticket.
+Време последњег затварања, поставља се при сваком затварању тикета.
 
-Examples: `null`, `"2025-02-03T14:50:20.673Z"`
+Примери: `null`, `"2025-02-03T14:50:20.673Z"`
 
 ### `last_contact_agent_at`
 
-Timestamp of last communication type contact of any agent.
+Временска ознака последњег контакта путем комуникационог типа од стране било
+ког оператера.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Примери: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `last_contact_at`
 
-Timestamp of last contact/article of type communication, independent of who
-created it.
+Временска ознака последњег контакта/поруке комуникационог типа, независно од
+тога ко ју је креирао.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Примери: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `last_contact_customer_at`
 
-Timestamp of last contact/article of type communication from customer.
+Временска ознака последњег контакта/поруке комуникационог типа од клијента.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Примери: `null`, `"2025-02-24T16:28:38.303Z"`
 
 ### `mention_user_ids`
 
-Array with user IDs of mentioned or subscribed users.
+Низ ID-а поменутих или претплаћених корисника.
 
-Examples: `[3, 5]`, `[]`
+Примери: `[3, 5]`, `[]`
 
 ### `note`
 
-Note of ticket, only set via console or API.
+Напомена тикета, постављана само путем конзоле или API-ја.
 
 Пример: `null`
 
-### `number`
+### "број"
 
 Број тикета.
 
-Examples: `1010138`, `202006231010138`
+Примери: `1010138`, `202006231010138`
 
-### `organization`
+### Организација
 
-Details of the customer organization of the ticket. Have a look at the
-[organization section](#organization-2) for more information.
+Детаљи о организацији клијента на тикету. За више информација погледајте
+[одељење организације](#organization-2).
 
 ::: details
 
@@ -300,16 +301,16 @@ Details of the customer organization of the ticket. Have a look at the
 
 :::
 
-### `organization_id`
+### Организација
 
-ID of the customers organization of the ticket.
+ID организације клијента на тикету.
 
-Examples: `null`, `2`
+Примери: `null`, `2`
 
-### `owner`
+### "власник"
 
-Details of the user who is owner of the ticket. Have a look at the [user
-section](#user) for more information.
+Детаљи о кориснику који је власник тикета. За више информација погледајте
+[одељење корисника](#user).
 
 ::: details
 
@@ -317,28 +318,28 @@ section](#user) for more information.
 
 :::
 
-### `owner_id`
+### "власник_ид"
 
-User ID of the ticket owner.
+ID корисника који је власник тикета.
 
-Examples: `null`, `3`
+Примери: `null`, `3`
 
-### `pending_time`
+### "време_на_чекању"
 
-Timestamp of set pending time. Only if a pending state is set and
-independent of the pending state type.
+Временска ознака постављеног времена на чекању. Само ако је постављено стање
+на чекању и независно од врсте стања на чекању.
 
-Examples: `null`, `"2025-02-24T17:44:06.912Z"`
+Примери: `null`, "2025-02-24T17:44:06.912Z"
 
-### `preferences`
+### Референца
 
-Special information for internal functions. May not be available in your
-system, contains information for internal system functions.
+Посебне информације за интерне функције. Можда неће бити доступне у вашем
+систему и садрже податке за интерне функције система.
 
-### `priority`
+### Приоритет тикета
 
-Details of the priority state of the ticket. Have a look at the [priority
-section](#ticket-priority) for more information.
+Детаљи о приоритетном стању тикета. За више информација погледајте [одељење
+приоритета](#ticket-priority).
 
 ::: details
 
@@ -346,16 +347,16 @@ section](#ticket-priority) for more information.
 
 :::
 
-### `priority_id`
+### Приоритет тикета
 
-Priority ID of the ticket.
+ID приоритета тикета.
 
 Пример: `2`
 
-### `state`
+### `stable`
 
-Details of the state of the ticket. Have a look at the [state
-section](#ticket-state) for more information.
+Детаљи о стању тикета. За више информација погледајте [одељење
+стања](#ticket-state).
 
 ::: details
 
@@ -363,65 +364,65 @@ section](#ticket-state) for more information.
 
 :::
 
-### `state_id`
+### `stable`
 
 ID актуелног стања тикета.
 
 Примери: `1`, `4`
 
-### `tags`
+### "тагови"
 
-Array with all tags attached to the ticket.
+Низ са свим таговима везаним за тикет.
 
-Examples: `["order", "complaint"]`, `[]`
+Примери: ["поруџбина", "приговор"], `[]`
 
-### `time_unit`
+### "временска_јединица"
 
-Accounted time units for ticket (total).
+Урачунате временске јединице за тикет (укупно).
 
-Examples: `null`, `15`
+Примери: `null`, `15`
 
-### `title`
+### "наслов"
 
-Title/subject of ticket.
+Наслов/тема тикета.
 
-Examples: `Feedback Form`, `Need help`
+Примери: `Obrazac za povratne informacije`, `Potrebna pomoć`
 
-### `type` <Badge type="warning" text="deprecated"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Value: `null`
+Вредност: `null`
 
-### `update_diff_in_min` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Depends on `update_in_min` and tells how many minutes the last ticket update
-took relative to the update time setting of the SLA.
+Зависи од `update_in_min` и говори колико минута је трајало последње
+ажурирање тикета у односу на подешавање времена ажурирања SLA.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Примери: `null`, `"2025-02-24T16:28:38.303Z"`
 
-### `update_escalation_at` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Timestamp when the ticket would escalate in case the SLA update period is
-violated.
+Временска ознака када би тикет ескалирала у случају прекорачења периода
+ажурирања SLA.
 
-Examples: `null`, `"2025-02-24T16:28:38.303Z"`
+Примери: `null`, `"2025-02-24T16:28:38.303Z"`
 
-### `update_in_min` <Badge type="info" text="SLA"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-Value in minutes for how long the last ticket update took based on the
-business hours and update time.
+Вредност у минутима за трајање последњег ажурирања тикета на основу
+пословних сати и времена ажурирања.
 
-Examples: `null`, `5`, `-10`
+Примери: `null`, `5`, "-10"
 
-### `updated_at`
+### Освежено у
 
-Timestamp of last ticket update.
+Временска ознака последњег ажурирања тикета.
 
-Example: `"2025-02-24T16:28:38.303Z"`
+Пример: "2025-02-24T16:28:38.303Z"
 
-### `updated_by`
+### "updated_by"
 
-Details of the user who updated the ticket. Have a look at the [user
-section](#user) for more information.
+Детаљи о кориснику који је ажурирао тикет. За више информација погледајте
+[одељење корисника](#user).
 
 ::: details
 
@@ -429,40 +430,40 @@ section](#user) for more information.
 
 :::
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of user who updated the ticket.
+ID корисника који је ажурирао тикет.
 
 Примери: `1`, `3`
 
-## Ticket priority
+## Приоритет тикета
 
-The following index contains below mentioned information:
-`*_ticket_priority`
+Следећи индекс садржи споменуте информације: `*_ticket_priority`
 
-### `active`
+### "активно"
 
-Defines if the priority is active or not.
+Одређује да ли је приоритет активан или не.
 
-Values: `true`, `false`
+Вредности: `true`, `false`
 
 ### `created_at`
 
-Timestamp of priority creation.
+Временска ознака креирања приоритета.
 
-Example: `"2025-02-03T14:50:20.724Z"`
+Пример: "2025-02-03T14:50:20.724Z"
 
 ### `created_by_id`
 
-ID of the user who created the priority.
+ID корисника који је креирао приоритет.
 
 Пример: `1`
 
-### `default_create`
+### "дефаулт_цреате"
 
-Defines if the priority is the default priority for ticket creation or not.
+Дефинише да ли је приоритет подразумевани приоритет за креирање тикета или
+не.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `id`
 
@@ -474,94 +475,94 @@ ID приоритета.
 
 Назив приоритета.
 
-Example: `"3 high"`
+Пример: `"3 visok"`
 
 ### `note`
 
-Note for priority that has been set via console or API.
+Напомена за приоритет који је подешен путем конзоле или API-ја.
 
 Пример: `"null"`
 
 ### `ui_color`
 
-CSS class for the highlight color for tickets with this priority.
+CSS класа за боју истицања за тикете са овим приоритетом.
 
-Examples: `"null"`, `"high-priority"`
+Примери: `"null"`, `"visok-prioritet"`
 
 ### `ui_icon`
 
-CSS class for highlight icon for tickets with this priority.
+CSS класа за икону истицања за тикете са овим приоритетом.
 
-Examples: `"null"`, `"important"`
+Примери: `"null"`, `"važno"`
 
-### `updated_at`
+### Освежено у
 
-Timestamp of last change.
+Временска ознака последње измене.
 
-Example: `"2025-02-03T14:50:20.724Z"`
+Пример: "2025-02-03T14:50:20.724Z"
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of the user who performed the last update.
+ID корисника који је извршио последње ажурирање.
 
 Пример: `1`
 
-## Ticket state
+## Стање тикета
 
-The following index contains below mentioned information: `*_ticket_state`
+Следећи индекс садржи доње наведене информације: `*_ticket_state`
 
-### `active`
+### "активно"
 
-Defines if state is active (available) or not.
+Дефинише да ли је статус активан (доступан) или не.
 
-Values: `true`, `false`
+Вредности: `true`, `false`
 
 ### `created_at`
 
-Timestamp of the creation of the state.
+Временска ознака креирања статуса.
 
-Example: `"2025-02-03T14:50:20.694Z"`
+Пример: `"2025-02-03T14:50:20.694Z"`
 
 ### `created_by_id`
 
-ID of user who created the state.
+ID корисника који је креирао статус.
 
 Пример: `1`
 
-### `default_create`
+### "дефаулт_цреате"
 
-Defines if the state is the default state for ticket creation.
+Дефинише да ли је статус подразумевани статус за креирање тикета.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `default_follow_up`
 
-Defines if the state is the default follow up state on ticket follow ups.
+Дефинише да ли је статус подразумевани пратећи статус код праћења тикета.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `id`
 
-ID of the state.
+ID статуса.
 
 Пример: `7`
 
 ### `ignore_escalation`
 
-Defines if SLA calculation is ignored for this state.
+Дефинише да ли се прорачун SLA-а занемарује за овај статус.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `name`
 
 Назив стања.
 
-Example: `"pending close"`
+Пример: `"na čekanju za zatvaranje"`
 
-### `next_state`
+### Први кораци
 
-Contains all follow up state information if applicable, may not be available
-depending on the state type
+Садржи све информације о пратећем статусу ако је примењиво, можда није
+доступно у зависности од типа статуса.
 
 ::: details
 
@@ -571,19 +572,19 @@ depending on the state type
 
 ### `next_state_id`
 
-ID of follow up state.
+ID пратећег статуса.
 
-Examples: `null`, `4`
+Примери: `null`, `4`
 
 ### `note`
 
-Note that has been set via console or API.
+Напомена која је подешена путем конзоле или API-ја.
 
 Пример: `"null"`
 
-### `state_type`
+### `stable`
 
-Contains all available information of the states type
+Садржи све доступне информације о типу статуса.
 
 ::: details
 
@@ -593,197 +594,197 @@ Contains all available information of the states type
 
 ### `state_type_id`
 
-ID of the state type.
+ID типа статуса.
 
 Пример: `4`
 
-### `updated_at`
+### Освежено у
 
-Timestamp of last update of the state.
+Временска ознака последњег ажурирања статуса.
 
-Example: `"2025-02-03T14:50:20.694Z"`
+Пример: `"2025-02-03T14:50:20.694Z"`
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of user who performed the last update of the state.
+ID корисника који је извршио последње ажурирање статуса.
 
 Пример: `1`
 
 ## Чланак
 
-The following index contains below mentioned information: `*_ticket`
+Следећи индекс садржи доле наведене информације: `*_ticket`
 
-Articles are part of the ticket index. To reduce complexity we decided to
-provide it in its own section.
+Поруке су део индекса тикета. Да бисмо смањили комплексност, одлучили смо да
+их пружимо у посебном одељку.
 
 ### `body`
 
-Article body in plaintext.
+Текстуални садржај поруке.
 
-Example: `"Hi,\n\nplease send me:\n1 [...] \nThank you\n\nJohn Doe"`
+Пример: `"Zdravo,\n\npošaljite mi:\n1 [...] \nPozdrav\n\nJohn Doe"`
 
 ### `cc`
 
-The email-addresses set as CC.
+Имејл адресе подешене као CC.
 
-Examples: `null`, `alias@domain.tld`
+Примери: `null`, `alias@domain.tld`
 
 ### `content_type`
 
-Content type of article.
+Тип садржаја поруке.
 
-Examples: `"text/html"`, `"text/plain"`
+Примери: `"text/html"`, `"text/plain"`
 
 ### `created_at`
 
-Timestamp of article creation.
+Временска ознака креирања поруке.
 
-Example: `"2025-02-22T03:47:59.290Z"`
+Пример: `"2025-02-22T03:47:59.290Z"`
 
 ### `created_by_id`
 
-ID of user who created the article.
+ID корисника који је креирао поруку.
 
 Пример: `10`
 
 ### `detected_language`
 
-Language code of detected language.
+Код препознатог језика.
 
-Examples: `"en"`, `"de"`, `null`
+Примери: `"en"`, `"de"`, `null`
 
 ### `detected_language_name`
 
-Language name of detected language.
+Име препознатог језика.
 
-Examples: `"English"`, `"German"`
+Примери: `"English"`, `"German"`
 
 ### `from`
 
-Name (and email address) of article creator.
+Име (и адреса имејла) креатора чланка.
 
-Examples: `"Nicole Braun <nicole.braun@zammad.org>"`, `"John Doe"`
+Примери: `"Nicole Braun <nicole.braun@zammad.org>"`, `"John Doe"`
 
 ### `id`
 
-Internal ID of the article.
+Интерни ID чланка.
 
 Пример: `16`
 
 ### `in_reply_to`
 
-"In-Reply-To" header from email, if applicable.
+"In-Reply-To" заглавље из имејла, ако је применљиво.
 
 Пример: `null`
 
 ### `internal`
 
-Defines if article is internal or not.
+Одређује да ли је чланак интерн или не.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `message_id`
 
-Message ID of email, if applicable.
+ID поруке имејла, ако је применљиво.
 
 Пример: `null`
 
 ### `origin_by_id`
 
-ID of user (or ID of original creator if created on behalf of another user)
-who created the article.
+ID корисника (или ID оригиналног креатора ако је креирано у име другог
+корисника) који је креирао чланак.
 
 Пример: `null`
 
-### `preferences`
+### Референца
 
-Internal preferences, may be empty.
+Интерна подешавања, може бити празно.
 
 Пример: `{}`
 
 ### `reply_to`
 
-Contains the "Reply-To" header, if applicable.
+Садржи "Reply-To" заглавље, ако је применљиво.
 
 Пример: `null`
 
 ### `sender_id`
 
-ID of the user who sent/created the article.
+ID корисника који је послао/креирао чланак.
 
 Пример: `2`
 
-### `subject`
+### Објекат
 
-Subject of the article.
+Наслов чланка.
 
-Example: `"My amazing subject"`
+Пример: `"Moja neverovatna tema"`
 
 ### `ticket_id`
 
-ID of the ticket, the article belongs to.
+ID тицкета којем чланак припада.
 
 Пример: `9`
 
 ### `to`
 
-Email address of "To" header or group which was set with this article.
+Адреса имејла заглавља "To" или група постављена уз овај чланак.
 
-Examples: `support@example.com`,`"Support"`, `null`
+Примери: `support@example.com`,`"Support"`, `null`
 
 ### `type_id`
 
-ID of type of article (e.g. phone, email, web).
+ID типа чланка (нпр. телефон, имејл, веб).
 
 Пример: `1`
 
-### `updated_at`
+### Освежено у
 
-Timestamp of last update of article.
+Временска ознака последњег ажурирања чланка.
 
 `"2025-02-22T03:47:59.290Z"`
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of the user who updated the article.
+ID корисника који је ажурирао чланак.
 
 Пример: `10`
 
 ## Корисник
 
-### `active`
+### "активно"
 
-Defines, if a user is active.
+Одређује да ли је корисник активан.
 
-Values: `true`, `false`
+Вредности: `true`, `false`
 
 ### `address`
 
-Address of the user.
+Адреса корисника.
 
-Examples: `""`, `"Hauptstraße 100, 99999 Berlin"`
+Примери: `""`, `"Hauptstraße 100, 99999 Berlin"`
 
 ### `city`
 
-Name of the city of the user.
+Име града корисника.
 
-Examples: `""`, `"Berlin"`
+Примери: `""`, `"Berlin"`
 
 ### `country`
 
-Name of the country of the user.
+Име државе корисника.
 
-Examples: `""`, `"Germany"`
+Примери: `""`, `"Germany"`
 
 ### `created_at`
 
-Timestamp of creation of user.
+Временска ознака креирања корисника.
 
-Example: `"2025-02-22T12:47:56.460Z"`
+Пример: `"2025-02-22T12:47:56.460Z"`
 
 ### `created_by_id`
 
-ID of user who created the user.
+ID корисника који је креирао корисника.
 
 Пример: `1`
 
@@ -791,66 +792,67 @@ ID of user who created the user.
 
 Назив одељења.
 
-Examples: `""`, `"IT"`
+Примери: `""`, `"IT"`
 
 ### `email`
 
-Email address of user.
+Адреса имејла корисника.
 
-Examples: `""`, `"nicole.braun@zammad.org"`
+Примери: `""`, `"nicole.braun@zammad.org"`
 
 ### `fax`
 
-Fax number of user.
+Fax број корисника.
 
-Examples: `""`, `"+49 123 456 789 01"`
+Примери: `""`, `"+49 123 456 789 01"`
 
 ### `firstname`
 
-First name of the user.
+Име корисника.
 
-Examples: `""`, `"John"`
+Примери: `""`, `"John"`
 
 ### `id`
 
-Internal ID of the user.
+Интерни ID корисника.
 
 Пример: `8`
 
 ### `last_login`
 
-Timestamp of the last login of the user.
+Временска ознака последњег пријављивања корисника.
 
-Examples: `null`, `"2025-02-23T12:47:56.460Z"`
+Примери: `null`, `"2025-02-23T12:47:56.460Z"`
 
 ### `lastname`
 
-Last name of the user.
+Презиме корисника.
 
-Examples: `""`, `"Doe"`
+Примери: `""`, `"Doe"`
 
-### `login`
+### Пријава
 
-Login name of the user, always set and unique, can differ from email.
+Корисничко име за пријаву, увек постављено и јединствено, може се
+разликовати од имејла.
 
-Examples: `"auto-1234567"`, `"jdoe"`
+Примери: `"auto-1234567"`, `"jdoe"`
 
 ### `mobile`
 
-Mobile phone number of user.
+Број мобилног телефона корисника.
 
-Examples: `""`, `"+49 123 456 789"`
+Примери: `""`, `"+49 123 456 789"`
 
 ### `note`
 
-Note of user object.
+Белешка објекта корисника.
 
-Examples: `""`, `"Some text."`
+Примери: `""`, `"Some text."`
 
-### `organization`
+### Организација
 
-Details of the organization, the user is member of. Have a look at the
-[organization section](#organization-2) for more information.
+Детаљи организације којој корисник припада. Погледајте одељак
+[организација](#organization-2) за више информација.
 
 ::: details
 
@@ -858,39 +860,39 @@ Details of the organization, the user is member of. Have a look at the
 
 :::
 
-### `organization_id`
+### Организација
 
-ID of the organization, the user is member of.
+ID организације којој корисник припада.
 
 Пример: `3`
 
-### `out_of_office`
+### Ван канцеларије
 
-Defines, if the user has activated the out of office function.
+Дефинише да ли је корисник активирао функцију ван службе.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `out_of_office_end_at`
 
-End date out of office period.
+Датум завршетка периода ван службе.
 
-Examples: `null`, `"2025-02-26"`
+Примери: `null`, `"2025-02-26"`
 
 ### `out_of_office_replacement_id`
 
-ID of the user who replaces this user during the out of office period.
+ID корисника који замењује овог корисника током периода ван службе.
 
-Examples: `null`, `3`
+Примери: `null`, `3`
 
 ### `out_of_office_start_at`
 
-Begin date of out of office period.
+Датум почетка периода ван службе.
 
-Examples: `null`, `"2025-02-24"`
+Примери: `null`, `"2025-02-24"`
 
-### `permissions`
+### Rails команде
 
-Set permissions of the user as array.
+Поставља дозволе корисника као низ.
 
 ::: details
 
@@ -900,14 +902,14 @@ Set permissions of the user as array.
 
 ### `phone`
 
-Phone number of the user.
+Број телефона корисника.
 
-Examples: `""`, `"+49 1234 567 890"`
+Примери: `""`, `"+49 1234 567 890"`
 
-### `preferences`
+### Референца
 
-Details of the preferences of the user, may contain `notification_config`,
-`locale` and other internal system information.
+Детаљи преференци корисника, могу садржати `notification_config`, `locale` и
+друге интерне системске информације.
 
 ::: details
 
@@ -917,72 +919,72 @@ Details of the preferences of the user, may contain `notification_config`,
 
 ### `role_ids`
 
-Array with role IDs which are assigned to the user.
+Низ са ID-јевима улога које су додељене кориснику.
 
 Пример: `[1, 2]`
 
 ### `street`
 
-Name of the street of the user.
+Назив улице корисника.
 
-Examples: `""`, `"Hauptstraße 100"`
+Примери: `""`, `"Hauptstraße 100"`
 
-### `updated_at`
+### Освежено у
 
-Timestamp of last update of the user.
+Временска ознака последњег ажурирања корисника.
 
-Example: `"2025-02-25T00:27:52.308Z"`
+Пример: `"2025-02-25T00:27:52.308Z"`
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of user who updated this user.
+ID корисника који је ажурирао овог корисника.
 
 Пример: `3`
 
 ### `verified`
 
-Defines if the user has verified the account or not.
+Дефинише да ли је корисник верификовао налог или не.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `vip`
 
-Defines if the user has VIP state or not.
+Дефинише да ли корисник има VIP статус или не.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `web`
 
-Web URL of the user.
+Web URL корисника.
 
-Examples: `""`, `"https://zammad.org"`
+https://zammad.org
 
 ### `zip`
 
-ZIP code of the user.
+Поштански код корисника.
 
-Examples: `""`, `"123456"`
+Примери: `""`, `"123456"`
 
 ## Организација
 
-The following index contains below mentioned information: `*_organization`
+Следећи индекс садржи наведене информације: `*_organization`
 
-### `active`
+### "активно"
 
-Defines, if the organization is active or not.
+Дефинише да ли је организација активна или не.
 
-Values: `true`, `false`
+Вредности: `true`, `false`
 
 ### `created_at`
 
-Timestamp of creation date of organization.
+Временска ознака датума креирања организације.
 
-Example: `"2025-02-22T12:47:54.807Z"`
+Пример: `"2025-02-22T12:47:54.807Z"`
 
 ### `created_by`
 
-Details of the user who created the organization. Have a look at the [user
-section](#user) for more information.
+Детаљи корисника који је креирао организацију. За више информација
+погледајте [одељак о корисницима](#user).
 
 ::: details
 
@@ -992,7 +994,7 @@ section](#user) for more information.
 
 ### `created_by_id`
 
-ID of the user who created the organization.
+ID корисника који је креирао организацију.
 
 Пример: `1`
 
@@ -1000,24 +1002,24 @@ ID of the user who created the organization.
 
 Домен организације.
 
-Examples: `"null"`, `"example.com"`
+Примери: `"null"`, `"example.com"`
 
 ### `domain_assignment`
 
-Defines if domain assignment is active or not, depends on `domain`.
+Дефинише да ли је додела домена активна или не, у зависности од `domain`.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `id`
 
-Internal ID of the organization.
+Интерни ID организације.
 
 Пример: `1`
 
 ### `members`
 
-Array with details of each user who is a member of the organization. Have a
-look at the [user section](#user) for more information.
+Низ са детаљима сваког корисника који је члан организације. За више
+информација погледајте [одељак о корисницима](#user).
 
 ::: details
 
@@ -1027,32 +1029,32 @@ look at the [user section](#user) for more information.
 
 ### `name`
 
-Name of the organization.
+Назив организације.
 
-Example: `"Fast Lane Hardware Inc."`
+Пример: `"Fast Lane Hardware Inc."`
 
 ### `note`
 
-Note of organization object.
+Напомена објекта организације.
 
-Example: `"IT hardware and custom PC builds."`
+Пример: `"IT hardver i izrada prilagođenih PC uređaja."`
 
 ### `shared`
 
-Defines if it is a "shared organization" or not.
+Дефинише да ли се ради о "дељеној организацији" или не.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
-### `updated_at`
+### Освежено у
 
-Timestamp of last update of the organization.
+Временска ознака последњег ажурирања организације.
 
-Example: `"2025-02-22T12:47:54.807Z"`
+Пример: `"2025-02-22T12:47:54.807Z"`
 
-### `updated_by`
+### "updated_by"
 
-Details of the user who updated the organization. Have a look at the [user
-section](#user) for more information.
+Детаљи корисника који је ажурирао организацију. За више информација
+погледајте [одељак о корисницима](#user).
 
 ::: details
 
@@ -1060,49 +1062,50 @@ section](#user) for more information.
 
 :::
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of user who updated the organization.
+ID корисника који је ажурирао организацију.
 
 Пример: `1`
 
 ### `vip`
 
-Defines if the organization has VIP status or not.
+Дефинише да ли организација има VIP статус или не.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ## Група
 
-The following index contains below mentioned information: `*_group`
+Следећи индекс садржи наведене информације: `*_group`
 
-### `active`
+### "активно"
 
-Defines, if the group is active or not.
+Дефинише да ли је група активна или не.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `assignment_timeout`
 
-Time in minutes, an agent can be inactive until the ownership is removed.
+Време у минутима током којег оператер може бити неактиван пре укидања
+власништва.
 
-Examples: `null`, `30`
+Примери: `null`, `30`
 
 ### `created_at`
 
-Timestamp of creation of group.
+Временска ознака креирања групе.
 
-Example: `"2025-02-24T23:55:06.980Z"`
+Пример: `"2025-02-24T23:55:06.980Z"`
 
 ### `created_by_id`
 
-ID of the user who created the group.
+ID корисника који је креирао групу.
 
 Пример: `1`
 
 ### `email_address`
 
-Details about the email address of the group.
+Детаљи о имејл адреси групе.
 
 ::: details
 
@@ -1112,25 +1115,25 @@ Details about the email address of the group.
 
 ### `email_address_id`
 
-ID of the email address of the group.
+ID имејл адресе групе.
 
 Пример: `3`
 
 ### `follow_up_assignment`
 
-Defines, if ticket owners are still assigned after a follow up.
+Дефинише да ли власници тикета и даље задржавају доделу након наставка.
 
-Values: `false`, `true`
+Вредности: `false`, `true`
 
 ### `follow_up_possible`
 
-Defines if a follow up on a closed ticket is possible or not.
+Дефинише да ли је наставак затвореног тикета могућ или не.
 
-Values: `"yes"`, `"no"`
+Вредности: `"yes"`, `"no"`
 
 ### `id`
 
-Internal ID of the group.
+Унутрашњи ID групе.
 
 Пример: `1`
 
@@ -1138,17 +1141,17 @@ Internal ID of the group.
 
 Назив групе.
 
-Examples: `"Support"`, `"IT"`
+Примери: `"Support"`, `"IT"`
 
 ### `note`
 
-Note for the group object.
+Напомена за објекат групе.
 
 Пример: `null`
 
-### `signature`
+### потпис
 
-Details of the signature of the group.
+Детаљи потписа групе.
 
 ::: details
 
@@ -1156,107 +1159,107 @@ Details of the signature of the group.
 
 :::
 
-### `signature_id`
+### потпис_ид
 
-Internal ID of the signature.
+Унутрашњи ID потписа.
 
 Пример: `1`
 
-### `updated_at`
+### Освежено у
 
-Timestamp of the last group update.
+Време последњег ажурирања групе.
 
-Example: `"2025-02-24T23:55:06.980Z"`
+Пример: `"2025-02-24T23:55:06.980Z"`
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of the user who updated the group.
+ID корисника који је ажурирао групу.
 
 Пример: `3`
 
-## CTI log
+## CTI дневник
 
-The following index contains below mentioned information: `*_cti_log`
+Следећи индекс садржи доле наведене информације: `*_cti_log`
 
-### `call_id`
+### позив_ид
 
-Unique ID of the call.
+Јединствени ID позива.
 
 Пример: `6`
 
-### `comment`
+### коментар
 
-Optional comment.
+Опциони коментар.
 
 Пример: `""`
 
 ### `created_at`
 
-Creation date of call.
+Датум креирања позива.
 
-Example: `"2025-02-22T11:48:01.703Z"`
+Пример: `"2025-02-22T11:48:01.703Z"`
 
-### `direction`
+### `## Одељак 1`
 
-Call direction.
+Смер позива.
 
-Values: `in`, `out`
+Вредности: `in`, `out`
 
-### `done`
+### завршен
 
-Defines if call displays as "to do" within UI.
+Одређује да ли се позив приказује као „задатак“ унутар UI.
 
-Values: `true`, `false`
+Вредности: `true`, `false`
 
-### `duration_talking_time`
+### време_говора
 
-Call duration time in seconds.
+Трајање позива у секундама.
 
 Пример: `27`
 
-### `duration_waiting_time`
+### време_чекања
 
-Waiting time in seconds until call got answered.
+Време чекања у секундама до прихватања позива.
 
 Пример: `77`
 
-### `end_at`
+### завршено_у
 
-Timestamp of call end.
+Време завршетка позива.
 
-Example: `"2025-02-25T08:49:40.647Z"`
+Пример: `"2025-02-25T08:49:40.647Z"`
 
 ### `from`
 
-Calling number.
+Број позиваоца.
 
-Example: `491711234567890`
+Пример: `491711234567890`
 
-### `from_comment`
+### коментар_давитеља
 
-Name of calling number, if applicable.
+Име броја позиваоца, ако је примењиво.
 
-Examples: `null`, `"John"`, `"Doe"`
+Примери: `null`, `"John"`, `"Doe"`
 
-### `from_pretty`
+### од_форматирано
 
-Pretty version of `from` with spacing and added `+`.
+Форматирана верзија поља `from` са размацима и додатим знаком `+`.
 
-Example: `+49 171 1234567890`
+Пример: `+49 171 1234567890`
 
 ### `id`
 
-Internal ID of log entry.
+Унутрашњи ID уноса дневника.
 
 Пример: `8`
 
-### `initialized_at`
+### иницијализирано_у
 
-Timestamp of call initialization, usually matches `created_at`.
+Време иницијализације позива, обично се поклапа с `created_at`.
 
-Example: `"2025-02-25T08:47:56.753Z"`
+Пример: `"2025-02-25T08:47:56.753Z"`
 
-### `preferences`
+### Референца
 
 Детаљи личних подешавања, интерне информације.
 
@@ -1266,55 +1269,56 @@ Example: `"2025-02-25T08:47:56.753Z"`
 
 :::
 
-### `queue`
+### ред_чекања
 
-Queue, the call was answered in.
+Ред чекања у којем је позив примљен.
 
-Examples: `null`, `491711234567890`
+Примери: `null`, `491711234567890`
 
-### `start_at`
+### започето_у
 
-Timestamp the call was answered.
+Време прихватања позива.
 
-Example: `"2025-02-25T08:49:13.050Z"`
+Пример: `"2025-02-25T08:49:13.050Z"`
 
-### `state`
+### `stable`
 
-Last state of the call.
+Последње стање позива.
 
-Examples: `hangup`, `voicemail`
+Примери: `hangup`, `voicemail`
 
 ### `to`
 
-Dialed number.
+Позивани број.
 
-Example: `491711234567890`
+Пример: `491711234567890`
 
 ### `to_comment`
 
-Display name of called number, if applicable.
+Приказано име позиваног броја, ако је применљиво.
 
-`"null"`, `"John"`, `"Doe"`
+"нулл", `"John"`, `"Doe"`
 
 ### `to_pretty`
 
-Pretty version of `to`.
+Прегледнија верзија од `to`.
 
-Example: `+49 171 1234567890`
+Пример: `+49 171 1234567890`
 
-### `updated_at`
+### Освежено у
 
-Last update of entry.
+Последње ажурирање уноса.
 
-Example: `"2025-02-25T08:49:40.647Z"`
+Пример: `"2025-02-25T08:49:40.647Z"`
 
-## Chat session
+## Rails команде
 
-The following index contains below mentioned information: `*_chat_session`
+У следећем индексу се налази информација која је наведена испод:
+`*_chat_session`
 
 ### `chat`
 
-Details of the chat topic.
+Детаљи о теми разговора.
 
 ::: details
 
@@ -1324,21 +1328,21 @@ Details of the chat topic.
 
 ### `chat_id`
 
-ID of the chat topic.
+ID теме разговора.
 
 Пример: `1`
 
 ### `created_at`
 
-Timestamp of chat creation
+Временска ознака креирања разговора
 
-`"2025-02-25T10:26:24.376Z"`
+"2025-02-25T10:26:24.376Z"
 
-### `created_by_id` <Badge type="warning" text="deprecated"/>
+### Одељак са значком <Badge type="warning" text="прилагођен текст" />
 
-ID of user who created the chat.
+ID корисника који је креирао разговор.
 
-Value: `null`
+Вредност: `null`
 
 ### `id`
 
@@ -1348,7 +1352,7 @@ ID сесије ћаскања.
 
 ### `messages`
 
-Array with all messages of the chat.
+Низ са свим порукама у разговору.
 
 ::: details
 
@@ -1358,13 +1362,13 @@ Array with all messages of the chat.
 
 ### `name`
 
-The name for the chat user which was set by the agent, if applicable.
+Име корисника у разговору које је поставио агенат, ако је применљиво.
 
-Examples: `null`, `"John Doe"`
+Примери: `null`, `"John Doe"`
 
-### `preferences`
+### Референца
 
-Various internal Meta data of the session_id
+Разни интерни метаподаци за сессион_ид
 
 ::: details
 
@@ -1374,37 +1378,38 @@ Various internal Meta data of the session_id
 
 ### `session_id`
 
-Unique ID of chat session.
+Јединствени ID сесије разговора.
 
-Example: `92f2909631f1ad5ff4d5d1e046952be8`
+Пример: `92f2909631f1ad5ff4d5d1e046952be8`
 
-### `state`
+### `stable`
 
-Current state of chat session.
+Тренутно стање сесије разговора.
 
 Пример: `closed`
 
-### `tags`
+### "тагови"
 
-Tags which got applied to the chat session by the agent, if applicable.
+Ознаке које је агенат применио на сесију разговора, ако је применљиво.
 
-Example: `["order", "refund"]`
+Пример: `["order", "refund"]`
 
-### `updated_at`
+### Освежено у
 
-Timestamp of last update of the chat.
+Временска ознака последњег ажурирања разговора.
 
-Example: `"2025-02-25T10:27:03.341Z"`
+Пример: `"2025-02-25T10:27:03.341Z"`
 
-### `updated_by_id`
+### "updated_by_id"
 
-ID of the user who updated the chat session the last time.
+ID корисника који је последњи пут ажурирао сесију разговора.
 
-Examples: `null`, `3`
+Примери: `null`, `3`
 
 ### `user`
 
-Details of chat agent. See [user section](#user) for more information.
+Детаљи о оператеру разговора. За више информација погледајте [одсечак
+корисника](#user).
 
 ::: details
 
@@ -1414,6 +1419,6 @@ Details of chat agent. See [user section](#user) for more information.
 
 ### `user_id`
 
-ID of the agent of the chat.
+ID оператера за овај разговор.
 
 Пример: `3`

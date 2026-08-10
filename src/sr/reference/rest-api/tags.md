@@ -5,13 +5,13 @@ title: Ознаке
 
 # Ознаке
 
-## Ticket scope
+## Стање тикета
 
-### List
+### Преглед листе
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Потребна дозвола: `ticket.agent` **или** `admin.tag`
 
-`GET`-Request sent: `/api/v1/tags?object=Ticket&o_id={ticket id}`
+`GET`-Захтев послат: `/api/v1/tags?object=Ticket&o_id={ticket id}`
 
 ::: details
 
@@ -19,11 +19,11 @@ Required permission: `ticket.agent` **or** `admin.tag`
 
 :::
 
-### Add
+### Додај
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Потребна дозвола: `ticket.agent` **или** `admin.tag`
 
-`POST`-Request sent: `/api/v1/tags/add`
+`POST`-Захтев послат: `/api/v1/tags/add`
 
 ::::: details
 
@@ -34,8 +34,8 @@ Required permission: `ticket.agent` **or** `admin.tag`
 <<< @/fixtures/rest-api/tags/add/post-req.json
 
 ::: info
-This will create the tag if it doesn't exist and the user has permission
-to do so.
+Ово ће креирати ознаку ако не постоји и ако корисник има дозволу
+да то уради.
 :::
 
 === Response
@@ -45,11 +45,11 @@ to do so.
 ::::
 :::::
 
-### Remove
+### Обриши
 
-Required permission: `ticket.agent` **or** `admin.tag`
+Потребна дозвола: `ticket.agent` **или** `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tags/remove`
+`DELETE`-Захтев послат: `/api/v1/tags/remove`
 
 :::: details
 
@@ -66,13 +66,13 @@ Required permission: `ticket.agent` **or** `admin.tag`
 :::
 ::::
 
-## Administration scope
+## Административни опсег
 
-### Admin - list
+### Admin - Листа
 
-Required permission: `admin.tag`
+Потребна дозвола: `admin.tag`
 
-`GET`-Request sent: `/api/v1/tag_list`
+`GET`-Захтев послат: `/api/v1/tag_list`
 
 ::: details
 
@@ -80,11 +80,11 @@ Required permission: `admin.tag`
 
 :::
 
-### Admin - create
+### Admin - Креирање
 
-Required permission: `admin.tag`
+Потребна дозвола: `admin.tag`
 
-`POST`-Request sent: `/api/v1/tag_list`
+`POST`-Захтев послат: `/api/v1/tag_list`
 
 :::: details
 
@@ -101,11 +101,11 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - rename
+### Admin - Преименовање
 
-Required permission: `admin.tag`
+Потребна дозвола: `admin.tag`
 
-`PUT`-Request sent: `/api/v1/tag_list/{tag id}`
+`PUT`-Захтев послат: `/api/v1/tag_list/{tag id}`
 
 :::: details
 
@@ -122,15 +122,15 @@ Required permission: `admin.tag`
 :::
 ::::
 
-### Admin - delete
+### Admin - Брисање
 
-Required permission: `admin.tag`
+Потребна дозвола: `admin.tag`
 
-`DELETE`-Request sent: `/api/v1/tag_list/{tag id}`
+`DELETE`-Захтев послат: `/api/v1/tag_list/{tag id}`
 
 ::: details
 
-Response:
+Одговор:
 
 <<< @/fixtures/rest-api/tag_list/delete-tag-id-res.json
 

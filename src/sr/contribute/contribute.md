@@ -18,7 +18,7 @@ order: 1
 Погледајте наш одељак како можете да допринесете. Све репозиторије можете
 пронаћи на [GitHub](https://github.com/zammad){target=_blank}-у.
 
-## Zammad source code
+## Zammad изворни кoд
 
 Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad
 репозиторијуму](https://github.com/zammad/zammad){target=_blank}. Прочитајте
@@ -26,7 +26,7 @@ order: 1
 програмере](https://github.com/zammad/zammad/blob/develop/doc/developer_manual/index.md){target=_blank}
 за почетак.
 
-### Supported branches / versions
+### Подржани огранци/верзије
 
 GitHub репозиторијум Zammad-а има неколико огранака:
 
@@ -144,7 +144,7 @@ Weblate-у](/screenshots/contribute/weblate-ui.png)
     - **Other languages**: овде можете добити листу где и како је низ текста
       преведен на другим језицима (може бити корисно за сличне језике).
 
-### Markup in strings
+### Ознаке у тексту
 
 Испод можете пронаћи пар примера за специјалне низове текста са ознаком која
 индикује где се може пронаћи. Покушајте да задржите (прилагођене) ознаке и
@@ -162,11 +162,11 @@ Weblate-у](/screenshots/contribute/weblate-ui.png)
   случају, користите задње наводнике (`` ` ``) пре и после низа текста у вашем преводу.
 
 `[example](/en/path/to/document-or-website)` <Badge type="tip" text="Documentation" />
-: This is a link to another page, including the language code. The above "example" is the text, which is shown as
-  link text. This part can be translated. For the path, only the `en` may be replaced by the language code you are
-  translating in. Make sure that your language is already present on zammad.org (check it by using the language
-  switcher). Otherwise contact us if you want to have your language activated.
+: Ово је линк на другу страницу, укључујући и код језика. Текст „example” изнад биће приказан као
+  текст линка. Овај део можете превести. Што се тиче путање, само замените `en` са кодом језика на који
+  преводите. Обратите пажњу да ли је ваш језик већ омогућен на zammad.org (проверите преко избора
+  језика). У супротном обратите нам се уколико желите да омогућимо ваш језик.
 
-`**example string**` <Badge type="tip" text="Documentation" />
-: Markup for text (e.g. bold, italics). Alternative: `_example string_`. Try to keep the markup in general but adjust
-  it to keep the meaning.
+`**пример текста**` <Badge type="tip" text="Documentation" />
+: Ознака за текст (нпр. подебљано, курзив). Алтернатива: `_пример текста_`. Начелно задржите
+  ознаке, али их прилагодите тако да значење остане исто.

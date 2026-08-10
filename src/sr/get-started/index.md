@@ -1,4 +1,4 @@
 ---
 order: 1
-title: 'Get started'
+title: 'Први кораци'
 ---

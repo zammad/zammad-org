@@ -23,7 +23,7 @@ features:
 order: 2
 ---
 
-# Style and content guide
+# Guia de estilo e conteúdo
 
 Este guia fornece uma visão geral do conteúdo que deve ser incluído na
 documentação do Zammad, além de diretrizes de formatação e estilo para
@@ -38,7 +38,7 @@ contribuição](contribute) ou [perguntar em uma
 issue](https://github.com/zammad/zammad-org/issues){target=_blank} para
 começar.
 
-## Audience assumptions
+## Suposições sobre o público
 
 A documentação presume que os **usuários** têm um entendimento básico de
 como usar navegadores web e estão familiarizados com conceitos comuns de
@@ -78,7 +78,7 @@ estaria em um nível de detalhe quase de código), a relevância também deve
 ser considerada. Se partes com um caso de uso comum estiverem faltando,
 deve-se pretender incluí-las.
 
-## Style and rules
+## Estilo e regras
 
 As próximas seções cobrem coisas gerais a considerar ao escrever a
 documentação. Depois delas, você encontra uma seção com alguns
@@ -98,9 +98,10 @@ documentação. Depois delas, você encontra uma seção com alguns
 ### Estilo
 
 - Use frases curtas e claras e priorize a informação em vez da complexidade.
-- Use sentence case for page titles and headings. Capitalize the first word
-  and the first letter of any proper noun (e.g. Zammad, Elasticsearch,
-  Docker, GitLab) and acronym (SLA, SSO, API, JSON, etc.).
+- Use sentence case para títulos de página e cabeçalhos. Coloque em
+  maiúscula a primeira palavra e a primeira letra de qualquer nome próprio
+  (ex.: Zammad, Elasticsearch, Docker, GitLab) e sigla (SLA, SSO, API, JSON,
+  etc.).
 - Use separação em trilha de navegação para caminhos e locais com `>` como
   separador e formate o caminho em itálico, por exemplo, _Settings >
   Channels > Chat_.
@@ -169,22 +170,22 @@ Algumas regras importantes e personalizadas são mencionadas abaixo.
 
 #### Texto e interface
 
-| Type                                      | Highlighting in documentation | Markdown syntax                     |
-|-------------------------------------------|-------------------------------|-------------------------------------|
-| Labeled buttons                           | `Sign in`                     | `` `Sign in` ``                     |
-| Fields, labeled UI elements, menu items   | **Name**                      | `**Name**`                          |
-| Breadcrumb paths / navigation chains      | _Settings > Channels > Email_ | `_Settings > Channels > Email_`     |
-| File and directory paths                  | `/opt/zammad`                 | `` `/opt/zammad` ``                 |
-| Placeholder values for configuration      | `<your-fqdn>`                 | `` `<your-fqdn>` ``                 |
-| Placeholder values for API requests       | `{ticket id}`                 | `` `{ticket id}` ``                 |
-| Commandline config values, ports, keys    | `9200`                        | `` `9200` ``                        |
-| Keyboard shortcuts                        | [[x]]                         | `[[x]]`                             |
-| Add button                                | ::+::                         | `::+::`                             |
-| Delete button                             | ::x::                         | `::x::`                             |
-| Action menu                               | ::a::                         | `::a::`                             |
-| Copy to clipboard button                  | ::c::                         | `::c::`                             |
+| Tipo                                          | Destaque na documentação     | Sintaxe Markdown                    |
+|------------------------------------------------|-------------------------------|--------------------------------------|
+| Botões rotulados                                | `Sign in`                     | `` `Sign in` ``                     |
+| Campos, elementos de UI rotulados, itens de menu | **Name**                     | `**Name**`                          |
+| Caminhos de navegação / cadeias de navegação    | _Settings > Channels > Email_ | `_Settings > Channels > Email_`     |
+| Caminhos de arquivo e diretório                 | `/opt/zammad`                 | `` `/opt/zammad` ``                 |
+| Valores de espaço reservado para configuração   | `<your-fqdn>`                 | `` `<your-fqdn>` ``                 |
+| Valores de espaço reservado para requisições de API | `{ticket id}`               | `` `{ticket id}` ``                 |
+| Valores de configuração de linha de comando, portas, chaves | `9200`               | `` `9200` ``                        |
+| Atalhos de teclado                              | [[x]]                         | `[[x]]`                             |
+| Botão de adicionar                              | ::+::                         | `::+::`                             |
+| Botão de excluir                                | ::x::                         | `::x::`                             |
+| Menu de ações                                   | ::a::                         | `::a::`                             |
+| Botão de copiar para a área de transferência     | ::c::                         | `::c::`                             |
 
-#### Heading structure
+#### Estrutura de cabeçalhos
 
 Todo arquivo de documentação deve incluir exatamente um título de nível
 superior (como `# Title`). Níveis abaixo devem sempre conter pelo menos duas
@@ -301,26 +302,26 @@ Este é o conteúdo mostrado no estado expandido.
 
 #### Listas de definição
 
-First term <Badge type="info" text="tag1" />
-: This is the definition of the first term.
+Primeiro termo <Badge type="info" text="tag1" />
+: Esta é a definição do primeiro termo.
 
-Second term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
-: This is one definition of the second term.
-: This is another definition of the second term.
+Segundo termo <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
+: Esta é uma definição do segundo termo.
+: Esta é outra definição do segundo termo.
 
 **Uso:**
 
 ::: details
 
 ```md
-First term <Badge type="info" text="tag1" />
-: This is the definition of the first term
-  with another line.
+Primeiro termo <Badge type="info" text="tag1" />
+: Esta é a definição do primeiro termo
+  com outra linha.
 ```
 
 :::
 
-#### Highlighting with boxes
+#### Destacando com caixas
 
 Para destacar diferentes opções ou variantes, caixas clicáveis podem ser
 usadas.
@@ -356,7 +357,7 @@ features:
 Para colocá-lo na área de conteúdo, simplesmente insira a referência `<VPDocFeatures />` no ponto onde ela deve ser
 renderizada.
 
-#### Theme specific images
+#### Imagens específicas de tema
 
 Para direcionar recursos de imagem específicos a um único tema, você pode
 atribuir a classe CSS `.dark-only` ou `.light-only` à imagem correspondente:

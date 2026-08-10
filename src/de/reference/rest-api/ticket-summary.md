@@ -1,9 +1,9 @@
 ---
 order: 20
-title: 'Ticket summary'
+title: Ticket-Zusammenfassung
 ---
 
-# Ticket summary
+# Ticket-Zusammenfassung
 
 ## Anzeigen/Generieren
 

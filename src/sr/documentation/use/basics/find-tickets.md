@@ -1,60 +1,58 @@
 ---
 order: 3
-title: 'Find tickets'
+title: 'Пронађи тикете'
 ---
 
-# Find tickets
+# Пронађи тикете
 
 Има више начина како да пронађете тикете, у зависности од вашег случаја
 коришћења.
 
-## Via overviews
+## Преко прегледа
 
-If you search for new tickets to work on, your first look should be in the
-overview section. You can either open it by clicking the `Overviews` button
-in the primary navigation or use the keyboard shortcut [[o]]. You can see
-overviews as a kind of ticket lists.
+Ако тражите нове тикете за рад, први поглед усмерите на секцију
+прегледа. Можете је отворити кликом на дугме `Pregledi` у навигационој траци
+или употребити пречицу на тастатури [[o]]. Прегледе можете посматрати као
+врсту листа тикета.
 
-By default, there are some built-in overviews you can use. For example,
-there is an overview called "Open Tickets".  This might be a good starting
-point. Your Zammad admin may have created additional overviews. These are
-based on conditions, which are basically rules, to define which ticket
-appears in which overview.
+Подразумевано постоје неки уграђени прегледи које можете користити. На
+пример, постоји преглед назван "Отворени тикети". Ово би могао бити добар
+почетак. Ваш Zammad администратор је можда креирао додатне прегледе. Они се
+заснивају на условима, који су заправо правила, да дефинишу који се тикет
+приказује у ком прегледу.
 
-For a detailed description, head over to the [overview usage
-guide](/en/documentation/use/guides/overviews).
+За детаљан опис посетите [водиљку за коришћење
+прегледа](/en/documentation/use/guides/overviews).
 
-## Via search
+## Преко претраге
 
-However, if you search for a specific ticket which might or might not be
-visible in the overviews, you can use the search. You can find it in the top
-left corner of the primary navigation. Either select it via mouse or use the
-keyboard shortcut by simply pressing [[s]].
+Међутим, ако тражите одређени тикет који можда није видљив у прегледима,
+можете користити претрагу. Пронаћи је можете у горњем левом углу навигационе
+траке. Изаберите је мишем или употребите пречицу на тастатури једноставним
+притискањем [[s]].
 
-After activating the search field, you can find the tickets you recently
-closed from your taskbar as well as your last search queries.
+Након активирања поља за претрагу, можете пронаћи тикете које сте недавно
+затворили на свом панелу задатка, као и последње упите за претрагу.
 
-By entering a search term, you immediately see a preview of the search
-results. If you press [[enter]] or click on `detailed search`, Zammad
-displays a page with search results. There you can differentiate by object
-type (e.g.  user), what you are searching.
+Уносом појма за претрагу одмах видите преглед резултата претраге. Ако
+притиснете [[enter]] или кликнете на `detaljnu pretragu`, Zammad приказује
+страницу са резултатима претраге. Тамо можете одредити врсту објекта
+(нпр. корисник) коју тражите.
 
-Have a look at the [search guide](/en/documentation/use/guides/search) for
-more details.
+За више детаља погледајте [водиљку за
+претрагу](/en/documentation/use/guides/search).
 
 ## Обавештења
 
-Depending on the [notification
-settings](/en/documentation/use/user-profile#notifications) in your profile,
-you receive updates for different ticket based events like the creation or
-the update of a ticket. This ensures that no important change to a ticket
-gets overlooked.
+Зависно од [подешавања
+обавештења](/en/documentation/use/user-profile#notifications) у свом
+профилу, добијате ажурирања за различите догађаје везане за тикете, попут
+креирања или ажурирања тикета. Ово осигурава да се ниједна важна измена на
+тикету не пропусти.
 
-You can open them by clicking on the notification counter in the top left
-corner. If there is a badge with a counter, the counter shows the number of
-unread notifications.
+Можете их отворити кликом на бројилац обавештења у горњем левом углу. Ако
+постоји ознака са бројем, он приказује број неопрочитаних обавештења.
 
-By default, you get notified when one of your tickets (means you are the
-owner) got updated. By clicking on the link in the notification, this ticket
-gets opened in the navigation sidebar as a tab and the ticket detail view is
-displayed.
+Подразумевано, обавештавате се када се ажурира један од ваших тикета (значи
+да сте власник). Кликом на линк у обавештењу, овај тикет се отвара у
+навигационој бочној траци као картица и приказује се преглед детаља тикета.

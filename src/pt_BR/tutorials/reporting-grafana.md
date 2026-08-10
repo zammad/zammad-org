@@ -39,7 +39,7 @@ armazena informações **muito sensíveis** dentro do índice do
 Elasticsearch.
 :::
 
-## Setting up required data sources
+## Configurando as fontes de dados necessárias
 
 **Antes de começarmos:** as fontes de dados sempre seguem o mesmo esquema. Reduzimos
 as informações abaixo a `name`, `time field name` e `index name`.
@@ -103,32 +103,32 @@ Isso retornará uma saída como a seguinte:
 :::
 ::::
 
-### ES - chat sessions
+### ES - Sessões de chat
 
 - Nome do índice: `zammad_production_chat_session`
 - Nome do campo de tempo: `created_at`
 
-### ES - CTI log
+### ES - Registro CTI
 
 - Nome do índice: `zammad_production_cti_log`
 - Nome do campo de tempo: `start_at`
 
-### ES - ticket articles
+### ES - Artigos de ticket
 
 - Nome do índice: `zammad_production_ticket`
 - Nome do campo de tempo: `article.created_at`
 
-### ES - tickets by closed_at
+### ES - Tickets por closed_at
 
 - Nome do índice: `zammad_production_ticket`
 - Nome do campo de tempo: `close_at`
 
-### ES - tickets by created_at
+### ES - Tickets por created_at
 
 - Nome do índice: `zammad_production_ticket`
 - Nome do campo de tempo: `created_at`
 
-### ES - tickets by first_response_at
+### ES - Tickets por first_response_at
 
 - Nome do índice: `zammad_production_ticket`
 - Nome do campo de tempo: `first_response_at`
@@ -136,13 +136,13 @@ Isso retornará uma saída como a seguinte:
 Com as fontes de dados acima, você basicamente tem tudo o que precisa para
 começar a construir seus próprios painéis.
 
-## Quick start with dashboard template
+## Início rápido com modelo de painel
 
 Se você quiser se inspirar, pode usar nossos painéis de exemplo mencionados
 abaixo. Esses painéis também podem ser encontrados no
 [GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
-### Importing a dashboard
+### Importando um painel
 
 No Grafana, selecione _➕ > Import_ (ou qualquer outro lugar que ofereça importar
 um painel) e envie o arquivo json que você baixou do Github, ou use o ID do grafana.com,
@@ -154,18 +154,18 @@ também será solicitado a mapear as fontes de dados para o seu ambiente. Se
 você usou nossos nomes de fonte de dados acima, pode simplesmente pesquisar
 pelo mesmo nome.
 
-### Ticket statistics dashboard <Badge type="tip" text="14222"/>
+### Painel de estatísticas de tickets <Badge type="tip" text="14222"/>
 
 ![Painel de tickets do
 Grafana](/screenshots/tutorials/reporting/tickets.png)
 
-#### Dashboard graphs
+#### Gráficos do painel
 
 - abertura e fechamento de tickets[^1]
 - artigos criados
 - SLA de ticket (no prazo _e_ violação) por tipo[^1][^2]
 
-#### Ticket and article meta information
+#### Metainformação de ticket e artigo
 
 - distribuição de tickets por grupo
 - proporção de remetentes (por exemplo, Cliente/Agente)[^3]
@@ -181,22 +181,22 @@ Grafana](/screenshots/tutorials/reporting/tickets.png)
   - tags de ticket[^1]
 - últimos 10 tickets escalonados
 
-#### Required data sources
+#### Fontes de dados necessárias
 
 - `ES - Ticket Articles`
 - `ES - Tickets by created_at`
 - `ES - Tickets by closed_at`
 
-### Chat-session statistics dashboard <Badge type="tip" text="14224"/>
+### Painel de estatísticas de sessão de chat <Badge type="tip" text="14224"/>
 
 ![Painel de chat do
 Grafana](/screenshots/tutorials/reporting/chat-sessions.png)
 
-#### Dashboard graphs
+#### Gráficos do painel
 
 Criações de sessão de chat.
 
-#### Chat session meta information
+#### Metainformação de sessão de chat
 
 - top 10 de:
   - tags de chat
@@ -208,19 +208,19 @@ Criações de sessão de chat.
 - tempo médio de chat
 - mapa-múndi com países de origem do chat
 
-#### Required data sources
+#### Fontes de dados necessárias
 
 - `ES - Chat Sessions`
 
-### CTI-log statistics dashboard <Badge type="tip" text="14223"/>
+### Painel de estatísticas de registro CTI <Badge type="tip" text="14223"/>
 
 ![Painel de chamadas do Grafana](/screenshots/tutorials/reporting/calls.png)
 
-#### Dashboard graphs
+#### Gráficos do painel
 
 Número de chamadas por direção (entrada/saída).
 
-#### Chat session meta information
+#### Metainformação de sessão de chat
 
 - proporção de chamadas (entrada/saída)
 - tempo médio de espera
@@ -229,7 +229,7 @@ Número de chamadas por direção (entrada/saída).
   - chamadores (entrada)
   - atendentes de chamada (entrada)
 
-#### Required data sources
+#### Fontes de dados necessárias
 
 - `ES - CTI Log`
 

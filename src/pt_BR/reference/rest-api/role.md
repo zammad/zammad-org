@@ -3,7 +3,7 @@ order: 14
 title: 'Função (Role)'
 ---
 
-# Papéis
+# Funções
 
 ## Listar
 

@@ -3,11 +3,11 @@ order: 3
 title: Docker
 ---
 
-# Docker installation
+# Инсталација пакета
 
-Zammad can be deployed using Docker Compose. You can even use graphical
-Docker front ends like
-[Portainer](https://www.portainer.io/){target=_blank}.
+Zammad се може покренути преко Docker Compose. Можете чак користити и
+графички интерфејс за Docker као што је
+[Portainer](https://www.portainer.io/).
 
 ::: info
 
@@ -20,74 +20,77 @@ Docker front ends like
 
 - Радно Docker Compose окружење
 - Најмање 4 GB RAM за контејнере
-- Increase the memory limit for Elasticsearch on Linux hosts:
+- Повећајте меморијско ограничење за Elasticsearch на Linux хостовима:
 
   ```sh
-  sudo sysctl -w vm.max_map_count=262144
+  ```sh
+    sysctl -w vm.max_map_count=262144
+    ```
   ```
 
 ## Покретање преко Portainer-а
 
-The easiest way to get Zammad running is via a graphical Docker UI. We
-recommend [Portainer](https://www.portainer.io/){target=_blank}. For
-installation instructions, check out [Portainer's
-documentation](https://docs.portainer.io/){target=_blank}.
+Најлакши начин да покренете Zammad је преко графичког Docker
+интерфејса. Препоручујемо [Portainer](https://www.portainer.io/). За
+упутство инсталације, погледајте [званичну Portainer
+документацију](https://docs.portainer.io/).
 
-### Step 1: Add stack
+### Корак 1: Додавање stack-а
 
-In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your
-target environment, select **Stacks** and click on `Add stack` as you can
-see in the screenshot below.
+У графичком интерфејсу Portainer-а (нпр. `https://yourdomain.tld:9443`),
+идите на циљно окружење, одаберите **Stacks** и кликните на `Add stack` као
+на снимку екрана испод.
 
-![Screenshot in the Stacks section and highlighted "Add
-stack".](/screenshots/get-started/installation/portainer-stacks.png)
+![Снимак екрана у одељку Stacks са наглашеним "Add stack"
+дугметом.](/screenshots/get-started/installation/portainer-stacks.png)
 
-### Step 2: Build from repository
+### Корак 2: Инсталација из репозиторија
 
-Switch to **Repository** build method and provide the information below:
+Пребаците се на метод изградње **Репозиторијум** и унесите информације
+испод:
 
-- **Name**: enter a desired name of the stack
+- **Име**: унесите жељено име стацк-а
 - **URL адреса репозиторија**:
   `https://github.com/zammad/zammad-docker-compose`
-- **Repository reference**: `refs/heads/master`
-- **Compose path**: `docker-compose.yml` (default)
+- **Референца repo-зиторијума**: `refs/heads/master`
+- **Путања Compose-а**: `docker-compose.yml` (подразумевано)
 
-In case our default environment is not what you are looking for, you can
-customize the stack using predefined scenarios and adjust environment
-variables. Jump to the [customization
-section](#customizing-the-zammad-stack) below to find more information.
+Ако ваше подразумевано окружење није оно које тражите, можете прилагодити
+стацк користећи унапред дефинисане сценарије и подесити променљиве
+окружења. Погледајте [секцију за
+прилагођавање](#customizing-the-zammad-stack) испод за више информација.
 
-![Stack creation with provided information in Repository
-screen](/screenshots/get-started/installation/portainer-stack-creation.png)
+![Додавање stack-а са обезбеђеним подацима у Repository
+екрану](/screenshots/get-started/installation/portainer-stack-creation.png)
 
-### Step 3: Deploy the stack
+### Корак 3: Покретање stack-а
 
-Finally, click `Deploy the stack` button. The first time, it may take some
-time until the Docker images are fetched.
+На крају, кликните на дугме `Deploy the stack`. Први пут може потрајати неко
+време док се Docker имиџи не преузму.
 
-After the stack is ready, you can access Zammad via the configured Docker
-host and port, e.g. `http://localhost:8080/`.
+Након што је stack спреман, можете приступити Zammad-у преко подешеног
+Docker хоста и порта, нпр. `http://localhost:8080/`.
 
-## Deployment with Docker Compose
+## Покретање преко Docker Compose
 
-### Step 1: Clone the GitHub repo
+### Корак 1: Клонирање GitHub репозиторија
 
 ```sh
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
 
-Make sure to run `git pull` frequently to fetch updates. Alternatively, you
-can download the files from the [releases
-page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
+Обавезно често извршавајте `git pull` команду за ажурирање. Алтернативно,
+можете преузети датотеке са [странице
+издања](https://github.com/zammad/zammad-docker-compose/releases).
 
-### Step 2: Adjust environment as needed
+### Корак 2: Подешавање окружења по потреби
 
-In case our default environment is not what you are looking for, you can
-customize the stack using predefined scenarios and adjust environment
-variables. Jump to the [customization
-section](#customizing-the-zammad-stack) below to find more information.
+Ако ваше подразумевано окружење није оно које тражите, можете прилагодити
+стацк користећи унапред дефинисане сценарије и подесити променљиве
+окружења. Погледајте [секцију за
+прилагођавање](#customizing-the-zammad-stack) испод за више информација.
 
-### Step 3: Start the stack
+### Корак 3: Покретање stack-а
 
 ```sh
 cd zammad-docker-compose
@@ -97,90 +100,110 @@ cd zammad-docker-compose
 docker compose up -d
 ```
 
-Optional: Use an additional `.yml` file to use a pre-defines scenario. Read
-on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack)
-section.
+Опционално: Користите додатни `.yml` фајл за коришћење унапред дефинисаног
+сценарија. Прочитајте више у секцији [Прилагођавање Zammad
+стацк-а](#customizing-the-zammad-stack).
 
-After the stack is ready, you can access Zammad via the configured Docker
-host and port, e.g. `http://localhost:8080/`.
+Након што је stack спреман, можете приступити Zammad-у преко подешеног
+Docker хоста и порта, нпр. `http://localhost:8080/`.
 
-## Exposing the stack via HTTPS
+## Излагање стацк-а преко HTTPS-а
 
-To publish a Zammad stack on the internet, it needs be secured via the HTTPS
-protocol. To achieve that without modifying the Zammad stack, you can:
+Да бисте објавили Zammad стацк на интернету, мора бити заштићен путем HTTPS
+протокола. Да бисте то постигли без измене Zammad стацк-а, можете:
 
-- Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that
-  provides an easy [Let's Encrypt](https://letsencrypt.org/){target=_blank}
-  integration.
-- Use a Cloudflare tunnel, which provides SSL termination.
+- Користите реверзни прокси као што је Nginx Proxy Manager (NPM). Он има GUI
+  који омогућава једноставну интеграцију са [Let'с
+  Encrypt](https://letsencrypt.org/).
+- Користите Cloudflare тунел, који пружа SSL терминацију.
 
-Both scenarios are covered in the separate [Docker Compose
-Scenarios](/en/reference/docker-compose-scenarios) page.
+Оба сценарија су објашњена на одвојеној страници [Docker Compose
+Scenarios](/en/reference/docker-compose-scenarios).
 
-## Customizing the Zammad stack
+## Прилагођавање Zammad stack-а
 
-The Zammad stack can be customized by loading additional scenario files for
-common use cases. For example, you can deploy the stack with an included
-Nginx Proxy Manager (NPM) or with disabled PostgreSQL or Elasticsearch
-services, in case you already have these services running.
+Zammad стацк се може прилагодити учитавањем додатних фајлова са сценаријима
+за честе случајеве употребе. На пример, можете деплоуовати стацк са
+укљученим Nginx Proxy Manager-ом (NPM) или са онемогућеним PostgreSQL или
+Elasticsearch сервисима, ако већ имате те сервисе у раду.
 
-Please see the [Docker Compose scenarios
-page](/en/reference/docker-compose-scenarios).
+Молимо погледајте страницу [Сценарији за Docker
+Compose](/en/reference/docker-compose-scenarios).
 
-To adjust the stack and settings, use [Docker specific environment
-variables](/en/reference/environment-variables).
+За подешавање стацк-а и поставки користите [Docker специфичне променљиве
+окружења](/en/reference/environment-variables).
 
-## How to run commands in the stack
+## Извршавање команди у stack-у
 
-Execute commands in your Docker stack by calling `rails` or `rake` via one
-of the following methods by using `bundle exec`.
+Покрените команде у вашем Docker стацк-у тако што ћете позвати `rails` или
+`rake` путем једне од следећих метода користећи `bundle exec`.
 
 :::: tabs key:docker-portainer
 
 === Docker Compose
 
-Directly execute a specific command:
+Директно извршите одређену команду:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
-Run the interactive Rails console to manually enter Rails commands:
+Покрените интерактивну Rails конзолу да бисте ручно унели Rails команде:
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails c
 ```
 
-Via `docker compose exec`:
+Преко `docker compose exec`:
 
 ```sh
 docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::: tip
-If you need to retrieve information from the Rails server, you can, for example,
-place `pp` (pretty print) in front of your Rails command. This leads to an
-output in your terminal.
+Уколико желите да добијете информације од вашег rails сервера, можете, нпр.
+да укључите `pp` (pretty print) испред ваших rails команди. Ово ће довести до
+излаза на вашем терминалу.
 :::
 
-=== Portainer
+=== Преко Portainer GUI-а
 
-In your Portainer GUI, go to the container view and select the running Rails container from your Zammad stack. Click
-on the **Exec Console** icon in the "Quick Actions" column, select the standard `/bin/bash` entrypoint and click
+У вашем Portainer GUI-у, идите на преглед контејнера и изаберите покренути Rails контејнер са вашег Zammad стацк-а. Кликните
+на иконицу **Exec Console** у колони "Quick Actions", изаберите стандардни `/bin/bash` entrypoint и кликните
 **Connect**.
 
-![Portainer console execution](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
+![Pokretanje konzole Portainer](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
 
-Run the interactive Rails console by executing:
+Покрените интерактивну Rails конзолу извршавањем:
 
 ```sh
 bundle exec rails c
 ```
 
-Directly execute a specific command:
+Директно извршите специфичну команду:
 
 ```sh
 bundle exec rails r '...your rails command here...'
+```
+
+=== Преко конзоле
+
+Директно извршите специфичну команду:
+
+```sh
+docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
+```
+
+Покрените интерактивну Rails конзолу за ручни унос Rails команди:
+
+```sh
+docker compose run --rm zammad-railsserver bundle exec rails c
+```
+
+Преко `docker compose exec`:
+
+```sh
+docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::::

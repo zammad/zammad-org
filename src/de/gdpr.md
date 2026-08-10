@@ -6,7 +6,7 @@ layout: home
 
 > Allgemeine Datenschutzbestimmungen
 
-## Zammad GmbH privacy policy
+## Zammad GmbH Datenschutzerklärung
 
 Diese Datenschutzerklärung beschreibt, wie Ihre persönlichen Daten
 gesammelt, verwendet und weitergegeben werden, wenn Sie

@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Work with tickets'
+title: 'Trabalhar com tickets'
 ---
 
-# Work with tickets
+# Trabalhar com tickets
 
 Você encontrou o caminho até um ticket existente, parabéns! Agora vamos ver
 o que você pode fazer e como fazê-lo.
@@ -24,14 +24,14 @@ exemplo), uma atualização explícita do ticket é necessária. Portanto,
 certifique-se de clicar no botão `Update` no lado direito da barra de rodapé
 quando estiver satisfeito com suas alterações.
 
-## Changing ticket attributes
+## Alterando atributos do ticket
 
 Como você já deve saber, há atributos de ticket adicionais, como grupo,
 prioridade e responsável, que você pode definir. Se você ainda não leu
 [ticket-basics](/pt_BR/documentation/use/basics/ticket-basics), confira para
 saber mais.
 
-## Create a new article
+## Criar um novo artigo
 
 Não importa se você cria um novo artigo do zero ou responde a um artigo do
 cliente, você pode escolher entre diferentes tipos de artigo:
@@ -45,11 +45,11 @@ cliente, você pode escolher entre diferentes tipos de artigo:
 - **Email**: envie um email para qualquer pessoa sobre o ticket. O título do
   ticket é usado como assunto do email.
 
-To choose another article type, use the channel tabs (labeled **Note**,
-**Phone**, **Email** etc.) and pick a different type. Use the **Visibility**
-switch to toggle the article between internal and public visibility.
-Articles with internal visibility are highlighted with a dashed blue border;
-public articles have no highlighting.
+Para escolher outro tipo de artigo, use as abas de canal (rotuladas
+**Note**, **Phone**, **Email** etc.) e escolha um tipo diferente. Use a
+chave **Visibility** para alternar o artigo entre visibilidade interna e
+pública. Artigos com visibilidade interna são destacados com uma borda azul
+tracejada; artigos públicos não têm destaque.
 
 ![Captura de tela mostra o seletor de tipo de artigo e a chave de
 visibilidade](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
@@ -70,20 +70,20 @@ minutos. Para ver a função **Delete article** no menu ::a::, artigos de um
 tipo de comunicação (emails, chamadas) precisam primeiro ser alterados para
 visibilidade "interna".
 
-### Add an article from scratch
+### Adicionar um artigo do zero
 
-Below the last article, click the `Add internal note` button (or `Add reply`
-if you are a customer). This opens the editor with the appropriate channel
-and visibility selected. You can change the type or visibility if you
-like. To answer the customer directly or to forward a specific article, use
-the corresponding buttons under an article. Read the next section for more
-information.
+Abaixo do último artigo, clique no botão `Add internal note` (ou `Add
+reply`, se você for cliente). Isso abre o editor com o canal e a
+visibilidade apropriados já selecionados. Você pode alterar o tipo ou a
+visibilidade se quiser. Para responder ao cliente diretamente ou encaminhar
+um artigo específico, use os botões correspondentes abaixo de um
+artigo. Leia a próxima seção para mais informações.
 
-![Screenshot shows the action row under the last article in the ticket
-detail
-view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Captura de tela mostra a linha de ações abaixo do último artigo na
+visualização de detalhes do
+ticket](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
 
-### Respond to an article
+### Responder a um artigo
 
 Para encaminhar ou responder a um artigo, use um dos botões de resposta
 abaixo de um artigo ou no menu ::a::. O comportamento é semelhante ao de um
@@ -120,7 +120,7 @@ Se o ticket tem um histórico de artigos longo, veja [Lidando com tickets
 grandes](#handling-of-large-tickets) para as facilidades que o Zammad
 oferece.
 
-### Handling of large tickets
+### Lidando com tickets grandes
 
 Ao trabalhar em tickets com históricos de artigos longos - como longas
 threads de email onde você precisa consultar mensagens anteriores - o Zammad
@@ -129,8 +129,8 @@ oferece duas facilidades:
 - Uma barra de ações de ticket flutuante no canto inferior direito da lista
   de artigos mostra ações rápidas, dependendo da sua posição de rolagem e do
   estado do ticket. Ela contém botões com ícones para as seguintes ações:
-  - **Add internal note** (or **Add reply** if you are a customer): opens
-    the article reply form to write a note.
+  - **Add internal note** (ou **Add reply**, se você for cliente): abre o
+    formulário de resposta do artigo para escrever uma nota.
   - **Scroll to start** e **Scroll to end**: pula para o topo ou final da
     lista de artigos. Se houver artigos não lidos, o botão **Scroll to end**
     exibe um selo e muda para **Scroll to unread article**.
@@ -148,14 +148,14 @@ oferece duas facilidades:
 inferior da visualização de detalhes do
 ticket](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 
-## Rename a ticket
+## Renomear um ticket
 
 Para renomear um ticket, basta clicar no título na barra de cabeçalho e
 começar a digitar. Esse título é usado como assunto na comunicação por email
 e aparece em vários lugares, como visões gerais. Confirme com [[enter]] ou
 clique no botão no lado direito.
 
-## Copy ticket number
+## Copiar número do ticket
 
 Para copiar o número do ticket, incluindo um link para o ticket (por
 exemplo, para colá-lo em um aplicativo de chat de terceiros), use o ícone
@@ -174,7 +174,7 @@ visualização de detalhes do ticket, e o número do ticket é copiado para sua
 área de transferência. Para incluir também o título do ticket, pressione
 [[.]] duas vezes. Exemplo: `Ticket#31004: Onboarding new colleague`.
 
-## Simultaneous ticket processing
+## Processamento simultâneo de ticket
 
 Pode acontecer de dois ou mais agentes abrirem um ticket ao mesmo
 tempo. Para evitar conflitos de edição e clientes recebendo respostas
@@ -200,7 +200,7 @@ Há ainda mais ícones que representam estados adicionais dos outros agentes
 escritório). Basta passar o mouse se você não tiver certeza do que
 significa.
 
-## Ticket actions
+## Ações do ticket
 
 Ações adicionais estão disponíveis no menu ::a:: na barra lateral do ticket.
 
@@ -212,7 +212,7 @@ Merge
 : migre todas as mensagens/notas para outro ticket. Útil se você tiver mais de um ticket sobre um único assunto do cliente.
   Veja [Mesclar tickets](/pt_BR/documentation/use/advanced-features#merge-tickets) para detalhes.
 
-Change customer : Reassign the ticket to another customer.
+Alterar cliente: reatribua o ticket a outro cliente.
 
 -----
 

@@ -1,116 +1,117 @@
 ---
 order: 9
-title: 'Migrate Zammad to new host'
+title: 'Миграција на Zammad'
 ---
 
-# Migrate Zammad to new host
+# Миграција на Zammad
 
-This is just a description of basic steps to perform a migration to a new
-host. Your environment may be different so you should consider this as a
-reference point only. If anything goes wrong, please consult the [Zammad
-Community](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
-or consider [paid support
-options](https://zammad.com/en/services/professional-services){target=_blank}.
+Ово је само опис основних корака за извођење миграције на нови хост. Ваше
+окружење може бити другачије па ово треба посматрати само као референтну
+тачку. Ако нешто пође по злу, консултујте се са [Zammad
+заједницом](https://community.zammad.org/c/trouble-running-zammad-this-is-your-place/5){target=_blank}
+или размотрите [опције плаћеног
+подршке](https://zammad.com/en/services/professional-services){target=_blank}.
 
-The steps described on this page are an addition to the [backup and restore
-guide](/en/tutorials/backup-restore). They're not meant to stand alone -
-we'll link and note this in the relevant parts.
+Кораци описани на овој страници су допуна [водичу за бацкуп и враћање
+података](/en/tutorials/backup-restore). Нису замишљени да стоје сами по
+себи - у одговарајућим деловима ћемо их повезати и напоменути.
 
 ::: tip
-Migrating from Zammad SaaS? Skip to
-[Step 7](#step-7-transfer-your-backup-files). For restoration, you've
-received an attachment dump!
+Мигрирате са Zammad SaaS-а? Прескочите на
+[Корак 7](#step-7-transfer-your-backup-files). За враћање, већ сте
+добили прилог думп!
 :::
 
-## Step 1: Note down your environmental adjustments
+## Корак 1: Забележите своја окружењска подешавања
 
-If you have set any environment variables or similar, make sure to backup
-them.
+Ако сте подесили било које променљиве окружења или слично, обавезно
+сачувајте њихову резервну копију.
 
-## Step 2: Install Zammad on the destination host
+## Корак 2: Инсталирајте Zammad на одредишни хост
 
-For the easiest restoration path possible, please install the same version
-like your origin instance. You could also consider updating the old instance
-before migrating. The following guide assumes that you have the same version
-of Zammad on your old and new host.
+За најједноставнији могући пут до враћања, инсталирајте исту верзију као на
+изворној инстанци. Такође можете размотрити ажурирање старе инстанце пре
+миграције. Следећи водич подразумева да имате исту верзију Zammad-а на
+старом и новом хост-у.
 
-## Step 3: Activate maintenance mode
+## Корак 3: Активирајте режим одржавања
 
-This ends all agent and customer sessions. Activate it in Zammad's admin
-interface under _System > Maintenance_.
+Ово прекида све сесије агената и корисника. Активирајте га у администраторском
+интерфејсу Zammad-а под _Систем > Одржавање_.
 
-## Step 4: Disable your communication channels
+## Корак 4: Онемогућите своје комуникационе канале
 
-The restore script starts Zammad automatically, this may help to avoid data
-loss and inconsistencies.
+Скрипта за враћање аутоматски покреће Zammad, што може помоћи у избегавању
+губитка података и нестабилности.
 
-## Step 5: Stop and disable Zammad
+## Корак 5: Зауставите и искључите Zammad
 
-Make sure that no data will be changed _before_ backing up.
+Уверите се да се ниједан податак не мења _пре_ прављења резервне копије.
 
 ```sh
-sudo systemctl disable zammad
+systemctl дисабле заммад
 ```
 
 ```sh
-sudo systemctl stop zammad
+systemctl старт заммад
 ```
 
-## Step 6: Backup
+## Корак 1: Додавање stack-а
 
-Follow the [backup guide](/en/tutorials/backup-restore#) to create your
-backup.
+Пратите [водич за бацкуп](/en/tutorials/backup-restore#) како бисте креирали
+резервну копију.
 
-Remember if you've created a full filesystem dump or only backed up your
-data. This will be important for the restoration.
+Запамтите да ли сте направили потпуни думп датотечног система или сте
+сачували само своје податке. То ће бити важно за процес враћања.
 
-If you want to go the easiest way, consider only dumping your data.
+Ако желите најлакши пут, размислите само о чувању података у думп формату.
 
-## Step 7: Transfer your backup files
+## Корак 7: Пренесите ваше фајлове резервне копије
 
-Save your backup files in a directory and provide the path to the `config`
-file. Under [backup
-configuration](/en/tutorials/backup-restore#backup-configuration) you can
-find how to adjust the config file to your needs.
+Сачувајте фајлове резервне копије у директоријуму и наведите путању до
+`config` фајла. У секцији [конфигурација
+бацкуп-а](/en/tutorials/backup-restore#backup-configuration) можете сазнати
+како да прилагодите цонфиг фајл својим потребама.
 
-## Step 8: Restore your backup
+## Корак 8: Вратите вашу резервну копију
 
-Follow the [restoration guide](/en/tutorials/backup-restore#restore-backups)
-up to and including "Run the Restore" to restore the backup on the new host.
+Пратите [водич за враћање](/en/tutorials/backup-restore#restore-backups)
+све до корака \"Покрени враћање\" (укључујући га), како бисте вратили
+резервну копију на новом хост-у.
 
-Make sure to stop Zammad after the restoration has finished.
+Обавезно зауставите Zammad након завршетка процеса враћања.
 
-## Step 9: Run required maintenance tasks after restoring
+## Корак 9: Покрените потребне задатке одржавања након враћања
 
-After successful restoration, please continue below depending if you've only
-backed up your data or have a full filesystem dump.
+Након успешног враћања, наставите у зависности од тога да ли сте сачували
+само податке или поседујете потпуни думп датотечног система.
 
-### Data dump
+### Думп података
 
-#### Step 9.1: Clear the cache
+#### Корак 3: Покретање stack-а
 
 ```sh
-zammad run rails r "Rails.cache.clear"
+заммад рун раилс р \"Rails.cache.clear\"
 ```
 
-### Full filesystem dump
+### Потпуни думп датотечног система
 
 ::: info
-This step is only needed, if one of the following points is met:
+Овај корак је потребан само ако је испуњен барем један од следећих услова:
 
-- The source and destination Zammad versions are not the same
-- The Zammad installation is not a source code installation
-- The Zammad backup is not an export from our hosted setup
+- Верзије Zammad-а на изворној и одредишној инстанци нису исте
+- Инсталација Zammad-а није инсталирана из изворног кода
+- Резервна копија Zammad-а није export са наше хостоване платформе
 
-Full dumps for source code installations are not covered, however,
-basically the same below applies to you: You have to ensure that the
-environments and application files are overwritten with the new /
-correct version.
+Потпуни думпови за инсталације из изворног кода нису покривени, али,
+принципијелно важи исто што и у наставку: Морате осигурати да су
+окружење и фајлови апликације замењени новом /
+коректном верзијом.
 
-Zammad files are distribution and version specific!
+Zammad фајлови зависе од дистрибуције и верзије!
 :::
 
-#### Step 9.1: Uninstall and reinstall Zammad without resolving dependencies
+#### Корак 9.1: Деинсталирајте и поново инсталирајте Zammad без решавања зависности
 
 ::: tabs
 
@@ -137,10 +138,9 @@ sudo zypper install zammad
 :::
 
 ::: tip
-You're unsure if above is really required and a mere reinstall would be
-enough? If you run a dedicated install command on for Zammad and receive
-the following, you absolutely have to run above to fix your
-installation.
+Нисте сигурни да ли је горе наведено стварно потребно и да би обична поновна инсталација била довољна? Ако покренете специфичну команду за инсталацију Zammad-а и добијете
+следећи одговор, обавезно морате извршити горе наведене кораке да поправите вашу
+инсталацију.
 
 ``` sh
 root@zammad:/# apt update && apt install zammad
@@ -153,47 +153,47 @@ root@zammad:/# apt update && apt install zammad
 
 :::
 
-#### Step 9.2: Clear the cache
+#### Корак 3: Покретање stack-а
 
 ```sh
-zammad run rails r "Rails.cache.clear"
+заммад рун раилс р \"Rails.cache.clear\"
 ```
 
-#### Step 9.3: Ensure Zammad is running
+#### Корак 9.3: Проверите да ли Zammad ради
 
 ``` sh
-sudo systemctl status zammad
+systemctl статус заммад
 ```
 
-If Zammad is not running, run:
+Ако Zammad није покренут, извршите:
 
 ```sh
-sudo systemctl start zammad
+systemctl старт заммад
 ```
 
 ::: tip
-Migrated from Zammad SaaS or switching provider?
+Мигрирате са Zammad SaaS-а или мењате провајдера?
 
-Please make sure that your email notification channel and
-FQDN configuration is correct.
+Обавезно проверите да ли су вам канал за емаил нотификације и
+FQDN конфигурација тачно подешени.
 :::
 
-## Step 10: Apply missing environmental settings
+## Корак 10: Примена недостајућих подешавања окружења
 
-If you've set any environmental settings please re-apply your settings now.
-You backed them up in [Step
+Ако сте поставили било која окружењска подешавања, примените их поново
+сада. Сачуване су вам у [Кораку
 1](#step-1-note-down-your-environmental-adjustments).
 
-If not already done, please [install
-Elasticsearch](/en/tutorials/install-elasticsearch) now and perform the
-steps to [connect to and configure
-Elasticsearch](/en/tutorials/connect-config-elasticsearch) after
-installation.
+Ако то још нисте урадили, молимо [инсталирајте
+Elasticsearch](/en/tutorials/install-elasticsearch) сада и извршите кораке
+за [повезивање и конфигурисање
+Elasticsearch-а](/en/tutorials/connect-config-elasticsearch) након
+инсталације.
 
-## Step 11: Re-enable channels and deactivate maintenance mode
+## Корак 11: Поново омогућите канале и искључите режим одржавања
 
-Set the previous deactivated channels back to active if you're sure
-everything was successful. At this point Zammad will start to _change data_!
+Вратите претходно онемогућене канале у активно стање само ако сте сигурни да
+је све прошло успешно. У овом тренутку Zammad ће почети да _мења податке_!
 
-After verifying the functionality of your channels, allow your agents and
-customers to log in again by disabling the maintenance mode.
+Након провере функционалности канала, омогућите оператерима и корисницима да
+се поново улогују тако што ћете искључити режим одржавања.

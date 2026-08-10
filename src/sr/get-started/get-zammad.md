@@ -1,30 +1,30 @@
 ---
 features:
   - 
-    details: 'If you are unsure if Zammad is the right tool, test it by using a free trial instance.'
+    details: 'Ако нисте сигурни да ли је Zammad прави алат за вас, тестирајте га користећи бесплатну пробну инстанцу.'
     icon: 🧪
-    link: https://zammad.com/en/getting-started
+    link: https://zammad.com/en/company
     target: _blank
-    title: 'Free trial'
+    title: 'Бесплатна пробна верзија'
   - 
-    details: 'Get your cloud-based Zammad here. No installation, no hassle, we take care of everything!'
+    details: 'Набавите ваш цлоуд заснован Zammad овде. Без инсталације, без муке, ми бринемо о свему!'
     icon:
       src: /assets/logo.svg
     link: https://zammad.com
     target: _blank
-    title: 'Zammad hosted services'
+    title: 'Користите Zammad-ов хостинг сервис'
   - 
-    details: 'You can even self-host Zammad. Find installation instructions here.'
+    details: 'Чак можете и сами хостовати Zammad. Пронађите упутства за инсталацију овде.'
     icon: 🖥️
     link: /en/get-started/installation/prerequisites
-    title: 'Self hosting'
+    title: 'Инсталација у сопственој режији'
 order: 1
 ---
 
 # Преузмите Zammad
 
-Not using Zammad yet? You will like it! Choose your favorite option below or
-read on in the sections below.
+Још увек не користите Zammad? Свидеће вам се! Погледајте одељке испод за
+различите опције.
 
 Уколико имате додатних питања, слободно [нам се
 обратите](https://zammad.com/en/company/contact){target=_blank} или
@@ -35,18 +35,19 @@ read on in the sections below.
 
 ## Проба Zammad-а
 
-We are sure you like Zammad! The easiest way to test it is to use a [free
-trial instance](https://zammad.com/en/getting-started){target=_blank}.  You
-can play around and then you can switch to an official supported instance,
-either keeping your data or start with an empty system.
+Сигурни смо да ће вам се Zammad свидети! Најлакши начин да га пробате је да
+искористите [бесплатну пробну
+инстанцу](https://zammad.com/en/getting-started){target=_blank}. Можете се
+поиграти и на крају пређи на званичну подршку, са чувањем ваших података или
+почети испочетка.
 
-## Use Zammad's hosted service
+## Користите Zammad-ов хостинг сервис
 
 Да бисте користили Zammad у продукцији, идите на наш званичан сајт
 [zammad.com](https://zammad.com/en/pricing){target=_blank} где можете
 пронаћи ценовних нашег хостинг сервиса.
 
-## Self hosted installation
+## Инсталација у сопственој режији
 
 Zammad можете чак и сами да хостујете. Погледајте наше [упутство за
 инсталацију](/sr/get-started/installation/prerequisites) и који начин

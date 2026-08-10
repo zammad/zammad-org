@@ -6,16 +6,16 @@ title: Помињања
 # Помињања
 
 ::: warning
-The mention endpoint depends on the group permissions and if the user
-you're using is an **agent**. Because of this tickets may or may not
-be available.
+Крајња тачка за помињање зависи од дозвола групе и од тога да ли је корисник
+који користите **оператер**. Због тога тикети се могу или не морати
+бити доступни.
 :::
 
-## List
+## Преглед листе
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Потребна дозвола: `ticket.agent` **или** `ticket.customer`
 
-`GET`-Request sent: `/api/v1/mentions`
+`GET`-захтев послат: `/api/v1/mentions`
 
 ::: details
 
@@ -23,40 +23,40 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 :::
 
-## Create
+## Креирај
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`POST`-Request sent: `/api/v1/mentions`
+`POST`-захтев послат: `/api/v1/mentions`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/mentions/post-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/mentions/post-res.json
 
 :::
 ::::
 
-The mention will be created for the user of the current session.
+Помињање ће бити креирано за корисника тренутне сесије.
 
 ::: tip
-If you want to mention/subscribe other users, you can do so by sending
-an additional `From`-header in your request. You can either
-provide the user ID or the user email address as value.
+Ако желите да поменете/прикључите друге кориснике, можете то учинити слањем
+додатног `From`-заглавља у захтеву. Можете
+навести ID корисника или адресу имејла корисника као вредност.
 :::
 
-## Delete
+## Обриши
 
-Required permission: `ticket.agent`
+Потребна дозвола: `ticket.agent`
 
-`DELETE`-Request sent: `/api/v1/mentions/{id}`
+`DELETE`-захтев послат: `/api/v1/mentions/{id}`
 
 ::: details
 

@@ -1,22 +1,23 @@
 ---
 order: 1
-title: 'Install Elasticsearch 9'
+title: 'Elasticsearch инсталација'
 ---
 
-# Install Elasticsearch 9
+# Elasticsearch инсталација
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-This guide shows a simple standard installation of Elasticsearch 9. The
-intention is to get you up and running quickly.  However, in case you need a
-more advanced configuration or face any issues, have a look at the [official
-Elasticsearch installation
-documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
-Adapt it wherever needed in case your use-case differs.
+Овај водич приказује једноставну стандардну инсталацију Elasticsearch 9. Циљ
+је да вас брзо покренете. Међутим, у случају да вам је потребна напреднија
+конфигурација или се суочите са било којим проблемом, погледајте [званичну
+документацију за инсталацију
+Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch){target=_blank}.
+Прилагодите је где год је потребно у случају да се ваш случај употребе
+разликује.
 
 ## Инсталација
 
-### Add repository key
+### Додајте Zammad репозиториј
 
 ::: tabs key:distros
 
@@ -42,7 +43,7 @@ sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 :::
 
-### Add repository
+### Додајте Zammad репозиториј
 
 ::: tabs key:distros
 
@@ -101,13 +102,13 @@ sudo zypper modifyrepo --enable elasticsearch && sudo zypper install elasticsear
 
 === CentOS/RHEL
 
-RHEL 7 or earlier:
+RHEL 7 или раније:
 
 ```sh
 sudo yum install --enablerepo=elasticsearch elasticsearch
 ```
 
-CentOS and RHEL 8 and later:
+CentOS и RHEL 8 и новији:
 
 ```sh
 sudo dnf install --enablerepo=elasticsearch elasticsearch
@@ -116,36 +117,34 @@ sudo dnf install --enablerepo=elasticsearch elasticsearch
 :::
 
 ::: tip
-Make sure to check the output and to copy the password of the built-in superuser. Otherwise, you have to recreate it by
-running `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+Проверите излаз и копирајте лозинку уграђеног суперкорисника. Иначе, мораћете је поново креирати покретањем `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 :::
 
 ## Подешавања
 
-Optionally, check and configure Elasticsearch’s configuration file which you
-can find under `/etc/elasticsearch/elasticsearch.yml`.
+Опционо, проверите и конфигуришите конфигурациони фајл Elasticsearch који
+можете пронаћи на `/etc/elasticsearch/elasticsearch.yml`.
 
-We recommend to adjust the maximum context size which should get indexed by
-Elasticsearch. Adjust it to a reasonable size like in the example:
+Препоручујемо да подесите максималну величину контекста која треба да се
+индексира у Elasticsearch. Подесите је на разумну величину као у примеру:
 
 ```yml
 http.max_content_length: 400mb
 ```
 
-Additional configuration is out of scope of this documentation. In case your
-scenario needs additional configuration, have a look at [Elastic’s
-configuration
-reference](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference){target=_blank}.
+Додатна конфигурација је ван опсега ове документације. У случају да ваш
+сценарио захтева додатну конфигурацију, погледајте [Еластичну референцу
+конфигурације](https://www.elastic.co/docs/reference/elasticsearch/configuration-reference).
 
-## Start and enable Elasticsearch
+## Elasticsearch инсталација
 
 ```sh
-sudo systemctl enable elasticsearch.service --now
+systemctl рестарт elasticsearch
 ```
 
-## Next steps
+## Следећи кораци
 
-Go on with the [installation of
-Zammad](/en/get-started/installation/package#add-zammad-repository). After
-the installation of Zammad is completed, you can [connect Zammad with
+Наставите са [инсталацијом
+Zammad](/en/get-started/installation/package#add-zammad-repository). Након
+што је инсталација Zammad завршена, можете [повезати Zammad са
 Elasticsearch](/en/tutorials/connect-config-elasticsearch).

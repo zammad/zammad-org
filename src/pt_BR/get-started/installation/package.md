@@ -3,13 +3,13 @@ order: 2
 title: Pacote
 ---
 
-# Package installation
+# Instalação via pacote
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-## Supported operating systems
+## Sistemas operacionais suportados
 
-For package installation, the following Linux distributions are supported:
+Para instalação via pacote, as seguintes distribuições Linux são suportadas:
 
 | Distribution         | Version              |
 | -------------------- | :------------------- |
@@ -64,7 +64,7 @@ sudo dnf install curl epel-release
 
 ## Fundamentos
 
-### Ensure correct locale
+### Garantir a localidade correta
 
 ::: tabs key:distros
 
@@ -165,7 +165,7 @@ configuração](/pt_BR/tutorials/install-elasticsearch) do Elasticsearch 9,
 que é separado para manter as instruções de instalação o mais simples
 possível.
 
-### Add Zammad repository
+### Adicionar repositório do Zammad
 
 ::: info
 O Packager.io pode não estar acessível a partir de ambientes somente IPv6, então certifique-se
@@ -313,7 +313,7 @@ sudo dnf install zammad
 
 :::
 
-### Manage services of Zammad
+### Gerenciar os serviços do Zammad
 
 O Zammad usa três serviços. Esses serviços podem ser gerenciados
 individualmente ou todos de uma vez usando o serviço pai **zammad**.
@@ -338,7 +338,7 @@ sudo systemctl start zammad
 Para parar ou reiniciar um serviço, ou verificar seu status, ajuste o
 comando conforme mencionado acima.
 
-### Next steps
+### Próximas etapas
 
 - [Conectar o Zammad ao
   Elasticsearch](/pt_BR/tutorials/connect-config-elasticsearch)
@@ -359,7 +359,7 @@ instalado automaticamente.
 - Nginx
 - Redis
 
-### Database server
+### Servidor de banco de dados
 
 O Zammad armazena seu conteúdo em um banco de dados. O sistema de banco de
 dados suportado é o [PostgreSQL](https://www.postgresql.org/){target=_blank}
@@ -373,7 +373,7 @@ chamado de "session connection pooling". O pooling de conexão baseado em transa
 suportado e pode levar a erros durante as migrações de banco de dados.
 :::
 
-### Reverse proxy
+### Proxy reverso
 
 Os seguintes proxies reversos são suportados em suas versões atualmente
 mantidas:

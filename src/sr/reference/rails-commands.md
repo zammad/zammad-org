@@ -5,45 +5,44 @@ title: 'Rails команде'
 
 # Rails команде
 
-Zammad uses Ruby on Rails so you can make use of the [Rails
-console](http://guides.rubyonrails.org/command_line.html){target=_blank}.
+Zammad користи Ruby он Rails, стога можете користити [Rails
+конзолу](http://guides.rubyonrails.org/command_line.html){target=_blank}.
 
 ::: warning
-Please double check your commands before running, as some of those
-commands might cause data loss or damaged tickets! If you're unsure,
-**use a test system first**!
+Пре покретања пажљиво проверите команде, јер неке од њих могу изазвати губитак података или оштећење карата! Ако нисте сигурни,
+**прво користите тестни систем**!
 :::
 
-## Starting Zammad's rails console
+## Покретање Zammad Rails конзоле
 
-### Execute a single command
+### Извршавање појединачне команде
 
 ::: info
-Replace `{COMMAND}` with your command you want to run.
+Замените `{COMMAND}` са вашом командом коју желите да извршите.
 :::
 
 ::: tip
-If you enter a `p` in front of your command (e.g. like
-`rails r 'p Delayed::Job.count'`), you'll actually receive a printed
-output (without you won't!).
+Ако ставите `p` испред команде (нпр.
+`rails r 'p Delayed::Job.count'`), добићете штампу
+излаза (без тога нећете!).
 :::
 
 ::: tabs key:installmethod
 
-=== Docker Installation
+=== Docker инсталација
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails r '{COMMAND}'
 ```
 
-=== Package Installation
+=== Инсталација путем пакета
 
 ```sh
 zammad run rails r '{COMMAND}'
 
 ```
 
-=== Source / Development Installation
+=== Инсталација из изворног кода / развојна инсталација
 
 ```sh
 rails r '{COMMAND}'
@@ -51,24 +50,24 @@ rails r '{COMMAND}'
 
 :::
 
-### Run interactive rails console
+### Покретање интерактивне Rails конзоле
 
 ::: tabs key:installmethod
 
-=== Docker Installation
+=== Docker инсталација
 
 ```sh
 docker compose run --rm zammad-railsserver bundle exec rails c
 ```
 
-=== Package Installation
+=== Инсталација путем пакета
 
 ```sh
 zammad run rails c
 
 ```
 
-=== Source / Development Installation
+=== Инсталација из изворног кода / развојна инсталација
 
 ```sh
 rails c
@@ -76,125 +75,125 @@ rails c
 
 :::
 
-### Rails console safe mode
+### Безбедни режим Rails конзоле
 
-Normally, starting Rails console requires certain third party services to be
-up and running. You may receive errors and console will refuse to start in
-case they are not available.
+Обично, покретање Rails конзоле захтева да одређени сервиси трећих страна
+раде. Можете добити грешке и конзола неће почети са радом ако нису доступни.
 
-However, it's possible to start Rails console in safe mode by setting a
-special environment variable. With `ZAMMAD_SAFE_MODE=1` set, these checks be
-ignored.
+Међутим, могуће је покренути Rails конзолу у безбедном режиму подешавањем
+посебне променљиве окружења. Са постављеним `ZAMMAD_SAFE_MODE=1`, ове
+провере се игноришу.
 
 ```sh
 ZAMMAD_SAFE_MODE=1 zammad run rails c
 ```
 
-## Ticket commands
+## Rails команде
 
-### Get the RAW email
+### Добијање сировог емаила
 
-The following command will help you to check on received EML-files Zammad
-fetched. This comes in handy if you delete Mails upon fetching and you need
-to check the EML-file itself.
+Следећа команда ће вам помоћи да проверите примита EML датотеке које је
+Zammad преузео. Корисно је ако бришете маилове приликом преузимања и морате
+проверити саму EML датотеку.
 
-To get the first articles EML-file, you can use the following command.  In
-our example the ticket number in question is `101234`.
+Да бисте добили EML датотеку прве поруке, можете користити следећу
+команду. У нашем примеру, број тикета у питању је `101234`.
 
 ```ruby
 Ticket.find_by(number:'101234').articles.first.as_raw.content
 ```
 
-If needed, you can also get the raw content of later articles (you'll need
-to find the correct article though). Again, we expect `101234` to be our
-ticket number.
+Ако је потребно, можете добити и сиров садржај каснијих порука (ипак морате
+пронаћи одговарајућу поруку). И овде претпостављамо да је `101234` број наше
+тикета.
 
-In the first step we get all article IDs of the ticket:
+У првом кораку добијамо све ID-ове порука унутар тикета:
 
 ```ruby
 Ticket.find_by(number:'101234').article_ids
 ```
 
-Output:
+Излаз:
 
 ```ansi
 [4, 3, 2]
 ```
 
-From the list we get, we can then get the articles content:
+Са листе коју добијемо, затим можемо добити садржај порука:
 
 ```ruby
 Ticket::Article.find(3).as_raw.content
 ```
 
 ::: info
-If you just use `Ticket::Article.find(3)` you can see further
-information (like who sent the mail, when we fetched it, ...).
+Ако користите само `Ticket::Article.find(3)` можете видети додатне
+информације (као ко је послао мејл, када смо га преузели, ...).
 :::
 
-### Update all tickets of a specific customer
+### Ажурирање свих карата одређеног клијента
 
 ::: warning
-Please note that this action can be expensive resource wise, if you
-have many tickets, this might slow down Zammad.
+Имајте на уму да ова акција може бити ресурсно захтевна, ако имате
+много карата, што може успорити рад Zammad-а.
 :::
 
 ```ruby
 Ticket.where(customer_id: 4).update_all(customer_id: 1)
 ```
 
-### Get ticket state types
+### Стање тикета
 
-This will show all state types needed for creating new ticket states:
+Ово ће приказати све типове статуса потребне за креирање нових статуса
+карата:
 
 ```ruby
 Ticket::StateType.pluck(:id, :name)
 ```
 
-Above will return both, the type ID and name - e.g.:
+Резултат ће бити и ID типа и назив - нпр.:
 
 ```ansi
 `[[1, "new"], [2, "open"], ...`.
 ```
 
-## User commands
+## Rails команде
 
-### Find user
+### Корисник
 
-In order to work on user information or to check for specific information,
-you'll need to find it first.
+Да бисте радили са информацијама корисника или проверавали специфичне
+податке, прво их морате пронаћи.
 
-User ID already known:
+ID корисника је већ познат:
 
 ```ruby
 User.find(4)
 ```
 
-Searching for the user by his email address:
+Претрага корисника по емаил адреси:
 
 ```ruby
 User.find_by(email: 'your@email')
 ```
 
-Searching for the user by his login:
+Претрага корисника по пријавном имену:
 
 ```ruby
 User.find_by(login: 'john.doe')
 ```
 
-### Unlock a locked user account
+### Откључавање закључаног налога корисника
 
 ::: tip
-Unlocking a locked user account is also supported by Zammad's web UI!
+Откључавање закључаног налога корисника је такође подржано кроз веб интерфејс Zammad-а!
 :::
 
-It sometimes happens that a user locks himself out by wildly trying the
-wrong password multiple times. Depending on your maximum failing login
-count (<span class="title-ref">default: 10 times</span>), Zammad might
-lock the account.
+Повремено се дешава да се корисник сам закључа због неуспелих покушаја
+лозинке. У зависности од вашег максимума неуспешних пријава
+(<span class="title-ref">подразумевано: 10 пута</span>), Zammad може
+закључати налог.
 
-The user can't login any more (forever) if he doesn't change the password or
-you reset the counter.
+Корисник се више не може пријавити (трајно) ако не промени лозинку или ви не
+ресетујете бројач.
 
 ```ruby
 u=User.find(**USERID**)
@@ -208,21 +207,21 @@ u.login_failed=0
 u.save!
 ```
 
-You can also double check if the account is locked by running the following
-command (result needs to be 1 above your limit, so 11 for the default of 10
-failing logins):
+Можете такође проверити да ли је налог закључан покретањем следеће команде
+(резултат мора бити за 1 изнад вашег лимита, дакле 11 за подразумеваних 10
+неуспешних пријава):
 
 ```ruby
 User.find(**USERID**).login_failed
 ```
 
-### Change / update email address of user
+### Промена / Ажурирање емаил адресе корисника
 
-If needed, you can simply change the email address of the user.
+Ако је потребно, можете једноставно променити емаил адресу корисника.
 
 ::: info
-Please note that the login attribute is not affected by this and
-Zammad thus might show different information within the UI.
+Имајте на уму да ово не утиче на атрибут за пријаву и
+да Zammad стога може приказати другачије информације у интерфејсу.
 :::
 
 ```ruby
@@ -237,12 +236,12 @@ u.email = 'user@exmaple.com'
 u.save!
 ```
 
-You need to find the user ID of the user first for this.
+За ово морате прво пронаћи ID корисника.
 
-### Change / update login name of user
+### Промена / Ажурирање имена за пријаву корисника
 
-Change the user name of the user (e.g. if you want to login with a shorter
-username instead of a mail address)
+Промените корисничко име (нпр. ако желите да се пријавите са краћим именом
+уместо емаил адресе)
 
 ```ruby
 u = User.find(**USERID**)
@@ -256,12 +255,12 @@ u.login = 'user@exmaple.com'
 u.save!
 ```
 
-You need to find the user ID of the user first for this.
+За ово морате прво пронаћи ID корисника.
 
-### Set admin rights for user
+### Додељивање администраторских права кориснику
 
-Don't have access to Zammad anymore? Grant yourself or another user
-administrative rights.
+Немате више приступ Zammad-у? Доделите себи или другом кориснику
+администраторска права.
 
 ```ruby
 u = User.find_by(email: 'you@example.com')
@@ -275,41 +274,42 @@ u.roles = Role.where(name: ['Agent', 'Admin'])
 u.save!
 ```
 
-### Set password for user
+### Постављање лозинке за корисника
 
-You or the user did forget his password? No problem! Simply reset it by hand
-if needed.
+Заборавили сте ви или корисник лозинку? Нема проблема! По потреби је
+једноставно ресетујте ручно.
 
 ```ruby
 User.find_by(email: 'you@example.com').update!(password: 'your_new_password')
 ```
 
-### Remove password for user
+### Уклањање лозинке за корисника
 
-If you added a second authentication method (e.g. LDAP) after launch, there
-still may be a password in Zammad's own user management. In cases like that
-users will be able to login with their (local) Zammad password in addition
-to the credentials stored on the external authentication provider. Simply
-remove the password stored by Zammad.
+Ако сте након покретања додали другу методу аутентификације (нпр. LDAP), у
+сопственом систему за управљање корисницима Zammad-а можда ће и даље
+постојати лозинка. У тим случајевима корисници ће моћи да се пријављују
+користећи своју (локалну) Zammad лозинку уз креденцијале са екстерног
+провајдера аутентификације. Једноставно уклоните лозинку коју је сачувао
+Zammad.
 
 ```ruby
 User.find_by(email: 'you@example.com').update!(password: nil)
 ```
 
-## Group commands
+## Rails команде
 
-### Find a group
+### Пронађите групу
 
 ```ruby
 Group.find_by(name: 'Users').follow_up_possible
 ```
 
-## Chat commands
+## Rails команде
 
-### Remove IP address logs
+### Уклањање записа о IP адресама
 
-Use the following command to remove all IP address records from closed chats
-that haven't been updated in the last seven days:
+Користите следећу команду за брисање свих записа о IP адресама са затворених
+цхатова који нису ажурирани у последњих седам дана:
 
 ```ruby
 Chat::Session.where(state: 'closed').where('updated_at < ?', 7.days.ago).each do |session|
@@ -329,46 +329,47 @@ session.save!(touch: false)
 end
 ```
 
-## Zammad settings
+## Zammad тим
 
-In this section, you can find some settings which you can set in the Zammad
-UI as well.
+У овом одељку можете пронаћи нека подешавања која такође можете подесити у
+Zammad интерфејсу.
 
-### Auto shutdown setting
+### Подешавање аутоматског гашења
 
-Defines if an automatic shutdown of Zammad is performed when the the
-database has been changed (e.g. after custom attributes have been created in
-the object manager).  The underlying system (Systemd, Docker, Kubernetes)
-will then restart the processes/containers after this shutdown. The default
-setting is `true`.
+Одређује да ли се извршава аутоматско гашење Zammad-а када се база података
+промени (нпр. након креирања прилагођених атрибута у менаџеру
+објеката). Подређени систем (Systemd, Docker, Kubernetes) ће онда
+рестартовати процесе/контејнере након овог гашења. Подразумевано подешавање
+је `true`.
 
-Setting this to `false` might only make sense in very rare cases and you
-have to restart the Zammad services then manually.
+Постављање на `false` има смисла само у веома ретким случајевима, након чега
+морате ручно рестартовати Zammad сервисе.
 
 ```ruby
 Setting.set('auto_shutdown', 'true')
 ```
 
-### Ticket_hook setting
+### Стање тикета
 
-This will give you the ticket hook that you'll find inside the `[]` in front
-of the ticket number. By default this will be `Ticket#` - you shouldn't
-change this setting in a productive system.
+Ово ће вам дати "хоок" тикета који ћете наћи унутар `[]` испред броја
+тикета. Подразумевано ће бити `Ticket#` - не бисте требали мењати ово
+подешавање у продукцијском систему.
 
 ```ruby
 Setting.get('ticket_hook')
 ```
 
-### FQDN setting
+### Подешавање FQDN-a
 
-Get the current FQDN setting of Zammad and, if needed, adjust it.
+Проверите тренутно FQDN подешавање Zammad-а и, ако је потребно, прилагодите
+га.
 
 ::: info
-This setting has no effect on SSL certificates or any web server
-configurations.
+Ово подешавање не утиче на SSL сертификате нити на било коју конфигурацију веб сервера
+концефигурације.
 :::
 
-Get current FQDN:
+Проверите тренутни FQDN:
 
 ```ruby
 Setting.get('fqdn')
@@ -380,118 +381,117 @@ Setting.get('fqdn')
 Setting.set('fqdn', 'new.domain.tld')
 ```
 
-### HTTP(s) setting
+### Подешавање HTTP(с)
 
-This setting indirectly belongs to your FQDN setting and is relevant for
-variable based URLs (e.g. in notifications) Zammad generated.
+Ово подешавање је индиректно везано за ваше FQDN подешавање и важно је за
+URL-ове засноване на променљивим (нпр. у нотификацијама) које генерише
+Zammad.
 
 ::: warning
-This setting also affects Zammad's CSRF token behavior. If you set
-this to e.g. HTTPs but you're using HTTP, logging in will
-fail!
+Ово подешавање такође утиче на понашање CSRF токена у Zammad-у. Ако га поставите нпр. на HTTPs, а користите HTTP, пријава ће
+не успети!
 
-It has no effect on SSL certificates or any web server configuration.
+Не утиче на SSL сертификате или било коју конфигурацију веб сервера.
 :::
 
-Get the current http type:
+Проверите тренутни тип HTTP-а:
 
 ```ruby
 Setting.get('http_type')
 ```
 
-Change the http type to HTTPs:
+Промените тип хттп на HTTPs:
 
 ```ruby
 Setting.set('http_type', 'https')
 ```
 
-### Storage provider setting
+### Подешавање пружача складишта
 
-The storage provider setting is set to `DB` on default installations.
-However, if you receive a lot of attachments or have a fairly busy
-installation, using the database to store attachments is not the best
-approach.
+Подразумевано је подешавање пружача складишта постављено на `DB`.  Међутим,
+ако примате много прилога или имате поприлично оптерећену инсталацију,
+коришћење базе података за чување прилога није најбољи приступ.
 
-Get the current attachment storage:
+Дохватите тренутно складиште прилога:
 
 ```ruby
 Setting.get('storage_provider')
 ```
 
-Change attachment storage to database
+Промените складиште прилога у базу података
 
 ```ruby
 Setting.set('storage_provider', 'DB')
 ```
 
-If you have already stored files and want to move them, you can use the
-following example. Please be aware that this operation should only be
-executed in non-productive environments. In case you have to perform it in
-production environments, you should specify a sleep delay - otherwise your
-Zammad can be unresponsive.
+Ако имате већ сачуване фајлове и желите да их преместите, можете користити
+следећи пример. Имајте на уму да се ова операција треба извршавати само у
+непроизводним окружењима. У случају да је морате извршити у производним
+окружењима, навести ћете период мировања - у супротном Zammad може престати
+да реагује.
 
-Move files from DB to File with a specified delay after each file in
-seconds:
+Преместите фајлове из DB на File са наведеним закашњењем након сваког фајла
+у секундама:
 
 ```ruby
 Store::File.move('DB', 'File', delay_in_sec)
 ```
 
-The following settings are available in a default installation:
+Следећа подешавања су доступна у подразумеваној инсталацији:
 
-- `DB` (database)
-- `File` (Filesystem (`/opt/zammad/storage/`))
+- `DB` (база података)
+- `File` (фајл систем (`/opt/zammad/storage/`))
 
-### Configuring Elasticsearch
+### Elasticsearch
 
-If your Elasticsearch installation changes, you can use the following
-commands to ensure that Zammad still can access Elasticsearch.
+Ако се ваша Elasticsearch инсталација промени, можете користити следеће
+команде да бисте осигурали да Zammad и даље може приступити Elasticsearch-у.
 
-Change Elasticsearch URL:
+Промените Elasticsearch URL:
 
 ```ruby
 Setting.set('es_url', 'http://127.0.0.1:9200')
 ```
 
-Change Elasticsearch user (e.g. for authentication):
+Промените корисника Elasticsearch-а (нпр. за аутентификацију):
 
 ```ruby
 Setting.set('es_user', 'elasticsearch')
 ```
 
-Change the Elasticsearch password for authentication:
+Промените лозинку Elasticsearch-а за аутентификацију:
 
 ```ruby
 Setting.set('es_password', 'zammad')
 ```
 
-Change the index name:
+Промените назив индекса:
 
 ```ruby
 Setting.set('es_index', Socket.gethostname + '_zammad')
 ```
 
-Ignore files by file extension from being indexed:
+Игноришите фајлове на основу екстензије при индексевању:
 
 ```ruby
 Setting.set('es_attachment_ignore', %w[.png .jpg .jpeg .mpeg .mpg .mov .bin .exe .box .mbox])
 ```
 
-Limit the attachment size:
+Ограничите величину прилога:
 
 ```ruby
 Setting.set('es_attachment_max_size_in_mb', 50)
 ```
 
-Turn SSL verification on or off:
+Укључите или искључите проверу SSL-а:
 
 ```ruby
 Setting.set('es_ssl_verify', 'false')
 ```
 
-### Enable proxy
+### Омогући proxy
 
-Set a proxy to use by Zammad:
+Подесите proxy који ће користити Zammad:
 
 ```ruby
 Setting.set('proxy', 'proxy.example.com:3128')
@@ -505,96 +505,100 @@ Setting.set('proxy_username', 'some user')
 Setting.set('proxy_password', 'some pass')
 ```
 
-### Disable Asciifold
+### Искључи Asciifold
 
-This feature is turned on by default. In case you need a more exact search,
-you can turn it off:
+Ова функција је подразумевано укључена. У случају да вам је потребна
+прецизнија претрага, можете је искључити:
 
 ```ruby
 Setting.set('es_asciifolding', false)
 ```
 
-After changing the setting, make sure to [rebuild the search
-index](/en/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex).
+Након промене подешавања, обавезно [поново изградите индекс
+претраге](/en/tutorials/connect-config-elasticsearch#build-rebuild-the-searchindex).
 
-## Hidden settings
+## Скривена подешавања
 
-In this section you can find some settings that you won't find within the
-Zammad UI. Those settings might come in handy as it can change Zammad's
-behavior.
+У овом одељку можете пронаћи нека подешавања која нећете наћи унутар Zammad
+интерфејса. Ова подешавања могу вам користити јер могу променити понашање
+Zammad-а.
 
-### Send all outgoing emails to a BCC-mailbox
+### Пошаљите све одлазне емаил-ове на BCC сандучицу
 
-This option allows you to send all outgoing emails (not notifications)  to a
-specific mailbox. Please note that this shouldn't be a mailbox you're
-importing already! This will apply to all groups and is a global setting.
+Ова опција вам омогућава да пошаљете све одлазне мејлове (не обавештења)  на
+одређено сандуче. Имајте на уму да то не би требало да буде сандуче које већ
+импортујете! Ово ће се применити на све групе и представља глобално
+подешавање.
 
 ```ruby
 Setting.set('system_bcc', 'alias@domain.tld')
 ```
 
-You can easily check the current BCC-Setting by running the following:
+Можете лако проверити тренутно BCC подешавање покретањем следећег:
 
 ```ruby
 Setting.get('system_bcc')
 ```
 
-### Activate counter on grouped overviews
+### Активирајте бројач на груписаним прегледима
 
-This enables a ticket number value in each heading for grouped elements.
+Ово омогућава приказ вредности броја налога у сваком заглављу за груписане
+елементе.
 
-Enable counter for grouped overviews:
+Омогућите бројач на груписаним прегледима:
 
 ```ruby
 Setting.set('ui_table_group_by_show_count', true)
 ```
 
-Disable counter for grouped overviews:
+Искључите бројач на груписаним прегледима:
 
 ```ruby
 Setting.set('ui_table_group_by_show_count', false)
 ```
 
-Get current setting (`nil` is false):
+Преузмите тренутно подешавање (`nil` је false):
 
 ```ruby
 Setting.get('ui_table_group_by_show_count')
 ```
 
-### Default ticket type on creation
+### Временска ознака креирања тикета.
 
-Zammad allows you to define the default article type upon ticket
-creation. By default this will be a incoming phone call.
+Zammad вам омогућава да одредите подразумевану врсту чланка при отварању
+тикета. Подразумевано ће то бити долазни телефонски позив.
 
-You can choose between
+Можете изабрати између
 
-- `phone-in` (incoming call, **default**),
-- `phone-out` (outgoing call) and
-- `email-out` (Sending an email out).
+- `phone-in` (долазни позив, **подразумевано**),
+- `phone-out` (одлазни позив) и
+- `email-out` (слање имејл поруке).
 
 ```ruby
 Setting.set('ui_ticket_create_default_type', 'email-out')
 ```
 
-To check what setting is set currently, simply run:
+Да бисте проверили које је подешавање тренутно постављено, једноставно
+покрените:
 
 ```ruby
 Setting.get('ui_ticket_create_default_type')
 ```
 
-### Show a note during article creation
+### Временска ознака креирања поруке.
 
-If you need to show your agents a note with important information during the
-article creation, you can create such a static note for different article
-types. Be aware that there are two settings: one for ticket creation and the
-other for article creation in an existing ticket. Adjust the commands below
-to use it for the desired article types and replace the text with yours. In
-case you don't want a note for all article types, simply omit these types.
+Ако треба да својим оператерима прикажете напомену са важним информацијама
+током креирања чланка, можете додати такву статичну напомену за различите
+врсте чланака. Имајте на уму да постоје два подешавања: једно за отварање
+тикета, а друго за додавање чланка у постојећи тикет. Прилагодите команде
+испод да их употребите за жељене врсте чланака и замените текст својим. У
+случају да не желите напомену за све врсте чланака, једноставно изоставите
+те врсте.
 
-![Screenshot shows a note during article
-creation](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)
+![Снимак екрана приказује радњу чланка за раздељивање у падајућем
+менију](/screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)
 
-#### Ticket creation
+#### Радње тикета
 
 ```ruby
 Setting.set('ui_ticket_create_notes', {
@@ -604,7 +608,7 @@ Setting.set('ui_ticket_create_notes', {
    })
 ```
 
-#### New article in existing tickets
+#### Број чланака унутар тикета.
 
 ```ruby
 Setting.set('ui_ticket_add_article_hint', {
@@ -617,7 +621,7 @@ Setting.set('ui_ticket_add_article_hint', {
    })
 ```
 
-#### Check current configuration
+#### Подешавања
 
 ```ruby
 Setting.get('ui_ticket_create_notes')
@@ -627,271 +631,272 @@ Setting.get('ui_ticket_create_notes')
 Setting.get('ui_ticket_add_article_hint')
 ```
 
-#### Markup options
+#### Ознаке у тексту
 
-To apply text formatting, use the following markup:
+Да бисте применили форматирање текста, користите следеће ознаке:
 
 - `||italic||`
 - `|bold|`
 - `_underline_`
 - `//strikethrough//`
-- `§key§` (renders a keyboard key like [[key]])
-- `¶` (newline)
+- `§key§` (приказује тастер на тастатури као [[key]])
+- `¶` (нови ред)
 - `[link text](/example.com)`
 
-### Show email address of customer on customer selection (ticket creation)
+### Приказ имејл адресе клијента при избору клијента (отварање тикета)
 
-By default, Zammad will not display the email addresses of customers.  The
-below option allows you to change this behavior.
+Подразумевано, Zammad не приказује имејл адресе клијената. Опција испод вам
+омогућава да промените ово понашање.
 
 ```ruby
 Setting.set('ui_user_organization_selector_with_email', true)
 ```
 
-Get the current state of this setting with:
+Преузмите тренутно стање овог подешавања помоћу:
 
 ```ruby
 Setting.get('ui_user_organization_selector_with_email')
 ```
 
-### Change font settings for outgoing HTML emails
+### Промена подешавања фонта за одлазне HTML имејл поруке
 
 ::: info
-Some clients (like Outlook) might fallback to other settings while it
-might work for other clients.
+Неки клијенти (као што је Outlook) могу да се врате на друга подешавања, док
+код других клијената то може да функционише.
 :::
 
-The below setting allows you to adjust Zammad's email font setting. This
-setting does not require a service restart.
+Подешавање испод вам омогућава да прилагодите Zammad-ово подешавање фонта за
+имејл. Ово подешавање не захтева поновно покретање сервиса.
 
 ```ruby
 Setting.set("html_email_css_font", "font-family:'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif; font-size: 12px;")
 ```
 
-Get the current state of this setting with:
+Преузмите тренутно стање овог подешавања помоћу:
 
 ```ruby
 Setting.get('html_email_css_font')
 ```
 
-### Highlight customer's open ticket count
+### Увозе се само клијенти карата
 
-This option enhances the selected customer's open tickets count. It
-highlights the count in different colors if they hit a threshold.
+Ова опција унапређује број отворених тикета одабраног клијента. Означава
+број различитим бојама ако достигне граничну вредност.
 
 ```ruby
 Setting.set('ui_sidebar_open_ticket_indicator_colored', true)
 ```
 
-Above settings has specific thresholds as follows. You **cannot** adjust
-these thresholds.
+Подешавање изнад има одређене граничне вредности како следи. Ове граничне
+вредности **не можете** да мењате.
 
-| Situation / View      | no indication | warning (orange) | danger (red) |
+| Ситуација / приказ | без назнаке | упозорење (наранџасто) | опасност (црвено) |
 |-----------------------|---------------|------------------|--------------|
-| **Ticket Zoom**       | \< 2          | 2                | \>= 3        |
-| **New Ticket dialog** | 0             | 1                | \>= 2        |
+| **Приказ тикета** | \< 2 | 2 | \>= 3 |
+| **Дијалог новог тикета** | 0 | 1 | \>= 2 |
 
-### Activate attachment tab in sidebar
+### Ограничите величину прилога:
 
-This option activates a new tab in the right sidebar in the ticket view
-which shows all attachments of the currently viewed ticket.
+Ова опција активира нови језичак у бочној траци са десне стране у приказу
+тикета који приказује све прилоге тренутно приказаног тикета.
 
 ```ruby
 Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')
 ```
 
-### Time period for showing customer profile on new calls
+### Временски период за приказ профила клијента при новим позивима
 
-Zammad shows the customer profile dialog when a call of this customer is
-incoming and there is an existing ticket of this customer in this time
-period. The default time period is 30 days. If there is no ticket in this
-period, the customer dialog is not shown automatically.
+Zammad приказује дијалог профила клијента када долази позив тог клијента и
+када постоји постојећи тикет тог клијента у овом временском
+периоду. Подразумевани временски период је 30 дана. Ако у том периоду нема
+тикета, дијалог клијента се не приказује аутоматски.
 
-Set the time period to 90 days:
+Поставите временски период на 90 дана:
 
 ```ruby
 Setting.set('cti_customer_last_activity', '90')
 ```
 
-### Set public "notes" as SLA relevant
+### Постављање јавних „напомена” као релевантних за SLA
 
-Normally, notes aren't SLA relevant. Use the following command to include
-publicly-visible notes when tracking SLA compliance (internal notes _will
-never_ affect SLA calculations). Be aware that this setting will disable the
-option to delete public notes.
+Уобичајено, напомене нису релевантне за SLA. Употребите следећу команду да
+укључите јавно видљиве напомене при праћењу поштовања SLA (интерне напомене
+_никада неће_ утицати на SLA прорачуне). Имајте на уму да ће ово подешавање
+онемогућити опцију брисања јавних напомена.
 
 ::: info
-By default, customers are not notified when public notes are added to a
-ticket. Set up a trigger if you wish to change this behavior.
+Подразумевано, клијенти нису обавештени када се јавне белешке додају на тикету.
+Подесите окидач ако желите да промените ово понашање.
 :::
 
-Enable SLA to count notes as communication:
+Омогући SLA да рачуна белешке као комуникацију:
 
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: true)
 ```
 
-Enable SLA to ignore notes as communication:
+Омогући SLA да игнорише белешке као комуникацију:
 
 ```ruby
 Ticket::Article::Type.find_by(name:'note').update!(communication: false)
 ```
 
-### Activate priority icon
+### Активирај икону приоритета
 
-To activate additional icons which represent the priority, use the command
-below:
+Да бисте активирали додатне иконе које представљају приоритет, користите
+наредбу испод:
 
 ```ruby
 Setting.set('ui_ticket_priority_icons', true)
 ```
 
-## Other useful commands
+## Остале корисне наредбе
 
-### Remove AI feature
+### Функције
 
-Zammad's AI feature is completely optional and requires a configuration
-before any AI request is made. However, if you don't want to see the
-feature, you can do so by setting the permission to inactive.
+AI функција у Zammad-у је потпуно опциона и захтева конфигурацију пре било
+ког AI захтева. Међутим, ако не желите да видите ову функцију, можете
+онемогућити дозволу.
 
-Disable any AI provider, in case you already configured it:
+Онемогући било ког AI провајдера, у случају да сте га већ конфигурисали:
 
 ```ruby
 Setting.set('ai_provider', false)
 ```
 
-Disable permission to hide the settings from UI:
+Онемогући дозволу за скривање подешавања у интерфејсу:
 
 ```ruby
-Permission.where("name LIKE 'admin.ai%'").update!(active: false)
+Permission.where(\"наме LIKE 'admin.ai%'\").упдате!(ацтиве: фалсе)
 ```
 
-To re-enable it, set the `active` flag to `true`.
+Да бисте га поново омогућили, поставите ознаку `active` на `true`.
 
-### Fetch emails
+### Преузми имејлове
 
-The below command will do a manual fetch of mail channels. This will also
-show errors that might appear within that process.
+Наредба испод ће ручно преузети канале за поштански промет. Такође ће
+приказати грешке које могу настати током тог процеса.
 
 ```ruby
 Channel.fetch
 ```
 
-### Reprocess failed emails
+### Поновна обрада неуспешних имејлова
 
-When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a
-malformed message), it will store the email in the database and warn in the
-monitoring section about it.
+Када Zammad преузме имејл који не може да анализира (нпр. због грешке у
+парсеру или неправилне поруке), чуваће га у бази података и упозори у
+секцији за надзор о томе.
 
-In case of a malformed message (e.g. an invalid email address in one of the
-header fields), you may need to manually edit the email before Zammad can
-process it. To do so, follow the steps below.
+У случају неправилне поруке (нпр. неважећа адреса имејла у једном од
+заглавља), можда ћете морати ручно да уредите имејл пре него што га Zammad
+може обрадити. Да бисте то урадили, следите кораке испод.
 
-#### Export all failed emails to a local folder
+#### Извези све неуспешне имејлове у локални фолдер
 
 ```sh
 rake zammad:email_parser:failed_email:export_all`
 ```
 
-You can find the location of the exported email in the output of your
-console.  Every time you perform an export of failed (unprocessable) emails,
-it creates one folder containing all failed emails at the time of execution.
+Локацију извезеног имејла можете пронаћи у излазу конзоле.  Сваки пут када
+извршите извоз неуспешних (необрађивих) имејлова, ствара се један фолдер
+који садржи све неуспешне имејлове у тренутку извршења.
 
-#### Edit the email
+#### Уреди имејл
 
-The email has been exported in the step above. Now you can have a look at it
-and try to repair it. Make sure to leave the file name untouched, as the
-import will otherwise fail.
+Имејл је извезен у кораку изнад. Сада га можете погледати и покушати да
+поправите. Обавезно оставите име фајла непромењено, јер ће у супротном унос
+бити неуспешан.
 
-#### Import and reprocess locally modified email
+#### Увоз и поновна обрада локално измењеног имејла
 
-After editing the email, run:
+Након уређивања имејла, покрените:
 
 ```sh
 rake zammad:email_parser:failed_email:import path/to/your/email.eml
 ```
 
-This will apply your changes from the file to the database. You can also
-pass the entire folder as argument, so all `.eml` files in it will we
-imported and reprocessed. If the reprocessing of the email was successful,
-the file(s) will be deleted, and the empty folder removed.
+Ово ће применити ваше промене из фајла на базу података. Такође можете
+проследити цео фолдер као аргумент, тако да ће све `.eml` фајлови у њему
+бити увезени и поново обрађени. Ако је поновна обрада имејла успешна,
+фајл(и) ће бити обрисани, а празан фолдер уклоњен.
 
 ::: tip
-Make sure to run these commands only from the main Zammad folder
-`/opt/zammad`. There may be problems if you try to run it from within
-the generated subfolder.
+Уверите се да покрећете ове команде само из главног Zammad фолдера
+`/opt/zammad`. Може доћи до проблема ако покушате да их покренете из
+унутар генерисаног подфолдера.
 :::
 
-#### Delete unwanted emails
+#### Обриши нежељене имејлове
 
-In case of unwanted emails such as spam, you can delete them from the
-database after exporting them with the following command:
+У случају нежељених имејлова попут спама, можете их обрисати из базе
+података након што их извезете помоћу следеће команде:
 
 ```sh
 rake zammad:email_parser:failed_email:delete path/to/your/email.eml
 ```
 
-If you pass the export folder as argument instead, all contained emails will
-be removed from the database, their files deleted and finally the empty
-folder removed.
+Ако уместо тога проследите фолдер за извоз као аргумент, сви садржани
+имејлови ће бити уклоњени из базе података, њихови фајлови обрисани, а на
+крају и празан фолдер уклоњен.
 
-### Show and retry failed data privacy jobs
+### Прикажи и поново покрени неуспеле послове за приватност података
 
-In rare cases, Zammad's data privacy jobs might fail. To show them, you can
-use the following rake command:
+У ретким случајевима, послови за приватност података у Zammad-у могу бити
+неуспешни. Да бисте их приказали, можете користити следећу раке команду:
 
 ```sh
 rake zammad:data_privacy:failed:show
 ```
 
-To retry failed data privacy jobs, you can use the following
-command. However, without changing the underlying issue that caused the
-failure, the job will fail again. So make sure to check the logs for the
-root cause of the failure and fix it before retrying the job.
+Да бисте поново покренули неуспеле послове за приватност података, можете
+користити следећу команду. Међутим, без решавања основног проблема који је
+узроковао неуспех, посао ће поново бити неуспешан. Зато се уверите да
+прегледате логове ради утврђивања узрока неуспеха и отклоните га пре
+поновног покретања посла.
 
 ```sh
 rake zammad:data_privacy:failed:retry
 ```
 
-### Fill a test system with test data
+### Попуни тестни систем тест подацима
 
 ::: danger
-Don't run this in a productive environment! This can slow down Zammad
-and is hard to revert!
+Не покрећите ово у продукцијском окружењу! Ово може успорити Zammad
+и тешко је поништити!
 :::
 
-The below command will add `50` agents, `1000` customers, `20` groups, `40`
-organizations, `5` new overviews and `100` tickets. You can always use `0`
-to not create specific items. Zammad will create random data which make no
-logical sense.
+Наредба испод ће додати `50` агената, `1000` клијената, `20` група, `40`
+организација, `5` нових прегледа и `100` тикета. Увек можете користити `0`
+да не бисте креирали одређене ставке. Zammad ће генерисати насумичне податке
+који немају логичко значење.
 
 ```ruby
 FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)
 ```
 
-## Deleting records
+## Брисање записа
 
 ::: danger
-☠️ The commands listed here cause **irrecoverable data loss**! Only
-proceed if you know what you're doing and you
-[have a backup](/en/tutorials/backup-restore)!
+☠️ Наредбе наведене овде узрокују **неповратни губитак података**! Наставите само
+ако знате шта радите и ако имате
+[резервну копију](/en/tutorials/backup-restore)!
 :::
 
-### Removing tickets (and their articles)
+### Уклањање тикета (и њихових чланака)
 
-Delete a ticket (specified by database ID):
+Обриши тикет (наведен по ID-у базе података):
 
 ```ruby
 Ticket.find(4).destroy
 ```
 
-Delete all tickets:
+Обриши све тикете:
 
 ```ruby
 Ticket.destroy_all
 ```
 
-Keep some tickets (specified by database ID); delete the rest:
+Задржите неке тикета (наведене по ID-у у бази); обришите остале:
 
 ```ruby
 tickets_to_keep = [1, 2, 3]
@@ -901,33 +906,34 @@ tickets_to_keep = [1, 2, 3]
 Ticket.where.not(id: tickets_to_keep).destroy_all
 ```
 
-### Removing users
+### Брисање корисника
 
 ::: warning
-Customers **may not** be deleted while they have tickets remaining in
-the system.
+Клијенти **не смеју** бити обрисани док имају преостале тикета у
+систем.
 
-As such, the examples below will delete not only the specified
-customers, but **all tickets associated with them**, as well. Below
-commands delete without any further warnings.
+Због тога ће примери испаду... -> Клијенти **не смеју** бити обрисани док имају преостале тикета у
+систем.
+
+Због тога ће примери испаду...
 :::
 
 ::: tip
-If you're not sure what to do and need to learn more about what Zammad
-does upon removing users, please consider using Zammad's UI options instead.
-You can find the data privacy feature in Zammad's admin interface under
-_System > Data Privacy_.
+Ако нисте сигурни шта да урадите и треба вам више информација о томе шта Zammad
+чини приликом брисања корисника, размотрите коришћење опција у Zammad-овом интерфејсу.
+Опцију за приватност података можете пронаћи у админ делу Zammad-а на
+_Систем > Приватност података_.
 :::
 
-Removing users is possible in 2 ways: A single user and in bulk.
+Брисање корисника је могуће на 2 начина: појединачно и у маси.
 
-Remove a single user:
+Уклоните једног корисника:
 
 ```ruby
 User.find_by(email: '<email address>').destroy
 ```
 
-Remove several users:
+Уклоните више корисника:
 
 ```ruby
 User.where(
@@ -935,116 +941,116 @@ User.where(
    ).destroy_all
 ```
 
-### Removing organizations
+### Организација
 
 ::: info
-Removing an organization does **not** delete associated customers.
+Брисање организације **не брише** повезане клијенте.
 :::
 
-#### Step 1: Select organizations
+#### Корак 1: Одаберите организације
 
-By "active" status:
+По статусу "активно":
 
 ```ruby
 organizations = Organization.where(active: false)
 ```
 
-By name:
+По називу:
 
 ```ruby
 organizations = Organization.where(name: 'Acme')
 ```
 
-By partial match on notes:
+По делимичном подударању у белешкама:
 
 ```ruby
 organizations = Organization.where('note LIKE ?', '%foo%')
 ```
 
-#### Step 2: Preview affected organizations
+#### Корак 2: Прегледајте погођене организације
 
 ```ruby
-puts organizations.map { |org| "ORGANIZATION #{org.name}" }.join("\n")
+путс organizations.map { |org| "ORGANIZACIJA #{org.name}" }.јоин("\н")
 ```
 
-#### Step 3: Proceed with deletion
+#### Корак 3: Наставите са брисањем
 
 ```ruby
-organizations.each do |org|
-    puts %{Preparing deletion of organization "#{org.name}"...}
-```
-
-```ruby
-org.members.each do |member|
-    puts "  Removing #{member.fullname} from organization..."
-    member.update!(organization_id: nil)
-end
+organizations.each до |орг|
+    путс %{Priprema brisanja organizacije "#{org.name}"...}
 ```
 
 ```ruby
-    puts "  Deleting #{org.name}..."
+org.members.each до |мембер|
+    путс "  Уклањање #{member.fullname} из организације..."
+    member.update!(организатион_ид: нил)
+енд
+```
+
+```ruby
+    путс "  Брисање #{org.name}..."
     org.destroy
-   end
+   енд
 ```
 
-### Removing system records
+### Брисање системских записа
 
-Remove all online notifications:
+Уклоните сва онлине обавештења:
 
 ```ruby
 OnlineNotification.destroy_all
 ```
 
-Remove all entries from the Activity Stream (dashboard):
+Уклоните све уносе из протока активности (табло):
 
 ```ruby
 ActivityStream.destroy_all
 ```
 
-Remove entries for all recently viewed objects(tickets, users,
-organizations):
+Уклоните записе за све недавно прегледане објекте (тикета, кориснике,
+организације):
 
 ```ruby
 RecentView.destroy_all
 ```
 
-Remove all history information from tickets, users and organizations
-(dangerous!):
+Уклоните све историјске информације из карата, корисника и организација
+(опасно!):
 
 ```ruby
 History.destroy_all
 ```
 
-### Reset Zammad installation
+### /sr/get-zammad/installation
 
 ::: danger
 
-Below commands are incomplete intentionally, error outputs will hint you
-through! The following operations will cause data loss and are for
-development / testing only.
+Наредбе испод су намерно непотпуне, излаз грешака ће вам помоћи!
+Следеће операције ће изазвати губитак података и служе само за
+развој / тестирање.
 
-Don't forget to stop Zammad before trying to drop the database!
+Не заборавите да зауставите Zammad пре покушаја брисања базе!
 :::
 
-Truncate the database:
+Миграција на Zammad
 
 ```sh
 rake zammad:db:truncate
 ```
 
-Migrate the database:
+Миграција на Zammad
 
 ```sh
 rake db:migrate
 ```
 
-Load the seed data:
+Учитајте почетне податке (сеед):
 
 ```sh
 rake db:seed
 ```
 
-Clear cache and reload the settings:
+Очистите кеш и поново учитајте подешавања:
 
 ```sh
 rake zammad:db:rebuild
@@ -1052,8 +1058,8 @@ rake zammad:db:rebuild
 
 ::: tip
 
-You can also use the `zammad:db:reset` command to reset your instance. This task
-will truncate the database, run the migrations, seed the database, clear the
-cache and reload the settings. However, it will not ask for your confirmation
-between each step, so you should use it with caution.
+Такође можете користити команду `zammad:db:reset` за ресетовање инстанце. Овај задатак
+ће испразнити базу, покренути миграције, учитати сеед податке, очистити
+цацхе и поново учитати подешавања. Међутим, неће тражити вашу потврду
+између сваког корака, па је треба користити опрезно.
 :::

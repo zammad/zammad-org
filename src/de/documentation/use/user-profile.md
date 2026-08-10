@@ -1,9 +1,9 @@
 ---
 order: 7
-title: 'User profile'
+title: Benutzerprofil
 ---
 
-# User profile
+# Benutzerprofil
 
 Passen Sie Ihr Konto und Ihre persönlichen Einstellungen in Ihrem
 Benutzerprofil an. Einige der Optionen sind möglicherweise nicht verfügbar,
@@ -11,7 +11,7 @@ je nachdem, wie Ihr System konfiguriert ist und welche Rechte Sie
 haben. Öffnen Sie es über das Avatar-Menü in der Seitenleiste. Lesen Sie
 weiter für weitere Details.
 
-## Avatar menu
+## Avatar-Menü
 
 Um das Avatar-Menü zu öffnen, klicken Sie auf Ihr Avatar-Symbol in der
 unteren linken Ecke der Seitenleiste. Dieses Symbol zeigt entweder Ihre
@@ -34,7 +34,7 @@ Das Menü enthält die folgenden Einträge:
   Avatar, Ihr Passwort, Ihre Benachrichtigungseinstellungen und vieles mehr
   anpassen können, siehe nächster Abschnitt.
 
-## Profile settings
+## Profil-Einstellungen
 
 ![Screenshot zeigt
 Benutzerprofil-Einstellungen](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
@@ -71,7 +71,7 @@ Nachdem Sie ein Bild aufgenommen oder hochgeladen haben, können Sie es
 zuschneiden. Werfen Sie einen Blick auf die Vorschau oben im rechten
 Seitenmenü.
 
-### Out of office
+### Abwesenheit
 
 Definieren Sie Abwesenheitszeiten (z.B. für Ihren Urlaub) und bestimmen Sie
 einen Vertreter, der Ihre Tickets während Ihrer Abwesenheit bearbeitet.
@@ -88,7 +88,7 @@ auch Benachrichtigungen, wenn Sie abwesend sind.
 altes Passwort und das neue Passwort ein und bestätigen Sie das neue, indem
 Sie es wiederholen.
 
-### Two-factor authentication
+### Zwei-Faktor-Authentifizierung
 
 Richten Sie eine Zwei-Faktor-Authentifizierung (2FA) ein, um die Sicherheit
 Ihres Kontos zu erhöhen. Ihr Administrator muss mindestens eine 2FA-Methode
@@ -107,7 +107,7 @@ angemeldet ist. Falls nötig, können Sie den Zugriff widerrufen, indem Sie
 auf das Löschsymbol in der Spalte "Aktionen" klicken. Dies beendet die
 Sitzung und verlangt eine neue Anmeldung auf dem Gerät.
 
-### Token access
+### Token-Zugriff
 
 Generieren Sie einen persönlichen Zugangs-Token für eine Anwendung eines
 Drittanbieters für den Zugriff auf die Zammad API. Nachdem Sie auf die

@@ -1,73 +1,72 @@
 ---
 order: 8
-title: 'Linking tickets'
+title: 'Рад на тикетима'
 ---
 
-# Linking tickets
+# Рад на тикетима
 
-## Get
+## Дохвати
 
-Required permission: `ticket.agent` **or** `admin`
+Потребна дозвола: `ticket.agent` **или** `admin`
 
-`GET`-Request sent: `/api/v1/links`
+`GET`-захтев послат: `/api/v1/links`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/links/get-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/links/get-res.json
 
 :::
 ::::
 
-## Add
+## Додај
 
-Required permission: `ticket.agent` **or** `admin`
+Потребна дозвола: `ticket.agent` **или** `admin`
 
-`POST`-Request sent: `/api/v1/links/add`
+`POST`-захтев послат: `/api/v1/links/add`
 
 ::::: details
 
 :::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/links/post-req.json
 
 ::: info
-The value for `link_object_target` has to be the _ticket ID_. The
-value for the `link_object_source_number` has to be the _ticket
-number_.
+Вредност за `link_object_target` мора бити _ID тикета_.
+Вредност за `link_object_source_number` мора бити _број тикета_.
 :::
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/links/post-res.json
 
 ::::
 :::::
 
-## Delete
+## Обриши
 
-Required permission: `ticket.agent` **or** `admin`
+Потребна дозвола: `ticket.agent` **или** `admin`
 
-`DELETE`-Request sent: `/api/v1/links/remove`
+`DELETE`-захтев послат: `/api/v1/links/remove`
 
 :::: details
 
 ::: tabs key:reqres
 
-=== Request
+=== Захтев
 
 <<< @/fixtures/rest-api/links/remove/delete-req.json
 
-=== Response
+=== Одговор
 
 <<< @/fixtures/rest-api/links/remove/delete-res.json
 
