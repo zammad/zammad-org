@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-10 12:17+0000\n"
+"POT-Creation-Date: 2026-08-12 09:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,18 +249,6 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -469,6 +457,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
+#: src/en/documentation/use/guides/knowledge-base.md:18
 #: src/en/get-started/installation/package.md:64
 #: src/en/tutorials/backup-restore.md:33
 #, markdown-text, no-wrap
@@ -5267,10 +5256,221 @@ msgid "Guides"
 msgstr ""
 
 #. type: Title #
+#: src/en/documentation/use/guides/knowledge-base.md:1
+#: src/en/documentation/use/guides/knowledge-base.md:6
+#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/knowledgebase.md:1
+#: src/en/reference/rest-api/knowledgebase.md:6
+#, markdown-text, no-wrap
+msgid "Knowledge base"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:11
+#, markdown-text
+msgid ""
+"The knowledge base is Zammad's built-in content library for organizing FAQs, "
+"how-tos, internal processes, and more.  Customers can browse published "
+"articles for self-service, while agents can use articles as internal "
+"references or insert them directly into ticket replies."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:14
+#, markdown-text
+msgid ""
+"This guide is written for agents who want to edit the knowledge base or use "
+"it in their daily work. Customers should be able to browse through the "
+"public knowledge base without detailed instructions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:17
+#, markdown-text
+msgid ""
+"This feature is optional and must be activated by your administrator.  "
+"![Screenshot shows knowledge base "
+"overview](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:22
+#, markdown-text
+msgid ""
+"Click **Knowledge Base** in the primary navigation to open it. The knowledge "
+"base opens in preview mode, which looks similar to the published version "
+"customers see."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:26
+#, markdown-text
+msgid ""
+"The knowledge base is organized into **categories** that can contain "
+"subcategories and **answers** (articles).  Each category requires an icon "
+"and a title. Answers consist of a title and rich text content with "
+"formatting, images, videos, file attachments, and links."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:27
+#, markdown-text, no-wrap
+msgid "Visibility"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:30
+#, markdown-text
+msgid "Each answer has a visibility level that controls who can see it:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:36
+#, markdown-text, no-wrap
+msgid ""
+"| Color | Level                       | Who can see it                                                     "
+"|\n"
+"|-------|---------------------------  "
+"|--------------------------------------------------------------------|\n"
+"| Green | **Public**                  | Everyone, including customers "
+"browsing the public knowledge base   |\n"
+"| Blue  | **Internal**                | Agents and editors only                                            "
+"|\n"
+"| Gray  | **Draft** or **Archived**   | Editors only                                                       "
+"|\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:38
+#, markdown-text
+msgid "Changes to visibility take effect immediately."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/knowledge-base.md:39
+#, no-wrap
+msgid ""
+"Public answers are always visible to everyone. Internal answers require the "
+"**Knowledge Base Reader** permission.\n"
+"Choose visibility carefully when publishing articles.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:44
+#, markdown-text, no-wrap
+msgid "Editing the knowledge base"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:48
+#, markdown-text
+msgid ""
+"Open the knowledge base and switch to edit mode using the **Edit** button in "
+"the top toolbar. If you can't see the **Edit** button, your administrator "
+"needs to grant you the appropriate permissions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:51
+#, markdown-text
+msgid ""
+"To create a new category, click the `+` button on the main page. To create a "
+"new answer, navigate into a category and click the `+` button there. Enter a "
+"title and content, set the visibility level, and save your changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:55
+#, markdown-text
+msgid ""
+"The knowledge base editor provides the same rich text capabilities as the "
+"ticket article editor. You can format text, add links to other knowledge "
+"base answers or external websites, embed images and videos, attach files, "
+"and use tags to improve searchability."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:56
+#, markdown-text, no-wrap
+msgid "Using the knowledge base in tickets"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:58
+#, markdown-text, no-wrap
+msgid "Inserting articles into replies"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:61
+#, markdown-text
+msgid ""
+"You can insert knowledge base article content directly into a ticket reply "
+"without leaving the ticket:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+#, markdown-text
+msgid "Start composing a reply in the ticket editor."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+#, markdown-text
+msgid ""
+"Click the **Insert text from knowledge base answer** button in the editor "
+"toolbar or type [[?]][[?]]."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+#, markdown-text
+msgid "Search for the relevant article by title or content."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+#, markdown-text
+msgid "Select the article to insert its content at the cursor position."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:68
+#, markdown-text
+msgid "The inserted content preserves formatting and can be edited before sending."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:69
+#, markdown-text, no-wrap
+msgid "Knowledge base assistant"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:74
+#, markdown-text
+msgid ""
+"When the AI-based knowledge base assistant is enabled, Zammad can suggest "
+"relevant knowledge base articles based on the ticket content. These "
+"suggestions appear in the **Related knowledge** section of the ticket "
+"sidebar. If a suggested answer solves the problem, it can be linked "
+"permanently to the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:76
+#, markdown-text
+msgid ""
+"The knowledge base assistant also offers a way to automatically create a "
+"knowledge base answer from the ticket based on its content."
+msgstr ""
+
+#. type: Title #
 #: src/en/documentation/use/guides/mobile-view.md:1
 #: src/en/documentation/use/guides/mobile-view.md:6
 #, markdown-text, no-wrap
-msgid "Use mobile view"
+msgid "Mobile view"
 msgstr ""
 
 #. type: Title ##
@@ -21426,14 +21626,6 @@ msgstr ""
 msgid "Chat Sessions"
 msgstr ""
 
-#. type: Title #
-#: src/en/reference/rest-api/intro.md:176
-#: src/en/reference/rest-api/knowledgebase.md:1
-#: src/en/reference/rest-api/knowledgebase.md:6
-#, markdown-text, no-wrap
-msgid "Knowledge base"
-msgstr ""
-
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:176
 #, markdown-text
@@ -23990,83 +24182,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24252,6 +24367,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -24695,6 +24887,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #

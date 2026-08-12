@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Usar a visualização mobile'
+title: 'Mobile view'
 ---
 
-# Usar a visualização mobile
+# Mobile view
 
 ## Introdução
 

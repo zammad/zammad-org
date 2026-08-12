@@ -839,6 +839,199 @@ Setting.set('product_logo', logo_timestamp)
 
 KnowledgeBase::Locale.where(system_locale_id: Locale.find_by(locale: 'en-us').id).update(primary: true)
 
+# Knowledge Base: categories and answers
+puts 'Creating knowledge base categories and answers...'
+
+# Create knowledge base if it does not exist yet.
+kb = KnowledgeBase.active.first
+if kb.nil?
+  kb_locale_id = Locale.find_by!(locale: 'en-us').id
+  kb = KnowledgeBase.create!(
+    iconset:           'FontAwesome',
+    color_highlight:   '#38ae6a',
+    color_header:      '#f9fafb',
+    color_header_link: 'hsl(206,8%,50%)',
+    homepage_layout:   'grid',
+    category_layout:   'grid',
+    active:            true,
+    kb_locales_attributes: [
+      {
+        system_locale_id: kb_locale_id,
+        primary:          true,
+      },
+    ],
+  )
+end
+
+kb_locale = kb.kb_locales.find_by!(system_locale_id: Locale.find_by!(locale: 'en-us').id)
+
+# Helper: create an answer with translation and published content.
+def create_kb_answer(category:, kb_locale:, title:, body:, internal_note: nil)
+  answer = KnowledgeBase::Answer.create!(
+    category_id:   category.id,
+    internal_note: internal_note,
+  )
+
+  # Create content without the after_save callback that assumes a translation exists.
+  content = KnowledgeBase::Answer::Translation::Content.new(body: body)
+  KnowledgeBase::Answer::Translation::Content.skip_callback(:save, :after, :bump_translation_edited_at)
+  content.save!
+  KnowledgeBase::Answer::Translation::Content.set_callback(:save, :after, :bump_translation_edited_at)
+
+  KnowledgeBase::Answer::Translation.create!(
+    title:        title,
+    kb_locale_id: kb_locale.id,
+    answer_id:    answer.id,
+    content_id:   content.id,
+  )
+
+  # Publish by setting the timestamp directly (the state machine delegates to timestamps).
+  answer.update!(published_at: Time.zone.now)
+
+  answer
+end
+
+# --- Category: Getting Started ---
+category_getting_started = KnowledgeBase::Category.create!(
+  knowledge_base_id: kb.id,
+  category_icon:     'fa-hand-pointer',
+)
+KnowledgeBase::Category::Translation.create!(
+  category_id: category_getting_started.id,
+  kb_locale_id: kb_locale.id,
+  title: 'Getting started',
+)
+
+create_kb_answer(
+  category:   category_getting_started,
+  kb_locale:  kb_locale,
+  title:      'Welcome to Fast Lane Support',
+  body:       '<p>Welcome to Fast Lane Hardware Support! We are here to help you with all your IT hardware needs. Whether you have questions about your order, need technical assistance, or want to learn about our products, our knowledge base has you covered.</p><p>Use the search bar or browse through our categories to find the information you need. Our support team is also available to assist you with any issues that are not covered here.</p>',
+)
+
+create_kb_answer(
+  category:     category_getting_started,
+  kb_locale:    kb_locale,
+  title:        'How to contact support',
+  internal_note: 'How to reach support',
+  body:         '<p>You can reach our support team through several channels:</p><ul><li><strong>Email:</strong> Send a message to support@fastlane.inc and we will respond within one business day.</li><li><strong>Phone:</strong> Call us at +49 123 4567890 during business hours (Monday to Friday, 9:00 to 17:00 CET).</li><li><strong>Ticket system:</strong> Submit a ticket through our support portal for the fastest response. You can track the status of your request at any time.</li></ul><p>For urgent hardware failures, please call our emergency hotline at +49 123 4567891.</p>',
+)
+
+create_kb_answer(
+  category:     category_getting_started,
+  kb_locale:    kb_locale,
+  title:        'Setting up your account',
+  internal_note: 'Account setup guide',
+  body:         '<p>When you first access Fast Lane Support, you will be guided through a quick setup process:</p><ol><li><strong>Verify your email address:</strong> Check your inbox for a verification link and click it to activate your account.</li><li><strong>Complete your profile:</strong> Add your name, phone number, and any other relevant details so our support team can reach you quickly.</li><li><strong>Set your preferences:</strong> Choose your preferred language and notification settings.</li></ol><p>Once your account is set up, you can submit tickets, browse our knowledge base, and track all your support requests in one place.</p>',
+)
+
+# --- Category: Products & Orders ---
+category_products = KnowledgeBase::Category.create!(
+  knowledge_base_id: kb.id,
+  category_icon:     'fa-box',
+)
+KnowledgeBase::Category::Translation.create!(
+  category_id: category_products.id,
+  kb_locale_id: kb_locale.id,
+  title: 'Products and orders',
+)
+
+create_kb_answer(
+  category:     category_products,
+  kb_locale:    kb_locale,
+  title:        'How to track your order',
+  internal_note: 'Order tracking instructions',
+  body:         '<p>You can track your order status at any time through your Fast Lane Support account:</p><ol><li>Log in to your account at support.fastlane.inc.</li><li>Navigate to <strong>My Orders</strong> in the dashboard.</li><li>Click on the order number to view detailed tracking information.</li></ol><p>Order tracking is updated in real-time. You will also receive email notifications at each stage: order confirmed, shipped, out for delivery, and delivered.</p><p>If your order shows as delivered but you have not received it, please contact our support team within 48 hours.</p>',
+)
+
+create_kb_answer(
+  category:     category_products,
+  kb_locale:    kb_locale,
+  title:        'Return and exchange policy',
+  internal_note: 'Return policy details',
+  body:         '<p>Fast Lane Hardware offers a 30-day return policy for most products. Here is what you need to know:</p><ul><li><strong>Eligibility:</strong> Items must be in original packaging and unused condition. Custom-built systems have a 14-day return window.</li><li><strong>How to initiate:</strong> Log in to your account, go to the order, and click <strong>Request Return</strong>. You will receive a return authorization number and shipping label.</li><li><strong>Refund timeline:</strong> Refunds are processed within 5-7 business days after we receive and inspect the returned item.</li><li><strong>Exchanges:</strong> If you need a different product, contact support to arrange an exchange instead of a refund.</li></ul><p>Defective items are covered under our warranty and can be returned at any time during the warranty period. See the warranty section for details.</p>',
+)
+
+create_kb_answer(
+  category:     category_products,
+  kb_locale:    kb_locale,
+  title:        'Warranty and repairs',
+  internal_note: 'Warranty information',
+  body:         '<p>All Fast Lane Hardware products come with a standard 2-year manufacturer warranty. Here are the key details:</p><ul><li><strong>Coverage:</strong> Hardware defects in materials and workmanship. Normal wear and tear, accidental damage, and unauthorized modifications are not covered.</li><li><strong>Extended warranty:</strong> Available for purchase within 30 days of buying your product. Extends coverage to 4 years.</li><li><strong>Claim process:</strong> Submit a warranty claim through your account under <strong>My Orders</strong> &gt; <strong>Warranty Claims</strong>. Include a description of the issue and any error messages.</li><li><strong>Turnaround:</strong> Warranty repairs are typically completed within 5-10 business days. Expedited service is available for an additional fee.</li></ul><p>For warranty status on an existing repair, check the claim status in your account or contact support with your claim number.</p>',
+)
+
+# --- Category: Technical Support ---
+category_technical = KnowledgeBase::Category.create!(
+  knowledge_base_id: kb.id,
+  category_icon:     'fa-wrench',
+)
+KnowledgeBase::Category::Translation.create!(
+  category_id: category_technical.id,
+  kb_locale_id: kb_locale.id,
+  title: 'Technical support',
+)
+
+create_kb_answer(
+  category:     category_technical,
+  kb_locale:    kb_locale,
+  title:        'Basic troubleshooting steps',
+  internal_note: 'General troubleshooting steps',
+  body:         '<p>If you are experiencing issues with your hardware, try these basic troubleshooting steps before contacting support:</p><ol><li><strong>Restart the device:</strong> Many issues can be resolved by simply restarting your computer or peripheral.</li><li><strong>Check connections:</strong> Ensure all cables are properly connected and seated. Look for loose or damaged cables.</li><li><strong>Update drivers:</strong> Visit our downloads page to get the latest drivers for your hardware.</li><li><strong>Run diagnostics:</strong> Use our built-in diagnostic tool (available in the support app) to identify common issues.</li><li><strong>Check system requirements:</strong> Verify that your system meets the minimum requirements for the product you are having trouble with.</li></ol><p>If these steps do not resolve the issue, please submit a support ticket with details about what you have tried and any error messages you have seen.</p>',
+)
+
+create_kb_answer(
+  category:     category_technical,
+  kb_locale:    kb_locale,
+  title:        'Downloading and installing drivers',
+  internal_note: 'Driver download instructions',
+  body:         '<p>To download drivers for your Fast Lane Hardware products:</p><ol><li>Visit our <strong>Downloads</strong> section at support.fastlane.inc/downloads.</li><li>Select your product category and model number.</li><li>Choose the driver for your operating system (Windows, Linux, or macOS).</li><li>Download and run the installer. Follow the on-screen instructions.</li><li>Restart your computer after installation to ensure the driver is properly loaded.</li></ol><p><strong>Tip:</strong> Keep your drivers up to date for the best performance and compatibility. Enable automatic updates in the Fast Lane Support app to receive notifications when new drivers are available.</p>',
+)
+
+create_kb_answer(
+  category:     category_technical,
+  kb_locale:    kb_locale,
+  title:        'System compatibility and requirements',
+  internal_note: 'System compatibility info',
+  body:         '<p>Before purchasing or installing Fast Lane Hardware products, check the system requirements:</p><ul><li><strong>Processor:</strong> Intel Core i5 (8th gen or newer) or AMD Ryzen 5 (2000 series or newer) for most products.</li><li><strong>Memory:</strong> Minimum 8 GB RAM recommended. 16 GB or more for high-performance configurations.</li><li><strong>Storage:</strong> SSD with at least 50 GB free space for software installations.</li><li><strong>Operating System:</strong> Windows 10/11, Ubuntu 20.04+, or macOS 12+.</li><li><strong>USB:</strong> USB 3.0 or later ports for peripherals and external storage.</li></ul><p>For specific product compatibility, check the product page or contact our sales team before making a purchase. They can help you choose the right configuration for your needs.</p>',
+)
+
+# --- Category: Billing & Payments ---
+category_billing = KnowledgeBase::Category.create!(
+  knowledge_base_id: kb.id,
+  category_icon:     'fa-credit-card',
+)
+KnowledgeBase::Category::Translation.create!(
+  category_id: category_billing.id,
+  kb_locale_id: kb_locale.id,
+  title: 'Billing and payments',
+)
+
+create_kb_answer(
+  category:     category_billing,
+  kb_locale:    kb_locale,
+  title:        'Accepted payment methods',
+  internal_note: 'Accepted payment methods',
+  body:         '<p>Fast Lane Hardware accepts the following payment methods:</p><ul><li><strong>Credit/Debit cards:</strong> Visa, Mastercard, American Express</li><li><strong>PayPal:</strong> Pay securely with your PayPal account</li><li><strong>Bank transfer:</strong> Available for B2B orders over 500 EUR. Payment terms: net 30 days.</li><li><strong>Purchase order:</strong> For approved B2B customers with established credit terms.</li></ul><p>All online payments are processed securely via encrypted connections. We never store your full card details on our servers.</p>',
+)
+
+create_kb_answer(
+  category:     category_billing,
+  kb_locale:    kb_locale,
+  title:        'Viewing and downloading invoices',
+  internal_note: 'Invoice information',
+  body:         '<p>You can access all your invoices through your Fast Lane Support account:</p><ol><li>Log in to support.fastlane.inc.</li><li>Go to <strong>Billing</strong> in the dashboard.</li><li>Click <strong>Invoice History</strong> to see all past invoices.</li><li>Click the download icon next to any invoice to save it as a PDF.</li></ol><p>Invoices are generated automatically when your order is confirmed. You will also receive a copy via email. For B2B customers, invoices can be sent directly to your accounting department upon request.</p>',
+)
+
+create_kb_answer(
+  category:     category_billing,
+  kb_locale:    kb_locale,
+  title:        'Refund process and timelines',
+  internal_note: 'Refund process',
+  body:         '<p>Refunds are processed based on the original payment method:</p><ul><li><strong>Credit card:</strong> 5-7 business days after approval</li><li><strong>PayPal:</strong> 3-5 business days after approval</li><li><strong>Bank transfer:</strong> 7-10 business days after approval</li><li><strong>Purchase order:</strong> Credit memo issued within 5 business days</li></ul><p>You will receive an email notification when your refund is processed. If you have not received your refund within the stated timeframe, please check with your bank or payment provider, then contact our support team if needed.</p>',
+)
+
+puts 'Knowledge base categories and answers created.'
+
 # Activate Time Accounting
 Setting.set('time_accounting', true)
 Setting.set('time_accounting_unit', 'hour')

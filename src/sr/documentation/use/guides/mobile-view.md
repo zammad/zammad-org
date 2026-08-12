@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Користи мобилни приказ'
+title: 'Mobile view'
 ---
 
-# Користи мобилни приказ
+# Mobile view
 
 ## Увод
 

@@ -400,6 +400,26 @@
     {
       "name": "ai_assistance_text_tools",
       "value": true
+    },
+    {
+      "name": "ai_provider",
+      "value": true
+    },
+    {
+      "name": "ai_assistance_kb_answer_from_ticket_generation",
+      "value": true
+    },
+    {
+      "name": "ai_assistance_kb_answer_suggestions",
+      "value": true
+    },
+    {
+      "name": "ai_assistance_kb_answer_suggestions_relevance_score",
+      "value": 60
+    },
+    {
+      "name": "kb_active_publicly",
+      "value": true
     }
   ],
   "TextModuleLocale": {
