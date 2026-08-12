@@ -73,6 +73,55 @@ Zammad долази са подразумеваним алаткама помо�
 - **Препиши сложени одељак и учини га лаким за разумевање**: Уклања
   необавезне делове и преписује ваш текст у јасном и разумљивом стилу.
 
+## Knowledge base assistant
+
+![Screenshot shows the related knowledge section of the ticket sidebar with
+an AI-suggested knowledge base
+answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+
+### Knowledge base answer generation
+
+This feature allows you to trigger an AI-based generation of a [knowledge
+base](/en/documentation/use/guides/knowledge-base)  answer from a
+ticket. This is useful if you often get similar tickets and want to quickly
+create a knowledge base article for such cases. Doing so helps you and your
+colleagues solve similar tickets more efficiently in the future. It might
+even reduce incoming ticket volume when customers can resolve their issues
+directly from the published knowledge base.
+
+This feature is available in the **Related knowledge** section of the ticket
+sidebar. Click the **Add AI draft** button to trigger the answer generation.
+
+Things to consider:
+
+- The knowledge base answer is generated as draft and not published
+  automatically.
+- You are set as the answer's author.
+- The answer is generated in the default language of your knowledge base.
+- The answer includes a note in the content and a tag (`ai-generated`) about
+  the AI generation.
+- A link to the answer is added to the ticket from which you triggered the
+  answer generation.
+- The answer is created in a knowledge base category for which you have
+  editor permissions. The AI chooses one of these categories.
+
+If a similar knowledge base answer already exists, Zammad shows it in a
+dialog before creating a new one. This gives you the chance to review
+existing related answers to prevent duplicate submissions.
+
+### Knowledge base answer suggestion
+
+This feature compares the ticket content against the knowledge base and
+shows relevant answers under **Suggested by AI** if they meet the
+admin-configured score threshold. Each suggestion shows the title of the
+answer and more details on hover. An additional relevance score is only
+shown to users with the corresponding admin permissions. Click on the title
+to open the answer in the knowledge base. Click the ::+:: on the right side
+which appears when hovering with the mouse to link it to the ticket.
+
+If no suggestions are available, the message "No suggestions." is displayed
+instead.
+
 ## AI агенти
 
 Оператери вештачке интелигенције могу бити подешени за рад на одређеним

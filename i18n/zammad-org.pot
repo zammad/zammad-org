@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-12 09:42+0200\n"
+"POT-Creation-Date: 2026-08-12 16:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4904,14 +4904,143 @@ msgid ""
 "unnecessary parts and rewrites your text in a clear and understandable way."
 msgstr ""
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/documentation/use/guides/ai.md:67
+#: src/en/documentation/use/guides/knowledge-base.md:69
+#, markdown-text, no-wrap
+msgid "Knowledge base assistant"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:70
+#, markdown-text
+msgid ""
+"![Screenshot shows the related knowledge section of the ticket sidebar with "
+"an AI-suggested knowledge base "
+"answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:71
+#, markdown-text, no-wrap
+msgid "Knowledge base answer generation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:77
+#, markdown-text
+msgid ""
+"This feature allows you to trigger an AI-based generation of a [knowledge "
+"base](/en/documentation/use/guides/knowledge-base)  answer from a "
+"ticket. This is useful if you often get similar tickets and want to quickly "
+"create a knowledge base article for such cases. Doing so helps you and your "
+"colleagues solve similar tickets more efficiently in the future. It might "
+"even reduce incoming ticket volume when customers can resolve their issues "
+"directly from the published knowledge base."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:80
+#, markdown-text
+msgid ""
+"This feature is available in the **Related knowledge** section of the ticket "
+"sidebar. Click the **Add AI draft** button to trigger the answer generation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:82
+#, markdown-text
+msgid "Things to consider:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+#, markdown-text
+msgid ""
+"The knowledge base answer is generated as draft and not published "
+"automatically."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+#, markdown-text
+msgid "You are set as the answer's author."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+#, markdown-text
+msgid "The answer is generated in the default language of your knowledge base."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+#, markdown-text
+msgid ""
+"The answer includes a note in the content and a tag (`ai-generated`) about "
+"the AI generation."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+#, markdown-text
+msgid ""
+"A link to the answer is added to the ticket from which you triggered the "
+"answer generation."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+#, markdown-text
+msgid ""
+"The answer is created in a knowledge base category for which you have editor "
+"permissions. The AI chooses one of these categories."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:93
+#, markdown-text
+msgid ""
+"If a similar knowledge base answer already exists, Zammad shows it in a "
+"dialog before creating a new one. This gives you the chance to review "
+"existing related answers to prevent duplicate submissions."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:94
+#, markdown-text, no-wrap
+msgid "Knowledge base answer suggestion"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:101
+#, markdown-text
+msgid ""
+"This feature compares the ticket content against the knowledge base and "
+"shows relevant answers under **Suggested by AI** if they meet the "
+"admin-configured score threshold. Each suggestion shows the title of the "
+"answer and more details on hover. An additional relevance score is only "
+"shown to users with the corresponding admin permissions. Click on the title "
+"to open the answer in the knowledge base. Click the ::+:: on the right side "
+"which appears when hovering with the mouse to link it to the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:103
+#, markdown-text
+msgid ""
+"If no suggestions are available, the message \"No suggestions.\" is "
+"displayed instead."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/ai.md:104
 #, markdown-text, no-wrap
 msgid "AI agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:73
+#: src/en/documentation/use/guides/ai.md:110
 #, markdown-text
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. In "
@@ -4924,14 +5053,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:74
+#: src/en/documentation/use/guides/ai.md:111
 #: src/en/documentation/use/guides/mobile-view.md:72
 #, markdown-text, no-wrap
 msgid "Ticket history"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:78
+#: src/en/documentation/use/guides/ai.md:115
 #, markdown-text
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
@@ -4941,7 +5070,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:117
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
@@ -4949,13 +5078,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:81
+#: src/en/documentation/use/guides/ai.md:118
 #, markdown-text, no-wrap
 msgid "Simultaneous work detection"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:86
+#: src/en/documentation/use/guides/ai.md:123
 #, markdown-text
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
@@ -4965,13 +5094,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:88
+#: src/en/documentation/use/guides/ai.md:125
 #, markdown-text
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:127
 #, markdown-text
 msgid ""
 "![Screenshot shows avatar of an AI "
@@ -4979,13 +5108,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:91
+#: src/en/documentation/use/guides/ai.md:128
 #, markdown-text, no-wrap
 msgid "Overview indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:131
 #, markdown-text
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
@@ -4993,7 +5122,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:95
+#: src/en/documentation/use/guides/ai.md:132
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
@@ -5439,12 +5568,6 @@ msgstr ""
 #: src/en/documentation/use/guides/knowledge-base.md:68
 #, markdown-text
 msgid "The inserted content preserves formatting and can be edited before sending."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:69
-#, markdown-text, no-wrap
-msgid "Knowledge base assistant"
 msgstr ""
 
 #. type: Plain text
