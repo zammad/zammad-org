@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-04 13:11+0200\n"
+"POT-Creation-Date: 2026-08-12 16:37+0200\n"
 "PO-Revision-Date: 2026-07-23 10:16+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://translations.zammad.org/projects/"
@@ -434,6 +434,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
+#: src/en/documentation/use/guides/knowledge-base.md:18
 #: src/en/get-started/installation/package.md:64
 #: src/en/tutorials/backup-restore.md:33
 #, no-wrap
@@ -4452,14 +4453,130 @@ msgid ""
 "unnecessary parts and rewrites your text in a clear and understandable way."
 msgstr ""
 
-#. type: Title ##
+#. type: Title ###
 #: src/en/documentation/use/guides/ai.md:67
+#: src/en/documentation/use/guides/knowledge-base.md:69
+#, no-wrap
+msgid "Knowledge base assistant"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:70
+msgid ""
+"![Screenshot shows the related knowledge section of the ticket sidebar with "
+"an AI-suggested knowledge base answer](/screenshots/cypress/documentation/"
+"use/guide-ai.cy.js/ai-knowledge-base-assistant.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:71
+#, no-wrap
+msgid "Knowledge base answer generation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:77
+msgid ""
+"This feature allows you to trigger an AI-based generation of a [knowledge "
+"base](/en/documentation/use/guides/knowledge-base)  answer from a ticket. "
+"This is useful if you often get similar tickets and want to quickly create a "
+"knowledge base article for such cases. Doing so helps you and your "
+"colleagues solve similar tickets more efficiently in the future. It might "
+"even reduce incoming ticket volume when customers can resolve their issues "
+"directly from the published knowledge base."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:80
+msgid ""
+"This feature is available in the **Related knowledge** section of the ticket "
+"sidebar. Click the **Add AI draft** button to trigger the answer generation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:82
+msgid "Things to consider:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+msgid ""
+"The knowledge base answer is generated as draft and not published "
+"automatically."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+msgid "You are set as the answer's author."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+msgid "The answer is generated in the default language of your knowledge base."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+msgid ""
+"The answer includes a note in the content and a tag (`ai-generated`) about "
+"the AI generation."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+msgid ""
+"A link to the answer is added to the ticket from which you triggered the "
+"answer generation."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/ai.md:90
+msgid ""
+"The answer is created in a knowledge base category for which you have editor "
+"permissions. The AI chooses one of these categories."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:93
+msgid ""
+"If a similar knowledge base answer already exists, Zammad shows it in a "
+"dialog before creating a new one. This gives you the chance to review "
+"existing related answers to prevent duplicate submissions."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/ai.md:94
+#, no-wrap
+msgid "Knowledge base answer suggestion"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:101
+msgid ""
+"This feature compares the ticket content against the knowledge base and "
+"shows relevant answers under **Suggested by AI** if they meet the admin-"
+"configured score threshold. Each suggestion shows the title of the answer "
+"and more details on hover. An additional relevance score is only shown to "
+"users with the corresponding admin permissions. Click on the title to open "
+"the answer in the knowledge base. Click the ::+:: on the right side which "
+"appears when hovering with the mouse to link it to the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/ai.md:103
+msgid ""
+"If no suggestions are available, the message \"No suggestions.\" is "
+"displayed instead."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/ai.md:104
 #, no-wrap
 msgid "AI agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:73
+#: src/en/documentation/use/guides/ai.md:110
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. In "
 "general, this feature operates behind the scenes but if configured, you may "
@@ -4470,14 +4587,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:74
+#: src/en/documentation/use/guides/ai.md:111
 #: src/en/documentation/use/guides/mobile-view.md:72
 #, no-wrap
 msgid "Ticket history"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:78
+#: src/en/documentation/use/guides/ai.md:115
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
 "you the name of the AI agent. If you notice ongoing issues with what the AI "
@@ -4486,20 +4603,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:117
 msgid ""
 "![Screenshot shows AI agent ticket history entry](/screenshots/documentation/"
 "use/ai/ai-agent-ticket-history.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:81
+#: src/en/documentation/use/guides/ai.md:118
 #, no-wrap
 msgid "Simultaneous work detection"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:86
+#: src/en/documentation/use/guides/ai.md:123
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
 "agents in the live user section in the bottom bar. This helps to avoid "
@@ -4508,32 +4625,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:88
+#: src/en/documentation/use/guides/ai.md:125
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:127
 msgid ""
 "![Screenshot shows avatar of an AI agent](/screenshots/documentation/use/ai/"
 "ai-live-user.png)"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:91
+#: src/en/documentation/use/guides/ai.md:128
 #, no-wrap
 msgid "Overview indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:131
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
 "status circle changes to a blue/pink gradient circle:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:95
+#: src/en/documentation/use/guides/ai.md:132
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on it](/screenshots/documentation/use/ai/overview-ai-agent-"
@@ -4773,10 +4890,192 @@ msgid "Guides"
 msgstr ""
 
 #. type: Title #
+#: src/en/documentation/use/guides/knowledge-base.md:1
+#: src/en/documentation/use/guides/knowledge-base.md:6
+#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/knowledgebase.md:1
+#: src/en/reference/rest-api/knowledgebase.md:6
+#, no-wrap
+msgid "Knowledge base"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:11
+msgid ""
+"The knowledge base is Zammad's built-in content library for organizing FAQs, "
+"how-tos, internal processes, and more.  Customers can browse published "
+"articles for self-service, while agents can use articles as internal "
+"references or insert them directly into ticket replies."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:14
+msgid ""
+"This guide is written for agents who want to edit the knowledge base or use "
+"it in their daily work. Customers should be able to browse through the "
+"public knowledge base without detailed instructions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:17
+msgid ""
+"This feature is optional and must be activated by your administrator.  !"
+"[Screenshot shows knowledge base overview](/screenshots/cypress/"
+"documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:22
+msgid ""
+"Click **Knowledge Base** in the primary navigation to open it. The knowledge "
+"base opens in preview mode, which looks similar to the published version "
+"customers see."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:26
+msgid ""
+"The knowledge base is organized into **categories** that can contain "
+"subcategories and **answers** (articles).  Each category requires an icon "
+"and a title. Answers consist of a title and rich text content with "
+"formatting, images, videos, file attachments, and links."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:27
+#, no-wrap
+msgid "Visibility"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:30
+msgid "Each answer has a visibility level that controls who can see it:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:36
+#, no-wrap
+msgid ""
+"| Color | Level                       | Who can see it                                                     |\n"
+"|-------|---------------------------  |--------------------------------------------------------------------|\n"
+"| Green | **Public**                  | Everyone, including customers browsing the public knowledge base   |\n"
+"| Blue  | **Internal**                | Agents and editors only                                            |\n"
+"| Gray  | **Draft** or **Archived**   | Editors only                                                       |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:38
+msgid "Changes to visibility take effect immediately."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/knowledge-base.md:39
+#, no-wrap
+msgid ""
+"Public answers are always visible to everyone. Internal answers require the **Knowledge Base Reader** permission.\n"
+"Choose visibility carefully when publishing articles.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:44
+#, no-wrap
+msgid "Editing the knowledge base"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:48
+msgid ""
+"Open the knowledge base and switch to edit mode using the **Edit** button in "
+"the top toolbar. If you can't see the **Edit** button, your administrator "
+"needs to grant you the appropriate permissions."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:51
+msgid ""
+"To create a new category, click the `+` button on the main page. To create a "
+"new answer, navigate into a category and click the `+` button there. Enter a "
+"title and content, set the visibility level, and save your changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:55
+msgid ""
+"The knowledge base editor provides the same rich text capabilities as the "
+"ticket article editor. You can format text, add links to other knowledge "
+"base answers or external websites, embed images and videos, attach files, "
+"and use tags to improve searchability."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:56
+#, no-wrap
+msgid "Using the knowledge base in tickets"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:58
+#, no-wrap
+msgid "Inserting articles into replies"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:61
+msgid ""
+"You can insert knowledge base article content directly into a ticket reply "
+"without leaving the ticket:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+msgid "Start composing a reply in the ticket editor."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+msgid ""
+"Click the **Insert text from knowledge base answer** button in the editor "
+"toolbar or type [[?]][[?]]."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+msgid "Search for the relevant article by title or content."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/documentation/use/guides/knowledge-base.md:66
+msgid "Select the article to insert its content at the cursor position."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:68
+msgid ""
+"The inserted content preserves formatting and can be edited before sending."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:74
+msgid ""
+"When the AI-based knowledge base assistant is enabled, Zammad can suggest "
+"relevant knowledge base articles based on the ticket content. These "
+"suggestions appear in the **Related knowledge** section of the ticket "
+"sidebar. If a suggested answer solves the problem, it can be linked "
+"permanently to the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:76
+msgid ""
+"The knowledge base assistant also offers a way to automatically create a "
+"knowledge base answer from the ticket based on its content."
+msgstr ""
+
+#. type: Title #
 #: src/en/documentation/use/guides/mobile-view.md:1
 #: src/en/documentation/use/guides/mobile-view.md:6
 #, no-wrap
-msgid "Use mobile view"
+msgid "Mobile view"
 msgstr ""
 
 #. type: Title ##
@@ -19481,14 +19780,6 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:176
 msgid "Chat Sessions"
-msgstr ""
-
-#. type: Title #
-#: src/en/reference/rest-api/intro.md:176
-#: src/en/reference/rest-api/knowledgebase.md:1
-#: src/en/reference/rest-api/knowledgebase.md:6
-#, no-wrap
-msgid "Knowledge base"
 msgstr ""
 
 #. type: Bullet: '- '
