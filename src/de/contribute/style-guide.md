@@ -174,20 +174,20 @@ aufgeführt.
 
 #### Text und UI
 
-| Type                                      | Highlighting in documentation | Markdown syntax                     |
-|-------------------------------------------|-------------------------------|-------------------------------------|
-| Labeled buttons                           | `Sign in`                     | `` `Sign in` ``                     |
-| Fields, labeled UI elements, menu items   | **Name**                      | `**Name**`                          |
-| Breadcrumb paths / navigation chains      | _Settings > Channels > Email_ | `_Settings > Channels > Email_`     |
-| File and directory paths                  | `/opt/zammad`                 | `` `/opt/zammad` ``                 |
-| Placeholder values for configuration      | `<your-fqdn>`                 | `` `<your-fqdn>` ``                 |
-| Placeholder values for API requests       | `{ticket id}`                 | `` `{ticket id}` ``                 |
-| Commandline config values, ports, keys    | `9200`                        | `` `9200` ``                        |
-| Keyboard shortcuts                        | [[x]]                         | `[[x]]`                             |
-| Add button                                | ::+::                         | `::+::`                             |
-| Delete button                             | ::x::                         | `::x::`                             |
-| Action menu                               | ::a::                         | `::a::`                             |
-| Copy to clipboard button                  | ::c::                         | `::c::`                             |
+| Typ                                             | Hervorhebung in Dokumentation     | Markdown Syntax                     |
+|-------------------------------------------------|-----------------------------------|-------------------------------------|
+| Schaltflächen                                   | `Aktualisieren`                   | `` `Aktualisieren` ``               |
+| Fields, labeled UI elements, menu items         | **Name**                          | `**Name**`                          |
+| Pfade / Navigations-Schritte                    | _Einstellungen > Kanäle > Email_  | `_Einstellungen > Kanäle > Email_`  |
+| Dateien und Verzeichnispfade                    | `/opt/zammad`                     | `` `/opt/zammad` ``                 |
+| Platzhalter in Konfiguration                    | `<your-fqdn>`                     | `` `<your-fqdn>` ``                 |
+| Platzhalter für API-Anfragen                    | `{ticket id}`                     | `` `{ticket id}` ``                 |
+| Konfigurationswerte Kommandozeile, Ports, Keys  | `9200`                            | `` `9200` ``                        |
+| Tastaturkürzel                                  | [[x]]                             | `[[x]]`                             |
+| Hinzufügen Schaltfläche                         | ::+::                             | `::+::`                             |
+| Löschen Schaltfläche                            | ::x::                             | `::x::`                             |
+| Aktions-Schaltfläche                            | ::a::                             | `::a::`                             |
+| Schaltfläche kopieren in Zwischenablage         | ::c::                             | `::c::`                             |
 
 #### Gliederung mit Überschriften
 

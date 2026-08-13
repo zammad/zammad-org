@@ -23,7 +23,7 @@ eingerichtet hat, finden Sie dort zum Beispiel folgende Übersichten:
 
 - Meine zugewiesenen Tickets
 - Nicht zugewiesene & offene Tickets
-- Ausstehende Tickets
+- "Warten erreicht" Tickets
 - Eskalierte Tickets
 
 Wenn Sie eine Übersicht in der zweiten Navigationsebene auswählen, sehen Sie

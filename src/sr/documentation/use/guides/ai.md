@@ -94,9 +94,8 @@ sidebar. Click the **Add AI draft** button to trigger the answer generation.
 
 Things to consider:
 
-- The knowledge base answer is generated as draft and not published
-  automatically.
-- You are set as the answer's author.
+- Чланак базе знања се генерише као нацрт и неће бити аутоматски објављен.
+- Ви ћете бити постављени као аутор чланка.
 - The answer is generated in the default language of your knowledge base.
 - The answer includes a note in the content and a tag (`ai-generated`) about
   the AI generation.
@@ -119,8 +118,7 @@ shown to users with the corresponding admin permissions. Click on the title
 to open the answer in the knowledge base. Click the ::+:: on the right side
 which appears when hovering with the mouse to link it to the ticket.
 
-If no suggestions are available, the message "No suggestions." is displayed
-instead.
+Уколико нема релевантних предлога, биће приказана порука „Без предлога”.
 
 ## AI агенти
 

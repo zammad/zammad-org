@@ -29,7 +29,7 @@ subcategories and **answers** (articles).  Each category requires an icon
 and a title. Answers consist of a title and rich text content with
 formatting, images, videos, file attachments, and links.
 
-## Visibility
+## Видљивост
 
 Each answer has a visibility level that controls who can see it:
 

@@ -13,7 +13,7 @@ features:
   - 
     details: 'Као администратор, пређите на одељак Управљање Zammad-ом.'
     icon: 🧑‍🔧
-    link: /sr/documentation/manage-zammad/start
+    link: /sr/documentation/manage/start
     title: Администратор
 order: 1
 title: Почетак
