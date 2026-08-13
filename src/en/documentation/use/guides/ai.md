@@ -75,7 +75,7 @@ answer from a ticket. This is useful if you often get similar tickets and want t
 for such cases. Doing so helps you and your colleagues solve similar tickets more efficiently in the future. It might
 even reduce incoming ticket volume when customers can resolve their issues directly from the published knowledge base.
 
-This feature is available in the **Related knowledge** section of the ticket sidebar. Click the **Add AI draft** button
+This feature is available in the **Related knowledge** section of the ticket sidebar. Click the `Add AI draft` button
 to trigger the answer generation.
 
 Things to consider:

@@ -95,7 +95,7 @@ even reduce incoming ticket volume when customers can resolve their issues
 directly from the published knowledge base.
 
 This feature is available in the **Related knowledge** section of the ticket
-sidebar. Click the **Add AI draft** button to trigger the answer generation.
+sidebar. Click the `Add AI draft` button to trigger the answer generation.
 
 Things to consider:
 

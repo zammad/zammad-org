@@ -7,14 +7,15 @@ title: 'Base de conhecimento'
 
 The knowledge base is Zammad's built-in content library for organizing FAQs,
 how-tos, internal processes, and more.  Customers can browse published
-articles for self-service, while agents can use articles as internal
-references or insert them directly into ticket replies.
+answers (articles) for self-service, while agents can use answers as
+internal references or insert them directly into ticket replies.
 
 This guide is written for agents who want to edit the knowledge base or use
 it in their daily work. Customers should be able to browse through the
 public knowledge base without detailed instructions.
 
 This feature is optional and must be activated by your administrator.
+
 ![Screenshot shows knowledge base
 overview](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)
 
@@ -25,9 +26,9 @@ base opens in preview mode, which looks similar to the published version
 customers see.
 
 The knowledge base is organized into **categories** that can contain
-subcategories and **answers** (articles).  Each category requires an icon
-and a title. Answers consist of a title and rich text content with
-formatting, images, videos, file attachments, and links.
+subcategories and **answers**.  Each category requires an icon and a
+title. Answers consist of a title and rich text content with formatting,
+images, videos, file attachments, and links.
 
 ## Visibility
 
@@ -43,13 +44,13 @@ Changes to visibility take effect immediately.
 
 ::: warning
 Public answers are always visible to everyone. Internal answers require the **Knowledge Base Reader** permission.
-Choose visibility carefully when publishing articles.
+Choose visibility carefully when publishing answers.
 :::
 
 ## Editing the knowledge base
 
-Open the knowledge base and switch to edit mode using the **Edit** button in
-the top toolbar. If you can't see the **Edit** button, your administrator
+Open the knowledge base and switch to edit mode using the `Edit` button in
+the top toolbar. If you can't see the `Edit` button, your administrator
 needs to grant you the appropriate permissions.
 
 To create a new category, click the `+` button on the main page. To create a
@@ -63,15 +64,15 @@ and use tags to improve searchability.
 
 ## Using the knowledge base in tickets
 
-### Inserting articles into replies
+### Inserting answers into replies
 
 You can insert knowledge base article content directly into a ticket reply
 without leaving the ticket:
 
 1. Start composing a reply in the ticket editor.
-2. Click the **Insert text from knowledge base answer** button in the editor
+2. Click the `Insert text from knowledge base answer` button in the editor
    toolbar or type [[?]][[?]].
-3. Search for the relevant article by title or content.
+3. Search for the relevant answer by title or content.
 4. Select the article to insert its content at the cursor position.
 
 The inserted content preserves formatting and can be edited before sending.
@@ -79,7 +80,7 @@ The inserted content preserves formatting and can be edited before sending.
 ### Knowledge base assistant
 
 When the AI-based knowledge base assistant is enabled, Zammad can suggest
-relevant knowledge base articles based on the ticket content. These
+relevant knowledge base answers based on the ticket content. These
 suggestions appear in the **Related knowledge** section of the ticket
 sidebar. If a suggested answer solves the problem, it can be linked
 permanently to the ticket.
