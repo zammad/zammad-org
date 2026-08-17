@@ -193,10 +193,10 @@ title: 'Променљиве окружења'
 `NGINX_SERVER_NAME` ::d:: <Badge type="tip" text="_" />
 : Подразумевано, контејнер Nginxa за Zammad ће одговарати на све захтеве. Можете навести своју IP / FQDN адресу по жељи.
 
-`NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="\$scheme" />
-: Ако Nginx контејнер за Zammad **није** упстреам сервер (односно ако користите други proxy испред Nginxa)
-  `$scheme` може бити нетачан. По потреби можете поставити исправан протокол `http` или `https`. Поставите ово ако се
-  јавља грешка `CSRF Token Verification Failed`.
+`NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
+: If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx)
+  `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. Set this if you face a
+  `CSRF Token Verification Failed` error.
 
 `NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Одредите максималну величину података
 које клијент може послати серверу.

@@ -163,8 +163,10 @@ Le variabili per l'installazione Docker e tramite pacchetto sono parzialmente di
 `NGINX_SERVER_NAME` ::d:: <Badge type="tip" text="_" />
 : Per impostazione predefinita, il container Nginx.
 
-`NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="\$scheme" />
-: Se il container Nginx.
+`NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
+: If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx)
+  `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. Set this if you face a
+  `CSRF Token Verification Failed` error.
 
 `NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Definisce la dimensione massima dei
 dati che un client può inviare.

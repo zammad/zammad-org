@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-13 12:31+0200\n"
+"POT-Creation-Date: 2026-08-17 12:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11910,7 +11910,7 @@ msgstr ""
 #: src/en/reference/environment-variables.md:202
 #, markdown-text, no-wrap
 msgid ""
-"`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"\\$scheme\" />\n"
+"`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"$scheme\" />\n"
 ": If the Nginx container for Zammad **is not** the upstream server (aka "
 "you're using another proxy in front of Nginx)\n"
 "  `$scheme` may be wrong. You can set the correct scheme `http` or `https` "

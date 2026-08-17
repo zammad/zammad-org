@@ -195,7 +195,7 @@ brackets (e.g. `[2001:db8::2]`).
 `NGINX_SERVER_NAME` ::d:: <Badge type="tip" text="_" />
 : By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.
 
-`NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="\$scheme" />
+`NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
 : If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx)
   `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. Set this if you face a
   `CSRF Token Verification Failed` error.
