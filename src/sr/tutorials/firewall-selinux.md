@@ -69,8 +69,8 @@ sudo ufw reload
 може бити другачији!
 :::
 
-Додајте следеће линије у `/etc/nftables.conf` или ваш специфични фајл са правилима.
-Побрините се да додате ове линије у свој инпут-цхаин.
+Add the following lines to `/etc/nftables.conf` or your specific rule file.
+Ensure to add these lines to your input-chain.
 
 ```sh
 sudo tcp dport { http, https } accept
@@ -80,8 +80,8 @@ sudo tcp dport { http, https } accept
 sudo udp dport { http, https } accept
 ```
 
-Резултат може изгледати као што је приказано испод. Имајте на уму да ваше окружење
-може захтевати другачија / више правила.
+The result can look like the following. Keep in mind that your environment
+could require different / more rules.
 
 ```sh
 table inet filter {
@@ -103,13 +103,13 @@ table inet filter {
 }
 ```
 
-Да бисте учитали правила, покрените:
+To load the rules, run:
 
 ```sh
 sudo systemctl reload nftables
 ```
 
-===CenOS, RHEL, OpenSUSE, SLES
+===CentOS, RHEL, OpenSUSE, SLES
 
 ```sh
 sudo firewall-cmd --zone=public --add-service=http --permanent

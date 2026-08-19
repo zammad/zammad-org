@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-19 06:43+0200\n"
+"POT-Creation-Date: 2026-08-19 07:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6738,7 +6738,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/guides/secure-email.md:76
-#: src/en/tutorials/connect-config-elasticsearch.md:115
+#: src/en/tutorials/connect-config-elasticsearch.md:131
 #: src/en/tutorials/sso-kerberos.md:553
 #: src/en/tutorials/webserver-config.md:293
 #, markdown-text, no-wrap
@@ -10317,7 +10317,7 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:190
 #: src/en/tutorials/connect-config-elasticsearch.md:69
-#: src/en/tutorials/connect-config-elasticsearch.md:171
+#: src/en/tutorials/connect-config-elasticsearch.md:187
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr ""
@@ -26248,13 +26248,47 @@ msgstr ""
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:114
 #, markdown-text
+msgid "In case you need a more exact search, you can turn it off:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/connect-config-elasticsearch.md:115
+#, no-wrap
+msgid "zammad run rails r \"Setting.set('es_asciifolding', false)\"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:119
+#, markdown-text, no-wrap
+msgid "SSL verification"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:122
+#, markdown-text
 msgid ""
-"In case you need a more exact search, you can turn it off via [Rails "
-"console](/en/reference/rails-commands#disable-asciifold)."
+"You can disable SSL verification, which is not recommended. Default is "
+"`true`."
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/connect-config-elasticsearch.md:123
+#, no-wrap
+msgid "zammad run rails r \"Setting.set('es_ssl_verify', false)\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:130
+#, markdown-text, no-wrap
+msgid ""
+"If you want to use custom certificates, you can find information about how "
+"to use\n"
+"them in Zammad's admin settings\n"
+"(_Settings > Security > SSL Certificates_).\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:117
+#: src/en/tutorials/connect-config-elasticsearch.md:133
 #, no-wrap
 msgid ""
 "Troubleshooting unsuccessful or issue not described?\n"
@@ -26267,13 +26301,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:126
+#: src/en/tutorials/connect-config-elasticsearch.md:142
 #, markdown-text, no-wrap
 msgid "Data missing from the web-UI / search data missing or incomplete"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:132
+#: src/en/tutorials/connect-config-elasticsearch.md:148
 #, markdown-text
 msgid ""
 "A commonly reported issue is data missing from the Web-UI. This could be "
@@ -26283,7 +26317,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:136
+#: src/en/tutorials/connect-config-elasticsearch.md:152
 #, markdown-text
 msgid ""
 "If you are experiencing this issue and installed Elasticsearch according to "
@@ -26292,19 +26326,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:137
+#: src/en/tutorials/connect-config-elasticsearch.md:153
 #, markdown-text, no-wrap
 msgid "Step 1: Verify Elasticsearch is running"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:139
+#: src/en/tutorials/connect-config-elasticsearch.md:155
 #, no-wrap
 msgid "sudo systemctl status elasticsearch\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:145
+#: src/en/tutorials/connect-config-elasticsearch.md:161
 #, markdown-text
 msgid ""
 "This should output something like the following, make sure it says `Active: "
@@ -26312,7 +26346,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:146
+#: src/en/tutorials/connect-config-elasticsearch.md:162
 #, no-wrap
 msgid ""
 "● elasticsearch.service - Elasticsearch\n"
@@ -26324,19 +26358,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:155
+#: src/en/tutorials/connect-config-elasticsearch.md:171
 #, markdown-text
 msgid "Otherwise, try restarting it and check again:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:156
+#: src/en/tutorials/connect-config-elasticsearch.md:172
 #, no-wrap
 msgid "sudo systemctl restart elasticsearch\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/connect-config-elasticsearch.md:160
+#: src/en/tutorials/connect-config-elasticsearch.md:176
 #, no-wrap
 msgid ""
 "If this fails, your Elasticsearch installation is probably broken.\n"
@@ -26345,13 +26379,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:166
+#: src/en/tutorials/connect-config-elasticsearch.md:182
 #, markdown-text, no-wrap
 msgid "Step 2: Verify Zammad can access Elasticsearch and rebuild the indexes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:170
+#: src/en/tutorials/connect-config-elasticsearch.md:186
 #, markdown-text
 msgid ""
 "Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with "
@@ -26359,13 +26393,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:176
+#: src/en/tutorials/connect-config-elasticsearch.md:192
 #, markdown-text
 msgid "This should start rebuilding the indexes and output its progress:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:177
+#: src/en/tutorials/connect-config-elasticsearch.md:193
 #, no-wrap
 msgid ""
 "Dropping indexes... done.\n"
@@ -26382,7 +26416,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:194
+#: src/en/tutorials/connect-config-elasticsearch.md:210
 #, markdown-text
 msgid ""
 "Depending on the system performance and amount of data, this can take a "
@@ -26391,7 +26425,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:199
+#: src/en/tutorials/connect-config-elasticsearch.md:215
 #, markdown-text
 msgid ""
 "If this fails or throws an error, there might be something else wrong with "
@@ -26401,7 +26435,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:200
+#: src/en/tutorials/connect-config-elasticsearch.md:216
 #, no-wrap
 msgid ""
 "In many situations where you're not successful with above steps, you\n"
@@ -26410,7 +26444,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:207
+#: src/en/tutorials/connect-config-elasticsearch.md:223
 #, markdown-text
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
@@ -26821,7 +26855,7 @@ msgid ""
 "sudo systemctl reload nftables\n"
 "```\n"
 "\n"
-"===CenOS, RHEL, OpenSUSE, SLES\n"
+"===CentOS, RHEL, OpenSUSE, SLES\n"
 "\n"
 "```sh\n"
 "sudo firewall-cmd --zone=public --add-service=http --permanent\n"

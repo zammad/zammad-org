@@ -112,8 +112,24 @@ Elasticsearch-у](https://www.elastic.co/docs/reference/text-analysis/analysis-a
 је укључена. Ово може бити корисно ако радите са текстом који садржи
 дијакитике и/или умлаутове.
 
-Ако вам треба прецизније претраживање, можете је искључити путем [Rails
-конзоле](/en/reference/rails-commands#disable-asciifold).
+In case you need a more exact search, you can turn it off:
+
+```sh
+zammad run rails r "Setting.set('es_asciifolding', false)"
+```
+
+### SSL verification
+
+You can disable SSL verification, which is not recommended. Default is
+`true`.
+
+```sh
+zammad run rails r "Setting.set('es_ssl_verify', false)"
+```
+
+If you want to use custom certificates, you can find information about how to use
+them in Zammad's admin settings
+(_Settings > Security > SSL Certificates_).
 
 ## Решавање проблема
 

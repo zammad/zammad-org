@@ -69,8 +69,8 @@ a partir do Debian 10 (Buster). Nosso exemplo usa a chain `input`, a sua pode
 ser diferente!
 :::
 
-Adicione as seguintes linhas ao `/etc/nftables.conf` ou ao seu arquivo de regras específico.
-Certifique-se de adicionar essas linhas à sua chain de entrada (input).
+Add the following lines to `/etc/nftables.conf` or your specific rule file.
+Ensure to add these lines to your input-chain.
 
 ```sh
 sudo tcp dport { http, https } accept
@@ -80,8 +80,8 @@ sudo tcp dport { http, https } accept
 sudo udp dport { http, https } accept
 ```
 
-O resultado pode se parecer com o seguinte. Tenha em mente que seu ambiente
-pode exigir regras diferentes/adicionais.
+The result can look like the following. Keep in mind that your environment
+could require different / more rules.
 
 ```sh
 table inet filter {
@@ -103,13 +103,13 @@ table inet filter {
 }
 ```
 
-Para carregar as regras, execute:
+To load the rules, run:
 
 ```sh
 sudo systemctl reload nftables
 ```
 
-===CenOS, RHEL, OpenSUSE, SLES
+===CentOS, RHEL, OpenSUSE, SLES
 
 ```sh
 sudo firewall-cmd --zone=public --add-service=http --permanent

@@ -116,9 +116,24 @@ Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asci
 aktiviert. Dies kann nützlich sein, wenn Sie mit Text arbeiten, der
 Diakritika und/oder Umlaute enthält.
 
-Falls Sie eine genauere Suche benötigen, können Sie dies per
-[Rails-Befehlen](/de/reference/rails-commands#asciifold-deaktivieren)
-deaktivieren.
+In case you need a more exact search, you can turn it off:
+
+```sh
+zammad run rails r "Setting.set('es_asciifolding', false)"
+```
+
+### SSL verification
+
+You can disable SSL verification, which is not recommended. Default is
+`true`.
+
+```sh
+zammad run rails r "Setting.set('es_ssl_verify', false)"
+```
+
+If you want to use custom certificates, you can find information about how to use
+them in Zammad's admin settings
+(_Settings > Security > SSL Certificates_).
 
 ## Fehlerbehebung
 

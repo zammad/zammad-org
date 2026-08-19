@@ -110,7 +110,23 @@ By default, the
 [Asciifold feature of Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asciifolding-tokenfilter){target=_blank}
 is enabled. This can be useful if you deal with text which includes diacritics and/or umlauts.
 
-In case you need a more exact search, you can turn it off via [Rails console](/en/reference/rails-commands#disable-asciifold).
+In case you need a more exact search, you can turn it off:
+
+```sh
+zammad run rails r "Setting.set('es_asciifolding', false)"
+```
+
+### SSL verification
+
+You can disable SSL verification, which is not recommended. Default is `true`.
+
+```sh
+zammad run rails r "Setting.set('es_ssl_verify', false)"
+```
+
+If you want to use custom certificates, you can find information about how to use
+them in Zammad's admin settings
+(_Settings > Security > SSL Certificates_).
 
 ## Troubleshooting
 

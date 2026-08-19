@@ -108,7 +108,7 @@ To load the rules, run:
 sudo systemctl reload nftables
 ```
 
-===CenOS, RHEL, OpenSUSE, SLES
+===CentOS, RHEL, OpenSUSE, SLES
 
 ```sh
 sudo firewall-cmd --zone=public --add-service=http --permanent

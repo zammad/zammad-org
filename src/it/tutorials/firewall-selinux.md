@@ -63,7 +63,58 @@ Trattiamo `nftables` in questa parte - `iptables` è sconsigliato
 a partire da Debian 10.
 :::
 
-Aggiungi le seguenti righe a `/etc/nftables.conf` o al tuo specifico file di regole.
-Assicurati di aggiungere.
+Add the following lines to `/etc/nftables.conf` or your specific rule file.
+Ensure to add these lines to your input-chain.
+
+```sh
+sudo tcp dport { http, https } accept
+```
+
+```sh
+sudo udp dport { http, https } accept
+```
+
+The result can look like the following. Keep in mind that your environment
+could require different / more rules.
+
+```sh
+table inet filter {
+   chain input {
+      type filter hook input priority 0; policy drop;
+      ct state established,related accept
+      tcp dport ssh log accept
+      tcp dport { http, https } accept
+      udp dport { http, https } accept
+   }
+
+   chain forward {
+      type filter hook forward priority 0; policy accept;
+   }
+
+   chain output {
+      type filter hook output priority 0; policy accept;
+   }
+}
+```
+
+To load the rules, run:
+
+```sh
+sudo systemctl reload nftables
+```
+
+===CentOS, RHEL, OpenSUSE, SLES
+
+```sh
+sudo firewall-cmd --zone=public --add-service=http --permanent
+```
+
+```sh
+sudo firewall-cmd --zone=public --add-service=https --permanent
+```
+
+```sh
+sudo firewall-cmd --reload
+```
 
 ::::
