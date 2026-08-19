@@ -86,7 +86,7 @@ sudo locale-gen en_US.UTF-8
 ```
 
 ```sh
-echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
 ```
 
 After fixing it, make sure to check the output again for including
@@ -111,7 +111,7 @@ sudo locale-gen en_US.UTF-8
 ```
 
 ```sh
-echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
 ```
 
 After fixing it, make sure to check the output again for including
@@ -303,6 +303,10 @@ sudo zypper install zammad
 ```
 
 ===CentOS/RHEL
+
+```sh
+sudo dnf update
+```
 
 ```sh
 sudo dnf install zammad

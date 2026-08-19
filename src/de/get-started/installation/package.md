@@ -70,14 +70,14 @@ sudo dnf install curl epel-release
 ::: tabs key:distros
 
 === Ubuntu
-Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
+List your current locale settings:
 
 ```sh
 locale | grep "LANG="
 ```
 
-Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
-Problem wie folgt beheben:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
 sudo apt install locales
@@ -88,21 +88,21 @@ sudo locale-gen en_US.UTF-8
 ```
 
 ```sh
-echo "LANG=de_US.UTF-8" > sudo /etc/default/locale
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
 ```
 
-Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
-`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === Debian
-Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
+List your current locale settings:
 
 ```sh
 locale | grep "LANG="
 ```
 
-Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
-Problem wie folgt beheben:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
 sudo apt install locales
@@ -113,47 +113,45 @@ sudo locale-gen en_US.UTF-8
 ```
 
 ```sh
-echo "LANG=de_US.UTF-8" > sudo /etc/default/locale
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
 ```
 
-
-Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
-`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === OpenSUSE/SLES
-Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
+List your current locale settings:
 
 ```sh
 localectl status | grep LANG
 ```
-Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
-Problem wie folgt beheben:
+
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
-sudo localectl set-locale LANG=de_US.UTF-8
+sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-
-Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
-`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 ===CentOS/RHEL
-Listen Sie Ihre aktuellen Einstellungen für die Sprache auf:
+List your current locale settings:
 
 ```sh
 locale | grep "LANG="
 ```
 
-Wenn die Ausgabe nicht `.utf8` enthält, können Sie dieses
-Problem wie folgt beheben:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
-sudo localectl set-locale LANG=de_US.UTF-8
+sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-
-Nachdem Sie dies durchgeführt haben, überprüfen Sie die Ausgabe noch einmal auf
-`.utf8`. Ein Neustart kann helfen, sofern nicht erfolgreich.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 :::
 
@@ -308,6 +306,10 @@ sudo zypper install zammad
 ```
 
 ===CentOS/RHEL
+
+```sh
+sudo dnf update
+```
 
 ```sh
 sudo dnf install zammad

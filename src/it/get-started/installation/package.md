@@ -69,36 +69,88 @@ sudo dnf install curl epel-release
 ::: tabs key:distros
 
 === Ubuntu
+List your current locale settings:
 
 ```sh
-sudo apt install curl apt-transport-https gnupg
+locale | grep "LANG="
 ```
+
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
+sudo apt install locales
+```
+
+```sh
+sudo locale-gen en_US.UTF-8
+```
+
+```sh
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
+```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === Debian
+List your current locale settings:
 
 ```sh
-sudo apt install curl apt-transport-https gnupg
+locale | grep "LANG="
 ```
+
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
+sudo apt install locales
+```
+
+```sh
+sudo locale-gen en_US.UTF-8
+```
+
+```sh
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
+```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === OpenSUSE/SLES
-
-OpenSUSE non richiede passaggi aggiuntivi!
-
-SLES 15 richiede l'attivazione di repository aggiuntivi. Per farlo, eseguire i seguenti comandi.
+List your current locale settings:
 
 ```sh
-sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
+localectl status | grep LANG
 ```
+
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
-sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
+sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-=== CentOS/RHEL
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
+
+===CentOS/RHEL
+List your current locale settings:
 
 ```sh
-sudo dnf install curl epel-release
+locale | grep "LANG="
 ```
+
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
+
+```sh
+sudo localectl set-locale LANG=en_US.UTF-8
+```
+
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 :::
 
@@ -263,7 +315,11 @@ sudo zypper refresh
 sudo zypper install zammad
 ```
 
-=== CentOS/RHEL
+===CentOS/RHEL
+
+```sh
+sudo dnf update
+```
 
 ```sh
 sudo dnf install zammad

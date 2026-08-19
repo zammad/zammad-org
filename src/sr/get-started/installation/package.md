@@ -66,14 +66,14 @@ sudo yum install wget epel-release
 ::: tabs key:distros
 
 === Ubuntu
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
 ```sh
 locale | grep "LANG="
 ```
 
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
 sudo apt install locales
@@ -84,21 +84,21 @@ sudo locale-gen en_US.UTF-8
 ```
 
 ```sh
-echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === Debian
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
 ```sh
 locale | grep "LANG="
 ```
 
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
 sudo apt install locales
@@ -109,45 +109,45 @@ sudo locale-gen en_US.UTF-8
 ```
 
 ```sh
-echo "LANG=en_US.UTF-8" > sudo /etc/default/locale
+echo "LANG=en_US.UTF-8" | sudo tee /etc/default/locale
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 === OpenSUSE/SLES
-Излистајте ваша тренутна locale подешавања:
+List your current locale settings:
 
 ```sh
 localectl status | grep LANG
 ```
 
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
-=== CentOS/RHEL
-Излистајте ваша тренутна locale подешавања:
+===CentOS/RHEL
+List your current locale settings:
 
 ```sh
 locale | grep "LANG="
 ```
 
-Уколико горња команда не врати `<lang_code>.utf8`, ово можете исправити
-на следећи начин:
+If above does not return `<lang_code>.utf8`, you can correct this
+issue as follows:
 
 ```sh
 sudo localectl set-locale LANG=en_US.UTF-8
 ```
 
-Након промене, обавезно поново излистајте подешавање и проверите да ли враћа
-`<lang_code>.utf8`. Уколико буде неуспешно, рестартовање може помоћи.
+After fixing it, make sure to check the output again for including
+`<lang_code>.utf8`. A reboot may help if unsuccessful.
 
 :::
 
@@ -284,7 +284,7 @@ sudo apt install zammad
 === OpenSUSE/SLES
 
 ```sh
-sudo zypper ref
+sudo zypper refresh
 ```
 
 ```sh
@@ -294,13 +294,11 @@ sudo zypper install zammad
 ===CentOS/RHEL
 
 ```sh
-sudo yum install zammad
+sudo dnf update
 ```
 
-Услед ограничења packager.io, биће вам неопходне пермисије за јавне датотеке на CentOS:
-
 ```sh
-sudo chmod -R 755 /opt/zammad/public/
+sudo dnf install zammad
 ```
 
 :::
