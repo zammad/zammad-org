@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-19 08:51+0200\n"
+"POT-Creation-Date: 2026-08-19 09:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26714,6 +26714,230 @@ msgstr ""
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
 "installation is running and rebuilt the indexes."
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/custom-kb-css.md:1 src/en/tutorials/custom-kb-css.md:6
+#, markdown-text, no-wrap
+msgid "Custom knowledge base CSS"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-css.md:10
+#, markdown-text
+msgid ""
+"You can apply visual changes to your public knowledge base via custom CSS.  "
+"To do so, follow these steps:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/custom-kb-css.md:20
+#, markdown-text
+msgid ""
+"Add your CSS file(s) inside the directory "
+"`app/assets/stylesheets/custom_knowledge_base_public` of your Zammad "
+"installation. You can use one or more files and choose any name, as long as "
+"they have a `.css` extension."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/custom-kb-css.md:20
+#, markdown-text
+msgid ""
+"Precompile the assets by using the command `rake assets:precompile` (depends "
+"on your installation method, see the [Rails "
+"commands](/en/reference/rails-commands) reference)."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/custom-kb-css.md:20
+#, markdown-text
+msgid "Restart Zammad."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/custom-kb-css.md:20
+#, markdown-text
+msgid ""
+"Access your published knowledge base. Please note: the visual changes only "
+"affect the published version and not the edit screen."
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/custom-kb-url.md:1 src/en/tutorials/custom-kb-url.md:6
+#, markdown-text, no-wrap
+msgid "Custom knowledge base URL"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:11
+#, markdown-text
+msgid ""
+"If you want to publish Zammad's knowledge base under a different URL than "
+"the default one, you can follow our configuration example using [NPM (Nginx "
+"Proxy Manager)](https://nginxproxymanager.com/){target=_blank} below."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/custom-kb-url.md:12
+#, markdown-text, no-wrap
+msgid "Configure Zammad"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:19
+#, markdown-text
+msgid ""
+"Go to **Knowledge Base** in Zammad's admin settings and select the **Custom "
+"URL** tab."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:19
+#, markdown-text
+msgid ""
+"Add the URL you want to publish your knowledge base under and click the "
+"`Submit` button."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:19
+#, markdown-text
+msgid ""
+"Click on the `Web Server Configuration` button to get the configuration for "
+"your NPM. You can already copy the snippet or just leave it open — it is "
+"needed for the NPM configuration."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/custom-kb-url.md:20
+#, markdown-text, no-wrap
+msgid "Configure NPM"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:23
+#, markdown-text
+msgid "In NPM, add a new proxy host with the following parameters:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/custom-kb-url.md:24
+#, markdown-text, no-wrap
+msgid "Details tab"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:29
+#, markdown-text
+msgid ""
+"**Domain Names**: the domain under which you want to publish your knowledge "
+"base"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:29
+#, markdown-text
+msgid "**Forwarded Hostname / IP**: the host/IP of your Zammad instance"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:29
+#, markdown-text
+msgid ""
+"**Forward Port**: the port of your Zammad (by default `8080` in Portainer "
+"deployment)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:31
+#, markdown-text
+msgid ""
+"![Screenshot shows NPM configuration dialog with details "
+"tab](/screenshots/tutorials/custom-kb-url/npm-details-tab.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/custom-kb-url.md:32
+#, markdown-text, no-wrap
+msgid "Custom location tab"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+#, markdown-text
+msgid "**Define location**: `/`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+#, markdown-text
+msgid "**Forward Hostname / IP**: same as above"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+#, markdown-text
+msgid "**Forward Port**: same as above"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+#, markdown-text
+msgid ""
+"Click on the cogwheel to open the custom location configuration text field "
+"and paste `proxy_set_header X-ORIGINAL-URL $request_uri;` (the lower part of "
+"Zammad's snippet)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:42
+#, markdown-text
+msgid ""
+"![Screenshot shows NPM configuration dialog with custom locations "
+"tab](/screenshots/tutorials/custom-kb-url/npm-custom-locations-tab.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/custom-kb-url.md:43
+#, markdown-text, no-wrap
+msgid "Advanced tab"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:47
+#, markdown-text, no-wrap
+msgid ""
+"**Custom Nginx Configuration**: add the upper part of Zammad's snippet,\n"
+"which should be similar to the following:\n"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: src/en/tutorials/custom-kb-url.md:48
+#, no-wrap
+msgid ""
+"# Add following lines to \"server\" directive\n"
+"if ($host = help.your.domain ) {\n"
+"  rewrite ^/(api|assets)/(.*)$ /$1/$2 last;\n"
+"  rewrite ^(.*)$ /help$1 last;\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:57
+#, markdown-text
+msgid ""
+"![Screenshot shows NPM configuration dialog with advanced "
+"tab](/screenshots/tutorials/custom-kb-url/npm-advanced-tab.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:59
+#, markdown-text
+msgid ""
+"After following these steps, your knowledge base should be published under a "
+"custom URL. You can test it by clicking the preview button in your knowledge "
+"base."
 msgstr ""
 
 #. type: Title #
