@@ -136,6 +136,15 @@ site. Depende do seu navegador como fazer isso exatamente. Se você não consegu
 uma olhada nas configurações do seu navegador.
 :::
 
+::: info
+Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear
+after about ten minutes. Ones Zammad marked as read for you - which happens when someone else changes the state of the
+ticket the notification belongs to - remain for about eight hours. Independently of this, no notification is kept for
+longer than nine months.
+
+The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.
+:::
+
 ### Visões gerais
 
 Altere a ordem das visões gerais da sua conta. Basta arrastar e soltar

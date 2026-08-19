@@ -134,6 +134,15 @@ Zammad налог. У потреби, можете опозвати присту
 за сајт. Начин зависи од вашег web прегледача. Ако је не пронађете, претражите интернет или погледајте поставке прегледача.
 :::
 
+::: info
+Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear
+after about ten minutes. Ones Zammad marked as read for you - which happens when someone else changes the state of the
+ticket the notification belongs to - remain for about eight hours. Independently of this, no notification is kept for
+longer than nine months.
+
+The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.
+:::
+
 ### Прегледи
 
 Промените редослед прегледа за ваш налог. Једноставно превуците их кликом на

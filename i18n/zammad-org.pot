@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-19 09:35+0200\n"
+"POT-Creation-Date: 2026-08-19 11:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5859,7 +5859,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/user-profile.md:117
+#: src/en/documentation/use/user-profile.md:126
 #, markdown-text, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -7746,8 +7746,24 @@ msgid ""
 "a look at your browser's settings.\n"
 msgstr ""
 
+#. type: Fenced div block (info)
+#: src/en/documentation/use/user-profile.md:117
+#, no-wrap
+msgid ""
+"Notifications you have already read are removed from the list "
+"automatically. Ones you marked as read yourself disappear\n"
+"after about ten minutes. Ones Zammad marked as read for you - which happens "
+"when someone else changes the state of the\n"
+"ticket the notification belongs to - remain for about eight "
+"hours. Independently of this, no notification is kept for\n"
+"longer than nine months.\n"
+"\n"
+"The clean-up runs every two hours, so a notification can stay visible "
+"somewhat longer than the times given above.\n"
+msgstr ""
+
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:122
+#: src/en/documentation/use/user-profile.md:131
 #, markdown-text
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
@@ -7757,7 +7773,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/user-profile.md:123
+#: src/en/documentation/use/user-profile.md:132
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, markdown-text, no-wrap
@@ -7765,7 +7781,7 @@ msgid "Calendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:128
+#: src/en/documentation/use/user-profile.md:137
 #, markdown-text
 msgid ""
 "Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
