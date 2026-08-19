@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-19 07:25+0200\n"
+"POT-Creation-Date: 2026-08-19 08:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,9 +176,10 @@ msgstr ""
 msgid "https://github.com/zammad"
 msgstr ""
 
-#. type: Title #
+#. type: Title ##
 #: .vitepress/search.en.yaml:1 src/en/documentation/use/guides/search.md:1
 #: src/en/documentation/use/guides/search.md:6
+#: src/en/reference/rest-api/audit-log.md:39
 #, markdown-text, no-wrap
 msgid "Search"
 msgstr ""
@@ -19962,15 +19963,23 @@ msgid ""
 "[list](#list-articles-by-ticket) affected articles first.\n"
 msgstr ""
 
-#. type: Fenced div block (tip)
-#: src/en/reference/rest-api/calendar.md:8
-#, no-wrap
+#. type: Title #
+#: src/en/reference/rest-api/audit-log.md:1
+#: src/en/reference/rest-api/audit-log.md:6
+#, markdown-text, no-wrap
+msgid "Audit log"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:10
+#, markdown-text
 msgid ""
-"Calendars belong to [Zammad's SLA "
-"calculation](/en/reference/rest-api/sla).\n"
+"The audit log records security-relevant changes to your Zammad system: who "
+"changed what, and when. The audit log is read-only."
 msgstr ""
 
 #. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:11
 #: src/en/reference/rest-api/calendar.md:12
 #: src/en/reference/rest-api/checklist.md:165
 #: src/en/reference/rest-api/group.md:17
@@ -19987,6 +19996,285 @@ msgstr ""
 #: src/en/reference/rest-api/user.md:26
 #, markdown-text, no-wrap
 msgid "List"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:14
+#: src/en/reference/rest-api/audit-log.md:30
+#: src/en/reference/rest-api/audit-log.md:42
+#, markdown-text
+msgid "Required permission: `admin.audit_log`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:16
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/audit_logs`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:20
+#, markdown-text
+msgid ""
+"The endpoint supports pagination. The default page size is `500`.  Entries "
+"are returned ordered by `id` (ascending). Pass `?sort_by=id` and "
+"`?order_by=DESC` to return the newest entries first."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/audit-log.md:21
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-list-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:27
+#: src/en/reference/rest-api/calendar.md:24
+#: src/en/reference/rest-api/checklist.md:25
+#: src/en/reference/rest-api/checklist.md:97
+#: src/en/reference/rest-api/checklist.md:177
+#: src/en/reference/rest-api/group.md:29
+#: src/en/reference/rest-api/knowledgebase.md:31
+#: src/en/reference/rest-api/knowledgebase.md:146
+#: src/en/reference/rest-api/knowledgebase.md:268
+#: src/en/reference/rest-api/notification.md:32
+#: src/en/reference/rest-api/object.md:28
+#: src/en/reference/rest-api/organization.md:24
+#: src/en/reference/rest-api/priorities.md:21
+#: src/en/reference/rest-api/role.md:20
+#: src/en/reference/rest-api/shared-draft.md:8
+#: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
+#: src/en/reference/rest-api/ticket.md:26
+#: src/en/reference/rest-api/time-accounting.md:20
+#: src/en/reference/rest-api/user.md:38
+#, markdown-text, no-wrap
+msgid "Show"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:32
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/audit_logs/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/audit-log.md:33
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:47
+#, markdown-text
+msgid ""
+"The search endpoint accepts the Zammad search-backend `query` syntax. The "
+"simplest case is a literal substring on a single indexed field such as "
+"`auditable_name`, `auditable_type` or `user_fullname`:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:49
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/audit_logs/search?query={search-string}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/audit-log.md:50
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-search-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:59
+#, markdown-text
+msgid ""
+"To filter on a specific attribute rather than substring-match the whole "
+"record, prefix the attribute name. You can even use the logical `AND` "
+"connector to narrow down the results:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:62
+#, markdown-text
+msgid ""
+"`GET`-Request sent: `/api/v1/audit_logs/search?query=auditable_type:Macro "
+"AND user_id:3`"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/rest-api/audit-log.md:63
+#, no-wrap
+msgid ""
+"Search matches are case-sensitive and search only the indexed\n"
+"attribute fields (`auditable_name`, `auditable_type`,\n"
+"`user_fullname` and so on). The `value_from` and `value_to`\n"
+"payloads are not searchable.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/audit-log.md:70
+#, no-wrap
+msgid ""
+"By default the response is a bare JSON array of matching entries.\n"
+"Pass `with_total_count=true` on the URL (or `with_total_count:\n"
+"true` in the body of a `POST` request) to wrap the response in\n"
+"an object that also contains the `total_count`. Send a `POST`\n"
+"request when the query is too long or complex for a URL.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:78
+#, markdown-text, no-wrap
+msgid "Field reference"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:82
+#, markdown-text
+msgid "`id` : Integer primary key of the audit log entry."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:86
+#, markdown-text, no-wrap
+msgid ""
+"`user_id`\n"
+": ID of the user that triggered the change. `null` when the entry\n"
+"  was written by a background job without a current user.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:91
+#, markdown-text, no-wrap
+msgid ""
+"`user_fullname`\n"
+": Full name of the user at the time the entry was written. Stored\n"
+"  separately so it remains readable after the user account is\n"
+"  removed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:98
+#, markdown-text, no-wrap
+msgid ""
+"`action_type`\n"
+": Type of the recorded change. One of: `create` (a record was\n"
+"  added), `update` (an existing record was modified), `destroy`\n"
+"  (a record was removed), `switch_to` (a user took over another\n"
+"  user's session via _View from user's perspective_),\n"
+"  `switch_back_to` (the original session was resumed).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:101
+#, markdown-text
+msgid "`auditable_id` : ID of the record that was changed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:105
+#, markdown-text, no-wrap
+msgid ""
+"`auditable_type`\n"
+": Class name of the record that was changed (e.g. `Macro`,\n"
+"  `Setting`, `KnowledgeBase`, `ChecklistTemplate`, `Job`).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:110
+#, markdown-text, no-wrap
+msgid ""
+"`auditable_name`\n"
+": Display name of the changed record at the time the entry was\n"
+"  written. Stored separately so it remains readable after the record\n"
+"  itself is gone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:114
+#, markdown-text, no-wrap
+msgid ""
+"`value_from`\n"
+": Object (JSON) holding the previous state of the audited\n"
+"  attributes. Empty (`{}`) on `create` entries.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:118
+#, markdown-text, no-wrap
+msgid ""
+"`value_to`\n"
+": Object (JSON) holding the new state of the audited attributes.\n"
+"  Empty (`{}`) on `destroy` entries.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:123
+#, markdown-text, no-wrap
+msgid ""
+"`source_ip`\n"
+": IP address that issued the underlying request. `Rails console`\n"
+"  or `Rails runner` is stored when the entry was written from a\n"
+"  maintenance script.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:128
+#, markdown-text, no-wrap
+msgid ""
+"`preferences`\n"
+": Object (JSON) holding additional per-entry metadata. For\n"
+"  `update` entries this contains a `changed_attributes` array\n"
+"  listing the attributes that actually changed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:132
+#, markdown-text, no-wrap
+msgid ""
+"`created_at`\n"
+": Timestamp at which the entry was written. Audit log entries are\n"
+"  append-only.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:136
+#, markdown-text, no-wrap
+msgid ""
+"`updated_at`\n"
+": Same as `created_at` for audit log entries. Audit log entries\n"
+"  are append-only.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:137
+#, markdown-text, no-wrap
+msgid "Lifecycle"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:140
+#, markdown-text
+msgid ""
+"A scheduled task removes entries older than **12 months** every day.  Use "
+"`AuditLog.cleanup` in the Rails console to trigger a cleanup manually."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/calendar.md:8
+#, no-wrap
+msgid ""
+"Calendars belong to [Zammad's SLA "
+"calculation](/en/reference/rest-api/sla).\n"
 msgstr ""
 
 #. type: Plain text
@@ -20012,29 +20300,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/calendars/get-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/calendar.md:24
-#: src/en/reference/rest-api/checklist.md:25
-#: src/en/reference/rest-api/checklist.md:97
-#: src/en/reference/rest-api/checklist.md:177
-#: src/en/reference/rest-api/group.md:29
-#: src/en/reference/rest-api/knowledgebase.md:31
-#: src/en/reference/rest-api/knowledgebase.md:146
-#: src/en/reference/rest-api/knowledgebase.md:268
-#: src/en/reference/rest-api/notification.md:32
-#: src/en/reference/rest-api/object.md:28
-#: src/en/reference/rest-api/organization.md:24
-#: src/en/reference/rest-api/priorities.md:21
-#: src/en/reference/rest-api/role.md:20
-#: src/en/reference/rest-api/shared-draft.md:8
-#: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
-#: src/en/reference/rest-api/ticket.md:26
-#: src/en/reference/rest-api/time-accounting.md:20
-#: src/en/reference/rest-api/user.md:38
-#, markdown-text, no-wrap
-msgid "Show"
 msgstr ""
 
 #. type: Plain text
