@@ -82,54 +82,62 @@ Administrator welche hinzugefügt hat.
   Entfernt überflüssige Teile und schreibt Ihren Text in einer klaren und
   verständlichen Weise um.
 
-## Knowledge base assistant
+## Knowledge Base Assistent
 
-![Screenshot shows the related knowledge section of the ticket sidebar with
-an AI-suggested knowledge base
-answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Der Screenshot zeigt den Abschnitt "Verwandtes Wissen" in der
+Ticket-Seitenleiste mit einer von der KI vorgeschlagenen Antwort aus der
+Knowledge
+Base](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
-### Knowledge base answer generation
+### Knowledge Base Antworterstellung
 
-This feature allows you to trigger an AI-based generation of a [knowledge
-base](/en/documentation/use/guides/knowledge-base)  answer from a
-ticket. This is useful if you often get similar tickets and want to quickly
-create a knowledge base article for such cases. Doing so helps you and your
-colleagues solve similar tickets more efficiently in the future. It might
-even reduce incoming ticket volume when customers can resolve their issues
-directly from the published knowledge base.
+Mit dieser Funktion können Sie die KI-gestützte Erstellung einer Antwort in
+der [Knowledge Base](/de/documentation/use/guides/knowledge-base) direkt aus
+einem Ticket heraus anstoßen. Dies ist nützlich, wenn Sie häufig ähnliche
+Tickets erhalten und für solche Fälle schnell einen Artikel für die
+Knowledge Base erstellen möchten. Auf diese Weise können Sie und Ihre
+Kollegen ähnliche Tickets in Zukunft effizienter bearbeiten. Es könnte sogar
+dazu beitragen, das Volumen der eingehenden Tickets zu reduzieren, wenn
+Kunden ihre Probleme direkt selbst über die veröffentlichte Knowledge Base
+lösen können.
 
-This feature is available in the **Related knowledge** section of the ticket
-sidebar. Click the `Add AI draft` button to trigger the answer generation.
+Diese Funktion ist im Abschnitt **Verwandtes Wissen** in der
+Ticket-Seitenleiste verfügbar. Klicken Sie auf die Schaltfläche `KI-Entwurf
+hinzufügen`, um die Generierung einer Antwort auszulösen.
 
-Things to consider:
+Zu beachtende Punkte:
 
-- The knowledge base answer is generated as draft and not published
-  automatically.
-- You are set as the answer's author.
-- The answer is generated in the default language of your knowledge base.
-- The answer includes a note in the content and a tag (`ai-generated`) about
-  the AI generation.
-- A link to the answer is added to the ticket from which you triggered the
-  answer generation.
-- The answer is created in a knowledge base category for which you have
-  editor permissions. The AI chooses one of these categories.
+- Die Antwort in der Knowledge Base wird als Entwurf erstellt und nicht
+  automatisch veröffentlicht.
+- Sie sind als Verfasser der Antwort angegeben.
+- Die Antwort wird in der Standardsprache Ihrer Knowledge Base erstellt.
+- Die Antwort enthält eine Notiz im Inhaltsbereich und einen Tag
+  (`ai-generated`) über die KI-Erstellung.
+- Dem Ticket, über das Sie die Antwortgenerierung ausgelöst haben, wird ein
+  Link zur Antwort hinzugefügt.
+- Die Antwort wird in einer Kategorie der Knowledge Base erstellt, für die
+  Sie Bearbeitungsrechte besitzen. Die KI wählt eine dieser Kategorien aus.
 
-If a similar knowledge base answer already exists, Zammad shows it in a
-dialog before creating a new one. This gives you the chance to review
-existing related answers to prevent duplicate submissions.
+Falls bereits eine ähnliche Antwort in der Knowledge Base vorhanden ist,
+zeigt Zammad diese in einem Dialogfeld an, bevor eine neue Antwort erstellt
+wird. So haben Sie die Möglichkeit, bereits vorhandene, themenverwandte
+Antworten zu prüfen, um doppelte Einträge zu vermeiden.
 
-### Knowledge base answer suggestion
+### Knowledge Base-Antwortvorschläge
 
-This feature compares the ticket content against the knowledge base and
-shows relevant answers under **Suggested by AI** if they meet the
-admin-configured score threshold. Each suggestion shows the title of the
-answer and more details on hover. An additional relevance score is only
-shown to users with the corresponding admin permissions. Click on the title
-to open the answer in the knowledge base. Click the ::+:: on the right side
-which appears when hovering with the mouse to link it to the ticket.
+Diese Funktion vergleicht den Inhalt des Tickets mit der Knowledge Base und
+zeigt relevante Antworten unter **Vorgeschlagen von KI** an, sofern diese
+den vom Administrator festgelegten Schwellenwert für die Relevanzbewertung
+erreichen. Jeder Vorschlag zeigt den Titel der Antwort an; weitere Details
+werden beim Bewegen des Mauszeigers über den Vorschlag angezeigt. Eine
+zusätzliche Relevanzbewertung wird nur Benutzern mit den entsprechenden
+Administratorrechten angezeigt. Klicken Sie auf den Titel, um die Antwort in
+der Knowledge Base zu öffnen. Klicken Sie auf die Schaltfläche ::+:: auf der
+rechten Seite, das beim Bewegen des Mauszeigers erscheint, um die Antwort
+mit dem Ticket zu verknüpfen.
 
-If no suggestions are available, the message "No suggestions." is displayed
-instead.
+Sind keine Vorschläge verfügbar, wird stattdessen die Meldung "Keine
+Vorschläge." angezeigt.
 
 ## KI-Agenten
 

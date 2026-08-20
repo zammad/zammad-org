@@ -112,23 +112,23 @@ Elasticsearch](https://www.elastic.co/docs/reference/text-analysis/analysis-asci
 está habilitado. Isso pode ser útil se você lida com texto que inclui
 diacríticos e/ou trema.
 
-In case you need a more exact search, you can turn it off:
+Caso você precise de uma pesquisa mais exata, pode desativá-la:
 
 ```sh
 zammad run rails r "Setting.set('es_asciifolding', false)"
 ```
 
-### SSL verification
+### Verificação SSL
 
-You can disable SSL verification, which is not recommended. Default is
+Você pode desativar a verificação SSL, o que não é recomendado. O padrão é
 `true`.
 
 ```sh
 zammad run rails r "Setting.set('es_ssl_verify', false)"
 ```
 
-If you want to use custom certificates, you can find information about how to use
-them in Zammad's admin settings
+Se você quiser usar certificados personalizados, pode encontrar informações sobre como usá-los
+nas configurações de administração do Zammad
 (_Settings > Security > SSL Certificates_).
 
 ## Solução de problemas

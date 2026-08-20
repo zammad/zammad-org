@@ -195,9 +195,9 @@ a correta. As duas variáveis no final da lista são válidas para ambos os tipo
 : por padrão, o container Nginx do Zammad responderá a todas as solicitações. Você pode fornecer seu IP/FQDN se quiser.
 
 `NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
-: If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx)
-  `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. Set this if you face a
-  `CSRF Token Verification Failed` error.
+: se o container Nginx do Zammad **não for** o servidor upstream (ou seja, você está usando outro proxy na frente do Nginx),
+  `$scheme` pode estar incorreto. Você pode definir o esquema correto, `http` ou `https`, se necessário. Defina isso se enfrentar um
+  erro `CSRF Token Verification Failed`.
 
 `NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : defina o tamanho máximo de dados que um
 cliente pode enviar ao servidor.

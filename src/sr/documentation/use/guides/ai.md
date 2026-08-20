@@ -39,10 +39,12 @@ Zammad постаје све паметнији! Проширујемо Zammad-�
 
 ## Алатке помоћника писања
 
-За коришћење излистаних функција, прво морате да обележите текст на који
-желите да се измене примене. Након тога, кликните на **Smart Editor** дугме
-при дну новог чланка и изаберите једну од следећих функција, у зависности од
-жељеног понашања.
+Алатке помоћника за писање уз помоћ вештачке интелигенције су дизајниране да
+поједноставе и унапреде ваш радни ток за одговор на тикет док додајете
+чланак.  За коришћење алатке, прво морате да обележите текст на који желите
+да се измене примене. Након тога, кликните на дугме ``Алатке помоћника за
+писање`` са леве стране траке са алаткама уређивача и изаберите једну од
+следећих алатки, у зависности од жељеног понашања.
 
 ![Снимак екрана који приказује мени радњи
 макроа](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
@@ -104,9 +106,9 @@ Things to consider:
 - The answer is created in a knowledge base category for which you have
   editor permissions. The AI chooses one of these categories.
 
-If a similar knowledge base answer already exists, Zammad shows it in a
-dialog before creating a new one. This gives you the chance to review
-existing related answers to prevent duplicate submissions.
+Уколико већ постоји сличан чланак у бази знања, Zammad га приказује у
+дијалогу пре него што генерише нови. Ово вам даје прилику да прегледате
+постојеће чланке и спречите дупликате.
 
 ### Knowledge base answer suggestion
 
@@ -135,7 +137,8 @@ which appears when hovering with the mouse to link it to the ticket.
 
 Уколико AI агент освежи тикет, можете то и видети у евиденцији историјата
 тикета под називом AI агента. Уколико приметите проблеме са начином рада AI
-агента, обавестите о томе свог Zammad администратора.
+агента, обавестите о томе свог Zammad администратора. Пример евиденције AI
+агента у историјату тикета:
 
 ![Пример снимка екрана (пуна
 страна)](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)

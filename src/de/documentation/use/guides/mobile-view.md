@@ -1,9 +1,9 @@
 ---
 order: 5
-title: 'Mobile view'
+title: Mobilansicht
 ---
 
-# Mobile view
+# Mobilansicht
 
 ## Einführung
 

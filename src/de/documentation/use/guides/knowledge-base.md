@@ -5,85 +5,96 @@ title: 'Knowledge Base'
 
 # Knowledge Base
 
-The knowledge base is Zammad's built-in content library for organizing FAQs,
-how-tos, internal processes, and more.  Customers can browse published
-answers (articles) for self-service, while agents can use answers as
-internal references or insert them directly into ticket replies.
+Die Knowledge Base ist Zammads integrierte Inhaltsbibliothek zur
+Organisation von FAQs, Anleitungen, internen Prozessen und vielem
+mehr. Kunden können veröffentlichte Antworten (Artikel) selbst durchsuchen,
+während Agenten die Antworten als interne Referenz nutzen oder direkt in
+Ticket-Antworten einfügen können.
 
-This guide is written for agents who want to edit the knowledge base or use
-it in their daily work. Customers should be able to browse through the
-public knowledge base without detailed instructions.
+Dieser Leitfaden richtet sich an Agenten, die die Knowledge Base bearbeiten
+oder in ihrer täglichen Arbeit nutzen möchten. Kunden sollten in der Lage
+sein, die öffentliche Knowledge Base ohne detaillierte Anweisungen zu
+durchsuchen.
 
-This feature is optional and must be activated by your administrator.
+Diese Funktion ist optional und muss von Ihrem Administrator aktiviert
+werden.
 
-![Screenshot shows knowledge base
-overview](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)
+![Der Screenshot zeigt die geöffnete Knowledge
+Base](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)
 
 ## Grundlagen
 
-Click **Knowledge Base** in the primary navigation to open it. The knowledge
-base opens in preview mode, which looks similar to the published version
-customers see.
+Klicken Sie in der primären Navigation auf **Knowledge Base**, um diese zu
+öffnen. Die Knowledge Base wird im Vorschaumodus geöffnet, welcher der
+veröffentlichten Version ähnelt, die Kunden sehen.
 
-The knowledge base is organized into **categories** that can contain
-subcategories and **answers**.  Each category requires an icon and a
-title. Answers consist of a title and rich text content with formatting,
-images, videos, file attachments, and links.
+Die Knowledge Base ist in **Kategorien** organisiert, welche Unterkategorien
+und **Antworten** enthalten können. Jede Kategorie muss mit einem Symbol und
+einem Titel versehen sein. Antworten bestehen aus einem Titel und
+Rich-Text-Inhalten mit Formatierungen, Bildern, Videos, Anhängen und Links.
 
-## Visibility
+## Sichtbarkeit
 
-Each answer has a visibility level that controls who can see it:
+Jede Antwort verfügt über eine Sichtbarkeitseinstellung, die festlegt, wer
+sie sehen kann:
 
-| Color | Level                       | Who can see it                                                     |
+| Farbe | Stufe                       | Wer kann sie sehen                                                     |
 |-------|---------------------------  |--------------------------------------------------------------------|
-| Green | **Public**                  | Everyone, including customers browsing the public knowledge base   |
-| Blue  | **Internal**                | Agents and editors only                                            |
-| Gray  | **Draft** or **Archived**   | Editors only                                                       |
+| Grün | **Öffentlich**                 | Alle, einschließlich Kunden, die die öffentliche Knowledge Base durchsuchen   |
+| Blau  | **Intern**               | Nur Agenten und Bearbeiter                                            |
+| Grau  | **Entwurf** oder **Archiviert**  | Nur Bearbeiter                                                       |
 
-Changes to visibility take effect immediately.
+Änderungen an den Sichtbarkeitseinstellungen sind sofort wirksam.
 
 ::: warning
-Public answers are always visible to everyone. Internal answers require the **Knowledge Base Reader** permission.
-Choose visibility carefully when publishing answers.
+Öffentliche Antworten sind stets für alle sichtbar. Für interne Antworten ist die Berechtigung **Knowledge Base-Leser** erforderlich.
+Wählen Sie die Sichtbarkeit sorgfältig aus, wenn Sie Antworten veröffentlichen.
 :::
 
-## Editing the knowledge base
+## Bearbeiten der Knowledge Base
 
-Open the knowledge base and switch to edit mode using the `Edit` button in
-the top toolbar. If you can't see the `Edit` button, your administrator
-needs to grant you the appropriate permissions.
+Öffnen Sie die Knowledge Base und wechseln Sie mithilfe der Schaltfläche
+`Bearbeiten` in der oberen Symbolleiste in den Bearbeitungsmodus. Falls
+diese Schaltfläche nicht angezeigt wird, muss Ihr Administrator Ihnen die
+entsprechende Berechtigung erteilen.
 
-To create a new category, click the `+` button on the main page. To create a
-new answer, navigate into a category and click the `+` button there. Enter a
-title and content, set the visibility level, and save your changes.
+Um eine neue Kategorie zu erstellen, klicken Sie auf der Hauptseite auf die
+Schaltfläche `+`. Um eine neue Antwort zu erstellen, navigieren Sie in eine
+Kategorie und klicken Sie dort auf die Schaltfläche `+`. Geben Sie einen
+Titel und den Inhalt ein, legen Sie die Sichtbarkeit fest und speichern Sie
+Ihre Änderungen.
 
-The knowledge base editor provides the same rich text capabilities as the
-ticket article editor. You can format text, add links to other knowledge
-base answers or external websites, embed images and videos, attach files,
-and use tags to improve searchability.
+Der Knowledge Base-Editor bietet dieselben Rich-Text-Funktionen wie der
+Editor für Ticket-Artikel. Sie können Text formatieren, Links zu anderen
+Knowledge Base-Antworten oder externen Websites einfügen, Bilder und Videos
+einbetten, Anhänge hinzufügen und Tags verwenden, um die Auffindbarkeit zu
+verbessern.
 
-## Using the knowledge base in tickets
+## Nutzung der Knowledge Base in Tickets
 
-### Inserting answers into replies
+### Antworten in Artikel einfügen
 
-You can insert knowledge base article content directly into a ticket reply
-without leaving the ticket:
+Sie können den Inhalt eines Knowledge Base-Artikels direkt in eine
+Ticket-Antwort einfügen, ohne das Ticket verlassen zu müssen:
 
-1. Start composing a reply in the ticket editor.
-2. Click the `Insert text from knowledge base answer` button in the editor
-   toolbar or type [[?]][[?]].
-3. Search for the relevant answer by title or content.
-4. Select the article to insert its content at the cursor position.
+1. Beginnen Sie im Ticket-Editor mit der Erstellung einer Antwort.
+2. Klicken Sie in der Symbolleiste des Editors auf die Schaltfläche `Text
+   aus Knowledge Base-Antwort einfügen` oder geben Sie [[?]][[?]] ein.
+3. Suchen Sie die entsprechende Antwort anhand des Titels oder des Inhalts.
+4. Wählen Sie den Artikel aus, um dessen Inhalt an der Cursorposition
+   einzufügen.
 
-The inserted content preserves formatting and can be edited before sending.
+Der eingefügte Inhalt behält seine Formatierung bei und kann vor dem
+Absenden bearbeitet werden.
 
-### Knowledge base assistant
+### Knowledge Base Assistent
 
-When the AI-based knowledge base assistant is enabled, Zammad can suggest
-relevant knowledge base answers based on the ticket content. These
-suggestions appear in the **Related knowledge** section of the ticket
-sidebar. If a suggested answer solves the problem, it can be linked
-permanently to the ticket.
+Wenn der KI-basierte Knowledge Base-Assistent aktiviert ist, kann Zammad
+anhand des Ticketinhalts relevante Antworten aus der Knowledge Base
+vorschlagen. Diese Vorschläge werden im Bereich **Verwandtes Wissen** in der
+Ticket-Seitenleiste angezeigt. Wenn eine vorgeschlagene Antwort das Problem
+löst, kann sie dauerhaft mit dem Ticket verknüpft werden.
 
-The knowledge base assistant also offers a way to automatically create a
-knowledge base answer from the ticket based on its content.
+Der Knowledge Base-Assistent bietet zudem die Möglichkeit, anhand des
+Inhalts eines Tickets automatisch eine Antwort für die Knowledge Base zu
+erstellen.

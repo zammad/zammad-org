@@ -78,54 +78,58 @@ as tenha adicionado.
 - **Rewrite complex section and make it easy to understand**: remove partes
   desnecessárias e reescreve seu texto de forma clara e compreensível.
 
-## Knowledge base assistant
+## Assistente da base de conhecimento
 
-![Screenshot shows the related knowledge section of the ticket sidebar with
-an AI-suggested knowledge base
-answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Captura de tela mostra a seção de conhecimento relacionado na barra
+lateral do ticket com uma resposta da base de conhecimento sugerida por
+IA](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
-### Knowledge base answer generation
+### Geração de respostas da base de conhecimento
 
-This feature allows you to trigger an AI-based generation of a [knowledge
-base](/en/documentation/use/guides/knowledge-base)  answer from a
-ticket. This is useful if you often get similar tickets and want to quickly
-create a knowledge base article for such cases. Doing so helps you and your
-colleagues solve similar tickets more efficiently in the future. It might
-even reduce incoming ticket volume when customers can resolve their issues
-directly from the published knowledge base.
+Este recurso permite acionar a geração de uma resposta da [base de
+conhecimento](/en/documentation/use/guides/knowledge-base) baseada em IA a
+partir de um ticket. Isso é útil se você recebe tickets semelhantes com
+frequência e quer criar rapidamente um artigo da base de conhecimento para
+esses casos. Isso ajuda você e seus colegas a resolver tickets semelhantes
+de forma mais eficiente no futuro. Pode até reduzir o volume de tickets
+recebidos quando os clientes conseguem resolver seus problemas diretamente
+pela base de conhecimento publicada.
 
-This feature is available in the **Related knowledge** section of the ticket
-sidebar. Click the `Add AI draft` button to trigger the answer generation.
+Este recurso está disponível na seção **Related knowledge** da barra lateral
+do ticket. Clique no botão `Add AI draft` para acionar a geração da
+resposta.
 
-Things to consider:
+Pontos a considerar:
 
-- The knowledge base answer is generated as draft and not published
-  automatically.
-- You are set as the answer's author.
-- The answer is generated in the default language of your knowledge base.
-- The answer includes a note in the content and a tag (`ai-generated`) about
-  the AI generation.
-- A link to the answer is added to the ticket from which you triggered the
-  answer generation.
-- The answer is created in a knowledge base category for which you have
-  editor permissions. The AI chooses one of these categories.
+- A resposta da base de conhecimento é gerada como rascunho e não é
+  publicada automaticamente.
+- Você é definido como autor da resposta.
+- A resposta é gerada no idioma padrão da sua base de conhecimento.
+- A resposta inclui uma nota no conteúdo e uma tag (`ai-generated`) sobre a
+  geração por IA.
+- Um link para a resposta é adicionado ao ticket a partir do qual você
+  acionou a geração da resposta.
+- A resposta é criada em uma categoria da base de conhecimento para a qual
+  você tem permissões de editor. A IA escolhe uma dessas categorias.
 
-If a similar knowledge base answer already exists, Zammad shows it in a
-dialog before creating a new one. This gives you the chance to review
-existing related answers to prevent duplicate submissions.
+Se uma resposta semelhante já existir na base de conhecimento, o Zammad a
+exibe em uma caixa de diálogo antes de criar uma nova. Isso dá a você a
+chance de revisar respostas relacionadas existentes para evitar envios
+duplicados.
 
-### Knowledge base answer suggestion
+### Sugestão de resposta da base de conhecimento
 
-This feature compares the ticket content against the knowledge base and
-shows relevant answers under **Suggested by AI** if they meet the
-admin-configured score threshold. Each suggestion shows the title of the
-answer and more details on hover. An additional relevance score is only
-shown to users with the corresponding admin permissions. Click on the title
-to open the answer in the knowledge base. Click the ::+:: on the right side
-which appears when hovering with the mouse to link it to the ticket.
+Este recurso compara o conteúdo do ticket com a base de conhecimento e
+mostra respostas relevantes em **Suggested by AI** se elas atingirem o
+limite de pontuação configurado pelo administrador. Cada sugestão mostra o
+título da resposta e mais detalhes ao passar o mouse. Uma pontuação de
+relevância adicional só é exibida para usuários com as permissões de
+administrador correspondentes. Clique no título para abrir a resposta na
+base de conhecimento. Clique no ::+:: do lado direito, que aparece ao passar
+o mouse, para vinculá-la ao ticket.
 
-If no suggestions are available, the message "No suggestions." is displayed
-instead.
+Se não houver sugestões disponíveis, a mensagem "No suggestions." é exibida
+em seu lugar.
 
 ## Agentes de IA
 
