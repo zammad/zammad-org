@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-12 16:37+0200\n"
+"POT-Creation-Date: 2026-08-19 11:22+0200\n"
 "PO-Revision-Date: 2026-07-23 10:16+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://translations.zammad.org/projects/"
@@ -174,9 +174,10 @@ msgstr ""
 msgid "https://github.com/zammad"
 msgstr ""
 
-#. type: Title #
+#. type: Title ##
 #: .vitepress/search.en.yaml:1 src/en/documentation/use/guides/search.md:1
 #: src/en/documentation/use/guides/search.md:6
+#: src/en/reference/rest-api/audit-log.md:39
 #, no-wrap
 msgid "Search"
 msgstr ""
@@ -434,7 +435,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
-#: src/en/documentation/use/guides/knowledge-base.md:18
+#: src/en/documentation/use/guides/knowledge-base.md:19
 #: src/en/get-started/installation/package.md:64
 #: src/en/tutorials/backup-restore.md:33
 #, no-wrap
@@ -4455,7 +4456,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/guides/ai.md:67
-#: src/en/documentation/use/guides/knowledge-base.md:69
+#: src/en/documentation/use/guides/knowledge-base.md:70
 #, no-wrap
 msgid "Knowledge base assistant"
 msgstr ""
@@ -4490,7 +4491,7 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:80
 msgid ""
 "This feature is available in the **Related knowledge** section of the ticket "
-"sidebar. Click the **Add AI draft** button to trigger the answer generation."
+"sidebar. Click the `Add AI draft` button to trigger the answer generation."
 msgstr ""
 
 #. type: Plain text
@@ -4904,8 +4905,8 @@ msgstr ""
 msgid ""
 "The knowledge base is Zammad's built-in content library for organizing FAQs, "
 "how-tos, internal processes, and more.  Customers can browse published "
-"articles for self-service, while agents can use articles as internal "
-"references or insert them directly into ticket replies."
+"answers (articles) for self-service, while agents can use answers as "
+"internal references or insert them directly into ticket replies."
 msgstr ""
 
 #. type: Plain text
@@ -4917,15 +4918,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:17
+#: src/en/documentation/use/guides/knowledge-base.md:16
+msgid "This feature is optional and must be activated by your administrator."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:18
 msgid ""
-"This feature is optional and must be activated by your administrator.  !"
-"[Screenshot shows knowledge base overview](/screenshots/cypress/"
+"![Screenshot shows knowledge base overview](/screenshots/cypress/"
 "documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:22
+#: src/en/documentation/use/guides/knowledge-base.md:23
 msgid ""
 "Click **Knowledge Base** in the primary navigation to open it. The knowledge "
 "base opens in preview mode, which looks similar to the published version "
@@ -4933,27 +4938,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:26
+#: src/en/documentation/use/guides/knowledge-base.md:27
 msgid ""
 "The knowledge base is organized into **categories** that can contain "
-"subcategories and **answers** (articles).  Each category requires an icon "
-"and a title. Answers consist of a title and rich text content with "
-"formatting, images, videos, file attachments, and links."
+"subcategories and **answers**.  Each category requires an icon and a title. "
+"Answers consist of a title and rich text content with formatting, images, "
+"videos, file attachments, and links."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:27
+#: src/en/documentation/use/guides/knowledge-base.md:28
 #, no-wrap
 msgid "Visibility"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:30
+#: src/en/documentation/use/guides/knowledge-base.md:31
 msgid "Each answer has a visibility level that controls who can see it:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:36
+#: src/en/documentation/use/guides/knowledge-base.md:37
 #, no-wrap
 msgid ""
 "| Color | Level                       | Who can see it                                                     |\n"
@@ -4964,34 +4969,34 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:38
+#: src/en/documentation/use/guides/knowledge-base.md:39
 msgid "Changes to visibility take effect immediately."
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/knowledge-base.md:39
+#: src/en/documentation/use/guides/knowledge-base.md:40
 #, no-wrap
 msgid ""
 "Public answers are always visible to everyone. Internal answers require the **Knowledge Base Reader** permission.\n"
-"Choose visibility carefully when publishing articles.\n"
+"Choose visibility carefully when publishing answers.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:44
+#: src/en/documentation/use/guides/knowledge-base.md:45
 #, no-wrap
 msgid "Editing the knowledge base"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:48
+#: src/en/documentation/use/guides/knowledge-base.md:49
 msgid ""
-"Open the knowledge base and switch to edit mode using the **Edit** button in "
-"the top toolbar. If you can't see the **Edit** button, your administrator "
+"Open the knowledge base and switch to edit mode using the `Edit` button in "
+"the top toolbar. If you can't see the `Edit` button, your administrator "
 "needs to grant you the appropriate permissions."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:51
+#: src/en/documentation/use/guides/knowledge-base.md:52
 msgid ""
 "To create a new category, click the `+` button on the main page. To create a "
 "new answer, navigate into a category and click the `+` button there. Enter a "
@@ -4999,7 +5004,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:55
+#: src/en/documentation/use/guides/knowledge-base.md:56
 msgid ""
 "The knowledge base editor provides the same rich text capabilities as the "
 "ticket article editor. You can format text, add links to other knowledge "
@@ -5008,64 +5013,64 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:56
+#: src/en/documentation/use/guides/knowledge-base.md:57
 #, no-wrap
 msgid "Using the knowledge base in tickets"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:58
+#: src/en/documentation/use/guides/knowledge-base.md:59
 #, no-wrap
-msgid "Inserting articles into replies"
+msgid "Inserting answers into replies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:61
+#: src/en/documentation/use/guides/knowledge-base.md:62
 msgid ""
 "You can insert knowledge base article content directly into a ticket reply "
 "without leaving the ticket:"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/documentation/use/guides/knowledge-base.md:66
+#: src/en/documentation/use/guides/knowledge-base.md:67
 msgid "Start composing a reply in the ticket editor."
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/documentation/use/guides/knowledge-base.md:66
+#: src/en/documentation/use/guides/knowledge-base.md:67
 msgid ""
-"Click the **Insert text from knowledge base answer** button in the editor "
+"Click the `Insert text from knowledge base answer` button in the editor "
 "toolbar or type [[?]][[?]]."
 msgstr ""
 
 #. type: Bullet: '3. '
-#: src/en/documentation/use/guides/knowledge-base.md:66
-msgid "Search for the relevant article by title or content."
+#: src/en/documentation/use/guides/knowledge-base.md:67
+msgid "Search for the relevant answer by title or content."
 msgstr ""
 
 #. type: Bullet: '4. '
-#: src/en/documentation/use/guides/knowledge-base.md:66
+#: src/en/documentation/use/guides/knowledge-base.md:67
 msgid "Select the article to insert its content at the cursor position."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:68
+#: src/en/documentation/use/guides/knowledge-base.md:69
 msgid ""
 "The inserted content preserves formatting and can be edited before sending."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:74
+#: src/en/documentation/use/guides/knowledge-base.md:75
 msgid ""
 "When the AI-based knowledge base assistant is enabled, Zammad can suggest "
-"relevant knowledge base articles based on the ticket content. These "
+"relevant knowledge base answers based on the ticket content. These "
 "suggestions appear in the **Related knowledge** section of the ticket "
 "sidebar. If a suggested answer solves the problem, it can be linked "
 "permanently to the ticket."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:76
+#: src/en/documentation/use/guides/knowledge-base.md:77
 msgid ""
 "The knowledge base assistant also offers a way to automatically create a "
 "knowledge base answer from the ticket based on its content."
@@ -5298,7 +5303,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/user-profile.md:117
+#: src/en/documentation/use/user-profile.md:126
 #, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -6072,7 +6077,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/guides/secure-email.md:76
-#: src/en/tutorials/connect-config-elasticsearch.md:115
+#: src/en/tutorials/connect-config-elasticsearch.md:131
 #: src/en/tutorials/sso-kerberos.md:553
 #: src/en/tutorials/webserver-config.md:293
 #, no-wrap
@@ -6978,8 +6983,20 @@ msgid ""
 "a look at your browser's settings.\n"
 msgstr ""
 
+#. type: Fenced div block (info)
+#: src/en/documentation/use/user-profile.md:117
+#, no-wrap
+msgid ""
+"Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear\n"
+"after about ten minutes. Ones Zammad marked as read for you - which happens when someone else changes the state of the\n"
+"ticket the notification belongs to - remain for about eight hours. Independently of this, no notification is kept for\n"
+"longer than nine months.\n"
+"\n"
+"The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.\n"
+msgstr ""
+
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:122
+#: src/en/documentation/use/user-profile.md:131
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
 "clicking the handles on the left side.  If your admin changes the order, "
@@ -6988,7 +7005,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/user-profile.md:123
+#: src/en/documentation/use/user-profile.md:132
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, no-wrap
@@ -6996,7 +7013,7 @@ msgid "Calendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:128
+#: src/en/documentation/use/user-profile.md:137
 msgid ""
 "Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
 "your favorite calendar application.  Use either the upper **Combined "
@@ -7858,7 +7875,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/host-upgrade-repo-migration.md:384
-#: src/en/get-started/installation/package.md:326
+#: src/en/get-started/installation/package.md:330
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
@@ -8468,7 +8485,7 @@ msgid ""
 "```\n"
 "\n"
 "```sh\n"
-"echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
+"echo \"LANG=en_US.UTF-8\" | sudo tee /etc/default/locale\n"
 "```\n"
 "\n"
 "After fixing it, make sure to check the output again for including\n"
@@ -8493,7 +8510,7 @@ msgid ""
 "```\n"
 "\n"
 "```sh\n"
-"echo \"LANG=en_US.UTF-8\" > sudo /etc/default/locale\n"
+"echo \"LANG=en_US.UTF-8\" | sudo tee /etc/default/locale\n"
 "```\n"
 "\n"
 "After fixing it, make sure to check the output again for including\n"
@@ -8610,68 +8627,72 @@ msgid ""
 "===CentOS/RHEL\n"
 "\n"
 "```sh\n"
+"sudo dnf update\n"
+"```\n"
+"\n"
+"```sh\n"
 "sudo dnf install zammad\n"
 "```\n"
 "\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:313
+#: src/en/get-started/installation/package.md:317
 #, no-wrap
 msgid "Manage services of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:316
+#: src/en/get-started/installation/package.md:320
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
 "all at once by using the parent **zammad**."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:321
+#: src/en/get-started/installation/package.md:325
 msgid "zammad: includes the services below"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:321
+#: src/en/get-started/installation/package.md:325
 msgid ""
 "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:321
+#: src/en/get-started/installation/package.md:325
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
 "background jobs"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:321
+#: src/en/get-started/installation/package.md:325
 msgid "**zammad-websocket**: WebSocket server for session related information"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:323
+#: src/en/get-started/installation/package.md:327
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
 "`status`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 msgid "Example to start Zammad with all sub-services:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:331
+#: src/en/get-started/installation/package.md:335
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
 "mentioned above."
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:332
+#: src/en/get-started/installation/package.md:336
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:142
 #, no-wrap
@@ -8679,31 +8700,31 @@ msgid "Next steps"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:337
+#: src/en/get-started/installation/package.md:341
 msgid ""
 "[Connect Zammad with Elasticsearch](/en/tutorials/connect-config-"
 "elasticsearch)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:337
+#: src/en/get-started/installation/package.md:341
 msgid ""
 "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:337
+#: src/en/get-started/installation/package.md:341
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:338
+#: src/en/get-started/installation/package.md:342
 #, no-wrap
 msgid "Dependencies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:344
+#: src/en/get-started/installation/package.md:348
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -8712,45 +8733,45 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:350
+#: src/en/get-started/installation/package.md:354
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:350
+#: src/en/get-started/installation/package.md:354
 msgid "Node.js"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:350
+#: src/en/get-started/installation/package.md:354
 #: src/en/reference/environment-variables.md:140
 #, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:350
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:375
 #: src/en/reference/environment-variables.md:186
 #, no-wrap
 msgid "Nginx"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:350
-#: src/en/get-started/installation/package.md:376
+#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:380
 #, no-wrap
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:351
+#: src/en/get-started/installation/package.md:355
 #, no-wrap
 msgid "Database server"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:356
+#: src/en/get-started/installation/package.md:360
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no "
@@ -8759,7 +8780,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:357
+#: src/en/get-started/installation/package.md:361
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -8769,25 +8790,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:368
 #, no-wrap
 msgid "Reverse proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:368
+#: src/en/get-started/installation/package.md:372
 msgid ""
 "The following reverse proxies are supported in their currently maintained "
 "versions:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:371
+#: src/en/get-started/installation/package.md:375
 msgid "Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:379
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -8796,7 +8817,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:383
+#: src/en/get-started/installation/package.md:387
 msgid ""
 "[Redis](https://redis.io/){target=_blank} is required for realtime "
 "communication via web socket.  Zammad requires Redis 7 or newer.  It gets "
@@ -8807,14 +8828,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:386
+#: src/en/get-started/installation/package.md:390
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:391
 #, no-wrap
 msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a drop-in-replacement for Redis.\n"
@@ -8822,13 +8843,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:392
+#: src/en/get-started/installation/package.md:396
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:399
+#: src/en/get-started/installation/package.md:403
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -8838,17 +8859,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:401
+#: src/en/get-started/installation/package.md:405
 msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:403
+#: src/en/get-started/installation/package.md:407
 msgid "Elasticsearch version history for Zammad:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:404
+#: src/en/get-started/installation/package.md:408
 #, no-wrap
 msgid ""
 "\n"
@@ -8868,13 +8889,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:421
+#: src/en/get-started/installation/package.md:425
 #, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:425
+#: src/en/get-started/installation/package.md:429
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -8883,7 +8904,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:433
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -8893,7 +8914,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:432
+#: src/en/get-started/installation/package.md:436
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -8901,7 +8922,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:435
+#: src/en/get-started/installation/package.md:439
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -8909,13 +8930,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:440
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:441
+#: src/en/get-started/installation/package.md:445
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -9351,7 +9372,7 @@ msgstr ""
 #. type: Fenced code block (sh)
 #: src/en/get-started/update.md:190
 #: src/en/tutorials/connect-config-elasticsearch.md:69
-#: src/en/tutorials/connect-config-elasticsearch.md:171
+#: src/en/tutorials/connect-config-elasticsearch.md:187
 #, no-wrap
 msgid "zammad run rake zammad:searchindex:rebuild[8]\n"
 msgstr ""
@@ -10788,7 +10809,7 @@ msgstr ""
 #: src/en/reference/environment-variables.md:202
 #, no-wrap
 msgid ""
-"`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"\\$scheme\" />\n"
+"`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"$scheme\" />\n"
 ": If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx)\n"
 "  `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. Set this if you face a\n"
 "  `CSRF Token Verification Failed` error.\n"
@@ -18138,13 +18159,22 @@ msgid ""
 "[list](#list-articles-by-ticket) affected articles first.\n"
 msgstr ""
 
-#. type: Fenced div block (tip)
-#: src/en/reference/rest-api/calendar.md:8
+#. type: Title #
+#: src/en/reference/rest-api/audit-log.md:1
+#: src/en/reference/rest-api/audit-log.md:6
 #, no-wrap
-msgid "Calendars belong to [Zammad's SLA calculation](/en/reference/rest-api/sla).\n"
+msgid "Audit log"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:10
+msgid ""
+"The audit log records security-relevant changes to your Zammad system: who "
+"changed what, and when. The audit log is read-only."
 msgstr ""
 
 #. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:11
 #: src/en/reference/rest-api/calendar.md:12
 #: src/en/reference/rest-api/checklist.md:165
 #: src/en/reference/rest-api/group.md:17
@@ -18161,6 +18191,272 @@ msgstr ""
 #: src/en/reference/rest-api/user.md:26
 #, no-wrap
 msgid "List"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:14
+#: src/en/reference/rest-api/audit-log.md:30
+#: src/en/reference/rest-api/audit-log.md:42
+msgid "Required permission: `admin.audit_log`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:16
+msgid "`GET`-Request sent: `/api/v1/audit_logs`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:20
+msgid ""
+"The endpoint supports pagination. The default page size is `500`.  Entries "
+"are returned ordered by `id` (ascending). Pass `?sort_by=id` and `?"
+"order_by=DESC` to return the newest entries first."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/audit-log.md:21
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-list-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:27
+#: src/en/reference/rest-api/calendar.md:24
+#: src/en/reference/rest-api/checklist.md:25
+#: src/en/reference/rest-api/checklist.md:97
+#: src/en/reference/rest-api/checklist.md:177
+#: src/en/reference/rest-api/group.md:29
+#: src/en/reference/rest-api/knowledgebase.md:31
+#: src/en/reference/rest-api/knowledgebase.md:146
+#: src/en/reference/rest-api/knowledgebase.md:268
+#: src/en/reference/rest-api/notification.md:32
+#: src/en/reference/rest-api/object.md:28
+#: src/en/reference/rest-api/organization.md:24
+#: src/en/reference/rest-api/priorities.md:21
+#: src/en/reference/rest-api/role.md:20
+#: src/en/reference/rest-api/shared-draft.md:8
+#: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
+#: src/en/reference/rest-api/ticket.md:26
+#: src/en/reference/rest-api/time-accounting.md:20
+#: src/en/reference/rest-api/user.md:38
+#, no-wrap
+msgid "Show"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:32
+msgid "`GET`-Request sent: `/api/v1/audit_logs/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/audit-log.md:33
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:47
+msgid ""
+"The search endpoint accepts the Zammad search-backend `query` syntax. The "
+"simplest case is a literal substring on a single indexed field such as "
+"`auditable_name`, `auditable_type` or `user_fullname`:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:49
+msgid "`GET`-Request sent: `/api/v1/audit_logs/search?query={search-string}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/audit-log.md:50
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-search-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:59
+msgid ""
+"To filter on a specific attribute rather than substring-match the whole "
+"record, prefix the attribute name. You can even use the logical `AND` "
+"connector to narrow down the results:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:62
+msgid ""
+"`GET`-Request sent: `/api/v1/audit_logs/search?query=auditable_type:Macro "
+"AND user_id:3`"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/reference/rest-api/audit-log.md:63
+#, no-wrap
+msgid ""
+"Search matches are case-sensitive and search only the indexed\n"
+"attribute fields (`auditable_name`, `auditable_type`,\n"
+"`user_fullname` and so on). The `value_from` and `value_to`\n"
+"payloads are not searchable.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/audit-log.md:70
+#, no-wrap
+msgid ""
+"By default the response is a bare JSON array of matching entries.\n"
+"Pass `with_total_count=true` on the URL (or `with_total_count:\n"
+"true` in the body of a `POST` request) to wrap the response in\n"
+"an object that also contains the `total_count`. Send a `POST`\n"
+"request when the query is too long or complex for a URL.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:78
+#, no-wrap
+msgid "Field reference"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:82
+msgid "`id` : Integer primary key of the audit log entry."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:86
+#, no-wrap
+msgid ""
+"`user_id`\n"
+": ID of the user that triggered the change. `null` when the entry\n"
+"  was written by a background job without a current user.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:91
+#, no-wrap
+msgid ""
+"`user_fullname`\n"
+": Full name of the user at the time the entry was written. Stored\n"
+"  separately so it remains readable after the user account is\n"
+"  removed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:98
+#, no-wrap
+msgid ""
+"`action_type`\n"
+": Type of the recorded change. One of: `create` (a record was\n"
+"  added), `update` (an existing record was modified), `destroy`\n"
+"  (a record was removed), `switch_to` (a user took over another\n"
+"  user's session via _View from user's perspective_),\n"
+"  `switch_back_to` (the original session was resumed).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:101
+msgid "`auditable_id` : ID of the record that was changed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:105
+#, no-wrap
+msgid ""
+"`auditable_type`\n"
+": Class name of the record that was changed (e.g. `Macro`,\n"
+"  `Setting`, `KnowledgeBase`, `ChecklistTemplate`, `Job`).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:110
+#, no-wrap
+msgid ""
+"`auditable_name`\n"
+": Display name of the changed record at the time the entry was\n"
+"  written. Stored separately so it remains readable after the record\n"
+"  itself is gone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:114
+#, no-wrap
+msgid ""
+"`value_from`\n"
+": Object (JSON) holding the previous state of the audited\n"
+"  attributes. Empty (`{}`) on `create` entries.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:118
+#, no-wrap
+msgid ""
+"`value_to`\n"
+": Object (JSON) holding the new state of the audited attributes.\n"
+"  Empty (`{}`) on `destroy` entries.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:123
+#, no-wrap
+msgid ""
+"`source_ip`\n"
+": IP address that issued the underlying request. `Rails console`\n"
+"  or `Rails runner` is stored when the entry was written from a\n"
+"  maintenance script.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:128
+#, no-wrap
+msgid ""
+"`preferences`\n"
+": Object (JSON) holding additional per-entry metadata. For\n"
+"  `update` entries this contains a `changed_attributes` array\n"
+"  listing the attributes that actually changed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:132
+#, no-wrap
+msgid ""
+"`created_at`\n"
+": Timestamp at which the entry was written. Audit log entries are\n"
+"  append-only.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:136
+#, no-wrap
+msgid ""
+"`updated_at`\n"
+": Same as `created_at` for audit log entries. Audit log entries\n"
+"  are append-only.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/audit-log.md:137
+#, no-wrap
+msgid "Lifecycle"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/audit-log.md:140
+msgid ""
+"A scheduled task removes entries older than **12 months** every day.  Use "
+"`AuditLog.cleanup` in the Rails console to trigger a cleanup manually."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/calendar.md:8
+#, no-wrap
+msgid "Calendars belong to [Zammad's SLA calculation](/en/reference/rest-api/sla).\n"
 msgstr ""
 
 #. type: Plain text
@@ -18184,29 +18480,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/calendars/get-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/calendar.md:24
-#: src/en/reference/rest-api/checklist.md:25
-#: src/en/reference/rest-api/checklist.md:97
-#: src/en/reference/rest-api/checklist.md:177
-#: src/en/reference/rest-api/group.md:29
-#: src/en/reference/rest-api/knowledgebase.md:31
-#: src/en/reference/rest-api/knowledgebase.md:146
-#: src/en/reference/rest-api/knowledgebase.md:268
-#: src/en/reference/rest-api/notification.md:32
-#: src/en/reference/rest-api/object.md:28
-#: src/en/reference/rest-api/organization.md:24
-#: src/en/reference/rest-api/priorities.md:21
-#: src/en/reference/rest-api/role.md:20
-#: src/en/reference/rest-api/shared-draft.md:8
-#: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
-#: src/en/reference/rest-api/ticket.md:26
-#: src/en/reference/rest-api/time-accounting.md:20
-#: src/en/reference/rest-api/user.md:38
-#, no-wrap
-msgid "Show"
 msgstr ""
 
 #. type: Plain text
@@ -23968,13 +24241,45 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/connect-config-elasticsearch.md:114
+msgid "In case you need a more exact search, you can turn it off:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/connect-config-elasticsearch.md:115
+#, no-wrap
+msgid "zammad run rails r \"Setting.set('es_asciifolding', false)\"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/connect-config-elasticsearch.md:119
+#, no-wrap
+msgid "SSL verification"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:122
 msgid ""
-"In case you need a more exact search, you can turn it off via [Rails console]"
-"(/en/reference/rails-commands#disable-asciifold)."
+"You can disable SSL verification, which is not recommended. Default is "
+"`true`."
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/connect-config-elasticsearch.md:123
+#, no-wrap
+msgid "zammad run rails r \"Setting.set('es_ssl_verify', false)\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/connect-config-elasticsearch.md:130
+#, no-wrap
+msgid ""
+"If you want to use custom certificates, you can find information about how to use\n"
+"them in Zammad's admin settings\n"
+"(_Settings > Security > SSL Certificates_).\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:117
+#: src/en/tutorials/connect-config-elasticsearch.md:133
 #, no-wrap
 msgid ""
 "Troubleshooting unsuccessful or issue not described?\n"
@@ -23986,13 +24291,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/connect-config-elasticsearch.md:126
+#: src/en/tutorials/connect-config-elasticsearch.md:142
 #, no-wrap
 msgid "Data missing from the web-UI / search data missing or incomplete"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:132
+#: src/en/tutorials/connect-config-elasticsearch.md:148
 msgid ""
 "A commonly reported issue is data missing from the Web-UI. This could be "
 "tickets, articles, users or anything else [indexed by Elasticsearch](/en/"
@@ -24001,7 +24306,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:136
+#: src/en/tutorials/connect-config-elasticsearch.md:152
 msgid ""
 "If you are experiencing this issue and installed Elasticsearch according to "
 "our [installation guide](/en/tutorials/install-elasticsearch), please follow "
@@ -24009,26 +24314,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:137
+#: src/en/tutorials/connect-config-elasticsearch.md:153
 #, no-wrap
 msgid "Step 1: Verify Elasticsearch is running"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:139
+#: src/en/tutorials/connect-config-elasticsearch.md:155
 #, no-wrap
 msgid "sudo systemctl status elasticsearch\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:145
+#: src/en/tutorials/connect-config-elasticsearch.md:161
 msgid ""
 "This should output something like the following, make sure it says `Active: "
 "active (running)`:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:146
+#: src/en/tutorials/connect-config-elasticsearch.md:162
 #, no-wrap
 msgid ""
 "● elasticsearch.service - Elasticsearch\n"
@@ -24039,18 +24344,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:155
+#: src/en/tutorials/connect-config-elasticsearch.md:171
 msgid "Otherwise, try restarting it and check again:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:156
+#: src/en/tutorials/connect-config-elasticsearch.md:172
 #, no-wrap
 msgid "sudo systemctl restart elasticsearch\n"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/connect-config-elasticsearch.md:160
+#: src/en/tutorials/connect-config-elasticsearch.md:176
 #, no-wrap
 msgid ""
 "If this fails, your Elasticsearch installation is probably broken.\n"
@@ -24059,25 +24364,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/connect-config-elasticsearch.md:166
+#: src/en/tutorials/connect-config-elasticsearch.md:182
 #, no-wrap
 msgid "Step 2: Verify Zammad can access Elasticsearch and rebuild the indexes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:170
+#: src/en/tutorials/connect-config-elasticsearch.md:186
 msgid ""
 "Force Zammad to drop and rebuild the Elasticsearch indexes, optionally with "
 "a specified number of CPU cores to use for re-indexing (example `[8]`):"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:176
+#: src/en/tutorials/connect-config-elasticsearch.md:192
 msgid "This should start rebuilding the indexes and output its progress:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/connect-config-elasticsearch.md:177
+#: src/en/tutorials/connect-config-elasticsearch.md:193
 #, no-wrap
 msgid ""
 "Dropping indexes... done.\n"
@@ -24094,7 +24399,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:194
+#: src/en/tutorials/connect-config-elasticsearch.md:210
 msgid ""
 "Depending on the system performance and amount of data, this can take a "
 "while to complete. Please let this task finish completely and wait until it "
@@ -24102,7 +24407,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:199
+#: src/en/tutorials/connect-config-elasticsearch.md:215
 msgid ""
 "If this fails or throws an error, there might be something else wrong with "
 "your installation. Make sure you followed the complete Elasticsearch set up "
@@ -24111,7 +24416,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/connect-config-elasticsearch.md:200
+#: src/en/tutorials/connect-config-elasticsearch.md:216
 #, no-wrap
 msgid ""
 "In many situations where you're not successful with above steps, you\n"
@@ -24120,10 +24425,212 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/connect-config-elasticsearch.md:207
+#: src/en/tutorials/connect-config-elasticsearch.md:223
 msgid ""
 "After completing these steps, you should have verified your Elasticsearch "
 "installation is running and rebuilt the indexes."
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/custom-kb-css.md:1 src/en/tutorials/custom-kb-css.md:6
+#, no-wrap
+msgid "Custom knowledge base CSS"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-css.md:10
+msgid ""
+"You can apply visual changes to your public knowledge base via custom CSS.  "
+"To do so, follow these steps:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/custom-kb-css.md:20
+msgid ""
+"Add your CSS file(s) inside the directory `app/assets/stylesheets/"
+"custom_knowledge_base_public` of your Zammad installation. You can use one "
+"or more files and choose any name, as long as they have a `.css` extension."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/custom-kb-css.md:20
+msgid ""
+"Precompile the assets by using the command `rake assets:precompile` (depends "
+"on your installation method, see the [Rails commands](/en/reference/rails-"
+"commands) reference)."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/custom-kb-css.md:20
+msgid "Restart Zammad."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/custom-kb-css.md:20
+msgid ""
+"Access your published knowledge base. Please note: the visual changes only "
+"affect the published version and not the edit screen."
+msgstr ""
+
+#. type: Title #
+#: src/en/tutorials/custom-kb-url.md:1 src/en/tutorials/custom-kb-url.md:6
+#, no-wrap
+msgid "Custom knowledge base URL"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:11
+msgid ""
+"If you want to publish Zammad's knowledge base under a different URL than "
+"the default one, you can follow our configuration example using [NPM (Nginx "
+"Proxy Manager)](https://nginxproxymanager.com/){target=_blank} below."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/custom-kb-url.md:12
+#, no-wrap
+msgid "Configure Zammad"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:19
+msgid ""
+"Go to **Knowledge Base** in Zammad's admin settings and select the **Custom "
+"URL** tab."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:19
+msgid ""
+"Add the URL you want to publish your knowledge base under and click the "
+"`Submit` button."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:19
+msgid ""
+"Click on the `Web Server Configuration` button to get the configuration for "
+"your NPM. You can already copy the snippet or just leave it open — it is "
+"needed for the NPM configuration."
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/custom-kb-url.md:20
+#, no-wrap
+msgid "Configure NPM"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:23
+msgid "In NPM, add a new proxy host with the following parameters:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/custom-kb-url.md:24
+#, no-wrap
+msgid "Details tab"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:29
+msgid ""
+"**Domain Names**: the domain under which you want to publish your knowledge "
+"base"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:29
+msgid "**Forwarded Hostname / IP**: the host/IP of your Zammad instance"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:29
+msgid ""
+"**Forward Port**: the port of your Zammad (by default `8080` in Portainer "
+"deployment)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:31
+msgid ""
+"![Screenshot shows NPM configuration dialog with details tab](/screenshots/"
+"tutorials/custom-kb-url/npm-details-tab.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/custom-kb-url.md:32
+#, no-wrap
+msgid "Custom location tab"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+msgid "**Define location**: `/`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+msgid "**Forward Hostname / IP**: same as above"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+msgid "**Forward Port**: same as above"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/custom-kb-url.md:40
+msgid ""
+"Click on the cogwheel to open the custom location configuration text field "
+"and paste `proxy_set_header X-ORIGINAL-URL $request_uri;` (the lower part of "
+"Zammad's snippet)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:42
+msgid ""
+"![Screenshot shows NPM configuration dialog with custom locations tab](/"
+"screenshots/tutorials/custom-kb-url/npm-custom-locations-tab.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/custom-kb-url.md:43
+#, no-wrap
+msgid "Advanced tab"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:47
+#, no-wrap
+msgid ""
+"**Custom Nginx Configuration**: add the upper part of Zammad's snippet,\n"
+"which should be similar to the following:\n"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: src/en/tutorials/custom-kb-url.md:48
+#, no-wrap
+msgid ""
+"# Add following lines to \"server\" directive\n"
+"if ($host = help.your.domain ) {\n"
+"  rewrite ^/(api|assets)/(.*)$ /$1/$2 last;\n"
+"  rewrite ^(.*)$ /help$1 last;\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:57
+msgid ""
+"![Screenshot shows NPM configuration dialog with advanced tab](/screenshots/"
+"tutorials/custom-kb-url/npm-advanced-tab.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/custom-kb-url.md:59
+msgid ""
+"After following these steps, your knowledge base should be published under a "
+"custom URL. You can test it by clicking the preview button in your knowledge "
+"base."
 msgstr ""
 
 #. type: Title #
@@ -24491,7 +24998,7 @@ msgid ""
 "sudo systemctl reload nftables\n"
 "```\n"
 "\n"
-"===CenOS, RHEL, OpenSUSE, SLES\n"
+"===CentOS, RHEL, OpenSUSE, SLES\n"
 "\n"
 "```sh\n"
 "sudo firewall-cmd --zone=public --add-service=http --permanent\n"
