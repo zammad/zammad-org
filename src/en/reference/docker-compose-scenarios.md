@@ -189,4 +189,4 @@ in future.
 Sometimes it's necessary to apply local changes to the Zammad Docker stack, e.g. to include additional services. If you
 plan to do so, we recommend that you do not change the `docker-compose.yml` file, but instead create a local
 `docker-compose.override.yml` that includes all your modifications. Docker Compose will
-[automatically load this file and merge its changes into your stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
+[automatically load this file and merge its changes into your stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.

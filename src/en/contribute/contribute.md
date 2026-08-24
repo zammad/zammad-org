@@ -68,7 +68,7 @@ You can either create an account (if you don't have one already) or even sign in
 
 We will cover some basic steps in the following sections to get you started with translating. However, if you want to
 use some additional features of Weblate and want to dive deeper into it, their
-[translation documentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
+[translation documentation](https://docs.weblate.org/en/latest/user/translating.html){target=_blank}
 is a good starting point.
 
 ### Basics
