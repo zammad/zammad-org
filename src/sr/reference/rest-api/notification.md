@@ -1,6 +1,6 @@
 ---
 order: 10
-title: Администрација
+title: 'Online обавештење'
 ---
 
 # Online обавештење
@@ -83,5 +83,17 @@ title: Администрација
 ::: details
 
 <<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json
+
+:::
+
+## Clear all
+
+Потребна дозвола: `any`
+
+`DELETE`-Request sent: `/api/v1/online_notifications/clear_all`
+
+::: details
+
+<<< @/fixtures/rest-api/online_notifications/clear_all/delete-res.json
 
 :::

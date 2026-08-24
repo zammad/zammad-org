@@ -1,6 +1,6 @@
 ---
 order: 10
-title: Notificação
+title: 'Notificação online'
 ---
 
 # Notificação online
@@ -83,5 +83,17 @@ Solicitação `POST` enviada: `/api/v1/online_notifications/mark_all_as_read`
 ::: details
 
 <<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json
+
+:::
+
+## Clear all
+
+Permissão necessária: `any`
+
+`DELETE`-Request sent: `/api/v1/online_notifications/clear_all`
+
+::: details
+
+<<< @/fixtures/rest-api/online_notifications/clear_all/delete-res.json
 
 :::

@@ -1,6 +1,6 @@
 ---
 order: 10
-title: Benachrichtigung
+title: Online-Benachrichtigung
 ---
 
 # Online-Benachrichtigung
@@ -83,5 +83,17 @@ Erforderliche Erlaubnis: `any`
 ::: details
 
 <<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json
+
+:::
+
+## Clear all
+
+Erforderliche Erlaubnis: `any`
+
+`DELETE`-Request sent: `/api/v1/online_notifications/clear_all`
+
+::: details
+
+<<< @/fixtures/rest-api/online_notifications/clear_all/delete-res.json
 
 :::

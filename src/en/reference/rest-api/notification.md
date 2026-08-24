@@ -1,5 +1,5 @@
 ---
-title: Notification
+title: Online notification
 order: 10
 ---
 
@@ -83,5 +83,17 @@ Required permission: `any`
 ::: details
 
 <<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json
+
+:::
+
+## Clear all
+
+Required permission: `any`
+
+`DELETE`-Request sent: `/api/v1/online_notifications/clear_all`
+
+::: details
+
+<<< @/fixtures/rest-api/online_notifications/clear_all/delete-res.json
 
 :::
