@@ -1,67 +1,69 @@
 ---
 order: 14
-title: 'Custom knowledge base URL'
+title: 'URL personalizada da base de conhecimento'
 ---
 
-# Custom knowledge base URL
+# URL personalizada da base de conhecimento
 
-If you want to publish Zammad's knowledge base under a different URL than
-the default one, you can follow our configuration example using [NPM (Nginx
-Proxy Manager)](https://nginxproxymanager.com/){target=_blank} below.
+Se você quiser publicar a base de conhecimento do Zammad em uma URL
+diferente da padrão, pode seguir nosso exemplo de configuração usando o [NPM
+(Nginx Proxy Manager)](https://nginxproxymanager.com/){target=_blank}
+abaixo.
 
-## Configure Zammad
+## Configurar o Zammad
 
-- Go to **Knowledge Base** in Zammad's admin settings and select the
-  **Custom URL** tab.
-- Add the URL you want to publish your knowledge base under and click the
-  `Submit` button.
-- Click on the `Web Server Configuration` button to get the configuration
-  for your NPM. You can already copy the snippet or just leave it open — it
-  is needed for the NPM configuration.
+- Vá até **Knowledge Base** nas configurações de administração do Zammad e
+  selecione a aba **Custom URL**.
+- Adicione a URL sob a qual você quer publicar sua base de conhecimento e
+  clique no botão `Submit`.
+- Clique no botão `Web Server Configuration` para obter a configuração para
+  o seu NPM. Você já pode copiar o trecho ou apenas deixá-lo aberto — ele
+  será necessário para a configuração do NPM.
 
-## Configure NPM
+## Configurar o NPM
 
-In NPM, add a new proxy host with the following parameters:
+No NPM, adicione um novo proxy host com os seguintes parâmetros:
 
-### Details tab
+### Aba Details
 
-- **Domain Names**: the domain under which you want to publish your
-  knowledge base
-- **Forwarded Hostname / IP**: the host/IP of your Zammad instance
-- **Forward Port**: the port of your Zammad (by default `8080` in Portainer
-  deployment)
+- **Domain Names**: o domínio sob o qual você quer publicar sua base de
+  conhecimento
+- **Forwarded Hostname / IP**: o host/IP da sua instância do Zammad
+- **Forward Port**: a porta do seu Zammad (por padrão `8080` em uma
+  implantação via Portainer)
 
-![Screenshot shows NPM configuration dialog with details
-tab](/screenshots/tutorials/custom-kb-url/npm-details-tab.png)
+![Captura de tela mostra a caixa de diálogo de configuração do NPM com a aba
+de detalhes](/screenshots/tutorials/custom-kb-url/npm-details-tab.png)
 
-### Custom location tab
+### Aba de localização personalizada
 
 - **Define location**: `/`
-- **Forward Hostname / IP**: same as above
-- **Forward Port**: same as above
-- Click on the cogwheel to open the custom location configuration text field
-  and paste `proxy_set_header X-ORIGINAL-URL $request_uri;` (the lower part
-  of Zammad's snippet)
+- **Forward Hostname / IP**: igual ao anterior
+- **Forward Port**: igual ao anterior
+- Clique na engrenagem para abrir o campo de texto de configuração de
+  localização personalizada e cole `proxy_set_header X-ORIGINAL-URL
+  $request_uri;` (a parte inferior do trecho do Zammad)
 
-![Screenshot shows NPM configuration dialog with custom locations
-tab](/screenshots/tutorials/custom-kb-url/npm-custom-locations-tab.png)
+![Captura de tela mostra a caixa de diálogo de configuração do NPM com a aba
+de localizações
+personalizadas](/screenshots/tutorials/custom-kb-url/npm-custom-locations-tab.png)
 
-### Advanced tab
+### Aba avançada
 
-**Custom Nginx Configuration**: add the upper part of Zammad's snippet,
-which should be similar to the following:
+**Custom Nginx Configuration**: adicione a parte superior do trecho do Zammad,
+que deve ser parecida com o seguinte:
 
 ```text
-# Add following lines to "server" directive
+# Adicione as seguintes linhas à diretiva "server"
 if ($host = help.your.domain ) {
   rewrite ^/(api|assets)/(.*)$ /$1/$2 last;
   rewrite ^(.*)$ /help$1 last;
 }
 ```
 
-![Screenshot shows NPM configuration dialog with advanced
-tab](/screenshots/tutorials/custom-kb-url/npm-advanced-tab.png)
+![Captura de tela mostra a caixa de diálogo de configuração do NPM com a aba
+avançada](/screenshots/tutorials/custom-kb-url/npm-advanced-tab.png)
 
-After following these steps, your knowledge base should be published under a
-custom URL. You can test it by clicking the preview button in your knowledge
-base.
+Após seguir estas etapas, sua base de conhecimento deve estar publicada em
+uma URL personalizada. Você pode testá-la clicando no botão de
+pré-visualização na sua base de conhecimento.

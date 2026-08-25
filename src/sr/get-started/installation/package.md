@@ -170,89 +170,99 @@ Packager.io можда није доступан из окружења са ис
 :::: tabs key:distros
 
 === Ubuntu
-Инсталирајте кључ репозиторија:
+Додајте кључ репозиторија:
 
 ```sh
-curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Ubuntu 20.04
+Додајте репозиториј (Ubuntu 22.04):
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 20.04 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Ubuntu 22.04
+Додајте репозиториј (Ubuntu 24.04):
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 22.04 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Ubuntu 24.04
+Додајте репозиториј (Ubuntu 26.04):
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/ubuntu 24.04 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 === Debian
-Инсталирајте кључ репозиторија:
+
+Додајте кључ репозиторија:
 
 ```sh
-curl -fsSL https://dl.packager.io/srv/zammad/zammad/key | \
-   gpg --dearmor | sudo tee /etc/apt/keyrings/pkgr-zammad.gpg> /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
 ```
 
-Debian 11
+Додајте репозиториј (Debian 11):
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 11 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
-Debian 12
+Додајте репозиториј (Debian 12):
 
 ```sh
-echo "deb [signed-by=/etc/apt/keyrings/pkgr-zammad.gpg] https://dl.packager.io/srv/deb/zammad/zammad/stable/debian 12 main"| \
-   sudo tee /etc/apt/sources.list.d/zammad.list > /dev/null
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Додајте репозиториј (Debian 13):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list" \
+  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 === OpenSUSE/SLES
-Инсталирајте кључ репозиторија:
+
+Додајте репозиториј (OpenSUSE/SLES 15):
 
 ```sh
-sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
+sudo curl -o /etc/zypp/repos.d/zammad.repo \
+  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo"
 ```
 
-OpenSUSE 15.x / SLES15
+Додајте репозиториј (OpenSUSE/SLES 16):
 
 ```sh
-sudo wget -O /etc/zypp/repos.d/zammad.repo \
-https://dl.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo
+sudo curl -o /etc/zypp/repos.d/zammad.repo \
+  "https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo"
 ```
 
 ===CentOS/RHEL
-Инсталирајте кључ репозиторија:
+Додајте кључ репозиторија:
 
 ```sh
-sudo rpm --import https://dl.packager.io/srv/zammad/zammad/key
+sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
 ```
 
-CentOS 8 / RHEL 8
+Додајте репозиториј (CentOS/RHEL 9):
 
 ```sh
-sudo wget -O /etc/yum.repos.d/zammad.repo \
-https://dl.packager.io/srv/zammad/zammad/stable/installer/el/8.repo
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo" \
+  -o /etc/yum.repos.d/zammad.repo
 ```
 
-CentOS 9 / RHEL 9
+Додајте репозиториј (CentOS/RHEL 10):
 
 ```sh
-sudo wget -O /etc/yum.repos.d/zammad.repo \
-https://dl.packager.io/srv/zammad/zammad/stable/installer/el/9.repo
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo" \
+  -o /etc/yum.repos.d/zammad.repo
 ```
 
 ::::

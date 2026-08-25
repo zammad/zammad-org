@@ -23,9 +23,7 @@ Zammad се може покренути преко Docker Compose. Можете 
 - Повећајте меморијско ограничење за Elasticsearch на Linux хостовима:
 
   ```sh
-  ```sh
-    sysctl -w vm.max_map_count=262144
-    ```
+  sudo sysctl -w vm.max_map_count=262144
   ```
 
 ## Покретање преко Portainer-а
@@ -166,13 +164,13 @@ docker compose exec zammad-railsserver bundle exec rails r '...your rails comman
 излаза на вашем терминалу.
 :::
 
-=== Преко Portainer GUI-а
+=== Portainer
 
-У вашем Portainer GUI-у, идите на преглед контејнера и изаберите покренути Rails контејнер са вашег Zammad стацк-а. Кликните
-на иконицу **Exec Console** у колони "Quick Actions", изаберите стандардни `/bin/bash` entrypoint и кликните
+У вашем Portainer GUI-у, идите на преглед контејнера и изаберите покренути Rails контејнер вашег Zammad стека. Кликните
+на иконицу **Exec Console** у колони „Quick Actions”, изаберите стандардни `/bin/bash` entrypoint и кликните
 **Connect**.
 
-![Pokretanje konzole Portainer](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
+![Покретање Portainer конзоле](/screenshots/get-started/installation/portainer-exec-console.png){width=80%}
 
 Покрените интерактивну Rails конзолу извршавањем:
 
@@ -184,26 +182,6 @@ bundle exec rails c
 
 ```sh
 bundle exec rails r '...your rails command here...'
-```
-
-=== Преко конзоле
-
-Директно извршите специфичну команду:
-
-```sh
-docker compose run --rm zammad-railsserver bundle exec rails r '...your rails command here...'
-```
-
-Покрените интерактивну Rails конзолу за ручни унос Rails команди:
-
-```sh
-docker compose run --rm zammad-railsserver bundle exec rails c
-```
-
-Преко `docker compose exec`:
-
-```sh
-docker compose exec zammad-railsserver bundle exec rails r '...your rails command here...'
 ```
 
 ::::

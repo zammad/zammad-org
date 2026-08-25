@@ -34,11 +34,11 @@ images, videos, file attachments, and links.
 
 Each answer has a visibility level that controls who can see it:
 
-| Color | Level                       | Who can see it                                                     |
-|-------|---------------------------  |--------------------------------------------------------------------|
-| Green | **Public**                  | Everyone, including customers browsing the public knowledge base   |
-| Blue  | **Internal**                | Agents and editors only                                            |
-| Gray  | **Draft** or **Archived**   | Editors only                                                       |
+| Боја   | Видљивост                    | Ко има приступ.                                         |
+|--------|------------------------------|---------------------------------------------------------|
+| Зелена | **Јавно**                    | Сви, укључујући непријављене посетиоце јавне базе знања |
+| Плава  | **Интерно**                  | Само оператери и уредници                               |
+| Сива   | **Нацрт** или **Архивирано** | Само уредници                                           |
 
 Changes to visibility take effect immediately.
 

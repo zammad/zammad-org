@@ -86,11 +86,11 @@ Erforderliche Erlaubnis: `any`
 
 :::
 
-## Clear all
+## Alle löschen
 
 Erforderliche Erlaubnis: `any`
 
-`DELETE`-Request sent: `/api/v1/online_notifications/clear_all`
+`DELETE`-Anfrage gesendet: `/api/v1/online_notifications/clear_all`
 
 ::: details
 

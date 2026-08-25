@@ -137,12 +137,12 @@ uma olhada nas configurações do seu navegador.
 :::
 
 ::: info
-Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear
-after about ten minutes. Ones Zammad marked as read for you - which happens when someone else changes the state of the
-ticket the notification belongs to - remain for about eight hours. Independently of this, no notification is kept for
-longer than nine months.
+As notificações que você já leu são removidas da lista automaticamente. As que você mesmo marcou como lidas desaparecem
+depois de cerca de dez minutos. As que o Zammad marcou como lidas para você - o que acontece quando outra pessoa altera o estado do
+ticket ao qual a notificação pertence - permanecem por cerca de oito horas. Independentemente disso, nenhuma notificação é mantida por
+mais de nove meses.
 
-The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.
+A limpeza é executada a cada duas horas, então uma notificação pode permanecer visível um pouco mais do que os tempos indicados acima.
 :::
 
 ### Visões gerais

@@ -1,22 +1,24 @@
 ---
 order: 2
-title: 'Audit log'
+title: Audit-Protokoll
 ---
 
-# Audit log
+# Audit-Protokoll
 
-The audit log records security-relevant changes to your Zammad system: who
-changed what, and when. The audit log is read-only.
+Das Audit-Protokoll erfasst sicherheitsrelevante Änderungen an Ihrem
+Zammad-System: wer hat was wann geändert. Das Audit-Protokoll ist
+schreibgeschützt.
 
 ## Auflisten
 
-Required permission: `admin.audit_log`
+Erforderliche Berechtigung: `admin.audit_log`
 
-`GET`-Request sent: `/api/v1/audit_logs`
+`GET`-Anfrage gesendet: `/api/v1/audit_logs`
 
-The endpoint supports pagination. The default page size is `500`.  Entries
-are returned ordered by `id` (ascending). Pass `?sort_by=id` and
-`?order_by=DESC` to return the newest entries first.
+Der Endpunkt unterstützt die Paginierung. Die Standardseitengröße beträgt
+`500`. Die Einträge werden nach `id` (aufsteigend) sortiert
+zurückgegeben. Geben Sie `?sort_by=id` und `?order_by=DESC` an, um die
+neuesten Einträge zuerst anzuzeigen.
 
 ::: details
 
@@ -26,9 +28,9 @@ are returned ordered by `id` (ascending). Pass `?sort_by=id` and
 
 ## Anzeigen
 
-Required permission: `admin.audit_log`
+Erforderliche Berechtigung: `admin.audit_log`
 
-`GET`-Request sent: `/api/v1/audit_logs/{id}`
+`GET`-Anfrage gesendet: `/api/v1/audit_logs/{id}`
 
 ::: details
 
@@ -38,13 +40,14 @@ Required permission: `admin.audit_log`
 
 ## Suche
 
-Required permission: `admin.audit_log`
+Erforderliche Berechtigung: `admin.audit_log`
 
-The search endpoint accepts the Zammad search-backend `query` syntax. The
-simplest case is a literal substring on a single indexed field such as
-`auditable_name`, `auditable_type` or `user_fullname`:
+Der Such-Endpunkt akzeptiert die `query` Syntax des
+Zammad-Such-Backends. Der einfachste Fall ist eine wörtliche Zeichenfolge in
+einem einzelnen indexierten Feld wie beispielsweise `auditable_name`,
+`auditable_type` oder `user_fullname`:
 
-`GET`-Request sent: `/api/v1/audit_logs/search?query={search-string}`
+`GET`-Anfrage gesendet: `/api/v1/audit_logs/search?query={search-string}`
 
 ::: details
 
@@ -52,90 +55,92 @@ simplest case is a literal substring on a single indexed field such as
 
 :::
 
-To filter on a specific attribute rather than substring-match the whole
-record, prefix the attribute name. You can even use the logical `AND`
-connector to narrow down the results:
+Um nach einem bestimmten Attribut zu filtern anstatt den gesamten Datensatz
+nach Teilzeichenfolgen abzugleichen, setzen Sie dem Attributnamen ein Präfix
+voran. Sie können sogar die logische `AND` Verknüpfung verwenden, um die
+Ergebnisse einzugrenzen:
 
-`GET`-Request sent: `/api/v1/audit_logs/search?query=auditable_type:Macro
-AND user_id:3`
+`GET`-Anfrage gesendet:
+`/api/v1/audit_logs/search?query=auditable_type:Macro AND user_id:3`
 
 ::: warning
-Search matches are case-sensitive and search only the indexed
-attribute fields (`auditable_name`, `auditable_type`,
-`user_fullname` and so on). The `value_from` and `value_to`
-payloads are not searchable.
+Bei der Suche wird die Groß-/Kleinschreibung berücksichtigt und es werden
+ausschließlich die indizierten Attributfelder durchsucht (`auditable_name`, `auditable_type`,
+`user_fullname` usw.). Die Nutzlast der Felder `value_from` und `value_to` sind
+nicht durchsuchbar.
 :::
 
 ::: tip
-By default the response is a bare JSON array of matching entries.
-Pass `with_total_count=true` on the URL (or `with_total_count:
-true` in the body of a `POST` request) to wrap the response in
-an object that also contains the `total_count`. Send a `POST`
-request when the query is too long or complex for a URL.
+Standardmäßig besteht die Antwort aus einem einfachen JSON-Array mit den übereinstimmenden Einträgen.
+Übergeben Sie `with_total_count=true` in der URL (oder `with_total_count:
+true` im Body einer `POST*-Anfrage), um die Antwort in
+ein Objekt zu verpacken, das auch einen `total_count` enthält. Senden Sie eine `POST`-Anfrage,
+wenn die Abfrage für eine URL zu lang oder zu komplex ist.
 :::
 
-## Field reference
+## Feldreferenz
 
 `id`
 :
   Integer primary key of the audit log entry.
 
 `user_id`
-: ID of the user that triggered the change. `null` when the entry
-  was written by a background job without a current user.
+: ID des Benutzers, der die Änderung ausgelöst hat. `null`, wenn der Eintrag
+  von einem Hintergrundjob ohne aktuellen Benutzer geschrieben wurde.
 
 `user_fullname`
-: Full name of the user at the time the entry was written. Stored
-  separately so it remains readable after the user account is
-  removed.
+: Vollständiger Name des Benutzers zum Zeitpunkt der Erstellung des Eintrags. Wird
+  separat gespeichert, damit er auch nach der Löschung des Kontos
+  lesbar bleibt.
 
 `action_type`
-: Type of the recorded change. One of: `create` (a record was
-  added), `update` (an existing record was modified), `destroy`
-  (a record was removed), `switch_to` (a user took over another
-  user's session via _View from user's perspective_),
-  `switch_back_to` (the original session was resumed).
+: Art der erfassten Änderung. Eine der folgenden Optionen: `create` (ein Datensatz wurde
+  hinzugefügt), `update` (ein bestehender Datensatz wurde geändert), `destroy`
+  (ein Datensatz wurde entfernt), `switch_to` (ein Benutzer hat die Sitzung eines anderen
+  Benutzers per _aus Sicht des Benutzers ansehen_ übernommen),
+ `switch_back_to` (die ursprüngliche Sitzung wurde wieder aufgenommen).
 
 `auditable_id`
 :
   ID of the record that was changed.
 
 `auditable_type`
-: Class name of the record that was changed (e.g. `Macro`,
+: Klassenname des Datensatzes, der geändert wurde (z.B. `Macro`,
   `Setting`, `KnowledgeBase`, `ChecklistTemplate`, `Job`).
 
 `auditable_name`
-: Display name of the changed record at the time the entry was
-  written. Stored separately so it remains readable after the record
-  itself is gone.
+: Anzeigename des geänderten Datensatzes zum Zeitpunkt des
+  Schreibvorgangs. Wird separat gespeichert, damit er auch dann noch lesbar ist, wenn der Datensatz
+  selbst nicht mehr vorhanden ist.
 
 `value_from`
-: Object (JSON) holding the previous state of the audited
-  attributes. Empty (`{}`) on `create` entries.
+: Objekt (JSON), das den vorherigen Status des geänderten
+  Attributs enthält. Leer (`{}`) bei `create` Einträgen.
 
 `value_to`
-: Object (JSON) holding the new state of the audited attributes.
-  Empty (`{}`) on `destroy` entries.
+: Objekt (JSON), das den neuen Status des geänderten Attributs enthält.
+  Leer (`{}`) bei `destroy` Einträge.
 
 `source_ip`
-: IP address that issued the underlying request. `Rails console`
-  or `Rails runner` is stored when the entry was written from a
-  maintenance script.
+: IP-Adresse, von der die zugrunde liegende Anfrage stammt. `Rails console`
+  oder `Rails runner` wird gespeichert, wenn die Änderung von einem
+  Wartungsskript geschrieben wurde.
 
 `preferences`
-: Object (JSON) holding additional per-entry metadata. For
-  `update` entries this contains a `changed_attributes` array
-  listing the attributes that actually changed.
+: Objekt (JSON), das zusätzliche Metadaten pro Eintrag enthält. Bei
+  Aktualisierungen von Einträgen per `update` enthält dies ein Array `changed_attributes`,
+  das die tatsächlich geänderten Attribute auflistet.
 
-`created_at`
-: Timestamp at which the entry was written. Audit log entries are
-  append-only.
+`created_at` 
+: Zeitstempel, zu dem der Eintrag erstellt wurde. Einträge im Audit-Protokoll sind
+  unveränderbar und werden einmalig hinzugefügt.
 
 `updated_at`
-: Same as `created_at` for audit log entries. Audit log entries
-  are append-only.
+: Entspricht `created_at` für Einträge im Audit-Protokoll. Einträge im Audit-Protokoll sind
+  unveränderbar und werden einmalig hinzugefügt.
 
-## Lifecycle
+## Lebenszyklus
 
-A scheduled task removes entries older than **12 months** every day.  Use
-`AuditLog.cleanup` in the Rails console to trigger a cleanup manually.
+Eine geplante Aufgabe löscht täglich Einträge, die älter als **12 Monate**
+sind. Verwenden Sie `AuditLog.cleanup` in der Rails-Konsole, um eine
+Bereinigung manuell auszulösen.

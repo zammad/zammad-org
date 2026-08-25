@@ -1,20 +1,20 @@
 ---
 order: 15
-title: 'Custom knowledge base CSS'
+title: 'CSS personalizado da base de conhecimento'
 ---
 
-# Custom knowledge base CSS
+# CSS personalizado da base de conhecimento
 
-You can apply visual changes to your public knowledge base via custom CSS.
-To do so, follow these steps:
+Você pode aplicar alterações visuais à sua base de conhecimento pública por
+meio de CSS personalizado. Para isso, siga estas etapas:
 
-1. Add your CSS file(s) inside the directory
-   `app/assets/stylesheets/custom_knowledge_base_public` of your Zammad
-   installation. You can use one or more files and choose any name, as long
-   as they have a `.css` extension.
-2. Precompile the assets by using the command `rake assets:precompile`
-   (depends on your installation method, see the [Rails
-   commands](/en/reference/rails-commands) reference).
-3. Restart Zammad.
-4. Access your published knowledge base. Please note: the visual changes
-   only affect the published version and not the edit screen.
+1. Adicione seu(s) arquivo(s) CSS dentro do diretório
+   `app/assets/stylesheets/custom_knowledge_base_public` da sua instalação
+   do Zammad. Você pode usar um ou mais arquivos e escolher qualquer nome,
+   desde que tenham a extensão `.css`.
+2. Precompile os assets usando o comando `rake assets:precompile` (depende
+   do seu método de instalação, veja a referência de [comandos
+   Rails](/en/reference/rails-commands)).
+3. Reinicie o Zammad.
+4. Acesse sua base de conhecimento publicada. Observação: as alterações
+   visuais afetam apenas a versão publicada, não a tela de edição.

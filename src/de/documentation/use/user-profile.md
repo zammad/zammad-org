@@ -149,12 +149,12 @@ einen Blick in die Einstellungen Ihres Browsers.
 :::
 
 ::: info
-Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear
-after about ten minutes. Ones Zammad marked as read for you - which happens when someone else changes the state of the
-ticket the notification belongs to - remain for about eight hours. Independently of this, no notification is kept for
-longer than nine months.
+Benachrichtigungen, die Sie bereits gelesen haben, werden automatisch aus der Liste entfernt. Diejenigen, die Sie selbst als gelesen markiert haben, verschwinden
+nach etwa zehn Minuten. Diejenigen, die Zammad für Sie als gelesen markiert hat - was geschieht, wenn jemand anderes den Status des
+Tickets ändert, zu dem die Benachrichtigung gehört -, bleiben etwa acht Stunden lang sichtbar. Unabhängig davon wird keine Benachrichtigung
+länger als neun Monate aufbewahrt.
 
-The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.
+Die Bereinigung erfolgt alle zwei Stunden, sodass eine Benachrichtigung etwas länger sichtbar bleiben kann als in den oben genannten Zeiträumen angegeben.
 :::
 
 ### Übersichten

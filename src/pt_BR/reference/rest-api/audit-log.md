@@ -1,22 +1,23 @@
 ---
 order: 2
-title: 'Audit log'
+title: 'Log de auditoria'
 ---
 
-# Audit log
+# Log de auditoria
 
-The audit log records security-relevant changes to your Zammad system: who
-changed what, and when. The audit log is read-only.
+O log de auditoria registra alterações relevantes para a segurança no seu
+sistema Zammad: quem alterou o quê e quando. O log de auditoria é somente
+leitura.
 
 ## Listar
 
-Required permission: `admin.audit_log`
+Permissão necessária: `admin.audit_log`
 
-`GET`-Request sent: `/api/v1/audit_logs`
+Solicitação `GET` enviada: `/api/v1/audit_logs`
 
-The endpoint supports pagination. The default page size is `500`.  Entries
-are returned ordered by `id` (ascending). Pass `?sort_by=id` and
-`?order_by=DESC` to return the newest entries first.
+O endpoint suporta paginação. O tamanho de página padrão é `500`. As
+entradas são retornadas ordenadas por `id` (crescente). Passe `?sort_by=id`
+e `?order_by=DESC` para retornar as entradas mais recentes primeiro.
 
 ::: details
 
@@ -26,9 +27,9 @@ are returned ordered by `id` (ascending). Pass `?sort_by=id` and
 
 ## Mostrar
 
-Required permission: `admin.audit_log`
+Permissão necessária: `admin.audit_log`
 
-`GET`-Request sent: `/api/v1/audit_logs/{id}`
+Solicitação `GET` enviada: `/api/v1/audit_logs/{id}`
 
 ::: details
 
@@ -38,13 +39,13 @@ Required permission: `admin.audit_log`
 
 ## Pesquisar
 
-Required permission: `admin.audit_log`
+Permissão necessária: `admin.audit_log`
 
-The search endpoint accepts the Zammad search-backend `query` syntax. The
-simplest case is a literal substring on a single indexed field such as
-`auditable_name`, `auditable_type` or `user_fullname`:
+O endpoint de pesquisa aceita a sintaxe `query` do backend de pesquisa do
+Zammad. O caso mais simples é uma substring literal em um único campo
+indexado, como `auditable_name`, `auditable_type` ou `user_fullname`:
 
-`GET`-Request sent: `/api/v1/audit_logs/search?query={search-string}`
+Solicitação `GET` enviada: `/api/v1/audit_logs/search?query={search-string}`
 
 ::: details
 
@@ -52,90 +53,91 @@ simplest case is a literal substring on a single indexed field such as
 
 :::
 
-To filter on a specific attribute rather than substring-match the whole
-record, prefix the attribute name. You can even use the logical `AND`
-connector to narrow down the results:
+Para filtrar por um atributo específico em vez de buscar por substring no
+registro inteiro, prefixe o nome do atributo. Você pode até usar o conector
+lógico `AND` para refinar os resultados:
 
-`GET`-Request sent: `/api/v1/audit_logs/search?query=auditable_type:Macro
-AND user_id:3`
+Solicitação `GET` enviada:
+`/api/v1/audit_logs/search?query=auditable_type:Macro AND user_id:3`
 
 ::: warning
-Search matches are case-sensitive and search only the indexed
-attribute fields (`auditable_name`, `auditable_type`,
-`user_fullname` and so on). The `value_from` and `value_to`
-payloads are not searchable.
+As correspondências de pesquisa diferenciam maiúsculas de minúsculas e pesquisam apenas os
+campos de atributo indexados (`auditable_name`, `auditable_type`,
+`user_fullname` e assim por diante). Os payloads `value_from` e `value_to`
+não são pesquisáveis.
 :::
 
 ::: tip
-By default the response is a bare JSON array of matching entries.
-Pass `with_total_count=true` on the URL (or `with_total_count:
-true` in the body of a `POST` request) to wrap the response in
-an object that also contains the `total_count`. Send a `POST`
-request when the query is too long or complex for a URL.
+Por padrão, a resposta é um array JSON simples com as entradas correspondentes.
+Passe `with_total_count=true` na URL (ou `with_total_count:
+true` no corpo de uma solicitação `POST`) para envolver a resposta em
+um objeto que também contém o `total_count`. Envie uma solicitação `POST`
+quando a consulta for muito longa ou complexa para uma URL.
 :::
 
-## Field reference
+## Referência de campos
 
 `id`
 :
   Integer primary key of the audit log entry.
 
 `user_id`
-: ID of the user that triggered the change. `null` when the entry
-  was written by a background job without a current user.
+: ID do usuário que acionou a alteração. `null` quando a entrada
+  foi gravada por uma tarefa em segundo plano sem um usuário atual.
 
 `user_fullname`
-: Full name of the user at the time the entry was written. Stored
-  separately so it remains readable after the user account is
-  removed.
+: Nome completo do usuário no momento em que a entrada foi gravada. Armazenado
+  separadamente para que continue legível mesmo após a conta do usuário ser
+  removida.
 
 `action_type`
-: Type of the recorded change. One of: `create` (a record was
-  added), `update` (an existing record was modified), `destroy`
-  (a record was removed), `switch_to` (a user took over another
-  user's session via _View from user's perspective_),
-  `switch_back_to` (the original session was resumed).
+: Tipo da alteração registrada. Um dos seguintes: `create` (um registro foi
+  adicionado), `update` (um registro existente foi modificado), `destroy`
+  (um registro foi removido), `switch_to` (um usuário assumiu a sessão de outro
+  usuário via _View from user's perspective_),
+  `switch_back_to` (a sessão original foi retomada).
 
 `auditable_id`
 :
   ID of the record that was changed.
 
 `auditable_type`
-: Class name of the record that was changed (e.g. `Macro`,
+: Nome da classe do registro que foi alterado (ex.: `Macro`,
   `Setting`, `KnowledgeBase`, `ChecklistTemplate`, `Job`).
 
 `auditable_name`
-: Display name of the changed record at the time the entry was
-  written. Stored separately so it remains readable after the record
-  itself is gone.
+: Nome de exibição do registro alterado no momento em que a entrada foi
+  gravada. Armazenado separadamente para que continue legível mesmo depois que o
+  registro em si deixa de existir.
 
 `value_from`
-: Object (JSON) holding the previous state of the audited
-  attributes. Empty (`{}`) on `create` entries.
+: Objeto (JSON) contendo o estado anterior dos atributos
+  auditados. Vazio (`{}`) em entradas `create`.
 
 `value_to`
-: Object (JSON) holding the new state of the audited attributes.
-  Empty (`{}`) on `destroy` entries.
+: Objeto (JSON) contendo o novo estado dos atributos auditados.
+  Vazio (`{}`) em entradas `destroy`.
 
 `source_ip`
-: IP address that issued the underlying request. `Rails console`
-  or `Rails runner` is stored when the entry was written from a
-  maintenance script.
+: Endereço IP que originou a solicitação subjacente. `Rails console`
+  ou `Rails runner` é armazenado quando a entrada foi gravada a partir de um
+  script de manutenção.
 
 `preferences`
-: Object (JSON) holding additional per-entry metadata. For
-  `update` entries this contains a `changed_attributes` array
-  listing the attributes that actually changed.
+: Objeto (JSON) contendo metadados adicionais por entrada. Para
+  entradas `update`, isso contém um array `changed_attributes`
+  listando os atributos que de fato mudaram.
 
 `created_at`
-: Timestamp at which the entry was written. Audit log entries are
-  append-only.
+: Timestamp em que a entrada foi gravada. Entradas do log de auditoria são
+  somente de inserção (append-only).
 
 `updated_at`
-: Same as `created_at` for audit log entries. Audit log entries
-  are append-only.
+: O mesmo que `created_at` para entradas do log de auditoria. Entradas do log de auditoria
+  são somente de inserção (append-only).
 
-## Lifecycle
+## Ciclo de vida
 
-A scheduled task removes entries older than **12 months** every day.  Use
-`AuditLog.cleanup` in the Rails console to trigger a cleanup manually.
+Uma tarefa agendada remove entradas com mais de **12 meses** todos os
+dias. Use `AuditLog.cleanup` no console Rails para acionar uma limpeza
+manualmente.
