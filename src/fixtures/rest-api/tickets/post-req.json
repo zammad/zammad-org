@@ -6,6 +6,7 @@
     "subject": "My subject",
     "body": "I am a message!",
     "type": "note",
+    "sender": "Customer",
     "internal": false
   }
 }

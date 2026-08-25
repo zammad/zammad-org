@@ -27,7 +27,7 @@
   "last_contact_customer_at": null,
   "last_owner_update_at": null,
   "create_article_type_id": 10,
-  "create_article_sender_id": 1,
+  "create_article_sender_id": 2,
   "article_count": 1,
   "escalation_at": null,
   "pending_time": null,

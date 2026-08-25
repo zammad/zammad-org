@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-24 13:04+0200\n"
+"POT-Creation-Date: 2026-08-25 09:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -451,7 +451,7 @@ msgid ""
 "We will cover some basic steps in the following sections to get you started "
 "with translating. However, if you want to use some additional features of "
 "Weblate and want to dive deeper into it, their [translation "
-"documentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank} "
+"documentation](https://docs.weblate.org/en/latest/user/translating.html){target=_blank} "
 "is a good starting point."
 msgstr ""
 
@@ -10062,7 +10062,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:53
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
-#: src/en/reference/rest-api/ticket.md:82
+#: src/en/reference/rest-api/ticket.md:93
 #: src/en/reference/rest-api/time-accounting.md:54
 #: src/en/reference/rest-api/user.md:95
 #, markdown-text, no-wrap
@@ -11434,7 +11434,7 @@ msgid ""
 "you do not change the `docker-compose.yml` file, but instead create a local "
 "`docker-compose.override.yml` that includes all your modifications. Docker "
 "Compose will [automatically load this file and merge its changes into your "
-"stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}."
+"stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}."
 msgstr ""
 
 #. type: Title #
@@ -12386,8 +12386,8 @@ msgstr ""
 #: src/en/reference/rest-api/states.md:54
 #: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
 #: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
-#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:62
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:73
+#: src/en/reference/rest-api/ticket.md:112
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
@@ -19794,7 +19794,7 @@ msgstr ""
 #: src/en/reference/rest-api/ticket.md:17
 #: src/en/reference/rest-api/ticket.md:29
 #: src/en/reference/rest-api/ticket.md:41
-#: src/en/reference/rest-api/ticket.md:85
+#: src/en/reference/rest-api/ticket.md:96
 #, markdown-text
 msgid "Required permission: `ticket.agent` **or** `ticket.customer`"
 msgstr ""
@@ -20390,7 +20390,7 @@ msgstr ""
 #: src/en/reference/rest-api/organization.md:82
 #: src/en/reference/rest-api/priorities.md:76
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
-#: src/en/reference/rest-api/ticket.md:128
+#: src/en/reference/rest-api/ticket.md:139
 #: src/en/reference/rest-api/user-access-token.md:46
 #: src/en/reference/rest-api/user.md:124
 #, markdown-text, no-wrap
@@ -24663,23 +24663,47 @@ msgstr ""
 msgid ""
 "**On behalf of users**\n"
 "\n"
-"If you want to create tickets on behalf of other users, use the\n"
-"`customer_id` attribute. `ticket.agent` is mandatory for this. Use\n"
-"`guess:{email address}` to save an API call if you don't know the\n"
-"user's ID or want to create the user in question\n"
+"If you want to create tickets on behalf of other users, use the "
+"`customer_id` attribute. This requires the `ticket.agent`\n"
+"permission. Without it, `customer_id` is ignored and the ticket's "
+"**Customer** field is set to the current user. Use\n"
+"`guess:{email address}` to save an API call if you don't know the user's ID "
+"or want to create the user in question\n"
 "(`\"customer_id\": \"guess:jane@doe.com\"`).\n"
 "\n"
-"**Add mention subscription right away**:\n"
+"When creating a ticket on behalf of a customer with an initial article, you "
+"**must** set `article.sender` to \"Customer\"\n"
+"explicitly. Without this, the sender defaults to \"Agent\" (based on the "
+"current user's permission). This affects the\n"
+"ticket's `create_article_sender_id` and the resulting contact timestamp "
+"calculations.\n"
 "\n"
-"Add the `mentions` attribute to your ticket payload and provide an\n"
-"array of user ids to directly subscribe them during ticket creation.\n"
+"The same applies to articles added later via PUT: set sender explicitly "
+"there as well when acting on behalf of a customer.\n"
+"Since the sender of an article cannot be changed after creation, it is "
+"important to set it correctly from the start.\n"
+"\n"
+"For more details on the sender attribute, see "
+"[articles](/en/reference/rest-api/articles).\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/ticket.md:63
+#, no-wrap
+msgid ""
+"**Add mention subscription right away**\n"
+"\n"
+"Add the `mentions` attribute to your ticket payload and provide an array of "
+"user ids to directly subscribe them during\n"
+"ticket creation.\n"
 "\n"
 "E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:62
+#: src/en/reference/rest-api/ticket.md:73
 #, no-wrap
 msgid ""
 "\n"
@@ -24694,21 +24718,23 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:77
+#: src/en/reference/rest-api/ticket.md:88
 #, no-wrap
 msgid ""
-"For more article attributes and options have a look into\n"
+"The `sender` attribute of the initial article determines the ticket's "
+"`create_article_sender_id` and contact timestamps.\n"
+"For the full list of article attributes and their behavior, see "
 "[articles](/en/reference/rest-api/articles).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:87
+#: src/en/reference/rest-api/ticket.md:98
 #, markdown-text
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:88
+#: src/en/reference/rest-api/ticket.md:99
 #, no-wrap
 msgid ""
 "**Suppress notifications:** To update a ticket without triggering agent "
@@ -24727,7 +24753,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/ticket.md:112
 #, no-wrap
 msgid ""
 "\n"
@@ -24738,7 +24764,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres|info)
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/ticket.md:112
 #, no-wrap
 msgid ""
 "Above example provides an article. This article is a _new article_ and\n"
@@ -24746,7 +24772,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/ticket.md:112
 #, no-wrap
 msgid ""
 "\n"
@@ -24757,7 +24783,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:121
+#: src/en/reference/rest-api/ticket.md:132
 #, no-wrap
 msgid ""
 "**Adding attachments**\n"
@@ -24767,19 +24793,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:131
+#: src/en/reference/rest-api/ticket.md:142
 #, markdown-text
 msgid "Required permission: `admin`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:133
+#: src/en/reference/rest-api/ticket.md:144
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/ticket.md:134
+#: src/en/reference/rest-api/ticket.md:145
 #, no-wrap
 msgid ""
 "\n"
@@ -24790,7 +24816,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:142
+#: src/en/reference/rest-api/ticket.md:153
 #, no-wrap
 msgid ""
 "\n"

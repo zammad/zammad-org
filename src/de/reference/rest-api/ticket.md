@@ -42,20 +42,31 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 `POST`-Anfrage gesendet: `/api/v1/tickets`
 
 ::: tip
-**Im Namen anderer Benutzer**
+**On behalf of users**
 
-Wenn Sie Tickets im Namen anderer Benutzer erstellen möchten, verwenden Sie das
-Attribut `customer_id`. Das Attribut `ticket.agent` ist dabei zwingend erforderlich. Verwenden Sie
-`guess:{E-Mail-Adresse}`, um einen API-Aufruf zu speichern, wenn Sie die
-ID des Benutzers nicht kennen oder den betreffenden Benutzer anlegen wollen
-(`customer_id: "guess:jane@doe.com"`).
+If you want to create tickets on behalf of other users, use the `customer_id` attribute. This requires the `ticket.agent`
+permission. Without it, `customer_id` is ignored and the ticket's **Customer** field is set to the current user. Use
+`guess:{email address}` to save an API call if you don't know the user's ID or want to create the user in question
+(`"customer_id": "guess:jane@doe.com"`).
 
-**Erwähnungen sofort hinzufügen**
+When creating a ticket on behalf of a customer with an initial article, you **must** set `article.sender` to "Customer"
+explicitly. Without this, the sender defaults to "Agent" (based on the current user's permission). This affects the
+ticket's `create_article_sender_id` and the resulting contact timestamp calculations.
 
-Fügen Sie das Attribut `mentions` zu Ihrer Ticket-Nutzlast hinzu und übermitteln Sie ein
-Array von Benutzer-IDs, um sie direkt bei der Erstellung des Tickets als Abonnenten anzulegen.
+The same applies to articles added later via PUT: set sender explicitly there as well when acting on behalf of a customer.
+Since the sender of an article cannot be changed after creation, it is important to set it correctly from the start.
 
-Z.B.: `"mentions": [1, 5, 7, 8],`
+For more details on the sender attribute, see [articles](/en/reference/rest-api/articles).
+
+:::
+
+::: tip
+**Add mention subscription right away**
+
+Add the `mentions` attribute to your ticket payload and provide an array of user ids to directly subscribe them during
+ticket creation.
+
+E.g.: `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -75,8 +86,8 @@ Z.B.: `"mentions": [1, 5, 7, 8],`
 ::::
 
 ::: tip
-Weitere Artikel-Attribute und Optionen finden Sie unter
-[Artikel](/de/reference/rest-api/articles).
+The `sender` attribute of the initial article determines the ticket's `create_article_sender_id` and contact timestamps.
+For the full list of article attributes and their behavior, see [articles](/en/reference/rest-api/articles).
 :::
 
 ## Aktualisierung

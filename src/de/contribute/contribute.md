@@ -85,12 +85,11 @@ Projekten. Gehen Sie einfach zu Zammads
 können entweder ein Konto erstellen (falls Sie noch keins haben) oder sich
 sogar mit Ihrem Github-Konto anmelden!
 
-In den folgenden Abschnitten werden wir einige grundlegende Schritte
-behandeln, damit Sie mit dem Übersetzen beginnen können. Wenn Sie jedoch
-einige zusätzliche Funktionen von Weblate nutzen und tiefer eintauchen
-möchten, ist deren
-[Übersetzungsdokumentation](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
-ein guter Ausgangspunkt.
+We will cover some basic steps in the following sections to get you started
+with translating. However, if you want to use some additional features of
+Weblate and want to dive deeper into it, their [translation
+documentation](https://docs.weblate.org/en/latest/user/translating.html){target=_blank}
+is a good starting point.
 
 ### Grundlagen
 

@@ -80,11 +80,11 @@ Zammad-ову [Weblate
 инстанцу](https://translations.zammad.org/){target=_blank}.  Можете или
 отворити налог (ако га већ немате) или се пријавити својим Github налогом!
 
-Представићемо неке основне кораке у следећим одељцима како бисте могли да
-започнете са превођењем. Међутим, уколико желите да користите напредне
-Weblate функције и да дубље уђете у проблематику, њихова [званична
-документација](https://docs.weblate.org/en/latest/user/translating.html){target=_blank}
-вам може помоћи.
+We will cover some basic steps in the following sections to get you started
+with translating. However, if you want to use some additional features of
+Weblate and want to dive deeper into it, their [translation
+documentation](https://docs.weblate.org/en/latest/user/translating.html){target=_blank}
+is a good starting point.
 
 ### Основе
 

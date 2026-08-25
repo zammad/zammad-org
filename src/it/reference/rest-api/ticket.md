@@ -41,10 +41,31 @@ Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 Richiesta `POST` inviata: `/api/v1/tickets`
 
 ::: tip
-**Per conto di utenti**
+**On behalf of users**
 
-Se vuoi creare ticket per conto di altri utenti, usa il
-`c
+If you want to create tickets on behalf of other users, use the `customer_id` attribute. This requires the `ticket.agent`
+permission. Without it, `customer_id` is ignored and the ticket's **Customer** field is set to the current user. Use
+`guess:{email address}` to save an API call if you don't know the user's ID or want to create the user in question
+(`"customer_id": "guess:jane@doe.com"`).
+
+When creating a ticket on behalf of a customer with an initial article, you **must** set `article.sender` to "Customer"
+explicitly. Without this, the sender defaults to "Agent" (based on the current user's permission). This affects the
+ticket's `create_article_sender_id` and the resulting contact timestamp calculations.
+
+The same applies to articles added later via PUT: set sender explicitly there as well when acting on behalf of a customer.
+Since the sender of an article cannot be changed after creation, it is important to set it correctly from the start.
+
+For more details on the sender attribute, see [articles](/en/reference/rest-api/articles).
+
+:::
+
+::: tip
+**Add mention subscription right away**
+
+Add the `mentions` attribute to your ticket payload and provide an array of user ids to directly subscribe them during
+ticket creation.
+
+E.g.: `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -64,8 +85,8 @@ Se vuoi creare ticket per conto di altri utenti, usa il
 ::::
 
 ::: tip
-Per maggiori attributi e opzioni degli articoli dai un'occhiata a
-[articoli](/it/reference/rest-api/articles).
+The `sender` attribute of the initial article determines the ticket's `create_article_sender_id` and contact timestamps.
+For the full list of article attributes and their behavior, see [articles](/en/reference/rest-api/articles).
 :::
 
 ## Aggiornamento

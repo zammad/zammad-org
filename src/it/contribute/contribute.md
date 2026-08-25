@@ -81,11 +81,11 @@ collaborativa di progetti. Vai all'[istanza Weblate di
 Zammad](https://translations.zammad.org/){target=_blank}. Puoi creare un
 account (se non ne hai già uno) o accedere con il tuo account GitHub!
 
-Nelle sezioni seguenti tratteremo i passaggi di base per iniziare a
-tradurre. Se vuoi usare funzionalità aggiuntive di Weblate e approfondire,
-la loro [documentazione sulla
-traduzione](https://docs.weblate.org/en/latest/user/translating.htm){target=_blank}
-è un buon punto di partenza.
+We will cover some basic steps in the following sections to get you started
+with translating. However, if you want to use some additional features of
+Weblate and want to dive deeper into it, their [translation
+documentation](https://docs.weblate.org/en/latest/user/translating.html){target=_blank}
+is a good starting point.
 
 ### Nozioni di base
 

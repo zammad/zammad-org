@@ -213,10 +213,9 @@ de uso. Planejamos adicionar mais casos de uso comuns à stack no futuro.
 
 ## Personalizar a stack localmente
 
-Às vezes é necessário aplicar alterações locais à stack Docker do Zammad,
-por exemplo, para incluir serviços adicionais. Se você planeja fazer isso,
-recomendamos que não altere o arquivo `docker-compose.yml`, mas em vez disso
-crie um `docker-compose.override.yml` local que inclua todas as suas
-modificações. O Docker Compose vai [carregar automaticamente esse arquivo e
-mesclar suas alterações na sua
-stack](https://docs.docker.com/compose/multiple-compose-files/merge/){target=_blank}.
+Sometimes it's necessary to apply local changes to the Zammad Docker stack,
+e.g. to include additional services. If you plan to do so, we recommend that
+you do not change the `docker-compose.yml` file, but instead create a local
+`docker-compose.override.yml` that includes all your modifications. Docker
+Compose will [automatically load this file and merge its changes into your
+stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.
