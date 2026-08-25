@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-19 11:22+0200\n"
-"PO-Revision-Date: 2026-08-20 05:44+0000\n"
+"POT-Creation-Date: 2026-08-25 14:01+0200\n"
+"PO-Revision-Date: 2026-08-25 06:12+0000\n"
 "Last-Translator: Igor Costa <igor_sfx@yahoo.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.zammad.org/projects/"
 "documentations/zammad-org/pt_BR/>\n"
@@ -461,11 +461,18 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:73
+#, fuzzy
+#| msgid ""
+#| "We will cover some basic steps in the following sections to get you "
+#| "started with translating. However, if you want to use some additional "
+#| "features of Weblate and want to dive deeper into it, their [translation "
+#| "documentation](https://docs.weblate.org/en/latest/user/translating.htm)"
+#| "{target=_blank} is a good starting point."
 msgid ""
 "We will cover some basic steps in the following sections to get you started "
 "with translating. However, if you want to use some additional features of "
 "Weblate and want to dive deeper into it, their [translation documentation]"
-"(https://docs.weblate.org/en/latest/user/translating.htm){target=_blank} is "
+"(https://docs.weblate.org/en/latest/user/translating.html){target=_blank} is "
 "a good starting point."
 msgstr ""
 "Vamos cobrir alguns passos básicos nas seções a seguir para você começar a "
@@ -520,7 +527,7 @@ msgstr "Nova documentação em zammad.org"
 
 #. type: Title ##
 #: src/en/contribute/contribute.md:90
-#: src/en/reference/environment-variables.md:44
+#: src/en/reference/environment-variables.md:45
 #, no-wrap
 msgid "Zammad"
 msgstr "Zammad"
@@ -1321,7 +1328,7 @@ msgstr ""
 "badge#usage>."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:170 src/en/contribute/style-guide.md:269
+#: src/en/contribute/style-guide.md:170 src/en/contribute/style-guide.md:270
 #, no-wrap
 msgid "**Usage:**\n"
 msgstr "**Uso:**\n"
@@ -1491,17 +1498,21 @@ msgid "Definition lists"
 msgstr "Listas de definição"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:263
-#, no-wrap
+#: src/en/contribute/style-guide.md:264
+#, fuzzy, no-wrap
+#| msgid ""
+#| "First term <Badge type=\"info\" text=\"tag1\" />\n"
+#| ": This is the definition of the first term.\n"
 msgid ""
 "First term <Badge type=\"info\" text=\"tag1\" />\n"
-": This is the definition of the first term.\n"
+":\n"
+"  This is the definition of the first term.\n"
 msgstr ""
 "Primeiro termo <Badge type=\"info\" text=\"tag1\" />\n"
 ": Esta é a definição do primeiro termo.\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:267
+#: src/en/contribute/style-guide.md:268
 #, no-wrap
 msgid ""
 "Second term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
@@ -1513,7 +1524,7 @@ msgstr ""
 ": Esta é outra definição do segundo termo.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:270
+#: src/en/contribute/style-guide.md:271
 #, no-wrap
 msgid ""
 "\n"
@@ -1533,13 +1544,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:280
+#: src/en/contribute/style-guide.md:281
 #, no-wrap
 msgid "Highlighting with boxes"
 msgstr "Destacando com caixas"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:283
+#: src/en/contribute/style-guide.md:284
 msgid ""
 "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
@@ -1547,14 +1558,14 @@ msgstr ""
 "usadas."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:285 src/en/documentation/introduction.md:29
+#: src/en/contribute/style-guide.md:286 src/en/documentation/introduction.md:29
 #: src/en/documentation/use/start.md:40 src/en/get-started/get-zammad.md:32
 #, no-wrap
 msgid "<VPDocFeatures />\n"
 msgstr "<VPDocFeatures />\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:287
+#: src/en/contribute/style-guide.md:288
 msgid ""
 "The definition of the content is done via frontmatter, see following example "
 "(reflects the boxes above):"
@@ -1563,7 +1574,7 @@ msgstr ""
 "(reflete as caixas acima):"
 
 #. type: Fenced code block (yml)
-#: src/en/contribute/style-guide.md:288
+#: src/en/contribute/style-guide.md:289
 #, no-wrap
 msgid ""
 "\n"
@@ -1609,7 +1620,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:313
+#: src/en/contribute/style-guide.md:314
 #, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be\n"
@@ -1619,13 +1630,13 @@ msgstr ""
 "renderizada.\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:314
+#: src/en/contribute/style-guide.md:315
 #, no-wrap
 msgid "Theme specific images"
 msgstr "Imagens específicas de tema"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:318
+#: src/en/contribute/style-guide.md:319
 msgid ""
 "To target specific image assets to a single theme, you can assign `.dark-"
 "only` or `.light-only` CSS class to the corresponding image:"
@@ -1634,7 +1645,7 @@ msgstr ""
 "atribuir a classe CSS `.dark-only` ou `.light-only` à imagem correspondente:"
 
 #. type: Fenced code block (md)
-#: src/en/contribute/style-guide.md:319
+#: src/en/contribute/style-guide.md:320
 #, no-wrap
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
@@ -1644,7 +1655,7 @@ msgstr ""
 "![Imagem apenas para tema claro](/assets/logo-flat-light.svg){.light-only}\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:325
+#: src/en/contribute/style-guide.md:326
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "
 "only image](/assets/logo-flat-light.svg){.light-only width=240}"
@@ -2127,7 +2138,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:103
-#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/intro.md:177
 #, no-wrap
 msgid "Macros"
 msgstr "Macros"
@@ -4711,12 +4722,17 @@ msgstr ""
 "  Veja [Mesclar tickets](/pt_BR/documentation/use/advanced-features#merge-tickets) para detalhes.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:157
-msgid "Change customer : Reassign the ticket to another customer."
+#: src/en/documentation/use/basics/work-with-tickets.md:158
+#, fuzzy, no-wrap
+#| msgid "Change customer : Reassign the ticket to another customer."
+msgid ""
+"Change customer\n"
+":\n"
+"  Reassign the ticket to another customer.\n"
 msgstr "Alterar cliente: reatribua o ticket a outro cliente."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:162
+#: src/en/documentation/use/basics/work-with-tickets.md:163
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "
 "there are many more features in Zammad which can be very useful in your "
@@ -5012,8 +5028,8 @@ msgstr "[[TOC]]"
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:13 src/en/reference/rest-api/articles.md:8
-#: src/en/reference/rest-api/cti.md:92 src/en/reference/rest-api/cti.md:244
-#: src/en/reference/rest-api/cti.md:361
+#: src/en/reference/rest-api/cti.md:92 src/en/reference/rest-api/cti.md:248
+#: src/en/reference/rest-api/cti.md:369
 #, no-wrap
 msgid "General"
 msgstr "Geral"
@@ -6220,7 +6236,7 @@ msgstr "Guias"
 #. type: Title #
 #: src/en/documentation/use/guides/knowledge-base.md:1
 #: src/en/documentation/use/guides/knowledge-base.md:6
-#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/intro.md:177
 #: src/en/reference/rest-api/knowledgebase.md:1
 #: src/en/reference/rest-api/knowledgebase.md:6
 #, no-wrap
@@ -8881,6 +8897,12 @@ msgid ""
 "\n"
 "The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.\n"
 msgstr ""
+"As notificações que você já leu são removidas da lista automaticamente. As que você mesmo marcou como lidas desaparecem\n"
+"depois de cerca de dez minutos. As que o Zammad marcou como lidas para você - o que acontece quando outra pessoa altera o estado do\n"
+"ticket ao qual a notificação pertence - permanecem por cerca de oito horas. Independentemente disso, nenhuma notificação é mantida por\n"
+"mais de nove meses.\n"
+"\n"
+"A limpeza é executada a cada duas horas, então uma notificação pode permanecer visível um pouco mais do que os tempos indicados acima.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:131
@@ -11361,7 +11383,7 @@ msgstr "Node.js"
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:354
-#: src/en/reference/environment-variables.md:140
+#: src/en/reference/environment-variables.md:147
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
@@ -11369,7 +11391,7 @@ msgstr "PostgreSQL"
 #. type: Title ##
 #: src/en/get-started/installation/package.md:354
 #: src/en/get-started/installation/package.md:375
-#: src/en/reference/environment-variables.md:186
+#: src/en/reference/environment-variables.md:202
 #, no-wrap
 msgid "Nginx"
 msgstr "Nginx"
@@ -11826,7 +11848,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:53
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
-#: src/en/reference/rest-api/ticket.md:82
+#: src/en/reference/rest-api/ticket.md:105
 #: src/en/reference/rest-api/time-accounting.md:54
 #: src/en/reference/rest-api/user.md:95
 #, no-wrap
@@ -12818,7 +12840,7 @@ msgstr "Cenários do Docker Compose"
 #. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:8
 #: src/en/reference/es-indexed-attributes.md:25
-#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/intro.md:177
 #: src/en/reference/rest-api/knowledgebase.md:19
 #, no-wrap
 msgid "Overview"
@@ -13432,13 +13454,22 @@ msgstr "Personalizar a stack localmente"
 
 #. type: Plain text
 #: src/en/reference/docker-compose-scenarios.md:192
+#, fuzzy
+#| msgid ""
+#| "Sometimes it's necessary to apply local changes to the Zammad Docker "
+#| "stack, e.g. to include additional services. If you plan to do so, we "
+#| "recommend that you do not change the `docker-compose.yml` file, but "
+#| "instead create a local `docker-compose.override.yml` that includes all "
+#| "your modifications. Docker Compose will [automatically load this file and "
+#| "merge its changes into your stack](https://docs.docker.com/compose/"
+#| "multiple-compose-files/merge/){target=_blank}."
 msgid ""
 "Sometimes it's necessary to apply local changes to the Zammad Docker stack, "
 "e.g. to include additional services. If you plan to do so, we recommend that "
 "you do not change the `docker-compose.yml` file, but instead create a local "
 "`docker-compose.override.yml` that includes all your modifications. Docker "
 "Compose will [automatically load this file and merge its changes into your "
-"stack](https://docs.docker.com/compose/multiple-compose-files/merge/)"
+"stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/)"
 "{target=_blank}."
 msgstr ""
 "Às vezes é necessário aplicar alterações locais à stack Docker do Zammad, "
@@ -13540,17 +13571,21 @@ msgstr ""
 "  certos comandos, há o risco de interromper as operações normais do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:39
-#, no-wrap
+#: src/en/reference/environment-variables.md:40
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_BIND_IP` ::p:: <Badge type=\"tip\" text=\"127.0.0.1\" />\n"
+#| ": The IP address that the web server is bound to.\n"
 msgid ""
 "`ZAMMAD_BIND_IP` ::p:: <Badge type=\"tip\" text=\"127.0.0.1\" />\n"
-": The IP address that the web server is bound to.\n"
+":\n"
+"  The IP address that the web server is bound to.\n"
 msgstr ""
 "`ZAMMAD_BIND_IP` ::p:: <Badge type=\"tip\" text=\"127.0.0.1\" />\n"
 ": o endereço IP ao qual o servidor web está vinculado.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:43
+#: src/en/reference/environment-variables.md:44
 #, no-wrap
 msgid ""
 "`S3_URL` ::p::\n"
@@ -13562,7 +13597,7 @@ msgstr ""
 "  `https://key:secret@s3.eu-central-1.amazonaws.com/zammad-storage-bucket?region=eu-central-1&force_path_style=true`\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:51
+#: src/en/reference/environment-variables.md:52
 #, no-wrap
 msgid ""
 "`VERSION` ::d:: <Badge type=\"tip\" text=\"current stable version of Zammad\" />\n"
@@ -13578,7 +13613,7 @@ msgstr ""
 "  para mais detalhes sobre essa variável.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:57
+#: src/en/reference/environment-variables.md:58
 #, no-wrap
 msgid ""
 "`AUTOWIZARD_JSON` ::d::\n"
@@ -13594,21 +13629,27 @@ msgstr ""
 "  deve ajudar.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:60
+#: src/en/reference/environment-variables.md:62
+#, fuzzy, no-wrap
+#| msgid "`ZAMMAD_HTTP_TYPE` : Set the http type for your instance. Possible values are `http` and `https`."
 msgid ""
-"`ZAMMAD_HTTP_TYPE` : Set the http type for your instance. Possible values "
-"are `http` and `https`."
-msgstr ""
-"`ZAMMAD_HTTP_TYPE` : defina o tipo de HTTP para sua instância. Os valores "
-"possíveis são `http` e `https`."
+"`ZAMMAD_HTTP_TYPE`\n"
+":\n"
+"  Set the http type for your instance. Possible values are `http` and `https`.\n"
+msgstr "`ZAMMAD_HTTP_TYPE` : defina o tipo de HTTP para sua instância. Os valores possíveis são `http` e `https`."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:63
-msgid "`ZAMMAD_FQDN` : Set the FQDN for your instance."
+#: src/en/reference/environment-variables.md:66
+#, fuzzy, no-wrap
+#| msgid "`ZAMMAD_FQDN` : Set the FQDN for your instance."
+msgid ""
+"`ZAMMAD_FQDN`\n"
+":\n"
+"  Set the FQDN for your instance.\n"
 msgstr "`ZAMMAD_FQDN` : defina o FQDN para sua instância."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:67
+#: src/en/reference/environment-variables.md:70
 #, no-wrap
 msgid ""
 "`RAILS_TRUSTED_PROXIES` <Badge type=\"tip\" text=\"127.0.0.1,::1\" />\n"
@@ -13620,7 +13661,7 @@ msgstr ""
 "  de taxa (rate limiting).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:71
+#: src/en/reference/environment-variables.md:74
 #, no-wrap
 msgid ""
 "  By default, Zammad trusts localhost proxies only. Any additional proxy servers will have to be added here,\n"
@@ -13632,7 +13673,7 @@ msgstr ""
 "  necessário sempre que o endereço IP de um servidor proxy mudar.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:74
+#: src/en/reference/environment-variables.md:77
 #, no-wrap
 msgid ""
 "  Note that in Docker context, Zammad may see the network   gateway IP address instead of the actual proxy server\n"
@@ -13642,7 +13683,7 @@ msgstr ""
 "  proxy, se ele estiver em outra rede.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:78
+#: src/en/reference/environment-variables.md:81
 #, no-wrap
 msgid ""
 "`ZAMMAD_MANAGE_SESSIONS_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
@@ -13654,7 +13695,7 @@ msgstr ""
 "  ativá-lo: `1`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:84
+#: src/en/reference/environment-variables.md:87
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
@@ -13670,7 +13711,7 @@ msgstr ""
 "  `ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:87
+#: src/en/reference/environment-variables.md:90
 #, no-wrap
 msgid ""
 "  Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users\n"
@@ -13680,7 +13721,7 @@ msgstr ""
 "  com uma instância grande do Zammad, pode fazer sentido aumentá-lo para ter algum tipo de paralelização.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:92
+#: src/en/reference/environment-variables.md:95
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"tip\" text=\"5\" />\n"
@@ -13694,7 +13735,7 @@ msgstr ""
 "  O número máximo de threads é `16`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:97
+#: src/en/reference/environment-variables.md:100
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
@@ -13708,7 +13749,7 @@ msgstr ""
 "  workers é `16`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:101
+#: src/en/reference/environment-variables.md:104
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKER_THREADS` <Badge type=\"tip\" text=\"1\" />\n"
@@ -13720,7 +13761,7 @@ msgstr ""
 "  entrada (se você executar mais de um processo worker, o valor é multiplicado). O número máximo de threads é `16`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:105
+#: src/en/reference/environment-variables.md:108
 #, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS` <Badge type=\"tip\" text=\"Docker: zammad-memcached:11211\" /> <Badge type=\"tip\" text=\"Package: unset\" />\n"
@@ -13732,7 +13773,7 @@ msgstr ""
 "  `/opt/zammad/tmp/cache*`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:109
+#: src/en/reference/environment-variables.md:112
 #, no-wrap
 msgid ""
 "`REDIS_URL` <Badge type=\"tip\" text=\"Docker: redis://zammad-redis:6379\" /> <Badge type=\"tip\" text=\"Package: unset\" />\n"
@@ -13744,13 +13785,13 @@ msgstr ""
 "  `/opt/zammad/tmp/websocket_*`. Veja [Variáveis do Redis](/pt_BR/reference/redis) para uma configuração Sentinel.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:110
+#: src/en/reference/environment-variables.md:113
 #, no-wrap
 msgid "Elasticsearch"
 msgstr "Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:115
+#: src/en/reference/environment-variables.md:118
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_ENABLED` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -13762,47 +13803,63 @@ msgstr ""
 "  **contra** fazer isso.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:118
-#, no-wrap
+#: src/en/reference/environment-variables.md:122
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
+#| ": Provide a host name or address to your external Elasticsearch cluster.\n"
 msgid ""
 "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
-": Provide a host name or address to your external Elasticsearch cluster.\n"
+":\n"
+"  Provide a host name or address to your external Elasticsearch cluster.\n"
 msgstr ""
 "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
 ": forneça um nome de host ou endereço para seu cluster externo do Elasticsearch.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:121
-#, no-wrap
+#: src/en/reference/environment-variables.md:126
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
+#| ": Provide a different port for Elasticsearch if needed.\n"
 msgid ""
 "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
-": Provide a different port for Elasticsearch if needed.\n"
+":\n"
+"  Provide a different port for Elasticsearch if needed.\n"
 msgstr ""
 "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
 ": forneça uma porta diferente para o Elasticsearch, se necessário.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:124
-#, no-wrap
+#: src/en/reference/environment-variables.md:130
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
+#| ": Change it to `https` if your Elasticsearch cluster is configured to use SSL.\n"
 msgid ""
 "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
-": Change it to `https` if your Elasticsearch cluster is configured to use SSL.\n"
+":\n"
+"  Change it to `https` if your Elasticsearch cluster is configured to use SSL.\n"
 msgstr ""
 "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
 ": altere para `https` se seu cluster do Elasticsearch estiver configurado para usar SSL.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:127
-#, no-wrap
+#: src/en/reference/environment-variables.md:134
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
+#| ": With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
 msgid ""
 "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
+":\n"
+"  With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
 msgstr ""
 "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ": com esse namespace, todos os índices relacionados ao Zammad serão criados. Altere isso se você estiver usando clusters externos.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:131
+#: src/en/reference/environment-variables.md:138
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_REINDEX` ::d::\n"
@@ -13814,7 +13871,7 @@ msgstr ""
 "  de pesquisa manualmente, defina essa variável como `true` ou execute o comando de reindexação manualmente via Docker.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:135
+#: src/en/reference/environment-variables.md:142
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_SSL_VERIFY` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -13826,7 +13883,7 @@ msgstr ""
 "  necessário.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:139
+#: src/en/reference/environment-variables.md:146
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_HEAP_SIZE` ::d:: <Badge type=\"tip\" text=\"1G\" />\n"
@@ -13838,7 +13895,7 @@ msgstr ""
 "  valor para um tamanho razoável.\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/environment-variables.md:142
+#: src/en/reference/environment-variables.md:149
 #, no-wrap
 msgid ""
 "Variables for Docker and package installation are partially different. Check the limitation badge and make sure to pick\n"
@@ -13848,7 +13905,7 @@ msgstr ""
 "a correta. As duas variáveis no final da lista são válidas para ambos os tipos de instalação.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:150
+#: src/en/reference/environment-variables.md:157
 #, no-wrap
 msgid ""
 "`POSTGRESQL_HOST` ::p:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
@@ -13860,109 +13917,149 @@ msgstr ""
 "  (por exemplo, `[2001:db8::2]`).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:153
-#, no-wrap
+#: src/en/reference/environment-variables.md:161
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
+#| ": Adjust the port of your PostgreSQL server.\n"
 msgid ""
 "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
-": Adjust the port of your PostgreSQL server.\n"
+":\n"
+"  Adjust the port of your PostgreSQL server.\n"
 msgstr ""
 "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
 ": ajuste a porta do seu servidor PostgreSQL.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:156
-#, no-wrap
+#: src/en/reference/environment-variables.md:165
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
+#| ": The database user for Zammad.\n"
 msgid ""
 "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": The database user for Zammad.\n"
+":\n"
+"  The database user for Zammad.\n"
 msgstr ""
 "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ": o usuário do banco de dados do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:159
-#, no-wrap
+#: src/en/reference/environment-variables.md:169
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
+#| ": The password of Zammad's database user.\n"
 msgid ""
 "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": The password of Zammad's database user.\n"
+":\n"
+"  The password of Zammad's database user.\n"
 msgstr ""
 "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ": a senha do usuário do banco de dados do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:162
-#, no-wrap
+#: src/en/reference/environment-variables.md:173
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
+#| ": Zammad's database to use.\n"
 msgid ""
 "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
-": Zammad's database to use.\n"
+":\n"
+"  Zammad's database to use.\n"
 msgstr ""
 "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
 ": o banco de dados do Zammad a ser usado.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:166
-#, no-wrap
+#: src/en/reference/environment-variables.md:177
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRES_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
+#| ": Host name or IP address of your PostgreSQL server. In case you use an IPv6 address, enclose the address in square\n"
+#| "brackets (e.g. `[2001:db8::2]`).\n"
 msgid ""
 "`POSTGRES_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
 ": Host name or IP address of your PostgreSQL server. In case you use an IPv6 address, enclose the address in square\n"
-"brackets (e.g. `[2001:db8::2]`).\n"
+"  brackets (e.g. `[2001:db8::2]`).\n"
 msgstr ""
 "`POSTGRES_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
 ": nome de host ou endereço IP do seu servidor PostgreSQL. Caso você use um endereço IPv6, envolva o endereço em colchetes\n"
 "(por exemplo, `[2001:db8::2]`).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:169
-#, no-wrap
+#: src/en/reference/environment-variables.md:181
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
+#| ": Adjust the port of your PostgreSQL server.\n"
 msgid ""
 "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
-": Adjust the port of your PostgreSQL server.\n"
+":\n"
+"  Adjust the port of your PostgreSQL server.\n"
 msgstr ""
 "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
 ": ajuste a porta do seu servidor PostgreSQL.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:172
-#, no-wrap
+#: src/en/reference/environment-variables.md:185
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
+#| ": The database user for Zammad.\n"
 msgid ""
 "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": The database user for Zammad.\n"
+":\n"
+"  The database user for Zammad.\n"
 msgstr ""
 "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ": o usuário do banco de dados do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:175
-#, no-wrap
+#: src/en/reference/environment-variables.md:189
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
+#| ": The password of Zammad's database user.\n"
 msgid ""
 "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": The password of Zammad's database user.\n"
+":\n"
+"  The password of Zammad's database user.\n"
 msgstr ""
 "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ": a senha do usuário do banco de dados do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:178
-#, no-wrap
+#: src/en/reference/environment-variables.md:193
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
+#| ": Zammad's database to use.\n"
 msgid ""
 "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
-": Zammad's database to use.\n"
+":\n"
+"  Zammad's database to use.\n"
 msgstr ""
 "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
 ": o banco de dados do Zammad a ser usado.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:181
-#, no-wrap
+#: src/en/reference/environment-variables.md:197
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
+#| ": Additional PostgreSQL params to be appended to the database URI.\n"
 msgid ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
-": Additional PostgreSQL params to be appended to the database URI.\n"
+":\n"
+"  Additional PostgreSQL params to be appended to the database URI.\n"
 msgstr ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
 ": parâmetros adicionais do PostgreSQL a serem anexados à URI do banco de dados.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:185
+#: src/en/reference/environment-variables.md:201
 #, no-wrap
 msgid ""
 "`POSTGRESQL_DB_CREATE` <Badge type=\"tip\" text=\"true\" />\n"
@@ -13974,7 +14071,7 @@ msgstr ""
 "  problemático.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:191
+#: src/en/reference/environment-variables.md:207
 #, no-wrap
 msgid ""
 "`NGINX_EXPOSE_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
@@ -13986,27 +14083,35 @@ msgstr ""
 "  um serviço existente escutando nessa porta.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:194
-#, no-wrap
+#: src/en/reference/environment-variables.md:211
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
+#| ": The internal port the Nginx service will listen on.\n"
 msgid ""
 "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
-": The internal port the Nginx service will listen on.\n"
+":\n"
+"  The internal port the Nginx service will listen on.\n"
 msgstr ""
 "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
 ": a porta interna na qual o serviço Nginx vai escutar.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:197
-#, no-wrap
+#: src/en/reference/environment-variables.md:215
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
+#| ": By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
 msgid ""
 "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
-": By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
+":\n"
+"  By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
 msgstr ""
 "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
 ": por padrão, o container Nginx do Zammad responderá a todas as solicitações. Você pode fornecer seu IP/FQDN se quiser.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:202
+#: src/en/reference/environment-variables.md:220
 #, no-wrap
 msgid ""
 "`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"$scheme\" />\n"
@@ -14020,72 +14125,93 @@ msgstr ""
 "  erro `CSRF Token Verification Failed`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:205
+#: src/en/reference/environment-variables.md:224
+#, fuzzy, no-wrap
+#| msgid "`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Define the maximum size of data that a client can send to the server."
 msgid ""
-"`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Define the maximum size of data that a "
-"client can send to the server."
-msgstr ""
-"`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : defina o tamanho máximo de dados que um "
-"cliente pode enviar ao servidor."
+"`NGINX_CLIENT_MAX_BODY_SIZE` ::d::\n"
+":\n"
+"  Define the maximum size of data that a client can send to the server.\n"
+msgstr "`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : defina o tamanho máximo de dados que um cliente pode enviar ao servidor."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:208
-#, no-wrap
+#: src/en/reference/environment-variables.md:228
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
+#| ": Host name of the Rails server container.\n"
 msgid ""
 "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
-": Host name of the Rails server container.\n"
+":\n"
+"  Host name of the Rails server container.\n"
 msgstr ""
 "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
 ": nome de host do container do servidor Rails.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:211
-#, no-wrap
+#: src/en/reference/environment-variables.md:232
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
+#| ": Port of Zammad's Rails server.\n"
 msgid ""
 "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
-": Port of Zammad's Rails server.\n"
+":\n"
+"  Port of Zammad's Rails server.\n"
 msgstr ""
 "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
 ": porta do servidor Rails do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:214
-#, no-wrap
+#: src/en/reference/environment-variables.md:236
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
+#| ": Port of Zammad's Rails server.\n"
 msgid ""
 "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
-": Port of Zammad's Rails server.\n"
+":\n"
+"  Port of Zammad's Rails server.\n"
 msgstr ""
 "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
 ": porta do servidor Rails do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:217
-#, no-wrap
+#: src/en/reference/environment-variables.md:240
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
+#| ": Host name of Zammad's WebSocket server.\n"
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
-": Host name of Zammad's WebSocket server.\n"
+":\n"
+"  Host name of Zammad's WebSocket server.\n"
 msgstr ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
 ": nome de host do servidor WebSocket do Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:220
-#, no-wrap
+#: src/en/reference/environment-variables.md:244
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
+#| ": Port of Zammad's WebSocket server.\n"
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
-": Port of Zammad's WebSocket server.\n"
+":\n"
+"  Port of Zammad's WebSocket server.\n"
 msgstr ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
 ": porta do servidor WebSocket do Zammad.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:221
+#: src/en/reference/environment-variables.md:245
 #, no-wrap
 msgid "Performance tuning"
 msgstr "Ajuste de desempenho"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:225
+#: src/en/reference/environment-variables.md:249
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
 "recommended values here; the optimal configuration depends on your system's "
@@ -14096,7 +14222,7 @@ msgstr ""
 "seu sistema e da carga típica da aplicação."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:228
+#: src/en/reference/environment-variables.md:252
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
 "at which performance will begin to degrade rather than improve, or other "
@@ -14107,7 +14233,7 @@ msgstr ""
 "melhorar, ou outros problemas começarão a surgir."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:231
+#: src/en/reference/environment-variables.md:255
 msgid ""
 "Below settings may consume all available database connections. Please "
 "consider the [Configure Database Server](config-db-server) for more "
@@ -14118,7 +14244,7 @@ msgstr ""
 "server) para mais informações."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:236
+#: src/en/reference/environment-variables.md:260
 #, no-wrap
 msgid ""
 "`ZAMMAD_WEB_CONCURRENCY`\n"
@@ -14132,7 +14258,7 @@ msgstr ""
 "  deve corresponder ao valor dessa variável.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:241
+#: src/en/reference/environment-variables.md:265
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
@@ -14146,9 +14272,9 @@ msgstr ""
 "  menos de 40 usuários ativos por vez. Aumentar a quantidade desses processos pode consumir muitos recursos!\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:244
-#: src/en/reference/environment-variables.md:251
-#: src/en/reference/environment-variables.md:258
+#: src/en/reference/environment-variables.md:268
+#: src/en/reference/environment-variables.md:275
+#: src/en/reference/environment-variables.md:282
 #, no-wrap
 msgid ""
 "  In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler\n"
@@ -14158,7 +14284,7 @@ msgstr ""
 "  deve corresponder à soma de todas as variáveis de configuração de worker.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:248
+#: src/en/reference/environment-variables.md:272
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
@@ -14170,7 +14296,7 @@ msgstr ""
 "  máximo de workers: `1`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:255
+#: src/en/reference/environment-variables.md:279
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
@@ -14182,7 +14308,7 @@ msgstr ""
 "  processo principal é usada, `1` significa que um worker separado é criado, etc. O número máximo de workers é `16`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:262
+#: src/en/reference/environment-variables.md:286
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`\n"
@@ -14194,13 +14320,13 @@ msgstr ""
 "  quantidade deles). O número máximo de threads é `16`.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:263
+#: src/en/reference/environment-variables.md:287
 #, no-wrap
 msgid "HTTP client settings"
 msgstr "Configurações do cliente HTTP"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:267
+#: src/en/reference/environment-variables.md:291
 msgid ""
 "Global HTTP timeout settings. These variables control the default timeout "
 "behavior for Zammad's internal HTTP client when connecting to external "
@@ -14212,7 +14338,7 @@ msgstr ""
 "integrações)."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:271
+#: src/en/reference/environment-variables.md:295
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
@@ -14224,7 +14350,7 @@ msgstr ""
 "  com um servidor remoto (por exemplo, se você tiver uma conexão lenta).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:275
+#: src/en/reference/environment-variables.md:299
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -14236,7 +14362,7 @@ msgstr ""
 "  uma conexão lenta ou tempos de resposta lentos do lado externo).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:280
+#: src/en/reference/environment-variables.md:304
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -14250,13 +14376,13 @@ msgstr ""
 "  `ZAMMAD_HTTP_READ_TIMEOUT`.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:281
+#: src/en/reference/environment-variables.md:305
 #, no-wrap
 msgid "How to set environment variables"
 msgstr "Como definir variáveis de ambiente"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:286
+#: src/en/reference/environment-variables.md:310
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
 "`zammad config` command as you can see below, use your system's way of "
@@ -14271,50 +14397,50 @@ msgstr ""
 "interface gráfica como o Portainer para defini-las em uma instalação Docker."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:288
+#: src/en/reference/environment-variables.md:312
 msgid "Examples for package installations:"
 msgstr "Exemplos para instalações via pacote:"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:290
+#: src/en/reference/environment-variables.md:314
 msgid "Set OPTION to \"value\":"
 msgstr "Definir OPTION como \"value\":"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:291
+#: src/en/reference/environment-variables.md:315
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr "zammad config:set OPTION=value\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:296
+#: src/en/reference/environment-variables.md:320
 msgid "Get OPTION:"
 msgstr "Obter OPTION:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:297
+#: src/en/reference/environment-variables.md:321
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr "zammad config:get OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:302
+#: src/en/reference/environment-variables.md:326
 msgid "Unset OPTION:"
 msgstr "Remover OPTION:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:303
+#: src/en/reference/environment-variables.md:327
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr "zammad config:unset OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:308
+#: src/en/reference/environment-variables.md:332
 msgid "Restart Zammad after changing settings:"
 msgstr "Reinicie o Zammad após alterar as configurações:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:309
+#: src/en/reference/environment-variables.md:333
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr "sudo systemctl restart zammad\n"
@@ -14487,9 +14613,9 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:103
-#: src/en/reference/rest-api/articles.md:142
-#: src/en/reference/rest-api/articles.md:159
-#: src/en/reference/rest-api/articles.md:178
+#: src/en/reference/rest-api/articles.md:144
+#: src/en/reference/rest-api/articles.md:161
+#: src/en/reference/rest-api/articles.md:180
 #: src/en/reference/rest-api/calendar.md:42
 #: src/en/reference/rest-api/calendar.md:63
 #: src/en/reference/rest-api/checklist.md:47
@@ -14498,9 +14624,9 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:136
 #: src/en/reference/rest-api/checklist.md:196
 #: src/en/reference/rest-api/checklist.md:218
-#: src/en/reference/rest-api/cti.md:125 src/en/reference/rest-api/cti.md:168
-#: src/en/reference/rest-api/cti.md:281 src/en/reference/rest-api/cti.md:324
-#: src/en/reference/rest-api/cti.md:399 src/en/reference/rest-api/cti.md:442
+#: src/en/reference/rest-api/cti.md:129 src/en/reference/rest-api/cti.md:172
+#: src/en/reference/rest-api/cti.md:289 src/en/reference/rest-api/cti.md:332
+#: src/en/reference/rest-api/cti.md:411 src/en/reference/rest-api/cti.md:454
 #: src/en/reference/rest-api/group.md:47 src/en/reference/rest-api/group.md:68
 #: src/en/reference/rest-api/knowledgebase.md:49
 #: src/en/reference/rest-api/knowledgebase.md:82
@@ -14536,8 +14662,8 @@ msgstr ""
 #: src/en/reference/rest-api/states.md:54
 #: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
 #: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
-#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:62
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:85
+#: src/en/reference/rest-api/ticket.md:111
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
@@ -16080,7 +16206,7 @@ msgstr "Cabeçalho \"In-Reply-To\" do email, se aplicável."
 
 #. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:661
-#: src/en/reference/rest-api/articles.md:76
+#: src/en/reference/rest-api/articles.md:78
 #, no-wrap
 msgid "`internal`"
 msgstr "`internal`"
@@ -22224,12 +22350,17 @@ msgstr ""
 "  No entanto, isso depende muito do `sender` escolhido.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:40
-msgid "`phone` : Indicates phone notes."
+#: src/en/reference/rest-api/articles.md:41
+#, fuzzy, no-wrap
+#| msgid "`phone` : Indicates phone notes."
+msgid ""
+"`phone`\n"
+":\n"
+"  Indicates phone notes.\n"
 msgstr "`phone` : indica notas de telefone."
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:44
+#: src/en/reference/rest-api/articles.md:45
 #, no-wrap
 msgid ""
 "`web`\n"
@@ -22241,7 +22372,7 @@ msgstr ""
 "  seu cliente usa a interface web para criar artigos.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:48
+#: src/en/reference/rest-api/articles.md:49
 #, no-wrap
 msgid ""
 "`note`\n"
@@ -22253,18 +22384,23 @@ msgstr ""
 "  note. O Zammad também usa esse tipo de artigo como fallback padrão.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:50
+#: src/en/reference/rest-api/articles.md:51
 #, no-wrap
 msgid "  This is **not a communication article**.\n"
 msgstr "  Este **não é um artigo de comunicação**.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:53
-msgid "`sms` : This type is being used for Zammad's SMS integration."
+#: src/en/reference/rest-api/articles.md:55
+#, fuzzy, no-wrap
+#| msgid "`sms` : This type is being used for Zammad's SMS integration."
+msgid ""
+"`sms`\n"
+":\n"
+"  This type is being used for Zammad's SMS integration.\n"
 msgstr "`sms` : este tipo é usado para a integração de SMS do Zammad."
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:57
+#: src/en/reference/rest-api/articles.md:59
 #, no-wrap
 msgid ""
 "`chat`\n"
@@ -22276,7 +22412,7 @@ msgstr ""
 "  via API.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:61
+#: src/en/reference/rest-api/articles.md:63
 #, no-wrap
 msgid ""
 "`fax`\n"
@@ -22288,7 +22424,7 @@ msgstr ""
 "  via API.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:66
+#: src/en/reference/rest-api/articles.md:68
 #, no-wrap
 msgid ""
 "`twitter status` & `twitter direct-message`\n"
@@ -22302,7 +22438,7 @@ msgstr ""
 "  Twitter.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:71
+#: src/en/reference/rest-api/articles.md:73
 #, no-wrap
 msgid ""
 "`facebook feed post` & `facebook feed comment`\n"
@@ -22316,7 +22452,7 @@ msgstr ""
 "  Facebook.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:75
+#: src/en/reference/rest-api/articles.md:77
 #, no-wrap
 msgid ""
 "`telegram personal-message`\n"
@@ -22328,7 +22464,7 @@ msgstr ""
 "  responder automaticamente a solicitações existentes via Telegram.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:81
+#: src/en/reference/rest-api/articles.md:83
 msgid ""
 "This attribute allows you to set the visibility of your articles. For "
 "internal visible only use `true`, for visibly for your customers as well use "
@@ -22339,7 +22475,7 @@ msgstr ""
 "clientes, use `false`."
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rest-api/articles.md:82
+#: src/en/reference/rest-api/articles.md:84
 #, no-wrap
 msgid ""
 "**Visibility: internal doesn't mean it's silent**\n"
@@ -22353,33 +22489,33 @@ msgstr ""
 "tenha ciência de que esse email ainda será enviado!\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/articles.md:89
+#: src/en/reference/rest-api/articles.md:91
 #, no-wrap
 msgid "`sender`"
 msgstr "`sender`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:92
+#: src/en/reference/rest-api/articles.md:94
 msgid "Indicates which use did create the article. You can choose from:"
 msgstr "Indica qual usuário criou o artigo. Você pode escolher entre:"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/articles.md:96
+#: src/en/reference/rest-api/articles.md:98
 msgid "`Agent`"
 msgstr "`Agent`"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/articles.md:96
+#: src/en/reference/rest-api/articles.md:98
 msgid "`Customer`"
 msgstr "`Customer`"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/articles.md:96
+#: src/en/reference/rest-api/articles.md:98
 msgid "`System`"
 msgstr "`System`"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rest-api/articles.md:97
+#: src/en/reference/rest-api/articles.md:99
 #, no-wrap
 msgid ""
 "Depending of above selection, some article types may not be available\n"
@@ -22393,31 +22529,31 @@ msgstr ""
 "nos tickets).\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/articles.md:104
+#: src/en/reference/rest-api/articles.md:106
 #, no-wrap
 msgid "List articles by ticket"
 msgstr "Listar artigos por ticket"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:107
-#: src/en/reference/rest-api/articles.md:119
-#: src/en/reference/rest-api/articles.md:131
+#: src/en/reference/rest-api/articles.md:109
+#: src/en/reference/rest-api/articles.md:121
+#: src/en/reference/rest-api/articles.md:133
 #: src/en/reference/rest-api/mentions.md:17
-#: src/en/reference/rest-api/ticket.md:17
 #: src/en/reference/rest-api/ticket.md:29
 #: src/en/reference/rest-api/ticket.md:41
-#: src/en/reference/rest-api/ticket.md:85
+#: src/en/reference/rest-api/ticket.md:53
+#: src/en/reference/rest-api/ticket.md:108
 msgid "Required permission: `ticket.agent` **or** `ticket.customer`"
 msgstr "Permissão necessária: `ticket.agent` **ou** `ticket.customer`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:109
+#: src/en/reference/rest-api/articles.md:111
 msgid "`GET`-Request sent: `/api/v1/ticket_articles/by_ticket/{ticket id}`"
 msgstr ""
 "Solicitação `GET` enviada: `/api/v1/ticket_articles/by_ticket/{ticket id}`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/articles.md:110
+#: src/en/reference/rest-api/articles.md:112
 #, no-wrap
 msgid ""
 "\n"
@@ -22429,18 +22565,18 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/articles.md:116
+#: src/en/reference/rest-api/articles.md:118
 #, no-wrap
 msgid "List specific article"
 msgstr "Listar artigo específico"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:121
+#: src/en/reference/rest-api/articles.md:123
 msgid "`GET`-Request sent: `/api/v1/ticket_articles/{article id}`"
 msgstr "Solicitação `GET` enviada: `/api/v1/ticket_articles/{article id}`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/articles.md:122
+#: src/en/reference/rest-api/articles.md:124
 #, no-wrap
 msgid ""
 "\n"
@@ -22452,7 +22588,7 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/articles.md:128
+#: src/en/reference/rest-api/articles.md:130
 #: src/en/reference/rest-api/calendar.md:36
 #: src/en/reference/rest-api/checklist.md:41
 #: src/en/reference/rest-api/checklist.md:109
@@ -22467,7 +22603,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:32
 #: src/en/reference/rest-api/shared-draft.md:20
 #: src/en/reference/rest-api/sla.md:38 src/en/reference/rest-api/states.md:40
-#: src/en/reference/rest-api/ticket.md:38
+#: src/en/reference/rest-api/ticket.md:50
 #: src/en/reference/rest-api/time-accounting.md:33
 #: src/en/reference/rest-api/user-access-token.md:20
 #: src/en/reference/rest-api/user.md:55
@@ -22476,12 +22612,12 @@ msgid "Create"
 msgstr "Criar"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:133
+#: src/en/reference/rest-api/articles.md:135
 msgid "`POST`-Request sent: `/api/v1/ticket_articles`"
 msgstr "Solicitação `POST` enviada: `/api/v1/ticket_articles`"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/articles.md:134
+#: src/en/reference/rest-api/articles.md:136
 #, no-wrap
 msgid ""
 "If you want to create articles on behalf of other users (e.g. for a\n"
@@ -22493,13 +22629,13 @@ msgstr ""
 "é obrigatória para isso.\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/articles.md:140
+#: src/en/reference/rest-api/articles.md:142
 #, no-wrap
 msgid "Plain article"
 msgstr "Artigo simples"
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/articles.md:142
+#: src/en/reference/rest-api/articles.md:144
 #, no-wrap
 msgid ""
 "\n"
@@ -22523,13 +22659,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/articles.md:157
+#: src/en/reference/rest-api/articles.md:159
 #, no-wrap
 msgid "Article with attached files"
 msgstr "Artigo com arquivos anexados"
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/articles.md:159
+#: src/en/reference/rest-api/articles.md:161
 #, no-wrap
 msgid ""
 "\n"
@@ -22553,19 +22689,19 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/articles.md:174
+#: src/en/reference/rest-api/articles.md:176
 #, no-wrap
 msgid "Article with inline images"
 msgstr "Artigo com imagens inline"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:177
+#: src/en/reference/rest-api/articles.md:179
 msgid "Inline images can be used by providing data URIs in your HTML markup."
 msgstr ""
 "Imagens inline podem ser usadas fornecendo data URIs na sua marcação HTML."
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/articles.md:178
+#: src/en/reference/rest-api/articles.md:180
 #, no-wrap
 msgid ""
 "\n"
@@ -22589,13 +22725,13 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/articles.md:193
+#: src/en/reference/rest-api/articles.md:195
 #, no-wrap
 msgid "Receive attachments"
 msgstr "Receber anexos"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:197
+#: src/en/reference/rest-api/articles.md:199
 msgid ""
 "Now that you have all those fancy attachments within your tickets, you may "
 "want to download specific ones."
@@ -22604,7 +22740,7 @@ msgstr ""
 "pode querer baixar alguns específicos."
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:200
+#: src/en/reference/rest-api/articles.md:202
 msgid ""
 "`GET`-Request sent: `/api/v1/ticket_attachment/{ticket id}/{article id}/"
 "{attachment id}`"
@@ -22613,12 +22749,12 @@ msgstr ""
 "id}/{attachment id}`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:202
+#: src/en/reference/rest-api/articles.md:204
 msgid "Response: `{image file}`"
 msgstr "Resposta: `{image file}`"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/articles.md:203
+#: src/en/reference/rest-api/articles.md:205
 #, no-wrap
 msgid ""
 "If you're not sure which articles a ticket contains, please\n"
@@ -22632,7 +22768,7 @@ msgstr ""
 #: src/en/reference/rest-api/audit-log.md:6
 #, no-wrap
 msgid "Audit log"
-msgstr ""
+msgstr "Log de auditoria"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:10
@@ -22640,6 +22776,9 @@ msgid ""
 "The audit log records security-relevant changes to your Zammad system: who "
 "changed what, and when. The audit log is read-only."
 msgstr ""
+"O log de auditoria registra alterações relevantes para a segurança no seu "
+"sistema Zammad: quem alterou o quê e quando. O log de auditoria é somente "
+"leitura."
 
 #. type: Title ##
 #: src/en/reference/rest-api/audit-log.md:11
@@ -22653,7 +22792,7 @@ msgstr ""
 #: src/en/reference/rest-api/priorities.md:8
 #: src/en/reference/rest-api/role.md:8 src/en/reference/rest-api/sla.md:12
 #: src/en/reference/rest-api/states.md:14 src/en/reference/rest-api/tags.md:10
-#: src/en/reference/rest-api/ticket.md:14
+#: src/en/reference/rest-api/ticket.md:26
 #: src/en/reference/rest-api/time-accounting.md:8
 #: src/en/reference/rest-api/user-access-token.md:8
 #: src/en/reference/rest-api/user.md:26
@@ -22665,17 +22804,13 @@ msgstr "Listar"
 #: src/en/reference/rest-api/audit-log.md:14
 #: src/en/reference/rest-api/audit-log.md:30
 #: src/en/reference/rest-api/audit-log.md:42
-#, fuzzy
-#| msgid "Required permission: `admin.tag`"
 msgid "Required permission: `admin.audit_log`"
-msgstr "Permissão necessária: `admin.tag`"
+msgstr "Permissão necessária: `admin.audit_log`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:16
-#, fuzzy
-#| msgid "`GET`-Request sent: `/api/v1/tag_list`"
 msgid "`GET`-Request sent: `/api/v1/audit_logs`"
-msgstr "Solicitação `GET` enviada: `/api/v1/tag_list`"
+msgstr "Solicitação `GET` enviada: `/api/v1/audit_logs`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:20
@@ -22684,21 +22819,20 @@ msgid ""
 "are returned ordered by `id` (ascending). Pass `?sort_by=id` and `?"
 "order_by=DESC` to return the newest entries first."
 msgstr ""
+"O endpoint suporta paginação. O tamanho de página padrão é `500`. As "
+"entradas são retornadas ordenadas por `id` (crescente). Passe `?sort_by=id` "
+"e `?order_by=DESC` para retornar as entradas mais recentes primeiro."
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/audit-log.md:21
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "<<< @/fixtures/rest-api/tags/get-res.json\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/audit_logs/get-list-res.json\n"
 "\n"
 msgstr ""
 "\n"
-"<<< @/fixtures/rest-api/tags/get-res.json\n"
+"<<< @/fixtures/rest-api/audit_logs/get-list-res.json\n"
 "\n"
 
 #. type: Title ##
@@ -22718,7 +22852,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:20
 #: src/en/reference/rest-api/shared-draft.md:8
 #: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
-#: src/en/reference/rest-api/ticket.md:26
+#: src/en/reference/rest-api/ticket.md:38
 #: src/en/reference/rest-api/time-accounting.md:20
 #: src/en/reference/rest-api/user.md:38
 #, no-wrap
@@ -22727,25 +22861,19 @@ msgstr "Mostrar"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:32
-#, fuzzy
-#| msgid "`GET`-Request sent: `/api/v1/slas/{id}`"
 msgid "`GET`-Request sent: `/api/v1/audit_logs/{id}`"
-msgstr "Solicitação `GET` enviada: `/api/v1/slas/{id}`"
+msgstr "Solicitação `GET` enviada: `/api/v1/audit_logs/{id}`"
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/audit-log.md:33
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "<<< @/fixtures/rest-api/slas/get-id-res.json\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/audit_logs/get-id-res.json\n"
 "\n"
 msgstr ""
 "\n"
-"<<< @/fixtures/rest-api/slas/get-id-res.json\n"
+"<<< @/fixtures/rest-api/audit_logs/get-id-res.json\n"
 "\n"
 
 #. type: Plain text
@@ -22755,23 +22883,27 @@ msgid ""
 "simplest case is a literal substring on a single indexed field such as "
 "`auditable_name`, `auditable_type` or `user_fullname`:"
 msgstr ""
+"O endpoint de pesquisa aceita a sintaxe `query` do backend de pesquisa do "
+"Zammad. O caso mais simples é uma substring literal em um único campo "
+"indexado, como `auditable_name`, `auditable_type` ou `user_fullname`:"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:49
-#, fuzzy
-#| msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome`"
 msgid "`GET`-Request sent: `/api/v1/audit_logs/search?query={search-string}`"
-msgstr "Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome`"
+msgstr ""
+"Solicitação `GET` enviada: `/api/v1/audit_logs/search?query={search-string}`"
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/audit-log.md:50
-#, fuzzy, no-wrap
-#| msgid "<<< @/fixtures/rest-api/intro/get-full-search-res.json\n"
+#, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/audit_logs/get-search-res.json\n"
 "\n"
-msgstr "<<< @/fixtures/rest-api/intro/get-full-search-res.json\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-search-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:59
@@ -22780,15 +22912,18 @@ msgid ""
 "record, prefix the attribute name. You can even use the logical `AND` "
 "connector to narrow down the results:"
 msgstr ""
+"Para filtrar por um atributo específico em vez de buscar por substring no "
+"registro inteiro, prefixe o nome do atributo. Você pode até usar o conector "
+"lógico `AND` para refinar os resultados:"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:62
-#, fuzzy
-#| msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome`"
 msgid ""
 "`GET`-Request sent: `/api/v1/audit_logs/search?query=auditable_type:Macro "
 "AND user_id:3`"
-msgstr "Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome`"
+msgstr ""
+"Solicitação `GET` enviada: `/api/v1/audit_logs/search?"
+"query=auditable_type:Macro AND user_id:3`"
 
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/audit-log.md:63
@@ -22799,6 +22934,10 @@ msgid ""
 "`user_fullname` and so on). The `value_from` and `value_to`\n"
 "payloads are not searchable.\n"
 msgstr ""
+"As correspondências de pesquisa diferenciam maiúsculas de minúsculas e pesquisam apenas os\n"
+"campos de atributo indexados (`auditable_name`, `auditable_type`,\n"
+"`user_fullname` e assim por diante). Os payloads `value_from` e `value_to`\n"
+"não são pesquisáveis.\n"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/audit-log.md:70
@@ -22810,30 +22949,42 @@ msgid ""
 "an object that also contains the `total_count`. Send a `POST`\n"
 "request when the query is too long or complex for a URL.\n"
 msgstr ""
+"Por padrão, a resposta é um array JSON simples com as entradas correspondentes.\n"
+"Passe `with_total_count=true` na URL (ou `with_total_count:\n"
+"true` no corpo de uma solicitação `POST`) para envolver a resposta em\n"
+"um objeto que também contém o `total_count`. Envie uma solicitação `POST`\n"
+"quando a consulta for muito longa ou complexa para uma URL.\n"
 
 #. type: Title ##
 #: src/en/reference/rest-api/audit-log.md:78
-#, fuzzy, no-wrap
-#| msgid "Reference"
+#, no-wrap
 msgid "Field reference"
-msgstr "Referência"
+msgstr "Referência de campos"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:82
-msgid "`id` : Integer primary key of the audit log entry."
-msgstr ""
+#: src/en/reference/rest-api/audit-log.md:83
+#, fuzzy, no-wrap
+#| msgid "`id` : Integer primary key of the audit log entry."
+msgid ""
+"`id`\n"
+":\n"
+"  Integer primary key of the audit log entry.\n"
+msgstr "`id`: chave primária inteira da entrada do log de auditoria."
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:86
+#: src/en/reference/rest-api/audit-log.md:87
 #, no-wrap
 msgid ""
 "`user_id`\n"
 ": ID of the user that triggered the change. `null` when the entry\n"
 "  was written by a background job without a current user.\n"
 msgstr ""
+"`user_id`\n"
+": ID do usuário que acionou a alteração. `null` quando a entrada\n"
+"  foi gravada por uma tarefa em segundo plano sem um usuário atual.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:91
+#: src/en/reference/rest-api/audit-log.md:92
 #, no-wrap
 msgid ""
 "`user_fullname`\n"
@@ -22841,9 +22992,13 @@ msgid ""
 "  separately so it remains readable after the user account is\n"
 "  removed.\n"
 msgstr ""
+"`user_fullname`\n"
+": Nome completo do usuário no momento em que a entrada foi gravada. Armazenado\n"
+"  separadamente para que continue legível mesmo após a conta do usuário ser\n"
+"  removida.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:98
+#: src/en/reference/rest-api/audit-log.md:99
 #, no-wrap
 msgid ""
 "`action_type`\n"
@@ -22853,23 +23008,37 @@ msgid ""
 "  user's session via _View from user's perspective_),\n"
 "  `switch_back_to` (the original session was resumed).\n"
 msgstr ""
+"`action_type`\n"
+": Tipo da alteração registrada. Um dos seguintes: `create` (um registro foi\n"
+"  adicionado), `update` (um registro existente foi modificado), `destroy`\n"
+"  (um registro foi removido), `switch_to` (um usuário assumiu a sessão de outro\n"
+"  usuário via _View from user's perspective_),\n"
+"  `switch_back_to` (a sessão original foi retomada).\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:101
-msgid "`auditable_id` : ID of the record that was changed."
-msgstr ""
+#: src/en/reference/rest-api/audit-log.md:103
+#, fuzzy, no-wrap
+#| msgid "`auditable_id` : ID of the record that was changed."
+msgid ""
+"`auditable_id`\n"
+":\n"
+"  ID of the record that was changed.\n"
+msgstr "`auditable_id`: ID do registro que foi alterado."
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:105
+#: src/en/reference/rest-api/audit-log.md:107
 #, no-wrap
 msgid ""
 "`auditable_type`\n"
 ": Class name of the record that was changed (e.g. `Macro`,\n"
 "  `Setting`, `KnowledgeBase`, `ChecklistTemplate`, `Job`).\n"
 msgstr ""
+"`auditable_type`\n"
+": Nome da classe do registro que foi alterado (ex.: `Macro`,\n"
+"  `Setting`, `KnowledgeBase`, `ChecklistTemplate`, `Job`).\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:110
+#: src/en/reference/rest-api/audit-log.md:112
 #, no-wrap
 msgid ""
 "`auditable_name`\n"
@@ -22877,27 +23046,37 @@ msgid ""
 "  written. Stored separately so it remains readable after the record\n"
 "  itself is gone.\n"
 msgstr ""
+"`auditable_name`\n"
+": Nome de exibição do registro alterado no momento em que a entrada foi\n"
+"  gravada. Armazenado separadamente para que continue legível mesmo depois que o\n"
+"  registro em si deixa de existir.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:114
+#: src/en/reference/rest-api/audit-log.md:116
 #, no-wrap
 msgid ""
 "`value_from`\n"
 ": Object (JSON) holding the previous state of the audited\n"
 "  attributes. Empty (`{}`) on `create` entries.\n"
 msgstr ""
+"`value_from`\n"
+": Objeto (JSON) contendo o estado anterior dos atributos\n"
+"  auditados. Vazio (`{}`) em entradas `create`.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:118
+#: src/en/reference/rest-api/audit-log.md:120
 #, no-wrap
 msgid ""
 "`value_to`\n"
 ": Object (JSON) holding the new state of the audited attributes.\n"
 "  Empty (`{}`) on `destroy` entries.\n"
 msgstr ""
+"`value_to`\n"
+": Objeto (JSON) contendo o novo estado dos atributos auditados.\n"
+"  Vazio (`{}`) em entradas `destroy`.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:123
+#: src/en/reference/rest-api/audit-log.md:125
 #, no-wrap
 msgid ""
 "`source_ip`\n"
@@ -22905,9 +23084,13 @@ msgid ""
 "  or `Rails runner` is stored when the entry was written from a\n"
 "  maintenance script.\n"
 msgstr ""
+"`source_ip`\n"
+": Endereço IP que originou a solicitação subjacente. `Rails console`\n"
+"  ou `Rails runner` é armazenado quando a entrada foi gravada a partir de um\n"
+"  script de manutenção.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:128
+#: src/en/reference/rest-api/audit-log.md:130
 #, no-wrap
 msgid ""
 "`preferences`\n"
@@ -22915,37 +23098,49 @@ msgid ""
 "  `update` entries this contains a `changed_attributes` array\n"
 "  listing the attributes that actually changed.\n"
 msgstr ""
+"`preferences`\n"
+": Objeto (JSON) contendo metadados adicionais por entrada. Para\n"
+"  entradas `update`, isso contém um array `changed_attributes`\n"
+"  listando os atributos que de fato mudaram.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:132
+#: src/en/reference/rest-api/audit-log.md:134
 #, no-wrap
 msgid ""
 "`created_at`\n"
 ": Timestamp at which the entry was written. Audit log entries are\n"
 "  append-only.\n"
 msgstr ""
+"`created_at`\n"
+": Timestamp em que a entrada foi gravada. Entradas do log de auditoria são\n"
+"  somente de inserção (append-only).\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:136
+#: src/en/reference/rest-api/audit-log.md:138
 #, no-wrap
 msgid ""
 "`updated_at`\n"
 ": Same as `created_at` for audit log entries. Audit log entries\n"
 "  are append-only.\n"
 msgstr ""
+"`updated_at`\n"
+": O mesmo que `created_at` para entradas do log de auditoria. Entradas do log de auditoria\n"
+"  são somente de inserção (append-only).\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/audit-log.md:137
+#: src/en/reference/rest-api/audit-log.md:139
 #, no-wrap
 msgid "Lifecycle"
-msgstr ""
+msgstr "Ciclo de vida"
 
 #. type: Plain text
-#: src/en/reference/rest-api/audit-log.md:140
+#: src/en/reference/rest-api/audit-log.md:142
 msgid ""
 "A scheduled task removes entries older than **12 months** every day.  Use "
 "`AuditLog.cleanup` in the Rails console to trigger a cleanup manually."
 msgstr ""
+"Uma tarefa agendada remove entradas com mais de **12 meses** todos os dias. "
+"Use `AuditLog.cleanup` no console Rails para acionar uma limpeza manualmente."
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/calendar.md:8
@@ -23069,7 +23264,7 @@ msgstr ""
 #: src/en/reference/rest-api/organization.md:82
 #: src/en/reference/rest-api/priorities.md:76
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
-#: src/en/reference/rest-api/ticket.md:128
+#: src/en/reference/rest-api/ticket.md:138
 #: src/en/reference/rest-api/user-access-token.md:46
 #: src/en/reference/rest-api/user.md:124
 #, no-wrap
@@ -23556,8 +23751,8 @@ msgstr ""
 "oferece."
 
 #. type: Title ###
-#: src/en/reference/rest-api/cti.md:26 src/en/reference/rest-api/cti.md:166
-#: src/en/reference/rest-api/cti.md:322 src/en/reference/rest-api/cti.md:440
+#: src/en/reference/rest-api/cti.md:26 src/en/reference/rest-api/cti.md:170
+#: src/en/reference/rest-api/cti.md:330 src/en/reference/rest-api/cti.md:452
 #, no-wrap
 msgid "Inbound"
 msgstr "Entrada"
@@ -23573,8 +23768,8 @@ msgid "Blocking of caller IDs during signaling."
 msgstr "Bloqueio de IDs de chamador durante a sinalização."
 
 #. type: Title ###
-#: src/en/reference/rest-api/cti.md:31 src/en/reference/rest-api/cti.md:123
-#: src/en/reference/rest-api/cti.md:279 src/en/reference/rest-api/cti.md:397
+#: src/en/reference/rest-api/cti.md:31 src/en/reference/rest-api/cti.md:127
+#: src/en/reference/rest-api/cti.md:287 src/en/reference/rest-api/cti.md:409
 #, no-wrap
 msgid "Outbound"
 msgstr "Saída"
@@ -23739,47 +23934,64 @@ msgid "New call event"
 msgstr "Evento de nova chamada"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:95 src/en/reference/rest-api/cti.md:247
+#: src/en/reference/rest-api/cti.md:95 src/en/reference/rest-api/cti.md:251
 #, no-wrap
 msgid "Available `attributes` and <Badge type=\"info\" text=\"sample data\" />:\n"
 msgstr "`attributes` disponíveis e <Badge type=\"info\" text=\"sample data\" />:\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:98
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:99
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`event` <Badge type=\"info\" text=\"newCall\"/>\n"
+#| ": Tell Zammad there is a new call.\n"
 msgid ""
 "`event` <Badge type=\"info\" text=\"newCall\"/>\n"
-": Tell Zammad there is a new call.\n"
+":\n"
+"  Tell Zammad there is a new call.\n"
 msgstr ""
 "`event` <Badge type=\"info\" text=\"newCall\"/>\n"
 ": informa ao Zammad que há uma nova chamada.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:101
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:103
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`from` <Badge type=\"info\" text=\"4930555716000\"/>\n"
+#| ": Number that initiated the call. Can be `anonymous` as well.\n"
 msgid ""
 "`from` <Badge type=\"info\" text=\"4930555716000\"/>\n"
-": Number that initiated the call. Can be `anonymous` as well.\n"
+":\n"
+"  Number that initiated the call. Can be `anonymous` as well.\n"
 msgstr ""
 "`from` <Badge type=\"info\" text=\"4930555716000\"/>\n"
 ": número que iniciou a chamada. Também pode ser `anonymous`.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:104
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:107
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`to` <Badge type=\"info\" text=\"4930555716000\"/>\n"
+#| ": Number that is being called.\n"
 msgid ""
 "`to` <Badge type=\"info\" text=\"4930555716000\"/>\n"
-": Number that is being called.\n"
+":\n"
+"  Number that is being called.\n"
 msgstr ""
 "`to` <Badge type=\"info\" text=\"4930555716000\"/>\n"
 ": número que está sendo chamado.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:108
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:112
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`direction` <Badge type=\"info\" text=\"in\"/>\n"
+#| ": The call direction. If your agent initiates a call, this will be `out`. Calls\n"
+#| "from external side to you are `in`.\n"
 msgid ""
 "`direction` <Badge type=\"info\" text=\"in\"/>\n"
-": The call direction. If your agent initiates a call, this will be `out`. Calls\n"
+":\n"
+"  The call direction. If your agent initiates a call, this will be `out`. Calls\n"
 "from external side to you are `in`.\n"
 msgstr ""
 "`direction` <Badge type=\"info\" text=\"in\"/>\n"
@@ -23787,7 +23999,7 @@ msgstr ""
 "vindas de fora para você são `in`.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:112
+#: src/en/reference/rest-api/cti.md:116
 #, no-wrap
 msgid ""
 "`callId` <Badge type=\"info\" text=\"53ba82e2bd6d12d9fb2d3838f0cfb070\"/>\n"
@@ -23799,7 +24011,7 @@ msgstr ""
 "  chamada existente com as ações seguintes (por exemplo, atender ou desligar).\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:118
+#: src/en/reference/rest-api/cti.md:122
 #, no-wrap
 msgid ""
 "`user` <Badge type=\"info\" text=\"John Doe\"/>\n"
@@ -23815,7 +24027,7 @@ msgstr ""
 "  é o nome da(s) pessoa(s) chamada(s).\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:122
+#: src/en/reference/rest-api/cti.md:126
 #, no-wrap
 msgid ""
 "`queue` <Badge type=\"info\" text=\"support\"/>\n"
@@ -23827,7 +24039,7 @@ msgstr ""
 "  Este valor é opcional.\n"
 
 #. type: Fenced div block (details|tabs key:cti)
-#: src/en/reference/rest-api/cti.md:125
+#: src/en/reference/rest-api/cti.md:129
 #, no-wrap
 msgid ""
 "\n"
@@ -23903,7 +24115,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (details|tabs key:cti)
-#: src/en/reference/rest-api/cti.md:168
+#: src/en/reference/rest-api/cti.md:172
 #, no-wrap
 msgid ""
 "\n"
@@ -23967,13 +24179,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/cti.md:203
+#: src/en/reference/rest-api/cti.md:207
 #, no-wrap
 msgid "Situation specific responses"
 msgstr "Respostas específicas por situação"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:208
+#: src/en/reference/rest-api/cti.md:212
 msgid ""
 "Depending on the chosen call direction, Zammad will return either a "
 "(optionally) configured call ID or (optionally) block a caller. If your "
@@ -23985,19 +24197,19 @@ msgstr ""
 "retorno será vazio."
 
 #. type: Fenced div block (info)
-#: src/en/reference/rest-api/cti.md:209
+#: src/en/reference/rest-api/cti.md:213
 #, no-wrap
 msgid "This has to be supported by your PBX in order to work.\n"
 msgstr "Isso precisa ser suportado pelo seu PBX para funcionar.\n"
 
 #. type: Title ####
-#: src/en/reference/rest-api/cti.md:213
+#: src/en/reference/rest-api/cti.md:217
 #, no-wrap
 msgid "Reject blocked caller ids"
 msgstr "Rejeitar IDs de chamador bloqueados"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:217
+#: src/en/reference/rest-api/cti.md:221
 msgid ""
 "If an incoming new call matches a to block number, Zammad will return the "
 "following."
@@ -24006,25 +24218,25 @@ msgstr ""
 "retornará o seguinte."
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:219
+#: src/en/reference/rest-api/cti.md:223
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-blocked-res.json\n"
 msgstr "<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-blocked-res.json\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:221
+#: src/en/reference/rest-api/cti.md:225
 msgid "If no to block number matches, Zammad will return the following."
 msgstr ""
 "Se nenhum número a bloquear corresponder, o Zammad retornará o seguinte."
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:223
+#: src/en/reference/rest-api/cti.md:227
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json\n"
 msgstr "<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-empty-res.json\n"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rest-api/cti.md:224
+#: src/en/reference/rest-api/cti.md:228
 #, no-wrap
 msgid ""
 "Your PBX still needs to end the call (hangup event). Other wise the\n"
@@ -24036,13 +24248,13 @@ msgstr ""
 "chamada em andamento.\n"
 
 #. type: Title ####
-#: src/en/reference/rest-api/cti.md:230
+#: src/en/reference/rest-api/cti.md:234
 #, no-wrap
 msgid "Set specific outgoing caller ID"
 msgstr "Definir ID de chamador de saída específico"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:234
+#: src/en/reference/rest-api/cti.md:238
 msgid ""
 "In case your instance has a matching overwriting caller ID configured, "
 "Zammad will return the following payload."
@@ -24051,13 +24263,13 @@ msgstr ""
 "configurado, o Zammad retornará o seguinte payload."
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:236
+#: src/en/reference/rest-api/cti.md:240
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-caller-id-res.json\n"
 msgstr "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-caller-id-res.json\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:239
+#: src/en/reference/rest-api/cti.md:243
 msgid ""
 "If no overwrite match is found or you haven't configured anything, Zammad "
 "will return the following."
@@ -24066,59 +24278,75 @@ msgstr ""
 "configurou nada, o Zammad retornará o seguinte."
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:241
+#: src/en/reference/rest-api/cti.md:245
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json\n"
 msgstr "<<< @/fixtures/rest-api/cti/post-outbound-instance-specific-token-empty-res.json\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/cti.md:242
+#: src/en/reference/rest-api/cti.md:246
 #, no-wrap
 msgid "Call answer event"
 msgstr "Evento de atendimento de chamada"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:250
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:255
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`event` <Badge type=\"info\" text=\"answer\" />:\n"
+#| ": Tell Zammad that someone answered the call.\n"
 msgid ""
 "`event` <Badge type=\"info\" text=\"answer\" />:\n"
-": Tell Zammad that someone answered the call.\n"
+":\n"
+"  Tell Zammad that someone answered the call.\n"
 msgstr ""
 "`event` <Badge type=\"info\" text=\"answer\" />:\n"
 ": informa ao Zammad que alguém atendeu a chamada.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:253 src/en/reference/rest-api/cti.md:368
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:259 src/en/reference/rest-api/cti.md:378
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`from` <Badge type=\"info\" text=\"493055571600\" />:\n"
+#| ": Number that initiated the call.\n"
 msgid ""
 "`from` <Badge type=\"info\" text=\"493055571600\" />:\n"
-": Number that initiated the call.\n"
+":\n"
+"  Number that initiated the call.\n"
 msgstr ""
 "`from` <Badge type=\"info\" text=\"493055571600\" />:\n"
 ": número que iniciou a chamada.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:256 src/en/reference/rest-api/cti.md:371
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:263 src/en/reference/rest-api/cti.md:382
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`to` <Badge type=\"info\" text=\"493055571600\" />:\n"
+#| ": Number that is being called.\n"
 msgid ""
 "`to` <Badge type=\"info\" text=\"493055571600\" />:\n"
-": Number that is being called.\n"
+":\n"
+"  Number that is being called.\n"
 msgstr ""
 "`to` <Badge type=\"info\" text=\"493055571600\" />:\n"
 ": número que está sendo chamado.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:259 src/en/reference/rest-api/cti.md:374
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:267 src/en/reference/rest-api/cti.md:386
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`direction` <Badge type=\"info\" text=\"in\" />:\n"
+#| ": The call direction - if your agent initiates a call, this will be `out`.\n"
 msgid ""
 "`direction` <Badge type=\"info\" text=\"in\" />:\n"
-": The call direction - if your agent initiates a call, this will be `out`.\n"
+":\n"
+"  The call direction - if your agent initiates a call, this will be `out`.\n"
 msgstr ""
 "`direction` <Badge type=\"info\" text=\"in\" />:\n"
 ": a direção da chamada - se seu agente iniciar uma chamada, isso será `out`.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:263 src/en/reference/rest-api/cti.md:378
+#: src/en/reference/rest-api/cti.md:271 src/en/reference/rest-api/cti.md:390
 #, no-wrap
 msgid ""
 "`callId` <Badge type=\"info\" text=\"53ba82e2bd6d12d9fb2d3838f0cfb070\" />:\n"
@@ -24130,7 +24358,7 @@ msgstr ""
 "  chamada existente com as ações seguintes (por exemplo, atender ou desligar).\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:270
+#: src/en/reference/rest-api/cti.md:278
 #, no-wrap
 msgid ""
 "`answeringNumber` <Badge type=\"info\" text=\"493055571600\" />:\n"
@@ -24148,7 +24376,7 @@ msgstr ""
 "    Este valor é opcional.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:276
+#: src/en/reference/rest-api/cti.md:284
 #, no-wrap
 msgid ""
 "`user` <Badge type=\"info\" text=\"John Doe\" />:\n"
@@ -24164,13 +24392,13 @@ msgstr ""
 "  o nome da(s) pessoa(s) chamada(s). Este valor é opcional.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:278
+#: src/en/reference/rest-api/cti.md:286
 msgid "There are two options on how to `POST` the relevant data to Zammad."
 msgstr ""
 "Há duas opções de como fazer `POST` dos dados relevantes para o Zammad."
 
 #. type: Fenced div block (details|tabs key:cti)
-#: src/en/reference/rest-api/cti.md:281
+#: src/en/reference/rest-api/cti.md:289
 #, no-wrap
 msgid ""
 "\n"
@@ -24246,7 +24474,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (details|tabs key:cti)
-#: src/en/reference/rest-api/cti.md:324
+#: src/en/reference/rest-api/cti.md:332
 #, no-wrap
 msgid ""
 "\n"
@@ -24310,23 +24538,27 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/cti.md:359
+#: src/en/reference/rest-api/cti.md:367
 #, no-wrap
 msgid "Call hangup"
 msgstr "Encerramento de chamada"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:365
-#, no-wrap
+#: src/en/reference/rest-api/cti.md:374
+#, fuzzy, no-wrap
+#| msgid ""
+#| "`event` <Badge type=\"info\" text=\"hangup\" />:\n"
+#| ": Tell Zammad that someone answered the call.\n"
 msgid ""
 "`event` <Badge type=\"info\" text=\"hangup\" />:\n"
-": Tell Zammad that someone answered the call.\n"
+":\n"
+"  Tell Zammad that someone answered the call.\n"
 msgstr ""
 "`event` <Badge type=\"info\" text=\"hangup\" />:\n"
 ": informa ao Zammad que alguém atendeu a chamada.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:389
+#: src/en/reference/rest-api/cti.md:401
 #, no-wrap
 msgid ""
 "`cause`\n"
@@ -24352,7 +24584,7 @@ msgstr ""
 "    - `forwarded` (a chamada foi encaminhada para outra parte)\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/cti.md:396
+#: src/en/reference/rest-api/cti.md:408
 #, no-wrap
 msgid ""
 "`answeringNumber` <Badge type=\"info\" text=\"493055571600\" />:\n"
@@ -24370,7 +24602,7 @@ msgstr ""
 "    Este valor é opcional.\n"
 
 #. type: Fenced div block (details|tabs key:cti)
-#: src/en/reference/rest-api/cti.md:399
+#: src/en/reference/rest-api/cti.md:411
 #, no-wrap
 msgid ""
 "\n"
@@ -24446,7 +24678,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (details|tabs key:cti)
-#: src/en/reference/rest-api/cti.md:442
+#: src/en/reference/rest-api/cti.md:454
 #, no-wrap
 msgid ""
 "\n"
@@ -25063,32 +25295,47 @@ msgid "Some endpoints support a search query. These are:"
 msgstr "Alguns endpoints suportam uma consulta de pesquisa. São eles:"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:166
-msgid "`Groups <group>`"
+#: src/en/reference/rest-api/intro.md:167
+msgid "[Audit Log](audit-log)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/intro.md:167
+#, fuzzy
+#| msgid "`Groups <group>`"
+msgid "[Groups](group)"
 msgstr "`Groups <group>`"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:166
-msgid "`Organizations <organization>`"
+#: src/en/reference/rest-api/intro.md:167
+#, fuzzy
+#| msgid "`Organizations <organization>`"
+msgid "[Organizations](organization)"
 msgstr "`Organizations <organization>`"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:166
-msgid "`Roles <role>`"
+#: src/en/reference/rest-api/intro.md:167
+#, fuzzy
+#| msgid "`Roles <role>`"
+msgid "[Roles](role)"
 msgstr "`Roles <role>`"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:166
-msgid "`Tickets <ticket>`"
+#: src/en/reference/rest-api/intro.md:167
+#, fuzzy
+#| msgid "`Tickets <ticket>`"
+msgid "[Tickets](ticket)"
 msgstr "`Tickets <ticket>`"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:166
-msgid "`Users <user>`"
+#: src/en/reference/rest-api/intro.md:167
+#, fuzzy
+#| msgid "`Users <user>`"
+msgid "[Users](user)"
 msgstr "`Users <user>`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:169
+#: src/en/reference/rest-api/intro.md:170
 msgid ""
 "The following endpoints support a search query as well, but they are not "
 "explicitly covered in this documentation:"
@@ -25097,45 +25344,45 @@ msgstr ""
 "explicitamente cobertos nesta documentação:"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/intro.md:177
 msgid "Chat Sessions"
 msgstr "Sessões de chat"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/intro.md:177
 msgid "Templates"
 msgstr "Modelos"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:176
+#: src/en/reference/rest-api/intro.md:177
 msgid "Text module"
 msgstr "Módulo de texto"
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:177
+#: src/en/reference/rest-api/intro.md:178
 #, no-wrap
 msgid "Search example"
 msgstr "Exemplo de pesquisa"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:180
+#: src/en/reference/rest-api/intro.md:181
 msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome`"
 msgstr "Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/intro.md:181
+#: src/en/reference/rest-api/intro.md:182
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/get-basic-search-res.json\n"
 msgstr "<<< @/fixtures/rest-api/intro/get-basic-search-res.json\n"
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:185
+#: src/en/reference/rest-api/intro.md:186
 #, no-wrap
 msgid "Expand parameter"
 msgstr "Parâmetro Expand"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:190
+#: src/en/reference/rest-api/intro.md:191
 msgid ""
 "If you want to have additional related information, you can use the `expand` "
 "parameter. Using it resolves the IDs and outputs values/names in addition."
@@ -25145,25 +25392,25 @@ msgstr ""
 "adicionalmente."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:192
+#: src/en/reference/rest-api/intro.md:193
 msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&expand=true`"
 msgstr ""
 "Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome&expand=true`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/intro.md:193
+#: src/en/reference/rest-api/intro.md:194
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/get-expand-search-res.json\n"
 msgstr "<<< @/fixtures/rest-api/intro/get-expand-search-res.json\n"
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:197
+#: src/en/reference/rest-api/intro.md:198
 #, no-wrap
 msgid "Full parameter"
 msgstr "Parâmetro Full"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:202
+#: src/en/reference/rest-api/intro.md:203
 msgid ""
 "You can even extend the response by using the `full` parameter. Be aware "
 "that this response can be huge. It outputs all assets including related "
@@ -25174,25 +25421,25 @@ msgstr ""
 "atributos relacionados e também um `total_count` dos resultados da pesquisa."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:204
+#: src/en/reference/rest-api/intro.md:205
 msgid "`GET`-Request sent: `/api/v1/tickets/search?query=welcome&full=true`"
 msgstr ""
 "Solicitação `GET` enviada: `/api/v1/tickets/search?query=welcome&full=true`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/intro.md:205
+#: src/en/reference/rest-api/intro.md:206
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/get-full-search-res.json\n"
 msgstr "<<< @/fixtures/rest-api/intro/get-full-search-res.json\n"
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:209
+#: src/en/reference/rest-api/intro.md:210
 #, no-wrap
 msgid "With total count parameter"
 msgstr "Parâmetro With Total Count"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:213
+#: src/en/reference/rest-api/intro.md:214
 msgid ""
 "Using this parameter will additionally output the amount of search results.  "
 "It can be combined with `full` and `expand`."
@@ -25201,7 +25448,7 @@ msgstr ""
 "pesquisa. Pode ser combinado com `full` e `expand`."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:215
+#: src/en/reference/rest-api/intro.md:216
 msgid ""
 "`GET`-Request sent: `/api/v1/tickets/search?"
 "query=welcome&full=true&with_total_count=true`"
@@ -25210,19 +25457,19 @@ msgstr ""
 "query=welcome&full=true&with_total_count=true`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/intro.md:216
+#: src/en/reference/rest-api/intro.md:217
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json\n"
 msgstr "<<< @/fixtures/rest-api/intro/get-full-search-with-total-count-res.json\n"
 
 #. type: Title ####
-#: src/en/reference/rest-api/intro.md:220
+#: src/en/reference/rest-api/intro.md:221
 #, no-wrap
 msgid "Only total count parameter"
 msgstr "Parâmetro Only Total Count"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:224
+#: src/en/reference/rest-api/intro.md:225
 msgid ""
 "Using this `only_total_count` parameter will output only the amount of "
 "search results."
@@ -25231,7 +25478,7 @@ msgstr ""
 "resultados da pesquisa."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:227
+#: src/en/reference/rest-api/intro.md:228
 msgid ""
 "`GET`-Request sent: `/api/v1/tickets/search?"
 "query=welcome&only_total_count=true`"
@@ -25240,19 +25487,19 @@ msgstr ""
 "query=welcome&only_total_count=true`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/intro.md:228
+#: src/en/reference/rest-api/intro.md:229
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/get-total-count-res.json\n"
 msgstr "<<< @/fixtures/rest-api/intro/get-total-count-res.json\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:232
+#: src/en/reference/rest-api/intro.md:233
 #, no-wrap
 msgid "Global search"
 msgstr "Pesquisa global"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:240
+#: src/en/reference/rest-api/intro.md:241
 msgid ""
 "If you need to search not only in a specific object type, you can do so by "
 "using the global search without specifying an object. The response may "
@@ -25270,24 +25517,24 @@ msgstr ""
 "pesquisa de endpoint."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:242
+#: src/en/reference/rest-api/intro.md:243
 msgid "`GET`-Request sent: `/api/v1/search?query=welcome`"
 msgstr "Solicitação `GET` enviada: `/api/v1/search?query=welcome`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/intro.md:243
+#: src/en/reference/rest-api/intro.md:244
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/get-global-search-res.json\n"
 msgstr "<<< @/fixtures/rest-api/intro/get-global-search-res.json\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:247
+#: src/en/reference/rest-api/intro.md:248
 #, no-wrap
 msgid "Condition based search"
 msgstr "Pesquisa baseada em condição"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:253
+#: src/en/reference/rest-api/intro.md:254
 msgid ""
 "You can even use conditions like for triggers and schedulers to search via "
 "API. If you don't want to build such conditions manually, you can find a "
@@ -25300,12 +25547,12 @@ msgstr ""
 "condição via interface e buscá-la para sua solicitação de API."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:255
+#: src/en/reference/rest-api/intro.md:256
 msgid "So, how do I build such a condition based request?"
 msgstr "Então, como faço para construir uma solicitação baseada em condição?"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:265
+#: src/en/reference/rest-api/intro.md:266
 msgid ""
 "In Zammad, go to the admin interface and create a condition, e.g. by "
 "creating a new overview or trigger. It can be inactive so you won't have any "
@@ -25316,7 +25563,7 @@ msgstr ""
 "que você não tenha ações ou alterações indesejadas."
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:265
+#: src/en/reference/rest-api/intro.md:266
 msgid ""
 "Go to the `Rails console </admin/console>`, either by using `rails c` / "
 "`zammad run rails c` or adding the prefix `rails r` / `zammad run rails r` "
@@ -25327,7 +25574,7 @@ msgstr ""
 "comandos abaixo, dependendo da sua configuração."
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:265
+#: src/en/reference/rest-api/intro.md:266
 msgid ""
 "Search for the created condition, adjust the following examples to your "
 "needs:"
@@ -25336,30 +25583,30 @@ msgstr ""
 "necessário:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rest-api/intro.md:266
+#: src/en/reference/rest-api/intro.md:267
 #, no-wrap
 msgid "puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to_json\n"
 msgstr "puts Overview.find_by(name: 'My test overview').attributes.slice('condition').to_json\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rest-api/intro.md:270
+#: src/en/reference/rest-api/intro.md:271
 #, no-wrap
 msgid "puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').to_json\n"
 msgstr "puts Trigger.find_by(name: 'My new test trigger').attributes.slice('condition').to_json\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:275
+#: src/en/reference/rest-api/intro.md:276
 msgid "This leads to an output like the following:"
 msgstr "Isso resulta em uma saída como a seguinte:"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/intro.md:276
+#: src/en/reference/rest-api/intro.md:277
 #, no-wrap
 msgid "<<< @/fixtures/rest-api/intro/condition-based-search.json\n"
 msgstr "<<< @/fixtures/rest-api/intro/condition-based-search.json\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:283
+#: src/en/reference/rest-api/intro.md:284
 msgid ""
 "Use this as payload in your `POST`-Request in an endpoint search. The "
 "response includes the same objects as the trigger or overview you created."
@@ -25369,26 +25616,26 @@ msgstr ""
 "criou."
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:284
+#: src/en/reference/rest-api/intro.md:285
 #, no-wrap
 msgid "Sorting search results"
 msgstr "Ordenando resultados de pesquisa"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:287
+#: src/en/reference/rest-api/intro.md:288
 msgid "Zammad allows you to sort your search results by field if needed."
 msgstr ""
 "O Zammad permite ordenar seus resultados de pesquisa por campo, se "
 "necessário."
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:288
+#: src/en/reference/rest-api/intro.md:289
 #, no-wrap
 msgid "`sort_by`"
 msgstr "`sort_by`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:292
+#: src/en/reference/rest-api/intro.md:293
 msgid ""
 "Append `?sort_by={row name}` to your query to sort by a specific row that "
 "appears in the search result."
@@ -25397,13 +25644,13 @@ msgstr ""
 "específica que aparece no resultado da pesquisa."
 
 #. type: Title ###
-#: src/en/reference/rest-api/intro.md:293
+#: src/en/reference/rest-api/intro.md:294
 #, no-wrap
 msgid "`order_by`"
 msgstr "`order_by`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:297
+#: src/en/reference/rest-api/intro.md:298
 msgid ""
 "Append `?order_by={direction}` to your query to switch in between ascending "
 "and descending order."
@@ -25412,12 +25659,12 @@ msgstr ""
 "crescente e decrescente."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:299
+#: src/en/reference/rest-api/intro.md:300
 msgid "Directions are: `asc` and `desc`."
 msgstr "As direções são: `asc` e `desc`."
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/intro.md:300
+#: src/en/reference/rest-api/intro.md:301
 #, no-wrap
 msgid ""
 "Usually you'll want to combine both parameters in your searches -\n"
@@ -25427,13 +25674,13 @@ msgstr ""
 "por exemplo: `?query={search string}&sort_by={row name}&order_by={direction}`\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:305
+#: src/en/reference/rest-api/intro.md:306
 #, no-wrap
 msgid "Actions on behalf of other users"
 msgstr "Ações em nome de outros usuários"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:309
+#: src/en/reference/rest-api/intro.md:310
 #, no-wrap
 msgid ""
 "**Requirement:** the user used for running the query on behalf requires\n"
@@ -25443,7 +25690,7 @@ msgstr ""
 "da permissão `admin.user`.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:312
+#: src/en/reference/rest-api/intro.md:313
 msgid ""
 "Running API queries on behalf of other users allows you to e.g. create "
 "tickets by a different user."
@@ -25452,7 +25699,7 @@ msgstr ""
 "criar tickets em nome de outro usuário."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:315
+#: src/en/reference/rest-api/intro.md:316
 msgid ""
 "To do so, add a new HTTP header named `From` to your request. The value of "
 "this header can be one of the following:"
@@ -25461,33 +25708,33 @@ msgstr ""
 "solicitação. O valor desse cabeçalho pode ser um dos seguintes:"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:319
+#: src/en/reference/rest-api/intro.md:320
 msgid "user ID"
 msgstr "ID do usuário"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:319
+#: src/en/reference/rest-api/intro.md:320
 msgid "user login"
 msgstr "login do usuário"
 
 #. type: Bullet: '- '
-#: src/en/reference/rest-api/intro.md:319
+#: src/en/reference/rest-api/intro.md:320
 msgid "user email"
 msgstr "email do usuário"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:321
+#: src/en/reference/rest-api/intro.md:322
 msgid "`From` is available for all endpoints."
 msgstr "`From` está disponível para todos os endpoints."
 
 #. type: Title ##
-#: src/en/reference/rest-api/intro.md:322
+#: src/en/reference/rest-api/intro.md:323
 #, no-wrap
 msgid "Encoding"
 msgstr "Codificação"
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:327
+#: src/en/reference/rest-api/intro.md:328
 msgid ""
 "The API expects UTF-8 encoding. Keep in mind that especially when using URLs "
 "with get options (e.g. `?query=this`) you may need to encode your URL "
@@ -25498,7 +25745,7 @@ msgstr ""
 "codificar sua URL adequadamente."
 
 #. type: Plain text
-#: src/en/reference/rest-api/intro.md:330
+#: src/en/reference/rest-api/intro.md:331
 msgid ""
 "If you want to learn more about URL encoding, [this Wikipedia article]"
 "(https://en.wikipedia.org/wiki/Percent-encoding){target=_blank} may be of "
@@ -25509,7 +25756,7 @@ msgstr ""
 "pode ajudar"
 
 #. type: Link reference
-#: src/en/reference/rest-api/intro.md:331
+#: src/en/reference/rest-api/intro.md:332
 #, no-wrap
 msgid "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
 msgstr "[^1]: **Re**presentational **S**tate **T**ransfer - **A**pplication **P**rogramming **I**nterface)"
@@ -26482,13 +26729,8 @@ msgstr ""
 "<<< @/fixtures/rest-api/mentions/delete-id-res.json\n"
 "\n"
 
-#. type: Yaml Front Matter Hash Value: title
-#: src/en/reference/rest-api/notification.md:1
-#, no-wrap
-msgid "Notification"
-msgstr "Notificação"
-
 #. type: Title #
+#: src/en/reference/rest-api/notification.md:1
 #: src/en/reference/rest-api/notification.md:6
 #, no-wrap
 msgid "Online notification"
@@ -26514,6 +26756,7 @@ msgstr ""
 #: src/en/reference/rest-api/notification.md:47
 #: src/en/reference/rest-api/notification.md:68
 #: src/en/reference/rest-api/notification.md:80
+#: src/en/reference/rest-api/notification.md:92
 msgid "Required permission: `any`"
 msgstr "Permissão necessária: `any`"
 
@@ -26629,6 +26872,35 @@ msgid ""
 msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/online_notifications/mark_all_as_read/post-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/notification.md:89
+#, no-wrap
+msgid "Clear all"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/notification.md:94
+#, fuzzy
+#| msgid "`DELETE`-Request sent: `/api/v1/online_notifications/{id}`"
+msgid "`DELETE`-Request sent: `/api/v1/online_notifications/clear_all`"
+msgstr "Solicitação `DELETE` enviada: `/api/v1/online_notifications/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/notification.md:95
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/delete-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/clear_all/delete-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/delete-id-res.json\n"
 "\n"
 
 #. type: Title #
@@ -28260,134 +28532,30 @@ msgstr ""
 "que você está usando é um **agente**. Por causa disso, os tickets podem\n"
 "ou não estar disponíveis.\n"
 
-#. type: Plain text
-#: src/en/reference/rest-api/ticket.md:19
-msgid "`GET`-Request sent: `/api/v1/tickets`"
-msgstr "Solicitação `GET` enviada: `/api/v1/tickets`"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:20
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/tickets/get-res.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/tickets/get-res.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket.md:31
-msgid "`GET`-Request sent: `/api/v1/tickets/{ticket id}`"
-msgstr "Solicitação `GET` enviada: `/api/v1/tickets/{ticket id}`"
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:32
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/tickets/get-ticket-id-res.json\n"
-"\n"
-msgstr ""
-"\n"
-"<<< @/fixtures/rest-api/tickets/get-ticket-id-res.json\n"
-"\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket.md:43
-msgid "`POST`-Request sent: `/api/v1/tickets`"
-msgstr "Solicitação `POST` enviada: `/api/v1/tickets`"
-
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:44
-#, no-wrap
+#: src/en/reference/rest-api/ticket.md:14
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**Suppress notifications:** To update a ticket without triggering agent notifications (email and in-app), add the\n"
+#| "following HTTP header to your request:\n"
+#| "\n"
+#| "```plain\n"
+#| "X-Zammad-Suppress-Notifications: true\n"
+#| "```\n"
+#| "\n"
+#| "This is useful for automated integrations that update tickets via webhooks or triggers to avoid notification loops. The\n"
+#| "header only affects admin and agent accounts and is ignored for customers. It also works for the\n"
+#| "`POST /api/v1/ticket_articles` endpoint.\n"
 msgid ""
-"**On behalf of users**\n"
-"\n"
-"If you want to create tickets on behalf of other users, use the\n"
-"`customer_id` attribute. `ticket.agent` is mandatory for this. Use\n"
-"`guess:{email address}` to save an API call if you don't know the\n"
-"user's ID or want to create the user in question\n"
-"(`\"customer_id\": \"guess:jane@doe.com\"`).\n"
-"\n"
-"**Add mention subscription right away**:\n"
-"\n"
-"Add the `mentions` attribute to your ticket payload and provide an\n"
-"array of user ids to directly subscribe them during ticket creation.\n"
-"\n"
-"E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
-"\n"
-msgstr ""
-"**Em nome de usuários**\n"
-"\n"
-"Se você quiser criar tickets em nome de outros usuários, use o\n"
-"atributo `customer_id`. `ticket.agent` é obrigatório para isso. Use\n"
-"`guess:{email address}` para economizar uma chamada de API se você não souber\n"
-"o ID do usuário ou quiser criar o usuário em questão\n"
-"(`\"customer_id\": \"guess:jane@doe.com\"`).\n"
-"\n"
-"**Adicionar inscrição de menção imediatamente**:\n"
-"\n"
-"Adicione o atributo `mentions` ao payload do seu ticket e forneça um\n"
-"array de IDs de usuário para inscrevê-los diretamente durante a criação do ticket.\n"
-"\n"
-"Exemplo: `\"mentions\": [1, 5, 7, 8],`\n"
-"\n"
-
-#. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:62
-#, no-wrap
-msgid ""
-"\n"
-"=== Request\n"
-"\n"
-"<<< @/fixtures/rest-api/tickets/post-req.json\n"
-"\n"
-"=== Response\n"
-"\n"
-"<<< @/fixtures/rest-api/tickets/post-res.json\n"
-"\n"
-msgstr ""
-"\n"
-"=== Request\n"
-"\n"
-"<<< @/fixtures/rest-api/tickets/post-req.json\n"
-"\n"
-"=== Response\n"
-"\n"
-"<<< @/fixtures/rest-api/tickets/post-res.json\n"
-"\n"
-
-#. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:77
-#, no-wrap
-msgid ""
-"For more article attributes and options have a look into\n"
-"[articles](/en/reference/rest-api/articles).\n"
-msgstr ""
-"Para mais atributos e opções de artigo, dê uma olhada em\n"
-"[artigos](/pt_BR/reference/rest-api/articles).\n"
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket.md:87
-msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
-msgstr "Solicitação `PUT` enviada: `/api/v1/tickets/{ticket id}`"
-
-#. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:88
-#, no-wrap
-msgid ""
-"**Suppress notifications:** To update a ticket without triggering agent notifications (email and in-app), add the\n"
-"following HTTP header to your request:\n"
+"**Suppress notifications:** To create or update a ticket without triggering agent notifications (email and in-app), add\n"
+"the following HTTP header to your request:\n"
 "\n"
 "```plain\n"
 "X-Zammad-Suppress-Notifications: true\n"
 "```\n"
 "\n"
-"This is useful for automated integrations that update tickets via webhooks or triggers to avoid notification loops. The\n"
-"header only affects admin and agent accounts and is ignored for customers. It also works for the\n"
-"`POST /api/v1/ticket_articles` endpoint.\n"
+"This is useful for automated integrations that manage tickets via webhooks or triggers to avoid notification loops. The\n"
+"header only affects admin and agent accounts and is ignored for customers.\n"
 msgstr ""
 "**Suprimir notificações:** Para atualizar um ticket sem acionar notificações de agente (email e no app), adicione o\n"
 "seguinte cabeçalho HTTP à sua solicitação:\n"
@@ -28400,8 +28568,119 @@ msgstr ""
 "cabeçalho afeta apenas contas de admin e agente, e é ignorado para clientes. Também funciona para o\n"
 "endpoint `POST /api/v1/ticket_articles`.\n"
 
+#. type: Plain text
+#: src/en/reference/rest-api/ticket.md:31
+msgid "`GET`-Request sent: `/api/v1/tickets`"
+msgstr "Solicitação `GET` enviada: `/api/v1/tickets`"
+
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/ticket.md:32
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/get-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/get-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket.md:43
+msgid "`GET`-Request sent: `/api/v1/tickets/{ticket id}`"
+msgstr "Solicitação `GET` enviada: `/api/v1/tickets/{ticket id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket.md:44
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/get-ticket-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tickets/get-ticket-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket.md:55
+msgid "`POST`-Request sent: `/api/v1/tickets`"
+msgstr "Solicitação `POST` enviada: `/api/v1/tickets`"
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/ticket.md:56
+#, no-wrap
+msgid ""
+"**On behalf of users**\n"
+"\n"
+"If you want to create tickets on behalf of other users, use the `customer_id` attribute. This requires the `ticket.agent`\n"
+"permission. Without it, `customer_id` is ignored and the ticket's **Customer** field is set to the current user. Use\n"
+"`guess:{email address}` to save an API call if you don't know the user's ID or want to create the user in question\n"
+"(`\"customer_id\": \"guess:jane@doe.com\"`).\n"
+"\n"
+"When creating a ticket on behalf of a customer with an initial article, you **must** set `article.sender` to \"Customer\"\n"
+"explicitly. Without this, the sender defaults to \"Agent\" (based on the current user's permission). This affects the\n"
+"ticket's `create_article_sender_id` and the resulting contact timestamp calculations.\n"
+"\n"
+"The same applies to articles added later via PUT: set sender explicitly there as well when acting on behalf of a customer.\n"
+"Since the sender of an article cannot be changed after creation, it is important to set it correctly from the start.\n"
+"\n"
+"For more details on the sender attribute, see [articles](/en/reference/rest-api/articles).\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/ticket.md:75
+#, no-wrap
+msgid ""
+"**Add mention subscription right away**\n"
+"\n"
+"Add the `mentions` attribute to your ticket payload and provide an array of user ids to directly subscribe them during\n"
+"ticket creation.\n"
+"\n"
+"E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/ticket.md:85
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-res.json\n"
+"\n"
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/ticket.md:100
+#, no-wrap
+msgid ""
+"The `sender` attribute of the initial article determines the ticket's `create_article_sender_id` and contact timestamps.\n"
+"For the full list of article attributes and their behavior, see [articles](/en/reference/rest-api/articles).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket.md:110
+msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
+msgstr "Solicitação `PUT` enviada: `/api/v1/tickets/{ticket id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket.md:111
 #, no-wrap
 msgid ""
 "\n"
@@ -28417,7 +28696,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (details|tabs key:reqres|info)
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/ticket.md:111
 #, no-wrap
 msgid ""
 "Above example provides an article. This article is a _new article_ and\n"
@@ -28427,7 +28706,7 @@ msgstr ""
 "não afeta nenhum existente.\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:101
+#: src/en/reference/rest-api/ticket.md:111
 #, no-wrap
 msgid ""
 "\n"
@@ -28443,7 +28722,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:121
+#: src/en/reference/rest-api/ticket.md:131
 #, no-wrap
 msgid ""
 "**Adding attachments**\n"
@@ -28457,17 +28736,17 @@ msgstr ""
 "em vez disso.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:131
+#: src/en/reference/rest-api/ticket.md:141
 msgid "Required permission: `admin`"
 msgstr "Permissão necessária: `admin`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:133
+#: src/en/reference/rest-api/ticket.md:143
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr "Solicitação `DELETE` enviada: `/api/v1/tickets/{ticket id}`"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/ticket.md:134
+#: src/en/reference/rest-api/ticket.md:144
 #, no-wrap
 msgid ""
 "\n"
@@ -28483,7 +28762,7 @@ msgstr ""
 "artigos e anexos) serão perdidos.\n"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:142
+#: src/en/reference/rest-api/ticket.md:152
 #, no-wrap
 msgid ""
 "\n"
@@ -30782,10 +31061,9 @@ msgstr ""
 
 #. type: Title #
 #: src/en/tutorials/custom-kb-css.md:1 src/en/tutorials/custom-kb-css.md:6
-#, fuzzy, no-wrap
-#| msgid "Insert knowledge base article"
+#, no-wrap
 msgid "Custom knowledge base CSS"
-msgstr "Inserir artigo da base de conhecimento"
+msgstr "CSS personalizado da base de conhecimento"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-css.md:10
@@ -30793,6 +31071,8 @@ msgid ""
 "You can apply visual changes to your public knowledge base via custom CSS.  "
 "To do so, follow these steps:"
 msgstr ""
+"Você pode aplicar alterações visuais à sua base de conhecimento pública por "
+"meio de CSS personalizado. Para isso, siga estas etapas:"
 
 #. type: Bullet: '1. '
 #: src/en/tutorials/custom-kb-css.md:20
@@ -30801,6 +31081,10 @@ msgid ""
 "custom_knowledge_base_public` of your Zammad installation. You can use one "
 "or more files and choose any name, as long as they have a `.css` extension."
 msgstr ""
+"Adicione seu(s) arquivo(s) CSS dentro do diretório `app/assets/stylesheets/"
+"custom_knowledge_base_public` da sua instalação do Zammad. Você pode usar um "
+"ou mais arquivos e escolher qualquer nome, desde que tenham a extensão "
+"`.css`."
 
 #. type: Bullet: '2. '
 #: src/en/tutorials/custom-kb-css.md:20
@@ -30809,13 +31093,14 @@ msgid ""
 "on your installation method, see the [Rails commands](/en/reference/rails-"
 "commands) reference)."
 msgstr ""
+"Precompile os assets usando o comando `rake assets:precompile` (depende do "
+"seu método de instalação, veja a referência de [comandos Rails](/en/"
+"reference/rails-commands))."
 
 #. type: Bullet: '3. '
 #: src/en/tutorials/custom-kb-css.md:20
-#, fuzzy
-#| msgid "Start Zammad"
 msgid "Restart Zammad."
-msgstr "Iniciar o Zammad"
+msgstr "Reinicie o Zammad."
 
 #. type: Bullet: '4. '
 #: src/en/tutorials/custom-kb-css.md:20
@@ -30823,13 +31108,14 @@ msgid ""
 "Access your published knowledge base. Please note: the visual changes only "
 "affect the published version and not the edit screen."
 msgstr ""
+"Acesse sua base de conhecimento publicada. Observação: as alterações visuais "
+"afetam apenas a versão publicada, não a tela de edição."
 
 #. type: Title #
 #: src/en/tutorials/custom-kb-url.md:1 src/en/tutorials/custom-kb-url.md:6
-#, fuzzy, no-wrap
-#| msgid "Insert knowledge base article"
+#, no-wrap
 msgid "Custom knowledge base URL"
-msgstr "Inserir artigo da base de conhecimento"
+msgstr "URL personalizada da base de conhecimento"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-url.md:11
@@ -30838,13 +31124,15 @@ msgid ""
 "the default one, you can follow our configuration example using [NPM (Nginx "
 "Proxy Manager)](https://nginxproxymanager.com/){target=_blank} below."
 msgstr ""
+"Se você quiser publicar a base de conhecimento do Zammad em uma URL "
+"diferente da padrão, pode seguir nosso exemplo de configuração usando o [NPM "
+"(Nginx Proxy Manager)](https://nginxproxymanager.com/){target=_blank} abaixo."
 
 #. type: Title ##
 #: src/en/tutorials/custom-kb-url.md:12
-#, fuzzy, no-wrap
-#| msgid "Manage Zammad"
+#, no-wrap
 msgid "Configure Zammad"
-msgstr "Gerenciar o Zammad"
+msgstr "Configurar o Zammad"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:19
@@ -30852,6 +31140,8 @@ msgid ""
 "Go to **Knowledge Base** in Zammad's admin settings and select the **Custom "
 "URL** tab."
 msgstr ""
+"Vá até **Knowledge Base** nas configurações de administração do Zammad e "
+"selecione a aba **Custom URL**."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:19
@@ -30859,6 +31149,8 @@ msgid ""
 "Add the URL you want to publish your knowledge base under and click the "
 "`Submit` button."
 msgstr ""
+"Adicione a URL sob a qual você quer publicar sua base de conhecimento e "
+"clique no botão `Submit`."
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:19
@@ -30867,25 +31159,26 @@ msgid ""
 "your NPM. You can already copy the snippet or just leave it open — it is "
 "needed for the NPM configuration."
 msgstr ""
+"Clique no botão `Web Server Configuration` para obter a configuração para o "
+"seu NPM. Você já pode copiar o trecho ou apenas deixá-lo aberto — ele será "
+"necessário para a configuração do NPM."
 
 #. type: Title ##
 #: src/en/tutorials/custom-kb-url.md:20
-#, fuzzy, no-wrap
-#| msgid "Configuration"
+#, no-wrap
 msgid "Configure NPM"
-msgstr "Configuração"
+msgstr "Configurar o NPM"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-url.md:23
 msgid "In NPM, add a new proxy host with the following parameters:"
-msgstr ""
+msgstr "No NPM, adicione um novo proxy host com os seguintes parâmetros:"
 
 #. type: Title ###
 #: src/en/tutorials/custom-kb-url.md:24
-#, fuzzy, no-wrap
-#| msgid "Detailed search"
+#, no-wrap
 msgid "Details tab"
-msgstr "Pesquisa detalhada"
+msgstr "Aba Details"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:29
@@ -30893,11 +31186,13 @@ msgid ""
 "**Domain Names**: the domain under which you want to publish your knowledge "
 "base"
 msgstr ""
+"**Domain Names**: o domínio sob o qual você quer publicar sua base de "
+"conhecimento"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:29
 msgid "**Forwarded Hostname / IP**: the host/IP of your Zammad instance"
-msgstr ""
+msgstr "**Forwarded Hostname / IP**: o host/IP da sua instância do Zammad"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:29
@@ -30905,42 +31200,38 @@ msgid ""
 "**Forward Port**: the port of your Zammad (by default `8080` in Portainer "
 "deployment)"
 msgstr ""
+"**Forward Port**: a porta do seu Zammad (por padrão `8080` em uma "
+"implantação via Portainer)"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-url.md:31
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows organization detail page](/screenshots/cypress/"
-#| "documentation/use/advanced-features.cy.js/organization-detail-page.png)"
 msgid ""
 "![Screenshot shows NPM configuration dialog with details tab](/screenshots/"
 "tutorials/custom-kb-url/npm-details-tab.png)"
 msgstr ""
-"![Captura de tela mostra a página de detalhes da organização](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/organization-detail-"
-"page.png)"
+"![Captura de tela mostra a caixa de diálogo de configuração do NPM com a aba "
+"de detalhes](/screenshots/tutorials/custom-kb-url/npm-details-tab.png)"
 
 #. type: Title ###
 #: src/en/tutorials/custom-kb-url.md:32
-#, fuzzy, no-wrap
-#| msgid "Custom ticket states"
+#, no-wrap
 msgid "Custom location tab"
-msgstr "Estados de ticket personalizados"
+msgstr "Aba de localização personalizada"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:40
 msgid "**Define location**: `/`"
-msgstr ""
+msgstr "**Define location**: `/`"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:40
 msgid "**Forward Hostname / IP**: same as above"
-msgstr ""
+msgstr "**Forward Hostname / IP**: igual ao anterior"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:40
 msgid "**Forward Port**: same as above"
-msgstr ""
+msgstr "**Forward Port**: igual ao anterior"
 
 #. type: Bullet: '- '
 #: src/en/tutorials/custom-kb-url.md:40
@@ -30949,6 +31240,9 @@ msgid ""
 "and paste `proxy_set_header X-ORIGINAL-URL $request_uri;` (the lower part of "
 "Zammad's snippet)"
 msgstr ""
+"Clique na engrenagem para abrir o campo de texto de configuração de "
+"localização personalizada e cole `proxy_set_header X-ORIGINAL-URL "
+"$request_uri;` (a parte inferior do trecho do Zammad)"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-url.md:42
@@ -30956,13 +31250,15 @@ msgid ""
 "![Screenshot shows NPM configuration dialog with custom locations tab](/"
 "screenshots/tutorials/custom-kb-url/npm-custom-locations-tab.png)"
 msgstr ""
+"![Captura de tela mostra a caixa de diálogo de configuração do NPM com a aba "
+"de localizações personalizadas](/screenshots/tutorials/custom-kb-url/npm-"
+"custom-locations-tab.png)"
 
 #. type: Title ###
 #: src/en/tutorials/custom-kb-url.md:43
-#, fuzzy, no-wrap
-#| msgid "Advanced user"
+#, no-wrap
 msgid "Advanced tab"
-msgstr "Usuário avançado"
+msgstr "Aba avançada"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-url.md:47
@@ -30971,6 +31267,8 @@ msgid ""
 "**Custom Nginx Configuration**: add the upper part of Zammad's snippet,\n"
 "which should be similar to the following:\n"
 msgstr ""
+"**Custom Nginx Configuration**: adicione a parte superior do trecho do Zammad,\n"
+"que deve ser parecida com o seguinte:\n"
 
 #. type: Fenced code block (text)
 #: src/en/tutorials/custom-kb-url.md:48
@@ -30982,6 +31280,11 @@ msgid ""
 "  rewrite ^(.*)$ /help$1 last;\n"
 "}\n"
 msgstr ""
+"# Adicione as seguintes linhas à diretiva \"server\"\n"
+"if ($host = help.your.domain ) {\n"
+"  rewrite ^/(api|assets)/(.*)$ /$1/$2 last;\n"
+"  rewrite ^(.*)$ /help$1 last;\n"
+"}\n"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-url.md:57
@@ -30989,6 +31292,8 @@ msgid ""
 "![Screenshot shows NPM configuration dialog with advanced tab](/screenshots/"
 "tutorials/custom-kb-url/npm-advanced-tab.png)"
 msgstr ""
+"![Captura de tela mostra a caixa de diálogo de configuração do NPM com a aba "
+"avançada](/screenshots/tutorials/custom-kb-url/npm-advanced-tab.png)"
 
 #. type: Plain text
 #: src/en/tutorials/custom-kb-url.md:59
@@ -30997,6 +31302,9 @@ msgid ""
 "custom URL. You can test it by clicking the preview button in your knowledge "
 "base."
 msgstr ""
+"Após seguir estas etapas, sua base de conhecimento deve estar publicada em "
+"uma URL personalizada. Você pode testá-la clicando no botão de pré-"
+"visualização na sua base de conhecimento."
 
 #. type: Title #
 #: src/en/tutorials/docker-file-handling.md:1
@@ -36612,6 +36920,52 @@ msgid ""
 msgstr ""
 "  RequestHeader set X_FORWARDED_PROTO 'https'\n"
 "  RequestHeader set X-Forwarded-Ssl on\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "**On behalf of users**\n"
+#~ "\n"
+#~ "If you want to create tickets on behalf of other users, use the\n"
+#~ "`customer_id` attribute. `ticket.agent` is mandatory for this. Use\n"
+#~ "`guess:{email address}` to save an API call if you don't know the\n"
+#~ "user's ID or want to create the user in question\n"
+#~ "(`\"customer_id\": \"guess:jane@doe.com\"`).\n"
+#~ "\n"
+#~ "**Add mention subscription right away**:\n"
+#~ "\n"
+#~ "Add the `mentions` attribute to your ticket payload and provide an\n"
+#~ "array of user ids to directly subscribe them during ticket creation.\n"
+#~ "\n"
+#~ "E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
+#~ "\n"
+#~ msgstr ""
+#~ "**Em nome de usuários**\n"
+#~ "\n"
+#~ "Se você quiser criar tickets em nome de outros usuários, use o\n"
+#~ "atributo `customer_id`. `ticket.agent` é obrigatório para isso. Use\n"
+#~ "`guess:{email address}` para economizar uma chamada de API se você não souber\n"
+#~ "o ID do usuário ou quiser criar o usuário em questão\n"
+#~ "(`\"customer_id\": \"guess:jane@doe.com\"`).\n"
+#~ "\n"
+#~ "**Adicionar inscrição de menção imediatamente**:\n"
+#~ "\n"
+#~ "Adicione o atributo `mentions` ao payload do seu ticket e forneça um\n"
+#~ "array de IDs de usuário para inscrevê-los diretamente durante a criação do ticket.\n"
+#~ "\n"
+#~ "Exemplo: `\"mentions\": [1, 5, 7, 8],`\n"
+#~ "\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "For more article attributes and options have a look into\n"
+#~ "[articles](/en/reference/rest-api/articles).\n"
+#~ msgstr ""
+#~ "Para mais atributos e opções de artigo, dê uma olhada em\n"
+#~ "[artigos](/pt_BR/reference/rest-api/articles).\n"
+
+#, no-wrap
+#~ msgid "Notification"
+#~ msgstr "Notificação"
 
 #~ msgid ""
 #~ "In case you need a more exact search, you can turn it off via [Rails "
