@@ -11,6 +11,18 @@ using is an **agent**. Because of this tickets may or may not be
 available.
 :::
 
+::: tip
+**Suppress notifications:** To create or update a ticket without triggering agent notifications (email and in-app), add
+the following HTTP header to your request:
+
+```plain
+X-Zammad-Suppress-Notifications: true
+```
+
+This is useful for automated integrations that manage tickets via webhooks or triggers to avoid notification loops. The
+header only affects admin and agent accounts and is ignored for customers.
+:::
+
 ## List
 
 Required permission: `ticket.agent` **or** `ticket.customer`
@@ -95,19 +107,6 @@ For the full list of article attributes and their behavior, see [articles](/en/r
 Required permission: `ticket.agent` **or** `ticket.customer`
 
 `PUT`-Request sent: `/api/v1/tickets/{ticket id}`
-
-::: tip
-**Suppress notifications:** To update a ticket without triggering agent notifications (email and in-app), add the
-following HTTP header to your request:
-
-```plain
-X-Zammad-Suppress-Notifications: true
-```
-
-This is useful for automated integrations that update tickets via webhooks or triggers to avoid notification loops. The
-header only affects admin and agent accounts and is ignored for customers. It also works for the
-`POST /api/v1/ticket_articles` endpoint.
-:::
 
 ::::: details
 

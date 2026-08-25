@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-25 11:48+0200\n"
+"POT-Creation-Date: 2026-08-25 13:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10066,7 +10066,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:53
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
-#: src/en/reference/rest-api/ticket.md:93
+#: src/en/reference/rest-api/ticket.md:105
 #: src/en/reference/rest-api/time-accounting.md:54
 #: src/en/reference/rest-api/user.md:95
 #, markdown-text, no-wrap
@@ -12417,8 +12417,8 @@ msgstr ""
 #: src/en/reference/rest-api/states.md:54
 #: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
 #: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
-#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:73
-#: src/en/reference/rest-api/ticket.md:112
+#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:85
+#: src/en/reference/rest-api/ticket.md:111
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/user-access-token.md:26
@@ -19828,10 +19828,10 @@ msgstr ""
 #: src/en/reference/rest-api/articles.md:121
 #: src/en/reference/rest-api/articles.md:133
 #: src/en/reference/rest-api/mentions.md:17
-#: src/en/reference/rest-api/ticket.md:17
 #: src/en/reference/rest-api/ticket.md:29
 #: src/en/reference/rest-api/ticket.md:41
-#: src/en/reference/rest-api/ticket.md:96
+#: src/en/reference/rest-api/ticket.md:53
+#: src/en/reference/rest-api/ticket.md:108
 #, markdown-text
 msgid "Required permission: `ticket.agent` **or** `ticket.customer`"
 msgstr ""
@@ -19888,7 +19888,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:32
 #: src/en/reference/rest-api/shared-draft.md:20
 #: src/en/reference/rest-api/sla.md:38 src/en/reference/rest-api/states.md:40
-#: src/en/reference/rest-api/ticket.md:38
+#: src/en/reference/rest-api/ticket.md:50
 #: src/en/reference/rest-api/time-accounting.md:33
 #: src/en/reference/rest-api/user-access-token.md:20
 #: src/en/reference/rest-api/user.md:55
@@ -20043,7 +20043,7 @@ msgstr ""
 #: src/en/reference/rest-api/priorities.md:8
 #: src/en/reference/rest-api/role.md:8 src/en/reference/rest-api/sla.md:12
 #: src/en/reference/rest-api/states.md:14 src/en/reference/rest-api/tags.md:10
-#: src/en/reference/rest-api/ticket.md:14
+#: src/en/reference/rest-api/ticket.md:26
 #: src/en/reference/rest-api/time-accounting.md:8
 #: src/en/reference/rest-api/user-access-token.md:8
 #: src/en/reference/rest-api/user.md:26
@@ -20100,7 +20100,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:20
 #: src/en/reference/rest-api/shared-draft.md:8
 #: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
-#: src/en/reference/rest-api/ticket.md:26
+#: src/en/reference/rest-api/ticket.md:38
 #: src/en/reference/rest-api/time-accounting.md:20
 #: src/en/reference/rest-api/user.md:38
 #, markdown-text, no-wrap
@@ -20433,7 +20433,7 @@ msgstr ""
 #: src/en/reference/rest-api/organization.md:82
 #: src/en/reference/rest-api/priorities.md:76
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
-#: src/en/reference/rest-api/ticket.md:139
+#: src/en/reference/rest-api/ticket.md:138
 #: src/en/reference/rest-api/user-access-token.md:46
 #: src/en/reference/rest-api/user.md:124
 #, markdown-text, no-wrap
@@ -24673,14 +24673,31 @@ msgid ""
 "available.\n"
 msgstr ""
 
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/ticket.md:14
+#, no-wrap
+msgid ""
+"**Suppress notifications:** To create or update a ticket without triggering "
+"agent notifications (email and in-app), add\n"
+"the following HTTP header to your request:\n"
+"\n"
+"```plain\n"
+"X-Zammad-Suppress-Notifications: true\n"
+"```\n"
+"\n"
+"This is useful for automated integrations that manage tickets via webhooks "
+"or triggers to avoid notification loops. The\n"
+"header only affects admin and agent accounts and is ignored for customers.\n"
+msgstr ""
+
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:19
+#: src/en/reference/rest-api/ticket.md:31
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/tickets`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:20
+#: src/en/reference/rest-api/ticket.md:32
 #, no-wrap
 msgid ""
 "\n"
@@ -24689,13 +24706,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:31
+#: src/en/reference/rest-api/ticket.md:43
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:32
+#: src/en/reference/rest-api/ticket.md:44
 #, no-wrap
 msgid ""
 "\n"
@@ -24704,13 +24721,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:43
+#: src/en/reference/rest-api/ticket.md:55
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/tickets`"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:44
+#: src/en/reference/rest-api/ticket.md:56
 #, no-wrap
 msgid ""
 "**On behalf of users**\n"
@@ -24741,7 +24758,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:63
+#: src/en/reference/rest-api/ticket.md:75
 #, no-wrap
 msgid ""
 "**Add mention subscription right away**\n"
@@ -24755,7 +24772,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:73
+#: src/en/reference/rest-api/ticket.md:85
 #, no-wrap
 msgid ""
 "\n"
@@ -24770,7 +24787,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:88
+#: src/en/reference/rest-api/ticket.md:100
 #, no-wrap
 msgid ""
 "The `sender` attribute of the initial article determines the ticket's "
@@ -24780,32 +24797,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:98
+#: src/en/reference/rest-api/ticket.md:110
 #, markdown-text
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
-#. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:99
-#, no-wrap
-msgid ""
-"**Suppress notifications:** To update a ticket without triggering agent "
-"notifications (email and in-app), add the\n"
-"following HTTP header to your request:\n"
-"\n"
-"```plain\n"
-"X-Zammad-Suppress-Notifications: true\n"
-"```\n"
-"\n"
-"This is useful for automated integrations that update tickets via webhooks "
-"or triggers to avoid notification loops. The\n"
-"header only affects admin and agent accounts and is ignored for "
-"customers. It also works for the\n"
-"`POST /api/v1/ticket_articles` endpoint.\n"
-msgstr ""
-
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:112
+#: src/en/reference/rest-api/ticket.md:111
 #, no-wrap
 msgid ""
 "\n"
@@ -24816,7 +24814,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres|info)
-#: src/en/reference/rest-api/ticket.md:112
+#: src/en/reference/rest-api/ticket.md:111
 #, no-wrap
 msgid ""
 "Above example provides an article. This article is a _new article_ and\n"
@@ -24824,7 +24822,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:112
+#: src/en/reference/rest-api/ticket.md:111
 #, no-wrap
 msgid ""
 "\n"
@@ -24835,7 +24833,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:132
+#: src/en/reference/rest-api/ticket.md:131
 #, no-wrap
 msgid ""
 "**Adding attachments**\n"
@@ -24845,19 +24843,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:142
+#: src/en/reference/rest-api/ticket.md:141
 #, markdown-text
 msgid "Required permission: `admin`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:144
+#: src/en/reference/rest-api/ticket.md:143
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/ticket.md:145
+#: src/en/reference/rest-api/ticket.md:144
 #, no-wrap
 msgid ""
 "\n"
@@ -24868,7 +24866,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:153
+#: src/en/reference/rest-api/ticket.md:152
 #, no-wrap
 msgid ""
 "\n"

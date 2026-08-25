@@ -10,6 +10,18 @@ Gli endpoint ticket dipendono dai permessi del gruppo e se l'utente che stai
 usando è un **agente**.
 :::
 
+::: tip
+**Suppress notifications:** To create or update a ticket without triggering agent notifications (email and in-app), add
+the following HTTP header to your request:
+
+```plain
+X-Zammad-Suppress-Notifications: true
+```
+
+This is useful for automated integrations that manage tickets via webhooks or triggers to avoid notification loops. The
+header only affects admin and agent accounts and is ignored for customers.
+:::
+
 ## Elenca
 
 Permesso richiesto: `ticket.agent` **o** `ticket.customer`
@@ -94,18 +106,6 @@ For the full list of article attributes and their behavior, see [articles](/en/r
 Permesso richiesto: `ticket.agent` **o** `ticket.customer`
 
 Richiesta `PUT` inviata: `/api/v1/tickets/{ticket id}`
-
-::: tip
-**Disattiva le notifiche:** Per aggiornare un ticket senza attivare le notifiche dell'agente (email e in-app), aggiungi la seguente
-intestazione HTTP alla tua richiesta:
-
-```plain
-X-Zammad-Suppress-Notifications: true
-```
-
-Questo è utile per le integrazioni automatizzate che aggiornano i ticket tramite webhook o trigger per evitare cicli di notifiche.
-L'intestazione ha effetto solo sugli account di amministratori e agenti e viene ignorata per i clienti. Funziona anche per l'endpoint `POST /api/v1/ticket_articles`.
-:::
 
 ::::: details
 
