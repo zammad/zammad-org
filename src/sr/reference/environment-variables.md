@@ -35,7 +35,8 @@ title: 'Променљиве окружења'
   одређене команде, постоји могућност да ометá редовне Zammad операције.
 
 `ZAMMAD_BIND_IP` ::p:: <Badge type="tip" text="127.0.0.1" />
-: IP адреса на коју је везан web сервер.
+:
+  The IP address that the web server is bound to.
 
 `S3_URL` ::p::
 : Омогућава вам да наведете конфигурацију вашег S3 провајдера за складиштење. Пример за вредност:
@@ -54,10 +55,13 @@ title: 'Променљиве окружења'
   ове документације, међутим
   [овај пример фајла](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) би требало да вам помогне.
 
-`ZAMMAD_HTTP_TYPE` : Одредите тип HTTP-а за вашу инстанцу. Могуће вредности
-су `http` и `https`.
+`ZAMMAD_HTTP_TYPE`
+:
+  Set the http type for your instance. Possible values are `http` and `https`.
 
-`ZAMMAD_FQDN` : Одредите FQDN за вашу инстанцу.
+`ZAMMAD_FQDN`
+:
+  Set the FQDN for your instance.
 
 `RAILS_TRUSTED_PROXIES` <Badge type="tip" text="127.0.0.1,::1" />
 : Овај постав је важан за исправно откривање IP адреса клијената и функција које на томе заснивају рад, попут ограничавања
@@ -112,16 +116,20 @@ title: 'Променљиве окружења'
   саветујемо **да то не чините**.
 
 `ELASTICSEARCH_HOST` ::d:: <Badge type="tip" text="zammad-elasticsearch" />
-: Наведите хост име или адресу за ваш спољни Elasticsearch кластер.
+:
+  Provide a host name or address to your external Elasticsearch cluster.
 
 `ELASTICSEARCH_PORT` ::d:: <Badge type="tip" text="9200" />
-: Наведите другачији порт за Elasticsearch ако је потребно.
+:
+  Provide a different port for Elasticsearch if needed.
 
 `ELASTICSEARCH_SCHEMA` ::d:: <Badge type="tip" text="http" />
-: Промените на `https` ако је ваш Elasticsearch кластер конфигурисан да користи SSL.
+:
+  Change it to `https` if your Elasticsearch cluster is configured to use SSL.
 
 `ELASTICSEARCH_NAMESPACE` ::d:: <Badge type="tip" text="zammad" />
-: Овим именим простором биће креирани сви индекси везани за Zammad. Промените ово ако користите спољне кластере.
+:
+  With this name space all Zammad related indexes will be created. Change this if you're using external clusters.
 
 `ELASTICSEARCH_REINDEX` ::d::
 : Претраживачки индекс се аутоматски поново гради када не може да детектује постојање индекса. Ако је потребно ручно поновно
@@ -147,35 +155,44 @@ title: 'Променљиве окружења'
   заграде (нпр. `[2001:db8::2]`).
 
 `POSTGRESQL_PORT` ::p:: <Badge type="tip" text="5432" />
-: Прилагодите порт вашег PostgreSQL сервера.
+:
+  Adjust the port of your PostgreSQL server.
 
 `POSTGRESQL_USER` ::p:: <Badge type="tip" text="zammad" />
-: Корисник базе података за Zammad.
+:
+  The database user for Zammad.
 
 `POSTGRESQL_PASS` ::p:: <Badge type="tip" text="zammad" />
-: Лозинка корисника базе података за Zammad.
+:
+  The password of Zammad's database user.
 
 `POSTGRESQL_DB` ::p:: <Badge type="tip" text="zammad_production" />
-: База података која ће се користити за Zammad.
+:
+  Zammad's database to use.
 
 `POSTGRES_HOST` ::d:: <Badge type="tip" text="zammad-postgresql" />
-: Host име или IP адреса вашег PostgreSQL сервера. У случају да користите IPv6 адресу, затворите је у угласте
-заграде (нпр. `[2001:db8::2]`).
+: Host name or IP address of your PostgreSQL server. In case you use an IPv6 address, enclose the address in square
+  brackets (e.g. `[2001:db8::2]`).
 
 `POSTGRES_PORT` ::d:: <Badge type="tip" text="5432" />
-: Прилагодите порт вашег PostgreSQL сервера.
+:
+  Adjust the port of your PostgreSQL server.
 
 `POSTGRES_USER` ::d:: <Badge type="tip" text="zammad" />
-: Корисник базе података за Zammad.
+:
+  The database user for Zammad.
 
 `POSTGRES_PASS` ::d:: <Badge type="tip" text="zammad" />
-: Лозинка корисника базе података за Zammad.
+:
+  The password of Zammad's database user.
 
 `POSTGRES_DB` ::d:: <Badge type="tip" text="zammad_production" />
-: База података која ће се користити за Zammad.
+:
+  Zammad's database to use.
 
 `POSTGRESQL_OPTIONS` <Badge type="tip" text="?pool=50" />
-: Додатни параметри за PostgreSQL које треба додати на крају URI-ја базе података.
+:
+  Additional PostgreSQL params to be appended to the database URI.
 
 `POSTGRESQL_DB_CREATE` <Badge type="tip" text="true" />
 : Подразумевано, Zammad креира потребну базу података. На већ постојећим серверима база података, подразумевана вредност може
@@ -188,33 +205,41 @@ title: 'Променљиве окружења'
   сервис који користи овај порт.
 
 `NGINX_PORT` ::d:: <Badge type="tip" text="8080" />
-: Интерни порт који ће користити Nginx сервис.
+:
+  The internal port the Nginx service will listen on.
 
 `NGINX_SERVER_NAME` ::d:: <Badge type="tip" text="_" />
-: Подразумевано, контејнер Nginxa за Zammad ће одговарати на све захтеве. Можете навести своју IP / FQDN адресу по жељи.
+:
+  By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.
 
 `NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
 : If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx)
   `$scheme` may be wrong. You can set the correct scheme `http` or `https` if needed. Set this if you face a
   `CSRF Token Verification Failed` error.
 
-`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Одредите максималну величину података
-које клијент може послати серверу.
+`NGINX_CLIENT_MAX_BODY_SIZE` ::d::
+:
+  Define the maximum size of data that a client can send to the server.
 
 `ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type="tip" text="zammad-railsserver" />
-: Host име контејнера Rails сервера.
+:
+  Host name of the Rails server container.
 
 `ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type="tip" text="3000" />
-: Port сервиса Rails на Zammad-у.
+:
+  Port of Zammad's Rails server.
 
 `ZAMMAD_RAILS_PORT` ::p:: <Badge type="tip" text="3000" />
-: Port сервиса Rails на Zammad-у.
+:
+  Port of Zammad's Rails server.
 
 `ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type="tip" text="zammad-websocket" />
-: Име хоста web сокет сервера за Zammad.
+:
+  Host name of Zammad's WebSocket server.
 
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
-: Port web сокет сервера за Zammad.
+:
+  Port of Zammad's WebSocket server.
 
 ## Подешавање перформанси
 

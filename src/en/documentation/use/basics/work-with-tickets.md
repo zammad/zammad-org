@@ -153,7 +153,8 @@ Merge
   See [Merge Tickets](/en/documentation/use/advanced-features#merge-tickets) for details.
 
 Change customer
-: Reassign the ticket to another customer.
+:
+  Reassign the ticket to another customer.
 
 -----
 

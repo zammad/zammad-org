@@ -211,7 +211,9 @@ Unisci
 : Migra tutti i messaggi/note a un altro ticket. Utile se hai più di un ticket su un singolo problema del cliente.
   Vedi [Unisci ticket](/it/documentation/use/advanced-features#unire-i-ticket) per i dettagli.
 
-Change customer : Reassign the ticket to another customer.
+Change customer
+:
+  Reassign the ticket to another customer.
 
 -----
 

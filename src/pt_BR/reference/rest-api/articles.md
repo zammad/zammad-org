@@ -36,7 +36,9 @@ artigo e, por exemplo, das listas de destinatários.
 : isso permite criar artigos de email de entrada ou saída.
   No entanto, isso depende muito do `sender` escolhido.
 
-`phone` : indica notas de telefone.
+`phone`
+:
+  Indicates phone notes.
 
 `web`
 : geralmente usado apenas por clientes. Este tipo é usado sempre que o
@@ -48,7 +50,9 @@ artigo e, por exemplo, das listas de destinatários.
 
   Este **não é um artigo de comunicação**.
 
-`sms` : este tipo é usado para a integração de SMS do Zammad.
+`sms`
+:
+  This type is being used for Zammad's SMS integration.
 
 `chat`
 : este tipo de artigo é tecnicamente um placeholder e só está disponível

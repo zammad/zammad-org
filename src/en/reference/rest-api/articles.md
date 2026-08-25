@@ -36,7 +36,8 @@ article type and e.g. recipient lists.
   However, this highly depends on the chosen `sender`.
 
 `phone`
-: Indicates phone notes.
+:
+  Indicates phone notes.
 
 `web`
 : Usually used by customers only. This type is being used when ever your
@@ -49,7 +50,8 @@ article type and e.g. recipient lists.
   This is **not a communication article**.
 
 `sms`
-: This type is being used for Zammad's SMS integration.
+:
+  This type is being used for Zammad's SMS integration.
 
 `chat`
 : This article type is technically a place holder and is only available

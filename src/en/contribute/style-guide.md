@@ -259,7 +259,8 @@ This is the content shown in the expanded state.
 #### Definition lists
 
 First term <Badge type="info" text="tag1" />
-: This is the definition of the first term.
+:
+  This is the definition of the first term.
 
 Second term <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
 : This is one definition of the second term.

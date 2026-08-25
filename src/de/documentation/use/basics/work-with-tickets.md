@@ -230,7 +230,9 @@ Zusammenfassen
 : Übertragen Sie alle Nachrichten/Notizen in ein anderes Ticket. Nützlich, wenn Sie mehr als ein Ticket zu einem einzelnen Kundenproblem haben.
   Siehe [Tickets zusammenfassen](/de/documentation/use/advanced-features#tickets-zusammenfassen) für weitere Informationen.
 
-Kunden ändern: Weisen Sie das Ticket einem anderen Kunden zu.
+Change customer
+:
+  Reassign the ticket to another customer.
 
 -----
 

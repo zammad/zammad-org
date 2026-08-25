@@ -76,7 +76,9 @@ request when the query is too long or complex for a URL.
 
 ## Field reference
 
-`id` : Integer primary key of the audit log entry.
+`id`
+:
+  Integer primary key of the audit log entry.
 
 `user_id`
 : ID of the user that triggered the change. `null` when the entry
@@ -94,7 +96,9 @@ request when the query is too long or complex for a URL.
   user's session via _View from user's perspective_),
   `switch_back_to` (the original session was resumed).
 
-`auditable_id` : ID of the record that was changed.
+`auditable_id`
+:
+  ID of the record that was changed.
 
 `auditable_type`
 : Class name of the record that was changed (e.g. `Macro`,

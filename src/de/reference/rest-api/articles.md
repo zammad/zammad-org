@@ -37,7 +37,9 @@ stehen, hängt vom Artikeltyp und z.B. von den Empfängerlisten ab.
 : Damit können Sie eingehende oder ausgehende E-Mail-Artikel erstellen.
   Dies hängt jedoch stark von dem gewählten "Absender" ab.
 
-`phone` : Verweist auf Telefonnotizen.
+`phone`
+:
+  Indicates phone notes.
 
 `web`
 : Wird normalerweise nur von Kunden verwendet. Dieser Typ wird immer dann verwendet, wenn Ihr
@@ -49,7 +51,9 @@ stehen, hängt vom Artikeltyp und z.B. von den Empfängerlisten ab.
 
   Dies ist **kein Kommunikationsartikel**.
 
-`sms`: Dieser Typ wird für die SMS-Integration von Zammad verwendet.
+`sms`
+:
+  This type is being used for Zammad's SMS integration.
 
 `chat`
 : Dieser Artikeltyp ist technisch gesehen ein Platzhalter und steht nur

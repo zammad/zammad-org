@@ -93,17 +93,21 @@ Zammad-у у администраторском интерфејсу под _С�
 Доступни `атрибути` и <Badge type="info" text="примери" />:
 
 `event` <Badge type="info" text="newCall"/>
-: Обавестите Zammad да постоји нови позив.
+:
+  Tell Zammad there is a new call.
 
 `from` <Badge type="info" text="4930555716000"/>
-: Број који је иницирао позив. Може бити и `anoniman`.
+:
+  Number that initiated the call. Can be `anonymous` as well.
 
 `to` <Badge type="info" text="4930555716000"/>
-: Број који се зове.
+:
+  Number that is being called.
 
 `direction` <Badge type="info" text="in"/>
-: Смер позива. Ако ваш оператер иницира позив, ово ће бити `out`. Позиви
-са спољне стране ка вама су `in`.
+:
+  The call direction. If your agent initiates a call, this will be `out`. Calls
+from external side to you are `in`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070"/>
 : ID који је јединствен за позив. Zammad ће користити овај ID да идентификује
@@ -245,16 +249,20 @@ Zammad ће вратити следеће.
 Доступни `атрибути` и <Badge type="info" text="примери" />:
 
 `event` <Badge type="info" text="answer" />:
-: Обавестите Zammad да је неко одговорио на позив.
+:
+  Tell Zammad that someone answered the call.
 
-Први термин <Badge type="info" text="tag1" />
-: Ово је дефиниција првог термина.
+`from` <Badge type="info" text="493055571600" />:
+:
+  Number that initiated the call.
 
 `to` <Badge type="info" text="493055571600" />:
-: Број који се бира.
+:
+  Number that is being called.
 
 `direction` <Badge type="info" text="in" />:
-: Смер позива - ако ваш оператер иницира позив, ово ће бити `out`.
+:
+  The call direction - if your agent initiates a call, this will be `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
 : ID који је јединствен за позив. Zammad ће користити овај ID за идентификацију
@@ -361,16 +369,20 @@ Zammad ће вратити следеће.
 ### Уопштено
 
 `event` <Badge type="info" text="hangup" />:
-: Обавестите Zammad да је позив прекинут.
+:
+  Tell Zammad that someone answered the call.
 
-Први термин <Badge type="info" text="tag1" />
-: Ово је дефиниција првог термина.
+`from` <Badge type="info" text="493055571600" />:
+:
+  Number that initiated the call.
 
 `to` <Badge type="info" text="493055571600" />:
-: Број који се бира.
+:
+  Number that is being called.
 
 `direction` <Badge type="info" text="in" />:
-: Смер позива - ако ваш оператер иницира позив, ово ће бити `out`.
+:
+  The call direction - if your agent initiates a call, this will be `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
 : ID који је јединствен за позив. Zammad ће користити овај ID за идентификацију

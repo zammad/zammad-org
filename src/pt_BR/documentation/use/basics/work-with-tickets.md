@@ -212,7 +212,9 @@ Merge
 : migre todas as mensagens/notas para outro ticket. Útil se você tiver mais de um ticket sobre um único assunto do cliente.
   Veja [Mesclar tickets](/pt_BR/documentation/use/advanced-features#merge-tickets) para detalhes.
 
-Alterar cliente: reatribua o ticket a outro cliente.
+Change customer
+:
+  Reassign the ticket to another customer.
 
 -----
 

@@ -32,7 +32,9 @@ rispondere automaticamente.
 : Questo ti permette di creare articoli email in entrata o in uscita.
   Tuttavia, questo.
 
-`phone` : Indica note telefoniche.
+`phone`
+:
+  Indicates phone notes.
 
 `web`
 : Solitamente usato solo dai clienti. Questo tipo viene usato ogni volta che il tuo
@@ -44,7 +46,9 @@ rispondere automaticamente.
 
   Questo **non è un articolo di comunicazione**.
 
-`sms` : Questo tipo viene usato per l'integrazione SMS di Zammad.
+`sms`
+:
+  This type is being used for Zammad's SMS integration.
 
 `chat`
 : Questo tipo di articolo è tecnicamente un segnaposto ed è disponibile solo

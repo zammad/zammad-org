@@ -291,8 +291,9 @@ order: 2
 
 #### Листе дефиниција
 
-Први термин <Badge type="info" text="tag1" />
-: Ово је дефиниција првог термина.
+First term <Badge type="info" text="tag1" />
+:
+  This is the definition of the first term.
 
 Други термин <Badge type="info" text="tag1" /> <Badge type="tip" text="tag2" />
 : Ово је дефиниција другог термина.

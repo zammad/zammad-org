@@ -35,7 +35,8 @@ to `.env`. That way it will be picked up by Docker Compose automatically and not
   certain commands, it has a potential to break regular Zammad operations.
 
 `ZAMMAD_BIND_IP` ::p:: <Badge type="tip" text="127.0.0.1" />
-: The IP address that the web server is bound to.
+:
+  The IP address that the web server is bound to.
 
 `S3_URL` ::p::
 : Allows you to provide your S3 storage provider configuration. Example for value:
@@ -56,10 +57,12 @@ to `.env`. That way it will be picked up by Docker Compose automatically and not
   should help.
 
 `ZAMMAD_HTTP_TYPE`
-: Set the http type for your instance. Possible values are `http` and `https`.
+:
+  Set the http type for your instance. Possible values are `http` and `https`.
 
 `ZAMMAD_FQDN`
-: Set the FQDN for your instance.
+:
+  Set the FQDN for your instance.
 
 `RAILS_TRUSTED_PROXIES` <Badge type="tip" text="127.0.0.1,::1" />
 : This setting is important for the correct detection of client IP addresses and features based on it, like rate
@@ -114,16 +117,20 @@ to `.env`. That way it will be picked up by Docker Compose automatically and not
   advise **against** doing so.
 
 `ELASTICSEARCH_HOST` ::d:: <Badge type="tip" text="zammad-elasticsearch" />
-: Provide a host name or address to your external Elasticsearch cluster.
+:
+  Provide a host name or address to your external Elasticsearch cluster.
 
 `ELASTICSEARCH_PORT` ::d:: <Badge type="tip" text="9200" />
-: Provide a different port for Elasticsearch if needed.
+:
+  Provide a different port for Elasticsearch if needed.
 
 `ELASTICSEARCH_SCHEMA` ::d:: <Badge type="tip" text="http" />
-: Change it to `https` if your Elasticsearch cluster is configured to use SSL.
+:
+  Change it to `https` if your Elasticsearch cluster is configured to use SSL.
 
 `ELASTICSEARCH_NAMESPACE` ::d:: <Badge type="tip" text="zammad" />
-: With this name space all Zammad related indexes will be created. Change this if you're using external clusters.
+:
+  With this name space all Zammad related indexes will be created. Change this if you're using external clusters.
 
 `ELASTICSEARCH_REINDEX` ::d::
 : The searchindex automatically gets rebuilt when no index can be detected. If you need to rebuild the searchindex
@@ -149,35 +156,44 @@ the right one. The both variables at the end of the list are valid for both inst
   brackets (e.g. `[2001:db8::2]`).
 
 `POSTGRESQL_PORT` ::p:: <Badge type="tip" text="5432" />
-: Adjust the port of your PostgreSQL server.
+:
+  Adjust the port of your PostgreSQL server.
 
 `POSTGRESQL_USER` ::p:: <Badge type="tip" text="zammad" />
-: The database user for Zammad.
+:
+  The database user for Zammad.
 
 `POSTGRESQL_PASS` ::p:: <Badge type="tip" text="zammad" />
-: The password of Zammad's database user.
+:
+  The password of Zammad's database user.
 
 `POSTGRESQL_DB` ::p:: <Badge type="tip" text="zammad_production" />
-: Zammad's database to use.
+:
+  Zammad's database to use.
 
 `POSTGRES_HOST` ::d:: <Badge type="tip" text="zammad-postgresql" />
 : Host name or IP address of your PostgreSQL server. In case you use an IPv6 address, enclose the address in square
-brackets (e.g. `[2001:db8::2]`).
+  brackets (e.g. `[2001:db8::2]`).
 
 `POSTGRES_PORT` ::d:: <Badge type="tip" text="5432" />
-: Adjust the port of your PostgreSQL server.
+:
+  Adjust the port of your PostgreSQL server.
 
 `POSTGRES_USER` ::d:: <Badge type="tip" text="zammad" />
-: The database user for Zammad.
+:
+  The database user for Zammad.
 
 `POSTGRES_PASS` ::d:: <Badge type="tip" text="zammad" />
-: The password of Zammad's database user.
+:
+  The password of Zammad's database user.
 
 `POSTGRES_DB` ::d:: <Badge type="tip" text="zammad_production" />
-: Zammad's database to use.
+:
+  Zammad's database to use.
 
 `POSTGRESQL_OPTIONS` <Badge type="tip" text="?pool=50" />
-: Additional PostgreSQL params to be appended to the database URI.
+:
+  Additional PostgreSQL params to be appended to the database URI.
 
 `POSTGRESQL_DB_CREATE` <Badge type="tip" text="true" />
 : By default, Zammad creates the required database. On already existing database servers, the default might be
@@ -190,10 +206,12 @@ brackets (e.g. `[2001:db8::2]`).
   an existing service listening on this port.
 
 `NGINX_PORT` ::d:: <Badge type="tip" text="8080" />
-: The internal port the Nginx service will listen on.
+:
+  The internal port the Nginx service will listen on.
 
 `NGINX_SERVER_NAME` ::d:: <Badge type="tip" text="_" />
-: By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.
+:
+  By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.
 
 `NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
 : If the Nginx container for Zammad **is not** the upstream server (aka you're using another proxy in front of Nginx)
@@ -201,22 +219,28 @@ brackets (e.g. `[2001:db8::2]`).
   `CSRF Token Verification Failed` error.
 
 `NGINX_CLIENT_MAX_BODY_SIZE` ::d::
-: Define the maximum size of data that a client can send to the server.
+:
+  Define the maximum size of data that a client can send to the server.
 
 `ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type="tip" text="zammad-railsserver" />
-: Host name of the Rails server container.
+:
+  Host name of the Rails server container.
 
 `ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type="tip" text="3000" />
-: Port of Zammad's Rails server.
+:
+  Port of Zammad's Rails server.
 
 `ZAMMAD_RAILS_PORT` ::p:: <Badge type="tip" text="3000" />
-: Port of Zammad's Rails server.
+:
+  Port of Zammad's Rails server.
 
 `ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type="tip" text="zammad-websocket" />
-: Host name of Zammad's WebSocket server.
+:
+  Host name of Zammad's WebSocket server.
 
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
-: Port of Zammad's WebSocket server.
+:
+  Port of Zammad's WebSocket server.
 
 ## Performance tuning
 

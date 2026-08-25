@@ -83,16 +83,21 @@ Le chiamate seguenti sono state inviate con la seguente configurazione. Questo �
 `attributes` disponibili e <Badge type="info" text="dati di esempio" />:
 
 `event` <Badge type="info" text="newCall"/>
-: Dice a Zammad che c'è una nuova chiamata.
+:
+  Tell Zammad there is a new call.
 
 `from` <Badge type="info" text="4930555716000"/>
-: Numero che ha avviato la chiamata. Può essere.
+:
+  Number that initiated the call. Can be `anonymous` as well.
 
 `to` <Badge type="info" text="4930555716000"/>
-: Numero che viene chiamato.
+:
+  Number that is being called.
 
 `direction` <Badge type="info" text="in"/>
-: La direzione della chiamata. Se il tuo agente avvia.
+:
+  The call direction. If your agent initiates a call, this will be `out`. Calls
+from external side to you are `in`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070"/>
 : Un ID univoco.
@@ -227,16 +232,20 @@ configurato nulla, Zammad restituirà.
 `attributes` disponibili e <Badge type="info" text="dati di esempio" />:
 
 `event` <Badge type="info" text="answer" />:
-: Dice a Zammad che qualcuno ha risposto alla chiamata.
+:
+  Tell Zammad that someone answered the call.
 
 `from` <Badge type="info" text="493055571600" />:
-: Numero che ha avviato la chiamata.
+:
+  Number that initiated the call.
 
 `to` <Badge type="info" text="493055571600" />:
-: Numero che viene chiamato.
+:
+  Number that is being called.
 
 `direction` <Badge type="info" text="in" />:
-: La direzione della chiamata - se il tuo agente avvia.
+:
+  The call direction - if your agent initiates a call, this will be `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
 : Un ID univoco.
@@ -334,16 +343,20 @@ Comando curl di esempio:
 ### Generale
 
 `event` <Badge type="info" text="hangup" />:
-: Dice a Zammad che qualcuno ha risposto alla chiamata.
+:
+  Tell Zammad that someone answered the call.
 
 `from` <Badge type="info" text="493055571600" />:
-: Numero che ha avviato la chiamata.
+:
+  Number that initiated the call.
 
 `to` <Badge type="info" text="493055571600" />:
-: Numero che viene chiamato.
+:
+  Number that is being called.
 
 `direction` <Badge type="info" text="in" />:
-: La direzione della chiamata - se il tuo agente avvia.
+:
+  The call direction - if your agent initiates a call, this will be `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
 : Un ID univoco.

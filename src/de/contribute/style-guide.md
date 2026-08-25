@@ -306,8 +306,9 @@ Dies ist der Inhalt, der im ausgeklappten Zustand angezeigt wird.
 
 #### Definitionslisten
 
-Erster Begriff <Badge type="info" text="tag1" />
-: Dies ist die Definition des ersten Begriffs.
+First term <Badge type="info" text="tag1" />
+:
+  This is the definition of the first term.
 
 Zweiter Begriff <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
 : Dies ist eine Definition des zweiten Begriffs.

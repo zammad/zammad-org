@@ -302,8 +302,9 @@ Este é o conteúdo mostrado no estado expandido.
 
 #### Listas de definição
 
-Primeiro termo <Badge type="info" text="tag1" />
-: Esta é a definição do primeiro termo.
+First term <Badge type="info" text="tag1" />
+:
+  This is the definition of the first term.
 
 Segundo termo <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
 : Esta é uma definição do segundo termo.
