@@ -6,11 +6,12 @@ import VPHeader from './VPHeader.vue'
 
 const acceptLanguage = computed(() => window.navigator.language || '')
 
-const supportedLocales = ['en', 'de', 'sr']
+const supportedLocales = ['en', 'de', 'sr', 'it', 'pt_BR']
 
-const targetLocale = computed(() =>
-  supportedLocales.find((locale) => acceptLanguage.value.startsWith(locale)) || 'en'
-)
+const targetLocale = computed(() => {
+  const normalized = acceptLanguage.value.replace('-', '_').toLowerCase()
+  return supportedLocales.find((locale) => normalized.startsWith(locale.toLowerCase())) || 'en'
+})
 
 const { route, go } = useRouter()
 
