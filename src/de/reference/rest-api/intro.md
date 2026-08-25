@@ -165,11 +165,12 @@ um mehr Ergebnisse zu erhalten.
 
 Einige Endpunkte unterstützen eine Suchanfrage. Diese sind:
 
-- `Gruppen <group>`
-- `Organisationen <organization>`
-- `Rollen <role>`
-- `Tickets <ticket>`
-- `Benutzer <user>`
+- [Audit Log](audit-log)
+- [Groups](group)
+- [Organizations](organization)
+- [Roles](role)
+- [Tickets](ticket)
+- [Users](user)
 
 Die folgenden Endpunkte unterstützen ebenfalls eine Suchanfrage, werden aber
 in dieser Dokumentation nicht explizit behandelt:

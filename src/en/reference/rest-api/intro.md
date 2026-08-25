@@ -158,11 +158,12 @@ page: `?page=1&per_page=5` - increase page count to get more results.
 
 Some endpoints support a search query. These are:
 
-- `Groups <group>`
-- `Organizations <organization>`
-- `Roles <role>`
-- `Tickets <ticket>`
-- `Users <user>`
+- [Audit Log](audit-log)
+- [Groups](group)
+- [Organizations](organization)
+- [Roles](role)
+- [Tickets](ticket)
+- [Users](user)
 
 The following endpoints support a search query as well, but they are not
 explicitly covered in this documentation:

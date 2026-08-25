@@ -161,11 +161,12 @@ Zammad увек враћа информације укључујући упут�
 
 Неки ендпоинти подржавају упит за претрагу. То су:
 
-- `Grupe <group>`
-- Организације
-- `Uloge <role>`
-- Стање тикета
-- `Korisnici <user>`
+- [Audit Log](audit-log)
+- [Groups](group)
+- [Organizations](organization)
+- [Roles](role)
+- [Tickets](ticket)
+- [Users](user)
 
 Следећи ендпоинти такође подржавају упит за претрагу, али нису експлицитно
 покривени у овој документацији:

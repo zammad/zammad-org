@@ -163,11 +163,12 @@ mais resultados.
 
 Alguns endpoints suportam uma consulta de pesquisa. São eles:
 
-- `Groups <group>`
-- `Organizations <organization>`
-- `Roles <role>`
-- `Tickets <ticket>`
-- `Users <user>`
+- [Audit Log](audit-log)
+- [Groups](group)
+- [Organizations](organization)
+- [Roles](role)
+- [Tickets](ticket)
+- [Users](user)
 
 Os seguintes endpoints também suportam uma consulta de pesquisa, mas não são
 explicitamente cobertos nesta documentação:

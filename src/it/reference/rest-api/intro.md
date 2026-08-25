@@ -145,11 +145,12 @@ Per usare la paginazione avrai bisogno di due opzioni get: `per_page` e
 
 Alcuni endpoint supportano una query di ricerca. Questi sono:
 
-- `Gruppi <group>`
-- `Organizzazioni <organization>`
-- `Ruoli <role>`
-- `Ticket <ticket>`
-- `Utenti <user>`
+- [Audit Log](audit-log)
+- [Groups](group)
+- [Organizations](organization)
+- [Roles](role)
+- [Tickets](ticket)
+- [Users](user)
 
 I seguenti endpoint supportano anche una query di ricerca, ma non sono
 esplicitamente trattati.
