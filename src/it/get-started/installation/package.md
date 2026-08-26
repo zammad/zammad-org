@@ -431,7 +431,7 @@ Cronologia versioni di Elasticsearch per Zammad:
 
 | Zammad        | Elasticsearch  |
 | ------------- | :------------- |
-| 7.2+          | >= 8.11, <10   |
+| 7.2+          | >= 8.15, <10   |
 | 7.0-7.1       | >= 7.8, <10    |
 | 5.2-6.5       | >= 7.8, <9     |
 | 5.0-5.1       | >= 7.8, <8     |
