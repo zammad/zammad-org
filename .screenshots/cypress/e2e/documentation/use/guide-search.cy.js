@@ -20,15 +20,16 @@ describe('search screenshots', () => {
     cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
       cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
     })
-    cy.visit('/desktop/search/supp?entity=Ticket')
-    cy.get('[id="group_id-header"]').click()
-    cy.wait(300) //transition
-    cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 5 }).then((TopClip) => {
-    cy.get('table').clip({ padding: 5 }).then((BottomClip) => {
-      cy.mergeClips(TopClip, BottomClip).then((clip) => {
-        cy.screenshot('search-detail', { clip })
+    cy.visit('desktop/search/supp?entity=Ticket&filter.0.name=ticket.state_id&filter.0.operator=is&filter.0.value[0]=5&filter.0.value[1]=1&filter.0.value[2]=2&filter.1.name=ticket.last_contact_agent_at&filter.1.operator=within+last+(relative)&filter.1.value=7&filter.1.range=day')
+    cy.wait(1000)
+    cy.get('label').contains('State').should('be.visible')
+    cy.get('[aria-label="Laptop not working [Order 931529477]"]').should('be.visible')
+    cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 10 }).then((TopClip) => {
+      cy.get('table').clip({ padding: 10 }).then((BottomClip) => {
+        cy.mergeClips(TopClip, BottomClip).then((clip) => {
+          cy.screenshot('search-detail', { clip })
+          })
         })
       })
-    })
   })
 })

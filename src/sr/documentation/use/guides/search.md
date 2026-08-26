@@ -5,12 +5,12 @@ title: Претрага
 
 # Претрага
 
-У Zammad-у можете претраживати готово сву доступну информацију као што су:
+In Zammad, you can search for all available information like:
 
 - Предмет и садржај поруке
 - Имена и имејл адресе
 - Текст у датотекама прилога
-- Детаљи корисника и организација (као што су напомене, називи, итд)
+- User and organization details (like notes, names, etc.)
 
 У зависности од тога шта тражите и количине података у вашој Zammad
 инстанци, можете претраживати на различите начине. Прочитајте даље да
@@ -19,29 +19,40 @@ title: Претрага
 
 ## Преко претраге
 
-Претрага се налази у горњем левом углу примарног навигационог
-трака. Изаберите је мишем или користите пречицу на тастатури [[s]]. Након
-активације, можете видети тицкете који су недавно затворени са ваше траке
-задатака, као и ваша скорашња упита за претрагу. Да бисте претраживали,
-једноставно укуцајте термин. Претрага затим приказује све одговарајуће
-ставке за које имате барем дозволу за преглед или читање, груписане по типу
-као што су корисници и тицкете. Изабирањем једног од резултата отвара се
-ставка као картица у примарном навигационом траку.
+The search is located in the top left corner of the primary
+navigation. Either select it via mouse or use the keyboard shortcut
+[[s]]. After activation, you can see the tickets that were recently closed
+from your taskbar as well as your recent search queries. To search, simply
+type a term. The search then displays all matching items for which you have
+at least view or read permissions, grouped by type like users and
+tickets. Selecting one of those results opens the item as tab in the
+taskbar.
 
-![Снимак екрана приказује одељак ознака у траци тикета са
-стране](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+Searching for a term also matches any values that begin with it. For
+example, searching for `brooks` also finds values like `brookster`. This
+does not apply when you use an attribute notation like
+`owner.lastname:brooks` (described in the [Elasticsearch
+syntax](#using-elasticsearch-syntax) section below), which matches exact
+values only.
 
-Ако притиснете [[enter]] или кликнете на `detailed search`, Zammad отвара
-детаљну претрагу као картицу у примарном навигационом траку. Тамо можете
-сузити претрагу бирањем одређеног типа објекта (нпр. организација),
-коришћењем напредних филтера или чак Elasticsearch синтаксе. Прочитајте даље
-за више информација.
+![Screenshot shows search results in the
+taskbar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+
+If you press [[enter]] or click on `detailed search`, Zammad opens the
+detailed search as a tab in the taskbar. There you can narrow down your
+search by selecting a specific object type (e.g. organization), using
+advanced filters or even using Elasticsearch syntax. Read on for more
+information.
 
 ## Следећи кораци
 
 Понекад једноставан термин за претрагу можда неће дати резултате које
 тражите. Zammad пружа различите опције за сужавање претраге на страници
 детаљне претраге.
+
+Advanced filters are not available for customer accounts. If your account
+has customer permissions only, the **Search entity** selector and the
+advanced filter options described below are not shown.
 
 ![Пример снимка екрана (пуна
 страна)](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
@@ -63,17 +74,24 @@ title: Претрага
 тéрмино де бúsqueda.
 
 ### Напредне функције
-<!--Цаптура де панталла омитида пор ахора. Се аñадирá цуандо haya мáс атрибутос диспониблес-->
-Ен цомпарациóн цон ел цампо де бúsqueda, пуедес филтрар лос ресултадос басáндоте ен атрибутос еспецíфицос y сус валорес.
-Пара хацерло, хаз цлиц ен ел ботóн `Filtros avanzados` ен ел ладо дерецхо, ло que абре ун áреа донде пуедес еспецифицар цондиционес
-адиционалес басадас ен атрибутос y сус валорес. Елиге ун атрибуто е ингреса о селецциона ун валор que лос
-ресултадос де бúsqueda дебен цоинцидир. Цада атрибуто соло естá диспонибле уна вез. Ал усар мáс де ун филтро, тен ен цуента que
-тодос дебен цумплирсе porque естáн цонецтадос лóгицаменте пор ун операдор AND. Есто тамбиéн се аплица ал тéрмино де бúsqueda
-ен ел цампо принципал де бúsqueda.
 
-Елимина ун филтро индивидуал хациендо цлиц ен ::x:: јунто ал цампо де
-валор. Пара елиминар тодос лос филтрос, хаз цлиц ен `x` ен ла барра де
-бúsqueda принципал ен ла парте супериор јунто а ла etiqueta `x filtro(s)`.
+Unlike the search field, you can filter the search results based on specific
+attributes and their values.  To do so, click on the `Advanced filters`
+button on the right side, which opens an area where you can specify
+additional conditions based on specific attributes and their values. Choose
+an attribute and enter or select a value to match against. When using more
+than one filter, all conditions must be met — they are logically connected
+by AND. This also applies to the search term in the main search field.
+
+Remove a single filter by hovering over it and clicking the ::x:: that
+appears next to the value field. To remove all filters, click the `x` in the
+main search bar at the top next to the `x filter(s)` label and confirm the
+removal.
+
+To add another filter, click `Add filter` below or between the existing
+filter rows and pick an attribute from the selection list. The list only
+offers attributes that are not used by any filter yet, so each attribute can
+be used only once.
 
 Си десеас гуардар о цомпартир ту филтро, пуедес хацерло цопиандо ла
 URL. Incluye ел филтро цомплето. Тен ен цуента que лос ресултадос де
@@ -85,19 +103,21 @@ URL. Incluye ел филтро цомплето. Тен ен цуента que л
 
 ## Elasticsearch
 
-Есте тема тиене су пропиа сецциóн porque ес ун тема аванзадо пара усуариос
-experimentados. Медианте ел усо де ла sintaxis де Elasticsearch, пуедес
-филтрар exactamente тус датос пара валорес де атрибутос
-еспецíфицос. Бáсицаменте, се адмитен тодос лос атрибутос indexados. Сигуе
-leyendo пара вер ејемплос де цóмо усарло о дирíгете а ла [пáгина де
-атрибутос indexados пор Elasticsearch](/en/reference/es-indexed-attributes)
-донде енцонтрарáс уна листа цон атрибутос адиционалес.
+This is an advanced topic for power users. By using Elasticsearch syntax,
+you can exactly filter your data for specific attribute values. All indexed
+attributes are supported. Read on to find examples of how to use it or head
+over to the [indexed attributes by Elasticsearch
+page](/en/reference/es-indexed-attributes) where you can find a list with
+additional attributes.
 
 ### Важне информације
 
 - Асегúрате де селецционар ел објето релеванте ен ел цамбиадор **Бусцар
   ентидад**. Пор ејемпло, `customer.lastname` естá диспонибле пара тицкетс,
   перо но пара усуариос.
+- Multiple search terms are combined by a logical AND by default, so `smith
+  open` only finds results containing both terms. Use an explicit `OR` if
+  you want either of them.
 - Ал цомбинар уна цонсулта де Elasticsearch цон филтрос аванзадос, тен ен
   цуента que тодас лас цондиционес дел филтро аванзадо y ла sintaxis де
   бúsqueda естáн цонецтадас лóгицаменте пор AND, пор ло que соло се

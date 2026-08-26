@@ -5,12 +5,12 @@ title: Search
 
 # Search
 
-In Zammad, you can search for basically all available information like:
+In Zammad, you can search for all available information like:
 
 - Message subject and text
 - Names and email addresses
 - Text in file attachments
-- User and organizations details (like notes, names, etc.)
+- User and organization details (like notes, names, etc.)
 
 Depending on what you are searching for and the amount of data in your Zammad instance, you can search in different
 ways. Read on to learn about the search basics, followed by the detailed search and the usage of Elasticsearch syntax.
@@ -18,21 +18,28 @@ ways. Read on to learn about the search basics, followed by the detailed search 
 ## Basic search
 
 The search is located in the top left corner of the primary navigation. Either select it via mouse or use the
-keyboard shortcut [[s]]. After activation, you can see the tickets which got recently closed from your taskbar as well
+keyboard shortcut [[s]]. After activation, you can see the tickets that were recently closed from your taskbar as well
 as your recent search queries. To search, simply type a term. The search then displays all matching items for which you
 have at least view or read permissions, grouped by type like users and tickets. Selecting one of those results opens the
 item as tab in the taskbar.
 
-![Screenshot shows search results in primary navigation](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+Searching for a term also matches any values that begin with it. For example, searching for `brooks` also finds values
+like `brookster`. This does not apply when you use an attribute notation like `owner.lastname:brooks`
+(described in the [Elasticsearch syntax](#using-elasticsearch-syntax) section below), which matches exact values only.
 
-If you press [[enter]] or click on `detailed search`, Zammad opens the detailed search as a tab in the primary
-navigation. There you can narrow down your search by selecting a specific object type (e.g. organization), use advanced
-filters or even use Elasticsearch syntax. Read on for more information.
+![Screenshot shows search results in the taskbar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+
+If you press [[enter]] or click on `detailed search`, Zammad opens the detailed search as a tab in the taskbar. There
+you can narrow down your search by selecting a specific object type (e.g. organization), using advanced filters or even
+using Elasticsearch syntax. Read on for more information.
 
 ## Detailed search
 
 Sometimes, a simple search term may not give you the results you are looking for. Zammad provides different options to
 narrow down the search in the detailed search page.
+
+Advanced filters are not available for customer accounts. If your account has customer permissions only, the
+**Search entity** selector and the advanced filter options described below are not shown.
 
 ![Screenshot shows detailed search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
 
@@ -48,16 +55,19 @@ ticket). This limits the search to the selected object type and its related data
 **Ticket**, the search also returns tickets where the owner or customer matches the search term.
 
 ### Use advanced filters
-<!--Screenshot skipped for now. Will be added after more attributes are available-->
-In comparison to the search field, you can filter the search results based on specific attributes and their values.
-To do so, click on the `Advanced filters` button on the right side, which opens an area where you can specify additional
-conditions based on specific attributes and their values. Choose an attribute and enter or select a value which the
-search results have to match. Each attribute is available only once. When using more than one filter, be aware that
-they all have to be met because they are logically connected by an AND operator. This also applies to the search term
-in the main search field.
 
-Remove a single filter by clicking the ::x:: next to the value field. To remove all filters, click the `x` in the
-main search bar at the top next to the `x filter(s)` label.
+Unlike the search field, you can filter the search results based on specific attributes and their values.
+To do so, click on the `Advanced filters` button on the right side, which opens an area where you can specify additional
+conditions based on specific attributes and their values. Choose an attribute and enter or select a value to match
+against. When using more than one filter, all conditions must be met — they are logically connected by AND. This also
+applies to the search term in the main search field.
+
+Remove a single filter by hovering over it and clicking the ::x:: that appears next to the value field. To remove all
+filters, click the `x` in the main search bar at the top next to the `x filter(s)` label and confirm the removal.
+
+To add another filter, click `Add filter` below or between the existing filter rows and pick an attribute from the
+selection list. The list only offers attributes that are not used by any filter yet, so each attribute can be used
+only once.
 
 In case you want to store or share your filter, you can do so by copying the URL. It includes the complete filter. Be
 aware that the search results may be different for other users due to divergent permissions.
@@ -67,9 +77,9 @@ You can find some examples in the next section.
 
 ## Using Elasticsearch syntax
 
-This topic has its own section because it is an advanced topic for power users. By using Elasticsearch syntax, you can
-exactly filter your data for specific attribute values. Basically, all indexed attributes are supported. Read on to find
-examples how to use it or head over to the
+This is an advanced topic for power users. By using Elasticsearch syntax, you can
+exactly filter your data for specific attribute values. All indexed attributes are supported. Read on to find
+examples of how to use it or head over to the
 [indexed attributes by Elasticsearch page](/en/reference/es-indexed-attributes) where you can find a list with
 additional attributes.
 
@@ -77,6 +87,8 @@ additional attributes.
 
 - Make sure to select the relevant object in the **Search entity** switcher. For example `customer.lastname` is
   available for tickets, but not for users.
+- Multiple search terms are combined by a logical AND by default, so `smith open` only finds results containing both
+  terms. Use an explicit `OR` if you want either of them.
 - When combining an Elasticsearch query with advanced filters, be aware that all of the advanced filter conditions and
   the search syntax are logically connected by AND, so only results which match all of the advanced filter conditions
   and your search term will be displayed.
