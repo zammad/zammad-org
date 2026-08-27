@@ -1,0 +1,7 @@
+extends: existence
+message: "Avoid em-dash (%s). Use a comma, parentheses, or rephrase."
+nonword: true
+level: warning
+tokens:
+  - '—'
+  - '--'

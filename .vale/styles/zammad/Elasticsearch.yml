@@ -1,0 +1,10 @@
+extends: existence
+message: "Wrong casing: '%s' should be 'Elasticsearch'."
+nonword: true
+level: warning
+ignorecase: false
+tokens:
+  - ElasticSearch
+  - Elastic search
+  - elasticsearch
+  - elastic search

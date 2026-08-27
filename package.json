@@ -27,6 +27,8 @@
     "screenshots:build": "pnpm --dir ./.screenshots build",
     "screenshots:start-stack": ".screenshots/zammad-stack/start.sh",
     "screenshots:stop-stack": ".screenshots/zammad-stack/stop.sh",
+    "vale": "pnpm vale:cmd src/en/",
+    "vale:cmd": "docker run -v $PWD:/workdir -w /workdir --rm --pull=always jdkato/vale:latest --config=.vale.ini",
     "prepare": "husky"
   },
   "engines": {
@@ -35,6 +37,9 @@
   },
   "packageManager": "pnpm@11.22.0",
   "lint-staged": {
-    "./src/en/**/*.md": "pnpm lint:cmd"
+    "./src/en/**/*.md": [
+      "pnpm lint:cmd",
+      "pnpm vale:cmd"
+    ]
   }
 }

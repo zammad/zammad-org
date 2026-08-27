@@ -1,0 +1,10 @@
+extends: existence
+message: "Wrong casing: '%s' should be 'Markdown'."
+nonword: true
+level: warning
+ignorecase: false
+tokens:
+  - markdown
+  - MarkDown
+  - MARKDOWN
+  - Mark down

@@ -1,0 +1,8 @@
+extends: existence
+message: "Wrong casing: '%s' should be 'Rails console' (capital R in prose)."
+nonword: true
+level: warning
+ignorecase: false
+tokens:
+  - rails console
+  - Rails Console

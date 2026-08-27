@@ -10,5 +10,5 @@ dist
 .screenshots/cypress/downloads
 src/public/screenshots/cypress
 
-# Local-only Vale config (lives outside the repo at $HOME/zammad-org-vale/).
-.local-vale
+# Vale sync cache (created by `vale sync` if packages are added later).
+.vale/styles/config

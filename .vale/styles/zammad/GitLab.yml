@@ -1,0 +1,8 @@
+extends: existence
+message: "Wrong casing: '%s' should be 'GitLab'."
+nonword: true
+level: warning
+ignorecase: false
+tokens:
+  - Gitlab
+  - gitlab

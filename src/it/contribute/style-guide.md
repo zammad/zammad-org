@@ -162,6 +162,13 @@ Alcune regole importanti e personalizzate sono menzionate di seguito.
 - La risoluzione degli screenshot manuali a pagina intera per la
   _visualizzazione desktop_ è di 1920x1080 pixel.
 
+In addition to `pnpm lint`, the repository uses
+[Vale](https://vale.sh/){target=_blank} for prose linting. Vale checks for
+consistent brand name casing (e.g. GitHub, GitLab, Elasticsearch), flags
+discouraged terms, and enforces wordlist rules. It runs automatically on
+staged files when you commit and in CI alongside the Markdownlint job. To
+run it manually, use `pnpm vale`.
+
 ### Esempi
 
 #### Testo e interfaccia utente

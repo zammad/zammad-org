@@ -14,7 +14,7 @@ default one, you can follow our configuration example using
 - Go to **Knowledge Base** in Zammad's admin settings and select the **Custom URL** tab.
 - Add the URL you want to publish your knowledge base under and click the `Submit` button.
 - Click on the `Web Server Configuration` button to get the configuration for
-  your NPM. You can already copy the snippet or just leave it open — it is
+  your NPM. You can already copy the snippet or just leave it open; it is
   needed for the NPM configuration.
 
 ## Configure NPM

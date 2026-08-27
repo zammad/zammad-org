@@ -1,0 +1,9 @@
+extends: existence
+message: "Avoid '%s' — use a more neutral or modern term."
+nonword: true
+level: warning
+ignorecase: true
+tokens:
+  - '\bblacklist(ed|ing|s)?\b'
+  - '\bwhitelist(ed|ing|s)?\b'
+  - '\bmaster.?slave\b'

@@ -158,6 +158,13 @@ clarity and readability.
 - Резолуција снимака пуног екрана за _мобилни приказ_ je 400x867 пиксела.
 - Резолуција снимака пуног екрана за _основни приказ_ je 1920x1080 пиксела.
 
+In addition to `pnpm lint`, the repository uses
+[Vale](https://vale.sh/){target=_blank} for prose linting. Vale checks for
+consistent brand name casing (e.g. GitHub, GitLab, Elasticsearch), flags
+discouraged terms, and enforces wordlist rules. It runs automatically on
+staged files when you commit and in CI alongside the Markdownlint job. To
+run it manually, use `pnpm vale`.
+
 ### Примери
 
 #### Текст и интерфејс

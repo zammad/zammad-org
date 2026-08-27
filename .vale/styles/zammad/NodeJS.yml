@@ -1,0 +1,10 @@
+extends: existence
+message: "Wrong casing: '%s' should be 'Node.js'."
+nonword: true
+level: warning
+ignorecase: false
+tokens:
+  - Node.JS
+  - node.js
+  - nodejs
+  - Nodejs

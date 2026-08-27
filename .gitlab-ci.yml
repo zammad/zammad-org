@@ -80,6 +80,14 @@ markdownlint:
   script:
     - markdownlint-cli2 "src/en/**/*.md"
 
+vale:
+  stage: lint
+  image:
+    name: jdkato/vale:latest
+    entrypoint: [""]
+  script:
+    - vale --config=.vale.ini src/en/
+
 screenshots:
   stage: screenshots
   image: docker

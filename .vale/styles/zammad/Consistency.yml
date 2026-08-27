@@ -1,0 +1,9 @@
+extends: consistency
+message: "Inconsistent spelling: '%s'. Choose one variant and use it consistently."
+level: warning
+ignorecase: true
+either:
+  email: e-mail
+  open-source: open source
+  setup: set-up
+  command line: command-line

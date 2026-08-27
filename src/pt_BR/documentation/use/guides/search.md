@@ -80,8 +80,8 @@ attributes and their values.  To do so, click on the `Advanced filters`
 button on the right side, which opens an area where you can specify
 additional conditions based on specific attributes and their values. Choose
 an attribute and enter or select a value to match against. When using more
-than one filter, all conditions must be met — they are logically connected
-by AND. This also applies to the search term in the main search field.
+than one filter, all conditions must be met; they are logically connected by
+AND. This also applies to the search term in the main search field.
 
 Remove a single filter by hovering over it and clicking the ::x:: that
 appears next to the value field. To remove all filters, click the `x` in the

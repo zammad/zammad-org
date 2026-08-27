@@ -1,0 +1,7 @@
+extends: existence
+message: "Avoid '%s' — use 'ticket detail view' or 'ticket view' instead."
+level: warning
+ignorecase: true
+tokens:
+  - ticket zoom
+  - ticket-zoom

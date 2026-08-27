@@ -1,0 +1,7 @@
+extends: existence
+message: "Merge conflict marker found: '%s'."
+level: error
+tokens:
+  - '<<<<<<<'
+  - '>>>>>>>'
+  - '======='

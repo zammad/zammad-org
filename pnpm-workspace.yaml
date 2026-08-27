@@ -1,4 +1,5 @@
 allowBuilds:
+  '@vvago/vale': true
   esbuild: true
 
 # Restore old default behavior like in pnpm v10.

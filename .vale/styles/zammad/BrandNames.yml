@@ -1,0 +1,11 @@
+extends: existence
+message: "Wrong casing: '%s' should be 'Docker Compose' (the product name)."
+nonword: true
+level: warning
+ignorecase: false
+tokens:
+  - docker compose
+  - Docker compose
+  - DOCKER COMPOSE
+  - Docker-Compose
+  - Docker-compose

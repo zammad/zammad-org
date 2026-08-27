@@ -1,0 +1,9 @@
+extends: existence
+message: "Wrong casing: '%s' should be 'Ruby on Rails'."
+nonword: true
+level: warning
+ignorecase: false
+tokens:
+  - ruby on rails
+  - Ruby On Rails
+  - RUBY ON RAILS

@@ -1,0 +1,7 @@
+extends: substitution
+message: "Use '%s' instead of '%s'."
+level: warning
+ignorecase: true
+swap:
+  in order to: to
+  as well as: and

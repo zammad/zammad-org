@@ -125,6 +125,11 @@ Some important rules and customized ones are mentioned below.
 - Resolution of manual full page screenshots for _mobile view_ is 400x867 pixels.
 - Resolution of manual full page screenshots for _desktop view_ is 1920x1080 pixels.
 
+In addition to `pnpm lint`, the repository uses [Vale](https://vale.sh/){target=_blank} for prose linting. Vale checks
+for consistent brand name casing (e.g. GitHub, GitLab, Elasticsearch), flags discouraged terms, and enforces wordlist
+rules. It runs automatically on staged files when you commit and in CI alongside the Markdownlint job. To run it
+manually, use `pnpm vale`.
+
 ### Examples
 
 #### Text and UI

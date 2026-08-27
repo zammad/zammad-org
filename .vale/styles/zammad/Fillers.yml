@@ -1,0 +1,9 @@
+extends: existence
+message: "Avoid '%s' — it adds little meaning."
+level: suggestion
+ignorecase: true
+tokens:
+  - it should be noted
+  - as a matter of fact
+  - for all intents and purposes
+  - in the event that
