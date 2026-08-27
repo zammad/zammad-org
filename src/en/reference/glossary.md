@@ -30,13 +30,13 @@ API
 
   You can learn more on our
   [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
-  as well as in our [API reference](/en/reference/rest-api/intro).
+  and in our [API reference](/en/reference/rest-api/intro).
 
 Article
 : Each item within a ticket is called article. Ticket articles
   can be internal (only agents can see them) or public
   (customers can see them too; e.g. public notes or outgoing emails) and include
-  formatted text as well as attachments and inline images.
+  formatted text and attachments and inline images.
 
 Automation
 : There are many processes that can be automated with Zammad.

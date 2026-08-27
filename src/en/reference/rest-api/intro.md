@@ -148,7 +148,7 @@ the amount of search results, use the `with_total_count` or `only_total_count`
 parameter.
 :::
 
-In order to use pagination you'll need two get options: `per_page` and
+To use pagination you'll need two get options: `per_page` and
 `page`. Combine them to receive 5 results from the first result
 page: `?page=1&per_page=5` - increase page count to get more results.
 

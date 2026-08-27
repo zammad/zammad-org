@@ -99,7 +99,7 @@ messages - Zammad provides two conveniences:
 - A **pinned reply form** so the editor stays visible while you scroll through the articles. To pin or unpin
   the reply form, click the pin icon in the header of the article reply form. The pinned form sticks to the
   bottom of the ticket detail view. Resize the height by dragging the line on the top edge of the pinned
-  reply form. The pin state as well as the panel size are saved in your browser.
+  reply form. The pin state and the panel size are saved in your browser.
 
 ![Screenshot shows the article reply form pinned to the bottom of the ticket detail view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
 

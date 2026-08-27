@@ -29,15 +29,15 @@ API
   Es ermöglicht Ihnen, Systeme von Drittanbietern mit Ihrem Zammad zu verbinden (z.B. soziale
   Medien, Messenger, Monitoring-Tools).
 
-  Sie können mehr erfahren auf unserer
-  [API-Landingpage](https://zammad.com/de/product/features/rest-api){target=_blank}
-  sowie in unserer [API-Referenz](/de/reference/rest-api/intro).
+  You can learn more on our
+  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
+  and in our [API reference](/en/reference/rest-api/intro).
 
-Artikel
-: Jedes Element innerhalb eines Tickets wird als Artikel bezeichnet. Ticket-Artikel
-  können intern (nur Agenten können sie sehen) oder öffentlich sein (Kunden können sie
-  ebenfalls sehen; z.B. öffentliche Notizen oder ausgehende E-Mails) und können
-  formatierten Text sowie Anhänge und Inline-Bilder enthalten.
+Article
+: Each item within a ticket is called article. Ticket articles
+  can be internal (only agents can see them) or public
+  (customers can see them too; e.g. public notes or outgoing emails) and include
+  formatted text and attachments and inline images.
 
 Automatisierung
 : Es gibt viele Prozesse, die mit Zammad automatisiert werden können.

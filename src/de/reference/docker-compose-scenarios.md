@@ -32,8 +32,8 @@ Die folgenden Szenarien werden unterstützt und weiter unten erläutert:
   - Ollama zum Stack hinzufügen
   - Hardware-Ressourcen des Stacks begrenzen
 
-Sie finden die Dateien im
-[Zammad-Docker-Compose-Repository](https://github.com/zammad/zammad-docker-compose){target=_blank}.
+You can find the files in the [Zammad Docker Compose
+repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
 ## Allgemeine Verwendung
 

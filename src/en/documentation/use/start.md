@@ -22,7 +22,7 @@ Welcome to the user documentation of Zammad. Here you can learn how to use Zamma
 even better!
 
 In general, Zammad should be pretty self explanatory. However, there are features that are not obvious at first glance.
-These features are described in this documentation as well as some general explanations and tips.
+These features are described in this documentation and some general explanations and tips.
 
 This documentation is divided into different sections. Currently you are on the landing page of the user documentation.
 Use the left sidebar to navigate to the desired section or use the search in the header or activate it by using its

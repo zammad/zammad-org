@@ -214,7 +214,7 @@ Ihr Zammad eine oder beide Optionen nicht konfiguriert hat, ist der
 Rückgabewert leer.
 
 ::: info
-Dies muss von Ihrer Telefonanlage unterstützt werden, damit es funktioniert.
+This has to be supported by your PBX to work.
 :::
 
 #### Ablehnen blockierter Anrufer IDs

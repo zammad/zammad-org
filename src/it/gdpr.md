@@ -74,11 +74,12 @@ Quando visiti il sito, manterremo le informazioni sul tuo dispositivo nei
 nostri archivi a meno che e fino a quando non ci chiedi di eliminare queste
 informazioni.
 
-Inoltre, se risiedi in Europa, trattiamo i tuoi dati per adempiere ai
-contratti che potremmo avere con te (ad esempio, se effettui un ordine
-tramite il sito) o per perseguire i nostri legittimi interessi commerciali
-sopra elencati. Ti preghiamo inoltre di notare che i tuoi dati saranno
-trasferiti al di fuori dell'Europa, inclusi Canada e Stati Uniti.
+Additionally, if you are a European resident we are processing your
+information to fulfil contracts we might have with you (for example if you
+make an order through the site), or otherwise to pursue our legitimate
+business interests listed above. Additionally, please note that your
+information will be transferred outside of Europe, including to Canada and
+the United States.
 
 ## Conservazione dei dati
 
@@ -91,8 +92,9 @@ secondo le procedure standard e in conformità con le normative vigenti.
 
 ## Modifiche
 
-Potremmo aggiornare questa informativa sulla privacy di tanto in tanto per
-riflettere, ad esempio, modifiche alle nostre pratiche.
+We may update this privacy policy from time to time to reflect, for example,
+changes to our practices or for other operational, legal or regulatory
+reasons.
 
 ## Contattaci
 

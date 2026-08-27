@@ -150,10 +150,9 @@ Zammad увек враћа информације укључујући упут�
 број резултата претраге, користите параметар `with_total_count` или `only_total_count`.
 :::
 
-Да бисте користили пагинацију, потребне су вам две ГЕТ опције: `per_page` и
-`page`. Комбинујте их да бисте добили 5 резултата са прве странице:
-`?page=1&per_page=5` - повећајте број странице да бисте добили више
-резултата.
+To use pagination you'll need two get options: `per_page` and
+`page`. Combine them to receive 5 results from the first result page:
+`?page=1&per_page=5` - increase page count to get more results.
 
 ## Претрага
 

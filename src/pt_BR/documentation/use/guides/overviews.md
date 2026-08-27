@@ -36,11 +36,11 @@ regras e condições. Isso significa que, se um ticket foi alterado e a
 condição da visão geral não corresponde mais, o ticket não fica mais visível
 nessa visão geral.
 
-As visões gerais são atualizadas automaticamente. Você não precisa
-recarregar seu navegador para observar as alterações. Você pode ajustar a
-ordem temporariamente clicando em um dos cabeçalhos de coluna, assim como
-alterar sua largura arrastando os divisores de coluna. A ordem só é
-preservada até você mudar para outra visão geral ou recarregar a página.
+Overviews are updated automatically. You don't have to reload your browser
+to observe changes. You can adjust the order temporarily by clicking on one
+of the column headers and change their width by dragging the column
+dividers.  The order is only preserved until you switch to another overview
+or reload the page.
 
 Para cada visão geral, você encontra um selo anexado. O número nesse selo
 informa quantos tickets há em cada visão geral.

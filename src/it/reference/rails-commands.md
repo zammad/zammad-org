@@ -13,7 +13,7 @@ Controlla attentamente i tuoi comandi prima di eseguirli, poiché alcuni di ques
 comandi potrebbero causare danni.
 :::
 
-## Starting Zammad's rails console
+## Starting Zammad's Rails console
 
 ### Execute a single command
 
@@ -35,7 +35,7 @@ docker compose run --rm zammad-railsserver bundle exec rai
 
 :::
 
-### Run interactive rails console
+### Run interactive Rails console
 
 ::: tabs key:installmethod
 
@@ -128,8 +128,8 @@ Quanto sopra restituirà sia l'ID che il nome del tipo - ad esempio:
 
 ### Find user
 
-Per lavorare sulle informazioni utente o controllare informazioni
-specifiche, dovrai.
+To work on user information or to check for specific information, you'll
+need to find it first.
 
 ID utente già conosciuto:
 
@@ -296,8 +296,11 @@ nell'interfaccia di Zammad.
 
 ### Auto shutdown setting
 
-Definisce se viene eseguito uno spegnimento automatico di Zammad quando il
-database è stato modificato.
+Defines if an automatic shutdown of Zammad is performed when the database
+has been changed (e.g. after custom attributes have been created in the
+object manager).  The underlying system (Systemd, Docker, Kubernetes) will
+then restart the processes/containers after this shutdown. The default
+setting is `true`.
 
 Impostare questo su `false` potrebbe avere senso solo in casi molto rari e
 dovrai riavviare.
@@ -620,8 +623,10 @@ Setting.set('ui_sidebar_open_ticket_indicator_colored', true)
 Le impostazioni sopra hanno soglie specifiche come segue. **Non puoi**
 regolare queste soglie.
 
-| Situazione / Visualizzazione | nessuna indicazione | avviso (arancione) | pericolo (rosso) |
-|-------------
+| Situation / View      | no indication | warning (orange) | danger (red) |
+|-----------------------|---------------|------------------|--------------|
+| **Ticket detail view**       | \< 2          | 2                | \>= 3        |
+| **New Ticket dialog** | 0             | 1                | \>= 2        |
 
 ### Activate attachment tab in sidebar
 

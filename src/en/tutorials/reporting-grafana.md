@@ -146,7 +146,7 @@ mentioned below. These dashboards can also be found on
 
 In Grafana, select _➕ > Import_ (or any other place which offers you to import
 a dashboard) and either upload the json file you
-downloaded from Github or use the grafana.com ID, provided as badge
+downloaded from GitHub or use the grafana.com ID, provided as badge
 like <Badge type="tip" text="12345"/> attached to the next sections titles.
 
 During importing you can provide a dashboard name and folder. You'll also be

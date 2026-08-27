@@ -183,8 +183,8 @@ Para definir um método de dois fatores já configurado como padrão, use o
 menu de ações ::a:: ao lado dele nas configurações de 2FA do seu perfil e
 escolha **Set as default**.
 
-Para identificar seu método de autenticação de dois fatores padrão atual,
-procure um pequeno selo azul ao lado do nome do método.
+To identify your current default two-factor authentication method, look for
+a small blue badge next to the method name.
 
 ![Captura de tela mostra a lista de métodos de 2FA e o método
 padrão](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)

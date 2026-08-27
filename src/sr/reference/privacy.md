@@ -27,10 +27,10 @@ _Управљај > Scheduler_.
 
 ### Rails команде
 
-Када се сесија чата означи као **затворена**, планира се аутоматско брисање
-након 12 месеци. Записи IP адреса за сесије чата могу се обрисати ручно
-праћењем [корака са странице раилс
-конзоле](/en/reference/rails-commands#remove-ip-address-logs).
+Once a chat session has been marked **closed**, it is scheduled for
+automatic deletion 12 months later. IP address logs for chat sessions can be
+deleted manually by following the [steps from the Rails console
+page](/en/reference/rails-commands#remove-ip-address-logs).
 
 ### CTI запис позиваоца
 

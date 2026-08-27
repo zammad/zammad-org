@@ -56,7 +56,7 @@ Zammad ships default writing assistant tools. The availability depends on the co
 might even have additional custom tools in case your admin added them.
 
 - **Expand draft into well-written section**: Uses your draft as a base and tries to elaborate a proper text. It tries
-  to add a structure and to enhance clarity and conciseness and as well as removing misspellings and grammar errors. You
+  to add a structure and to enhance clarity and conciseness and removing misspellings and grammar errors. You
   can even use it by providing only basic information (e.g. via bullet points) and let the AI write the answer.
 - **Fix spelling and grammar**: Proofreads your text and removes spelling and grammar mistakes.
 - **Summarize section to about half its current size**: Shrinks your text while keeping the message and the tone of the
@@ -118,7 +118,7 @@ ongoing issues with what the AI agent did, inform your Zammad admin. Example of 
 ### Simultaneous work detection
 
 AI agents which are currently working on a ticket are displayed like other agents in the live user section in the
-bottom bar. This helps to avoid duplicate work as well as losing unsaved changes. If you see an AI agent avatar, wait
+bottom bar. This helps to avoid duplicate work and losing unsaved changes. If you see an AI agent avatar, wait
 for a moment or head over to another ticket.
 
 Avatar of AI agent:

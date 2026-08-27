@@ -136,13 +136,12 @@ oferece duas facilidades:
     exibe um selo e muda para **Scroll to unread article**.
   - A barra de ferramentas aparece sempre que a lista de artigos for mais
     alta que sua tela, para que ações essenciais permaneçam acessíveis.
-- Um **formulário de resposta fixado** para que o editor permaneça visível
-  enquanto você rola pelos artigos. Para fixar ou desafixar o formulário de
-  resposta, clique no ícone de alfinete no cabeçalho do formulário de
-  resposta do artigo. O formulário fixado gruda na parte inferior da
-  visualização de detalhes do ticket. Redimensione a altura arrastando a
-  linha na borda superior do formulário de resposta fixado. O estado de
-  fixação, assim como o tamanho do painel, são salvos no seu navegador.
+- A **pinned reply form** so the editor stays visible while you scroll
+  through the articles. To pin or unpin the reply form, click the pin icon
+  in the header of the article reply form. The pinned form sticks to the
+  bottom of the ticket detail view. Resize the height by dragging the line
+  on the top edge of the pinned reply form. The pin state and the panel size
+  are saved in your browser.
 
 ![Captura de tela mostra o formulário de resposta do artigo fixado na parte
 inferior da visualização de detalhes do

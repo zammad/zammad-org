@@ -14,7 +14,7 @@ commands might cause data loss or damaged tickets! If you're unsure,
 **use a test system first**!
 :::
 
-## Starting Zammad's rails console
+## Starting Zammad's Rails console
 
 ### Execute a single command
 
@@ -51,7 +51,7 @@ rails r '{COMMAND}'
 
 :::
 
-### Run interactive rails console
+### Run interactive Rails console
 
 ::: tabs key:installmethod
 
@@ -162,7 +162,7 @@ Above will return both, the type ID and name - e.g.:
 
 ### Find user
 
-In order to work on user information or to check for specific
+To work on user information or to check for specific
 information, you'll need to find it first.
 
 User ID already known:
@@ -337,7 +337,7 @@ as well.
 
 ### Auto shutdown setting
 
-Defines if an automatic shutdown of Zammad is performed when the the database
+Defines if an automatic shutdown of Zammad is performed when the database
 has been changed (e.g. after custom attributes have been created in the
 object manager).
 The underlying system (Systemd, Docker, Kubernetes) will then restart the
@@ -684,7 +684,7 @@ these thresholds.
 
 | Situation / View      | no indication | warning (orange) | danger (red) |
 |-----------------------|---------------|------------------|--------------|
-| **Ticket Zoom**       | \< 2          | 2                | \>= 3        |
+| **Ticket detail view**       | \< 2          | 2                | \>= 3        |
 | **New Ticket dialog** | 0             | 1                | \>= 2        |
 
 ### Activate attachment tab in sidebar

@@ -13,7 +13,7 @@ Zammad користи Ruby он Rails, стога можете користит�
 **прво користите тестни систем**!
 :::
 
-## Покретање Zammad Rails конзоле
+## Starting Zammad's Rails console
 
 ### Извршавање појединачне команде
 
@@ -50,7 +50,7 @@ rails r '{COMMAND}'
 
 :::
 
-### Покретање интерактивне Rails конзоле
+### Run interactive Rails console
 
 ::: tabs key:installmethod
 
@@ -160,8 +160,8 @@ Ticket::StateType.pluck(:id, :name)
 
 ### Корисник
 
-Да бисте радили са информацијама корисника или проверавали специфичне
-податке, прво их морате пронаћи.
+To work on user information or to check for specific information, you'll
+need to find it first.
 
 ID корисника је већ познат:
 
@@ -336,11 +336,11 @@ Zammad интерфејсу.
 
 ### Подешавање аутоматског гашења
 
-Одређује да ли се извршава аутоматско гашење Zammad-а када се база података
-промени (нпр. након креирања прилагођених атрибута у менаџеру
-објеката). Подређени систем (Systemd, Docker, Kubernetes) ће онда
-рестартовати процесе/контејнере након овог гашења. Подразумевано подешавање
-је `true`.
+Defines if an automatic shutdown of Zammad is performed when the database
+has been changed (e.g. after custom attributes have been created in the
+object manager).  The underlying system (Systemd, Docker, Kubernetes) will
+then restart the processes/containers after this shutdown. The default
+setting is `true`.
 
 Постављање на `false` има смисла само у веома ретким случајевима, након чега
 морате ручно рестартовати Zammad сервисе.
@@ -690,10 +690,10 @@ Setting.set('ui_sidebar_open_ticket_indicator_colored', true)
 Подешавање изнад има одређене граничне вредности како следи. Ове граничне
 вредности **не можете** да мењате.
 
-| Ситуација / приказ | без назнаке | упозорење (наранџасто) | опасност (црвено) |
+| Situation / View      | no indication | warning (orange) | danger (red) |
 |-----------------------|---------------|------------------|--------------|
-| **Приказ тикета** | \< 2 | 2 | \>= 3 |
-| **Дијалог новог тикета** | 0 | 1 | \>= 2 |
+| **Ticket detail view**       | \< 2          | 2                | \>= 3        |
+| **New Ticket dialog** | 0             | 1                | \>= 2        |
 
 ### Ограничите величину прилога:
 

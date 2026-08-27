@@ -517,7 +517,7 @@ Zammads FQDN in your browser and follow the migration wizard. You can find
 it in the log in screen by clicking the "Or migrate from another system"
 link at the bottom.
 
-Depending on the the number of users, tickets and Zendesk plan, this may take a
+Depending on the number of users, tickets and Zendesk plan, this may take a
 while.
 
 === Via Console

@@ -25,8 +25,9 @@ order: 2
 
 # Водич кроз стил и садржај
 
-Овај водич вам пружа преглед садржаја Zammad документације, као и упутства
-за форматирање и стилизовање текста ради јасноће и читљивости.
+This guide provides an overview of the content that should be included in
+the Zammad documentation and formatting and style guidelines to ensure
+clarity and readability.
 
 Први одељци садрже уопштене информације и правила. [Одељак са
 примерима](#examples) је на крају.
@@ -83,8 +84,8 @@ order: 2
 
 - Документација је написана у Markdown језику описа страна. Изворне датотеке
   имају `.md` екстензију.
-- Систем користи [Vitepress](https://vitepress.dev/){target=_blank} за
-  прављење веб сајта.
+- The system uses [VitePress](https://vitepress.dev/){target=_blank} to
+  build the website.
 - Изворни језик датотека је амерички енглески.
 - Преводи документације се врше преко Weblate апликације, погледајте [одељак
   о преводима](contribute#превод) на страници о доприносима за више

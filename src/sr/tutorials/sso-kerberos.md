@@ -21,8 +21,8 @@ Active Directoryja), SSO подршка у Zammad-у омогућава иско
 се пријави једним кликом.
 
 ::: tip
-Ако немате ову IT инфраструктуру, али желите пријаву једним кликом,
-могуће је користити алтернативе као што су GitHub, Google, Facebook и друге.
+If you don't have this IT infrastructure but still want one-click
+login, you can use alternatives like GitHub, Google, Facebook and more.
 :::
 
 ## Како то уствари функционише?
@@ -37,27 +37,27 @@ Active Directoryja), SSO подршка у Zammad-у омогућава иско
 - променљива окружења веб сервера `HTTP_REMOTE_USER`
 
 ::: info
-**Чек. SSO омогућава пријаву само корисничким именом?**
+**Wait. SSO allows you to sign in with only a username?**
 
-У принципу, да.
+In principle, yes.
 
-**Како је то у реду?**
+**How is that okay?**
 
-У овом водичу конфигурисали смо веб сервер (Apache) да прекине све
-захтеве ка `/auth/sso` ендпоинту. Уместо да их проследи на
-Zammad, Apache иницира процес пријаве са три стране (_Kerberos
-аутентификација_) између себе, корисника и сервера Active
-Directoryja.
+In this guide, we configure our web server (Apache) to intercept all
+requests to the `/auth/sso` endpoint. Instead of forwarding them to
+Zammad, Apache initiates a three-sided login process (_Kerberos
+authentication_) between the itself, the user, and the Active
+Directory server.
 
-Ако Active Directory не препозна корисника или његову лозинку,
-Zammad никада не види захтев и сесија се никада не креира.
+If Active Directory doesn't recognize the user or their password,
+Zammad never sees the request, and the session is never created.
 
-**Шта све ово значи?**
+**What does this all mean?**
 
-То значи да постоји много начина како можете поставити SSO—не морате
-пратити овај водич нити користити Active Directory или Kerberos—али ако
-не знате шта радите, на крају ћете имати _огроман_
-пропуст у безбедности.
+It means there are many ways you could set up SSO, you don't need to
+follow this guide or even use Active Directory or Kerberos, but if you
+don't know what you're doing, you're going to end up with a _massive_
+security hole.
 :::
 
 ## Први кораци

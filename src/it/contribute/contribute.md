@@ -15,8 +15,8 @@ Puoi contribuire a:
 - [Documentazione](contribute#documentation)
 - [Traduzione](contribute#traduzione)
 
-Consulta le sezioni seguenti su come contribuire. Tutti i repository sono
-disponibili su [Github](https://github.com/zammad){target=_blank}.
+Please have a look at our the sections below about how to contribute. All
+repos can be found on [GitHub](https://github.com/zammad){target=_blank}.
 
 ## Zammad source code
 
@@ -28,26 +28,26 @@ per iniziare.
 
 ### Supported branches / versions
 
-Il repository GitHub di Zammad ha diversi branch:
+Zammad's GitHub repository has several branches:
 
 #### `develop`
 
 - Questo è lo stato di sviluppo attuale (non ancora rilasciato) della
   prossima versione principale (che diventerà il nuovo ramo `stable`).
 - Non usarlo in produzione!
-- Questo ramo è attivamente supportato e riceve regolarmente correzioni di
-  bug e aggiornamenti di sicurezza (per maggiori dettagli, consultare
-  [Politica di
-  sicurezza](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}).
+- This branch is actively supported and receives regular bug fixes and
+  security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable`
 
 - Questa è la versione stabile corrente, ad esempio Zammad 5.2.
 - Usa questo branch per le installazioni in produzione.
-- Questo ramo è attivamente supportato e riceve regolarmente correzioni di
-  bug e aggiornamenti di sicurezza (per maggiori dettagli, consultare
-  [Politica di
-  sicurezza](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}).
+- This branch is actively supported and receives regular bug fixes and
+  security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable-x.y`
 
@@ -59,12 +59,11 @@ Il repository GitHub di Zammad ha diversi branch:
 
 ## Documentazione
 
-La documentazione che stai leggendo è disponibile su zammad.org e
-next.zammad.org ed è costruita con Vitepress. I file sorgente sono scritti
-in Markdown. Assicurati di modificare solo i file sorgente in inglese nella
-cartella `/src/en/`. La traduzione avviene tramite Weblate e sovrascriverà
-qualsiasi modifica nelle cartelle specifiche per lingua (eccetto
-`/src/en/`).
+The documentation you are reading is available on zammad.org and
+next.zammad.org and is built with VitePress. The source files are written in
+Markdown. Make sure to change the English source files only which are placed
+under `/src/en/`. The translation is done via Weblate and will overwrite any
+changes in the language specific folders (except `/src/en/`).
 
 Apri una nuova pull request su GitHub su
 <https://github.com/zammad/zammad-org> (verso il branch `develop`) con le
@@ -74,12 +73,14 @@ repository](https://github.com/zammad/zammad-org?tab=readme-ov-file#zammad-hub){
 
 ## Traduzione
 
-Se vuoi aiutarci con la traduzione e migliorare il supporto multilingue di
-Zammad o della documentazione, sei il benvenuto! La traduzione di Zammad e
-della documentazione avviene tramite Weblate, un servizio per la traduzione
-collaborativa di progetti. Vai all'[istanza Weblate di
-Zammad](https://translations.zammad.org/){target=_blank}. Puoi creare un
-account (se non ne hai già uno) o accedere con il tuo account GitHub!
+If you want to help us with translation and improve the multi-language
+support of Zammad or the documentation, you are welcome to contribute as
+well! The translation of Zammad and the documentation is done via Weblate,
+which is a service for the collaborative translation of projects. Just head
+over to Zammad's [Weblate
+instance](https://translations.zammad.org/){target=_blank}.  You can either
+create an account (if you don't have one already) or even sign in with your
+GitHub account!
 
 We will cover some basic steps in the following sections to get you started
 with translating. However, if you want to use some additional features of
@@ -148,12 +149,13 @@ Weblate](/screenshots/contribute/weblate-ui.png)
 
 ### Markup in strings
 
-Di seguito trovi esempi di stringhe sorgente speciali con un badge che
-indica dove si trova tale stringa. Cerca di mantenere il markup (adattato) e
-assicurati di conservare le variabili. La sezione **Posizione stringa
-sorgente** in Weblate (sul lato destro) fornisce un suggerimento su dove
-cercare il contesto. Dai anche un'occhiata alla [guida allo stile della
-documentazione](style-guide) per maggiori informazioni.
+Find some examples for special source strings below with a badge indicating
+where such a string can be found. Try to keep the (adjusted) markup and make
+sure to keep the variables. The **Source string location** section in
+Weblate (on the right side) gives you a hint where to search for the
+context. Also have a look at the [style guide of the
+documentation](style-guide) where you can find more information about the
+syntax and the usage of Markdown/VitePress features.
 
 `%s ha creato il ticket |%s|` <Badge type="tip" text="Zammad" />
 : La stringa contiene variabili (`%s`) e markup (`||`). Assicurati che la variabile e il markup siano inclusi nella

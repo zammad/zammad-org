@@ -25,9 +25,9 @@ order: 2
 
 # Style and content guide
 
-Questa guida fornisce una panoramica dei contenuti da includere nella
-documentazione di Zammad, nonché le linee guida di formattazione e stile per
-garantire chiarezza e leggibilità.
+This guide provides an overview of the content that should be included in
+the Zammad documentation and formatting and style guidelines to ensure
+clarity and readability.
 
 Le prime sezioni riguardano informazioni e regole generali. Segue alla fine
 una [sezione con esempi](#esempi).
@@ -85,8 +85,8 @@ scrittura della documentazione. Dopo di esse trovi una sezione con alcuni
 
 - La documentazione è scritta nel linguaggio di markup Markdown. I file
   sorgente hanno l'estensione `.md`.
-- Il sistema usa [Vitepress](https://vitepress.dev/){target=_blank} per
-  costruire il sito web.
+- The system uses [VitePress](https://vitepress.dev/){target=_blank} to
+  build the website.
 - La lingua dei file sorgente è l'inglese americano.
 - La traduzione della documentazione avviene tramite Weblate, vedi la
   [sezione traduzione](contribute#traduzione) nella pagina dei contributi

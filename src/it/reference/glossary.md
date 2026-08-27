@@ -22,13 +22,15 @@ API
 : Un'API (Application Programming Interface) è un insieme di regole e protocolli
   che permettono.
 
-  Puoi approfondire sulla nostra
-  [pagina introduttiva dell’API](https://zammad.com/en/product/features/rest-api){target=_blank}
-  così come nella nostra [documentazione di riferimento dell’API](/en/reference/rest-api/intro).
+  You can learn more on our
+  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
+  and in our [API reference](/en/reference/rest-api/intro).
 
-Articolo
-: Ogni elemento all'interno di un ticket è chiamato articolo. Gli articoli del ticket
-  possono essere interni (
+Article
+: Each item within a ticket is called article. Ticket articles
+  can be internal (only agents can see them) or public
+  (customers can see them too; e.g. public notes or outgoing emails) and include
+  formatted text and attachments and inline images.
 
 Automazione
 : Ci sono molti processi che possono essere automatizzati con Zammad.

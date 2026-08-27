@@ -30,7 +30,7 @@ Overviews can be defined by admins based on rules and conditions. That means if 
 condition of the overview isn't matching anymore, the ticket is no longer visible in this overview.
 
 Overviews are updated automatically. You don't have to reload your browser to observe changes. You can adjust the order
-temporarily by clicking on one of the column headers as well as change their width by dragging the column dividers.
+temporarily by clicking on one of the column headers and change their width by dragging the column dividers.
 The order is only preserved until you switch to another overview or reload the page.
 
 For each overview, you can find a badge attached. The number in this badge tells you how many tickets are in each

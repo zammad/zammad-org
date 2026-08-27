@@ -136,8 +136,9 @@ prestazioni, potresti dover.
 numero massimo di oggetti restituiti.
 :::
 
-Per usare la paginazione avrai bisogno di due opzioni get: `per_page` e
-`page`. Combina.
+To use pagination you'll need two get options: `per_page` and
+`page`. Combine them to receive 5 results from the first result page:
+`?page=1&per_page=5` - increase page count to get more results.
 
 ## Ricerca tramite API
 

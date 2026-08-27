@@ -28,11 +28,10 @@ ou [usar o console](/pt_BR/reference/rails-commands#deleting-records).
 
 ### Sessões de chat
 
-Assim que uma sessão de chat for marcada como **fechada**, ela é agendada
-para exclusão automática 12 meses depois. Registros de endereço IP para
-sessões de chat podem ser excluídos manualmente seguindo as [etapas da
-página do console
-rails](/pt_BR/reference/rails-commands#remove-ip-address-logs).
+Once a chat session has been marked **closed**, it is scheduled for
+automatic deletion 12 months later. IP address logs for chat sessions can be
+deleted manually by following the [steps from the Rails console
+page](/en/reference/rails-commands#remove-ip-address-logs).
 
 ### Registro de chamadas CTI
 

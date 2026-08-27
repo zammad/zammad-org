@@ -17,8 +17,8 @@ Se il tuo reparto IT mantiene un proprio archivio di identità utente (come
 Active Directory).
 
 ::: tip
-Se non hai questa infrastruttura IT ma vuoi comunque l'accesso con un
-clic, puoi usare metodi alternativi.
+If you don't have this IT infrastructure but still want one-click
+login, you can use alternatives like GitHub, Google, Facebook and more.
 :::
 
 ## How does it work?
@@ -31,11 +31,27 @@ Una volta abilitato, il single sign-on attiva un endpoint su
 - una variabile d'ambiente del server web `HTTP_REMOTE_USER`
 
 ::: info
-**Aspetta. SSO ti permette di accedere con solo un nome utente?**
+**Wait. SSO allows you to sign in with only a username?**
 
-In linea di principio, sì.
+In principle, yes.
 
-**Come è.
+**How is that okay?**
+
+In this guide, we configure our web server (Apache) to intercept all
+requests to the `/auth/sso` endpoint. Instead of forwarding them to
+Zammad, Apache initiates a three-sided login process (_Kerberos
+authentication_) between the itself, the user, and the Active
+Directory server.
+
+If Active Directory doesn't recognize the user or their password,
+Zammad never sees the request, and the session is never created.
+
+**What does this all mean?**
+
+It means there are many ways you could set up SSO, you don't need to
+follow this guide or even use Active Directory or Kerberos, but if you
+don't know what you're doing, you're going to end up with a _massive_
+security hole.
 :::
 
 ## Per iniziare

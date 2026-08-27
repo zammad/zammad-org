@@ -14,7 +14,7 @@ You can contribute to:
 - [Translation](contribute#translation)
 
 Please have a look at our the sections below about how to contribute. All repos can be found on
-[Github](https://github.com/zammad){target=_blank}.
+[GitHub](https://github.com/zammad){target=_blank}.
 
 ## Zammad source code
 
@@ -25,20 +25,20 @@ to get started.
 
 ### Supported branches / versions
 
-Zammad's Github repository has several branches:
+Zammad's GitHub repository has several branches:
 
 #### `develop`
 
 - This is the current (unreleased) development state of next major release (this will become the new `stable` branch).
 - Don't use it for production!
-- This branch is actively supported and receives regular bug fixes as well as security updates (see
+- This branch is actively supported and receives regular bug fixes and security updates (see
   [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} for more details).
 
 #### `stable`
 
 - This is the current stable release, e.g. Zammad 5.2.
 - Use this branch for production installations.
-- This branch is actively supported and receives regular bug fixes as well as security updates (see
+- This branch is actively supported and receives regular bug fixes and security updates (see
   [Security Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} for more details).
 
 #### `stable-x.y`
@@ -49,7 +49,7 @@ Zammad's Github repository has several branches:
 
 ## Documentation
 
-The documentation you are reading is available on zammad.org and next.zammad.org and is built with Vitepress. The
+The documentation you are reading is available on zammad.org and next.zammad.org and is built with VitePress. The
 source files are written in Markdown. Make sure to change the English source files only which are placed under
 `/src/en/`. The translation is done via Weblate and will overwrite any changes in the language specific folders
 (except `/src/en/`).
@@ -64,7 +64,7 @@ If you want to help us with translation and improve the multi-language support o
 are welcome to contribute as well! The translation of Zammad and the documentation is done via Weblate, which is a
 service for the collaborative translation of projects. Just head over to Zammad's
 [Weblate instance](https://translations.zammad.org/){target=_blank}.
-You can either create an account (if you don't have one already) or even sign in with your Github account!
+You can either create an account (if you don't have one already) or even sign in with your GitHub account!
 
 We will cover some basic steps in the following sections to get you started with translating. However, if you want to
 use some additional features of Weblate and want to dive deeper into it, their
@@ -126,7 +126,7 @@ Find some examples for special source strings below with a badge indicating wher
 keep the (adjusted) markup and make sure to keep the variables. The **Source string location** section in Weblate
 (on the right side) gives you a hint where to search for the context. Also have a look at the
 [style guide of the documentation](style-guide) where you can find more information about the syntax and the usage of
-Markdown/Vitepress features.
+Markdown/VitePress features.
 
 `%s created ticket |%s|` <Badge type="tip" text="Zammad" />
 : The string contains variables (`%s`) and markup (`||`). Make sure that the variable and markup is included in the

@@ -138,7 +138,7 @@ in your profile's 2FA settings.
 To set an already set up two-factor method as default, use the ::a:: actions menu next to it in your profile's 2FA
 settings and choose **Set as default**.
 
-In order to identify your current default two-factor authentication method, look for a small blue badge next to the
+To identify your current default two-factor authentication method, look for a small blue badge next to the
 method name.
 
 ![Screenshot shows list of 2FA methods and default method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)

@@ -140,8 +140,10 @@ su [GitHub](https://github.com/zammad/grafana-dashboards){target=_blank}.
 
 ### Importing a dashboard
 
-In Grafana, seleziona _➕ > Importa_ (o qualsiasi altro posto che ti offre di importare
-una dashboard.
+In Grafana, select _➕ > Import_ (or any other place which offers you to import
+a dashboard) and either upload the json file you
+downloaded from GitHub or use the grafana.com ID, provided as badge
+like <Badge type="tip" text="12345"/> attached to the next sections titles.
 
 Durante l'importazione puoi fornire un nome dashboard e una cartella. Ti
 verrà anche chiesto di mappare.

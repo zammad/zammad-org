@@ -389,7 +389,7 @@ Activity types can be used to distinguish between different activities and for g
 optional feature is active, it shows a list of activities from which you can select in the time accounting dialog.
 
 If a ticket already has accounted time(s), you can see it in the ticket sidebar on the right side in the ticket detail
-view at the bottom. You can find the calculated sums of each activity type (if configured) as well as the total sum
+view at the bottom. You can find the calculated sums of each activity type (if configured) and the total sum
 of accounted times for all activity types.
 
 ![Screenshot shows the time accounting overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
@@ -456,15 +456,15 @@ opens a new tab with the organization detail page.
 
 **Why?**
 
-If you use i-doit and Zammad for IT support or you deal with Github or Gitlab issues, you can link to these external
+If you use i-doit and Zammad for IT support or you deal with GitHub or GitLab issues, you can link to these external
 systems to have all relevant information in one place. Your Zammad admin has to activate and configure these features
 in Zammad's settings.
 
 **How?**
 
-![Screenshot shows Gitlab content sidebar with "Link Issue" button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+![Screenshot shows GitLab content sidebar with "Link Issue" button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
-If activated, simply open a ticket and choose the right content sidebar tab with the respective icon (see Gitlab example
+If activated, simply open a ticket and choose the right content sidebar tab with the respective icon (see GitLab example
 in screenshot above). Click the button to link to an issue by entering the URL of it or select the item from a
 select field (i-doit). Afterwards, you can see the linked item with additional metadata. By clicking on the linked
 item, you are redirected to it in the respective system.

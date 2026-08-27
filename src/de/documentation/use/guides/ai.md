@@ -66,13 +66,11 @@ Verfügbarkeit hängt von der Konfiguration Ihrer Zammad-Instanz ab. Sie
 können sogar zusätzliche benutzerdefinierte Tools sehen, falls Ihr
 Administrator welche hinzugefügt hat.
 
-- **Entwurf in wohlformulierten Abschnitt wandeln**: Verwendet Ihren Entwurf
-  als Grundlage und versucht, einen ordentlichen Text auszuarbeiten. Das
-  Werkzeug versucht, eine Struktur hinzuzufügen, die Klarheit und Prägnanz
-  zu verbessern und Rechtschreib- sowie Grammatikfehler zu entfernen. Sie
-  können diese Funktion auch nutzen, indem Sie nur grundlegende
-  Informationen (z.B. in Form einer Auflistung) bereitstellen und die KI die
-  Antwort schreiben lassen.
+- **Expand draft into well-written section**: Uses your draft as a base and
+  tries to elaborate a proper text. It tries to add a structure and to
+  enhance clarity and conciseness and removing misspellings and grammar
+  errors. You can even use it by providing only basic information (e.g. via
+  bullet points) and let the AI write the answer.
 - **Rechtschreibung und Grammatik korrigieren**: Prüft Ihren Text und
   entfernt Rechtschreib- und Grammatikfehler.
 - **Zusammenfassen des Abschnitts auf ca. die halbe Länge**: Fasst Ihren
@@ -164,11 +162,10 @@ Ticket-Historie](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Erkennung gleichzeitige Ticketbearbeitung
 
-KI-Agenten, die gerade an einem Ticket arbeiten, werden wie andere Agenten
-im Live-Benutzer-Bereich in der unteren Leiste angezeigt. Dies hilft,
-doppelte Arbeit und den Verlust von nicht gespeicherten Änderungen zu
-vermeiden. Wenn Sie einen Avatar eines KI-Agenten sehen, warten Sie einen
-Moment oder wechseln Sie zu einem anderen Ticket.
+AI agents which are currently working on a ticket are displayed like other
+agents in the live user section in the bottom bar. This helps to avoid
+duplicate work and losing unsaved changes. If you see an AI agent avatar,
+wait for a moment or head over to another ticket.
 
 Avatar eines KI Agenten:
 

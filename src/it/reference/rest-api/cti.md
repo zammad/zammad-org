@@ -194,7 +194,7 @@ A seconda della direzione di chiamata scelta, Zammad restituirà un
 (opzionalmente) configurato.
 
 ::: info
-Questo deve essere supportato dal tuo PBX per funzionare.
+This has to be supported by your PBX to work.
 :::
 
 #### Reject blocked caller ids

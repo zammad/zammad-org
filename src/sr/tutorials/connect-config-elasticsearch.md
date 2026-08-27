@@ -34,7 +34,7 @@ zammad run rails r "Setting.set('es_password', '<password>')"
 
 ### Миграција на Zammad
 
-#### Rails команде
+#### Add it via Rails console
 
 У случају да инсталирате нови Zammad и нисте већ прошли кроз чаробњак за
 почетак, додајте сертификат преко конзоле:

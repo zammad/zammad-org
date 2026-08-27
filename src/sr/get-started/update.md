@@ -7,10 +7,10 @@ title: Освежавање
 
 <!--@include: @/sr/modules/zammad-services-hint.md-->
 
-Пре ажурирања Zammad-а топло препоручујемо да погледате наше [белешке о
-издању](https://zammad.com/en/releases){target=_blank}. Овде можете пронаћи
-информације о новим функцијама и исправкама, као и техничке напомене и
-промене које захтевају прилагодбу.
+Before updating Zammad, we strongly recommend to take a look at our [release
+notes](https://zammad.com/en/releases){target=_blank}. You can find
+information about features, fixes and technical remarks and breaking
+changes.
 
 Имајте на уму да не бисте требали прескакати главне верзије Zammad-а током
 ажурирања. То значи, на пример, путања надоградње са верзије `2.4` на `5.1`

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-26 17:34+0200\n"
+"POT-Creation-Date: 2026-08-27 10:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,7 +296,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Please have a look at our the sections below about how to contribute. All "
-"repos can be found on [Github](https://github.com/zammad){target=_blank}."
+"repos can be found on [GitHub](https://github.com/zammad){target=_blank}."
 msgstr ""
 
 #. type: Title ##
@@ -325,7 +325,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/contribute/contribute.md:29
 #, markdown-text
-msgid "Zammad's Github repository has several branches:"
+msgid "Zammad's GitHub repository has several branches:"
 msgstr ""
 
 #. type: Title ####
@@ -352,7 +352,7 @@ msgstr ""
 #: src/en/contribute/contribute.md:36 src/en/contribute/contribute.md:43
 #, markdown-text
 msgid ""
-"This branch is actively supported and receives regular bug fixes as well as "
+"This branch is actively supported and receives regular bug fixes and "
 "security updates (see [Security "
 "Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank} "
 "for more details)."
@@ -408,7 +408,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "The documentation you are reading is available on zammad.org and "
-"next.zammad.org and is built with Vitepress. The source files are written in "
+"next.zammad.org and is built with VitePress. The source files are written in "
 "Markdown. Make sure to change the English source files only which are placed "
 "under `/src/en/`. The translation is done via Weblate and will overwrite any "
 "changes in the language specific folders (except `/src/en/`)."
@@ -441,7 +441,7 @@ msgid ""
 "over to Zammad's [Weblate "
 "instance](https://translations.zammad.org/){target=_blank}.  You can either "
 "create an account (if you don't have one already) or even sign in with your "
-"Github account!"
+"GitHub account!"
 msgstr ""
 
 #. type: Plain text
@@ -650,7 +650,7 @@ msgid ""
 "Weblate (on the right side) gives you a hint where to search for the "
 "context. Also have a look at the [style guide of the "
 "documentation](style-guide) where you can find more information about the "
-"syntax and the usage of Markdown/Vitepress features."
+"syntax and the usage of Markdown/VitePress features."
 msgstr ""
 
 #. type: Plain text
@@ -735,8 +735,8 @@ msgstr ""
 #, markdown-text
 msgid ""
 "This guide provides an overview of the content that should be included in "
-"the Zammad documentation, as well as formatting and style guidelines to "
-"ensure clarity and readability."
+"the Zammad documentation and formatting and style guidelines to ensure "
+"clarity and readability."
 msgstr ""
 
 #. type: Plain text
@@ -881,7 +881,7 @@ msgstr ""
 #: src/en/contribute/style-guide.md:76
 #, markdown-text
 msgid ""
-"The system uses [Vitepress](https://vitepress.dev/){target=_blank} to build "
+"The system uses [VitePress](https://vitepress.dev/){target=_blank} to build "
 "the website."
 msgstr ""
 
@@ -2699,8 +2699,8 @@ msgstr ""
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
 "sidebar on the right side in the ticket detail view at the bottom. You can "
-"find the calculated sums of each activity type (if configured) as well as "
-"the total sum of accounted times for all activity types."
+"find the calculated sums of each activity type (if configured) and the total "
+"sum of accounted times for all activity types."
 msgstr ""
 
 #. type: Plain text
@@ -2886,8 +2886,8 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:462
 #, markdown-text
 msgid ""
-"If you use i-doit and Zammad for IT support or you deal with Github or "
-"Gitlab issues, you can link to these external systems to have all relevant "
+"If you use i-doit and Zammad for IT support or you deal with GitHub or "
+"GitLab issues, you can link to these external systems to have all relevant "
 "information in one place. Your Zammad admin has to activate and configure "
 "these features in Zammad's settings."
 msgstr ""
@@ -2896,7 +2896,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:466
 #, markdown-text
 msgid ""
-"![Screenshot shows Gitlab content sidebar with \"Link Issue\" "
+"![Screenshot shows GitLab content sidebar with \"Link Issue\" "
 "button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)"
 msgstr ""
 
@@ -2905,7 +2905,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
-"with the respective icon (see Gitlab example in screenshot above). Click the "
+"with the respective icon (see GitLab example in screenshot above). Click the "
 "button to link to an issue by entering the URL of it or select the item from "
 "a select field (i-doit). Afterwards, you can see the linked item with "
 "additional metadata. By clicking on the linked item, you are redirected to "
@@ -3198,7 +3198,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "After activating the search field, you can find the tickets you recently "
-"closed from your taskbar as well as your last search queries."
+"closed from your taskbar and your last search queries."
 msgstr ""
 
 #. type: Plain text
@@ -3314,9 +3314,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:29
 #, markdown-text
-msgid ""
-"The state of each request as well as the history (who did what?) is "
-"transparent."
+msgid "The history (who did what?) and the state of each request are transparent."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -3943,8 +3941,8 @@ msgid ""
 "the articles. To pin or unpin the reply form, click the pin icon in the "
 "header of the article reply form. The pinned form sticks to the bottom of "
 "the ticket detail view. Resize the height by dragging the line on the top "
-"edge of the pinned reply form. The pin state as well as the panel size are "
-"saved in your browser."
+"edge of the pinned reply form. The pin state and the panel size are saved in "
+"your browser."
 msgstr ""
 
 #. type: Plain text
@@ -4880,9 +4878,9 @@ msgstr ""
 msgid ""
 "**Expand draft into well-written section**: Uses your draft as a base and "
 "tries to elaborate a proper text. It tries to add a structure and to enhance "
-"clarity and conciseness and as well as removing misspellings and grammar "
-"errors. You can even use it by providing only basic information (e.g. via "
-"bullet points) and let the AI write the answer."
+"clarity and conciseness and removing misspellings and grammar errors. You "
+"can even use it by providing only basic information (e.g. via bullet points) "
+"and let the AI write the answer."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -5094,8 +5092,8 @@ msgstr ""
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
 "agents in the live user section in the bottom bar. This helps to avoid "
-"duplicate work as well as losing unsaved changes. If you see an AI agent "
-"avatar, wait for a moment or head over to another ticket."
+"duplicate work and losing unsaved changes. If you see an AI agent avatar, "
+"wait for a moment or head over to another ticket."
 msgstr ""
 
 #. type: Plain text
@@ -5785,8 +5783,8 @@ msgstr ""
 #: src/en/documentation/use/guides/mobile-view.md:74
 #, markdown-text
 msgid ""
-"Additionally, certain features were intentionally omitted in order to "
-"improve the focus on important information:"
+"Additionally, certain features were intentionally omitted to improve the "
+"focus on important information:"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -5948,7 +5946,7 @@ msgstr ""
 msgid ""
 "Overviews are updated automatically. You don't have to reload your browser "
 "to observe changes. You can adjust the order temporarily by clicking on one "
-"of the column headers as well as change their width by dragging the column "
+"of the column headers and change their width by dragging the column "
 "dividers.  The order is only preserved until you switch to another overview "
 "or reload the page."
 msgstr ""
@@ -7288,8 +7286,8 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:143
 #, markdown-text
 msgid ""
-"In order to identify your current default two-factor authentication method, "
-"look for a small blue badge next to the method name."
+"To identify your current default two-factor authentication method, look for "
+"a small blue badge next to the method name."
 msgstr ""
 
 #. type: Plain text
@@ -7429,7 +7427,7 @@ msgstr ""
 msgid ""
 "In general, Zammad should be pretty self explanatory. However, there are "
 "features that are not obvious at first glance.  These features are described "
-"in this documentation as well as some general explanations and tips."
+"in this documentation and some general explanations and tips."
 msgstr ""
 
 #. type: Plain text
@@ -7994,11 +7992,11 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Additionally, if you are a European resident we are processing your "
-"information in order to fulfil contracts we might have with you (for example "
-"if you make an order through the site), or otherwise to pursue our "
-"legitimate business interests listed above. Additionally, please note that "
-"your information will be transferred outside of Europe, including to Canada "
-"and the United States."
+"information to fulfil contracts we might have with you (for example if you "
+"make an order through the site), or otherwise to pursue our legitimate "
+"business interests listed above. Additionally, please note that your "
+"information will be transferred outside of Europe, including to Canada and "
+"the United States."
 msgstr ""
 
 #. type: Title ##
@@ -8029,9 +8027,9 @@ msgstr ""
 #: src/en/gdpr.md:101
 #, markdown-text
 msgid ""
-"We may update this privacy policy from time to time in order to reflect, for "
-"example, changes to our practices or for other operational, legal or "
-"regulatory reasons."
+"We may update this privacy policy from time to time to reflect, for example, "
+"changes to our practices or for other operational, legal or regulatory "
+"reasons."
 msgstr ""
 
 #. type: Title ##
@@ -10119,8 +10117,8 @@ msgstr ""
 msgid ""
 "Before updating Zammad, we strongly recommend to take a look at our [release "
 "notes](https://zammad.com/en/releases){target=_blank}. You can find "
-"information about features and fixes as well as technical remarks and "
-"breaking changes."
+"information about features, fixes and technical remarks and breaking "
+"changes."
 msgstr ""
 
 #. type: Plain text
@@ -11015,7 +11013,7 @@ msgstr ""
 #: src/en/reference/docker-compose-scenarios.md:32
 #, markdown-text
 msgid ""
-"You can find the files in the [Zammad-Docker-Compose "
+"You can find the files in the [Zammad Docker Compose "
 "repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}."
 msgstr ""
 
@@ -15620,7 +15618,7 @@ msgid ""
 "  You can learn more on our\n"
 "  [API landing "
 "page](https://zammad.com/en/product/features/rest-api){target=_blank}\n"
-"  as well as in our [API reference](/en/reference/rest-api/intro).\n"
+"  and in our [API reference](/en/reference/rest-api/intro).\n"
 msgstr ""
 
 #. type: Plain text
@@ -15632,7 +15630,7 @@ msgid ""
 "  can be internal (only agents can see them) or public\n"
 "  (customers can see them too; e.g. public notes or outgoing emails) and "
 "include\n"
-"  formatted text as well as attachments and inline images.\n"
+"  formatted text and attachments and inline images.\n"
 msgstr ""
 
 #. type: Plain text
@@ -17004,7 +17002,7 @@ msgstr ""
 msgid ""
 "Once a chat session has been marked **closed**, it is scheduled for "
 "automatic deletion 12 months later. IP address logs for chat sessions can be "
-"deleted manually by following the [steps from the rails console "
+"deleted manually by following the [steps from the Rails console "
 "page](/en/reference/rails-commands#remove-ip-address-logs)."
 msgstr ""
 
@@ -17443,7 +17441,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/reference/rails-commands.md:17
 #, markdown-text, no-wrap
-msgid "Starting Zammad's rails console"
+msgid "Starting Zammad's Rails console"
 msgstr ""
 
 #. type: Title ###
@@ -17496,7 +17494,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/reference/rails-commands.md:54
 #, markdown-text, no-wrap
-msgid "Run interactive rails console"
+msgid "Run interactive Rails console"
 msgstr ""
 
 #. type: Fenced div block (tabs key:installmethod)
@@ -17709,8 +17707,8 @@ msgstr ""
 #: src/en/reference/rails-commands.md:167
 #, markdown-text
 msgid ""
-"In order to work on user information or to check for specific information, "
-"you'll need to find it first."
+"To work on user information or to check for specific information, you'll "
+"need to find it first."
 msgstr ""
 
 #. type: Plain text
@@ -18037,10 +18035,10 @@ msgstr ""
 #: src/en/reference/rails-commands.md:345
 #, markdown-text
 msgid ""
-"Defines if an automatic shutdown of Zammad is performed when the the "
-"database has been changed (e.g. after custom attributes have been created in "
-"the object manager).  The underlying system (Systemd, Docker, Kubernetes) "
-"will then restart the processes/containers after this shutdown. The default "
+"Defines if an automatic shutdown of Zammad is performed when the database "
+"has been changed (e.g. after custom attributes have been created in the "
+"object manager).  The underlying system (Systemd, Docker, Kubernetes) will "
+"then restart the processes/containers after this shutdown. The default "
 "setting is `true`."
 msgstr ""
 
@@ -18807,7 +18805,7 @@ msgid ""
 "| Situation / View      | no indication | warning (orange) | danger (red) "
 "|\n"
 "|-----------------------|---------------|------------------|--------------|\n"
-"| **Ticket Zoom**       | \\< 2          | 2                | \\>= 3        "
+"| **Ticket detail view**       | \\< 2          | 2                | \\>= 3        "
 "|\n"
 "| **New Ticket dialog** | 0             | 1                | \\>= 2        "
 "|\n"
@@ -21221,7 +21219,7 @@ msgstr ""
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/cti.md:213
 #, no-wrap
-msgid "This has to be supported by your PBX in order to work.\n"
+msgid "This has to be supported by your PBX to work.\n"
 msgstr ""
 
 #. type: Title ####
@@ -22058,7 +22056,7 @@ msgstr ""
 #: src/en/reference/rest-api/intro.md:154
 #, markdown-text
 msgid ""
-"In order to use pagination you'll need two get options: `per_page` and "
+"To use pagination you'll need two get options: `per_page` and "
 "`page`. Combine them to receive 5 results from the first result page: "
 "`?page=1&per_page=5` - increase page count to get more results."
 msgstr ""
@@ -26507,7 +26505,7 @@ msgstr ""
 #. type: Title ####
 #: src/en/tutorials/connect-config-elasticsearch.md:37
 #, markdown-text, no-wrap
-msgid "Add it via rails console"
+msgid "Add it via Rails console"
 msgstr ""
 
 #. type: Plain text
@@ -29174,8 +29172,8 @@ msgid ""
 "it in the log in screen by clicking the \"Or migrate from another system\"\n"
 "link at the bottom.\n"
 "\n"
-"Depending on the the number of users, tickets and Zendesk plan, this may "
-"take a\n"
+"Depending on the number of users, tickets and Zendesk plan, this may take "
+"a\n"
 "while.\n"
 "\n"
 "=== Via Console\n"
@@ -29524,7 +29522,7 @@ msgid ""
 "In Grafana, select _➕ > Import_ (or any other place which offers you to "
 "import\n"
 "a dashboard) and either upload the json file you\n"
-"downloaded from Github or use the grafana.com ID, provided as badge\n"
+"downloaded from GitHub or use the grafana.com ID, provided as badge\n"
 "like <Badge type=\"tip\" text=\"12345\"/> attached to the next sections "
 "titles.\n"
 msgstr ""
@@ -29914,7 +29912,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "If you don't have this IT infrastructure but still want one-click\n"
-"login, you can use alternatives like Github, Google, Facebook and more.\n"
+"login, you can use alternatives like GitHub, Google, Facebook and more.\n"
 msgstr ""
 
 #. type: Title ##
@@ -29972,8 +29970,8 @@ msgid ""
 "\n"
 "**What does this all mean?**\n"
 "\n"
-"It means there are many ways you could set up SSO—you don't need to\n"
-"follow this guide or even use Active Directory or Kerberos—but if you\n"
+"It means there are many ways you could set up SSO, you don't need to\n"
+"follow this guide or even use Active Directory or Kerberos, but if you\n"
 "don't know what you're doing, you're going to end up with a _massive_\n"
 "security hole.\n"
 msgstr ""

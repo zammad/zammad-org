@@ -498,40 +498,41 @@ piuttosto grande.
 
 :::: tabs
 
-===== Tramite browser
+=== Via Browser
 
-Dopo aver installato Zammad e
-[configurato il server web](/en/tutorials/webserver-config), accedi al tuo FQDN di Zammad tramite browser e segui la procedura guidata di migrazione. Puoi trovarla nella schermata di accesso cliccando sul link "Oppure migra da un altro sistema"
-in basso.
+After installing Zammad and
+[configuring your webserver](/en/tutorials/webserver-config), navigate to your
+Zammads FQDN in your browser and follow the migration wizard. You can find
+it in the log in screen by clicking the "Or migrate from another system"
+link at the bottom.
 
-A seconda del numero di utenti, ticket e del piano Zendesk, la procedura potrebbe richiedere del tempo.
+Depending on the number of users, tickets and Zendesk plan, this may take a
+while.
 
+=== Via Console
 
-
-=== Tramite console
-
-Apri la console:
+Open console:
 
 ```sh
 zammad run rails c
 ```
 
-Imposta le variabili, sostituisci i valori tra `{}` con i tuoi:
+Set variables, replace the values in `{}` with your own:
 
 ```ruby
-subdomain = '{URL di Zendesk}'
+subdomain = '{zendesk url}'
 ```
 
 ```ruby
-email = '{indirizzo email dell'amministratore di Zendesk}'
+email = '{zendesk admin email address}'
 ```
 
 ```ruby
-token = '{token di Zendesk}'
+token = '{zendesk token}'
 
 ```
 
-Aggiorna le impostazioni di Zammad:
+Update Zammad settings:
 
 ```ruby
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
@@ -553,13 +554,13 @@ Setting.set('import_backend', 'zendesk')
 Setting.set('import_mode', true)
 ```
 
-Verifica la configurazione con una simulazione:
+Check your configuration in a dry run:
 
 ```ruby
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
-Esegui la migrazione:
+Run the migration:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Zendesk')

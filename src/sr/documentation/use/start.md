@@ -24,9 +24,9 @@ title: Почетак
 Добродошли на корисничку документацију Zammad-а. Овде можете научити како да
 користите Zammad да сарађујете са вашим колегама на вишем нивоу!
 
-Уопштено, Zammad би требало да буде самообјашњив. Међутим, постоје функције
-које нису очигледне на први поглед. Ове функције су описане у овој
-документацији као и нека општа објашњења и савети.
+In general, Zammad should be pretty self explanatory. However, there are
+features that are not obvious at first glance.  These features are described
+in this documentation and some general explanations and tips.
 
 Ова документације је подељена на различите одељке. Тренутно се налазите у
 одељку корисничке документације.  Користите бочну траку са леве стране за

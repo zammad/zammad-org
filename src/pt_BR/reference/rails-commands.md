@@ -14,7 +14,7 @@ comandos podem causar perda de dados ou tickets danificados! Se você não tiver
 **use um sistema de teste primeiro**!
 :::
 
-## Iniciando o console Rails do Zammad
+## Starting Zammad's Rails console
 
 ### Executar um único comando
 
@@ -51,7 +51,7 @@ rails r '{COMMAND}'
 
 :::
 
-### Executar o console Rails interativo
+### Run interactive Rails console
 
 ::: tabs key:installmethod
 
@@ -162,8 +162,8 @@ O comando acima retornará tanto o ID quanto o nome do tipo - por exemplo:
 
 ### Encontrar usuário
 
-Para trabalhar com informações de usuário ou verificar informações
-específicas, você precisará encontrá-lo primeiro.
+To work on user information or to check for specific information, you'll
+need to find it first.
 
 ID de usuário já conhecido:
 
@@ -338,11 +338,11 @@ definir na interface do Zammad.
 
 ### Configuração de desligamento automático
 
-Define se um desligamento automático do Zammad é realizado quando o banco de
-dados é alterado (por exemplo, após atributos personalizados serem criados
-no gerenciador de objetos). O sistema subjacente (Systemd, Docker,
-Kubernetes) reiniciará os processos/containers após esse desligamento. A
-configuração padrão é `true`.
+Defines if an automatic shutdown of Zammad is performed when the database
+has been changed (e.g. after custom attributes have been created in the
+object manager).  The underlying system (Systemd, Docker, Kubernetes) will
+then restart the processes/containers after this shutdown. The default
+setting is `true`.
 
 Definir isso como `false` pode fazer sentido apenas em casos muito raros, e
 você terá que reiniciar os serviços do Zammad manualmente.
@@ -695,7 +695,7 @@ ajustar esses limites.
 
 | Situation / View      | no indication | warning (orange) | danger (red) |
 |-----------------------|---------------|------------------|--------------|
-| **Ticket Zoom**       | \< 2          | 2                | \>= 3        |
+| **Ticket detail view**       | \< 2          | 2                | \>= 3        |
 | **New Ticket dialog** | 0             | 1                | \>= 2        |
 
 ### Ativar aba de anexos na barra lateral

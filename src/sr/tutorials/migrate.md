@@ -496,26 +496,26 @@ Zammad захтева приступ API-ју, због чега ћете мор
 
 :::: tabs
 
-=== Преко прегледача
+=== Via Browser
 
-Након инсталирања Zammad-а и
-[подешавања вашег веб сервера](/en/tutorials/webserver-config), идите на
-FQDN свог Zammad-а у прегледачу и пратите чаробњака за миграцију. Можете га наћи
-на екрану за пријаву кликом на линк „Or migrate from another system”
-при дну.
+After installing Zammad and
+[configuring your webserver](/en/tutorials/webserver-config), navigate to your
+Zammads FQDN in your browser and follow the migration wizard. You can find
+it in the log in screen by clicking the "Or migrate from another system"
+link at the bottom.
 
-У зависности од броја корисника, тикета и Zendesk пакета, ово може
-потрајати.
+Depending on the number of users, tickets and Zendesk plan, this may take a
+while.
 
-=== Преко конзоле
+=== Via Console
 
-Отворите конзолу:
+Open console:
 
 ```sh
 zammad run rails c
 ```
 
-Поставите променљиве, замените вредности у `{}` својим:
+Set variables, replace the values in `{}` with your own:
 
 ```ruby
 subdomain = '{zendesk url}'
@@ -530,7 +530,7 @@ token = '{zendesk token}'
 
 ```
 
-Освежите Zammad подешавања:
+Update Zammad settings:
 
 ```ruby
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
@@ -552,13 +552,13 @@ Setting.set('import_backend', 'zendesk')
 Setting.set('import_mode', true)
 ```
 
-Проверите своје подешавање пробним покретањем:
+Check your configuration in a dry run:
 
 ```ruby
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
-Покрените миграцију:
+Run the migration:
 
 ```ruby
 job = ImportJob.create(name: 'Import::Zendesk')

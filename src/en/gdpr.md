@@ -79,7 +79,7 @@ updated, or deleted. If you would like to exercise this right, please contact
 us through the contact information below.
 
 Additionally, if you are a European resident we are processing your information
-in order to fulfil contracts we might have with you (for example if you make an
+to fulfil contracts we might have with you (for example if you make an
 order through the site), or otherwise to pursue our legitimate business
 interests listed above. Additionally, please note that your information will be
 transferred outside of Europe, including to Canada and the United States.
@@ -95,7 +95,7 @@ accordance with statutory regulations.
 
 ## Changes
 
-We may update this privacy policy from time to time in order to reflect, for
+We may update this privacy policy from time to time to reflect, for
 example, changes to our practices or for other operational, legal or regulatory
 reasons.
 

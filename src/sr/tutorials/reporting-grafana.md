@@ -144,10 +144,10 @@ curl http://localhost:9200/_aliases?pretty=true
 
 ### Увоз контролне табле
 
-У Grafana-и изаберите _➕ > Import_ (или било које друго место које вам нуди увоз
-контролне табле) и или отпремите json датотеку коју сте
-преузели са Github-а или употребите grafana.com ID, наведен као значка
-као што је <Badge type="tip" text="12345"/> приложена насловима следећих одељака.
+In Grafana, select _➕ > Import_ (or any other place which offers you to import
+a dashboard) and either upload the json file you
+downloaded from GitHub or use the grafana.com ID, provided as badge
+like <Badge type="tip" text="12345"/> attached to the next sections titles.
 
 Током увоза можете навести назив контролне табле и фасциклу. Такође ће вам
 бити затражено да мапирате изворе података на своје окружење. Ако сте

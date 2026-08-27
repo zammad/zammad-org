@@ -76,8 +76,8 @@ vorhanden sind:
 - Ticket-Historie
 - Erstellung von Vorlagen und gemeinsamen Entwürfen
 
-Außerdem wurden bestimmte Features weggelassen, um Ihren Fokus auf die
-wichtigsten Informationen zu richten:
+Additionally, certain features were intentionally omitted to improve the
+focus on important information:
 
 - Die meisten Verwaltungs-Funktionen (außer Benutzer- und
   Organisations-Verwaltung)

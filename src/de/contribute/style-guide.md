@@ -25,9 +25,9 @@ order: 2
 
 # Leitfaden für Stil und Inhalt
 
-Dieser Leitfaden bietet eine Übersicht über den Inhalt, der in der
-Zammad-Dokumentation enthalten sein sollte, sowie Formatierungs- und
-Stilrichtlinien, um Klarheit und Lesbarkeit zu gewährleisten.
+This guide provides an overview of the content that should be included in
+the Zammad documentation and formatting and style guidelines to ensure
+clarity and readability.
 
 In den ersten Abschnitten geht es um allgemeine Informationen und Regeln. Am
 Ende folgt ein [Abschnitt mit Beispielen](#beispiele).
@@ -89,8 +89,8 @@ strukturieren können.
 
 - Die Dokumentation ist in der Auszeichnungssprache Markdown
   geschrieben. Die Quelldateien haben die Erweiterung `.md`.
-- Das System verwendet [Vitepress](https://vitepress.dev/){target=_blank}
-  zur Erstellung der Website.
+- The system uses [VitePress](https://vitepress.dev/){target=_blank} to
+  build the website.
 - Die Sprache der Quelldateien ist amerikanisches Englisch.
 - Die Übersetzung der Dokumentation erfolgt über Weblate, siehe Abschnitt
   [Übersetzung](contribute#ubersetzung) auf der "Beitragen"-Seite für

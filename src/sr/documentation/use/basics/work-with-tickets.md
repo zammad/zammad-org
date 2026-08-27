@@ -130,13 +130,12 @@ Zammad вам чак омогућава да **цитирате текст** и�
     приказује значку и мења се на **Помери на непрочитани чланак**.
   - Трака се појављује кад год је листа чланака виша од вашег екрана, како
     би кључне радње остале доступне.
-- **Прикачена форма за одговор** тако да уређивач остаје видљив док се
-  померате кроз чланке. Да бисте прикачили или откачили форму за одговор,
-  кликните на иконицу прибадаче у заглављу форме за одговор на
-  чланак. Прикачена форма остаје на дну детаљног приказа тикета. Висину
-  промените превлачењем линије на горњој ивици прикачене форме за
-  одговор. Стање прикачености као и величина панела чувају се у вашем
-  прегледачу.
+- A **pinned reply form** so the editor stays visible while you scroll
+  through the articles. To pin or unpin the reply form, click the pin icon
+  in the header of the article reply form. The pinned form sticks to the
+  bottom of the ticket detail view. Resize the height by dragging the line
+  on the top edge of the pinned reply form. The pin state and the panel size
+  are saved in your browser.
 
 ![Снимак екрана приказује радњу чланка за раздељивање у падајућем
 менију](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)

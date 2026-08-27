@@ -477,10 +477,10 @@ SLA функција захтева подешавање од стране ва�
 обрачунатих времена. Уколико је ова опциона функција укључена, приказује
 листу активности из које их можете одабрати у дијалогу обрачуна времена.
 
-Уколико тикет већ има обрачуната времена, можете их видети при дну бочне
-траке тикета са десне стране у детаљном приказу тикета. Можете пронаћи и
-обрачунате збирове за сваку врсту активности (уколико су подешене) као и
-укупан збир обрачунатог времена за све врсте активности.
+If a ticket already has accounted time(s), you can see it in the ticket
+sidebar on the right side in the ticket detail view at the bottom. You can
+find the calculated sums of each activity type (if configured) and the total
+sum of accounted times for all activity types.
 
 ![Снимак екрана приказује приказ обрачуна
 времена](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
@@ -556,23 +556,22 @@ SLA функција захтева подешавање од стране ва�
 
 **Зашто?**
 
-Уколико користите i-doit и Zammad за IT подршку или обрађујете Github или
-Gitlab проблеме, можете се повезати са овим екстерним системима да бисте
-имали све важне информације на једном месту. Ваш Zammad администратор мора
-прво да укључи и подеси ове функције.
+If you use i-doit and Zammad for IT support or you deal with GitHub or
+GitLab issues, you can link to these external systems to have all relevant
+information in one place. Your Zammad admin has to activate and configure
+these features in Zammad's settings.
 
 **Како?**
 
-![Снимак екрана који приказује бочну траку GitLab садржаја са дугметом
-„Повежи
-извештај”](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+![Screenshot shows GitLab content sidebar with "Link Issue"
+button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
-Ако је укључено, само отворите тикет и изаберите одговарајући језичак бочне
-траке са одговарајућом иконицом (видите пример Gitlab на слици
-изнад). Кликните дугме да повежете са извештајем уносом његове URL адресе
-или изаберите ставку са падајућег менија (i-doit). Након тога, можете видети
-повезани елемент уз додатне детаље. Кликом на повезани елемент преусмерени
-сте ка њему у одговарајућем систему.
+If activated, simply open a ticket and choose the right content sidebar tab
+with the respective icon (see GitLab example in screenshot above). Click the
+button to link to an issue by entering the URL of it or select the item from
+a select field (i-doit). Afterwards, you can see the linked item with
+additional metadata. By clicking on the linked item, you are redirected to
+it in the respective system.
 
 ## Истакни текст
 

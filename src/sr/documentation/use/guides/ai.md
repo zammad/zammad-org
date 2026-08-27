@@ -62,12 +62,11 @@ Zammad долази са подразумеваним алаткама помо�
 зависи од конфигурације ваше Zammad инстанце. Можете чак добити приступ и
 прилагођеним алаткама у случају да их је ваш администратор дефинисао.
 
-- **Препиши сложени одељак и учини га лаким за разумевање**: Користи ваш
-  нацрт као основу и покушава да га прошири у исполиран текст. Покушава да
-  одреди структуру и побољша јасноћу и прецизност као и да уклони грешке у
-  правопису и граматици. Могуће је искористити је прилагањем само основних
-  информација (нпр. путем листе са тачкама) и пуштањем вештачке
-  интелигенције да употпуни одговор.
+- **Expand draft into well-written section**: Uses your draft as a base and
+  tries to elaborate a proper text. It tries to add a structure and to
+  enhance clarity and conciseness and removing misspellings and grammar
+  errors. You can even use it by providing only basic information (e.g. via
+  bullet points) and let the AI write the answer.
 - **Исправи правопис и граматику**: Лекторише ваш текст и отклања грешке у
   правопису и граматици.
 - **Сажми одељак на отприлике половину његове тренутне величине**: Скраћује
@@ -145,10 +144,10 @@ which appears when hovering with the mouse to link it to the ticket.
 
 ### Откривање истовремене обраде
 
-AI агенти који тренутно раде на тикету су приказани као и други оператери у
-доњој траци присутних корисника. Ово ће вам помоћи да избегнете истовремени
-рад као и губитак несачуваних измена. Уколико приметите сличицу AI агента,
-сачекајте тренутак или пређите на други тикет.
+AI agents which are currently working on a ticket are displayed like other
+agents in the live user section in the bottom bar. This helps to avoid
+duplicate work and losing unsaved changes. If you see an AI agent avatar,
+wait for a moment or head over to another ticket.
 
 Сличица AI агента:
 

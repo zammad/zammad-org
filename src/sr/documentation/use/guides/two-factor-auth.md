@@ -178,8 +178,8 @@ povratni pristup` у 2FA подешавањима свог профила.
 користите ::a:: мени акција поред њега у 2FA подешавањима свог профила и
 изаберите **Постави као подразумевани**.
 
-Да бисте идентификовали тренутни подразумевани двофакторски метод
-аутентификације, потражите малу плаву значку поред назива метода.
+To identify your current default two-factor authentication method, look for
+a small blue badge next to the method name.
 
 ![Снимак екрана који приказује пројекте превода у Weblate
 менију](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)

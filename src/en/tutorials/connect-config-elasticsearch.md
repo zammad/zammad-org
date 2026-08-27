@@ -34,7 +34,7 @@ zammad run rails r "Setting.set('es_password', '<password>')"
 
 ### Add certificate to Zammad
 
-#### Add it via rails console
+#### Add it via Rails console
 
 In case you are installing a new Zammad and didn't run through the getting started wizard already, add the certificate
 via console:

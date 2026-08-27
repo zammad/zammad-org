@@ -154,10 +154,9 @@ Objekte zurück, die in der Antwort enthalten sind, es sei denn, Sie fordern die
 die Anzahl der Suchergebnisse einzubeziehen, verwenden Sie den Parameter `with_total_count` oder `only_total_count`.
 :::
 
-Um die Paginierung zu verwenden, benötigen Sie zwei get-Optionen: `per_page`
-und `page`. Kombinieren Sie sie, um 5 Ergebnisse von der ersten
-Ergebnisseite zu erhalten: `?page=1&per_page=5`. Erhöhen Sie die Seitenzahl,
-um mehr Ergebnisse zu erhalten.
+To use pagination you'll need two get options: `per_page` and
+`page`. Combine them to receive 5 results from the first result page:
+`?page=1&per_page=5` - increase page count to get more results.
 
 ## Suche per API
 

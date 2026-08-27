@@ -144,10 +144,10 @@ abaixo. Esses painéis também podem ser encontrados no
 
 ### Importando um painel
 
-No Grafana, selecione _➕ > Import_ (ou qualquer outro lugar que ofereça importar
-um painel) e envie o arquivo json que você baixou do Github, ou use o ID do grafana.com,
-fornecido como um selo, como <Badge type="tip" text="12345"/> anexado aos títulos
-das próximas seções.
+In Grafana, select _➕ > Import_ (or any other place which offers you to import
+a dashboard) and either upload the json file you
+downloaded from GitHub or use the grafana.com ID, provided as badge
+like <Badge type="tip" text="12345"/> attached to the next sections titles.
 
 Durante a importação, você pode fornecer um nome de painel e uma pasta. Você
 também será solicitado a mapear as fontes de dados para o seu ambiente. Se

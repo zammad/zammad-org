@@ -30,8 +30,8 @@ visible in the overviews, you can use the search. You can find it in the top
 left corner of the primary navigation. Either select it via mouse or use the
 keyboard shortcut by simply pressing [[s]].
 
-Dopo aver attivato il campo di ricerca, puoi trovare i ticket che hai chiuso
-di recente dalla tua taskbar nonché le tue ultime query di ricerca.
+After activating the search field, you can find the tickets you recently
+closed from your taskbar and your last search queries.
 
 Inserendo un termine di ricerca, vedi immediatamente un'anteprima dei
 risultati della ricerca. Se premi [[enter]] o fai clic su `ricerca

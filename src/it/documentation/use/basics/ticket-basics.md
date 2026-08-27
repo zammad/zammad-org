@@ -30,8 +30,7 @@ di ticketing sia complicato. Ma è vero il contrario:
   altri canali potrebbero esserlo).
 - Tu e i tuoi colleghi potete vedere chi sta lavorando su quale richiesta
   del cliente ("ticket").
-- Lo stato di ogni richiesta nonché la cronologia (chi ha fatto cosa?) è
-  trasparente.
+- The history (who did what?) and the state of each request are transparent.
 - Non c'è lavoro duplicato e nulla viene trascurato.
 - Puoi chiedere ai tuoi colleghi direttamente nel ticket aiuto nei casi
   difficili.

@@ -34,11 +34,11 @@ e condizioni. Ciò significa che se un ticket è stato modificato e la
 condizione della panoramica non corrisponde più, il ticket non è più
 visibile in questa panoramica.
 
-Le panoramiche vengono aggiornate automaticamente. Non devi ricaricare il
-browser per osservare le modifiche. Puoi regolare l'ordine temporaneamente
-facendo clic su una delle intestazioni di colonna nonché modificare la
-larghezza trascinando i divisori di colonna. L'ordine viene preservato solo
-finché non passi a un'altra panoramica o ricarichi la pagina.
+Overviews are updated automatically. You don't have to reload your browser
+to observe changes. You can adjust the order temporarily by clicking on one
+of the column headers and change their width by dragging the column
+dividers.  The order is only preserved until you switch to another overview
+or reload the page.
 
 Per ogni panoramica, puoi trovare un badge allegato. Il numero in questo
 badge ti dice quanti ticket ci sono in ogni panoramica.

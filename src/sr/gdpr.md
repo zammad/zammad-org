@@ -78,11 +78,12 @@ layout: home
 освеже или обришу. Уколико желите да упутите такав захтев, молимо вас да нас
 контактирате на доњу адресу.
 
-Додатно, уколико сте резидент Европске уније, обрађујемо ваше податке и да
-бисмо испунили уговоре које можда имамо са вама (нпр. ако се претплатите
-кроз сајт), или на други начин да остваримо наше легитимне пословне
-интересе. Додатно, обратите пажњу да ће ваши подаци бити пребачени ван
-Европе, укључујући у Канаду и Сједињене Америчке Државе.
+Additionally, if you are a European resident we are processing your
+information to fulfil contracts we might have with you (for example if you
+make an order through the site), or otherwise to pursue our legitimate
+business interests listed above. Additionally, please note that your
+information will be transferred outside of Europe, including to Canada and
+the United States.
 
 ## Чување података
 
@@ -95,9 +96,9 @@ layout: home
 
 ## Измене
 
-Задржавамо право да освежимо ову полису приватности с времена на време како
-би нпр. осликавала измене у нашим процесима или из других операционих и
-законских разлога.
+We may update this privacy policy from time to time to reflect, for example,
+changes to our practices or for other operational, legal or regulatory
+reasons.
 
 ## Контактирајте нас
 

@@ -70,7 +70,7 @@ Mobile view is also currently missing some features which are provided by the de
 - Ticket history
 - Template creation & shared drafts
 
-Additionally, certain features were intentionally omitted in order to improve the focus on important information:
+Additionally, certain features were intentionally omitted to improve the focus on important information:
 
 - Most management features (except ticket user and organization management)
 - Most knowledge base features (except ticket integration)

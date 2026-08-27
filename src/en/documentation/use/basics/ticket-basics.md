@@ -22,7 +22,7 @@ think that a ticket system is complicated. But the opposite is true:
 
 - All emails are now collected in Zammad (and requests from other channels might be as well).
 - You and your colleagues can see who is working on which customer request ("ticket").
-- The state of each request as well as the history (who did what?) is transparent.
+- The history (who did what?) and the state of each request are transparent.
 - There is no duplicate work and nothing gets overlooked.
 - You can ask your colleagues directly in the ticket for help in difficult cases.
 - With Zammad's intuitive UI, you can focus on what matters: to resolve customer issues and answer customer questions.

@@ -31,8 +31,8 @@ title: 'Радно Docker Compose окружење'
   - Додајте Ollama инстанцу у стацк
   - Ограничите хардверске ресурсе стацк-а
 
-Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad
-репозиторију](https://github.com/zammad/zammad-docker-compose){target=_blank}.
+You can find the files in the [Zammad Docker Compose
+repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
 ## Уопштено
 

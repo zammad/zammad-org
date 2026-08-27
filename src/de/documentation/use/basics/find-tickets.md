@@ -33,8 +33,8 @@ nutzen. Diese finden Sie in der oberen linken Ecke der primären
 Navigation. Wählen Sie sie entweder mit der Maus aus oder verwenden Sie das
 Tastaturkürzel, indem Sie einfach die Taste [[s]] drücken.
 
-Nachdem Sie das Suchfeld aktiviert haben sehen Sie die kürzlich in der
-Taskleiste geschlossenen Tickets sowie Ihre letzten Suchanfragen.
+After activating the search field, you can find the tickets you recently
+closed from your taskbar and your last search queries.
 
 Wenn Sie einen Suchbegriff eingeben, sehen Sie sofort eine Vorschau der
 Suchergebnisse. Wenn Sie [[enter]] drücken oder auf `Erweiterte Suche`

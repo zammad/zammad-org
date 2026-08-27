@@ -7,10 +7,10 @@ title: Aggiornamento
 
 <!--@include: @/en/modules/zammad-services-hint.md-->
 
-Prima di aggiornare Zammad, consigliamo vivamente di consultare le nostre
-[note di rilascio](https://zammad.com/en/releases){target=_blank}. Troverete
-informazioni su nuove funzionalità e correzioni, nonché osservazioni
-tecniche e modifiche incompatibili con le versioni precedenti.
+Before updating Zammad, we strongly recommend to take a look at our [release
+notes](https://zammad.com/en/releases){target=_blank}. You can find
+information about features, fixes and technical remarks and breaking
+changes.
 
 Tieni presente che non dovresti saltare le versioni principali di Zammad
 durante l'aggiornamento. Ciò significa, ad esempio, che il tuo percorso di

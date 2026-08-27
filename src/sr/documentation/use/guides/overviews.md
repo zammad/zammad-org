@@ -33,11 +33,11 @@ title: Прегледи
 да ако се тикет измени и више се не задовољава услове прегледа, тикет више
 неће бити видљив у том прегледу.
 
-Прегледи се ажурирају аутоматски. Није потребно освежавати прегледач да
-бисте видели промене. Редослед можете привремено прилагодити кликом на један
-од заглавља колона, као и променити њихову ширину превлачењем разделника
-колона.  Редослед је сачуван само док не пребаците на други преглед или не
-освежите страницу.
+Overviews are updated automatically. You don't have to reload your browser
+to observe changes. You can adjust the order temporarily by clicking on one
+of the column headers and change their width by dragging the column
+dividers.  The order is only preserved until you switch to another overview
+or reload the page.
 
 За сваки преглед можете пронаћи додату значку. Број у овој значки вам говори
 колико тицкета се налази у сваком прегледу.

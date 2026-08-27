@@ -186,8 +186,8 @@ Per impostare un metodo a due fattori già configurato come predefinito, usa
 il menu azioni ::a:: accanto ad esso nelle impostazioni 2FA del tuo profilo
 e scegli **Imposta come predefinito**.
 
-Per identificare il tuo metodo di autenticazione a due fattori predefinito
-corrente, cerca un piccolo badge blu accanto al nome del metodo.
+To identify your current default two-factor authentication method, look for
+a small blue badge next to the method name.
 
 ![Screenshot che mostra l'elenco dei metodi 2FA e il metodo
 predefinito](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)

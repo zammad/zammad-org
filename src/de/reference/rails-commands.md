@@ -15,7 +15,7 @@ Befehle zu Datenverlusten oder beschädigten Tickets führen können! Wenn
 Sie sich unsicher sind, **testen Sie es zuerst auf einem Testsystem**!
 :::
 
-## Zammads Rails-Konsole starten
+## Starting Zammad's Rails console
 
 ### Ausführen eines einzelnen Befehls
 
@@ -52,7 +52,7 @@ rails r '{BEFEHL}'
 
 :::
 
-### Interaktive Rails-Konsole ausführen
+### Run interactive Rails console
 
 ::: tabs key:installmethod
 
@@ -165,8 +165,8 @@ Oben werden sowohl die ID des Typs als auch der Name zurückgegeben - z.B.:
 
 ### Benutzer finden
 
-Um Benutzerinformationen zu bearbeiten oder nach bestimmten Informationen zu
-suchen, müssen Sie den Benutzer zunächst finden.
+To work on user information or to check for specific information, you'll
+need to find it first.
 
 ID des Benutzers ist bereits bekannt:
 
@@ -341,11 +341,11 @@ Zammad-Benutzeroberfläche vornehmen können.
 
 ### Auto Shutdown-Einstellungen
 
-Legt fest, ob ein automatisches Herunterfahren von Zammad durchgeführt wird,
-wenn die Datenbank geändert wurde (z.B. nachdem benutzerdefinierte Attribute
-im Objektmanager erstellt wurden).  Das zugrundeliegende System (Systemd,
-Docker, Kubernetes) wird dann die Prozesse/Container nach dem Herunterfahren
-neu starten. Die Standardeinstellung ist `true`.
+Defines if an automatic shutdown of Zammad is performed when the database
+has been changed (e.g. after custom attributes have been created in the
+object manager).  The underlying system (Systemd, Docker, Kubernetes) will
+then restart the processes/containers after this shutdown. The default
+setting is `true`.
 
 Die Einstellung `false` macht nur in sehr seltenen Fällen Sinn und Sie
 müssen die Zammad Dienste dann manuell neu starten.
@@ -703,10 +703,10 @@ Setting.set('ui_sidebar_open_ticket_indicator_colored', true)
 Für die obigen Einstellungen gelten die folgenden Schwellenwerte. Sie können
 diese Werte **nicht** ändern.
 
-| Situation    | keine Hervorhebung | Warnung (orange) | Gefahr (rot) |
+| Situation / View      | no indication | warning (orange) | danger (red) |
 |-----------------------|---------------|------------------|--------------|
-| **Ticket-Bearbeitung**       | \< 2          | 2                | \>= 3        |
-| **Ticket Neu-Erstellung** | 0             | 1                | \>= 2        |
+| **Ticket detail view**       | \< 2          | 2                | \>= 3        |
+| **New Ticket dialog** | 0             | 1                | \>= 2        |
 
 ### Anhang-Tab in der Seitenleiste aktivieren
 

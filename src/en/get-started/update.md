@@ -9,7 +9,7 @@ order: 3
 
 Before updating Zammad, we strongly recommend to take a look at our
 [release notes](https://zammad.com/en/releases){target=_blank}. You can find
-information about features and fixes as well as technical remarks and breaking
+information about features, fixes and technical remarks and breaking
 changes.
 
 Be aware that you should not skip major Zammad versions while updating. That

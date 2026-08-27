@@ -21,8 +21,8 @@ in Ihrer Firma hat, 1) automatisch ein Konto in Zammad hat und 2) sich mit
 einem einzigen Klick anmelden kann.
 
 ::: tip
-Wenn Sie nicht über diese IT-Infrastruktur verfügen, aber trotzdem eine Ein-Klick
-Anmeldung wünschen, können Sie Alternativen wie Github, Google, Facebook und andere nutzen.
+If you don't have this IT infrastructure but still want one-click
+login, you can use alternatives like GitHub, Google, Facebook and more.
 :::
 
 ## Wie funktioniert das?
@@ -38,27 +38,27 @@ Benutzer:
 - eine `HTTP_REMOTE_USER` Webserver-Umgebungsvariable
 
 ::: info
-**Moment, mit SSO ist es möglich, sich nur mit einem Benutzernamen anzumelden?**
+**Wait. SSO allows you to sign in with only a username?**
 
-Im Prinzip ja.
+In principle, yes.
 
-**Wie kann das richtig sein?**
+**How is that okay?**
 
-In dieser Anleitung konfigurieren wir unseren Webserver (Apache) so, dass er alle
-Anfragen an den Endpunkt `/auth/sso` abfängt. Anstatt sie an
-Zammad weiterzuleiten, initiiert Apache einen dreiseitigen Anmeldeprozess (_Kerberos
-Authentifizierung_) zwischen ihm selbst, dem Benutzer und dem Active
-Directory-Server.
+In this guide, we configure our web server (Apache) to intercept all
+requests to the `/auth/sso` endpoint. Instead of forwarding them to
+Zammad, Apache initiates a three-sided login process (_Kerberos
+authentication_) between the itself, the user, and the Active
+Directory server.
 
-Wenn Active Directory den Benutzer oder sein Passwort nicht erkennt,
-sieht Zammad die Anfrage nie, und die Sitzung wird nie erstellt.
+If Active Directory doesn't recognize the user or their password,
+Zammad never sees the request, and the session is never created.
 
-**Was bedeutet das alles?**
+**What does this all mean?**
 
-Es bedeutet, dass es viele Möglichkeiten gibt, SSO einzurichten - Sie müssen weder
-diesem Leitfaden folgen noch Active Directory oder Kerberos verwenden. Aber Sie
-sollten unbedingt wissen, was Sie tun. Andernfalls kann leicht eine Sicherheitslücke
-entstehen.
+It means there are many ways you could set up SSO, you don't need to
+follow this guide or even use Active Directory or Kerberos, but if you
+don't know what you're doing, you're going to end up with a _massive_
+security hole.
 :::
 
 ## Loslegen

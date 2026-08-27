@@ -31,8 +31,8 @@ Os seguintes cenários são suportados e explicados mais abaixo:
   - Adicionar uma instância do Ollama à stack
   - Limitar recursos de hardware da stack
 
-Você pode encontrar os arquivos no [repositório
-Zammad-Docker-Compose](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
+You can find the files in the [Zammad Docker Compose
+repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
 ## Uso geral
 

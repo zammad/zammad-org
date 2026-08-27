@@ -25,9 +25,9 @@ order: 2
 
 # Guia de estilo e conteúdo
 
-Este guia fornece uma visão geral do conteúdo que deve ser incluído na
-documentação do Zammad, além de diretrizes de formatação e estilo para
-garantir clareza e legibilidade.
+This guide provides an overview of the content that should be included in
+the Zammad documentation and formatting and style guidelines to ensure
+clarity and readability.
 
 As primeiras seções tratam de informações e regras gerais. Uma [seção com
 exemplos](#examples) segue no final.
@@ -88,8 +88,8 @@ documentação. Depois delas, você encontra uma seção com alguns
 
 - A documentação é escrita na linguagem de marcação Markdown. Os
   arquivos-fonte têm a extensão `.md`.
-- O sistema usa o [Vitepress](https://vitepress.dev/){target=_blank} para
-  construir o site.
+- The system uses [VitePress](https://vitepress.dev/){target=_blank} to
+  build the website.
 - O idioma dos arquivos-fonte é inglês americano.
 - A tradução da documentação é feita via Weblate, consulte a [seção de
   tradução](contribute#translation) na página de contribuição para mais

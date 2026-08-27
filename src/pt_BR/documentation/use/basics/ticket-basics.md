@@ -29,8 +29,7 @@ de tickets é complicado. Mas é justamente o contrário:
   canais também podem ser).
 - Você e seus colegas podem ver quem está trabalhando em qual solicitação de
   cliente ("ticket").
-- O estado de cada solicitação, assim como o histórico (quem fez o quê?), é
-  transparente.
+- The history (who did what?) and the state of each request are transparent.
 - Não há trabalho duplicado e nada passa despercebido.
 - Você pode pedir ajuda aos colegas diretamente no ticket em casos difíceis.
 - Com a interface intuitiva do Zammad, você pode focar no que importa:

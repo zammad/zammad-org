@@ -66,11 +66,11 @@ disponibilidade depende da configuração da sua instância do Zammad. Você
 pode até ter ferramentas personalizadas adicionais, caso seu administrador
 as tenha adicionado.
 
-- **Expand draft into well-written section**: usa seu rascunho como base e
-  tenta elaborar um texto adequado. Tenta adicionar uma estrutura e melhorar
-  a clareza e concisão, além de remover erros de ortografia e
-  gramática. Você pode até usá-lo fornecendo apenas informações básicas (por
-  exemplo, em tópicos) e deixar a IA escrever a resposta.
+- **Expand draft into well-written section**: Uses your draft as a base and
+  tries to elaborate a proper text. It tries to add a structure and to
+  enhance clarity and conciseness and removing misspellings and grammar
+  errors. You can even use it by providing only basic information (e.g. via
+  bullet points) and let the AI write the answer.
 - **Fix spelling and grammar**: revisa seu texto e remove erros de
   ortografia e gramática.
 - **Summarize section to about half its current size**: reduz seu texto para
@@ -154,11 +154,10 @@ IA](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Detecção de trabalho simultâneo
 
-Agentes de IA que estão trabalhando atualmente em um ticket são exibidos
-como outros agentes na seção de usuários ao vivo na barra inferior. Isso
-ajuda a evitar trabalho duplicado, assim como a perda de alterações não
-salvas. Se você vir um avatar de agente de IA, aguarde um momento ou vá para
-outro ticket.
+AI agents which are currently working on a ticket are displayed like other
+agents in the live user section in the bottom bar. This helps to avoid
+duplicate work and losing unsaved changes. If you see an AI agent avatar,
+wait for a moment or head over to another ticket.
 
 Avatar de agente de IA:
 

@@ -77,8 +77,8 @@ fornite dalla visualizzazione desktop:
 - Cronologia ticket
 - Creazione modelli e bozze condivise
 
-Inoltre, alcune funzionalità sono state intenzionalmente omesse per
-migliorare la concentrazione sulle informazioni importanti:
+Additionally, certain features were intentionally omitted to improve the
+focus on important information:
 
 - La maggior parte delle funzionalità di gestione (ad eccezione della
   gestione degli utenti ticket e delle organizzazioni)

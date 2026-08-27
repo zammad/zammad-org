@@ -22,7 +22,7 @@ with a single click.
 
 ::: tip
 If you don't have this IT infrastructure but still want one-click
-login, you can use alternatives like Github, Google, Facebook and more.
+login, you can use alternatives like GitHub, Google, Facebook and more.
 :::
 
 ## How does it work?
@@ -54,8 +54,8 @@ Zammad never sees the request, and the session is never created.
 
 **What does this all mean?**
 
-It means there are many ways you could set up SSO—you don't need to
-follow this guide or even use Active Directory or Kerberos—but if you
+It means there are many ways you could set up SSO, you don't need to
+follow this guide or even use Active Directory or Kerberos, but if you
 don't know what you're doing, you're going to end up with a _massive_
 security hole.
 :::

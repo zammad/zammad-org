@@ -15,8 +15,8 @@ order: 1
 - [Документацији](contribute#документација)
 - [Преводу](contribute#превод)
 
-Погледајте наш одељак како можете да допринесете. Све репозиторије можете
-пронаћи на [GitHub](https://github.com/zammad){target=_blank}-у.
+Please have a look at our the sections below about how to contribute. All
+repos can be found on [GitHub](https://github.com/zammad){target=_blank}.
 
 ## Изворни код Zammad-а
 
@@ -28,26 +28,26 @@ order: 1
 
 ### Подржани огранци/верзије
 
-GitHub репозиторијум Zammad-а има неколико огранака:
+Zammad's GitHub repository has several branches:
 
 #### `develop`
 
 - Ово је тренутно (необјављено) развојно стање следећег већег издања
   (постаће нови `stable` огранак).
 - Не користите у продукцији!
-- Овај огранак има активну подршку и добија редовне исправке грешака и
-  сигурносних пропуста (погледајте [безбедносну
-  полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
-  за детаље).
+- This branch is actively supported and receives regular bug fixes and
+  security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable`
 
 - Ово је тренутно стабилно издање, нпр. Zammad 5.2.
 - Користите овај огранак за инсталације у продукцији.
-- Овај огранак има активну подршку и добија редовне исправке грешака и
-  сигурносних пропуста (погледајте [безбедносну
-  полису](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
-  за детаље).
+- This branch is actively supported and receives regular bug fixes and
+  security updates (see [Security
+  Policy](https://github.com/zammad/zammad/blob/develop/SECURITY.md){target=_blank}
+  for more details).
 
 #### `stable-x.y`
 
@@ -57,12 +57,11 @@ GitHub репозиторијум Zammad-а има неколико ограна
 
 ## Документација
 
-Документација коју читате је доступна под zammad.org и next.zammad.org и
-направљена је у Vitepress систему. Изворне датотеке су написане у Markdown
-формату. Обратите пажњу да мењате само изворне датотеке на енглеском језику
-које су под `/src/en/` директоријумом. Преводи се обрађују преко Weblate
-апликације и преписаће све измене направљене под директоријумима специфичних
-језика (осим `/src/en/`).
+The documentation you are reading is available on zammad.org and
+next.zammad.org and is built with VitePress. The source files are written in
+Markdown. Make sure to change the English source files only which are placed
+under `/src/en/`. The translation is done via Weblate and will overwrite any
+changes in the language specific folders (except `/src/en/`).
 
 Отворите нови GitHub pull request на <https://github.com/zammad/zammad-org>
 (заснован на `develop` огранку) са вашим изменама и обавезно испратите
@@ -72,13 +71,14 @@ GitHub репозиторијум Zammad-а има неколико ограна
 
 ## Превод
 
-Уколико желите да нам помогнете са преводом и побољшате вишејезичну подршку
-у Zammad-у или документацији, ваш допринос је добродошао! Превод самог
-Zammad-а и документације обавља се преко Weblate апликације, која представља
-сервис за колаборацију на преводима пројеката. Једноставно посетите
-Zammad-ову [Weblate
-инстанцу](https://translations.zammad.org/){target=_blank}.  Можете или
-отворити налог (ако га већ немате) или се пријавити својим Github налогом!
+If you want to help us with translation and improve the multi-language
+support of Zammad or the documentation, you are welcome to contribute as
+well! The translation of Zammad and the documentation is done via Weblate,
+which is a service for the collaborative translation of projects. Just head
+over to Zammad's [Weblate
+instance](https://translations.zammad.org/){target=_blank}.  You can either
+create an account (if you don't have one already) or even sign in with your
+GitHub account!
 
 We will cover some basic steps in the following sections to get you started
 with translating. However, if you want to use some additional features of
@@ -146,12 +146,13 @@ Weblate-у](/screenshots/contribute/weblate-ui.png)
 
 ### Ознаке у тексту
 
-Испод можете пронаћи пар примера за специјалне низове текста са ознаком која
-индикује где се може пронаћи. Покушајте да задржите (прилагођене) ознаке и
-променљиве. Одељак **Source string location** у Weblate апликацији (са десне
-стране) даје вам увид у контекст. Такође, погледајте и [водич кроз стил
-документације](style-guide) где можете пронаћи више информација о синтакси и
-коришћењу Markdown/Vitepress функцијама.
+Find some examples for special source strings below with a badge indicating
+where such a string can be found. Try to keep the (adjusted) markup and make
+sure to keep the variables. The **Source string location** section in
+Weblate (on the right side) gives you a hint where to search for the
+context. Also have a look at the [style guide of the
+documentation](style-guide) where you can find more information about the
+syntax and the usage of Markdown/VitePress features.
 
 `%s created ticket |%s|` <Badge type="tip" text="Zammad" />
 : Текст садржи променљиве (`%s`) и ознаке (`||`). Обратите пажњу да се променљива и ознаке нађу у

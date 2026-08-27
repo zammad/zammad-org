@@ -211,7 +211,7 @@ Depending on the chosen call direction, Zammad will return either a
 Zammad hasn't configured one or both options, the return will be empty.
 
 ::: info
-This has to be supported by your PBX in order to work.
+This has to be supported by your PBX to work.
 :::
 
 #### Reject blocked caller ids

@@ -495,11 +495,10 @@ diferentes e para agrupar os tempos contabilizados. Se esse recurso opcional
 estiver ativo, ele mostra uma lista de atividades das quais você pode
 selecionar no diálogo de contabilização de tempo.
 
-Se um ticket já tem tempo(s) contabilizado(s), você pode vê-lo na barra
-lateral do ticket, no lado direito da visualização de detalhes do ticket, na
-parte inferior. Você encontra as somas calculadas de cada tipo de atividade
-(se configurado), assim como a soma total dos tempos contabilizados de todos
-os tipos de atividade.
+If a ticket already has accounted time(s), you can see it in the ticket
+sidebar on the right side in the ticket detail view at the bottom. You can
+find the calculated sums of each activity type (if configured) and the total
+sum of accounted times for all activity types.
 
 ![Captura de tela mostra a visão geral de contabilização de
 tempo](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
@@ -578,23 +577,22 @@ uma nova aba com a página de detalhes da organização.
 
 **Por quê?**
 
-Se você usa o i-doit e o Zammad para suporte de TI, ou lida com issues do
-Github ou Gitlab, você pode vincular a esses sistemas externos para ter
-todas as informações relevantes em um só lugar. Seu administrador do Zammad
-precisa ativar e configurar esses recursos nas configurações do Zammad.
+If you use i-doit and Zammad for IT support or you deal with GitHub or
+GitLab issues, you can link to these external systems to have all relevant
+information in one place. Your Zammad admin has to activate and configure
+these features in Zammad's settings.
 
 **Como?**
 
-![Captura de tela mostra a barra lateral de conteúdo do Gitlab com o botão
-"Link
-Issue"](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+![Screenshot shows GitLab content sidebar with "Link Issue"
+button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
-Se ativado, basta abrir um ticket e escolher a aba de conteúdo da barra
-lateral correta com o ícone correspondente (veja o exemplo do Gitlab na
-captura de tela acima). Clique no botão para vincular a uma issue informando
-a URL dela ou selecionando o item em um campo de seleção (i-doit). Depois,
-você pode ver o item vinculado com metadados adicionais. Ao clicar no item
-vinculado, você é redirecionado a ele no respectivo sistema.
+If activated, simply open a ticket and choose the right content sidebar tab
+with the respective icon (see GitLab example in screenshot above). Click the
+button to link to an issue by entering the URL of it or select the item from
+a select field (i-doit). Afterwards, you can see the linked item with
+additional metadata. By clicking on the linked item, you are redirected to
+it in the respective system.
 
 ## Destacar texto
 

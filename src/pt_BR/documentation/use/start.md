@@ -24,9 +24,9 @@ title: Início
 Bem-vindo à documentação do usuário do Zammad. Aqui você pode aprender como
 usar o Zammad para colaborar ainda melhor com seus colegas!
 
-Em geral, o Zammad deve ser bastante autoexplicativo. No entanto, há
-recursos que não são óbvios à primeira vista. Esses recursos são descritos
-nesta documentação, assim como algumas explicações gerais e dicas.
+In general, Zammad should be pretty self explanatory. However, there are
+features that are not obvious at first glance.  These features are described
+in this documentation and some general explanations and tips.
 
 Esta documentação está dividida em diferentes seções. Atualmente, você está
 na página inicial da documentação do usuário. Use a barra lateral esquerda

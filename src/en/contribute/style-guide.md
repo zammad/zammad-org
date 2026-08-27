@@ -22,7 +22,7 @@ features:
 
 # Style and content guide
 
-This guide provides an overview of the content that should be included in the Zammad documentation, as well as
+This guide provides an overview of the content that should be included in the Zammad documentation and
 formatting and style guidelines to ensure clarity and readability.
 
 The first sections are about general information and rules. A [section with examples](#examples) follows at the end.
@@ -69,7 +69,7 @@ with some [examples](#examples) about how to format and structure the content.
 ### Basics
 
 - The documentation is written in the Markdown markup language. The source files have the extension `.md`.
-- The system uses [Vitepress](https://vitepress.dev/){target=_blank} to build the website.
+- The system uses [VitePress](https://vitepress.dev/){target=_blank} to build the website.
 - The language of the source files is American English.
 - The translation of the documentation is done via Weblate, see [translation section](contribute#translation) in the
   contribute page for more details.

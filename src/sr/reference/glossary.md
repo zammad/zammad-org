@@ -28,15 +28,15 @@ API
   Омогућава вам да повезете системе трећих страна са својим Zammad-ом (нпр. друштвене
   мреже, месинџере, алате за мониторинг).
 
-  Више можете сазнати на нашој
-  [ландинг страници API-ја](https://zammad.com/en/product/features/rest-api){target=_blank}
-  као и у нашем [референтном приручнику за API](/en/reference/rest-api/intro).
+  You can learn more on our
+  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}
+  and in our [API reference](/en/reference/rest-api/intro).
 
-Чланак
-: Свака ставка унутар тикета назива се чланак. Чланци у тикетима
-  могу бити интерни (видљиви само оператерима) или јавни
-  (видљиви и клијентима; нпр. јавне напомене или одлазне имејл поруке) и укључују
-  форматирани текст као и прилоге и уграђене слике.
+Article
+: Each item within a ticket is called article. Ticket articles
+  can be internal (only agents can see them) or public
+  (customers can see them too; e.g. public notes or outgoing emails) and include
+  formatted text and attachments and inline images.
 
 Аутоматизација
 : Постоји много процеса који се могу аутоматизовати помоћу Zammad-а.

@@ -28,7 +28,7 @@ The following scenarios are supported and explained further below:
   - Add an Ollama instance to the stack
   - Limit hardware resources of the stack
 
-You can find the files in the [Zammad-Docker-Compose repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
+You can find the files in the [Zammad Docker Compose repository](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
 ## General usage
 

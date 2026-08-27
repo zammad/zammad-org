@@ -187,8 +187,8 @@ Um eine bereits eingerichtete Zwei-Faktor-Methode als Standard einzustellen,
 verwenden Sie das Aktionsmenü ::a:: neben der Methode in den
 2FA-Einstellungen Ihres Profils und wählen Sie **Als Standard festlegen**.
 
-Ein kleines, blaues Label ("Standard") zeigt Ihnen an, welche Methode für
-Ihr Konto als Standard festgelegt ist.
+To identify your current default two-factor authentication method, look for
+a small blue badge next to the method name.
 
 ![Screenshot zeigt Liste der 2FA-Methoden und
 Standardmethode](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)

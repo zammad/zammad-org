@@ -83,12 +83,12 @@ pessoais sejam corrigidas, atualizadas ou excluídas. Se você quiser exercer
 esse direito, entre em contato conosco através das informações de contato
 abaixo.
 
-Além disso, se você for residente europeu, processamos suas informações para
-cumprir contratos que possamos ter com você (por exemplo, se você fizer um
-pedido através do site), ou de outra forma para buscar nossos interesses
-comerciais legítimos listados acima. Além disso, observe que suas
-informações serão transferidas para fora da Europa, incluindo para o Canadá
-e os Estados Unidos.
+Additionally, if you are a European resident we are processing your
+information to fulfil contracts we might have with you (for example if you
+make an order through the site), or otherwise to pursue our legitimate
+business interests listed above. Additionally, please note that your
+information will be transferred outside of Europe, including to Canada and
+the United States.
 
 ## Retenção de dados
 
@@ -101,9 +101,9 @@ rotineiramente e de acordo com as regulamentações estatutárias.
 
 ## Alterações
 
-Podemos atualizar esta política de privacidade periodicamente para refletir,
-por exemplo, mudanças em nossas práticas ou por outros motivos operacionais,
-legais ou regulatórios.
+We may update this privacy policy from time to time to reflect, for example,
+changes to our practices or for other operational, legal or regulatory
+reasons.
 
 ## Entre em contato conosco
 

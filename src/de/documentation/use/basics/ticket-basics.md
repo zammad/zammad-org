@@ -28,8 +28,7 @@ Ticket-System kompliziert ist. Aber das Gegenteil ist der Fall:
   Kanälen möglicherweise auch).
 - Sie und Ihre Kollegen können sehen, wer an welcher Kundenanfrage
   ("Ticket") arbeitet.
-- Der Status jeder Anfrage sowie die Historie (wer hat was getan?) sind
-  transparent.
+- The history (who did what?) and the state of each request are transparent.
 - Es gibt keine doppelte Arbeit und nichts wird übersehen.
 - In schwierigen Fällen können Sie Ihre Kollegen direkt im Ticket um Hilfe
   bitten.

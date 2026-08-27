@@ -212,7 +212,7 @@ chamador. Se seu Zammad não tiver configurado uma ou ambas as opções, o
 retorno será vazio.
 
 ::: info
-Isso precisa ser suportado pelo seu PBX para funcionar.
+This has to be supported by your PBX to work.
 :::
 
 #### Rejeitar IDs de chamador bloqueados

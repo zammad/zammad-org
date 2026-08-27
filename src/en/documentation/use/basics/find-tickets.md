@@ -25,7 +25,7 @@ However, if you search for a specific ticket which might or might not be visible
 search. You can find it in the top left corner of the primary navigation. Either select it via mouse or use the
 keyboard shortcut by simply pressing [[s]].
 
-After activating the search field, you can find the tickets you recently closed from your taskbar as well as your last
+After activating the search field, you can find the tickets you recently closed from your taskbar and your last
 search queries.
 
 By entering a search term, you immediately see a preview of the search results. If you press [[enter]] or click on
