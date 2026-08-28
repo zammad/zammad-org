@@ -35,7 +35,7 @@
     "node": ">=24",
     "pnpm": ">=11"
   },
-  "packageManager": "pnpm@11.22.0",
+  "packageManager": "pnpm@11.24.0",
   "lint-staged": {
     "./src/en/**/*.md": [
       "pnpm lint:cmd",
