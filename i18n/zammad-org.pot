@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-27 14:32+0200\n"
+"POT-Creation-Date: 2026-08-28 15:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1660,11 +1660,11 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:334
 #: src/en/documentation/use/advanced-features.md:353
 #: src/en/documentation/use/advanced-features.md:371
-#: src/en/documentation/use/advanced-features.md:400
-#: src/en/documentation/use/advanced-features.md:420
-#: src/en/documentation/use/advanced-features.md:440
-#: src/en/documentation/use/advanced-features.md:458
-#: src/en/documentation/use/advanced-features.md:475
+#: src/en/documentation/use/advanced-features.md:401
+#: src/en/documentation/use/advanced-features.md:421
+#: src/en/documentation/use/advanced-features.md:441
+#: src/en/documentation/use/advanced-features.md:459
+#: src/en/documentation/use/advanced-features.md:476
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1695,11 +1695,11 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:339
 #: src/en/documentation/use/advanced-features.md:359
 #: src/en/documentation/use/advanced-features.md:377
-#: src/en/documentation/use/advanced-features.md:405
-#: src/en/documentation/use/advanced-features.md:431
-#: src/en/documentation/use/advanced-features.md:451
-#: src/en/documentation/use/advanced-features.md:464
-#: src/en/documentation/use/advanced-features.md:481
+#: src/en/documentation/use/advanced-features.md:406
+#: src/en/documentation/use/advanced-features.md:432
+#: src/en/documentation/use/advanced-features.md:452
+#: src/en/documentation/use/advanced-features.md:465
+#: src/en/documentation/use/advanced-features.md:482
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2706,17 +2706,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:394
+#: src/en/documentation/use/advanced-features.md:395
 #, markdown-text
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
 "sidebar on the right side in the ticket detail view at the bottom. You can "
 "find the calculated sums of each activity type (if configured) and the total "
-"sum of accounted times for all activity types."
+"sum of accounted times for all activity types. Accounted time is also shown "
+"in the article meta information of each ticket article, if present."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:396
+#: src/en/documentation/use/advanced-features.md:397
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
@@ -2724,13 +2725,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:398
 #, markdown-text, no-wrap
 msgid "User detail panel"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:403
+#: src/en/documentation/use/advanced-features.md:404
 #, markdown-text
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
@@ -2738,7 +2739,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:409
+#: src/en/documentation/use/advanced-features.md:410
 #, markdown-text
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
@@ -2748,7 +2749,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:411
+#: src/en/documentation/use/advanced-features.md:412
 #, markdown-text
 msgid ""
 "![Screenshot shows an avatar with opened user detail "
@@ -2756,7 +2757,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:414
+#: src/en/documentation/use/advanced-features.md:415
 #, markdown-text
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
@@ -2764,13 +2765,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:415
+#: src/en/documentation/use/advanced-features.md:416
 #, markdown-text, no-wrap
 msgid "User detail page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:418
+#: src/en/documentation/use/advanced-features.md:419
 #, markdown-text
 msgid ""
 "![Screenshot shows user detail "
@@ -2778,7 +2779,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:422
+#: src/en/documentation/use/advanced-features.md:423
 #, markdown-text
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
@@ -2786,45 +2787,45 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 #, markdown-text
 msgid "See organization membership"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 #, markdown-text
 msgid "See a graph of recent tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:450
 #, markdown-text
 msgid "Add or edit a note"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 #, markdown-text
 msgid "Edit the customer (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:450
 #, markdown-text
 msgid "See a history of changes (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 #, markdown-text
 msgid "Create a new ticket with this user as customer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:434
+#: src/en/documentation/use/advanced-features.md:435
 #, markdown-text
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
@@ -2834,13 +2835,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:435
+#: src/en/documentation/use/advanced-features.md:436
 #, markdown-text, no-wrap
 msgid "Organization detail page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:438
+#: src/en/documentation/use/advanced-features.md:439
 #, markdown-text
 msgid ""
 "![Screenshot shows organization detail "
@@ -2848,7 +2849,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:442
+#: src/en/documentation/use/advanced-features.md:443
 #, markdown-text
 msgid ""
 "It allows you to see all relevant organization information in one "
@@ -2856,31 +2857,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 #, markdown-text
 msgid "See the members of the organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 #, markdown-text
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 #, markdown-text
 msgid "Edit the organization (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 #, markdown-text
 msgid "Create a new user as a member of this organization"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:454
+#: src/en/documentation/use/advanced-features.md:455
 #, markdown-text
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
@@ -2889,13 +2890,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:455
+#: src/en/documentation/use/advanced-features.md:456
 #, markdown-text, no-wrap
 msgid "External issues and assets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:462
+#: src/en/documentation/use/advanced-features.md:463
 #, markdown-text
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with GitHub or "
@@ -2905,7 +2906,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:466
+#: src/en/documentation/use/advanced-features.md:467
 #, markdown-text
 msgid ""
 "![Screenshot shows GitLab content sidebar with \"Link Issue\" "
@@ -2913,7 +2914,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:471
+#: src/en/documentation/use/advanced-features.md:472
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
@@ -2925,13 +2926,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:472
+#: src/en/documentation/use/advanced-features.md:473
 #, markdown-text, no-wrap
 msgid "Highlight text"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:479
+#: src/en/documentation/use/advanced-features.md:480
 #, markdown-text
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
@@ -2941,7 +2942,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:483
+#: src/en/documentation/use/advanced-features.md:484
 #, markdown-text
 msgid ""
 "![Screenshot shows highlight menu from ticket detail "
@@ -2949,7 +2950,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:487
+#: src/en/documentation/use/advanced-features.md:488
 #, markdown-text
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "
@@ -4931,7 +4932,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "![Screenshot shows the related knowledge section of the ticket sidebar with "
-"an AI-suggested knowledge base "
+"an AI-generated draft and a suggested knowledge base "
 "answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)"
 msgstr ""
 
@@ -5028,11 +5029,11 @@ msgid "Knowledge base answer suggestion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:101
+#: src/en/documentation/use/guides/ai.md:102
 #, markdown-text
 msgid ""
 "This feature compares the ticket content against the knowledge base and "
-"shows relevant answers under **Suggested by AI** if they meet the "
+"shows relevant answers under **Suggested knowledge** if they meet the "
 "admin-configured score threshold. Each suggestion shows the title of the "
 "answer and more details on hover. An additional relevance score is only "
 "shown to users with the corresponding admin permissions. Click on the title "
@@ -5041,7 +5042,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:103
+#: src/en/documentation/use/guides/ai.md:104
 #, markdown-text
 msgid ""
 "If no suggestions are available, the message \"No suggestions.\" is "
@@ -5049,13 +5050,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:104
+#: src/en/documentation/use/guides/ai.md:105
 #, markdown-text, no-wrap
 msgid "AI agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:110
+#: src/en/documentation/use/guides/ai.md:111
 #, markdown-text
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. In "
@@ -5068,14 +5069,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:111
+#: src/en/documentation/use/guides/ai.md:112
 #: src/en/documentation/use/guides/mobile-view.md:72
 #, markdown-text, no-wrap
 msgid "Ticket history"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:115
+#: src/en/documentation/use/guides/ai.md:116
 #, markdown-text
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
@@ -5085,7 +5086,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:117
+#: src/en/documentation/use/guides/ai.md:118
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
@@ -5093,13 +5094,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:118
+#: src/en/documentation/use/guides/ai.md:119
 #, markdown-text, no-wrap
 msgid "Simultaneous work detection"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:123
+#: src/en/documentation/use/guides/ai.md:124
 #, markdown-text
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
@@ -5109,13 +5110,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:125
+#: src/en/documentation/use/guides/ai.md:126
 #, markdown-text
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:127
+#: src/en/documentation/use/guides/ai.md:128
 #, markdown-text
 msgid ""
 "![Screenshot shows avatar of an AI "
@@ -5123,13 +5124,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:128
+#: src/en/documentation/use/guides/ai.md:129
 #, markdown-text, no-wrap
 msgid "Overview indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:131
+#: src/en/documentation/use/guides/ai.md:132
 #, markdown-text
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
@@ -5137,7 +5138,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:132
+#: src/en/documentation/use/guides/ai.md:133
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "

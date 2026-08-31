@@ -66,7 +66,7 @@ might even have additional custom tools in case your admin added them.
 
 ## Knowledge base assistant
 
-![Screenshot shows the related knowledge section of the ticket sidebar with an AI-suggested knowledge base answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Screenshot shows the related knowledge section of the ticket sidebar with an AI-generated draft and a suggested knowledge base answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
 ### Knowledge base answer generation
 
@@ -93,9 +93,10 @@ the chance to review existing related answers to prevent duplicate submissions.
 
 ### Knowledge base answer suggestion
 
-This feature compares the ticket content against the knowledge base and shows relevant answers under **Suggested by AI**
-if they meet the admin-configured score threshold. Each suggestion shows the title of the answer and more details on
-hover. An additional relevance score is only shown to users with the corresponding admin permissions. Click on the title
+This feature compares the ticket content against the knowledge base and shows relevant answers under **Suggested
+knowledge** if they meet the admin-configured score threshold. Each suggestion shows the title of the answer and more
+details on hover. An additional relevance score is only shown to users with the corresponding admin permissions. Click on
+the title
 to open the answer in the knowledge base. Click the ::+:: on the right side which appears when hovering with the mouse
 to link it to the ticket.
 

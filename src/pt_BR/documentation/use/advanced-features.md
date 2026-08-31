@@ -498,7 +498,8 @@ selecionar no diálogo de contabilização de tempo.
 If a ticket already has accounted time(s), you can see it in the ticket
 sidebar on the right side in the ticket detail view at the bottom. You can
 find the calculated sums of each activity type (if configured) and the total
-sum of accounted times for all activity types.
+sum of accounted times for all activity types. Accounted time is also shown
+in the article meta information of each ticket article, if present.
 
 ![Captura de tela mostra a visão geral de contabilização de
 tempo](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)

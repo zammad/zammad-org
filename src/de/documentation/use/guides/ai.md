@@ -82,10 +82,9 @@ Administrator welche hinzugefügt hat.
 
 ## Knowledge Base Assistent
 
-![Der Screenshot zeigt den Abschnitt "Verwandtes Wissen" in der
-Ticket-Seitenleiste mit einer von der KI vorgeschlagenen Antwort aus der
-Knowledge
-Base](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Screenshot shows the related knowledge section of the ticket sidebar with
+an AI-generated draft and a suggested knowledge base
+answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
 ### Knowledge Base Antworterstellung
 
@@ -123,16 +122,13 @@ Antworten zu prüfen, um doppelte Einträge zu vermeiden.
 
 ### Knowledge Base-Antwortvorschläge
 
-Diese Funktion vergleicht den Inhalt des Tickets mit der Knowledge Base und
-zeigt relevante Antworten unter **Vorgeschlagen von KI** an, sofern diese
-den vom Administrator festgelegten Schwellenwert für die Relevanzbewertung
-erreichen. Jeder Vorschlag zeigt den Titel der Antwort an; weitere Details
-werden beim Bewegen des Mauszeigers über den Vorschlag angezeigt. Eine
-zusätzliche Relevanzbewertung wird nur Benutzern mit den entsprechenden
-Administratorrechten angezeigt. Klicken Sie auf den Titel, um die Antwort in
-der Knowledge Base zu öffnen. Klicken Sie auf die Schaltfläche ::+:: auf der
-rechten Seite, das beim Bewegen des Mauszeigers erscheint, um die Antwort
-mit dem Ticket zu verknüpfen.
+This feature compares the ticket content against the knowledge base and
+shows relevant answers under **Suggested knowledge** if they meet the
+admin-configured score threshold. Each suggestion shows the title of the
+answer and more details on hover. An additional relevance score is only
+shown to users with the corresponding admin permissions. Click on the title
+to open the answer in the knowledge base. Click the ::+:: on the right side
+which appears when hovering with the mouse to link it to the ticket.
 
 Sind keine Vorschläge verfügbar, wird stattdessen die Meldung "Keine
 Vorschläge." angezeigt.

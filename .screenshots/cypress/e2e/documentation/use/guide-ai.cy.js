@@ -82,19 +82,79 @@ describe('AI screenshots', () => {
       },
     }
 
+    // Mock the KB query AND flip vectordb_enabled in the application config.
+    // Core gates the "Related knowledge" section on vectordb_enabled &&
+    // ai_provider && ai_assistance_kb_answer_suggestions
+    // (useAiSuggestedAnswersAvailability), so the config response gets
+    // vectordb_enabled forced to true. Every request is forwarded to the real
+    // backend first: stubbing the whole applicationConfig response breaks
+    // login and the app shell, which need their real config. The per-operation
+    // response entries are then rewritten (Apollo returns batch entries in
+    // request order), so applicationConfig is handled independently of the KB
+    // query, including when BatchHttpLink puts both in the same batch.
+    // Registered BEFORE login so the app's initial config fetch is covered.
+    // Single intercept for all /graphql POSTs — a later intercept with the
+    // same route would take priority and shadow this one (Cypress routes
+    // requests to the most recently registered matching intercept).
+    // Force a clean browser state first: the previous test leaves a valid
+    // session behind, and when this test then visits /desktop the app can
+    // resume it and redirect to a ticket view before Cypress gets around to
+    // clearing storage (observed flakily under headless Electron, where the
+    // added intercept latency widens the race window).
+    cy.visit('/desktop/logout')
+    cy.url({ timeout: 20000 }).should('match', /\/desktop\/login$/)
+    cy.window().then((win) => {
+      // Wait for every IndexedDB deletion to complete; reject on errors or
+      // blocked requests so a stuck deletion fails the test instead of
+      // leaving stale state behind silently.
+      return win.indexedDB.databases().then((dbs) =>
+        Promise.all(
+          dbs
+            .filter((db) => db && db.name)
+            .map(
+              (db) =>
+                new Promise((resolve, reject) => {
+                  const req = win.indexedDB.deleteDatabase(db.name)
+                  req.onsuccess = () => resolve(null)
+                  req.onerror = () => reject(req.error)
+                  req.onblocked = () =>
+                    reject(new Error(`IndexedDB deletion of "${db.name}" is blocked`))
+                }),
+            ),
+        ),
+      )
+    })
     cy.intercept('POST', '/graphql', (req) => {
       const ops = Array.isArray(req.body) ? req.body : [req.body]
-      if (ops.some((op) => op.operationName === 'ticketAIRelatedKnowledgeBaseAnswers')) {
-        // Return the mock result for the KB query and empty stubs for any
-        // co-passengers in the same batch.
-        req.reply(
-          ops.map((op) =>
-            op.operationName === 'ticketAIRelatedKnowledgeBaseAnswers' ? kbResult : { data: {} },
-          ),
-        )
-      } else {
-        req.reply()
+
+      const hasKb = ops.some((op) => op.operationName === 'ticketAIRelatedKnowledgeBaseAnswers')
+      const hasConfig = ops.some((op) => op.operationName === 'applicationConfig')
+      if (!hasKb && !hasConfig) {
+        // Anything else: forward to the real backend.
+        req.continue()
+        return
       }
+
+      req.continue((res) => {
+        const body = Array.isArray(res.body) ? res.body : [res.body]
+        const out = ops.map((op, i) => {
+          if (op.operationName === 'ticketAIRelatedKnowledgeBaseAnswers') {
+            return kbResult
+          }
+          const entry = body[i] ?? {}
+          const cfg = entry?.data?.applicationConfig
+          if (Array.isArray(cfg)) {
+            const key = cfg.find((item) => item?.key === 'vectordb_enabled')
+            if (key) key.value = true
+          }
+          return entry
+        })
+        res.send(Array.isArray(res.body) ? out : out[0])
+      })
+    })
+
+    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
+      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
     })
 
     // --- Mock the ActionCable subscription ------------------------------------------

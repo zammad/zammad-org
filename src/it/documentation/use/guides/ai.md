@@ -81,7 +81,7 @@ cui il tuo amministratore li abbia aggiunti.
 ## Knowledge base assistant
 
 ![Screenshot shows the related knowledge section of the ticket sidebar with
-an AI-suggested knowledge base
+an AI-generated draft and a suggested knowledge base
 answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
 ### Knowledge base answer generation
@@ -117,7 +117,7 @@ existing related answers to prevent duplicate submissions.
 ### Knowledge base answer suggestion
 
 This feature compares the ticket content against the knowledge base and
-shows relevant answers under **Suggested by AI** if they meet the
+shows relevant answers under **Suggested knowledge** if they meet the
 admin-configured score threshold. Each suggestion shows the title of the
 answer and more details on hover. An additional relevance score is only
 shown to users with the corresponding admin permissions. Click on the title

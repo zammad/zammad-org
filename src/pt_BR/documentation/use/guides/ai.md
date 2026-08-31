@@ -80,9 +80,9 @@ as tenha adicionado.
 
 ## Assistente da base de conhecimento
 
-![Captura de tela mostra a seção de conhecimento relacionado na barra
-lateral do ticket com uma resposta da base de conhecimento sugerida por
-IA](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Screenshot shows the related knowledge section of the ticket sidebar with
+an AI-generated draft and a suggested knowledge base
+answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
 ### Geração de respostas da base de conhecimento
 
@@ -119,14 +119,13 @@ duplicados.
 
 ### Sugestão de resposta da base de conhecimento
 
-Este recurso compara o conteúdo do ticket com a base de conhecimento e
-mostra respostas relevantes em **Suggested by AI** se elas atingirem o
-limite de pontuação configurado pelo administrador. Cada sugestão mostra o
-título da resposta e mais detalhes ao passar o mouse. Uma pontuação de
-relevância adicional só é exibida para usuários com as permissões de
-administrador correspondentes. Clique no título para abrir a resposta na
-base de conhecimento. Clique no ::+:: do lado direito, que aparece ao passar
-o mouse, para vinculá-la ao ticket.
+This feature compares the ticket content against the knowledge base and
+shows relevant answers under **Suggested knowledge** if they meet the
+admin-configured score threshold. Each suggestion shows the title of the
+answer and more details on hover. An additional relevance score is only
+shown to users with the corresponding admin permissions. Click on the title
+to open the answer in the knowledge base. Click the ::+:: on the right side
+which appears when hovering with the mouse to link it to the ticket.
 
 Se não houver sugestões disponíveis, a mensagem "No suggestions." é exibida
 em seu lugar.
