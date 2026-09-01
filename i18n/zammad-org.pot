@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-28 15:58+0200\n"
+"POT-Creation-Date: 2026-09-01 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -459,7 +459,7 @@ msgstr ""
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
 #: src/en/documentation/use/guides/knowledge-base.md:19
-#: src/en/get-started/installation/package.md:64
+#: src/en/get-started/installation/package.md:68
 #: src/en/tutorials/backup-restore.md:33
 #, markdown-text, no-wrap
 msgid "Basics"
@@ -8492,7 +8492,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade-repo-migration.md:177
-#: src/en/get-started/installation/package.md:171
+#: src/en/get-started/installation/package.md:175
 #, no-wrap
 msgid ""
 "\n"
@@ -8617,7 +8617,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/host-upgrade-repo-migration.md:277
-#: src/en/get-started/installation/package.md:271
+#: src/en/get-started/installation/package.md:275
 #, markdown-text, no-wrap
 msgid "Install Zammad"
 msgstr ""
@@ -8756,7 +8756,7 @@ msgstr ""
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/host-upgrade-repo-migration.md:384
-#: src/en/get-started/installation/package.md:330
+#: src/en/get-started/installation/package.md:334
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
@@ -9391,14 +9391,24 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Plain text
+#: src/en/get-started/installation/package.md:67
+#, markdown-text
+msgid ""
+"Zammad uses [jemalloc](https://jemalloc.net/){target=_blank} as memory "
+"allocator out of the box on Debian, Ubuntu, CentOS and RHEL. For SLES, "
+"opt-out and verification details, see the [Memory "
+"allocator](/en/reference/memory-allocator)  page."
+msgstr ""
+
 #. type: Title ###
-#: src/en/get-started/installation/package.md:66
+#: src/en/get-started/installation/package.md:70
 #, markdown-text, no-wrap
 msgid "Ensure correct locale"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:68
+#: src/en/get-started/installation/package.md:72
 #, no-wrap
 msgid ""
 "\n"
@@ -9489,14 +9499,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:156
+#: src/en/get-started/installation/package.md:160
 #: src/en/tutorials/install-elasticsearch.md:84
 #, markdown-text, no-wrap
 msgid "Install Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:161
+#: src/en/get-started/installation/package.md:165
 #, markdown-text
 msgid ""
 "The recommended method is to use [Elastic's official "
@@ -9505,7 +9515,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:164
+#: src/en/get-started/installation/package.md:168
 #, markdown-text
 msgid ""
 "Alternatively, you can follow [our example "
@@ -9514,13 +9524,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:165
+#: src/en/get-started/installation/package.md:169
 #, markdown-text, no-wrap
 msgid "Add Zammad repository"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:167
+#: src/en/get-started/installation/package.md:171
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make "
@@ -9529,7 +9539,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:273
+#: src/en/get-started/installation/package.md:277
 #, no-wrap
 msgid ""
 "\n"
@@ -9576,13 +9586,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:317
+#: src/en/get-started/installation/package.md:321
 #, markdown-text, no-wrap
 msgid "Manage services of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:320
+#: src/en/get-started/installation/package.md:324
 #, markdown-text
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
@@ -9590,19 +9600,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 #, markdown-text
 msgid "zammad: includes the services below"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 #, markdown-text
 msgid "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 #, markdown-text
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
@@ -9610,13 +9620,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 #, markdown-text
 msgid "**zammad-websocket**: WebSocket server for session related information"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:327
+#: src/en/get-started/installation/package.md:331
 #, markdown-text
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
@@ -9624,13 +9634,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:333
 #, markdown-text
 msgid "Example to start Zammad with all sub-services:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:335
+#: src/en/get-started/installation/package.md:339
 #, markdown-text
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
@@ -9638,7 +9648,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:336
+#: src/en/get-started/installation/package.md:340
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:142
 #, markdown-text, no-wrap
@@ -9646,7 +9656,7 @@ msgid "Next steps"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:345
 #, markdown-text
 msgid ""
 "[Connect Zammad with "
@@ -9654,25 +9664,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:345
 #, markdown-text
 msgid "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:345
 #, markdown-text
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:346
 #, markdown-text, no-wrap
 msgid "Dependencies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:348
+#: src/en/get-started/installation/package.md:352
 #, markdown-text
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
@@ -9682,47 +9692,47 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:358
 #, markdown-text
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:358
 #, markdown-text
 msgid "Node.js"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:354
-#: src/en/reference/environment-variables.md:147
+#: src/en/get-started/installation/package.md:358
+#: src/en/reference/environment-variables.md:157
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:354
-#: src/en/get-started/installation/package.md:375
-#: src/en/reference/environment-variables.md:202
+#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:379
+#: src/en/reference/environment-variables.md:212
 #, markdown-text, no-wrap
 msgid "Nginx"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:354
-#: src/en/get-started/installation/package.md:380
+#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:384
 #, markdown-text, no-wrap
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:355
+#: src/en/get-started/installation/package.md:359
 #, markdown-text, no-wrap
 msgid "Database server"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:360
+#: src/en/get-started/installation/package.md:364
 #, markdown-text
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
@@ -9732,7 +9742,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:361
+#: src/en/get-started/installation/package.md:365
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure "
@@ -9745,13 +9755,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:368
+#: src/en/get-started/installation/package.md:372
 #, markdown-text, no-wrap
 msgid "Reverse proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:372
+#: src/en/get-started/installation/package.md:376
 #, markdown-text
 msgid ""
 "The following reverse proxies are supported in their currently maintained "
@@ -9759,13 +9769,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:379
 #, markdown-text
 msgid "Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:383
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -9775,7 +9785,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:391
 #, markdown-text
 msgid ""
 "[Redis](https://redis.io/){target=_blank} is required for realtime "
@@ -9787,7 +9797,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:390
+#: src/en/get-started/installation/package.md:394
 #, markdown-text
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
@@ -9795,7 +9805,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:395
 #, no-wrap
 msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a "
@@ -9805,7 +9815,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:396
+#: src/en/get-started/installation/package.md:400
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -9813,7 +9823,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:403
+#: src/en/get-started/installation/package.md:407
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -9824,19 +9834,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:405
+#: src/en/get-started/installation/package.md:409
 #, markdown-text
 msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:407
+#: src/en/get-started/installation/package.md:411
 #, markdown-text
 msgid "Elasticsearch version history for Zammad:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:408
+#: src/en/get-started/installation/package.md:412
 #, no-wrap
 msgid ""
 "\n"
@@ -9856,13 +9866,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:425
+#: src/en/get-started/installation/package.md:429
 #, markdown-text, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:433
 #, markdown-text
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
@@ -9872,7 +9882,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:437
 #, markdown-text
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
@@ -9883,7 +9893,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:440
 #, markdown-text
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
@@ -9892,7 +9902,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:443
 #, markdown-text
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
@@ -9901,13 +9911,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:444
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:445
+#: src/en/get-started/installation/package.md:449
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -11761,14 +11771,39 @@ msgid ""
 "for a Sentinel setup.\n"
 msgstr ""
 
+#. type: Plain text
+#: src/en/reference/environment-variables.md:117
+#, markdown-text, no-wrap
+msgid ""
+"`LD_PRELOAD` <Badge type=\"tip\" text=\"libjemalloc.so.2\" /> ::p::\n"
+": Preloads a shared library for all Zammad processes. Package installations "
+"use it to enable\n"
+"  [jemalloc](/en/reference/memory-allocator) as memory allocator and set it "
+"automatically if the library is present on\n"
+"  your system. This variable is managed by the package install script and "
+"may be overwritten during updates.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:122
+#, markdown-text, no-wrap
+msgid ""
+"`ZAMMAD_USE_JEMALLOC` ::p::\n"
+": Set to `no` to opt out of [jemalloc](/en/reference/memory-allocator) as "
+"memory allocator. Takes effect on the next\n"
+"  package installation or upgrade. Unset it to opt back in; any value other "
+"than `no` re-enables `jemalloc` on the\n"
+"  next package installation or upgrade.\n"
+msgstr ""
+
 #. type: Title ##
-#: src/en/reference/environment-variables.md:113
+#: src/en/reference/environment-variables.md:123
 #, markdown-text, no-wrap
 msgid "Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:118
+#: src/en/reference/environment-variables.md:128
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_ENABLED` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -11778,7 +11813,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:122
+#: src/en/reference/environment-variables.md:132
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" "
@@ -11788,7 +11823,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:126
+#: src/en/reference/environment-variables.md:136
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
@@ -11797,7 +11832,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:130
+#: src/en/reference/environment-variables.md:140
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
@@ -11807,7 +11842,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:134
+#: src/en/reference/environment-variables.md:144
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -11817,7 +11852,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:138
+#: src/en/reference/environment-variables.md:148
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_REINDEX` ::d::\n"
@@ -11828,7 +11863,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:142
+#: src/en/reference/environment-variables.md:152
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_SSL_VERIFY` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -11838,7 +11873,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:146
+#: src/en/reference/environment-variables.md:156
 #, markdown-text, no-wrap
 msgid ""
 "`ELASTICSEARCH_HEAP_SIZE` ::d:: <Badge type=\"tip\" text=\"1G\" />\n"
@@ -11848,7 +11883,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/environment-variables.md:149
+#: src/en/reference/environment-variables.md:159
 #, no-wrap
 msgid ""
 "Variables for Docker and package installation are partially different. Check "
@@ -11858,7 +11893,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:157
+#: src/en/reference/environment-variables.md:167
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_HOST` ::p:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
@@ -11868,7 +11903,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:161
+#: src/en/reference/environment-variables.md:171
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
@@ -11877,7 +11912,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:165
+#: src/en/reference/environment-variables.md:175
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -11886,7 +11921,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:169
+#: src/en/reference/environment-variables.md:179
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -11895,7 +11930,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:173
+#: src/en/reference/environment-variables.md:183
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
@@ -11904,7 +11939,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:177
+#: src/en/reference/environment-variables.md:187
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRES_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
@@ -11914,7 +11949,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:181
+#: src/en/reference/environment-variables.md:191
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
@@ -11923,7 +11958,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:185
+#: src/en/reference/environment-variables.md:195
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -11932,7 +11967,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:189
+#: src/en/reference/environment-variables.md:199
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -11941,7 +11976,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:193
+#: src/en/reference/environment-variables.md:203
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
@@ -11950,7 +11985,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:197
+#: src/en/reference/environment-variables.md:207
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
@@ -11959,7 +11994,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:201
+#: src/en/reference/environment-variables.md:211
 #, markdown-text, no-wrap
 msgid ""
 "`POSTGRESQL_DB_CREATE` <Badge type=\"tip\" text=\"true\" />\n"
@@ -11969,7 +12004,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:207
+#: src/en/reference/environment-variables.md:217
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_EXPOSE_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
@@ -11979,7 +12014,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:211
+#: src/en/reference/environment-variables.md:221
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
@@ -11988,7 +12023,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:215
+#: src/en/reference/environment-variables.md:225
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
@@ -11998,7 +12033,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:220
+#: src/en/reference/environment-variables.md:230
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"$scheme\" />\n"
@@ -12010,7 +12045,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:224
+#: src/en/reference/environment-variables.md:234
 #, markdown-text, no-wrap
 msgid ""
 "`NGINX_CLIENT_MAX_BODY_SIZE` ::d::\n"
@@ -12019,7 +12054,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:228
+#: src/en/reference/environment-variables.md:238
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" "
@@ -12029,7 +12064,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:232
+#: src/en/reference/environment-variables.md:242
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
@@ -12038,7 +12073,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:236
+#: src/en/reference/environment-variables.md:246
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
@@ -12047,7 +12082,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:240
+#: src/en/reference/environment-variables.md:250
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" "
@@ -12057,7 +12092,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:244
+#: src/en/reference/environment-variables.md:254
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
@@ -12066,13 +12101,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:245
+#: src/en/reference/environment-variables.md:255
 #, markdown-text, no-wrap
 msgid "Performance tuning"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:249
+#: src/en/reference/environment-variables.md:259
 #, markdown-text
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
@@ -12081,7 +12116,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:252
+#: src/en/reference/environment-variables.md:262
 #, markdown-text
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
@@ -12090,7 +12125,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:255
+#: src/en/reference/environment-variables.md:265
 #, markdown-text
 msgid ""
 "Below settings may consume all available database connections. Please "
@@ -12099,7 +12134,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:260
+#: src/en/reference/environment-variables.md:270
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_WEB_CONCURRENCY`\n"
@@ -12112,7 +12147,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:265
+#: src/en/reference/environment-variables.md:275
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
@@ -12125,9 +12160,9 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:268
-#: src/en/reference/environment-variables.md:275
-#: src/en/reference/environment-variables.md:282
+#: src/en/reference/environment-variables.md:278
+#: src/en/reference/environment-variables.md:285
+#: src/en/reference/environment-variables.md:292
 #, markdown-text, no-wrap
 msgid ""
 "  In case you applied [Docker hardware resource "
@@ -12136,7 +12171,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:272
+#: src/en/reference/environment-variables.md:282
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
@@ -12146,7 +12181,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:279
+#: src/en/reference/environment-variables.md:289
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
@@ -12157,7 +12192,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:286
+#: src/en/reference/environment-variables.md:296
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`\n"
@@ -12167,13 +12202,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:287
+#: src/en/reference/environment-variables.md:297
 #, markdown-text, no-wrap
 msgid "HTTP client settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:291
+#: src/en/reference/environment-variables.md:301
 #, markdown-text
 msgid ""
 "Global HTTP timeout settings. These variables control the default timeout "
@@ -12182,7 +12217,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:295
+#: src/en/reference/environment-variables.md:305
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
@@ -12191,7 +12226,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:299
+#: src/en/reference/environment-variables.md:309
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -12201,7 +12236,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:304
+#: src/en/reference/environment-variables.md:314
 #, markdown-text, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -12213,13 +12248,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:305
+#: src/en/reference/environment-variables.md:315
 #, markdown-text, no-wrap
 msgid "How to set environment variables"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:310
+#: src/en/reference/environment-variables.md:320
 #, markdown-text
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
@@ -12230,55 +12265,56 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:312
+#: src/en/reference/environment-variables.md:322
 #, markdown-text
 msgid "Examples for package installations:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:314
+#: src/en/reference/environment-variables.md:324
 #, markdown-text
 msgid "Set OPTION to \"value\":"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:315
+#: src/en/reference/environment-variables.md:325
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:320
+#: src/en/reference/environment-variables.md:330
 #, markdown-text
 msgid "Get OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:321
+#: src/en/reference/environment-variables.md:331
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:326
+#: src/en/reference/environment-variables.md:336
 #, markdown-text
 msgid "Unset OPTION:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:327
+#: src/en/reference/environment-variables.md:337
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:332
+#: src/en/reference/environment-variables.md:342
 #, markdown-text
 msgid "Restart Zammad after changing settings:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:333
+#: src/en/reference/environment-variables.md:343
+#: src/en/reference/memory-allocator.md:39
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr ""
@@ -16948,6 +16984,126 @@ msgstr ""
 #: src/en/reference/index.md:1
 #, no-wrap
 msgid "Reference"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/memory-allocator.md:1
+#: src/en/reference/memory-allocator.md:6
+#, markdown-text, no-wrap
+msgid "Memory allocator"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:12
+#, markdown-text
+msgid ""
+"Package installations use [jemalloc](https://jemalloc.net/){target=_blank} "
+"as memory allocator for all Zammad Ruby processes, as recommended by "
+"Rails. This reduces memory usage and fragmentation. The package postinstall "
+"script preloads the jemalloc library automatically if it's present on your "
+"system. This happens on every package installation and upgrade."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:15
+#, markdown-text
+msgid ""
+"Docker installations have jemalloc enabled by default (baked into the "
+"image). To opt out, override the environment variable with an empty value "
+"(e.g. `LD_PRELOAD=\"\"` in your compose or env file)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/memory-allocator.md:16
+#, markdown-text, no-wrap
+msgid "Availability"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/memory-allocator.md:23
+#, markdown-text
+msgid ""
+"Debian and Ubuntu: libjemalloc2 is installed automatically as package "
+"dependency."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/memory-allocator.md:23
+#, markdown-text
+msgid ""
+"CentOS and RHEL: jemalloc is installed automatically from the EPEL "
+"repository (already a Zammad dependency)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/memory-allocator.md:23
+#, markdown-text
+msgid ""
+"SLES: jemalloc is **not** installed automatically (available via SUSE "
+"Package Hub or SLE modules). If you install it manually with `zypper install "
+"jemalloc`, Zammad activates it automatically on the next package "
+"installation or upgrade."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/memory-allocator.md:24
+#, markdown-text, no-wrap
+msgid "Opt-out and opt-in"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:27
+#, markdown-text
+msgid "To opt out of using jemalloc:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:28
+#, no-wrap
+msgid "zammad config:set ZAMMAD_USE_JEMALLOC=no\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:34
+#, markdown-text
+msgid ""
+"This takes effect on the next package installation or upgrade. The "
+"postinstall script then removes the `LD_PRELOAD` variable entirely, so a "
+"pre-existing system value is respected. For immediate effect:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:35
+#, no-wrap
+msgid "zammad config:unset LD_PRELOAD\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:45
+#, markdown-text
+msgid ""
+"To opt back in, unset the variable again (any value other than `no` "
+"re-enables jemalloc on the next package installation or upgrade):"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:46
+#, no-wrap
+msgid "zammad config:unset ZAMMAD_USE_JEMALLOC\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:51
+#, markdown-text
+msgid "To verify whether jemalloc is active, run:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:52
+#, no-wrap
+msgid ""
+"zammad run ruby -e 'puts File.read(\"/proc/self/maps\").match?(/jemalloc/) ? "
+"\"jemalloc active\" : \"jemalloc NOT active\"'\n"
 msgstr ""
 
 #. type: Title #

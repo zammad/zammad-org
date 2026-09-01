@@ -108,6 +108,16 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 : Geben Sie Ihre eigene Redis-Instanz an, falls Sie bereits eine haben. Der Fallback bei Paketinstallationen ist
   `/opt/zammad/tmp/websocket_*`. Informationen zur Sentinel-Konfiguration finden Sie unter [Redis-Variablen](/de/reference/redis).
 
+`LD_PRELOAD` <Badge type="tip" text="libjemalloc.so.2" /> ::p::
+: Preloads a shared library for all Zammad processes. Package installations use it to enable
+  [jemalloc](/en/reference/memory-allocator) as memory allocator and set it automatically if the library is present on
+  your system. This variable is managed by the package install script and may be overwritten during updates.
+
+`ZAMMAD_USE_JEMALLOC` ::p::
+: Set to `no` to opt out of [jemalloc](/en/reference/memory-allocator) as memory allocator. Takes effect on the next
+  package installation or upgrade. Unset it to opt back in; any value other than `no` re-enables `jemalloc` on the
+  next package installation or upgrade.
+
 ## Elasticsearch
 
 `ELASTICSEARCH_ENABLED` ::d:: <Badge type="tip" text="true" />

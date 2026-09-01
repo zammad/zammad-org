@@ -87,6 +87,16 @@ Se vuoi usare un file `.env` nelle distribuzioni Docker Compose, puoi usare quel
 : Fornisci una tua istanza Redis se ne hai già una. Il fallback dell’installazione tramite pacchetto è
   `/opt/zammad/tmp/websocket_*`. Consulta [Variabili Redis](/en/reference/redis) per una configurazione con Sentinel.
 
+`LD_PRELOAD` <Badge type="tip" text="libjemalloc.so.2" /> ::p::
+: Preloads a shared library for all Zammad processes. Package installations use it to enable
+  [jemalloc](/en/reference/memory-allocator) as memory allocator and set it automatically if the library is present on
+  your system. This variable is managed by the package install script and may be overwritten during updates.
+
+`ZAMMAD_USE_JEMALLOC` ::p::
+: Set to `no` to opt out of [jemalloc](/en/reference/memory-allocator) as memory allocator. Takes effect on the next
+  package installation or upgrade. Unset it to opt back in; any value other than `no` re-enables `jemalloc` on the
+  next package installation or upgrade.
+
 ## Elasticsearch
 
 `ELASTICSEARCH_ENABLED` ::d:: <Badge type="tip" text="true" />
