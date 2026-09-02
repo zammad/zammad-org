@@ -27,10 +27,12 @@ nutzen oder [per Konsole löschen](/de/reference/rails-commands#daten-loschen).
 
 ### Chat-Sitzungen
 
-Once a chat session has been marked **closed**, it is scheduled for
-automatic deletion 12 months later. IP address logs for chat sessions can be
-deleted manually by following the [steps from the Rails console
-page](/en/reference/rails-commands#remove-ip-address-logs).
+Sobald eine Chatsitzung als **geschlossen** markiert wurde, ist sie für eine
+automatische Löschung nach 12 Monaten vorgesehen. IP-Adressprotokolle für
+Chatsitzungen können manuell gelöscht werden, indem Sie [diese Schritte auf
+der
+Rails-Befehle-Seite](/de/reference/rails-commands#protokolle-der-ip-adressen-entfernen)
+ausführen.
 
 ### CTI-Anruferprotokoll
 

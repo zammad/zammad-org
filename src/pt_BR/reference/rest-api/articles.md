@@ -38,7 +38,7 @@ artigo e, por exemplo, das listas de destinatários.
 
 `phone`
 :
-  Indicates phone notes.
+  Indica notas de telefone.
 
 `web`
 : geralmente usado apenas por clientes. Este tipo é usado sempre que o
@@ -52,7 +52,7 @@ artigo e, por exemplo, das listas de destinatários.
 
 `sms`
 :
-  This type is being used for Zammad's SMS integration.
+  Este tipo é usado para a integração de SMS do Zammad.
 
 `chat`
 : este tipo de artigo é tecnicamente um placeholder e só está disponível

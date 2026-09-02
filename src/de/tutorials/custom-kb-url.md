@@ -16,9 +16,10 @@ Manager)](https://nginxproxymanager.com/){target=_blank} verwendet.
   Sie den Tab **Benutzerdefinierte URL** aus.
 - Geben Sie die URL ein, unter der Sie Ihre Knowledge Base veröffentlichen
   möchten, und klicken Sie auf die Schaltfläche `Übermitteln`.
-- Click on the `Web Server Configuration` button to get the configuration
-  for your NPM. You can already copy the snippet or just leave it open; it
-  is needed for the NPM configuration.
+- Klicken Sie auf die Schaltfläche `Webserver-Konfiguration`, um die
+  Konfiguration für NPM abzurufen. Sie können das Snippet bereits kopieren
+  oder die Seite einfach geöffnet lassen; es wird für die NPM-Konfiguration
+  benötigt.
 
 ## NPM konfigurieren
 

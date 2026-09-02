@@ -533,33 +533,33 @@ Sie die Konsole der Browser-Version vorziehen.
 
 :::: tabs
 
-=== Via Browser
+=== Per Browser
 
-After installing Zammad and
-[configuring your webserver](/en/tutorials/webserver-config), navigate to your
-Zammads FQDN in your browser and follow the migration wizard. You can find
-it in the log in screen by clicking the "Or migrate from another system"
-link at the bottom.
+Nach der Installation von Zammad und der
+[Konfiguration Ihres Webservers](/de/tutorials/webserver-config) rufen Sie
+Zammads FQDN in Ihrem Browser auf und folgen dem Assistenten für die Migration. Sie finden
+ihn im Anmeldebildschirm, indem Sie auf den Link "Oder von einem anderen System migrieren"
+am unteren Rand klicken.
 
-Depending on the number of users, tickets and Zendesk plan, this may take a
-while.
+Je nach Anzahl der Benutzer, Tickets und des Zendesk-Plans kann dies eine
+eine Weile dauern.
 
-=== Via Console
+=== Per Konsole
 
-Open console:
+Rails Konsole öffnen:
 
 ```sh
 zammad run rails c
 ```
 
-Set variables, replace the values in `{}` with your own:
+Variablen definieren. Ersetzen Sie die Werte in Klammern `{}` mit Ihren eigenen Werten:
 
 ```ruby
 subdomain = '{zendesk url}'
 ```
 
 ```ruby
-email = '{zendesk admin email address}'
+email = '{zendesk admin email-Adresse}'
 ```
 
 ```ruby
@@ -567,7 +567,7 @@ token = '{zendesk token}'
 
 ```
 
-Update Zammad settings:
+Zammad-Einstellungen aktualisieren:
 
 ```ruby
 Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
@@ -577,11 +577,11 @@ Setting.set('import_zendesk_endpoint', "https://#{subdomain}/api/v2")
 Setting.set('import_zendesk_endpoint_username', email)
 ```
 
-```ruby
+````ruby
 Setting.set('import_zendesk_endpoint_key', token)
 ```
 
-```ruby
+````ruby
 Setting.set('import_backend', 'zendesk')
 ```
 
@@ -589,20 +589,20 @@ Setting.set('import_backend', 'zendesk')
 Setting.set('import_mode', true)
 ```
 
-Check your configuration in a dry run:
+Überprüfen Sie Ihre Konfiguration in einem Testlauf:
 
 ```ruby
 Sequencer.process('Import::Zendesk::ConnectionTest')
 ```
 
-Run the migration:
+Führen Sie die Migration aus:
 
 ```ruby
-job = ImportJob.create(name: 'Import::Zendesk')
+Aufgabe = ImportJob.create(Name: 'Import::Zendesk')
 ```
 
 ```ruby
-AsyncImportJob.perform_later(job)
+AsyncImportJob.perform_later(aufgabe)
 ```
 
 ::: tip

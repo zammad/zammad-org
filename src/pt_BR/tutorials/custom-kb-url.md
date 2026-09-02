@@ -16,9 +16,9 @@ abaixo.
   selecione a aba **Custom URL**.
 - Adicione a URL sob a qual você quer publicar sua base de conhecimento e
   clique no botão `Submit`.
-- Click on the `Web Server Configuration` button to get the configuration
-  for your NPM. You can already copy the snippet or just leave it open; it
-  is needed for the NPM configuration.
+- Clique no botão `Web Server Configuration` para obter a configuração para
+  o seu NPM. Você já pode copiar o trecho ou apenas deixá-lo aberto — ele
+  será necessário para a configuração do NPM.
 
 ## Configurar o NPM
 

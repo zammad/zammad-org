@@ -95,20 +95,20 @@ importante para você entender as respostas que estamos mostrando aqui.
 
 `event` <Badge type="info" text="newCall"/>
 :
-  Tell Zammad there is a new call.
+  Informa ao Zammad que há uma nova chamada.
 
 `from` <Badge type="info" text="4930555716000"/>
 :
-  Number that initiated the call. Can be `anonymous` as well.
+  Número que iniciou a chamada. Também pode ser `anonymous`.
 
 `to` <Badge type="info" text="4930555716000"/>
 :
-  Number that is being called.
+  Número que está sendo chamado.
 
 `direction` <Badge type="info" text="in"/>
 :
-  The call direction. If your agent initiates a call, this will be `out`. Calls
-from external side to you are `in`.
+  A direção da chamada. Se seu agente iniciar uma chamada, isso será `out`. Chamadas
+  vindas de fora para você são `in`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070"/>
 : um ID único para a chamada. O Zammad usará esse ID para identificar uma
@@ -212,7 +212,7 @@ chamador. Se seu Zammad não tiver configurado uma ou ambas as opções, o
 retorno será vazio.
 
 ::: info
-This has to be supported by your PBX to work.
+Isso precisa ser suportado pelo seu PBX para funcionar.
 :::
 
 #### Rejeitar IDs de chamador bloqueados
@@ -252,19 +252,19 @@ configurou nada, o Zammad retornará o seguinte.
 
 `event` <Badge type="info" text="answer" />:
 :
-  Tell Zammad that someone answered the call.
+  Informa ao Zammad que alguém atendeu a chamada.
 
 `from` <Badge type="info" text="493055571600" />:
 :
-  Number that initiated the call.
+  Número que iniciou a chamada.
 
 `to` <Badge type="info" text="493055571600" />:
 :
-  Number that is being called.
+  Número que está sendo chamado.
 
 `direction` <Badge type="info" text="in" />:
 :
-  The call direction - if your agent initiates a call, this will be `out`.
+  A direção da chamada - se seu agente iniciar uma chamada, isso será `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
 : um ID único para a chamada. O Zammad usará esse ID para identificar uma
@@ -371,19 +371,19 @@ Comando curl de exemplo:
 
 `event` <Badge type="info" text="hangup" />:
 :
-  Tell Zammad that someone answered the call.
+  Informa ao Zammad que alguém atendeu a chamada.
 
 `from` <Badge type="info" text="493055571600" />:
 :
-  Number that initiated the call.
+  Número que iniciou a chamada.
 
 `to` <Badge type="info" text="493055571600" />:
 :
-  Number that is being called.
+  Número que está sendo chamado.
 
 `direction` <Badge type="info" text="in" />:
 :
-  The call direction - if your agent initiates a call, this will be `out`.
+  A direção da chamada - se seu agente iniciar uma chamada, isso será `out`.
 
 `callId` <Badge type="info" text="53ba82e2bd6d12d9fb2d3838f0cfb070" />:
 : um ID único para a chamada. O Zammad usará esse ID para identificar uma

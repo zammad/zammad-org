@@ -21,8 +21,8 @@ com uma conta na sua intranet local 1) tenha automaticamente uma conta no
 Zammad e 2) consiga fazer login com um único clique.
 
 ::: tip
-If you don't have this IT infrastructure but still want one-click
-login, you can use alternatives like GitHub, Google, Facebook and more.
+Se você não tem essa infraestrutura de TI, mas ainda assim quer login de um clique,
+pode usar alternativas como GitHub, Google, Facebook e outras.
 :::
 
 ## Como funciona?
@@ -37,27 +37,27 @@ uma das seguintes** entidades, ele cria uma nova sessão para esse usuário:
 - uma variável de ambiente de servidor web `HTTP_REMOTE_USER`
 
 ::: info
-**Wait. SSO allows you to sign in with only a username?**
+**Espera. O SSO permite fazer login apenas com um nome de usuário?**
 
-In principle, yes.
+Em princípio, sim.
 
-**How is that okay?**
+**Como isso está ok?**
 
-In this guide, we configure our web server (Apache) to intercept all
-requests to the `/auth/sso` endpoint. Instead of forwarding them to
-Zammad, Apache initiates a three-sided login process (_Kerberos
-authentication_) between the itself, the user, and the Active
-Directory server.
+Neste guia, configuramos nosso servidor web (Apache) para interceptar todas as
+solicitações ao endpoint `/auth/sso`. Em vez de encaminhá-las para o
+Zammad, o Apache inicia um processo de login de três lados (_autenticação
+Kerberos_) entre ele mesmo, o usuário e o servidor do Active
+Directory.
 
-If Active Directory doesn't recognize the user or their password,
-Zammad never sees the request, and the session is never created.
+Se o Active Directory não reconhecer o usuário ou sua senha,
+o Zammad nunca vê a solicitação, e a sessão nunca é criada.
 
-**What does this all mean?**
+**O que tudo isso significa?**
 
-It means there are many ways you could set up SSO, you don't need to
-follow this guide or even use Active Directory or Kerberos, but if you
-don't know what you're doing, you're going to end up with a _massive_
-security hole.
+Significa que há muitas formas de configurar o SSO — você não precisa
+seguir este guia ou até usar o Active Directory ou Kerberos — mas se
+você não sabe o que está fazendo, vai acabar com uma _enorme_
+brecha de segurança.
 :::
 
 ## Começando

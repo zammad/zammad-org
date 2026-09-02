@@ -25,9 +25,9 @@ order: 2
 
 # Guia de estilo e conteúdo
 
-This guide provides an overview of the content that should be included in
-the Zammad documentation and formatting and style guidelines to ensure
-clarity and readability.
+Este guia fornece uma visão geral do conteúdo que deve ser incluído na
+documentação do Zammad, além de diretrizes de formatação e estilo para
+garantir clareza e legibilidade.
 
 As primeiras seções tratam de informações e regras gerais. Uma [seção com
 exemplos](#examples) segue no final.
@@ -88,8 +88,8 @@ documentação. Depois delas, você encontra uma seção com alguns
 
 - A documentação é escrita na linguagem de marcação Markdown. Os
   arquivos-fonte têm a extensão `.md`.
-- The system uses [VitePress](https://vitepress.dev/){target=_blank} to
-  build the website.
+- O sistema usa o [VitePress](https://vitepress.dev/){target=_blank} para
+  construir o site.
 - O idioma dos arquivos-fonte é inglês americano.
 - A tradução da documentação é feita via Weblate, consulte a [seção de
   tradução](contribute#translation) na página de contribuição para mais
@@ -166,12 +166,13 @@ Algumas regras importantes e personalizadas são mencionadas abaixo.
 - A resolução das capturas de tela de página inteira manuais para
   _visualização desktop_ é 1920x1080 pixels.
 
-In addition to `pnpm lint`, the repository uses
-[Vale](https://vale.sh/){target=_blank} for prose linting. Vale checks for
-consistent brand name casing (e.g. GitHub, GitLab, Elasticsearch), flags
-discouraged terms, and enforces wordlist rules. It runs automatically on
-staged files when you commit and in CI alongside the Markdownlint job. To
-run it manually, use `pnpm vale`.
+Além do `pnpm lint`, o repositório usa o
+[Vale](https://vale.sh/){target=_blank} para lint de prosa. O Vale verifica
+a capitalização consistente de nomes de marca (por exemplo, GitHub, GitLab,
+Elasticsearch), sinaliza termos desencorajados e aplica regras de lista de
+palavras. Ele roda automaticamente nos arquivos staged quando você faz
+commit, e no CI junto com o job do Markdownlint. Para rodá-lo manualmente,
+use `pnpm vale`.
 
 ### Exemplos
 
@@ -309,9 +310,9 @@ Este é o conteúdo mostrado no estado expandido.
 
 #### Listas de definição
 
-First term <Badge type="info" text="tag1" />
+Primeiro termo <Badge type="info" text="tag1" />
 :
-  This is the definition of the first term.
+  Esta é a definição do primeiro termo.
 
 Segundo termo <Badge type="info" text="tag1" /> <Badge type="tip" text="tag1" />
 : Esta é uma definição do segundo termo.

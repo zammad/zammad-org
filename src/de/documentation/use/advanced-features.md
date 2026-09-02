@@ -529,11 +529,12 @@ Tätigkeiten und zur Gruppierung der erfassten Zeiten verwendet werden. Wenn
 diese optionale Funktion aktiviert ist, wird eine Liste von Aktivitäten
 angezeigt, aus der Sie im Erfassungsdialog auswählen können.
 
-If a ticket already has accounted time(s), you can see it in the ticket
-sidebar on the right side in the ticket detail view at the bottom. You can
-find the calculated sums of each activity type (if configured) and the total
-sum of accounted times for all activity types. Accounted time is also shown
-in the article meta information of each ticket article, if present.
+Wenn ein Ticket bereits erfasste Zeiten hat, sehen Sie diese in der Ticket
+Detailansicht in der rechten Seitenleiste unten. Hier finden Sie die
+berechneten Summen der einzelnen Aktivitäts-Typen (sofern konfiguriert),
+sowie die Gesamtsumme der erfassten Zeiten über alle Aktivitäts-Typen. Die
+erfasste Zeit wird zudem in den Metainformationen jedes Ticket-Artikels
+angezeigt, sofern vorhanden.
 
 ![Screenshot zeigt die Übersicht der
 Zeiterfassung](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
@@ -612,22 +613,24 @@ Organisations-Detailseite als neuen Tab.
 
 **Warum?**
 
-If you use i-doit and Zammad for IT support or you deal with GitHub or
-GitLab issues, you can link to these external systems to have all relevant
-information in one place. Your Zammad admin has to activate and configure
-these features in Zammad's settings.
+Wenn Sie i-doit und Zammad für den IT-Support nutzen oder sich mit GitHub-
+oder GitLab-Problemen befassen, können Sie sich mit diesen externen Systemen
+verbinden, um alle relevanten Informationen an einem Ort zu haben. Ihr
+Zammad-Administrator muss diese Funktionen in den Einstellungen von Zammad
+aktivieren und konfigurieren.
 
 **Wie?**
 
-![Screenshot shows GitLab content sidebar with "Link Issue"
-button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+![Screenshot zeigt GitLab Seitenleiste mit "Issue verknüpfen"
+Schaltfläche](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
-If activated, simply open a ticket and choose the right content sidebar tab
-with the respective icon (see GitLab example in screenshot above). Click the
-button to link to an issue by entering the URL of it or select the item from
-a select field (i-doit). Afterwards, you can see the linked item with
-additional metadata. By clicking on the linked item, you are redirected to
-it in the respective system.
+Falls aktiviert, öffnen Sie einfach ein Ticket und wählen Sie den rechten
+Seitenleisten-Tab mit dem entsprechenden Symbol (siehe GitLab-Beispiel im
+Screenshot oben). Klicken Sie auf die Schaltfläche, um einen Link zu einem
+Issue zu erstellen und geben Sie die URL ein oder wählen das Element aus
+einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element
+mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken,
+werden Sie zu diesem im jeweiligen System weitergeleitet.
 
 ## Text hervorheben
 

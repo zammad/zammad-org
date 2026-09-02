@@ -36,7 +36,7 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 
 `ZAMMAD_BIND_IP` ::p:: <Badge type="tip" text="127.0.0.1" />
 :
-  The IP address that the web server is bound to.
+  Die IP-Adresse, an die der Webserver gebunden ist.
 
 `S3_URL` ::p::
 : Ermöglicht Ihnen die Angabe Ihrer S3-Speicheranbieter-Konfiguration. Beispiel für einen Wert:
@@ -56,11 +56,11 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 
 `ZAMMAD_HTTP_TYPE`
 :
-  Set the http type for your instance. Possible values are `http` and `https`.
+  Legen Sie den HTTP-Typ für Ihre Instanz fest. Mögliche Werte sind `http` und `https`.
 
 `ZAMMAD_FQDN`
 :
-  Set the FQDN for your instance.
+  Legen Sie den FQDN für Ihre Instanz fest.
 
 `RAILS_TRUSTED_PROXIES` <Badge type="tip" text="127.0.0.1,::1" />
 : Diese Einstellung ist wichtig für die korrekte Erkennung von Client-IP-Adressen und Funktionen, die darauf basieren,
@@ -108,15 +108,15 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 : Geben Sie Ihre eigene Redis-Instanz an, falls Sie bereits eine haben. Der Fallback bei Paketinstallationen ist
   `/opt/zammad/tmp/websocket_*`. Informationen zur Sentinel-Konfiguration finden Sie unter [Redis-Variablen](/de/reference/redis).
 
-`LD_PRELOAD` <Badge type="tip" text="libjemalloc.so.2" /> ::p::
-: Preloads a shared library for all Zammad processes. Package installations use it to enable
-  [jemalloc](/en/reference/memory-allocator) as memory allocator and set it automatically if the library is present on
-  your system. This variable is managed by the package install script and may be overwritten during updates.
+`LD_PRELOAD` <Badge type="tip" text="libjemalloc.so.2" />::p::
+: Lädt eine gemeinsam genutzte Bibliothek für alle Zammad-Prozesse vor. Paket-Installationen verwenden diese Variable, um
+  [jemalloc](/de/reference/memory-allocator) zur Speicherzuweisung zu aktivieren und automatisch einzurichten, sofern die Bibliothek auf
+  Ihrem System vorhanden ist. Diese Variable wird vom Installationsskript des Pakets verwaltet und kann bei Aktualisierungen überschrieben werden.
 
-`ZAMMAD_USE_JEMALLOC` ::p::
-: Set to `no` to opt out of [jemalloc](/en/reference/memory-allocator) as memory allocator. Takes effect on the next
-  package installation or upgrade. Unset it to opt back in; any value other than `no` re-enables `jemalloc` on the
-  next package installation or upgrade.
+`ZAMMAD_USE_JEMALLOC`::p::
+: Setzen Sie diese Option auf `no`, um [jemalloc](/en/reference/memory-allocator) zur Speicherzuweisung zu deaktivieren. Die Änderung wird bei der nächsten
+  Paketinstallation oder -aktualisierung wirksam. Entfernen Sie die Einstellung, um die Verwendung wieder zu aktivieren; jeder andere Wert als `no` aktiviert `jemalloc` bei der
+  nächsten Paketinstallation oder -aktualisierung wieder.
 
 ## Elasticsearch
 
@@ -126,19 +126,19 @@ als `.env` kopieren. Auf diese Weise wird sie von Docker Compose automatisch üb
 
 `ELASTICSEARCH_HOST` ::d:: <Badge type="tip" text="zammad-elasticsearch" />
 :
-  Provide a host name or address to your external Elasticsearch cluster.
+  Geben Sie einen Hostnamen oder eine Adresse Ihres externen Elasticsearch-Clusters an.
 
 `ELASTICSEARCH_PORT` ::d:: <Badge type="tip" text="9200" />
 :
-  Provide a different port for Elasticsearch if needed.
+  Geben Sie einen anderen Port für Elasticsearch an, falls notwendig.
 
 `ELASTICSEARCH_SCHEMA` ::d:: <Badge type="tip" text="http" />
 :
-  Change it to `https` if your Elasticsearch cluster is configured to use SSL.
+  Ändern Sie es in `https`, falls Ihr Elasticsearch-Cluster für die Verwendung mit SSL konfiguriert ist.
 
 `ELASTICSEARCH_NAMESPACE` ::d:: <Badge type="tip" text="zammad" />
 :
-  With this name space all Zammad related indexes will be created. Change this if you're using external clusters.
+  Mit diesem Namensraum werden alle Zammad-bezogenen Indizes erstellt. Ändern Sie dies, wenn Sie externe Cluster verwenden.
 
 `ELASTICSEARCH_REINDEX` ::d::
 : Der Suchindex wird automatisch neu aufgebaut, wenn kein Index gefunden werden kann. Wenn Sie den Suchindex
@@ -165,43 +165,43 @@ dass Sie die richtige auswählen. Beide Variablen am Ende dieses Bereichs sind f
 
 `POSTGRESQL_PORT` ::p:: <Badge type="tip" text="5432" />
 :
-  Adjust the port of your PostgreSQL server.
+  Passen Sie den Port Ihres PostgreSQL-Servers an.
 
 `POSTGRESQL_USER` ::p:: <Badge type="tip" text="zammad" />
 :
-  The database user for Zammad.
+  Der Datenbankbenutzer für Zammad.
 
 `POSTGRESQL_PASS` ::p:: <Badge type="tip" text="zammad" />
 :
-  The password of Zammad's database user.
+  Das Passwort des Zammad-Datenbankbenutzers.
 
 `POSTGRESQL_DB` ::p:: <Badge type="tip" text="zammad_production" />
 :
-  Zammad's database to use.
+  Die von Zammad verwendete Datenbank.
 
 `POSTGRES_HOST` ::d:: <Badge type="tip" text="zammad-postgresql" />
-: Host name or IP address of your PostgreSQL server. In case you use an IPv6 address, enclose the address in square
-  brackets (e.g. `[2001:db8::2]`).
+:
+  Hostname oder IP-Adresse Ihres PostgreSQL-Servers. Verwenden Sie im Falle einer IPv6-Adresse eckige Klammern (z. B. `[2001:db8::2]`).
 
 `POSTGRES_PORT` ::d:: <Badge type="tip" text="5432" />
 :
-  Adjust the port of your PostgreSQL server.
+  Passen Sie den Port Ihres PostgreSQL-Servers an.
 
 `POSTGRES_USER` ::d:: <Badge type="tip" text="zammad" />
 :
-  The database user for Zammad.
+  Der Datenbankbenutzer für Zammad.
 
 `POSTGRES_PASS` ::d:: <Badge type="tip" text="zammad" />
 :
-  The password of Zammad's database user.
+  Das Passwort des Zammad-Datenbankbenutzers.
 
 `POSTGRES_DB` ::d:: <Badge type="tip" text="zammad_production" />
 :
-  Zammad's database to use.
+  Die von Zammad zu verwendende Datenbank.
 
 `POSTGRESQL_OPTIONS` <Badge type="tip" text="?pool=50" />
 :
-  Additional PostgreSQL params to be appended to the database URI.
+  Zusätzliche PostgreSQL-Parameter, die der Datenbank-URI angehängt werden.
 
 `POSTGRESQL_DB_CREATE` <Badge type="tip" text="true" />
 : Standardmäßig erstellt Zammad die benötigte Datenbank. Auf bereits existierenden Datenbankservern kann dies jedoch
@@ -215,11 +215,11 @@ dass Sie die richtige auswählen. Beide Variablen am Ende dieses Bereichs sind f
 
 `NGINX_PORT` ::d:: <Badge type="tip" text="8080" />
 :
-  The internal port the Nginx service will listen on.
+  Der interne Port, auf dem der Nginx-Dienst lauscht.
 
 `NGINX_SERVER_NAME` ::d:: <Badge type="tip" text="_" />
 :
-  By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.
+  Standardmäßig antwortet der Nginx-Container von Zammad auf alle Anfragen. Sie können Ihre IP/FQDN angeben, wenn Sie möchten.
 
 `NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
 : Wenn der Nginx-Container für Zammad **nicht** der vorgelagerte Server ist (d.h. Sie verwenden einen anderen Proxy vor Nginx),
@@ -227,28 +227,28 @@ dass Sie die richtige auswählen. Beide Variablen am Ende dieses Bereichs sind f
   `CSRF Token Verification Failed` Fehlermeldung erhalten.
 
 `NGINX_CLIENT_MAX_BODY_SIZE` ::d::
-:
-  Define the maximum size of data that a client can send to the server.
+ :
+  Definieren Sie die maximale Größe der Daten, die ein Client an den Server senden kann.
 
 `ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type="tip" text="zammad-railsserver" />
 :
-  Host name of the Rails server container.
+  Hostname des Rails-Server-Containers.
 
 `ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type="tip" text="3000" />
 :
-  Port of Zammad's Rails server.
+  Port des Zammad Rails-Servers.
 
 `ZAMMAD_RAILS_PORT` ::p:: <Badge type="tip" text="3000" />
 :
-  Port of Zammad's Rails server.
+  Port des Zammad Rails-Servers.
 
 `ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type="tip" text="zammad-websocket" />
 :
-  Host name of Zammad's WebSocket server.
+  Hostname des Zammad-WebSocket-Servers.
 
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
 :
-  Port of Zammad's WebSocket server.
+  Port des WebSocket-Servers von Zammad.
 
 ## Leistungsoptimierung
 

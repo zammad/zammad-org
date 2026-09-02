@@ -201,7 +201,9 @@ systemctl старт заммад
 ## Инсталација пакета
 
 ::: warning
-Ажурирања Docker Compose стацк-а могу захтевати додатне кораке или увести промене које нарушавају компатибилност. Увек прво проверите [Docker Compose белешке о издању](https://github.com/zammad/zammad-docker-compose/releases) за упутства за ажурирање.
+Ажурирања Docker Compose стека могу захтевати додатне кораке или довести до промена које нарушавају
+компатибилност. Увек прво проверите [Docker Compose напомене о верзији](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}
+за упутства за ажурирање.
 :::
 
 ::: tip
@@ -212,7 +214,7 @@ systemctl старт заммад
 
 ### Ажурирање инсталација заснованих на Portainer-у
 
-У вашем Zammad stack-у, кликните на Pull and redeploy`, укључите **Re-pull
+У вашем Zammad стеку, кликните на `Pull and redeploy`, укључите **Re-pull
 image and redeploy** и кликните на `Update`.
 
 ![Додавање stack-а са обезбеђеним подацима у Repository

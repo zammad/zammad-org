@@ -12,15 +12,15 @@ verfügbar sein.
 :::
 
 ::: tip
-**Suppress notifications:** To create or update a ticket without triggering agent notifications (email and in-app), add
-the following HTTP header to your request:
+**Benachrichtigungen unterdrücken:** Um ein Ticket zu erstellen oder eine Aktualisierung durchzuführen, ohne Benachrichtigungen an Agenten (per E-Mail und in der App) auszulösen, fügen Sie
+Ihrer Anfrage den folgenden HTTP-Header hinzu:
 
 ```plain
 X-Zammad-Suppress-Notifications: true
 ```
 
-This is useful for automated integrations that manage tickets via webhooks or triggers to avoid notification loops. The
-header only affects admin and agent accounts and is ignored for customers.
+Dies ist nützlich für automatisierte Integrationen, die Tickets über Webhooks oder Trigger verwalten, um Benachrichtigungsschleifen zu vermeiden. Der
+Header wirkt sich nur auf Administrator- und Agenten-Konten aus und wird für Kunden ignoriert.
 :::
 
 ## Auflisten
@@ -54,31 +54,31 @@ Erforderliche Berechtigung: `ticket.agent` **oder** `ticket.customer`
 `POST`-Anfrage gesendet: `/api/v1/tickets`
 
 ::: tip
-**On behalf of users**
+**Im Namen von Benutzern**
 
-If you want to create tickets on behalf of other users, use the `customer_id` attribute. This requires the `ticket.agent`
-permission. Without it, `customer_id` is ignored and the ticket's **Customer** field is set to the current user. Use
-`guess:{email address}` to save an API call if you don't know the user's ID or want to create the user in question
+Wenn Sie Tickets im Namen anderer Benutzer erstellen möchten, verwenden Sie das Attribut `customer_id`. Hierfür ist die Berechtigung `ticket.agent`
+erforderlich. Ohne diese Berechtigung wird `customer_id` ignoriert und das Feld **Kunde** des Tickets auf den aktuellen Benutzer gesetzt. Verwenden Sie
+`guess:{E-Mail-Adresse}`, um einen API-Aufruf zu sparen, falls Sie die Benutzer-ID nicht kennen oder den betreffenden Benutzer anlegen möchten
 (`"customer_id": "guess:jane@doe.com"`).
 
-When creating a ticket on behalf of a customer with an initial article, you **must** set `article.sender` to "Customer"
-explicitly. Without this, the sender defaults to "Agent" (based on the current user's permission). This affects the
-ticket's `create_article_sender_id` and the resulting contact timestamp calculations.
+Wenn Sie im Auftrag eines Kunden ein Ticket mit einem ersten Artikel erstellen, müssen Sie `article.sender` explizit auf "Customer" setzen. Ohne
+diese Angabe wird der Absender standardmäßig auf "Agent" gesetzt (basierend auf den Berechtigungen des aktuellen Benutzers). Dies wirkt sich auf die
+`create_article_sender_id` des Tickets und die Berechnungen des Zeitstempels für den Kontakt aus.
 
-The same applies to articles added later via PUT: set sender explicitly there as well when acting on behalf of a customer.
-Since the sender of an article cannot be changed after creation, it is important to set it correctly from the start.
+Das Gleiche gilt für Artikel, die später per PUT hinzugefügt werden: Legen Sie den Absender auch dort explizit fest, wenn Sie im Auftrag eines Kunden handeln.
+Da der Absender eines Artikels nach der Erstellung nicht mehr geändert werden kann, ist es wichtig, dies bei der Artikelerstellung korrekt mitzugeben.
 
-For more details on the sender attribute, see [articles](/en/reference/rest-api/articles).
+Weitere Einzelheiten zum Attribut "sender" finden Sie unter [Artikel](/de/reference/rest-api/articles).
 
 :::
 
 ::: tip
-**Add mention subscription right away**
+**Fügen Sie das Benachrichtigungs-Abonnement gleich hinzu:**
 
-Add the `mentions` attribute to your ticket payload and provide an array of user ids to directly subscribe them during
-ticket creation.
+Fügen Sie das Attribut `mentions` zu Ihrer Ticket-Nutzlast hinzu und geben Sie ein Array mit Benutzer-IDs an, um für diese
+direkt bei der Ticket-Erstellung ein Benachrichtigungs-Abonnement zu erstellen.
 
-E.g.: `"mentions": [1, 5, 7, 8],`
+Beispiel: `mentions: [1, 5, 7, 8],`
 
 :::
 
@@ -98,8 +98,8 @@ E.g.: `"mentions": [1, 5, 7, 8],`
 ::::
 
 ::: tip
-The `sender` attribute of the initial article determines the ticket's `create_article_sender_id` and contact timestamps.
-For the full list of article attributes and their behavior, see [articles](/en/reference/rest-api/articles).
+Das Attribut `sender` des ursprünglichen Artikels bestimmt die `create_article_sender_id` und Kontakt-Zeitstempel des Tickets.
+Eine vollständige Liste der Artikelattribute und deren Funktionsweise finden Sie unter [Artikel](/de/reference/rest-api/articles).
 :::
 
 ## Aktualisierung

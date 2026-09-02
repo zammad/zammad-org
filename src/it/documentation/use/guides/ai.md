@@ -99,16 +99,17 @@ sidebar. Click the `Add AI draft` button to trigger the answer generation.
 
 Things to consider:
 
-- The knowledge base answer is generated as draft and not published
-  automatically.
+- La risposta nella knowledge base viene generata come bozza e non viene
+  pubblicata automaticamente.
 - You are set as the answer's author.
 - The answer is generated in the default language of your knowledge base.
 - The answer includes a note in the content and a tag (`ai-generated`) about
   the AI generation.
-- A link to the answer is added to the ticket from which you triggered the
-  answer generation.
-- The answer is created in a knowledge base category for which you have
-  editor permissions. The AI chooses one of these categories.
+- Al ticket da cui è stata avviata la generazione della risposta viene
+  aggiunto un link alla risposta.
+- La risposta viene creata in una categoria della knowledge base per la
+  quale si dispone dei permessi di modifica. L'IA sceglie una di queste
+  categorie.
 
 If a similar knowledge base answer already exists, Zammad shows it in a
 dialog before creating a new one. This gives you the chance to review

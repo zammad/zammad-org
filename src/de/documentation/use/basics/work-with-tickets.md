@@ -150,12 +150,14 @@ Nachrichten zurückgreifen müssen – bietet Zammad zwei praktische Funktionen:
   - Die Symbolleiste wird angezeigt, sobald die Liste der Artikel größer ist
     als Ihre Ansicht, damit wichtige Funktionen weiterhin zugänglich
     bleiben.
-- A **pinned reply form** so the editor stays visible while you scroll
-  through the articles. To pin or unpin the reply form, click the pin icon
-  in the header of the article reply form. The pinned form sticks to the
-  bottom of the ticket detail view. Resize the height by dragging the line
-  on the top edge of the pinned reply form. The pin state and the panel size
-  are saved in your browser.
+- Ein **angeheftetes Antwortformular**, sodass der Editor sichtbar bleibt,
+  während Sie durch die Artikelliste scrollen. Um das Antwortformular
+  anzuheften oder abzulösen, klicken Sie auf das Stecknadel-Symbol in der
+  Kopfzeile des Artikel-Antwortformulars. Das angeheftete Formular bleibt am
+  unteren Rand der Ticket-Detailansicht angezeigt. Passen Sie die Höhe an,
+  indem Sie die Linie am oberen Rand des angehefteten Antwortformulars
+  ziehen. Der Anheftstatus sowie die Größe des angehefteten Bereichs werden
+  in Ihrem Browser gespeichert.
 
 ![Der Screenshot zeigt das Antwortformular für Artikel, das am unteren Rand
 der Ticket-Detailansicht angeheftet
@@ -228,9 +230,9 @@ Zusammenfassen
 : Übertragen Sie alle Nachrichten/Notizen in ein anderes Ticket. Nützlich, wenn Sie mehr als ein Ticket zu einem einzelnen Kundenproblem haben.
   Siehe [Tickets zusammenfassen](/de/documentation/use/advanced-features#tickets-zusammenfassen) für weitere Informationen.
 
-Change customer
+Kunden ändern
 :
-  Reassign the ticket to another customer.
+  Weisen Sie das Ticket einem anderen Kunden zu.
 
 -----
 

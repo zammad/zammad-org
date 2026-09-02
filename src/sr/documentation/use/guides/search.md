@@ -75,13 +75,14 @@ advanced filter options described below are not shown.
 
 ### Напредне функције
 
-Unlike the search field, you can filter the search results based on specific
-attributes and their values.  To do so, click on the `Advanced filters`
-button on the right side, which opens an area where you can specify
-additional conditions based on specific attributes and their values. Choose
-an attribute and enter or select a value to match against. When using more
-than one filter, all conditions must be met; they are logically connected by
-AND. This also applies to the search term in the main search field.
+За разлику од поља за претрагу, можете филтрирати резултате претраге на
+основу одређених атрибута и њихових вредности.  Да бисте то урадили,
+кликните на дугме `Напредни филтери` са десне стране, које додаје поље у
+коме можете навести додатне услове на основу одређених атрибута и њихових
+вредности. Изаберите атрибут и унесите или изаберите вредност за
+поклапање. Када користите више филтера, сви услови морају бити испуњени;
+логички су повезани AND оператором. Ово се такође односи на појам за
+претрагу у главном пољу за претрагу.
 
 Remove a single filter by hovering over it and clicking the ::x:: that
 appears next to the value field. To remove all filters, click the `x` in the

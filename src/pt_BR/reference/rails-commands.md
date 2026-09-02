@@ -14,7 +14,7 @@ comandos podem causar perda de dados ou tickets danificados! Se você não tiver
 **use um sistema de teste primeiro**!
 :::
 
-## Starting Zammad's Rails console
+## Iniciando o console Rails do Zammad
 
 ### Executar um único comando
 
@@ -51,7 +51,7 @@ rails r '{COMMAND}'
 
 :::
 
-### Run interactive Rails console
+### Executar o console Rails interativo
 
 ::: tabs key:installmethod
 
@@ -162,8 +162,8 @@ O comando acima retornará tanto o ID quanto o nome do tipo - por exemplo:
 
 ### Encontrar usuário
 
-To work on user information or to check for specific information, you'll
-need to find it first.
+Para trabalhar com informações de usuário ou verificar informações
+específicas, você precisará encontrá-lo primeiro.
 
 ID de usuário já conhecido:
 
@@ -338,11 +338,11 @@ definir na interface do Zammad.
 
 ### Configuração de desligamento automático
 
-Defines if an automatic shutdown of Zammad is performed when the database
-has been changed (e.g. after custom attributes have been created in the
-object manager).  The underlying system (Systemd, Docker, Kubernetes) will
-then restart the processes/containers after this shutdown. The default
-setting is `true`.
+Define se um desligamento automático do Zammad é realizado quando o banco de
+dados é alterado (por exemplo, após atributos personalizados serem criados
+no gerenciador de objetos). O sistema subjacente (Systemd, Docker,
+Kubernetes) reiniciará os processos/containers após esse desligamento. A
+configuração padrão é `true`.
 
 Definir isso como `false` pode fazer sentido apenas em casos muito raros, e
 você terá que reiniciar os serviços do Zammad manualmente.

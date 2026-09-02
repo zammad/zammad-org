@@ -5,12 +5,13 @@ title: Pesquisar
 
 # Pesquisar
 
-In Zammad, you can search for all available information like:
+No Zammad, você pode pesquisar praticamente todas as informações
+disponíveis, como:
 
 - Assunto e texto da mensagem
 - Nomes e endereços de email
 - Texto em anexos de arquivo
-- User and organization details (like notes, names, etc.)
+- Detalhes de usuários e organizações (como notas, nomes, etc.)
 
 Dependendo do que você está pesquisando e da quantidade de dados na sua
 instância do Zammad, você pode pesquisar de diferentes formas. Continue
@@ -19,30 +20,30 @@ detalhada e o uso da sintaxe do Elasticsearch.
 
 ## Pesquisa básica
 
-The search is located in the top left corner of the primary
-navigation. Either select it via mouse or use the keyboard shortcut
-[[s]]. After activation, you can see the tickets that were recently closed
-from your taskbar as well as your recent search queries. To search, simply
-type a term. The search then displays all matching items for which you have
-at least view or read permissions, grouped by type like users and
-tickets. Selecting one of those results opens the item as tab in the
-taskbar.
+A pesquisa está localizada no canto superior esquerdo da navegação
+principal. Selecione-a com o mouse ou use o atalho de teclado [[s]]. Depois
+de ativada, você pode ver os tickets fechados recentemente na sua barra de
+tarefas, assim como suas consultas de pesquisa recentes. Para pesquisar,
+basta digitar um termo. A pesquisa então exibe todos os itens
+correspondentes para os quais você tem pelo menos permissão de visualização
+ou leitura, agrupados por tipo, como usuários e tickets. Selecionar um
+desses resultados abre o item como aba na barra de tarefas.
 
-Searching for a term also matches any values that begin with it. For
-example, searching for `brooks` also finds values like `brookster`. This
-does not apply when you use an attribute notation like
-`owner.lastname:brooks` (described in the [Elasticsearch
-syntax](#using-elasticsearch-syntax) section below), which matches exact
-values only.
+Pesquisar por um termo também encontra valores que começam com ele. Por
+exemplo, pesquisar por `brooks` também encontra valores como
+`brookster`. Isso não se aplica quando você usa uma notação de atributo como
+`owner.lastname:brooks` (descrita na seção [sintaxe do
+Elasticsearch](#using-elasticsearch-syntax) abaixo), que corresponde apenas
+a valores exatos.
 
-![Screenshot shows search results in the
-taskbar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Captura de tela mostra os resultados da pesquisa na navegação
+principal](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
 
-If you press [[enter]] or click on `detailed search`, Zammad opens the
-detailed search as a tab in the taskbar. There you can narrow down your
-search by selecting a specific object type (e.g. organization), using
-advanced filters or even using Elasticsearch syntax. Read on for more
-information.
+Se você pressionar [[enter]] ou clicar em `detailed search`, o Zammad abre a
+pesquisa detalhada como uma aba na navegação principal. Ali você pode
+restringir sua pesquisa selecionando um tipo de objeto específico (por
+exemplo, organização), usar filtros avançados ou até usar a sintaxe do
+Elasticsearch. Continue lendo para mais informações.
 
 ## Pesquisa detalhada
 
@@ -50,9 +51,9 @@ information.
 você está procurando. O Zammad oferece diferentes opções para restringir a
 pesquisa na página de pesquisa detalhada.
 
-Advanced filters are not available for customer accounts. If your account
-has customer permissions only, the **Search entity** selector and the
-advanced filter options described below are not shown.
+Os filtros avançados não estão disponíveis para contas de cliente. Se sua
+conta tiver apenas permissões de cliente, o seletor **Search entity** e as
+opções de filtro avançado descritas abaixo não são exibidos.
 
 ![Captura de tela mostra a pesquisa
 detalhada](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
@@ -75,23 +76,24 @@ pesquisa.
 
 ### Usar filtros avançados
 
-Unlike the search field, you can filter the search results based on specific
-attributes and their values.  To do so, click on the `Advanced filters`
-button on the right side, which opens an area where you can specify
-additional conditions based on specific attributes and their values. Choose
-an attribute and enter or select a value to match against. When using more
-than one filter, all conditions must be met; they are logically connected by
-AND. This also applies to the search term in the main search field.
+Ao contrário do campo de pesquisa, você pode filtrar os resultados da
+pesquisa com base em atributos específicos e seus valores.  Para isso,
+clique no botão `Advanced filters` no lado direito, que abre uma área onde
+você pode especificar condições adicionais com base em atributos específicos
+e seus valores. Escolha um atributo e informe ou selecione um valor para
+comparar. Ao usar mais de um filtro, todas as condições precisam ser
+atendidas — elas são conectadas logicamente por AND. Isso também se aplica
+ao termo de pesquisa no campo de pesquisa principal.
 
-Remove a single filter by hovering over it and clicking the ::x:: that
-appears next to the value field. To remove all filters, click the `x` in the
-main search bar at the top next to the `x filter(s)` label and confirm the
-removal.
+Remova um único filtro passando o mouse sobre ele e clicando no ::x:: que
+aparece ao lado do campo de valor. Para remover todos os filtros, clique no
+`x` na barra de pesquisa principal no topo, ao lado do rótulo `x filter(s)`,
+e confirme a remoção.
 
-To add another filter, click `Add filter` below or between the existing
-filter rows and pick an attribute from the selection list. The list only
-offers attributes that are not used by any filter yet, so each attribute can
-be used only once.
+Para adicionar outro filtro, clique em `Add filter` abaixo ou entre as
+linhas de filtro existentes e escolha um atributo na lista de seleção. A
+lista oferece apenas atributos que ainda não são usados por nenhum filtro,
+então cada atributo só pode ser usado uma vez.
 
 Caso você queira armazenar ou compartilhar seu filtro, pode fazer isso
 copiando a URL. Ela inclui o filtro completo. Esteja ciente de que os
@@ -104,21 +106,22 @@ exemplos na próxima seção.
 
 ## Usando a sintaxe do Elasticsearch
 
-This is an advanced topic for power users. By using Elasticsearch syntax,
-you can exactly filter your data for specific attribute values. All indexed
-attributes are supported. Read on to find examples of how to use it or head
-over to the [indexed attributes by Elasticsearch
-page](/en/reference/es-indexed-attributes) where you can find a list with
-additional attributes.
+Este é um tópico avançado para usuários avançados. Usando a sintaxe do
+Elasticsearch, você pode filtrar exatamente seus dados por valores de
+atributo específicos. Todos os atributos indexados são suportados. Continue
+lendo para encontrar exemplos de como usá-lo, ou acesse a [página de
+atributos indexados pelo
+Elasticsearch](/pt_BR/reference/es-indexed-attributes), onde você encontra
+uma lista com atributos adicionais.
 
 ### Informações importantes
 
 - Certifique-se de selecionar o objeto relevante no seletor **Search
   entity**. Por exemplo, `customer.lastname` está disponível para tickets,
   mas não para usuários.
-- Multiple search terms are combined by a logical AND by default, so `smith
-  open` only finds results containing both terms. Use an explicit `OR` if
-  you want either of them.
+- Vários termos de pesquisa são combinados por um AND lógico por padrão,
+  então `smith open` só encontra resultados que contenham ambos os
+  termos. Use um `OR` explícito se quiser qualquer um deles.
 - Ao combinar uma consulta do Elasticsearch com filtros avançados, esteja
   ciente de que todas as condições dos filtros avançados e a sintaxe de
   pesquisa são conectadas logicamente por AND, então apenas os resultados

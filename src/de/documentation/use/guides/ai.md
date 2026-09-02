@@ -66,11 +66,13 @@ Verfügbarkeit hängt von der Konfiguration Ihrer Zammad-Instanz ab. Sie
 können sogar zusätzliche benutzerdefinierte Tools sehen, falls Ihr
 Administrator welche hinzugefügt hat.
 
-- **Expand draft into well-written section**: Uses your draft as a base and
-  tries to elaborate a proper text. It tries to add a structure and to
-  enhance clarity and conciseness and removing misspellings and grammar
-  errors. You can even use it by providing only basic information (e.g. via
-  bullet points) and let the AI write the answer.
+- **Entwurf in wohlformulierten Abschnitt wandeln**: Verwendet Ihren Entwurf
+  als Grundlage und versucht, einen ordentlichen Text auszuarbeiten. Das
+  Werkzeug versucht, eine Struktur hinzuzufügen, die Klarheit und Prägnanz
+  zu verbessern und Rechtschreib- sowie Grammatikfehler zu entfernen. Sie
+  können diese Funktion auch nutzen, indem Sie nur grundlegende
+  Informationen (z.B. in Form einer Auflistung) bereitstellen und die KI die
+  Antwort schreiben lassen.
 - **Rechtschreibung und Grammatik korrigieren**: Prüft Ihren Text und
   entfernt Rechtschreib- und Grammatikfehler.
 - **Zusammenfassen des Abschnitts auf ca. die halbe Länge**: Fasst Ihren
@@ -82,9 +84,10 @@ Administrator welche hinzugefügt hat.
 
 ## Knowledge Base Assistent
 
-![Screenshot shows the related knowledge section of the ticket sidebar with
-an AI-generated draft and a suggested knowledge base
-answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Der Screenshot zeigt den Abschnitt "Verwandtes Wissen" in der
+Ticket-Seitenleiste mit KI-Antworterstellung und einer von der KI
+vorgeschlagenen Antwort aus der Knowledge
+Base](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
 ### Knowledge Base Antworterstellung
 
@@ -122,13 +125,16 @@ Antworten zu prüfen, um doppelte Einträge zu vermeiden.
 
 ### Knowledge Base-Antwortvorschläge
 
-This feature compares the ticket content against the knowledge base and
-shows relevant answers under **Suggested knowledge** if they meet the
-admin-configured score threshold. Each suggestion shows the title of the
-answer and more details on hover. An additional relevance score is only
-shown to users with the corresponding admin permissions. Click on the title
-to open the answer in the knowledge base. Click the ::+:: on the right side
-which appears when hovering with the mouse to link it to the ticket.
+Diese Funktion vergleicht den Inhalt des Tickets mit der Knowledge Base und
+zeigt relevante Antworten unter **Vorgeschlagenes Wissen** an, sofern diese
+den vom Administrator festgelegten Schwellenwert für die Relevanzbewertung
+erreichen. Jeder Vorschlag zeigt den Titel der Antwort an; weitere Details
+werden beim Bewegen des Mauszeigers über den Vorschlag angezeigt. Eine
+zusätzliche Relevanzbewertung wird nur Benutzern mit den entsprechenden
+Administratorrechten angezeigt. Klicken Sie auf den Titel, um die Antwort in
+der Knowledge Base zu öffnen. Klicken Sie auf die Schaltfläche ::+:: auf der
+rechten Seite, das beim Bewegen des Mauszeigers erscheint, um die Antwort
+mit dem Ticket zu verknüpfen.
 
 Sind keine Vorschläge verfügbar, wird stattdessen die Meldung "Keine
 Vorschläge." angezeigt.
@@ -158,10 +164,11 @@ Ticket-Historie](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Erkennung gleichzeitige Ticketbearbeitung
 
-AI agents which are currently working on a ticket are displayed like other
-agents in the live user section in the bottom bar. This helps to avoid
-duplicate work and losing unsaved changes. If you see an AI agent avatar,
-wait for a moment or head over to another ticket.
+KI-Agenten, die gerade an einem Ticket arbeiten, werden wie andere Agenten
+im Live-Benutzer-Bereich in der unteren Leiste angezeigt. Dies hilft,
+doppelte Arbeit und den Verlust von nicht gespeicherten Änderungen zu
+vermeiden. Wenn Sie einen Avatar eines KI-Agenten sehen, warten Sie einen
+Moment oder wechseln Sie zu einem anderen Ticket.
 
 Avatar eines KI Agenten:
 

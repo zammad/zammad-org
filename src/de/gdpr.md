@@ -87,12 +87,12 @@ Aktualisierung oder Löschung Ihrer personenbezogenen Daten zu
 verlangen. Wenn Sie von diesem Recht Gebrauch machen möchten, kontaktieren
 Sie uns bitte über die nachstehenden Kontaktinformationen.
 
-Additionally, if you are a European resident we are processing your
-information to fulfil contracts we might have with you (for example if you
-make an order through the site), or otherwise to pursue our legitimate
-business interests listed above. Additionally, please note that your
-information will be transferred outside of Europe, including to Canada and
-the United States.
+Wenn Sie in Europa ansässig sind, verarbeiten wir Ihre Daten außerdem zur
+Erfüllung von Verträgen, die wir mit Ihnen geschlossen haben (z.B. wenn Sie
+eine Bestellung über die Website aufgeben), oder zur Verfolgung unserer oben
+aufgeführten legitimen Geschäftsinteressen. Bitte beachten Sie auch, dass
+Ihre Daten außerhalb Europas, einschließlich Kanada und den Vereinigten
+Staaten, übermittelt werden.
 
 ## Speicherung von Daten
 
@@ -106,9 +106,9 @@ gesetzlichen Vorschriften gesperrt oder gelöscht.
 
 ## Änderungen
 
-We may update this privacy policy from time to time to reflect, for example,
-changes to our practices or for other operational, legal or regulatory
-reasons.
+Wir behalten uns vor, diese Datenschutzerklärung von Zeit zu Zeit zu
+aktualisieren, um z.B. Anpassungen an betriebliche, rechtliche oder
+regulatorische Gründe zu berücksichtigen.
 
 ## Kontakt
 

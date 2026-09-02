@@ -30,8 +30,9 @@ estar visível nas visões gerais, você pode usar a pesquisa. Você a encontra
 no canto superior esquerdo da navegação principal. Selecione-a com o mouse
 ou use o atalho de teclado simplesmente pressionando [[s]].
 
-After activating the search field, you can find the tickets you recently
-closed from your taskbar and your last search queries.
+Depois de ativar o campo de pesquisa, você encontra os tickets que fechou
+recentemente na sua barra de tarefas, assim como suas últimas consultas de
+pesquisa.
 
 Ao digitar um termo de pesquisa, você vê imediatamente uma pré-visualização
 dos resultados da pesquisa. Se você pressionar [[enter]] ou clicar em

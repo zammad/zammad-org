@@ -38,8 +38,8 @@ stehen, hängt vom Artikeltyp und z.B. von den Empfängerlisten ab.
   Dies hängt jedoch stark von dem gewählten "Absender" ab.
 
 `phone`
-:
-  Indicates phone notes.
+ :
+  Verweist auf Telefonnotizen.
 
 `web`
 : Wird normalerweise nur von Kunden verwendet. Dieser Typ wird immer dann verwendet, wenn Ihr
@@ -53,7 +53,7 @@ stehen, hängt vom Artikeltyp und z.B. von den Empfängerlisten ab.
 
 `sms`
 :
-  This type is being used for Zammad's SMS integration.
+  Dieser Typ wird für die SMS-Integration von Zammad verwendet.
 
 `chat`
 : Dieser Artikeltyp ist technisch gesehen ein Platzhalter und steht nur

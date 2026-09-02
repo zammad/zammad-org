@@ -41,7 +41,9 @@ sudo apt install curl apt-transport-https gnupg
 
 === OpenSUSE/SLES
 
-Само SLES - није обавезно за OpenSUSE:
+OpenSUSE не захтева додатне кораке овде!
+
+SLES 15 захтева додатне активиране репозиторије. Да бисте их укључили, покрените следеће команде.
 
 ```sh
 sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)
@@ -54,7 +56,7 @@ sudo SUSEConnect --product PackageHub/$(. /etc/os-release; echo $VERSION_ID)/$(u
 === CentOS/RHEL
 
 ```sh
-sudo yum install wget epel-release
+sudo dnf install curl epel-release
 ```
 
 :::
@@ -320,14 +322,14 @@ sudo dnf install zammad
 
 ### Управљање Zammad сервисима
 
-Zammad користи три сервиса. Они могу бити (ре)стартовани и стопирани за
-основним `zammad` процесом:
+Zammad користи три сервиса. Њима се може управљати појединачно или одједном
+преко надређеног **zammad** процеса.
 
 - заммад: укључује следеће сервисе
-  - Само интерни puma сервис (одговоран за приказ веб апликације):
-  - Само позадински процес - одговоран за извршавање свих одложених и
-    задатке у позадини:
-  - Само websocker сервис за информације о сесији:
+  - **zammad-web**: интерни puma сервис (одговоран за приказ веб апликације)
+  - **zammad-worker**: позадински процес – одговоран за извршавање свих
+    одложених и задатака у позадини
+  - **zammad-websocket**: WebSocket сервис за информације о сесији
 
 Управљајте сервисима командама `start`, `restart`, `stop`, `status` програма
 `systemctl`.
@@ -401,7 +403,8 @@ PostgreSQL сервер није детектован, биће аутоматс
 поменуте на страници [Redis Варијабле](/en/reference/redis).
 
 ::: info
-CentOS и RHEL 10 користе [Valkey](https://valkey.io/) као замену за Redis. Током инсталације Zammad-а на тим дистрибуцијама, аутоматски се инсталира као зависност.
+CentOS и RHEL 10 користе [Valkey](https://valkey.io/){target=_blank} као замену за Redis.
+Током инсталације Zammad-а на тим дистрибуцијама, аутоматски се инсталира као завистан пакет.
 :::
 
 ### Elasticsearch <Badge type="info" text="opciono"/> <Badge type="danger" text="toplo preporučeno"/>
@@ -414,7 +417,7 @@ Elasticsearch се не инсталира аутоматски. Пошто је
 
 Подржане Elasticsearch верзије су `8.11` - `9.x`.
 
-Први кораци са Zammad-ом
+Историјат Elasticsearch верзије за Zammad:
 
 ::: details
 

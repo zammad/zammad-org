@@ -36,7 +36,7 @@ para `.env`. Dessa forma, ele será detectado automaticamente pelo Docker Compos
 
 `ZAMMAD_BIND_IP` ::p:: <Badge type="tip" text="127.0.0.1" />
 :
-  The IP address that the web server is bound to.
+  O endereço IP ao qual o servidor web está vinculado.
 
 `S3_URL` ::p::
 : permite fornecer a configuração do seu provedor de armazenamento S3. Exemplo de valor:
@@ -58,11 +58,11 @@ para `.env`. Dessa forma, ele será detectado automaticamente pelo Docker Compos
 
 `ZAMMAD_HTTP_TYPE`
 :
-  Set the http type for your instance. Possible values are `http` and `https`.
+  Defina o tipo de HTTP para sua instância. Os valores possíveis são `http` e `https`.
 
 `ZAMMAD_FQDN`
 :
-  Set the FQDN for your instance.
+  Defina o FQDN para sua instância.
 
 `RAILS_TRUSTED_PROXIES` <Badge type="tip" text="127.0.0.1,::1" />
 : essa configuração é importante para a detecção correta de endereços IP de cliente e recursos baseados nisso, como limitação
@@ -128,19 +128,19 @@ para `.env`. Dessa forma, ele será detectado automaticamente pelo Docker Compos
 
 `ELASTICSEARCH_HOST` ::d:: <Badge type="tip" text="zammad-elasticsearch" />
 :
-  Provide a host name or address to your external Elasticsearch cluster.
+  Forneça um nome de host ou endereço para seu cluster externo do Elasticsearch.
 
 `ELASTICSEARCH_PORT` ::d:: <Badge type="tip" text="9200" />
 :
-  Provide a different port for Elasticsearch if needed.
+  Forneça uma porta diferente para o Elasticsearch, se necessário.
 
 `ELASTICSEARCH_SCHEMA` ::d:: <Badge type="tip" text="http" />
 :
-  Change it to `https` if your Elasticsearch cluster is configured to use SSL.
+  Altere para `https` se seu cluster do Elasticsearch estiver configurado para usar SSL.
 
 `ELASTICSEARCH_NAMESPACE` ::d:: <Badge type="tip" text="zammad" />
 :
-  With this name space all Zammad related indexes will be created. Change this if you're using external clusters.
+  Com esse namespace, todos os índices relacionados ao Zammad serão criados. Altere isso se você estiver usando clusters externos.
 
 `ELASTICSEARCH_REINDEX` ::d::
 : o índice de pesquisa é reconstruído automaticamente quando nenhum índice pode ser detectado. Se você precisar reconstruir o índice
@@ -167,43 +167,43 @@ a correta. As duas variáveis no final da lista são válidas para ambos os tipo
 
 `POSTGRESQL_PORT` ::p:: <Badge type="tip" text="5432" />
 :
-  Adjust the port of your PostgreSQL server.
+  Ajuste a porta do seu servidor PostgreSQL.
 
 `POSTGRESQL_USER` ::p:: <Badge type="tip" text="zammad" />
 :
-  The database user for Zammad.
+  O usuário do banco de dados do Zammad.
 
 `POSTGRESQL_PASS` ::p:: <Badge type="tip" text="zammad" />
 :
-  The password of Zammad's database user.
+  A senha do usuário do banco de dados do Zammad.
 
 `POSTGRESQL_DB` ::p:: <Badge type="tip" text="zammad_production" />
 :
-  Zammad's database to use.
+  O banco de dados do Zammad a ser usado.
 
 `POSTGRES_HOST` ::d:: <Badge type="tip" text="zammad-postgresql" />
-: Host name or IP address of your PostgreSQL server. In case you use an IPv6 address, enclose the address in square
-  brackets (e.g. `[2001:db8::2]`).
+: nome de host ou endereço IP do seu servidor PostgreSQL. Caso você use um endereço IPv6, envolva o endereço em colchetes
+  (por exemplo, `[2001:db8::2]`).
 
 `POSTGRES_PORT` ::d:: <Badge type="tip" text="5432" />
 :
-  Adjust the port of your PostgreSQL server.
+  Ajuste a porta do seu servidor PostgreSQL.
 
 `POSTGRES_USER` ::d:: <Badge type="tip" text="zammad" />
 :
-  The database user for Zammad.
+  O usuário do banco de dados do Zammad.
 
 `POSTGRES_PASS` ::d:: <Badge type="tip" text="zammad" />
 :
-  The password of Zammad's database user.
+  A senha do usuário do banco de dados do Zammad.
 
 `POSTGRES_DB` ::d:: <Badge type="tip" text="zammad_production" />
 :
-  Zammad's database to use.
+  O banco de dados do Zammad a ser usado.
 
 `POSTGRESQL_OPTIONS` <Badge type="tip" text="?pool=50" />
 :
-  Additional PostgreSQL params to be appended to the database URI.
+  Parâmetros adicionais do PostgreSQL a serem anexados à URI do banco de dados.
 
 `POSTGRESQL_DB_CREATE` <Badge type="tip" text="true" />
 : por padrão, o Zammad cria o banco de dados necessário. Em servidores de banco de dados já existentes, esse padrão pode ser
@@ -217,11 +217,11 @@ a correta. As duas variáveis no final da lista são válidas para ambos os tipo
 
 `NGINX_PORT` ::d:: <Badge type="tip" text="8080" />
 :
-  The internal port the Nginx service will listen on.
+  A porta interna na qual o serviço Nginx vai escutar.
 
 `NGINX_SERVER_NAME` ::d:: <Badge type="tip" text="_" />
 :
-  By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.
+  Por padrão, o container Nginx do Zammad responderá a todas as solicitações. Você pode fornecer seu IP/FQDN se quiser.
 
 `NGINX_SERVER_SCHEME` ::d:: <Badge type="tip" text="$scheme" />
 : se o container Nginx do Zammad **não for** o servidor upstream (ou seja, você está usando outro proxy na frente do Nginx),
@@ -230,27 +230,27 @@ a correta. As duas variáveis no final da lista são válidas para ambos os tipo
 
 `NGINX_CLIENT_MAX_BODY_SIZE` ::d::
 :
-  Define the maximum size of data that a client can send to the server.
+  Defina o tamanho máximo de dados que um cliente pode enviar ao servidor.
 
 `ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type="tip" text="zammad-railsserver" />
 :
-  Host name of the Rails server container.
+  Nome de host do container do servidor Rails.
 
 `ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type="tip" text="3000" />
 :
-  Port of Zammad's Rails server.
+  Porta do servidor Rails do Zammad.
 
 `ZAMMAD_RAILS_PORT` ::p:: <Badge type="tip" text="3000" />
 :
-  Port of Zammad's Rails server.
+  Porta do servidor Rails do Zammad.
 
 `ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type="tip" text="zammad-websocket" />
 :
-  Host name of Zammad's WebSocket server.
+  Nome de host do servidor WebSocket do Zammad.
 
 `ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type="tip" text="6042" />
 :
-  Port of Zammad's WebSocket server.
+  Porta do servidor WebSocket do Zammad.
 
 ## Ajuste de desempenho
 

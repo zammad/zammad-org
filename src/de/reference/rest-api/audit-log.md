@@ -82,7 +82,7 @@ wenn die Abfrage für eine URL zu lang oder zu komplex ist.
 
 `id`
 :
-  Integer primary key of the audit log entry.
+  Ganzzahliger Primärschlüssel des Eintrags im Audit-Protokoll.
 
 `user_id`
 : ID des Benutzers, der die Änderung ausgelöst hat. `null`, wenn der Eintrag
@@ -102,7 +102,7 @@ wenn die Abfrage für eine URL zu lang oder zu komplex ist.
 
 `auditable_id`
 :
-  ID of the record that was changed.
+  ID des Datensatzes, der geändert wurde.
 
 `auditable_type`
 : Klassenname des Datensatzes, der geändert wurde (z.B. `Macro`,

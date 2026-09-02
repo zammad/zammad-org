@@ -86,11 +86,11 @@ Solicitação `POST` enviada: `/api/v1/online_notifications/mark_all_as_read`
 
 :::
 
-## Clear all
+## Limpar tudo
 
 Permissão necessária: `any`
 
-`DELETE`-Request sent: `/api/v1/online_notifications/clear_all`
+Solicitação `DELETE` enviada: `/api/v1/online_notifications/clear_all`
 
 ::: details
 

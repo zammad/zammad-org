@@ -152,9 +152,10 @@ a quantidade de resultados de pesquisa, use o parâmetro `with_total_count` ou
 `only_total_count`.
 :::
 
-To use pagination you'll need two get options: `per_page` and
-`page`. Combine them to receive 5 results from the first result page:
-`?page=1&per_page=5` - increase page count to get more results.
+Para usar paginação, você precisará de duas opções get: `per_page` e
+`page`. Combine-as para receber 5 resultados da primeira página de
+resultados: `?page=1&per_page=5` - aumente a contagem de páginas para obter
+mais resultados.
 
 ## Pesquisar via API
 

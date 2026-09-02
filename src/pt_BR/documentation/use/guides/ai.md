@@ -66,11 +66,11 @@ disponibilidade depende da configuração da sua instância do Zammad. Você
 pode até ter ferramentas personalizadas adicionais, caso seu administrador
 as tenha adicionado.
 
-- **Expand draft into well-written section**: Uses your draft as a base and
-  tries to elaborate a proper text. It tries to add a structure and to
-  enhance clarity and conciseness and removing misspellings and grammar
-  errors. You can even use it by providing only basic information (e.g. via
-  bullet points) and let the AI write the answer.
+- **Expand draft into well-written section**: usa seu rascunho como base e
+  tenta elaborar um texto adequado. Tenta adicionar uma estrutura e melhorar
+  a clareza e concisão, além de remover erros de ortografia e
+  gramática. Você pode até usá-lo fornecendo apenas informações básicas (por
+  exemplo, em tópicos) e deixar a IA escrever a resposta.
 - **Fix spelling and grammar**: revisa seu texto e remove erros de
   ortografia e gramática.
 - **Summarize section to about half its current size**: reduz seu texto para
@@ -80,9 +80,10 @@ as tenha adicionado.
 
 ## Assistente da base de conhecimento
 
-![Screenshot shows the related knowledge section of the ticket sidebar with
-an AI-generated draft and a suggested knowledge base
-answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Captura de tela mostra a seção de conhecimento relacionado na barra
+lateral do ticket com um rascunho gerado por IA e uma resposta sugerida da
+base de
+conhecimento](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
 
 ### Geração de respostas da base de conhecimento
 
@@ -119,13 +120,14 @@ duplicados.
 
 ### Sugestão de resposta da base de conhecimento
 
-This feature compares the ticket content against the knowledge base and
-shows relevant answers under **Suggested knowledge** if they meet the
-admin-configured score threshold. Each suggestion shows the title of the
-answer and more details on hover. An additional relevance score is only
-shown to users with the corresponding admin permissions. Click on the title
-to open the answer in the knowledge base. Click the ::+:: on the right side
-which appears when hovering with the mouse to link it to the ticket.
+Este recurso compara o conteúdo do ticket com a base de conhecimento e
+mostra respostas relevantes em **Suggested knowledge** se elas atingirem o
+limite de pontuação configurado pelo administrador. Cada sugestão mostra o
+título da resposta e mais detalhes ao passar o mouse. Uma pontuação de
+relevância adicional só é exibida para usuários com as permissões de
+administrador correspondentes. Clique no título para abrir a resposta na
+base de conhecimento. Clique no ::+:: do lado direito, que aparece ao passar
+o mouse, para vinculá-la ao ticket.
 
 Se não houver sugestões disponíveis, a mensagem "No suggestions." é exibida
 em seu lugar.
@@ -153,10 +155,11 @@ IA](/screenshots/documentation/use/ai/ai-agent-ticket-history.png)
 
 ### Detecção de trabalho simultâneo
 
-AI agents which are currently working on a ticket are displayed like other
-agents in the live user section in the bottom bar. This helps to avoid
-duplicate work and losing unsaved changes. If you see an AI agent avatar,
-wait for a moment or head over to another ticket.
+Agentes de IA que estão trabalhando atualmente em um ticket são exibidos
+como outros agentes na seção de usuários ao vivo na barra inferior. Isso
+ajuda a evitar trabalho duplicado, assim como a perda de alterações não
+salvas. Se você vir um avatar de agente de IA, aguarde um momento ou vá para
+outro ticket.
 
 Avatar de agente de IA:
 

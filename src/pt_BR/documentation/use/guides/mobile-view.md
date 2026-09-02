@@ -76,8 +76,8 @@ visualização desktop:
 - Histórico do ticket
 - Criação de modelos e rascunhos compartilhados
 
-Additionally, certain features were intentionally omitted to improve the
-focus on important information:
+Além disso, certos recursos foram intencionalmente omitidos para melhorar o
+foco em informações importantes:
 
 - A maioria dos recursos de gerenciamento (exceto gerenciamento de usuários
   e organizações do ticket)

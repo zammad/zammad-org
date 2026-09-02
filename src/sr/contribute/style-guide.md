@@ -299,9 +299,9 @@ run it manually, use `pnpm vale`.
 
 #### Листе дефиниција
 
-First term <Badge type="info" text="tag1" />
+Први термин <Badge type="info" text="tag1" />
 :
-  This is the definition of the first term.
+  Ово је дефиниција првог термина.
 
 Други термин <Badge type="info" text="tag1" /> <Badge type="tip" text="tag2" />
 : Ово је дефиниција другог термина.

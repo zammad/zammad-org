@@ -36,11 +36,12 @@ definiert werden. Das heißt, wenn ein Ticket geändert wurde und die
 Bedingung der Übersicht nicht mehr zutrifft, verschwindet das Ticket aus
 dieser Übersicht.
 
-Overviews are updated automatically. You don't have to reload your browser
-to observe changes. You can adjust the order temporarily by clicking on one
-of the column headers and change their width by dragging the column
-dividers.  The order is only preserved until you switch to another overview
-or reload the page.
+Die Übersichten werden automatisch aktualisiert. Sie müssen Ihren Browser
+nicht neu laden, um die Änderungen zu sehen. Sie können die Reihenfolge
+temporär anpassen, indem Sie auf eine der Spaltenbeschriftungen klicken und
+die Breite der Spalten durch Ziehen der Spaltentrennlinien verändern.  Die
+Reihenfolge bleibt nur so lange erhalten, bis Sie zu einer anderen Übersicht
+wechseln oder die Seite neu laden.
 
 Für jede Übersicht finden Sie einen angehängten Zähler. Anhand dieser Zahl
 können Sie erkennen, wie viele Tickets sich in der jeweiligen Übersicht

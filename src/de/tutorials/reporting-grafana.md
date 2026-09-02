@@ -146,10 +146,10 @@ finden.
 
 ### Importieren eines Dashboards
 
-In Grafana, select _➕ > Import_ (or any other place which offers you to import
-a dashboard) and either upload the json file you
-downloaded from GitHub or use the grafana.com ID, provided as badge
-like <Badge type="tip" text="12345"/> attached to the next sections titles.
+Wählen Sie in Grafana _➕ > Import_ (oder eine andere Stelle, die Ihnen den Import
+eines Dashboards erlaubt) und laden Sie entweder die json-Datei hoch, die Sie
+von GitHub heruntergeladen haben, oder verwenden Sie die grafana.com ID, die als Badge
+wie <Badge type="tip" text="12345"/> den Überschriften der nächsten Abschnitte angehängt ist.
 
 Während des Imports können Sie einen Dashboard-Namen und einen Ordner
 angeben. Sie werden auch aufgefordert, die Datenquellen Ihrer Umgebung

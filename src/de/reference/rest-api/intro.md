@@ -154,9 +154,10 @@ Objekte zurück, die in der Antwort enthalten sind, es sei denn, Sie fordern die
 die Anzahl der Suchergebnisse einzubeziehen, verwenden Sie den Parameter `with_total_count` oder `only_total_count`.
 :::
 
-To use pagination you'll need two get options: `per_page` and
-`page`. Combine them to receive 5 results from the first result page:
-`?page=1&per_page=5` - increase page count to get more results.
+Um die Paginierung zu verwenden, benötigen Sie zwei get-Optionen: `per_page`
+und `page`. Kombinieren Sie sie, um 5 Ergebnisse von der ersten
+Ergebnisseite zu erhalten: `?page=1&per_page=5`. Erhöhen Sie die Seitenzahl,
+um mehr Ergebnisse zu erhalten.
 
 ## Suche per API
 
@@ -164,12 +165,12 @@ To use pagination you'll need two get options: `per_page` and
 
 Einige Endpunkte unterstützen eine Suchanfrage. Diese sind:
 
-- [Audit Log](audit-log)
-- [Groups](group)
-- [Organizations](organization)
-- [Roles](role)
+- [Audit-Protokoll](audit-log)
+- [Gruppen](group)
+- [Organisationen](organization)
+- [Rollen](role)
 - [Tickets](ticket)
-- [Users](user)
+- [Benutzer](user)
 
 Die folgenden Endpunkte unterstützen ebenfalls eine Suchanfrage, werden aber
 in dieser Dokumentation nicht explizit behandelt:

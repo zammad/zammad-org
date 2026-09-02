@@ -79,7 +79,7 @@ quando a consulta for muito longa ou complexa para uma URL.
 
 `id`
 :
-  Integer primary key of the audit log entry.
+  Chave primária inteira da entrada do log de auditoria.
 
 `user_id`
 : ID do usuário que acionou a alteração. `null` quando a entrada
@@ -99,7 +99,7 @@ quando a consulta for muito longa ou complexa para uma URL.
 
 `auditable_id`
 :
-  ID of the record that was changed.
+  ID do registro que foi alterado.
 
 `auditable_type`
 : Nome da classe do registro que foi alterado (ex.: `Macro`,

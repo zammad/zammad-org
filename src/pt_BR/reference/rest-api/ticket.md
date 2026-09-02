@@ -12,15 +12,15 @@ ou não estar disponíveis.
 :::
 
 ::: tip
-**Suppress notifications:** To create or update a ticket without triggering agent notifications (email and in-app), add
-the following HTTP header to your request:
+**Suprimir notificações:** Para criar ou atualizar um ticket sem acionar notificações de agente (email e no app), adicione o
+seguinte cabeçalho HTTP à sua solicitação:
 
 ```plain
 X-Zammad-Suppress-Notifications: true
 ```
 
-This is useful for automated integrations that manage tickets via webhooks or triggers to avoid notification loops. The
-header only affects admin and agent accounts and is ignored for customers.
+Isso é útil para integrações automatizadas que gerenciam tickets via webhooks ou gatilhos, para evitar loops de notificação. O
+cabeçalho afeta apenas contas de admin e agente, e é ignorado para clientes.
 :::
 
 ## Listar
@@ -54,31 +54,31 @@ Permissão necessária: `ticket.agent` **ou** `ticket.customer`
 Solicitação `POST` enviada: `/api/v1/tickets`
 
 ::: tip
-**On behalf of users**
+**Em nome de usuários**
 
-If you want to create tickets on behalf of other users, use the `customer_id` attribute. This requires the `ticket.agent`
-permission. Without it, `customer_id` is ignored and the ticket's **Customer** field is set to the current user. Use
-`guess:{email address}` to save an API call if you don't know the user's ID or want to create the user in question
+Se você quiser criar tickets em nome de outros usuários, use o atributo `customer_id`. Isso requer a permissão `ticket.agent`.
+Sem ela, `customer_id` é ignorado e o campo **Customer** do ticket é definido como o usuário atual. Use
+`guess:{endereço de email}` para economizar uma chamada de API se você não souber o ID do usuário ou quiser criar o usuário em questão
 (`"customer_id": "guess:jane@doe.com"`).
 
-When creating a ticket on behalf of a customer with an initial article, you **must** set `article.sender` to "Customer"
-explicitly. Without this, the sender defaults to "Agent" (based on the current user's permission). This affects the
-ticket's `create_article_sender_id` and the resulting contact timestamp calculations.
+Ao criar um ticket em nome de um cliente com um artigo inicial, você **precisa** definir `article.sender` como "Customer"
+explicitamente. Sem isso, o remetente assume o padrão "Agent" (com base na permissão do usuário atual). Isso afeta o
+`create_article_sender_id` do ticket e os cálculos resultantes de timestamp de contato.
 
-The same applies to articles added later via PUT: set sender explicitly there as well when acting on behalf of a customer.
-Since the sender of an article cannot be changed after creation, it is important to set it correctly from the start.
+O mesmo se aplica a artigos adicionados posteriormente via PUT: defina o remetente explicitamente também nesse caso, ao agir em nome de um cliente.
+Como o remetente de um artigo não pode ser alterado após a criação, é importante defini-lo corretamente desde o início.
 
-For more details on the sender attribute, see [articles](/en/reference/rest-api/articles).
+Para mais detalhes sobre o atributo sender, veja [articles](/en/reference/rest-api/articles).
 
 :::
 
 ::: tip
-**Add mention subscription right away**
+**Adicionar inscrição de menção imediatamente**
 
-Add the `mentions` attribute to your ticket payload and provide an array of user ids to directly subscribe them during
-ticket creation.
+Adicione o atributo `mentions` ao payload do seu ticket e forneça um array de IDs de usuário para inscrevê-los
+diretamente durante a criação do ticket.
 
-E.g.: `"mentions": [1, 5, 7, 8],`
+Ex.: `"mentions": [1, 5, 7, 8],`
 
 :::
 
@@ -98,8 +98,8 @@ E.g.: `"mentions": [1, 5, 7, 8],`
 ::::
 
 ::: tip
-The `sender` attribute of the initial article determines the ticket's `create_article_sender_id` and contact timestamps.
-For the full list of article attributes and their behavior, see [articles](/en/reference/rest-api/articles).
+O atributo `sender` do artigo inicial determina o `create_article_sender_id` do ticket e os timestamps de contato.
+Para a lista completa de atributos de artigo e seu comportamento, veja [articles](/en/reference/rest-api/articles).
 :::
 
 ## Atualização

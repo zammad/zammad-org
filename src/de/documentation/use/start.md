@@ -25,9 +25,10 @@ Willkommen bei der Benutzer-Dokumentation von Zammad. Hier erfahren Sie, wie
 Sie Zammad nutzen können, um noch besser mit Ihren Kollegen
 zusammenzuarbeiten!
 
-In general, Zammad should be pretty self explanatory. However, there are
-features that are not obvious at first glance.  These features are described
-in this documentation and some general explanations and tips.
+Im Allgemeinen sollte Zammad ziemlich selbsterklärend sein. Allerdings gibt
+es Funktionen, die nicht auf den ersten Blick ersichtlich sind. Diese
+Funktionen werden in dieser Dokumentation beschrieben, ebenso wie einige
+allgemeine Erklärungen und Tipps.
 
 Diese Dokumentation ist in verschiedene Abschnitte unterteilt. Sie befinden
 sich derzeit auf der Startseite der Benutzer-Dokumentation.  Benutzen Sie
