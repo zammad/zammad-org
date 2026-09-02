@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-08-25 14:01+0200\n"
-"PO-Revision-Date: 2026-08-25 06:12+0000\n"
+"POT-Creation-Date: 2026-09-01 10:49+0200\n"
+"PO-Revision-Date: 2026-09-02 14:38+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. type: Hash Value: themeConfig docFooter next
 #: .vitepress/config.en.yaml:1
@@ -291,9 +291,13 @@ msgstr "[Преводу](contribute#превод)"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:18
+#, fuzzy
+#| msgid ""
+#| "Please have a look at our the sections below about how to contribute. All "
+#| "repos can be found on [Github](https://github.com/zammad){target=_blank}."
 msgid ""
 "Please have a look at our the sections below about how to contribute. All "
-"repos can be found on [Github](https://github.com/zammad){target=_blank}."
+"repos can be found on [GitHub](https://github.com/zammad){target=_blank}."
 msgstr ""
 "Погледајте наш одељак како можете да допринесете. Све репозиторије можете "
 "пронаћи на [GitHub](https://github.com/zammad){target=_blank}-у."
@@ -325,7 +329,9 @@ msgstr "Подржани огранци/верзије"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:29
-msgid "Zammad's Github repository has several branches:"
+#, fuzzy
+#| msgid "Zammad's Github repository has several branches:"
+msgid "Zammad's GitHub repository has several branches:"
 msgstr "GitHub репозиторијум Zammad-а има неколико огранака:"
 
 #. type: Title ####
@@ -350,8 +356,13 @@ msgstr "Не користите у продукцији!"
 
 #. type: Bullet: '- '
 #: src/en/contribute/contribute.md:36 src/en/contribute/contribute.md:43
+#, fuzzy
+#| msgid ""
+#| "This branch is actively supported and receives regular bug fixes as well "
+#| "as security updates (see [Security Policy](https://github.com/zammad/"
+#| "zammad/blob/develop/SECURITY.md){target=_blank} for more details)."
 msgid ""
-"This branch is actively supported and receives regular bug fixes as well as "
+"This branch is actively supported and receives regular bug fixes and "
 "security updates (see [Security Policy](https://github.com/zammad/zammad/"
 "blob/develop/SECURITY.md){target=_blank} for more details)."
 msgstr ""
@@ -403,9 +414,17 @@ msgstr "Документација"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:56
+#, fuzzy
+#| msgid ""
+#| "The documentation you are reading is available on zammad.org and "
+#| "next.zammad.org and is built with Vitepress. The source files are written "
+#| "in Markdown. Make sure to change the English source files only which are "
+#| "placed under `/src/en/`. The translation is done via Weblate and will "
+#| "overwrite any changes in the language specific folders (except `/src/en/"
+#| "`)."
 msgid ""
 "The documentation you are reading is available on zammad.org and "
-"next.zammad.org and is built with Vitepress. The source files are written in "
+"next.zammad.org and is built with VitePress. The source files are written in "
 "Markdown. Make sure to change the English source files only which are placed "
 "under `/src/en/`. The translation is done via Weblate and will overwrite any "
 "changes in the language specific folders (except `/src/en/`)."
@@ -440,6 +459,16 @@ msgstr "Превод"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:68
+#, fuzzy
+#| msgid ""
+#| "If you want to help us with translation and improve the multi-language "
+#| "support of Zammad or the documentation, you are welcome to contribute as "
+#| "well! The translation of Zammad and the documentation is done via "
+#| "Weblate, which is a service for the collaborative translation of "
+#| "projects. Just head over to Zammad's [Weblate instance](https://"
+#| "translations.zammad.org/){target=_blank}.  You can either create an "
+#| "account (if you don't have one already) or even sign in with your Github "
+#| "account!"
 msgid ""
 "If you want to help us with translation and improve the multi-language "
 "support of Zammad or the documentation, you are welcome to contribute as "
@@ -447,7 +476,7 @@ msgid ""
 "which is a service for the collaborative translation of projects. Just head "
 "over to Zammad's [Weblate instance](https://translations.zammad.org/)"
 "{target=_blank}.  You can either create an account (if you don't have one "
-"already) or even sign in with your Github account!"
+"already) or even sign in with your GitHub account!"
 msgstr ""
 "Уколико желите да нам помогнете са преводом и побољшате вишејезичну подршку "
 "у Zammad-у или документацији, ваш допринос је добродошао! Превод самог "
@@ -483,7 +512,7 @@ msgstr ""
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
 #: src/en/documentation/use/guides/knowledge-base.md:19
-#: src/en/get-started/installation/package.md:64
+#: src/en/get-started/installation/package.md:68
 #: src/en/tutorials/backup-restore.md:33
 #, no-wrap
 msgid "Basics"
@@ -675,6 +704,15 @@ msgstr "Ознаке у тексту"
 
 #. type: Plain text
 #: src/en/contribute/contribute.md:130
+#, fuzzy
+#| msgid ""
+#| "Find some examples for special source strings below with a badge "
+#| "indicating where such a string can be found. Try to keep the (adjusted) "
+#| "markup and make sure to keep the variables. The **Source string "
+#| "location** section in Weblate (on the right side) gives you a hint where "
+#| "to search for the context. Also have a look at the [style guide of the "
+#| "documentation](style-guide) where you can find more information about the "
+#| "syntax and the usage of Markdown/Vitepress features."
 msgid ""
 "Find some examples for special source strings below with a badge indicating "
 "where such a string can be found. Try to keep the (adjusted) markup and make "
@@ -682,7 +720,7 @@ msgid ""
 "Weblate (on the right side) gives you a hint where to search for the "
 "context. Also have a look at the [style guide of the documentation](style-"
 "guide) where you can find more information about the syntax and the usage of "
-"Markdown/Vitepress features."
+"Markdown/VitePress features."
 msgstr ""
 "Испод можете пронаћи пар примера за специјалне низове текста са ознаком која "
 "индикује где се може пронаћи. Покушајте да задржите (прилагођене) ознаке и "
@@ -775,10 +813,15 @@ msgstr "Водич кроз стил и садржај"
 
 #. type: Plain text
 #: src/en/contribute/style-guide.md:27
+#, fuzzy
+#| msgid ""
+#| "This guide provides an overview of the content that should be included in "
+#| "the Zammad documentation, as well as formatting and style guidelines to "
+#| "ensure clarity and readability."
 msgid ""
 "This guide provides an overview of the content that should be included in "
-"the Zammad documentation, as well as formatting and style guidelines to "
-"ensure clarity and readability."
+"the Zammad documentation and formatting and style guidelines to ensure "
+"clarity and readability."
 msgstr ""
 "Овај водич вам пружа преглед садржаја Zammad документације, као и упутства "
 "за форматирање и стилизовање текста ради јасноће и читљивости."
@@ -941,8 +984,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/contribute/style-guide.md:76
+#, fuzzy
+#| msgid ""
+#| "The system uses [Vitepress](https://vitepress.dev/){target=_blank} to "
+#| "build the website."
 msgid ""
-"The system uses [Vitepress](https://vitepress.dev/){target=_blank} to build "
+"The system uses [VitePress](https://vitepress.dev/){target=_blank} to build "
 "the website."
 msgstr ""
 "Систем користи [Vitepress](https://vitepress.dev/){target=_blank} за "
@@ -1199,20 +1246,31 @@ msgid ""
 msgstr ""
 "Резолуција снимака пуног екрана за _основни приказ_ je 1920x1080 пиксела."
 
+#. type: Plain text
+#: src/en/contribute/style-guide.md:132
+msgid ""
+"In addition to `pnpm lint`, the repository uses [Vale](https://vale.sh/)"
+"{target=_blank} for prose linting. Vale checks for consistent brand name "
+"casing (e.g. GitHub, GitLab, Elasticsearch), flags discouraged terms, and "
+"enforces wordlist rules. It runs automatically on staged files when you "
+"commit and in CI alongside the Markdownlint job. To run it manually, use "
+"`pnpm vale`."
+msgstr ""
+
 #. type: Title ##
-#: src/en/contribute/style-guide.md:128 src/en/reference/graphql.md:99
+#: src/en/contribute/style-guide.md:133 src/en/reference/graphql.md:99
 #, no-wrap
 msgid "Examples"
 msgstr "Примери"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:130
+#: src/en/contribute/style-guide.md:135
 #, no-wrap
 msgid "Text and UI"
 msgstr "Текст и интерфејс"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:146
+#: src/en/contribute/style-guide.md:151
 #, no-wrap
 msgid ""
 "| Type                                      | Highlighting in documentation | Markdown syntax                     |\n"
@@ -1246,13 +1304,13 @@ msgstr ""
 "| Дугме за копирање текста             | ::c::                         | `::c::`                         |\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:147
+#: src/en/contribute/style-guide.md:152
 #, no-wrap
 msgid "Heading structure"
 msgstr "Структура наслова"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:151
+#: src/en/contribute/style-guide.md:156
 msgid ""
 "Every documentation file must include exactly one title on top level (like "
 "`# Title`). Levels below should always contain at least two sections. If "
@@ -1263,43 +1321,43 @@ msgstr ""
 "само један одељак, размотрите да га припојите садржају вишег нивоа."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:153
+#: src/en/contribute/style-guide.md:158
 msgid "Example:"
 msgstr "Пример:"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:155
+#: src/en/contribute/style-guide.md:160
 msgid "`# Title of page`"
 msgstr "`# Наслов стране`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:157
+#: src/en/contribute/style-guide.md:162
 msgid "`## Section 1`"
 msgstr "`## Одељак 1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:159
+#: src/en/contribute/style-guide.md:164
 msgid "`### Section 1.1`"
 msgstr "`### Одељак 1.1`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:161
+#: src/en/contribute/style-guide.md:166
 msgid "`### Section 1.2`"
 msgstr "`### Одељак 1.2`"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:163
+#: src/en/contribute/style-guide.md:168
 msgid "`## Section 2`"
 msgstr "`## Одељак 2`"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:164
+#: src/en/contribute/style-guide.md:169
 #, no-wrap
 msgid "Section with Badge <Badge type=\"warning\" text=\"custom text\" />"
 msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:168
+#: src/en/contribute/style-guide.md:173
 msgid ""
 "This section title uses a badge of the type \"warning\". There are other "
 "badges available, see <https://vitepress.dev/reference/default-theme-"
@@ -1309,13 +1367,13 @@ msgstr ""
 "погледајте <https://vitepress.dev/reference/default-theme-badge#usage>."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:170 src/en/contribute/style-guide.md:270
+#: src/en/contribute/style-guide.md:175 src/en/contribute/style-guide.md:275
 #, no-wrap
 msgid "**Usage:**\n"
 msgstr "**Начин коришћења:**\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:171
+#: src/en/contribute/style-guide.md:176
 #, no-wrap
 msgid ""
 "\n"
@@ -1331,13 +1389,13 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:179
+#: src/en/contribute/style-guide.md:184
 #, no-wrap
 msgid "Custom boxes"
 msgstr "Прилагођени оквири"
 
 #. type: Fenced div block (info)
-#: src/en/contribute/style-guide.md:181
+#: src/en/contribute/style-guide.md:186
 #, no-wrap
 msgid ""
 "This is an info box.\n"
@@ -1351,8 +1409,8 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:181 src/en/contribute/style-guide.md:197
-#: src/en/contribute/style-guide.md:213 src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:186 src/en/contribute/style-guide.md:202
+#: src/en/contribute/style-guide.md:218 src/en/contribute/style-guide.md:234
 #, no-wrap
 msgid ""
 "\n"
@@ -1362,14 +1420,14 @@ msgstr ""
 "```md\n"
 
 #. type: Fenced div block (info|details|info)
-#: src/en/contribute/style-guide.md:181
+#: src/en/contribute/style-guide.md:186
 #, no-wrap
 msgid "This is an info box.\n"
 msgstr "Ово је информациони оквир.\n"
 
 #. type: Fenced div block (danger|details)
-#: src/en/contribute/style-guide.md:181 src/en/contribute/style-guide.md:197
-#: src/en/contribute/style-guide.md:213 src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:186 src/en/contribute/style-guide.md:202
+#: src/en/contribute/style-guide.md:218 src/en/contribute/style-guide.md:234
 #, no-wrap
 msgid ""
 "```\n"
@@ -1379,7 +1437,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/contribute/style-guide.md:197
+#: src/en/contribute/style-guide.md:202
 #, no-wrap
 msgid ""
 "This is a tip.\n"
@@ -1393,13 +1451,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip|details|tip)
-#: src/en/contribute/style-guide.md:197
+#: src/en/contribute/style-guide.md:202
 #, no-wrap
 msgid "This is a tip box.\n"
 msgstr "Ово је савет.\n"
 
 #. type: Fenced div block (warning)
-#: src/en/contribute/style-guide.md:213
+#: src/en/contribute/style-guide.md:218
 #, no-wrap
 msgid ""
 "This is a warning.\n"
@@ -1413,13 +1471,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (warning|details|warning)
-#: src/en/contribute/style-guide.md:213
+#: src/en/contribute/style-guide.md:218
 #, no-wrap
 msgid "This is a warning box.\n"
 msgstr "Ово је упозорење.\n"
 
 #. type: Fenced div block (danger)
-#: src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:234
 #, no-wrap
 msgid ""
 "This is a dangerous warning.\n"
@@ -1433,13 +1491,13 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger|details|warning)
-#: src/en/contribute/style-guide.md:229
+#: src/en/contribute/style-guide.md:234
 #, no-wrap
 msgid "This is a dangerous warning.\n"
 msgstr "Ово је упозорење на опасност.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:245
+#: src/en/contribute/style-guide.md:250
 #, no-wrap
 msgid ""
 "This is a details block.\n"
@@ -1455,13 +1513,13 @@ msgstr ""
 "```md\n"
 
 #. type: Fenced div block (details|details)
-#: src/en/contribute/style-guide.md:245
+#: src/en/contribute/style-guide.md:250
 #, no-wrap
 msgid "This is the content shown in the expanded state.\n"
 msgstr "Овај садржај је приказан у проширеном стању.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:245
+#: src/en/contribute/style-guide.md:250
 #, no-wrap
 msgid ""
 "\n"
@@ -1473,27 +1531,25 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:259
+#: src/en/contribute/style-guide.md:264
 #, no-wrap
 msgid "Definition lists"
 msgstr "Листе дефиниција"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:264
-#, fuzzy, no-wrap
-#| msgid ""
-#| "First term <Badge type=\"info\" text=\"tag1\" />\n"
-#| ": This is the definition of the first term.\n"
+#: src/en/contribute/style-guide.md:269
+#, no-wrap
 msgid ""
 "First term <Badge type=\"info\" text=\"tag1\" />\n"
 ":\n"
 "  This is the definition of the first term.\n"
 msgstr ""
 "Први термин <Badge type=\"info\" text=\"tag1\" />\n"
-": Ово је дефиниција првог термина.\n"
+":\n"
+"  Ово је дефиниција првог термина.\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:268
+#: src/en/contribute/style-guide.md:273
 #, no-wrap
 msgid ""
 "Second term <Badge type=\"info\" text=\"tag1\" /> <Badge type=\"tip\" text=\"tag1\" />\n"
@@ -1505,7 +1561,7 @@ msgstr ""
 ": Ово је додатна дефиниција другог термина.\n"
 
 #. type: Fenced div block (details)
-#: src/en/contribute/style-guide.md:271
+#: src/en/contribute/style-guide.md:276
 #, no-wrap
 msgid ""
 "\n"
@@ -1525,27 +1581,27 @@ msgstr ""
 "\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:281
+#: src/en/contribute/style-guide.md:286
 #, no-wrap
 msgid "Highlighting with boxes"
 msgstr "Наглашавање са оквирима"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:284
+#: src/en/contribute/style-guide.md:289
 msgid ""
 "To highlight different options or variants, clickable boxes can be used."
 msgstr ""
 "За наглашавање различитих опција или варијанти, можете користити кућице."
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:286 src/en/documentation/introduction.md:29
+#: src/en/contribute/style-guide.md:291 src/en/documentation/introduction.md:29
 #: src/en/documentation/use/start.md:40 src/en/get-started/get-zammad.md:32
 #, no-wrap
 msgid "<VPDocFeatures />\n"
 msgstr "<VPDocFeatures />\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:288
+#: src/en/contribute/style-guide.md:293
 msgid ""
 "The definition of the content is done via frontmatter, see following example "
 "(reflects the boxes above):"
@@ -1554,7 +1610,7 @@ msgstr ""
 "следећи пример (односи се на кућице изнад):"
 
 #. type: Fenced code block (yml)
-#: src/en/contribute/style-guide.md:289
+#: src/en/contribute/style-guide.md:294
 #, no-wrap
 msgid ""
 "\n"
@@ -1600,7 +1656,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:314
+#: src/en/contribute/style-guide.md:319
 #, no-wrap
 msgid ""
 "To place it within the content area, simply insert the reference `<VPDocFeatures />` at the point where it has to be\n"
@@ -1610,13 +1666,13 @@ msgstr ""
 "појави.\n"
 
 #. type: Title ####
-#: src/en/contribute/style-guide.md:315
+#: src/en/contribute/style-guide.md:320
 #, no-wrap
 msgid "Theme specific images"
 msgstr "Слике специфичне за тему"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:319
+#: src/en/contribute/style-guide.md:324
 msgid ""
 "To target specific image assets to a single theme, you can assign `.dark-"
 "only` or `.light-only` CSS class to the corresponding image:"
@@ -1625,7 +1681,7 @@ msgstr ""
 "`.dark-only` или `.light-only` одговарајућој слици:"
 
 #. type: Fenced code block (md)
-#: src/en/contribute/style-guide.md:320
+#: src/en/contribute/style-guide.md:325
 #, no-wrap
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only}\n"
@@ -1635,7 +1691,7 @@ msgstr ""
 "![Само за светли изглед](/assets/logo-flat-light.svg){.light-only}\n"
 
 #. type: Plain text
-#: src/en/contribute/style-guide.md:326
+#: src/en/contribute/style-guide.md:331
 msgid ""
 "![Dark only image](/assets/logo-flat-dark.svg){.dark-only width=240} ![Light "
 "only image](/assets/logo-flat-light.svg){.light-only width=240}"
@@ -1819,11 +1875,11 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:334
 #: src/en/documentation/use/advanced-features.md:353
 #: src/en/documentation/use/advanced-features.md:371
-#: src/en/documentation/use/advanced-features.md:400
-#: src/en/documentation/use/advanced-features.md:420
-#: src/en/documentation/use/advanced-features.md:440
-#: src/en/documentation/use/advanced-features.md:458
-#: src/en/documentation/use/advanced-features.md:475
+#: src/en/documentation/use/advanced-features.md:401
+#: src/en/documentation/use/advanced-features.md:421
+#: src/en/documentation/use/advanced-features.md:441
+#: src/en/documentation/use/advanced-features.md:459
+#: src/en/documentation/use/advanced-features.md:476
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Зашто?**\n"
@@ -1856,11 +1912,11 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:339
 #: src/en/documentation/use/advanced-features.md:359
 #: src/en/documentation/use/advanced-features.md:377
-#: src/en/documentation/use/advanced-features.md:405
-#: src/en/documentation/use/advanced-features.md:431
-#: src/en/documentation/use/advanced-features.md:451
-#: src/en/documentation/use/advanced-features.md:464
-#: src/en/documentation/use/advanced-features.md:481
+#: src/en/documentation/use/advanced-features.md:406
+#: src/en/documentation/use/advanced-features.md:432
+#: src/en/documentation/use/advanced-features.md:452
+#: src/en/documentation/use/advanced-features.md:465
+#: src/en/documentation/use/advanced-features.md:482
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Како?**\n"
@@ -2997,12 +3053,19 @@ msgstr ""
 "листу активности из које их можете одабрати у дијалогу обрачуна времена."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:394
+#: src/en/documentation/use/advanced-features.md:395
+#, fuzzy
+#| msgid ""
+#| "If a ticket already has accounted time(s), you can see it in the ticket "
+#| "sidebar on the right side in the ticket detail view at the bottom. You "
+#| "can find the calculated sums of each activity type (if configured) as "
+#| "well as the total sum of accounted times for all activity types."
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
 "sidebar on the right side in the ticket detail view at the bottom. You can "
-"find the calculated sums of each activity type (if configured) as well as "
-"the total sum of accounted times for all activity types."
+"find the calculated sums of each activity type (if configured) and the total "
+"sum of accounted times for all activity types. Accounted time is also shown "
+"in the article meta information of each ticket article, if present."
 msgstr ""
 "Уколико тикет већ има обрачуната времена, можете их видети при дну бочне "
 "траке тикета са десне стране у детаљном приказу тикета. Можете пронаћи и "
@@ -3010,7 +3073,7 @@ msgstr ""
 "укупан збир обрачунатог времена за све врсте активности."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:396
+#: src/en/documentation/use/advanced-features.md:397
 msgid ""
 "![Screenshot shows the time accounting overview](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
@@ -3019,13 +3082,13 @@ msgstr ""
 "documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:398
 #, no-wrap
 msgid "User detail panel"
 msgstr "Панел са детаљима корисника"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:403
+#: src/en/documentation/use/advanced-features.md:404
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
 "current view allows you to stay focused on your task."
@@ -3034,7 +3097,7 @@ msgstr ""
 "екрана вам омогућава да останете фокусирани на ваш задатак."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:409
+#: src/en/documentation/use/advanced-features.md:410
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
@@ -3047,7 +3110,7 @@ msgstr ""
 "сличицу за отварање [странице са детаљима корисника](#user-detail-page)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:411
+#: src/en/documentation/use/advanced-features.md:412
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)"
@@ -3057,7 +3120,7 @@ msgstr ""
 "user-detail-panel.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:414
+#: src/en/documentation/use/advanced-features.md:415
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -3066,13 +3129,13 @@ msgstr ""
 "можете бити укључено у детаљном приказу клијента и администраторском панелу."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:415
+#: src/en/documentation/use/advanced-features.md:416
 #, no-wrap
 msgid "User detail page"
 msgstr "Страница корисничког профила"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:418
+#: src/en/documentation/use/advanced-features.md:419
 msgid ""
 "![Screenshot shows user detail page](/screenshots/cypress/documentation/use/"
 "advanced-features.cy.js/user-detail-page.png)"
@@ -3081,7 +3144,7 @@ msgstr ""
 "cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:422
+#: src/en/documentation/use/advanced-features.md:423
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
 "what you can find and do there:"
@@ -3090,39 +3153,39 @@ msgstr ""
 "Примери тога шта овде можете пронаћи и одрадити:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 msgid "See organization membership"
 msgstr "Видите чланство у организацијама"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 msgid "See a graph of recent tickets"
 msgstr "Видите график недавних тикета"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:450
 msgid "Add or edit a note"
 msgstr "Додајте или уредите напомену"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 msgid "Edit the customer (via ::a:: menu)"
 msgstr "Уредите корисника (путем менија ::a::)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:450
 msgid "See a history of changes (via ::a:: menu)"
 msgstr "Види историјат измена (преко менија ::a::)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:429
+#: src/en/documentation/use/advanced-features.md:430
 msgid "Create a new ticket with this user as customer"
 msgstr "Направите нови тикет са овим корисником као клијентом"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:434
+#: src/en/documentation/use/advanced-features.md:435
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
 "view). This opens a new tab with the customer detail page. In case you also "
@@ -3135,13 +3198,13 @@ msgstr ""
 "за брисање корисника."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:435
+#: src/en/documentation/use/advanced-features.md:436
 #, no-wrap
 msgid "Organization detail page"
 msgstr "Детаљни приказ организације"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:438
+#: src/en/documentation/use/advanced-features.md:439
 msgid ""
 "![Screenshot shows organization detail page](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/organization-detail-page.png)"
@@ -3150,7 +3213,7 @@ msgstr ""
 "documentation/use/advanced-features.cy.js/organization-detail-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:442
+#: src/en/documentation/use/advanced-features.md:443
 msgid ""
 "It allows you to see all relevant organization information in one place. "
 "Examples what you can find and do there:"
@@ -3159,27 +3222,27 @@ msgstr ""
 "једном месту. Примери тога шта овде можете да пронађете и одрадите:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 msgid "See the members of the organization"
 msgstr "Видите све чланове организације"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr "Видите график недавних тикета целе организације"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 msgid "Edit the organization (via ::a:: menu)"
 msgstr "Уредите организацију (преко менија ::a::)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:449
+#: src/en/documentation/use/advanced-features.md:450
 msgid "Create a new user as a member of this organization"
 msgstr "Додате новог корисника као члана ове организације"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:454
+#: src/en/documentation/use/advanced-features.md:455
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
 "detail view next to the user avatar). This opens a new tab with the "
@@ -3190,16 +3253,22 @@ msgstr ""
 "нови прозор са страницом са детаљима организације."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:455
+#: src/en/documentation/use/advanced-features.md:456
 #, no-wrap
 msgid "External issues and assets"
 msgstr "Екстерни проблеми и средства"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:462
+#: src/en/documentation/use/advanced-features.md:463
+#, fuzzy
+#| msgid ""
+#| "If you use i-doit and Zammad for IT support or you deal with Github or "
+#| "Gitlab issues, you can link to these external systems to have all "
+#| "relevant information in one place. Your Zammad admin has to activate and "
+#| "configure these features in Zammad's settings."
 msgid ""
-"If you use i-doit and Zammad for IT support or you deal with Github or "
-"Gitlab issues, you can link to these external systems to have all relevant "
+"If you use i-doit and Zammad for IT support or you deal with GitHub or "
+"GitLab issues, you can link to these external systems to have all relevant "
 "information in one place. Your Zammad admin has to activate and configure "
 "these features in Zammad's settings."
 msgstr ""
@@ -3209,9 +3278,14 @@ msgstr ""
 "прво да укључи и подеси ове функције."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:466
+#: src/en/documentation/use/advanced-features.md:467
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
+#| "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
+#| "content-sidebar.png)"
 msgid ""
-"![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
+"![Screenshot shows GitLab content sidebar with \"Link Issue\" button](/"
 "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-"
 "sidebar.png)"
 msgstr ""
@@ -3220,10 +3294,18 @@ msgstr ""
 "features.cy.js/gitlab-content-sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:471
+#: src/en/documentation/use/advanced-features.md:472
+#, fuzzy
+#| msgid ""
+#| "If activated, simply open a ticket and choose the right content sidebar "
+#| "tab with the respective icon (see Gitlab example in screenshot above). "
+#| "Click the button to link to an issue by entering the URL of it or select "
+#| "the item from a select field (i-doit). Afterwards, you can see the linked "
+#| "item with additional metadata. By clicking on the linked item, you are "
+#| "redirected to it in the respective system."
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
-"with the respective icon (see Gitlab example in screenshot above). Click the "
+"with the respective icon (see GitLab example in screenshot above). Click the "
 "button to link to an issue by entering the URL of it or select the item from "
 "a select field (i-doit). Afterwards, you can see the linked item with "
 "additional metadata. By clicking on the linked item, you are redirected to "
@@ -3237,13 +3319,13 @@ msgstr ""
 "сте ка њему у одговарајућем систему."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:472
+#: src/en/documentation/use/advanced-features.md:473
 #, no-wrap
 msgid "Highlight text"
 msgstr "Истакни текст"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:479
+#: src/en/documentation/use/advanced-features.md:480
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
 "ticket and to make sure important parts aren't getting overlooked. Be aware "
@@ -3256,7 +3338,7 @@ msgstr ""
 "чланцима за вас и друге оператере."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:483
+#: src/en/documentation/use/advanced-features.md:484
 msgid ""
 "![Screenshot shows highlight menu from ticket detail view](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)"
@@ -3266,7 +3348,7 @@ msgstr ""
 "highlighting.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:487
+#: src/en/documentation/use/advanced-features.md:488
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "
 "the ticket detail view. To highlight text, either select text first and then "
@@ -3558,9 +3640,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/find-tickets.md:30
+#, fuzzy
+#| msgid ""
+#| "After activating the search field, you can find the tickets you recently "
+#| "closed from your taskbar as well as your last search queries."
 msgid ""
 "After activating the search field, you can find the tickets you recently "
-"closed from your taskbar as well as your last search queries."
+"closed from your taskbar and your last search queries."
 msgstr ""
 "Након активирања поља за претрагу, можете пронаћи тикете које сте недавно "
 "затворили на свом панелу задатка, као и последње упите за претрагу."
@@ -3698,10 +3784,8 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:29
 msgid ""
-"The state of each request as well as the history (who did what?) is "
-"transparent."
+"The history (who did what?) and the state of each request are transparent."
 msgstr ""
-"Стање сваког захтева као и историјат (ко је урадио шта?) је транспарентно."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/ticket-basics.md:29
@@ -4434,13 +4518,21 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:103
+#, fuzzy
+#| msgid ""
+#| "A **pinned reply form** so the editor stays visible while you scroll "
+#| "through the articles. To pin or unpin the reply form, click the pin icon "
+#| "in the header of the article reply form. The pinned form sticks to the "
+#| "bottom of the ticket detail view. Resize the height by dragging the line "
+#| "on the top edge of the pinned reply form. The pin state as well as the "
+#| "panel size are saved in your browser."
 msgid ""
 "A **pinned reply form** so the editor stays visible while you scroll through "
 "the articles. To pin or unpin the reply form, click the pin icon in the "
 "header of the article reply form. The pinned form sticks to the bottom of "
 "the ticket detail view. Resize the height by dragging the line on the top "
-"edge of the pinned reply form. The pin state as well as the panel size are "
-"saved in your browser."
+"edge of the pinned reply form. The pin state and the panel size are saved in "
+"your browser."
 msgstr ""
 "**Прикачена форма за одговор** тако да уређивач остаје видљив док се "
 "померате кроз чланке. Да бисте прикачили или откачили форму за одговор, "
@@ -4640,13 +4732,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:158
-#, fuzzy, no-wrap
-#| msgid "Change customer : Reassign the ticket to another customer."
+#, no-wrap
 msgid ""
 "Change customer\n"
 ":\n"
 "  Reassign the ticket to another customer.\n"
-msgstr "Промена клијента : Доделите тикет другом клијенту."
+msgstr ""
+"Промена клијента\n"
+":\n"
+"  Доделите тикет другом клијенту.\n"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:163
@@ -5525,12 +5619,19 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:66
+#, fuzzy
+#| msgid ""
+#| "**Expand draft into well-written section**: Uses your draft as a base and "
+#| "tries to elaborate a proper text. It tries to add a structure and to "
+#| "enhance clarity and conciseness and as well as removing misspellings and "
+#| "grammar errors. You can even use it by providing only basic information "
+#| "(e.g. via bullet points) and let the AI write the answer."
 msgid ""
 "**Expand draft into well-written section**: Uses your draft as a base and "
 "tries to elaborate a proper text. It tries to add a structure and to enhance "
-"clarity and conciseness and as well as removing misspellings and grammar "
-"errors. You can even use it by providing only basic information (e.g. via "
-"bullet points) and let the AI write the answer."
+"clarity and conciseness and removing misspellings and grammar errors. You "
+"can even use it by providing only basic information (e.g. via bullet points) "
+"and let the AI write the answer."
 msgstr ""
 "**Препиши сложени одељак и учини га лаким за разумевање**: Користи ваш нацрт "
 "као основу и покушава да га прошири у исполиран текст. Покушава да одреди "
@@ -5582,8 +5683,8 @@ msgstr "База знања"
 #| "documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
 msgid ""
 "![Screenshot shows the related knowledge section of the ticket sidebar with "
-"an AI-suggested knowledge base answer](/screenshots/cypress/documentation/"
-"use/guide-ai.cy.js/ai-knowledge-base-assistant.png)"
+"an AI-generated draft and a suggested knowledge base answer](/screenshots/"
+"cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)"
 msgstr ""
 "![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
 "documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
@@ -5679,10 +5780,10 @@ msgid "Knowledge base answer suggestion"
 msgstr "Опште о бази знања"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:101
+#: src/en/documentation/use/guides/ai.md:102
 msgid ""
 "This feature compares the ticket content against the knowledge base and "
-"shows relevant answers under **Suggested by AI** if they meet the admin-"
+"shows relevant answers under **Suggested knowledge** if they meet the admin-"
 "configured score threshold. Each suggestion shows the title of the answer "
 "and more details on hover. An additional relevance score is only shown to "
 "users with the corresponding admin permissions. Click on the title to open "
@@ -5691,7 +5792,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:103
+#: src/en/documentation/use/guides/ai.md:104
 msgid ""
 "If no suggestions are available, the message \"No suggestions.\" is "
 "displayed instead."
@@ -5699,13 +5800,13 @@ msgstr ""
 "Уколико нема релевантних предлога, биће приказана порука „Без предлога”."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:104
+#: src/en/documentation/use/guides/ai.md:105
 #, no-wrap
 msgid "AI agents"
 msgstr "AI агенти"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:110
+#: src/en/documentation/use/guides/ai.md:111
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. In "
 "general, this feature operates behind the scenes but if configured, you may "
@@ -5723,14 +5824,14 @@ msgstr ""
 "features#macros) на страници за напредне функције."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:111
+#: src/en/documentation/use/guides/ai.md:112
 #: src/en/documentation/use/guides/mobile-view.md:72
 #, no-wrap
 msgid "Ticket history"
 msgstr "Историјат тикета"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:115
+#: src/en/documentation/use/guides/ai.md:116
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
 "you the name of the AI agent. If you notice ongoing issues with what the AI "
@@ -5743,7 +5844,7 @@ msgstr ""
 "агента у историјату тикета:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:117
+#: src/en/documentation/use/guides/ai.md:118
 msgid ""
 "![Screenshot shows AI agent ticket history entry](/screenshots/documentation/"
 "use/ai/ai-agent-ticket-history.png)"
@@ -5752,18 +5853,24 @@ msgstr ""
 "agent-ticket-history.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:118
+#: src/en/documentation/use/guides/ai.md:119
 #, no-wrap
 msgid "Simultaneous work detection"
 msgstr "Откривање истовремене обраде"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:123
+#: src/en/documentation/use/guides/ai.md:124
+#, fuzzy
+#| msgid ""
+#| "AI agents which are currently working on a ticket are displayed like "
+#| "other agents in the live user section in the bottom bar. This helps to "
+#| "avoid duplicate work as well as losing unsaved changes. If you see an AI "
+#| "agent avatar, wait for a moment or head over to another ticket."
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
 "agents in the live user section in the bottom bar. This helps to avoid "
-"duplicate work as well as losing unsaved changes. If you see an AI agent "
-"avatar, wait for a moment or head over to another ticket."
+"duplicate work and losing unsaved changes. If you see an AI agent avatar, "
+"wait for a moment or head over to another ticket."
 msgstr ""
 "AI агенти који тренутно раде на тикету су приказани као и други оператери у "
 "доњој траци присутних корисника. Ово ће вам помоћи да избегнете истовремени "
@@ -5771,12 +5878,12 @@ msgstr ""
 "сачекајте тренутак или пређите на други тикет."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:125
+#: src/en/documentation/use/guides/ai.md:126
 msgid "Avatar of AI agent:"
 msgstr "Сличица AI агента:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:127
+#: src/en/documentation/use/guides/ai.md:128
 msgid ""
 "![Screenshot shows avatar of an AI agent](/screenshots/documentation/use/ai/"
 "ai-live-user.png)"
@@ -5785,13 +5892,13 @@ msgstr ""
 "live-user.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:128
+#: src/en/documentation/use/guides/ai.md:129
 #, no-wrap
 msgid "Overview indicator"
 msgstr "Индикатор прегледа"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:131
+#: src/en/documentation/use/guides/ai.md:132
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
 "status circle changes to a blue/pink gradient circle:"
@@ -5800,7 +5907,7 @@ msgstr ""
 "стања ће бити приказан у плаво-љубичастом градијенту:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:132
+#: src/en/documentation/use/guides/ai.md:133
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on it](/screenshots/documentation/use/ai/overview-ai-agent-"
@@ -6504,9 +6611,13 @@ msgstr "Креирање предложака и заједничких скиц
 
 #. type: Plain text
 #: src/en/documentation/use/guides/mobile-view.md:74
+#, fuzzy
+#| msgid ""
+#| "Additionally, certain features were intentionally omitted in order to "
+#| "improve the focus on important information:"
 msgid ""
-"Additionally, certain features were intentionally omitted in order to "
-"improve the focus on important information:"
+"Additionally, certain features were intentionally omitted to improve the "
+"focus on important information:"
 msgstr ""
 "Додатно, одређене функције су намерно изостављене да би се побољшао фокус на "
 "важне информације:"
@@ -6676,10 +6787,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:35
+#, fuzzy
+#| msgid ""
+#| "Overviews are updated automatically. You don't have to reload your "
+#| "browser to observe changes. You can adjust the order temporarily by "
+#| "clicking on one of the column headers as well as change their width by "
+#| "dragging the column dividers.  The order is only preserved until you "
+#| "switch to another overview or reload the page."
 msgid ""
 "Overviews are updated automatically. You don't have to reload your browser "
 "to observe changes. You can adjust the order temporarily by clicking on one "
-"of the column headers as well as change their width by dragging the column "
+"of the column headers and change their width by dragging the column "
 "dividers.  The order is only preserved until you switch to another overview "
 "or reload the page."
 msgstr ""
@@ -6896,7 +7014,10 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:9
-msgid "In Zammad, you can search for basically all available information like:"
+#, fuzzy
+#| msgid ""
+#| "In Zammad, you can search for basically all available information like:"
+msgid "In Zammad, you can search for all available information like:"
 msgstr ""
 "У Zammad-у можете претраживати готово сву доступну информацију као што су:"
 
@@ -6917,7 +7038,9 @@ msgstr "Текст у датотекама прилога"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/search.md:14
-msgid "User and organizations details (like notes, names, etc.)"
+#, fuzzy
+#| msgid "User and organizations details (like notes, names, etc.)"
+msgid "User and organization details (like notes, names, etc.)"
 msgstr "Детаљи корисника и организација (као што су напомене, називи, итд)"
 
 #. type: Plain text
@@ -6941,10 +7064,19 @@ msgstr "Преко претраге"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:25
+#, fuzzy
+#| msgid ""
+#| "The search is located in the top left corner of the primary navigation. "
+#| "Either select it via mouse or use the keyboard shortcut [[s]]. After "
+#| "activation, you can see the tickets which got recently closed from your "
+#| "taskbar as well as your recent search queries. To search, simply type a "
+#| "term. The search then displays all matching items for which you have at "
+#| "least view or read permissions, grouped by type like users and tickets. "
+#| "Selecting one of those results opens the item as tab in the taskbar."
 msgid ""
 "The search is located in the top left corner of the primary navigation. "
 "Either select it via mouse or use the keyboard shortcut [[s]]. After "
-"activation, you can see the tickets which got recently closed from your "
+"activation, you can see the tickets that were recently closed from your "
 "taskbar as well as your recent search queries. To search, simply type a "
 "term. The search then displays all matching items for which you have at "
 "least view or read permissions, grouped by type like users and tickets. "
@@ -6960,21 +7092,42 @@ msgstr ""
 "ставка као картица у примарном навигационом траку."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:27
+#: src/en/documentation/use/guides/search.md:29
 msgid ""
-"![Screenshot shows search results in primary navigation](/screenshots/"
-"cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
+"Searching for a term also matches any values that begin with it. For "
+"example, searching for `brooks` also finds values like `brookster`. This "
+"does not apply when you use an attribute notation like "
+"`owner.lastname:brooks` (described in the [Elasticsearch syntax](#using-"
+"elasticsearch-syntax) section below), which matches exact values only."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:31
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows search results in primary navigation](/screenshots/"
+#| "cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
+msgid ""
+"![Screenshot shows search results in the taskbar](/screenshots/cypress/"
+"documentation/use/guide-search.cy.js/search-sidebar.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
 "screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:31
+#: src/en/documentation/use/guides/search.md:35
+#, fuzzy
+#| msgid ""
+#| "If you press [[enter]] or click on `detailed search`, Zammad opens the "
+#| "detailed search as a tab in the primary navigation. There you can narrow "
+#| "down your search by selecting a specific object type (e.g. organization), "
+#| "use advanced filters or even use Elasticsearch syntax. Read on for more "
+#| "information."
 msgid ""
 "If you press [[enter]] or click on `detailed search`, Zammad opens the "
-"detailed search as a tab in the primary navigation. There you can narrow "
-"down your search by selecting a specific object type (e.g. organization), "
-"use advanced filters or even use Elasticsearch syntax. Read on for more "
+"detailed search as a tab in the taskbar. There you can narrow down your "
+"search by selecting a specific object type (e.g. organization), using "
+"advanced filters or even using Elasticsearch syntax. Read on for more "
 "information."
 msgstr ""
 "Ако притиснете [[enter]] или кликнете на `detailed search`, Zammad отвара "
@@ -6984,13 +7137,13 @@ msgstr ""
 "за више информација."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:32
+#: src/en/documentation/use/guides/search.md:36
 #, no-wrap
 msgid "Detailed search"
 msgstr "Следећи кораци"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:36
+#: src/en/documentation/use/guides/search.md:40
 msgid ""
 "Sometimes, a simple search term may not give you the results you are looking "
 "for. Zammad provides different options to narrow down the search in the "
@@ -7001,7 +7154,15 @@ msgstr ""
 "детаљне претраге."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:38
+#: src/en/documentation/use/guides/search.md:43
+msgid ""
+"Advanced filters are not available for customer accounts. If your account "
+"has customer permissions only, the **Search entity** selector and the "
+"advanced filter options described below are not shown."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:45
 msgid ""
 "![Screenshot shows detailed search](/screenshots/cypress/documentation/use/"
 "guide-search.cy.js/search-detail.png)"
@@ -7010,13 +7171,13 @@ msgstr ""
 "guide-search.cy.js/search-detail.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:39
+#: src/en/documentation/use/guides/search.md:46
 #, no-wrap
 msgid "Sort the results"
 msgstr "Орденар лос ресултадос"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:43
+#: src/en/documentation/use/guides/search.md:50
 msgid ""
 "To sort the results based on the column's values, click on a column header. "
 "The sorting is indicated by an arrow. Click on the column again to change "
@@ -7028,13 +7189,13 @@ msgstr ""
 "вицеверса."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:44
+#: src/en/documentation/use/guides/search.md:51
 #, no-wrap
 msgid "Limit search to object type"
 msgstr "Лимитар бúsqueda ал типо де објето"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:49
+#: src/en/documentation/use/guides/search.md:56
 msgid ""
 "Limit the search to an object type by using the **Search entity** tab "
 "selector below the search field (e.g. user or ticket). This limits the "
@@ -7050,44 +7211,59 @@ msgstr ""
 "тéрмино де бúsqueda."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:50
+#: src/en/documentation/use/guides/search.md:57
 #, no-wrap
 msgid "Use advanced filters"
 msgstr "Напредне функције"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:58
-#, no-wrap
+#: src/en/documentation/use/guides/search.md:64
 msgid ""
-"<!--Screenshot skipped for now. Will be added after more attributes are available-->\n"
-"In comparison to the search field, you can filter the search results based on specific attributes and their values.\n"
-"To do so, click on the `Advanced filters` button on the right side, which opens an area where you can specify additional\n"
-"conditions based on specific attributes and their values. Choose an attribute and enter or select a value which the\n"
-"search results have to match. Each attribute is available only once. When using more than one filter, be aware that\n"
-"they all have to be met because they are logically connected by an AND operator. This also applies to the search term\n"
-"in the main search field.\n"
+"Unlike the search field, you can filter the search results based on specific "
+"attributes and their values.  To do so, click on the `Advanced filters` "
+"button on the right side, which opens an area where you can specify "
+"additional conditions based on specific attributes and their values. Choose "
+"an attribute and enter or select a value to match against. When using more "
+"than one filter, all conditions must be met; they are logically connected by "
+"AND. This also applies to the search term in the main search field."
 msgstr ""
-"<!--Цаптура де панталла омитида пор ахора. Се аñадирá цуандо haya мáс атрибутос диспониблес-->\n"
-"Ен цомпарациóн цон ел цампо де бúsqueda, пуедес филтрар лос ресултадос басáндоте ен атрибутос еспецíфицос y сус валорес.\n"
-"Пара хацерло, хаз цлиц ен ел ботóн `Filtros avanzados` ен ел ладо дерецхо, ло que абре ун áреа донде пуедес еспецифицар цондиционес\n"
-"адиционалес басадас ен атрибутос y сус валорес. Елиге ун атрибуто е ингреса о селецциона ун валор que лос\n"
-"ресултадос де бúsqueda дебен цоинцидир. Цада атрибуто соло естá диспонибле уна вез. Ал усар мáс де ун филтро, тен ен цуента que\n"
-"тодос дебен цумплирсе porque естáн цонецтадос лóгицаменте пор ун операдор AND. Есто тамбиéн се аплица ал тéрмино де бúsqueda\n"
-"ен ел цампо принципал де бúsqueda.\n"
+"За разлику од поља за претрагу, можете филтрирати резултате претраге на "
+"основу одређених атрибута и њихових вредности.  Да бисте то урадили, "
+"кликните на дугме `Напредни филтери` са десне стране, које додаје поље у "
+"коме можете навести додатне услове на основу одређених атрибута и њихових "
+"вредности. Изаберите атрибут и унесите или изаберите вредност за поклапање. "
+"Када користите више филтера, сви услови морају бити испуњени; логички су "
+"повезани AND оператором. Ово се такође односи на појам за претрагу у главном "
+"пољу за претрагу."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:61
+#: src/en/documentation/use/guides/search.md:67
+#, fuzzy
+#| msgid ""
+#| "Remove a single filter by clicking the ::x:: next to the value field. To "
+#| "remove all filters, click the `x` in the main search bar at the top next "
+#| "to the `x filter(s)` label."
 msgid ""
-"Remove a single filter by clicking the ::x:: next to the value field. To "
-"remove all filters, click the `x` in the main search bar at the top next to "
-"the `x filter(s)` label."
+"Remove a single filter by hovering over it and clicking the ::x:: that "
+"appears next to the value field. To remove all filters, click the `x` in the "
+"main search bar at the top next to the `x filter(s)` label and confirm the "
+"removal."
 msgstr ""
 "Елимина ун филтро индивидуал хациендо цлиц ен ::x:: јунто ал цампо де валор. "
 "Пара елиминар тодос лос филтрос, хаз цлиц ен `x` ен ла барра де бúsqueda "
 "принципал ен ла парте супериор јунто а ла etiqueta `x filtro(s)`."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:64
+#: src/en/documentation/use/guides/search.md:71
+msgid ""
+"To add another filter, click `Add filter` below or between the existing "
+"filter rows and pick an attribute from the selection list. The list only "
+"offers attributes that are not used by any filter yet, so each attribute can "
+"be used only once."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/search.md:74
 msgid ""
 "In case you want to store or share your filter, you can do so by copying the "
 "URL. It includes the complete filter. Be aware that the search results may "
@@ -7098,7 +7274,7 @@ msgstr ""
 "пуеден сер диферентес пара отрос усуариос дебидо а пермисос дистинтос."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:67
+#: src/en/documentation/use/guides/search.md:77
 msgid ""
 "If you still haven't found what you are looking for, you can benefit from "
 "the search being powered by Elasticsearch.  You can find some examples in "
@@ -7108,20 +7284,27 @@ msgstr ""
 "претрагу из заглавља стране."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:68
+#: src/en/documentation/use/guides/search.md:78
 #, no-wrap
 msgid "Using Elasticsearch syntax"
 msgstr "Elasticsearch"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:75
+#: src/en/documentation/use/guides/search.md:85
+#, fuzzy
+#| msgid ""
+#| "This topic has its own section because it is an advanced topic for power "
+#| "users. By using Elasticsearch syntax, you can exactly filter your data "
+#| "for specific attribute values. Basically, all indexed attributes are "
+#| "supported. Read on to find examples how to use it or head over to the "
+#| "[indexed attributes by Elasticsearch page](/en/reference/es-indexed-"
+#| "attributes) where you can find a list with additional attributes."
 msgid ""
-"This topic has its own section because it is an advanced topic for power "
-"users. By using Elasticsearch syntax, you can exactly filter your data for "
-"specific attribute values. Basically, all indexed attributes are supported. "
-"Read on to find examples how to use it or head over to the [indexed "
-"attributes by Elasticsearch page](/en/reference/es-indexed-attributes) where "
-"you can find a list with additional attributes."
+"This is an advanced topic for power users. By using Elasticsearch syntax, "
+"you can exactly filter your data for specific attribute values. All indexed "
+"attributes are supported. Read on to find examples of how to use it or head "
+"over to the [indexed attributes by Elasticsearch page](/en/reference/es-"
+"indexed-attributes) where you can find a list with additional attributes."
 msgstr ""
 "Есте тема тиене су пропиа сецциóн porque ес ун тема аванзадо пара усуариос "
 "experimentados. Медианте ел усо де ла sintaxis де Elasticsearch, пуедес "
@@ -7132,14 +7315,14 @@ msgstr ""
 "уна листа цон атрибутос адиционалес."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:76
+#: src/en/documentation/use/guides/search.md:86
 #: src/en/tutorials/backup-restore.md:87
 #, no-wrap
 msgid "Important information"
 msgstr "Важне информације"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:84
+#: src/en/documentation/use/guides/search.md:96
 msgid ""
 "Make sure to select the relevant object in the **Search entity** switcher. "
 "For example `customer.lastname` is available for tickets, but not for users."
@@ -7149,7 +7332,15 @@ msgstr ""
 "перо но пара усуариос."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:84
+#: src/en/documentation/use/guides/search.md:96
+msgid ""
+"Multiple search terms are combined by a logical AND by default, so `smith "
+"open` only finds results containing both terms. Use an explicit `OR` if you "
+"want either of them."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/search.md:96
 msgid ""
 "When combining an Elasticsearch query with advanced filters, be aware that "
 "all of the advanced filter conditions and the search syntax are logically "
@@ -7163,7 +7354,7 @@ msgstr ""
 "ту тéрмино де бúsqueda."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:84
+#: src/en/documentation/use/guides/search.md:96
 msgid ""
 "To provide values containing a space, wrap them in `\"`, e.g. `priority.name:"
 "\"2 normal\"`."
@@ -7172,13 +7363,13 @@ msgstr ""
 "еј., `priority.name:\"2 normal\"`."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:85
+#: src/en/documentation/use/guides/search.md:97
 #, no-wrap
 msgid "Logic operators and ranges"
 msgstr "Операдорес лóгицос y рангос"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:91
+#: src/en/documentation/use/guides/search.md:103
 msgid ""
 "You can combine conditions by using `AND` & `OR` as logical operators. Use "
 "`TO` to specify ranges for values with an order (e.g. integer or date). "
@@ -7195,46 +7386,46 @@ msgstr ""
 "се пуеден лограр сепарáндолос цон парéнтесис `()`."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:93
+#: src/en/documentation/use/guides/search.md:105
 msgid "`AND` & `OR` with parentheses:"
 msgstr "`AND` y `OR` цон парéнтесис:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:94
+#: src/en/documentation/use/guides/search.md:106
 #, no-wrap
 msgid "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 msgstr "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:99
+#: src/en/documentation/use/guides/search.md:111
 msgid "`TO` with asterisk wildcard:"
 msgstr "`TO` цон цомодíн де астерисцо:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:100
+#: src/en/documentation/use/guides/search.md:112
 #, no-wrap
 msgid "state.name:open AND article_count: [5 TO *]\n"
 msgstr "state.name:open AND article_count: [5 TO *]\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:105
+#: src/en/documentation/use/guides/search.md:117
 msgid "`TO` with excluding one limit of a range:"
 msgstr "`TO` excluyendo ун лíмите де ун ранго:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:106
+#: src/en/documentation/use/guides/search.md:118
 #, no-wrap
 msgid "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 msgstr "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:110
+#: src/en/documentation/use/guides/search.md:122
 #, no-wrap
 msgid "Fuzzy search"
 msgstr "Претрага"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:113
+#: src/en/documentation/use/guides/search.md:125
 msgid ""
 "If you are not sure about the exact spelling of a value, use the tilde (`~`) "
 "as suffix to perform a fuzzy search."
@@ -7243,19 +7434,19 @@ msgstr ""
 "(`~`) цомо суфијо пара реализар уна бúsqueda дифуса (fuzzy)."
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:114
+#: src/en/documentation/use/guides/search.md:126
 #, no-wrap
 msgid "owner.firstname:lawren~\n"
 msgstr "owner.firstname:lawren~\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:118
+#: src/en/documentation/use/guides/search.md:130
 #, no-wrap
 msgid "Negating search"
 msgstr "Навигациона трака"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:122
+#: src/en/documentation/use/guides/search.md:134
 msgid ""
 "If you want to exclude specified values, you can use negation `!`. To negate "
 "more than one term, use parentheses for all of them."
@@ -7264,42 +7455,42 @@ msgstr ""
 "негар мáс де ун тéрмино, уса парéнтесис пара тодос еллос."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:124
+#: src/en/documentation/use/guides/search.md:136
 msgid "Exclude owner with last name \"brooks\":"
 msgstr "Excluir пропиетарио цон апеллидо \"броокс\":"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:125
+#: src/en/documentation/use/guides/search.md:137
 #, no-wrap
 msgid "!owner.lastname:brooks\n"
 msgstr "!owner.lastname:brooks\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:130
+#: src/en/documentation/use/guides/search.md:142
 msgid "Exclude multiple conditions:"
 msgstr "Excluir мúлтиплес цондиционес:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:131
+#: src/en/documentation/use/guides/search.md:143
 #, no-wrap
 msgid "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 msgstr "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:135
+#: src/en/documentation/use/guides/search.md:147
 #, no-wrap
 msgid "Regex"
 msgstr "Регуларни израз"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:138
+#: src/en/documentation/use/guides/search.md:150
 msgid "You can even use regex to search. Wrap the regex term in `/`."
 msgstr ""
 "Инцлусо пуедес усар regex пара бусцар. Енциерра ел тéрмино де ла regex ен `/"
 "`."
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:139
+#: src/en/documentation/use/guides/search.md:151
 #, no-wrap
 msgid "customer.lastname:/(bra?.n|doe)/\n"
 msgstr "customer.lastname:/(bra?.n|doe)/\n"
@@ -8146,9 +8337,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:143
+#, fuzzy
+#| msgid ""
+#| "In order to identify your current default two-factor authentication "
+#| "method, look for a small blue badge next to the method name."
 msgid ""
-"In order to identify your current default two-factor authentication method, "
-"look for a small blue badge next to the method name."
+"To identify your current default two-factor authentication method, look for "
+"a small blue badge next to the method name."
 msgstr ""
 "Да бисте идентификовали тренутни подразумевани двофакторски метод "
 "аутентификације, потражите малу плаву значку поред назива метода."
@@ -8296,10 +8491,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/start.md:26
+#, fuzzy
+#| msgid ""
+#| "In general, Zammad should be pretty self explanatory. However, there are "
+#| "features that are not obvious at first glance.  These features are "
+#| "described in this documentation as well as some general explanations and "
+#| "tips."
 msgid ""
 "In general, Zammad should be pretty self explanatory. However, there are "
 "features that are not obvious at first glance.  These features are described "
-"in this documentation as well as some general explanations and tips."
+"in this documentation and some general explanations and tips."
 msgstr ""
 "Уопштено, Zammad би требало да буде самообјашњив. Међутим, постоје функције "
 "које нису очигледне на први поглед. Ове функције су описане у овој "
@@ -8937,13 +9138,21 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/gdpr.md:86
+#, fuzzy
+#| msgid ""
+#| "Additionally, if you are a European resident we are processing your "
+#| "information in order to fulfil contracts we might have with you (for "
+#| "example if you make an order through the site), or otherwise to pursue "
+#| "our legitimate business interests listed above. Additionally, please note "
+#| "that your information will be transferred outside of Europe, including to "
+#| "Canada and the United States."
 msgid ""
 "Additionally, if you are a European resident we are processing your "
-"information in order to fulfil contracts we might have with you (for example "
-"if you make an order through the site), or otherwise to pursue our "
-"legitimate business interests listed above. Additionally, please note that "
-"your information will be transferred outside of Europe, including to Canada "
-"and the United States."
+"information to fulfil contracts we might have with you (for example if you "
+"make an order through the site), or otherwise to pursue our legitimate "
+"business interests listed above. Additionally, please note that your "
+"information will be transferred outside of Europe, including to Canada and "
+"the United States."
 msgstr ""
 "Додатно, уколико сте резидент Европске уније, обрађујемо ваше податке и да "
 "бисмо испунили уговоре које можда имамо са вама (нпр. ако се претплатите "
@@ -8982,10 +9191,15 @@ msgstr "Измене"
 
 #. type: Plain text
 #: src/en/gdpr.md:101
+#, fuzzy
+#| msgid ""
+#| "We may update this privacy policy from time to time in order to reflect, "
+#| "for example, changes to our practices or for other operational, legal or "
+#| "regulatory reasons."
 msgid ""
-"We may update this privacy policy from time to time in order to reflect, for "
-"example, changes to our practices or for other operational, legal or "
-"regulatory reasons."
+"We may update this privacy policy from time to time to reflect, for example, "
+"changes to our practices or for other operational, legal or regulatory "
+"reasons."
 msgstr ""
 "Задржавамо право да освежимо ову полису приватности с времена на време како "
 "би нпр. осликавала измене у нашим процесима или из других операционих и "
@@ -9563,7 +9777,7 @@ msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade-repo-migration.md:177
-#: src/en/get-started/installation/package.md:171
+#: src/en/get-started/installation/package.md:175
 #, no-wrap
 msgid ""
 "\n"
@@ -9764,7 +9978,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/host-upgrade-repo-migration.md:277
-#: src/en/get-started/installation/package.md:271
+#: src/en/get-started/installation/package.md:275
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Инсталација Zammad-а"
@@ -9992,7 +10206,7 @@ msgstr "Преузмите Zammad"
 
 #. type: Fenced code block (sh)
 #: src/en/get-started/host-upgrade-repo-migration.md:384
-#: src/en/get-started/installation/package.md:330
+#: src/en/get-started/installation/package.md:334
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
@@ -10706,7 +10920,9 @@ msgstr ""
 "\n"
 "=== OpenSUSE/SLES\n"
 "\n"
-"Само SLES - није обавезно за OpenSUSE:\n"
+"OpenSUSE не захтева додатне кораке овде!\n"
+"\n"
+"SLES 15 захтева додатне активиране репозиторије. Да бисте их укључили, покрените следеће команде.\n"
 "\n"
 "```sh\n"
 "sudo SUSEConnect --product sle-module-desktop-applications/$(. /etc/os-release; echo $VERSION_ID)/$(uname -i)\n"
@@ -10719,18 +10935,27 @@ msgstr ""
 "=== CentOS/RHEL\n"
 "\n"
 "```sh\n"
-"sudo yum install wget epel-release\n"
+"sudo dnf install curl epel-release\n"
 "```\n"
 "\n"
 
+#. type: Plain text
+#: src/en/get-started/installation/package.md:67
+msgid ""
+"Zammad uses [jemalloc](https://jemalloc.net/){target=_blank} as memory "
+"allocator out of the box on Debian, Ubuntu, CentOS and RHEL. For SLES, opt-"
+"out and verification details, see the [Memory allocator](/en/reference/"
+"memory-allocator)  page."
+msgstr ""
+
 #. type: Title ###
-#: src/en/get-started/installation/package.md:66
+#: src/en/get-started/installation/package.md:70
 #, no-wrap
 msgid "Ensure correct locale"
 msgstr "Обезбедите исправан locale"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:68
+#: src/en/get-started/installation/package.md:72
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -10992,14 +11217,14 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:156
+#: src/en/get-started/installation/package.md:160
 #: src/en/tutorials/install-elasticsearch.md:84
 #, no-wrap
 msgid "Install Elasticsearch"
 msgstr "Elasticsearch инсталација"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:161
+#: src/en/get-started/installation/package.md:165
 msgid ""
 "The recommended method is to use [Elastic's official guide](https://"
 "www.elastic.co/guide/en/elasticsearch/reference/current/install-"
@@ -11010,7 +11235,7 @@ msgstr ""
 "elasticsearch.html){target=_blank} за инсталацију Elasticsearch."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:164
+#: src/en/get-started/installation/package.md:168
 msgid ""
 "Alternatively, you can follow [our example setup](/en/tutorials/install-"
 "elasticsearch) of Elasticsearch 9, which is separated to keep the install "
@@ -11021,13 +11246,13 @@ msgstr ""
 "упутство остало што прегледније."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:165
+#: src/en/get-started/installation/package.md:169
 #, no-wrap
 msgid "Add Zammad repository"
 msgstr "Додајте Zammad репозиториј"
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:167
+#: src/en/get-started/installation/package.md:171
 #, no-wrap
 msgid ""
 "Packager.io may not be accessible from IPv6-only environments, so make sure\n"
@@ -11037,46 +11262,8 @@ msgstr ""
 "имајте ово на уму приликом извршавања корака испод.\n"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:273
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\n"
-#| "=== Ubuntu\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt update\n"
-#| "```\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt install zammad\n"
-#| "```\n"
-#| "\n"
-#| "=== Debian\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt update\n"
-#| "```\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo apt install zammad\n"
-#| "```\n"
-#| "\n"
-#| "=== OpenSUSE/SLES\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper refresh\n"
-#| "```\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo zypper install zammad\n"
-#| "```\n"
-#| "\n"
-#| "===CentOS/RHEL\n"
-#| "\n"
-#| "```sh\n"
-#| "sudo dnf install zammad\n"
-#| "```\n"
-#| "\n"
+#: src/en/get-started/installation/package.md:277
+#, no-wrap
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -11144,7 +11331,7 @@ msgstr ""
 "=== OpenSUSE/SLES\n"
 "\n"
 "```sh\n"
-"sudo zypper ref\n"
+"sudo zypper refresh\n"
 "```\n"
 "\n"
 "```sh\n"
@@ -11154,58 +11341,57 @@ msgstr ""
 "===CentOS/RHEL\n"
 "\n"
 "```sh\n"
-"sudo yum install zammad\n"
+"sudo dnf update\n"
 "```\n"
 "\n"
-"Услед ограничења packager.io, биће вам неопходне пермисије за јавне датотеке на CentOS:\n"
-"\n"
 "```sh\n"
-"sudo chmod -R 755 /opt/zammad/public/\n"
+"sudo dnf install zammad\n"
 "```\n"
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:317
+#: src/en/get-started/installation/package.md:321
 #, no-wrap
 msgid "Manage services of Zammad"
 msgstr "Управљање Zammad сервисима"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:320
+#: src/en/get-started/installation/package.md:324
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
 "all at once by using the parent **zammad**."
 msgstr ""
-"Zammad користи три сервиса. Они могу бити (ре)стартовани и стопирани за "
-"основним `zammad` процесом:"
+"Zammad користи три сервиса. Њима се може управљати појединачно или одједном "
+"преко надређеног **zammad** процеса."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 msgid "zammad: includes the services below"
 msgstr "заммад: укључује следеће сервисе"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 msgid ""
 "**zammad-web**: internal puma server (relevant for displaying the web app)"
-msgstr "Само интерни puma сервис (одговоран за приказ веб апликације):"
+msgstr ""
+"**zammad-web**: интерни puma сервис (одговоран за приказ веб апликације)"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
 "background jobs"
 msgstr ""
-"Само позадински процес - одговоран за извршавање свих одложених и задатке у "
-"позадини:"
+"**zammad-worker**: позадински процес – одговоран за извршавање свих "
+"одложених и задатака у позадини"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:325
+#: src/en/get-started/installation/package.md:329
 msgid "**zammad-websocket**: WebSocket server for session related information"
-msgstr "Само websocker сервис за информације о сесији:"
+msgstr "**zammad-websocket**: WebSocket сервис за информације о сесији"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:327
+#: src/en/get-started/installation/package.md:331
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
 "`status`."
@@ -11214,12 +11400,12 @@ msgstr ""
 "`systemctl`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:333
 msgid "Example to start Zammad with all sub-services:"
 msgstr "Пример за покретање Zammad-а са свим под-сервисима:"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:335
+#: src/en/get-started/installation/package.md:339
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
 "mentioned above."
@@ -11228,7 +11414,7 @@ msgstr ""
 "прилагодите команду како је наведено горе."
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:336
+#: src/en/get-started/installation/package.md:340
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:142
 #, no-wrap
@@ -11236,7 +11422,7 @@ msgid "Next steps"
 msgstr "Следећи кораци"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:345
 msgid ""
 "[Connect Zammad with Elasticsearch](/en/tutorials/connect-config-"
 "elasticsearch)"
@@ -11245,7 +11431,7 @@ msgstr ""
 "config-elasticsearch))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:345
 msgid ""
 "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
@@ -11253,18 +11439,18 @@ msgstr ""
 "firewall-selinux))"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:341
+#: src/en/get-started/installation/package.md:345
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr "Подесите веб сервис ([основни водич](/sr/tutorials/webserver-config))"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:342
+#: src/en/get-started/installation/package.md:346
 #, no-wrap
 msgid "Dependencies"
 msgstr "Предуслови"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:348
+#: src/en/get-started/installation/package.md:352
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -11277,45 +11463,45 @@ msgstr ""
 "инсталиран."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:358
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:354
+#: src/en/get-started/installation/package.md:358
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:354
-#: src/en/reference/environment-variables.md:147
+#: src/en/get-started/installation/package.md:358
+#: src/en/reference/environment-variables.md:157
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:354
-#: src/en/get-started/installation/package.md:375
-#: src/en/reference/environment-variables.md:202
+#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:379
+#: src/en/reference/environment-variables.md:212
 #, no-wrap
 msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:354
-#: src/en/get-started/installation/package.md:380
+#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:384
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:355
+#: src/en/get-started/installation/package.md:359
 #, no-wrap
 msgid "Database server"
 msgstr "Сервис базе података"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:360
+#: src/en/get-started/installation/package.md:364
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no "
@@ -11328,7 +11514,7 @@ msgstr ""
 "инсталације пакета."
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:361
+#: src/en/get-started/installation/package.md:365
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -11342,25 +11528,25 @@ msgstr ""
 "подржан и може довести до грешака приликом миграције базе података.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:368
+#: src/en/get-started/installation/package.md:372
 #, no-wrap
 msgid "Reverse proxy"
 msgstr "Прокси приступа"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:372
+#: src/en/get-started/installation/package.md:376
 msgid ""
 "The following reverse proxies are supported in their currently maintained "
 "versions:"
 msgstr "Следеће опције проксија приступа су подржане:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:375
+#: src/en/get-started/installation/package.md:379
 msgid "Apache"
 msgstr "Apache"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:383
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -11373,7 +11559,7 @@ msgstr ""
 "сервера](/en/tutorials/webserver-config)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:387
+#: src/en/get-started/installation/package.md:391
 msgid ""
 "[Redis](https://redis.io/){target=_blank} is required for realtime "
 "communication via web socket.  Zammad requires Redis 7 or newer.  It gets "
@@ -11390,7 +11576,7 @@ msgstr ""
 "сигуран начин."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:390
+#: src/en/get-started/installation/package.md:394
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
@@ -11399,21 +11585,23 @@ msgstr ""
 "поменуте на страници [Redis Варијабле](/en/reference/redis)."
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:395
 #, no-wrap
 msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a drop-in-replacement for Redis.\n"
 "During the Zammad installation on those distros, it gets installed automatically as a dependency.\n"
-msgstr "CentOS и RHEL 10 користе [Valkey](https://valkey.io/) као замену за Redis. Током инсталације Zammad-а на тим дистрибуцијама, аутоматски се инсталира као зависност.\n"
+msgstr ""
+"CentOS и RHEL 10 користе [Valkey](https://valkey.io/){target=_blank} као замену за Redis.\n"
+"Током инсталације Zammad-а на тим дистрибуцијама, аутоматски се инсталира као завистан пакет.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:396
+#: src/en/get-started/installation/package.md:400
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"opciono\"/> <Badge type=\"danger\" text=\"toplo preporučeno\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:403
+#: src/en/get-started/installation/package.md:407
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -11428,23 +11616,38 @@ msgstr ""
 "конфигурације](/en/tutorials/connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:405
+#: src/en/get-started/installation/package.md:409
 msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr "Подржане Elasticsearch верзије су `8.11` - `9.x`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:407
+#: src/en/get-started/installation/package.md:411
 msgid "Elasticsearch version history for Zammad:"
-msgstr "Први кораци са Zammad-ом"
+msgstr "Историјат Elasticsearch верзије за Zammad:"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:408
-#, no-wrap
+#: src/en/get-started/installation/package.md:412
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "| Zammad        | Elasticsearch  |\n"
+#| "| ------------- | :------------- |\n"
+#| "| 7.2+          | >= 8.11, <10   |\n"
+#| "| 7.0-7.1       | >= 7.8, <10    |\n"
+#| "| 5.2-6.5       | >= 7.8, <9     |\n"
+#| "| 5.0-5.1       | >= 7.8, <8     |\n"
+#| "| 4.0-4.1       | >= 6.5, <=7.12 |\n"
+#| "| 3.4-3.6       | >= 5.5, <=7.9  |\n"
+#| "| 3.3           | >= 2.4, <=7.6  |\n"
+#| "| 3.2           | >= 2.4, <=7.5  |\n"
+#| "| 3.1           | >= 2.4, <=7.4  |\n"
+#| "| 2.0-3.0       | >= 2.4, <=5.6  |\n"
+#| "\n"
 msgid ""
 "\n"
 "| Zammad        | Elasticsearch  |\n"
 "| ------------- | :------------- |\n"
-"| 7.2+          | >= 8.11, <10   |\n"
+"| 7.2+          | >= 8.15, <10   |\n"
 "| 7.0-7.1       | >= 7.8, <10    |\n"
 "| 5.2-6.5       | >= 7.8, <9     |\n"
 "| 5.0-5.1       | >= 7.8, <8     |\n"
@@ -11472,13 +11675,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:425
+#: src/en/get-started/installation/package.md:429
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:433
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -11491,7 +11694,7 @@ msgstr ""
 "систему!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:437
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -11506,7 +11709,7 @@ msgstr ""
 "укључују овај сервис."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:436
+#: src/en/get-started/installation/package.md:440
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -11518,7 +11721,7 @@ msgstr ""
 "variables#performance-tuning)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:439
+#: src/en/get-started/installation/package.md:443
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -11529,13 +11732,13 @@ msgstr ""
 "Memcached-а](https://docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:444
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"opciono\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:445
+#: src/en/get-started/installation/package.md:449
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -11757,11 +11960,16 @@ msgstr "Проба Zammad-а"
 
 #. type: Plain text
 #: src/en/get-started/update.md:14
+#, fuzzy
+#| msgid ""
+#| "Before updating Zammad, we strongly recommend to take a look at our "
+#| "[release notes](https://zammad.com/en/releases){target=_blank}. You can "
+#| "find information about features and fixes as well as technical remarks "
+#| "and breaking changes."
 msgid ""
 "Before updating Zammad, we strongly recommend to take a look at our [release "
 "notes](https://zammad.com/en/releases){target=_blank}. You can find "
-"information about features and fixes as well as technical remarks and "
-"breaking changes."
+"information about features, fixes and technical remarks and breaking changes."
 msgstr ""
 "Пре ажурирања Zammad-а топло препоручујемо да погледате наше [белешке о "
 "издању](https://zammad.com/en/releases){target=_blank}. Овде можете пронаћи "
@@ -12153,7 +12361,10 @@ msgid ""
 "Docker Compose stack updates may require extra steps or introduce breaking\n"
 "changes. Always check the [Docker Compose release notes](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}\n"
 "for update instructions first.\n"
-msgstr "Ажурирања Docker Compose стацк-а могу захтевати додатне кораке или увести промене које нарушавају компатибилност. Увек прво проверите [Docker Compose белешке о издању](https://github.com/zammad/zammad-docker-compose/releases) за упутства за ажурирање.\n"
+msgstr ""
+"Ажурирања Docker Compose стека могу захтевати додатне кораке или довести до промена које нарушавају\n"
+"компатибилност. Увек прво проверите [Docker Compose напомене о верзији](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}\n"
+"за упутства за ажурирање.\n"
 
 #. type: Fenced div block (tip)
 #: src/en/get-started/update.md:208
@@ -12179,7 +12390,7 @@ msgid ""
 "In your Zammad stack, click on `Pull and redeploy`, activate **Re-pull image "
 "and redeploy** and click on `Update`."
 msgstr ""
-"У вашем Zammad stack-у, кликните на Pull and redeploy`, укључите **Re-pull "
+"У вашем Zammad стеку, кликните на `Pull and redeploy`, укључите **Re-pull "
 "image and redeploy** и кликните на `Update`."
 
 #. type: Plain text
@@ -12303,7 +12514,7 @@ msgid ""
 "<enjoy@zammad.com>"
 msgstr ""
 "Телефон: +49 (0) 30 55 57 160-00 \\ Факс: +49 (0) 30 55 57 160-99 \\ Имејл "
-"адреса: enjoy@zammad.com"
+"адреса: <enjoy@zammad.com>"
 
 #. type: Plain text
 #: src/en/imprint.md:25
@@ -12503,10 +12714,9 @@ msgid ""
 "compatible with PostgreSQL. Typically this is called \"session connection pooling\". Transaction-based connection pooling\n"
 "is not supported and may lead to errors during database migrations.\n"
 msgstr ""
-"Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу\n"
-"да користите начин организације који је потпуно подржан у оквиру PostgreSQL. Обично је под\n"
-"називом „session connection pooling”. Начин организација на основу трансакција није\n"
-"подржан и може довести до грешака приликом миграције базе података.\n"
+"Уколико користите софтвер за организацију конекција на базу података као што је PgBouncer, обратите пажњу да користите начин организације који је потпуно\n"
+"подржан у оквиру PostgreSQL. Обично је под називом „session connection pooling”. Начин организација на основу трансакција\n"
+"није подржан и може довести до грешака приликом миграције базе података.\n"
 
 #. type: Plain text
 #: src/en/reference/config-db-server.md:19
@@ -12830,8 +13040,12 @@ msgstr "Ограничите хардверске ресурсе стацк-а"
 
 #. type: Plain text
 #: src/en/reference/docker-compose-scenarios.md:32
+#, fuzzy
+#| msgid ""
+#| "You can find the files in the [Zammad-Docker-Compose repository](https://"
+#| "github.com/zammad/zammad-docker-compose){{target=_blank}}."
 msgid ""
-"You can find the files in the [Zammad-Docker-Compose repository](https://"
+"You can find the files in the [Zammad Docker Compose repository](https://"
 "github.com/zammad/zammad-docker-compose){{target=_blank}}."
 msgstr ""
 "Изворни код Zammad-а можете пронаћи на GitHub-у у [Zammad репозиторију]"
@@ -12907,8 +13121,8 @@ msgid ""
 "If you set up Zammad for production use, it needs to be secured by using an "
 "HTTPS connection. There are different scenarios for achieving this:"
 msgstr ""
-"Ако постављате Zammad за производну употребу, потребно га је заштитити "
-"коришћењем HTTPS конекције. Постоје различити сценарији за постизање овога."
+"Ако постављате Zammad за употребу у продукцији, потребно га је заштитити "
+"коришћењем HTTPS конекције. Постоје различити сценарији за постизање овога:"
 
 #. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:66
@@ -13389,7 +13603,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/reference/environment-variables.md:15
 msgid "Only available for Docker installations: ::d::"
-msgstr "Инсталација пакета"
+msgstr "Доступно само за Docker инсталације: ::d::"
 
 #. type: Bullet: '- '
 #: src/en/reference/environment-variables.md:15
@@ -13459,17 +13673,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:40
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_BIND_IP` ::p:: <Badge type=\"tip\" text=\"127.0.0.1\" />\n"
-#| ": The IP address that the web server is bound to.\n"
+#, no-wrap
 msgid ""
 "`ZAMMAD_BIND_IP` ::p:: <Badge type=\"tip\" text=\"127.0.0.1\" />\n"
 ":\n"
 "  The IP address that the web server is bound to.\n"
 msgstr ""
 "`ZAMMAD_BIND_IP` ::p:: <Badge type=\"tip\" text=\"127.0.0.1\" />\n"
-": IP адреса на коју је везан web сервер.\n"
+":\n"
+"  IP адреса на коју је везан web сервер.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:44
@@ -13510,29 +13722,34 @@ msgid ""
 "  should help.\n"
 msgstr ""
 "`AUTOWIZARD_JSON` ::d::\n"
-": Ова променљива вам омогућава да наведете почетне податке за конфигурацију ваше инстанце. JSON Autowizard-a није у домену\n"
+": Ова променљива вам омогућава да наведете иницијална подешавања ваше инстанце. Autowizard JSON није у домену\n"
 "  ове документације, међутим\n"
-"  [овај пример фајла](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json) би требало да вам помогне.\n"
+"  [ова датотека примера](https://github.com/zammad/zammad/blob/stable/contrib/auto_wizard_example.json){target=_blank}\n"
+"  вам може бити од помоћи.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:62
-#, fuzzy, no-wrap
-#| msgid "`ZAMMAD_HTTP_TYPE` : Set the http type for your instance. Possible values are `http` and `https`."
+#, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_TYPE`\n"
 ":\n"
 "  Set the http type for your instance. Possible values are `http` and `https`.\n"
-msgstr "`ZAMMAD_HTTP_TYPE` : Одредите тип HTTP-а за вашу инстанцу. Могуће вредности су `http` и `https`."
+msgstr ""
+"`ZAMMAD_HTTP_TYPE`\n"
+":\n"
+"  Одредите врсту HTTP протокола ваше инстанце. Могуће вредности су `http` и `https`.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:66
-#, fuzzy, no-wrap
-#| msgid "`ZAMMAD_FQDN` : Set the FQDN for your instance."
+#, no-wrap
 msgid ""
 "`ZAMMAD_FQDN`\n"
 ":\n"
 "  Set the FQDN for your instance.\n"
-msgstr "`ZAMMAD_FQDN` : Одредите FQDN за вашу инстанцу."
+msgstr ""
+"`ZAMMAD_FQDN`\n"
+":\n"
+"  Одредите FQDN ваше инстанце.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:70
@@ -13670,14 +13887,34 @@ msgstr ""
 ": Наведите своју Redis инстанцу ако већ поседујете једну. Подразумевана резервна путања за\n"
 "  инсталацију пакета је `/opt/zammad/tmp/websocket_*`. Погледајте [Redis променљиве](/en/reference/redis) за конфигурацију Sentinel-а.\n"
 
+#. type: Plain text
+#: src/en/reference/environment-variables.md:117
+#, no-wrap
+msgid ""
+"`LD_PRELOAD` <Badge type=\"tip\" text=\"libjemalloc.so.2\" /> ::p::\n"
+": Preloads a shared library for all Zammad processes. Package installations use it to enable\n"
+"  [jemalloc](/en/reference/memory-allocator) as memory allocator and set it automatically if the library is present on\n"
+"  your system. This variable is managed by the package install script and may be overwritten during updates.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:122
+#, no-wrap
+msgid ""
+"`ZAMMAD_USE_JEMALLOC` ::p::\n"
+": Set to `no` to opt out of [jemalloc](/en/reference/memory-allocator) as memory allocator. Takes effect on the next\n"
+"  package installation or upgrade. Unset it to opt back in; any value other than `no` re-enables `jemalloc` on the\n"
+"  next package installation or upgrade.\n"
+msgstr ""
+
 #. type: Title ##
-#: src/en/reference/environment-variables.md:113
+#: src/en/reference/environment-variables.md:123
 #, no-wrap
 msgid "Elasticsearch"
 msgstr "Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:118
+#: src/en/reference/environment-variables.md:128
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_ENABLED` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -13689,63 +13926,56 @@ msgstr ""
 "  саветујемо **да то не чините**.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:122
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
-#| ": Provide a host name or address to your external Elasticsearch cluster.\n"
+#: src/en/reference/environment-variables.md:132
+#, no-wrap
 msgid ""
 "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
 ":\n"
 "  Provide a host name or address to your external Elasticsearch cluster.\n"
 msgstr ""
 "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
-": Наведите хост име или адресу за ваш спољни Elasticsearch кластер.\n"
+":\n"
+"  Наведите назив хоста  или адресу вашег спољног Elasticsearch кластера.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:126
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
-#| ": Provide a different port for Elasticsearch if needed.\n"
+#: src/en/reference/environment-variables.md:136
+#, no-wrap
 msgid ""
 "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
 ":\n"
 "  Provide a different port for Elasticsearch if needed.\n"
 msgstr ""
 "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
-": Наведите другачији порт за Elasticsearch ако је потребно.\n"
+":\n"
+"  Наведите другачији број порта за Elasticsearch уколико је потребно.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:130
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
-#| ": Change it to `https` if your Elasticsearch cluster is configured to use SSL.\n"
+#: src/en/reference/environment-variables.md:140
+#, no-wrap
 msgid ""
 "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
 ":\n"
 "  Change it to `https` if your Elasticsearch cluster is configured to use SSL.\n"
 msgstr ""
 "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
-": Промените на `https` ако је ваш Elasticsearch кластер конфигурисан да користи SSL.\n"
+":\n"
+"  Промените на `https` ако је ваш Elasticsearch кластер подешен да користи SSL.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:134
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-#| ": With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
+#: src/en/reference/environment-variables.md:144
+#, no-wrap
 msgid ""
 "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ":\n"
 "  With this name space all Zammad related indexes will be created. Change this if you're using external clusters.\n"
 msgstr ""
 "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": Овим именим простором биће креирани сви индекси везани за Zammad. Промените ово ако користите спољне кластере.\n"
+":\n"
+"  Овим префиксом биће именовани сви Zammad индекси. Промените ако користите "
+"удаљене кластере.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:138
+#: src/en/reference/environment-variables.md:148
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_REINDEX` ::d::\n"
@@ -13757,7 +13987,7 @@ msgstr ""
 "  генерисање претраге, поставите ову променљиву на `true` или покрените команду за reindex преко Docker-а ручно.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:142
+#: src/en/reference/environment-variables.md:152
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_SSL_VERIFY` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -13769,7 +13999,7 @@ msgstr ""
 "  је потребно.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:146
+#: src/en/reference/environment-variables.md:156
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_HEAP_SIZE` ::d:: <Badge type=\"tip\" text=\"1G\" />\n"
@@ -13781,7 +14011,7 @@ msgstr ""
 "  вредност на разумну величину.\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/environment-variables.md:149
+#: src/en/reference/environment-variables.md:159
 #, no-wrap
 msgid ""
 "Variables for Docker and package installation are partially different. Check the limitation badge and make sure to pick\n"
@@ -13791,7 +14021,7 @@ msgstr ""
 "праве. Обе наведене променљиве на крају листе важе за оба типа инсталације.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:157
+#: src/en/reference/environment-variables.md:167
 #, no-wrap
 msgid ""
 "`POSTGRESQL_HOST` ::p:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
@@ -13803,63 +14033,55 @@ msgstr ""
 "  заграде (нпр. `[2001:db8::2]`).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:161
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
-#| ": Adjust the port of your PostgreSQL server.\n"
+#: src/en/reference/environment-variables.md:171
+#, no-wrap
 msgid ""
 "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
 ":\n"
 "  Adjust the port of your PostgreSQL server.\n"
 msgstr ""
 "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
-": Прилагодите порт вашег PostgreSQL сервера.\n"
+":\n"
+"  Прилагодите порт вашег PostgreSQL сервера.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:165
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
-#| ": The database user for Zammad.\n"
+#: src/en/reference/environment-variables.md:175
+#, no-wrap
 msgid ""
 "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ":\n"
 "  The database user for Zammad.\n"
 msgstr ""
 "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": Корисник базе података за Zammad.\n"
+":\n"
+"  Корисник базе података за Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:169
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
-#| ": The password of Zammad's database user.\n"
+#: src/en/reference/environment-variables.md:179
+#, no-wrap
 msgid ""
 "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ":\n"
 "  The password of Zammad's database user.\n"
 msgstr ""
 "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": Лозинка корисника базе података за Zammad.\n"
+":\n"
+"  Лозинка корисника базе података за Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:173
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
-#| ": Zammad's database to use.\n"
+#: src/en/reference/environment-variables.md:183
+#, no-wrap
 msgid ""
 "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
 ":\n"
 "  Zammad's database to use.\n"
 msgstr ""
 "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
-": База података која ће се користити за Zammad.\n"
+":\n"
+"  База података која ће се користити за Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:177
+#: src/en/reference/environment-variables.md:187
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRES_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
@@ -13875,77 +14097,68 @@ msgstr ""
 "заграде (нпр. `[2001:db8::2]`).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:181
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
-#| ": Adjust the port of your PostgreSQL server.\n"
+#: src/en/reference/environment-variables.md:191
+#, no-wrap
 msgid ""
 "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
 ":\n"
 "  Adjust the port of your PostgreSQL server.\n"
 msgstr ""
 "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
-": Прилагодите порт вашег PostgreSQL сервера.\n"
+":\n"
+"  Прилагодите порт вашег PostgreSQL сервера.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:185
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-#| ": The database user for Zammad.\n"
+#: src/en/reference/environment-variables.md:195
+#, no-wrap
 msgid ""
 "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ":\n"
 "  The database user for Zammad.\n"
 msgstr ""
 "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": Корисник базе података за Zammad.\n"
+":\n"
+"  Корисник базе података за Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:189
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-#| ": The password of Zammad's database user.\n"
+#: src/en/reference/environment-variables.md:199
+#, no-wrap
 msgid ""
 "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ":\n"
 "  The password of Zammad's database user.\n"
 msgstr ""
 "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
-": Лозинка корисника базе података за Zammad.\n"
+":\n"
+"  Лозинка корисника базе података за Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:193
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
-#| ": Zammad's database to use.\n"
+#: src/en/reference/environment-variables.md:203
+#, no-wrap
 msgid ""
 "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
 ":\n"
 "  Zammad's database to use.\n"
 msgstr ""
 "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
-": База података која ће се користити за Zammad.\n"
+":\n"
+"  База података која ће се користити за Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:197
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
-#| ": Additional PostgreSQL params to be appended to the database URI.\n"
+#: src/en/reference/environment-variables.md:207
+#, no-wrap
 msgid ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
 ":\n"
 "  Additional PostgreSQL params to be appended to the database URI.\n"
 msgstr ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
-": Додатни параметри за PostgreSQL које треба додати на крају URI-ја базе података.\n"
+":\n"
+"  Додатни параметри за PostgreSQL које треба додати на крају URI-ја базе "
+"података.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:201
+#: src/en/reference/environment-variables.md:211
 #, no-wrap
 msgid ""
 "`POSTGRESQL_DB_CREATE` <Badge type=\"tip\" text=\"true\" />\n"
@@ -13957,7 +14170,7 @@ msgstr ""
 "  бити проблематична.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:207
+#: src/en/reference/environment-variables.md:217
 #, no-wrap
 msgid ""
 "`NGINX_EXPOSE_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
@@ -13969,35 +14182,32 @@ msgstr ""
 "  сервис који користи овај порт.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:211
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
-#| ": The internal port the Nginx service will listen on.\n"
+#: src/en/reference/environment-variables.md:221
+#, no-wrap
 msgid ""
 "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
 ":\n"
 "  The internal port the Nginx service will listen on.\n"
 msgstr ""
 "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
-": Интерни порт који ће користити Nginx сервис.\n"
+":\n"
+"  Интерни порт који ће користити Nginx сервис.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:215
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
-#| ": By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
+#: src/en/reference/environment-variables.md:225
+#, no-wrap
 msgid ""
 "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
 ":\n"
 "  By default, the Nginx container of Zammad will respond to all request. You can provide your IP / FQDN if you want to.\n"
 msgstr ""
 "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
-": Подразумевано, контејнер Nginxa за Zammad ће одговарати на све захтеве. Можете навести своју IP / FQDN адресу по жељи.\n"
+":\n"
+"  Подразумевано, Nginx контејнер за Zammad ће одговарати на све захтеве. "
+"Можете навести своју IP / FQDN адресу по жељи.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:220
+#: src/en/reference/environment-variables.md:230
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"\\$scheme\" />\n"
@@ -14016,93 +14226,87 @@ msgstr ""
 "  јавља грешка `CSRF Token Verification Failed`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:224
-#, fuzzy, no-wrap
-#| msgid "`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Define the maximum size of data that a client can send to the server."
+#: src/en/reference/environment-variables.md:234
+#, no-wrap
 msgid ""
 "`NGINX_CLIENT_MAX_BODY_SIZE` ::d::\n"
 ":\n"
 "  Define the maximum size of data that a client can send to the server.\n"
-msgstr "`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Одредите максималну величину података које клијент може послати серверу."
+msgstr ""
+"`NGINX_CLIENT_MAX_BODY_SIZE` ::d::\n"
+":\n"
+"  Одредите максималну величину података које клијент може послати серверу.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:228
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
-#| ": Host name of the Rails server container.\n"
+#: src/en/reference/environment-variables.md:238
+#, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
 ":\n"
 "  Host name of the Rails server container.\n"
 msgstr ""
-"`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
-": Host име контејнера Rails сервера.\n"
+"`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-"
+"railsserver\" />\n"
+":\n"
+"  Назив хоста контејнера Rails сервера.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:232
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
-#| ": Port of Zammad's Rails server.\n"
+#: src/en/reference/environment-variables.md:242
+#, no-wrap
 msgid ""
 "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
 ":\n"
 "  Port of Zammad's Rails server.\n"
 msgstr ""
 "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
-": Port сервиса Rails на Zammad-у.\n"
+":\n"
+"  Port Zammad-овог Rails сервиса.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:236
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
-#| ": Port of Zammad's Rails server.\n"
+#: src/en/reference/environment-variables.md:246
+#, no-wrap
 msgid ""
 "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
 ":\n"
 "  Port of Zammad's Rails server.\n"
 msgstr ""
 "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
-": Port сервиса Rails на Zammad-у.\n"
+":\n"
+"  Port Zammad-овог Rails сервиса.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:240
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
-#| ": Host name of Zammad's WebSocket server.\n"
+#: src/en/reference/environment-variables.md:250
+#, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
 ":\n"
 "  Host name of Zammad's WebSocket server.\n"
 msgstr ""
-"`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
-": Име хоста web сокет сервера за Zammad.\n"
+"`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-"
+"websocket\" />\n"
+":\n"
+"  Назив хоста Zammad-овог WebSocket сервиса.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:244
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
-#| ": Port of Zammad's WebSocket server.\n"
+#: src/en/reference/environment-variables.md:254
+#, no-wrap
 msgid ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
 ":\n"
 "  Port of Zammad's WebSocket server.\n"
 msgstr ""
 "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
-": Port web сокет сервера за Zammad.\n"
+":\n"
+"  Порт Zammad-овог WebSocket сервиса.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:245
+#: src/en/reference/environment-variables.md:255
 #, no-wrap
 msgid "Performance tuning"
 msgstr "Подешавање перформанси"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:249
+#: src/en/reference/environment-variables.md:259
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
 "recommended values here; the optimal configuration depends on your system's "
@@ -14113,7 +14317,7 @@ msgstr ""
 "типичног оптерећења апликације."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:252
+#: src/en/reference/environment-variables.md:262
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
 "at which performance will begin to degrade rather than improve, or other "
@@ -14124,7 +14328,7 @@ msgstr ""
 "могу настати други проблеми."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:255
+#: src/en/reference/environment-variables.md:265
 msgid ""
 "Below settings may consume all available database connections. Please "
 "consider the [Configure Database Server](config-db-server) for more "
@@ -14135,7 +14339,7 @@ msgstr ""
 "информација."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:260
+#: src/en/reference/environment-variables.md:270
 #, no-wrap
 msgid ""
 "`ZAMMAD_WEB_CONCURRENCY`\n"
@@ -14149,7 +14353,7 @@ msgstr ""
 "  треба да одговара вредности ове променљиве.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:265
+#: src/en/reference/environment-variables.md:275
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
@@ -14163,9 +14367,9 @@ msgstr ""
 "  мање од 40 активних корисника истовремено. Повећање броја ових процеса може потрошити много ресурса!\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:268
-#: src/en/reference/environment-variables.md:275
-#: src/en/reference/environment-variables.md:282
+#: src/en/reference/environment-variables.md:278
+#: src/en/reference/environment-variables.md:285
+#: src/en/reference/environment-variables.md:292
 #, no-wrap
 msgid ""
 "  In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler\n"
@@ -14175,7 +14379,7 @@ msgstr ""
 "  треба да одговара збиру свих променљивих поставки workers-a.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:272
+#: src/en/reference/environment-variables.md:282
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
@@ -14187,7 +14391,7 @@ msgstr ""
 "  број workers-a: `1`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:279
+#: src/en/reference/environment-variables.md:289
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
@@ -14199,7 +14403,7 @@ msgstr ""
 "  главном процесу, `1` значи да се покреће посебан worker, итд. Максималан број workers-a је `16`.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:286
+#: src/en/reference/environment-variables.md:296
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`\n"
@@ -14211,13 +14415,13 @@ msgstr ""
 "  њиховим бројем). Максималан број нити је `16`.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:287
+#: src/en/reference/environment-variables.md:297
 #, no-wrap
 msgid "HTTP client settings"
 msgstr "Подешавање профила"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:291
+#: src/en/reference/environment-variables.md:301
 msgid ""
 "Global HTTP timeout settings. These variables control the default timeout "
 "behavior for Zammad's internal HTTP client when connecting to external "
@@ -14228,7 +14432,7 @@ msgstr ""
 "спољне сервисе (нпр. OAuth провајдере, webhookove или интеграције)."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:295
+#: src/en/reference/environment-variables.md:305
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
@@ -14240,7 +14444,7 @@ msgstr ""
 "  успостави са удаљеним сервером (нпр. ако имате спору конекцију).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:299
+#: src/en/reference/environment-variables.md:309
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -14252,7 +14456,7 @@ msgstr ""
 "  спору конекцију или споре временске одзиве на спољној страни).\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:304
+#: src/en/reference/environment-variables.md:314
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -14261,18 +14465,20 @@ msgid ""
 "  `ZAMMAD_HTTP_READ_TIMEOUT`.\n"
 msgstr ""
 "`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
-": Дефинише максимално укупно време у секундама за комплетни HTTP захтев, укључујући успостављање конекције и\n"
-"  читање одговора. Ово је додатна апсолутна граница преко ``ZAMMAD_HTTP_OPEN_TIMEOUT`` и\n"
-"  ``ZAMMAD_HTTP_READ_TIMEOUT``.\n"
+": Дефинише максимално укупно време у секундама за комплетни HTTP захтев, "
+"укључујући успостављање конекције и\n"
+"  учитавање одговора. Ово је додатна апсолутна граница поред "
+"`ZAMMAD_HTTP_OPEN_TIMEOUT` и\n"
+"  `ZAMMAD_HTTP_READ_TIMEOUT`.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:305
+#: src/en/reference/environment-variables.md:315
 #, no-wrap
 msgid "How to set environment variables"
 msgstr "Променљиве окружења"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:310
+#: src/en/reference/environment-variables.md:320
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
 "`zammad config` command as you can see below, use your system's way of "
@@ -14287,50 +14493,51 @@ msgstr ""
 "Portainer за дефинисање овога код Docker инсталације."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:312
+#: src/en/reference/environment-variables.md:322
 msgid "Examples for package installations:"
-msgstr "Инсталација пакета"
+msgstr "Примери инсталације пакета:"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:314
+#: src/en/reference/environment-variables.md:324
 msgid "Set OPTION to \"value\":"
 msgstr "Подесите OPTION на \"вредност\":"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:315
+#: src/en/reference/environment-variables.md:325
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr "zammad config:set OPTION=value\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:320
+#: src/en/reference/environment-variables.md:330
 msgid "Get OPTION:"
 msgstr "Дохвати OPTION:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:321
+#: src/en/reference/environment-variables.md:331
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr "zammad config:get OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:326
+#: src/en/reference/environment-variables.md:336
 msgid "Unset OPTION:"
 msgstr "Поништи OPTION:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:327
+#: src/en/reference/environment-variables.md:337
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr "zammad config:unset OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:332
+#: src/en/reference/environment-variables.md:342
 msgid "Restart Zammad after changing settings:"
 msgstr "Рестартујте Zammad након промене поставки:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:333
+#: src/en/reference/environment-variables.md:343
+#: src/en/reference/memory-allocator.md:39
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
 msgstr "systemctl старт заммад\n"
@@ -14428,7 +14635,9 @@ msgstr ""
 "\n"
 "=== Чланак\n"
 "\n"
-"Следећа структура је већ укључена у индекс тикета (види прву картицу) и додата је овде одвојено из разлога прегледности. Отворите детаље да видите садржај чланка:\n"
+"Следећа структура је већ укључена у индекс тикета (види први језичак) и "
+"додата је овде одвојено из\n"
+"разлога прегледности. Отворите детаље да видите садржај чланка:\n"
 "\n"
 
 #. type: Fenced div block (tabs|details)
@@ -14579,7 +14788,7 @@ msgstr "Следећи индекс садржи доле наведене ин�
 #: src/en/reference/es-indexed-attributes.md:79
 #, no-wrap
 msgid "`article`"
-msgstr "Чланак"
+msgstr "`article`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:82
@@ -14606,7 +14815,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:89
 #, no-wrap
 msgid "`article_count`"
-msgstr "Водич кроз стил и садржај"
+msgstr "`article_count`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:92
@@ -14637,7 +14846,7 @@ msgstr "Пример: `1`"
 #: src/en/reference/es-indexed-attributes.md:95
 #, no-wrap
 msgid "`checklist`"
-msgstr "Списак задатака"
+msgstr "`checklist`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:98
@@ -14680,7 +14889,7 @@ msgstr "Пример: `\"2025-03-20T06:48:46.438Z\"`"
 #: src/en/reference/es-indexed-attributes.md:111
 #, no-wrap
 msgid "`close_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`close_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:114
@@ -14700,7 +14909,7 @@ msgstr "Примери: `239`, `-5`"
 #: src/en/reference/es-indexed-attributes.md:117
 #, no-wrap
 msgid "`close_escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`close_escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:120
@@ -14717,7 +14926,7 @@ msgstr "Примери: `null`, `\"2025-02-03T15:50:20.673Z\"`"
 #: src/en/reference/es-indexed-attributes.md:123
 #, no-wrap
 msgid "`close_in_min` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`close_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:126
@@ -14896,7 +15105,7 @@ msgstr "Пример: `3`"
 #: src/en/reference/es-indexed-attributes.md:183
 #, no-wrap
 msgid "`customer`"
-msgstr "Прилагођени оквири"
+msgstr "`customer`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:186
@@ -14911,7 +15120,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:187
 #, no-wrap
 msgid "`customer_id`"
-msgstr "Прилагођени оквири"
+msgstr "`customer_id`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:190
@@ -14929,7 +15138,7 @@ msgstr "Пример: `8`"
 #: src/en/reference/es-indexed-attributes.md:193
 #, no-wrap
 msgid "`escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:196
@@ -14947,7 +15156,7 @@ msgstr "Примери: `null`, `\"2025-02-24T16:28:38.535Z\"`"
 #: src/en/reference/es-indexed-attributes.md:199
 #, no-wrap
 msgid "`first_response_at` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`first_response_at` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:202
@@ -17562,11 +17771,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:34
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  You can learn more on our\n"
+#| "  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}\n"
+#| "  as well as in our [API reference](/en/reference/rest-api/intro).\n"
 msgid ""
 "  You can learn more on our\n"
 "  [API landing page](https://zammad.com/en/product/features/rest-api){target=_blank}\n"
-"  as well as in our [API reference](/en/reference/rest-api/intro).\n"
+"  and in our [API reference](/en/reference/rest-api/intro).\n"
 msgstr ""
 "  Више можете сазнати на нашој\n"
 "  [ландинг страници API-ја](https://zammad.com/en/product/features/rest-api){target=_blank}\n"
@@ -17574,13 +17787,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/glossary.md:40
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Article\n"
+#| ": Each item within a ticket is called article. Ticket articles\n"
+#| "  can be internal (only agents can see them) or public\n"
+#| "  (customers can see them too; e.g. public notes or outgoing emails) and include\n"
+#| "  formatted text as well as attachments and inline images.\n"
 msgid ""
 "Article\n"
 ": Each item within a ticket is called article. Ticket articles\n"
 "  can be internal (only agents can see them) or public\n"
 "  (customers can see them too; e.g. public notes or outgoing emails) and include\n"
-"  formatted text as well as attachments and inline images.\n"
+"  formatted text and attachments and inline images.\n"
 msgstr ""
 "Чланак\n"
 ": Свака ставка унутар тикета назива се чланак. Чланци у тикетима\n"
@@ -19209,6 +19428,118 @@ msgid "Reference"
 msgstr "Референца"
 
 #. type: Title #
+#: src/en/reference/memory-allocator.md:1
+#: src/en/reference/memory-allocator.md:6
+#, no-wrap
+msgid "Memory allocator"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:12
+msgid ""
+"Package installations use [jemalloc](https://jemalloc.net/){target=_blank} "
+"as memory allocator for all Zammad Ruby processes, as recommended by Rails. "
+"This reduces memory usage and fragmentation. The package postinstall script "
+"preloads the jemalloc library automatically if it's present on your system. "
+"This happens on every package installation and upgrade."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:15
+msgid ""
+"Docker installations have jemalloc enabled by default (baked into the "
+"image). To opt out, override the environment variable with an empty value "
+"(e.g. `LD_PRELOAD=\"\"` in your compose or env file)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/memory-allocator.md:16
+#, fuzzy, no-wrap
+#| msgid "Visibility"
+msgid "Availability"
+msgstr "Видљивост"
+
+#. type: Bullet: '- '
+#: src/en/reference/memory-allocator.md:23
+msgid ""
+"Debian and Ubuntu: libjemalloc2 is installed automatically as package "
+"dependency."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/memory-allocator.md:23
+msgid ""
+"CentOS and RHEL: jemalloc is installed automatically from the EPEL "
+"repository (already a Zammad dependency)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/memory-allocator.md:23
+msgid ""
+"SLES: jemalloc is **not** installed automatically (available via SUSE "
+"Package Hub or SLE modules). If you install it manually with `zypper install "
+"jemalloc`, Zammad activates it automatically on the next package "
+"installation or upgrade."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/memory-allocator.md:24
+#, no-wrap
+msgid "Opt-out and opt-in"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:27
+msgid "To opt out of using jemalloc:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:28
+#, no-wrap
+msgid "zammad config:set ZAMMAD_USE_JEMALLOC=no\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:34
+msgid ""
+"This takes effect on the next package installation or upgrade. The "
+"postinstall script then removes the `LD_PRELOAD` variable entirely, so a pre-"
+"existing system value is respected. For immediate effect:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:35
+#, fuzzy, no-wrap
+#| msgid "zammad config:unset OPTION\n"
+msgid "zammad config:unset LD_PRELOAD\n"
+msgstr "zammad config:unset OPTION\n"
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:45
+msgid ""
+"To opt back in, unset the variable again (any value other than `no` re-"
+"enables jemalloc on the next package installation or upgrade):"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:46
+#, fuzzy, no-wrap
+#| msgid "zammad config:unset OPTION\n"
+msgid "zammad config:unset ZAMMAD_USE_JEMALLOC\n"
+msgstr "zammad config:unset OPTION\n"
+
+#. type: Plain text
+#: src/en/reference/memory-allocator.md:51
+msgid "To verify whether jemalloc is active, run:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/memory-allocator.md:52
+#, no-wrap
+msgid "zammad run ruby -e 'puts File.read(\"/proc/self/maps\").match?(/jemalloc/) ? \"jemalloc active\" : \"jemalloc NOT active\"'\n"
+msgstr ""
+
+#. type: Title #
 #: src/en/reference/privacy.md:1 src/en/reference/privacy.md:6
 #, no-wrap
 msgid "Data retention and external services"
@@ -19273,10 +19604,16 @@ msgstr "Rails команде"
 
 #. type: Plain text
 #: src/en/reference/privacy.md:34
+#, fuzzy
+#| msgid ""
+#| "Once a chat session has been marked **closed**, it is scheduled for "
+#| "automatic deletion 12 months later. IP address logs for chat sessions can "
+#| "be deleted manually by following the [steps from the rails console page](/"
+#| "en/reference/rails-commands#remove-ip-address-logs)."
 msgid ""
 "Once a chat session has been marked **closed**, it is scheduled for "
 "automatic deletion 12 months later. IP address logs for chat sessions can be "
-"deleted manually by following the [steps from the rails console page](/en/"
+"deleted manually by following the [steps from the Rails console page](/en/"
 "reference/rails-commands#remove-ip-address-logs)."
 msgstr ""
 "Када се сесија чата означи као **затворена**, планира се аутоматско брисање "
@@ -19780,8 +20117,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rails-commands.md:17
-#, no-wrap
-msgid "Starting Zammad's rails console"
+#, fuzzy, no-wrap
+#| msgid "Starting Zammad's rails console"
+msgid "Starting Zammad's Rails console"
 msgstr "Покретање Zammad Rails конзоле"
 
 #. type: Title ###
@@ -19856,8 +20194,9 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/reference/rails-commands.md:54
-#, no-wrap
-msgid "Run interactive rails console"
+#, fuzzy, no-wrap
+#| msgid "Run interactive rails console"
+msgid "Run interactive Rails console"
 msgstr "Покретање интерактивне Rails конзоле"
 
 #. type: Fenced div block (tabs key:installmethod)
@@ -20097,9 +20436,13 @@ msgstr "Корисник"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:167
+#, fuzzy
+#| msgid ""
+#| "In order to work on user information or to check for specific "
+#| "information, you'll need to find it first."
 msgid ""
-"In order to work on user information or to check for specific information, "
-"you'll need to find it first."
+"To work on user information or to check for specific information, you'll "
+"need to find it first."
 msgstr ""
 "Да бисте радили са информацијама корисника или проверавали специфичне "
 "податке, прво их морате пронаћи."
@@ -20441,11 +20784,18 @@ msgstr "Подешавање аутоматског гашења"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:345
+#, fuzzy
+#| msgid ""
+#| "Defines if an automatic shutdown of Zammad is performed when the the "
+#| "database has been changed (e.g. after custom attributes have been created "
+#| "in the object manager).  The underlying system (Systemd, Docker, "
+#| "Kubernetes) will then restart the processes/containers after this "
+#| "shutdown. The default setting is `true`."
 msgid ""
-"Defines if an automatic shutdown of Zammad is performed when the the "
-"database has been changed (e.g. after custom attributes have been created in "
-"the object manager).  The underlying system (Systemd, Docker, Kubernetes) "
-"will then restart the processes/containers after this shutdown. The default "
+"Defines if an automatic shutdown of Zammad is performed when the database "
+"has been changed (e.g. after custom attributes have been created in the "
+"object manager).  The underlying system (Systemd, Docker, Kubernetes) will "
+"then restart the processes/containers after this shutdown. The default "
 "setting is `true`."
 msgstr ""
 "Одређује да ли се извршава аутоматско гашење Zammad-а када се база података "
@@ -21226,11 +21576,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:689
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Situation / View      | no indication | warning (orange) | danger (red) |\n"
+#| "|-----------------------|---------------|------------------|--------------|\n"
+#| "| **Ticket Zoom**       | \\< 2          | 2                | \\>= 3        |\n"
+#| "| **New Ticket dialog** | 0             | 1                | \\>= 2        |\n"
 msgid ""
 "| Situation / View      | no indication | warning (orange) | danger (red) |\n"
 "|-----------------------|---------------|------------------|--------------|\n"
-"| **Ticket Zoom**       | \\< 2          | 2                | \\>= 3        |\n"
+"| **Ticket detail view**       | \\< 2          | 2                | \\>= 3        |\n"
 "| **New Ticket dialog** | 0             | 1                | \\>= 2        |\n"
 msgstr ""
 "| Ситуација / приказ | без назнаке | упозорење (наранџасто) | опасност (црвено) |\n"
@@ -23979,8 +24334,9 @@ msgstr ""
 
 #. type: Fenced div block (info)
 #: src/en/reference/rest-api/cti.md:213
-#, no-wrap
-msgid "This has to be supported by your PBX in order to work.\n"
+#, fuzzy, no-wrap
+#| msgid "This has to be supported by your PBX in order to work.\n"
+msgid "This has to be supported by your PBX to work.\n"
 msgstr "Ово мора да буде подржано од стране вашег PBX-a како би функционисало.\n"
 
 #. type: Title ####
@@ -25047,9 +25403,14 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/intro.md:154
+#, fuzzy
+#| msgid ""
+#| "In order to use pagination you'll need two get options: `per_page` and "
+#| "`page`. Combine them to receive 5 results from the first result page: `?"
+#| "page=1&per_page=5` - increase page count to get more results."
 msgid ""
-"In order to use pagination you'll need two get options: `per_page` and "
-"`page`. Combine them to receive 5 results from the first result page: `?"
+"To use pagination you'll need two get options: `per_page` and `page`. "
+"Combine them to receive 5 results from the first result page: `?"
 "page=1&per_page=5` - increase page count to get more results."
 msgstr ""
 "Да бисте користили пагинацију, потребне су вам две ГЕТ опције: `per_page` и "
@@ -30401,8 +30762,9 @@ msgstr "Миграција на Zammad"
 
 #. type: Title ####
 #: src/en/tutorials/connect-config-elasticsearch.md:37
-#, no-wrap
-msgid "Add it via rails console"
+#, fuzzy, no-wrap
+#| msgid "Add it via rails console"
+msgid "Add it via Rails console"
 msgstr "Rails команде"
 
 #. type: Plain text
@@ -30899,7 +31261,7 @@ msgstr ""
 #: src/en/tutorials/custom-kb-url.md:19
 msgid ""
 "Click on the `Web Server Configuration` button to get the configuration for "
-"your NPM. You can already copy the snippet or just leave it open — it is "
+"your NPM. You can already copy the snippet or just leave it open; it is "
 "needed for the NPM configuration."
 msgstr ""
 
@@ -33678,7 +34040,81 @@ msgstr ""
 
 #. type: Fenced div block (tabs)
 #: src/en/tutorials/migrate.md:510
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Via Browser\n"
+#| "\n"
+#| "After installing Zammad and\n"
+#| "[configuring your webserver](/en/tutorials/webserver-config), navigate to your\n"
+#| "Zammads FQDN in your browser and follow the migration wizard. You can find\n"
+#| "it in the log in screen by clicking the \"Or migrate from another system\"\n"
+#| "link at the bottom.\n"
+#| "\n"
+#| "Depending on the the number of users, tickets and Zendesk plan, this may take a\n"
+#| "while.\n"
+#| "\n"
+#| "=== Via Console\n"
+#| "\n"
+#| "Open console:\n"
+#| "\n"
+#| "```sh\n"
+#| "zammad run rails c\n"
+#| "```\n"
+#| "\n"
+#| "Set variables, replace the values in `{}` with your own:\n"
+#| "\n"
+#| "```ruby\n"
+#| "subdomain = '{zendesk url}'\n"
+#| "```\n"
+#| "\n"
+#| "```ruby\n"
+#| "email = '{zendesk admin email address}'\n"
+#| "```\n"
+#| "\n"
+#| "```ruby\n"
+#| "token = '{zendesk token}'\n"
+#| "\n"
+#| "```\n"
+#| "\n"
+#| "Update Zammad settings:\n"
+#| "\n"
+#| "```ruby\n"
+#| "Setting.set('import_zendesk_endpoint', \"https://#{subdomain}/api/v2\")\n"
+#| "```\n"
+#| "\n"
+#| "```ruby\n"
+#| "Setting.set('import_zendesk_endpoint_username', email)\n"
+#| "```\n"
+#| "\n"
+#| "```ruby\n"
+#| "Setting.set('import_zendesk_endpoint_key', token)\n"
+#| "```\n"
+#| "\n"
+#| "```ruby\n"
+#| "Setting.set('import_backend', 'zendesk')\n"
+#| "```\n"
+#| "\n"
+#| "```ruby\n"
+#| "Setting.set('import_mode', true)\n"
+#| "```\n"
+#| "\n"
+#| "Check your configuration in a dry run:\n"
+#| "\n"
+#| "```ruby\n"
+#| "Sequencer.process('Import::Zendesk::ConnectionTest')\n"
+#| "```\n"
+#| "\n"
+#| "Run the migration:\n"
+#| "\n"
+#| "```ruby\n"
+#| "job = ImportJob.create(name: 'Import::Zendesk')\n"
+#| "```\n"
+#| "\n"
+#| "```ruby\n"
+#| "AsyncImportJob.perform_later(job)\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Via Browser\n"
@@ -33689,7 +34125,7 @@ msgid ""
 "it in the log in screen by clicking the \"Or migrate from another system\"\n"
 "link at the bottom.\n"
 "\n"
-"Depending on the the number of users, tickets and Zendesk plan, this may take a\n"
+"Depending on the number of users, tickets and Zendesk plan, this may take a\n"
 "while.\n"
 "\n"
 "=== Via Console\n"
@@ -34168,11 +34604,16 @@ msgstr "Увоз контролне табле"
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:151
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "In Grafana, select _➕ > Import_ (or any other place which offers you to import\n"
+#| "a dashboard) and either upload the json file you\n"
+#| "downloaded from Github or use the grafana.com ID, provided as badge\n"
+#| "like <Badge type=\"tip\" text=\"12345\"/> attached to the next sections titles.\n"
 msgid ""
 "In Grafana, select _➕ > Import_ (or any other place which offers you to import\n"
 "a dashboard) and either upload the json file you\n"
-"downloaded from Github or use the grafana.com ID, provided as badge\n"
+"downloaded from GitHub or use the grafana.com ID, provided as badge\n"
 "like <Badge type=\"tip\" text=\"12345\"/> attached to the next sections titles.\n"
 msgstr ""
 "У Grafana-и изаберите _➕ > Import_ (или било које друго место које вам нуди увоз\n"
@@ -34536,10 +34977,13 @@ msgstr ""
 
 #. type: Fenced div block (tip)
 #: src/en/tutorials/sso-kerberos.md:23
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "If you don't have this IT infrastructure but still want one-click\n"
+#| "login, you can use alternatives like Github, Google, Facebook and more.\n"
 msgid ""
 "If you don't have this IT infrastructure but still want one-click\n"
-"login, you can use alternatives like Github, Google, Facebook and more.\n"
+"login, you can use alternatives like GitHub, Google, Facebook and more.\n"
 msgstr ""
 "Ако немате ову IT инфраструктуру, али желите пријаву једним кликом,\n"
 "могуће је користити алтернативе као што су GitHub, Google, Facebook и друге.\n"
@@ -34580,7 +35024,29 @@ msgstr "променљива окружења веб сервера `HTTP_REMOTE
 
 #. type: Fenced div block (info)
 #: src/en/tutorials/sso-kerberos.md:39
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**Wait. SSO allows you to sign in with only a username?**\n"
+#| "\n"
+#| "In principle, yes.\n"
+#| "\n"
+#| "**How is that okay?**\n"
+#| "\n"
+#| "In this guide, we configure our web server (Apache) to intercept all\n"
+#| "requests to the `/auth/sso` endpoint. Instead of forwarding them to\n"
+#| "Zammad, Apache initiates a three-sided login process (_Kerberos\n"
+#| "authentication_) between the itself, the user, and the Active\n"
+#| "Directory server.\n"
+#| "\n"
+#| "If Active Directory doesn't recognize the user or their password,\n"
+#| "Zammad never sees the request, and the session is never created.\n"
+#| "\n"
+#| "**What does this all mean?**\n"
+#| "\n"
+#| "It means there are many ways you could set up SSO—you don't need to\n"
+#| "follow this guide or even use Active Directory or Kerberos—but if you\n"
+#| "don't know what you're doing, you're going to end up with a _massive_\n"
+#| "security hole.\n"
 msgid ""
 "**Wait. SSO allows you to sign in with only a username?**\n"
 "\n"
@@ -34599,8 +35065,8 @@ msgid ""
 "\n"
 "**What does this all mean?**\n"
 "\n"
-"It means there are many ways you could set up SSO—you don't need to\n"
-"follow this guide or even use Active Directory or Kerberos—but if you\n"
+"It means there are many ways you could set up SSO, you don't need to\n"
+"follow this guide or even use Active Directory or Kerberos, but if you\n"
 "don't know what you're doing, you're going to end up with a _massive_\n"
 "security hole.\n"
 msgstr ""
@@ -36639,6 +37105,12 @@ msgid ""
 msgstr ""
 "  RequestHeader set X_FORWARDED_PROTO 'https'\n"
 "  RequestHeader set X-Forwarded-Ssl on\n"
+
+#~ msgid ""
+#~ "The state of each request as well as the history (who did what?) is "
+#~ "transparent."
+#~ msgstr ""
+#~ "Стање сваког захтева као и историјат (ко је урадио шта?) је транспарентно."
 
 #, no-wrap
 #~ msgid ""
