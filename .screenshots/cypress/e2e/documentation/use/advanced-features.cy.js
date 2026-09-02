@@ -1,11 +1,18 @@
 describe('usage advanced features', () => {
   it('ticket article mention', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/7')
-    cy.wait(1000) // transition
-    cy.get('button').contains('note').click()
+    // Ticket 7 loads a long article list; the reply form may already be
+    // mounted (a draft from an earlier interrupted run persists), which
+    // hides the "Add internal note" primary action. Wait for either the
+    // form or the closed-state button, then only click when closed.
+    cy.get('#ticketArticleReplyForm, button:contains("Add internal note")', { timeout: 20000 }).should('exist')
+    cy.document().then((doc) => {
+      if (!doc.getElementById('ticketArticleReplyForm')) {
+        cy.contains('button', 'Add internal note').click()
+      }
+    })
+    cy.get('#ticketArticleReplyForm', { timeout: 15000 }).should('be.visible')
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('Hello @@et')
     cy.wait(1000)
@@ -16,12 +23,19 @@ describe('usage advanced features', () => {
   })
 
   it('ticket article kba', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/7')
-    cy.wait(1000) // transition
-    cy.get('button').contains('note').click()
+    // Ticket 7 loads a long article list; the reply form may already be
+    // mounted (a draft from an earlier interrupted run persists), which
+    // hides the "Add internal note" primary action. Wait for either the
+    // form or the closed-state button, then only click when closed.
+    cy.get('#ticketArticleReplyForm, button:contains("Add internal note")', { timeout: 20000 }).should('exist')
+    cy.document().then((doc) => {
+      if (!doc.getElementById('ticketArticleReplyForm')) {
+        cy.contains('button', 'Add internal note').click()
+      }
+    })
+    cy.get('#ticketArticleReplyForm', { timeout: 15000 }).should('be.visible')
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('??')
     cy.wait(1000)
@@ -32,12 +46,19 @@ describe('usage advanced features', () => {
   })
 
   it('ticket article text template', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/7')
-    cy.wait(1000) // transition
-    cy.get('button').contains('note').click()
+    // Ticket 7 loads a long article list; the reply form may already be
+    // mounted (a draft from an earlier interrupted run persists), which
+    // hides the "Add internal note" primary action. Wait for either the
+    // form or the closed-state button, then only click when closed.
+    cy.get('#ticketArticleReplyForm, button:contains("Add internal note")', { timeout: 20000 }).should('exist')
+    cy.document().then((doc) => {
+      if (!doc.getElementById('ticketArticleReplyForm')) {
+        cy.contains('button', 'Add internal note').click()
+      }
+    })
+    cy.get('#ticketArticleReplyForm', { timeout: 15000 }).should('be.visible')
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('::mr')
     cy.wait(1000)
@@ -48,25 +69,28 @@ describe('usage advanced features', () => {
   })
 
   it('ticket subscribe', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/7')
     cy.wait(1000) // transition
     cy.get('#ticket-attributes-header').click()
     cy.wait(300)
     cy.get('label').contains('Subscribe me').click()
-    cy.wait(1000) // transition
+    // Wait until the subscriber list actually shows the change: the
+    // subscriber avatar (CommonUserAvatar renders initials with an
+    // aria-label "Avatar (…)", no <img>) must be present below the toggle.
+    cy.get('#ticket-subscribers').should('be.visible')
+    cy.get('#ticket-subscribers [aria-label^="Avatar"]', { timeout: 10000 })
+      .should('have.length.greaterThan', 0)
+      .first()
+      .should('be.visible')
     cy.get('#ticket-subscribers').parent().screenshot('ticket-subscribe', { padding: 5 })
     cy.get('label').contains('Subscribe me').click()
   })
 
   it('ticket macro', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/7')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     cy.get('[aria-label="Drafts & macros"]').click()
     cy.wait(500) //transition
     cy.get('div.popover.fixed').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
@@ -79,11 +103,9 @@ describe('usage advanced features', () => {
   })
 
   it('ticket behavior update', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/7')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     cy.get('button').contains('Stay on tab').click()
     cy.wait(500) //transition
     cy.get('div.popover.fixed').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
@@ -96,9 +118,7 @@ describe('usage advanced features', () => {
   })
 
   it('ticket tags', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/6')
     cy.wait(3000) // transition
     cy.get('[aria-label="Remove this tag"').first().invoke('show') //should show a delete button but doesn't work; also not for "trigger.('mouseover')"
@@ -106,9 +126,7 @@ describe('usage advanced features', () => {
   })
 
   it('ticket checklist', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/4')
     cy.wait(2000) // transition
     cy.get('[aria-label="Checklist"').click()
@@ -124,9 +142,7 @@ describe('usage advanced features', () => {
   })
 
   it('ticket merge', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/5')
     cy.wait(1000) // transition
     cy.get('#content-sidebar').find('[id^=action-menu-]').click()
@@ -144,9 +160,7 @@ describe('usage advanced features', () => {
   })
 
   it('ticket split', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/5')
     cy.wait(2000) // transition
     cy.get('main').find('[id^=action-menu-]').click()
@@ -162,12 +176,19 @@ describe('usage advanced features', () => {
   })
 
   it('time accounting', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/7')
-    cy.wait(1000) // transition
-    cy.get('button').contains('note').click()
+    // Ticket 7 loads a long article list; the reply form may already be
+    // mounted (a draft from an earlier interrupted run persists), which
+    // hides the "Add internal note" primary action. Wait for either the
+    // form or the closed-state button, then only click when closed.
+    cy.get('#ticketArticleReplyForm, button:contains("Add internal note")', { timeout: 20000 }).should('exist')
+    cy.document().then((doc) => {
+      if (!doc.getElementById('ticketArticleReplyForm')) {
+        cy.contains('button', 'Add internal note').click()
+      }
+    })
+    cy.get('#ticketArticleReplyForm', { timeout: 15000 }).should('be.visible')
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('test')
     cy.wait(500)
@@ -188,9 +209,7 @@ describe('usage advanced features', () => {
   })
 
   it('bulk action overview side panel', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/view/open-group')
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.get('[aria-label="Select this entry"]').first().click()
@@ -212,9 +231,7 @@ describe('usage advanced features', () => {
   })
 
   it('bulk action overview drag and drop ', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/view/open-group')
     cy.get('[aria-label="Select this entry"]').first().click()
     cy.get('[aria-label="Select this entry"]').first().click().wait(300)
@@ -227,22 +244,18 @@ describe('usage advanced features', () => {
   })
 
   it('user popover', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/3')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     // changed screenshot to be created from article bubble avatar because it broke when done in ticket header. Can be revisited later.
     cy.get('[aria-label="Avatar (Evelyn Smith) (VIP)"]').last().trigger('mouseenter').wait(1000)
     cy.get('.popover*').should('be.visible').screenshot('user-detail-panel', {padding:[ 57, 0, 5, 15 ]})
   })
 
   it('gitlab sidebar tab', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/6')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     cy.get('[aria-label="GitLab"]').click()
     cy.wait(2000)
     cy.get('h2').contains('GitLab').should('be.visible').clip({ padding: 5 }).then((TopClip) => {
@@ -259,11 +272,9 @@ describe('usage advanced features', () => {
   })
 
   it('user detail page', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/users/10')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
     cy.wait(1000) // transition
     // cy.get('[aria-label="Avatar (Hannah Taylor)"]').clip().then((TopClip) => {
@@ -277,11 +288,9 @@ describe('usage advanced features', () => {
   })
 
   it('organization detail page', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/organizations/2')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     cy.get('[aria-label="Bar chart showing ticket statistics. Created and closed tickets over the last 12 months."]').should('be.visible')
     cy.wait(1000) // transition
     // cy.get('[aria-label="Avatar (Hannah Taylor)"]').clip().then((TopClip) => {
@@ -295,11 +304,9 @@ describe('usage advanced features', () => {
   })
 
   it('escalation-panel', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/3')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     cy.get('[aria-label="Show ticket escalation information"]').trigger('mouseenter').wait(1000)
     cy.get('.popover*').should('be.visible')
     cy.get('[aria-label="Show ticket escalation information"]').clip({ padding: 5 }).then((TopClip) => {
@@ -312,9 +319,7 @@ describe('usage advanced features', () => {
   })
 
   it('duplicate detection', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     // FIXME: The autocomplete field handling below is unstable when running in conjunction with other test examples.
     //   While the search box does get expanded, the typing sometimes results in no meaningful input.
     //   Therefore, for the time being, we pre-populate the customer selection via URL query param.
@@ -334,11 +339,9 @@ describe('usage advanced features', () => {
   })
 
   it('text highlighting', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/4')
-    cy.wait(3000) // loading
+    cy.wait(1000) // loading
     // tried different approaches to actually highlight text (incl. adding real mouse events) but nothing worked.
     cy.get('[aria-label="Highlight options"]').last().click()
     cy.get('[aria-label="Highlight options"]').last().should('be.visible').clip({ padding: 5 }).then((TopClip) => {

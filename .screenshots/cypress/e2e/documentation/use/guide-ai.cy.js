@@ -1,8 +1,6 @@
 describe('AI screenshots', () => {
   it('AI ticket summary', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.intercept('POST', '/graphql', (req) => {
       if (req.body.operationName === 'ticketAIAssistanceSummarize') {
         req.reply({
@@ -153,9 +151,7 @@ describe('AI screenshots', () => {
       })
     })
 
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
 
     // --- Mock the ActionCable subscription ------------------------------------------
     // The ticketAIRelatedKnowledgeBaseAnswersUpdates subscription is delivered via
@@ -202,9 +198,7 @@ describe('AI screenshots', () => {
   })
 
   it('AI writing assistant tools', () => {
-    cy.env(['ADMIN_LOGIN', 'ADMIN_PASS']).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS)
-    })
+    cy.loginAs('ADMIN')
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
     cy.get('button').contains('Reply').click().wait(500)

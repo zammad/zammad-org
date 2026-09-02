@@ -25,8 +25,13 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('loginDesktopView', (userLogin, userPassword, recoveryCode = null) => {
-  cy.visit('/desktop')
-  cy.url().should('match', new RegExp('/desktop/login$'))
+  // Always log out first: a previous test in the same spec file leaves an
+  // active session behind (Cypress keeps the browser session between
+  // tests), so /desktop would NOT redirect to the login page. Mirrors the
+  // proven sequence from guide-ai.cy.js — visit /desktop/logout and assert
+  // the login URL before filling the form.
+  cy.visit('/desktop/logout', { timeout: 20000 })
+  cy.url().should('match', /\/desktop\/login$/)
   window.localStorage.setItem('beta-ui-disclaimer', true)
   cy.get('[name="login"]').type(userLogin)
   cy.get('[name="password"]').type(userPassword)
@@ -38,6 +43,25 @@ Cypress.Commands.add('loginDesktopView', (userLogin, userPassword, recoveryCode 
     cy.get('button').contains('Sign in').click()
   }
   cy.url().should('not.include', '/desktop/login')
+})
+
+// Log into the desktop view with the configured credentials. Kept as a
+// shared helper so each spec's `beforeEach` can do `loginAs('ADMIN')`
+// instead of repeating the `cy.env(...)` boilerplate in every test.
+// `recoveryCode` is only used with AGENT2 (2FA recovery-code login).
+Cypress.Commands.add('loginAs', (user = 'ADMIN', recoveryCode = null) => {
+  const name = user.toUpperCase()
+  if (name !== 'ADMIN' && name !== 'AGENT1' && name !== 'AGENT2') {
+    throw new Error(`loginAs: unsupported user "${user}" — use ADMIN, AGENT1 or AGENT2`)
+  }
+  const account = name === 'AGENT1'
+    ? { login: 'AGENT1_LOGIN', pass: 'AGENT1_PASS' }
+    : name === 'AGENT2'
+      ? { login: 'AGENT2_LOGIN', pass: 'AGENT2_PASS' }
+      : { login: 'ADMIN_LOGIN', pass: 'ADMIN_PASS' }
+  cy.env([account.login, account.pass]).then((env) => {
+    cy.loginDesktopView(env[account.login], env[account.pass], recoveryCode)
+  })
 })
 
 Cypress.Commands.add('closeTab', (tabTitle) => {
@@ -113,13 +137,27 @@ Cypress.Commands.add('highlight', { prevSubject: 'get' }, ($el, opts = {}) => {
   const width = $el.outerWidth()
   const height = $el.outerHeight()
 
+  // For position:fixed elements (teleported popovers, which don't move with
+  // the document) use fixed positioning + viewport coordinates; for everything
+  // else use absolute + document coordinates so the overlay survives the
+  // element screenshot's scroll (fixed overlays silently drop off the crop
+  // when the page is scrolled, see #203 full-suite runs).
+  const isFixed = $el.parents().addBack().toArray().some((el) => {
+    return getComputedStyle(el).position === 'fixed'
+  })
+  const rect = $el[0].getBoundingClientRect()
+  const scrollX = window.scrollX ?? window.pageXOffset
+  const scrollY = window.scrollY ?? window.pageYOffset
+  const left = isFixed ? rect.left : rect.left + scrollX
+  const top = isFixed ? rect.top : rect.top + scrollY
+
   const overlay = Cypress.$('<div />')
-    .css('position', 'fixed')
+    .css('position', isFixed ? 'fixed' : 'absolute')
     .css('z-index', '10000')
     .css('width', width + options.padding * 2)
     .css('height', height + options.padding * 2)
-    .css('left', offset.left - options.padding)
-    .css('top', offset.top - options.padding)
+    .css('left', left - options.padding)
+    .css('top', top - options.padding)
     .css('border-width', `${options.border}px`)
     .css('border-style', 'solid')
     .css('border-image-slice', '1')

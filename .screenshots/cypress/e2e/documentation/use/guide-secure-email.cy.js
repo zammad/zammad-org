@@ -1,8 +1,6 @@
 describe("Secure Email", function () {
   beforeEach(function () {
-    cy.env(["ADMIN_LOGIN", "ADMIN_PASS"]).then(({ ADMIN_LOGIN, ADMIN_PASS }) => {
-      cy.loginDesktopView(ADMIN_LOGIN, ADMIN_PASS);
-    });
+    cy.loginAs('ADMIN');
   });
   
     // ------------------------------------------------------------------
@@ -20,7 +18,7 @@ describe("Secure Email", function () {
     cy.get('[data-test-id^="article-bubble-body-"]').first().click();
     cy.wait(2500);
     cy.contains("PGP").parent().highlight({ padding: 5 });
-    cy.get('[data-test-id^="article-bubble-container-"]').first().screenshot("secure-email-incoming-article", { padding: [10, 10, 15] });
+    cy.get('[data-test-id^="article-bubble-container-"]').first().screenshot("secure-email-incoming-article", { padding: 10 });
   });
 
   it("outgoing email signing only", function () {
@@ -38,7 +36,7 @@ describe("Secure Email", function () {
     cy.get('button').contains('Encrypt').click().wait(200) //icon-encryption-enabled
     cy.wait(500);
     cy.get("[contenteditable='true']").click()
-    cy.get('[id^="ticketArticleReplyForm"]').screenshot("secure-email-signing-only", { padding: [10, 10, 15] });
+    cy.get('[id^="ticketArticleReplyForm"]').screenshot("secure-email-signing-only", { padding: 10 });
     cy.wait(500);
     cy.touchDeviceEmulation(false);
     cy.get('button').contains('Discard your unsaved changes').click()
@@ -62,7 +60,7 @@ describe("Secure Email", function () {
     cy.get("[contenteditable='true']").focus().type("This is a reply for an encrypted and signed email.");
     cy.wait(1200);
     cy.get('[id^="ticketArticleReplyForm"]').find('[role="listbox"]').should("be.visible").highlight({ padding: 8 });
-    cy.get('[id^="ticketArticleReplyForm"]').screenshot("secure-email-outgoing-article", { padding: [10, 10, 15] });
+    cy.get('[id^="ticketArticleReplyForm"]').screenshot("secure-email-outgoing-article", { padding: 10 });
     cy.get('[aria-label="Action menu button"]').first().click({ force: true });
     cy.wait(500);
     cy.get('button').contains('Discard your unsaved changes').click()
@@ -78,7 +76,7 @@ describe("Secure Email", function () {
     cy.visit("/desktop/tickets/7");
     cy.get("main").should("exist");
     cy.wait(2000);
-    cy.contains("h2", "Security error").parents('[data-test-id^="article-bubble-container-"]').should("be.visible").screenshot("secure-email-error-banner", { padding: [10, 10, 15] });
+    cy.contains("h2", "Security error").parents('[data-test-id^="article-bubble-container-"]').should("be.visible").screenshot("secure-email-error-banner", { padding: 10 });
 
     cy.contains("h2", "Security error")
       .parents('[data-test-id^="article-bubble-container-"]')
