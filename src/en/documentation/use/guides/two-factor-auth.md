@@ -10,18 +10,19 @@ beyond a password. It requires you to provide two different types of authenticat
 know (like a password) and something you possess (like a mobile device or a security token), to ensure that you are an
 authorized individual who can access the account.
 
-Two-Factor Authentication is an **optional feature**. Administrators must activate it to be visible in your profile
+Two-Factor Authentication is an **optional feature**. Administrators must activate it to be visible in your Personal
 settings. The 2FA usage may be even enforced by your admin. In this case, you can't use Zammad unless you set up at
 least one 2FA method.
 
 ## Setup
 
-If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it
-up. Depending on the enabled two-factor methods, you may see one or more options in the table.
+If the system admin has enabled this feature, you can head to
+_Avatar > Personal settings > Two-factor Authentication_ to set it up.
+Depending on the enabled two-factor methods, you may see one or more options in the table.
 
 To set up a two-factor method, use the ::+:: button and follow the steps.
 
-![Screenshot shows 2FA methods in user profile settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
+![Screenshot shows 2FA methods in personal settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 In a modal dialog, you will be asked to confirm your current password.
 
@@ -131,12 +132,12 @@ be reused.
 
 You also have an option to regenerate your recovery codes at any time, which invalidates already existing recovery
 codes and provides you with a list of fresh codes. You can do this by clicking on `Regenerate recovery codes` button
-in your profile's 2FA settings.
+in your Personal settings' 2FA section.
 
 ## Set a default 2FA method
 
-To set an already set up two-factor method as default, use the ::a:: actions menu next to it in your profile's 2FA
-settings and choose **Set as default**.
+To set an already set up two-factor method as default, use the ::a:: actions menu next to it in your Personal
+settings' 2FA section and choose **Set as default**.
 
 To identify your current default two-factor authentication method, look for a small blue badge next to the
 method name.

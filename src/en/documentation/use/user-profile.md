@@ -23,12 +23,12 @@ The menu contains the following entries:
   web browser's current preference.
 - **Keyboard shortcuts**: opens a popup with the available keyboard shortcuts. Alternatively, press [[?]] on your
   keyboard to show it too.
-- **Profile settings**: opens your profile settings where you can adjust your avatar, password, notification settings
+- **Personal settings**: opens your personal settings where you can adjust your avatar, password, notification settings
   and much more, see next section.
 
-## Profile settings
+## Personal settings
 
-![Screenshot shows user profile settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Screenshot shows personal settings of a user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Appearance
 

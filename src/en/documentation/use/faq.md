@@ -44,7 +44,7 @@ Your Zammad admin can adjust what should happen when a customer replies after a 
 ### What does the customer see in the ticket?
 
 By default, customers only have a reduced interface. They can create tickets, view their own tickets (and maybe their
-colleague's too, depending on the setting) and access their profile settings. Even the ticket detail view only includes
+colleague's too, depending on the setting) and access their personal settings. Even the ticket detail view only includes
 relevant elements for the customer. Elements, which have an internal purpose (like group, priority, internal notes, are
 not visible to the customer.
 
@@ -82,19 +82,19 @@ different modes.
 
 ### How to change my profile/avatar image?
 
-Go to the [avatar section](user-profile#avatar) in you profile settings by opening the avatar menu in the bottom
-left corner and select **Profile settings**. There you can upload an image, capture a photo (if your device has a
+Go to the [avatar section](user-profile#avatar) in your personal settings by opening the avatar menu in the bottom
+left corner and select **Personal settings**. There you can upload an image, capture a photo (if your device has a
 camera) or delete already present images.
 
 ### How to change the language of the Zammad user interface?
 
-Go to the [language section](user-profile#language) in you profile settings by opening the avatar menu in the bottom
-left corner and select **Profile settings**.
+Go to the [language section](user-profile#language) in your personal settings by opening the avatar menu in the bottom
+left corner and select **Personal settings**.
 
 ### What should I do before going on vacation?
 
-Go to the [out of office section](user-profile#out-of-office) in you profile settings by opening the avatar menu in
-the bottom left corner and select **Profile settings**. There you can define a replacement agent.
+Go to the [out of office section](user-profile#out-of-office) in your personal settings by opening the avatar menu in
+the bottom left corner and select **Personal settings**. There you can define a replacement agent.
 
 ### How to adjust the order of the overviews?
 
