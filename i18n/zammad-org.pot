@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-02 14:58+0000\n"
+"POT-Creation-Date: 2026-09-03 08:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,18 +248,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -3409,191 +3397,8 @@ msgid ""
 "your Zammad admin, it can be set up easily."
 msgstr ""
 
-#. type: Title ###
+#. type: Title #
 #: src/en/documentation/use/basics/ticket-basics.md:46
-#, markdown-text, no-wrap
-msgid "State"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:50
-#, markdown-text
-msgid ""
-"The state reflects the current status of a ticket (mainly if a customer "
-"request is resolved or not). Think of it as a representation of progress "
-"towards completion. By default, there are the following states:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-#, markdown-text
-msgid ""
-"**New**: State for new tickets on which no one has worked on. When updating "
-"a ticket for the first time, it automatically switches to open."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-#, markdown-text
-msgid ""
-"**Open**: State for tickets which aren't resolved yet and some work needs to "
-"be done."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-#, markdown-text
-msgid ""
-"**Pending Close**: State for tickets which are basically resolved but you "
-"don't want to close immediately. This state requires you to enter a date and "
-"time at which the ticket automatically switches to closed."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-#, markdown-text
-msgid ""
-"**Pending Reminder**: State for open tickets which you want to get reminded "
-"about at a certain date and time. Requires you to enter a date and time at "
-"which you want to get notified. For example useful if you had a question to "
-"a third party and want to make sure that this issue won't be forgotten."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-#, markdown-text
-msgid ""
-"**Merged**: State for a ticket which was merged into another ticket. Check "
-"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
-"to see the related ticket."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:64
-#, markdown-text
-msgid ""
-"Zammad's ticket states are color coded. This helps you to understanding the "
-"state of the ticket much faster in general - without having a look into "
-"details."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:66
-#, markdown-text
-msgid ""
-"![Screenshot shows different color-coded "
-"states](/screenshots/documentation/use/overviews/states.png)"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:67
-#, markdown-text, no-wrap
-msgid "Priority"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:71
-#, markdown-text
-msgid ""
-"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
-"important it is. The three default priorities are:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-#, markdown-text
-msgid "1 low"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-#, markdown-text
-msgid "2 normal"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-#, markdown-text
-msgid "3 high"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:78
-#, markdown-text
-msgid ""
-"In case these priorities aren't enough, ask your Zammad admin to create "
-"additional ones. The default priorities allow you to immediately recognize "
-"the importance of your tickets because they are color coded:"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:80
-#, markdown-text
-msgid ""
-"![Screenshot shows different color-coded "
-"priorities](/screenshots/documentation/use/overviews/priorities.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:83
-#, markdown-text
-msgid ""
-"You might wonder what such a ticket priority is for. Out of the box, it "
-"doesn't actually do anything except the highlighting. However, Zammad "
-"administrators can set up all sorts of automation and analytics based on the "
-"priority."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:86
-#, markdown-text
-msgid ""
-"Be aware that customers can't set a priority for their own "
-"tickets. Otherwise, some might set their tickets always to high and hope for "
-"an immediate escalation."
-msgstr ""
-
-#. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:87
-#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
-#, markdown-text, no-wrap
-msgid "Tags"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:93
-#, markdown-text
-msgid ""
-"Tags are custom labels that can be assigned to tickets to make it easier to "
-"find them in the future.  They can be used in conditions like in triggers "
-"and in overviews and they can also be assigned automatically by macros, "
-"schedulers and triggers. Of course you can search for the text of the tags "
-"and you will find the tickets which have the tag assigned."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:95
-#, markdown-text
-msgid ""
-"![Screenshot shows tag area in ticket side "
-"bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:101
-#, markdown-text
-msgid ""
-"In the ticket sidebar, you can find a section which is labeled as "
-"**Tags**. Add a tag by clicking on the ::+:: button.  Depending on your "
-"Zammad's configuration, you can create new tags by simply type and confirm "
-"them with [[enter]] or [[tab]]. In any case, you can choose from already "
-"available tags. Start typing and you see a list with matching "
-"suggestions. To remove it, click the ::x:: button on the right side of the "
-"tag. This button only shows up when you move the mouse over the tag."
-msgstr ""
-
-#. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:102
 #: src/en/reference/es-indexed-attributes.md:1054
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, markdown-text, no-wrap
@@ -3601,7 +3406,7 @@ msgid "Group"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:108
+#: src/en/documentation/use/basics/ticket-basics.md:52
 #, markdown-text
 msgid ""
 "This ticket attribute is useful for organizations with more than one team. A "
@@ -3613,13 +3418,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:109
+#: src/en/documentation/use/basics/ticket-basics.md:53
 #, markdown-text, no-wrap
 msgid "Owner"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:115
+#: src/en/documentation/use/basics/ticket-basics.md:59
 #, markdown-text
 msgid ""
 "This is the person who is currently responsible for the ticket. In case you "
@@ -3630,11 +3435,194 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:117
+#: src/en/documentation/use/basics/ticket-basics.md:61
 #, markdown-text
 msgid ""
 "To change the owner to a person which has only access to another group's "
 "tickets, you first have to switch the group accordingly."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:62
+#, markdown-text, no-wrap
+msgid "State"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:66
+#, markdown-text
+msgid ""
+"The state reflects the current status of a ticket (mainly if a customer "
+"request is resolved or not). Think of it as a representation of progress "
+"towards completion. By default, there are the following states:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+#, markdown-text
+msgid ""
+"**New**: State for new tickets on which no one has worked on. When updating "
+"a ticket for the first time, it automatically switches to open."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+#, markdown-text
+msgid ""
+"**Open**: State for tickets which aren't resolved yet and some work needs to "
+"be done."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+#, markdown-text
+msgid ""
+"**Pending Close**: State for tickets which are basically resolved but you "
+"don't want to close immediately. This state requires you to enter a date and "
+"time at which the ticket automatically switches to closed."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+#, markdown-text
+msgid ""
+"**Pending Reminder**: State for open tickets which you want to get reminded "
+"about at a certain date and time. Requires you to enter a date and time at "
+"which you want to get notified. For example useful if you had a question to "
+"a third party and want to make sure that this issue won't be forgotten."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+#, markdown-text
+msgid ""
+"**Merged**: State for a ticket which was merged into another ticket. Check "
+"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
+"to see the related ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:80
+#, markdown-text
+msgid ""
+"Zammad's ticket states are color coded. This helps you to understanding the "
+"state of the ticket much faster in general - without having a look into "
+"details."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:82
+#, markdown-text
+msgid ""
+"![Screenshot shows different color-coded "
+"states](/screenshots/documentation/use/overviews/states.png)"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:83
+#, markdown-text, no-wrap
+msgid "Priority"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:87
+#, markdown-text
+msgid ""
+"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
+"important it is. The three default priorities are:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+#, markdown-text
+msgid "1 low"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+#, markdown-text
+msgid "2 normal"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+#, markdown-text
+msgid "3 high"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:94
+#, markdown-text
+msgid ""
+"In case these priorities aren't enough, ask your Zammad admin to create "
+"additional ones. The default priorities allow you to immediately recognize "
+"the importance of your tickets because they are color coded:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:96
+#, markdown-text
+msgid ""
+"![Screenshot shows different color-coded "
+"priorities](/screenshots/documentation/use/overviews/priorities.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:99
+#, markdown-text
+msgid ""
+"You might wonder what such a ticket priority is for. Out of the box, it "
+"doesn't actually do anything except the highlighting. However, Zammad "
+"administrators can set up all sorts of automation and analytics based on the "
+"priority."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:102
+#, markdown-text
+msgid ""
+"Be aware that customers can't set a priority for their own "
+"tickets. Otherwise, some might set their tickets always to high and hope for "
+"an immediate escalation."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:103
+#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
+#, markdown-text, no-wrap
+msgid "Tags"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:109
+#, markdown-text
+msgid ""
+"Tags are custom labels that can be assigned to tickets to make it easier to "
+"find them in the future.  They can be used in conditions like in triggers "
+"and in overviews and they can also be assigned automatically by macros, "
+"schedulers and triggers. Of course you can search for the text of the tags "
+"and you will find the tickets which have the tag assigned."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:111
+#, markdown-text
+msgid ""
+"![Screenshot shows tag area in ticket side "
+"bar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:117
+#, markdown-text
+msgid ""
+"In the ticket sidebar, you can find a section which is labeled as "
+"**Tags**. Add a tag by clicking on the ::+:: button.  Depending on your "
+"Zammad's configuration, you can create new tags by simply type and confirm "
+"them with [[enter]] or [[tab]]. In any case, you can choose from already "
+"available tags. Start typing and you see a list with matching "
+"suggestions. To remove it, click the ::x:: button on the right side of the "
+"tag. This button only shows up when you move the mouse over the tag."
 msgstr ""
 
 #. type: Plain text
@@ -24883,83 +24871,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -25169,6 +25080,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -25612,6 +25600,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #

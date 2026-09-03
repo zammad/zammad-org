@@ -60,6 +60,29 @@ Es ist sogar möglich, benutzerdefinierte Felder für Tickets zu erstellen
 benutzerdefiniertes Feld macht Sinn? Sprechen Sie mit Ihrem
 Zammad-Administrator, es lässt sich leicht einrichten.
 
+### Gruppe
+
+Dieses Ticket-Attribut ist nützlich für Organisationen mit mehr als einem
+Team. Häufig werden Gruppen so konfiguriert, dass für eine Abteilung eine
+eigene Gruppe angelegt wird. Je nach Berechtigung sehen Sie das Ticket
+möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen
+gespeichert haben. Falls Sie das Gruppenfeld nicht sehen können, gibt es
+entweder nur eine Gruppe in Ihrem Zammad-System oder Sie haben nicht die
+Berechtigung, ein Ticket in einer anderen Gruppe zu erstellen.
+
+### Besitzer
+
+Dies ist die Person, die derzeit für das Ticket verantwortlich ist. Falls
+Sie Informationen von einem anderen Kollegen benötigen, können Sie entweder
+den Besitzer auf diese Person ändern oder die Person in einem Artikel
+erwähnen, indem Sie [[@]][[@]] eingeben und den Benutzer auswählen. Im
+letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch
+Benachrichtigungen über Aktualisierungen des Tickets.
+
+Um den Besitzer auf eine Person zu ändern, die nur Zugriff auf die Tickets
+einer anderen Gruppe hat, müssen Sie zunächst die Gruppe entsprechend
+ändern.
+
 ### Status
 
 Der Status spiegelt den aktuellen Status eines Tickets wider (hauptsächlich,
@@ -141,29 +164,6 @@ anfangen zu tippen sehen Sie eine Liste mit passenden Vorschlägen. Um ein
 Tag zu entfernen, klicken Sie auf die Schaltfläche ::x:: auf der rechten
 Seite des Tabs. Diese Schaltfläche erscheint, wenn Sie die Maus über einen
 Tag bewegen.
-
-### Gruppe
-
-Dieses Ticket-Attribut ist nützlich für Organisationen mit mehr als einem
-Team. Häufig werden Gruppen so konfiguriert, dass für eine Abteilung eine
-eigene Gruppe angelegt wird. Je nach Berechtigung sehen Sie das Ticket
-möglicherweise nicht, nachdem Sie die Gruppe geändert und die Änderungen
-gespeichert haben. Falls Sie das Gruppenfeld nicht sehen können, gibt es
-entweder nur eine Gruppe in Ihrem Zammad-System oder Sie haben nicht die
-Berechtigung, ein Ticket in einer anderen Gruppe zu erstellen.
-
-### Besitzer
-
-Dies ist die Person, die derzeit für das Ticket verantwortlich ist. Falls
-Sie Informationen von einem anderen Kollegen benötigen, können Sie entweder
-den Besitzer auf diese Person ändern oder die Person in einem Artikel
-erwähnen, indem Sie [[@]][[@]] eingeben und den Benutzer auswählen. Im
-letzteren Fall wird der Benutzer benachrichtigt und erhält automatisch
-Benachrichtigungen über Aktualisierungen des Tickets.
-
-Um den Besitzer auf eine Person zu ändern, die nur Zugriff auf die Tickets
-einer anderen Gruppe hat, müssen Sie zunächst die Gruppe entsprechend
-ändern.
 
 -----
 

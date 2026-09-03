@@ -43,6 +43,22 @@ to bring it back. The available options depend on your privileges and the config
 It is even possible to create custom fields for tickets (for groups, users and organizations too). You think such a
 custom field makes sense? Talk with your Zammad admin, it can be set up easily.
 
+### Group
+
+This ticket attribute is useful for organizations with more than one team. A common way to use groups is to have one
+for each department of the company. Depending on the permissions, you might not see the ticket after changing the group
+and saving the changes. In case you can't see the group field, either there is only one group in your Zammad system or
+you don't have the permission to create a ticket in other groups.
+
+### Owner
+
+This is the person who is currently responsible for the ticket. In case you need information from another colleague,
+you can either change the owner to this person or mention the person in an article by typing [[@]][[@]] and selecting
+the user. In the latter case, the user gets notified and is automatically subscribed to receive notifications on ticket
+updates.
+
+To change the owner to a person which has only access to another group's tickets, you first have to switch the group accordingly.
+
 ### State
 
 The state reflects the current status of a ticket (mainly if a customer request is resolved or not). Think of it as a
@@ -98,22 +114,6 @@ Depending on your Zammad's configuration, you can create new tags by simply type
 [[tab]]. In any case, you can choose from already available tags. Start typing and you see a list with matching
 suggestions. To remove it, click the ::x:: button on the right side of the tag. This button only shows up when you
 move the mouse over the tag.
-
-### Group
-
-This ticket attribute is useful for organizations with more than one team. A common way to use groups is to have one
-for each department of the company. Depending on the permissions, you might not see the ticket after changing the group
-and saving the changes. In case you can't see the group field, either there is only one group in your Zammad system or
-you don't have the permission to create a ticket in other groups.
-
-### Owner
-
-This is the person who is currently responsible for the ticket. In case you need information from another colleague,
-you can either change the owner to this person or mention the person in an article by typing [[@]][[@]] and selecting
-the user. In the latter case, the user gets notified and is automatically subscribed to receive notifications on ticket
-updates.
-
-To change the owner to a person which has only access to another group's tickets, you first have to switch the group accordingly.
 
 -----
 

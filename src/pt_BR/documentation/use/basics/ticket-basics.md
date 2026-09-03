@@ -59,6 +59,26 @@ usuários e organizações). Você acha que um campo personalizado desses faz
 sentido? Converse com seu administrador do Zammad; pode ser configurado
 facilmente.
 
+### Grupo
+
+Esse atributo de ticket é útil para organizações com mais de uma equipe. Um
+uso comum é ter um grupo por departamento da empresa. Dependendo das
+permissões, você pode não ver mais o ticket após trocar o grupo e salvar as
+alterações. Se o campo de grupo não aparece, ou há apenas um grupo no seu
+sistema Zammad, ou você não tem permissão para criar um ticket em outros
+grupos.
+
+### Responsável
+
+Esta é a pessoa atualmente responsável pelo ticket. Caso você precise de
+informações de outro colega, você pode mudar o responsável para essa pessoa
+ou mencioná-la em um artigo digitando [[@]][[@]] e selecionando o
+usuário. Nesse último caso, o usuário é notificado e automaticamente
+inscrito para receber notificações sobre atualizações do ticket.
+
+Para mudar o responsável para uma pessoa que só tem acesso aos tickets de
+outro grupo, primeiro é preciso trocar o grupo adequadamente.
+
 ### Estado
 
 O estado reflete a situação atual de um ticket (principalmente se uma
@@ -137,26 +157,6 @@ pode escolher entre as tags já disponíveis. Comece a digitar e você verá uma
 lista com sugestões correspondentes. Para removê-la, clique no botão ::x::
 no lado direito da tag. Esse botão só aparece quando você move o mouse sobre
 a tag.
-
-### Grupo
-
-Esse atributo de ticket é útil para organizações com mais de uma equipe. Um
-uso comum é ter um grupo por departamento da empresa. Dependendo das
-permissões, você pode não ver mais o ticket após trocar o grupo e salvar as
-alterações. Se o campo de grupo não aparece, ou há apenas um grupo no seu
-sistema Zammad, ou você não tem permissão para criar um ticket em outros
-grupos.
-
-### Responsável
-
-Esta é a pessoa atualmente responsável pelo ticket. Caso você precise de
-informações de outro colega, você pode mudar o responsável para essa pessoa
-ou mencioná-la em um artigo digitando [[@]][[@]] e selecionando o
-usuário. Nesse último caso, o usuário é notificado e automaticamente
-inscrito para receber notificações sobre atualizações do ticket.
-
-Para mudar o responsável para uma pessoa que só tem acesso aos tickets de
-outro grupo, primeiro é preciso trocar o grupo adequadamente.
 
 -----
 

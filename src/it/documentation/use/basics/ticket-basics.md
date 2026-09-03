@@ -61,6 +61,27 @@ gruppi, utenti e organizzazioni). Pensi che tale campo personalizzato abbia
 senso? Parla con il tuo amministratore Zammad, può essere configurato
 facilmente.
 
+### Gruppo
+
+Questo attributo del ticket è utile per le organizzazioni con più di un
+team. Un modo comune di usare i gruppi è averne uno per ogni dipartimento
+dell'azienda. A seconda dei permessi, potresti non vedere il ticket dopo
+aver cambiato il gruppo e salvato le modifiche. Se non riesci a vedere il
+campo gruppo, o c'è solo un gruppo nel tuo sistema Zammad o non hai il
+permesso di creare un ticket in altri gruppi.
+
+### Proprietario
+
+Questa è la persona attualmente responsabile del ticket. Se hai bisogno di
+informazioni da un altro collega, puoi cambiare il proprietario a quella
+persona o menzionare la persona in un articolo digitando [[@]][[@]] e
+selezionando l'utente. In quest'ultimo caso, l'utente viene notificato e
+viene automaticamente iscritto per ricevere notifiche sugli aggiornamenti
+del ticket.
+
+Per cambiare il proprietario a una persona che ha accesso solo ai ticket di
+un altro gruppo, devi prima cambiare il gruppo di conseguenza.
+
 ### Stato
 
 Lo stato riflette lo stato corrente di un ticket (principalmente se una
@@ -137,27 +158,6 @@ them with [[enter]] or [[tab]]. In any case, you can choose from already
 available tags. Start typing and you see a list with matching
 suggestions. To remove it, click the ::x:: button on the right side of the
 tag. This button only shows up when you move the mouse over the tag.
-
-### Gruppo
-
-Questo attributo del ticket è utile per le organizzazioni con più di un
-team. Un modo comune di usare i gruppi è averne uno per ogni dipartimento
-dell'azienda. A seconda dei permessi, potresti non vedere il ticket dopo
-aver cambiato il gruppo e salvato le modifiche. Se non riesci a vedere il
-campo gruppo, o c'è solo un gruppo nel tuo sistema Zammad o non hai il
-permesso di creare un ticket in altri gruppi.
-
-### Proprietario
-
-Questa è la persona attualmente responsabile del ticket. Se hai bisogno di
-informazioni da un altro collega, puoi cambiare il proprietario a quella
-persona o menzionare la persona in un articolo digitando [[@]][[@]] e
-selezionando l'utente. In quest'ultimo caso, l'utente viene notificato e
-viene automaticamente iscritto per ricevere notifiche sugli aggiornamenti
-del ticket.
-
-Per cambiare il proprietario a una persona che ha accesso solo ai ticket di
-un altro gruppo, devi prima cambiare il gruppo di conseguenza.
 
 -----
 
