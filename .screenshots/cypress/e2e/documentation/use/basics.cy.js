@@ -90,6 +90,10 @@ describe('ticket sidebar', () => {
       }
     })
     cy.wait(1000)
+    // The form can mount below the fold depending on viewport/layout; bring
+    // it into view BEFORE the highlight is drawn, or the overlay renders
+    // misaligned and the shot crops to a sliver.
+    cy.get('[id="ticketArticleReplyForm"]').scrollIntoView()
     // Highlight the visibility toggle (role=switch) and its "Internal" label.
     cy.get('#ticketArticleReplyForm [role="switch"]').parent().highlight({ padding: 8 })
     cy.get('[id="ticketArticleReplyForm"]').should('be.visible').screenshot('article-type-visibility')
