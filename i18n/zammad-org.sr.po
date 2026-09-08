@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-01 10:49+0200\n"
-"PO-Revision-Date: 2026-09-02 14:38+0000\n"
+"POT-Creation-Date: 2026-09-03 08:20+0200\n"
+"PO-Revision-Date: 2026-09-08 06:12+0000\n"
 "Last-Translator: Dusan Vuckovic <dv@zammad.com>\n"
 "Language-Team: Serbian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/sr/>\n"
@@ -3864,219 +3864,8 @@ msgstr ""
 "организације). Да ли мислите да би такво прилагођено поље имало смисла? "
 "Разговарајте са вашим Zammad администратором, може се лако подесити."
 
-#. type: Title ###
+#. type: Title #
 #: src/en/documentation/use/basics/ticket-basics.md:46
-#, no-wrap
-msgid "State"
-msgstr "Стање"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:50
-msgid ""
-"The state reflects the current status of a ticket (mainly if a customer "
-"request is resolved or not). Think of it as a representation of progress "
-"towards completion. By default, there are the following states:"
-msgstr ""
-"Стање одражава тренутни статус тикета (углавном да ли је клијентов захтев "
-"решен или не). Можете га сматрати репрезентацијом прогреса на путу решења. "
-"Подразумевано, доступна су следећа стања:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**New**: State for new tickets on which no one has worked on. When updating "
-"a ticket for the first time, it automatically switches to open."
-msgstr ""
-"**Ново**: Статус за нове тикете на којима нико још није радио. Приликом "
-"ажурирања тикета по први пут, аутоматски прелази у статус отворен."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Open**: State for tickets which aren't resolved yet and some work needs to "
-"be done."
-msgstr "**Отворено**: Стање за тикете који још нису решени и захтевају обраду."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Pending Close**: State for tickets which are basically resolved but you "
-"don't want to close immediately. This state requires you to enter a date and "
-"time at which the ticket automatically switches to closed."
-msgstr ""
-"**Чека на затварање**: Стање за тикете који су практично решени али не "
-"желите одмах да их затворите. Ово стање захтева да унесете датум и време "
-"када ће тикет бити аутоматски затворен."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Pending Reminder**: State for open tickets which you want to get reminded "
-"about at a certain date and time. Requires you to enter a date and time at "
-"which you want to get notified. For example useful if you had a question to "
-"a third party and want to make sure that this issue won't be forgotten."
-msgstr ""
-"**Чека на подсетник**: Стање за отворене тикете за које желите да вас "
-"подсетимо на одређен датум и време. Захтева да унесете датум и време када "
-"желите да будете обавештени. Нпр. корисно је уколико сте послали питање "
-"трећем лицу и желите да се осигурате да овај проблем неће бити заборављен."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Merged**: State for a ticket which was merged into another ticket. Check "
-"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
-"to see the related ticket."
-msgstr ""
-"**Спојено**: Статус за тикет који је спојен у други тикет. Погледајте "
-"[повезане тикете](/en/documentation/use/advanced-features#link-tickets) да "
-"видите повезани тикет."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:64
-msgid ""
-"Zammad's ticket states are color coded. This helps you to understanding the "
-"state of the ticket much faster in general - without having a look into "
-"details."
-msgstr ""
-"Статуси тикета у Zammad-у су означени бојама. Ово вам помаже да брже "
-"уопштено схватите статус тикета - без дубљег уласка у детаље."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:66
-msgid ""
-"![Screenshot shows different color-coded states](/screenshots/documentation/"
-"use/overviews/states.png)"
-msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/documentation/use/"
-"overviews/states.png)"
-
-#. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:67
-#, no-wrap
-msgid "Priority"
-msgstr "Приоритет"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:71
-msgid ""
-"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
-"important it is. The three default priorities are:"
-msgstr ""
-"Приоритет тикета је једноставно рангирање (од 1 до 3) колико је хитан или "
-"важан. Три подразумевана приоритета су:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-msgid "1 low"
-msgstr "1 низак"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-msgid "2 normal"
-msgstr "2 нормалан"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-msgid "3 high"
-msgstr "3 висок"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:78
-msgid ""
-"In case these priorities aren't enough, ask your Zammad admin to create "
-"additional ones. The default priorities allow you to immediately recognize "
-"the importance of your tickets because they are color coded:"
-msgstr ""
-"У случају да ови приоритети нису довољни, затражите од Zammad администратора "
-"да креира додатне. Подразумевани приоритети вам омогућавају да одмах "
-"препознате важност ваших тикета јер су означени бојама:"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:80
-msgid ""
-"![Screenshot shows different color-coded priorities](/screenshots/"
-"documentation/use/overviews/priorities.png)"
-msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/documentation/use/"
-"overviews/priorities.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:83
-msgid ""
-"You might wonder what such a ticket priority is for. Out of the box, it "
-"doesn't actually do anything except the highlighting. However, Zammad "
-"administrators can set up all sorts of automation and analytics based on the "
-"priority."
-msgstr ""
-"Можта се питате чему служи приоритет тикета. Сам по себи, заправо ништа не "
-"чини осим наглашавања. Међутим, Zammad администратори могу да подесе разне "
-"врсте аутоматизаиција и статистика на основу приоритета."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:86
-msgid ""
-"Be aware that customers can't set a priority for their own tickets. "
-"Otherwise, some might set their tickets always to high and hope for an "
-"immediate escalation."
-msgstr ""
-"Имајте на уму да клијенти не могу постављати приоритет за своје сопствене "
-"тикете. У супротном, неки би увек постављали висок приоритет и очекивали "
-"хитну ескалацију."
-
-#. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:87
-#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
-#, no-wrap
-msgid "Tags"
-msgstr "Ознаке"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:93
-msgid ""
-"Tags are custom labels that can be assigned to tickets to make it easier to "
-"find them in the future.  They can be used in conditions like in triggers "
-"and in overviews and they can also be assigned automatically by macros, "
-"schedulers and triggers. Of course you can search for the text of the tags "
-"and you will find the tickets which have the tag assigned."
-msgstr ""
-"Ознаке су један од начина категоризације тикета. О ознакама можете "
-"размишљати као о некој врсти тагова. Могу се користити у условима окидача и "
-"прегледа и могу бити додељени аутоматски од стране макроа, планера и "
-"окидача.  Наравно, можете вршити претрагу по тексту ознаке и пронаћи тикете "
-"који имају додељену ознаку."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:95
-msgid ""
-"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-tags.png)"
-msgstr ""
-"![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
-"tags.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:101
-msgid ""
-"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
-"Add a tag by clicking on the ::+:: button.  Depending on your Zammad's "
-"configuration, you can create new tags by simply type and confirm them with "
-"[[enter]] or [[tab]]. In any case, you can choose from already available "
-"tags. Start typing and you see a list with matching suggestions. To remove "
-"it, click the ::x:: button on the right side of the tag. This button only "
-"shows up when you move the mouse over the tag."
-msgstr ""
-"У бочној траци тикета можете пронаћи секцију која је означена као "
-"**Тагови**. Додајте таг кликом на дугме ::+::. Зависно од конфигурације "
-"вашег Zammad-а, нове тагове можете креирати једноставним куцаањем и "
-"потврђивањем са [[enter]] или [[tab]]. У сваком случају, можете изабрати "
-"између већ доступних тагова. Почните да куцате и видећете листу са "
-"одговарајућим предлозима. Да бисте га уклонили, кликните на дугме ::X:: на "
-"десној страни тага."
-
-#. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:102
 #: src/en/reference/es-indexed-attributes.md:1054
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, no-wrap
@@ -4084,7 +3873,7 @@ msgid "Group"
 msgstr "Група"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:108
+#: src/en/documentation/use/basics/ticket-basics.md:52
 msgid ""
 "This ticket attribute is useful for organizations with more than one team. A "
 "common way to use groups is to have one for each department of the company. "
@@ -4101,13 +3890,13 @@ msgstr ""
 "групама."
 
 #. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:109
+#: src/en/documentation/use/basics/ticket-basics.md:53
 #, no-wrap
 msgid "Owner"
 msgstr "Власник"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:115
+#: src/en/documentation/use/basics/ticket-basics.md:59
 msgid ""
 "This is the person who is currently responsible for the ticket. In case you "
 "need information from another colleague, you can either change the owner to "
@@ -4122,13 +3911,224 @@ msgstr ""
 "претплаћен на добијање обавештења о ажурирањима тикета."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:117
+#: src/en/documentation/use/basics/ticket-basics.md:61
 msgid ""
 "To change the owner to a person which has only access to another group's "
 "tickets, you first have to switch the group accordingly."
 msgstr ""
 "За промену власника на особу која има приступ само некој другој групи "
 "тикета, морате прво променити групу."
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:62
+#, no-wrap
+msgid "State"
+msgstr "Стање"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:66
+msgid ""
+"The state reflects the current status of a ticket (mainly if a customer "
+"request is resolved or not). Think of it as a representation of progress "
+"towards completion. By default, there are the following states:"
+msgstr ""
+"Стање одражава тренутни статус тикета (углавном да ли је клијентов захтев "
+"решен или не). Можете га сматрати репрезентацијом прогреса на путу решења. "
+"Подразумевано, доступна су следећа стања:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**New**: State for new tickets on which no one has worked on. When updating "
+"a ticket for the first time, it automatically switches to open."
+msgstr ""
+"**Ново**: Статус за нове тикете на којима нико још није радио. Приликом "
+"ажурирања тикета по први пут, аутоматски прелази у статус отворен."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Open**: State for tickets which aren't resolved yet and some work needs to "
+"be done."
+msgstr "**Отворено**: Стање за тикете који још нису решени и захтевају обраду."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Pending Close**: State for tickets which are basically resolved but you "
+"don't want to close immediately. This state requires you to enter a date and "
+"time at which the ticket automatically switches to closed."
+msgstr ""
+"**Чека на затварање**: Стање за тикете који су практично решени али не "
+"желите одмах да их затворите. Ово стање захтева да унесете датум и време "
+"када ће тикет бити аутоматски затворен."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Pending Reminder**: State for open tickets which you want to get reminded "
+"about at a certain date and time. Requires you to enter a date and time at "
+"which you want to get notified. For example useful if you had a question to "
+"a third party and want to make sure that this issue won't be forgotten."
+msgstr ""
+"**Чека на подсетник**: Стање за отворене тикете за које желите да вас "
+"подсетимо на одређен датум и време. Захтева да унесете датум и време када "
+"желите да будете обавештени. Нпр. корисно је уколико сте послали питање "
+"трећем лицу и желите да се осигурате да овај проблем неће бити заборављен."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Merged**: State for a ticket which was merged into another ticket. Check "
+"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
+"to see the related ticket."
+msgstr ""
+"**Спојено**: Статус за тикет који је спојен у други тикет. Погледајте "
+"[повезане тикете](/en/documentation/use/advanced-features#link-tickets) да "
+"видите повезани тикет."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:80
+msgid ""
+"Zammad's ticket states are color coded. This helps you to understanding the "
+"state of the ticket much faster in general - without having a look into "
+"details."
+msgstr ""
+"Статуси тикета у Zammad-у су означени бојама. Ово вам помаже да брже "
+"уопштено схватите статус тикета - без дубљег уласка у детаље."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:82
+msgid ""
+"![Screenshot shows different color-coded states](/screenshots/documentation/"
+"use/overviews/states.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/documentation/use/"
+"overviews/states.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:83
+#, no-wrap
+msgid "Priority"
+msgstr "Приоритет"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:87
+msgid ""
+"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
+"important it is. The three default priorities are:"
+msgstr ""
+"Приоритет тикета је једноставно рангирање (од 1 до 3) колико је хитан или "
+"важан. Три подразумевана приоритета су:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid "1 low"
+msgstr "1 низак"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid "2 normal"
+msgstr "2 нормалан"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid "3 high"
+msgstr "3 висок"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:94
+msgid ""
+"In case these priorities aren't enough, ask your Zammad admin to create "
+"additional ones. The default priorities allow you to immediately recognize "
+"the importance of your tickets because they are color coded:"
+msgstr ""
+"У случају да ови приоритети нису довољни, затражите од Zammad администратора "
+"да креира додатне. Подразумевани приоритети вам омогућавају да одмах "
+"препознате важност ваших тикета јер су означени бојама:"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:96
+msgid ""
+"![Screenshot shows different color-coded priorities](/screenshots/"
+"documentation/use/overviews/priorities.png)"
+msgstr ""
+"![Пример снимка екрана (пуна страна)](/screenshots/documentation/use/"
+"overviews/priorities.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:99
+msgid ""
+"You might wonder what such a ticket priority is for. Out of the box, it "
+"doesn't actually do anything except the highlighting. However, Zammad "
+"administrators can set up all sorts of automation and analytics based on the "
+"priority."
+msgstr ""
+"Можта се питате чему служи приоритет тикета. Сам по себи, заправо ништа не "
+"чини осим наглашавања. Међутим, Zammad администратори могу да подесе разне "
+"врсте аутоматизаиција и статистика на основу приоритета."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:102
+msgid ""
+"Be aware that customers can't set a priority for their own tickets. "
+"Otherwise, some might set their tickets always to high and hope for an "
+"immediate escalation."
+msgstr ""
+"Имајте на уму да клијенти не могу постављати приоритет за своје сопствене "
+"тикете. У супротном, неки би увек постављали висок приоритет и очекивали "
+"хитну ескалацију."
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:103
+#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
+#, no-wrap
+msgid "Tags"
+msgstr "Ознаке"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:109
+msgid ""
+"Tags are custom labels that can be assigned to tickets to make it easier to "
+"find them in the future.  They can be used in conditions like in triggers "
+"and in overviews and they can also be assigned automatically by macros, "
+"schedulers and triggers. Of course you can search for the text of the tags "
+"and you will find the tickets which have the tag assigned."
+msgstr ""
+"Ознаке су један од начина категоризације тикета. О ознакама можете "
+"размишљати као о некој врсти тагова. Могу се користити у условима окидача и "
+"прегледа и могу бити додељени аутоматски од стране макроа, планера и "
+"окидача.  Наравно, можете вршити претрагу по тексту ознаке и пронаћи тикете "
+"који имају додељену ознаку."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:111
+msgid ""
+"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
+"documentation/use/advanced-features.cy.js/ticket-tags.png)"
+msgstr ""
+"![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
+"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
+"tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:117
+msgid ""
+"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
+"Add a tag by clicking on the ::+:: button.  Depending on your Zammad's "
+"configuration, you can create new tags by simply type and confirm them with "
+"[[enter]] or [[tab]]. In any case, you can choose from already available "
+"tags. Start typing and you see a list with matching suggestions. To remove "
+"it, click the ::x:: button on the right side of the tag. This button only "
+"shows up when you move the mouse over the tag."
+msgstr ""
+"У бочној траци тикета можете пронаћи секцију која је означена као "
+"**Тагови**. Додајте таг кликом на дугме ::+::. Зависно од конфигурације "
+"вашег Zammad-а, нове тагове можете креирати једноставним куцаањем и "
+"потврђивањем са [[enter]] или [[tab]]. У сваком случају, можете изабрати "
+"између већ доступних тагова. Почните да куцате и видећете листу са "
+"одговарајућим предлозима. Да бисте га уклонили, кликните на дугме ::X:: на "
+"десној страни тага."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:121
@@ -13971,8 +13971,7 @@ msgid ""
 msgstr ""
 "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
 ":\n"
-"  Овим префиксом биће именовани сви Zammad индекси. Промените ако користите "
-"удаљене кластере.\n"
+"  Овим префиксом биће именовани сви Zammad индекси. Промените ако користите удаљене кластере.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:148
@@ -14154,8 +14153,7 @@ msgid ""
 msgstr ""
 "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
 ":\n"
-"  Додатни параметри за PostgreSQL које треба додати на крају URI-ја базе "
-"података.\n"
+"  Додатни параметри за PostgreSQL које треба додати на крају URI-ја базе података.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:211
@@ -14203,8 +14201,7 @@ msgid ""
 msgstr ""
 "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
 ":\n"
-"  Подразумевано, Nginx контејнер за Zammad ће одговарати на све захтеве. "
-"Можете навести своју IP / FQDN адресу по жељи.\n"
+"  Подразумевано, Nginx контејнер за Zammad ће одговарати на све захтеве. Можете навести своју IP / FQDN адресу по жељи.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:230
@@ -14245,8 +14242,7 @@ msgid ""
 ":\n"
 "  Host name of the Rails server container.\n"
 msgstr ""
-"`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-"
-"railsserver\" />\n"
+"`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
 ":\n"
 "  Назив хоста контејнера Rails сервера.\n"
 
@@ -14282,8 +14278,7 @@ msgid ""
 ":\n"
 "  Host name of Zammad's WebSocket server.\n"
 msgstr ""
-"`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-"
-"websocket\" />\n"
+"`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
 ":\n"
 "  Назив хоста Zammad-овог WebSocket сервиса.\n"
 
@@ -14465,10 +14460,8 @@ msgid ""
 "  `ZAMMAD_HTTP_READ_TIMEOUT`.\n"
 msgstr ""
 "`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
-": Дефинише максимално укупно време у секундама за комплетни HTTP захтев, "
-"укључујући успостављање конекције и\n"
-"  учитавање одговора. Ово је додатна апсолутна граница поред "
-"`ZAMMAD_HTTP_OPEN_TIMEOUT` и\n"
+": Дефинише максимално укупно време у секундама за комплетни HTTP захтев, укључујући успостављање конекције и\n"
+"  учитавање одговора. Ово је додатна апсолутна граница поред `ZAMMAD_HTTP_OPEN_TIMEOUT` и\n"
 "  `ZAMMAD_HTTP_READ_TIMEOUT`.\n"
 
 #. type: Title ##
@@ -14635,8 +14628,7 @@ msgstr ""
 "\n"
 "=== Чланак\n"
 "\n"
-"Следећа структура је већ укључена у индекс тикета (види први језичак) и "
-"додата је овде одвојено из\n"
+"Следећа структура је већ укључена у индекс тикета (види први језичак) и додата је овде одвојено из\n"
 "разлога прегледности. Отворите детаље да видите садржај чланка:\n"
 "\n"
 
@@ -15177,7 +15169,7 @@ msgstr "Примери: `null`, `\"2025-02-24T16:28:38.303Z\"`"
 #: src/en/reference/es-indexed-attributes.md:205
 #, no-wrap
 msgid "`first_response_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`first_response_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:209
@@ -15197,7 +15189,7 @@ msgstr "Примери: `null`, `10`, `-6`"
 #: src/en/reference/es-indexed-attributes.md:212
 #, no-wrap
 msgid "`first_response_in_min` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`first_response_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:215
@@ -15212,7 +15204,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:218
 #, no-wrap
 msgid "`group`"
-msgstr "Група"
+msgstr "`group`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:221
@@ -15372,7 +15364,7 @@ msgstr "Пример: `null`"
 #: src/en/reference/es-indexed-attributes.md:276
 #, no-wrap
 msgid "`number`"
-msgstr "\"број\""
+msgstr "`number`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:279
@@ -15389,7 +15381,7 @@ msgstr "Примери: `1010138`, `202006231010138`"
 #: src/en/reference/es-indexed-attributes.md:831
 #, no-wrap
 msgid "`organization`"
-msgstr "Организација"
+msgstr "`organization`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:286
@@ -15418,7 +15410,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:842
 #, no-wrap
 msgid "`organization_id`"
-msgstr "Организација"
+msgstr "`organization_id`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:296
@@ -15434,7 +15426,7 @@ msgstr "Примери: `null`, `2`"
 #: src/en/reference/es-indexed-attributes.md:299
 #, no-wrap
 msgid "`owner`"
-msgstr "\"власник\""
+msgstr "`owner`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:302
@@ -15461,7 +15453,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:309
 #, no-wrap
 msgid "`owner_id`"
-msgstr "\"власник_ид\""
+msgstr "`owner_id`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:312
@@ -15479,7 +15471,7 @@ msgstr "Примери: `null`, `3`"
 #: src/en/reference/es-indexed-attributes.md:315
 #, no-wrap
 msgid "`pending_time`"
-msgstr "\"време_на_чекању\""
+msgstr "`pending_time`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:318
@@ -15503,7 +15495,7 @@ msgstr "Примери: `null`, \"2025-02-24T17:44:06.912Z\""
 #: src/en/reference/es-indexed-attributes.md:1344
 #, no-wrap
 msgid "`preferences`"
-msgstr "Референца"
+msgstr "`preferences`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:325
@@ -15518,7 +15510,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:326
 #, no-wrap
 msgid "`priority`"
-msgstr "Приоритет тикета"
+msgstr "`priority`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:330
@@ -15545,7 +15537,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:337
 #, no-wrap
 msgid "`priority_id`"
-msgstr "Приоритет тикета"
+msgstr "`priority_id`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:340
@@ -15608,7 +15600,7 @@ msgstr "Примери: `1`, `4`"
 #: src/en/reference/es-indexed-attributes.md:1366
 #, no-wrap
 msgid "`tags`"
-msgstr "\"тагови\""
+msgstr "`tags`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:362
@@ -15624,7 +15616,7 @@ msgstr "Примери: [\"поруџбина\", \"приговор\"], `[]`"
 #: src/en/reference/es-indexed-attributes.md:365
 #, no-wrap
 msgid "`time_unit`"
-msgstr "\"временска_јединица\""
+msgstr "`time_unit`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:368
@@ -15640,7 +15632,7 @@ msgstr "Примери: `null`, `15`"
 #: src/en/reference/es-indexed-attributes.md:371
 #, no-wrap
 msgid "`title`"
-msgstr "\"наслов\""
+msgstr "`title`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:374
@@ -15656,7 +15648,7 @@ msgstr "Примери: `Obrazac za povratne informacije`, `Potrebna pomoć`"
 #: src/en/reference/es-indexed-attributes.md:377
 #, no-wrap
 msgid "`type` <Badge type=\"warning\" text=\"deprecated\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`type` <Badge type=\"warning\" text=\"deprecated\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:380
@@ -15668,7 +15660,7 @@ msgstr "Вредност: `null`"
 #: src/en/reference/es-indexed-attributes.md:381
 #, no-wrap
 msgid "`update_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`update_diff_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:385
@@ -15683,7 +15675,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:388
 #, no-wrap
 msgid "`update_escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`update_escalation_at` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:391
@@ -15698,7 +15690,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:394
 #, no-wrap
 msgid "`update_in_min` <Badge type=\"info\" text=\"SLA\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`update_in_min` <Badge type=\"info\" text=\"SLA\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:397
@@ -15726,7 +15718,7 @@ msgstr "Примери: `null`, `5`, \"-10\""
 #: src/en/reference/es-indexed-attributes.md:1372
 #, no-wrap
 msgid "`updated_at`"
-msgstr "Освежено у"
+msgstr "`updated_at`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:403
@@ -15736,14 +15728,14 @@ msgstr "Временска ознака последњег ажурирања т
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:405
 msgid "Example: `\"2025-02-24T16:28:38.303Z\"`"
-msgstr "Пример: \"2025-02-24T16:28:38.303Z\""
+msgstr "Пример: `\"2025-02-24T16:28:38.303Z\"`"
 
 #. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:406
 #: src/en/reference/es-indexed-attributes.md:1032
 #, no-wrap
 msgid "`updated_by`"
-msgstr "\"updated_by\""
+msgstr "`updated_by`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:409
@@ -15778,7 +15770,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:1378
 #, no-wrap
 msgid "`updated_by_id`"
-msgstr "\"updated_by_id\""
+msgstr "`updated_by_id`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:419
@@ -15810,7 +15802,7 @@ msgstr "Следећи индекс садржи споменуте информ
 #: src/en/reference/es-indexed-attributes.md:1058
 #, no-wrap
 msgid "`active`"
-msgstr "\"активно\""
+msgstr "`active`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:429
@@ -15835,7 +15827,7 @@ msgstr "Временска ознака креирања приоритета."
 #: src/en/reference/es-indexed-attributes.md:437
 #: src/en/reference/es-indexed-attributes.md:485
 msgid "Example: `\"2025-02-03T14:50:20.724Z\"`"
-msgstr "Пример: \"2025-02-03T14:50:20.724Z\""
+msgstr "Пример: `\"2025-02-03T14:50:20.724Z\"`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:441
@@ -15847,7 +15839,7 @@ msgstr "ID корисника који је креирао приоритет."
 #: src/en/reference/es-indexed-attributes.md:514
 #, no-wrap
 msgid "`default_create`"
-msgstr "\"дефаулт_цреате\""
+msgstr "`default_create`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:447
@@ -16038,7 +16030,7 @@ msgstr "Пример: `\"na čekanju za zatvaranje\"`"
 #: src/en/reference/es-indexed-attributes.md:544
 #, no-wrap
 msgid "`next_state`"
-msgstr "Први кораци"
+msgstr "`next_state`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:547
@@ -16046,8 +16038,8 @@ msgid ""
 "Contains all follow up state information if applicable, may not be available "
 "depending on the state type"
 msgstr ""
-"Садржи све информације о пратећем статусу ако је примењиво, можда није "
-"доступно у зависности од типа статуса."
+"Садржи све информације о стању наставка тикета, може бити недоступно у "
+"зависности од врсте стања"
 
 #. type: Fenced div block (details)
 #: src/en/reference/es-indexed-attributes.md:548
@@ -16091,7 +16083,7 @@ msgstr "`stable`"
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:569
 msgid "Contains all available information of the states type"
-msgstr "Садржи све доступне информације о типу статуса."
+msgstr "Садржи све доступне информације о врсти стања"
 
 #. type: Fenced div block (details)
 #: src/en/reference/es-indexed-attributes.md:570
@@ -16365,7 +16357,7 @@ msgstr "ID корисника који је послао/креирао члан
 #: src/en/reference/es-indexed-attributes.md:697
 #, no-wrap
 msgid "`subject`"
-msgstr "Објекат"
+msgstr "`subject`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:700
@@ -16617,7 +16609,7 @@ msgstr "Примери: `\"\"`, `\"Doe\"`"
 #: src/en/reference/es-indexed-attributes.md:813
 #, no-wrap
 msgid "`login`"
-msgstr "Пријава"
+msgstr "`login`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:816
@@ -16675,7 +16667,7 @@ msgstr "ID организације којој корисник припада."
 #: src/en/reference/es-indexed-attributes.md:848
 #, no-wrap
 msgid "`out_of_office`"
-msgstr "Ван канцеларије"
+msgstr "`out_of_office`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:851
@@ -16729,7 +16721,7 @@ msgstr "Примери: `null`, `\"2025-02-24\"`"
 #: src/en/reference/es-indexed-attributes.md:872
 #, no-wrap
 msgid "`permissions`"
-msgstr "Rails команде"
+msgstr "`permissions`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:875
@@ -16869,7 +16861,7 @@ msgstr "Web URL корисника."
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:940
 msgid "Examples: `\"\"`, `\"https://zammad.org\"`"
-msgstr "https://zammad.org"
+msgstr "Примери: `\"\"`, `\"https://zammad.org\"`"
 
 #. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:941
@@ -17177,7 +17169,7 @@ msgstr "Напомена за објекат групе."
 #: src/en/reference/es-indexed-attributes.md:1128
 #, no-wrap
 msgid "`signature`"
-msgstr "потпис"
+msgstr "`signature`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1131
@@ -17200,7 +17192,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:1138
 #, no-wrap
 msgid "`signature_id`"
-msgstr "потпис_ид"
+msgstr "`signature_id`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1141
@@ -17232,7 +17224,7 @@ msgstr "Следећи индекс садржи доле наведене ин�
 #: src/en/reference/es-indexed-attributes.md:1160
 #, no-wrap
 msgid "`call_id`"
-msgstr "позив_ид"
+msgstr "`call_id`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1163
@@ -17248,7 +17240,7 @@ msgstr "Пример: `6`"
 #: src/en/reference/es-indexed-attributes.md:1166
 #, no-wrap
 msgid "`comment`"
-msgstr "коментар"
+msgstr "`comment`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1169
@@ -17290,7 +17282,7 @@ msgstr "Вредности: `in`, `out`"
 #: src/en/reference/es-indexed-attributes.md:1184
 #, no-wrap
 msgid "`done`"
-msgstr "завршен"
+msgstr "`done`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1187
@@ -17301,7 +17293,7 @@ msgstr "Одређује да ли се позив приказује као „
 #: src/en/reference/es-indexed-attributes.md:1190
 #, no-wrap
 msgid "`duration_talking_time`"
-msgstr "време_говора"
+msgstr "`duration_talking_time`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1193
@@ -17317,7 +17309,7 @@ msgstr "Пример: `27`"
 #: src/en/reference/es-indexed-attributes.md:1196
 #, no-wrap
 msgid "`duration_waiting_time`"
-msgstr "време_чекања"
+msgstr "`duration_waiting_time`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1199
@@ -17333,7 +17325,7 @@ msgstr "Пример: `77`"
 #: src/en/reference/es-indexed-attributes.md:1202
 #, no-wrap
 msgid "`end_at`"
-msgstr "завршено_у"
+msgstr "`end_at`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1205
@@ -17361,7 +17353,7 @@ msgstr "Пример: `491711234567890`"
 #: src/en/reference/es-indexed-attributes.md:1214
 #, no-wrap
 msgid "`from_comment`"
-msgstr "коментар_давитеља"
+msgstr "`from_comment`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1217
@@ -17377,7 +17369,7 @@ msgstr "Примери: `null`, `\"John\"`, `\"Doe\"`"
 #: src/en/reference/es-indexed-attributes.md:1220
 #, no-wrap
 msgid "`from_pretty`"
-msgstr "од_форматирано"
+msgstr "`from_pretty`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1223
@@ -17399,7 +17391,7 @@ msgstr "Унутрашњи ID уноса дневника."
 #: src/en/reference/es-indexed-attributes.md:1232
 #, no-wrap
 msgid "`initialized_at`"
-msgstr "иницијализирано_у"
+msgstr "`initialized_at`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1235
@@ -17432,7 +17424,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:1248
 #, no-wrap
 msgid "`queue`"
-msgstr "ред_чекања"
+msgstr "`queue`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1251
@@ -17448,7 +17440,7 @@ msgstr "Примери: `null`, `491711234567890`"
 #: src/en/reference/es-indexed-attributes.md:1254
 #, no-wrap
 msgid "`start_at`"
-msgstr "започето_у"
+msgstr "`start_at`"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1257
@@ -17563,13 +17555,13 @@ msgstr "Временска ознака креирања разговора"
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1315
 msgid "`\"2025-02-25T10:26:24.376Z\"`"
-msgstr "\"2025-02-25T10:26:24.376Z\""
+msgstr "`\"2025-02-25T10:26:24.376Z\"`"
 
 #. type: Title ###
 #: src/en/reference/es-indexed-attributes.md:1316
 #, no-wrap
 msgid "`created_by_id` <Badge type=\"warning\" text=\"deprecated\"/>"
-msgstr "Одељак са значком <Badge type=\"warning\" text=\"прилагођен текст\" />"
+msgstr "`created_by_id` <Badge type=\"warning\" text=\"deprecated\"/>"
 
 #. type: Plain text
 #: src/en/reference/es-indexed-attributes.md:1319
@@ -17920,11 +17912,12 @@ msgid ""
 "  avatar and a little pen at the bottom of your ticket, it means the other agent\n"
 "  is currently editing it.\n"
 msgstr ""
-"Упозорење на сукоб\n"
-": Када два оператера истовремено уређују исти случај, много тога може поћи по злу -\n"
-"  од дупликата одговора до преписаних порука. Zammad вам помаже да избегнете\n"
-"  ово захваљујући интегрисаном упозорењу на сукоб. Дакле, ако видите аватар другог оператера\n"
-"  и малу оловку на дну случаја, то значи да га други оператер тренутно уређује.\n"
+"Упозорење на конфликтну ситуацију\n"
+": Када два оператера истовремено обрађују исти тикет, много тога може поћи по злу –\n"
+"  од дуплираних одговора до преиначених порука. Zammad вам помаже да избегнете\n"
+"  ову ситуацију захваљујући интегрисаном упозорењу на конфликт. Дакле, ако видите аватар сличицу\n"
+"  другог оператера са иконицом оловке при дну тикета, то значи да га други оператер\n"
+"  тренутно обрађује.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:88
@@ -18053,7 +18046,8 @@ msgid ""
 "  documentation. 😉\n"
 msgstr ""
 "Документација\n"
-": Вероватно сте већ приметили: читате део документације Zammad-а. 😉\n"
+": Вероватно сте већ приметили: читате део Zammad\n"
+"  документације. 😉\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:139
@@ -18160,9 +18154,10 @@ msgid ""
 "  they can fast-forward the development and put it on top of the list by\n"
 "  sponsoring it, which means that they cover the costs for the development.\n"
 msgstr ""
-"Спонзорисање функционалности\n"
-": Ако организација хитно захтева једну од функционалности са листе,\n"
-"  може убрзати развој и ставити је на врх листе спонзоришући је, што значи да покривају трошкове развоја.\n"
+"Спонзорисање функција\n"
+": Уколико организација хитно захтева једну од функционалности са списка,\n"
+"  може убрзати развој и ставити је на врх листе спонзоришући\n"
+"  је, што значи да ће покрити трошкове развоја.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:179
@@ -18354,7 +18349,9 @@ msgstr ""
 msgid ""
 "  Kibana can be integrated with Zammad, allowing for helpdesk data to be\n"
 "  mapped in the reporting tool.\n"
-msgstr "  Kibana се може интегрисати са Zammad-ом, омогућавајући мапирање података хелпдеска у алату за извештавање.\n"
+msgstr ""
+"  Kibana се може интегрисати са Zammad-ом, омогућавајући мапирање података\n"
+"  тикет система у алату за извештавање.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:248
@@ -18409,7 +18406,8 @@ msgid ""
 "  that no step is forgotten.\n"
 msgstr ""
 "Макро\n"
-": Макро је низ акција. Покретањем макра покрећу се и извршавају акције, па корисници не морају ручно да пролазе кроз сваки\n"
+": Макро је низ радњи. Покретањем макра покрећу се и извршавају радње,\n"
+"  па корисници не морају ручно да пролазе кроз сваки\n"
 "  појединачни корак. Штеди огромну количину времена и осигурава\n"
 "  да се ниједан корак не заборави.\n"
 
@@ -18623,8 +18621,9 @@ msgid ""
 "  depending on your system.\n"
 msgstr ""
 "Навигациона трака\n"
-": Навигациона трака је лева бочна трака у Zammad-у која садржи картице навигације,\n"
-"  претрагу, обавештења и много више ставки, у зависности од вашег система.\n"
+": Навигациона трака је лева бочна трака у Zammad-у која садржи прозоре,\n"
+"  претрагу, обавештења, базу знања и много више,\n"
+"  у зависности од вашег система.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:346
@@ -18795,7 +18794,8 @@ msgid ""
 "  reached, the ticket will escalate.\n"
 msgstr ""
 "  SLA можете лако подесити у Zammad-у и дефинисати параметре као што је време\n"
-"  за први одговор, ажурирање и решење. Чим истекне рок, тикет ће бити ескалирана.\n"
+"  првог одзива, освежавања и решења. Чим истекне рок,\n"
+"  тикет ће бити ескалиран.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:409
@@ -18982,7 +18982,10 @@ msgid ""
 "Zammad\n"
 ": Zammad is the greatest helpdesk in the world.\n"
 "  Period.\n"
-msgstr "Zammad : Zammad је најбољи хелпдеск на свету. Тачка.\n"
+msgstr ""
+"Zammad\n"
+"  : Zammad је најбољи тикет систем на свету.\n"
+"  И тачка.\n"
 
 #. type: Plain text
 #: src/en/reference/glossary.md:473
@@ -19894,15 +19897,12 @@ msgid ""
 "| Configuration check                         | Yes               | Manually via test script   |\n"
 "| Exceptions                                  | Yes               | No                         |\n"
 msgstr ""
-"| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
-"|----------------------|-------------------------------|---------------------------------|\n"
-"| Означени дугмићи     | `Пријава`                     | \\`Пријава\\`                     |\n"
-"| Поља и елементи      | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
-"| Путања/локације      | _Подешавања > Канали > Имејл_ | \\_Подешавања > Канали > Имејл\\_ |\n"
-"| Пречице на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
-"| Дугме за додавање    | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
-"| Дугме за брисање     | ::x::                         | \\:\\:\\x\\:\\:                      |\n"
-"| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"
+"|                                           | UI подешавање | Променљива окружења  |\n"
+"|-------------------------------------------|---------------|----------------------|\n"
+"| Захтева приступ оперативном систему хоста | не            | да                   |\n"
+"| Аутоматски искључује интерне адресе       | да            | не                   |\n"
+"| Извршава проверу конфигурације            | да            | ручно, преко скрипте |\n"
+"| Грешке                                    | да            | не                   |\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:22
@@ -20001,7 +20001,8 @@ msgid ""
 "```\n"
 "\n"
 msgstr ""
-"У зависности од окружења, можда ћете желети да користите и варијанте променљивих малим словима. Ако нисте сигурни, поставите обе варијанте наводећи им вредности оних великим словима, на пример:\n"
+"У зависности од окружења, можда ћете желети да користите и варијанте променљивих малим словима. Ако нисте сигурни, поставите\n"
+"обе варијанте наводећи им вредности оних великим словима, на пример:\n"
 "\n"
 "```sh\n"
 "export http_proxy=$HTTP_PROXY\n"
@@ -20040,15 +20041,14 @@ msgid ""
 "| index.rubygems.org           | Download of gems for ruby                             |\n"
 "| registry.npmjs.org           | Download of js dependencies                           |\n"
 msgstr ""
-"| Тип                  | Истицање у документацији      | Markdown синтакса               |\n"
-"|----------------------|-------------------------------|---------------------------------|\n"
-"| Означени дугмићи     | `Пријава`                     | \\`Пријава\\`                     |\n"
-"| Поља и елементи      | **Назив**                     | \\*\\*Назив\\*\\*                   |\n"
-"| Путања/локације      | _Подешавања > Канали > Имејл_ | \\_Подешавања > Канали > Имејл\\_ |\n"
-"| Пречице на тастатури | [[x]]                         | \\[\\[x\\]\\]                       |\n"
-"| Дугме за додавање    | ::+::                         | \\:\\:\\+\\:\\:                      |\n"
-"| Дугме за брисање     | ::x::                         | \\:\\:\\x\\:\\:                      |\n"
-"| Дугме за мени радњи  | ::a::                         | \\:\\:\\a\\:\\:                      |\n"
+"| Адреса             | Напомена                                    |\n"
+"|--------------------|---------------------------------------------|\n"
+"| dl.packager.io     | Преузимање OS пакета (инсталација пакета)   |\n"
+"| go.packager.io     | Исто као изнад; нов сервис хостовања пакета |\n"
+"| geo.zammad.com     | Користи се за геолокацију                   |\n"
+"| google.com         | Преузимање празника за календар             |\n"
+"| index.rubygems.org | Преузимање Ruby gem модула                  |\n"
+"| registry.npmjs.org | Преузимање JS библиотека                    |\n"
 
 #. type: Plain text
 #: src/en/reference/proxy-connections.md:85
@@ -20112,8 +20112,9 @@ msgid ""
 "commands might cause data loss or damaged tickets! If you're unsure,\n"
 "**use a test system first**!\n"
 msgstr ""
-"Пре покретања пажљиво проверите команде, јер неке од њих могу изазвати губитак података или оштећење карата! Ако нисте сигурни,\n"
-"**прво користите тестни систем**!\n"
+"Пре покретања пажљиво проверите команде, јер неке од њих\n"
+"могу изазвати губитак података или оштећења тикета! Ако нисте сигурни,\n"
+"**прво пробајте на тест систему**!\n"
 
 #. type: Title ##
 #: src/en/reference/rails-commands.md:17
@@ -20912,15 +20913,17 @@ msgid ""
 "\n"
 "It has no effect on SSL certificates or any web server configuration.\n"
 msgstr ""
-"Ово подешавање такође утиче на понашање CSRF токена у Zammad-у. Ако га поставите нпр. на HTTPs, а користите HTTP, пријава ће\n"
-"не успети!\n"
+"Ово подешавање такође утиче на понашање CSRF токена у Zammad-у. Ако га "
+"поставите\n"
+"нпр. на HTTPs, а користите HTTP, пријављивање корисника неће бити\n"
+"могуће!\n"
 "\n"
-"Не утиче на SSL сертификате или било коју конфигурацију веб сервера.\n"
+"Не утиче на SSL сертификате или било какву конфигурацију веб сервера.\n"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:398
 msgid "Get the current http type:"
-msgstr "Проверите тренутни тип HTTP-а:"
+msgstr "Проверите тренутну врсту HTTP протокола:"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/rails-commands.md:399
@@ -21277,7 +21280,7 @@ msgstr "Setting.get('ui_table_group_by_show_count')\n"
 #: src/en/reference/rails-commands.md:563
 #, no-wrap
 msgid "Default ticket type on creation"
-msgstr "Временска ознака креирања тикета."
+msgstr "Подразумевана врста тикета на отварању"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:567
@@ -21331,7 +21334,7 @@ msgstr "Setting.get('ui_ticket_create_default_type')\n"
 #: src/en/reference/rails-commands.md:584
 #, no-wrap
 msgid "Show a note during article creation"
-msgstr "Временска ознака креирања поруке."
+msgstr "Приказује напомену приликом додавања чланка"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:590
@@ -21386,7 +21389,7 @@ msgstr ""
 #: src/en/reference/rails-commands.md:603
 #, no-wrap
 msgid "New article in existing tickets"
-msgstr "Број чланака унутар тикета."
+msgstr "Нови чланак у постојећим тикетима"
 
 #. type: Fenced code block (ruby)
 #: src/en/reference/rails-commands.md:605
@@ -21597,7 +21600,7 @@ msgstr ""
 #: src/en/reference/rails-commands.md:690
 #, no-wrap
 msgid "Activate attachment tab in sidebar"
-msgstr "Ограничите величину прилога:"
+msgstr "Укључује преглед прилога у бочној траци тикета"
 
 #. type: Plain text
 #: src/en/reference/rails-commands.md:694
@@ -22086,13 +22089,12 @@ msgid ""
 "customers, but **all tickets associated with them**, as well. Below\n"
 "commands delete without any further warnings.\n"
 msgstr ""
-"Клијенти **не смеју** бити обрисани док имају преостале тикета у\n"
-"систем.\n"
+"Клијенти **не могу** бити обрисани док имају преостале тикете у\n"
+"систему.\n"
 "\n"
-"Због тога ће примери испаду... -> Клијенти **не смеју** бити обрисани док имају преостале тикета у\n"
-"систем.\n"
-"\n"
-"Због тога ће примери испаду...\n"
+"Услед тога, примери испод бришу не само одабране\n"
+"клијенте, него и **све тикете повезане са њима**. Команде\n"
+"испод бришу без додатних упозорења.\n"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rails-commands.md:910
@@ -22202,7 +22204,8 @@ msgstr "Корак 2: Прегледајте погођене организац
 #: src/en/reference/rails-commands.md:961
 #, no-wrap
 msgid "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
-msgstr "путс organizations.map { |org| \"ORGANIZACIJA #{org.name}\" }.јоин(\"\\н\")\n"
+msgstr ""
+"puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 
 #. type: Title ####
 #: src/en/reference/rails-commands.md:965
@@ -22331,7 +22334,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rails-commands.md:1024
 msgid "Truncate the database:"
-msgstr "Миграција на Zammad"
+msgstr "Пражњење базе података:"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/rails-commands.md:1025
@@ -22342,7 +22345,7 @@ msgstr "rake zammad:db:truncate\n"
 #. type: Plain text
 #: src/en/reference/rails-commands.md:1030
 msgid "Migrate the database:"
-msgstr "Миграција на Zammad"
+msgstr "Миграција базе података:"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/rails-commands.md:1031
@@ -22549,13 +22552,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:41
-#, fuzzy, no-wrap
-#| msgid "`phone` : Indicates phone notes."
+#, no-wrap
 msgid ""
 "`phone`\n"
 ":\n"
 "  Indicates phone notes.\n"
-msgstr "`phone` : Означава телефонске белешке."
+msgstr ""
+"`phone`\n"
+":\n"
+"  Означава напомене позива.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:45
@@ -22589,13 +22594,15 @@ msgstr "  Ово није **комуникациони чланак**.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:55
-#, fuzzy, no-wrap
-#| msgid "`sms` : This type is being used for Zammad's SMS integration."
+#, no-wrap
 msgid ""
 "`sms`\n"
 ":\n"
 "  This type is being used for Zammad's SMS integration.\n"
-msgstr "`sms` : Овај тип се користи за Zammad-ову SMS интеграцију."
+msgstr ""
+"`sms`\n"
+":\n"
+"  Ова врста се користи у Zammad SMS интеграцији.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/articles.md:59
@@ -22704,7 +22711,7 @@ msgstr "`Agent`"
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/articles.md:98
 msgid "`Customer`"
-msgstr "Прилагођени оквири"
+msgstr "`Customer`"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/articles.md:98
@@ -23098,13 +23105,15 @@ msgstr "`GET`-захтев послат: `/api/v1/tickets/search?query=welcome`"
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/audit-log.md:50
-#, fuzzy, no-wrap
-#| msgid "<<< @/fixtures/rest-api/intro/get-full-search-res.json\n"
+#, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/audit_logs/get-search-res.json\n"
 "\n"
-msgstr "<<< @/fixtures/rest-api/intro/get-full-search-res.json\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/audit_logs/get-search-res.json\n"
+"\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:59
@@ -23146,10 +23155,9 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/reference/rest-api/audit-log.md:78
-#, fuzzy, no-wrap
-#| msgid "API reference"
+#, no-wrap
 msgid "Field reference"
-msgstr "API референца"
+msgstr "Референца поља"
 
 #. type: Plain text
 #: src/en/reference/rest-api/audit-log.md:83
@@ -25469,10 +25477,8 @@ msgstr "Стање тикета"
 
 #. type: Bullet: '- '
 #: src/en/reference/rest-api/intro.md:167
-#, fuzzy
-#| msgid "`Users <user>`"
 msgid "[Users](user)"
-msgstr "`Korisnici <user>`"
+msgstr "[Корисници](user)"
 
 #. type: Plain text
 #: src/en/reference/rest-api/intro.md:170
@@ -26407,7 +26413,10 @@ msgstr ""
 msgid ""
 "If you want to get the content of an answer, add the parameters `?full=1&include_contents=1` to the query URL. The\n"
 "request for the following response included the parameters.\n"
-msgstr "Ако желите да добијете садржај одговора, додајте параметре `?full=1&include_contents=1` у URL упита. Захтев за следећи одговор укључио је ове параметре.\n"
+msgstr ""
+"Ако желите да добијете садржај одговора, додајте параметре "
+"`?full=1&include_contents=1` у URL упита. Захтев\n"
+"за следећи одговор укључује ове параметре.\n"
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/knowledgebase.md:279
@@ -26710,7 +26719,8 @@ msgid ""
 "number_.\n"
 msgstr ""
 "Вредност за `link_object_target` мора бити _ID тикета_.\n"
-"Вредност за `link_object_source_number` мора бити _број тикета_.\n"
+"Вредност за `link_object_source_number` мора бити _број\n"
+"тикета_.\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/link.md:35
@@ -26899,8 +26909,9 @@ msgid ""
 "Use the expand request to know the affected objects. Otherwise you'll\n"
 "need to find out what ID stands for which object type.\n"
 msgstr ""
-"Користите упит `expand` да бисте сазнали које објекте погађа. У супротном ћете\n"
-"мораће да утврдите који ID одговара којем типу објекта.\n"
+"Користите проширен упит да бисте сазнали које објекте погађа. У супротном "
+"ћете\n"
+"морати да утврдите који ID одговара ком типу објекта.\n"
 
 #. type: Fenced div block (details)
 #: src/en/reference/rest-api/notification.md:26

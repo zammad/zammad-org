@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-01 10:49+0200\n"
+"POT-Creation-Date: 2026-09-03 08:20+0200\n"
 "PO-Revision-Date: 2026-08-31 09:12+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <https://translations.zammad.org/projects/"
@@ -3976,14 +3976,70 @@ msgstr ""
 "senso? Parla con il tuo amministratore Zammad, può essere configurato "
 "facilmente."
 
-#. type: Title ###
+#. type: Title #
 #: src/en/documentation/use/basics/ticket-basics.md:46
+#: src/en/reference/es-indexed-attributes.md:1054
+#: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
+#, no-wrap
+msgid "Group"
+msgstr "Gruppo"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:52
+msgid ""
+"This ticket attribute is useful for organizations with more than one team. A "
+"common way to use groups is to have one for each department of the company. "
+"Depending on the permissions, you might not see the ticket after changing "
+"the group and saving the changes. In case you can't see the group field, "
+"either there is only one group in your Zammad system or you don't have the "
+"permission to create a ticket in other groups."
+msgstr ""
+"Questo attributo del ticket è utile per le organizzazioni con più di un "
+"team. Un modo comune di usare i gruppi è averne uno per ogni dipartimento "
+"dell'azienda. A seconda dei permessi, potresti non vedere il ticket dopo "
+"aver cambiato il gruppo e salvato le modifiche. Se non riesci a vedere il "
+"campo gruppo, o c'è solo un gruppo nel tuo sistema Zammad o non hai il "
+"permesso di creare un ticket in altri gruppi."
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:53
+#, no-wrap
+msgid "Owner"
+msgstr "Proprietario"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:59
+msgid ""
+"This is the person who is currently responsible for the ticket. In case you "
+"need information from another colleague, you can either change the owner to "
+"this person or mention the person in an article by typing [[@]][[@]] and "
+"selecting the user. In the latter case, the user gets notified and is "
+"automatically subscribed to receive notifications on ticket updates."
+msgstr ""
+"Questa è la persona attualmente responsabile del ticket. Se hai bisogno di "
+"informazioni da un altro collega, puoi cambiare il proprietario a quella "
+"persona o menzionare la persona in un articolo digitando [[@]][[@]] e "
+"selezionando l'utente. In quest'ultimo caso, l'utente viene notificato e "
+"viene automaticamente iscritto per ricevere notifiche sugli aggiornamenti "
+"del ticket."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:61
+msgid ""
+"To change the owner to a person which has only access to another group's "
+"tickets, you first have to switch the group accordingly."
+msgstr ""
+"Per cambiare il proprietario a una persona che ha accesso solo ai ticket di "
+"un altro gruppo, devi prima cambiare il gruppo di conseguenza."
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:62
 #, no-wrap
 msgid "State"
 msgstr "Stato"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:50
+#: src/en/documentation/use/basics/ticket-basics.md:66
 msgid ""
 "The state reflects the current status of a ticket (mainly if a customer "
 "request is resolved or not). Think of it as a representation of progress "
@@ -3995,7 +4051,7 @@ msgstr ""
 "i seguenti stati:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
+#: src/en/documentation/use/basics/ticket-basics.md:77
 msgid ""
 "**New**: State for new tickets on which no one has worked on. When updating "
 "a ticket for the first time, it automatically switches to open."
@@ -4005,7 +4061,7 @@ msgstr ""
 "aperto."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
+#: src/en/documentation/use/basics/ticket-basics.md:77
 msgid ""
 "**Open**: State for tickets which aren't resolved yet and some work needs to "
 "be done."
@@ -4014,7 +4070,7 @@ msgstr ""
 "necessario lavorare."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
+#: src/en/documentation/use/basics/ticket-basics.md:77
 msgid ""
 "**Pending Close**: State for tickets which are basically resolved but you "
 "don't want to close immediately. This state requires you to enter a date and "
@@ -4025,7 +4081,7 @@ msgstr ""
 "inserire una data e un'ora in cui il ticket passa automaticamente a chiuso."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
+#: src/en/documentation/use/basics/ticket-basics.md:77
 msgid ""
 "**Pending Reminder**: State for open tickets which you want to get reminded "
 "about at a certain date and time. Requires you to enter a date and time at "
@@ -4038,7 +4094,7 @@ msgstr ""
 "parte e vuoi assicurarti che questo problema non venga dimenticato."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
+#: src/en/documentation/use/basics/ticket-basics.md:77
 msgid ""
 "**Merged**: State for a ticket which was merged into another ticket. Check "
 "the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
@@ -4049,7 +4105,7 @@ msgstr ""
 "features#collegare-i-ticket) per vedere il ticket correlato."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:64
+#: src/en/documentation/use/basics/ticket-basics.md:80
 msgid ""
 "Zammad's ticket states are color coded. This helps you to understanding the "
 "state of the ticket much faster in general - without having a look into "
@@ -4060,7 +4116,7 @@ msgstr ""
 "guardare i dettagli."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:66
+#: src/en/documentation/use/basics/ticket-basics.md:82
 msgid ""
 "![Screenshot shows different color-coded states](/screenshots/documentation/"
 "use/overviews/states.png)"
@@ -4069,13 +4125,13 @@ msgstr ""
 "documentation/use/overviews/states.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:67
+#: src/en/documentation/use/basics/ticket-basics.md:83
 #, no-wrap
 msgid "Priority"
 msgstr "Priorità"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:71
+#: src/en/documentation/use/basics/ticket-basics.md:87
 msgid ""
 "A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
 "important it is. The three default priorities are:"
@@ -4084,22 +4140,22 @@ msgstr ""
 "sia urgente o importante. Le tre priorità predefinite sono:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
+#: src/en/documentation/use/basics/ticket-basics.md:91
 msgid "1 low"
 msgstr "1 bassa"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
+#: src/en/documentation/use/basics/ticket-basics.md:91
 msgid "2 normal"
 msgstr "2 normale"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
+#: src/en/documentation/use/basics/ticket-basics.md:91
 msgid "3 high"
 msgstr "3 alta"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:78
+#: src/en/documentation/use/basics/ticket-basics.md:94
 msgid ""
 "In case these priorities aren't enough, ask your Zammad admin to create "
 "additional ones. The default priorities allow you to immediately recognize "
@@ -4111,7 +4167,7 @@ msgstr ""
 "codificate per colore:"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:80
+#: src/en/documentation/use/basics/ticket-basics.md:96
 msgid ""
 "![Screenshot shows different color-coded priorities](/screenshots/"
 "documentation/use/overviews/priorities.png)"
@@ -4120,7 +4176,7 @@ msgstr ""
 "screenshots/documentation/use/overviews/priorities.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:83
+#: src/en/documentation/use/basics/ticket-basics.md:99
 msgid ""
 "You might wonder what such a ticket priority is for. Out of the box, it "
 "doesn't actually do anything except the highlighting. However, Zammad "
@@ -4132,7 +4188,7 @@ msgstr ""
 "possono configurare ogni tipo di automazione e analisi basate sulla priorità."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:86
+#: src/en/documentation/use/basics/ticket-basics.md:102
 msgid ""
 "Be aware that customers can't set a priority for their own tickets. "
 "Otherwise, some might set their tickets always to high and hope for an "
@@ -4143,14 +4199,14 @@ msgstr ""
 "sperando in un'escalation immediata."
 
 #. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:87
+#: src/en/documentation/use/basics/ticket-basics.md:103
 #: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
 #, no-wrap
 msgid "Tags"
 msgstr "Tag"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:93
+#: src/en/documentation/use/basics/ticket-basics.md:109
 msgid ""
 "Tags are custom labels that can be assigned to tickets to make it easier to "
 "find them in the future.  They can be used in conditions like in triggers "
@@ -4165,7 +4221,7 @@ msgstr ""
 "cercare il testo dei tag e troverai i ticket a cui è stato assegnato il tag."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:95
+#: src/en/documentation/use/basics/ticket-basics.md:111
 msgid ""
 "![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/ticket-tags.png)"
@@ -4175,7 +4231,7 @@ msgstr ""
 "tags.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:101
+#: src/en/documentation/use/basics/ticket-basics.md:117
 #, fuzzy
 #| msgid ""
 #| "In the ticket sidebar, you can find a section which is labeled as "
@@ -4201,62 +4257,6 @@ msgstr ""
 "tag già disponibili. Inizia a digitare e vedi un elenco con i suggerimenti "
 "corrispondenti. Per rimuoverlo, fai clic sul pulsante ::X:: sul lato destro "
 "della scheda."
-
-#. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:102
-#: src/en/reference/es-indexed-attributes.md:1054
-#: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
-#, no-wrap
-msgid "Group"
-msgstr "Gruppo"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:108
-msgid ""
-"This ticket attribute is useful for organizations with more than one team. A "
-"common way to use groups is to have one for each department of the company. "
-"Depending on the permissions, you might not see the ticket after changing "
-"the group and saving the changes. In case you can't see the group field, "
-"either there is only one group in your Zammad system or you don't have the "
-"permission to create a ticket in other groups."
-msgstr ""
-"Questo attributo del ticket è utile per le organizzazioni con più di un "
-"team. Un modo comune di usare i gruppi è averne uno per ogni dipartimento "
-"dell'azienda. A seconda dei permessi, potresti non vedere il ticket dopo "
-"aver cambiato il gruppo e salvato le modifiche. Se non riesci a vedere il "
-"campo gruppo, o c'è solo un gruppo nel tuo sistema Zammad o non hai il "
-"permesso di creare un ticket in altri gruppi."
-
-#. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:109
-#, no-wrap
-msgid "Owner"
-msgstr "Proprietario"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:115
-msgid ""
-"This is the person who is currently responsible for the ticket. In case you "
-"need information from another colleague, you can either change the owner to "
-"this person or mention the person in an article by typing [[@]][[@]] and "
-"selecting the user. In the latter case, the user gets notified and is "
-"automatically subscribed to receive notifications on ticket updates."
-msgstr ""
-"Questa è la persona attualmente responsabile del ticket. Se hai bisogno di "
-"informazioni da un altro collega, puoi cambiare il proprietario a quella "
-"persona o menzionare la persona in un articolo digitando [[@]][[@]] e "
-"selezionando l'utente. In quest'ultimo caso, l'utente viene notificato e "
-"viene automaticamente iscritto per ricevere notifiche sugli aggiornamenti "
-"del ticket."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:117
-msgid ""
-"To change the owner to a person which has only access to another group's "
-"tickets, you first have to switch the group accordingly."
-msgstr ""
-"Per cambiare il proprietario a una persona che ha accesso solo ai ticket di "
-"un altro gruppo, devi prima cambiare il gruppo di conseguenza."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:121

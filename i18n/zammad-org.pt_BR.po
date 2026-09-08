@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-01 10:49+0200\n"
-"PO-Revision-Date: 2026-09-01 10:12+0000\n"
+"POT-Creation-Date: 2026-09-03 08:20+0200\n"
+"PO-Revision-Date: 2026-09-05 09:13+0000\n"
 "Last-Translator: Igor Costa <igor_sfx@yahoo.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.zammad.org/projects/"
 "documentations/zammad-org/pt_BR/>\n"
@@ -3855,225 +3855,8 @@ msgstr ""
 "sentido? Converse com seu administrador do Zammad; pode ser configurado "
 "facilmente."
 
-#. type: Title ###
+#. type: Title #
 #: src/en/documentation/use/basics/ticket-basics.md:46
-#, no-wrap
-msgid "State"
-msgstr "Estado"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:50
-msgid ""
-"The state reflects the current status of a ticket (mainly if a customer "
-"request is resolved or not). Think of it as a representation of progress "
-"towards completion. By default, there are the following states:"
-msgstr ""
-"O estado reflete a situação atual de um ticket (principalmente se uma "
-"solicitação do cliente está resolvida ou não). Pense nisso como uma "
-"representação do progresso rumo à conclusão. Por padrão, há os seguintes "
-"estados:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**New**: State for new tickets on which no one has worked on. When updating "
-"a ticket for the first time, it automatically switches to open."
-msgstr ""
-"**New**: estado para tickets novos nos quais ninguém trabalhou ainda. Ao "
-"atualizar um ticket pela primeira vez, ele muda automaticamente para aberto."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Open**: State for tickets which aren't resolved yet and some work needs to "
-"be done."
-msgstr ""
-"**Open**: estado para tickets que ainda não foram resolvidos e algum "
-"trabalho precisa ser feito."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Pending Close**: State for tickets which are basically resolved but you "
-"don't want to close immediately. This state requires you to enter a date and "
-"time at which the ticket automatically switches to closed."
-msgstr ""
-"**Pending Close**: estado para tickets que basicamente já estão resolvidos, "
-"mas você não quer fechá-los imediatamente. Esse estado exige que você "
-"informe uma data e hora em que o ticket muda automaticamente para fechado."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Pending Reminder**: State for open tickets which you want to get reminded "
-"about at a certain date and time. Requires you to enter a date and time at "
-"which you want to get notified. For example useful if you had a question to "
-"a third party and want to make sure that this issue won't be forgotten."
-msgstr ""
-"**Pending Reminder**: estado para tickets abertos sobre os quais você quer "
-"ser lembrado em uma determinada data e hora. Exige que você informe uma data "
-"e hora em que deseja ser notificado. Por exemplo, útil se você tinha uma "
-"pergunta para terceiros e quer garantir que esse assunto não seja esquecido."
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:61
-msgid ""
-"**Merged**: State for a ticket which was merged into another ticket. Check "
-"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
-"to see the related ticket."
-msgstr ""
-"**Merged**: estado para um ticket que foi mesclado em outro ticket. Consulte "
-"os [tickets vinculados](/pt_BR/documentation/use/advanced-features#link-"
-"tickets) para ver o ticket relacionado."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:64
-msgid ""
-"Zammad's ticket states are color coded. This helps you to understanding the "
-"state of the ticket much faster in general - without having a look into "
-"details."
-msgstr ""
-"Os estados de ticket do Zammad têm código de cores. Isso ajuda você a "
-"entender o estado do ticket muito mais rápido em geral, sem precisar olhar "
-"os detalhes."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:66
-msgid ""
-"![Screenshot shows different color-coded states](/screenshots/documentation/"
-"use/overviews/states.png)"
-msgstr ""
-"![Captura de tela mostra diferentes estados com código de cores](/"
-"screenshots/documentation/use/overviews/states.png)"
-
-#. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:67
-#, no-wrap
-msgid "Priority"
-msgstr "Prioridade"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:71
-msgid ""
-"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
-"important it is. The three default priorities are:"
-msgstr ""
-"A prioridade de um ticket é simplesmente uma classificação (de 1 a 3) de "
-"quão urgente ou importante ele é. As três prioridades padrão são:"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-msgid "1 low"
-msgstr "1 baixa"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-msgid "2 normal"
-msgstr "2 normal"
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:75
-msgid "3 high"
-msgstr "3 alta"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:78
-msgid ""
-"In case these priorities aren't enough, ask your Zammad admin to create "
-"additional ones. The default priorities allow you to immediately recognize "
-"the importance of your tickets because they are color coded:"
-msgstr ""
-"Caso essas prioridades não sejam suficientes, peça ao seu administrador do "
-"Zammad para criar outras adicionais. As prioridades padrão permitem que você "
-"reconheça imediatamente a importância dos seus tickets, pois têm código de "
-"cores:"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:80
-msgid ""
-"![Screenshot shows different color-coded priorities](/screenshots/"
-"documentation/use/overviews/priorities.png)"
-msgstr ""
-"![Captura de tela mostra diferentes prioridades com código de cores](/"
-"screenshots/documentation/use/overviews/priorities.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:83
-msgid ""
-"You might wonder what such a ticket priority is for. Out of the box, it "
-"doesn't actually do anything except the highlighting. However, Zammad "
-"administrators can set up all sorts of automation and analytics based on the "
-"priority."
-msgstr ""
-"Você deve estar se perguntando para que serve essa prioridade de ticket. Por "
-"padrão, ela não faz nada além do destaque visual. No entanto, os "
-"administradores do Zammad podem configurar todo tipo de automação e análise "
-"com base na prioridade."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:86
-msgid ""
-"Be aware that customers can't set a priority for their own tickets. "
-"Otherwise, some might set their tickets always to high and hope for an "
-"immediate escalation."
-msgstr ""
-"Esteja ciente de que os clientes não podem definir uma prioridade para seus "
-"próprios tickets. Caso contrário, alguns poderiam sempre definir seus "
-"tickets como alta e esperar por um escalonamento imediato."
-
-#. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:87
-#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
-#, no-wrap
-msgid "Tags"
-msgstr "Tags"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:93
-msgid ""
-"Tags are custom labels that can be assigned to tickets to make it easier to "
-"find them in the future.  They can be used in conditions like in triggers "
-"and in overviews and they can also be assigned automatically by macros, "
-"schedulers and triggers. Of course you can search for the text of the tags "
-"and you will find the tickets which have the tag assigned."
-msgstr ""
-"Tags são rótulos personalizados que podem ser atribuídos a tickets para "
-"facilitar encontrá-los no futuro. Elas podem ser usadas em condições, como "
-"em gatilhos e visões gerais, e também podem ser atribuídas automaticamente "
-"por macros, agendadores e gatilhos. É claro que você pode pesquisar pelo "
-"texto das tags e encontrará os tickets que têm essa tag atribuída."
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:95
-msgid ""
-"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-tags.png)"
-msgstr ""
-"![Captura de tela mostra a área de tags na barra lateral do ticket](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
-"tags.png)"
-
-#. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:101
-msgid ""
-"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
-"Add a tag by clicking on the ::+:: button.  Depending on your Zammad's "
-"configuration, you can create new tags by simply type and confirm them with "
-"[[enter]] or [[tab]]. In any case, you can choose from already available "
-"tags. Start typing and you see a list with matching suggestions. To remove "
-"it, click the ::x:: button on the right side of the tag. This button only "
-"shows up when you move the mouse over the tag."
-msgstr ""
-"Na barra lateral do ticket, você encontra uma seção rotulada como **Tags**. "
-"Adicione uma tag clicando no botão ::+::. Dependendo da configuração do seu "
-"Zammad, você pode criar novas tags simplesmente digitando e confirmando com "
-"[[enter]] ou [[tab]]. Em qualquer caso, você pode escolher entre as tags já "
-"disponíveis. Comece a digitar e você verá uma lista com sugestões "
-"correspondentes. Para removê-la, clique no botão ::x:: no lado direito da "
-"tag. Esse botão só aparece quando você move o mouse sobre a tag."
-
-#. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:102
 #: src/en/reference/es-indexed-attributes.md:1054
 #: src/en/reference/rest-api/group.md:1 src/en/reference/rest-api/group.md:6
 #, no-wrap
@@ -4081,7 +3864,7 @@ msgid "Group"
 msgstr "Grupo"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:108
+#: src/en/documentation/use/basics/ticket-basics.md:52
 msgid ""
 "This ticket attribute is useful for organizations with more than one team. A "
 "common way to use groups is to have one for each department of the company. "
@@ -4098,13 +3881,13 @@ msgstr ""
 "grupos."
 
 #. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:109
+#: src/en/documentation/use/basics/ticket-basics.md:53
 #, no-wrap
 msgid "Owner"
 msgstr "Responsável"
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:115
+#: src/en/documentation/use/basics/ticket-basics.md:59
 msgid ""
 "This is the person who is currently responsible for the ticket. In case you "
 "need information from another colleague, you can either change the owner to "
@@ -4119,13 +3902,230 @@ msgstr ""
 "receber notificações sobre atualizações do ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:117
+#: src/en/documentation/use/basics/ticket-basics.md:61
 msgid ""
 "To change the owner to a person which has only access to another group's "
 "tickets, you first have to switch the group accordingly."
 msgstr ""
 "Para mudar o responsável para uma pessoa que só tem acesso aos tickets de "
 "outro grupo, primeiro é preciso trocar o grupo adequadamente."
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:62
+#, no-wrap
+msgid "State"
+msgstr "Estado"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:66
+msgid ""
+"The state reflects the current status of a ticket (mainly if a customer "
+"request is resolved or not). Think of it as a representation of progress "
+"towards completion. By default, there are the following states:"
+msgstr ""
+"O estado reflete a situação atual de um ticket (principalmente se uma "
+"solicitação do cliente está resolvida ou não). Pense nisso como uma "
+"representação do progresso rumo à conclusão. Por padrão, há os seguintes "
+"estados:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**New**: State for new tickets on which no one has worked on. When updating "
+"a ticket for the first time, it automatically switches to open."
+msgstr ""
+"**New**: estado para tickets novos nos quais ninguém trabalhou ainda. Ao "
+"atualizar um ticket pela primeira vez, ele muda automaticamente para aberto."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Open**: State for tickets which aren't resolved yet and some work needs to "
+"be done."
+msgstr ""
+"**Open**: estado para tickets que ainda não foram resolvidos e algum "
+"trabalho precisa ser feito."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Pending Close**: State for tickets which are basically resolved but you "
+"don't want to close immediately. This state requires you to enter a date and "
+"time at which the ticket automatically switches to closed."
+msgstr ""
+"**Pending Close**: estado para tickets que basicamente já estão resolvidos, "
+"mas você não quer fechá-los imediatamente. Esse estado exige que você "
+"informe uma data e hora em que o ticket muda automaticamente para fechado."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Pending Reminder**: State for open tickets which you want to get reminded "
+"about at a certain date and time. Requires you to enter a date and time at "
+"which you want to get notified. For example useful if you had a question to "
+"a third party and want to make sure that this issue won't be forgotten."
+msgstr ""
+"**Pending Reminder**: estado para tickets abertos sobre os quais você quer "
+"ser lembrado em uma determinada data e hora. Exige que você informe uma data "
+"e hora em que deseja ser notificado. Por exemplo, útil se você tinha uma "
+"pergunta para terceiros e quer garantir que esse assunto não seja esquecido."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:77
+msgid ""
+"**Merged**: State for a ticket which was merged into another ticket. Check "
+"the [linked tickets](/en/documentation/use/advanced-features#link-tickets) "
+"to see the related ticket."
+msgstr ""
+"**Merged**: estado para um ticket que foi mesclado em outro ticket. Consulte "
+"os [tickets vinculados](/pt_BR/documentation/use/advanced-features#link-"
+"tickets) para ver o ticket relacionado."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:80
+msgid ""
+"Zammad's ticket states are color coded. This helps you to understanding the "
+"state of the ticket much faster in general - without having a look into "
+"details."
+msgstr ""
+"Os estados de ticket do Zammad têm código de cores. Isso ajuda você a "
+"entender o estado do ticket muito mais rápido em geral, sem precisar olhar "
+"os detalhes."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:82
+msgid ""
+"![Screenshot shows different color-coded states](/screenshots/documentation/"
+"use/overviews/states.png)"
+msgstr ""
+"![Captura de tela mostra diferentes estados com código de cores](/"
+"screenshots/documentation/use/overviews/states.png)"
+
+#. type: Title ###
+#: src/en/documentation/use/basics/ticket-basics.md:83
+#, no-wrap
+msgid "Priority"
+msgstr "Prioridade"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:87
+msgid ""
+"A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
+"important it is. The three default priorities are:"
+msgstr ""
+"A prioridade de um ticket é simplesmente uma classificação (de 1 a 3) de "
+"quão urgente ou importante ele é. As três prioridades padrão são:"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid "1 low"
+msgstr "1 baixa"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid "2 normal"
+msgstr "2 normal"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/ticket-basics.md:91
+msgid "3 high"
+msgstr "3 alta"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:94
+msgid ""
+"In case these priorities aren't enough, ask your Zammad admin to create "
+"additional ones. The default priorities allow you to immediately recognize "
+"the importance of your tickets because they are color coded:"
+msgstr ""
+"Caso essas prioridades não sejam suficientes, peça ao seu administrador do "
+"Zammad para criar outras adicionais. As prioridades padrão permitem que você "
+"reconheça imediatamente a importância dos seus tickets, pois têm código de "
+"cores:"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:96
+msgid ""
+"![Screenshot shows different color-coded priorities](/screenshots/"
+"documentation/use/overviews/priorities.png)"
+msgstr ""
+"![Captura de tela mostra diferentes prioridades com código de cores](/"
+"screenshots/documentation/use/overviews/priorities.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:99
+msgid ""
+"You might wonder what such a ticket priority is for. Out of the box, it "
+"doesn't actually do anything except the highlighting. However, Zammad "
+"administrators can set up all sorts of automation and analytics based on the "
+"priority."
+msgstr ""
+"Você deve estar se perguntando para que serve essa prioridade de ticket. Por "
+"padrão, ela não faz nada além do destaque visual. No entanto, os "
+"administradores do Zammad podem configurar todo tipo de automação e análise "
+"com base na prioridade."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:102
+msgid ""
+"Be aware that customers can't set a priority for their own tickets. "
+"Otherwise, some might set their tickets always to high and hope for an "
+"immediate escalation."
+msgstr ""
+"Esteja ciente de que os clientes não podem definir uma prioridade para seus "
+"próprios tickets. Caso contrário, alguns poderiam sempre definir seus "
+"tickets como alta e esperar por um escalonamento imediato."
+
+#. type: Title #
+#: src/en/documentation/use/basics/ticket-basics.md:103
+#: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
+#, no-wrap
+msgid "Tags"
+msgstr "Tags"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:109
+msgid ""
+"Tags are custom labels that can be assigned to tickets to make it easier to "
+"find them in the future.  They can be used in conditions like in triggers "
+"and in overviews and they can also be assigned automatically by macros, "
+"schedulers and triggers. Of course you can search for the text of the tags "
+"and you will find the tickets which have the tag assigned."
+msgstr ""
+"Tags são rótulos personalizados que podem ser atribuídos a tickets para "
+"facilitar encontrá-los no futuro. Elas podem ser usadas em condições, como "
+"em gatilhos e visões gerais, e também podem ser atribuídas automaticamente "
+"por macros, agendadores e gatilhos. É claro que você pode pesquisar pelo "
+"texto das tags e encontrará os tickets que têm essa tag atribuída."
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:111
+msgid ""
+"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
+"documentation/use/advanced-features.cy.js/ticket-tags.png)"
+msgstr ""
+"![Captura de tela mostra a área de tags na barra lateral do ticket](/"
+"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
+"tags.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/basics/ticket-basics.md:117
+msgid ""
+"In the ticket sidebar, you can find a section which is labeled as **Tags**. "
+"Add a tag by clicking on the ::+:: button.  Depending on your Zammad's "
+"configuration, you can create new tags by simply type and confirm them with "
+"[[enter]] or [[tab]]. In any case, you can choose from already available "
+"tags. Start typing and you see a list with matching suggestions. To remove "
+"it, click the ::x:: button on the right side of the tag. This button only "
+"shows up when you move the mouse over the tag."
+msgstr ""
+"Na barra lateral do ticket, você encontra uma seção rotulada como **Tags**. "
+"Adicione uma tag clicando no botão ::+::. Dependendo da configuração do seu "
+"Zammad, você pode criar novas tags simplesmente digitando e confirmando com "
+"[[enter]] ou [[tab]]. Em qualquer caso, você pode escolher entre as tags já "
+"disponíveis. Comece a digitar e você verá uma lista com sugestões "
+"correspondentes. Para removê-la, clique no botão ::x:: no lado direito da "
+"tag. Esse botão só aparece quando você move o mouse sobre a tag."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:121
@@ -11010,6 +11010,10 @@ msgid ""
 "out and verification details, see the [Memory allocator](/en/reference/"
 "memory-allocator)  page."
 msgstr ""
+"O Zammad usa o [jemalloc](https://jemalloc.net/){target=_blank} como "
+"alocador de memória por padrão no Debian, Ubuntu, CentOS e RHEL. Para "
+"detalhes sobre desativação e verificação no SLES, veja a página [Alocador de "
+"memória](/pt_BR/reference/memory-allocator)."
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:70
@@ -13855,6 +13859,13 @@ msgid ""
 "  [jemalloc](/en/reference/memory-allocator) as memory allocator and set it automatically if the library is present on\n"
 "  your system. This variable is managed by the package install script and may be overwritten during updates.\n"
 msgstr ""
+"`LD_PRELOAD` <Badge type=\"tip\" text=\"libjemalloc.so.2\" /> ::p::\n"
+": Pré-carrega uma biblioteca compartilhada para todos os processos do "
+"Zammad. Instalações via pacote a usam para ativar o\n"
+"  [jemalloc](/pt_BR/reference/memory-allocator) como alocador de memória e a "
+"definem automaticamente se a biblioteca estiver presente no\n"
+"  seu sistema. Esta variável é gerenciada pelo script de instalação do "
+"pacote e pode ser sobrescrita durante atualizações.\n"
 
 #. type: Plain text
 #: src/en/reference/environment-variables.md:122
@@ -13865,6 +13876,12 @@ msgid ""
 "  package installation or upgrade. Unset it to opt back in; any value other than `no` re-enables `jemalloc` on the\n"
 "  next package installation or upgrade.\n"
 msgstr ""
+"`ZAMMAD_USE_JEMALLOC` ::p::\n"
+": Defina como `no` para desativar o [jemalloc](/pt_BR/reference/memory-"
+"allocator) como alocador de memória. Tem efeito na próxima\n"
+"  instalação ou atualização via pacote. Remova a definição para reativá-lo; "
+"qualquer valor diferente de `no` reativa o `jemalloc` na\n"
+"  próxima instalação ou atualização via pacote.\n"
 
 #. type: Title ##
 #: src/en/reference/environment-variables.md:123
@@ -19397,7 +19414,7 @@ msgstr "Referência"
 #: src/en/reference/memory-allocator.md:6
 #, no-wrap
 msgid "Memory allocator"
-msgstr ""
+msgstr "Alocador de memória"
 
 #. type: Plain text
 #: src/en/reference/memory-allocator.md:12
@@ -19408,6 +19425,12 @@ msgid ""
 "preloads the jemalloc library automatically if it's present on your system. "
 "This happens on every package installation and upgrade."
 msgstr ""
+"Instalações via pacote usam o [jemalloc](https://jemalloc.net/)"
+"{target=_blank} como alocador de memória para todos os processos Ruby do "
+"Zammad, conforme recomendado pelo Rails. Isso reduz o uso de memória e a "
+"fragmentação. O script de pós-instalação do pacote pré-carrega a biblioteca "
+"jemalloc automaticamente se ela estiver presente no seu sistema. Isso "
+"acontece em toda instalação ou atualização do pacote."
 
 #. type: Plain text
 #: src/en/reference/memory-allocator.md:15
@@ -19416,13 +19439,15 @@ msgid ""
 "image). To opt out, override the environment variable with an empty value "
 "(e.g. `LD_PRELOAD=\"\"` in your compose or env file)."
 msgstr ""
+"Instalações via Docker têm o jemalloc ativado por padrão (embutido na imagem)"
+". Para desativar, sobrescreva a variável de ambiente com um valor vazio (por "
+"exemplo, `LD_PRELOAD=\"\"` no seu arquivo compose ou env)."
 
 #. type: Title ##
 #: src/en/reference/memory-allocator.md:16
-#, fuzzy, no-wrap
-#| msgid "Visibility"
+#, no-wrap
 msgid "Availability"
-msgstr "Visibilidade"
+msgstr "Disponibilidade"
 
 #. type: Bullet: '- '
 #: src/en/reference/memory-allocator.md:23
@@ -19430,6 +19455,8 @@ msgid ""
 "Debian and Ubuntu: libjemalloc2 is installed automatically as package "
 "dependency."
 msgstr ""
+"Debian e Ubuntu: o libjemalloc2 é instalado automaticamente como dependência "
+"do pacote."
 
 #. type: Bullet: '- '
 #: src/en/reference/memory-allocator.md:23
@@ -19437,6 +19464,8 @@ msgid ""
 "CentOS and RHEL: jemalloc is installed automatically from the EPEL "
 "repository (already a Zammad dependency)."
 msgstr ""
+"CentOS e RHEL: o jemalloc é instalado automaticamente a partir do "
+"repositório EPEL (já uma dependência do Zammad)."
 
 #. type: Bullet: '- '
 #: src/en/reference/memory-allocator.md:23
@@ -19446,23 +19475,27 @@ msgid ""
 "jemalloc`, Zammad activates it automatically on the next package "
 "installation or upgrade."
 msgstr ""
+"SLES: o jemalloc **não** é instalado automaticamente (disponível via SUSE "
+"Package Hub ou módulos SLE). Se você instalá-lo manualmente com `zypper "
+"install jemalloc`, o Zammad o ativa automaticamente na próxima instalação ou "
+"atualização via pacote."
 
 #. type: Title ##
 #: src/en/reference/memory-allocator.md:24
 #, no-wrap
 msgid "Opt-out and opt-in"
-msgstr ""
+msgstr "Ativar e desativar"
 
 #. type: Plain text
 #: src/en/reference/memory-allocator.md:27
 msgid "To opt out of using jemalloc:"
-msgstr ""
+msgstr "Para desativar o uso do jemalloc:"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/memory-allocator.md:28
 #, no-wrap
 msgid "zammad config:set ZAMMAD_USE_JEMALLOC=no\n"
-msgstr ""
+msgstr "zammad config:set ZAMMAD_USE_JEMALLOC=no\n"
 
 #. type: Plain text
 #: src/en/reference/memory-allocator.md:34
@@ -19471,13 +19504,15 @@ msgid ""
 "postinstall script then removes the `LD_PRELOAD` variable entirely, so a pre-"
 "existing system value is respected. For immediate effect:"
 msgstr ""
+"Isso tem efeito na próxima instalação ou atualização via pacote. O script de "
+"pós-instalação então remove a variável `LD_PRELOAD` por completo, para que "
+"um valor de sistema pré-existente seja respeitado. Para efeito imediato:"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/memory-allocator.md:35
-#, fuzzy, no-wrap
-#| msgid "zammad config:unset OPTION\n"
+#, no-wrap
 msgid "zammad config:unset LD_PRELOAD\n"
-msgstr "zammad config:unset OPTION\n"
+msgstr "zammad config:unset LD_PRELOAD\n"
 
 #. type: Plain text
 #: src/en/reference/memory-allocator.md:45
@@ -19485,24 +19520,28 @@ msgid ""
 "To opt back in, unset the variable again (any value other than `no` re-"
 "enables jemalloc on the next package installation or upgrade):"
 msgstr ""
+"Para reativar, remova a definição da variável novamente (qualquer valor "
+"diferente de `no` reativa o jemalloc na próxima instalação ou atualização "
+"via pacote):"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/memory-allocator.md:46
-#, fuzzy, no-wrap
-#| msgid "zammad config:unset OPTION\n"
+#, no-wrap
 msgid "zammad config:unset ZAMMAD_USE_JEMALLOC\n"
-msgstr "zammad config:unset OPTION\n"
+msgstr "zammad config:unset ZAMMAD_USE_JEMALLOC\n"
 
 #. type: Plain text
 #: src/en/reference/memory-allocator.md:51
 msgid "To verify whether jemalloc is active, run:"
-msgstr ""
+msgstr "Para verificar se o jemalloc está ativo, execute:"
 
 #. type: Fenced code block (sh)
 #: src/en/reference/memory-allocator.md:52
 #, no-wrap
 msgid "zammad run ruby -e 'puts File.read(\"/proc/self/maps\").match?(/jemalloc/) ? \"jemalloc active\" : \"jemalloc NOT active\"'\n"
 msgstr ""
+"zammad run ruby -e 'puts File.read(\"/proc/self/maps\").match?(/jemalloc/) ? "
+"\"jemalloc active\" : \"jemalloc NOT active\"'\n"
 
 #. type: Title #
 #: src/en/reference/privacy.md:1 src/en/reference/privacy.md:6
