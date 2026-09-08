@@ -1,42 +1,44 @@
 ---
 order: 9
-title: 'Memory allocator'
+title: 'Alocador de memória'
 ---
 
-# Memory allocator
+# Alocador de memória
 
-Package installations use [jemalloc](https://jemalloc.net/){target=_blank}
-as memory allocator for all Zammad Ruby processes, as recommended by
-Rails. This reduces memory usage and fragmentation. The package postinstall
-script preloads the jemalloc library automatically if it's present on your
-system. This happens on every package installation and upgrade.
+Instalações via pacote usam o
+[jemalloc](https://jemalloc.net/){target=_blank} como alocador de memória
+para todos os processos Ruby do Zammad, conforme recomendado pelo
+Rails. Isso reduz o uso de memória e a fragmentação. O script de
+pós-instalação do pacote pré-carrega a biblioteca jemalloc automaticamente
+se ela estiver presente no seu sistema. Isso acontece em toda instalação ou
+atualização do pacote.
 
-Docker installations have jemalloc enabled by default (baked into the
-image). To opt out, override the environment variable with an empty value
-(e.g. `LD_PRELOAD=""` in your compose or env file).
+Instalações via Docker têm o jemalloc ativado por padrão (embutido na
+imagem). Para desativar, sobrescreva a variável de ambiente com um valor
+vazio (por exemplo, `LD_PRELOAD=""` no seu arquivo compose ou env).
 
-## Availability
+## Disponibilidade
 
-- Debian and Ubuntu: libjemalloc2 is installed automatically as package
-  dependency.
-- CentOS and RHEL: jemalloc is installed automatically from the EPEL
-  repository (already a Zammad dependency).
-- SLES: jemalloc is **not** installed automatically (available via SUSE
-  Package Hub or SLE modules). If you install it manually with `zypper
-  install jemalloc`, Zammad activates it automatically on the next package
-  installation or upgrade.
+- Debian e Ubuntu: o libjemalloc2 é instalado automaticamente como
+  dependência do pacote.
+- CentOS e RHEL: o jemalloc é instalado automaticamente a partir do
+  repositório EPEL (já uma dependência do Zammad).
+- SLES: o jemalloc **não** é instalado automaticamente (disponível via SUSE
+  Package Hub ou módulos SLE). Se você instalá-lo manualmente com `zypper
+  install jemalloc`, o Zammad o ativa automaticamente na próxima instalação
+  ou atualização via pacote.
 
-## Opt-out and opt-in
+## Ativar e desativar
 
-To opt out of using jemalloc:
+Para desativar o uso do jemalloc:
 
 ```sh
 zammad config:set ZAMMAD_USE_JEMALLOC=no
 ```
 
-This takes effect on the next package installation or upgrade. The
-postinstall script then removes the `LD_PRELOAD` variable entirely, so a
-pre-existing system value is respected. For immediate effect:
+Isso tem efeito na próxima instalação ou atualização via pacote. O script de
+pós-instalação então remove a variável `LD_PRELOAD` por completo, para que
+um valor de sistema pré-existente seja respeitado. Para efeito imediato:
 
 ```sh
 zammad config:unset LD_PRELOAD
@@ -46,14 +48,15 @@ zammad config:unset LD_PRELOAD
 sudo systemctl restart zammad
 ```
 
-To opt back in, unset the variable again (any value other than `no`
-re-enables jemalloc on the next package installation or upgrade):
+Para reativar, remova a definição da variável novamente (qualquer valor
+diferente de `no` reativa o jemalloc na próxima instalação ou atualização
+via pacote):
 
 ```sh
 zammad config:unset ZAMMAD_USE_JEMALLOC
 ```
 
-To verify whether jemalloc is active, run:
+Para verificar se o jemalloc está ativo, execute:
 
 ```sh
 zammad run ruby -e 'puts File.read("/proc/self/maps").match?(/jemalloc/) ? "jemalloc active" : "jemalloc NOT active"'

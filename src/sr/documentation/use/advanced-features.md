@@ -251,12 +251,12 @@ QA процес, уместо додавања интерног чланка. У
 
 **Како?**
 
-Zammad вас подразумевано обавештава када се тикет приближава или пробија
-рокове. Подесите ова обавештења у вашем [корисничким
-подешавањима](/en/documentation/use/user-profile#notifications). Zammad
-такође долази и са подразумеваним прегледом под називом „Ескалирани
-тикети”. Овај преглед укључује све већ ескалиране тикете и тикете за које се
-очекује да ће ескалирати у наредних 10 минута.
+Zammad notifies you by default when tickets approach or exceed their
+deadlines. Configure these notifications in your [personal
+settings](/en/documentation/use/user-profile#notifications). Zammad also
+ships a default overview called "Escalated Tickets". This overview includes
+already escalated tickets and tickets which are expected to escalate within
+the next 10 minutes.
 
 Тикети са додељеним SLA приказују временску ознаку у свом заглављу. Пређите
 курсором преко ове ознаке да видите све етапе и рокове ескалација у

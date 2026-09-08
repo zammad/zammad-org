@@ -111,14 +111,14 @@ para `.env`. Dessa forma, ele será detectado automaticamente pelo Docker Compos
   `/opt/zammad/tmp/websocket_*`. Veja [Variáveis do Redis](/pt_BR/reference/redis) para uma configuração Sentinel.
 
 `LD_PRELOAD` <Badge type="tip" text="libjemalloc.so.2" /> ::p::
-: Preloads a shared library for all Zammad processes. Package installations use it to enable
-  [jemalloc](/en/reference/memory-allocator) as memory allocator and set it automatically if the library is present on
-  your system. This variable is managed by the package install script and may be overwritten during updates.
+: Pré-carrega uma biblioteca compartilhada para todos os processos do Zammad. Instalações via pacote a usam para ativar o
+  [jemalloc](/pt_BR/reference/memory-allocator) como alocador de memória e a definem automaticamente se a biblioteca estiver presente no
+  seu sistema. Esta variável é gerenciada pelo script de instalação do pacote e pode ser sobrescrita durante atualizações.
 
 `ZAMMAD_USE_JEMALLOC` ::p::
-: Set to `no` to opt out of [jemalloc](/en/reference/memory-allocator) as memory allocator. Takes effect on the next
-  package installation or upgrade. Unset it to opt back in; any value other than `no` re-enables `jemalloc` on the
-  next package installation or upgrade.
+: Defina como `no` para desativar o [jemalloc](/pt_BR/reference/memory-allocator) como alocador de memória. Tem efeito na próxima
+  instalação ou atualização via pacote. Remova a definição para reativá-lo; qualquer valor diferente de `no` reativa o `jemalloc` na
+  próxima instalação ou atualização via pacote.
 
 ## Elasticsearch
 

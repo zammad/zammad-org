@@ -103,11 +103,13 @@ or reload the page.
 
 ### Промена редоследа прегледа
 
-Ако редослед прегледа не одговара вашем начину рада или једноставно желите
-другачији редослед, можете их преуредити за свој налог. Користите дугме
-`reorder items` на самом врху навигационог трака другог нивоа, које отвара
-ваше [подешавања профила](/en/documentation/use/user-profile#overviews) где
-можете дефинисати прилагођен редослед за своје прегледи.
+If the order of the overviews doesn't reflect your working process or you
+just like to have a different order, you can re-arrange them for your
+account. Use the `reorder items` button at the very top of the second level
+navigation, which opens your [personal
+settings](/en/documentation/use/user-profile#overviews) where you can define
+a custom order for your overviews. To change the order, simply drag & drop
+them by clicking the handles on the left side.
 
 Ако ваш администратор промени редослед, ваш прилагођени редослед се
 чува. Можете се вратити на редослед администратора кликом на дугме `Reset

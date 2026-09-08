@@ -165,7 +165,7 @@ To use pagination you'll need two get options: `per_page` and
 - [Organizations](organization)
 - [Roles](role)
 - [Tickets](ticket)
-- [Users](user)
+- [Корисници](user)
 
 Следећи ендпоинти такође подржавају упит за претрагу, али нису експлицитно
 покривени у овој документацији:

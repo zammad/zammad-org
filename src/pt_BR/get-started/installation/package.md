@@ -62,10 +62,10 @@ sudo dnf install curl epel-release
 
 :::
 
-Zammad uses [jemalloc](https://jemalloc.net/){target=_blank} as memory
-allocator out of the box on Debian, Ubuntu, CentOS and RHEL. For SLES,
-opt-out and verification details, see the [Memory
-allocator](/en/reference/memory-allocator)  page.
+O Zammad usa o [jemalloc](https://jemalloc.net/){target=_blank} como
+alocador de memória por padrão no Debian, Ubuntu, CentOS e RHEL. Para
+detalhes sobre desativação e verificação no SLES, veja a página [Alocador de
+memória](/pt_BR/reference/memory-allocator).
 
 ## Fundamentos
 

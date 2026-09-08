@@ -54,12 +54,12 @@ cliente risponde dopo che un ticket è stato chiuso.
 
 ### Cosa vede il cliente nel ticket?
 
-Per impostazione predefinita, i clienti hanno solo un'interfaccia
-ridotta. Possono creare ticket, visualizzare i propri ticket (e forse anche
-quelli dei colleghi, a seconda dell'impostazione) e accedere alle
-impostazioni del profilo. Anche la visualizzazione dettagli ticket include
-solo elementi rilevanti per il cliente. Gli elementi con uno scopo interno
-(come gruppo, priorità, note interne) non sono visibili al cliente.
+By default, customers only have a reduced interface. They can create
+tickets, view their own tickets (and maybe their colleague's too, depending
+on the setting) and access their personal settings. Even the ticket detail
+view only includes relevant elements for the customer. Elements, which have
+an internal purpose (like group, priority, internal notes, are not visible
+to the customer.
 
 ::: warning
 La spiegazione sopra è basata sulle impostazioni predefinite di Zammad. Tieni presente che la configurazione del tuo sistema potrebbe essere
@@ -101,24 +101,22 @@ campo di input è attivato, scorre tra le diverse modalità.
 
 ### Come cambiare la mia immagine profilo/avatar?
 
-Vai alla [sezione avatar](user-profile#avatar) nelle impostazioni del
-profilo aprendo il menu avatar nell'angolo in basso a sinistra e
-selezionando **Impostazioni profilo**. Lì puoi caricare un'immagine,
-scattare una foto (se il tuo dispositivo ha una fotocamera) o eliminare le
-immagini già presenti.
+Go to the [avatar section](user-profile#avatar) in your personal settings by
+opening the avatar menu in the bottom left corner and select **Personal
+settings**. There you can upload an image, capture a photo (if your device
+has a camera) or delete already present images.
 
 ### Come cambiare la lingua dell'interfaccia utente di Zammad?
 
-Vai alla [sezione lingua](user-profile#lingua) nelle impostazioni del
-profilo aprendo il menu avatar nell'angolo in basso a sinistra e
-selezionando **Impostazioni profilo**.
+Go to the [language section](user-profile#language) in your personal
+settings by opening the avatar menu in the bottom left corner and select
+**Personal settings**.
 
 ### Cosa dovrei fare prima di andare in vacanza?
 
-Vai alla [sezione fuori ufficio](user-profile#fuori-ufficio) nelle
-impostazioni del profilo aprendo il menu avatar nell'angolo in basso a
-sinistra e selezionando **Impostazioni profilo**. Lì puoi definire un agente
-sostituto.
+Go to the [out of office section](user-profile#out-of-office) in your
+personal settings by opening the avatar menu in the bottom left corner and
+select **Personal settings**. There you can define a replacement agent.
 
 ### Come regolare l'ordine delle panoramiche?
 

@@ -12,21 +12,22 @@ title: 'Двофакторска аутентификација'
 безбедносни кључ), да би потвдили да сте овлашћена особа која може да
 приступи налогу.
 
-Двофакторска аутентификација је **опциона функција**. Администратори је
-морају активирати да би била видљива у подешавањима вашег профила. Коришћење
-2FA може бити намештено од стране администратора. У том случају, не можете
-користити Zammad док не поставите бар један 2FA метод.
+Two-Factor Authentication is an **optional feature**. Administrators must
+activate it to be visible in your Personal settings. The 2FA usage may be
+even enforced by your admin. In this case, you can't use Zammad unless you
+set up at least one 2FA method.
 
 ## Подешавање
 
-Ако је администратор система омогућио ову функцију, можете отићи на _Аватар > Профил > Двофакторска аутентификација_ да је поставите.
-Зависно од омогућених двофакторских метода, у табели ћете видети једну или више опција.
+If the system admin has enabled this feature, you can head to
+_Avatar > Personal settings > Two-factor Authentication_ to set it up.
+Depending on the enabled two-factor methods, you may see one or more options in the table.
 
 Да бисте поставили двофакторски метод, користите дугме ::+:: и пратите
 кораке.
 
-![Пример снимка екрана (пуна
-страна)](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
+![Screenshot shows 2FA methods in personal
+settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 У дијалогу ћете бити упитани да потврдите вашу тренутну лозинку.
 
@@ -167,16 +168,16 @@ metoda"](/screenshots/documentation/use/two-factor-auth-usage/2fa-link-another-m
 ![Пример снимка екрана (пуна
 страна)](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
-Такође имате опцију да у било ком тренутку регенеришете своје кодове за
-повратни приступ, чиме се поништавају већ постојећи кодови и добијате листу
-нових кодова. То можете урадити кликом на дугме `Regeneriši kodove za
-povratni pristup` у 2FA подешавањима свог профила.
+You also have an option to regenerate your recovery codes at any time, which
+invalidates already existing recovery codes and provides you with a list of
+fresh codes. You can do this by clicking on `Regenerate recovery codes`
+button in your Personal settings' 2FA section.
 
 ## Постављање подразумеваног метода двофакторске аутентификације
 
-Да бисте поставили већ подешен двофакторски метод као подразумевани,
-користите ::a:: мени акција поред њега у 2FA подешавањима свог профила и
-изаберите **Постави као подразумевани**.
+To set an already set up two-factor method as default, use the ::a:: actions
+menu next to it in your Personal settings' 2FA section and choose **Set as
+default**.
 
 To identify your current default two-factor authentication method, look for
 a small blue badge next to the method name.

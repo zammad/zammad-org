@@ -227,12 +227,12 @@ alle richieste dei clienti.
 
 **Come?**
 
-Zammad ti invia automaticamente una notifica quando i ticket si avvicinano o
-superano la scadenza. Puoi configurare queste notifiche nelle [impostazioni
-del tuo profilo](/it/documentation/use/user-profile#notifiche). Zammad
-include anche una panoramica predefinita chiamata "Ticket in stato di
-escalation". Questa panoramica comprende i ticket già in stato di escalation
-e quelli che si prevede vengano escalati entro i prossimi 10 minuti.
+Zammad notifies you by default when tickets approach or exceed their
+deadlines. Configure these notifications in your [personal
+settings](/en/documentation/use/user-profile#notifications). Zammad also
+ships a default overview called "Escalated Tickets". This overview includes
+already escalated tickets and tickets which are expected to escalate within
+the next 10 minutes.
 
 I ticket rilevanti per l'SLA mostrano un timestamp nell'intestazione dei
 dettagli del ticket. Passando il mouse sopra questo timestamp, vengono

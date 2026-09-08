@@ -29,14 +29,14 @@ O menu contém as seguintes entradas:
 - **Keyboard shortcuts**: abre um popup com os atalhos de teclado
   disponíveis. Como alternativa, pressione [[?]] no seu teclado para
   exibi-lo também.
-- **Profile settings**: abre as configurações do seu perfil, onde você pode
-  ajustar seu avatar, senha, configurações de notificação e muito mais; veja
-  a próxima seção.
+- **Personal settings**: opens your personal settings where you can adjust
+  your avatar, password, notification settings and much more, see next
+  section.
 
-## Configurações de perfil
+## Personal settings
 
-![Captura de tela mostra as configurações de perfil do
-usuário](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Screenshot shows personal settings of a
+user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Aparência
 

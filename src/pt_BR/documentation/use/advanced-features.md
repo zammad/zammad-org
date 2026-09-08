@@ -259,12 +259,12 @@ escalona.
 
 **Como?**
 
-O Zammad notifica você por padrão quando os tickets se aproximam ou
-ultrapassam seus prazos. Configure essas notificações nas [configurações do
-seu perfil](/pt_BR/documentation/use/user-profile#notifications). O Zammad
-também vem com uma visão geral padrão chamada "Escalated Tickets". Essa
-visão geral inclui tickets já escalonados e tickets que devem escalonar nos
-próximos 10 minutos.
+Zammad notifies you by default when tickets approach or exceed their
+deadlines. Configure these notifications in your [personal
+settings](/en/documentation/use/user-profile#notifications). Zammad also
+ships a default overview called "Escalated Tickets". This overview includes
+already escalated tickets and tickets which are expected to escalate within
+the next 10 minutes.
 
 Tickets relevantes para SLA exibem um carimbo de hora no cabeçalho da
 visualização de detalhes. Passe o mouse sobre esse carimbo de hora para ver

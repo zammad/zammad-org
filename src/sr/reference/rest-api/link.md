@@ -42,7 +42,8 @@ title: 'Рад на тикетима'
 
 ::: info
 Вредност за `link_object_target` мора бити _ID тикета_.
-Вредност за `link_object_source_number` мора бити _број тикета_.
+Вредност за `link_object_source_number` мора бити _број
+тикета_.
 :::
 
 === Одговор

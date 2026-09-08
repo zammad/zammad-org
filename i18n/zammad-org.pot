@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-03 08:20+0200\n"
+"POT-Creation-Date: 2026-09-08 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,6 +248,18 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -2199,7 +2211,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Zammad notifies you by default when tickets approach or exceed their "
-"deadlines. Configure these notifications in your [profile "
+"deadlines. Configure these notifications in your [personal "
 "settings](/en/documentation/use/user-profile#notifications). Zammad also "
 "ships a default overview called \"Escalated Tickets\". This overview "
 "includes already escalated tickets and tickets which are expected to "
@@ -4269,8 +4281,8 @@ msgstr ""
 #, markdown-text, no-wrap
 msgid ""
 "Bottom bar\n"
-": Profile settings and create new ticket button. In case you have additional "
-"permissions, there might be a settings and\n"
+": Personal settings and create new ticket button. In case you have "
+"additional permissions, there might be a settings and\n"
 "  a reporting button as well.\n"
 msgstr ""
 
@@ -4480,7 +4492,7 @@ msgstr ""
 msgid ""
 "By default, customers only have a reduced interface. They can create "
 "tickets, view their own tickets (and maybe their colleague's too, depending "
-"on the setting) and access their profile settings. Even the ticket detail "
+"on the setting) and access their personal settings. Even the ticket detail "
 "view only includes relevant elements for the customer. Elements, which have "
 "an internal purpose (like group, priority, internal notes, are not visible "
 "to the customer."
@@ -4585,8 +4597,8 @@ msgstr ""
 #: src/en/documentation/use/faq.md:88
 #, markdown-text
 msgid ""
-"Go to the [avatar section](user-profile#avatar) in you profile settings by "
-"opening the avatar menu in the bottom left corner and select **Profile "
+"Go to the [avatar section](user-profile#avatar) in your personal settings by "
+"opening the avatar menu in the bottom left corner and select **Personal "
 "settings**. There you can upload an image, capture a photo (if your device "
 "has a camera) or delete already present images."
 msgstr ""
@@ -4601,9 +4613,9 @@ msgstr ""
 #: src/en/documentation/use/faq.md:93
 #, markdown-text
 msgid ""
-"Go to the [language section](user-profile#language) in you profile settings "
-"by opening the avatar menu in the bottom left corner and select **Profile "
-"settings**."
+"Go to the [language section](user-profile#language) in your personal "
+"settings by opening the avatar menu in the bottom left corner and select "
+"**Personal settings**."
 msgstr ""
 
 #. type: Title ###
@@ -4616,9 +4628,9 @@ msgstr ""
 #: src/en/documentation/use/faq.md:98
 #, markdown-text
 msgid ""
-"Go to the [out of office section](user-profile#out-of-office) in you profile "
-"settings by opening the avatar menu in the bottom left corner and select "
-"**Profile settings**. There you can define a replacement agent."
+"Go to the [out of office section](user-profile#out-of-office) in your "
+"personal settings by opening the avatar menu in the bottom left corner and "
+"select **Personal settings**. There you can define a replacement agent."
 msgstr ""
 
 #. type: Title ###
@@ -6141,7 +6153,7 @@ msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
 "account. Use the `reorder items` button at the very top of the second level "
-"navigation, which opens your [profile "
+"navigation, which opens your [personal "
 "settings](/en/documentation/use/user-profile#overviews) where you can define "
 "a custom order for your overviews. To change the order, simply drag & drop "
 "them by clicking the handles on the left side."
@@ -6916,7 +6928,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Two-Factor Authentication is an **optional feature**. Administrators must "
-"activate it to be visible in your profile settings. The 2FA usage may be "
+"activate it to be visible in your Personal settings. The 2FA usage may be "
 "even enforced by your admin. In this case, you can't use Zammad unless you "
 "set up at least one 2FA method."
 msgstr ""
@@ -6928,37 +6940,37 @@ msgid "Setup"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:21
+#: src/en/documentation/use/guides/two-factor-auth.md:22
 #, markdown-text, no-wrap
 msgid ""
-"If the system admin has enabled this feature, you can head to _Avatar > "
-"Profile > Two-factor Authentication_ to set it\n"
-"up. Depending on the enabled two-factor methods, you may see one or more "
-"options in the table.\n"
+"If the system admin has enabled this feature, you can head to\n"
+"_Avatar > Personal settings > Two-factor Authentication_ to set it up.\n"
+"Depending on the enabled two-factor methods, you may see one or more options "
+"in the table.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:23
+#: src/en/documentation/use/guides/two-factor-auth.md:24
 #, markdown-text
 msgid "To set up a two-factor method, use the ::+:: button and follow the steps."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:25
+#: src/en/documentation/use/guides/two-factor-auth.md:26
 #, markdown-text
 msgid ""
-"![Screenshot shows 2FA methods in user profile "
+"![Screenshot shows 2FA methods in personal "
 "settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:27
+#: src/en/documentation/use/guides/two-factor-auth.md:28
 #, markdown-text
 msgid "In a modal dialog, you will be asked to confirm your current password."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:30
+#: src/en/documentation/use/guides/two-factor-auth.md:31
 #, markdown-text
 msgid ""
 "Depending on the chosen two-factor method, you will be guided through the "
@@ -6968,13 +6980,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:31
+#: src/en/documentation/use/guides/two-factor-auth.md:32
 #, markdown-text, no-wrap
 msgid "Authentication app"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:36
+#: src/en/documentation/use/guides/two-factor-auth.md:37
 #, markdown-text
 msgid ""
 "The authenticator app method is a type of two-factor authentication that "
@@ -6984,7 +6996,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:38
+#: src/en/documentation/use/guides/two-factor-auth.md:39
 #, markdown-text
 msgid ""
 "![Screenshot shows app authentication "
@@ -6992,7 +7004,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:40
+#: src/en/documentation/use/guides/two-factor-auth.md:41
 #, markdown-text
 msgid ""
 "First, make sure you have installed an authenticator app on your mobile "
@@ -7000,7 +7012,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:44
+#: src/en/documentation/use/guides/two-factor-auth.md:45
 #, markdown-text
 msgid ""
 "[Google "
@@ -7008,13 +7020,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:44
+#: src/en/documentation/use/guides/two-factor-auth.md:45
 #, markdown-text
 msgid "[Authy](https://support.authy.com/hc/en-us/articles/115001945848-Installing-Authy-apps/){target=_blank}"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:44
+#: src/en/documentation/use/guides/two-factor-auth.md:45
 #, markdown-text
 msgid ""
 "[Microsoft "
@@ -7022,7 +7034,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:48
 #, markdown-text
 msgid ""
 "Next, open the authenticator app on your device and find a **Scan QR Code** "
@@ -7031,7 +7043,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/two-factor-auth.md:48
+#: src/en/documentation/use/guides/two-factor-auth.md:49
 #, no-wrap
 msgid ""
 "If your device is not able to scan the QR code, first click on it to reveal "
@@ -7040,7 +7052,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:55
+#: src/en/documentation/use/guides/two-factor-auth.md:56
 #, markdown-text
 msgid ""
 "Your authenticator app should immediately add the new entry for your Zammad "
@@ -7049,7 +7061,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:58
+#: src/en/documentation/use/guides/two-factor-auth.md:59
 #, markdown-text
 msgid ""
 "Back in Zammad, enter the provided code to the **Security Code** field and "
@@ -7058,13 +7070,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:59
+#: src/en/documentation/use/guides/two-factor-auth.md:60
 #, markdown-text, no-wrap
 msgid "Security key"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:64
+#: src/en/documentation/use/guides/two-factor-auth.md:65
 #, markdown-text
 msgid ""
 "The security keys method is a type of a two-factor authentication that uses "
@@ -7074,7 +7086,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:66
+#: src/en/documentation/use/guides/two-factor-auth.md:67
 #, markdown-text
 msgid ""
 "Initially, you will be presented with an empty flyout instructing you to "
@@ -7082,7 +7094,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:68
+#: src/en/documentation/use/guides/two-factor-auth.md:69
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
@@ -7090,7 +7102,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:71
+#: src/en/documentation/use/guides/two-factor-auth.md:72
 #, markdown-text
 msgid ""
 "Then, enter a descriptive **Name for this security key** you will be "
@@ -7099,7 +7111,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:74
+#: src/en/documentation/use/guides/two-factor-auth.md:75
 #, markdown-text
 msgid ""
 "Next, depending you your browser, you will be presented with different "
@@ -7108,7 +7120,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:76
+#: src/en/documentation/use/guides/two-factor-auth.md:77
 #, markdown-text
 msgid ""
 "![Screenshot shows security key authentication "
@@ -7116,7 +7128,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:79
+#: src/en/documentation/use/guides/two-factor-auth.md:80
 #, markdown-text
 msgid ""
 "You may be asked by the browser to interact with a key or a device so you "
@@ -7125,7 +7137,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:80
+#: src/en/documentation/use/guides/two-factor-auth.md:81
 #, no-wrap
 msgid ""
 "You will have limited time (measured in tens of seconds) to register your "
@@ -7134,7 +7146,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:87
+#: src/en/documentation/use/guides/two-factor-auth.md:88
 #, markdown-text
 msgid ""
 "If the registration was successful, the modal dialog will close and you are "
@@ -7143,7 +7155,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:89
+#: src/en/documentation/use/guides/two-factor-auth.md:90
 #, markdown-text
 msgid ""
 "Once set up, security keys can be managed by choosing **Edit** action next "
@@ -7151,7 +7163,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:93
+#: src/en/documentation/use/guides/two-factor-auth.md:94
 #, markdown-text
 msgid ""
 "You have an option to remove a key or set up additional ones. There is no "
@@ -7162,13 +7174,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:94
+#: src/en/documentation/use/guides/two-factor-auth.md:95
 #, markdown-text, no-wrap
 msgid "Sign-in"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:99
+#: src/en/documentation/use/guides/two-factor-auth.md:100
 #, markdown-text
 msgid ""
 "When you set up two-factor authentication for your Zammad account, during "
@@ -7178,7 +7190,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:102
+#: src/en/documentation/use/guides/two-factor-auth.md:103
 #, markdown-text
 msgid ""
 "In case you are having issues during sign-in with your preferred two-factor "
@@ -7187,7 +7199,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:105
+#: src/en/documentation/use/guides/two-factor-auth.md:106
 #, markdown-text
 msgid ""
 "Look for **Try another method** link below the sign in box. In case you "
@@ -7196,7 +7208,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:107
+#: src/en/documentation/use/guides/two-factor-auth.md:108
 #, markdown-text
 msgid ""
 "![Log in screen with link to \"Try another "
@@ -7204,7 +7216,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:111
+#: src/en/documentation/use/guides/two-factor-auth.md:112
 #, markdown-text
 msgid ""
 "Alternatively, you can also use one of your recovery codes, which are "
@@ -7214,7 +7226,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:113
+#: src/en/documentation/use/guides/two-factor-auth.md:114
 #, markdown-text
 msgid ""
 "![Log in screen with recovery codes "
@@ -7222,7 +7234,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:114
+#: src/en/documentation/use/guides/two-factor-auth.md:115
 #, no-wrap
 msgid ""
 "You can use a single recovery code only once! In case you exhaust the list "
@@ -7231,13 +7243,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:119
+#: src/en/documentation/use/guides/two-factor-auth.md:120
 #, markdown-text, no-wrap
 msgid "Generate recovery codes"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:123
+#: src/en/documentation/use/guides/two-factor-auth.md:124
 #, markdown-text
 msgid ""
 "Recovery codes are one-time use security codes that can be used to sign in "
@@ -7246,7 +7258,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:126
+#: src/en/documentation/use/guides/two-factor-auth.md:127
 #, markdown-text
 msgid ""
 "If the feature is enabled by the admin, recovery codes will be automatically "
@@ -7255,7 +7267,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:129
+#: src/en/documentation/use/guides/two-factor-auth.md:130
 #, markdown-text
 msgid ""
 "You will be asked to print out or save the generated recovery codes in a "
@@ -7263,7 +7275,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:131
+#: src/en/documentation/use/guides/two-factor-auth.md:132
 #, markdown-text
 msgid ""
 "![Screenshot shows output of recovery codes during 2FA "
@@ -7271,32 +7283,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:135
+#: src/en/documentation/use/guides/two-factor-auth.md:136
 #, markdown-text
 msgid ""
 "You also have an option to regenerate your recovery codes at any time, which "
 "invalidates already existing recovery codes and provides you with a list of "
 "fresh codes. You can do this by clicking on `Regenerate recovery codes` "
-"button in your profile's 2FA settings."
+"button in your Personal settings' 2FA section."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:136
+#: src/en/documentation/use/guides/two-factor-auth.md:137
 #, markdown-text, no-wrap
 msgid "Set a default 2FA method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:140
+#: src/en/documentation/use/guides/two-factor-auth.md:141
 #, markdown-text
 msgid ""
 "To set an already set up two-factor method as default, use the ::a:: actions "
-"menu next to it in your profile's 2FA settings and choose **Set as "
+"menu next to it in your Personal settings' 2FA section and choose **Set as "
 "default**."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:143
+#: src/en/documentation/use/guides/two-factor-auth.md:144
 #, markdown-text
 msgid ""
 "To identify your current default two-factor authentication method, look for "
@@ -7304,7 +7316,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:145
+#: src/en/documentation/use/guides/two-factor-auth.md:146
 #, markdown-text
 msgid ""
 "![Screenshot shows list of 2FA methods and default "
@@ -7312,7 +7324,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:148
+#: src/en/documentation/use/guides/two-factor-auth.md:149
 #, markdown-text
 msgid ""
 "A default two-factor authentication method is just your preferred method "
@@ -7321,13 +7333,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:149
+#: src/en/documentation/use/guides/two-factor-auth.md:150
 #, markdown-text, no-wrap
 msgid "Edit a 2FA method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:152
+#: src/en/documentation/use/guides/two-factor-auth.md:153
 #, markdown-text
 msgid ""
 "![Screenshot shows the action menu for an already set up 2FA "
@@ -7335,7 +7347,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:155
+#: src/en/documentation/use/guides/two-factor-auth.md:156
 #, markdown-text
 msgid ""
 "To edit an already set up two-factor method, use the ::a:: actions menu next "
@@ -7344,7 +7356,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:159
+#: src/en/documentation/use/guides/two-factor-auth.md:160
 #, markdown-text
 msgid ""
 "Depending on the chosen two-factor method, you will be guided again through "
@@ -7354,13 +7366,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:160
+#: src/en/documentation/use/guides/two-factor-auth.md:161
 #, markdown-text, no-wrap
 msgid "Remove a 2FA method"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:163
+#: src/en/documentation/use/guides/two-factor-auth.md:164
 #, markdown-text
 msgid ""
 "To remove an already set up two-factor method, use the ::a:: actions menu "
@@ -7535,22 +7547,23 @@ msgstr ""
 #: src/en/documentation/use/user-profile.md:28
 #, markdown-text
 msgid ""
-"**Profile settings**: opens your profile settings where you can adjust your "
-"avatar, password, notification settings and much more, see next section."
+"**Personal settings**: opens your personal settings where you can adjust "
+"your avatar, password, notification settings and much more, see next "
+"section."
 msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/user-profile.md:29
 #, markdown-text, no-wrap
-msgid "Profile settings"
+msgid "Personal settings"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:32
 #, markdown-text
 msgid ""
-"![Screenshot shows user profile "
-"settings](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
+"![Screenshot shows personal settings of a "
+"user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
 msgstr ""
 
 #. type: Title ###
@@ -24871,6 +24884,83 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -25080,83 +25170,6 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -25600,18 +25613,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #

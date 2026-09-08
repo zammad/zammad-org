@@ -30,14 +30,14 @@ Das Menü enthält die folgenden Einträge:
 - **Tastaturkürzel**: öffnet ein Popup mit den verfügbaren
   Tastaturkürzeln. Alternativ können Sie auch [[?]] auf Ihrer Tastatur
   drücken, um es ebenfalls anzuzeigen.
-- **Profileinstellungen**: öffnet Ihre Profileinstellungen, wo Sie Ihren
-  Avatar, Ihr Passwort, Ihre Benachrichtigungseinstellungen und vieles mehr
-  anpassen können, siehe nächster Abschnitt.
+- **Personal settings**: opens your personal settings where you can adjust
+  your avatar, password, notification settings and much more, see next
+  section.
 
-## Profil-Einstellungen
+## Personal settings
 
-![Screenshot zeigt
-Benutzerprofil-Einstellungen](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Screenshot shows personal settings of a
+user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Aussehen
 

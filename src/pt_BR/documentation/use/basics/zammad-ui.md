@@ -58,9 +58,9 @@ Abas da barra de tarefas
 : você encontra abas para seus tickets, usuários, organizações abertos e a pesquisa detalhada na barra de tarefas. Então, se você
   ler sobre uma aba de usuário, isso significa uma aba de usuário aberta na sua barra lateral.
 
-Barra inferior
-: configurações de perfil e botão de criar novo ticket. Caso você tenha permissões adicionais, também pode haver um botão de configurações e
-  um botão de relatórios.
+Bottom bar
+: Personal settings and create new ticket button. In case you have additional permissions, there might be a settings and
+  a reporting button as well.
 
 O Zammad salva imediatamente seu progresso de trabalho atual, para que você
 possa alternar facilmente entre as diferentes áreas do Zammad e não precise

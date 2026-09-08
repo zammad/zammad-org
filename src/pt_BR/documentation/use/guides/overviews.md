@@ -111,13 +111,13 @@ recursos avançados.
 
 ### Reordenar visões gerais
 
-Se a ordem das visões gerais não refletir seu processo de trabalho, ou você
-simplesmente prefira uma ordem diferente, você pode reorganizá-las para sua
-conta. Use o botão `reorder items` bem no topo da navegação de segundo
-nível, que abre as [configurações do seu
-perfil](/pt_BR/documentation/use/user-profile#overviews), onde você pode
-definir uma ordem personalizada para suas visões gerais. Para alterar a
-ordem, basta arrastar e soltar usando as alças no lado esquerdo.
+If the order of the overviews doesn't reflect your working process or you
+just like to have a different order, you can re-arrange them for your
+account. Use the `reorder items` button at the very top of the second level
+navigation, which opens your [personal
+settings](/en/documentation/use/user-profile#overviews) where you can define
+a custom order for your overviews. To change the order, simply drag & drop
+them by clicking the handles on the left side.
 
 Se o seu administrador alterar a ordem, sua ordem personalizada é
 preservada. Você pode voltar à ordem do administrador clicando no botão

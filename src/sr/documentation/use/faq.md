@@ -53,12 +53,12 @@ title: FAQ
 
 ### Шта клијент види у тикету?
 
-Подразумевано, клијенти имају само поједностављен интерфејс. Могу да
-отварају тикете, прегледају сопствене тикете (а можда и тикете својих
-колега, у зависности од подешавања) и да приступе подешавањима свог
-профила. Чак и детаљни приказ тикета садржи само елементе релевантне за
-клијента. Елементи који имају интерну намену (као што су група, приоритет,
-интерне напомене) нису видљиви клијенту.
+By default, customers only have a reduced interface. They can create
+tickets, view their own tickets (and maybe their colleague's too, depending
+on the setting) and access their personal settings. Even the ticket detail
+view only includes relevant elements for the customer. Elements, which have
+an internal purpose (like group, priority, internal notes, are not visible
+to the customer.
 
 ::: warning
 Објашњење изнад заснива се на подразумеваним Zammad подешавањима. Имајте на уму да подешавање вашег система може бити
@@ -99,22 +99,22 @@ title: FAQ
 
 ### Како да променим слику профила/аватара?
 
-Идите на [одељак аватара](user-profile#avatar) у подешавањима профила тако
-што ћете отворити аватар мени у доњем левом углу и изабрати **Подешавања
-профила**. Ту можете отпремити слику, снимити фотографију (ако уређај има
-камеру) или обрисати већ постојеће слике.
+Go to the [avatar section](user-profile#avatar) in your personal settings by
+opening the avatar menu in the bottom left corner and select **Personal
+settings**. There you can upload an image, capture a photo (if your device
+has a camera) or delete already present images.
 
 ### Како да променим језик корисничког сучеља Zammad-а?
 
-Идите на [одељак језика](user-profile#language) у подешавањима профила тако
-што ћете отворити аватар мени у доњем левом углу и изабрати **Подешавања
-профила**.
+Go to the [language section](user-profile#language) in your personal
+settings by opening the avatar menu in the bottom left corner and select
+**Personal settings**.
 
 ### Шта треба да урадим пре одласка на одмор?
 
-Идите на [одељак ван рада](user-profile#out-of-office) у подешавањима
-профила тако што ћете отворити аватар мени у доњем левом углу и изабрати
-**Подешавања профила**. Тамо можете одредити заменског оператера.
+Go to the [out of office section](user-profile#out-of-office) in your
+personal settings by opening the avatar menu in the bottom left corner and
+select **Personal settings**. There you can define a replacement agent.
 
 ### Како прилагодити редослед прегледа?
 

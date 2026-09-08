@@ -60,9 +60,9 @@ Taskleisten-Tabs
 : In der Taskleiste finden Sie Registerkarten für Ihre geöffneten Tickets, Benutzer, Organisationen sowie die erweiterte Suche. Wenn also
   von einem Benutzer-Tab die Rede ist, ist damit ein geöffneter Benutzer-Tab in Ihrer Seitenleiste gemeint.
 
-Untere Leiste
-: Profileinstellungen und Schaltfläche "Neues Ticket" innerhalb der Navigations-Seitenleiste. Falls Sie über entsprechende Berechtigungen verfügen, gibt es zusätzlich die Schaltflächen Einstellungen und
-  Berichte.
+Bottom bar
+: Personal settings and create new ticket button. In case you have additional permissions, there might be a settings and
+  a reporting button as well.
 
 Zammad speichert Ihren aktuellen Arbeitsfortschritt sofort, so dass Sie
 leicht zwischen den verschiedenen Bereichen von Zammad wechseln können und

@@ -12,22 +12,22 @@ sicherzustellen, dass Sie berechtigt sind, auf das Konto
 zuzugreifen. Typischerweise ist das etwas, was Sie wissen (wie ein Passwort)
 und etwas, das Sie besitzen (wie ein Mobilgerät oder ein Security-Token).
 
-Die Zwei-Faktor-Authentifizierung ist eine **optionale
-Funktion**. Administratoren müssen sie aktivieren, damit sie in Ihren
-Profileinstellungen sichtbar ist. Die 2FA-Verwendung kann sogar von Ihrem
-Administrator erzwungen werden. In diesem Fall können Sie Zammad nicht
-verwenden, wenn Sie nicht mindestens eine 2FA-Methode eingerichtet haben.
+Two-Factor Authentication is an **optional feature**. Administrators must
+activate it to be visible in your Personal settings. The 2FA usage may be
+even enforced by your admin. In this case, you can't use Zammad unless you
+set up at least one 2FA method.
 
 ## Einrichtung
 
-Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie sie unter _Avatar > Profil-Einstellungen > Zwei-Faktor-Authentifizierung_
-einrichten. Je nach aktivierten Zwei-Faktor-Methoden sehen Sie eine oder mehrere Optionen in der Tabelle.
+If the system admin has enabled this feature, you can head to
+_Avatar > Personal settings > Two-factor Authentication_ to set it up.
+Depending on the enabled two-factor methods, you may see one or more options in the table.
 
 Um eine Zwei-Faktor-Methode einzurichten, klicken Sie auf die ::+::
-Schaltfläche und folgenden Sie den Schritten.
+Schaltfläche und folgen Sie den Schritten.
 
-![Screenshot zeigt 2FA-Methoden in den Einstellungen des
-Benutzerprofils](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
+![Screenshot shows 2FA methods in personal
+settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 In einem Dialogfenster werden Sie aufgefordert, Ihr aktuelles Passwort zu
 bestätigen.
@@ -175,17 +175,16 @@ Wiederherstellungs-Code kann nicht mehr genutzt werden.
 ![Screenshot zeigt die Ausgabe von Wiederherstellungs-Codes während der
 2FA-Einrichtung](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
-Sie haben auch die Möglichkeit, Ihre Wiederherstellungs-Codes jederzeit neu
-zu generieren, wodurch bereits vorhandene Wiederherstellungs-Codes ungültig
-werden und Sie eine Liste mit neuen Codes erhalten. Sie können dies tun,
-indem Sie in den 2FA-Einstellungen Ihres Profils auf die Schaltfläche
-`Wiederherstellungs-Codes neu erzeugen` klicken.
+You also have an option to regenerate your recovery codes at any time, which
+invalidates already existing recovery codes and provides you with a list of
+fresh codes. You can do this by clicking on `Regenerate recovery codes`
+button in your Personal settings' 2FA section.
 
 ## Festlegen einer Standard-2FA-Methode
 
-Um eine bereits eingerichtete Zwei-Faktor-Methode als Standard einzustellen,
-verwenden Sie das Aktionsmenü ::a:: neben der Methode in den
-2FA-Einstellungen Ihres Profils und wählen Sie **Als Standard festlegen**.
+To set an already set up two-factor method as default, use the ::a:: actions
+menu next to it in your Personal settings' 2FA section and choose **Set as
+default**.
 
 Ein kleines, blaues Label ("Standard") zeigt Ihnen an, welche Methode für
 Ihr Konto als Standard festgelegt ist.

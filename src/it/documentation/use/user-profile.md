@@ -28,14 +28,14 @@ Il menu contiene le seguenti voci:
   browser.
 - **Scorciatoie da tastiera**: apre un popup con le scorciatoie da tastiera
   disponibili. In alternativa, premi [[?]] sulla tastiera per mostrarle.
-- **Impostazioni profilo**: apre le impostazioni del profilo dove puoi
-  regolare il tuo avatar, la password, le impostazioni di notifica e molto
-  altro, vedi la sezione successiva.
+- **Personal settings**: opens your personal settings where you can adjust
+  your avatar, password, notification settings and much more, see next
+  section.
 
-## Profile settings
+## Personal settings
 
-![Screenshot che mostra le impostazioni del profilo
-utente](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Screenshot shows personal settings of a
+user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Aspetto
 

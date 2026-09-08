@@ -58,7 +58,7 @@ Taskbar tabs
   read about a user tab, this means an opened user tab in your sidebar.
 
 Bottom bar
-: Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and
+: Personal settings and create new ticket button. In case you have additional permissions, there might be a settings and
   a reporting button as well.
 
 Zammad salva immediatamente il progresso del tuo lavoro corrente, quindi

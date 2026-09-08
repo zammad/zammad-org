@@ -29,14 +29,14 @@ title: 'Кориснички профил'
 - **Пречице на тастатури**: отвара искачући прозор са доступним пречицама на
   тастатури. Алтернативно, притисните [[?]] на тастатури да га такође
   прикажете.
-- **Подешавања профила**: отвара подешавања вашег профила где можете
-  подесити свој аватар, лозинку, подешавања обавештења и много тога више,
-  погледајте следећи одељак.
+- **Personal settings**: opens your personal settings where you can adjust
+  your avatar, password, notification settings and much more, see next
+  section.
 
-## Подешавање профила
+## Personal settings
 
-![Пример снимка екрана (пуна
-страна)](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
+![Screenshot shows personal settings of a
+user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ### Изглед
 
