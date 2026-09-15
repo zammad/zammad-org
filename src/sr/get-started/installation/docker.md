@@ -18,13 +18,51 @@ Zammad се може покренути преко Docker Compose. Можете 
 
 ## Предуслови
 
-- Радно Docker Compose окружење
-- Најмање 4 GB RAM за контејнере
-- Повећајте меморијско ограничење за Elasticsearch на Linux хостовима:
+- Make sure your Docker Compose setup matches the
+  [requirements](https://github.com/zammad/zammad-docker-compose#requirements){target=_blank}
+  you can find in the README of Zammad's Docker Compose repository.
+- Make sure to have at least 4 GB of RAM to run the containers.
+- Подесите ваш сервер да правилно извршава Elasticsearch сервис:
 
   ```sh
   sudo sysctl -w vm.max_map_count=262144
   ```
+
+## Покретање преко Docker Compose
+
+### Корак 1: Клонирање GitHub репозиторија
+
+```sh
+git clone https://github.com/zammad/zammad-docker-compose.git
+```
+
+Обавезно често извршавајте `git pull` команду за ажурирање. Алтернативно,
+можете преузети датотеке са [странице
+издања](https://github.com/zammad/zammad-docker-compose/releases).
+
+### Корак 2: Подешавање окружења по потреби
+
+Ако ваше подразумевано окружење није оно које тражите, можете прилагодити
+стацк користећи унапред дефинисане сценарије и подесити променљиве
+окружења. Погледајте [секцију за
+прилагођавање](#customizing-the-zammad-stack) испод за више информација.
+
+### Корак 3: Покретање stack-а
+
+```sh
+cd zammad-docker-compose
+```
+
+```sh
+docker compose up -d
+```
+
+Optional: Use an additional `.yml` file to use a pre-defined scenario. Read
+on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack)
+section.
+
+Након што је stack спреман, можете приступити Zammad-у преко подешеног
+Docker хоста и порта, нпр. `http://localhost:8080/`.
 
 ## Покретање преко Portainer-а
 
@@ -63,52 +101,16 @@ Zammad се може покренути преко Docker Compose. Можете 
 
 ### Корак 3: Покретање stack-а
 
-На крају, кликните на дугме `Deploy the stack`. Први пут може потрајати неко
-време док се Docker имиџи не преузму.
-
-Након што је stack спреман, можете приступити Zammad-у преко подешеног
-Docker хоста и порта, нпр. `http://localhost:8080/`.
-
-## Покретање преко Docker Compose
-
-### Корак 1: Клонирање GitHub репозиторија
-
-```sh
-git clone https://github.com/zammad/zammad-docker-compose.git
-```
-
-Обавезно често извршавајте `git pull` команду за ажурирање. Алтернативно,
-можете преузети датотеке са [странице
-издања](https://github.com/zammad/zammad-docker-compose/releases).
-
-### Корак 2: Подешавање окружења по потреби
-
-Ако ваше подразумевано окружење није оно које тражите, можете прилагодити
-стацк користећи унапред дефинисане сценарије и подесити променљиве
-окружења. Погледајте [секцију за
-прилагођавање](#customizing-the-zammad-stack) испод за више информација.
-
-### Корак 3: Покретање stack-а
-
-```sh
-cd zammad-docker-compose
-```
-
-```sh
-docker compose up -d
-```
-
-Опционално: Користите додатни `.yml` фајл за коришћење унапред дефинисаног
-сценарија. Прочитајте више у секцији [Прилагођавање Zammad
-стацк-а](#customizing-the-zammad-stack).
+Finally, click the `Deploy the stack` button. The first time, it may take
+some time until the Docker images are fetched.
 
 Након што је stack спреман, можете приступити Zammad-у преко подешеног
 Docker хоста и порта, нпр. `http://localhost:8080/`.
 
 ## Излагање стацк-а преко HTTPS-а
 
-Да бисте објавили Zammad стацк на интернету, мора бити заштићен путем HTTPS
-протокола. Да бисте то постигли без измене Zammad стацк-а, можете:
+To publish a Zammad stack on the internet, it needs to be secured via the
+HTTPS protocol. To achieve that without modifying the Zammad stack, you can:
 
 - Користите реверзни прокси као што је Nginx Proxy Manager (NPM). Он има GUI
   који омогућава једноставну интеграцију са [Let'с

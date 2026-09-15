@@ -18,13 +18,54 @@ als Anwendung geleistet werden.
 
 ## Voraussetzungen
 
-- Eine funktionierende Docker Compose-Umgebung
-- Mindestens 4GB Arbeitsspeicher zum Ausführen der Container
-- Erhöhen Sie das Speicherlimit für Elasticsearch auf Linux-Hosts:
+- Make sure your Docker Compose setup matches the
+  [requirements](https://github.com/zammad/zammad-docker-compose#requirements){target=_blank}
+  you can find in the README of Zammad's Docker Compose repository.
+- Make sure to have at least 4 GB of RAM to run the containers.
+- Passen Sie die Einstellungen Ihres Hosts an, damit Elasticsearch
+  ordnungsgemäß läuft:
 
   ```sh
   sudo sysctl -w vm.max_map_count=262144
   ```
+
+## Installation per Docker Compose
+
+### Schritt 1: Klonen des GitHub Repo
+
+```sh
+git clone https://github.com/zammad/zammad-docker-compose.git
+```
+
+Stellen Sie sicher, dass Sie `git pull` regelmäßig ausführen, um
+Aktualisierungen zu erhalten. Alternativ können Sie die Dateien auch von der
+[Release
+Seite](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}
+herunterladen.
+
+### Schritt 2: Umgebung nach Bedarf anpassen
+
+Falls unsere Standardumgebung nicht Ihren Vorstellungen entspricht, können
+Sie den Stack mithilfe von vordefinierten Szenarien anpassen und
+Umgebungsvariablen verwenden. Weitere Informationen finden Sie im Abschnitt
+[Anpassung](#anpassen-des-zammad-stacks) weiter unten.
+
+### Schritt 3: Starten des Stacks
+
+```sh
+cd zammad-docker-compose
+```
+
+```sh
+docker compose up -d
+```
+
+Optional: Use an additional `.yml` file to use a pre-defined scenario. Read
+on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack)
+section.
+
+Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten
+Docker-Host und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
 ## Installation mit Portainer
 
@@ -63,55 +104,16 @@ Repository-Ansicht](/screenshots/get-started/installation/portainer-stack-creati
 
 ### Schritt 3: Starten des Stacks
 
-Klicken Sie schließlich auf die Schaltfläche `Deploy the stack`. Beim ersten
-Mal kann es einige Zeit dauern, bis die Docker-Images abgerufen werden.
-
-Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten
-Docker-Host und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
-
-## Installation per Docker Compose
-
-### Schritt 1: Klonen des GitHub Repo
-
-```sh
-git clone https://github.com/zammad/zammad-docker-compose.git
-```
-
-Stellen Sie sicher, dass Sie `git pull` regelmäßig ausführen, um
-Aktualisierungen zu erhalten. Alternativ können Sie die Dateien auch von der
-[Release
-Seite](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}
-herunterladen.
-
-### Schritt 2: Umgebung nach Bedarf anpassen
-
-Falls unsere Standardumgebung nicht Ihren Vorstellungen entspricht, können
-Sie den Stack mithilfe von vordefinierten Szenarien anpassen und
-Umgebungsvariablen verwenden. Weitere Informationen finden Sie im Abschnitt
-[Anpassung](#anpassen-des-zammad-stacks) weiter unten.
-
-### Schritt 3: Starten des Stacks
-
-```sh
-cd zammad-docker-compose
-```
-
-```sh
-docker compose up -d
-```
-
-Optional: Verwenden Sie eine zusätzliche `.yml`-Datei, um ein vordefiniertes
-Szenario zu verwenden. Springen Sie zum Bereich [Anpassen des
-Zammad-Stacks](#anpassen-des-zammad-stacks) für weitere Informationen.
+Finally, click the `Deploy the stack` button. The first time, it may take
+some time until the Docker images are fetched.
 
 Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten
 Docker-Host und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
 ## Stack per HTTPS freigeben
 
-Um einen Zammad-Stack im Internet zu veröffentlichen, muss er über das
-HTTPS-Protokoll gesichert werden. Um dies zu erreichen, ohne den
-Zammad-Stack zu verändern, haben Sie folgende Möglichkeiten:
+To publish a Zammad stack on the internet, it needs to be secured via the
+HTTPS protocol. To achieve that without modifying the Zammad stack, you can:
 
 - Verwenden Sie einen Reverse-Proxy wie Nginx Proxy Manager (NPM). Er hat
   eine grafische Benutzeroberfläche, die eine einfache [Let's

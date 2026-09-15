@@ -18,13 +18,51 @@ a aplicação Zammad.
 
 ## Pré-requisitos
 
-- Um ambiente Docker Compose funcional
-- Pelo menos 4 GB de RAM para executar os containers
-- Aumente o limite de memória para o Elasticsearch em hosts Linux:
+- Make sure your Docker Compose setup matches the
+  [requirements](https://github.com/zammad/zammad-docker-compose#requirements){target=_blank}
+  you can find in the README of Zammad's Docker Compose repository.
+- Make sure to have at least 4 GB of RAM to run the containers.
+- Adjust your host's settings to run Elasticsearch properly:
 
   ```sh
   sudo sysctl -w vm.max_map_count=262144
   ```
+
+## Implantação com Docker Compose
+
+### Etapa 1: clonar o repositório do GitHub
+
+```sh
+git clone https://github.com/zammad/zammad-docker-compose.git
+```
+
+Certifique-se de executar `git pull` frequentemente para buscar
+atualizações. Como alternativa, você pode baixar os arquivos da [página de
+releases](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
+
+### Etapa 2: ajustar o ambiente conforme necessário
+
+Caso nosso ambiente padrão não seja o que você procura, você pode
+personalizar a stack usando cenários predefinidos e ajustar variáveis de
+ambiente. Vá até a [seção de personalização](#customizing-the-zammad-stack)
+abaixo para mais informações.
+
+### Etapa 3: iniciar a stack
+
+```sh
+cd zammad-docker-compose
+```
+
+```sh
+docker compose up -d
+```
+
+Optional: Use an additional `.yml` file to use a pre-defined scenario. Read
+on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack)
+section.
+
+Depois que a stack estiver pronta, você pode acessar o Zammad pelo host e
+porta Docker configurados, por exemplo, `http://localhost:8080/`.
 
 ## Implantação com Portainer
 
@@ -63,53 +101,16 @@ Repository](/screenshots/get-started/installation/portainer-stack-creation.png)
 
 ### Etapa 3: implantar a stack
 
-Por fim, clique no botão `Deploy the stack`. Na primeira vez, pode levar
-algum tempo até que as imagens do Docker sejam baixadas.
-
-Depois que a stack estiver pronta, você pode acessar o Zammad pelo host e
-porta Docker configurados, por exemplo, `http://localhost:8080/`.
-
-## Implantação com Docker Compose
-
-### Etapa 1: clonar o repositório do GitHub
-
-```sh
-git clone https://github.com/zammad/zammad-docker-compose.git
-```
-
-Certifique-se de executar `git pull` frequentemente para buscar
-atualizações. Como alternativa, você pode baixar os arquivos da [página de
-releases](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}.
-
-### Etapa 2: ajustar o ambiente conforme necessário
-
-Caso nosso ambiente padrão não seja o que você procura, você pode
-personalizar a stack usando cenários predefinidos e ajustar variáveis de
-ambiente. Vá até a [seção de personalização](#customizing-the-zammad-stack)
-abaixo para mais informações.
-
-### Etapa 3: iniciar a stack
-
-```sh
-cd zammad-docker-compose
-```
-
-```sh
-docker compose up -d
-```
-
-Opcional: use um arquivo `.yml` adicional para usar um cenário
-predefinido. Continue lendo na seção [Personalizando a stack do
-Zammad](#customizing-the-zammad-stack).
+Finally, click the `Deploy the stack` button. The first time, it may take
+some time until the Docker images are fetched.
 
 Depois que a stack estiver pronta, você pode acessar o Zammad pelo host e
 porta Docker configurados, por exemplo, `http://localhost:8080/`.
 
 ## Expondo a stack via HTTPS
 
-Para publicar uma stack do Zammad na internet, ela precisa ser protegida via
-protocolo HTTPS. Para conseguir isso sem modificar a stack do Zammad, você
-pode:
+To publish a Zammad stack on the internet, it needs to be secured via the
+HTTPS protocol. To achieve that without modifying the Zammad stack, you can:
 
 - Usar um proxy reverso como o Nginx Proxy Manager (NPM). Ele tem uma
   interface gráfica que oferece uma integração fácil com o [Let's

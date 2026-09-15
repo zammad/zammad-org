@@ -9361,37 +9361,122 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:23
+#: src/en/get-started/installation/docker.md:25
 #, markdown-text
-msgid "A working Docker Compose environment"
+msgid ""
+"Make sure your Docker Compose setup matches the "
+"[requirements](https://github.com/zammad/zammad-docker-compose#requirements){target=_blank} "
+"you can find in the README of Zammad's Docker Compose repository."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:23
+#: src/en/get-started/installation/docker.md:25
 #, markdown-text
-msgid "At least 4 GB of RAM to run the containers"
+msgid "Make sure to have at least 4 GB of RAM to run the containers."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:23
+#: src/en/get-started/installation/docker.md:25
 #, markdown-text
-msgid "Increase the memory limit for Elasticsearch on Linux hosts:"
+msgid "Adjust your host's settings to run Elasticsearch properly:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:24
+#: src/en/get-started/installation/docker.md:26
 #, no-wrap
 msgid "  sudo sysctl -w vm.max_map_count=262144\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:28
+#: src/en/get-started/installation/docker.md:30
+#, markdown-text, no-wrap
+msgid "Deployment with Docker Compose"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:32
+#, markdown-text, no-wrap
+msgid "Step 1: Clone the GitHub repo"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/installation/docker.md:34
+#, no-wrap
+msgid "git clone https://github.com/zammad/zammad-docker-compose.git\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:40
+#, markdown-text
+msgid ""
+"Make sure to run `git pull` frequently to fetch updates. Alternatively, you "
+"can download the files from the [releases "
+"page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:41
+#, markdown-text, no-wrap
+msgid "Step 2: Adjust environment as needed"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:46
+#: src/en/get-started/installation/docker.md:90
+#, markdown-text
+msgid ""
+"In case our default environment is not what you are looking for, you can "
+"customize the stack using predefined scenarios and adjust environment "
+"variables. Jump to the [customization "
+"section](#customizing-the-zammad-stack) below to find more information."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:47
+#, markdown-text, no-wrap
+msgid "Step 3: Start the stack"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/installation/docker.md:49
+#: src/en/get-started/update.md:223
+#, no-wrap
+msgid "cd zammad-docker-compose\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/installation/docker.md:53
+#: src/en/get-started/update.md:235
+#, no-wrap
+msgid "docker compose up -d\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:59
+#, markdown-text
+msgid ""
+"Optional: Use an additional `.yml` file to use a pre-defined scenario. Read "
+"on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack) "
+"section."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:62
+#: src/en/get-started/installation/docker.md:99
+#, markdown-text
+msgid ""
+"After the stack is ready, you can access Zammad via the configured Docker "
+"host and port, e.g. `http://localhost:8080/`."
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/installation/docker.md:63
 #, markdown-text, no-wrap
 msgid "Deployment with Portainer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:34
+#: src/en/get-started/installation/docker.md:69
 #, markdown-text
 msgid ""
 "The easiest way to get Zammad running is via a graphical Docker UI. We "
@@ -9401,13 +9486,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:35
+#: src/en/get-started/installation/docker.md:70
 #, markdown-text, no-wrap
 msgid "Step 1: Add stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:40
+#: src/en/get-started/installation/docker.md:75
 #, markdown-text
 msgid ""
 "In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your "
@@ -9416,7 +9501,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:42
+#: src/en/get-started/installation/docker.md:77
 #, markdown-text
 msgid ""
 "![Screenshot in the Stacks section and highlighted \"Add "
@@ -9424,54 +9509,43 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:43
+#: src/en/get-started/installation/docker.md:78
 #, markdown-text, no-wrap
 msgid "Step 2: Build from repository"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:46
+#: src/en/get-started/installation/docker.md:81
 #, markdown-text
 msgid "Switch to **Repository** build method and provide the information below:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
+#: src/en/get-started/installation/docker.md:86
 #, markdown-text
 msgid "**Name**: enter a desired name of the stack"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
+#: src/en/get-started/installation/docker.md:86
 #, markdown-text
 msgid "**Repository URL**: `https://github.com/zammad/zammad-docker-compose`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
+#: src/en/get-started/installation/docker.md:86
 #, markdown-text
 msgid "**Repository reference**: `refs/heads/master`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
+#: src/en/get-started/installation/docker.md:86
 #, markdown-text
 msgid "**Compose path**: `docker-compose.yml` (default)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:55
-#: src/en/get-started/installation/docker.md:81
-#, markdown-text
-msgid ""
-"In case our default environment is not what you are looking for, you can "
-"customize the stack using predefined scenarios and adjust environment "
-"variables. Jump to the [customization "
-"section](#customizing-the-zammad-stack) below to find more information."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:57
+#: src/en/get-started/installation/docker.md:92
 #, markdown-text
 msgid ""
 "![Stack creation with provided information in Repository "
@@ -9479,106 +9553,35 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:58
+#: src/en/get-started/installation/docker.md:93
 #, markdown-text, no-wrap
 msgid "Step 3: Deploy the stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:61
+#: src/en/get-started/installation/docker.md:96
 #, markdown-text
 msgid ""
-"Finally, click `Deploy the stack` button. The first time, it may take some "
-"time until the Docker images are fetched."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:64
-#: src/en/get-started/installation/docker.md:97
-#, markdown-text
-msgid ""
-"After the stack is ready, you can access Zammad via the configured Docker "
-"host and port, e.g. `http://localhost:8080/`."
+"Finally, click the `Deploy the stack` button. The first time, it may take "
+"some time until the Docker images are fetched."
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:65
-#, markdown-text, no-wrap
-msgid "Deployment with Docker Compose"
-msgstr ""
-
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:67
-#, markdown-text, no-wrap
-msgid "Step 1: Clone the GitHub repo"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:69
-#, no-wrap
-msgid "git clone https://github.com/zammad/zammad-docker-compose.git\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:75
-#, markdown-text
-msgid ""
-"Make sure to run `git pull` frequently to fetch updates. Alternatively, you "
-"can download the files from the [releases "
-"page](https://github.com/zammad/zammad-docker-compose/releases){target=_blank}."
-msgstr ""
-
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:76
-#, markdown-text, no-wrap
-msgid "Step 2: Adjust environment as needed"
-msgstr ""
-
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:82
-#, markdown-text, no-wrap
-msgid "Step 3: Start the stack"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:84
-#: src/en/get-started/update.md:223
-#, no-wrap
-msgid "cd zammad-docker-compose\n"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:88
-#: src/en/get-started/update.md:235
-#, no-wrap
-msgid "docker compose up -d\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:94
-#, markdown-text
-msgid ""
-"Optional: Use an additional `.yml` file to use a pre-defines scenario. Read "
-"on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack) "
-"section."
-msgstr ""
-
-#. type: Title ##
-#: src/en/get-started/installation/docker.md:98
+#: src/en/get-started/installation/docker.md:100
 #, markdown-text, no-wrap
 msgid "Exposing the stack via HTTPS"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:102
+#: src/en/get-started/installation/docker.md:104
 #, markdown-text
 msgid ""
-"To publish a Zammad stack on the internet, it needs be secured via the HTTPS "
-"protocol. To achieve that without modifying the Zammad stack, you can:"
+"To publish a Zammad stack on the internet, it needs to be secured via the "
+"HTTPS protocol. To achieve that without modifying the Zammad stack, you can:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:106
+#: src/en/get-started/installation/docker.md:108
 #, markdown-text
 msgid ""
 "Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
@@ -9587,13 +9590,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:106
+#: src/en/get-started/installation/docker.md:108
 #, markdown-text
 msgid "Use a Cloudflare tunnel, which provides SSL termination."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:108
+#: src/en/get-started/installation/docker.md:110
 #, markdown-text
 msgid ""
 "Both scenarios are covered in the separate [Docker Compose "
@@ -9601,13 +9604,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:109
+#: src/en/get-started/installation/docker.md:111
 #, markdown-text, no-wrap
 msgid "Customizing the Zammad stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:114
+#: src/en/get-started/installation/docker.md:116
 #, markdown-text
 msgid ""
 "The Zammad stack can be customized by loading additional scenario files for "
@@ -9617,7 +9620,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:116
+#: src/en/get-started/installation/docker.md:118
 #, markdown-text
 msgid ""
 "Please see the [Docker Compose scenarios "
@@ -9625,7 +9628,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:118
+#: src/en/get-started/installation/docker.md:120
 #, markdown-text
 msgid ""
 "To adjust the stack and settings, use [Docker specific environment "
@@ -9633,13 +9636,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:119
+#: src/en/get-started/installation/docker.md:121
 #, markdown-text, no-wrap
 msgid "How to run commands in the stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:123
+#: src/en/get-started/installation/docker.md:125
 #, markdown-text
 msgid ""
 "Execute commands in your Docker stack by calling `rails` or `rake` via one "
@@ -9647,7 +9650,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:126
 #, no-wrap
 msgid ""
 "\n"
@@ -9676,7 +9679,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:docker-portainer|tip)
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:126
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the Rails server, you can, for "
@@ -9686,7 +9689,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:126
 #, no-wrap
 msgid ""
 "\n"
