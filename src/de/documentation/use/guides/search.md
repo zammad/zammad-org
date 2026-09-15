@@ -68,12 +68,15 @@ aufsteigend zu absteigend und zurück zu ändern.
 
 ### Suche auf Objekttyp beschränken
 
-Schränken Sie die Suche auf einen Objekttyp ein, indem Sie den Tab-Selektor
-**Suchobjekt** unterhalb des Suchfeldes verwenden (z.B. Benutzer oder
-Ticket). Dadurch wird die Suche auf den ausgewählten Objekttyp und die damit
-verbundenen Daten beschränkt. Wenn Sie z.B. **Ticket** wählen, gibt die
-Suche auch Tickets aus, bei denen der Besitzer oder Kunde mit dem
-Suchbegriff übereinstimmt.
+Limit the search to an object type by using the **Search entity** tab
+selector below the search field (e.g. user or ticket). This limits the
+search to the selected object type and its related data. For example, when
+you select **Ticket**, the search also returns tickets where the owner or
+customer matches the search term. Knowledge base answers are available as an
+object type of their own, with title, visibility and update date as result
+columns. See [Knowledge
+base](/en/documentation/use/guides/knowledge-base#search) for searching
+within the knowledge base.
 
 ### Erweiterte Filter verwenden
 

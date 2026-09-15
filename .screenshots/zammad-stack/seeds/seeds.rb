@@ -846,8 +846,9 @@ puts 'Creating knowledge base categories and answers...'
 kb = KnowledgeBase.active.first
 if kb.nil?
   kb_locale_id = Locale.find_by!(locale: 'en-us').id
+  kb_de_locale_id = Locale.find_by!(locale: 'de-de').id
   kb = KnowledgeBase.create!(
-    iconset:           'FontAwesome',
+    iconset:           'Simple-Line-Icons',
     color_highlight:   '#38ae6a',
     color_header:      '#f9fafb',
     color_header_link: 'hsl(206,8%,50%)',
@@ -859,8 +860,17 @@ if kb.nil?
         system_locale_id: kb_locale_id,
         primary:          true,
       },
+      {
+        system_locale_id: kb_de_locale_id,
+        primary:          false,
+      },
     ],
   )
+else
+  # Ensure the German locale exists on an already-seeded knowledge base, so the
+  # locale switcher is available in the auto screenshots.
+  kb_de_locale_id = Locale.find_by!(locale: 'de-de').id
+  kb.kb_locales.find_or_create_by!(system_locale_id: kb_de_locale_id) { |l| l.primary = false }
 end
 
 kb_locale = kb.kb_locales.find_by!(system_locale_id: Locale.find_by!(locale: 'en-us').id)
@@ -894,7 +904,7 @@ end
 # --- Category: Getting Started ---
 category_getting_started = KnowledgeBase::Category.create!(
   knowledge_base_id: kb.id,
-  category_icon:     'fa-hand-pointer',
+  category_icon:     'e06e', # Simple Line Icons: cursor
 )
 KnowledgeBase::Category::Translation.create!(
   category_id: category_getting_started.id,
@@ -928,7 +938,7 @@ create_kb_answer(
 # --- Category: Products & Orders ---
 category_products = KnowledgeBase::Category.create!(
   knowledge_base_id: kb.id,
-  category_icon:     'fa-box',
+  category_icon:     'e04e', # Simple Line Icons: basket
 )
 KnowledgeBase::Category::Translation.create!(
   category_id: category_products.id,
@@ -960,10 +970,72 @@ create_kb_answer(
   body:         '<p>All Fast Lane Hardware products come with a standard 2-year manufacturer warranty. Here are the key details:</p><ul><li><strong>Coverage:</strong> Hardware defects in materials and workmanship. Normal wear and tear, accidental damage, and unauthorized modifications are not covered.</li><li><strong>Extended warranty:</strong> Available for purchase within 30 days of buying your product. Extends coverage to 4 years.</li><li><strong>Claim process:</strong> Submit a warranty claim through your account under <strong>My Orders</strong> &gt; <strong>Warranty Claims</strong>. Include a description of the issue and any error messages.</li><li><strong>Turnaround:</strong> Warranty repairs are typically completed within 5-10 business days. Expedited service is available for an additional fee.</li></ul><p>For warranty status on an existing repair, check the claim status in your account or contact support with your claim number.</p>',
 )
 
+# --- Sub-categories of Products and orders ---
+category_shipping = KnowledgeBase::Category.create!(
+  knowledge_base_id: kb.id,
+  parent_id:         category_products.id,
+  category_icon:     'e012', # Simple Line Icons: plane
+)
+KnowledgeBase::Category::Translation.create!(
+  category_id: category_shipping.id,
+  kb_locale_id: kb_locale.id,
+  title: 'Shipping and delivery',
+)
+
+create_kb_answer(
+  category:     category_shipping,
+  kb_locale:    kb_locale,
+  title:        'Delivery times and shipping costs',
+  internal_note: 'Delivery times overview',
+  body:         '<p>We ship to most European countries within 2-4 business days. The exact delivery time depends on your location and the selected shipping method:</p><ul><li><strong>Standard shipping:</strong> 3-4 business days, free for orders over 50 EUR.</li><li><strong>Express shipping:</strong> Next business day for orders placed before 14:00 CET.</li><li><strong>Bulk deliveries:</strong> Large orders are shipped on pallets by our freight partner and delivered within 5-7 business days.</li></ul><p>You will receive a tracking link by email as soon as your parcel leaves our warehouse.</p>',
+)
+
+# A future archiving date, so the "Scheduled visibility" section in the answer
+# edit sidebar has an entry for the screenshots.
+KnowledgeBase::Answer
+  .joins(:translations)
+  .find_by(knowledge_base_answer_translations: { title: 'Delivery times and shipping costs' })
+  .update!(archived_at: 3.months.from_now)
+
+create_kb_answer(
+  category:     category_shipping,
+  kb_locale:    kb_locale,
+  title:        'Changing your delivery address',
+  internal_note: 'Delivery address changes',
+  body:         '<p>You can change the delivery address of an order as long as it has not been shipped yet:</p><ol><li>Log in to your account and open the order under <strong>My Orders</strong>.</li><li>Select <strong>Change delivery address</strong> and enter the new address.</li><li>Confirm the change. You will receive a confirmation email.</li></ol><p>Once an order is out for delivery, the address can no longer be changed. In that case, contact our support team and we will try to redirect the parcel with the carrier.</p>',
+)
+
+category_self_service = KnowledgeBase::Category.create!(
+  knowledge_base_id: kb.id,
+  parent_id:         category_products.id,
+  category_icon:     'e09a', # Simple Line Icons: settings
+)
+KnowledgeBase::Category::Translation.create!(
+  category_id: category_self_service.id,
+  kb_locale_id: kb_locale.id,
+  title: 'Self-service orders',
+)
+
+create_kb_answer(
+  category:     category_self_service,
+  kb_locale:    kb_locale,
+  title:        'Canceling an order',
+  internal_note: 'Order cancellation steps',
+  body:         '<p>Orders can be canceled free of charge until they are shipped:</p><ol><li>Open the order in your account under <strong>My Orders</strong>.</li><li>Select <strong>Cancel order</strong> and choose a reason.</li><li>Confirm the cancellation. The refund is processed within 3-5 business days.</li></ol><p>Custom-built systems enter production 24 hours after the order is placed and can only be canceled within that window. For orders that are already on their way, refuse the delivery or use our regular return process.</p>',
+)
+
+create_kb_answer(
+  category:     category_self_service,
+  kb_locale:    kb_locale,
+  title:        'Reordering past purchases',
+  internal_note: 'How to reorder',
+  body:         '<p>To order an item again, open your order history under <strong>My Orders</strong> and select the order that contains the product. Every item has a <strong>Buy again</strong> button that adds it to your cart with the current price and availability.</p><p>For B2B customers with framework agreements, the contracted conditions are applied automatically. If a product from a past order has been discontinued, the <strong>Buy again</strong> button suggests the current successor model instead.</p>',
+)
+
 # --- Category: Technical Support ---
 category_technical = KnowledgeBase::Category.create!(
   knowledge_base_id: kb.id,
-  category_icon:     'fa-wrench',
+  category_icon:     'e052', # Simple Line Icons: wrench
 )
 KnowledgeBase::Category::Translation.create!(
   category_id: category_technical.id,
@@ -998,7 +1070,7 @@ create_kb_answer(
 # --- Category: Billing & Payments ---
 category_billing = KnowledgeBase::Category.create!(
   knowledge_base_id: kb.id,
-  category_icon:     'fa-credit-card',
+  category_icon:     'e025', # Simple Line Icons: credit-card
 )
 KnowledgeBase::Category::Translation.create!(
   category_id: category_billing.id,

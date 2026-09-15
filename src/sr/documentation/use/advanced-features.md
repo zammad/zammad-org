@@ -80,9 +80,11 @@ title: 'Напредне функције'
 
 **Како?**
 
-Користите дугме на траци са алаткама уредника текста или једноставно унесите
-[[?]][[?]] у текст. Оба начина вам омогућавају да претражите жељени чланак
-базе знања куцањем неких знакова или речи.
+Use the button in the toolbar of the editor or simply write [[?]][[?]] in
+the editor. Both ways let you search for the desired knowledge base article
+by typing some characters or words. See [Knowledge
+base](/en/documentation/use/guides/knowledge-base) to learn more about
+working with the knowledge base.
 
 ## Помињање корисника
 

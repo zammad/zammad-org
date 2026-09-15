@@ -66,12 +66,15 @@ decrescente e viceversa.
 
 ### Limit search to object type
 
-Limita la ricerca a un tipo di oggetto usando il selettore di schede
-**Entità di ricerca** sotto il campo di ricerca (ad esempio utente o
-ticket). Questo limita la ricerca al tipo di oggetto selezionato e ai dati
-correlati. Ad esempio, quando selezioni **Ticket**, la ricerca restituisce
-anche ticket dove il proprietario o il cliente corrisponde al termine di
-ricerca.
+Limit the search to an object type by using the **Search entity** tab
+selector below the search field (e.g. user or ticket). This limits the
+search to the selected object type and its related data. For example, when
+you select **Ticket**, the search also returns tickets where the owner or
+customer matches the search term. Knowledge base answers are available as an
+object type of their own, with title, visibility and update date as result
+columns. See [Knowledge
+base](/en/documentation/use/guides/knowledge-base#search) for searching
+within the knowledge base.
 
 ### Use advanced filters
 

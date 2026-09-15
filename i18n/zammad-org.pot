@@ -177,7 +177,9 @@ msgid "https://github.com/zammad"
 msgstr ""
 
 #. type: Title ##
-#: .vitepress/search.en.yaml:1 src/en/documentation/use/guides/search.md:1
+#: .vitepress/search.en.yaml:1
+#: src/en/documentation/use/guides/knowledge-base.md:70
+#: src/en/documentation/use/guides/search.md:1
 #: src/en/documentation/use/guides/search.md:6
 #: src/en/reference/rest-api/audit-log.md:39
 #, markdown-text, no-wrap
@@ -248,18 +250,6 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -470,7 +460,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
-#: src/en/documentation/use/guides/knowledge-base.md:19
+#: src/en/documentation/use/guides/knowledge-base.md:13
 #: src/en/get-started/installation/package.md:68
 #: src/en/tutorials/backup-restore.md:33
 #, markdown-text, no-wrap
@@ -1659,24 +1649,24 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:16
 #: src/en/documentation/use/advanced-features.md:41
 #: src/en/documentation/use/advanced-features.md:62
-#: src/en/documentation/use/advanced-features.md:76
-#: src/en/documentation/use/advanced-features.md:93
-#: src/en/documentation/use/advanced-features.md:108
-#: src/en/documentation/use/advanced-features.md:130
-#: src/en/documentation/use/advanced-features.md:168
-#: src/en/documentation/use/advanced-features.md:180
-#: src/en/documentation/use/advanced-features.md:200
-#: src/en/documentation/use/advanced-features.md:228
-#: src/en/documentation/use/advanced-features.md:292
-#: src/en/documentation/use/advanced-features.md:317
-#: src/en/documentation/use/advanced-features.md:334
-#: src/en/documentation/use/advanced-features.md:353
-#: src/en/documentation/use/advanced-features.md:371
-#: src/en/documentation/use/advanced-features.md:401
-#: src/en/documentation/use/advanced-features.md:421
-#: src/en/documentation/use/advanced-features.md:441
-#: src/en/documentation/use/advanced-features.md:459
-#: src/en/documentation/use/advanced-features.md:476
+#: src/en/documentation/use/advanced-features.md:77
+#: src/en/documentation/use/advanced-features.md:94
+#: src/en/documentation/use/advanced-features.md:109
+#: src/en/documentation/use/advanced-features.md:131
+#: src/en/documentation/use/advanced-features.md:169
+#: src/en/documentation/use/advanced-features.md:181
+#: src/en/documentation/use/advanced-features.md:201
+#: src/en/documentation/use/advanced-features.md:229
+#: src/en/documentation/use/advanced-features.md:293
+#: src/en/documentation/use/advanced-features.md:318
+#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:354
+#: src/en/documentation/use/advanced-features.md:372
+#: src/en/documentation/use/advanced-features.md:402
+#: src/en/documentation/use/advanced-features.md:422
+#: src/en/documentation/use/advanced-features.md:442
+#: src/en/documentation/use/advanced-features.md:460
+#: src/en/documentation/use/advanced-features.md:477
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1694,24 +1684,24 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:21
 #: src/en/documentation/use/advanced-features.md:50
 #: src/en/documentation/use/advanced-features.md:67
-#: src/en/documentation/use/advanced-features.md:81
-#: src/en/documentation/use/advanced-features.md:98
-#: src/en/documentation/use/advanced-features.md:115
-#: src/en/documentation/use/advanced-features.md:137
-#: src/en/documentation/use/advanced-features.md:173
-#: src/en/documentation/use/advanced-features.md:188
-#: src/en/documentation/use/advanced-features.md:206
-#: src/en/documentation/use/advanced-features.md:232
-#: src/en/documentation/use/advanced-features.md:300
-#: src/en/documentation/use/advanced-features.md:322
-#: src/en/documentation/use/advanced-features.md:339
-#: src/en/documentation/use/advanced-features.md:359
-#: src/en/documentation/use/advanced-features.md:377
-#: src/en/documentation/use/advanced-features.md:406
-#: src/en/documentation/use/advanced-features.md:432
-#: src/en/documentation/use/advanced-features.md:452
-#: src/en/documentation/use/advanced-features.md:465
-#: src/en/documentation/use/advanced-features.md:482
+#: src/en/documentation/use/advanced-features.md:82
+#: src/en/documentation/use/advanced-features.md:99
+#: src/en/documentation/use/advanced-features.md:116
+#: src/en/documentation/use/advanced-features.md:138
+#: src/en/documentation/use/advanced-features.md:174
+#: src/en/documentation/use/advanced-features.md:189
+#: src/en/documentation/use/advanced-features.md:207
+#: src/en/documentation/use/advanced-features.md:233
+#: src/en/documentation/use/advanced-features.md:301
+#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:340
+#: src/en/documentation/use/advanced-features.md:360
+#: src/en/documentation/use/advanced-features.md:378
+#: src/en/documentation/use/advanced-features.md:407
+#: src/en/documentation/use/advanced-features.md:433
+#: src/en/documentation/use/advanced-features.md:453
+#: src/en/documentation/use/advanced-features.md:466
+#: src/en/documentation/use/advanced-features.md:483
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -1841,22 +1831,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:70
+#: src/en/documentation/use/advanced-features.md:71
 #, markdown-text
 msgid ""
 "Use the button in the toolbar of the editor or simply write [[?]][[?]] in "
 "the editor. Both ways let you search for the desired knowledge base article "
-"by typing some characters or words."
+"by typing some characters or words. See [Knowledge "
+"base](/en/documentation/use/guides/knowledge-base) to learn more about "
+"working with the knowledge base."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:71
+#: src/en/documentation/use/advanced-features.md:72
 #, markdown-text, no-wrap
 msgid "Mention a user"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:74
+#: src/en/documentation/use/advanced-features.md:75
 #, markdown-text
 msgid ""
 "![Screenshot shows mentioning a "
@@ -1864,7 +1856,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:79
+#: src/en/documentation/use/advanced-features.md:80
 #, markdown-text
 msgid ""
 "Ask or request information from your colleagues or mention them in important "
@@ -1873,7 +1865,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:84
+#: src/en/documentation/use/advanced-features.md:85
 #, markdown-text
 msgid ""
 "While writing a ticket article, use the button in the toolbar of the editor "
@@ -1882,7 +1874,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:87
+#: src/en/documentation/use/advanced-features.md:88
 #, markdown-text
 msgid ""
 "Zammad displays a list with all possible matches where you can pick one by "
@@ -1891,13 +1883,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:88
+#: src/en/documentation/use/advanced-features.md:89
 #, markdown-text, no-wrap
 msgid "Subscribe to a ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:91
+#: src/en/documentation/use/advanced-features.md:92
 #, markdown-text
 msgid ""
 "![Screenshot shows subscribe "
@@ -1905,7 +1897,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:96
+#: src/en/documentation/use/advanced-features.md:97
 #, markdown-text
 msgid ""
 "If you are interested in the progress of a ticket, you are not the owner, "
@@ -1914,7 +1906,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:102
+#: src/en/documentation/use/advanced-features.md:103
 #, markdown-text
 msgid ""
 "Activate the **Subscribe me** toggle in the ticket sidebar to get "
@@ -1925,14 +1917,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:103
+#: src/en/documentation/use/advanced-features.md:104
 #: src/en/reference/rest-api/intro.md:177
 #, markdown-text, no-wrap
 msgid "Macros"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:106
+#: src/en/documentation/use/advanced-features.md:107
 #, markdown-text
 msgid ""
 "![Screenshot shows macro action "
@@ -1940,7 +1932,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:113
+#: src/en/documentation/use/advanced-features.md:114
 #, markdown-text
 msgid ""
 "If you have many steps you do over and over again, you should use a macro "
@@ -1953,7 +1945,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:118
+#: src/en/documentation/use/advanced-features.md:119
 #, markdown-text
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
@@ -1963,7 +1955,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:119
+#: src/en/documentation/use/advanced-features.md:120
 #, no-wrap
 msgid ""
 "The macro gets executed immediately and without an additional "
@@ -1971,7 +1963,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:124
+#: src/en/documentation/use/advanced-features.md:125
 #, markdown-text
 msgid ""
 "You can also apply a macro to several ticket at once. Have a loot at [bulk "
@@ -1979,14 +1971,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:125
+#: src/en/documentation/use/advanced-features.md:126
 #: src/en/reference/rest-api/checklist.md:19
 #, markdown-text, no-wrap
 msgid "Checklists"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:128
+#: src/en/documentation/use/advanced-features.md:129
 #, markdown-text
 msgid ""
 "![Screenshot shows a checklist from checklist "
@@ -1994,31 +1986,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 #, markdown-text
 msgid "To keep track of tasks"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 #, markdown-text
 msgid "To complete tasks in a structured way"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 #, markdown-text
 msgid "To make sure nothing gets forgotten"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 #, markdown-text
 msgid "To make the progress of work more visible"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:140
+#: src/en/documentation/use/advanced-features.md:141
 #, markdown-text
 msgid ""
 "Select the **Checklist** tab in the sidebar. If you can't see it, your "
@@ -2027,13 +2019,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:142
+#: src/en/documentation/use/advanced-features.md:143
 #, markdown-text
 msgid "In the checklist sidebar, you can:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 #, markdown-text
 msgid ""
 "Add a checklist: either by creating a new one by clicking on `Add Empty "
@@ -2042,13 +2034,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 #, markdown-text
 msgid "Edit the current checklist:"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 #, markdown-text
 msgid ""
 "Rename it by clicking on the title or using the ::a:: menu in the sidebar "
@@ -2056,13 +2048,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 #, markdown-text
 msgid "Add checklist items by clicking the ::+:: button."
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 #, markdown-text
 msgid ""
 "Change the text of the checklist items, either by just clicking on it or "
@@ -2070,25 +2062,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 #, markdown-text
 msgid "`Reorder` the items by clicking this button and drag & drop the items."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 #, markdown-text
 msgid "Delete the complete checklist by using the ::a:: menu in the sidebar header."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:153
+#: src/en/documentation/use/advanced-features.md:154
 #, markdown-text
 msgid "There are two features, which are not directly visible:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:156
+#: src/en/documentation/use/advanced-features.md:157
 #, markdown-text
 msgid ""
 "You can refer to other tickets as a checklist item by using its hook and "
@@ -2097,7 +2089,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/advanced-features.md:156
+#: src/en/documentation/use/advanced-features.md:157
 #, no-wrap
 msgid ""
 "  Fetch the ticket hook and number by going to the desired ticket and either "
@@ -2107,7 +2099,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:164
+#: src/en/documentation/use/advanced-features.md:165
 #, markdown-text
 msgid ""
 "Zammad automatically checks if all checklist items are completed. The check "
@@ -2119,13 +2111,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:165
+#: src/en/documentation/use/advanced-features.md:166
 #, markdown-text, no-wrap
 msgid "Ticket templates"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:171
+#: src/en/documentation/use/advanced-features.md:172
 #, markdown-text
 msgid ""
 "Quickly create a ticket with pre-defined attributes like title, text, tags "
@@ -2134,7 +2126,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:176
+#: src/en/documentation/use/advanced-features.md:177
 #, markdown-text
 msgid ""
 "In the ticket create screen, you can find an `Apply Template ^` button in "
@@ -2143,7 +2135,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:177
+#: src/en/documentation/use/advanced-features.md:178
 #: src/en/reference/rest-api/shared-draft.md:1
 #: src/en/reference/rest-api/shared-draft.md:6
 #, markdown-text, no-wrap
@@ -2151,7 +2143,7 @@ msgid "Shared drafts"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:184
+#: src/en/documentation/use/advanced-features.md:185
 #, markdown-text
 msgid ""
 "To share a draft with other agents of your group, e.g. to reflect a QA "
@@ -2161,7 +2153,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:186
+#: src/en/documentation/use/advanced-features.md:187
 #, markdown-text
 msgid ""
 "This is an optional feature. If you can't see it, your admin has turned it "
@@ -2169,7 +2161,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:190
+#: src/en/documentation/use/advanced-features.md:191
 #, markdown-text
 msgid ""
 "To **save a draft**, use the ::a:: menu in the footer of the ticket details "
@@ -2177,7 +2169,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:192
+#: src/en/documentation/use/advanced-features.md:193
 #, markdown-text
 msgid ""
 "To **apply an already existing draft**, click on the `Draft Available` "
@@ -2185,19 +2177,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:193
+#: src/en/documentation/use/advanced-features.md:194
 #, no-wrap
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:197
+#: src/en/documentation/use/advanced-features.md:198
 #, markdown-text, no-wrap
 msgid "Monitoring ticket escalations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:204
+#: src/en/documentation/use/advanced-features.md:205
 #, markdown-text
 msgid ""
 "Service Level Agreements (SLAs) ensure timely responses to customer "
@@ -2207,7 +2199,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:211
+#: src/en/documentation/use/advanced-features.md:212
 #, markdown-text
 msgid ""
 "Zammad notifies you by default when tickets approach or exceed their "
@@ -2219,7 +2211,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:214
+#: src/en/documentation/use/advanced-features.md:215
 #, markdown-text
 msgid ""
 "SLA-relevant tickets display a timestamp in the ticket detail header. Hover "
@@ -2229,7 +2221,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:216
+#: src/en/documentation/use/advanced-features.md:217
 #, markdown-text
 msgid ""
 "![Screenshot shows escalation panel by hovering over escalation "
@@ -2237,7 +2229,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/advanced-features.md:217
+#: src/en/documentation/use/advanced-features.md:218
 #, no-wrap
 msgid ""
 "The escalation times are calculated based on your business hours. This means "
@@ -2247,7 +2239,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:224
+#: src/en/documentation/use/advanced-features.md:225
 #, markdown-text
 msgid ""
 "The SLA feature requires a configuration from your admin. In case you don’t "
@@ -2256,56 +2248,56 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:225
+#: src/en/documentation/use/advanced-features.md:226
 #: src/en/documentation/use/guides/overviews.md:82
 #, markdown-text, no-wrap
 msgid "Bulk actions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:230
+#: src/en/documentation/use/advanced-features.md:231
 #, markdown-text
 msgid "If you have to apply the same changes for many ticket, you can save time!"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:234
+#: src/en/documentation/use/advanced-features.md:235
 #, markdown-text
 msgid "There are 2 places where you can apply bulk actions:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:237
+#: src/en/documentation/use/advanced-features.md:238
 #, markdown-text
 msgid "In the ticket tab in the [detailed search page](guides/search)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:237
+#: src/en/documentation/use/advanced-features.md:238
 #, markdown-text
 msgid "In [Overviews](guides/overviews)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:239
+#: src/en/documentation/use/advanced-features.md:240
 #, markdown-text
 msgid "In both places, you can apply bulk actions in different ways:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
+#: src/en/documentation/use/advanced-features.md:243
 #, markdown-text
 msgid "By using the flyout"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
+#: src/en/documentation/use/advanced-features.md:243
 #, markdown-text
 msgid "By using the drag & drop overlay"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:248
+#: src/en/documentation/use/advanced-features.md:249
 #, markdown-text
 msgid ""
 "To use bulk actions, first select the tickets you want to apply the changes "
@@ -2318,7 +2310,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:251
+#: src/en/documentation/use/advanced-features.md:252
 #, markdown-text
 msgid ""
 "To select a section of consecutive tickets, click on the checkbox of the "
@@ -2328,7 +2320,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:255
+#: src/en/documentation/use/advanced-features.md:256
 #, markdown-text
 msgid ""
 "Depending on the number of affected tickets, you might see a small "
@@ -2339,13 +2331,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:257
+#: src/en/documentation/use/advanced-features.md:258
 #, markdown-text, no-wrap
 msgid "**Flyout:**\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:259
+#: src/en/documentation/use/advanced-features.md:260
 #, markdown-text
 msgid ""
 "![Screenshot shows the bulk action "
@@ -2353,7 +2345,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:263
 #, markdown-text
 msgid ""
 "After you selected tickets, click the `Bulk Action` button in the top right "
@@ -2362,51 +2354,51 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:270
+#: src/en/documentation/use/advanced-features.md:284
 #, markdown-text
 msgid "Set group"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:270
+#: src/en/documentation/use/advanced-features.md:284
 #, markdown-text
 msgid "Set owner"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 #, markdown-text
 msgid "Set state"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 #, markdown-text
 msgid "Set priority"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 #, markdown-text
 msgid "Add a note"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 #, markdown-text
 msgid "Execute a macro"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:271
+#: src/en/documentation/use/advanced-features.md:272
 #, markdown-text, no-wrap
 msgid "**Drag & drop with bulk overlay:**\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:273
+#: src/en/documentation/use/advanced-features.md:274
 #, markdown-text
 msgid ""
 "![Screenshot shows the bulk action via drag and "
@@ -2414,7 +2406,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:277
+#: src/en/documentation/use/advanced-features.md:278
 #, markdown-text
 msgid ""
 "After you selected tickets, drag them by pressing and holding the mouse "
@@ -2424,25 +2416,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:284
 #, markdown-text
 msgid "Unassign owner"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:284
 #, markdown-text
 msgid "Unassign owner and set group"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:284
 #, markdown-text
 msgid "Run macro"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:286
+#: src/en/documentation/use/advanced-features.md:287
 #, markdown-text
 msgid ""
 "Start your drag and drop action from one of the already selected tickets in "
@@ -2452,13 +2444,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:288
 #, markdown-text, no-wrap
 msgid "Merge tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:290
+#: src/en/documentation/use/advanced-features.md:291
 #, markdown-text
 msgid ""
 "![Screenshot shows the ticket merge "
@@ -2466,7 +2458,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:296
+#: src/en/documentation/use/advanced-features.md:297
 #, markdown-text
 msgid ""
 "If you have two or more tickets about the same issue, you may want to merge "
@@ -2477,7 +2469,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:298
+#: src/en/documentation/use/advanced-features.md:299
 #, markdown-text
 msgid ""
 "Merging a ticket migrates all messages and notes of the ticket from where "
@@ -2485,7 +2477,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:304
+#: src/en/documentation/use/advanced-features.md:305
 #, markdown-text
 msgid ""
 "Go to the ticket you want to merge into another one. In the ticket sidebar, "
@@ -2496,7 +2488,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:307
+#: src/en/documentation/use/advanced-features.md:308
 #, markdown-text
 msgid ""
 "As result, the articles are moved into the chosen ticket. The ticket in "
@@ -2504,31 +2496,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:311
+#: src/en/documentation/use/advanced-features.md:312
 #, markdown-text
 msgid "The articles have been replaced by a \"merged\" label"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:311
+#: src/en/documentation/use/advanced-features.md:312
 #, markdown-text
 msgid "The state has changed to \"merged\""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:311
+#: src/en/documentation/use/advanced-features.md:312
 #, markdown-text
 msgid "The ticket is linked to its \"parent\" ticket"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:312
+#: src/en/documentation/use/advanced-features.md:313
 #, markdown-text, no-wrap
 msgid "Split tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:315
+#: src/en/documentation/use/advanced-features.md:316
 #, markdown-text
 msgid ""
 "![Screenshot shows the article action split "
@@ -2536,7 +2528,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:320
+#: src/en/documentation/use/advanced-features.md:321
 #, markdown-text
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
@@ -2545,7 +2537,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:324
+#: src/en/documentation/use/advanced-features.md:325
 #, markdown-text
 msgid ""
 "To split an article off, use the ::a:: menu next to an article and select "
@@ -2553,7 +2545,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:327
+#: src/en/documentation/use/advanced-features.md:328
 #, markdown-text
 msgid ""
 "This results in a ticket create screen with the same attributes set as in "
@@ -2562,7 +2554,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:330
+#: src/en/documentation/use/advanced-features.md:331
 #, markdown-text
 msgid ""
 "The just created ticket is linked in the original one as child. The original "
@@ -2570,13 +2562,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:331
+#: src/en/documentation/use/advanced-features.md:332
 #, markdown-text, no-wrap
 msgid "Link tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:337
+#: src/en/documentation/use/advanced-features.md:338
 #, markdown-text
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
@@ -2585,7 +2577,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:343
+#: src/en/documentation/use/advanced-features.md:344
 #, markdown-text
 msgid ""
 "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
@@ -2595,13 +2587,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:347
+#: src/en/documentation/use/advanced-features.md:348
 #, markdown-text
 msgid "**Normal:** for related ticket which have no hierarchy."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:347
+#: src/en/documentation/use/advanced-features.md:348
 #, markdown-text
 msgid ""
 "**Parent/Child**: for related tickets where one is the main issue and the "
@@ -2610,13 +2602,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:348
+#: src/en/documentation/use/advanced-features.md:349
 #, markdown-text, no-wrap
 msgid "Duplicate detection"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:351
+#: src/en/documentation/use/advanced-features.md:352
 #, markdown-text
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket "
@@ -2624,7 +2616,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:357
+#: src/en/documentation/use/advanced-features.md:358
 #, markdown-text
 msgid ""
 "Sometimes, it happens that a customer reaches out to you (or colleagues) "
@@ -2634,7 +2626,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:363
+#: src/en/documentation/use/advanced-features.md:364
 #, markdown-text
 msgid ""
 "Just create a new ticket and provide some information. Your admin can "
@@ -2644,7 +2636,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:367
+#: src/en/documentation/use/advanced-features.md:368
 #, markdown-text
 msgid ""
 "When a duplicate is detected, a warning in the ticket shows up (see the "
@@ -2654,7 +2646,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:368
+#: src/en/documentation/use/advanced-features.md:369
 #: src/en/documentation/use/guides/mobile-view.md:72
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
@@ -2663,7 +2655,7 @@ msgid "Time accounting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:375
+#: src/en/documentation/use/advanced-features.md:376
 #, markdown-text
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
@@ -2673,7 +2665,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:379
+#: src/en/documentation/use/advanced-features.md:380
 #, markdown-text
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
@@ -2681,7 +2673,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:381
+#: src/en/documentation/use/advanced-features.md:382
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
@@ -2689,7 +2681,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:384
+#: src/en/documentation/use/advanced-features.md:385
 #, markdown-text
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
@@ -2698,7 +2690,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:387
+#: src/en/documentation/use/advanced-features.md:388
 #, markdown-text
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
@@ -2708,7 +2700,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:390
+#: src/en/documentation/use/advanced-features.md:391
 #, markdown-text
 msgid ""
 "Activity types can be used to distinguish between different activities and "
@@ -2718,7 +2710,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:395
+#: src/en/documentation/use/advanced-features.md:396
 #, markdown-text
 msgid ""
 "If a ticket already has accounted time(s), you can see it in the ticket "
@@ -2729,7 +2721,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:398
 #, markdown-text
 msgid ""
 "![Screenshot shows the time accounting "
@@ -2737,13 +2729,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:398
+#: src/en/documentation/use/advanced-features.md:399
 #, markdown-text, no-wrap
 msgid "User detail panel"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:404
+#: src/en/documentation/use/advanced-features.md:405
 #, markdown-text
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
@@ -2751,7 +2743,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:410
+#: src/en/documentation/use/advanced-features.md:411
 #, markdown-text
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
@@ -2761,7 +2753,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:412
+#: src/en/documentation/use/advanced-features.md:413
 #, markdown-text
 msgid ""
 "![Screenshot shows an avatar with opened user detail "
@@ -2769,7 +2761,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:415
+#: src/en/documentation/use/advanced-features.md:416
 #, markdown-text
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
@@ -2777,13 +2769,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:416
+#: src/en/documentation/use/advanced-features.md:417
 #, markdown-text, no-wrap
 msgid "User detail page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:419
+#: src/en/documentation/use/advanced-features.md:420
 #, markdown-text
 msgid ""
 "![Screenshot shows user detail "
@@ -2791,7 +2783,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:423
+#: src/en/documentation/use/advanced-features.md:424
 #, markdown-text
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
@@ -2799,45 +2791,45 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 #, markdown-text
 msgid "See organization membership"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 #, markdown-text
 msgid "See a graph of recent tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:451
 #, markdown-text
 msgid "Add or edit a note"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 #, markdown-text
 msgid "Edit the customer (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:451
 #, markdown-text
 msgid "See a history of changes (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 #, markdown-text
 msgid "Create a new ticket with this user as customer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:435
+#: src/en/documentation/use/advanced-features.md:436
 #, markdown-text
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
@@ -2847,13 +2839,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:436
+#: src/en/documentation/use/advanced-features.md:437
 #, markdown-text, no-wrap
 msgid "Organization detail page"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:439
+#: src/en/documentation/use/advanced-features.md:440
 #, markdown-text
 msgid ""
 "![Screenshot shows organization detail "
@@ -2861,7 +2853,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:443
+#: src/en/documentation/use/advanced-features.md:444
 #, markdown-text
 msgid ""
 "It allows you to see all relevant organization information in one "
@@ -2869,31 +2861,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 #, markdown-text
 msgid "See the members of the organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 #, markdown-text
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 #, markdown-text
 msgid "Edit the organization (via ::a:: menu)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 #, markdown-text
 msgid "Create a new user as a member of this organization"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:455
+#: src/en/documentation/use/advanced-features.md:456
 #, markdown-text
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
@@ -2902,13 +2894,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:456
+#: src/en/documentation/use/advanced-features.md:457
 #, markdown-text, no-wrap
 msgid "External issues and assets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:463
+#: src/en/documentation/use/advanced-features.md:464
 #, markdown-text
 msgid ""
 "If you use i-doit and Zammad for IT support or you deal with GitHub or "
@@ -2918,7 +2910,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:467
+#: src/en/documentation/use/advanced-features.md:468
 #, markdown-text
 msgid ""
 "![Screenshot shows GitLab content sidebar with \"Link Issue\" "
@@ -2926,7 +2918,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:472
+#: src/en/documentation/use/advanced-features.md:473
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
@@ -2938,13 +2930,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:473
+#: src/en/documentation/use/advanced-features.md:474
 #, markdown-text, no-wrap
 msgid "Highlight text"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:480
+#: src/en/documentation/use/advanced-features.md:481
 #, markdown-text
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
@@ -2954,7 +2946,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:484
+#: src/en/documentation/use/advanced-features.md:485
 #, markdown-text
 msgid ""
 "![Screenshot shows highlight menu from ticket detail "
@@ -2962,7 +2954,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:488
+#: src/en/documentation/use/advanced-features.md:489
 #, markdown-text
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "
@@ -4932,9 +4924,8 @@ msgid ""
 "unnecessary parts and rewrites your text in a clear and understandable way."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/guides/ai.md:67
-#: src/en/documentation/use/guides/knowledge-base.md:70
 #, markdown-text, no-wrap
 msgid "Knowledge base assistant"
 msgstr ""
@@ -5423,203 +5414,640 @@ msgid "Knowledge base"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:11
+#: src/en/documentation/use/guides/knowledge-base.md:10
 #, markdown-text
 msgid ""
-"The knowledge base is Zammad's built-in content library for organizing FAQs, "
-"how-tos, internal processes, and more.  Customers can browse published "
-"answers (articles) for self-service, while agents can use answers as "
-"internal references or insert them directly into ticket replies."
+"The knowledge base is Zammad's built-in library for FAQs, how-tos and "
+"internal documentation. Customers browse published answers for self-service, "
+"agents use them as a reference or insert them directly into ticket replies."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:14
+#: src/en/documentation/use/guides/knowledge-base.md:12
 #, markdown-text
 msgid ""
-"This guide is written for agents who want to edit the knowledge base or use "
-"it in their daily work. Customers should be able to browse through the "
-"public knowledge base without detailed instructions."
+"![Screenshot shows a knowledge base category with its subcategories and "
+"answers](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:16
-#, markdown-text
-msgid "This feature is optional and must be activated by your administrator."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:18
+#: src/en/documentation/use/guides/knowledge-base.md:19
 #, markdown-text
 msgid ""
-"![Screenshot shows knowledge base "
-"overview](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)"
+"Your administrator has to activate the knowledge base and grant you the "
+"reader or editor permission before you can work with it. Whether you can "
+"read internal answers or edit content depends on this configuration. Zammad "
+"supports one knowledge base per system, which can hold content in several "
+"locales. To open the knowledge base, click on **Knowledge Base** in the "
+"primary navigation."
 msgstr ""
 
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:23
-#, markdown-text
-msgid ""
-"Click **Knowledge Base** in the primary navigation to open it. The knowledge "
-"base opens in preview mode, which looks similar to the published version "
-"customers see."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:27
-#, markdown-text
-msgid ""
-"The knowledge base is organized into **categories** that can contain "
-"subcategories and **answers**.  Each category requires an icon and a "
-"title. Answers consist of a title and rich text content with formatting, "
-"images, videos, file attachments, and links."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:28
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:20
 #, markdown-text, no-wrap
-msgid "Visibility"
+msgid "Structure"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:25
+#, markdown-text
+msgid ""
+"The knowledge base is built from two kinds of content. **Categories** work "
+"like folders in a file system: they group content, can contain further "
+"subcategories and each one needs a title and an icon. **Answers** are the "
+"pages or articles themselves and have a title plus rich content, living "
+"inside a category."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:26
+#, markdown-text, no-wrap
+msgid "Multiple languages"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:31
 #, markdown-text
-msgid "Each answer has a visibility level that controls who can see it:"
+msgid ""
+"If your administrator enabled several locales for the knowledge base, an "
+"answer can exist in more than one language, one translation per "
+"locale. Switch the locale selector in the top bar to read or edit another "
+"language. An answer that has no translation in the active locale yet opens "
+"with empty fields in the editor."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:32
+#, markdown-text, no-wrap
+msgid "Visibility"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:37
+#: src/en/documentation/use/guides/knowledge-base.md:36
+#, markdown-text
+msgid ""
+"Every answer has one of four publication states. The state is shown as a "
+"colored icon on the answer and on its category tile:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:43
 #, markdown-text, no-wrap
 msgid ""
-"| Color | Level                       | Who can see it                                                     "
+"| Color | State     | Who can see it                                        "
 "|\n"
-"|-------|---------------------------  "
-"|--------------------------------------------------------------------|\n"
-"| Green | **Public**                  | Everyone, including customers "
-"browsing the public knowledge base   |\n"
-"| Blue  | **Internal**                | Agents and editors only                                            "
+"|-------|-----------|--------------------------------------------------------|\n"
+"| Green | Published | Everyone, including customers on the public help site  "
 "|\n"
-"| Gray  | **Draft** or **Archived**   | Editors only                                                       "
+"| Blue  | Internal  | Agents with knowledge base reader permission           "
+"|\n"
+"| Gray  | Draft     | Editors only                                           "
+"|\n"
+"| Gray  | Archived  | Editors only                                           "
 "|\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:39
-#, markdown-text
-msgid "Changes to visibility take effect immediately."
-msgstr ""
-
-#. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/knowledge-base.md:40
-#, no-wrap
-msgid ""
-"Public answers are always visible to everyone. Internal answers require the "
-"**Knowledge Base Reader** permission.\n"
-"Choose visibility carefully when publishing answers.\n"
-msgstr ""
-
-#. type: Title ##
 #: src/en/documentation/use/guides/knowledge-base.md:45
-#, markdown-text, no-wrap
-msgid "Editing the knowledge base"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:49
 #, markdown-text
 msgid ""
-"Open the knowledge base and switch to edit mode using the `Edit` button in "
-"the top toolbar. If you can't see the `Edit` button, your administrator "
-"needs to grant you the appropriate permissions."
+"When viewing or editing an answer, a badge in the top bar shows you the "
+"current or planned (scheduled) visibility too."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:46
+#, markdown-text, no-wrap
+msgid "Use in tickets"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:52
 #, markdown-text
 msgid ""
-"To create a new category, click the `+` button on the main page. To create a "
-"new answer, navigate into a category and click the `+` button there. Enter a "
-"title and content, set the visibility level, and save your changes."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:56
-#, markdown-text
-msgid ""
-"The knowledge base editor provides the same rich text capabilities as the "
-"ticket article editor. You can format text, add links to other knowledge "
-"base answers or external websites, embed images and videos, attach files, "
-"and use tags to improve searchability."
+"The knowledge base unfolds part of its value inside tickets: insert an "
+"answer into a reply with [[?]][[?]], link related answers to a ticket and "
+"let AI suggest or draft answers based on the ticket content. These workflows "
+"are covered in [Insert knowledge base "
+"article](/en/documentation/use/advanced-features#insert-knowledge-base-article) "
+"and in the [knowledge base "
+"assistant](/en/documentation/use/guides/ai#knowledge-base-assistant) section "
+"of the AI guide."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:57
+#: src/en/documentation/use/guides/knowledge-base.md:53
 #, markdown-text, no-wrap
-msgid "Using the knowledge base in tickets"
+msgid "Read the knowledge base"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:59
+#: src/en/documentation/use/guides/knowledge-base.md:55
 #, markdown-text, no-wrap
-msgid "Inserting answers into replies"
+msgid "Browse"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:62
+#: src/en/documentation/use/guides/knowledge-base.md:60
 #, markdown-text
 msgid ""
-"You can insert knowledge base article content directly into a ticket reply "
-"without leaving the ticket:"
+"The knowledge base home shows one tile for every top-level category, "
+"arranged in a grid. Each tile shows the category icon, its title, its "
+"publication state and two counts: the number of subcategories and the number "
+"of answers it contains across all subcategories."
 msgstr ""
 
-#. type: Bullet: '1. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
-#, markdown-text
-msgid "Start composing a reply in the ticket editor."
-msgstr ""
-
-#. type: Bullet: '2. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:64
 #, markdown-text
 msgid ""
-"Click the `Insert text from knowledge base answer` button in the editor "
-"toolbar or type [[?]][[?]]."
-msgstr ""
-
-#. type: Bullet: '3. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
-#, markdown-text
-msgid "Search for the relevant answer by title or content."
-msgstr ""
-
-#. type: Bullet: '4. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
-#, markdown-text
-msgid "Select the article to insert its content at the cursor position."
+"To open a category, simply click on its tile. Its subcategories appear as "
+"tiles on top, its answers below them as a list. Select an answer to read "
+"it. Use the back and forward buttons in the top bar to jump between "
+"previously visited answers."
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:69
 #, markdown-text
-msgid "The inserted content preserves formatting and can be edited before sending."
+msgid ""
+"Use the search bar on top to search the knowledge base. Use the locale "
+"selector to switch between translated content.  The knowledge base icon at "
+"the start of the breadcrumb in the top bar takes you back to the knowledge "
+"base home. The preview button with the tooltip **View public knowledge "
+"base** on the right side of the top bar shows the knowledge base as your "
+"customers see it."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:75
+#: src/en/documentation/use/guides/knowledge-base.md:74
 #, markdown-text
 msgid ""
-"When the AI-based knowledge base assistant is enabled, Zammad can suggest "
-"relevant knowledge base answers based on the ticket content. These "
-"suggestions appear in the **Related knowledge** section of the ticket "
-"sidebar. If a suggested answer solves the problem, it can be linked "
-"permanently to the ticket."
+"The search bar on top of the knowledge base searches answer titles and "
+"content as well as category titles. When you start the search from within a "
+"category, only this category and its subcategories are searched."
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:77
 #, markdown-text
 msgid ""
-"The knowledge base assistant also offers a way to automatically create a "
-"knowledge base answer from the ticket based on its content."
+"Search terms support Elasticsearch syntax. All terms have to match and plain "
+"terms also match word beginnings, so `refund` finds `refunds`. To filter by "
+"a field, name the field in your search:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:84
+#, markdown-text, no-wrap
+msgid ""
+"| Example                   | Finds                                   |\n"
+"|---------------------------|------------------------------------------|\n"
+"| `created_at:>now-14d`     | Answers created within the last 14 days  |\n"
+"| `edited_at:>now-3d`       | Answers updated within the last 3 days   |\n"
+"| `tags:ai-generated`       | Answers tagged `ai-generated`            |\n"
+"| `publication_state:draft` | All draft answers                        |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:87
+#, markdown-text
+msgid ""
+"The `tags:` and `publication_state:` fields require Elasticsearch. Searches "
+"that name a field match exactly and do not use prefix matching."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:90
+#, markdown-text
+msgid ""
+"Select the light bulb in the search bar for suggested searches. It offers "
+"the most common filters as one-click shortcuts and a link to this "
+"documentation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:94
+#, markdown-text
+msgid ""
+"Knowledge base answers also appear in the global search. In the detailed "
+"search, they are available as a separate search entity with title, "
+"visibility and update date as result columns. See "
+"[Search](/en/documentation/use/guides/search)  for the detailed search and "
+"the full Elasticsearch syntax."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:95
+#, markdown-text, no-wrap
+msgid "Edit the knowledge base"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:97
+#: src/en/reference/rest-api/knowledgebase.md:97
+#, markdown-text, no-wrap
+msgid "Categories"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:100
+#, markdown-text
+msgid ""
+"![Screenshot shows the edit category flyout with title, icon and parent "
+"fields](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-category-flyout.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:104
+#, markdown-text
+msgid ""
+"To create a **category**, select the `+ Add category` card. This works on "
+"the knowledge base home for top-level categories as well as inside a "
+"category for subcategories. Another way to create a new category inside "
+"another category is to use the ::a:: button on the category tile and select "
+"**Add sub-category**."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:107
+#, markdown-text
+msgid ""
+"Each category consists of a title and an icon. Icons help users recognize "
+"categories at a glance, so pick the one that fits the content best."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:110
+#, markdown-text
+msgid ""
+"To edit a category, click the ::a:: menu on its tile and select **Edit "
+"category** or use the identical button on the top of the right sidebar when "
+"inside a category."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:111
+#, markdown-text, no-wrap
+msgid "Category permissions"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:117
+#, markdown-text
+msgid ""
+"The category flyout contains a **Permissions** matrix that assigns "
+"individual roles their own access level to a category. Three levels are "
+"available: **Editor** to read and edit the content of the category, "
+"**Reader** to read it including internally published answers and **None** to "
+"hide it from the role. Roles without the knowledge base reader or editor "
+"permission have no row in the matrix."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:123
+#, markdown-text
+msgid ""
+"By default, access is managed globally: everyone with the knowledge base "
+"reader permission sees all internally published answers, editors can work "
+"with everything. Saving a permission matrix for the knowledge base or a "
+"single category that differs from these defaults switches the whole "
+"knowledge base to granular access: content visibility then follows the "
+"per-category permissions. Selecting only the access a role already has by "
+"default is not stored and keeps the global behavior."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:129
+#, markdown-text
+msgid ""
+"Permissions of a parent category are inherited by its subcategories. An "
+"inherited **Editor** or **None** level cannot be overridden in the "
+"subcategory, the matching options are locked. An inherited **Reader** level "
+"can be changed. The **Editor** option is locked for roles that only have the "
+"knowledge base reader permission. A change that would take away your own "
+"editor access to a category is rejected, regardless of your other "
+"roles. Published answers stay available to everyone, granular permissions "
+"only affect internal answers and the editing of content."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:130
+#: src/en/reference/rest-api/knowledgebase.md:245
+#, markdown-text, no-wrap
+msgid "Answers"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:138
+#, markdown-text
+msgid ""
+"To add an **answer**, open a category and select the `+ Add answer` card or "
+"use the category's ::a:: menu and select **Add answer** there. An answer "
+"consists of a title and rich content. The editor provides the same "
+"formatting capabilities as the ticket article editor. See the [formatting "
+"section](/en/documentation/use/guides/editor#apply-formatting) of the editor "
+"guide for details. Tags make answers easier to find, both in the knowledge "
+"base search and in the ticket composer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:141
+#, markdown-text
+msgid ""
+"Within an answer you can link to other knowledge base answers. Select the "
+"corresponding tool in the editor toolbar and pick the answer to link "
+"to. Knowledge base links stay correct when the target answer moves to "
+"another category."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:144
+#, markdown-text
+msgid ""
+"Answers support live collaboration: when several editors open the same "
+"answer for editing, Zammad shows who else is editing and keeps everyone's "
+"changes together."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:148
+#, markdown-text
+msgid ""
+"While you edit, your work is saved automatically as a draft in the taskbar "
+"tab. If you close the tab or the browser, come back to it later and continue "
+"where you left off. Until you save the answer explicitly, you can discard "
+"the unsaved changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:153
+#, markdown-text
+msgid ""
+"The editor offers more than formatted text. You can embed images from your "
+"computer directly in the answer body, embed videos via a video URL and add "
+"file attachments which readers download from the attachment section below "
+"the answer.  For videos, YouTube and Vimeo work out of the box, while "
+"self-hosted PeerTube and MediaCMS instances can be added by your "
+"administrator. Readers can select an image in an answer to open a larger "
+"preview of it."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:154
+#, markdown-text, no-wrap
+msgid "Move content"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:159
+#, markdown-text
+msgid ""
+"To move a category including its content to another parent category, open "
+"the ::a:: menu of the category and select **Edit category**. Pick the new "
+"parent in the **Parent category** field and save. The category and all its "
+"subcategories and answers move along."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:161
+#, markdown-text
+msgid ""
+"To move an answer, edit the answer and select another category in the right "
+"sidebar."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:162
+#, markdown-text, no-wrap
+msgid "Delete content"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:167
+#, markdown-text
+msgid ""
+"Categories and answers can be deleted from their ::a:: menus (**Delete "
+"category**, **Delete answer**). Deleting a category requires you to delete "
+"its subcategories and answers before. A deletion can't be undone so consider "
+"archiving an answer instead to not lose its content."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:168
+#, markdown-text, no-wrap
+msgid "Sort content"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:171
+#, markdown-text
+msgid ""
+"![Screenshot shows the sorting bar with the mode switcher highlighted and "
+"the answers tab "
+"active](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-sort-content.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:175
+#, markdown-text
+msgid ""
+"Categories and answers can be sorted per category. Open the ::a:: menu in "
+"the top bar and select **Sort content**.  The sorting bar appears at the "
+"bottom of the screen. Inside a category, switch between the **Categories** "
+"and **Answers** tabs to arrange the two lists separately; the knowledge base "
+"home sorts its top-level categories."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:178
+#, markdown-text
+msgid ""
+"Three sorting modes are available. Answers are sorted the same way as "
+"categories. Both answers and categories can be sorted independently."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:184
+#, markdown-text, no-wrap
+msgid ""
+"| Mode                       | Effect                                                              "
+"|\n"
+"|----------------------------|----------------------------------------------------------------------|\n"
+"| **Sort alphabetically**    | Entries ordered by title, regardless of "
+"manual changes               |\n"
+"| **Sort by latest updates** | Most recently updated entries first                                  "
+"|\n"
+"| **Sort by drag & drop**    | Your hand-picked order; drag the entries into "
+"place                   |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:188
+#, markdown-text
+msgid ""
+"For categories, _latest updates_ means the category's own editorial changes "
+"like a renamed title or a new icon.  Changes to the answers inside it do not "
+"affect the category's position. Answers are dated by their content edits and "
+"publication state changes alike."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:190
+#, markdown-text
+msgid ""
+"Select the mode, arrange the entries if needed and save. The order applies "
+"for everyone who views the knowledge base."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:191
+#, markdown-text, no-wrap
+msgid "Visibility and scheduling"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:194
+#, markdown-text
+msgid ""
+"![Screenshot shows the scheduled visibility section in the answer sidebar, "
+"highlighted](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-scheduled-visibility.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:198
+#, markdown-text
+msgid ""
+"To change the visibility of an answer, open the visibility dropdown in the "
+"answer sidebar and select the new state; it takes effect immediately when "
+"you click **Update**. Use drafts to prepare content that is not ready for "
+"release, and archiving to retire outdated answers without deleting them."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:203
+#, markdown-text
+msgid ""
+"Instead of changing the state manually, you can schedule state changes: an "
+"answer can be published automatically on a given date, or archived when it "
+"becomes obsolete. Scheduled changes are listed in the answer sidebar and "
+"only visible to editors. Create a new schedule by clicking the ::+:: button "
+"in the **Scheduled visibility** section in the answer edit mode."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:207
+#, markdown-text
+msgid ""
+"Schedules follow the order of the states: an answer can become internal, "
+"then published, then archived, each with its own date. Drafts cannot be "
+"scheduled and a state the answer has already reached cannot be scheduled "
+"again."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:208
+#, markdown-text, no-wrap
+msgid "Advanced"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:210
+#, markdown-text, no-wrap
+msgid "Save behavior"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:216
+#, markdown-text
+msgid ""
+"Next to the **Create** and **Update** buttons you can choose what happens "
+"when you save an answer: **Stay on tab** keeps the editor open, **Close tab "
+"and open the answer** returns to the saved answer, **Close tab and open the "
+"category** returns to its category and after creating an answer **Close tab "
+"and add another answer** opens a fresh form in the same category. Your "
+"choice is remembered for future saves."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:217
+#, markdown-text, no-wrap
+msgid "The public help site"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:223
+#, markdown-text
+msgid ""
+"Customers reach published answers either in Zammad itself or on the public "
+"help site, depending on how your administrator configured the knowledge "
+"base. By default, the public site is available at `/help` on your Zammad "
+"host, for example `https://zammad.example.com/help/en-us`. The public site "
+"shows exactly the published content, organized by categories and works "
+"without a Zammad account."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:226
+#, markdown-text
+msgid ""
+"To see the knowledge base as your customers see it, use the preview button "
+"described in the Browse section above.  Unlike the public site, the preview "
+"also includes unpublished answers, so you can check drafts before releasing "
+"them."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:227
+#, markdown-text, no-wrap
+msgid "Feeds"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:231
+#, markdown-text
+msgid ""
+"The knowledge base allows you to subscribe to the knowledge base or "
+"individual categories via Atom/RSS feed. This feature is optional and has to "
+"be enabled by your administrator."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:237
+#, markdown-text
+msgid ""
+"For **agents**: go to the level of your knowledge base you want to subscribe "
+"to and select **Set up RSS feed** from the ::a:: menu in the top bar, or "
+"from the ::a:: menu in the answer sidebar when viewing an answer. In the "
+"flyout you can select between a feed for the whole knowledge base and a feed "
+"of the category you are currently in. The feed URL includes a personal token "
+"and the feed includes internal answers based on your permissions. Treat the "
+"feed URL like a password. If it leaks, renew the token, which invalidates "
+"the URLs handed out so far."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:240
+#, markdown-text, no-wrap
+msgid ""
+"**Customers** on the public help site get their own feed of the published "
+"content only, without a token. They can\n"
+"download a feed file by clicking the feed icon in the footer bar.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:241
+#, markdown-text, no-wrap
+msgid "Copy the title"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:244
+#, markdown-text
+msgid ""
+"The ::c:: button next to the title in the top bar copies the name of the "
+"category or answer you are viewing to the clipboard, ready to paste it into "
+"a ticket or a search."
 msgstr ""
 
 #. type: Title #
@@ -6313,24 +6741,28 @@ msgid "Limit search to object type"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:56
+#: src/en/documentation/use/guides/search.md:58
 #, markdown-text
 msgid ""
 "Limit the search to an object type by using the **Search entity** tab "
 "selector below the search field (e.g. user or ticket). This limits the "
 "search to the selected object type and its related data. For example, when "
 "you select **Ticket**, the search also returns tickets where the owner or "
-"customer matches the search term."
+"customer matches the search term. Knowledge base answers are available as an "
+"object type of their own, with title, visibility and update date as result "
+"columns. See [Knowledge "
+"base](/en/documentation/use/guides/knowledge-base#search) for searching "
+"within the knowledge base."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:57
+#: src/en/documentation/use/guides/search.md:59
 #, markdown-text, no-wrap
 msgid "Use advanced filters"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:64
+#: src/en/documentation/use/guides/search.md:66
 #, markdown-text
 msgid ""
 "Unlike the search field, you can filter the search results based on specific "
@@ -6343,7 +6775,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:67
+#: src/en/documentation/use/guides/search.md:69
 #, markdown-text
 msgid ""
 "Remove a single filter by hovering over it and clicking the ::x:: that "
@@ -6353,7 +6785,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:71
+#: src/en/documentation/use/guides/search.md:73
 #, markdown-text
 msgid ""
 "To add another filter, click `Add filter` below or between the existing "
@@ -6363,7 +6795,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:74
+#: src/en/documentation/use/guides/search.md:76
 #, markdown-text
 msgid ""
 "In case you want to store or share your filter, you can do so by copying the "
@@ -6372,7 +6804,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:77
+#: src/en/documentation/use/guides/search.md:79
 #, markdown-text
 msgid ""
 "If you still haven't found what you are looking for, you can benefit from "
@@ -6381,13 +6813,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:78
+#: src/en/documentation/use/guides/search.md:80
 #, markdown-text, no-wrap
 msgid "Using Elasticsearch syntax"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:85
+#: src/en/documentation/use/guides/search.md:87
 #, markdown-text
 msgid ""
 "This is an advanced topic for power users. By using Elasticsearch syntax, "
@@ -6399,14 +6831,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:86
+#: src/en/documentation/use/guides/search.md:88
 #: src/en/tutorials/backup-restore.md:87
 #, markdown-text, no-wrap
 msgid "Important information"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 #, markdown-text
 msgid ""
 "Make sure to select the relevant object in the **Search entity** "
@@ -6415,7 +6847,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 #, markdown-text
 msgid ""
 "Multiple search terms are combined by a logical AND by default, so `smith "
@@ -6424,7 +6856,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 #, markdown-text
 msgid ""
 "When combining an Elasticsearch query with advanced filters, be aware that "
@@ -6434,7 +6866,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 #, markdown-text
 msgid ""
 "To provide values containing a space, wrap them in `\"`, "
@@ -6442,13 +6874,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:97
+#: src/en/documentation/use/guides/search.md:99
 #, markdown-text, no-wrap
 msgid "Logic operators and ranges"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:103
+#: src/en/documentation/use/guides/search.md:105
 #, markdown-text
 msgid ""
 "You can combine conditions by using `AND` & `OR` as logical operators. Use "
@@ -6461,49 +6893,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:105
+#: src/en/documentation/use/guides/search.md:107
 #, markdown-text
 msgid "`AND` & `OR` with parentheses:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:106
+#: src/en/documentation/use/guides/search.md:108
 #, no-wrap
 msgid "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:111
+#: src/en/documentation/use/guides/search.md:113
 #, markdown-text
 msgid "`TO` with asterisk wildcard:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:112
+#: src/en/documentation/use/guides/search.md:114
 #, no-wrap
 msgid "state.name:open AND article_count: [5 TO *]\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:117
+#: src/en/documentation/use/guides/search.md:119
 #, markdown-text
 msgid "`TO` with excluding one limit of a range:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:118
+#: src/en/documentation/use/guides/search.md:120
 #, no-wrap
 msgid "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:122
+#: src/en/documentation/use/guides/search.md:124
 #, markdown-text, no-wrap
 msgid "Fuzzy search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:125
+#: src/en/documentation/use/guides/search.md:127
 #, markdown-text
 msgid ""
 "If you are not sure about the exact spelling of a value, use the tilde (`~`) "
@@ -6511,19 +6943,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:126
+#: src/en/documentation/use/guides/search.md:128
 #, no-wrap
 msgid "owner.firstname:lawren~\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:130
+#: src/en/documentation/use/guides/search.md:132
 #, markdown-text, no-wrap
 msgid "Negating search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:134
+#: src/en/documentation/use/guides/search.md:136
 #, markdown-text
 msgid ""
 "If you want to exclude specified values, you can use negation `!`. To negate "
@@ -6531,43 +6963,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:136
+#: src/en/documentation/use/guides/search.md:138
 #, markdown-text
 msgid "Exclude owner with last name \"brooks\":"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:137
+#: src/en/documentation/use/guides/search.md:139
 #, no-wrap
 msgid "!owner.lastname:brooks\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:142
+#: src/en/documentation/use/guides/search.md:144
 #, markdown-text
 msgid "Exclude multiple conditions:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:143
+#: src/en/documentation/use/guides/search.md:145
 #, no-wrap
 msgid "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:147
+#: src/en/documentation/use/guides/search.md:149
 #, markdown-text, no-wrap
 msgid "Regex"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:150
+#: src/en/documentation/use/guides/search.md:152
 #, markdown-text
 msgid "You can even use regex to search. Wrap the regex term in `/`."
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:151
+#: src/en/documentation/use/guides/search.md:153
 #, no-wrap
 msgid "customer.lastname:/(bra?.n|doe)/\n"
 msgstr ""
@@ -22866,12 +23298,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/knowledgebase.md:97
-#, markdown-text, no-wrap
-msgid "Categories"
-msgstr ""
-
 #. type: Title ###
 #: src/en/reference/rest-api/knowledgebase.md:99
 #, markdown-text, no-wrap
@@ -23062,12 +23488,6 @@ msgid ""
 "<<< "
 "@/fixtures/rest-api/knowledgebase/put-categories-permissions-response.json\n"
 "\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/knowledgebase.md:245
-#, markdown-text, no-wrap
-msgid "Answers"
 msgstr ""
 
 #. type: Title ###
@@ -24884,83 +25304,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -25170,6 +25513,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -25613,6 +26033,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #

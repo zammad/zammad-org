@@ -82,9 +82,11 @@ base de conhecimento e copiar/colar conteúdo.
 
 **Como?**
 
-Use o botão na barra de ferramentas do editor ou simplesmente escreva
-[[?]][[?]] no editor. Ambas as formas permitem pesquisar o artigo de base de
-conhecimento desejado digitando alguns caracteres ou palavras.
+Use the button in the toolbar of the editor or simply write [[?]][[?]] in
+the editor. Both ways let you search for the desired knowledge base article
+by typing some characters or words. See [Knowledge
+base](/en/documentation/use/guides/knowledge-base) to learn more about
+working with the knowledge base.
 
 ## Mencionar um usuário
 

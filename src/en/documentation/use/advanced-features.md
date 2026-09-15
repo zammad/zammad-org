@@ -66,7 +66,8 @@ This saves you time because you don't have to switch to the knowledge base and c
 **How?**
 
 Use the button in the toolbar of the editor or simply write [[?]][[?]] in the editor. Both ways let you search for the
-desired knowledge base article by typing some characters or words.
+desired knowledge base article by typing some characters or words. See
+[Knowledge base](/en/documentation/use/guides/knowledge-base) to learn more about working with the knowledge base.
 
 ## Mention a user
 
