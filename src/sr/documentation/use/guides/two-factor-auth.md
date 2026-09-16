@@ -19,9 +19,9 @@ set up at least one 2FA method.
 
 ## Подешавање
 
-If the system admin has enabled this feature, you can head to
-_Avatar > Personal settings > Two-factor Authentication_ to set it up.
-Depending on the enabled two-factor methods, you may see one or more options in the table.
+Ако је администратор система омогућио ову функцију, можете отићи на
+_Аватар > Лична подешавања > Двофакторска аутентификација_ да је поставите.
+Зависно од омогућених двофакторских метода, у табели ћете видети једну или више опција.
 
 Да бисте поставили двофакторски метод, користите дугме ::+:: и пратите
 кораке.

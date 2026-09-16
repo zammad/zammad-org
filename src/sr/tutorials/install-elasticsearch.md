@@ -117,7 +117,8 @@ sudo dnf install --enablerepo=elasticsearch elasticsearch
 :::
 
 ::: tip
-Проверите излаз и копирајте лозинку уграђеног суперкорисника. Иначе, мораћете је поново креирати покретањем `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
+Проверите одговор и ископирајте лозинку `elastic` корисника. Иначе, мораћете је поново генерисати
+покретањем `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`.
 :::
 
 ## Подешавања

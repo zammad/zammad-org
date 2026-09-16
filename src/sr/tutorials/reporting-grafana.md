@@ -103,32 +103,32 @@ curl http://localhost:9200/_aliases?pretty=true
 :::
 ::::
 
-### `ES - Sesije ćaskanja`
+### ES - сесије ћаскања
 
 - Назив индекса: `zammad_production_chat_session`
 - Назив временског поља: `created_at`
 
-### `ES - CTI log`
+### ES - CTI дневник
 
 - Назив индекса: `zammad_production_cti_log`
 - Назив временског поља: `start_at`
 
-### `ES - Članci tikea`
+### ES - Чланци тикета
 
 - Назив индекса: `zammad_production_ticket`
 - Назив временског поља: `article.created_at`
 
-### `ES - Tiketi po closed_at`
+### ES - Тикети сортирани по closed_at
 
 - Назив индекса: `zammad_production_ticket`
 - Назив временског поља: `close_at`
 
-### `ES - Tiketi po created_at`
+### ES - Тикети сортирани по created_at
 
 - Назив индекса: `zammad_production_ticket`
 - Назив временског поља: `created_at`
 
-### `ES - Tiketi po closed_at`
+### ES - Тикети сортирани по first_response_at
 
 - Назив индекса: `zammad_production_ticket`
 - Назив временског поља: `first_response_at`

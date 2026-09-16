@@ -18,7 +18,7 @@ Your administrator has to activate the knowledge base and grant you the
 reader or editor permission before you can work with it. Whether you can
 read internal answers or edit content depends on this configuration. Zammad
 supports one knowledge base per system, which can hold content in several
-locales. To open the knowledge base, click on **Knowledge Base** in the
+languages. To open the knowledge base, click on **Knowledge Base** in the
 primary navigation.
 
 ### Structure
@@ -32,10 +32,10 @@ inside a category.
 ### Multiple languages
 
 If your administrator enabled several locales for the knowledge base, an
-answer can exist in more than one language, one translation per
-locale. Switch the locale selector in the top bar to read or edit another
-language. An answer that has no translation in the active locale yet opens
-with empty fields in the editor.
+answer can exist in more than one language, one translation per language. To
+switch the language, use the selector in the top bar to read or edit another
+language.  An answer that has no translation in the selected language yet
+opens in an empty state in the editor.
 
 ### Visibility
 
@@ -56,8 +56,8 @@ current or planned (scheduled) visibility too.
 
 The knowledge base unfolds part of its value inside tickets: insert an
 answer into a reply with [[?]][[?]], link related answers to a ticket and
-let AI suggest or draft answers based on the ticket content. These workflows
-are covered in [Insert knowledge base
+let AI suggest or draft knowledge base answers based on the ticket
+content. These workflows are covered in [Insert knowledge base
 article](/en/documentation/use/advanced-features#insert-knowledge-base-article)
 and in the [knowledge base
 assistant](/en/documentation/use/guides/ai#knowledge-base-assistant) section
@@ -77,7 +77,7 @@ tiles on top, its answers below them as a list. Select an answer to read
 it. Use the back and forward buttons in the top bar to jump between
 previously visited answers.
 
-Use the search bar on top to search the knowledge base. Use the locale
+Use the search bar on top to search the knowledge base. Use the language
 selector to switch between translated content.  The knowledge base icon at
 the start of the breadcrumb in the top bar takes you back to the knowledge
 base home. The preview button with the tooltip **View public knowledge
@@ -140,7 +140,8 @@ The category flyout contains a **Permissions** matrix that assigns
 individual roles their own access level to a category. Three levels are
 available: **Editor** to read and edit the content of the category,
 **Reader** to read it including internally published answers and **None** to
-hide it from the role. Roles without the knowledge base reader or editor
+hide it from the role (published answers are always visible in the published
+knowledge base). Roles without the knowledge base reader or editor
 permission have no row in the matrix.
 
 By default, access is managed globally: everyone with the knowledge base
@@ -221,19 +222,18 @@ bottom of the screen. Inside a category, switch between the **Categories**
 and **Answers** tabs to arrange the two lists separately; the knowledge base
 home sorts its top-level categories.
 
-Three sorting modes are available. Answers are sorted the same way as
-categories. Both answers and categories can be sorted independently.
+Three sorting modes are available for both answers and categories. Answers
+and categories can be sorted independently.
 
-| Mode                       | Effect                                                              |
+| Mode                       | Effect                                                               |
 |----------------------------|----------------------------------------------------------------------|
 | **Sort alphabetically**    | Entries ordered by title, regardless of manual changes               |
 | **Sort by latest updates** | Most recently updated entries first                                  |
-| **Sort by drag & drop**    | Your hand-picked order; drag the entries into place                   |
+| **Sort by drag & drop**    | Your hand-picked order; drag the entries into place                  |
 
 For categories, _latest updates_ means the category's own editorial changes
 like a renamed title or a new icon.  Changes to the answers inside it do not
-affect the category's position. Answers are dated by their content edits and
-publication state changes alike.
+affect the category's position. Answers are dated by their content edits.
 
 Select the mode, arrange the entries if needed and save. The order applies
 for everyone who views the knowledge base.

@@ -12,22 +12,22 @@ tipicamente algo que você sabe (como uma senha) e algo que você possui (como
 um dispositivo móvel ou um token de segurança), para garantir que você é um
 indivíduo autorizado que pode acessar a conta.
 
-Two-Factor Authentication is an **optional feature**. Administrators must
-activate it to be visible in your Personal settings. The 2FA usage may be
-even enforced by your admin. In this case, you can't use Zammad unless you
-set up at least one 2FA method.
+A autenticação de dois fatores é um **recurso opcional**. Os administradores
+precisam ativá-la para que fique visível nas suas configurações de perfil. O
+uso de 2FA pode até ser obrigatório pelo seu administrador. Nesse caso, você
+não pode usar o Zammad, a menos que configure pelo menos um método de 2FA.
 
 ## Configurar
 
-If the system admin has enabled this feature, you can head to
-_Avatar > Personal settings > Two-factor Authentication_ to set it up.
-Depending on the enabled two-factor methods, you may see one or more options in the table.
+Se o administrador do sistema ativou esse recurso, você pode ir até
+_Avatar > Configurações pessoais > Two-factor Authentication_ para configurá-lo.
+Dependendo dos métodos de dois fatores habilitados, você pode ver uma ou mais opções na tabela.
 
 Para configurar um método de dois fatores, use o botão ::+:: e siga as
 etapas.
 
-![Screenshot shows 2FA methods in personal
-settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
+![Captura de tela mostra métodos de 2FA nas configurações de perfil do
+usuário](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
 
 Em uma caixa de diálogo modal, você será solicitado a confirmar sua senha
 atual.
@@ -173,16 +173,16 @@ reutilizado.
 configuração de
 2FA](/screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)
 
-You also have an option to regenerate your recovery codes at any time, which
-invalidates already existing recovery codes and provides you with a list of
-fresh codes. You can do this by clicking on `Regenerate recovery codes`
-button in your Personal settings' 2FA section.
+Você também tem a opção de gerar novamente seus códigos de recuperação a
+qualquer momento, o que invalida os códigos existentes e fornece uma lista
+de códigos novos. Você pode fazer isso clicando no botão `Regenerate
+recovery codes` nas configurações de 2FA do seu perfil.
 
 ## Definir um método de 2FA padrão
 
-To set an already set up two-factor method as default, use the ::a:: actions
-menu next to it in your Personal settings' 2FA section and choose **Set as
-default**.
+Para definir um método de dois fatores já configurado como padrão, use o
+menu de ações ::a:: ao lado dele nas configurações de 2FA do seu perfil e
+escolha **Set as default**.
 
 Para identificar seu método de autenticação de dois fatores padrão atual,
 procure um pequeno selo azul ao lado do nome do método.

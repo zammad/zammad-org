@@ -118,7 +118,7 @@ In case you need a more exact search, you can turn it off:
 zammad run rails r "Setting.set('es_asciifolding', false)"
 ```
 
-### SSL verification
+### SSL провера
 
 You can disable SSL verification, which is not recommended. Default is
 `true`.

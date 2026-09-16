@@ -57,12 +57,12 @@ auf ein bereits geschlossenes Ticket antwortet.
 
 ### Was sieht ein Kunde im Ticket?
 
-By default, customers only have a reduced interface. They can create
-tickets, view their own tickets (and maybe their colleague's too, depending
-on the setting) and access their personal settings. Even the ticket detail
-view only includes relevant elements for the customer. Elements, which have
-an internal purpose (like group, priority, internal notes, are not visible
-to the customer.
+Standardmäßig steht den Kunden nur eine reduzierte Oberfläche zur
+Verfügung. Sie können Tickets erstellen, ihre eigenen Tickets einsehen (und
+je nach Einstellung auch die ihrer Kollegen) und auf ihre persönlichen
+Einstellungen zugreifen. Auch die Ticket Detailansicht enthält nur relevante
+Elemente für den Kunden. Elemente, die einen internen Zweck haben (wie
+Gruppe, Priorität, interne Notizen), sind für Kunden nicht sichtbar.
 
 ::: warning
 Die obige Erklärung basiert auf den Standardeinstellungen von Zammad. Beachten Sie, dass die Konfiguration Ihres Systems möglicherweise
@@ -106,22 +106,24 @@ wechselt es zwischen den verschiedenen Modi.
 
 ### Wie kann ich mein Profil-/Avatarbild ändern?
 
-Go to the [avatar section](user-profile#avatar) in your personal settings by
-opening the avatar menu in the bottom left corner and select **Personal
-settings**. There you can upload an image, capture a photo (if your device
-has a camera) or delete already present images.
+Gehen Sie in Ihren persönlichen Einstellungen zum Abschnitt
+[Avatar](user-profile#avatar), indem Sie das Avatar-Menü unten links öffnen
+und **Persönliche Einstellungen** wählen. Dort können Sie ein Bild
+hochladen, ein Foto aufnehmen (wenn Ihr Gerät über eine Kamera verfügt) oder
+bereits vorhandene Bilder löschen.
 
 ### Wie ändert man die Sprache der Benutzeroberfläche von Zammad?
 
-Go to the [language section](user-profile#language) in your personal
-settings by opening the avatar menu in the bottom left corner and select
-**Personal settings**.
+Gehen Sie in Ihren persönlichen Einstellungen zum Bereich
+[Sprache](user-profile#sprache), indem Sie das Avatar-Menü unten links
+öffnen und **Persönliche Einstellungen** wählen.
 
 ### Was sollte ich in Zammad tun, bevor ich meinen Urlaub antrete?
 
-Go to the [out of office section](user-profile#out-of-office) in your
-personal settings by opening the avatar menu in the bottom left corner and
-select **Personal settings**. There you can define a replacement agent.
+Gehen Sie in Ihren persönlichen Einstellungen in den Bereich
+[Abwesenheit](user-profile#abwesenheit), indem Sie das Avatar-Menü in der in
+der linken unteren Ecke öffnen und **Persönliche Einstellungen**
+wählen. Dort können Sie einen anderen Agenten als Vertretung festlegen.
 
 ### Wie lässt sich die Reihenfolge der Übersichten anpassen?
 

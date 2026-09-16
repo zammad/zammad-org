@@ -178,7 +178,7 @@ msgstr ""
 
 #. type: Title ##
 #: .vitepress/search.en.yaml:1
-#: src/en/documentation/use/guides/knowledge-base.md:70
+#: src/en/documentation/use/guides/knowledge-base.md:71
 #: src/en/documentation/use/guides/search.md:1
 #: src/en/documentation/use/guides/search.md:6
 #: src/en/reference/rest-api/audit-log.md:39
@@ -250,6 +250,18 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: hero actions text
@@ -5438,7 +5450,7 @@ msgid ""
 "reader or editor permission before you can work with it. Whether you can "
 "read internal answers or edit content depends on this configuration. Zammad "
 "supports one knowledge base per system, which can hold content in several "
-"locales. To open the knowledge base, click on **Knowledge Base** in the "
+"languages. To open the knowledge base, click on **Knowledge Base** in the "
 "primary navigation."
 msgstr ""
 
@@ -5470,10 +5482,10 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If your administrator enabled several locales for the knowledge base, an "
-"answer can exist in more than one language, one translation per "
-"locale. Switch the locale selector in the top bar to read or edit another "
-"language. An answer that has no translation in the active locale yet opens "
-"with empty fields in the editor."
+"answer can exist in more than one language, one translation per language. To "
+"switch the language, use the selector in the top bar to read or edit another "
+"language.  An answer that has no translation in the selected language yet "
+"opens in an empty state in the editor."
 msgstr ""
 
 #. type: Title ###
@@ -5522,13 +5534,13 @@ msgid "Use in tickets"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:52
+#: src/en/documentation/use/guides/knowledge-base.md:53
 #, markdown-text
 msgid ""
 "The knowledge base unfolds part of its value inside tickets: insert an "
 "answer into a reply with [[?]][[?]], link related answers to a ticket and "
-"let AI suggest or draft answers based on the ticket content. These workflows "
-"are covered in [Insert knowledge base "
+"let AI suggest or draft knowledge base answers based on the ticket "
+"content. These workflows are covered in [Insert knowledge base "
 "article](/en/documentation/use/advanced-features#insert-knowledge-base-article) "
 "and in the [knowledge base "
 "assistant](/en/documentation/use/guides/ai#knowledge-base-assistant) section "
@@ -5536,19 +5548,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:53
+#: src/en/documentation/use/guides/knowledge-base.md:54
 #, markdown-text, no-wrap
 msgid "Read the knowledge base"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:55
+#: src/en/documentation/use/guides/knowledge-base.md:56
 #, markdown-text, no-wrap
 msgid "Browse"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:60
+#: src/en/documentation/use/guides/knowledge-base.md:61
 #, markdown-text
 msgid ""
 "The knowledge base home shows one tile for every top-level category, "
@@ -5558,7 +5570,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:64
+#: src/en/documentation/use/guides/knowledge-base.md:65
 #, markdown-text
 msgid ""
 "To open a category, simply click on its tile. Its subcategories appear as "
@@ -5568,10 +5580,10 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:69
+#: src/en/documentation/use/guides/knowledge-base.md:70
 #, markdown-text
 msgid ""
-"Use the search bar on top to search the knowledge base. Use the locale "
+"Use the search bar on top to search the knowledge base. Use the language "
 "selector to switch between translated content.  The knowledge base icon at "
 "the start of the breadcrumb in the top bar takes you back to the knowledge "
 "base home. The preview button with the tooltip **View public knowledge "
@@ -5580,7 +5592,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:74
+#: src/en/documentation/use/guides/knowledge-base.md:75
 #, markdown-text
 msgid ""
 "The search bar on top of the knowledge base searches answer titles and "
@@ -5589,7 +5601,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:77
+#: src/en/documentation/use/guides/knowledge-base.md:78
 #, markdown-text
 msgid ""
 "Search terms support Elasticsearch syntax. All terms have to match and plain "
@@ -5598,7 +5610,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:84
+#: src/en/documentation/use/guides/knowledge-base.md:85
 #, markdown-text, no-wrap
 msgid ""
 "| Example                   | Finds                                   |\n"
@@ -5610,7 +5622,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:87
+#: src/en/documentation/use/guides/knowledge-base.md:88
 #, markdown-text
 msgid ""
 "The `tags:` and `publication_state:` fields require Elasticsearch. Searches "
@@ -5618,7 +5630,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:90
+#: src/en/documentation/use/guides/knowledge-base.md:91
 #, markdown-text
 msgid ""
 "Select the light bulb in the search bar for suggested searches. It offers "
@@ -5627,7 +5639,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:94
+#: src/en/documentation/use/guides/knowledge-base.md:95
 #, markdown-text
 msgid ""
 "Knowledge base answers also appear in the global search. In the detailed "
@@ -5638,20 +5650,20 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:95
+#: src/en/documentation/use/guides/knowledge-base.md:96
 #, markdown-text, no-wrap
 msgid "Edit the knowledge base"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:97
+#: src/en/documentation/use/guides/knowledge-base.md:98
 #: src/en/reference/rest-api/knowledgebase.md:97
 #, markdown-text, no-wrap
 msgid "Categories"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:100
+#: src/en/documentation/use/guides/knowledge-base.md:101
 #, markdown-text
 msgid ""
 "![Screenshot shows the edit category flyout with title, icon and parent "
@@ -5659,7 +5671,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:104
+#: src/en/documentation/use/guides/knowledge-base.md:105
 #, markdown-text
 msgid ""
 "To create a **category**, select the `+ Add category` card. This works on "
@@ -5670,7 +5682,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:107
+#: src/en/documentation/use/guides/knowledge-base.md:108
 #, markdown-text
 msgid ""
 "Each category consists of a title and an icon. Icons help users recognize "
@@ -5678,7 +5690,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:110
+#: src/en/documentation/use/guides/knowledge-base.md:111
 #, markdown-text
 msgid ""
 "To edit a category, click the ::a:: menu on its tile and select **Edit "
@@ -5687,25 +5699,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:111
+#: src/en/documentation/use/guides/knowledge-base.md:112
 #, markdown-text, no-wrap
 msgid "Category permissions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:117
+#: src/en/documentation/use/guides/knowledge-base.md:119
 #, markdown-text
 msgid ""
 "The category flyout contains a **Permissions** matrix that assigns "
 "individual roles their own access level to a category. Three levels are "
 "available: **Editor** to read and edit the content of the category, "
 "**Reader** to read it including internally published answers and **None** to "
-"hide it from the role. Roles without the knowledge base reader or editor "
+"hide it from the role (published answers are always visible in the published "
+"knowledge base). Roles without the knowledge base reader or editor "
 "permission have no row in the matrix."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:123
+#: src/en/documentation/use/guides/knowledge-base.md:125
 #, markdown-text
 msgid ""
 "By default, access is managed globally: everyone with the knowledge base "
@@ -5718,7 +5731,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:129
+#: src/en/documentation/use/guides/knowledge-base.md:131
 #, markdown-text
 msgid ""
 "Permissions of a parent category are inherited by its subcategories. An "
@@ -5732,14 +5745,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:130
+#: src/en/documentation/use/guides/knowledge-base.md:132
 #: src/en/reference/rest-api/knowledgebase.md:245
 #, markdown-text, no-wrap
 msgid "Answers"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:138
+#: src/en/documentation/use/guides/knowledge-base.md:140
 #, markdown-text
 msgid ""
 "To add an **answer**, open a category and select the `+ Add answer` card or "
@@ -5752,7 +5765,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:141
+#: src/en/documentation/use/guides/knowledge-base.md:143
 #, markdown-text
 msgid ""
 "Within an answer you can link to other knowledge base answers. Select the "
@@ -5762,7 +5775,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:144
+#: src/en/documentation/use/guides/knowledge-base.md:146
 #, markdown-text
 msgid ""
 "Answers support live collaboration: when several editors open the same "
@@ -5771,7 +5784,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:148
+#: src/en/documentation/use/guides/knowledge-base.md:150
 #, markdown-text
 msgid ""
 "While you edit, your work is saved automatically as a draft in the taskbar "
@@ -5781,7 +5794,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:153
+#: src/en/documentation/use/guides/knowledge-base.md:155
 #, markdown-text
 msgid ""
 "The editor offers more than formatted text. You can embed images from your "
@@ -5794,13 +5807,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:154
+#: src/en/documentation/use/guides/knowledge-base.md:156
 #, markdown-text, no-wrap
 msgid "Move content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:159
+#: src/en/documentation/use/guides/knowledge-base.md:161
 #, markdown-text
 msgid ""
 "To move a category including its content to another parent category, open "
@@ -5810,7 +5823,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:161
+#: src/en/documentation/use/guides/knowledge-base.md:163
 #, markdown-text
 msgid ""
 "To move an answer, edit the answer and select another category in the right "
@@ -5818,13 +5831,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:162
+#: src/en/documentation/use/guides/knowledge-base.md:164
 #, markdown-text, no-wrap
 msgid "Delete content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:167
+#: src/en/documentation/use/guides/knowledge-base.md:169
 #, markdown-text
 msgid ""
 "Categories and answers can be deleted from their ::a:: menus (**Delete "
@@ -5834,13 +5847,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:168
+#: src/en/documentation/use/guides/knowledge-base.md:170
 #, markdown-text, no-wrap
 msgid "Sort content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:171
+#: src/en/documentation/use/guides/knowledge-base.md:173
 #, markdown-text
 msgid ""
 "![Screenshot shows the sorting bar with the mode switcher highlighted and "
@@ -5849,7 +5862,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:175
+#: src/en/documentation/use/guides/knowledge-base.md:177
 #, markdown-text
 msgid ""
 "Categories and answers can be sorted per category. Open the ::a:: menu in "
@@ -5860,18 +5873,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:178
+#: src/en/documentation/use/guides/knowledge-base.md:179
 #, markdown-text
 msgid ""
-"Three sorting modes are available. Answers are sorted the same way as "
-"categories. Both answers and categories can be sorted independently."
+"Three sorting modes are available for both answers and categories. Answers "
+"and categories can be sorted independently."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:184
+#: src/en/documentation/use/guides/knowledge-base.md:185
 #, markdown-text, no-wrap
 msgid ""
-"| Mode                       | Effect                                                              "
+"| Mode                       | Effect                                                               "
 "|\n"
 "|----------------------------|----------------------------------------------------------------------|\n"
 "| **Sort alphabetically**    | Entries ordered by title, regardless of "
@@ -5879,7 +5892,7 @@ msgid ""
 "| **Sort by latest updates** | Most recently updated entries first                                  "
 "|\n"
 "| **Sort by drag & drop**    | Your hand-picked order; drag the entries into "
-"place                   |\n"
+"place                  |\n"
 msgstr ""
 
 #. type: Plain text
@@ -5888,8 +5901,7 @@ msgstr ""
 msgid ""
 "For categories, _latest updates_ means the category's own editorial changes "
 "like a renamed title or a new icon.  Changes to the answers inside it do not "
-"affect the category's position. Answers are dated by their content edits and "
-"publication state changes alike."
+"affect the category's position. Answers are dated by their content edits."
 msgstr ""
 
 #. type: Plain text
@@ -11431,7 +11443,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:30
-#: src/en/reference/docker-compose-scenarios.md:100
+#: src/en/reference/docker-compose-scenarios.md:119
 #, markdown-text, no-wrap
 msgid "Disable Elasticsearch service"
 msgstr ""
@@ -11499,6 +11511,45 @@ msgstr ""
 #, no-wrap
 msgid ""
 "\n"
+"=== Docker Compose\n"
+"\n"
+"Follow the first 2 steps of the [general deployment "
+"guide](/en/get-started/installation/docker). Instead of passing\n"
+"scenario files with additional `-f` flags on every command, list the "
+"scenarios you want to use in an `include` section\n"
+"of a `docker-compose.override.yml` file in the cloned repository folder. The "
+"stack repository ships an inactive example\n"
+"file you can copy and adjust:\n"
+"\n"
+"``` sh\n"
+"cp docker-compose.override.yml.dist docker-compose.override.yml\n"
+"```\n"
+"\n"
+"Edit the copy and add the scenarios you want to use:\n"
+"\n"
+"``` yaml\n"
+"include:\n"
+"  - scenarios/{scenario you want to use}.yml\n"
+"  - scenarios/{another scenario you want to use}.yml\n"
+"```\n"
+"\n"
+"Replace the parts in `{}` brackets with the file names of the scenario files "
+"you want to combine. Then start the stack\n"
+"as usual with plain `docker compose up -d` (step 3 of the [general "
+"deployment guide](/en/get-started/installation/docker)).\n"
+"Keep two things in mind: the `include` keyword requires Docker Compose 2.20 "
+"or higher, and scenarios that bind-mount\n"
+"host files have to be included with the long form below. Otherwise their "
+"relative paths resolve against the `scenarios`\n"
+"folder and Docker silently creates empty directories instead of mounting "
+"your files:\n"
+"\n"
+"``` yaml\n"
+"include:\n"
+"  - path: scenarios/{scenario you want to use}.yml\n"
+"    project_directory: .\n"
+"```\n"
+"\n"
 "=== Portainer\n"
 "\n"
 "Follow the [general deployment guide](/en/get-started/installation/docker) "
@@ -11514,32 +11565,16 @@ msgid ""
 "![Portainer additional paths "
 "configuration](/screenshots/get-started/installation/portainer-additional-paths.png)\n"
 "\n"
-"=== Docker Compose\n"
-"\n"
-"Follow the first 2 steps of the [general deployment "
-"guide](/en/get-started/installation/docker). To start the stack with\n"
-"one or more additional scenarios, use the following command for step 3 in "
-"the cloned repository folder instead:\n"
-"\n"
-"``` sh\n"
-"docker compose -f docker-compose.yml -f scenarios/{scenario you want to "
-"use}.yml up -d\n"
-"```\n"
-"\n"
-"Replace the part in `{}` brackets with the file name of one of the scenario "
-"files. You can even combine the scenarios\n"
-"by adding additional files according to the example above.\n"
-"\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:61
+#: src/en/reference/docker-compose-scenarios.md:80
 #, markdown-text, no-wrap
 msgid "Making the stack available via HTTPS"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:65
+#: src/en/reference/docker-compose-scenarios.md:84
 #, markdown-text
 msgid ""
 "If you set up Zammad for production use, it needs to be secured by using an "
@@ -11547,13 +11582,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:66
+#: src/en/reference/docker-compose-scenarios.md:85
 #, markdown-text, no-wrap
 msgid "Add Cloudflare tunnel"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:70
+#: src/en/reference/docker-compose-scenarios.md:89
 #, markdown-text
 msgid ""
 "If you want to publish Zammad in a very convenient way, you can use a "
@@ -11561,19 +11596,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:95
 #, markdown-text
 msgid "Use the scenario file `scenarios/add-cloudflare-tunnel.yml` for deployment"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:95
 #, markdown-text
 msgid "Add a sub-domain to an already existing domain in your Cloudflare dashboard"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:95
 #, markdown-text
 msgid ""
 "Create a tunnel for this subdomain and configure it to forward traffic to "
@@ -11581,7 +11616,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:95
 #, markdown-text
 msgid ""
 "Provide your Cloudflare tunnel token to the Zammad stack by using the "
@@ -11589,13 +11624,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:77
+#: src/en/reference/docker-compose-scenarios.md:96
 #, markdown-text, no-wrap
 msgid "Add Nginx proxy manager"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:83
+#: src/en/reference/docker-compose-scenarios.md:102
 #, markdown-text
 msgid ""
 "A very common setup of publishing web services is to use a reverse proxy, "
@@ -11606,19 +11641,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:107
 #, markdown-text
 msgid "Use the scenario file `scenarios/add-nginx-proxy-manager.yml` for deployment"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:107
 #, markdown-text
 msgid "Provide your FQDN for Zammad by using the environment variable `ZAMMAD_FQDN`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:107
 #, markdown-text
 msgid ""
 "Configure your DNS. The chosen Zammad FQDN should point to the IP address of "
@@ -11626,7 +11661,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:107
 #, markdown-text
 msgid ""
 "Configure a new proxy host in your NPM and follow the steps to get an SSL "
@@ -11634,13 +11669,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:89
+#: src/en/reference/docker-compose-scenarios.md:108
 #, markdown-text, no-wrap
 msgid "Add external Docker network to Nginx"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:94
+#: src/en/reference/docker-compose-scenarios.md:113
 #, markdown-text
 msgid ""
 "If you already have a reverse proxy which takes care about the SSL "
@@ -11650,7 +11685,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:97
+#: src/en/reference/docker-compose-scenarios.md:116
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-nginx.yml` for "
@@ -11658,7 +11693,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:97
+#: src/en/reference/docker-compose-scenarios.md:116
 #, markdown-text
 msgid ""
 "Provide the name of your external network by using the environment variable "
@@ -11666,13 +11701,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:98
+#: src/en/reference/docker-compose-scenarios.md:117
 #, markdown-text, no-wrap
 msgid "Using external services"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:104
+#: src/en/reference/docker-compose-scenarios.md:123
 #, markdown-text
 msgid ""
 "Do you have an Elasticsearch instance already running and want to use it for "
@@ -11681,7 +11716,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:133
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/disable-elasticsearch-service.yml` for "
@@ -11689,7 +11724,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:133
 #, markdown-text
 msgid ""
 "Use the following environment variables to provide information about the "
@@ -11697,43 +11732,43 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:133
 #, markdown-text
 msgid "`ELASTICSEARCH_SCHEMA`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:133
 #, markdown-text
 msgid "`ELASTICSEARCH_HOST`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:133
 #, markdown-text
 msgid "`ELASTICSEARCH_PORT`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:133
 #, markdown-text
 msgid "`ELASTICSEARCH_USER`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:133
 #, markdown-text
 msgid "`ELASTICSEARCH_PASS`"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:115
+#: src/en/reference/docker-compose-scenarios.md:134
 #, markdown-text, no-wrap
 msgid "Making services externally available"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:119
+#: src/en/reference/docker-compose-scenarios.md:138
 #, markdown-text
 msgid ""
 "These scenarios are meant to connect from external applications to Zammad "
@@ -11742,7 +11777,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/docker-compose-scenarios.md:120
+#: src/en/reference/docker-compose-scenarios.md:139
 #, no-wrap
 msgid ""
 "\n"
@@ -11754,7 +11789,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/docker-compose-scenarios.md:127
+#: src/en/reference/docker-compose-scenarios.md:146
 #, no-wrap
 msgid ""
 "\n"
@@ -11764,13 +11799,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:152
 #, markdown-text, no-wrap
 msgid "Add external Docker network to Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:138
+#: src/en/reference/docker-compose-scenarios.md:157
 #, markdown-text
 msgid ""
 "A common use case for this is to use a reporting/visualization tool like "
@@ -11780,7 +11815,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:141
+#: src/en/reference/docker-compose-scenarios.md:160
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-elasticsearch.yml` "
@@ -11788,7 +11823,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:141
+#: src/en/reference/docker-compose-scenarios.md:160
 #, markdown-text
 msgid ""
 "Provide the name of your external network by using the environment variable "
@@ -11796,13 +11831,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:142
+#: src/en/reference/docker-compose-scenarios.md:161
 #, markdown-text, no-wrap
 msgid "Add host port to Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:146
+#: src/en/reference/docker-compose-scenarios.md:165
 #, markdown-text
 msgid ""
 "In case you want to expose the Elasticsearch service of the Zammad stack in "
@@ -11811,7 +11846,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:150
+#: src/en/reference/docker-compose-scenarios.md:169
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for "
@@ -11819,7 +11854,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:150
+#: src/en/reference/docker-compose-scenarios.md:169
 #, markdown-text
 msgid ""
 "The default port for Elasticsearch is `9200`. Change it to another port by "
@@ -11827,19 +11862,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:151
+#: src/en/reference/docker-compose-scenarios.md:170
 #, markdown-text, no-wrap
 msgid "Additional scenarios"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:153
+#: src/en/reference/docker-compose-scenarios.md:172
 #, markdown-text, no-wrap
 msgid "Disable backup service"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:157
+#: src/en/reference/docker-compose-scenarios.md:176
 #, markdown-text
 msgid ""
 "In case you want to handle backups in a different way, you can disable the "
@@ -11847,7 +11882,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:159
+#: src/en/reference/docker-compose-scenarios.md:178
 #, markdown-text
 msgid ""
 "You can do so by just using the scenario file "
@@ -11855,13 +11890,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:160
+#: src/en/reference/docker-compose-scenarios.md:179
 #, markdown-text, no-wrap
 msgid "Add Ollama"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:164
+#: src/en/reference/docker-compose-scenarios.md:183
 #, markdown-text
 msgid ""
 "You can spin up an additional [Ollama](https://ollama.com/){target=_blank} "
@@ -11869,7 +11904,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/docker-compose-scenarios.md:165
+#: src/en/reference/docker-compose-scenarios.md:184
 #, no-wrap
 msgid ""
 "This is intended for development or testing purposes as running a productive "
@@ -11877,7 +11912,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:172
+#: src/en/reference/docker-compose-scenarios.md:191
 #, markdown-text
 msgid ""
 "To deploy an Ollama container inside the Zammad stack, use the scenario file "
@@ -11887,7 +11922,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:174
+#: src/en/reference/docker-compose-scenarios.md:193
 #, markdown-text
 msgid ""
 "To use it in Zammad, add the service name and port (`http://ollama:11434`) "
@@ -11895,13 +11930,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:175
+#: src/en/reference/docker-compose-scenarios.md:194
 #, markdown-text, no-wrap
 msgid "Limit resources"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:181
+#: src/en/reference/docker-compose-scenarios.md:200
 #, markdown-text
 msgid ""
 "If you want to limit the hardware resources the Zammad stack is allowed to "
@@ -11913,13 +11948,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:182
+#: src/en/reference/docker-compose-scenarios.md:201
 #, markdown-text, no-wrap
 msgid "Other use cases"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:186
+#: src/en/reference/docker-compose-scenarios.md:205
 #, markdown-text
 msgid ""
 "Your scenario is not covered yet? Feel free to suggest your use case. We "
@@ -11927,13 +11962,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:187
+#: src/en/reference/docker-compose-scenarios.md:206
 #, markdown-text, no-wrap
 msgid "Customize the stack locally"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:192
+#: src/en/reference/docker-compose-scenarios.md:212
 #, markdown-text
 msgid ""
 "Sometimes it's necessary to apply local changes to the Zammad Docker stack, "
@@ -11942,6 +11977,15 @@ msgid ""
 "`docker-compose.override.yml` that includes all your modifications. Docker "
 "Compose will [automatically load this file and merge its changes into your "
 "stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:214
+#, markdown-text
+msgid ""
+"Besides your own modifications, this file is also the place to pull in "
+"pre-defined scenarios via the `include` keyword, as described in the "
+"[general usage](#general-usage) section above."
 msgstr ""
 
 #. type: Title #
@@ -25307,6 +25351,83 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -25516,83 +25637,6 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -26036,18 +26080,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #

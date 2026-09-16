@@ -38,27 +38,46 @@ Compose](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
 ::: tabs
 
-=== Portainer
-
-Siga o [guia geral de implantação](/pt_BR/get-started/installation/docker) e aplique as seguintes alterações.
-
-Abaixo do campo "Compose path", clique no botão `Add file`. Isso abre a seção "Additional paths", onde você
-pode especificar o cenário que deseja usar. Adicione `scenarios/{cenário que você quer usar}.yml` e substitua a última parte entre
-`{}` pelo nome de um dos arquivos de cenário. Você pode até combinar cenários adicionando caminhos adicionais.
-
-![Configuração de caminhos adicionais do Portainer](/screenshots/get-started/installation/portainer-additional-paths.png)
-
 === Docker Compose
 
-Siga as primeiras 2 etapas do [guia geral de implantação](/pt_BR/get-started/installation/docker). Para iniciar a stack com
-um ou mais cenários adicionais, use o seguinte comando para a etapa 3, na pasta do repositório clonado:
+Follow the first 2 steps of the [general deployment guide](/en/get-started/installation/docker). Instead of passing
+scenario files with additional `-f` flags on every command, list the scenarios you want to use in an `include` section
+of a `docker-compose.override.yml` file in the cloned repository folder. The stack repository ships an inactive example
+file you can copy and adjust:
 
 ``` sh
-docker compose -f docker-compose.yml -f scenarios/{cenário que você quer usar}.yml up -d
+cp docker-compose.override.yml.dist docker-compose.override.yml
 ```
 
-Substitua a parte entre `{}` pelo nome do arquivo de um dos arquivos de cenário. Você pode até combinar os cenários
-adicionando arquivos adicionais de acordo com o exemplo acima.
+Edit the copy and add the scenarios you want to use:
+
+``` yaml
+include:
+  - scenarios/{scenario you want to use}.yml
+  - scenarios/{another scenario you want to use}.yml
+```
+
+Replace the parts in `{}` brackets with the file names of the scenario files you want to combine. Then start the stack
+as usual with plain `docker compose up -d` (step 3 of the [general deployment guide](/en/get-started/installation/docker)).
+Keep two things in mind: the `include` keyword requires Docker Compose 2.20 or higher, and scenarios that bind-mount
+host files have to be included with the long form below. Otherwise their relative paths resolve against the `scenarios`
+folder and Docker silently creates empty directories instead of mounting your files:
+
+``` yaml
+include:
+  - path: scenarios/{scenario you want to use}.yml
+    project_directory: .
+```
+
+=== Portainer
+
+Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
+
+Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
+can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
+`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
+
+![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)
 
 :::
 
@@ -220,3 +239,7 @@ crie um `docker-compose.override.yml` local que inclua todas as suas
 modificações. O Docker Compose vai [carregar automaticamente esse arquivo e
 mesclar suas alterações na sua
 stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.
+
+Besides your own modifications, this file is also the place to pull in
+pre-defined scenarios via the `include` keyword, as described in the
+[general usage](#general-usage) section above.

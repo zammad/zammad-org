@@ -12,15 +12,15 @@ title: Тикет
 :::
 
 ::: tip
-**Suppress notifications:** To create or update a ticket without triggering agent notifications (email and in-app), add
-the following HTTP header to your request:
+**Онемогући обавештења:** Да бисте отворили или освежили тикет без слања обавештења оператерима (имејл и веб), додајте
+следеће HTTP заглавље у ваш захтев:
 
 ```plain
 X-Zammad-Suppress-Notifications: true
 ```
 
-This is useful for automated integrations that manage tickets via webhooks or triggers to avoid notification loops. The
-header only affects admin and agent accounts and is ignored for customers.
+Корисно је за аутоматске интеграције које освежавају тикете путем повратног позива или окидача како би се избегла циркуларна обавештења. Ово
+заглавље утиче само на налоге са улогом администратора и оператера и игнорише се за клијенте.
 :::
 
 ## Преглед листе

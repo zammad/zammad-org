@@ -1,9 +1,9 @@
 ---
 order: 4
-title: Checklist
+title: 'Lista de verificação'
 ---
 
-# Checklist
+# Lista de verificação
 
 O Zammad tem diferentes endpoints de checklist:
 
