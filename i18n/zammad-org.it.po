@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-03 08:20+0200\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: 2026-08-31 09:12+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <https://translations.zammad.org/projects/"
@@ -175,7 +175,9 @@ msgid "https://github.com/zammad"
 msgstr "https://github.com/zammad"
 
 #. type: Title ##
-#: .vitepress/search.en.yaml:1 src/en/documentation/use/guides/search.md:1
+#: .vitepress/search.en.yaml:1
+#: src/en/documentation/use/guides/knowledge-base.md:70
+#: src/en/documentation/use/guides/search.md:1
 #: src/en/documentation/use/guides/search.md:6
 #: src/en/reference/rest-api/audit-log.md:39
 #, no-wrap
@@ -513,7 +515,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/contribute/contribute.md:74 src/en/contribute/style-guide.md:69
 #: src/en/documentation/use/basics/index.md:1
-#: src/en/documentation/use/guides/knowledge-base.md:19
+#: src/en/documentation/use/guides/knowledge-base.md:13
 #: src/en/get-started/installation/package.md:68
 #: src/en/tutorials/backup-restore.md:33
 #, no-wrap
@@ -1905,24 +1907,24 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:16
 #: src/en/documentation/use/advanced-features.md:41
 #: src/en/documentation/use/advanced-features.md:62
-#: src/en/documentation/use/advanced-features.md:76
-#: src/en/documentation/use/advanced-features.md:93
-#: src/en/documentation/use/advanced-features.md:108
-#: src/en/documentation/use/advanced-features.md:130
-#: src/en/documentation/use/advanced-features.md:168
-#: src/en/documentation/use/advanced-features.md:180
-#: src/en/documentation/use/advanced-features.md:200
-#: src/en/documentation/use/advanced-features.md:228
-#: src/en/documentation/use/advanced-features.md:292
-#: src/en/documentation/use/advanced-features.md:317
-#: src/en/documentation/use/advanced-features.md:334
-#: src/en/documentation/use/advanced-features.md:353
-#: src/en/documentation/use/advanced-features.md:371
-#: src/en/documentation/use/advanced-features.md:401
-#: src/en/documentation/use/advanced-features.md:421
-#: src/en/documentation/use/advanced-features.md:441
-#: src/en/documentation/use/advanced-features.md:459
-#: src/en/documentation/use/advanced-features.md:476
+#: src/en/documentation/use/advanced-features.md:77
+#: src/en/documentation/use/advanced-features.md:94
+#: src/en/documentation/use/advanced-features.md:109
+#: src/en/documentation/use/advanced-features.md:131
+#: src/en/documentation/use/advanced-features.md:169
+#: src/en/documentation/use/advanced-features.md:181
+#: src/en/documentation/use/advanced-features.md:201
+#: src/en/documentation/use/advanced-features.md:229
+#: src/en/documentation/use/advanced-features.md:293
+#: src/en/documentation/use/advanced-features.md:318
+#: src/en/documentation/use/advanced-features.md:335
+#: src/en/documentation/use/advanced-features.md:354
+#: src/en/documentation/use/advanced-features.md:372
+#: src/en/documentation/use/advanced-features.md:402
+#: src/en/documentation/use/advanced-features.md:422
+#: src/en/documentation/use/advanced-features.md:442
+#: src/en/documentation/use/advanced-features.md:460
+#: src/en/documentation/use/advanced-features.md:477
 #, no-wrap
 msgid "**Why?**\n"
 msgstr "**Perché?**\n"
@@ -1943,24 +1945,24 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:21
 #: src/en/documentation/use/advanced-features.md:50
 #: src/en/documentation/use/advanced-features.md:67
-#: src/en/documentation/use/advanced-features.md:81
-#: src/en/documentation/use/advanced-features.md:98
-#: src/en/documentation/use/advanced-features.md:115
-#: src/en/documentation/use/advanced-features.md:137
-#: src/en/documentation/use/advanced-features.md:173
-#: src/en/documentation/use/advanced-features.md:188
-#: src/en/documentation/use/advanced-features.md:206
-#: src/en/documentation/use/advanced-features.md:232
-#: src/en/documentation/use/advanced-features.md:300
-#: src/en/documentation/use/advanced-features.md:322
-#: src/en/documentation/use/advanced-features.md:339
-#: src/en/documentation/use/advanced-features.md:359
-#: src/en/documentation/use/advanced-features.md:377
-#: src/en/documentation/use/advanced-features.md:406
-#: src/en/documentation/use/advanced-features.md:432
-#: src/en/documentation/use/advanced-features.md:452
-#: src/en/documentation/use/advanced-features.md:465
-#: src/en/documentation/use/advanced-features.md:482
+#: src/en/documentation/use/advanced-features.md:82
+#: src/en/documentation/use/advanced-features.md:99
+#: src/en/documentation/use/advanced-features.md:116
+#: src/en/documentation/use/advanced-features.md:138
+#: src/en/documentation/use/advanced-features.md:174
+#: src/en/documentation/use/advanced-features.md:189
+#: src/en/documentation/use/advanced-features.md:207
+#: src/en/documentation/use/advanced-features.md:233
+#: src/en/documentation/use/advanced-features.md:301
+#: src/en/documentation/use/advanced-features.md:323
+#: src/en/documentation/use/advanced-features.md:340
+#: src/en/documentation/use/advanced-features.md:360
+#: src/en/documentation/use/advanced-features.md:378
+#: src/en/documentation/use/advanced-features.md:407
+#: src/en/documentation/use/advanced-features.md:433
+#: src/en/documentation/use/advanced-features.md:453
+#: src/en/documentation/use/advanced-features.md:466
+#: src/en/documentation/use/advanced-features.md:483
 #, no-wrap
 msgid "**How?**\n"
 msgstr "**Come?**\n"
@@ -2106,24 +2108,31 @@ msgstr ""
 "esiste un articolo nella base di conoscenza, questo ti fa risparmiare tempo."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:70
+#: src/en/documentation/use/advanced-features.md:71
+#, fuzzy
+#| msgid ""
+#| "Use the button in the toolbar of the editor or simply write [[?]][[?]] in "
+#| "the editor. Both ways let you search for the desired knowledge base "
+#| "article by typing some characters or words."
 msgid ""
 "Use the button in the toolbar of the editor or simply write [[?]][[?]] in "
 "the editor. Both ways let you search for the desired knowledge base article "
-"by typing some characters or words."
+"by typing some characters or words. See [Knowledge base](/en/documentation/"
+"use/guides/knowledge-base) to learn more about working with the knowledge "
+"base."
 msgstr ""
 "Usa il pulsante nella barra degli strumenti dell'editor o scrivi "
 "semplicemente [[?]][[?]] nell'editor."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:71
+#: src/en/documentation/use/advanced-features.md:72
 #, fuzzy, no-wrap
 #| msgid "Mention a User"
 msgid "Mention a user"
 msgstr "Menziona un utente"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:74
+#: src/en/documentation/use/advanced-features.md:75
 msgid ""
 "![Screenshot shows mentioning a user](/screenshots/cypress/documentation/use/"
 "advanced-features.cy.js/ticket-article-mention.png)"
@@ -2132,7 +2141,7 @@ msgstr ""
 "documentation/use/advanced-features.cy.js/ticket-article-mention.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:79
+#: src/en/documentation/use/advanced-features.md:80
 msgid ""
 "Ask or request information from your colleagues or mention them in important "
 "tickets so they receive notifications for ticket updates and are "
@@ -2142,7 +2151,7 @@ msgstr ""
 "importanti in modo che ricevano notifiche per gli aggiornamenti del ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:84
+#: src/en/documentation/use/advanced-features.md:85
 msgid ""
 "While writing a ticket article, use the button in the toolbar of the editor "
 "or simply type [[@]][[@]]. Both ways let you search for the name of the user "
@@ -2152,7 +2161,7 @@ msgstr ""
 "degli strumenti dell'editor o digita semplicemente [[@]][[@]]."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:87
+#: src/en/documentation/use/advanced-features.md:88
 msgid ""
 "Zammad displays a list with all possible matches where you can pick one by "
 "clicking on it or by using the up and down arrows followed by [[enter]] on "
@@ -2162,14 +2171,14 @@ msgstr ""
 "sceglierne una."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:88
+#: src/en/documentation/use/advanced-features.md:89
 #, fuzzy, no-wrap
 #| msgid "Subscribe to a Ticket"
 msgid "Subscribe to a ticket"
 msgstr "Iscriviti a un ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:91
+#: src/en/documentation/use/advanced-features.md:92
 msgid ""
 "![Screenshot shows subscribe feature](/screenshots/cypress/documentation/use/"
 "advanced-features.cy.js/ticket-subscribe.png)"
@@ -2178,7 +2187,7 @@ msgstr ""
 "documentation/use/advanced-features.cy.js/ticket-subscribe.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:96
+#: src/en/documentation/use/advanced-features.md:97
 msgid ""
 "If you are interested in the progress of a ticket, you are not the owner, "
 "you can subscribe to it. This means you will receive notifications for each "
@@ -2188,7 +2197,7 @@ msgstr ""
 "proprietario, puoi iscriverti."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:102
+#: src/en/documentation/use/advanced-features.md:103
 #, fuzzy
 #| msgid ""
 #| "Activate the \"Subscribe me\" toggle in the ticket side panel to get "
@@ -2207,14 +2216,14 @@ msgstr ""
 "ricevere notifiche."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:103
+#: src/en/documentation/use/advanced-features.md:104
 #: src/en/reference/rest-api/intro.md:177
 #, no-wrap
 msgid "Macros"
 msgstr "Macro"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:106
+#: src/en/documentation/use/advanced-features.md:107
 msgid ""
 "![Screenshot shows macro action menu](/screenshots/cypress/documentation/use/"
 "advanced-features.cy.js/ticket-macro.png)"
@@ -2223,7 +2232,7 @@ msgstr ""
 "documentation/use/advanced-features.cy.js/ticket-macro.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:113
+#: src/en/documentation/use/advanced-features.md:114
 msgid ""
 "If you have many steps you do over and over again, you should use a macro "
 "for that. In such a macro, your admin can pre-define different ticket "
@@ -2243,7 +2252,7 @@ msgstr ""
 "macro su richiesta."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:118
+#: src/en/documentation/use/advanced-features.md:119
 msgid ""
 "If your admin already created a macro, you can execute it in the ticket "
 "detail view by clicking the `^` section of the `Update` button in the right "
@@ -2256,13 +2265,13 @@ msgstr ""
 "pagina (vedi screenshot sopra) e selezionando la macro che desideri eseguire."
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:119
+#: src/en/documentation/use/advanced-features.md:120
 #, no-wrap
 msgid "The macro gets executed immediately and without an additional confirmation!\n"
 msgstr "La macro viene eseguita immediatamente e senza ulteriore conferma!\n"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:124
+#: src/en/documentation/use/advanced-features.md:125
 msgid ""
 "You can also apply a macro to several ticket at once. Have a loot at [bulk "
 "actions](#bulk-actions) how to do that."
@@ -2271,14 +2280,14 @@ msgstr ""
 "un'occhiata a [azioni di massa](#azioni-bulk) per scoprire come fare."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:125
+#: src/en/documentation/use/advanced-features.md:126
 #: src/en/reference/rest-api/checklist.md:19
 #, no-wrap
 msgid "Checklists"
 msgstr "Checklist"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:128
+#: src/en/documentation/use/advanced-features.md:129
 msgid ""
 "![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/ticket-checklist.png)"
@@ -2288,27 +2297,27 @@ msgstr ""
 "checklist.png)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To keep track of tasks"
 msgstr "Per tenere traccia dei compiti"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To complete tasks in a structured way"
 msgstr "Per completare le attività in modo strutturato"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To make sure nothing gets forgotten"
 msgstr "Per assicurarsi che nulla venga dimenticato"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:135
+#: src/en/documentation/use/advanced-features.md:136
 msgid "To make the progress of work more visible"
 msgstr "Per rendere più visibile l'avanzamento del lavoro"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:140
+#: src/en/documentation/use/advanced-features.md:141
 msgid ""
 "Select the **Checklist** tab in the sidebar. If you can't see it, your "
 "Zammad admin disabled it. You can only add or edit a checklist, if you have "
@@ -2316,12 +2325,12 @@ msgid ""
 msgstr "Seleziona la scheda **Checklist** nella barra laterale."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:142
+#: src/en/documentation/use/advanced-features.md:143
 msgid "In the checklist sidebar, you can:"
 msgstr "Nella barra laterale della checklist puoi:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Add a checklist: either by creating a new one by clicking on `Add Empty "
 "Checklist` or from a template by using `Add From a Template` (if you don't "
@@ -2333,49 +2342,49 @@ msgstr ""
 "sono disponibili)."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 msgid "Edit the current checklist:"
 msgstr "Modificare la checklist corrente:"
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Rename it by clicking on the title or using the ::a:: menu in the sidebar "
 "header."
 msgstr "Rinominarla facendo clic sul titolo o usando il menu ::a::."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 msgid "Add checklist items by clicking the ::+:: button."
 msgstr "Aggiungere elementi alla checklist facendo clic sul pulsante ::+::."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Change the text of the checklist items, either by just clicking on it or "
 "using the ::a:: menu next to the item."
 msgstr "Modificare il testo degli elementi della checklist."
 
 #. type: Bullet: '  - '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 msgid "`Reorder` the items by clicking this button and drag & drop the items."
 msgstr ""
 "`Riordina` gli elementi facendo clic su questo pulsante e trascinandoli con "
 "drag & drop."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:151
+#: src/en/documentation/use/advanced-features.md:152
 msgid ""
 "Delete the complete checklist by using the ::a:: menu in the sidebar header."
 msgstr "Eliminare l'intera checklist usando il menu ::a::."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:153
+#: src/en/documentation/use/advanced-features.md:154
 msgid "There are two features, which are not directly visible:"
 msgstr "Ci sono due funzionalità non direttamente visibili:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:156
+#: src/en/documentation/use/advanced-features.md:157
 msgid ""
 "You can refer to other tickets as a checklist item by using its hook and "
 "number in the item text (e.g.  `Ticket#123456`). Such items can't be checked "
@@ -2387,7 +2396,7 @@ msgstr ""
 "manualmente, ma riflettono lo stato del ticket a cui si fa riferimento."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/advanced-features.md:156
+#: src/en/documentation/use/advanced-features.md:157
 #, no-wrap
 msgid ""
 "  Fetch the ticket hook and number by going to the desired ticket and either use the copy button ::c:: in the header or\n"
@@ -2397,7 +2406,7 @@ msgstr ""
 "  la scorciatoia da tastiera [[.]].\n"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:164
+#: src/en/documentation/use/advanced-features.md:165
 msgid ""
 "Zammad automatically checks if all checklist items are completed. The check "
 "is performed when you set a ticket to \"closed\". If not all items are "
@@ -2410,14 +2419,14 @@ msgstr ""
 "completati."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:165
+#: src/en/documentation/use/advanced-features.md:166
 #, fuzzy, no-wrap
 #| msgid "Ticket Templates"
 msgid "Ticket templates"
 msgstr "Modelli di ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:171
+#: src/en/documentation/use/advanced-features.md:172
 msgid ""
 "Quickly create a ticket with pre-defined attributes like title, text, tags "
 "and more saves you time. This requires your admin to create a ticket "
@@ -2426,7 +2435,7 @@ msgstr ""
 "Creare rapidamente un ticket con attributi predefiniti fa risparmiare tempo."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:176
+#: src/en/documentation/use/advanced-features.md:177
 msgid ""
 "In the ticket create screen, you can find an `Apply Template ^` button in "
 "the footer bar, if a template is available.  Select the template you want to "
@@ -2436,7 +2445,7 @@ msgstr ""
 "nella barra inferiore."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:177
+#: src/en/documentation/use/advanced-features.md:178
 #: src/en/reference/rest-api/shared-draft.md:1
 #: src/en/reference/rest-api/shared-draft.md:6
 #, fuzzy, no-wrap
@@ -2445,7 +2454,7 @@ msgid "Shared drafts"
 msgstr "Bozze condivise"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:184
+#: src/en/documentation/use/advanced-features.md:185
 msgid ""
 "To share a draft with other agents of your group, e.g. to reflect a QA "
 "process, instead of \"just\" adding an internal article. In such a draft you "
@@ -2454,7 +2463,7 @@ msgid ""
 msgstr "Per condividere una bozza con altri agenti del tuo gruppo."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:186
+#: src/en/documentation/use/advanced-features.md:187
 msgid ""
 "This is an optional feature. If you can't see it, your admin has turned it "
 "off."
@@ -2463,7 +2472,7 @@ msgstr ""
 "amministratore l'ha disattivata."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:190
+#: src/en/documentation/use/advanced-features.md:191
 msgid ""
 "To **save a draft**, use the ::a:: menu in the footer of the ticket details "
 "view and select \"Save as draft\"."
@@ -2472,7 +2481,7 @@ msgstr ""
 "bozza\"."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:192
+#: src/en/documentation/use/advanced-features.md:193
 msgid ""
 "To **apply an already existing draft**, click on the `Draft Available` "
 "button on the left side of the footer."
@@ -2481,20 +2490,20 @@ msgstr ""
 "disponibile`."
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/advanced-features.md:193
+#: src/en/documentation/use/advanced-features.md:194
 #, no-wrap
 msgid "Applying a draft overwrites your unsaved changes!\n"
 msgstr "L'applicazione di una bozza sovrascrive le modifiche non salvate!\n"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:197
+#: src/en/documentation/use/advanced-features.md:198
 #, fuzzy, no-wrap
 #| msgid "Monitoring Ticket Escalations"
 msgid "Monitoring ticket escalations"
 msgstr "Monitoraggio delle escalation dei ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:204
+#: src/en/documentation/use/advanced-features.md:205
 msgid ""
 "Service Level Agreements (SLAs) ensure timely responses to customer "
 "requests. Your administrator sets such goals as responding to all inquiries "
@@ -2505,10 +2514,18 @@ msgstr ""
 "alle richieste dei clienti."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:211
+#: src/en/documentation/use/advanced-features.md:212
+#, fuzzy
+#| msgid ""
+#| "Zammad notifies you by default when tickets approach or exceed their "
+#| "deadlines. Configure these notifications in your [profile settings](/en/"
+#| "documentation/use/user-profile#notifications). Zammad also ships a "
+#| "default overview called \"Escalated Tickets\". This overview includes "
+#| "already escalated tickets and tickets which are expected to escalate "
+#| "within the next 10 minutes."
 msgid ""
 "Zammad notifies you by default when tickets approach or exceed their "
-"deadlines. Configure these notifications in your [profile settings](/en/"
+"deadlines. Configure these notifications in your [personal settings](/en/"
 "documentation/use/user-profile#notifications). Zammad also ships a default "
 "overview called \"Escalated Tickets\". This overview includes already "
 "escalated tickets and tickets which are expected to escalate within the next "
@@ -2523,7 +2540,7 @@ msgstr ""
 "minuti."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:214
+#: src/en/documentation/use/advanced-features.md:215
 msgid ""
 "SLA-relevant tickets display a timestamp in the ticket detail header. Hover "
 "over this timestamp to see all escalation stages and deadlines in a popup. "
@@ -2537,7 +2554,7 @@ msgstr ""
 "o già raggiunti in base alla configurazione dell'SLA."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:216
+#: src/en/documentation/use/advanced-features.md:217
 msgid ""
 "![Screenshot shows escalation panel by hovering over escalation timestamp](/"
 "screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-"
@@ -2548,7 +2565,7 @@ msgstr ""
 "features.cy.js/escalation-panel.png)"
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/advanced-features.md:217
+#: src/en/documentation/use/advanced-features.md:218
 #, no-wrap
 msgid ""
 "The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a\n"
@@ -2556,7 +2573,7 @@ msgid ""
 msgstr "I tempi di escalation vengono calcolati in base al tuo orario di lavoro. Ciò significa che se il tuo orario di lavoro inizia alle 9:00, un ticket viene creato alle 7:00 e hai un termine di 1 ora, verrà inoltrato alle 10:00, a meno che non venga risolto prima.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:224
+#: src/en/documentation/use/advanced-features.md:225
 msgid ""
 "The SLA feature requires a configuration from your admin. In case you don’t "
 "see escalation timestamps, either the ticket is not SLA-relevant or the "
@@ -2566,7 +2583,7 @@ msgstr ""
 "amministratore."
 
 #. type: Title ###
-#: src/en/documentation/use/advanced-features.md:225
+#: src/en/documentation/use/advanced-features.md:226
 #: src/en/documentation/use/guides/overviews.md:82
 #, fuzzy, no-wrap
 #| msgid "Bulk Actions"
@@ -2574,47 +2591,47 @@ msgid "Bulk actions"
 msgstr "Azioni bulk"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:230
+#: src/en/documentation/use/advanced-features.md:231
 msgid ""
 "If you have to apply the same changes for many ticket, you can save time!"
 msgstr ""
 "Se devi applicare le stesse modifiche a molti ticket, puoi risparmiare tempo!"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:234
+#: src/en/documentation/use/advanced-features.md:235
 msgid "There are 2 places where you can apply bulk actions:"
 msgstr "Ci sono 2 posti dove puoi applicare azioni bulk:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:237
+#: src/en/documentation/use/advanced-features.md:238
 msgid "In the ticket tab in the [detailed search page](guides/search)"
 msgstr ""
 "Nella scheda ticket nella [pagina di ricerca dettagliata](guides/search)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:237
+#: src/en/documentation/use/advanced-features.md:238
 msgid "In [Overviews](guides/overviews)"
 msgstr "Nelle [Panoramiche](guides/overviews)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:239
+#: src/en/documentation/use/advanced-features.md:240
 msgid "In both places, you can apply bulk actions in different ways:"
 msgstr "In entrambi i posti puoi applicare azioni bulk in diversi modi:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
+#: src/en/documentation/use/advanced-features.md:243
 #, fuzzy
 #| msgid "By using the side panel"
 msgid "By using the flyout"
 msgstr "Usando il pannello laterale"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:242
+#: src/en/documentation/use/advanced-features.md:243
 msgid "By using the drag & drop overlay"
 msgstr "Usando l'overlay drag & drop"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:248
+#: src/en/documentation/use/advanced-features.md:249
 msgid ""
 "To use bulk actions, first select the tickets you want to apply the changes "
 "to. Either select the tickets individually by clicking on the checkbox next "
@@ -2635,7 +2652,7 @@ msgstr ""
 "massa è 2000."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:251
+#: src/en/documentation/use/advanced-features.md:252
 msgid ""
 "To select a section of consecutive tickets, click on the checkbox of the "
 "first ticket, then hold [[shift]] and click on the checkbox of the last "
@@ -2646,7 +2663,7 @@ msgstr ""
 "del primo ticket, poi tieni premuto [[shift]] e fai clic sull'ultimo."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:255
+#: src/en/documentation/use/advanced-features.md:256
 msgid ""
 "Depending on the number of affected tickets, you might see a small "
 "notification after triggering a bulk action, informing you about the "
@@ -2658,14 +2675,14 @@ msgstr ""
 "notifica."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:257
+#: src/en/documentation/use/advanced-features.md:258
 #, fuzzy, no-wrap
 #| msgid "**Outbound:**\n"
 msgid "**Flyout:**\n"
 msgstr "**In uscita:**\n"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:259
+#: src/en/documentation/use/advanced-features.md:260
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows the bulk action side panel](/screenshots/cypress/"
@@ -2679,7 +2696,7 @@ msgstr ""
 "panel-overviews.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:262
+#: src/en/documentation/use/advanced-features.md:263
 #, fuzzy
 #| msgid ""
 #| "After you selected tickets, click the `Bulk Action` button in the top "
@@ -2696,45 +2713,45 @@ msgstr ""
 "ticket sono:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:270
+#: src/en/documentation/use/advanced-features.md:284
 msgid "Set group"
 msgstr "Imposta gruppo"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:270
+#: src/en/documentation/use/advanced-features.md:284
 msgid "Set owner"
 msgstr "Imposta proprietario"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 msgid "Set state"
 msgstr "Imposta stato"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 msgid "Set priority"
 msgstr "Imposta priorità"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 msgid "Add a note"
 msgstr "Aggiungi una nota"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:269
+#: src/en/documentation/use/advanced-features.md:270
 msgid "Execute a macro"
 msgstr "Esegui una macro"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:271
+#: src/en/documentation/use/advanced-features.md:272
 #, no-wrap
 msgid "**Drag & drop with bulk overlay:**\n"
 msgstr "**Drag & drop con overlay bulk:**\n"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:273
+#: src/en/documentation/use/advanced-features.md:274
 msgid ""
 "![Screenshot shows the bulk action via drag and drop](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)"
@@ -2744,7 +2761,7 @@ msgstr ""
 "drop.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:277
+#: src/en/documentation/use/advanced-features.md:278
 msgid ""
 "After you selected tickets, drag them by pressing and holding the mouse "
 "button and drop them on the desired action in the bulk action overlay. You "
@@ -2757,22 +2774,22 @@ msgstr ""
 "centro della pagina. Le azioni disponibili che puoi applicare ai ticket sono:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:284
 msgid "Unassign owner"
 msgstr "Rimuovi assegnatario"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:284
 msgid "Unassign owner and set group"
 msgstr "Rimuovi assegnatario e imposta gruppo"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:283
+#: src/en/documentation/use/advanced-features.md:284
 msgid "Run macro"
 msgstr "Esegui macro"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:286
+#: src/en/documentation/use/advanced-features.md:287
 msgid ""
 "Start your drag and drop action from one of the already selected tickets in "
 "case you selected all relevant ones.  To include another unselected ticket, "
@@ -2780,14 +2797,14 @@ msgid ""
 msgstr "Avvia l'azione drag and drop da uno dei ticket già selezionati."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:287
+#: src/en/documentation/use/advanced-features.md:288
 #, fuzzy, no-wrap
 #| msgid "Merge Tickets"
 msgid "Merge tickets"
 msgstr "Unire i ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:290
+#: src/en/documentation/use/advanced-features.md:291
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows the ticket merge side panel](/screenshots/cypress/"
@@ -2801,7 +2818,7 @@ msgstr ""
 "merge.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:296
+#: src/en/documentation/use/advanced-features.md:297
 msgid ""
 "If you have two or more tickets about the same issue, you may want to merge "
 "those tickets into one. This might be the case if a customer sends you a new "
@@ -2813,7 +2830,7 @@ msgstr ""
 "solo."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:298
+#: src/en/documentation/use/advanced-features.md:299
 msgid ""
 "Merging a ticket migrates all messages and notes of the ticket from where "
 "you select the merging into the selected one."
@@ -2822,7 +2839,7 @@ msgstr ""
 "selezionato."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:304
+#: src/en/documentation/use/advanced-features.md:305
 #, fuzzy
 #| msgid ""
 #| "Go to the ticket you want to merge into another one. In the ticket "
@@ -2841,7 +2858,7 @@ msgstr ""
 "usa il menu ::a:: e seleziona `Unisci`."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:307
+#: src/en/documentation/use/advanced-features.md:308
 msgid ""
 "As result, the articles are moved into the chosen ticket. The ticket in "
 "which you executed the merge still exists with the following changes:"
@@ -2851,29 +2868,29 @@ msgstr ""
 "modifiche:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:311
+#: src/en/documentation/use/advanced-features.md:312
 msgid "The articles have been replaced by a \"merged\" label"
 msgstr "Gli articoli sono stati sostituiti da un'etichetta \"unito\""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:311
+#: src/en/documentation/use/advanced-features.md:312
 msgid "The state has changed to \"merged\""
 msgstr "Lo stato è cambiato in \"unito\""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:311
+#: src/en/documentation/use/advanced-features.md:312
 msgid "The ticket is linked to its \"parent\" ticket"
 msgstr "Il ticket è collegato al suo ticket \"genitore\""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:312
+#: src/en/documentation/use/advanced-features.md:313
 #, fuzzy, no-wrap
 #| msgid "Split Tickets"
 msgid "Split tickets"
 msgstr "Dividere i ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:315
+#: src/en/documentation/use/advanced-features.md:316
 msgid ""
 "![Screenshot shows the article action split menu](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/ticket-split.png)"
@@ -2883,7 +2900,7 @@ msgstr ""
 "split.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:320
+#: src/en/documentation/use/advanced-features.md:321
 msgid ""
 "If you have a ticket which is about more than one issue, you might want to "
 "split it in two or more separate tickets.  For example, this might be the "
@@ -2893,7 +2910,7 @@ msgstr ""
 "in due o più ticket separati."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:324
+#: src/en/documentation/use/advanced-features.md:325
 msgid ""
 "To split an article off, use the ::a:: menu next to an article and select "
 "`Split`."
@@ -2902,7 +2919,7 @@ msgstr ""
 "`Dividi`."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:327
+#: src/en/documentation/use/advanced-features.md:328
 msgid ""
 "This results in a ticket create screen with the same attributes set as in "
 "the initial ticket. The content of the article is also included. You can "
@@ -2913,21 +2930,21 @@ msgstr ""
 "modificare tutto in base alle tue esigenze e poi fare clic su \"Crea\"."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:330
+#: src/en/documentation/use/advanced-features.md:331
 msgid ""
 "The just created ticket is linked in the original one as child. The original "
 "ticket is linked in the split off ticket as parent."
 msgstr "Il ticket appena creato è collegato in quello originale come figlio."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:331
+#: src/en/documentation/use/advanced-features.md:332
 #, fuzzy, no-wrap
 #| msgid "Link Tickets"
 msgid "Link tickets"
 msgstr "Collegare i ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:337
+#: src/en/documentation/use/advanced-features.md:338
 msgid ""
 "When tickets about related issues arise, they can be linked to each other "
 "for easier reference.  [Merged](#merge-tickets) and [split](#split-tickets) "
@@ -2939,7 +2956,7 @@ msgstr ""
 "automaticamente."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:343
+#: src/en/documentation/use/advanced-features.md:344
 #, fuzzy
 #| msgid ""
 #| "In the ticket sidebar, add a link to another ticket by clicking the ::+:: "
@@ -2960,12 +2977,12 @@ msgstr ""
 "Inoltre, puoi scegliere tra diversi tipi di collegamento:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:347
+#: src/en/documentation/use/advanced-features.md:348
 msgid "**Normal:** for related ticket which have no hierarchy."
 msgstr "**Normale:** per ticket correlati senza gerarchia."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:347
+#: src/en/documentation/use/advanced-features.md:348
 msgid ""
 "**Parent/Child**: for related tickets where one is the main issue and the "
 "other is a subtask. This link type is used by default if a tickets gets "
@@ -2975,14 +2992,14 @@ msgstr ""
 "e l'altro è un'attività secondaria."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:348
+#: src/en/documentation/use/advanced-features.md:349
 #, fuzzy, no-wrap
 #| msgid "Duplicate Detection"
 msgid "Duplicate detection"
 msgstr "Rilevamento duplicati"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:351
+#: src/en/documentation/use/advanced-features.md:352
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket creation](/"
 "screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-"
@@ -2993,7 +3010,7 @@ msgstr ""
 "detection.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:357
+#: src/en/documentation/use/advanced-features.md:358
 msgid ""
 "Sometimes, it happens that a customer reaches out to you (or colleagues) "
 "more than once about a single issue. To avoid creating duplicate tickets, "
@@ -3006,7 +3023,7 @@ msgstr ""
 "deve essere attivata e configurata dal tuo amministratore."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:363
+#: src/en/documentation/use/advanced-features.md:364
 msgid ""
 "Just create a new ticket and provide some information. Your admin can "
 "configure which ticket attributes must match for the warning to show up "
@@ -3020,7 +3037,7 @@ msgstr ""
 "tuo amministratore di regolare gli attributi da confrontare."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:367
+#: src/en/documentation/use/advanced-features.md:368
 msgid ""
 "When a duplicate is detected, a warning in the ticket shows up (see the "
 "example in screenshot above). This warning can contain a ticket number. "
@@ -3033,7 +3050,7 @@ msgstr ""
 "un duplicato, ignoralo e continua con la creazione del ticket."
 
 #. type: Title #
-#: src/en/documentation/use/advanced-features.md:368
+#: src/en/documentation/use/advanced-features.md:369
 #: src/en/documentation/use/guides/mobile-view.md:72
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
@@ -3042,7 +3059,7 @@ msgid "Time accounting"
 msgstr "Contabilità del tempo"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:375
+#: src/en/documentation/use/advanced-features.md:376
 msgid ""
 "With Zammad's integrated time accounting, you can help to keep track of how "
 "much time you spent on tickets. Based on the accounted times in the ticket, "
@@ -3056,7 +3073,7 @@ msgstr ""
 "supporto."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:379
+#: src/en/documentation/use/advanced-features.md:380
 msgid ""
 "After updating a ticket, a time accounting dialog will appear. Enter how "
 "much time you spent on the ticket."
@@ -3065,7 +3082,7 @@ msgstr ""
 "contabilità del tempo. Inserisci quanto tempo hai trascorso sul ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:381
+#: src/en/documentation/use/advanced-features.md:382
 msgid ""
 "![Screenshot shows the time accounting dialog](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/time-accounting-dialog.png)"
@@ -3075,7 +3092,7 @@ msgstr ""
 "accounting-dialog.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:384
+#: src/en/documentation/use/advanced-features.md:385
 msgid ""
 "The feature is **optional**. If you don't see it whenever you update a "
 "ticket, your administrator hasn't enabled it yet or the rule for tickets to "
@@ -3086,7 +3103,7 @@ msgstr ""
 "prendere in considerazione non corrisponde."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:387
+#: src/en/documentation/use/advanced-features.md:388
 msgid ""
 "The accounted time is always recorded and stored without a unit. However, "
 "your administrator may decide to show an optional label next to the field to "
@@ -3098,7 +3115,7 @@ msgstr ""
 "al campo per indicare in quale unità è previsto il tempo (vedi screenshot)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:390
+#: src/en/documentation/use/advanced-features.md:391
 msgid ""
 "Activity types can be used to distinguish between different activities and "
 "for grouping the accounted times. If this optional feature is active, it "
@@ -3111,7 +3128,7 @@ msgstr ""
 "di dialogo per la contabilità del tempo."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:395
+#: src/en/documentation/use/advanced-features.md:396
 #, fuzzy
 #| msgid ""
 #| "If a ticket already has accounted time(s), you can see it in the ticket "
@@ -3131,7 +3148,7 @@ msgstr ""
 "somma totale dei tempi registrati per tutti i tipi di attività."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:397
+#: src/en/documentation/use/advanced-features.md:398
 msgid ""
 "![Screenshot shows the time accounting overview](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
@@ -3141,14 +3158,14 @@ msgstr ""
 "accounting-overview.png)"
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:398
+#: src/en/documentation/use/advanced-features.md:399
 #, fuzzy, no-wrap
 #| msgid "User Detail Panel"
 msgid "User detail panel"
 msgstr "Pannello dettagli utente"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:404
+#: src/en/documentation/use/advanced-features.md:405
 msgid ""
 "Viewing important customer/user information at a glance without leaving your "
 "current view allows you to stay focused on your task."
@@ -3158,7 +3175,7 @@ msgstr ""
 "concentrato sul tuo compito."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:410
+#: src/en/documentation/use/advanced-features.md:411
 msgid ""
 "You might have seen it already: simply hover your mouse over an avatar icon, "
 "no matter if it is in the header, footer, main content or the content "
@@ -3172,7 +3189,7 @@ msgstr ""
 "dei dettagli utente](#pagina-dei-dettagli-utente)."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:412
+#: src/en/documentation/use/advanced-features.md:413
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)"
@@ -3182,7 +3199,7 @@ msgstr ""
 "panel.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:415
+#: src/en/documentation/use/advanced-features.md:416
 msgid ""
 "By the way, the crown in the screenshot represents the customer's VIP state, "
 "which can be set in the customer detail view and the admin settings."
@@ -3192,14 +3209,14 @@ msgstr ""
 "nelle impostazioni amministratore."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:416
+#: src/en/documentation/use/advanced-features.md:417
 #, fuzzy, no-wrap
 #| msgid "User Detail Page"
 msgid "User detail page"
 msgstr "Pagina dei dettagli utente"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:419
+#: src/en/documentation/use/advanced-features.md:420
 msgid ""
 "![Screenshot shows user detail page](/screenshots/cypress/documentation/use/"
 "advanced-features.cy.js/user-detail-page.png)"
@@ -3208,7 +3225,7 @@ msgstr ""
 "documentation/use/advanced-features.cy.js/user-detail-page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:423
+#: src/en/documentation/use/advanced-features.md:424
 msgid ""
 "It allows you to see all relevant user information in one place. Examples "
 "what you can find and do there:"
@@ -3217,39 +3234,39 @@ msgstr ""
 "unico posto. Esempi di cosa puoi trovare e fare lì:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 msgid "See organization membership"
 msgstr "Vedere l'appartenenza all'organizzazione"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 msgid "See a graph of recent tickets"
 msgstr "Vedere un grafico dei ticket recenti"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:451
 msgid "Add or edit a note"
 msgstr "Aggiungere o modificare una nota"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 msgid "Edit the customer (via ::a:: menu)"
 msgstr "Modificare il cliente (tramite menu ::a::)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:431
+#: src/en/documentation/use/advanced-features.md:451
 msgid "See a history of changes (via ::a:: menu)"
 msgstr "Vedere la cronologia delle modifiche (tramite menu ::a::)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:430
+#: src/en/documentation/use/advanced-features.md:431
 msgid "Create a new ticket with this user as customer"
 msgstr "Creare un nuovo ticket con questo utente come cliente"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:435
+#: src/en/documentation/use/advanced-features.md:436
 msgid ""
 "Simply click on a user avatar (e.g. in the header of the ticket detail "
 "view). This opens a new tab with the customer detail page. In case you also "
@@ -3262,14 +3279,14 @@ msgstr ""
 "persino creare un job di eliminazione per un utente dal menu ::a::."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:436
+#: src/en/documentation/use/advanced-features.md:437
 #, fuzzy, no-wrap
 #| msgid "Organization Detail Page"
 msgid "Organization detail page"
 msgstr "Pagina dei dettagli organizzazione"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:439
+#: src/en/documentation/use/advanced-features.md:440
 msgid ""
 "![Screenshot shows organization detail page](/screenshots/cypress/"
 "documentation/use/advanced-features.cy.js/organization-detail-page.png)"
@@ -3279,7 +3296,7 @@ msgstr ""
 "page.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:443
+#: src/en/documentation/use/advanced-features.md:444
 msgid ""
 "It allows you to see all relevant organization information in one place. "
 "Examples what you can find and do there:"
@@ -3288,27 +3305,27 @@ msgstr ""
 "un unico posto. Esempi di cosa puoi trovare e fare lì:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 msgid "See the members of the organization"
 msgstr "Vedere i membri dell'organizzazione"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 msgid "See a graph of the recent tickets of the whole organization"
 msgstr "Vedere un grafico dei ticket recenti dell'intera organizzazione"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 msgid "Edit the organization (via ::a:: menu)"
 msgstr "Modificare l'organizzazione (tramite menu ::a::)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/advanced-features.md:450
+#: src/en/documentation/use/advanced-features.md:451
 msgid "Create a new user as a member of this organization"
 msgstr "Creare un nuovo utente come membro di questa organizzazione"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:455
+#: src/en/documentation/use/advanced-features.md:456
 msgid ""
 "Simply click on an organization avatar (e.g. in the header of the ticket "
 "detail view next to the user avatar). This opens a new tab with the "
@@ -3319,14 +3336,14 @@ msgstr ""
 "utente). Si apre una nuova scheda con la pagina dei dettagli organizzazione."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:456
+#: src/en/documentation/use/advanced-features.md:457
 #, fuzzy, no-wrap
 #| msgid "External Issues and Assets"
 msgid "External issues and assets"
 msgstr "Problemi e risorse esterne"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:463
+#: src/en/documentation/use/advanced-features.md:464
 #, fuzzy
 #| msgid ""
 #| "If you use i-doit and Zammad for IT support or you deal with Github or "
@@ -3345,7 +3362,7 @@ msgstr ""
 "attivare e configurare queste funzionalità nelle impostazioni di Zammad."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:467
+#: src/en/documentation/use/advanced-features.md:468
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
@@ -3361,7 +3378,7 @@ msgstr ""
 "features.cy.js/gitlab-content-sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:472
+#: src/en/documentation/use/advanced-features.md:473
 #, fuzzy
 #| msgid ""
 #| "If activated, simply open a ticket and choose the right content sidebar "
@@ -3387,14 +3404,14 @@ msgstr ""
 "rispettivo sistema."
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:473
+#: src/en/documentation/use/advanced-features.md:474
 #, fuzzy, no-wrap
 #| msgid "Highlight Text"
 msgid "Highlight text"
 msgstr "Evidenzia testo"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:480
+#: src/en/documentation/use/advanced-features.md:481
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
 "ticket and to make sure important parts aren't getting overlooked. Be aware "
@@ -3408,7 +3425,7 @@ msgstr ""
 "testo negli articoli esistenti per te e altri agenti."
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:484
+#: src/en/documentation/use/advanced-features.md:485
 msgid ""
 "![Screenshot shows highlight menu from ticket detail view](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)"
@@ -3418,7 +3435,7 @@ msgstr ""
 "features.cy.js/text-highlighting.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:488
+#: src/en/documentation/use/advanced-features.md:489
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "
 "the ticket detail view. To highlight text, either select text first and then "
@@ -5066,7 +5083,7 @@ msgstr "Schede contenuto : Qui trovi le schede per i tuoi ticket aperti, utenti 
 #| "  a reporting button as well.\n"
 msgid ""
 "Bottom bar\n"
-": Profile settings and create new ticket button. In case you have additional permissions, there might be a settings and\n"
+": Personal settings and create new ticket button. In case you have additional permissions, there might be a settings and\n"
 "  a reporting button as well.\n"
 msgstr ""
 "Barra inferiore\n"
@@ -5314,10 +5331,18 @@ msgstr "Cosa vede il cliente nel ticket?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:50
+#, fuzzy
+#| msgid ""
+#| "By default, customers only have a reduced interface. They can create "
+#| "tickets, view their own tickets (and maybe their colleague's too, "
+#| "depending on the setting) and access their profile settings. Even the "
+#| "ticket detail view only includes relevant elements for the customer. "
+#| "Elements, which have an internal purpose (like group, priority, internal "
+#| "notes, are not visible to the customer."
 msgid ""
 "By default, customers only have a reduced interface. They can create "
 "tickets, view their own tickets (and maybe their colleague's too, depending "
-"on the setting) and access their profile settings. Even the ticket detail "
+"on the setting) and access their personal settings. Even the ticket detail "
 "view only includes relevant elements for the customer. Elements, which have "
 "an internal purpose (like group, priority, internal notes, are not visible "
 "to the customer."
@@ -5442,9 +5467,15 @@ msgstr "Come cambiare la mia immagine profilo/avatar?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:88
+#, fuzzy
+#| msgid ""
+#| "Go to the [avatar section](user-profile#avatar) in you profile settings "
+#| "by opening the avatar menu in the bottom left corner and select **Profile "
+#| "settings**. There you can upload an image, capture a photo (if your "
+#| "device has a camera) or delete already present images."
 msgid ""
-"Go to the [avatar section](user-profile#avatar) in you profile settings by "
-"opening the avatar menu in the bottom left corner and select **Profile "
+"Go to the [avatar section](user-profile#avatar) in your personal settings by "
+"opening the avatar menu in the bottom left corner and select **Personal "
 "settings**. There you can upload an image, capture a photo (if your device "
 "has a camera) or delete already present images."
 msgstr ""
@@ -5462,10 +5493,15 @@ msgstr "Come cambiare la lingua dell'interfaccia utente di Zammad?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:93
+#, fuzzy
+#| msgid ""
+#| "Go to the [language section](user-profile#language) in you profile "
+#| "settings by opening the avatar menu in the bottom left corner and select "
+#| "**Profile settings**."
 msgid ""
-"Go to the [language section](user-profile#language) in you profile settings "
-"by opening the avatar menu in the bottom left corner and select **Profile "
-"settings**."
+"Go to the [language section](user-profile#language) in your personal "
+"settings by opening the avatar menu in the bottom left corner and select "
+"**Personal settings**."
 msgstr ""
 "Vai alla [sezione lingua](user-profile#lingua) nelle impostazioni del "
 "profilo aprendo il menu avatar nell'angolo in basso a sinistra e "
@@ -5479,10 +5515,15 @@ msgstr "Cosa dovrei fare prima di andare in vacanza?"
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:98
+#, fuzzy
+#| msgid ""
+#| "Go to the [out of office section](user-profile#out-of-office) in you "
+#| "profile settings by opening the avatar menu in the bottom left corner and "
+#| "select **Profile settings**. There you can define a replacement agent."
 msgid ""
-"Go to the [out of office section](user-profile#out-of-office) in you profile "
-"settings by opening the avatar menu in the bottom left corner and select "
-"**Profile settings**. There you can define a replacement agent."
+"Go to the [out of office section](user-profile#out-of-office) in your "
+"personal settings by opening the avatar menu in the bottom left corner and "
+"select **Personal settings**. There you can define a replacement agent."
 msgstr ""
 "Vai alla [sezione fuori ufficio](user-profile#fuori-ufficio) nelle "
 "impostazioni del profilo aprendo il menu avatar nell'angolo in basso a "
@@ -5846,9 +5887,8 @@ msgstr ""
 "**Riscrivi la sezione complessa e rendila facile da capire**: Rimuove le "
 "parti non necessarie e riscrive il tuo testo in modo chiaro e comprensibile."
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/guides/ai.md:67
-#: src/en/documentation/use/guides/knowledge-base.md:70
 #, fuzzy, no-wrap
 #| msgid "Knowledge base"
 msgid "Knowledge base assistant"
@@ -6424,70 +6464,86 @@ msgid "Knowledge base"
 msgstr "Base di conoscenza"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:11
+#: src/en/documentation/use/guides/knowledge-base.md:10
 msgid ""
-"The knowledge base is Zammad's built-in content library for organizing FAQs, "
-"how-tos, internal processes, and more.  Customers can browse published "
-"answers (articles) for self-service, while agents can use answers as "
-"internal references or insert them directly into ticket replies."
+"The knowledge base is Zammad's built-in library for FAQs, how-tos and "
+"internal documentation. Customers browse published answers for self-service, "
+"agents use them as a reference or insert them directly into ticket replies."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:14
-msgid ""
-"This guide is written for agents who want to edit the knowledge base or use "
-"it in their daily work. Customers should be able to browse through the "
-"public knowledge base without detailed instructions."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:16
-msgid "This feature is optional and must be activated by your administrator."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:18
+#: src/en/documentation/use/guides/knowledge-base.md:12
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows opened overview section](/screenshots/cypress/"
 #| "documentation/use/guide-overview.cy.js/overview-full.png)"
 msgid ""
-"![Screenshot shows knowledge base overview](/screenshots/cypress/"
-"documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)"
+"![Screenshot shows a knowledge base category with its subcategories and "
+"answers](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/"
+"knowledge-base-full.png)"
 msgstr ""
 "![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
 "documentation/use/guide-overview.cy.js/overview-full.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:23
+#: src/en/documentation/use/guides/knowledge-base.md:19
 msgid ""
-"Click **Knowledge Base** in the primary navigation to open it. The knowledge "
-"base opens in preview mode, which looks similar to the published version "
-"customers see."
+"Your administrator has to activate the knowledge base and grant you the "
+"reader or editor permission before you can work with it. Whether you can "
+"read internal answers or edit content depends on this configuration. Zammad "
+"supports one knowledge base per system, which can hold content in several "
+"locales. To open the knowledge base, click on **Knowledge Base** in the "
+"primary navigation."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:20
+#, fuzzy, no-wrap
+#| msgid "Heading Structure"
+msgid "Structure"
+msgstr "Struttura delle intestazioni"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:25
+msgid ""
+"The knowledge base is built from two kinds of content. **Categories** work "
+"like folders in a file system: they group content, can contain further "
+"subcategories and each one needs a title and an icon. **Answers** are the "
+"pages or articles themselves and have a title plus rich content, living "
+"inside a category."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:26
+#, no-wrap
+msgid "Multiple languages"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:27
+#: src/en/documentation/use/guides/knowledge-base.md:31
 msgid ""
-"The knowledge base is organized into **categories** that can contain "
-"subcategories and **answers**.  Each category requires an icon and a title. "
-"Answers consist of a title and rich text content with formatting, images, "
-"videos, file attachments, and links."
+"If your administrator enabled several locales for the knowledge base, an "
+"answer can exist in more than one language, one translation per locale. "
+"Switch the locale selector in the top bar to read or edit another language. "
+"An answer that has no translation in the active locale yet opens with empty "
+"fields in the editor."
 msgstr ""
 
-#. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:28
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:32
 #, no-wrap
 msgid "Visibility"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:31
-msgid "Each answer has a visibility level that controls who can see it:"
+#: src/en/documentation/use/guides/knowledge-base.md:36
+msgid ""
+"Every answer has one of four publication states. The state is shown as a "
+"colored icon on the answer and on its category tile:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:37
+#: src/en/documentation/use/guides/knowledge-base.md:43
 #, fuzzy, no-wrap
 #| msgid ""
 #| "|                                             | GUI configuration | Environment variable       |\n"
@@ -6497,121 +6553,545 @@ msgstr ""
 #| "| Configuration check                         | Yes               | Manually via test script   |\n"
 #| "| Exceptions                                  | Yes               | No                         |\n"
 msgid ""
-"| Color | Level                       | Who can see it                                                     |\n"
-"|-------|---------------------------  |--------------------------------------------------------------------|\n"
-"| Green | **Public**                  | Everyone, including customers browsing the public knowledge base   |\n"
-"| Blue  | **Internal**                | Agents and editors only                                            |\n"
-"| Gray  | **Draft** or **Archived**   | Editors only                                                       |\n"
+"| Color | State     | Who can see it                                        |\n"
+"|-------|-----------|--------------------------------------------------------|\n"
+"| Green | Published | Everyone, including customers on the public help site  |\n"
+"| Blue  | Internal  | Agents with knowledge base reader permission           |\n"
+"| Gray  | Draft     | Editors only                                           |\n"
+"| Gray  | Archived  | Editors only                                           |\n"
 msgstr "|                                             | Configurazione GUI | Variabile d'ambiente\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:39
-msgid "Changes to visibility take effect immediately."
-msgstr ""
-
-#. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/knowledge-base.md:40
-#, no-wrap
-msgid ""
-"Public answers are always visible to everyone. Internal answers require the **Knowledge Base Reader** permission.\n"
-"Choose visibility carefully when publishing answers.\n"
-msgstr ""
-
-#. type: Title ##
 #: src/en/documentation/use/guides/knowledge-base.md:45
-#, fuzzy, no-wrap
-#| msgid "Knowledge base"
-msgid "Editing the knowledge base"
-msgstr "Base di conoscenza"
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:49
 msgid ""
-"Open the knowledge base and switch to edit mode using the `Edit` button in "
-"the top toolbar. If you can't see the `Edit` button, your administrator "
-"needs to grant you the appropriate permissions."
+"When viewing or editing an answer, a badge in the top bar shows you the "
+"current or planned (scheduled) visibility too."
 msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:46
+#, fuzzy, no-wrap
+#| msgid "Link Tickets"
+msgid "Use in tickets"
+msgstr "Collegare i ticket"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:52
 msgid ""
-"To create a new category, click the `+` button on the main page. To create a "
-"new answer, navigate into a category and click the `+` button there. Enter a "
-"title and content, set the visibility level, and save your changes."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:56
-msgid ""
-"The knowledge base editor provides the same rich text capabilities as the "
-"ticket article editor. You can format text, add links to other knowledge "
-"base answers or external websites, embed images and videos, attach files, "
-"and use tags to improve searchability."
+"The knowledge base unfolds part of its value inside tickets: insert an "
+"answer into a reply with [[?]][[?]], link related answers to a ticket and "
+"let AI suggest or draft answers based on the ticket content. These workflows "
+"are covered in [Insert knowledge base article](/en/documentation/use/"
+"advanced-features#insert-knowledge-base-article) and in the [knowledge base "
+"assistant](/en/documentation/use/guides/ai#knowledge-base-assistant) section "
+"of the AI guide."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:57
+#: src/en/documentation/use/guides/knowledge-base.md:53
 #, fuzzy, no-wrap
-#| msgid "Insert Knowledge Base Article"
-msgid "Using the knowledge base in tickets"
-msgstr "Inserisci articolo dalla base di conoscenza"
+#| msgid "Knowledge base"
+msgid "Read the knowledge base"
+msgstr "Base di conoscenza"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:59
+#: src/en/documentation/use/guides/knowledge-base.md:55
 #, no-wrap
-msgid "Inserting answers into replies"
+msgid "Browse"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:62
+#: src/en/documentation/use/guides/knowledge-base.md:60
 msgid ""
-"You can insert knowledge base article content directly into a ticket reply "
-"without leaving the ticket:"
+"The knowledge base home shows one tile for every top-level category, "
+"arranged in a grid. Each tile shows the category icon, its title, its "
+"publication state and two counts: the number of subcategories and the number "
+"of answers it contains across all subcategories."
 msgstr ""
 
-#. type: Bullet: '1. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
-msgid "Start composing a reply in the ticket editor."
-msgstr ""
-
-#. type: Bullet: '2. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:64
 msgid ""
-"Click the `Insert text from knowledge base answer` button in the editor "
-"toolbar or type [[?]][[?]]."
-msgstr ""
-
-#. type: Bullet: '3. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
-msgid "Search for the relevant answer by title or content."
-msgstr ""
-
-#. type: Bullet: '4. '
-#: src/en/documentation/use/guides/knowledge-base.md:67
-msgid "Select the article to insert its content at the cursor position."
+"To open a category, simply click on its tile. Its subcategories appear as "
+"tiles on top, its answers below them as a list. Select an answer to read it. "
+"Use the back and forward buttons in the top bar to jump between previously "
+"visited answers."
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:69
 msgid ""
-"The inserted content preserves formatting and can be edited before sending."
+"Use the search bar on top to search the knowledge base. Use the locale "
+"selector to switch between translated content.  The knowledge base icon at "
+"the start of the breadcrumb in the top bar takes you back to the knowledge "
+"base home. The preview button with the tooltip **View public knowledge "
+"base** on the right side of the top bar shows the knowledge base as your "
+"customers see it."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:75
+#: src/en/documentation/use/guides/knowledge-base.md:74
 msgid ""
-"When the AI-based knowledge base assistant is enabled, Zammad can suggest "
-"relevant knowledge base answers based on the ticket content. These "
-"suggestions appear in the **Related knowledge** section of the ticket "
-"sidebar. If a suggested answer solves the problem, it can be linked "
-"permanently to the ticket."
+"The search bar on top of the knowledge base searches answer titles and "
+"content as well as category titles. When you start the search from within a "
+"category, only this category and its subcategories are searched."
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:77
 msgid ""
-"The knowledge base assistant also offers a way to automatically create a "
-"knowledge base answer from the ticket based on its content."
+"Search terms support Elasticsearch syntax. All terms have to match and plain "
+"terms also match word beginnings, so `refund` finds `refunds`. To filter by "
+"a field, name the field in your search:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:84
+#, no-wrap
+msgid ""
+"| Example                   | Finds                                   |\n"
+"|---------------------------|------------------------------------------|\n"
+"| `created_at:>now-14d`     | Answers created within the last 14 days  |\n"
+"| `edited_at:>now-3d`       | Answers updated within the last 3 days   |\n"
+"| `tags:ai-generated`       | Answers tagged `ai-generated`            |\n"
+"| `publication_state:draft` | All draft answers                        |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:87
+msgid ""
+"The `tags:` and `publication_state:` fields require Elasticsearch. Searches "
+"that name a field match exactly and do not use prefix matching."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:90
+msgid ""
+"Select the light bulb in the search bar for suggested searches. It offers "
+"the most common filters as one-click shortcuts and a link to this "
+"documentation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:94
+msgid ""
+"Knowledge base answers also appear in the global search. In the detailed "
+"search, they are available as a separate search entity with title, "
+"visibility and update date as result columns. See [Search](/en/documentation/"
+"use/guides/search)  for the detailed search and the full Elasticsearch "
+"syntax."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:95
+#, fuzzy, no-wrap
+#| msgid "Knowledge base"
+msgid "Edit the knowledge base"
+msgstr "Base di conoscenza"
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:97
+#: src/en/reference/rest-api/knowledgebase.md:97
+#, no-wrap
+msgid "Categories"
+msgstr "Categorie"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:100
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows opened overview section](/screenshots/cypress/"
+#| "documentation/use/guide-overview.cy.js/overview-full.png)"
+msgid ""
+"![Screenshot shows the edit category flyout with title, icon and parent "
+"fields](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-"
+"category-flyout.png)"
+msgstr ""
+"![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
+"documentation/use/guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:104
+msgid ""
+"To create a **category**, select the `+ Add category` card. This works on "
+"the knowledge base home for top-level categories as well as inside a "
+"category for subcategories. Another way to create a new category inside "
+"another category is to use the ::a:: button on the category tile and select "
+"**Add sub-category**."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:107
+msgid ""
+"Each category consists of a title and an icon. Icons help users recognize "
+"categories at a glance, so pick the one that fits the content best."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:110
+msgid ""
+"To edit a category, click the ::a:: menu on its tile and select **Edit "
+"category** or use the identical button on the top of the right sidebar when "
+"inside a category."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:111
+#, fuzzy, no-wrap
+#| msgid "Change Permissions"
+msgid "Category permissions"
+msgstr "Cambia permessi"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:117
+msgid ""
+"The category flyout contains a **Permissions** matrix that assigns "
+"individual roles their own access level to a category. Three levels are "
+"available: **Editor** to read and edit the content of the category, "
+"**Reader** to read it including internally published answers and **None** to "
+"hide it from the role. Roles without the knowledge base reader or editor "
+"permission have no row in the matrix."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:123
+msgid ""
+"By default, access is managed globally: everyone with the knowledge base "
+"reader permission sees all internally published answers, editors can work "
+"with everything. Saving a permission matrix for the knowledge base or a "
+"single category that differs from these defaults switches the whole "
+"knowledge base to granular access: content visibility then follows the per-"
+"category permissions. Selecting only the access a role already has by "
+"default is not stored and keeps the global behavior."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:129
+msgid ""
+"Permissions of a parent category are inherited by its subcategories. An "
+"inherited **Editor** or **None** level cannot be overridden in the "
+"subcategory, the matching options are locked. An inherited **Reader** level "
+"can be changed. The **Editor** option is locked for roles that only have the "
+"knowledge base reader permission. A change that would take away your own "
+"editor access to a category is rejected, regardless of your other roles. "
+"Published answers stay available to everyone, granular permissions only "
+"affect internal answers and the editing of content."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:130
+#: src/en/reference/rest-api/knowledgebase.md:245
+#, no-wrap
+msgid "Answers"
+msgstr "Risposte"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:138
+msgid ""
+"To add an **answer**, open a category and select the `+ Add answer` card or "
+"use the category's ::a:: menu and select **Add answer** there. An answer "
+"consists of a title and rich content. The editor provides the same "
+"formatting capabilities as the ticket article editor. See the [formatting "
+"section](/en/documentation/use/guides/editor#apply-formatting) of the editor "
+"guide for details. Tags make answers easier to find, both in the knowledge "
+"base search and in the ticket composer."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:141
+msgid ""
+"Within an answer you can link to other knowledge base answers. Select the "
+"corresponding tool in the editor toolbar and pick the answer to link to. "
+"Knowledge base links stay correct when the target answer moves to another "
+"category."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:144
+msgid ""
+"Answers support live collaboration: when several editors open the same "
+"answer for editing, Zammad shows who else is editing and keeps everyone's "
+"changes together."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:148
+msgid ""
+"While you edit, your work is saved automatically as a draft in the taskbar "
+"tab. If you close the tab or the browser, come back to it later and continue "
+"where you left off. Until you save the answer explicitly, you can discard "
+"the unsaved changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:153
+msgid ""
+"The editor offers more than formatted text. You can embed images from your "
+"computer directly in the answer body, embed videos via a video URL and add "
+"file attachments which readers download from the attachment section below "
+"the answer.  For videos, YouTube and Vimeo work out of the box, while self-"
+"hosted PeerTube and MediaCMS instances can be added by your administrator. "
+"Readers can select an image in an answer to open a larger preview of it."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:154
+#, fuzzy, no-wrap
+#| msgid "Content"
+msgid "Move content"
+msgstr "Contenuto"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:159
+msgid ""
+"To move a category including its content to another parent category, open "
+"the ::a:: menu of the category and select **Edit category**. Pick the new "
+"parent in the **Parent category** field and save. The category and all its "
+"subcategories and answers move along."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:161
+msgid ""
+"To move an answer, edit the answer and select another category in the right "
+"sidebar."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:162
+#, fuzzy, no-wrap
+#| msgid "Delete attachment:"
+msgid "Delete content"
+msgstr "Elimina allegato:"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:167
+msgid ""
+"Categories and answers can be deleted from their ::a:: menus (**Delete "
+"category**, **Delete answer**). Deleting a category requires you to delete "
+"its subcategories and answers before. A deletion can't be undone so consider "
+"archiving an answer instead to not lose its content."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:168
+#, fuzzy, no-wrap
+#| msgid "Content"
+msgid "Sort content"
+msgstr "Contenuto"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:171
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows opened overview section](/screenshots/cypress/"
+#| "documentation/use/guide-overview.cy.js/overview-full.png)"
+msgid ""
+"![Screenshot shows the sorting bar with the mode switcher highlighted and "
+"the answers tab active](/screenshots/cypress/documentation/use/guide-"
+"knowledge-base.cy.js/kb-sort-content.png)"
+msgstr ""
+"![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
+"documentation/use/guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:175
+msgid ""
+"Categories and answers can be sorted per category. Open the ::a:: menu in "
+"the top bar and select **Sort content**.  The sorting bar appears at the "
+"bottom of the screen. Inside a category, switch between the **Categories** "
+"and **Answers** tabs to arrange the two lists separately; the knowledge base "
+"home sorts its top-level categories."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:178
+msgid ""
+"Three sorting modes are available. Answers are sorted the same way as "
+"categories. Both answers and categories can be sorted independently."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:184
+#, fuzzy, no-wrap
+#| msgid ""
+#| "|                                             | GUI configuration | Environment variable       |\n"
+#| "|---------------------------------------------|-------------------|----------------------------|\n"
+#| "| Host OS access required                     | No                | Yes                        |\n"
+#| "| Automatically excluded loopback addresses   | Yes               | No                         |\n"
+#| "| Configuration check                         | Yes               | Manually via test script   |\n"
+#| "| Exceptions                                  | Yes               | No                         |\n"
+msgid ""
+"| Mode                       | Effect                                                              |\n"
+"|----------------------------|----------------------------------------------------------------------|\n"
+"| **Sort alphabetically**    | Entries ordered by title, regardless of manual changes               |\n"
+"| **Sort by latest updates** | Most recently updated entries first                                  |\n"
+"| **Sort by drag & drop**    | Your hand-picked order; drag the entries into place                   |\n"
+msgstr "|                                             | Configurazione GUI | Variabile d'ambiente\n"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:188
+msgid ""
+"For categories, _latest updates_ means the category's own editorial changes "
+"like a renamed title or a new icon.  Changes to the answers inside it do not "
+"affect the category's position. Answers are dated by their content edits and "
+"publication state changes alike."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:190
+msgid ""
+"Select the mode, arrange the entries if needed and save. The order applies "
+"for everyone who views the knowledge base."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:191
+#, no-wrap
+msgid "Visibility and scheduling"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:194
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows opened overview section](/screenshots/cypress/"
+#| "documentation/use/guide-overview.cy.js/overview-full.png)"
+msgid ""
+"![Screenshot shows the scheduled visibility section in the answer sidebar, "
+"highlighted](/screenshots/cypress/documentation/use/guide-knowledge-"
+"base.cy.js/kb-scheduled-visibility.png)"
+msgstr ""
+"![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
+"documentation/use/guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:198
+msgid ""
+"To change the visibility of an answer, open the visibility dropdown in the "
+"answer sidebar and select the new state; it takes effect immediately when "
+"you click **Update**. Use drafts to prepare content that is not ready for "
+"release, and archiving to retire outdated answers without deleting them."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:203
+msgid ""
+"Instead of changing the state manually, you can schedule state changes: an "
+"answer can be published automatically on a given date, or archived when it "
+"becomes obsolete. Scheduled changes are listed in the answer sidebar and "
+"only visible to editors. Create a new schedule by clicking the ::+:: button "
+"in the **Scheduled visibility** section in the answer edit mode."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:207
+msgid ""
+"Schedules follow the order of the states: an answer can become internal, "
+"then published, then archived, each with its own date. Drafts cannot be "
+"scheduled and a state the answer has already reached cannot be scheduled "
+"again."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/knowledge-base.md:208
+#, fuzzy, no-wrap
+#| msgid "Advanced User"
+msgid "Advanced"
+msgstr "Utente avanzato"
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:210
+#, fuzzy, no-wrap
+#| msgid "Ticket Update Behavior"
+msgid "Save behavior"
+msgstr "Comportamento all'aggiornamento del ticket"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:216
+msgid ""
+"Next to the **Create** and **Update** buttons you can choose what happens "
+"when you save an answer: **Stay on tab** keeps the editor open, **Close tab "
+"and open the answer** returns to the saved answer, **Close tab and open the "
+"category** returns to its category and after creating an answer **Close tab "
+"and add another answer** opens a fresh form in the same category. Your "
+"choice is remembered for future saves."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:217
+#, no-wrap
+msgid "The public help site"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:223
+msgid ""
+"Customers reach published answers either in Zammad itself or on the public "
+"help site, depending on how your administrator configured the knowledge "
+"base. By default, the public site is available at `/help` on your Zammad "
+"host, for example `https://zammad.example.com/help/en-us`. The public site "
+"shows exactly the published content, organized by categories and works "
+"without a Zammad account."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:226
+msgid ""
+"To see the knowledge base as your customers see it, use the preview button "
+"described in the Browse section above.  Unlike the public site, the preview "
+"also includes unpublished answers, so you can check drafts before releasing "
+"them."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:227
+#, no-wrap
+msgid "Feeds"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:231
+msgid ""
+"The knowledge base allows you to subscribe to the knowledge base or "
+"individual categories via Atom/RSS feed. This feature is optional and has to "
+"be enabled by your administrator."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:237
+msgid ""
+"For **agents**: go to the level of your knowledge base you want to subscribe "
+"to and select **Set up RSS feed** from the ::a:: menu in the top bar, or "
+"from the ::a:: menu in the answer sidebar when viewing an answer. In the "
+"flyout you can select between a feed for the whole knowledge base and a feed "
+"of the category you are currently in. The feed URL includes a personal token "
+"and the feed includes internal answers based on your permissions. Treat the "
+"feed URL like a password. If it leaks, renew the token, which invalidates "
+"the URLs handed out so far."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:240
+#, no-wrap
+msgid ""
+"**Customers** on the public help site get their own feed of the published content only, without a token. They can\n"
+"download a feed file by clicking the feed icon in the footer bar.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/knowledge-base.md:241
+#, fuzzy, no-wrap
+#| msgid "ID of the state."
+msgid "Copy the title"
+msgstr "ID dello stato."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/knowledge-base.md:244
+msgid ""
+"The ::c:: button next to the title in the top bar copies the name of the "
+"category or answer you are viewing to the clipboard, ready to paste it into "
+"a ticket or a search."
 msgstr ""
 
 #. type: Title #
@@ -7239,7 +7719,7 @@ msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
 "account. Use the `reorder items` button at the very top of the second level "
-"navigation, which opens your [profile settings](/en/documentation/use/user-"
+"navigation, which opens your [personal settings](/en/documentation/use/user-"
 "profile#overviews) where you can define a custom order for your overviews. "
 "To change the order, simply drag & drop them by clicking the handles on the "
 "left side."
@@ -7452,13 +7932,23 @@ msgid "Limit search to object type"
 msgstr "Limita la ricerca al tipo di oggetto"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:56
+#: src/en/documentation/use/guides/search.md:58
+#, fuzzy
+#| msgid ""
+#| "Limit the search to an object type by using the **Search entity** tab "
+#| "selector below the search field (e.g. user or ticket). This limits the "
+#| "search to the selected object type and its related data. For example, "
+#| "when you select **Ticket**, the search also returns tickets where the "
+#| "owner or customer matches the search term."
 msgid ""
 "Limit the search to an object type by using the **Search entity** tab "
 "selector below the search field (e.g. user or ticket). This limits the "
 "search to the selected object type and its related data. For example, when "
 "you select **Ticket**, the search also returns tickets where the owner or "
-"customer matches the search term."
+"customer matches the search term. Knowledge base answers are available as an "
+"object type of their own, with title, visibility and update date as result "
+"columns. See [Knowledge base](/en/documentation/use/guides/knowledge-"
+"base#search) for searching within the knowledge base."
 msgstr ""
 "Limita la ricerca a un tipo di oggetto usando il selettore di schede "
 "**Entità di ricerca** sotto il campo di ricerca (ad esempio utente o "
@@ -7468,14 +7958,14 @@ msgstr ""
 "ricerca."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:57
+#: src/en/documentation/use/guides/search.md:59
 #, fuzzy, no-wrap
 #| msgid "Use Advanced Filters"
 msgid "Use advanced filters"
 msgstr "Usa filtri avanzati"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:64
+#: src/en/documentation/use/guides/search.md:66
 #, fuzzy
 #| msgid ""
 #| "<!--Screenshot skipped for now. Will be added after more attributes are "
@@ -7515,7 +8005,7 @@ msgstr ""
 "nel campo di ricerca principale.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:67
+#: src/en/documentation/use/guides/search.md:69
 #, fuzzy
 #| msgid ""
 #| "Remove a single filter by clicking the ::x:: next to the value field. To "
@@ -7532,7 +8022,7 @@ msgstr ""
 "principale in alto accanto all'etichetta `x filtro/i`."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:71
+#: src/en/documentation/use/guides/search.md:73
 msgid ""
 "To add another filter, click `Add filter` below or between the existing "
 "filter rows and pick an attribute from the selection list. The list only "
@@ -7541,7 +8031,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:74
+#: src/en/documentation/use/guides/search.md:76
 msgid ""
 "In case you want to store or share your filter, you can do so by copying the "
 "URL. It includes the complete filter. Be aware that the search results may "
@@ -7552,7 +8042,7 @@ msgstr ""
 "potrebbero essere diversi per altri utenti a causa di permessi divergenti."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:77
+#: src/en/documentation/use/guides/search.md:79
 msgid ""
 "If you still haven't found what you are looking for, you can benefit from "
 "the search being powered by Elasticsearch.  You can find some examples in "
@@ -7563,14 +8053,14 @@ msgstr ""
 "sezione successiva."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:78
+#: src/en/documentation/use/guides/search.md:80
 #, fuzzy, no-wrap
 #| msgid "Using Elasticsearch Syntax"
 msgid "Using Elasticsearch syntax"
 msgstr "Uso della sintassi Elasticsearch"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:85
+#: src/en/documentation/use/guides/search.md:87
 #, fuzzy
 #| msgid ""
 #| "This topic has its own section because it is an advanced topic for power "
@@ -7595,7 +8085,7 @@ msgstr ""
 "elenco con attributi aggiuntivi."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:86
+#: src/en/documentation/use/guides/search.md:88
 #: src/en/tutorials/backup-restore.md:87
 #, fuzzy, no-wrap
 #| msgid "Important Information"
@@ -7603,7 +8093,7 @@ msgid "Important information"
 msgstr "Informazioni Importanti"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 msgid ""
 "Make sure to select the relevant object in the **Search entity** switcher. "
 "For example `customer.lastname` is available for tickets, but not for users."
@@ -7613,7 +8103,7 @@ msgstr ""
 "per gli utenti."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 msgid ""
 "Multiple search terms are combined by a logical AND by default, so `smith "
 "open` only finds results containing both terms. Use an explicit `OR` if you "
@@ -7621,7 +8111,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 msgid ""
 "When combining an Elasticsearch query with advanced filters, be aware that "
 "all of the advanced filter conditions and the search syntax are logically "
@@ -7635,7 +8125,7 @@ msgstr ""
 "tuo termine di ricerca."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:96
+#: src/en/documentation/use/guides/search.md:98
 msgid ""
 "To provide values containing a space, wrap them in `\"`, e.g. `priority.name:"
 "\"2 normal\"`."
@@ -7644,14 +8134,14 @@ msgstr ""
 "`priority.name:\"2 normale\"`."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:97
+#: src/en/documentation/use/guides/search.md:99
 #, fuzzy, no-wrap
 #| msgid "Logic Operators and Ranges"
 msgid "Logic operators and ranges"
 msgstr "Operatori logici e intervalli"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:103
+#: src/en/documentation/use/guides/search.md:105
 msgid ""
 "You can combine conditions by using `AND` & `OR` as logical operators. Use "
 "`TO` to specify ranges for values with an order (e.g. integer or date). "
@@ -7669,47 +8159,47 @@ msgstr ""
 "parentesi `()`."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:105
+#: src/en/documentation/use/guides/search.md:107
 msgid "`AND` & `OR` with parentheses:"
 msgstr "`AND` e `OR` con parentesi:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:106
+#: src/en/documentation/use/guides/search.md:108
 #, no-wrap
 msgid "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 msgstr "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:111
+#: src/en/documentation/use/guides/search.md:113
 msgid "`TO` with asterisk wildcard:"
 msgstr "`TO` con carattere jolly asterisco:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:112
+#: src/en/documentation/use/guides/search.md:114
 #, no-wrap
 msgid "state.name:open AND article_count: [5 TO *]\n"
 msgstr "state.name:open AND article_count: [5 TO *]\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:117
+#: src/en/documentation/use/guides/search.md:119
 msgid "`TO` with excluding one limit of a range:"
 msgstr "`TO` con esclusione di un limite di un intervallo:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:118
+#: src/en/documentation/use/guides/search.md:120
 #, no-wrap
 msgid "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 msgstr "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:122
+#: src/en/documentation/use/guides/search.md:124
 #, fuzzy, no-wrap
 #| msgid "Fuzzy Search"
 msgid "Fuzzy search"
 msgstr "Ricerca fuzzy"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:125
+#: src/en/documentation/use/guides/search.md:127
 msgid ""
 "If you are not sure about the exact spelling of a value, use the tilde (`~`) "
 "as suffix to perform a fuzzy search."
@@ -7718,20 +8208,20 @@ msgstr ""
 "come suffisso per eseguire una ricerca fuzzy."
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:126
+#: src/en/documentation/use/guides/search.md:128
 #, no-wrap
 msgid "owner.firstname:lawren~\n"
 msgstr "owner.firstname:lawren~\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:130
+#: src/en/documentation/use/guides/search.md:132
 #, fuzzy, no-wrap
 #| msgid "Negating Search"
 msgid "Negating search"
 msgstr "Negazione della ricerca"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:134
+#: src/en/documentation/use/guides/search.md:136
 msgid ""
 "If you want to exclude specified values, you can use negation `!`. To negate "
 "more than one term, use parentheses for all of them."
@@ -7740,40 +8230,40 @@ msgstr ""
 "negare più di un termine, usa le parentesi per tutti."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:136
+#: src/en/documentation/use/guides/search.md:138
 msgid "Exclude owner with last name \"brooks\":"
 msgstr "Escludi il proprietario con cognome \"brooks\":"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:137
+#: src/en/documentation/use/guides/search.md:139
 #, no-wrap
 msgid "!owner.lastname:brooks\n"
 msgstr "!owner.lastname:brooks\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:142
+#: src/en/documentation/use/guides/search.md:144
 msgid "Exclude multiple conditions:"
 msgstr "Escludi più condizioni:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:143
+#: src/en/documentation/use/guides/search.md:145
 #, no-wrap
 msgid "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 msgstr "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:147
+#: src/en/documentation/use/guides/search.md:149
 #, no-wrap
 msgid "Regex"
 msgstr "Regex"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:150
+#: src/en/documentation/use/guides/search.md:152
 msgid "You can even use regex to search. Wrap the regex term in `/`."
 msgstr "Puoi anche usare regex per cercare. Racchiudi il termine regex in `/`."
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:151
+#: src/en/documentation/use/guides/search.md:153
 #, no-wrap
 msgid "customer.lastname:/(bra?.n|doe)/\n"
 msgstr "customer.lastname:/(bra?.n|doe)/\n"
@@ -8126,9 +8616,15 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:16
+#, fuzzy
+#| msgid ""
+#| "Two-Factor Authentication is an **optional feature**. Administrators must "
+#| "activate it to be visible in your profile settings. The 2FA usage may be "
+#| "even enforced by your admin. In this case, you can't use Zammad unless "
+#| "you set up at least one 2FA method."
 msgid ""
 "Two-Factor Authentication is an **optional feature**. Administrators must "
-"activate it to be visible in your profile settings. The 2FA usage may be "
+"activate it to be visible in your Personal settings. The 2FA usage may be "
 "even enforced by your admin. In this case, you can't use Zammad unless you "
 "set up at least one 2FA method."
 msgstr ""
@@ -8145,17 +8641,21 @@ msgid "Setup"
 msgstr "Configurazione"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:21
-#, no-wrap
+#: src/en/documentation/use/guides/two-factor-auth.md:22
+#, fuzzy, no-wrap
+#| msgid ""
+#| "If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it\n"
+#| "up. Depending on the enabled two-factor methods, you may see one or more options in the table.\n"
 msgid ""
-"If the system admin has enabled this feature, you can head to _Avatar > Profile > Two-factor Authentication_ to set it\n"
-"up. Depending on the enabled two-factor methods, you may see one or more options in the table.\n"
+"If the system admin has enabled this feature, you can head to\n"
+"_Avatar > Personal settings > Two-factor Authentication_ to set it up.\n"
+"Depending on the enabled two-factor methods, you may see one or more options in the table.\n"
 msgstr ""
 "Se l'amministratore di sistema ha abilitato questa funzionalità, puoi andare a _Avatar > Profilo > Autenticazione a due fattori_ per configurarla.\n"
 "A seconda dei metodi a due fattori abilitati, potresti vedere una o più opzioni nella tabella.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:23
+#: src/en/documentation/use/guides/two-factor-auth.md:24
 msgid ""
 "To set up a two-factor method, use the ::+:: button and follow the steps."
 msgstr ""
@@ -8163,24 +8663,28 @@ msgstr ""
 "passaggi."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:25
+#: src/en/documentation/use/guides/two-factor-auth.md:26
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows 2FA methods in user profile settings](/screenshots/"
+#| "cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)"
 msgid ""
-"![Screenshot shows 2FA methods in user profile settings](/screenshots/"
-"cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)"
+"![Screenshot shows 2FA methods in personal settings](/screenshots/cypress/"
+"documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)"
 msgstr ""
 "![Screenshot che mostra i metodi 2FA nelle impostazioni del profilo utente](/"
 "screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-"
 "setup.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:27
+#: src/en/documentation/use/guides/two-factor-auth.md:28
 msgid "In a modal dialog, you will be asked to confirm your current password."
 msgstr ""
 "In una finestra di dialogo modale, ti verrà chiesto di confermare la tua "
 "password attuale."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:30
+#: src/en/documentation/use/guides/two-factor-auth.md:31
 msgid ""
 "Depending on the chosen two-factor method, you will be guided through the "
 "setup process, which includes specific steps.  Continue with using an "
@@ -8192,14 +8696,14 @@ msgstr ""
 "sicurezza](#chiave-di-sicurezza)."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:31
+#: src/en/documentation/use/guides/two-factor-auth.md:32
 #, fuzzy, no-wrap
 #| msgid "Authentication App"
 msgid "Authentication app"
 msgstr "App di autenticazione"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:36
+#: src/en/documentation/use/guides/two-factor-auth.md:37
 msgid ""
 "The authenticator app method is a type of two-factor authentication that "
 "uses a mobile application to generate one-time codes for account "
@@ -8212,7 +8716,7 @@ msgstr ""
 "dispositivo, la collegherai al tuo account Zammad."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:38
+#: src/en/documentation/use/guides/two-factor-auth.md:39
 msgid ""
 "![Screenshot shows app authentication configuration](/screenshots/"
 "documentation/use/two-factor-auth-usage/2fa-app-setup.png)"
@@ -8221,7 +8725,7 @@ msgstr ""
 "screenshots/documentation/use/two-factor-auth-usage/2fa-app-setup.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:40
+#: src/en/documentation/use/guides/two-factor-auth.md:41
 msgid ""
 "First, make sure you have installed an authenticator app on your mobile "
 "device. Recommended apps are:"
@@ -8230,7 +8734,7 @@ msgstr ""
 "tuo dispositivo mobile. Le app consigliate sono:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:44
+#: src/en/documentation/use/guides/two-factor-auth.md:45
 #, fuzzy
 #| msgid ""
 #| "[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
@@ -8241,7 +8745,7 @@ msgstr ""
 "[Google Authenticator](https://support.google.com/accounts/answer/1066447)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:44
+#: src/en/documentation/use/guides/two-factor-auth.md:45
 #, fuzzy
 #| msgid ""
 #| "[Authy](https://support.authy.com/hc/en-us/articles/115001945848-"
@@ -8254,7 +8758,7 @@ msgstr ""
 "Authy-apps/)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/two-factor-auth.md:44
+#: src/en/documentation/use/guides/two-factor-auth.md:45
 #, fuzzy
 #| msgid ""
 #| "[Microsoft Authenticator](https://support.microsoft.com/en-us/account-"
@@ -8270,7 +8774,7 @@ msgstr ""
 "app-351498fc-850a-45da-b7b6-27e523b8702a)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:47
+#: src/en/documentation/use/guides/two-factor-auth.md:48
 msgid ""
 "Next, open the authenticator app on your device and find a **Scan QR Code** "
 "action, or similar. Point your camera to the Zammad screen and scan the "
@@ -8281,7 +8785,7 @@ msgstr ""
 "Zammad e scansiona il codice QR mostrato al centro."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/two-factor-auth.md:48
+#: src/en/documentation/use/guides/two-factor-auth.md:49
 #, no-wrap
 msgid ""
 "If your device is not able to scan the QR code, first click on it to reveal your secret. Next, add a manual entry to\n"
@@ -8291,7 +8795,7 @@ msgstr ""
 "tua app di autenticazione e inserisci il segreto fornito quando richiesto.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:55
+#: src/en/documentation/use/guides/two-factor-auth.md:56
 msgid ""
 "Your authenticator app should immediately add the new entry for your Zammad "
 "account, and a 6-digit code will be displayed next to it together with a "
@@ -8302,7 +8806,7 @@ msgstr ""
 "accanto ad essa insieme a un timer."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:58
+#: src/en/documentation/use/guides/two-factor-auth.md:59
 msgid ""
 "Back in Zammad, enter the provided code to the **Security Code** field and "
 "click on **Set Up**. Go on either by setting up another 2FA method "
@@ -8314,14 +8818,14 @@ msgstr ""
 "[accedere con 2FA](#accesso)."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/two-factor-auth.md:59
+#: src/en/documentation/use/guides/two-factor-auth.md:60
 #, fuzzy, no-wrap
 #| msgid "Security Key"
 msgid "Security key"
 msgstr "Chiave di sicurezza"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:64
+#: src/en/documentation/use/guides/two-factor-auth.md:65
 msgid ""
 "The security keys method is a type of a two-factor authentication that uses "
 "Web Authentication API in the browser for verifying your identity. You may "
@@ -8335,7 +8839,7 @@ msgstr ""
 "accesso."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:66
+#: src/en/documentation/use/guides/two-factor-auth.md:67
 #, fuzzy
 #| msgid ""
 #| "Initially, you will be presented with an empty side panel instructing you "
@@ -8348,7 +8852,7 @@ msgstr ""
 "istruisce a **Configurare** la tua prima chiave."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:68
+#: src/en/documentation/use/guides/two-factor-auth.md:69
 msgid ""
 "![Screenshot shows security key authentication configuration](/screenshots/"
 "documentation/use/two-factor-auth-usage/2fa-security-key-panel.png)"
@@ -8358,7 +8862,7 @@ msgstr ""
 "key-panel.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:71
+#: src/en/documentation/use/guides/two-factor-auth.md:72
 msgid ""
 "Then, enter a descriptive **Name for this security key** you will be "
 "registering with your account, so you could later identify it in the list. "
@@ -8369,7 +8873,7 @@ msgstr ""
 "nell'elenco. Quindi, fai clic su **Avanti**."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:74
+#: src/en/documentation/use/guides/two-factor-auth.md:75
 msgid ""
 "Next, depending you your browser, you will be presented with different "
 "options. Select one that refers to your chosen security key and follow the "
@@ -8380,7 +8884,7 @@ msgstr ""
 "scelta e segui le istruzioni sullo schermo."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:76
+#: src/en/documentation/use/guides/two-factor-auth.md:77
 msgid ""
 "![Screenshot shows security key authentication configuration](/screenshots/"
 "documentation/use/two-factor-auth-usage/2fa-passkey-auth.png)"
@@ -8390,7 +8894,7 @@ msgstr ""
 "auth.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:79
+#: src/en/documentation/use/guides/two-factor-auth.md:80
 msgid ""
 "You may be asked by the browser to interact with a key or a device so you "
 "can prove you are in physical possession of it (e.g. enter its PIN to unlock "
@@ -8401,7 +8905,7 @@ msgstr ""
 "suo PIN per sbloccarlo)."
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:80
+#: src/en/documentation/use/guides/two-factor-auth.md:81
 #, no-wrap
 msgid ""
 "You will have limited time (measured in tens of seconds) to register your key. Better to have it ready before you\n"
@@ -8411,7 +8915,7 @@ msgstr ""
 "procedere!\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:87
+#: src/en/documentation/use/guides/two-factor-auth.md:88
 msgid ""
 "If the registration was successful, the modal dialog will close and you are "
 "good to go. In case of errors, you will be able to **Retry** the "
@@ -8422,7 +8926,7 @@ msgstr ""
 "chiave."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:89
+#: src/en/documentation/use/guides/two-factor-auth.md:90
 msgid ""
 "Once set up, security keys can be managed by choosing **Edit** action next "
 "to the two-factor authentication method."
@@ -8432,7 +8936,7 @@ msgstr ""
 "fattori."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:93
+#: src/en/documentation/use/guides/two-factor-auth.md:94
 msgid ""
 "You have an option to remove a key or set up additional ones. There is no "
 "limit in number of security keys you can set up, but keep in mind you cannot "
@@ -8448,13 +8952,13 @@ msgstr ""
 "account."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:94
+#: src/en/documentation/use/guides/two-factor-auth.md:95
 #, no-wrap
 msgid "Sign-in"
 msgstr "Accesso"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:99
+#: src/en/documentation/use/guides/two-factor-auth.md:100
 msgid ""
 "When you set up two-factor authentication for your Zammad account, during "
 "the next sign-in you will be asked to provide the same two-factor method "
@@ -8468,7 +8972,7 @@ msgstr ""
 "chiave hardware, ecc."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:102
+#: src/en/documentation/use/guides/two-factor-auth.md:103
 msgid ""
 "In case you are having issues during sign-in with your preferred two-factor "
 "authentication method, you can switch to another one, provided you have set "
@@ -8479,7 +8983,7 @@ msgstr ""
 "lo abbia configurato in precedenza."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:105
+#: src/en/documentation/use/guides/two-factor-auth.md:106
 msgid ""
 "Look for **Try another method** link below the sign in box. In case you "
 "don't see this link, you probably have no other available two-factor methods "
@@ -8491,7 +8995,7 @@ msgstr ""
 "funzionalità."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:107
+#: src/en/documentation/use/guides/two-factor-auth.md:108
 msgid ""
 "![Log in screen with link to \"Try another method\"](/screenshots/"
 "documentation/use/two-factor-auth-usage/2fa-link-another-method.png)"
@@ -8500,7 +9004,7 @@ msgstr ""
 "documentation/use/two-factor-auth-usage/2fa-link-another-method.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:111
+#: src/en/documentation/use/guides/two-factor-auth.md:112
 msgid ""
 "Alternatively, you can also use one of your recovery codes, which are auto-"
 "generated for your account during the initial setup of the two-factor "
@@ -8514,7 +9018,7 @@ msgstr ""
 "utilizzati e fai clic su **Accedi**."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:113
+#: src/en/documentation/use/guides/two-factor-auth.md:114
 msgid ""
 "![Log in screen with recovery codes link](/screenshots/documentation/use/two-"
 "factor-auth-usage/2fa-login-recovery-codes.png)"
@@ -8523,7 +9027,7 @@ msgstr ""
 "documentation/use/two-factor-auth-usage/2fa-login-recovery-codes.png)"
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/two-factor-auth.md:114
+#: src/en/documentation/use/guides/two-factor-auth.md:115
 #, no-wrap
 msgid ""
 "You can use a single recovery code only once! In case you exhaust the list of your recovery codes, it is recommended\n"
@@ -8533,14 +9037,14 @@ msgstr ""
 "di rigenerarli per il tuo account.\n"
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:119
+#: src/en/documentation/use/guides/two-factor-auth.md:120
 #, fuzzy, no-wrap
 #| msgid "Generate Recovery Codes"
 msgid "Generate recovery codes"
 msgstr "Genera codici di recupero"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:123
+#: src/en/documentation/use/guides/two-factor-auth.md:124
 msgid ""
 "Recovery codes are one-time use security codes that can be used to sign in "
 "if you lose access to your other two-factor authentication methods. They can "
@@ -8551,7 +9055,7 @@ msgstr ""
 "due fattori. Possono essere usati solo come **metodo di backup**."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:126
+#: src/en/documentation/use/guides/two-factor-auth.md:127
 msgid ""
 "If the feature is enabled by the admin, recovery codes will be automatically "
 "generated for you during the setup of your initial two-factor authentication "
@@ -8562,7 +9066,7 @@ msgstr ""
 "metodo iniziale di autenticazione a due fattori."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:129
+#: src/en/documentation/use/guides/two-factor-auth.md:130
 msgid ""
 "You will be asked to print out or save the generated recovery codes in a "
 "safe place. Once used, a recovery code cannot be reused."
@@ -8572,7 +9076,7 @@ msgstr ""
 "riutilizzato."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:131
+#: src/en/documentation/use/guides/two-factor-auth.md:132
 msgid ""
 "![Screenshot shows output of recovery codes during 2FA setup](/screenshots/"
 "documentation/use/two-factor-auth-usage/2fa-app-setup-recovery-codes.png)"
@@ -8582,12 +9086,18 @@ msgstr ""
 "app-setup-recovery-codes.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:135
+#: src/en/documentation/use/guides/two-factor-auth.md:136
+#, fuzzy
+#| msgid ""
+#| "You also have an option to regenerate your recovery codes at any time, "
+#| "which invalidates already existing recovery codes and provides you with a "
+#| "list of fresh codes. You can do this by clicking on `Regenerate recovery "
+#| "codes` button in your profile's 2FA settings."
 msgid ""
 "You also have an option to regenerate your recovery codes at any time, which "
 "invalidates already existing recovery codes and provides you with a list of "
 "fresh codes. You can do this by clicking on `Regenerate recovery codes` "
-"button in your profile's 2FA settings."
+"button in your Personal settings' 2FA section."
 msgstr ""
 "Hai anche la possibilità di rigenerare i tuoi codici di recupero in "
 "qualsiasi momento, il che invalida i codici di recupero già esistenti e ti "
@@ -8595,24 +9105,30 @@ msgstr ""
 "`Rigenera codici di recupero` nelle impostazioni 2FA del tuo profilo."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:136
+#: src/en/documentation/use/guides/two-factor-auth.md:137
 #, fuzzy, no-wrap
 #| msgid "Set a Default 2FA Method"
 msgid "Set a default 2FA method"
 msgstr "Imposta un metodo 2FA predefinito"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:140
+#: src/en/documentation/use/guides/two-factor-auth.md:141
+#, fuzzy
+#| msgid ""
+#| "To set an already set up two-factor method as default, use the ::a:: "
+#| "actions menu next to it in your profile's 2FA settings and choose **Set "
+#| "as default**."
 msgid ""
 "To set an already set up two-factor method as default, use the ::a:: actions "
-"menu next to it in your profile's 2FA settings and choose **Set as default**."
+"menu next to it in your Personal settings' 2FA section and choose **Set as "
+"default**."
 msgstr ""
 "Per impostare un metodo a due fattori già configurato come predefinito, usa "
 "il menu azioni ::a:: accanto ad esso nelle impostazioni 2FA del tuo profilo "
 "e scegli **Imposta come predefinito**."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:143
+#: src/en/documentation/use/guides/two-factor-auth.md:144
 #, fuzzy
 #| msgid ""
 #| "In order to identify your current default two-factor authentication "
@@ -8625,7 +9141,7 @@ msgstr ""
 "corrente, cerca un piccolo badge blu accanto al nome del metodo."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:145
+#: src/en/documentation/use/guides/two-factor-auth.md:146
 msgid ""
 "![Screenshot shows list of 2FA methods and default method](/screenshots/"
 "cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)"
@@ -8635,7 +9151,7 @@ msgstr ""
 "overview.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:148
+#: src/en/documentation/use/guides/two-factor-auth.md:149
 msgid ""
 "A default two-factor authentication method is just your preferred method "
 "during the sign-in process. You will always have an option to try signing in "
@@ -8646,14 +9162,14 @@ msgstr ""
 "di provare ad accedere usando un altro metodo."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:149
+#: src/en/documentation/use/guides/two-factor-auth.md:150
 #, fuzzy, no-wrap
 #| msgid "Edit a 2FA Method"
 msgid "Edit a 2FA method"
 msgstr "Modifica un metodo 2FA"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:152
+#: src/en/documentation/use/guides/two-factor-auth.md:153
 msgid ""
 "![Screenshot shows the action menu for an already set up 2FA method](/"
 "screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-"
@@ -8664,7 +9180,7 @@ msgstr ""
 "action-menu.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:155
+#: src/en/documentation/use/guides/two-factor-auth.md:156
 msgid ""
 "To edit an already set up two-factor method, use the ::a:: actions menu next "
 "to it and choose **Edit**. In a modal dialog, you will be asked to confirm "
@@ -8675,7 +9191,7 @@ msgstr ""
 "dialogo modale, ti verrà chiesto di confermare la tua password attuale."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:159
+#: src/en/documentation/use/guides/two-factor-auth.md:160
 msgid ""
 "Depending on the chosen two-factor method, you will be guided again through "
 "the setup process. Normally, editing a method will simply renew it and "
@@ -8689,14 +9205,14 @@ msgstr ""
 "chiavi di sicurezza)."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/two-factor-auth.md:160
+#: src/en/documentation/use/guides/two-factor-auth.md:161
 #, fuzzy, no-wrap
 #| msgid "Remove a 2FA Method"
 msgid "Remove a 2FA method"
 msgstr "Rimuovi un metodo 2FA"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/two-factor-auth.md:163
+#: src/en/documentation/use/guides/two-factor-auth.md:164
 msgid ""
 "To remove an already set up two-factor method, use the ::a:: actions menu "
 "next to it and choose **Remove**. In a modal dialog, you will be asked to "
@@ -8895,9 +9411,14 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/user-profile.md:28
+#, fuzzy
+#| msgid ""
+#| "**Profile settings**: opens your profile settings where you can adjust "
+#| "your avatar, password, notification settings and much more, see next "
+#| "section."
 msgid ""
-"**Profile settings**: opens your profile settings where you can adjust your "
-"avatar, password, notification settings and much more, see next section."
+"**Personal settings**: opens your personal settings where you can adjust "
+"your avatar, password, notification settings and much more, see next section."
 msgstr ""
 "**Impostazioni profilo**: apre le impostazioni del profilo dove puoi "
 "regolare il tuo avatar, la password, le impostazioni di notifica e molto "
@@ -8907,14 +9428,18 @@ msgstr ""
 #: src/en/documentation/use/user-profile.md:29
 #, fuzzy, no-wrap
 #| msgid "Profile Settings"
-msgid "Profile settings"
+msgid "Personal settings"
 msgstr "Impostazioni profilo"
 
 #. type: Plain text
 #: src/en/documentation/use/user-profile.md:32
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows user profile settings](/screenshots/cypress/"
+#| "documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
 msgid ""
-"![Screenshot shows user profile settings](/screenshots/cypress/documentation/"
-"use/user-profile.cy.js/user-profile-settings-full.png)"
+"![Screenshot shows personal settings of a user](/screenshots/cypress/"
+"documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
 msgstr ""
 "![Screenshot che mostra le impostazioni del profilo utente](/screenshots/"
 "cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
@@ -10709,108 +11234,72 @@ msgstr ""
 "Se si sceglie di eseguire Zammad tramite Docker, il supporto è fornito solo per l'applicazione Zammad.\n"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:23
-msgid "A working Docker Compose environment"
-msgstr "Un ambiente Docker Compose funzionante"
+#: src/en/get-started/installation/docker.md:25
+msgid ""
+"Make sure your Docker Compose setup matches the [requirements](https://"
+"github.com/zammad/zammad-docker-compose#requirements){target=_blank} you can "
+"find in the README of Zammad's Docker Compose repository."
+msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:23
-msgid "At least 4 GB of RAM to run the containers"
+#: src/en/get-started/installation/docker.md:25
+#, fuzzy
+#| msgid "At least 4 GB of RAM to run the containers"
+msgid "Make sure to have at least 4 GB of RAM to run the containers."
 msgstr "Almeno 4 GB di RAM per eseguire i container"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:23
-msgid "Increase the memory limit for Elasticsearch on Linux hosts:"
-msgstr "Aumenta il limite di memoria per Elasticsearch su host Linux:"
+#: src/en/get-started/installation/docker.md:25
+msgid "Adjust your host's settings to run Elasticsearch properly:"
+msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:24
+#: src/en/get-started/installation/docker.md:26
 #, no-wrap
 msgid "  sudo sysctl -w vm.max_map_count=262144\n"
 msgstr "  sudo sysctl -w vm.max_map_count=262144\n"
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:28
+#: src/en/get-started/installation/docker.md:30
 #, no-wrap
-msgid "Deployment with Portainer"
-msgstr "Distribuzione con Portainer"
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:34
-msgid ""
-"The easiest way to get Zammad running is via a graphical Docker UI. We "
-"recommend [Portainer](https://www.portainer.io/){target=_blank}. For "
-"installation instructions, check out [Portainer's documentation](https://"
-"docs.portainer.io/){target=_blank}."
-msgstr ""
-"Il modo più semplice per avviare Zammad è tramite un'interfaccia grafica "
-"Docker. Consigliamo [Portainer](https://www.portainer.io/){target=_blank}. "
-"Per le istruzioni di installazione, consultare la [documentazione di "
-"Portainer](https://docs.portainer.io/){target=_blank}."
+msgid "Deployment with Docker Compose"
+msgstr "Distribuzione con Docker Compose"
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:35
+#: src/en/get-started/installation/docker.md:32
 #, fuzzy, no-wrap
-#| msgid "Step 1: Add Stack"
-msgid "Step 1: Add stack"
-msgstr "Passo 1: Aggiungi stack"
+#| msgid "Step 1: Clone the GitHub Repo"
+msgid "Step 1: Clone the GitHub repo"
+msgstr "Passo 1: Clona il repository GitHub"
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/installation/docker.md:34
+#, no-wrap
+msgid "git clone https://github.com/zammad/zammad-docker-compose.git\n"
+msgstr "git clone https://github.com/zammad/zammad-docker-compose.git\n"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:40
 msgid ""
-"In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your "
-"target environment, select **Stacks** and click on `Add stack` as you can "
-"see in the screenshot below."
+"Make sure to run `git pull` frequently to fetch updates. Alternatively, you "
+"can download the files from the [releases page](https://github.com/zammad/"
+"zammad-docker-compose/releases){target=_blank}."
 msgstr ""
-"Nell'interfaccia di Portainer (ad esempio `https://yourdomain.tld:9443`), "
-"scegli il tuo ambiente di destinazione, seleziona **Stacks**."
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:42
-msgid ""
-"![Screenshot in the Stacks section and highlighted \"Add stack\".](/"
-"screenshots/get-started/installation/portainer-stacks.png)"
-msgstr ""
-"![Screenshot nella sezione Stack e evidenziata \"Aggiungi stack\".](/"
-"screenshots/get-started/installation/portainer-stacks.png)"
+"Assicurati di eseguire `git pull` frequentemente per scaricare gli "
+"aggiornamenti. In alternativa, puoi scaricare i file dalla [pagina delle "
+"release](https://github.com/zammad/zammad-docker-compose/releases)"
+"{target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:43
+#: src/en/get-started/installation/docker.md:41
 #, fuzzy, no-wrap
-#| msgid "Step 2: Build From Repository"
-msgid "Step 2: Build from repository"
-msgstr "Passo 2: Build da repository"
+#| msgid "Step 2: Adjust Environment as Needed"
+msgid "Step 2: Adjust environment as needed"
+msgstr "Passo 2: Regola l'ambiente secondo necessità"
 
 #. type: Plain text
 #: src/en/get-started/installation/docker.md:46
-msgid ""
-"Switch to **Repository** build method and provide the information below:"
-msgstr ""
-"Passa al metodo di build **Repository** e fornisci le informazioni seguenti:"
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
-msgid "**Name**: enter a desired name of the stack"
-msgstr "**Nome**: inserisci il nome desiderato dello stack"
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
-msgid "**Repository URL**: `https://github.com/zammad/zammad-docker-compose`"
-msgstr "**URL repository**: `https://github.com/zammad/zammad-docker-compose`"
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
-msgid "**Repository reference**: `refs/heads/master`"
-msgstr "**Riferimento repository**: `refs/heads/master`"
-
-#. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:51
-msgid "**Compose path**: `docker-compose.yml` (default)"
-msgstr "**Percorso compose**: `docker-compose.yml` (predefinito)"
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:55
-#: src/en/get-started/installation/docker.md:81
+#: src/en/get-started/installation/docker.md:90
 msgid ""
 "In case our default environment is not what you are looking for, you can "
 "customize the stack using predefined scenarios and adjust environment "
@@ -10823,8 +11312,134 @@ msgstr ""
 "(#personalizzare-lo-stack-Zammad) qui sotto per trovare maggiori "
 "informazioni."
 
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:47
+#, fuzzy, no-wrap
+#| msgid "Step 3: Start the Stack"
+msgid "Step 3: Start the stack"
+msgstr "Passo 3: Avvia lo stack"
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/installation/docker.md:49
+#: src/en/get-started/update.md:223
+#, no-wrap
+msgid "cd zammad-docker-compose\n"
+msgstr "cd zammad-docker-compose\n"
+
+#. type: Fenced code block (sh)
+#: src/en/get-started/installation/docker.md:53
+#: src/en/get-started/update.md:235
+#, no-wrap
+msgid "docker compose up -d\n"
+msgstr "docker compose up -d\n"
+
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:57
+#: src/en/get-started/installation/docker.md:59
+#, fuzzy
+#| msgid ""
+#| "Optional: Use an additional `.yml` file to use a pre-defines scenario. "
+#| "Read on in the [Customizing the Zammad Stack](#customizing-the-zammad-"
+#| "stack) section."
+msgid ""
+"Optional: Use an additional `.yml` file to use a pre-defined scenario. Read "
+"on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack) "
+"section."
+msgstr ""
+"Opzionale: utilizzare un file `.yml` aggiuntivo per utilizzare uno scenario "
+"predefinito. Per ulteriori informazioni, consultare la sezione "
+"[Personalizzazione dello stack Zammad](#personalizzare-lo-stack-zammad)."
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:62
+#: src/en/get-started/installation/docker.md:99
+msgid ""
+"After the stack is ready, you can access Zammad via the configured Docker "
+"host and port, e.g. `http://localhost:8080/`."
+msgstr ""
+"Una volta che lo stack è pronto, è possibile accedere a Zammad tramite "
+"l'host e la porta Docker configurati, ad esempio `http://localhost:8080/`."
+
+#. type: Title ##
+#: src/en/get-started/installation/docker.md:63
+#, no-wrap
+msgid "Deployment with Portainer"
+msgstr "Distribuzione con Portainer"
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:69
+msgid ""
+"The easiest way to get Zammad running is via a graphical Docker UI. We "
+"recommend [Portainer](https://www.portainer.io/){target=_blank}. For "
+"installation instructions, check out [Portainer's documentation](https://"
+"docs.portainer.io/){target=_blank}."
+msgstr ""
+"Il modo più semplice per avviare Zammad è tramite un'interfaccia grafica "
+"Docker. Consigliamo [Portainer](https://www.portainer.io/){target=_blank}. "
+"Per le istruzioni di installazione, consultare la [documentazione di "
+"Portainer](https://docs.portainer.io/){target=_blank}."
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:70
+#, fuzzy, no-wrap
+#| msgid "Step 1: Add Stack"
+msgid "Step 1: Add stack"
+msgstr "Passo 1: Aggiungi stack"
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:75
+msgid ""
+"In the Portainer GUI (e.g. `https://yourdomain.tld:9443`), choose your "
+"target environment, select **Stacks** and click on `Add stack` as you can "
+"see in the screenshot below."
+msgstr ""
+"Nell'interfaccia di Portainer (ad esempio `https://yourdomain.tld:9443`), "
+"scegli il tuo ambiente di destinazione, seleziona **Stacks**."
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:77
+msgid ""
+"![Screenshot in the Stacks section and highlighted \"Add stack\".](/"
+"screenshots/get-started/installation/portainer-stacks.png)"
+msgstr ""
+"![Screenshot nella sezione Stack e evidenziata \"Aggiungi stack\".](/"
+"screenshots/get-started/installation/portainer-stacks.png)"
+
+#. type: Title ###
+#: src/en/get-started/installation/docker.md:78
+#, fuzzy, no-wrap
+#| msgid "Step 2: Build From Repository"
+msgid "Step 2: Build from repository"
+msgstr "Passo 2: Build da repository"
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:81
+msgid ""
+"Switch to **Repository** build method and provide the information below:"
+msgstr ""
+"Passa al metodo di build **Repository** e fornisci le informazioni seguenti:"
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:86
+msgid "**Name**: enter a desired name of the stack"
+msgstr "**Nome**: inserisci il nome desiderato dello stack"
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:86
+msgid "**Repository URL**: `https://github.com/zammad/zammad-docker-compose`"
+msgstr "**URL repository**: `https://github.com/zammad/zammad-docker-compose`"
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:86
+msgid "**Repository reference**: `refs/heads/master`"
+msgstr "**Riferimento repository**: `refs/heads/master`"
+
+#. type: Bullet: '- '
+#: src/en/get-started/installation/docker.md:86
+msgid "**Compose path**: `docker-compose.yml` (default)"
+msgstr "**Percorso compose**: `docker-compose.yml` (predefinito)"
+
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:92
 msgid ""
 "![Stack creation with provided information in Repository screen](/"
 "screenshots/get-started/installation/portainer-stack-creation.png)"
@@ -10834,120 +11449,49 @@ msgstr ""
 "creation.png)"
 
 #. type: Title ###
-#: src/en/get-started/installation/docker.md:58
+#: src/en/get-started/installation/docker.md:93
 #, fuzzy, no-wrap
 #| msgid "Step 3: Deploy the Stack"
 msgid "Step 3: Deploy the stack"
 msgstr "Passo 3: Distribuisci lo stack"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:61
+#: src/en/get-started/installation/docker.md:96
+#, fuzzy
+#| msgid ""
+#| "Finally, click `Deploy the stack` button. The first time, it may take "
+#| "some time until the Docker images are fetched."
 msgid ""
-"Finally, click `Deploy the stack` button. The first time, it may take some "
-"time until the Docker images are fetched."
+"Finally, click the `Deploy the stack` button. The first time, it may take "
+"some time until the Docker images are fetched."
 msgstr ""
 "Infine, fai clic sul pulsante `Deploy the stack`. La prima volta, potrebbe "
 "volerci del tempo per scaricare le immagini Docker."
 
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:64
-#: src/en/get-started/installation/docker.md:97
-msgid ""
-"After the stack is ready, you can access Zammad via the configured Docker "
-"host and port, e.g. `http://localhost:8080/`."
-msgstr ""
-"Una volta che lo stack è pronto, è possibile accedere a Zammad tramite "
-"l'host e la porta Docker configurati, ad esempio `http://localhost:8080/`."
-
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:65
-#, no-wrap
-msgid "Deployment with Docker Compose"
-msgstr "Distribuzione con Docker Compose"
-
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:67
-#, fuzzy, no-wrap
-#| msgid "Step 1: Clone the GitHub Repo"
-msgid "Step 1: Clone the GitHub repo"
-msgstr "Passo 1: Clona il repository GitHub"
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:69
-#, no-wrap
-msgid "git clone https://github.com/zammad/zammad-docker-compose.git\n"
-msgstr "git clone https://github.com/zammad/zammad-docker-compose.git\n"
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:75
-msgid ""
-"Make sure to run `git pull` frequently to fetch updates. Alternatively, you "
-"can download the files from the [releases page](https://github.com/zammad/"
-"zammad-docker-compose/releases){target=_blank}."
-msgstr ""
-"Assicurati di eseguire `git pull` frequentemente per scaricare gli "
-"aggiornamenti. In alternativa, puoi scaricare i file dalla [pagina delle "
-"release](https://github.com/zammad/zammad-docker-compose/releases)"
-"{target=_blank}."
-
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:76
-#, fuzzy, no-wrap
-#| msgid "Step 2: Adjust Environment as Needed"
-msgid "Step 2: Adjust environment as needed"
-msgstr "Passo 2: Regola l'ambiente secondo necessità"
-
-#. type: Title ###
-#: src/en/get-started/installation/docker.md:82
-#, fuzzy, no-wrap
-#| msgid "Step 3: Start the Stack"
-msgid "Step 3: Start the stack"
-msgstr "Passo 3: Avvia lo stack"
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:84
-#: src/en/get-started/update.md:223
-#, no-wrap
-msgid "cd zammad-docker-compose\n"
-msgstr "cd zammad-docker-compose\n"
-
-#. type: Fenced code block (sh)
-#: src/en/get-started/installation/docker.md:88
-#: src/en/get-started/update.md:235
-#, no-wrap
-msgid "docker compose up -d\n"
-msgstr "docker compose up -d\n"
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:94
-msgid ""
-"Optional: Use an additional `.yml` file to use a pre-defines scenario. Read "
-"on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack) "
-"section."
-msgstr ""
-"Opzionale: utilizzare un file `.yml` aggiuntivo per utilizzare uno scenario "
-"predefinito. Per ulteriori informazioni, consultare la sezione "
-"[Personalizzazione dello stack Zammad](#personalizzare-lo-stack-zammad)."
-
-#. type: Title ##
-#: src/en/get-started/installation/docker.md:98
+#: src/en/get-started/installation/docker.md:100
 #, fuzzy, no-wrap
 #| msgid "Exposing the Stack via HTTPS"
 msgid "Exposing the stack via HTTPS"
 msgstr "Esporre lo stack tramite HTTPS"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:102
+#: src/en/get-started/installation/docker.md:104
+#, fuzzy
+#| msgid ""
+#| "To publish a Zammad stack on the internet, it needs be secured via the "
+#| "HTTPS protocol. To achieve that without modifying the Zammad stack, you "
+#| "can:"
 msgid ""
-"To publish a Zammad stack on the internet, it needs be secured via the HTTPS "
-"protocol. To achieve that without modifying the Zammad stack, you can:"
+"To publish a Zammad stack on the internet, it needs to be secured via the "
+"HTTPS protocol. To achieve that without modifying the Zammad stack, you can:"
 msgstr ""
 "Per pubblicare uno stack Zammad su Internet, è necessario proteggerlo "
 "tramite il protocollo HTTPS. Per farlo senza modificare lo stack Zammad, è "
 "possibile:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:106
+#: src/en/get-started/installation/docker.md:108
 #, fuzzy
 #| msgid ""
 #| "Use a reverse proxy like Nginx Proxy Manager (NPM). It has a GUI that "
@@ -10962,12 +11506,12 @@ msgstr ""
 "(https://letsencrypt.org/)."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/docker.md:106
+#: src/en/get-started/installation/docker.md:108
 msgid "Use a Cloudflare tunnel, which provides SSL termination."
 msgstr "Usa un tunnel Cloudflare, che fornisce la terminazione SSL."
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:108
+#: src/en/get-started/installation/docker.md:110
 msgid ""
 "Both scenarios are covered in the separate [Docker Compose Scenarios](/en/"
 "reference/docker-compose-scenarios) page."
@@ -10976,14 +11520,14 @@ msgstr ""
 "Compose](/it/reference/docker-compose-scenarios)."
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:109
+#: src/en/get-started/installation/docker.md:111
 #, fuzzy, no-wrap
 #| msgid "Customizing the Zammad Stack"
 msgid "Customizing the Zammad stack"
 msgstr "Personalizzare lo stack Zammad"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:114
+#: src/en/get-started/installation/docker.md:116
 msgid ""
 "The Zammad stack can be customized by loading additional scenario files for "
 "common use cases. For example, you can deploy the stack with an included "
@@ -10994,7 +11538,7 @@ msgstr ""
 "aggiuntivi per casi d'uso comuni."
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:116
+#: src/en/get-started/installation/docker.md:118
 msgid ""
 "Please see the [Docker Compose scenarios page](/en/reference/docker-compose-"
 "scenarios)."
@@ -11003,7 +11547,7 @@ msgstr ""
 "compose-scenarios)."
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:118
+#: src/en/get-started/installation/docker.md:120
 msgid ""
 "To adjust the stack and settings, use [Docker specific environment variables]"
 "(/en/reference/environment-variables)."
@@ -11012,14 +11556,14 @@ msgstr ""
 "specifiche di Docker](/it/reference/environment-variables)."
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:119
+#: src/en/get-started/installation/docker.md:121
 #, fuzzy, no-wrap
 #| msgid "How to Run Commands in the Stack"
 msgid "How to run commands in the stack"
 msgstr "Come eseguire comandi nello stack"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:123
+#: src/en/get-started/installation/docker.md:125
 msgid ""
 "Execute commands in your Docker stack by calling `rails` or `rake` via one "
 "of the following methods by using `bundle exec`."
@@ -11028,7 +11572,7 @@ msgstr ""
 "dei seguenti metodi."
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:126
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -11138,7 +11682,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs key:docker-portainer|tip)
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:126
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the Rails server, you can, for example,\n"
@@ -11149,7 +11693,7 @@ msgstr ""
 "inserire `pp` (pretty print) davanti al tuo comando Rails. Questo genera un output nel tuo terminale.\n"
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:126
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -26447,12 +26991,6 @@ msgstr ""
 "<<< @/fixtures/rest-api/knowledgebase/put-permissions-response.json\n"
 "\n"
 
-#. type: Title ##
-#: src/en/reference/rest-api/knowledgebase.md:97
-#, no-wrap
-msgid "Categories"
-msgstr "Categorie"
-
 #. type: Title ###
 #: src/en/reference/rest-api/knowledgebase.md:99
 #, fuzzy, no-wrap
@@ -26710,12 +27248,6 @@ msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/knowledgebase/put-categories-permissions-response.json\n"
 "\n"
-
-#. type: Title ##
-#: src/en/reference/rest-api/knowledgebase.md:245
-#, no-wrap
-msgid "Answers"
-msgstr "Risposte"
 
 #. type: Title ###
 #: src/en/reference/rest-api/knowledgebase.md:247
@@ -36892,6 +37424,17 @@ msgid ""
 "  RequestHeader set X_FORWARDED_PROTO 'https'\n"
 "  RequestHeader set X-Forwarded-Ssl on\n"
 msgstr ""
+
+#, fuzzy, no-wrap
+#~| msgid "Insert Knowledge Base Article"
+#~ msgid "Using the knowledge base in tickets"
+#~ msgstr "Inserisci articolo dalla base di conoscenza"
+
+#~ msgid "A working Docker Compose environment"
+#~ msgstr "Un ambiente Docker Compose funzionante"
+
+#~ msgid "Increase the memory limit for Elasticsearch on Linux hosts:"
+#~ msgstr "Aumenta il limite di memoria per Elasticsearch su host Linux:"
 
 #~ msgid ""
 #~ "The state of each request as well as the history (who did what?) is "
