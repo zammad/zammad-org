@@ -39,15 +39,15 @@ opens in an empty state in the editor.
 
 ### Visibilidade
 
-Every answer has one of four publication states. The state is shown as a
+Every answer has one of four visibility states. The state is shown as a
 colored icon on the answer and on its category tile:
 
-| Color | State     | Who can see it                                        |
-|-------|-----------|--------------------------------------------------------|
-| Green | Published | Everyone, including customers on the public help site  |
-| Blue  | Internal  | Agents with knowledge base reader permission           |
-| Gray  | Draft     | Editors only                                           |
-| Gray  | Archived  | Editors only                                           |
+| Color | Visibility | Who can see it                                        |
+|-------|------------|--------------------------------------------------------|
+| Green | Published  | Everyone, including customers on the public help site  |
+| Blue  | Internal   | Agents with knowledge base reader permission           |
+| Gray  | Draft      | Editors only                                           |
+| Gray  | Archived   | Editors only                                           |
 
 When viewing or editing an answer, a badge in the top bar shows you the
 current or planned (scheduled) visibility too.
@@ -74,8 +74,8 @@ of answers it contains across all subcategories.
 
 To open a category, simply click on its tile. Its subcategories appear as
 tiles on top, its answers below them as a list. Select an answer to read
-it. Use the back and forward buttons in the top bar to jump between
-previously visited answers.
+it. Use the back and forward buttons in the top bar to jump between previous
+and next answers inside the same category.
 
 Use the search bar on top to search the knowledge base. Use the language
 selector to switch between translated content.  The knowledge base icon at
@@ -163,13 +163,13 @@ only affect internal answers and the editing of content.
 
 ### Respostas
 
-To add an **answer**, open a category and select the `+ Add answer` card or
+To add an **answer**, open a category and select the `+ Add answer` entry or
 use the category's ::a:: menu and select **Add answer** there. An answer
 consists of a title and rich content. The editor provides the same
 formatting capabilities as the ticket article editor. See the [formatting
 section](/en/documentation/use/guides/editor#apply-formatting) of the editor
 guide for details. Tags make answers easier to find, both in the knowledge
-base search and in the ticket composer.
+base search and while working on tickets.
 
 Within an answer you can link to other knowledge base answers. Select the
 corresponding tool in the editor toolbar and pick the answer to link
@@ -180,10 +180,10 @@ Answers support live collaboration: when several editors open the same
 answer for editing, Zammad shows who else is editing and keeps everyone's
 changes together.
 
-While you edit, your work is saved automatically as a draft in the taskbar
-tab. If you close the tab or the browser, come back to it later and continue
-where you left off. Until you save the answer explicitly, you can discard
-the unsaved changes.
+While you edit, your work is saved automatically as a draft. If you close
+the tab or the browser, come back to it later and continue where you left
+off. Until you save the answer explicitly, you can discard the unsaved
+changes.
 
 The editor offers more than formatted text. You can embed images from your
 computer directly in the answer body, embed videos via a video URL and add
@@ -243,21 +243,22 @@ for everyone who views the knowledge base.
 ![Screenshot shows the scheduled visibility section in the answer sidebar,
 highlighted](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-scheduled-visibility.png)
 
-To change the visibility of an answer, open the visibility dropdown in the
-answer sidebar and select the new state; it takes effect immediately when
-you click **Update**. Use drafts to prepare content that is not ready for
-release, and archiving to retire outdated answers without deleting them.
+To change the visibility of an answer, edit the answer and select the new
+visibility in the answer sidebar; it takes effect immediately when you click
+`Update`. Use drafts to prepare content that is not ready for release, and
+archiving to retire outdated answers without deleting them.
 
-Instead of changing the state manually, you can schedule state changes: an
-answer can be published automatically on a given date, or archived when it
-becomes obsolete. Scheduled changes are listed in the answer sidebar and
-only visible to editors. Create a new schedule by clicking the ::+:: button
-in the **Scheduled visibility** section in the answer edit mode.
+Instead of changing the visibility manually, you can schedule visibility
+changes: an answer can be published automatically on a given date, or
+archived when it becomes obsolete. Scheduled changes are listed in the
+answer sidebar and only visible to editors. Create a new schedule by
+clicking the ::+:: button in the **Scheduled visibility** section in the
+answer edit mode.
 
-Schedules follow the order of the states: an answer can become internal,
-then published, then archived, each with its own date. Drafts cannot be
-scheduled and a state the answer has already reached cannot be scheduled
-again.
+Schedules follow the order of the visibility states: an answer can become
+internal, then published, then archived, each with its own date. Drafts
+cannot be scheduled and a visibility state that the answer has already
+reached cannot be scheduled again.
 
 ## Advanced
 

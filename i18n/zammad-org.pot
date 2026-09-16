@@ -252,18 +252,6 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -5498,7 +5486,7 @@ msgstr ""
 #: src/en/documentation/use/guides/knowledge-base.md:36
 #, markdown-text
 msgid ""
-"Every answer has one of four publication states. The state is shown as a "
+"Every answer has one of four visibility states. The state is shown as a "
 "colored icon on the answer and on its category tile:"
 msgstr ""
 
@@ -5506,16 +5494,16 @@ msgstr ""
 #: src/en/documentation/use/guides/knowledge-base.md:43
 #, markdown-text, no-wrap
 msgid ""
-"| Color | State     | Who can see it                                        "
+"| Color | Visibility | Who can see it                                        "
 "|\n"
-"|-------|-----------|--------------------------------------------------------|\n"
-"| Green | Published | Everyone, including customers on the public help site  "
+"|-------|------------|--------------------------------------------------------|\n"
+"| Green | Published  | Everyone, including customers on the public help site  "
 "|\n"
-"| Blue  | Internal  | Agents with knowledge base reader permission           "
+"| Blue  | Internal   | Agents with knowledge base reader permission           "
 "|\n"
-"| Gray  | Draft     | Editors only                                           "
+"| Gray  | Draft      | Editors only                                           "
 "|\n"
-"| Gray  | Archived  | Editors only                                           "
+"| Gray  | Archived   | Editors only                                           "
 "|\n"
 msgstr ""
 
@@ -5575,8 +5563,8 @@ msgstr ""
 msgid ""
 "To open a category, simply click on its tile. Its subcategories appear as "
 "tiles on top, its answers below them as a list. Select an answer to read "
-"it. Use the back and forward buttons in the top bar to jump between "
-"previously visited answers."
+"it. Use the back and forward buttons in the top bar to jump between previous "
+"and next answers inside the same category."
 msgstr ""
 
 #. type: Plain text
@@ -5752,20 +5740,20 @@ msgid "Answers"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:140
+#: src/en/documentation/use/guides/knowledge-base.md:139
 #, markdown-text
 msgid ""
-"To add an **answer**, open a category and select the `+ Add answer` card or "
+"To add an **answer**, open a category and select the `+ Add answer` entry or "
 "use the category's ::a:: menu and select **Add answer** there. An answer "
 "consists of a title and rich content. The editor provides the same "
 "formatting capabilities as the ticket article editor. See the [formatting "
 "section](/en/documentation/use/guides/editor#apply-formatting) of the editor "
 "guide for details. Tags make answers easier to find, both in the knowledge "
-"base search and in the ticket composer."
+"base search and while working on tickets."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:143
+#: src/en/documentation/use/guides/knowledge-base.md:142
 #, markdown-text
 msgid ""
 "Within an answer you can link to other knowledge base answers. Select the "
@@ -5775,7 +5763,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:146
+#: src/en/documentation/use/guides/knowledge-base.md:145
 #, markdown-text
 msgid ""
 "Answers support live collaboration: when several editors open the same "
@@ -5784,17 +5772,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:150
+#: src/en/documentation/use/guides/knowledge-base.md:148
 #, markdown-text
 msgid ""
-"While you edit, your work is saved automatically as a draft in the taskbar "
-"tab. If you close the tab or the browser, come back to it later and continue "
-"where you left off. Until you save the answer explicitly, you can discard "
-"the unsaved changes."
+"While you edit, your work is saved automatically as a draft. If you close "
+"the tab or the browser, come back to it later and continue where you left "
+"off. Until you save the answer explicitly, you can discard the unsaved "
+"changes."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:155
+#: src/en/documentation/use/guides/knowledge-base.md:153
 #, markdown-text
 msgid ""
 "The editor offers more than formatted text. You can embed images from your "
@@ -5807,13 +5795,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:156
+#: src/en/documentation/use/guides/knowledge-base.md:154
 #, markdown-text, no-wrap
 msgid "Move content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:161
+#: src/en/documentation/use/guides/knowledge-base.md:159
 #, markdown-text
 msgid ""
 "To move a category including its content to another parent category, open "
@@ -5823,7 +5811,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:163
+#: src/en/documentation/use/guides/knowledge-base.md:161
 #, markdown-text
 msgid ""
 "To move an answer, edit the answer and select another category in the right "
@@ -5831,13 +5819,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:164
+#: src/en/documentation/use/guides/knowledge-base.md:162
 #, markdown-text, no-wrap
 msgid "Delete content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:169
+#: src/en/documentation/use/guides/knowledge-base.md:167
 #, markdown-text
 msgid ""
 "Categories and answers can be deleted from their ::a:: menus (**Delete "
@@ -5847,13 +5835,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:170
+#: src/en/documentation/use/guides/knowledge-base.md:168
 #, markdown-text, no-wrap
 msgid "Sort content"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:173
+#: src/en/documentation/use/guides/knowledge-base.md:171
 #, markdown-text
 msgid ""
 "![Screenshot shows the sorting bar with the mode switcher highlighted and "
@@ -5862,7 +5850,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:177
+#: src/en/documentation/use/guides/knowledge-base.md:175
 #, markdown-text
 msgid ""
 "Categories and answers can be sorted per category. Open the ::a:: menu in "
@@ -5873,7 +5861,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:179
+#: src/en/documentation/use/guides/knowledge-base.md:177
 #, markdown-text
 msgid ""
 "Three sorting modes are available for both answers and categories. Answers "
@@ -5881,7 +5869,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:185
+#: src/en/documentation/use/guides/knowledge-base.md:183
 #, markdown-text, no-wrap
 msgid ""
 "| Mode                       | Effect                                                               "
@@ -5896,7 +5884,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:188
+#: src/en/documentation/use/guides/knowledge-base.md:186
 #, markdown-text
 msgid ""
 "For categories, _latest updates_ means the category's own editorial changes "
@@ -5905,7 +5893,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:190
+#: src/en/documentation/use/guides/knowledge-base.md:188
 #, markdown-text
 msgid ""
 "Select the mode, arrange the entries if needed and save. The order applies "
@@ -5913,13 +5901,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:191
+#: src/en/documentation/use/guides/knowledge-base.md:189
 #, markdown-text, no-wrap
 msgid "Visibility and scheduling"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:194
+#: src/en/documentation/use/guides/knowledge-base.md:192
 #, markdown-text
 msgid ""
 "![Screenshot shows the scheduled visibility section in the answer sidebar, "
@@ -5927,50 +5915,51 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:198
+#: src/en/documentation/use/guides/knowledge-base.md:196
 #, markdown-text
 msgid ""
-"To change the visibility of an answer, open the visibility dropdown in the "
-"answer sidebar and select the new state; it takes effect immediately when "
-"you click **Update**. Use drafts to prepare content that is not ready for "
-"release, and archiving to retire outdated answers without deleting them."
+"To change the visibility of an answer, edit the answer and select the new "
+"visibility in the answer sidebar; it takes effect immediately when you click "
+"`Update`. Use drafts to prepare content that is not ready for release, and "
+"archiving to retire outdated answers without deleting them."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:203
+#: src/en/documentation/use/guides/knowledge-base.md:201
 #, markdown-text
 msgid ""
-"Instead of changing the state manually, you can schedule state changes: an "
-"answer can be published automatically on a given date, or archived when it "
-"becomes obsolete. Scheduled changes are listed in the answer sidebar and "
-"only visible to editors. Create a new schedule by clicking the ::+:: button "
-"in the **Scheduled visibility** section in the answer edit mode."
+"Instead of changing the visibility manually, you can schedule visibility "
+"changes: an answer can be published automatically on a given date, or "
+"archived when it becomes obsolete. Scheduled changes are listed in the "
+"answer sidebar and only visible to editors. Create a new schedule by "
+"clicking the ::+:: button in the **Scheduled visibility** section in the "
+"answer edit mode."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:207
+#: src/en/documentation/use/guides/knowledge-base.md:205
 #, markdown-text
 msgid ""
-"Schedules follow the order of the states: an answer can become internal, "
-"then published, then archived, each with its own date. Drafts cannot be "
-"scheduled and a state the answer has already reached cannot be scheduled "
-"again."
+"Schedules follow the order of the visibility states: an answer can become "
+"internal, then published, then archived, each with its own date. Drafts "
+"cannot be scheduled and a visibility state that the answer has already "
+"reached cannot be scheduled again."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:208
+#: src/en/documentation/use/guides/knowledge-base.md:206
 #, markdown-text, no-wrap
 msgid "Advanced"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:210
+#: src/en/documentation/use/guides/knowledge-base.md:208
 #, markdown-text, no-wrap
 msgid "Save behavior"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:216
+#: src/en/documentation/use/guides/knowledge-base.md:214
 #, markdown-text
 msgid ""
 "Next to the **Create** and **Update** buttons you can choose what happens "
@@ -5982,13 +5971,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:217
+#: src/en/documentation/use/guides/knowledge-base.md:215
 #, markdown-text, no-wrap
 msgid "The public help site"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:223
+#: src/en/documentation/use/guides/knowledge-base.md:221
 #, markdown-text
 msgid ""
 "Customers reach published answers either in Zammad itself or on the public "
@@ -6000,7 +5989,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:226
+#: src/en/documentation/use/guides/knowledge-base.md:224
 #, markdown-text
 msgid ""
 "To see the knowledge base as your customers see it, use the preview button "
@@ -6010,13 +5999,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:227
+#: src/en/documentation/use/guides/knowledge-base.md:225
 #, markdown-text, no-wrap
 msgid "Feeds"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:231
+#: src/en/documentation/use/guides/knowledge-base.md:229
 #, markdown-text
 msgid ""
 "The knowledge base allows you to subscribe to the knowledge base or "
@@ -6025,7 +6014,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:237
+#: src/en/documentation/use/guides/knowledge-base.md:235
 #, markdown-text
 msgid ""
 "For **agents**: go to the level of your knowledge base you want to subscribe "
@@ -6039,7 +6028,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:240
+#: src/en/documentation/use/guides/knowledge-base.md:238
 #, markdown-text, no-wrap
 msgid ""
 "**Customers** on the public help site get their own feed of the published "
@@ -6048,13 +6037,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:241
+#: src/en/documentation/use/guides/knowledge-base.md:239
 #, markdown-text, no-wrap
 msgid "Copy the title"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:244
+#: src/en/documentation/use/guides/knowledge-base.md:242
 #, markdown-text
 msgid ""
 "The ::c:: button next to the title in the top bar copies the name of the "
@@ -25351,83 +25340,6 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, markdown-text, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-#, markdown-text
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-#, markdown-text
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-#, markdown-text
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-#, markdown-text
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-#, markdown-text
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-#, markdown-text
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
-"\n"
-msgstr ""
-
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -25637,6 +25549,83 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, markdown-text, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+#, markdown-text
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+#, markdown-text
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+#, markdown-text
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+#, markdown-text
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+#, markdown-text
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -26080,6 +26069,18 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
 msgstr ""
 
 #. type: Title #
