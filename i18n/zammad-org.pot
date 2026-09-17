@@ -11432,7 +11432,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:30
-#: src/en/reference/docker-compose-scenarios.md:119
+#: src/en/reference/docker-compose-scenarios.md:110
 #, markdown-text, no-wrap
 msgid "Disable Elasticsearch service"
 msgstr ""
@@ -11502,42 +11502,42 @@ msgid ""
 "\n"
 "=== Docker Compose\n"
 "\n"
-"Follow the first 2 steps of the [general deployment "
-"guide](/en/get-started/installation/docker). Instead of passing\n"
-"scenario files with additional `-f` flags on every command, list the "
-"scenarios you want to use in an `include` section\n"
-"of a `docker-compose.override.yml` file in the cloned repository folder. The "
-"stack repository ships an inactive example\n"
-"file you can copy and adjust:\n"
+"To use a scenario, list its compose file in the `COMPOSE_FILE` environment "
+"variable. Either create a `.env` file or\n"
+"copy and rename the `.env.dist` in the cloned repository folder. The main "
+"compose file must be specified first,\n"
+"followed by one or more scenarios, separated by a colon (`:`). The files are "
+"applied in the order given. Replace the\n"
+"placeholder in curly brackets with the filename of the scenario you want to "
+"use.\n"
+"\n"
+"**Example with two scenario placeholders:**\n"
 "\n"
 "``` sh\n"
-"cp docker-compose.override.yml.dist docker-compose.override.yml\n"
+"COMPOSE_FILE=docker-compose.yml:scenarios/{scenario you want to "
+"use}.yml:scenarios/{another scenario you want to use}.yml\n"
 "```\n"
 "\n"
-"Edit the copy and add the scenarios you want to use:\n"
+"After specifying the scenarios, start the stack with `docker compose up "
+"-d`.\n"
 "\n"
-"``` yaml\n"
-"include:\n"
-"  - scenarios/{scenario you want to use}.yml\n"
-"  - scenarios/{another scenario you want to use}.yml\n"
-"```\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|info)
+#: src/en/reference/docker-compose-scenarios.md:35
+#, no-wrap
+msgid ""
 "\n"
-"Replace the parts in `{}` brackets with the file names of the scenario files "
-"you want to combine. Then start the stack\n"
-"as usual with plain `docker compose up -d` (step 3 of the [general "
-"deployment guide](/en/get-started/installation/docker)).\n"
-"Keep two things in mind: the `include` keyword requires Docker Compose 2.20 "
-"or higher, and scenarios that bind-mount\n"
-"host files have to be included with the long form below. Otherwise their "
-"relative paths resolve against the `scenarios`\n"
-"folder and Docker silently creates empty directories instead of mounting "
-"your files:\n"
+"When using the `COMPOSE_FILE` variable, the `docker-compose.override.yml` is "
+"not automatically picked up. If you want\n"
+"to use it, make sure to append it to the environment variable's list.\n"
 "\n"
-"``` yaml\n"
-"include:\n"
-"  - path: scenarios/{scenario you want to use}.yml\n"
-"    project_directory: .\n"
-"```\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/reference/docker-compose-scenarios.md:35
+#, no-wrap
+msgid ""
 "\n"
 "=== Portainer\n"
 "\n"
@@ -11557,13 +11557,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:80
+#: src/en/reference/docker-compose-scenarios.md:71
 #, markdown-text, no-wrap
 msgid "Making the stack available via HTTPS"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:84
+#: src/en/reference/docker-compose-scenarios.md:75
 #, markdown-text
 msgid ""
 "If you set up Zammad for production use, it needs to be secured by using an "
@@ -11571,13 +11571,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:85
+#: src/en/reference/docker-compose-scenarios.md:76
 #, markdown-text, no-wrap
 msgid "Add Cloudflare tunnel"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:89
+#: src/en/reference/docker-compose-scenarios.md:80
 #, markdown-text
 msgid ""
 "If you want to publish Zammad in a very convenient way, you can use a "
@@ -11585,19 +11585,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:95
+#: src/en/reference/docker-compose-scenarios.md:86
 #, markdown-text
 msgid "Use the scenario file `scenarios/add-cloudflare-tunnel.yml` for deployment"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:95
+#: src/en/reference/docker-compose-scenarios.md:86
 #, markdown-text
 msgid "Add a sub-domain to an already existing domain in your Cloudflare dashboard"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:95
+#: src/en/reference/docker-compose-scenarios.md:86
 #, markdown-text
 msgid ""
 "Create a tunnel for this subdomain and configure it to forward traffic to "
@@ -11605,7 +11605,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:95
+#: src/en/reference/docker-compose-scenarios.md:86
 #, markdown-text
 msgid ""
 "Provide your Cloudflare tunnel token to the Zammad stack by using the "
@@ -11613,13 +11613,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:96
+#: src/en/reference/docker-compose-scenarios.md:87
 #, markdown-text, no-wrap
 msgid "Add Nginx proxy manager"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:102
+#: src/en/reference/docker-compose-scenarios.md:93
 #, markdown-text
 msgid ""
 "A very common setup of publishing web services is to use a reverse proxy, "
@@ -11630,19 +11630,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:107
+#: src/en/reference/docker-compose-scenarios.md:98
 #, markdown-text
 msgid "Use the scenario file `scenarios/add-nginx-proxy-manager.yml` for deployment"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:107
+#: src/en/reference/docker-compose-scenarios.md:98
 #, markdown-text
 msgid "Provide your FQDN for Zammad by using the environment variable `ZAMMAD_FQDN`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:107
+#: src/en/reference/docker-compose-scenarios.md:98
 #, markdown-text
 msgid ""
 "Configure your DNS. The chosen Zammad FQDN should point to the IP address of "
@@ -11650,7 +11650,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:107
+#: src/en/reference/docker-compose-scenarios.md:98
 #, markdown-text
 msgid ""
 "Configure a new proxy host in your NPM and follow the steps to get an SSL "
@@ -11658,13 +11658,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:108
+#: src/en/reference/docker-compose-scenarios.md:99
 #, markdown-text, no-wrap
 msgid "Add external Docker network to Nginx"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:113
+#: src/en/reference/docker-compose-scenarios.md:104
 #, markdown-text
 msgid ""
 "If you already have a reverse proxy which takes care about the SSL "
@@ -11674,7 +11674,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:116
+#: src/en/reference/docker-compose-scenarios.md:107
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-nginx.yml` for "
@@ -11682,7 +11682,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:116
+#: src/en/reference/docker-compose-scenarios.md:107
 #, markdown-text
 msgid ""
 "Provide the name of your external network by using the environment variable "
@@ -11690,13 +11690,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:117
+#: src/en/reference/docker-compose-scenarios.md:108
 #, markdown-text, no-wrap
 msgid "Using external services"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:123
+#: src/en/reference/docker-compose-scenarios.md:114
 #, markdown-text
 msgid ""
 "Do you have an Elasticsearch instance already running and want to use it for "
@@ -11705,7 +11705,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:124
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/disable-elasticsearch-service.yml` for "
@@ -11713,7 +11713,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:124
 #, markdown-text
 msgid ""
 "Use the following environment variables to provide information about the "
@@ -11721,43 +11721,43 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:124
 #, markdown-text
 msgid "`ELASTICSEARCH_SCHEMA`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:124
 #, markdown-text
 msgid "`ELASTICSEARCH_HOST`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:124
 #, markdown-text
 msgid "`ELASTICSEARCH_PORT`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:124
 #, markdown-text
 msgid "`ELASTICSEARCH_USER`"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:124
 #, markdown-text
 msgid "`ELASTICSEARCH_PASS`"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:134
+#: src/en/reference/docker-compose-scenarios.md:125
 #, markdown-text, no-wrap
 msgid "Making services externally available"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:138
+#: src/en/reference/docker-compose-scenarios.md:129
 #, markdown-text
 msgid ""
 "These scenarios are meant to connect from external applications to Zammad "
@@ -11766,7 +11766,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/docker-compose-scenarios.md:139
+#: src/en/reference/docker-compose-scenarios.md:130
 #, no-wrap
 msgid ""
 "\n"
@@ -11778,7 +11778,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/docker-compose-scenarios.md:146
+#: src/en/reference/docker-compose-scenarios.md:137
 #, no-wrap
 msgid ""
 "\n"
@@ -11788,13 +11788,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:152
+#: src/en/reference/docker-compose-scenarios.md:143
 #, markdown-text, no-wrap
 msgid "Add external Docker network to Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:157
+#: src/en/reference/docker-compose-scenarios.md:148
 #, markdown-text
 msgid ""
 "A common use case for this is to use a reporting/visualization tool like "
@@ -11804,7 +11804,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:160
+#: src/en/reference/docker-compose-scenarios.md:151
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-elasticsearch.yml` "
@@ -11812,7 +11812,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:160
+#: src/en/reference/docker-compose-scenarios.md:151
 #, markdown-text
 msgid ""
 "Provide the name of your external network by using the environment variable "
@@ -11820,13 +11820,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:161
+#: src/en/reference/docker-compose-scenarios.md:152
 #, markdown-text, no-wrap
 msgid "Add host port to Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:165
+#: src/en/reference/docker-compose-scenarios.md:156
 #, markdown-text
 msgid ""
 "In case you want to expose the Elasticsearch service of the Zammad stack in "
@@ -11835,7 +11835,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:169
+#: src/en/reference/docker-compose-scenarios.md:160
 #, markdown-text
 msgid ""
 "Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for "
@@ -11843,7 +11843,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:169
+#: src/en/reference/docker-compose-scenarios.md:160
 #, markdown-text
 msgid ""
 "The default port for Elasticsearch is `9200`. Change it to another port by "
@@ -11851,19 +11851,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:170
+#: src/en/reference/docker-compose-scenarios.md:161
 #, markdown-text, no-wrap
 msgid "Additional scenarios"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:172
+#: src/en/reference/docker-compose-scenarios.md:163
 #, markdown-text, no-wrap
 msgid "Disable backup service"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:176
+#: src/en/reference/docker-compose-scenarios.md:167
 #, markdown-text
 msgid ""
 "In case you want to handle backups in a different way, you can disable the "
@@ -11871,7 +11871,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:178
+#: src/en/reference/docker-compose-scenarios.md:169
 #, markdown-text
 msgid ""
 "You can do so by just using the scenario file "
@@ -11879,13 +11879,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:179
+#: src/en/reference/docker-compose-scenarios.md:170
 #, markdown-text, no-wrap
 msgid "Add Ollama"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:183
+#: src/en/reference/docker-compose-scenarios.md:174
 #, markdown-text
 msgid ""
 "You can spin up an additional [Ollama](https://ollama.com/){target=_blank} "
@@ -11893,7 +11893,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/docker-compose-scenarios.md:184
+#: src/en/reference/docker-compose-scenarios.md:175
 #, no-wrap
 msgid ""
 "This is intended for development or testing purposes as running a productive "
@@ -11901,7 +11901,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:191
+#: src/en/reference/docker-compose-scenarios.md:182
 #, markdown-text
 msgid ""
 "To deploy an Ollama container inside the Zammad stack, use the scenario file "
@@ -11911,7 +11911,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:193
+#: src/en/reference/docker-compose-scenarios.md:184
 #, markdown-text
 msgid ""
 "To use it in Zammad, add the service name and port (`http://ollama:11434`) "
@@ -11919,13 +11919,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:194
+#: src/en/reference/docker-compose-scenarios.md:185
 #, markdown-text, no-wrap
 msgid "Limit resources"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:200
+#: src/en/reference/docker-compose-scenarios.md:191
 #, markdown-text
 msgid ""
 "If you want to limit the hardware resources the Zammad stack is allowed to "
@@ -11937,13 +11937,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:201
+#: src/en/reference/docker-compose-scenarios.md:192
 #, markdown-text, no-wrap
 msgid "Other use cases"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:205
+#: src/en/reference/docker-compose-scenarios.md:196
 #, markdown-text
 msgid ""
 "Your scenario is not covered yet? Feel free to suggest your use case. We "
@@ -11951,13 +11951,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:206
+#: src/en/reference/docker-compose-scenarios.md:197
 #, markdown-text, no-wrap
 msgid "Customize the stack locally"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:212
+#: src/en/reference/docker-compose-scenarios.md:204
 #, markdown-text
 msgid ""
 "Sometimes it's necessary to apply local changes to the Zammad Docker stack, "
@@ -11965,16 +11965,27 @@ msgid ""
 "you do not change the `docker-compose.yml` file, but instead create a local "
 "`docker-compose.override.yml` that includes all your modifications. Docker "
 "Compose will [automatically load this file and merge its changes into your "
-"stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}."
+"stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.  "
+"The stack repository ships an inactive example file you can copy and adjust:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/docker-compose-scenarios.md:205
+#, no-wrap
+msgid "cp docker-compose.override.yml.dist docker-compose.override.yml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:214
+#: src/en/reference/docker-compose-scenarios.md:213
 #, markdown-text
 msgid ""
-"Besides your own modifications, this file is also the place to pull in "
-"pre-defined scenarios via the `include` keyword, as described in the "
-"[general usage](#general-usage) section above."
+"Keep in mind that this file is for changing settings of the services that "
+"`docker-compose.yml` already defines. Loading scenarios here is not "
+"supported, use the `COMPOSE_FILE` variable in your `.env` file instead, as "
+"described in the [general usage](#general-usage) section above. If you do, "
+"append this file to that list as well: setting `COMPOSE_FILE` turns off the "
+"automatic pickup of `docker-compose.override.yml`, so your changes here "
+"would otherwise go unused without any warning."
 msgstr ""
 
 #. type: Title #
