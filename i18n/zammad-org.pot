@@ -30692,7 +30692,7 @@ msgid ""
 "For best results, set up the LDAP integration to make sure\n"
 "your Active Directory and Zammad user accounts are always in sync. You\n"
 "can find it in Zammad's admin interface under\n"
-"_Settings > Security > Third-party Applications_.\n"
+"_System > Integrations > LDAP_.\n"
 msgstr ""
 
 #. type: Title ##
@@ -31404,7 +31404,7 @@ msgstr ""
 #: src/en/tutorials/sso-kerberos.md:503
 #, markdown-text, no-wrap
 msgid ""
-"Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
+"Next, enable \"Authentication via SSO\" in Zammad's admin interface under\n"
 "_Settings > Security > Third-party Applications_\n"
 msgstr ""
 

@@ -75,8 +75,10 @@ Avrai bisogno di:
 - una certa familiarità con l'amministrazione di sistema (ad esempio
   configurazione Apache)
 
-Per risultati ottimali, configura l'integrazione LDAP per assicurarti
-che il tuo Active Directory e Zammad.
+For best results, set up the LDAP integration to make sure
+your Active Directory and Zammad user accounts are always in sync. You
+can find it in Zammad's admin interface under
+_System > Integrations > LDAP_.
 
 ## Step 1: Configure active directory
 
@@ -366,8 +368,8 @@ sudo systemctl restart apache2
 
 ## Passo 3: Abilita SSO in Zammad
 
-Successivamente, abilita "Autenticazione tramite SSO" nel Pannello di amministrazione di Zammad sotto
-_Impostazioni > Sicurezza >
+Next, enable "Authentication via SSO" in Zammad's admin interface under
+_Settings > Security > Third-party Applications_
 
 ::: tip
 Nelle versioni più vecchie di Zammad, visita `https://your.zammad.host/auth/sso`

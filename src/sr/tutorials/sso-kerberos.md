@@ -79,8 +79,10 @@ security hole.
   - комплетно квалификовано име домена (FQDN)
 - одређено познавање администрације система (нпр. конфигурација Апацха)
 
-За најбоље резултате подесите LDAP интеграцију како бисте осигурали да су ваши Active Directory и Zammad налози увек синхронизовани. Можете је пронаћи у админ интерфејсу Zammad-а под
-_Settings > Security > Third-party Applications_.
+For best results, set up the LDAP integration to make sure
+your Active Directory and Zammad user accounts are always in sync. You
+can find it in Zammad's admin interface under
+_System > Integrations > LDAP_.
 
 ## Корак 1: Клонирање GitHub репозиторија
 
@@ -493,8 +495,8 @@ systemctl рестарт apache2
 
 ## Корак 3: Укључите SSO пријаву за Zammad
 
-Затим, омогућите "Аутентификацију путем SSO" у Администраторском панелу Zammad-а под
-_Сетиње > Безбедност > Апликације трећих страна_
+Next, enable "Authentication via SSO" in Zammad's admin interface under
+_Settings > Security > Third-party Applications_
 
 ::: tip
 На старијим верзијама Zammad-а посетите `https://vaš.zammad.host/auth/sso`
