@@ -20,14 +20,16 @@ detalhada e o uso da sintaxe do Elasticsearch.
 
 ## Pesquisa básica
 
-A pesquisa está localizada no canto superior esquerdo da navegação
-principal. Selecione-a com o mouse ou use o atalho de teclado [[s]]. Depois
-de ativada, você pode ver os tickets fechados recentemente na sua barra de
-tarefas, assim como suas consultas de pesquisa recentes. Para pesquisar,
-basta digitar um termo. A pesquisa então exibe todos os itens
-correspondentes para os quais você tem pelo menos permissão de visualização
-ou leitura, agrupados por tipo, como usuários e tickets. Selecionar um
-desses resultados abre o item como aba na barra de tarefas.
+The search is located in the top left corner of the primary
+navigation. Either select it via mouse or use the keyboard shortcut
+[[s]]. After activation, you can see the tickets that were recently closed
+from your taskbar as well as your recent search queries. To search, simply
+type a term. The search then displays matching items for which you have at
+least view or read permissions, grouped by type like users and
+tickets. Selecting one of those results opens the item as tab in the
+taskbar. The number of results per type is limited: as soon as your search
+matches more than two types, each group shows up to five results. Use the
+detailed search to get the full result set.
 
 Pesquisar por um termo também encontra valores que começam com ele. Por
 exemplo, pesquisar por `brooks` também encontra valores como

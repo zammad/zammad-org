@@ -63,13 +63,13 @@ comuns do Zammad enquanto está em movimento:
 - Modificar atributos do ticket
 - Modificar atributos do cliente
 - Modificar atributos da organização
+- Track time on ticket articles
 
 ## Limitações
 
 A visualização móvel também ainda não tem alguns recursos oferecidos pela
 visualização desktop:
 
-- Contabilização de tempo
 - Dividir artigo
 - Vincular tickets e ver tickets vinculados
 - Execução de macros

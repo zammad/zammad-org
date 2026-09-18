@@ -19,15 +19,16 @@ Erweiterten Suche und der Verwendung von Elasticsearch-Syntax.
 
 ## Einfache Suche
 
-Die Suche befindet sich in der oberen linken Ecke in der primären
-Navigation. Wählen Sie sie entweder mit der Maus aus oder verwenden Sie das
-Tastaturkürzel [[s]]. Nach der Aktivierung sehen Sie in Ihrer Taskleiste die
-Tickets, die kürzlich dort geschlossen wurden sowie Ihre letzten
-Suchanfragen. Um zu suchen, geben Sie einfach einen Begriff ein. Die Suche
-zeigt dann alle übereinstimmenden Elemente an, für die Sie mindestens über
-Ansichts- bzw. Leserechte verfügen, gruppiert nach Typ wie Benutzer und
-Tickets. Wenn Sie eines dieser Ergebnisse auswählen, wird das Element als
-Tab in der Taskleiste geöffnet.
+The search is located in the top left corner of the primary
+navigation. Either select it via mouse or use the keyboard shortcut
+[[s]]. After activation, you can see the tickets that were recently closed
+from your taskbar as well as your recent search queries. To search, simply
+type a term. The search then displays matching items for which you have at
+least view or read permissions, grouped by type like users and
+tickets. Selecting one of those results opens the item as tab in the
+taskbar. The number of results per type is limited: as soon as your search
+matches more than two types, each group shows up to five results. Use the
+detailed search to get the full result set.
 
 Bei der Suche nach einem Begriff werden auch alle Werte gefunden, die mit
 diesem Begriff beginnen. Wenn Sie beispielsweise nach `brooks` suchen werden

@@ -63,13 +63,13 @@ Zammad auch unterwegs zu erledigen:
 - Ändern von Ticketattributen
 - Ändern von Kundenattributen
 - Ändern von Organisations-Attributen
+- Track time on ticket articles
 
 ## Einschränkungen
 
 Der mobilen Ansicht fehlen aktuell Features, die in der Desktop-Oberfläche
 vorhanden sind:
 
-- Zeiterfassung
 - Artikel abspalten
 - Tickets verknüpfen und verknüpfte Tickets anzeigen
 - Ausführung von Makros

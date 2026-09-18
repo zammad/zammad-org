@@ -23,10 +23,12 @@ The search is located in the top left corner of the primary
 navigation. Either select it via mouse or use the keyboard shortcut
 [[s]]. After activation, you can see the tickets that were recently closed
 from your taskbar as well as your recent search queries. To search, simply
-type a term. The search then displays all matching items for which you have
-at least view or read permissions, grouped by type like users and
+type a term. The search then displays matching items for which you have at
+least view or read permissions, grouped by type like users and
 tickets. Selecting one of those results opens the item as tab in the
-taskbar.
+taskbar. The number of results per type is limited: as soon as your search
+matches more than two types, each group shows up to five results. Use the
+detailed search to get the full result set.
 
 Searching for a term also matches any values that begin with it. For
 example, searching for `brooks` also finds values like `brookster`. This

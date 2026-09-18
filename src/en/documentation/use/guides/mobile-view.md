@@ -58,12 +58,12 @@ Mobile view provides you with a way to do your common Zammad daily tasks while o
 - Modify ticket attributes
 - Modify customer attributes
 - Modify organization attributes
+- Track time on ticket articles
 
 ## Limitations
 
 Mobile view is also currently missing some features which are provided by the desktop view:
 
-- Time accounting
 - Split article
 - Link tickets and see linked tickets
 - Execution of macros

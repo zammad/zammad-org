@@ -64,13 +64,13 @@ quotidiane comuni di Zammad in mobilità:
 - Modifica gli attributi del ticket
 - Modifica gli attributi del cliente
 - Modifica gli attributi dell'organizzazione
+- Track time on ticket articles
 
 ## Limitazioni
 
 La visualizzazione mobile manca attualmente anche di alcune funzionalità
 fornite dalla visualizzazione desktop:
 
-- Contabilità del tempo
 - Dividi articolo
 - Collega ticket e visualizza i ticket collegati
 - Esecuzione di macro

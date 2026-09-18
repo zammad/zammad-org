@@ -2647,7 +2647,6 @@ msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/advanced-features.md:369
-#: src/en/documentation/use/guides/mobile-view.md:72
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, markdown-text, no-wrap
@@ -6152,49 +6151,55 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 #, markdown-text
 msgid "Manage & use your ticket overviews"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 #, markdown-text
 msgid "Search for existing records"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 #, markdown-text
 msgid "Create a new ticket"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 #, markdown-text
 msgid "Reply in an already existing ticket"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 #, markdown-text
 msgid "Modify ticket attributes"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 #, markdown-text
 msgid "Modify customer attributes"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 #, markdown-text
 msgid "Modify organization attributes"
 msgstr ""
 
-#. type: Title ####
+#. type: Bullet: '- '
 #: src/en/documentation/use/guides/mobile-view.md:62
+#, markdown-text
+msgid "Track time on ticket articles"
+msgstr ""
+
+#. type: Title ####
+#: src/en/documentation/use/guides/mobile-view.md:63
 #: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
 #: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:477
 #, markdown-text, no-wrap
@@ -6202,7 +6207,7 @@ msgid "Limitations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:65
+#: src/en/documentation/use/guides/mobile-view.md:66
 #, markdown-text
 msgid ""
 "Mobile view is also currently missing some features which are provided by "
@@ -6644,21 +6649,23 @@ msgid "Basic search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:25
+#: src/en/documentation/use/guides/search.md:26
 #, markdown-text
 msgid ""
 "The search is located in the top left corner of the primary "
 "navigation. Either select it via mouse or use the keyboard shortcut "
 "[[s]]. After activation, you can see the tickets that were recently closed "
 "from your taskbar as well as your recent search queries. To search, simply "
-"type a term. The search then displays all matching items for which you have "
-"at least view or read permissions, grouped by type like users and "
+"type a term. The search then displays matching items for which you have at "
+"least view or read permissions, grouped by type like users and "
 "tickets. Selecting one of those results opens the item as tab in the "
-"taskbar."
+"taskbar. The number of results per type is limited: as soon as your search "
+"matches more than two types, each group shows up to five results. Use the "
+"detailed search to get the full result set."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:29
+#: src/en/documentation/use/guides/search.md:30
 #, markdown-text
 msgid ""
 "Searching for a term also matches any values that begin with it. For "
@@ -6670,7 +6677,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:31
+#: src/en/documentation/use/guides/search.md:32
 #, markdown-text
 msgid ""
 "![Screenshot shows search results in the "
@@ -6678,7 +6685,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:35
+#: src/en/documentation/use/guides/search.md:36
 #, markdown-text
 msgid ""
 "If you press [[enter]] or click on `detailed search`, Zammad opens the "
@@ -6689,13 +6696,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:36
+#: src/en/documentation/use/guides/search.md:37
 #, markdown-text, no-wrap
 msgid "Detailed search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:40
+#: src/en/documentation/use/guides/search.md:41
 #, markdown-text
 msgid ""
 "Sometimes, a simple search term may not give you the results you are looking "
@@ -6704,7 +6711,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:43
+#: src/en/documentation/use/guides/search.md:44
 #, markdown-text
 msgid ""
 "Advanced filters are not available for customer accounts. If your account "
@@ -6713,7 +6720,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:45
+#: src/en/documentation/use/guides/search.md:46
 #, markdown-text
 msgid ""
 "![Screenshot shows detailed "
@@ -6721,13 +6728,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:46
+#: src/en/documentation/use/guides/search.md:47
 #, markdown-text, no-wrap
 msgid "Sort the results"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:50
+#: src/en/documentation/use/guides/search.md:51
 #, markdown-text
 msgid ""
 "To sort the results based on the column's values, click on a column "
@@ -6736,13 +6743,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:51
+#: src/en/documentation/use/guides/search.md:52
 #, markdown-text, no-wrap
 msgid "Limit search to object type"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:58
+#: src/en/documentation/use/guides/search.md:59
 #, markdown-text
 msgid ""
 "Limit the search to an object type by using the **Search entity** tab "
@@ -6757,13 +6764,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:59
+#: src/en/documentation/use/guides/search.md:60
 #, markdown-text, no-wrap
 msgid "Use advanced filters"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:66
+#: src/en/documentation/use/guides/search.md:67
 #, markdown-text
 msgid ""
 "Unlike the search field, you can filter the search results based on specific "
@@ -6776,7 +6783,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:69
+#: src/en/documentation/use/guides/search.md:70
 #, markdown-text
 msgid ""
 "Remove a single filter by hovering over it and clicking the ::x:: that "
@@ -6786,7 +6793,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:73
+#: src/en/documentation/use/guides/search.md:74
 #, markdown-text
 msgid ""
 "To add another filter, click `Add filter` below or between the existing "
@@ -6796,7 +6803,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:76
+#: src/en/documentation/use/guides/search.md:77
 #, markdown-text
 msgid ""
 "In case you want to store or share your filter, you can do so by copying the "
@@ -6805,7 +6812,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:79
+#: src/en/documentation/use/guides/search.md:80
 #, markdown-text
 msgid ""
 "If you still haven't found what you are looking for, you can benefit from "
@@ -6814,13 +6821,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:80
+#: src/en/documentation/use/guides/search.md:81
 #, markdown-text, no-wrap
 msgid "Using Elasticsearch syntax"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:87
+#: src/en/documentation/use/guides/search.md:88
 #, markdown-text
 msgid ""
 "This is an advanced topic for power users. By using Elasticsearch syntax, "
@@ -6832,14 +6839,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:88
+#: src/en/documentation/use/guides/search.md:89
 #: src/en/tutorials/backup-restore.md:87
 #, markdown-text, no-wrap
 msgid "Important information"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 #, markdown-text
 msgid ""
 "Make sure to select the relevant object in the **Search entity** "
@@ -6848,7 +6855,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 #, markdown-text
 msgid ""
 "Multiple search terms are combined by a logical AND by default, so `smith "
@@ -6857,7 +6864,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 #, markdown-text
 msgid ""
 "When combining an Elasticsearch query with advanced filters, be aware that "
@@ -6867,7 +6874,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 #, markdown-text
 msgid ""
 "To provide values containing a space, wrap them in `\"`, "
@@ -6875,13 +6882,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:99
+#: src/en/documentation/use/guides/search.md:100
 #, markdown-text, no-wrap
 msgid "Logic operators and ranges"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:105
+#: src/en/documentation/use/guides/search.md:106
 #, markdown-text
 msgid ""
 "You can combine conditions by using `AND` & `OR` as logical operators. Use "
@@ -6894,49 +6901,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:107
+#: src/en/documentation/use/guides/search.md:108
 #, markdown-text
 msgid "`AND` & `OR` with parentheses:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:108
+#: src/en/documentation/use/guides/search.md:109
 #, no-wrap
 msgid "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:113
+#: src/en/documentation/use/guides/search.md:114
 #, markdown-text
 msgid "`TO` with asterisk wildcard:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:114
+#: src/en/documentation/use/guides/search.md:115
 #, no-wrap
 msgid "state.name:open AND article_count: [5 TO *]\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:119
+#: src/en/documentation/use/guides/search.md:120
 #, markdown-text
 msgid "`TO` with excluding one limit of a range:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:120
+#: src/en/documentation/use/guides/search.md:121
 #, no-wrap
 msgid "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:124
+#: src/en/documentation/use/guides/search.md:125
 #, markdown-text, no-wrap
 msgid "Fuzzy search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:127
+#: src/en/documentation/use/guides/search.md:128
 #, markdown-text
 msgid ""
 "If you are not sure about the exact spelling of a value, use the tilde (`~`) "
@@ -6944,19 +6951,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:128
+#: src/en/documentation/use/guides/search.md:129
 #, no-wrap
 msgid "owner.firstname:lawren~\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:132
+#: src/en/documentation/use/guides/search.md:133
 #, markdown-text, no-wrap
 msgid "Negating search"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:136
+#: src/en/documentation/use/guides/search.md:137
 #, markdown-text
 msgid ""
 "If you want to exclude specified values, you can use negation `!`. To negate "
@@ -6964,43 +6971,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:138
+#: src/en/documentation/use/guides/search.md:139
 #, markdown-text
 msgid "Exclude owner with last name \"brooks\":"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:139
+#: src/en/documentation/use/guides/search.md:140
 #, no-wrap
 msgid "!owner.lastname:brooks\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:144
+#: src/en/documentation/use/guides/search.md:145
 #, markdown-text
 msgid "Exclude multiple conditions:"
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:145
+#: src/en/documentation/use/guides/search.md:146
 #, no-wrap
 msgid "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:149
+#: src/en/documentation/use/guides/search.md:150
 #, markdown-text, no-wrap
 msgid "Regex"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:152
+#: src/en/documentation/use/guides/search.md:153
 #, markdown-text
 msgid "You can even use regex to search. Wrap the regex term in `/`."
 msgstr ""
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:153
+#: src/en/documentation/use/guides/search.md:154
 #, no-wrap
 msgid "customer.lastname:/(bra?.n|doe)/\n"
 msgstr ""
