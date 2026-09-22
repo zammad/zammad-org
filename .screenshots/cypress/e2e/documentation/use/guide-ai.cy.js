@@ -202,8 +202,8 @@ describe('AI screenshots', () => {
     cy.visit('/desktop/tickets/3')
     cy.wait(3000) // loading
     cy.get('button').contains('Reply').click().wait(500)
-    cy.get('[role="textbox"]').should('be.visible').click().type('Hi Evelyn,{enter}{enter}your order has been shiped already.{selectAll}')
-    cy.get('[aria-label="AI writing assistant tools"]').click().wait(1000)
+    cy.get('[role="textbox"]').should('be.visible').click().type('Hi Evelyn,{enter}{enter}your order has been shiped already.{selectAll}').wait(1000)
+    cy.get('[aria-label="AI writing assistant tools"]').click()
     cy.get('div.editor-action-popover').should('be.visible').clip({ padding: 5 }).then((PopoverClip) => {
       cy.get('[id="ticketArticleReplyForm"]').should('be.visible').clip({ padding: 5 }).then((EditorClip) => {
         cy.mergeClips(PopoverClip, EditorClip).then((clip) => {
