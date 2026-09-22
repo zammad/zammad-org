@@ -30,6 +30,7 @@ Die folgenden Szenarien werden unterstützt und weiter unten erläutert:
 - [Zusätzliche Szenarien](#zusatzliche-szenarien)
   - Deaktivieren des Backup-Dienstes
   - Ollama zum Stack hinzufügen
+  - Add a LibreTranslate instance to the stack
   - Hardware-Ressourcen des Stacks begrenzen
 
 Sie finden die Dateien im [Zammad Docker
@@ -218,6 +219,62 @@ bereitstellt, um KI-Funktionen sofort nutzen und testen zu können.
 
 Um ihn in Zammad zu verwenden, fügen Sie den Dienstnamen und den Port
 (`http://ollama:11434`) in der Anbieterkonfiguration hinzu.
+
+### Add LibreTranslate
+
+You can run an additional
+[LibreTranslate](https://libretranslate.com/){target=_blank} container to
+power Zammad's article translation on your own hardware. For details on the
+integration itself, see the translation services section of the admin
+documentation.
+
+To deploy a LibreTranslate container inside the Zammad stack, use the
+scenario file `scenarios/add-libretranslate.yml`. The service doesn't
+publish any ports to the host; Zammad reaches it inside the stack network as
+`http://libretranslate:5000`.
+
+::: tip
+
+The first start takes a while, as the container downloads the language models before the service becomes available.
+The models are kept in a Docker volume, so they survive stack restarts.
+
+:::
+
+The scenario supports the following environment variables:
+
+LT_LOAD_ONLY
+: Comma-separated list of languages to load, e.g. `en,de,fr`. If unset, all language models are downloaded, which can
+  take minutes on cold starts.
+
+LT_UPDATE_MODELS
+: Set to `true` to check for updated language models on every stack startup. Only models with a newer available
+  version are redownloaded. Without it, the models are downloaded on the first start only.
+
+LT_API_KEYS
+: Set to `true` to enable API key support. Each key carries its own allowed requests per minute. To issue a key,
+  start the service and run:
+
+  ``` sh
+  docker compose exec libretranslate ltmanage keys add 120
+  ```
+
+  The number is the allowed requests per minute for this key. The command prints the generated key, which is a UUID
+  created by LibreTranslate itself. You can also provide your own key with the `--key` option instead.
+
+LT_REQUIRE_API_KEY_SECRET
+: Set to `true` to make API keys mandatory for all requests. Requires
+  `LT_API_KEYS=true`.
+
+::: info
+
+LibreTranslate supports many more options. They are described in the
+[official documentation](https://docs.libretranslate.com/){target=_blank}, which also lists the environment variables
+the container accepts.
+
+:::
+
+Once the stack is up, configure the service in Zammad's admin settings (_System > Integrations > Translation services_):
+point the URL to `http://libretranslate:5000` and provide an API key if your instance requires one.
 
 ### Ressourcen begrenzen
 
