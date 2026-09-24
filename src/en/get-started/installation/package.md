@@ -14,7 +14,7 @@ For package installation, the following Linux distributions are supported:
 | Distribution         | Version              |
 | -------------------- | :------------------- |
 | CentOS/RHEL          | 9, 10                |
-| Debian               | 11, 12 & 13          |
+| Debian               | 12 & 13              |
 | OpenSUSE Leap / SLES | 15 & 16              |
 | Ubuntu               | 22.04, 24.04 & 26.04 |
 
@@ -210,13 +210,6 @@ Add repository key:
 ```sh
 sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
   -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
-```
-
-Add repository (Debian 11):
-
-```sh
-sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list" \
-  -o /etc/apt/sources.list.d/zammad.list
 ```
 
 Add repository (Debian 12):
