@@ -13078,7 +13078,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:103
 #: src/en/reference/rest-api/articles.md:144
 #: src/en/reference/rest-api/articles.md:161
-#: src/en/reference/rest-api/articles.md:180
+#: src/en/reference/rest-api/articles.md:182
 #: src/en/reference/rest-api/calendar.md:42
 #: src/en/reference/rest-api/calendar.md:63
 #: src/en/reference/rest-api/checklist.md:47
@@ -20788,13 +20788,16 @@ msgid "Article with inline images"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:179
+#: src/en/reference/rest-api/articles.md:181
 #, markdown-text
-msgid "Inline images can be used by providing data URIs in your HTML markup."
+msgid ""
+"Inline images can be used by providing data URIs in your HTML markup.  In "
+"the response, they are listed under `inline_attachments`, while "
+"`attachments` only contains regular file attachments."
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/articles.md:180
+#: src/en/reference/rest-api/articles.md:182
 #, no-wrap
 msgid ""
 "\n"
@@ -20809,13 +20812,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/articles.md:195
+#: src/en/reference/rest-api/articles.md:197
 #, markdown-text, no-wrap
 msgid "Receive attachments"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:199
+#: src/en/reference/rest-api/articles.md:201
 #, markdown-text
 msgid ""
 "Now that you have all those fancy attachments within your tickets, you may "
@@ -20823,7 +20826,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:202
+#: src/en/reference/rest-api/articles.md:204
 #, markdown-text
 msgid ""
 "`GET`-Request sent: `/api/v1/ticket_attachment/{ticket id}/{article "
@@ -20831,13 +20834,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:204
+#: src/en/reference/rest-api/articles.md:206
 #, markdown-text
 msgid "Response: `{image file}`"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/articles.md:205
+#: src/en/reference/rest-api/articles.md:207
 #, no-wrap
 msgid ""
 "If you're not sure which articles a ticket contains, please\n"

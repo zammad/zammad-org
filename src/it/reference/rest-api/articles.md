@@ -162,8 +162,9 @@ nota telefonica), usa il.
 
 ### Article with inline images
 
-Le immagini inline possono essere usate fornendo data URI nel tuo markup
-HTML.
+Inline images can be used by providing data URIs in your HTML markup.  In
+the response, they are listed under `inline_attachments`, while
+`attachments` only contains regular file attachments.
 
 :::: details
 

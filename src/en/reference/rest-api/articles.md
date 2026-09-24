@@ -176,6 +176,8 @@ permission is mandatory for this.
 ### Article with inline images
 
 Inline images can be used by providing data URIs in your HTML markup.
+In the response, they are listed under `inline_attachments`, while
+`attachments` only contains regular file attachments.
 
 :::: details
 
