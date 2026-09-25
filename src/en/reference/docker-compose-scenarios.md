@@ -250,18 +250,35 @@ in future.
 
 ## Customize the stack locally
 
-Sometimes it's necessary to apply local changes to the Zammad Docker stack, e.g. to include additional services. If you
-plan to do so, we recommend that you do not change the `docker-compose.yml` file, but instead create a local
-`docker-compose.override.yml` that includes all your modifications. Docker Compose will
-[automatically load this file and merge its changes into your stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.
+The default stack fits most environments, but sometimes you need to adapt it: add another service, change settings
+or use your own files. Whichever applies, don't change `docker-compose.yml` itself. Keeping your changes in separate
+files lets `git pull` update the stack without conflicts.
+
+How you do this depends on what you want to achieve:
+
+### Change settings of the existing services
+
+The override file changes settings of the services that the main compose file already defines. Create a
+`docker-compose.override.yml` file. Docker Compose
+[automatically loads this file and merges its changes into your stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.
 The stack repository ships an inactive example file you can copy and adjust:
 
 ``` sh
 cp docker-compose.override.yml.dist docker-compose.override.yml
 ```
 
-Keep in mind that this file is for changing settings of the services that `docker-compose.yml` already defines. Loading
-scenarios here is not supported, use the `COMPOSE_FILE` variable in your `.env` file instead, as described in the
-[general usage](#general-usage) section above. If you do, append this file to that list as well: setting
-`COMPOSE_FILE` turns off the automatic pickup of `docker-compose.override.yml`, so your changes here would otherwise go
-unused without any warning.
+Loading scenarios is not supported here. To load a scenario, use the `COMPOSE_FILE` variable in your `.env` file, as
+described in the [general usage](#general-usage) section above.
+
+### Add your own files
+
+With a Docker Compose deployment done by cloning the repository, you can store files that belong only to your
+instance in the stack's `local/` directory, e.g. configuration snippets, custom scenario files, scripts, notes or
+certificates. Git ignores the directory's contents except for README.md, so `git pull` neither reports nor changes
+these files.
+
+Files in `local/` are not loaded automatically. To use a custom Compose file, reference it from the override file or
+from `COMPOSE_FILE` in your .env file, using a path such as `./local/my-file`. Keep in mind that setting
+`COMPOSE_FILE` turns off the automatic pickup of the override file, see the [general usage](#general-usage) section
+above. Docker Compose resolves relative paths against the directory containing the main compose file, including paths
+used by custom scenario files in `local/`.
