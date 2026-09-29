@@ -8,6 +8,10 @@ describe('user profile screenshot', () => {
     cy.get('main').should('exist')
     // Wait until the settings form has rendered its sections.
     cy.contains('Appearance', { timeout: 10000 }).should('be.visible')
+    // The navigation rail loads its taskbar tabs separately, so wait for their
+    //   placeholder rows to clear.
+    cy.get('#page-navigation', { timeout: 10000 }).should('exist')
+    cy.get('[role="progressbar"][aria-busy="true"]', { timeout: 10000 }).should('not.exist')
     cy.screenshot('user-profile-settings-full')
   })
 

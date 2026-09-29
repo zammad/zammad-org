@@ -21,6 +21,8 @@ First, start a local Zammad stack via docker compose: `pnpm screenshots:start-st
 
 Now you can install cypress by running `pnpm screenshots:install`.
 
+A Firefox installation is required for the local screenshots: the suite is pinned to Firefox via `defaultBrowser` in `.screenshots/cypress.config.js` and Cypress aborts when that browser is missing. To run in another browser instead, pass it explicitly, e.g. `pnpm --dir ./.screenshots exec cypress run --browser chrome` (on Wayland, Electron additionally needs `ELECTRON_EXTRA_LAUNCH_ARGS='--ozone-platform=x11'`).
+
 Then, to generate automatic screenshots, run `pnpm screenshots:build`. The screenshots will be stored under `src/public/screenshots/cypress/`, but will not be tracked by Git.
 
 To implement new screenshots, run `pnpm screenshots:dev` and Cypress will open in a separate window. Make sure to run the build command when ready, so the screenshot is saved in its correct place.

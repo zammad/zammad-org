@@ -3,7 +3,10 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     baseUrl: process.env.CYPRESS_BASE_URL || 'http://localhost:8080',
-    allowCypressEnv: false,
+    // Electron is deprecated as a test browser in Cypress 16 and its screenshot
+    // capture hangs on Wayland hosts (cypress-io/cypress#30172 class).
+    // Use Firefox for every run unless --browser overrides it.
+    defaultBrowser: 'firefox',
     env: {
       ADMIN_LOGIN: 'lauren@fastlane.inc',
       ADMIN_PASS: 'lauren4711',
@@ -57,6 +60,11 @@ module.exports = defineConfig({
 
           // Disable spellcheck in input fields.
           launchOptions.preferences['layout.spellcheckDefault'] = 0
+
+          // Overlay scrollbars, matching Chromium's --enable-features=OverlayScrollbar
+          // above. Firefox's classic scrollbar is drawn light and paints a bright bar
+          // over the dark UI in every screenshot of a scrollable region.
+          launchOptions.preferences['ui.useOverlayScrollbars'] = 1
         }
 
         return launchOptions
