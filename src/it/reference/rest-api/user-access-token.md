@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 10
 title: 'User access token'
 ---
 

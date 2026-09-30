@@ -1,0 +1,16 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 1,
+  "channel_id": 1,
+  "name": "Zammad Support",
+  "email": "zammad@example.com",
+  "active": true,
+  "note": "Default outbound sender address.",
+  "preferences": null,
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "created_at": "2026-09-24T12:32:20.671Z",
+  "updated_at": "2026-09-24T12:32:20.671Z",
+  "group_ids": []
+}

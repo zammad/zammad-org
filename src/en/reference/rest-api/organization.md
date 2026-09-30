@@ -1,6 +1,6 @@
 ---
 title: Organization
-order: 12
+order: 10
 ---
 
 # Organization

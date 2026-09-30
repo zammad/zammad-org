@@ -1,0 +1,20 @@
+// HTTP-Code 200 OK
+
+{
+  "result": "invalid",
+  "settings": {
+    "adapter": "smtp",
+    "options": {
+      "host": "smtp.example.com",
+      "port": 25,
+      "ssl": true,
+      "user": "",
+      "password": "",
+      "domain": "zammad.example.com",
+      "enable_starttls_auto": true
+    },
+    "controller": "channels_email",
+    "action": "notification"
+  },
+  "message": "Connection refused - Network connection to smtp.example.com could not be established: Connection refused - connect(2) for smtp.example.com:25"
+}

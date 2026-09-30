@@ -1,6 +1,6 @@
 ---
 title: Ticket summary
-order: 20
+order: 10
 ---
 
 # Ticket summary

@@ -1,0 +1,25 @@
+// HTTP-Code 200 OK
+
+[
+  {
+    "id": 1,
+    "name": "Example webhook",
+    "endpoint": "https://example.com/webhooks/incoming",
+    "http_method": "post",
+    "signature_token": "**********",
+    "ssl_verify": true,
+    "basic_auth_username": "user",
+    "basic_auth_password": "**********",
+    "bearer_token": null,
+    "note": "Notifies an external system about ticket updates.",
+    "pre_defined_webhook_type": null,
+    "customized_payload": false,
+    "custom_payload": null,
+    "preferences": {},
+    "active": true,
+    "updated_by_id": 3,
+    "created_by_id": 3,
+    "created_at": "2026-09-24T12:31:34.578Z",
+    "updated_at": "2026-09-24T12:31:44.512Z"
+  }
+]

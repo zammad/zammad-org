@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 10
 title: 'Contabilização de tempo'
 ---
 

@@ -1,0 +1,27 @@
+{
+  "name": "Restrict priority for incidents",
+  "object": "Ticket",
+  "condition_saved": {},
+  "condition_selected": {
+    "ticket.type": {
+      "operator": "is",
+      "value": [
+        "Incident"
+      ]
+    }
+  },
+  "perform": {
+    "ticket.state_id": {
+      "operator": "set_fixed_to",
+      "set_fixed_to": [
+        "new",
+        "open"
+      ]
+    }
+  },
+  "active": true,
+  "stop_after_match": false,
+  "changeable": true,
+  "priority": 100,
+  "id": 11
+}

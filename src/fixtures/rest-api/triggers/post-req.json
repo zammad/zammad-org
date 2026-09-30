@@ -1,0 +1,27 @@
+{
+  "name": "Notify customer on auto-close",
+  "condition": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "name": "ticket.state_id",
+        "operator": "is",
+        "value": [
+          4
+        ]
+      }
+    ]
+  },
+  "perform": {
+    "notification.email": {
+      "recipient": "ticket_customer",
+      "subject": "Your ticket #{ticket.number} has been closed",
+      "body": "<div>Your ticket <b>#{ticket.number}</b> has been closed. Thank you for contacting us.</div>"
+    }
+  },
+  "disable_notification": false,
+  "activator": "action",
+  "execution_condition_mode": "selective",
+  "active": true,
+  "note": "Sends a confirmation email when a ticket is closed."
+}

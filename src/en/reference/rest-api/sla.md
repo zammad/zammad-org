@@ -1,6 +1,6 @@
 ---
 title: SLA
-order: 16
+order: 10
 ---
 
 # Service-level agreements (SLA)

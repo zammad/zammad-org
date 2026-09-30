@@ -1,0 +1,10 @@
+{
+  "adapter": "smtp",
+  "options": {
+    "host": "smtp.example.com",
+    "port": 25,
+    "ssl": true,
+    "user": "",
+    "password": ""
+  }
+}

@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 10
 title: Објекат
 ---
 
@@ -231,9 +231,12 @@ Zammad ће приликом ажурирања вратити два атриб
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Обавезно наведите `data_option`. Zammad строго захтева да овај параметар
-буде присутан. Имајте на уму да је мењање врсте објекта _након_
-додавања немогуће.
+Provide the full record shape shown above, not just the fields you're
+changing. Zammad is very picky if you leave out required fields: a
+payload missing `data_type` fails with an unhandled
+`undefined method 'match?' for nil` error rather than a clean
+validation error. Please note that changing the object type _after_
+creation is not possible.
 :::
 
 === Одговор

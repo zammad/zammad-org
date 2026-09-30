@@ -1,0 +1,17 @@
+{
+  "name": "Open tickets (new or open)",
+  "condition": {
+    "ticket.state_id": {
+      "operator": "is",
+      "value": [
+        "1",
+        "2"
+      ]
+    }
+  },
+  "active": true,
+  "role_ids": [
+    1,
+    2
+  ]
+}

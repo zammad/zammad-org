@@ -1,0 +1,59 @@
+// HTTP-Code 200 OK
+
+{
+  "notification_channel_ids": [
+    1
+  ],
+  "account_channel_ids": [],
+  "email_address_ids": [
+    1
+  ],
+  "assets": {
+    "Channel": {
+      "1": {
+        "id": 1,
+        "group_id": null,
+        "area": "Email::Notification",
+        "options": {
+          "outbound": {
+            "adapter": "smtp",
+            "options": {
+              "host": "smtp.example.com",
+              "port": 25,
+              "ssl": true,
+              "user": "",
+              "password": "",
+              "domain": "zammad.example.com"
+            }
+          }
+        },
+        "active": true
+      },
+      "2": {
+        "id": 2,
+        "group_id": null,
+        "area": "Email::Notification",
+        "options": {
+          "outbound": {
+            "adapter": "sendmail"
+          }
+        },
+        "active": false
+      }
+    }
+  },
+  "channel_driver": {
+    "email": {
+      "inbound": {
+        "imap": "IMAP",
+        "pop3": "POP3"
+      },
+      "outbound": {
+        "smtp": "SMTP - configure your own outgoing SMTP settings"
+      }
+    }
+  },
+  "config": {
+    "notification_sender": "\"Zammad Helpdesk\" <noreply@zammad.example.com>"
+  }
+}

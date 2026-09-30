@@ -1,6 +1,6 @@
 ---
 title: User access token
-order: 21
+order: 10
 ---
 
 # User access token

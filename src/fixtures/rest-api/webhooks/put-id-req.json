@@ -1,0 +1,11 @@
+{
+  "name": "Example webhook",
+  "endpoint": "https://example.com/webhooks/incoming",
+  "http_method": "post",
+  "signature_token": "your-signature-token",
+  "ssl_verify": true,
+  "customized_payload": false,
+  "note": "Notifies an external system about ticket updates.",
+  "active": true,
+  "id": 1
+}

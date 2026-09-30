@@ -1,0 +1,6 @@
+// HTTP-Code 200 OK
+
+{
+  "result": "failed",
+  "reason": "inbound failed"
+}

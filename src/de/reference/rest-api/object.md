@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 10
 title: Objekt
 ---
 
@@ -232,9 +232,12 @@ Datenbankmigrationen aktiv).
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Stellen Sie sicher, dass Sie `data_option` angeben. Zammad ist sehr wählerisch, wenn Sie dieses Attribut weglassen.
-Bitte beachten Sie, dass eine Änderung des Objekttyps _nach_ der
-Erstellung nicht mehr möglich ist.
+Provide the full record shape shown above, not just the fields you're
+changing. Zammad is very picky if you leave out required fields: a
+payload missing `data_type` fails with an unhandled
+`undefined method 'match?' for nil` error rather than a clean
+validation error. Please note that changing the object type _after_
+creation is not possible.
 :::
 
 === Response

@@ -1,0 +1,9 @@
+// HTTP-Code 422 Unprocessable Entity
+
+{
+  "error": "Invalid object selector conditions",
+  "error_human": "Invalid object selector conditions",
+  "invalid_attribute": {
+    "condition": "Invalid object selector conditions"
+  }
+}

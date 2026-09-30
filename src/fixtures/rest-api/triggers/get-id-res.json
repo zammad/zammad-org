@@ -1,0 +1,36 @@
+// HTTP-Code 200 OK
+
+{
+  "id": 4,
+  "name": "Notify customer on auto-close",
+  "condition": {
+    "operator": "AND",
+    "conditions": [
+      {
+        "name": "ticket.state_id",
+        "operator": "is",
+        "value": [
+          4
+        ]
+      }
+    ]
+  },
+  "perform": {
+    "notification.email": {
+      "recipient": "ticket_customer",
+      "subject": "Your ticket #{ticket.number} has been closed",
+      "body": "<div>Your ticket <b>#{ticket.number}</b> has been closed. Thank you for contacting us.</div>"
+    }
+  },
+  "disable_notification": false,
+  "localization": null,
+  "timezone": null,
+  "note": "Sends a confirmation email when a ticket is closed.",
+  "activator": "action",
+  "execution_condition_mode": "selective",
+  "active": true,
+  "updated_by_id": 3,
+  "created_by_id": 3,
+  "created_at": "2026-09-24T12:31:52.822Z",
+  "updated_at": "2026-09-24T12:31:52.822Z"
+}

@@ -1,0 +1,7 @@
+{
+  "email": "zammad@example.com",
+  "name": "Zammad Support",
+  "channel_id": 1,
+  "note": "Default outbound sender address.",
+  "id": 1
+}

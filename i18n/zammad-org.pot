@@ -10790,17 +10790,21 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:62
 #: src/en/reference/rest-api/checklist.md:130
 #: src/en/reference/rest-api/checklist.md:211
+#: src/en/reference/rest-api/core-workflow.md:87
+#: src/en/reference/rest-api/email-notification.md:165
 #: src/en/reference/rest-api/group.md:62
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
 #: src/en/reference/rest-api/organization.md:61
 #: src/en/reference/rest-api/priorities.md:55
+#: src/en/reference/rest-api/report-profile.md:92
 #: src/en/reference/rest-api/role.md:53
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
 #: src/en/reference/rest-api/ticket.md:105
 #: src/en/reference/rest-api/time-accounting.md:54
-#: src/en/reference/rest-api/user.md:95
+#: src/en/reference/rest-api/trigger.md:80 src/en/reference/rest-api/user.md:95
+#: src/en/reference/rest-api/webhook.md:74
 #, markdown-text, no-wrap
 msgid "Update"
 msgstr ""
@@ -13354,9 +13358,14 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:136
 #: src/en/reference/rest-api/checklist.md:196
 #: src/en/reference/rest-api/checklist.md:218
+#: src/en/reference/rest-api/core-workflow.md:64
+#: src/en/reference/rest-api/core-workflow.md:101
 #: src/en/reference/rest-api/cti.md:129 src/en/reference/rest-api/cti.md:172
 #: src/en/reference/rest-api/cti.md:289 src/en/reference/rest-api/cti.md:332
 #: src/en/reference/rest-api/cti.md:411 src/en/reference/rest-api/cti.md:454
+#: src/en/reference/rest-api/email-notification.md:56
+#: src/en/reference/rest-api/email-notification.md:149
+#: src/en/reference/rest-api/email-notification.md:176
 #: src/en/reference/rest-api/group.md:47 src/en/reference/rest-api/group.md:68
 #: src/en/reference/rest-api/knowledgebase.md:49
 #: src/en/reference/rest-api/knowledgebase.md:82
@@ -13385,6 +13394,8 @@ msgstr ""
 #: src/en/reference/rest-api/organization.md:67
 #: src/en/reference/rest-api/priorities.md:40
 #: src/en/reference/rest-api/priorities.md:61
+#: src/en/reference/rest-api/report-profile.md:56
+#: src/en/reference/rest-api/report-profile.md:106
 #: src/en/reference/rest-api/role.md:38 src/en/reference/rest-api/role.md:59
 #: src/en/reference/rest-api/shared-draft.md:26
 #: src/en/reference/rest-api/shared-draft.md:47
@@ -13396,9 +13407,13 @@ msgstr ""
 #: src/en/reference/rest-api/ticket.md:111
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
+#: src/en/reference/rest-api/trigger.md:64
+#: src/en/reference/rest-api/trigger.md:96
 #: src/en/reference/rest-api/user-access-token.md:26
-#: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:510
+#: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:116
+#: src/en/reference/rest-api/user.md:151
+#: src/en/reference/rest-api/webhook.md:51
+#: src/en/reference/rest-api/webhook.md:88 src/en/tutorials/migrate.md:510
 #: src/en/tutorials/webserver-config.md:113
 #, no-wrap
 msgid "\n"
@@ -20973,6 +20988,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:41
 #: src/en/reference/rest-api/checklist.md:109
 #: src/en/reference/rest-api/checklist.md:190
+#: src/en/reference/rest-api/core-workflow.md:58
+#: src/en/reference/rest-api/email-notification.md:136
 #: src/en/reference/rest-api/group.md:41
 #: src/en/reference/rest-api/knowledgebase.md:158
 #: src/en/reference/rest-api/knowledgebase.md:285
@@ -20980,13 +20997,15 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:40
 #: src/en/reference/rest-api/organization.md:40
 #: src/en/reference/rest-api/priorities.md:34
+#: src/en/reference/rest-api/report-profile.md:50
 #: src/en/reference/rest-api/role.md:32
 #: src/en/reference/rest-api/shared-draft.md:20
 #: src/en/reference/rest-api/sla.md:38 src/en/reference/rest-api/states.md:40
 #: src/en/reference/rest-api/ticket.md:50
 #: src/en/reference/rest-api/time-accounting.md:33
+#: src/en/reference/rest-api/trigger.md:49
 #: src/en/reference/rest-api/user-access-token.md:20
-#: src/en/reference/rest-api/user.md:55
+#: src/en/reference/rest-api/user.md:55 src/en/reference/rest-api/webhook.md:45
 #, markdown-text, no-wrap
 msgid "Create"
 msgstr ""
@@ -21133,18 +21152,23 @@ msgstr ""
 #: src/en/reference/rest-api/audit-log.md:11
 #: src/en/reference/rest-api/calendar.md:12
 #: src/en/reference/rest-api/checklist.md:165
+#: src/en/reference/rest-api/core-workflow.md:21
+#: src/en/reference/rest-api/email-notification.md:17
+#: src/en/reference/rest-api/email-notification.md:109
 #: src/en/reference/rest-api/group.md:17
 #: src/en/reference/rest-api/mentions.md:14
 #: src/en/reference/rest-api/notification.md:15
 #: src/en/reference/rest-api/object.md:16
 #: src/en/reference/rest-api/organization.md:8
 #: src/en/reference/rest-api/priorities.md:8
+#: src/en/reference/rest-api/report-profile.md:20
 #: src/en/reference/rest-api/role.md:8 src/en/reference/rest-api/sla.md:12
 #: src/en/reference/rest-api/states.md:14 src/en/reference/rest-api/tags.md:10
 #: src/en/reference/rest-api/ticket.md:26
 #: src/en/reference/rest-api/time-accounting.md:8
+#: src/en/reference/rest-api/trigger.md:16
 #: src/en/reference/rest-api/user-access-token.md:8
-#: src/en/reference/rest-api/user.md:26
+#: src/en/reference/rest-api/user.md:26 src/en/reference/rest-api/webhook.md:15
 #, markdown-text, no-wrap
 msgid "List"
 msgstr ""
@@ -21187,6 +21211,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:25
 #: src/en/reference/rest-api/checklist.md:97
 #: src/en/reference/rest-api/checklist.md:177
+#: src/en/reference/rest-api/core-workflow.md:40
+#: src/en/reference/rest-api/email-notification.md:124
 #: src/en/reference/rest-api/group.md:29
 #: src/en/reference/rest-api/knowledgebase.md:31
 #: src/en/reference/rest-api/knowledgebase.md:146
@@ -21195,12 +21221,14 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:28
 #: src/en/reference/rest-api/organization.md:24
 #: src/en/reference/rest-api/priorities.md:21
+#: src/en/reference/rest-api/report-profile.md:38
 #: src/en/reference/rest-api/role.md:20
 #: src/en/reference/rest-api/shared-draft.md:8
 #: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
 #: src/en/reference/rest-api/ticket.md:38
 #: src/en/reference/rest-api/time-accounting.md:20
-#: src/en/reference/rest-api/user.md:38
+#: src/en/reference/rest-api/trigger.md:37 src/en/reference/rest-api/user.md:38
+#: src/en/reference/rest-api/webhook.md:33
 #, markdown-text, no-wrap
 msgid "Show"
 msgstr ""
@@ -21521,19 +21549,24 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:83
 #: src/en/reference/rest-api/checklist.md:151
 #: src/en/reference/rest-api/checklist.md:233
+#: src/en/reference/rest-api/core-workflow.md:117
+#: src/en/reference/rest-api/email-notification.md:192
 #: src/en/reference/rest-api/group.md:83
 #: src/en/reference/rest-api/knowledgebase.md:200
 #: src/en/reference/rest-api/knowledgebase.md:327
 #: src/en/reference/rest-api/link.md:56
 #: src/en/reference/rest-api/mentions.md:55
 #: src/en/reference/rest-api/notification.md:65
-#: src/en/reference/rest-api/object.md:247
+#: src/en/reference/rest-api/object.md:250
 #: src/en/reference/rest-api/organization.md:82
 #: src/en/reference/rest-api/priorities.md:76
+#: src/en/reference/rest-api/report-profile.md:122
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
 #: src/en/reference/rest-api/ticket.md:138
+#: src/en/reference/rest-api/trigger.md:112
 #: src/en/reference/rest-api/user-access-token.md:46
-#: src/en/reference/rest-api/user.md:124
+#: src/en/reference/rest-api/user.md:131
+#: src/en/reference/rest-api/webhook.md:104
 #, markdown-text, no-wrap
 msgid "Delete"
 msgstr ""
@@ -21901,6 +21934,181 @@ msgid ""
 "\n"
 "<<< "
 "@/fixtures/rest-api/checklist_templates/delete-checklist-template-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/rest-api/core-workflow.md:1
+#: src/en/reference/rest-api/core-workflow.md:6
+#, markdown-text, no-wrap
+msgid "Core workflow"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:8
+#, no-wrap
+msgid ""
+"Core Workflows are different from "
+"[triggers](/en/reference/rest-api/trigger):\n"
+"they control the ticket create/edit form while someone fills it out, for\n"
+"example by restricting which values are selectable in another field. The\n"
+"form sends its current values to Zammad, which evaluates the workflows\n"
+"and returns the resulting field changes. Unlike triggers, they don't act\n"
+"on existing tickets in the background.\n"
+"\n"
+"Compare to [report profiles](/en/reference/rest-api/report-profile), whose\n"
+"`condition` field, unlike Core Workflow, does validate that referenced\n"
+"fields are real.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:24
+#: src/en/reference/rest-api/core-workflow.md:43
+#: src/en/reference/rest-api/core-workflow.md:61
+#: src/en/reference/rest-api/core-workflow.md:90
+#: src/en/reference/rest-api/core-workflow.md:120
+#, markdown-text
+msgid "Required permission: `admin.core_workflow`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:26
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/core_workflows`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:27
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/get-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:33
+#, no-wrap
+msgid ""
+"This endpoint only returns workflows with `changeable: true`. Zammad's\n"
+"built-in system workflows are not changeable and are not included, so\n"
+"the response on a fresh instance is an empty array. Show, Update and\n"
+"Delete also only operate on changeable workflows.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:45
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/core_workflows/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:46
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/get-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:52
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/get-non-changeable-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:63
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/core_workflows`"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/core-workflow.md:64
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/post-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:80
+#, no-wrap
+msgid ""
+"Core Workflow does _not_ validate that fields referenced in\n"
+"`condition_selected` or `perform` exist. A workflow that references a\n"
+"field that doesn't exist yet is saved without error. It has no visible\n"
+"effect in the ticket form until the referenced field exists.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:92
+#, markdown-text
+msgid "`PUT`-Request sent: `/api/v1/core_workflows/{id}`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:95
+#, markdown-text
+msgid ""
+"Payload shape is identical to Create. The response is the updated record, "
+"same shape as Show/Create."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:96
+#, no-wrap
+msgid ""
+"Sending the full Create payload to an existing workflow's `id` updates\n"
+"that record in place. It doesn't create a duplicate.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/core-workflow.md:101
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/put-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/core-workflow.md:121
+#, no-wrap
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing core workflows cannot be undone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:128
+#, markdown-text
+msgid "`DELETE`-Request sent: `/api/v1/core_workflows/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:129
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/delete-id-res.json\n"
 "\n"
 msgstr ""
 
@@ -22679,6 +22887,304 @@ msgid ""
 "\n"
 "<<< "
 "@/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh\n"
+"\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/rest-api/email-notification.md:1
+#: src/en/reference/rest-api/email-notification.md:6
+#, markdown-text, no-wrap
+msgid "Email notification"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:8
+#, no-wrap
+msgid ""
+"This page covers the system's outbound _notification_ email\n"
+"configuration: the SMTP (or local MTA) settings Zammad uses to send its\n"
+"own internal notifications, like \"you were assigned a ticket\", plus the\n"
+"local sender identity (`EmailAddress`) that gets attached to it. This is\n"
+"distinct from a ticket mailbox / support-inbox channel, which is a\n"
+"separate feature not covered by this page.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:20
+#: src/en/reference/rest-api/email-notification.md:45
+#: src/en/reference/rest-api/email-notification.md:139
+#: src/en/reference/rest-api/email-notification.md:168
+#: src/en/reference/rest-api/email-notification.md:195
+#, markdown-text
+msgid "Required permission: `admin.channel_email`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:22
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/channels_email`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:27
+#, markdown-text
+msgid ""
+"This is a combined index: it returns the notification channel(s), the ticket "
+"mailbox channel(s) and the local sender addresses in one response.  The "
+"response below is trimmed to the fields relevant to notification email "
+"configuration."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:28
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/get-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:34
+#, no-wrap
+msgid ""
+"Only one channel can be `active: true` per notification setup at a time.\n"
+"Configuring a new one (see _Configure_ below) automatically deactivates\n"
+"whichever one was previously active. In the response above, `sendmail`\n"
+"(id `2`) is now `active: false` because `smtp` (id `1`) was configured\n"
+"afterward.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/email-notification.md:42
+#, markdown-text, no-wrap
+msgid "Configure"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:47
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/channels_email_notification`"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:48
+#, no-wrap
+msgid ""
+"Pass the adapter settings in a top-level `options` key as shown below.\n"
+"Other key names, such as `new_configuration` (the parameter name of the\n"
+"internal service class "
+"`Service::System::SetEmailNotificationConfiguration`),\n"
+"are not rejected with a validation error. The request fails with an\n"
+"unhandled `undefined method 'downcase' for nil` error instead.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/email-notification.md:56
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/post-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:72
+#, no-wrap
+msgid ""
+"This call does double duty: it tests the connection live, sending a real\n"
+"test email as a side effect, and if the test succeeds, saves the\n"
+"configuration as the active notification channel in the same call. There\n"
+"is no separate \"save\" step; `notification_channel_ids` in\n"
+"`/api/v1/channels_email` immediately reflects the new channel.\n"
+"\n"
+"If the connection can't be established, the response is `200 OK` with\n"
+"`result: invalid` and the saved configuration is left untouched.\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:83
+#, no-wrap
+msgid ""
+"\n"
+"<<< "
+"@/fixtures/rest-api/email_notification/post-invalid-connection-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:89
+#, no-wrap
+msgid ""
+"`POST /api/v1/channels_email_probe` is not an alternative to this\n"
+"endpoint for a notification-only setup. It always validates a _full_\n"
+"inbound and outbound mailbox (`EmailHelper::Probe.full`). Sending\n"
+"outbound-only SMTP settings to it returns\n"
+"`{\"result\": \"failed\", \"reason\": \"inbound failed\"}`, even when the\n"
+"outbound settings are correct.\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:98
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/probe-outbound-only-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/email-notification.md:104
+#, markdown-text, no-wrap
+msgid "Sender address"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:108
+#, markdown-text
+msgid ""
+"The local sender identity used for outbound notification email is managed as "
+"an `EmailAddress` resource."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:112
+#: src/en/reference/rest-api/email-notification.md:127
+#, markdown-text
+msgid "Required permission: `admin.channel_email` **or** `ticket.agent`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:114
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/email_addresses`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:117
+#, markdown-text
+msgid ""
+"Returns an array of objects, each shaped like the single object shown in the "
+"_Show_ response below."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:118
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/get-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:129
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/email_addresses/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:130
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/get-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:141
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/email_addresses`"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:142
+#, no-wrap
+msgid ""
+"`channel_id` is a reference, not a validation target: an ID that doesn't\n"
+"exist is accepted, and the address is then stored with `channel_id: null`\n"
+"and `active: false`. Addresses are commonly attached to a ticket mailbox\n"
+"channel rather than to the notification channel.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/email-notification.md:149
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/post-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:170
+#, markdown-text
+msgid "`PUT`-Request sent: `/api/v1/email_addresses/{id}`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:175
+#, markdown-text
+msgid ""
+"Payload shape is identical to Create. Sending the full Create payload to an "
+"existing address's `id` updates that record in place. It doesn't create a "
+"duplicate. Response is the updated record, same shape as the Create response "
+"above."
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/email-notification.md:176
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/put-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/email-notification.md:196
+#, no-wrap
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing email addresses cannot be undone.\n"
+"\n"
+"Groups that use the deleted address as their sender address\n"
+"(`email_address_id`) are reset to no sender address.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:206
+#, markdown-text
+msgid "`DELETE`-Request sent: `/api/v1/email_addresses/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:207
+#, no-wrap
+msgid ""
+"\n"
+"<<< "
+"@/fixtures/rest-api/email_notification/email_addresses/delete-id-res.json\n"
 "\n"
 msgstr ""
 
@@ -24508,8 +25014,8 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:31
 #: src/en/reference/rest-api/object.md:43
 #: src/en/reference/rest-api/object.md:214
-#: src/en/reference/rest-api/object.md:250
-#: src/en/reference/rest-api/object.md:262
+#: src/en/reference/rest-api/object.md:253
+#: src/en/reference/rest-api/object.md:265
 #: src/en/reference/rest-api/priorities.md:37
 #: src/en/reference/rest-api/priorities.md:58
 #: src/en/reference/rest-api/priorities.md:79
@@ -24803,8 +25309,11 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:226
 #, no-wrap
 msgid ""
-"Ensure to provide `data_option`. Zammad is very picky if you leave out\n"
-"this attribute. Please note that changing the object type _after_\n"
+"Provide the full record shape shown above, not just the fields you're\n"
+"changing. Zammad is very picky if you leave out required fields: a\n"
+"payload missing `data_type` fails with an unhandled\n"
+"`undefined method 'match?' for nil` error rather than a clean\n"
+"validation error. Please note that changing the object type _after_\n"
 "creation is not possible.\n"
 msgstr ""
 
@@ -24820,13 +25329,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/object.md:252
+#: src/en/reference/rest-api/object.md:255
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/object.md:253
+#: src/en/reference/rest-api/object.md:256
 #, no-wrap
 msgid ""
 "\n"
@@ -24835,13 +25344,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rest-api/object.md:259
+#: src/en/reference/rest-api/object.md:262
 #, markdown-text, no-wrap
 msgid "Execute database migrations"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rest-api/object.md:263
+#: src/en/reference/rest-api/object.md:266
 #, no-wrap
 msgid ""
 "After executing the database migrations, a restart of Zammad is\n"
@@ -24852,13 +25361,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/object.md:272
+#: src/en/reference/rest-api/object.md:275
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/object.md:273
+#: src/en/reference/rest-api/object.md:276
 #, no-wrap
 msgid ""
 "\n"
@@ -25121,6 +25630,189 @@ msgid ""
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/ticket_priorities/delete-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/rest-api/report-profile.md:1
+#: src/en/reference/rest-api/report-profile.md:6
+#, markdown-text, no-wrap
+msgid "Report profile"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:8
+#, no-wrap
+msgid ""
+"A report profile is a saved, reusable filter/condition for Zammad's\n"
+"reporting module. It isn't an automation and doesn't do anything by\n"
+"itself. It's a named condition that shows up as a selectable view when\n"
+"generating reports with Zammad's reporting feature, scoped to whichever\n"
+"roles (`role_ids`) can see it.\n"
+"\n"
+"Compare to [core workflows](/en/reference/rest-api/core-workflow), which\n"
+"uses a similarly-shaped condition object but does not validate referenced\n"
+"fields.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:23
+#: src/en/reference/rest-api/report-profile.md:41
+#: src/en/reference/rest-api/report-profile.md:53
+#: src/en/reference/rest-api/report-profile.md:95
+#: src/en/reference/rest-api/report-profile.md:125
+#, markdown-text
+msgid "Required permission: `admin.report_profile`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:25
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/report_profiles`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/report-profile.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/get-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:32
+#, no-wrap
+msgid ""
+"The list returns the full record for each profile, same field set as the\n"
+"Show response below. Entry `1` (`-all-`) is Zammad's built-in default\n"
+"profile.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:43
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/report_profiles/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/report-profile.md:44
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/get-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:55
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/report_profiles`"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/report-profile.md:56
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/post-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:72
+#, no-wrap
+msgid ""
+"Role ids aren't guaranteed to be the same across instances. Look up the\n"
+"ids of the roles you need via the [roles API](/en/reference/rest-api/role)\n"
+"first instead of hard-coding them.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:78
+#, no-wrap
+msgid ""
+"Unlike core workflows, a report profile's `condition` _does_ validate\n"
+"that referenced fields are real, fully-migrated ticket fields.\n"
+"Referencing a custom field that exists but hasn't finished its schema\n"
+"migration yet (`to_create`/`to_migrate` still `true` on that field) fails\n"
+"with:\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info|details)
+#: src/en/reference/rest-api/report-profile.md:78
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/post-invalid-condition-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:97
+#, markdown-text
+msgid "`PUT`-Request sent: `/api/v1/report_profiles/{id}`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:100
+#, markdown-text
+msgid ""
+"Payload shape is identical to Create. The response is the updated record, "
+"same shape as Create's response."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:101
+#, no-wrap
+msgid ""
+"Sending the full Create payload to an existing profile's `id` updates\n"
+"that record in place. It doesn't create a duplicate.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/report-profile.md:106
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/put-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/report-profile.md:126
+#, no-wrap
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing report profiles cannot be undone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:133
+#, markdown-text
+msgid "`DELETE`-Request sent: `/api/v1/report_profiles/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/report-profile.md:134
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/delete-id-res.json\n"
 "\n"
 msgstr ""
 
@@ -26160,6 +26852,180 @@ msgid ""
 msgstr ""
 
 #. type: Title #
+#: src/en/reference/rest-api/trigger.md:1
+#: src/en/reference/rest-api/trigger.md:6
+#, markdown-text, no-wrap
+msgid "Trigger"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/trigger.md:8
+#, no-wrap
+msgid ""
+"Triggers can run a `notification.webhook` action that references a\n"
+"[webhook](/en/reference/rest-api/webhook) by id\n"
+"(`{\"notification.webhook\": {\"webhook_id\": <id>}}`) instead of, or\n"
+"alongside, `notification.email`. Create the webhook first, then point\n"
+"the trigger's perform action at its `id`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:19
+#: src/en/reference/rest-api/trigger.md:40
+#: src/en/reference/rest-api/trigger.md:52
+#: src/en/reference/rest-api/trigger.md:83
+#: src/en/reference/rest-api/trigger.md:115
+#, markdown-text
+msgid "Required permission: `admin.trigger`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:21
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/triggers`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/trigger.md:22
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/triggers/get-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/trigger.md:28
+#, no-wrap
+msgid ""
+"`recipient: \"article_last_sender\"` emails whoever wrote the triggering\n"
+"article. In this example that is always the customer, because the\n"
+"condition requires `article.sender_id` to be `2` (Customer). If an agent\n"
+"wrote the article, the agent would receive the email instead. Use\n"
+"`recipient: \"ticket_customer\"` (see Create below) to always target the\n"
+"customer regardless of who performed the action.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:42
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/triggers/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/trigger.md:43
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/triggers/get-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:54
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/triggers`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:58
+#, markdown-text
+msgid ""
+"`condition` accepts two shapes: a flat object keyed by field name (as shown "
+"in the List example above, matching Zammad's stock triggers) and the "
+"explicit `{\"operator\": \"AND\", \"conditions\": [...]}` form used below."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:63
+#, markdown-text
+msgid ""
+"In the example below, closing a ticket results in the ticket's customer "
+"receiving a confirmation email, because `recipient: \"ticket_customer\"` "
+"always resolves to the customer regardless of who performed the closing "
+"action."
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/trigger.md:64
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/post-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:85
+#, markdown-text
+msgid "`PUT`-Request sent: `/api/v1/triggers/{id}`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:88
+#: src/en/reference/rest-api/webhook.md:82
+#, markdown-text
+msgid ""
+"Payload shape is identical to Create. The response is the updated record, "
+"same shape as Show/Create with `updated_at` refreshed."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/trigger.md:89
+#, no-wrap
+msgid ""
+"A partial payload works too, e.g. `{\"active\": false}` to toggle just\n"
+"that field. To update a trigger by name, look up its `id` via\n"
+"`GET /api/v1/triggers` first, then send the `PUT` request to\n"
+"`/api/v1/triggers/{id}`.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/trigger.md:96
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/put-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/trigger.md:116
+#, no-wrap
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing triggers cannot be undone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:123
+#, markdown-text
+msgid "`DELETE`-Request sent: `/api/v1/triggers/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/trigger.md:124
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/triggers/delete-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title #
 #: src/en/reference/rest-api/user-access-token.md:1
 #: src/en/reference/rest-api/user-access-token.md:6
 #, markdown-text, no-wrap
@@ -26390,10 +27256,17 @@ msgid ""
 "Zammad will apply the default sign up role. Check Zammad's admin interface\n"
 "under _Manage > Roles_ and check which is selected as **Default at "
 "signup**.\n"
+"\n"
+"Zammad strips `group_ids` and `roles` from an agent's request before it\n"
+"writes anything, then answers `200 Ok` as if the update had gone through.\n"
+"Re-read the record to see whether the change actually landed.\n"
+"\n"
+"Agents can only edit customer-role targets. Sending a request for an\n"
+"agent-role target fails with `403 Not authorized` and changes nothing.\n"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/user.md:109
+#: src/en/reference/rest-api/user.md:116
 #, no-wrap
 msgid ""
 "\n"
@@ -26408,7 +27281,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/user.md:126
+#: src/en/reference/rest-api/user.md:133
 #, no-wrap
 msgid ""
 "**This is a permanent removal**\n"
@@ -26418,7 +27291,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:137
+#: src/en/reference/rest-api/user.md:144
 #, markdown-text
 msgid ""
 "Technically, you can delete users via `/api/v1/users/{id}`. However, we "
@@ -26428,25 +27301,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/user.md:138
+#: src/en/reference/rest-api/user.md:145
 #, markdown-text, no-wrap
 msgid "Via data privacy endpoint"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:141
+#: src/en/reference/rest-api/user.md:148
 #, markdown-text
 msgid "Required permission: `admin.data_privacy`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:143
+#: src/en/reference/rest-api/user.md:150
 #, markdown-text
 msgid "`POST`-Request sent: `/api/v1/data_privacy_task`"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/user.md:144
+#: src/en/reference/rest-api/user.md:151
 #, no-wrap
 msgid ""
 "\n"
@@ -26461,29 +27334,198 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rest-api/user.md:159
+#: src/en/reference/rest-api/user.md:166
 #, markdown-text, no-wrap
 msgid "Via user endpoint <Badge type=\"danger\" text=\"not recommended\" />"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:162
+#: src/en/reference/rest-api/user.md:169
 #, markdown-text
 msgid "Required permission: `admin.user`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:164
+#: src/en/reference/rest-api/user.md:171
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/user.md:165
+#: src/en/reference/rest-api/user.md:172
 #, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/rest-api/webhook.md:1
+#: src/en/reference/rest-api/webhook.md:6
+#, markdown-text, no-wrap
+msgid "Webhook"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/webhook.md:8
+#, no-wrap
+msgid ""
+"Webhooks are referenced by [triggers](/en/reference/rest-api/trigger) via\n"
+"the `notification.webhook` perform action\n"
+"(`{\"notification.webhook\": {\"webhook_id\": <id>}}`). Create the webhook\n"
+"first, then point one or more triggers at its `id`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:18
+#: src/en/reference/rest-api/webhook.md:36
+#: src/en/reference/rest-api/webhook.md:48
+#: src/en/reference/rest-api/webhook.md:77
+#: src/en/reference/rest-api/webhook.md:107
+#, markdown-text
+msgid "Required permission: `admin.webhook`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:20
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/webhooks`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:21
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/get-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/webhook.md:27
+#, no-wrap
+msgid ""
+"`signature_token`, `basic_auth_password` and `bearer_token` are returned\n"
+"as `**********` once they're set. The API never returns the stored\n"
+"secrets. Fields that aren't set are returned as `null`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:38
+#, markdown-text
+msgid "`GET`-Request sent: `/api/v1/webhooks/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:39
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/get-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:50
+#, markdown-text
+msgid "`POST`-Request sent: `/api/v1/webhooks`"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/webhook.md:51
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/post-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/webhook.md:67
+#, no-wrap
+msgid ""
+"`ssl_verify` matters for `https://` endpoints, set it `true` to actually\n"
+"validate the endpoint's TLS certificate. It only makes sense to set it\n"
+"`false` for a plain `http://` endpoint, which has no certificate to\n"
+"verify in the first place.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:79
+#, markdown-text
+msgid "`PUT`-Request sent: `/api/v1/webhooks/{id}`"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/webhook.md:83
+#, no-wrap
+msgid ""
+"A partial payload works too, e.g. `{\"active\": false}` to toggle just\n"
+"that field.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/webhook.md:88
+#, no-wrap
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/put-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/webhook.md:108
+#, no-wrap
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing webhooks cannot be undone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:118
+#, markdown-text
+msgid ""
+"A webhook that is still referenced by the `perform` action of another object "
+"(e.g. a [trigger](/en/reference/rest-api/trigger)) can't be deleted. The API "
+"responds with `422 Unprocessable Entity` and lists the referencing "
+"objects. Remove the reference first."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:120
+#, markdown-text
+msgid "`DELETE`-Request sent: `/api/v1/webhooks/{id}`"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:121
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/delete-id-res.json\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:127
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/delete-referenced-res.json\n"
 "\n"
 msgstr ""
 

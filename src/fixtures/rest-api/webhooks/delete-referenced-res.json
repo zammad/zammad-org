@@ -1,0 +1,9 @@
+// HTTP-Code 422 Unprocessable Entity
+
+{
+  "error": "This object is referenced by other object(s) and thus cannot be deleted: %s",
+  "error_human": "This object is referenced by other object(s) and thus cannot be deleted: %s",
+  "unprocessable_content": [
+    "Trigger / Notify customer on auto-close (#5)"
+  ]
+}

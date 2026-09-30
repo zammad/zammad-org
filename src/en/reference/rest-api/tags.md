@@ -1,6 +1,6 @@
 ---
 title: Tags
-order: 18
+order: 10
 ---
 
 # Tags

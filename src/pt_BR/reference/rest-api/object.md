@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 10
 title: Objeto
 ---
 
@@ -232,9 +232,12 @@ Solicitação `PUT` enviada: `/api/v1/object_manager_attributes/{id}`
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Certifique-se de fornecer `data_option`. O Zammad é bastante exigente se você omitir
-esse atributo. Observe que alterar o tipo de objeto _após_
-a criação não é possível.
+Provide the full record shape shown above, not just the fields you're
+changing. Zammad is very picky if you leave out required fields: a
+payload missing `data_type` fails with an unhandled
+`undefined method 'match?' for nil` error rather than a clean
+validation error. Please note that changing the object type _after_
+creation is not possible.
 :::
 
 === Response

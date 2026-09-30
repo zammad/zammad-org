@@ -1,6 +1,6 @@
 ---
 title: Time accounting
-order: 20
+order: 10
 ---
 
 # Time accounting
