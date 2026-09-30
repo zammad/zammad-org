@@ -78,6 +78,11 @@ You can switch between light, dark and automatic mode (tries to adapt to your br
 to the desired state or use the keyboard shortcut [[d]]. If no input field is activated, it cycles between the
 different modes.
 
+### How can I read a ticket that is written in another language?
+
+Agents can have the ticket articles translated into a language of their choice, either per article or automatically for
+every ticket they open. See the [article translation guide](./guides/article-translation).
+
 ## User profile
 
 ### How to change my profile/avatar image?

@@ -120,14 +120,22 @@ Compose](/it/reference/docker-compose-scenarios).
 
 ## Customizing the Zammad stack
 
-Lo stack Zammad può essere personalizzato caricando file di scenario
-aggiuntivi per casi d'uso comuni.
+The Zammad Docker Compose stack is ready to run with its default
+settings. You can adapt it to your environment by loading predefined
+scenario files, adjusting environment variables and adding files specific to
+your instance.
 
-Consulta la [pagina degli scenari Docker
-Compose](/it/reference/docker-compose-scenarios).
+See the [Docker Compose scenarios
+page](/en/reference/docker-compose-scenarios) for supported use cases and
+detailed instructions on loading scenario files. To change individual
+settings, use [Docker specific environment
+variables](/en/reference/environment-variables).
 
-Per regolare lo stack e le impostazioni, utilizzare le [variabili d'ambiente
-specifiche di Docker](/it/reference/environment-variables).
+If you deployed the stack with Docker Compose by cloning the repository, use
+its `local/` directory for files that belong only to your instance. See the
+[customize the stack
+locally](/en/reference/docker-compose-scenarios#customize-the-stack-locally)
+section for details.
 
 ## How to run commands in the stack
 

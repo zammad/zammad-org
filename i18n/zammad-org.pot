@@ -3237,7 +3237,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/basics/find-tickets.md:37
-#: src/en/documentation/use/user-profile.md:96
+#: src/en/documentation/use/user-profile.md:97
 #, markdown-text, no-wrap
 msgid "Notifications"
 msgstr ""
@@ -4570,8 +4570,23 @@ msgid ""
 "activated, it cycles between the different modes."
 msgstr ""
 
-#. type: Title #
+#. type: Title ###
 #: src/en/documentation/use/faq.md:81
+#, markdown-text, no-wrap
+msgid "How can I read a ticket that is written in another language?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:85
+#, markdown-text
+msgid ""
+"Agents can have the ticket articles translated into a language of their "
+"choice, either per article or automatically for every ticket they open. See "
+"the [article translation guide](./guides/article-translation)."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/faq.md:86
 #: src/en/documentation/use/user-profile.md:1
 #: src/en/documentation/use/user-profile.md:6
 #, markdown-text, no-wrap
@@ -4579,13 +4594,13 @@ msgid "User profile"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:83
+#: src/en/documentation/use/faq.md:88
 #, markdown-text, no-wrap
 msgid "How to change my profile/avatar image?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:88
+#: src/en/documentation/use/faq.md:93
 #, markdown-text
 msgid ""
 "Go to the [avatar section](user-profile#avatar) in your personal settings by "
@@ -4595,13 +4610,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:89
+#: src/en/documentation/use/faq.md:94
 #, markdown-text, no-wrap
 msgid "How to change the language of the Zammad user interface?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:93
+#: src/en/documentation/use/faq.md:98
 #, markdown-text
 msgid ""
 "Go to the [language section](user-profile#language) in your personal "
@@ -4610,13 +4625,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:94
+#: src/en/documentation/use/faq.md:99
 #, markdown-text, no-wrap
 msgid "What should I do before going on vacation?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:98
+#: src/en/documentation/use/faq.md:103
 #, markdown-text
 msgid ""
 "Go to the [out of office section](user-profile#out-of-office) in your "
@@ -4625,31 +4640,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:99
+#: src/en/documentation/use/faq.md:104
 #, markdown-text, no-wrap
 msgid "How to adjust the order of the overviews?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:102
+#: src/en/documentation/use/faq.md:107
 #, markdown-text
 msgid "Read on in the [overview guide](guides/overviews#reorder-overviews)."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/faq.md:103
+#: src/en/documentation/use/faq.md:108
 #, markdown-text, no-wrap
 msgid "Work on tickets"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:105
+#: src/en/documentation/use/faq.md:110
 #, markdown-text, no-wrap
 msgid "How to assign somebody to a ticket?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:109
+#: src/en/documentation/use/faq.md:114
 #, markdown-text
 msgid ""
 "In the ticket sidebar tab, you can find an **Owner** field. Choose from the "
@@ -4658,7 +4673,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:112
+#: src/en/documentation/use/faq.md:117
 #, markdown-text
 msgid ""
 "If you only have a question or need some information, you could also just "
@@ -4667,13 +4682,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:113
+#: src/en/documentation/use/faq.md:118
 #, markdown-text, no-wrap
 msgid "How to delete a ticket?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:118
+#: src/en/documentation/use/faq.md:123
 #, markdown-text
 msgid ""
 "First of all, tickets can't be deleted by agents. This is done for the "
@@ -4684,13 +4699,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:119
+#: src/en/documentation/use/faq.md:124
 #, markdown-text, no-wrap
 msgid "How to use text templates?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:123
+#: src/en/documentation/use/faq.md:128
 #, markdown-text
 msgid ""
 "Use Zammad's [text modules](advanced-features#text-modules) by typing "
@@ -4700,13 +4715,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:124
+#: src/en/documentation/use/faq.md:129
 #, markdown-text, no-wrap
 msgid "How to ask a colleague for help in the ticket?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:129
+#: src/en/documentation/use/faq.md:134
 #, markdown-text
 msgid ""
 "The best way to do this is to [mention a "
@@ -4717,13 +4732,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:130
+#: src/en/documentation/use/faq.md:135
 #, markdown-text, no-wrap
 msgid "How to cite the customer's email or parts of it?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:134
+#: src/en/documentation/use/faq.md:139
 #, markdown-text
 msgid ""
 "To partially or selective cite the article or parts of it, mark the text, "
@@ -4733,7 +4748,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:136
+#: src/en/documentation/use/faq.md:141
 #, markdown-text
 msgid ""
 "The citation of the whole article depends on how your Zammad is "
@@ -5072,7 +5087,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:112
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 #, markdown-text, no-wrap
 msgid "Ticket history"
 msgstr ""
@@ -5146,6 +5161,212 @@ msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on "
 "it](/screenshots/documentation/use/ai/overview-ai-agent-indicator.png)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/article-translation.md:1
+#: src/en/documentation/use/guides/article-translation.md:6
+#: src/en/documentation/use/guides/mobile-view.md:73
+#, markdown-text, no-wrap
+msgid "Article translation"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:10
+#, markdown-text
+msgid ""
+"Agents can translate ticket articles into their preferred language. This "
+"feature is optional and has to be configured and activated by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:13
+#, markdown-text
+msgid ""
+"Depending on the configuration, you can either translate single articles "
+"yourself or have Zammad translate every article of the tickets you open. You "
+"can always switch back to the original content."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:17
+#, markdown-text
+msgid ""
+"A translation replaces the original article content, and a note below the "
+"article tells you that you are reading a translation. Zammad keeps the "
+"formatting of the original text wherever it can, but some of it can get lost "
+"when the wording changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:20
+#, markdown-text
+msgid ""
+"Next to a translated article, Zammad shows a translate button in the article "
+"action row whose icon turns blue while you read the translation. This button "
+"lets you switch between the translation and the original content."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:22
+#, markdown-text
+msgid ""
+"![Screenshot shows a translated ticket "
+"article](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-article.png)"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/guides/article-translation.md:23
+#, no-wrap
+msgid ""
+"The [text highlighting feature](../advanced-features#highlight-text) is only "
+"available in the original text. Switch\n"
+"back to the original content if you want to highlight something in the "
+"article.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:28
+#, markdown-text, no-wrap
+msgid "Choose your language"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:33
+#, markdown-text
+msgid ""
+"The language button in the ticket top bar shows the language code of your "
+"target language for translations, for example `EN-US` and the full language "
+"name in a tooltip on hover. Click the button to open the language menu, "
+"which lists the languages the configured translation service supports. Use "
+"the search field if you are looking for a specific language."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:35
+#, markdown-text
+msgid ""
+"![Screenshot shows the language menu with the language list and the switch "
+"for translating all "
+"articles](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-target-menu.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:38
+#, markdown-text
+msgid ""
+"Zammad uses the language of your personal user settings as default. If the "
+"translation service doesn't support this language, it is set to Zammad's "
+"system default or English, if the system default isn't supported either."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:41
+#, markdown-text
+msgid ""
+"Your translation target language is a personal setting: Zammad remembers it "
+"for your user account and applies it to every ticket you open, including "
+"tickets in other browser tabs."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:44
+#, markdown-text
+msgid ""
+"The translation target language is independent of the language of Zammad's "
+"UI, which you set in your [personal settings](../user-profile)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:45
+#, markdown-text, no-wrap
+msgid "Translate a single article"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:49
+#, markdown-text
+msgid ""
+"Click the translate button in the article action row to translate this "
+"article into your target language. Click it again to switch back to the "
+"original text."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:51
+#, markdown-text
+msgid ""
+"![Screenshot shows an article with the translate button in its action row, "
+"highlighted with a "
+"frame](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-button.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:54
+#, markdown-text
+msgid ""
+"If the target language is not the one you want to read the article in, "
+"change it in the ticket top bar as described above."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:55
+#, markdown-text, no-wrap
+msgid "Translate every article automatically"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:61
+#, markdown-text
+msgid ""
+"If your admin enabled automatic translation for your role, the language menu "
+"in the ticket top bar also contains the **Translate all articles** switch "
+"(see screenshot under **Choose your language**). While it is on, Zammad "
+"translates the articles of every ticket you open, so you don't have to "
+"translate them one by one. Articles which are already in your target "
+"language keep their original text; this requires the article language "
+"detection to be enabled by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:64
+#, markdown-text
+msgid ""
+"Turn the switch off if you prefer to translate individual articles. Like "
+"your target language, this setting applies to every ticket you view."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:67
+#, markdown-text
+msgid ""
+"If you want to read a single article in its original language again while "
+"the switch stays on for the others, use **Show original** on it."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:68
+#, markdown-text, no-wrap
+msgid "Translation quality and feedback"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:71
+#, markdown-text
+msgid ""
+"Translations are generated automatically, so double-check the result before "
+"you rely on it."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:74
+#, markdown-text
+msgid ""
+"Use the thumbs up or thumbs down buttons below a translated article to help "
+"your admin evaluate the quality of the translation service; a thumbs down "
+"opens a field where you can explain what went wrong. If you are not "
+"satisfied with a translation, use the regenerate button in the same row "
+"(tooltip **Regenerate**) to have the article translated again."
 msgstr ""
 
 #. type: Title #
@@ -6215,31 +6436,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 #, markdown-text
 msgid "Split article"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 #, markdown-text
 msgid "Link tickets and see linked tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 #, markdown-text
 msgid "Execution of macros"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 #, markdown-text
 msgid "Template creation & shared drafts"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:74
+#: src/en/documentation/use/guides/mobile-view.md:75
 #, markdown-text
 msgid ""
 "Additionally, certain features were intentionally omitted to improve the "
@@ -6247,49 +6468,49 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 #, markdown-text
 msgid "Most management features (except ticket user and organization management)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 #, markdown-text
 msgid "Most knowledge base features (except ticket integration)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 #, markdown-text
 msgid "Most user profile functions (except avatar and language preferences)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 #, markdown-text
 msgid "Reports"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 #, markdown-text
 msgid "Caller log"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 #, markdown-text
 msgid "Live chat"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:83
 #, markdown-text, no-wrap
 msgid "Switch the views"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:86
+#: src/en/documentation/use/guides/mobile-view.md:87
 #, markdown-text
 msgid ""
 "Zammad implements a mobile device detection, which results in automatic "
@@ -6298,7 +6519,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:89
+#: src/en/documentation/use/guides/mobile-view.md:90
 #, markdown-text
 msgid ""
 "In both desktop and mobile view login screens, you can find a link below the "
@@ -6307,7 +6528,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:92
+#: src/en/documentation/use/guides/mobile-view.md:93
 #, markdown-text
 msgid ""
 "While you are signed in and want to switch from the mobile to the desktop "
@@ -6320,7 +6541,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/user-profile.md:126
+#: src/en/documentation/use/user-profile.md:127
 #, markdown-text, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -7346,7 +7567,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/two-factor-auth.md:1
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/user-profile.md:72
+#: src/en/documentation/use/user-profile.md:73
 #, markdown-text, no-wrap
 msgid "Two-factor authentication"
 msgstr ""
@@ -8061,19 +8282,22 @@ msgid "Language"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:51
+#: src/en/documentation/use/user-profile.md:52
 #, markdown-text
-msgid "Choose the language in which Zammad's UI is displayed."
+msgid ""
+"Choose the language in which Zammad's UI is displayed. Ticket translations "
+"use their own target language, which you select in the ticket top bar. See "
+"[Article translation](guides/article-translation)."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:52
+#: src/en/documentation/use/user-profile.md:53
 #, markdown-text, no-wrap
 msgid "Avatar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:56
+#: src/en/documentation/use/user-profile.md:57
 #, markdown-text
 msgid ""
 "Adjust your avatar image. By default, the initials of your user are "
@@ -8082,7 +8306,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:58
+#: src/en/documentation/use/user-profile.md:59
 #, markdown-text
 msgid ""
 "After capturing or uploading an image, you can crop it. Have a look at the "
@@ -8090,13 +8314,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:59
+#: src/en/documentation/use/user-profile.md:60
 #, markdown-text, no-wrap
 msgid "Out of office"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:62
+#: src/en/documentation/use/user-profile.md:63
 #, markdown-text
 msgid ""
 "Define absence periods (e.g. for your vacation) and designate a substitute "
@@ -8104,7 +8328,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:66
+#: src/en/documentation/use/user-profile.md:67
 #, markdown-text
 msgid ""
 "Your designated substitute will receive updates on new tickets and changes "
@@ -8114,13 +8338,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:67
+#: src/en/documentation/use/user-profile.md:68
 #, markdown-text, no-wrap
 msgid "Password"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:71
+#: src/en/documentation/use/user-profile.md:72
 #, markdown-text
 msgid ""
 "Change the password of your account. To update it, provide your old "
@@ -8128,7 +8352,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:76
+#: src/en/documentation/use/user-profile.md:77
 #, markdown-text
 msgid ""
 "Set up a two-factor authentication (2FA) to increase the security of your "
@@ -8137,7 +8361,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:79
+#: src/en/documentation/use/user-profile.md:80
 #, markdown-text
 msgid ""
 "After following the [2FA guide](./guides/two-factor-auth), you have to "
@@ -8146,13 +8370,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:80
+#: src/en/documentation/use/user-profile.md:81
 #, markdown-text, no-wrap
 msgid "Devices"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:85
+#: src/en/documentation/use/user-profile.md:86
 #, markdown-text
 msgid ""
 "Here you can find a list of all devices logged into your Zammad account. If "
@@ -8162,13 +8386,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:86
+#: src/en/documentation/use/user-profile.md:87
 #, markdown-text, no-wrap
 msgid "Token access"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:90
+#: src/en/documentation/use/user-profile.md:91
 #, markdown-text
 msgid ""
 "Generate a personal access token for a third party application to access the "
@@ -8177,7 +8401,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:93
+#: src/en/documentation/use/user-profile.md:94
 #, markdown-text
 msgid ""
 "After creating the token, it gets displayed in a dialog only once. Make sure "
@@ -8185,7 +8409,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:95
+#: src/en/documentation/use/user-profile.md:96
 #, markdown-text
 msgid ""
 "![Screenshot shows flyout with created token and copy "
@@ -8193,13 +8417,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:99
+#: src/en/documentation/use/user-profile.md:100
 #, markdown-text
 msgid "Adjust the notifications you get. You can adjust:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 #, markdown-text
 msgid ""
 "For which ticket actions you get notified (e.g. for new tickets, for "
@@ -8207,7 +8431,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 #, markdown-text
 msgid ""
 "For which ticket you get notified based on the assignment and your relation "
@@ -8215,25 +8439,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 #, markdown-text
 msgid "On which way you get notified (only in browser or additionally via email)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 #, markdown-text
 msgid "For tickets in which group you get notified"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:107
+#: src/en/documentation/use/user-profile.md:108
 #, markdown-text
 msgid "Additionally, you can select a notification sound or disable it."
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/user-profile.md:108
+#: src/en/documentation/use/user-profile.md:109
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you "
@@ -8249,7 +8473,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/user-profile.md:117
+#: src/en/documentation/use/user-profile.md:118
 #, no-wrap
 msgid ""
 "Notifications you have already read are removed from the list "
@@ -8265,7 +8489,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:131
+#: src/en/documentation/use/user-profile.md:132
 #, markdown-text
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
@@ -8275,7 +8499,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/user-profile.md:132
+#: src/en/documentation/use/user-profile.md:133
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, markdown-text, no-wrap
@@ -8283,7 +8507,7 @@ msgid "Calendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:137
+#: src/en/documentation/use/user-profile.md:138
 #, markdown-text
 msgid ""
 "Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
@@ -8712,7 +8936,7 @@ msgid ""
 "| Distribution         | Version              |\n"
 "| -------------------- | :------------------- |\n"
 "| CentOS/RHEL          | 9, 10                |\n"
-"| Debian               | 11, 12 & 13          |\n"
+"| Debian               | 12 & 13              |\n"
 "| OpenSUSE Leap / SLES | 15 & 16              |\n"
 "| Ubuntu               | 22.04, 24.04 & 26.04 |\n"
 msgstr ""
@@ -8997,15 +9221,6 @@ msgid ""
 "/usr/share/keyrings/zammad.gpg\n"
 "```\n"
 "\n"
-"Add repository (Debian 11):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL "
-"\"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" "
-"\\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
-"```\n"
-"\n"
 "Add repository (Debian 12):\n"
 "\n"
 "```sh\n"
@@ -9069,14 +9284,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:277
-#: src/en/get-started/installation/package.md:275
+#: src/en/get-started/host-upgrade-repo-migration.md:270
+#: src/en/get-started/installation/package.md:268
 #, markdown-text, no-wrap
 msgid "Install Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:279
+#: src/en/get-started/host-upgrade-repo-migration.md:272
 #, no-wrap
 msgid ""
 "\n"
@@ -9103,14 +9318,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:303
+#: src/en/get-started/host-upgrade-repo-migration.md:296
 #: src/en/get-started/update.md:44
 #, markdown-text, no-wrap
 msgid "Update Zammad"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/get-started/host-upgrade-repo-migration.md:305
+#: src/en/get-started/host-upgrade-repo-migration.md:298
 #, no-wrap
 msgid ""
 "If there is a new Zammad version available and you want to update to it, "
@@ -9120,7 +9335,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:311
+#: src/en/get-started/host-upgrade-repo-migration.md:304
 #, markdown-text
 msgid ""
 "Re-enable updates for Zammad and update Zammad to the latest version "
@@ -9128,7 +9343,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:312
+#: src/en/get-started/host-upgrade-repo-migration.md:305
 #, no-wrap
 msgid ""
 "\n"
@@ -9201,15 +9416,15 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:382
+#: src/en/get-started/host-upgrade-repo-migration.md:375
 #: src/en/get-started/update.md:194
 #, markdown-text, no-wrap
 msgid "Start Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:384
-#: src/en/get-started/installation/package.md:334
+#: src/en/get-started/host-upgrade-repo-migration.md:377
+#: src/en/get-started/installation/package.md:327
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
@@ -9618,39 +9833,45 @@ msgid "Customizing the Zammad stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:116
+#: src/en/get-started/installation/docker.md:115
 #, markdown-text
 msgid ""
-"The Zammad stack can be customized by loading additional scenario files for "
-"common use cases. For example, you can deploy the stack with an included "
-"Nginx Proxy Manager (NPM) or with disabled PostgreSQL or Elasticsearch "
-"services, in case you already have these services running."
+"The Zammad Docker Compose stack is ready to run with its default "
+"settings. You can adapt it to your environment by loading predefined "
+"scenario files, adjusting environment variables and adding files specific to "
+"your instance."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:118
+#: src/en/get-started/installation/docker.md:119
 #, markdown-text
 msgid ""
-"Please see the [Docker Compose scenarios "
-"page](/en/reference/docker-compose-scenarios)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/get-started/installation/docker.md:120
-#, markdown-text
-msgid ""
-"To adjust the stack and settings, use [Docker specific environment "
+"See the [Docker Compose scenarios "
+"page](/en/reference/docker-compose-scenarios) for supported use cases and "
+"detailed instructions on loading scenario files. To change individual "
+"settings, use [Docker specific environment "
 "variables](/en/reference/environment-variables)."
 msgstr ""
 
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:123
+#, markdown-text
+msgid ""
+"If you deployed the stack with Docker Compose by cloning the repository, use "
+"its `local/` directory for files that belong only to your instance. See the "
+"[customize the stack "
+"locally](/en/reference/docker-compose-scenarios#customize-the-stack-locally) "
+"section for details."
+msgstr ""
+
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:121
+#: src/en/get-started/installation/docker.md:124
 #, markdown-text, no-wrap
 msgid "How to run commands in the stack"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:125
+#: src/en/get-started/installation/docker.md:128
 #, markdown-text
 msgid ""
 "Execute commands in your Docker stack by calling `rails` or `rake` via one "
@@ -9658,7 +9879,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:126
+#: src/en/get-started/installation/docker.md:129
 #, no-wrap
 msgid ""
 "\n"
@@ -9687,7 +9908,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:docker-portainer|tip)
-#: src/en/get-started/installation/docker.md:126
+#: src/en/get-started/installation/docker.md:129
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the Rails server, you can, for "
@@ -9697,7 +9918,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:126
+#: src/en/get-started/installation/docker.md:129
 #, no-wrap
 msgid ""
 "\n"
@@ -9995,7 +10216,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:277
+#: src/en/get-started/installation/package.md:270
 #, no-wrap
 msgid ""
 "\n"
@@ -10042,13 +10263,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:321
+#: src/en/get-started/installation/package.md:314
 #, markdown-text, no-wrap
 msgid "Manage services of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:324
+#: src/en/get-started/installation/package.md:317
 #, markdown-text
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
@@ -10056,19 +10277,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 #, markdown-text
 msgid "zammad: includes the services below"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 #, markdown-text
 msgid "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 #, markdown-text
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
@@ -10076,13 +10297,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 #, markdown-text
 msgid "**zammad-websocket**: WebSocket server for session related information"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:331
+#: src/en/get-started/installation/package.md:324
 #, markdown-text
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
@@ -10090,13 +10311,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:333
+#: src/en/get-started/installation/package.md:326
 #, markdown-text
 msgid "Example to start Zammad with all sub-services:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:339
+#: src/en/get-started/installation/package.md:332
 #, markdown-text
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
@@ -10104,7 +10325,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:340
+#: src/en/get-started/installation/package.md:333
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:142
 #, markdown-text, no-wrap
@@ -10112,7 +10333,7 @@ msgid "Next steps"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:338
 #, markdown-text
 msgid ""
 "[Connect Zammad with "
@@ -10120,25 +10341,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:338
 #, markdown-text
 msgid "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:338
 #, markdown-text
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:346
+#: src/en/get-started/installation/package.md:339
 #, markdown-text, no-wrap
 msgid "Dependencies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:352
+#: src/en/get-started/installation/package.md:345
 #, markdown-text
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
@@ -10148,47 +10369,47 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:351
 #, markdown-text
 msgid "imlib2"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:351
 #, markdown-text
 msgid "Node.js"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:351
 #: src/en/reference/environment-variables.md:157
 #, markdown-text, no-wrap
 msgid "PostgreSQL"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:358
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:351
+#: src/en/get-started/installation/package.md:372
 #: src/en/reference/environment-variables.md:212
 #, markdown-text, no-wrap
 msgid "Nginx"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:358
-#: src/en/get-started/installation/package.md:384
+#: src/en/get-started/installation/package.md:351
+#: src/en/get-started/installation/package.md:377
 #, markdown-text, no-wrap
 msgid "Redis"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:352
 #, markdown-text, no-wrap
 msgid "Database server"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:357
 #, markdown-text
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
@@ -10198,7 +10419,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:365
+#: src/en/get-started/installation/package.md:358
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure "
@@ -10211,13 +10432,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:372
+#: src/en/get-started/installation/package.md:365
 #, markdown-text, no-wrap
 msgid "Reverse proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:376
+#: src/en/get-started/installation/package.md:369
 #, markdown-text
 msgid ""
 "The following reverse proxies are supported in their currently maintained "
@@ -10225,13 +10446,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:372
 #, markdown-text
 msgid "Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:383
+#: src/en/get-started/installation/package.md:376
 #, markdown-text
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
@@ -10241,7 +10462,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:384
 #, markdown-text
 msgid ""
 "[Redis](https://redis.io/){target=_blank} is required for realtime "
@@ -10253,7 +10474,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:394
+#: src/en/get-started/installation/package.md:387
 #, markdown-text
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
@@ -10261,7 +10482,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:388
 #, no-wrap
 msgid ""
 "CentOS and RHEL 10 use [Valkey](https://valkey.io/){target=_blank} as a "
@@ -10271,7 +10492,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:393
 #, markdown-text, no-wrap
 msgid ""
 "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge "
@@ -10279,7 +10500,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:407
+#: src/en/get-started/installation/package.md:400
 #, markdown-text
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
@@ -10290,19 +10511,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:409
+#: src/en/get-started/installation/package.md:402
 #, markdown-text
 msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:411
+#: src/en/get-started/installation/package.md:404
 #, markdown-text
 msgid "Elasticsearch version history for Zammad:"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:412
+#: src/en/get-started/installation/package.md:405
 #, no-wrap
 msgid ""
 "\n"
@@ -10322,13 +10543,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:422
 #, markdown-text, no-wrap
 msgid "Memcached"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:426
 #, markdown-text
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
@@ -10338,7 +10559,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:437
+#: src/en/get-started/installation/package.md:430
 #, markdown-text
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
@@ -10349,7 +10570,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:433
 #, markdown-text
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
@@ -10358,7 +10579,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:443
+#: src/en/get-started/installation/package.md:436
 #, markdown-text
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
@@ -10367,13 +10588,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:444
+#: src/en/get-started/installation/package.md:437
 #, markdown-text, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:449
+#: src/en/get-started/installation/package.md:442
 #, markdown-text
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
@@ -12092,35 +12313,81 @@ msgid "Customize the stack locally"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:258
+#: src/en/reference/docker-compose-scenarios.md:256
 #, markdown-text
 msgid ""
-"Sometimes it's necessary to apply local changes to the Zammad Docker stack, "
-"e.g. to include additional services. If you plan to do so, we recommend that "
-"you do not change the `docker-compose.yml` file, but instead create a local "
-"`docker-compose.override.yml` that includes all your modifications. Docker "
-"Compose will [automatically load this file and merge its changes into your "
+"The default stack fits most environments, but sometimes you need to adapt "
+"it: add another service, change settings or use your own files. Whichever "
+"applies, don't change `docker-compose.yml` itself. Keeping your changes in "
+"separate files lets `git pull` update the stack without conflicts."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:258
+#, markdown-text
+msgid "How you do this depends on what you want to achieve:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:259
+#, markdown-text, no-wrap
+msgid "Change settings of the existing services"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:265
+#, markdown-text
+msgid ""
+"The override file changes settings of the services that the main compose "
+"file already defines. Create a `docker-compose.override.yml` file. Docker "
+"Compose [automatically loads this file and merges its changes into your "
 "stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.  "
 "The stack repository ships an inactive example file you can copy and adjust:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/docker-compose-scenarios.md:259
+#: src/en/reference/docker-compose-scenarios.md:266
 #, no-wrap
 msgid "cp docker-compose.override.yml.dist docker-compose.override.yml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:267
+#: src/en/reference/docker-compose-scenarios.md:272
 #, markdown-text
 msgid ""
-"Keep in mind that this file is for changing settings of the services that "
-"`docker-compose.yml` already defines. Loading scenarios here is not "
-"supported, use the `COMPOSE_FILE` variable in your `.env` file instead, as "
-"described in the [general usage](#general-usage) section above. If you do, "
-"append this file to that list as well: setting `COMPOSE_FILE` turns off the "
-"automatic pickup of `docker-compose.override.yml`, so your changes here "
-"would otherwise go unused without any warning."
+"Loading scenarios is not supported here. To load a scenario, use the "
+"`COMPOSE_FILE` variable in your `.env` file, as described in the [general "
+"usage](#general-usage) section above."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:273
+#, markdown-text, no-wrap
+msgid "Add your own files"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:279
+#, markdown-text
+msgid ""
+"With a Docker Compose deployment done by cloning the repository, you can "
+"store files that belong only to your instance in the stack's `local/` "
+"directory, e.g. configuration snippets, custom scenario files, scripts, "
+"notes or certificates. Git ignores the directory's contents except for "
+"README.md, so `git pull` neither reports nor changes these files."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:284
+#, markdown-text
+msgid ""
+"Files in `local/` are not loaded automatically. To use a custom Compose "
+"file, reference it from the override file or from `COMPOSE_FILE` in your "
+".env file, using a path such as `./local/my-file`. Keep in mind that setting "
+"`COMPOSE_FILE` turns off the automatic pickup of the override file, see the "
+"[general usage](#general-usage) section above. Docker Compose resolves "
+"relative paths against the directory containing the main compose file, "
+"including paths used by custom scenario files in `local/`."
 msgstr ""
 
 #. type: Title #

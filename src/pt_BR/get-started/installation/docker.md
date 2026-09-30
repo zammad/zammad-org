@@ -122,17 +122,22 @@ Compose](/pt_BR/reference/docker-compose-scenarios).
 
 ## Personalizando a stack do Zammad
 
-A stack do Zammad pode ser personalizada carregando arquivos de cenário
-adicionais para casos de uso comuns. Por exemplo, você pode implantar a
-stack com um Nginx Proxy Manager (NPM) incluído, ou com os serviços
-PostgreSQL ou Elasticsearch desativados, caso você já tenha esses serviços
-em execução.
+The Zammad Docker Compose stack is ready to run with its default
+settings. You can adapt it to your environment by loading predefined
+scenario files, adjusting environment variables and adding files specific to
+your instance.
 
-Consulte a [página de cenários do Docker
-Compose](/pt_BR/reference/docker-compose-scenarios).
+See the [Docker Compose scenarios
+page](/en/reference/docker-compose-scenarios) for supported use cases and
+detailed instructions on loading scenario files. To change individual
+settings, use [Docker specific environment
+variables](/en/reference/environment-variables).
 
-Para ajustar a stack e as configurações, use [variáveis de ambiente
-específicas do Docker](/pt_BR/reference/environment-variables).
+If you deployed the stack with Docker Compose by cloning the repository, use
+its `local/` directory for files that belong only to your instance. See the
+[customize the stack
+locally](/en/reference/docker-compose-scenarios#customize-the-stack-locally)
+section for details.
 
 ## Como executar comandos na stack
 

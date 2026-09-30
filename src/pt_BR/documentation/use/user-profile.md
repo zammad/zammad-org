@@ -56,7 +56,9 @@ Se você quiser alternar rapidamente entre o modo escuro e claro, também pode u
 
 ### Idioma
 
-Escolha o idioma no qual a interface do Zammad é exibida.
+Choose the language in which Zammad's UI is displayed. Ticket translations
+use their own target language, which you select in the ticket top bar. See
+[Article translation](guides/article-translation).
 
 ### Avatar
 

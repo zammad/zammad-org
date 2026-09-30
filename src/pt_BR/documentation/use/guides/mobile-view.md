@@ -74,6 +74,7 @@ visualização desktop:
 - Vincular tickets e ver tickets vinculados
 - Execução de macros
 - Histórico do ticket
+- Article translation
 - Criação de modelos e rascunhos compartilhados
 
 Além disso, certos recursos foram intencionalmente omitidos para melhorar o

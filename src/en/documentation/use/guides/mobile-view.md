@@ -68,6 +68,7 @@ Mobile view is also currently missing some features which are provided by the de
 - Link tickets and see linked tickets
 - Execution of macros
 - Ticket history
+- Article translation
 - Template creation & shared drafts
 
 Additionally, certain features were intentionally omitted to improve the focus on important information:

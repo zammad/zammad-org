@@ -102,6 +102,12 @@ Ecke klicken und den Schalter auf den gewünschten Modus stellen oder das
 Tastaturkürzel [[d]] verwenden. Wenn kein Eingabefeld aktiviert ist,
 wechselt es zwischen den verschiedenen Modi.
 
+### How can I read a ticket that is written in another language?
+
+Agents can have the ticket articles translated into a language of their
+choice, either per article or automatically for every ticket they open. See
+the [article translation guide](./guides/article-translation).
+
 ## Benutzerprofil
 
 ### Wie kann ich mein Profil-/Avatarbild ändern?

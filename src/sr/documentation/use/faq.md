@@ -95,6 +95,12 @@ to the customer.
 тастатури [[d]]. Ако није активирано ниједно поље за унос, режими се
 циклички мењају.
 
+### How can I read a ticket that is written in another language?
+
+Agents can have the ticket articles translated into a language of their
+choice, either per article or automatically for every ticket they open. See
+the [article translation guide](./guides/article-translation).
+
 ## Кориснички профил
 
 ### Како да променим слику профила/аватара?

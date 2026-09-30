@@ -98,6 +98,12 @@ inferior esquerdo e mude a chave para o estado desejado, ou use o atalho de
 teclado [[d]]. Se nenhum campo de entrada estiver ativado, ele alterna entre
 os diferentes modos.
 
+### How can I read a ticket that is written in another language?
+
+Agents can have the ticket articles translated into a language of their
+choice, either per article or automatically for every ticket they open. See
+the [article translation guide](./guides/article-translation).
+
 ## Perfil do usuário
 
 ### Como alterar minha imagem de perfil/avatar?

@@ -126,18 +126,22 @@ Szenarien](/de/reference/docker-compose-scenarios) beschrieben.
 
 ## Anpassen des Zammad-Stacks
 
-Der Zammad-Stack kann durch das Laden zusätzlicher Szenario-Dateien für
-gängige Anwendungsfälle angepasst werden. Sie können den Stack zum Beispiel
-mit einem integrierten Nginx Proxy Manager (NPM) oder mit deaktivierten
-PostgreSQL- oder Elasticsearch-Diensten bereitstellen, falls Sie diese
-Dienste bereits nutzen.
+The Zammad Docker Compose stack is ready to run with its default
+settings. You can adapt it to your environment by loading predefined
+scenario files, adjusting environment variables and adding files specific to
+your instance.
 
-Bitte lesen Sie unter [Docker Compose
-Szenarien](/de/reference/docker-compose-scenarios) weiter.
+See the [Docker Compose scenarios
+page](/en/reference/docker-compose-scenarios) for supported use cases and
+detailed instructions on loading scenario files. To change individual
+settings, use [Docker specific environment
+variables](/en/reference/environment-variables).
 
-Um den Stack und die Einstellungen anzupassen, verwenden Sie
-[Docker-spezifische
-Umgebungsvariablen](/de/reference/environment-variables).
+If you deployed the stack with Docker Compose by cloning the repository, use
+its `local/` directory for files that belong only to your instance. See the
+[customize the stack
+locally](/en/reference/docker-compose-scenarios#customize-the-stack-locally)
+section for details.
 
 ## Ausführen von Befehlen im Stack
 

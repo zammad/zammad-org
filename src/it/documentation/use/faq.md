@@ -97,6 +97,12 @@ clic sul tuo avatar nell'angolo in basso a sinistra e cambia il pulsante
 allo stato desiderato o usa la scorciatoia da tastiera [[d]]. Se nessun
 campo di input è attivato, scorre tra le diverse modalità.
 
+### How can I read a ticket that is written in another language?
+
+Agents can have the ticket articles translated into a language of their
+choice, either per article or automatically for every ticket they open. See
+the [article translation guide](./guides/article-translation).
+
 ## User profile
 
 ### Come cambiare la mia immagine profilo/avatar?

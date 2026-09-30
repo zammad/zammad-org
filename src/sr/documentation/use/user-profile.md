@@ -56,7 +56,9 @@ user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-set
 
 ### Језик
 
-Изаберите језик у којем се приказује Zammad UI.
+Choose the language in which Zammad's UI is displayed. Ticket translations
+use their own target language, which you select in the ticket top bar. See
+[Article translation](guides/article-translation).
 
 ### Аватар
 

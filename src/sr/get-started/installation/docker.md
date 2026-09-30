@@ -122,16 +122,22 @@ Scenarios](/en/reference/docker-compose-scenarios).
 
 ## Прилагођавање Zammad stack-а
 
-Zammad стацк се може прилагодити учитавањем додатних фајлова са сценаријима
-за честе случајеве употребе. На пример, можете деплоуовати стацк са
-укљученим Nginx Proxy Manager-ом (NPM) или са онемогућеним PostgreSQL или
-Elasticsearch сервисима, ако већ имате те сервисе у раду.
+The Zammad Docker Compose stack is ready to run with its default
+settings. You can adapt it to your environment by loading predefined
+scenario files, adjusting environment variables and adding files specific to
+your instance.
 
-Молимо погледајте страницу [Сценарији за Docker
-Compose](/en/reference/docker-compose-scenarios).
+See the [Docker Compose scenarios
+page](/en/reference/docker-compose-scenarios) for supported use cases and
+detailed instructions on loading scenario files. To change individual
+settings, use [Docker specific environment
+variables](/en/reference/environment-variables).
 
-За подешавање стацк-а и поставки користите [Docker специфичне променљиве
-окружења](/en/reference/environment-variables).
+If you deployed the stack with Docker Compose by cloning the repository, use
+its `local/` directory for files that belong only to your instance. See the
+[customize the stack
+locally](/en/reference/docker-compose-scenarios#customize-the-stack-locally)
+section for details.
 
 ## Извршавање команди у stack-у
 
