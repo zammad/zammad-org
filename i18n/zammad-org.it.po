@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-08-31 09:12+0000\n"
+"PO-Revision-Date: 2026-09-24 19:12+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/it/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.8.1\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #. type: Hash Value: themeConfig docFooter next
 #: .vitepress/config.en.yaml:1
@@ -176,7 +176,7 @@ msgstr "https://github.com/zammad"
 
 #. type: Title ##
 #: .vitepress/search.en.yaml:1
-#: src/en/documentation/use/guides/knowledge-base.md:70
+#: src/en/documentation/use/guides/knowledge-base.md:71
 #: src/en/documentation/use/guides/search.md:1
 #: src/en/documentation/use/guides/search.md:6
 #: src/en/reference/rest-api/audit-log.md:39
@@ -3051,7 +3051,6 @@ msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/advanced-features.md:369
-#: src/en/documentation/use/guides/mobile-view.md:72
 #: src/en/reference/rest-api/time-accounting.md:1
 #: src/en/reference/rest-api/time-accounting.md:6
 #, no-wrap
@@ -3794,7 +3793,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/basics/find-tickets.md:37
-#: src/en/documentation/use/user-profile.md:96
+#: src/en/documentation/use/user-profile.md:97
 #, no-wrap
 msgid "Notifications"
 msgstr "Notifiche"
@@ -5450,8 +5449,22 @@ msgstr ""
 "allo stato desiderato o usa la scorciatoia da tastiera [[d]]. Se nessun "
 "campo di input è attivato, scorre tra le diverse modalità."
 
-#. type: Title #
+#. type: Title ###
 #: src/en/documentation/use/faq.md:81
+#, no-wrap
+msgid "How can I read a ticket that is written in another language?"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/faq.md:85
+msgid ""
+"Agents can have the ticket articles translated into a language of their "
+"choice, either per article or automatically for every ticket they open. See "
+"the [article translation guide](./guides/article-translation)."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/faq.md:86
 #: src/en/documentation/use/user-profile.md:1
 #: src/en/documentation/use/user-profile.md:6
 #, fuzzy, no-wrap
@@ -5460,13 +5473,13 @@ msgid "User profile"
 msgstr "Profilo utente"
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:83
+#: src/en/documentation/use/faq.md:88
 #, no-wrap
 msgid "How to change my profile/avatar image?"
 msgstr "Come cambiare la mia immagine profilo/avatar?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:88
+#: src/en/documentation/use/faq.md:93
 #, fuzzy
 #| msgid ""
 #| "Go to the [avatar section](user-profile#avatar) in you profile settings "
@@ -5486,13 +5499,13 @@ msgstr ""
 "immagini già presenti."
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:89
+#: src/en/documentation/use/faq.md:94
 #, no-wrap
 msgid "How to change the language of the Zammad user interface?"
 msgstr "Come cambiare la lingua dell'interfaccia utente di Zammad?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:93
+#: src/en/documentation/use/faq.md:98
 #, fuzzy
 #| msgid ""
 #| "Go to the [language section](user-profile#language) in you profile "
@@ -5508,13 +5521,13 @@ msgstr ""
 "selezionando **Impostazioni profilo**."
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:94
+#: src/en/documentation/use/faq.md:99
 #, no-wrap
 msgid "What should I do before going on vacation?"
 msgstr "Cosa dovrei fare prima di andare in vacanza?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:98
+#: src/en/documentation/use/faq.md:103
 #, fuzzy
 #| msgid ""
 #| "Go to the [out of office section](user-profile#out-of-office) in you "
@@ -5531,33 +5544,33 @@ msgstr ""
 "sostituto."
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:99
+#: src/en/documentation/use/faq.md:104
 #, no-wrap
 msgid "How to adjust the order of the overviews?"
 msgstr "Come regolare l'ordine delle panoramiche?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:102
+#: src/en/documentation/use/faq.md:107
 msgid "Read on in the [overview guide](guides/overviews#reorder-overviews)."
 msgstr ""
 "Continua a leggere nella [guida alle panoramiche](guides/overviews#riordina-"
 "panoramiche)."
 
 #. type: Title ##
-#: src/en/documentation/use/faq.md:103
+#: src/en/documentation/use/faq.md:108
 #, fuzzy, no-wrap
 #| msgid "Work on Tickets"
 msgid "Work on tickets"
 msgstr "Lavora sui ticket"
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:105
+#: src/en/documentation/use/faq.md:110
 #, no-wrap
 msgid "How to assign somebody to a ticket?"
 msgstr "Come assegnare qualcuno a un ticket?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:109
+#: src/en/documentation/use/faq.md:114
 msgid ""
 "In the ticket sidebar tab, you can find an **Owner** field. Choose from the "
 "offered agents and make sure to leave an internal note so the other agent "
@@ -5568,7 +5581,7 @@ msgstr ""
 "nota interna in modo che l'altro agente sappia di cosa si tratta."
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:112
+#: src/en/documentation/use/faq.md:117
 msgid ""
 "If you only have a question or need some information, you could also just "
 "[mention a colleague](advanced-features#mention-a-user) in an article by "
@@ -5579,13 +5592,13 @@ msgstr ""
 "articolo usando [[@]][[@]] e porre la tua domanda."
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:113
+#: src/en/documentation/use/faq.md:118
 #, no-wrap
 msgid "How to delete a ticket?"
 msgstr "Come eliminare un ticket?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:118
+#: src/en/documentation/use/faq.md:123
 msgid ""
 "First of all, tickets can't be deleted by agents. This is done for the "
 "reason of transparency and to prevent deletion by accident and arbitrary "
@@ -5601,13 +5614,13 @@ msgstr ""
 "Zammad e chiedi di eseguire il job di eliminazione."
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:119
+#: src/en/documentation/use/faq.md:124
 #, no-wrap
 msgid "How to use text templates?"
 msgstr "Come usare i modelli di testo?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:123
+#: src/en/documentation/use/faq.md:128
 msgid ""
 "Use Zammad's [text modules](advanced-features#text-modules) by typing [[:]]"
 "[[:]] in the article editor or choose it from the editor toolbar. If you "
@@ -5619,13 +5632,13 @@ msgstr ""
 "amministratore Zammad di aggiungerli per te."
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:124
+#: src/en/documentation/use/faq.md:129
 #, no-wrap
 msgid "How to ask a colleague for help in the ticket?"
 msgstr "Come chiedere aiuto a un collega nel ticket?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:129
+#: src/en/documentation/use/faq.md:134
 msgid ""
 "The best way to do this is to [mention a colleague](advanced-"
 "features#mention-a-user) in an article by using [[@]][[@]] and raise your "
@@ -5640,13 +5653,13 @@ msgstr ""
 "essere un'opzione possibile."
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:130
+#: src/en/documentation/use/faq.md:135
 #, no-wrap
 msgid "How to cite the customer's email or parts of it?"
 msgstr "Come citare l'email del cliente o parti di essa?"
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:134
+#: src/en/documentation/use/faq.md:139
 msgid ""
 "To partially or selective cite the article or parts of it, mark the text, "
 "you want to cite, and click on the `Reply` button next to the article. This "
@@ -5659,7 +5672,7 @@ msgstr ""
 "per rispondere a parti diverse del ticket)."
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:136
+#: src/en/documentation/use/faq.md:141
 msgid ""
 "The citation of the whole article depends on how your Zammad is configured. "
 "If you want to apply changes to this behavior, ask your admin to change it."
@@ -6046,7 +6059,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:112
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 #, no-wrap
 msgid "Ticket history"
 msgstr "Cronologia ticket"
@@ -6141,6 +6154,580 @@ msgstr ""
 "![Screenshot che mostra un cerchio di stato nelle panoramiche che indica che "
 "un agente AI sta attualmente lavorando su di esso](/screenshots/"
 "documentation/use/ai/overview-ai-agent-indicator.png)"
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/article-translation.md:1
+#: src/en/documentation/use/guides/article-translation.md:6
+#: src/en/documentation/use/guides/mobile-view.md:73
+#, fuzzy, no-wrap
+#| msgid "Translation"
+msgid "Article translation"
+msgstr "Traduzione"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:10
+msgid ""
+"Agents can translate ticket articles into their preferred language. This "
+"feature is optional and has to be configured and activated by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:13
+msgid ""
+"Depending on the configuration, you can either translate single articles "
+"yourself or have Zammad translate every article of the tickets you open. You "
+"can always switch back to the original content."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:17
+msgid ""
+"A translation replaces the original article content, and a note below the "
+"article tells you that you are reading a translation. Zammad keeps the "
+"formatting of the original text wherever it can, but some of it can get lost "
+"when the wording changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:20
+msgid ""
+"Next to a translated article, Zammad shows a translate button in the article "
+"action row whose icon turns blue while you read the translation. This button "
+"lets you switch between the translation and the original content."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:22
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows detailed search](/screenshots/cypress/documentation/"
+#| "use/guide-search.cy.js/search-detail.png)"
+msgid ""
+"![Screenshot shows a translated ticket article](/screenshots/cypress/"
+"documentation/use/guide-translation.cy.js/translation-article.png)"
+msgstr ""
+"![Screenshot che mostra la ricerca dettagliata](/screenshots/cypress/"
+"documentation/use/guide-search.cy.js/search-detail.png)"
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/guides/article-translation.md:23
+#, no-wrap
+msgid ""
+"The [text highlighting feature](../advanced-features#highlight-text) is only available in the original text. Switch\n"
+"back to the original content if you want to highlight something in the article.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:28
+#, no-wrap
+msgid "Choose your language"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:33
+msgid ""
+"The language button in the ticket top bar shows the language code of your "
+"target language for translations, for example `EN-US` and the full language "
+"name in a tooltip on hover. Click the button to open the language menu, "
+"which lists the languages the configured translation service supports. Use "
+"the search field if you are looking for a specific language."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:35
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows opened overview section](/screenshots/cypress/"
+#| "documentation/use/guide-overview.cy.js/overview-full.png)"
+msgid ""
+"![Screenshot shows the language menu with the language list and the switch "
+"for translating all articles](/screenshots/cypress/documentation/use/guide-"
+"translation.cy.js/translation-target-menu.png)"
+msgstr ""
+"![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
+"documentation/use/guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:38
+msgid ""
+"Zammad uses the language of your personal user settings as default. If the "
+"translation service doesn't support this language, it is set to Zammad's "
+"system default or English, if the system default isn't supported either."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:41
+msgid ""
+"Your translation target language is a personal setting: Zammad remembers it "
+"for your user account and applies it to every ticket you open, including "
+"tickets in other browser tabs."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:44
+msgid ""
+"The translation target language is independent of the language of Zammad's "
+"UI, which you set in your [personal settings](../user-profile)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:45
+#, fuzzy, no-wrap
+#| msgid "Create a New Article"
+msgid "Translate a single article"
+msgstr "Crea un nuovo articolo"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:49
+msgid ""
+"Click the translate button in the article action row to translate this "
+"article into your target language. Click it again to switch back to the "
+"original text."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:51
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows opened overview section](/screenshots/cypress/"
+#| "documentation/use/guide-overview.cy.js/overview-full.png)"
+msgid ""
+"![Screenshot shows an article with the translate button in its action row, "
+"highlighted with a frame](/screenshots/cypress/documentation/use/guide-"
+"translation.cy.js/translation-button.png)"
+msgstr ""
+"![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
+"documentation/use/guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:54
+msgid ""
+"If the target language is not the one you want to read the article in, "
+"change it in the ticket top bar as described above."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:55
+#, no-wrap
+msgid "Translate every article automatically"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:61
+msgid ""
+"If your admin enabled automatic translation for your role, the language menu "
+"in the ticket top bar also contains the **Translate all articles** switch "
+"(see screenshot under **Choose your language**). While it is on, Zammad "
+"translates the articles of every ticket you open, so you don't have to "
+"translate them one by one. Articles which are already in your target "
+"language keep their original text; this requires the article language "
+"detection to be enabled by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:64
+msgid ""
+"Turn the switch off if you prefer to translate individual articles. Like "
+"your target language, this setting applies to every ticket you view."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:67
+msgid ""
+"If you want to read a single article in its original language again while "
+"the switch stays on for the others, use **Show original** on it."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:68
+#, no-wrap
+msgid "Translation quality and feedback"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:71
+msgid ""
+"Translations are generated automatically, so double-check the result before "
+"you rely on it."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:74
+msgid ""
+"Use the thumbs up or thumbs down buttons below a translated article to help "
+"your admin evaluate the quality of the translation service; a thumbs down "
+"opens a field where you can explain what went wrong. If you are not "
+"satisfied with a translation, use the regenerate button in the same row "
+"(tooltip **Regenerate**) to have the article translated again."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/guides/cti.md:1
+#: src/en/documentation/use/guides/cti.md:6
+#, fuzzy, no-wrap
+#| msgid "CTI caller log"
+msgid "Phone and caller log"
+msgstr "Registro chiamante CTI"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:10
+msgid ""
+"Zammad can connect to your phone system and log every incoming and outgoing "
+"call. It uses this information to look up who is calling, to keep a call log "
+"and to help you start working on a call right away."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:13
+msgid ""
+"This feature is optional. Your admin has to connect Zammad to a telephony "
+"backend first. Once they do, a **Phone** entry appears in the navigation "
+"sidebar and stays there for as long as the backend is configured."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:15
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows the ticket detail view](/screenshots/cypress/"
+#| "documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)"
+msgid ""
+"![Screenshot shows the caller log in the Zammad desktop view](/screenshots/"
+"cypress/documentation/use/guide-cti.cy.js/caller-log-full.png)"
+msgstr ""
+"![Screenshot che mostra la visualizzazione dettagli ticket](/screenshots/"
+"cypress/documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)"
+
+#. type: Title ##
+#: src/en/documentation/use/guides/cti.md:16
+#, fuzzy, no-wrap
+#| msgid "Online Notification"
+msgid "Call notifications"
+msgstr "Notifica online"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:20
+msgid ""
+"The toggle next to the **Phone** entry decides whether Zammad tells you "
+"about calls. It is switched off by default, so switch it on to see incoming "
+"calls."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:23
+msgid ""
+"When it's switched on, you get a counter of unhandled calls, see ringing "
+"calls in the sidebar and get the customer or ticket view after you answer a "
+"call. Switched off, none of that happens."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:25
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows opened overview section](/screenshots/cypress/"
+#| "documentation/use/guide-overview.cy.js/overview-full.png)"
+msgid ""
+"![Screenshot shows the Phone entry with call notifications switched off, "
+"without a counter and without ringing calls](/screenshots/cypress/"
+"documentation/use/guide-cti.cy.js/sidebar-notifications-off.png)"
+msgstr ""
+"![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
+"documentation/use/guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:27
+msgid "With the toggle switched off:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:32
+msgid "the counter next to **Phone** stays hidden"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:32
+msgid "no ringing calls appear in the sidebar"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:32
+msgid "picking up a call does not open a customer or ticket view"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:32
+#, fuzzy
+#| msgid "Online Notification"
+msgid "no browser notifications appear"
+msgstr "Notifica online"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:36
+msgid ""
+"The caller log itself is not affected by this toggle. You can still open it "
+"and read every call. The setting is personal, so switching it off only "
+"changes what your own browser shows. For the sidebar with the toggle "
+"switched on and a call coming in, see [answer calls](#answer-calls)."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/cti.md:37
+#, fuzzy, no-wrap
+#| msgid "Answers"
+msgid "Answer calls"
+msgstr "Risposte"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:42
+msgid ""
+"You answer a call in your phone software or on your headset, not in Zammad. "
+"Incoming calls show up in the navigation sidebar directly below the "
+"**Phone** entry, one row per call. Each row shows the caller's number and, "
+"where Zammad could identify them, their name."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:44
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/"
+#| "documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
+msgid ""
+"![Screenshot shows the Phone entry in the navigation sidebar with a ringing "
+"call from a known and an unknown caller below it](/screenshots/cypress/"
+"documentation/use/guide-cti.cy.js/sidebar-ringing-call.png)"
+msgstr ""
+"![Screenshot che mostra il menu dell'editor intelligente di Zammad](/"
+"screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-"
+"tools.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:48
+msgid ""
+"Next to a ringing call you find a ::+:: button to create a new ticket for "
+"that call. For a caller Zammad does not know, a `New user` button creates "
+"the customer first, and Zammad then continues with a ticket create screen "
+"for that call."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:54
+msgid ""
+"Once your phone system reports that you answered, Zammad decides which view "
+"to open for you. You get the customer detail page if it detected a customer "
+"for the number _and_ that customer has a ticket that was updated within your "
+"admin's configured activity window. In every other case you get a ticket "
+"create screen. The customer field is prefilled there, either with the "
+"detected customer or with the caller's number, and you can change it before "
+"you create the ticket."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/guides/cti.md:55
+#, no-wrap
+msgid ""
+"Zammad opens that view only while you are looking at the Zammad browser tab. If you answer a call while the Zammad\n"
+"browser tab is inactive or with the browser in the background, Zammad gives you up to a minute to come back.\n"
+"Coming back to the tab in this time opens the view right away. After this period, Zammad does not open a view\n"
+"anymore. The call is still present in the caller log, so you can pick it up there.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/cti.md:62
+#, fuzzy, no-wrap
+#| msgid "CTI caller log"
+msgid "Reading the caller log"
+msgstr "Registro chiamante CTI"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:67
+msgid ""
+"The caller log lists every call Zammad recorded. Open it with the **Phone** "
+"entry in the navigation sidebar. The list is ordered by time, with the "
+"newest call first, and it fills in on its own while you are on the page. "
+"Scroll down to load more."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:69
+msgid "Each row shows:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:77
+msgid ""
+"**Handled** (no column heading): whether the call was answered. A call that "
+"rang without anyone picking it up stays unchecked until you mark it yourself."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:77
+msgid ""
+"**From** and **To**: the numbers involved, together with the name Zammad "
+"matched to them."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:77
+msgid ""
+"**Status**: how the call ended, for example `Connected`, `Call ended`, "
+"`Busy`, `Voicemail`, `Not reached` or `Does not exist`. A call that is still "
+"unanswered shows as `Ringing…`."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:77
+msgid ""
+"**Waiting** and **Duration**: how long the call waited before it was "
+"answered and how long it lasted."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:77
+msgid "**Time**: when the call happened."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:79
+#, fuzzy
+#| msgid ""
+#| "![Screenshot shows opened overview section](/screenshots/cypress/"
+#| "documentation/use/guide-overview.cy.js/overview-full.png)"
+msgid ""
+"![Screenshot shows the caller log with call entries and the different caller "
+"matches](/screenshots/cypress/documentation/use/guide-cti.cy.js/caller-log-"
+"table.png)"
+msgstr ""
+"![Screenshot che mostra la sezione panoramiche aperta](/screenshots/cypress/"
+"documentation/use/guide-overview.cy.js/overview-full.png)"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:82
+msgid ""
+"Handled calls stay in the list but are greyed out, so you can still tell "
+"them apart from the ones you have not processed yet."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/guides/cti.md:83
+#, no-wrap
+msgid ""
+"The caller log shows all calls of the entire instance, not only yours. It holds the 1000 most recent calls at\n"
+"most. Calls leave the list when Zammad deletes them during the monthly system cleanup, which removes calls\n"
+"older than a year.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/cti.md:89
+#, fuzzy, no-wrap
+#| msgid "Mark All as Read"
+msgid "Marking calls as handled"
+msgstr "Segna tutto come letto"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:95
+msgid ""
+"Answering a call marks it as handled for you. You only need the checkbox for "
+"calls that stayed unanswered, for example one you called back later or one a "
+"colleague took. Clicking the checkbox in the **Handled** column puts a "
+"checkmark on the row, and clicking it again removes the mark. Marking a call "
+"only changes the display for you, it does not close anything."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:99
+msgid ""
+"The checkbox stays locked while the call is still ringing and younger than a "
+"minute, so that you do not mark away a call that is still in progress. Hover "
+"over the locked checkbox and it tells you why it cannot be used yet."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/cti.md:100
+#, no-wrap
+msgid "Caller matches"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:103
+msgid ""
+"Zammad tries to identify the caller and show you their name next to the "
+"number. There are three cases:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:109
+msgid ""
+"A **known match**: Zammad found the number in your customer data and shows "
+"the customer with their avatar."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:109
+msgid ""
+"A **Maybe** badge: Zammad only guesses that the number belongs to this "
+"customer. It collects phone numbers from places like email signatures, so a "
+"guessed match is a hint rather than a certainty. Check the name before you "
+"write to the customer."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/cti.md:109
+msgid ""
+"An **unknown caller**: Zammad has no customer for the number. The number "
+"shows with a plain avatar instead."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:112
+msgid ""
+"If more than one customer matches a number, the row shows a badge with the "
+"number of additional matches, for example `+2`. Click it to see all matching "
+"customers."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/cti.md:113
+#, fuzzy, no-wrap
+#| msgid "Creation date of call."
+msgid "Creating a customer from a call"
+msgstr "Data di creazione della chiamata."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:118
+msgid ""
+"For an unknown number you can create the customer without leaving the caller "
+"log. Use the `New user` button next to the call. Zammad opens the customer "
+"create screen with the phone number already filled in. Once you save the "
+"customer, Zammad continues to a ticket create screen for the call with that "
+"customer set."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:122
+msgid ""
+"An unknown number cannot be added to an existing customer this way. If the "
+"caller is a customer you already know, copy the number and paste it into "
+"their profile instead. Also note that existing caller log entries are not "
+"updated when you later change a customer's phone number."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/cti.md:123
+#, fuzzy, no-wrap
+#| msgid "Calling number."
+msgid "Dialing a number"
+msgstr "Numero chiamante."
+
+#. type: Plain text
+#: src/en/documentation/use/guides/cti.md:127
+msgid ""
+"Phone numbers in the caller log and in customer details are links. Clicking "
+"one hands the number to your phone software, which then starts the call. "
+"This requires a softphone or CTI client that supports this action. Without "
+"one, clicking the number does nothing."
+msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/guides/editor.md:1
@@ -6492,7 +7079,7 @@ msgid ""
 "reader or editor permission before you can work with it. Whether you can "
 "read internal answers or edit content depends on this configuration. Zammad "
 "supports one knowledge base per system, which can hold content in several "
-"locales. To open the knowledge base, click on **Knowledge Base** in the "
+"languages. To open the knowledge base, click on **Knowledge Base** in the "
 "primary navigation."
 msgstr ""
 
@@ -6523,10 +7110,10 @@ msgstr ""
 #: src/en/documentation/use/guides/knowledge-base.md:31
 msgid ""
 "If your administrator enabled several locales for the knowledge base, an "
-"answer can exist in more than one language, one translation per locale. "
-"Switch the locale selector in the top bar to read or edit another language. "
-"An answer that has no translation in the active locale yet opens with empty "
-"fields in the editor."
+"answer can exist in more than one language, one translation per language. To "
+"switch the language, use the selector in the top bar to read or edit another "
+"language.  An answer that has no translation in the selected language yet "
+"opens in an empty state in the editor."
 msgstr ""
 
 #. type: Title ###
@@ -6538,7 +7125,7 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:36
 msgid ""
-"Every answer has one of four publication states. The state is shown as a "
+"Every answer has one of four visibility states. The state is shown as a "
 "colored icon on the answer and on its category tile:"
 msgstr ""
 
@@ -6553,12 +7140,12 @@ msgstr ""
 #| "| Configuration check                         | Yes               | Manually via test script   |\n"
 #| "| Exceptions                                  | Yes               | No                         |\n"
 msgid ""
-"| Color | State     | Who can see it                                        |\n"
-"|-------|-----------|--------------------------------------------------------|\n"
-"| Green | Published | Everyone, including customers on the public help site  |\n"
-"| Blue  | Internal  | Agents with knowledge base reader permission           |\n"
-"| Gray  | Draft     | Editors only                                           |\n"
-"| Gray  | Archived  | Editors only                                           |\n"
+"| Color | Visibility | Who can see it                                        |\n"
+"|-------|------------|--------------------------------------------------------|\n"
+"| Green | Published  | Everyone, including customers on the public help site  |\n"
+"| Blue  | Internal   | Agents with knowledge base reader permission           |\n"
+"| Gray  | Draft      | Editors only                                           |\n"
+"| Gray  | Archived   | Editors only                                           |\n"
 msgstr "|                                             | Configurazione GUI | Variabile d'ambiente\n"
 
 #. type: Plain text
@@ -6576,32 +7163,32 @@ msgid "Use in tickets"
 msgstr "Collegare i ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:52
+#: src/en/documentation/use/guides/knowledge-base.md:53
 msgid ""
 "The knowledge base unfolds part of its value inside tickets: insert an "
 "answer into a reply with [[?]][[?]], link related answers to a ticket and "
-"let AI suggest or draft answers based on the ticket content. These workflows "
-"are covered in [Insert knowledge base article](/en/documentation/use/"
-"advanced-features#insert-knowledge-base-article) and in the [knowledge base "
-"assistant](/en/documentation/use/guides/ai#knowledge-base-assistant) section "
-"of the AI guide."
+"let AI suggest or draft knowledge base answers based on the ticket content. "
+"These workflows are covered in [Insert knowledge base article](/en/"
+"documentation/use/advanced-features#insert-knowledge-base-article) and in "
+"the [knowledge base assistant](/en/documentation/use/guides/ai#knowledge-"
+"base-assistant) section of the AI guide."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:53
+#: src/en/documentation/use/guides/knowledge-base.md:54
 #, fuzzy, no-wrap
 #| msgid "Knowledge base"
 msgid "Read the knowledge base"
 msgstr "Base di conoscenza"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:55
+#: src/en/documentation/use/guides/knowledge-base.md:56
 #, no-wrap
 msgid "Browse"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:60
+#: src/en/documentation/use/guides/knowledge-base.md:61
 msgid ""
 "The knowledge base home shows one tile for every top-level category, "
 "arranged in a grid. Each tile shows the category icon, its title, its "
@@ -6610,18 +7197,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:64
+#: src/en/documentation/use/guides/knowledge-base.md:65
 msgid ""
 "To open a category, simply click on its tile. Its subcategories appear as "
 "tiles on top, its answers below them as a list. Select an answer to read it. "
-"Use the back and forward buttons in the top bar to jump between previously "
-"visited answers."
+"Use the back and forward buttons in the top bar to jump between previous and "
+"next answers inside the same category."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:69
+#: src/en/documentation/use/guides/knowledge-base.md:70
 msgid ""
-"Use the search bar on top to search the knowledge base. Use the locale "
+"Use the search bar on top to search the knowledge base. Use the language "
 "selector to switch between translated content.  The knowledge base icon at "
 "the start of the breadcrumb in the top bar takes you back to the knowledge "
 "base home. The preview button with the tooltip **View public knowledge "
@@ -6630,7 +7217,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:74
+#: src/en/documentation/use/guides/knowledge-base.md:75
 msgid ""
 "The search bar on top of the knowledge base searches answer titles and "
 "content as well as category titles. When you start the search from within a "
@@ -6638,7 +7225,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:77
+#: src/en/documentation/use/guides/knowledge-base.md:78
 msgid ""
 "Search terms support Elasticsearch syntax. All terms have to match and plain "
 "terms also match word beginnings, so `refund` finds `refunds`. To filter by "
@@ -6646,7 +7233,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:84
+#: src/en/documentation/use/guides/knowledge-base.md:85
 #, no-wrap
 msgid ""
 "| Example                   | Finds                                   |\n"
@@ -6658,14 +7245,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:87
+#: src/en/documentation/use/guides/knowledge-base.md:88
 msgid ""
 "The `tags:` and `publication_state:` fields require Elasticsearch. Searches "
 "that name a field match exactly and do not use prefix matching."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:90
+#: src/en/documentation/use/guides/knowledge-base.md:91
 msgid ""
 "Select the light bulb in the search bar for suggested searches. It offers "
 "the most common filters as one-click shortcuts and a link to this "
@@ -6673,7 +7260,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:94
+#: src/en/documentation/use/guides/knowledge-base.md:95
 msgid ""
 "Knowledge base answers also appear in the global search. In the detailed "
 "search, they are available as a separate search entity with title, "
@@ -6683,21 +7270,21 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:95
+#: src/en/documentation/use/guides/knowledge-base.md:96
 #, fuzzy, no-wrap
 #| msgid "Knowledge base"
 msgid "Edit the knowledge base"
 msgstr "Base di conoscenza"
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:97
+#: src/en/documentation/use/guides/knowledge-base.md:98
 #: src/en/reference/rest-api/knowledgebase.md:97
 #, no-wrap
 msgid "Categories"
 msgstr "Categorie"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:100
+#: src/en/documentation/use/guides/knowledge-base.md:101
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows opened overview section](/screenshots/cypress/"
@@ -6711,7 +7298,7 @@ msgstr ""
 "documentation/use/guide-overview.cy.js/overview-full.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:104
+#: src/en/documentation/use/guides/knowledge-base.md:105
 msgid ""
 "To create a **category**, select the `+ Add category` card. This works on "
 "the knowledge base home for top-level categories as well as inside a "
@@ -6721,14 +7308,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:107
+#: src/en/documentation/use/guides/knowledge-base.md:108
 msgid ""
 "Each category consists of a title and an icon. Icons help users recognize "
 "categories at a glance, so pick the one that fits the content best."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:110
+#: src/en/documentation/use/guides/knowledge-base.md:111
 msgid ""
 "To edit a category, click the ::a:: menu on its tile and select **Edit "
 "category** or use the identical button on the top of the right sidebar when "
@@ -6736,25 +7323,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:111
+#: src/en/documentation/use/guides/knowledge-base.md:112
 #, fuzzy, no-wrap
 #| msgid "Change Permissions"
 msgid "Category permissions"
 msgstr "Cambia permessi"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:117
+#: src/en/documentation/use/guides/knowledge-base.md:119
 msgid ""
 "The category flyout contains a **Permissions** matrix that assigns "
 "individual roles their own access level to a category. Three levels are "
 "available: **Editor** to read and edit the content of the category, "
 "**Reader** to read it including internally published answers and **None** to "
-"hide it from the role. Roles without the knowledge base reader or editor "
+"hide it from the role (published answers are always visible in the published "
+"knowledge base). Roles without the knowledge base reader or editor "
 "permission have no row in the matrix."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:123
+#: src/en/documentation/use/guides/knowledge-base.md:125
 msgid ""
 "By default, access is managed globally: everyone with the knowledge base "
 "reader permission sees all internally published answers, editors can work "
@@ -6766,7 +7354,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:129
+#: src/en/documentation/use/guides/knowledge-base.md:131
 msgid ""
 "Permissions of a parent category are inherited by its subcategories. An "
 "inherited **Editor** or **None** level cannot be overridden in the "
@@ -6779,26 +7367,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:130
+#: src/en/documentation/use/guides/knowledge-base.md:132
 #: src/en/reference/rest-api/knowledgebase.md:245
 #, no-wrap
 msgid "Answers"
 msgstr "Risposte"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:138
+#: src/en/documentation/use/guides/knowledge-base.md:139
 msgid ""
-"To add an **answer**, open a category and select the `+ Add answer` card or "
+"To add an **answer**, open a category and select the `+ Add answer` entry or "
 "use the category's ::a:: menu and select **Add answer** there. An answer "
 "consists of a title and rich content. The editor provides the same "
 "formatting capabilities as the ticket article editor. See the [formatting "
 "section](/en/documentation/use/guides/editor#apply-formatting) of the editor "
 "guide for details. Tags make answers easier to find, both in the knowledge "
-"base search and in the ticket composer."
+"base search and while working on tickets."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:141
+#: src/en/documentation/use/guides/knowledge-base.md:142
 msgid ""
 "Within an answer you can link to other knowledge base answers. Select the "
 "corresponding tool in the editor toolbar and pick the answer to link to. "
@@ -6807,7 +7395,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:144
+#: src/en/documentation/use/guides/knowledge-base.md:145
 msgid ""
 "Answers support live collaboration: when several editors open the same "
 "answer for editing, Zammad shows who else is editing and keeps everyone's "
@@ -6817,10 +7405,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:148
 msgid ""
-"While you edit, your work is saved automatically as a draft in the taskbar "
-"tab. If you close the tab or the browser, come back to it later and continue "
-"where you left off. Until you save the answer explicitly, you can discard "
-"the unsaved changes."
+"While you edit, your work is saved automatically as a draft. If you close "
+"the tab or the browser, come back to it later and continue where you left "
+"off. Until you save the answer explicitly, you can discard the unsaved "
+"changes."
 msgstr ""
 
 #. type: Plain text
@@ -6905,14 +7493,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:178
+#: src/en/documentation/use/guides/knowledge-base.md:177
 msgid ""
-"Three sorting modes are available. Answers are sorted the same way as "
-"categories. Both answers and categories can be sorted independently."
+"Three sorting modes are available for both answers and categories. Answers "
+"and categories can be sorted independently."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:184
+#: src/en/documentation/use/guides/knowledge-base.md:183
 #, fuzzy, no-wrap
 #| msgid ""
 #| "|                                             | GUI configuration | Environment variable       |\n"
@@ -6922,37 +7510,36 @@ msgstr ""
 #| "| Configuration check                         | Yes               | Manually via test script   |\n"
 #| "| Exceptions                                  | Yes               | No                         |\n"
 msgid ""
-"| Mode                       | Effect                                                              |\n"
+"| Mode                       | Effect                                                               |\n"
 "|----------------------------|----------------------------------------------------------------------|\n"
 "| **Sort alphabetically**    | Entries ordered by title, regardless of manual changes               |\n"
 "| **Sort by latest updates** | Most recently updated entries first                                  |\n"
-"| **Sort by drag & drop**    | Your hand-picked order; drag the entries into place                   |\n"
+"| **Sort by drag & drop**    | Your hand-picked order; drag the entries into place                  |\n"
 msgstr "|                                             | Configurazione GUI | Variabile d'ambiente\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:188
+#: src/en/documentation/use/guides/knowledge-base.md:186
 msgid ""
 "For categories, _latest updates_ means the category's own editorial changes "
 "like a renamed title or a new icon.  Changes to the answers inside it do not "
-"affect the category's position. Answers are dated by their content edits and "
-"publication state changes alike."
+"affect the category's position. Answers are dated by their content edits."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:190
+#: src/en/documentation/use/guides/knowledge-base.md:188
 msgid ""
 "Select the mode, arrange the entries if needed and save. The order applies "
 "for everyone who views the knowledge base."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:191
+#: src/en/documentation/use/guides/knowledge-base.md:189
 #, no-wrap
 msgid "Visibility and scheduling"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:194
+#: src/en/documentation/use/guides/knowledge-base.md:192
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows opened overview section](/screenshots/cypress/"
@@ -6966,49 +7553,50 @@ msgstr ""
 "documentation/use/guide-overview.cy.js/overview-full.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:198
+#: src/en/documentation/use/guides/knowledge-base.md:196
 msgid ""
-"To change the visibility of an answer, open the visibility dropdown in the "
-"answer sidebar and select the new state; it takes effect immediately when "
-"you click **Update**. Use drafts to prepare content that is not ready for "
-"release, and archiving to retire outdated answers without deleting them."
+"To change the visibility of an answer, edit the answer and select the new "
+"visibility in the answer sidebar; it takes effect immediately when you click "
+"`Update`. Use drafts to prepare content that is not ready for release, and "
+"archiving to retire outdated answers without deleting them."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:203
+#: src/en/documentation/use/guides/knowledge-base.md:201
 msgid ""
-"Instead of changing the state manually, you can schedule state changes: an "
-"answer can be published automatically on a given date, or archived when it "
-"becomes obsolete. Scheduled changes are listed in the answer sidebar and "
-"only visible to editors. Create a new schedule by clicking the ::+:: button "
-"in the **Scheduled visibility** section in the answer edit mode."
+"Instead of changing the visibility manually, you can schedule visibility "
+"changes: an answer can be published automatically on a given date, or "
+"archived when it becomes obsolete. Scheduled changes are listed in the "
+"answer sidebar and only visible to editors. Create a new schedule by "
+"clicking the ::+:: button in the **Scheduled visibility** section in the "
+"answer edit mode."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:207
+#: src/en/documentation/use/guides/knowledge-base.md:205
 msgid ""
-"Schedules follow the order of the states: an answer can become internal, "
-"then published, then archived, each with its own date. Drafts cannot be "
-"scheduled and a state the answer has already reached cannot be scheduled "
-"again."
+"Schedules follow the order of the visibility states: an answer can become "
+"internal, then published, then archived, each with its own date. Drafts "
+"cannot be scheduled and a visibility state that the answer has already "
+"reached cannot be scheduled again."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/knowledge-base.md:208
+#: src/en/documentation/use/guides/knowledge-base.md:206
 #, fuzzy, no-wrap
 #| msgid "Advanced User"
 msgid "Advanced"
 msgstr "Utente avanzato"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:210
+#: src/en/documentation/use/guides/knowledge-base.md:208
 #, fuzzy, no-wrap
 #| msgid "Ticket Update Behavior"
 msgid "Save behavior"
 msgstr "Comportamento all'aggiornamento del ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:216
+#: src/en/documentation/use/guides/knowledge-base.md:214
 msgid ""
 "Next to the **Create** and **Update** buttons you can choose what happens "
 "when you save an answer: **Stay on tab** keeps the editor open, **Close tab "
@@ -7019,13 +7607,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:217
+#: src/en/documentation/use/guides/knowledge-base.md:215
 #, no-wrap
 msgid "The public help site"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:223
+#: src/en/documentation/use/guides/knowledge-base.md:221
 msgid ""
 "Customers reach published answers either in Zammad itself or on the public "
 "help site, depending on how your administrator configured the knowledge "
@@ -7036,7 +7624,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:226
+#: src/en/documentation/use/guides/knowledge-base.md:224
 msgid ""
 "To see the knowledge base as your customers see it, use the preview button "
 "described in the Browse section above.  Unlike the public site, the preview "
@@ -7045,13 +7633,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:227
+#: src/en/documentation/use/guides/knowledge-base.md:225
 #, no-wrap
 msgid "Feeds"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:231
+#: src/en/documentation/use/guides/knowledge-base.md:229
 msgid ""
 "The knowledge base allows you to subscribe to the knowledge base or "
 "individual categories via Atom/RSS feed. This feature is optional and has to "
@@ -7059,7 +7647,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:237
+#: src/en/documentation/use/guides/knowledge-base.md:235
 msgid ""
 "For **agents**: go to the level of your knowledge base you want to subscribe "
 "to and select **Set up RSS feed** from the ::a:: menu in the top bar, or "
@@ -7072,7 +7660,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:240
+#: src/en/documentation/use/guides/knowledge-base.md:238
 #, no-wrap
 msgid ""
 "**Customers** on the public help site get their own feed of the published content only, without a token. They can\n"
@@ -7080,14 +7668,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/knowledge-base.md:241
+#: src/en/documentation/use/guides/knowledge-base.md:239
 #, fuzzy, no-wrap
 #| msgid "ID of the state."
 msgid "Copy the title"
 msgstr "ID dello stato."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/knowledge-base.md:244
+#: src/en/documentation/use/guides/knowledge-base.md:242
 msgid ""
 "The ::c:: button next to the title in the top bar copies the name of the "
 "category or answer you are viewing to the clipboard, ready to paste it into "
@@ -7219,42 +7807,47 @@ msgstr ""
 "quotidiane comuni di Zammad in mobilità:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 msgid "Manage & use your ticket overviews"
 msgstr "Gestisci e usa le panoramiche dei tuoi ticket"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 msgid "Search for existing records"
 msgstr "Cerca record esistenti"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 msgid "Create a new ticket"
 msgstr "Crea un nuovo ticket"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 msgid "Reply in an already existing ticket"
 msgstr "Rispondi in un ticket già esistente"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 msgid "Modify ticket attributes"
 msgstr "Modifica gli attributi del ticket"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 msgid "Modify customer attributes"
 msgstr "Modifica gli attributi del cliente"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:61
+#: src/en/documentation/use/guides/mobile-view.md:62
 msgid "Modify organization attributes"
 msgstr "Modifica gli attributi dell'organizzazione"
 
-#. type: Title ####
+#. type: Bullet: '- '
 #: src/en/documentation/use/guides/mobile-view.md:62
+msgid "Track time on ticket articles"
+msgstr "Traccia il tempo sugli articoli dei ticket"
+
+#. type: Title ####
+#: src/en/documentation/use/guides/mobile-view.md:63
 #: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
 #: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:477
 #, no-wrap
@@ -7262,7 +7855,7 @@ msgid "Limitations"
 msgstr "Limitazioni"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:65
+#: src/en/documentation/use/guides/mobile-view.md:66
 msgid ""
 "Mobile view is also currently missing some features which are provided by "
 "the desktop view:"
@@ -7271,27 +7864,27 @@ msgstr ""
 "fornite dalla visualizzazione desktop:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 msgid "Split article"
 msgstr "Dividi articolo"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 msgid "Link tickets and see linked tickets"
 msgstr "Collega ticket e visualizza i ticket collegati"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 msgid "Execution of macros"
 msgstr "Esecuzione di macro"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:73
 msgid "Template creation & shared drafts"
 msgstr "Creazione modelli e bozze condivise"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:74
+#: src/en/documentation/use/guides/mobile-view.md:75
 #, fuzzy
 #| msgid ""
 #| "Additionally, certain features were intentionally omitted in order to "
@@ -7304,7 +7897,7 @@ msgstr ""
 "migliorare la concentrazione sulle informazioni importanti:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 msgid ""
 "Most management features (except ticket user and organization management)"
 msgstr ""
@@ -7312,43 +7905,43 @@ msgstr ""
 "degli utenti ticket e delle organizzazioni)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 msgid "Most knowledge base features (except ticket integration)"
 msgstr ""
 "La maggior parte delle funzionalità della base di conoscenza (ad eccezione "
 "dell'integrazione dei ticket)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 msgid "Most user profile functions (except avatar and language preferences)"
 msgstr ""
 "La maggior parte delle funzioni del profilo utente (ad eccezione delle "
 "preferenze di avatar e lingua)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 msgid "Reports"
 msgstr "Rapporti"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 msgid "Caller log"
 msgstr "Registro chiamate"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:82
 msgid "Live chat"
 msgstr "Chat in tempo reale"
 
 #. type: Title ##
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:83
 #, fuzzy, no-wrap
 #| msgid "Switch the Views"
 msgid "Switch the views"
 msgstr "Cambia visualizzazione"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:86
+#: src/en/documentation/use/guides/mobile-view.md:87
 msgid ""
 "Zammad implements a mobile device detection, which results in automatic "
 "redirection to mobile view. Even with this mechanism in place, it's possible "
@@ -7360,7 +7953,7 @@ msgstr ""
 "usando i link dell'app."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:89
+#: src/en/documentation/use/guides/mobile-view.md:90
 msgid ""
 "In both desktop and mobile view login screens, you can find a link below the "
 "`Sign in` button to explicitly switch to the other view (see login "
@@ -7371,7 +7964,7 @@ msgstr ""
 "all'altra visualizzazione."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:92
+#: src/en/documentation/use/guides/mobile-view.md:93
 msgid ""
 "While you are signed in and want to switch from the mobile to the desktop "
 "view, go to your profile by selecting your avatar at the bottom and select "
@@ -7387,7 +7980,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/user-profile.md:126
+#: src/en/documentation/use/user-profile.md:127
 #, no-wrap
 msgid "Overviews"
 msgstr "Panoramiche"
@@ -7794,7 +8387,7 @@ msgid "Basic search"
 msgstr "Ricerca di base"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:25
+#: src/en/documentation/use/guides/search.md:26
 #, fuzzy
 #| msgid ""
 #| "The search is located in the top left corner in the primary navigation "
@@ -7810,9 +8403,12 @@ msgid ""
 "Either select it via mouse or use the keyboard shortcut [[s]]. After "
 "activation, you can see the tickets that were recently closed from your "
 "taskbar as well as your recent search queries. To search, simply type a "
-"term. The search then displays all matching items for which you have at "
-"least view or read permissions, grouped by type like users and tickets. "
-"Selecting one of those results opens the item as tab in the taskbar."
+"term. The search then displays matching items for which you have at least "
+"view or read permissions, grouped by type like users and tickets. Selecting "
+"one of those results opens the item as tab in the taskbar. The number of "
+"results per type is limited: as soon as your search matches more than two "
+"types, each group shows up to five results. Use the detailed search to get "
+"the full result set."
 msgstr ""
 "La ricerca si trova nell'angolo in alto a sinistra nella barra di "
 "navigazione principale. Selezionala tramite mouse o usa la scorciatoia da "
@@ -7825,7 +8421,7 @@ msgstr ""
 "navigazione principale."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:29
+#: src/en/documentation/use/guides/search.md:30
 msgid ""
 "Searching for a term also matches any values that begin with it. For "
 "example, searching for `brooks` also finds values like `brookster`. This "
@@ -7835,7 +8431,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:31
+#: src/en/documentation/use/guides/search.md:32
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows search results in navigation bar](/screenshots/cypress/"
@@ -7849,7 +8445,7 @@ msgstr ""
 "sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:35
+#: src/en/documentation/use/guides/search.md:36
 #, fuzzy
 #| msgid ""
 #| "If you press [[enter]] or click on `detailed search`, Zammad opens the "
@@ -7871,14 +8467,14 @@ msgstr ""
 "Elasticsearch. Continua a leggere per maggiori informazioni."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:36
+#: src/en/documentation/use/guides/search.md:37
 #, fuzzy, no-wrap
 #| msgid "Detailed Search"
 msgid "Detailed search"
 msgstr "Ricerca dettagliata"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:40
+#: src/en/documentation/use/guides/search.md:41
 msgid ""
 "Sometimes, a simple search term may not give you the results you are looking "
 "for. Zammad provides different options to narrow down the search in the "
@@ -7889,7 +8485,7 @@ msgstr ""
 "nella pagina di ricerca dettagliata."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:43
+#: src/en/documentation/use/guides/search.md:44
 msgid ""
 "Advanced filters are not available for customer accounts. If your account "
 "has customer permissions only, the **Search entity** selector and the "
@@ -7897,7 +8493,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:45
+#: src/en/documentation/use/guides/search.md:46
 msgid ""
 "![Screenshot shows detailed search](/screenshots/cypress/documentation/use/"
 "guide-search.cy.js/search-detail.png)"
@@ -7906,14 +8502,14 @@ msgstr ""
 "documentation/use/guide-search.cy.js/search-detail.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:46
+#: src/en/documentation/use/guides/search.md:47
 #, fuzzy, no-wrap
 #| msgid "Sort the Results"
 msgid "Sort the results"
 msgstr "Ordina i risultati"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:50
+#: src/en/documentation/use/guides/search.md:51
 msgid ""
 "To sort the results based on the column's values, click on a column header. "
 "The sorting is indicated by an arrow. Click on the column again to change "
@@ -7925,14 +8521,14 @@ msgstr ""
 "decrescente e viceversa."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:51
+#: src/en/documentation/use/guides/search.md:52
 #, fuzzy, no-wrap
 #| msgid "Limit Search to Object Type"
 msgid "Limit search to object type"
 msgstr "Limita la ricerca al tipo di oggetto"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:58
+#: src/en/documentation/use/guides/search.md:59
 #, fuzzy
 #| msgid ""
 #| "Limit the search to an object type by using the **Search entity** tab "
@@ -7958,14 +8554,14 @@ msgstr ""
 "ricerca."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:59
+#: src/en/documentation/use/guides/search.md:60
 #, fuzzy, no-wrap
 #| msgid "Use Advanced Filters"
 msgid "Use advanced filters"
 msgstr "Usa filtri avanzati"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:66
+#: src/en/documentation/use/guides/search.md:67
 #, fuzzy
 #| msgid ""
 #| "<!--Screenshot skipped for now. Will be added after more attributes are "
@@ -8005,7 +8601,7 @@ msgstr ""
 "nel campo di ricerca principale.\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:69
+#: src/en/documentation/use/guides/search.md:70
 #, fuzzy
 #| msgid ""
 #| "Remove a single filter by clicking the ::x:: next to the value field. To "
@@ -8022,7 +8618,7 @@ msgstr ""
 "principale in alto accanto all'etichetta `x filtro/i`."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:73
+#: src/en/documentation/use/guides/search.md:74
 msgid ""
 "To add another filter, click `Add filter` below or between the existing "
 "filter rows and pick an attribute from the selection list. The list only "
@@ -8031,7 +8627,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:76
+#: src/en/documentation/use/guides/search.md:77
 msgid ""
 "In case you want to store or share your filter, you can do so by copying the "
 "URL. It includes the complete filter. Be aware that the search results may "
@@ -8042,7 +8638,7 @@ msgstr ""
 "potrebbero essere diversi per altri utenti a causa di permessi divergenti."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:79
+#: src/en/documentation/use/guides/search.md:80
 msgid ""
 "If you still haven't found what you are looking for, you can benefit from "
 "the search being powered by Elasticsearch.  You can find some examples in "
@@ -8053,14 +8649,14 @@ msgstr ""
 "sezione successiva."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/search.md:80
+#: src/en/documentation/use/guides/search.md:81
 #, fuzzy, no-wrap
 #| msgid "Using Elasticsearch Syntax"
 msgid "Using Elasticsearch syntax"
 msgstr "Uso della sintassi Elasticsearch"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:87
+#: src/en/documentation/use/guides/search.md:88
 #, fuzzy
 #| msgid ""
 #| "This topic has its own section because it is an advanced topic for power "
@@ -8085,7 +8681,7 @@ msgstr ""
 "elenco con attributi aggiuntivi."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:88
+#: src/en/documentation/use/guides/search.md:89
 #: src/en/tutorials/backup-restore.md:87
 #, fuzzy, no-wrap
 #| msgid "Important Information"
@@ -8093,7 +8689,7 @@ msgid "Important information"
 msgstr "Informazioni Importanti"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 msgid ""
 "Make sure to select the relevant object in the **Search entity** switcher. "
 "For example `customer.lastname` is available for tickets, but not for users."
@@ -8103,7 +8699,7 @@ msgstr ""
 "per gli utenti."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 msgid ""
 "Multiple search terms are combined by a logical AND by default, so `smith "
 "open` only finds results containing both terms. Use an explicit `OR` if you "
@@ -8111,7 +8707,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 msgid ""
 "When combining an Elasticsearch query with advanced filters, be aware that "
 "all of the advanced filter conditions and the search syntax are logically "
@@ -8125,7 +8721,7 @@ msgstr ""
 "tuo termine di ricerca."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/search.md:98
+#: src/en/documentation/use/guides/search.md:99
 msgid ""
 "To provide values containing a space, wrap them in `\"`, e.g. `priority.name:"
 "\"2 normal\"`."
@@ -8134,14 +8730,14 @@ msgstr ""
 "`priority.name:\"2 normale\"`."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:99
+#: src/en/documentation/use/guides/search.md:100
 #, fuzzy, no-wrap
 #| msgid "Logic Operators and Ranges"
 msgid "Logic operators and ranges"
 msgstr "Operatori logici e intervalli"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:105
+#: src/en/documentation/use/guides/search.md:106
 msgid ""
 "You can combine conditions by using `AND` & `OR` as logical operators. Use "
 "`TO` to specify ranges for values with an order (e.g. integer or date). "
@@ -8159,47 +8755,47 @@ msgstr ""
 "parentesi `()`."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:107
+#: src/en/documentation/use/guides/search.md:108
 msgid "`AND` & `OR` with parentheses:"
 msgstr "`AND` e `OR` con parentesi:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:108
+#: src/en/documentation/use/guides/search.md:109
 #, no-wrap
 msgid "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 msgstr "owner.lastname:brooks AND tags:(internal OR onboarding)\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:113
+#: src/en/documentation/use/guides/search.md:114
 msgid "`TO` with asterisk wildcard:"
 msgstr "`TO` con carattere jolly asterisco:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:114
+#: src/en/documentation/use/guides/search.md:115
 #, no-wrap
 msgid "state.name:open AND article_count: [5 TO *]\n"
 msgstr "state.name:open AND article_count: [5 TO *]\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:119
+#: src/en/documentation/use/guides/search.md:120
 msgid "`TO` with excluding one limit of a range:"
 msgstr "`TO` con esclusione di un limite di un intervallo:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:120
+#: src/en/documentation/use/guides/search.md:121
 #, no-wrap
 msgid "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 msgstr "article.created_at:[2025-03-21 TO 2026-05-19}\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:124
+#: src/en/documentation/use/guides/search.md:125
 #, fuzzy, no-wrap
 #| msgid "Fuzzy Search"
 msgid "Fuzzy search"
 msgstr "Ricerca fuzzy"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:127
+#: src/en/documentation/use/guides/search.md:128
 msgid ""
 "If you are not sure about the exact spelling of a value, use the tilde (`~`) "
 "as suffix to perform a fuzzy search."
@@ -8208,20 +8804,20 @@ msgstr ""
 "come suffisso per eseguire una ricerca fuzzy."
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:128
+#: src/en/documentation/use/guides/search.md:129
 #, no-wrap
 msgid "owner.firstname:lawren~\n"
 msgstr "owner.firstname:lawren~\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:132
+#: src/en/documentation/use/guides/search.md:133
 #, fuzzy, no-wrap
 #| msgid "Negating Search"
 msgid "Negating search"
 msgstr "Negazione della ricerca"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:136
+#: src/en/documentation/use/guides/search.md:137
 msgid ""
 "If you want to exclude specified values, you can use negation `!`. To negate "
 "more than one term, use parentheses for all of them."
@@ -8230,40 +8826,40 @@ msgstr ""
 "negare più di un termine, usa le parentesi per tutti."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:138
+#: src/en/documentation/use/guides/search.md:139
 msgid "Exclude owner with last name \"brooks\":"
 msgstr "Escludi il proprietario con cognome \"brooks\":"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:139
+#: src/en/documentation/use/guides/search.md:140
 #, no-wrap
 msgid "!owner.lastname:brooks\n"
 msgstr "!owner.lastname:brooks\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:144
+#: src/en/documentation/use/guides/search.md:145
 msgid "Exclude multiple conditions:"
 msgstr "Escludi più condizioni:"
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:145
+#: src/en/documentation/use/guides/search.md:146
 #, no-wrap
 msgid "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 msgstr "owner.lastname:brooks AND !(tags:internal OR tags:onboarding)\n"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/search.md:149
+#: src/en/documentation/use/guides/search.md:150
 #, no-wrap
 msgid "Regex"
 msgstr "Regex"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/search.md:152
+#: src/en/documentation/use/guides/search.md:153
 msgid "You can even use regex to search. Wrap the regex term in `/`."
 msgstr "Puoi anche usare regex per cercare. Racchiudi il termine regex in `/`."
 
 #. type: Fenced code block (plain)
-#: src/en/documentation/use/guides/search.md:153
+#: src/en/documentation/use/guides/search.md:154
 #, no-wrap
 msgid "customer.lastname:/(bra?.n|doe)/\n"
 msgstr "customer.lastname:/(bra?.n|doe)/\n"
@@ -8591,7 +9187,7 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/two-factor-auth.md:1
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/user-profile.md:72
+#: src/en/documentation/use/user-profile.md:73
 #, fuzzy, no-wrap
 #| msgid "Two-Factor Authentication"
 msgid "Two-factor authentication"
@@ -9496,19 +10092,21 @@ msgid "Language"
 msgstr "Lingua"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:51
-msgid "Choose the language in which Zammad's UI is displayed."
+#: src/en/documentation/use/user-profile.md:52
+msgid ""
+"Choose the language in which Zammad's UI is displayed. Ticket translations "
+"use their own target language, which you select in the ticket top bar. See "
+"[Article translation](guides/article-translation)."
 msgstr ""
-"Scegli la lingua in cui viene visualizzata l'interfaccia utente di Zammad."
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:52
+#: src/en/documentation/use/user-profile.md:53
 #, no-wrap
 msgid "Avatar"
 msgstr "Avatar"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:56
+#: src/en/documentation/use/user-profile.md:57
 msgid ""
 "Adjust your avatar image. By default, the initials of your user are "
 "displayed on a colored background. If you want to add an image, simply "
@@ -9520,7 +10118,7 @@ msgstr ""
 "una."
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:58
+#: src/en/documentation/use/user-profile.md:59
 #, fuzzy
 #| msgid ""
 #| "After capturing or uploading an image, you can crop it. Have a look at "
@@ -9533,14 +10131,14 @@ msgstr ""
 "un'occhiata all'anteprima in cima al pannello laterale destro."
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:59
+#: src/en/documentation/use/user-profile.md:60
 #, fuzzy, no-wrap
 #| msgid "Out of Office"
 msgid "Out of office"
 msgstr "Fuori ufficio"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:62
+#: src/en/documentation/use/user-profile.md:63
 msgid ""
 "Define absence periods (e.g. for your vacation) and designate a substitute "
 "to handle your tickets while you are away."
@@ -9549,7 +10147,7 @@ msgstr ""
 "sostituto per gestire i tuoi ticket mentre sei assente."
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:66
+#: src/en/documentation/use/user-profile.md:67
 msgid ""
 "Your designated substitute will receive updates on new tickets and changes "
 "to existing ones while you're away.  Additionally, your custom overviews are "
@@ -9562,13 +10160,13 @@ msgstr ""
 "tuoi ticket. Ricevi anche notifiche mentre sei assente."
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:67
+#: src/en/documentation/use/user-profile.md:68
 #, no-wrap
 msgid "Password"
 msgstr "Password"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:71
+#: src/en/documentation/use/user-profile.md:72
 msgid ""
 "Change the password of your account. To update it, provide your old "
 "password, the new password and confirm the new one by typing it again."
@@ -9577,7 +10175,7 @@ msgstr ""
 "password, la nuova password e conferma la nuova digitandola di nuovo."
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:76
+#: src/en/documentation/use/user-profile.md:77
 msgid ""
 "Set up a two-factor authentication (2FA) to increase the security of your "
 "account. Your admin must have activated at least one 2FA method. It may be "
@@ -9589,7 +10187,7 @@ msgstr ""
 "2FA."
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:79
+#: src/en/documentation/use/user-profile.md:80
 msgid ""
 "After following the [2FA guide](./guides/two-factor-auth), you have to "
 "provide your second factor at the next login.  If you can't provide your "
@@ -9600,13 +10198,13 @@ msgstr ""
 "metodo 2FA configurato, contatta il tuo amministratore per reimpostarlo."
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:80
+#: src/en/documentation/use/user-profile.md:81
 #, no-wrap
 msgid "Devices"
 msgstr "Dispositivi"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:85
+#: src/en/documentation/use/user-profile.md:86
 msgid ""
 "Here you can find a list of all devices logged into your Zammad account. If "
 "necessary, you can revoke the access by clicking the delete icon in the "
@@ -9619,14 +10217,14 @@ msgstr ""
 "dispositivo e richiede un nuovo accesso su questo dispositivo."
 
 #. type: Title ###
-#: src/en/documentation/use/user-profile.md:86
+#: src/en/documentation/use/user-profile.md:87
 #, fuzzy, no-wrap
 #| msgid "Token Access"
 msgid "Token access"
 msgstr "Accesso token"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:90
+#: src/en/documentation/use/user-profile.md:91
 msgid ""
 "Generate a personal access token for a third party application to access the "
 "Zammad API. After clicking the `New Personal Access Token` button, you can "
@@ -9638,7 +10236,7 @@ msgstr ""
 "configurare i permessi per questo token."
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:93
+#: src/en/documentation/use/user-profile.md:94
 msgid ""
 "After creating the token, it gets displayed in a dialog only once. Make sure "
 "to copy it because there is no possibility to access it again."
@@ -9648,7 +10246,7 @@ msgstr ""
 "accedervi di nuovo."
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:95
+#: src/en/documentation/use/user-profile.md:96
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows side panel with created token and copy button](/"
@@ -9662,12 +10260,12 @@ msgstr ""
 "token-dialog.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:99
+#: src/en/documentation/use/user-profile.md:100
 msgid "Adjust the notifications you get. You can adjust:"
 msgstr "Regola le notifiche che ricevi. Puoi regolare:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 msgid ""
 "For which ticket actions you get notified (e.g. for new tickets, for "
 "escalated tickets)"
@@ -9676,7 +10274,7 @@ msgstr ""
 "per ticket escalati)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 msgid ""
 "For which ticket you get notified based on the assignment and your relation "
 "to it (e.g. only yours, not assigned, subscribed tickets)"
@@ -9685,24 +10283,24 @@ msgstr ""
 "relazione con esso (ad esempio solo i tuoi, non assegnati, ticket iscritti)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 msgid ""
 "On which way you get notified (only in browser or additionally via email)"
 msgstr ""
 "In quale modo ricevi notifiche (solo nel browser o anche tramite email)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:105
+#: src/en/documentation/use/user-profile.md:106
 msgid "For tickets in which group you get notified"
 msgstr "Per i ticket in quale gruppo ricevi notifiche"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:107
+#: src/en/documentation/use/user-profile.md:108
 msgid "Additionally, you can select a notification sound or disable it."
 msgstr "Inoltre, puoi selezionare un suono di notifica o disabilitarlo."
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/user-profile.md:108
+#: src/en/documentation/use/user-profile.md:109
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.\n"
@@ -9720,7 +10318,7 @@ msgstr ""
 "dai un'occhiata alle impostazioni del tuo browser.\n"
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/user-profile.md:117
+#: src/en/documentation/use/user-profile.md:118
 #, no-wrap
 msgid ""
 "Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear\n"
@@ -9732,7 +10330,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:131
+#: src/en/documentation/use/user-profile.md:132
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
 "clicking the handles on the left side.  If your admin changes the order, "
@@ -9746,7 +10344,7 @@ msgstr ""
 "`Reimposta ordine panoramiche`."
 
 #. type: Title #
-#: src/en/documentation/use/user-profile.md:132
+#: src/en/documentation/use/user-profile.md:133
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, no-wrap
@@ -9754,7 +10352,7 @@ msgid "Calendar"
 msgstr "Calendario"
 
 #. type: Plain text
-#: src/en/documentation/use/user-profile.md:137
+#: src/en/documentation/use/user-profile.md:138
 msgid ""
 "Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
 "your favorite calendar application.  Use either the upper **Combined "
@@ -10267,7 +10865,7 @@ msgid ""
 "| Distribution         | Version              |\n"
 "| -------------------- | :------------------- |\n"
 "| CentOS/RHEL          | 9, 10                |\n"
-"| Debian               | 11, 12 & 13          |\n"
+"| Debian               | 12 & 13              |\n"
 "| OpenSUSE Leap / SLES | 15 & 16              |\n"
 "| Ubuntu               | 22.04, 24.04 & 26.04 |\n"
 msgstr ""
@@ -10621,7 +11219,105 @@ msgstr ""
 #. type: Fenced div block (tabs key:distros)
 #: src/en/get-started/host-upgrade-repo-migration.md:177
 #: src/en/get-started/installation/package.md:175
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Ubuntu\n"
+#| "Add repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Ubuntu 22.04):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/22.04.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Ubuntu 24.04):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/24.04.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Ubuntu 26.04):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/ubuntu/26.04.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "=== Debian\n"
+#| "\n"
+#| "Add repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+#| "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Debian 11):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Debian 12):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/12.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (Debian 13):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/13.list\" \\\n"
+#| "  -o /etc/apt/sources.list.d/zammad.list\n"
+#| "```\n"
+#| "\n"
+#| "=== OpenSUSE/SLES\n"
+#| "\n"
+#| "Add repository (OpenSUSE/SLES 15):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+#| "  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/15.repo\"\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (OpenSUSE/SLES 16):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+#| "  \"https://go.packager.io/srv/zammad/zammad/stable/installer/sles/16.repo\"\n"
+#| "```\n"
+#| "\n"
+#| "===CentOS/RHEL\n"
+#| "Add repository key:\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (CentOS/RHEL 9):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/9.repo\" \\\n"
+#| "  -o /etc/yum.repos.d/zammad.repo\n"
+#| "```\n"
+#| "\n"
+#| "Add repository (CentOS/RHEL 10):\n"
+#| "\n"
+#| "```sh\n"
+#| "sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/el/10.repo\" \\\n"
+#| "  -o /etc/yum.repos.d/zammad.repo\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Ubuntu\n"
@@ -10660,13 +11356,6 @@ msgid ""
 "```sh\n"
 "sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
 "  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
-"```\n"
-"\n"
-"Add repository (Debian 11):\n"
-"\n"
-"```sh\n"
-"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable/installer/debian/11.list\" \\\n"
-"  -o /etc/apt/sources.list.d/zammad.list\n"
 "```\n"
 "\n"
 "Add repository (Debian 12):\n"
@@ -10830,14 +11519,14 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:277
-#: src/en/get-started/installation/package.md:275
+#: src/en/get-started/host-upgrade-repo-migration.md:270
+#: src/en/get-started/installation/package.md:268
 #, no-wrap
 msgid "Install Zammad"
 msgstr "Installa Zammad"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:279
+#: src/en/get-started/host-upgrade-repo-migration.md:272
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -10896,14 +11585,14 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:303
+#: src/en/get-started/host-upgrade-repo-migration.md:296
 #: src/en/get-started/update.md:44
 #, no-wrap
 msgid "Update Zammad"
 msgstr "Aggiorna Zammad"
 
 #. type: Fenced div block (tip)
-#: src/en/get-started/host-upgrade-repo-migration.md:305
+#: src/en/get-started/host-upgrade-repo-migration.md:298
 #, fuzzy, no-wrap
 #| msgid ""
 #| "If there is a new Zammad version available and you want to update to it, check the\n"
@@ -10914,7 +11603,7 @@ msgid ""
 msgstr "Se è disponibile una nuova versione di Zammad e desideri aggiornarla, consulta le [note di rilascio](https://zammad.com/en/product/releases) per eventuali passaggi aggiuntivi necessari.\n"
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:311
+#: src/en/get-started/host-upgrade-repo-migration.md:304
 msgid ""
 "Re-enable updates for Zammad and update Zammad to the latest version "
 "available for your operating system."
@@ -10923,7 +11612,7 @@ msgstr ""
 "disponibile per il tuo sistema operativo."
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:312
+#: src/en/get-started/host-upgrade-repo-migration.md:305
 #, no-wrap
 msgid ""
 "\n"
@@ -11063,15 +11752,15 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:382
+#: src/en/get-started/host-upgrade-repo-migration.md:375
 #: src/en/get-started/update.md:194
 #, no-wrap
 msgid "Start Zammad"
 msgstr "Avvia Zammad"
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:384
-#: src/en/get-started/installation/package.md:334
+#: src/en/get-started/host-upgrade-repo-migration.md:377
+#: src/en/get-started/installation/package.md:327
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
@@ -11527,43 +12216,40 @@ msgid "Customizing the Zammad stack"
 msgstr "Personalizzare lo stack Zammad"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:116
+#: src/en/get-started/installation/docker.md:115
 msgid ""
-"The Zammad stack can be customized by loading additional scenario files for "
-"common use cases. For example, you can deploy the stack with an included "
-"Nginx Proxy Manager (NPM) or with disabled PostgreSQL or Elasticsearch "
-"services, in case you already have these services running."
+"The Zammad Docker Compose stack is ready to run with its default settings. "
+"You can adapt it to your environment by loading predefined scenario files, "
+"adjusting environment variables and adding files specific to your instance."
 msgstr ""
-"Lo stack Zammad può essere personalizzato caricando file di scenario "
-"aggiuntivi per casi d'uso comuni."
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:118
+#: src/en/get-started/installation/docker.md:119
 msgid ""
-"Please see the [Docker Compose scenarios page](/en/reference/docker-compose-"
-"scenarios)."
+"See the [Docker Compose scenarios page](/en/reference/docker-compose-"
+"scenarios) for supported use cases and detailed instructions on loading "
+"scenario files. To change individual settings, use [Docker specific "
+"environment variables](/en/reference/environment-variables)."
 msgstr ""
-"Consulta la [pagina degli scenari Docker Compose](/it/reference/docker-"
-"compose-scenarios)."
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:120
+#: src/en/get-started/installation/docker.md:123
 msgid ""
-"To adjust the stack and settings, use [Docker specific environment variables]"
-"(/en/reference/environment-variables)."
+"If you deployed the stack with Docker Compose by cloning the repository, use "
+"its `local/` directory for files that belong only to your instance. See the "
+"[customize the stack locally](/en/reference/docker-compose-"
+"scenarios#customize-the-stack-locally) section for details."
 msgstr ""
-"Per regolare lo stack e le impostazioni, utilizzare le [variabili d'ambiente "
-"specifiche di Docker](/it/reference/environment-variables)."
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:121
+#: src/en/get-started/installation/docker.md:124
 #, fuzzy, no-wrap
 #| msgid "How to Run Commands in the Stack"
 msgid "How to run commands in the stack"
 msgstr "Come eseguire comandi nello stack"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:125
+#: src/en/get-started/installation/docker.md:128
 msgid ""
 "Execute commands in your Docker stack by calling `rails` or `rake` via one "
 "of the following methods by using `bundle exec`."
@@ -11572,7 +12258,7 @@ msgstr ""
 "dei seguenti metodi."
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:126
+#: src/en/get-started/installation/docker.md:129
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -11682,7 +12368,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs key:docker-portainer|tip)
-#: src/en/get-started/installation/docker.md:126
+#: src/en/get-started/installation/docker.md:129
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the Rails server, you can, for example,\n"
@@ -11693,7 +12379,7 @@ msgstr ""
 "inserire `pp` (pretty print) davanti al tuo comando Rails. Questo genera un output nel tuo terminale.\n"
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:126
+#: src/en/get-started/installation/docker.md:129
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -12236,7 +12922,7 @@ msgstr ""
 "di considerare questo aspetto.\n"
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/installation/package.md:277
+#: src/en/get-started/installation/package.md:270
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -12358,14 +13044,14 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:321
+#: src/en/get-started/installation/package.md:314
 #, fuzzy, no-wrap
 #| msgid "Manage Services of Zammad"
 msgid "Manage services of Zammad"
 msgstr "Gestisci i servizi di Zammad"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:324
+#: src/en/get-started/installation/package.md:317
 msgid ""
 "Zammad uses three services. These services can be managed individually or "
 "all at once by using the parent **zammad**."
@@ -12374,19 +13060,19 @@ msgstr ""
 "singolarmente o tutti insieme tramite il servizio principale **zammad**."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 msgid "zammad: includes the services below"
 msgstr "zammad: include i servizi seguenti"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 msgid ""
 "**zammad-web**: internal puma server (relevant for displaying the web app)"
 msgstr ""
 "**zammad-web**: server puma interno (rilevante per visualizzare la web app)"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 msgid ""
 "**zammad-worker**: background worker - relevant for all delayed- and "
 "background jobs"
@@ -12395,7 +13081,7 @@ msgstr ""
 "ritardati e in background"
 
 #. type: Bullet: '  - '
-#: src/en/get-started/installation/package.md:329
+#: src/en/get-started/installation/package.md:322
 #, fuzzy
 #| msgid ""
 #| "**zammad-websocket**: websocket server for session related information"
@@ -12405,7 +13091,7 @@ msgstr ""
 "sessione"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:331
+#: src/en/get-started/installation/package.md:324
 msgid ""
 "Manage the services with `systemctl`'s commands `start`, `restart`, `stop`, "
 "`status`."
@@ -12414,12 +13100,12 @@ msgstr ""
 "`status`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:333
+#: src/en/get-started/installation/package.md:326
 msgid "Example to start Zammad with all sub-services:"
 msgstr "Esempio per avviare Zammad con tutti i sotto-servizi:"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:339
+#: src/en/get-started/installation/package.md:332
 msgid ""
 "To stop or restart a service or to check its status, adjust the command as "
 "mentioned above."
@@ -12428,7 +13114,7 @@ msgstr ""
 "comando come indicato sopra."
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:340
+#: src/en/get-started/installation/package.md:333
 #: src/en/tutorials/first-steps.md:57
 #: src/en/tutorials/install-elasticsearch.md:142
 #, fuzzy, no-wrap
@@ -12437,7 +13123,7 @@ msgid "Next steps"
 msgstr "Prossimi passi"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:338
 msgid ""
 "[Connect Zammad with Elasticsearch](/en/tutorials/connect-config-"
 "elasticsearch)"
@@ -12446,25 +13132,25 @@ msgstr ""
 "elasticsearch)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:338
 msgid ""
 "[Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)"
 msgstr ""
 "[Regola le tue regole SELinux e il firewall](/it/tutorials/firewall-selinux)"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:345
+#: src/en/get-started/installation/package.md:338
 msgid "[Configure the webserver](/en/tutorials/webserver-config)"
 msgstr "[Configura il server web](/it/tutorials/webserver-config)"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:346
+#: src/en/get-started/installation/package.md:339
 #, no-wrap
 msgid "Dependencies"
 msgstr "Dipendenze"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:352
+#: src/en/get-started/installation/package.md:345
 msgid ""
 "Assuming a vanilla system, the following dependencies will automatically be "
 "installed during the Zammad package installation. Additionally, you can find "
@@ -12477,46 +13163,46 @@ msgstr ""
 "installato automaticamente."
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:351
 msgid "imlib2"
 msgstr "imlib2"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:351
 msgid "Node.js"
 msgstr "Node.js"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:358
+#: src/en/get-started/installation/package.md:351
 #: src/en/reference/environment-variables.md:157
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
 #. type: Title ##
-#: src/en/get-started/installation/package.md:358
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:351
+#: src/en/get-started/installation/package.md:372
 #: src/en/reference/environment-variables.md:212
 #, no-wrap
 msgid "Nginx"
 msgstr "Nginx"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:358
-#: src/en/get-started/installation/package.md:384
+#: src/en/get-started/installation/package.md:351
+#: src/en/get-started/installation/package.md:377
 #, no-wrap
 msgid "Redis"
 msgstr "Redis"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:359
+#: src/en/get-started/installation/package.md:352
 #, fuzzy, no-wrap
 #| msgid "Database Server"
 msgid "Database server"
 msgstr "Server database"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:364
+#: src/en/get-started/installation/package.md:357
 msgid ""
 "Zammad stores its content in a database. The supported database system is "
 "[PostgreSQL](https://www.postgresql.org/){target=_blank} 15 or newer. If no "
@@ -12529,7 +13215,7 @@ msgstr ""
 "verrà installato automaticamente durante l'installazione del pacchetto."
 
 #. type: Fenced div block (warning)
-#: src/en/get-started/installation/package.md:365
+#: src/en/get-started/installation/package.md:358
 #, no-wrap
 msgid ""
 "If you use database connection pooling software like PgBouncer, make sure to\n"
@@ -12539,14 +13225,14 @@ msgid ""
 msgstr "Se utilizzi un software di pooling delle connessioni al database come PgBouncer, assicurati di utilizzare una modalità di pooling completamente compatibile con PostgreSQL. In genere, questa modalità viene chiamata \"session connection pooling\". Il connection pooling basato sulle transazioni non è supportato e potrebbe causare errori durante le migrazioni del database.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:372
+#: src/en/get-started/installation/package.md:365
 #, fuzzy, no-wrap
 #| msgid "Reverse Proxy"
 msgid "Reverse proxy"
 msgstr "Reverse proxy"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:376
+#: src/en/get-started/installation/package.md:369
 msgid ""
 "The following reverse proxies are supported in their currently maintained "
 "versions:"
@@ -12555,12 +13241,12 @@ msgstr ""
 "mantenute:"
 
 #. type: Bullet: '- '
-#: src/en/get-started/installation/package.md:379
+#: src/en/get-started/installation/package.md:372
 msgid "Apache"
 msgstr "Apache"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:383
+#: src/en/get-started/installation/package.md:376
 msgid ""
 "The installation script tries to detect a Apache or Nginx during the "
 "installation. In case none is found, Nginx is automatically installed.  You "
@@ -12573,7 +13259,7 @@ msgstr ""
 "configurazione del server web](/it/tutorials/webserver-config)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:391
+#: src/en/get-started/installation/package.md:384
 #, fuzzy
 #| msgid ""
 #| "[Redis](https://redis.io/) is required for realtime communication via web "
@@ -12599,7 +13285,7 @@ msgstr ""
 "configurarlo in modo sicuro."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:394
+#: src/en/get-started/installation/package.md:387
 msgid ""
 "Available environment variables for standard and Sentinel setups are briefly "
 "mentioned in the [Redis Variables](/en/reference/redis) page."
@@ -12609,7 +13295,7 @@ msgstr ""
 "reference/redis)."
 
 #. type: Fenced div block (info)
-#: src/en/get-started/installation/package.md:395
+#: src/en/get-started/installation/package.md:388
 #, fuzzy, no-wrap
 #| msgid ""
 #| "CentOS and RHEL 10 use [Valkey](https://valkey.io/) as a drop-in-replacement for Redis. During the Zammad installation\n"
@@ -12620,13 +13306,13 @@ msgid ""
 msgstr "CentOS e RHEL 10 utilizzano [Valkey](https://valkey.io/) come sostituto diretto di Redis. Durante l'installazione di Zammad su queste distribuzioni, viene installato automaticamente come dipendenza.\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:400
+#: src/en/get-started/installation/package.md:393
 #, no-wrap
 msgid "Elasticsearch <Badge type=\"info\" text=\"optional\"/> <Badge type=\"danger\" text=\"highly recommended\"/>"
 msgstr "Elasticsearch <Badge type=\"info\" text=\"opzionale\"/> <Badge type=\"danger\" text=\"altamente consigliato\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:407
+#: src/en/get-started/installation/package.md:400
 msgid ""
 "Elasticsearch is not automatically installed. Because it is crucial for a "
 "proper Zammad setup, it is included in the installation instructions above. "
@@ -12642,17 +13328,17 @@ msgstr ""
 "connect-config-elasticsearch)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:409
+#: src/en/get-started/installation/package.md:402
 msgid "Supported Elasticsearch versions are `8.11` - `9.x`."
 msgstr "Le versioni di Elasticsearch supportate sono `8.11` - `9.x`."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:411
+#: src/en/get-started/installation/package.md:404
 msgid "Elasticsearch version history for Zammad:"
 msgstr "Cronologia versioni di Elasticsearch per Zammad:"
 
 #. type: Fenced div block (details)
-#: src/en/get-started/installation/package.md:412
+#: src/en/get-started/installation/package.md:405
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -12701,13 +13387,13 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:429
+#: src/en/get-started/installation/package.md:422
 #, no-wrap
 msgid "Memcached"
 msgstr "Memcached"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:433
+#: src/en/get-started/installation/package.md:426
 msgid ""
 "Zammad heavily relies on caching to improve performance. This cache can be "
 "stored in the file system without relying on externals services. However, "
@@ -12720,7 +13406,7 @@ msgstr ""
 "esecuzione sullo stesso file system!"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:437
+#: src/en/get-started/installation/package.md:430
 msgid ""
 "In all other cases like deploying Zammad via containers (Docker or "
 "Kubernetes) or on separate cluster nodes, a [Memcached](https://"
@@ -12735,7 +13421,7 @@ msgstr ""
 "includono già questo servizio."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:440
+#: src/en/get-started/installation/package.md:433
 msgid ""
 "However, even local file system installations may benefit from Memcached's "
 "performance improvements. You might want to have a look at our [performance "
@@ -12747,7 +13433,7 @@ msgstr ""
 "reference/environment-variables#ottimizzazione-delle-prestazioni)."
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:443
+#: src/en/get-started/installation/package.md:436
 msgid ""
 "The installation and configuration is out of scope of this documentation. In "
 "case you have to install Memcached manually, please follow the [official "
@@ -12759,13 +13445,13 @@ msgstr ""
 "docs.memcached.org/){target=_blank}."
 
 #. type: Title ###
-#: src/en/get-started/installation/package.md:444
+#: src/en/get-started/installation/package.md:437
 #, no-wrap
 msgid "GnuPG <Badge type=\"info\" text=\"optional\"/>"
 msgstr "GnuPG <Badge type=\"info\" text=\"opzionale\"/>"
 
 #. type: Plain text
-#: src/en/get-started/installation/package.md:449
+#: src/en/get-started/installation/package.md:442
 msgid ""
 "If you want to use the PGP integration for sending and receiving signed and "
 "encrypted emails, you need to install the GnuPG-Tool. Please have a look at "
@@ -12964,17 +13650,21 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:62
 #: src/en/reference/rest-api/checklist.md:130
 #: src/en/reference/rest-api/checklist.md:211
+#: src/en/reference/rest-api/core-workflow.md:87
+#: src/en/reference/rest-api/email-notification.md:165
 #: src/en/reference/rest-api/group.md:62
 #: src/en/reference/rest-api/notification.md:44
 #: src/en/reference/rest-api/object.md:211
 #: src/en/reference/rest-api/organization.md:61
 #: src/en/reference/rest-api/priorities.md:55
+#: src/en/reference/rest-api/report-profile.md:92
 #: src/en/reference/rest-api/role.md:53
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
 #: src/en/reference/rest-api/ticket.md:105
 #: src/en/reference/rest-api/time-accounting.md:54
-#: src/en/reference/rest-api/user.md:95
+#: src/en/reference/rest-api/trigger.md:80 src/en/reference/rest-api/user.md:95
+#: src/en/reference/rest-api/webhook.md:74
 #, no-wrap
 msgid "Update"
 msgstr "Aggiornamento"
@@ -14012,7 +14702,7 @@ msgid "The following scenarios are supported and explained further below:"
 msgstr "I seguenti scenari sono supportati e spiegati più avanti:"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid ""
 "[Making the stack available via HTTPS](#making-the-stack-available-via-https)"
 msgstr ""
@@ -14020,34 +14710,34 @@ msgstr ""
 "tramite-https)"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Add a Cloudflare tunnel service to the stack"
 msgstr "Aggiungi un servizio tunnel Cloudflare allo stack"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Add a Nginx Proxy Manager (NPM) to the stack"
 msgstr "Aggiungi un Nginx Proxy Manager (NPM) allo stack"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Add an external Docker network to Nginx"
 msgstr "Aggiungi una rete Docker esterna a Nginx"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "[Using external services](#using-external-services)"
 msgstr "[Usare servizi esterni](#usare-servizi-esterni)"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:30
-#: src/en/reference/docker-compose-scenarios.md:100
+#: src/en/reference/docker-compose-scenarios.md:31
+#: src/en/reference/docker-compose-scenarios.md:111
 #, no-wrap
 msgid "Disable Elasticsearch service"
 msgstr "Disabilita il servizio Elasticsearch"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid ""
 "[Making services externally available](#making-services-externally-available)"
 msgstr ""
@@ -14055,37 +14745,44 @@ msgstr ""
 "esternamente)"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Add an external Docker network to Elasticsearch"
 msgstr "Aggiungi una rete Docker esterna a Elasticsearch"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Add an host port to Elasticsearch"
 msgstr "Aggiungi una porta host a Elasticsearch"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "[Additional scenarios](#additional-scenarios)"
 msgstr "[Scenari aggiuntivi](#scenari-aggiuntivi)"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Disable the backup service"
 msgstr "Disabilita il servizio di backup"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Add an Ollama instance to the stack"
 msgstr "Aggiungi un'istanza Ollama allo stack"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:30
+#: src/en/reference/docker-compose-scenarios.md:31
+#, fuzzy
+#| msgid "Add an Ollama instance to the stack"
+msgid "Add a LibreTranslate instance to the stack"
+msgstr "Aggiungi un'istanza Ollama allo stack"
+
+#. type: Bullet: '  - '
+#: src/en/reference/docker-compose-scenarios.md:31
 msgid "Limit hardware resources of the stack"
 msgstr "Limita le risorse hardware dello stack"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:32
+#: src/en/reference/docker-compose-scenarios.md:33
 #, fuzzy
 #| msgid ""
 #| "You can find the files in the [Zammad-Docker-Compose repository](https://"
@@ -14098,15 +14795,71 @@ msgstr ""
 "github.com/zammad/zammad-docker-compose){{target=_blank}}."
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:33
+#: src/en/reference/docker-compose-scenarios.md:34
 #, fuzzy, no-wrap
 #| msgid "General Usage"
 msgid "General usage"
 msgstr "Utilizzo generale"
 
 #. type: Fenced div block (tabs)
-#: src/en/reference/docker-compose-scenarios.md:35
+#: src/en/reference/docker-compose-scenarios.md:36
 #, no-wrap
+msgid ""
+"\n"
+"=== Docker Compose\n"
+"\n"
+"To use a scenario, list its compose file in the `COMPOSE_FILE` environment variable. Either create a `.env` file or\n"
+"copy and rename the `.env.dist` in the cloned repository folder. The main compose file must be specified first,\n"
+"followed by one or more scenarios, separated by a colon (`:`). The files are applied in the order given. Replace the\n"
+"placeholder in curly brackets with the filename of the scenario you want to use.\n"
+"\n"
+"**Example with two scenario placeholders:**\n"
+"\n"
+"``` sh\n"
+"COMPOSE_FILE=docker-compose.yml:scenarios/{scenario you want to use}.yml:scenarios/{another scenario you want to use}.yml\n"
+"```\n"
+"\n"
+"After specifying the scenarios, start the stack with `docker compose up -d`.\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs|info)
+#: src/en/reference/docker-compose-scenarios.md:36
+#, no-wrap
+msgid ""
+"\n"
+"When using the `COMPOSE_FILE` variable, the `docker-compose.override.yml` is not automatically picked up. If you want\n"
+"to use it, make sure to append it to the environment variable's list.\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (tabs)
+#: src/en/reference/docker-compose-scenarios.md:36
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Portainer\n"
+#| "\n"
+#| "Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.\n"
+#| "\n"
+#| "Below the \"Compose path\" field, click on the `Add file` button. This opens the \"Additional paths\" section where you\n"
+#| "can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in\n"
+#| "`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.\n"
+#| "\n"
+#| "![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)\n"
+#| "\n"
+#| "=== Docker Compose\n"
+#| "\n"
+#| "Follow the first 2 steps of the [general deployment guide](/en/get-started/installation/docker). To start the stack with\n"
+#| "one or more additional scenarios, use the following command for step 3 in the cloned repository folder instead:\n"
+#| "\n"
+#| "``` sh\n"
+#| "docker compose -f docker-compose.yml -f scenarios/{scenario you want to use}.yml up -d\n"
+#| "```\n"
+#| "\n"
+#| "Replace the part in `{}` brackets with the file name of one of the scenario files. You can even combine the scenarios\n"
+#| "by adding additional files according to the example above.\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Portainer\n"
@@ -14118,18 +14871,6 @@ msgid ""
 "`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.\n"
 "\n"
 "![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)\n"
-"\n"
-"=== Docker Compose\n"
-"\n"
-"Follow the first 2 steps of the [general deployment guide](/en/get-started/installation/docker). To start the stack with\n"
-"one or more additional scenarios, use the following command for step 3 in the cloned repository folder instead:\n"
-"\n"
-"``` sh\n"
-"docker compose -f docker-compose.yml -f scenarios/{scenario you want to use}.yml up -d\n"
-"```\n"
-"\n"
-"Replace the part in `{}` brackets with the file name of one of the scenario files. You can even combine the scenarios\n"
-"by adding additional files according to the example above.\n"
 "\n"
 msgstr ""
 "\n"
@@ -14153,14 +14894,14 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:61
+#: src/en/reference/docker-compose-scenarios.md:72
 #, fuzzy, no-wrap
 #| msgid "Making the Stack Available via HTTPS"
 msgid "Making the stack available via HTTPS"
 msgstr "Rendere lo stack disponibile tramite HTTPS"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:65
+#: src/en/reference/docker-compose-scenarios.md:76
 msgid ""
 "If you set up Zammad for production use, it needs to be secured by using an "
 "HTTPS connection. There are different scenarios for achieving this:"
@@ -14169,14 +14910,14 @@ msgstr ""
 "connessione HTTPS."
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:66
+#: src/en/reference/docker-compose-scenarios.md:77
 #, fuzzy, no-wrap
 #| msgid "Add Cloudflare Tunnel"
 msgid "Add Cloudflare tunnel"
 msgstr "Aggiungi un tunnel Cloudflare"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:70
+#: src/en/reference/docker-compose-scenarios.md:81
 #, fuzzy
 #| msgid ""
 #| "If you want to publish Zammad in a very convenient way, you can use a "
@@ -14189,7 +14930,7 @@ msgstr ""
 "[Cloudflare](https://www.cloudflare.com/)."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:87
 msgid ""
 "Use the scenario file `scenarios/add-cloudflare-tunnel.yml` for deployment"
 msgstr ""
@@ -14197,7 +14938,7 @@ msgstr ""
 "distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:87
 msgid ""
 "Add a sub-domain to an already existing domain in your Cloudflare dashboard"
 msgstr ""
@@ -14205,7 +14946,7 @@ msgstr ""
 "Cloudflare"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:87
 msgid ""
 "Create a tunnel for this subdomain and configure it to forward traffic to "
 "your zammad-nginx service with `http://zammad-nginx:8080`"
@@ -14214,7 +14955,7 @@ msgstr ""
 "traffico al tuo zammad-ngin"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:76
+#: src/en/reference/docker-compose-scenarios.md:87
 msgid ""
 "Provide your Cloudflare tunnel token to the Zammad stack by using the "
 "environment variable `CLOUDFLARE_TUNNEL_TOKEN`"
@@ -14223,14 +14964,14 @@ msgstr ""
 "variabile d'ambiente"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:77
+#: src/en/reference/docker-compose-scenarios.md:88
 #, fuzzy, no-wrap
 #| msgid "Add Nginx Proxy Manager"
 msgid "Add Nginx proxy manager"
 msgstr "Aggiungi Nginx Proxy Manager"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:83
+#: src/en/reference/docker-compose-scenarios.md:94
 msgid ""
 "A very common setup of publishing web services is to use a reverse proxy, "
 "which handles the SSL termination. One common tool is the Nginx Proxy "
@@ -14242,7 +14983,7 @@ msgstr ""
 "reverse proxy."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:99
 msgid ""
 "Use the scenario file `scenarios/add-nginx-proxy-manager.yml` for deployment"
 msgstr ""
@@ -14250,14 +14991,14 @@ msgstr ""
 "distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:99
 msgid ""
 "Provide your FQDN for Zammad by using the environment variable `ZAMMAD_FQDN`"
 msgstr ""
 "Fornisci il tuo FQDN per Zammad usando la variabile d'ambiente `ZAMMAD_FQDN`"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:99
 msgid ""
 "Configure your DNS. The chosen Zammad FQDN should point to the IP address of "
 "the NPM host"
@@ -14266,7 +15007,7 @@ msgstr ""
 "all'indirizzo IP dell'host NPM."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:88
+#: src/en/reference/docker-compose-scenarios.md:99
 msgid ""
 "Configure a new proxy host in your NPM and follow the steps to get an SSL "
 "certificate"
@@ -14275,14 +15016,14 @@ msgstr ""
 "certificato SSL"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:89
+#: src/en/reference/docker-compose-scenarios.md:100
 #, fuzzy, no-wrap
 #| msgid "Add an external Docker network to Nginx"
 msgid "Add external Docker network to Nginx"
 msgstr "Aggiungi una rete Docker esterna a Nginx"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:94
+#: src/en/reference/docker-compose-scenarios.md:105
 msgid ""
 "If you already have a reverse proxy which takes care about the SSL "
 "termination, this scenario is helpful. It adds an external Docker network to "
@@ -14293,7 +15034,7 @@ msgstr ""
 "scenario fa per te."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:97
+#: src/en/reference/docker-compose-scenarios.md:108
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-nginx.yml` for "
 "deployment"
@@ -14302,7 +15043,7 @@ msgstr ""
 "distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:97
+#: src/en/reference/docker-compose-scenarios.md:108
 msgid ""
 "Provide the name of your external network by using the environment variable "
 "`ZAMMAD_NGINX_EXTERNAL_NETWORK`"
@@ -14311,14 +15052,14 @@ msgstr ""
 "`ZAMMAD_NGINX_"
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:98
+#: src/en/reference/docker-compose-scenarios.md:109
 #, fuzzy, no-wrap
 #| msgid "Using External Services"
 msgid "Using external services"
 msgstr "Usare servizi esterni"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:104
+#: src/en/reference/docker-compose-scenarios.md:115
 msgid ""
 "Do you have an Elasticsearch instance already running and want to use it for "
 "Zammad, too? Then you can disable the Elasticsearch service in the Zammad "
@@ -14328,7 +15069,7 @@ msgstr ""
 "Zammad?"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:125
 msgid ""
 "Use the scenario file `scenarios/disable-elasticsearch-service.yml` for "
 "deployment - this will turn off the built-in service for Elasticsearch"
@@ -14337,7 +15078,7 @@ msgstr ""
 "distribuzione - questo"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:125
 msgid ""
 "Use the following environment variables to provide information about the "
 "connection to your existing Elasticsearch instance:"
@@ -14346,39 +15087,39 @@ msgstr ""
 "connessione alla tua istanza:"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:125
 msgid "`ELASTICSEARCH_SCHEMA`"
 msgstr "`ELASTICSEARCH_SCHEMA`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:125
 msgid "`ELASTICSEARCH_HOST`"
 msgstr "`ELASTICSEARCH_HOST`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:125
 msgid "`ELASTICSEARCH_PORT`"
 msgstr "`ELASTICSEARCH_PORT`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:125
 msgid "`ELASTICSEARCH_USER`"
 msgstr "`ELASTICSEARCH_USER`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:114
+#: src/en/reference/docker-compose-scenarios.md:125
 msgid "`ELASTICSEARCH_PASS`"
 msgstr "`ELASTICSEARCH_PASS`"
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:115
+#: src/en/reference/docker-compose-scenarios.md:126
 #, fuzzy, no-wrap
 #| msgid "Making Services Externally Available"
 msgid "Making services externally available"
 msgstr "Rendere i servizi disponibili esternamente"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:119
+#: src/en/reference/docker-compose-scenarios.md:130
 msgid ""
 "These scenarios are meant to connect from external applications to Zammad "
 "services. Depending on where your external service is hosted, you can use "
@@ -14388,7 +15129,7 @@ msgstr ""
 "Zammad. A seconda"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/docker-compose-scenarios.md:120
+#: src/en/reference/docker-compose-scenarios.md:131
 #, no-wrap
 msgid ""
 "\n"
@@ -14401,7 +15142,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/docker-compose-scenarios.md:127
+#: src/en/reference/docker-compose-scenarios.md:138
 #, no-wrap
 msgid ""
 "\n"
@@ -14413,14 +15154,14 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:133
+#: src/en/reference/docker-compose-scenarios.md:144
 #, fuzzy, no-wrap
 #| msgid "Add an external Docker network to Elasticsearch"
 msgid "Add external Docker network to Elasticsearch"
 msgstr "Aggiungi una rete Docker esterna a Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:138
+#: src/en/reference/docker-compose-scenarios.md:149
 msgid ""
 "A common use case for this is to use a reporting/visualization tool like "
 "Grafana on the same host in another stack.  Because such tools need to "
@@ -14431,7 +15172,7 @@ msgstr ""
 "visualizzazione come Grafana sulla stessa rete."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:141
+#: src/en/reference/docker-compose-scenarios.md:152
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-elasticsearch.yml` "
 "for deployment"
@@ -14440,7 +15181,7 @@ msgstr ""
 "elasticsearch.yml` per la distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:141
+#: src/en/reference/docker-compose-scenarios.md:152
 msgid ""
 "Provide the name of your external network by using the environment variable "
 "`ZAMMAD_ELASTICSEARCH_EXTERNAL_NETWORK`"
@@ -14449,14 +15190,14 @@ msgstr ""
 "`ZAMMAD_ELASTI"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:142
+#: src/en/reference/docker-compose-scenarios.md:153
 #, fuzzy, no-wrap
 #| msgid "Add an host port to Elasticsearch"
 msgid "Add host port to Elasticsearch"
 msgstr "Aggiungi una porta host a Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:146
+#: src/en/reference/docker-compose-scenarios.md:157
 msgid ""
 "In case you want to expose the Elasticsearch service of the Zammad stack in "
 "the network, you can assign a host port to the container. This is useful if "
@@ -14466,7 +15207,7 @@ msgstr ""
 "nella rete."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:150
+#: src/en/reference/docker-compose-scenarios.md:161
 msgid ""
 "Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for "
 "deployment"
@@ -14475,7 +15216,7 @@ msgstr ""
 "distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:150
+#: src/en/reference/docker-compose-scenarios.md:161
 msgid ""
 "The default port for Elasticsearch is `9200`. Change it to another port by "
 "using the environment variable `ELASTICSEARCH_EXPOSE_HTTP_PORT`"
@@ -14484,21 +15225,21 @@ msgstr ""
 "usando la variabile d'ambiente."
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:151
+#: src/en/reference/docker-compose-scenarios.md:162
 #, fuzzy, no-wrap
 #| msgid "Additional Scenarios"
 msgid "Additional scenarios"
 msgstr "Scenari aggiuntivi"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:153
+#: src/en/reference/docker-compose-scenarios.md:164
 #, fuzzy, no-wrap
 #| msgid "Disable the backup service"
 msgid "Disable backup service"
 msgstr "Disabilita il servizio di backup"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:157
+#: src/en/reference/docker-compose-scenarios.md:168
 msgid ""
 "In case you want to handle backups in a different way, you can disable the "
 "built in backup service in the stack to save resources."
@@ -14507,7 +15248,7 @@ msgstr ""
 "servizio di backup integrato."
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:159
+#: src/en/reference/docker-compose-scenarios.md:170
 msgid ""
 "You can do so by just using the scenario file `scenarios/disable-backup-"
 "service.yml` for deployment."
@@ -14516,13 +15257,13 @@ msgstr ""
 "backup-service.yml`."
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:160
+#: src/en/reference/docker-compose-scenarios.md:171
 #, no-wrap
 msgid "Add Ollama"
 msgstr "Aggiungi Ollama"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:164
+#: src/en/reference/docker-compose-scenarios.md:175
 #, fuzzy
 #| msgid ""
 #| "You can spin up an additional [Ollama](https://ollama.com/) container to "
@@ -14535,13 +15276,13 @@ msgstr ""
 "le funzionalità AI di Zammad."
 
 #. type: Fenced div block (info)
-#: src/en/reference/docker-compose-scenarios.md:165
+#: src/en/reference/docker-compose-scenarios.md:176
 #, no-wrap
 msgid "This is intended for development or testing purposes as running a productive LLM stack is complex.\n"
 msgstr "Questo è pensato per scopi di sviluppo o test, poiché eseguire uno stack LLM produttivo è.\n"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:172
+#: src/en/reference/docker-compose-scenarios.md:183
 msgid ""
 "To deploy an Ollama container inside the Zammad stack, use the scenario file "
 "`scenarios/add-ollama.yml`. This creates an Ollama container which "
@@ -14552,7 +15293,7 @@ msgstr ""
 "file di scenario `scenarios/ad`."
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:174
+#: src/en/reference/docker-compose-scenarios.md:185
 msgid ""
 "To use it in Zammad, add the service name and port (`http://ollama:11434`) "
 "to the provider configuration."
@@ -14561,14 +15302,132 @@ msgstr ""
 "ollama:11434`) al provider."
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:175
+#: src/en/reference/docker-compose-scenarios.md:186
+#, no-wrap
+msgid "Add LibreTranslate"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:191
+msgid ""
+"You can run an additional [LibreTranslate](https://libretranslate.com/)"
+"{target=_blank} container to power Zammad's article translation on your own "
+"hardware. For details on the integration itself, see the translation "
+"services section of the admin documentation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:195
+#, fuzzy
+#| msgid ""
+#| "To deploy an Ollama container inside the Zammad stack, use the scenario "
+#| "file `scenarios/add-ollama.yml`. This creates an Ollama container which "
+#| "automatically pulls and serves `Llama3.2` to be ready to use/test AI "
+#| "features out of the box."
+msgid ""
+"To deploy a LibreTranslate container inside the Zammad stack, use the "
+"scenario file `scenarios/add-libretranslate.yml`. The service doesn't "
+"publish any ports to the host; Zammad reaches it inside the stack network as "
+"`http://libretranslate:5000`."
+msgstr ""
+"Per distribuire un container Ollama all'interno dello stack Zammad, usa il "
+"file di scenario `scenarios/ad`."
+
+#. type: Fenced div block (tip)
+#: src/en/reference/docker-compose-scenarios.md:196
+#, no-wrap
+msgid ""
+"\n"
+"The first start takes a while, as the container downloads the language models before the service becomes available.\n"
+"The models are kept in a Docker volume, so they survive stack restarts.\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:204
+#, fuzzy
+#| msgid "The menu contains the following entries:"
+msgid "The scenario supports the following environment variables:"
+msgstr "Il menu contiene le seguenti voci:"
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:208
+#, no-wrap
+msgid ""
+"LT_LOAD_ONLY\n"
+": Comma-separated list of languages to load, e.g. `en,de,fr`. If unset, all language models are downloaded, which can\n"
+"  take minutes on cold starts.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:212
+#, no-wrap
+msgid ""
+"LT_UPDATE_MODELS\n"
+": Set to `true` to check for updated language models on every stack startup. Only models with a newer available\n"
+"  version are redownloaded. Without it, the models are downloaded on the first start only.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:216
+#, no-wrap
+msgid ""
+"LT_API_KEYS\n"
+": Set to `true` to enable API key support. Each key carries its own allowed requests per minute. To issue a key,\n"
+"  start the service and run:\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/reference/docker-compose-scenarios.md:217
+#, no-wrap
+msgid "  docker compose exec libretranslate ltmanage keys add 120\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:223
+#, no-wrap
+msgid ""
+"  The number is the allowed requests per minute for this key. The command prints the generated key, which is a UUID\n"
+"  created by LibreTranslate itself. You can also provide your own key with the `--key` option instead.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:227
+#, no-wrap
+msgid ""
+"LT_REQUIRE_API_KEY_SECRET\n"
+": Set to `true` to make API keys mandatory for all requests. Requires\n"
+"  `LT_API_KEYS=true`.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/docker-compose-scenarios.md:228
+#, no-wrap
+msgid ""
+"\n"
+"LibreTranslate supports many more options. They are described in the\n"
+"[official documentation](https://docs.libretranslate.com/){target=_blank}, which also lists the environment variables\n"
+"the container accepts.\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:238
+#, no-wrap
+msgid ""
+"Once the stack is up, configure the service in Zammad's admin settings (_System > Integrations > Translation services_):\n"
+"point the URL to `http://libretranslate:5000` and provide an API key if your instance requires one.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:239
 #, fuzzy, no-wrap
 #| msgid "Limit Resources"
 msgid "Limit resources"
 msgstr "Limita le risorse"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:181
+#: src/en/reference/docker-compose-scenarios.md:245
 msgid ""
 "If you want to limit the hardware resources the Zammad stack is allowed to "
 "use, use the `scenarios/apply-resource-limits.yml` scenario. Default values "
@@ -14581,14 +15440,14 @@ msgstr ""
 "file `s`."
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:182
+#: src/en/reference/docker-compose-scenarios.md:246
 #, fuzzy, no-wrap
 #| msgid "Other Use Cases"
 msgid "Other use cases"
 msgstr "Altri casi d'uso"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:186
+#: src/en/reference/docker-compose-scenarios.md:250
 msgid ""
 "Your scenario is not covered yet? Feel free to suggest your use case. We "
 "plan to add more common use cases to the stack in future."
@@ -14597,14 +15456,35 @@ msgstr ""
 "Prevediamo di aggiungerne altri."
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:187
+#: src/en/reference/docker-compose-scenarios.md:251
 #, fuzzy, no-wrap
 #| msgid "Customize the Stack Locally"
 msgid "Customize the stack locally"
 msgstr "Personalizza lo stack localmente"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:192
+#: src/en/reference/docker-compose-scenarios.md:256
+msgid ""
+"The default stack fits most environments, but sometimes you need to adapt "
+"it: add another service, change settings or use your own files. Whichever "
+"applies, don't change `docker-compose.yml` itself. Keeping your changes in "
+"separate files lets `git pull` update the stack without conflicts."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:258
+msgid "How you do this depends on what you want to achieve:"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:259
+#, fuzzy, no-wrap
+#| msgid "Change Font Settings for Outgoing HTML Emails"
+msgid "Change settings of the existing services"
+msgstr "Cambia le impostazioni del font per le email HTML in uscita"
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:265
 #, fuzzy
 #| msgid ""
 #| "Sometimes it's necessary to apply local changes to the Zammad Docker "
@@ -14615,13 +15495,12 @@ msgstr "Personalizza lo stack localmente"
 #| "merge its changes into your stack](https://docs.docker.com/compose/"
 #| "multiple-compose-files/merge/)."
 msgid ""
-"Sometimes it's necessary to apply local changes to the Zammad Docker stack, "
-"e.g. to include additional services. If you plan to do so, we recommend that "
-"you do not change the `docker-compose.yml` file, but instead create a local "
-"`docker-compose.override.yml` that includes all your modifications. Docker "
-"Compose will [automatically load this file and merge its changes into your "
+"The override file changes settings of the services that the main compose "
+"file already defines. Create a `docker-compose.override.yml` file. Docker "
+"Compose [automatically loads this file and merges its changes into your "
 "stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/)"
-"{target=_blank}."
+"{target=_blank}.  The stack repository ships an inactive example file you "
+"can copy and adjust:"
 msgstr ""
 "A volte è necessario applicare modifiche locali allo stack Docker di Zammad, "
 "ad esempio per includere servizi aggiuntivi. Se prevedi di farlo, ti "
@@ -14630,6 +15509,48 @@ msgstr ""
 "modifiche. Docker Compose [caricherà automaticamente questo file e unirà le "
 "sue modifiche allo stack](https://docs.docker.com/compose/multiple-compose-"
 "files/merge/)."
+
+#. type: Fenced code block (sh)
+#: src/en/reference/docker-compose-scenarios.md:266
+#, no-wrap
+msgid "cp docker-compose.override.yml.dist docker-compose.override.yml\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:272
+msgid ""
+"Loading scenarios is not supported here. To load a scenario, use the "
+"`COMPOSE_FILE` variable in your `.env` file, as described in the [general "
+"usage](#general-usage) section above."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/docker-compose-scenarios.md:273
+#, no-wrap
+msgid "Add your own files"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:279
+msgid ""
+"With a Docker Compose deployment done by cloning the repository, you can "
+"store files that belong only to your instance in the stack's `local/` "
+"directory, e.g. configuration snippets, custom scenario files, scripts, "
+"notes or certificates. Git ignores the directory's contents except for "
+"README.md, so `git pull` neither reports nor changes these files."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:284
+msgid ""
+"Files in `local/` are not loaded automatically. To use a custom Compose "
+"file, reference it from the override file or from `COMPOSE_FILE` in "
+"your .env file, using a path such as `./local/my-file`. Keep in mind that "
+"setting `COMPOSE_FILE` turns off the automatic pickup of the override file, "
+"see the [general usage](#general-usage) section above. Docker Compose "
+"resolves relative paths against the directory containing the main compose "
+"file, including paths used by custom scenario files in `local/`."
+msgstr ""
 
 #. type: Title #
 #: src/en/reference/environment-variables.md:1
@@ -15746,7 +16667,7 @@ msgstr ""
 #: src/en/reference/es-indexed-attributes.md:30 src/en/reference/graphql.md:103
 #: src/en/reference/rest-api/articles.md:144
 #: src/en/reference/rest-api/articles.md:161
-#: src/en/reference/rest-api/articles.md:180
+#: src/en/reference/rest-api/articles.md:182
 #: src/en/reference/rest-api/calendar.md:42
 #: src/en/reference/rest-api/calendar.md:63
 #: src/en/reference/rest-api/checklist.md:47
@@ -15755,9 +16676,14 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:136
 #: src/en/reference/rest-api/checklist.md:196
 #: src/en/reference/rest-api/checklist.md:218
+#: src/en/reference/rest-api/core-workflow.md:64
+#: src/en/reference/rest-api/core-workflow.md:101
 #: src/en/reference/rest-api/cti.md:129 src/en/reference/rest-api/cti.md:172
 #: src/en/reference/rest-api/cti.md:289 src/en/reference/rest-api/cti.md:332
 #: src/en/reference/rest-api/cti.md:411 src/en/reference/rest-api/cti.md:454
+#: src/en/reference/rest-api/email-notification.md:56
+#: src/en/reference/rest-api/email-notification.md:149
+#: src/en/reference/rest-api/email-notification.md:176
 #: src/en/reference/rest-api/group.md:47 src/en/reference/rest-api/group.md:68
 #: src/en/reference/rest-api/knowledgebase.md:49
 #: src/en/reference/rest-api/knowledgebase.md:82
@@ -15786,6 +16712,8 @@ msgstr ""
 #: src/en/reference/rest-api/organization.md:67
 #: src/en/reference/rest-api/priorities.md:40
 #: src/en/reference/rest-api/priorities.md:61
+#: src/en/reference/rest-api/report-profile.md:56
+#: src/en/reference/rest-api/report-profile.md:106
 #: src/en/reference/rest-api/role.md:38 src/en/reference/rest-api/role.md:59
 #: src/en/reference/rest-api/shared-draft.md:26
 #: src/en/reference/rest-api/shared-draft.md:47
@@ -15797,9 +16725,13 @@ msgstr ""
 #: src/en/reference/rest-api/ticket.md:111
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
+#: src/en/reference/rest-api/trigger.md:64
+#: src/en/reference/rest-api/trigger.md:96
 #: src/en/reference/rest-api/user-access-token.md:26
-#: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:109
-#: src/en/reference/rest-api/user.md:144 src/en/tutorials/migrate.md:510
+#: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:116
+#: src/en/reference/rest-api/user.md:151
+#: src/en/reference/rest-api/webhook.md:51
+#: src/en/reference/rest-api/webhook.md:88 src/en/tutorials/migrate.md:510
 #: src/en/tutorials/webserver-config.md:113
 #, no-wrap
 msgid "\n"
@@ -23730,6 +24662,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:41
 #: src/en/reference/rest-api/checklist.md:109
 #: src/en/reference/rest-api/checklist.md:190
+#: src/en/reference/rest-api/core-workflow.md:58
+#: src/en/reference/rest-api/email-notification.md:136
 #: src/en/reference/rest-api/group.md:41
 #: src/en/reference/rest-api/knowledgebase.md:158
 #: src/en/reference/rest-api/knowledgebase.md:285
@@ -23737,13 +24671,15 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:40
 #: src/en/reference/rest-api/organization.md:40
 #: src/en/reference/rest-api/priorities.md:34
+#: src/en/reference/rest-api/report-profile.md:50
 #: src/en/reference/rest-api/role.md:32
 #: src/en/reference/rest-api/shared-draft.md:20
 #: src/en/reference/rest-api/sla.md:38 src/en/reference/rest-api/states.md:40
 #: src/en/reference/rest-api/ticket.md:50
 #: src/en/reference/rest-api/time-accounting.md:33
+#: src/en/reference/rest-api/trigger.md:49
 #: src/en/reference/rest-api/user-access-token.md:20
-#: src/en/reference/rest-api/user.md:55
+#: src/en/reference/rest-api/user.md:55 src/en/reference/rest-api/webhook.md:45
 #, no-wrap
 msgid "Create"
 msgstr "Crea"
@@ -23834,14 +24770,15 @@ msgid "Article with inline images"
 msgstr "Articolo con immagini inline"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:179
-msgid "Inline images can be used by providing data URIs in your HTML markup."
+#: src/en/reference/rest-api/articles.md:181
+msgid ""
+"Inline images can be used by providing data URIs in your HTML markup.  In "
+"the response, they are listed under `inline_attachments`, while "
+"`attachments` only contains regular file attachments."
 msgstr ""
-"Le immagini inline possono essere usate fornendo data URI nel tuo markup "
-"HTML."
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/articles.md:180
+#: src/en/reference/rest-api/articles.md:182
 #, no-wrap
 msgid ""
 "\n"
@@ -23865,14 +24802,14 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/articles.md:195
+#: src/en/reference/rest-api/articles.md:197
 #, fuzzy, no-wrap
 #| msgid "Receive Attachments"
 msgid "Receive attachments"
 msgstr "Ricevi allegati"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:199
+#: src/en/reference/rest-api/articles.md:201
 msgid ""
 "Now that you have all those fancy attachments within your tickets, you may "
 "want to download specific ones."
@@ -23881,7 +24818,7 @@ msgstr ""
 "scaricarli."
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:202
+#: src/en/reference/rest-api/articles.md:204
 msgid ""
 "`GET`-Request sent: `/api/v1/ticket_attachment/{ticket id}/{article id}/"
 "{attachment id}`"
@@ -23890,12 +24827,12 @@ msgstr ""
 "{attachment id}`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/articles.md:204
+#: src/en/reference/rest-api/articles.md:206
 msgid "Response: `{image file}`"
 msgstr "Risposta: `{image file}`"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/articles.md:205
+#: src/en/reference/rest-api/articles.md:207
 #, no-wrap
 msgid ""
 "If you're not sure which articles a ticket contains, please\n"
@@ -23922,18 +24859,23 @@ msgstr ""
 #: src/en/reference/rest-api/audit-log.md:11
 #: src/en/reference/rest-api/calendar.md:12
 #: src/en/reference/rest-api/checklist.md:165
+#: src/en/reference/rest-api/core-workflow.md:21
+#: src/en/reference/rest-api/email-notification.md:17
+#: src/en/reference/rest-api/email-notification.md:109
 #: src/en/reference/rest-api/group.md:17
 #: src/en/reference/rest-api/mentions.md:14
 #: src/en/reference/rest-api/notification.md:15
 #: src/en/reference/rest-api/object.md:16
 #: src/en/reference/rest-api/organization.md:8
 #: src/en/reference/rest-api/priorities.md:8
+#: src/en/reference/rest-api/report-profile.md:20
 #: src/en/reference/rest-api/role.md:8 src/en/reference/rest-api/sla.md:12
 #: src/en/reference/rest-api/states.md:14 src/en/reference/rest-api/tags.md:10
 #: src/en/reference/rest-api/ticket.md:26
 #: src/en/reference/rest-api/time-accounting.md:8
+#: src/en/reference/rest-api/trigger.md:16
 #: src/en/reference/rest-api/user-access-token.md:8
-#: src/en/reference/rest-api/user.md:26
+#: src/en/reference/rest-api/user.md:26 src/en/reference/rest-api/webhook.md:15
 #, no-wrap
 msgid "List"
 msgstr "Elenca"
@@ -23984,6 +24926,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:25
 #: src/en/reference/rest-api/checklist.md:97
 #: src/en/reference/rest-api/checklist.md:177
+#: src/en/reference/rest-api/core-workflow.md:40
+#: src/en/reference/rest-api/email-notification.md:124
 #: src/en/reference/rest-api/group.md:29
 #: src/en/reference/rest-api/knowledgebase.md:31
 #: src/en/reference/rest-api/knowledgebase.md:146
@@ -23992,12 +24936,14 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:28
 #: src/en/reference/rest-api/organization.md:24
 #: src/en/reference/rest-api/priorities.md:21
+#: src/en/reference/rest-api/report-profile.md:38
 #: src/en/reference/rest-api/role.md:20
 #: src/en/reference/rest-api/shared-draft.md:8
 #: src/en/reference/rest-api/sla.md:26 src/en/reference/rest-api/states.md:27
 #: src/en/reference/rest-api/ticket.md:38
 #: src/en/reference/rest-api/time-accounting.md:20
-#: src/en/reference/rest-api/user.md:38
+#: src/en/reference/rest-api/trigger.md:37 src/en/reference/rest-api/user.md:38
+#: src/en/reference/rest-api/webhook.md:33
 #, no-wrap
 msgid "Show"
 msgstr "Mostra"
@@ -24344,19 +25290,24 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:83
 #: src/en/reference/rest-api/checklist.md:151
 #: src/en/reference/rest-api/checklist.md:233
+#: src/en/reference/rest-api/core-workflow.md:117
+#: src/en/reference/rest-api/email-notification.md:192
 #: src/en/reference/rest-api/group.md:83
 #: src/en/reference/rest-api/knowledgebase.md:200
 #: src/en/reference/rest-api/knowledgebase.md:327
 #: src/en/reference/rest-api/link.md:56
 #: src/en/reference/rest-api/mentions.md:55
 #: src/en/reference/rest-api/notification.md:65
-#: src/en/reference/rest-api/object.md:247
+#: src/en/reference/rest-api/object.md:250
 #: src/en/reference/rest-api/organization.md:82
 #: src/en/reference/rest-api/priorities.md:76
+#: src/en/reference/rest-api/report-profile.md:122
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
 #: src/en/reference/rest-api/ticket.md:138
+#: src/en/reference/rest-api/trigger.md:112
 #: src/en/reference/rest-api/user-access-token.md:46
-#: src/en/reference/rest-api/user.md:124
+#: src/en/reference/rest-api/user.md:131
+#: src/en/reference/rest-api/webhook.md:104
 #, no-wrap
 msgid "Delete"
 msgstr "Elimina"
@@ -24789,6 +25740,258 @@ msgid ""
 msgstr ""
 "\n"
 "<<< @/fixtures/rest-api/checklist_templates/delete-checklist-template-id-res.json\n"
+"\n"
+
+#. type: Title #
+#: src/en/reference/rest-api/core-workflow.md:1
+#: src/en/reference/rest-api/core-workflow.md:6
+#, no-wrap
+msgid "Core workflow"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:8
+#, no-wrap
+msgid ""
+"Core Workflows are different from [triggers](/en/reference/rest-api/trigger):\n"
+"they control the ticket create/edit form while someone fills it out, for\n"
+"example by restricting which values are selectable in another field. The\n"
+"form sends its current values to Zammad, which evaluates the workflows\n"
+"and returns the resulting field changes. Unlike triggers, they don't act\n"
+"on existing tickets in the background.\n"
+"\n"
+"Compare to [report profiles](/en/reference/rest-api/report-profile), whose\n"
+"`condition` field, unlike Core Workflow, does validate that referenced\n"
+"fields are real.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:24
+#: src/en/reference/rest-api/core-workflow.md:43
+#: src/en/reference/rest-api/core-workflow.md:61
+#: src/en/reference/rest-api/core-workflow.md:90
+#: src/en/reference/rest-api/core-workflow.md:120
+#, fuzzy
+#| msgid "Required permission: `admin.role`"
+msgid "Required permission: `admin.core_workflow`"
+msgstr "Permesso richiesto: `admin.role`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:26
+#, fuzzy
+#| msgid "`GET` -Request sent: `/api/v1/roles`"
+msgid "`GET`-Request sent: `/api/v1/core_workflows`"
+msgstr "Richiesta `GET` inviata: `/api/v1/roles`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:27
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/get-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:33
+#, no-wrap
+msgid ""
+"This endpoint only returns workflows with `changeable: true`. Zammad's\n"
+"built-in system workflows are not changeable and are not included, so\n"
+"the response on a fresh instance is an empty array. Show, Update and\n"
+"Delete also only operate on changeable workflows.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:45
+#, fuzzy
+#| msgid "`GET` -Request sent: `/api/v1/roles/{id}`"
+msgid "`GET`-Request sent: `/api/v1/core_workflows/{id}`"
+msgstr "Richiesta `GET` inviata: `/api/v1/roles/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:46
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/get-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:52
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/get-non-changeable-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:63
+#, fuzzy
+#| msgid "`POST` -Request sent: `/api/v1/roles`"
+msgid "`POST`-Request sent: `/api/v1/core_workflows`"
+msgstr "Richiesta `POST` inviata: `/api/v1/roles`"
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/core-workflow.md:64
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/post-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:80
+#, no-wrap
+msgid ""
+"Core Workflow does _not_ validate that fields referenced in\n"
+"`condition_selected` or `perform` exist. A workflow that references a\n"
+"field that doesn't exist yet is saved without error. It has no visible\n"
+"effect in the ticket form until the referenced field exists.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:92
+#, fuzzy
+#| msgid "`PUT` -Request sent: `/api/v1/roles/{id}`"
+msgid "`PUT`-Request sent: `/api/v1/core_workflows/{id}`"
+msgstr "Richiesta `PUT` inviata: `/api/v1/roles/{id}`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:95
+msgid ""
+"Payload shape is identical to Create. The response is the updated record, "
+"same shape as Show/Create."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/core-workflow.md:96
+#, no-wrap
+msgid ""
+"Sending the full Create payload to an existing workflow's `id` updates\n"
+"that record in place. It doesn't create a duplicate.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/core-workflow.md:101
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/put-id-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/put-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/put-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/core-workflow.md:121
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**This is a permanent removal!**\n"
+#| "\n"
+#| "Please note that removing SLA configurations cannot be undone.\n"
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing core workflows cannot be undone.\n"
+msgstr ""
+"**Questa è una rimozione permanente!**\n"
+"\n"
+"Tieni presente che rimuovere configurazioni SLA non può essere annullato.\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/core-workflow.md:128
+#, fuzzy
+#| msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
+msgid "`DELETE`-Request sent: `/api/v1/core_workflows/{id}`"
+msgstr "Richiesta `DELETE` inviata: `/api/v1/users/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/core-workflow.md:129
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/core_workflows/delete-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/delete-id-res.json\n"
 "\n"
 
 #. type: Yaml Front Matter Hash Value: title
@@ -25791,6 +26994,416 @@ msgstr ""
 "Comando curl di esempio:\n"
 "\n"
 "<<< @/fixtures/rest-api/cti/post-inbound-instance-specific-token-hangup-form-req.sh\n"
+"\n"
+
+#. type: Title #
+#: src/en/reference/rest-api/email-notification.md:1
+#: src/en/reference/rest-api/email-notification.md:6
+#, fuzzy, no-wrap
+#| msgid "Online Notification"
+msgid "Email notification"
+msgstr "Notifica online"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:8
+#, no-wrap
+msgid ""
+"This page covers the system's outbound _notification_ email\n"
+"configuration: the SMTP (or local MTA) settings Zammad uses to send its\n"
+"own internal notifications, like \"you were assigned a ticket\", plus the\n"
+"local sender identity (`EmailAddress`) that gets attached to it. This is\n"
+"distinct from a ticket mailbox / support-inbox channel, which is a\n"
+"separate feature not covered by this page.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:20
+#: src/en/reference/rest-api/email-notification.md:45
+#: src/en/reference/rest-api/email-notification.md:139
+#: src/en/reference/rest-api/email-notification.md:168
+#: src/en/reference/rest-api/email-notification.md:195
+#, fuzzy
+#| msgid "Required permission: `admin.calendar`"
+msgid "Required permission: `admin.channel_email`"
+msgstr "Permesso richiesto: `admin.calendar`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:22
+#, fuzzy
+#| msgid "`GET`-Request sent: `/api/v1/calendars`"
+msgid "`GET`-Request sent: `/api/v1/channels_email`"
+msgstr "Richiesta `GET` inviata: `/api/v1/calendars`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:27
+msgid ""
+"This is a combined index: it returns the notification channel(s), the ticket "
+"mailbox channel(s) and the local sender addresses in one response.  The "
+"response below is trimmed to the fields relevant to notification email "
+"configuration."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:28
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/get-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/get-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:34
+#, no-wrap
+msgid ""
+"Only one channel can be `active: true` per notification setup at a time.\n"
+"Configuring a new one (see _Configure_ below) automatically deactivates\n"
+"whichever one was previously active. In the response above, `sendmail`\n"
+"(id `2`) is now `active: false` because `smtp` (id `1`) was configured\n"
+"afterward.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/rest-api/email-notification.md:42
+#, fuzzy, no-wrap
+#| msgid "Configuration"
+msgid "Configure"
+msgstr "Configurazione"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:47
+#, fuzzy
+#| msgid "`PUT`-Request sent: `/api/v1/online_notifications/{id}`"
+msgid "`POST`-Request sent: `/api/v1/channels_email_notification`"
+msgstr "Richiesta `PUT` inviata: `/api/v1/online_notifications/{id}`"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:48
+#, no-wrap
+msgid ""
+"Pass the adapter settings in a top-level `options` key as shown below.\n"
+"Other key names, such as `new_configuration` (the parameter name of the\n"
+"internal service class `Service::System::SetEmailNotificationConfiguration`),\n"
+"are not rejected with a validation error. The request fails with an\n"
+"unhandled `undefined method 'downcase' for nil` error instead.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/email-notification.md:56
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/mentions/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/mentions/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/post-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/mentions/post-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/mentions/post-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:72
+#, no-wrap
+msgid ""
+"This call does double duty: it tests the connection live, sending a real\n"
+"test email as a side effect, and if the test succeeds, saves the\n"
+"configuration as the active notification channel in the same call. There\n"
+"is no separate \"save\" step; `notification_channel_ids` in\n"
+"`/api/v1/channels_email` immediately reflects the new channel.\n"
+"\n"
+"If the connection can't be established, the response is `200 OK` with\n"
+"`result: invalid` and the saved configuration is left untouched.\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:83
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/get-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/post-invalid-connection-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/get-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:89
+#, no-wrap
+msgid ""
+"`POST /api/v1/channels_email_probe` is not an alternative to this\n"
+"endpoint for a notification-only setup. It always validates a _full_\n"
+"inbound and outbound mailbox (`EmailHelper::Probe.full`). Sending\n"
+"outbound-only SMTP settings to it returns\n"
+"`{\"result\": \"failed\", \"reason\": \"inbound failed\"}`, even when the\n"
+"outbound settings are correct.\n"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:98
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/probe-outbound-only-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/get-res.json\n"
+"\n"
+
+#. type: Title ##
+#: src/en/reference/rest-api/email-notification.md:104
+#, fuzzy, no-wrap
+#| msgid "Names and email addresses"
+msgid "Sender address"
+msgstr "Nomi e indirizzi email"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:108
+msgid ""
+"The local sender identity used for outbound notification email is managed as "
+"an `EmailAddress` resource."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:112
+#: src/en/reference/rest-api/email-notification.md:127
+#, fuzzy
+#| msgid "Required permission: `admin.user` **or** `ticket.agent`"
+msgid "Required permission: `admin.channel_email` **or** `ticket.agent`"
+msgstr "Permesso richiesto: `admin.user` **o** `ticket.agent`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:114
+#, fuzzy
+#| msgid "`GET`-Request sent: `/api/v1/slas`"
+msgid "`GET`-Request sent: `/api/v1/email_addresses`"
+msgstr "Richiesta `GET` inviata: `/api/v1/slas`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:117
+msgid ""
+"Returns an array of objects, each shaped like the single object shown in the "
+"_Show_ response below."
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:118
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/get-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/get-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:129
+#, fuzzy
+#| msgid "`GET`-Request sent: `/api/v1/slas/{id}`"
+msgid "`GET`-Request sent: `/api/v1/email_addresses/{id}`"
+msgstr "Richiesta `GET` inviata: `/api/v1/slas/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:130
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/get-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/get-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/get-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:141
+#, fuzzy
+#| msgid "`POST`-Request sent: `/api/v1/slas`"
+msgid "`POST`-Request sent: `/api/v1/email_addresses`"
+msgstr "Richiesta `POST` inviata: `/api/v1/slas`"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/email-notification.md:142
+#, no-wrap
+msgid ""
+"`channel_id` is a reference, not a validation target: an ID that doesn't\n"
+"exist is accepted, and the address is then stored with `channel_id: null`\n"
+"and `active: false`. Addresses are commonly attached to a ticket mailbox\n"
+"channel rather than to the notification channel.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/email-notification.md:149
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/put-id-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/put-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/post-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/put-id-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/put-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:170
+#, fuzzy
+#| msgid "`PUT`-Request sent: `/api/v1/slas/{id}`"
+msgid "`PUT`-Request sent: `/api/v1/email_addresses/{id}`"
+msgstr "Richiesta `PUT` inviata: `/api/v1/slas/{id}`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:175
+msgid ""
+"Payload shape is identical to Create. Sending the full Create payload to an "
+"existing address's `id` updates that record in place. It doesn't create a "
+"duplicate. Response is the updated record, same shape as the Create response "
+"above."
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/email-notification.md:176
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/put-id-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/put-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/put-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/put-id-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/put-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/email-notification.md:196
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**This is a permanent removal**\n"
+#| "\n"
+#| "Please note that removing users cannot be undone. Zammad will also\n"
+#| "remove references - thus potentially tickets!\n"
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing email addresses cannot be undone.\n"
+"\n"
+"Groups that use the deleted address as their sender address\n"
+"(`email_address_id`) are reset to no sender address.\n"
+msgstr ""
+"**Questa è una rimozione permanente**\n"
+"\n"
+"Tieni presente che rimuovere utenti non può essere annullato. Zammad.\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/email-notification.md:206
+#, fuzzy
+#| msgid "`DELETE`-Request sent: `/api/v1/slas/{id}`"
+msgid "`DELETE`-Request sent: `/api/v1/email_addresses/{id}`"
+msgstr "Richiesta `DELETE` inviata: `/api/v1/slas/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/email-notification.md:207
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/online_notifications/delete-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/email_notification/email_addresses/delete-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/online_notifications/delete-id-res.json\n"
 "\n"
 
 #. type: Fenced div block (info)
@@ -27933,8 +29546,8 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:31
 #: src/en/reference/rest-api/object.md:43
 #: src/en/reference/rest-api/object.md:214
-#: src/en/reference/rest-api/object.md:250
-#: src/en/reference/rest-api/object.md:262
+#: src/en/reference/rest-api/object.md:253
+#: src/en/reference/rest-api/object.md:265
 #: src/en/reference/rest-api/priorities.md:37
 #: src/en/reference/rest-api/priorities.md:58
 #: src/en/reference/rest-api/priorities.md:79
@@ -28325,12 +29938,13 @@ msgstr ""
 #: src/en/reference/rest-api/object.md:226
 #, no-wrap
 msgid ""
-"Ensure to provide `data_option`. Zammad is very picky if you leave out\n"
-"this attribute. Please note that changing the object type _after_\n"
+"Provide the full record shape shown above, not just the fields you're\n"
+"changing. Zammad is very picky if you leave out required fields: a\n"
+"payload missing `data_type` fails with an unhandled\n"
+"`undefined method 'match?' for nil` error rather than a clean\n"
+"validation error. Please note that changing the object type _after_\n"
 "creation is not possible.\n"
 msgstr ""
-"Assicurati di fornire `data_option`. Zammad è molto esigente se ometti\n"
-"questo attributo.\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/object.md:226
@@ -28349,12 +29963,12 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/object.md:252
+#: src/en/reference/rest-api/object.md:255
 msgid "`DELETE`-Request sent: `/api/v1/object_manager_attributes/{id}`"
 msgstr "Richiesta `DELETE` inviata: `/api/v1/object_manager_attributes/{id}`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/object.md:253
+#: src/en/reference/rest-api/object.md:256
 #, no-wrap
 msgid ""
 "\n"
@@ -28366,14 +29980,14 @@ msgstr ""
 "\n"
 
 #. type: Title ##
-#: src/en/reference/rest-api/object.md:259
+#: src/en/reference/rest-api/object.md:262
 #, fuzzy, no-wrap
 #| msgid "Execute Database Migrations"
 msgid "Execute database migrations"
 msgstr "Esegui migrazioni database"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rest-api/object.md:263
+#: src/en/reference/rest-api/object.md:266
 #, no-wrap
 msgid ""
 "After executing the database migrations, a restart of Zammad is\n"
@@ -28386,7 +30000,7 @@ msgstr ""
 "Zammad si riavvia automaticamente – prevedi un breve periodo di inattività.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/object.md:272
+#: src/en/reference/rest-api/object.md:275
 msgid ""
 "`POST`-Request sent: `/api/v1/object_manager_attributes_execute_migrations`"
 msgstr ""
@@ -28394,7 +30008,7 @@ msgstr ""
 "object_manager_attributes_execute_migrations`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/object.md:273
+#: src/en/reference/rest-api/object.md:276
 #, no-wrap
 msgid ""
 "\n"
@@ -28713,6 +30327,268 @@ msgstr ""
 "Risposta:\n"
 "\n"
 "<<< @/fixtures/rest-api/ticket_priorities/delete-id-res.json\n"
+"\n"
+
+#. type: Title #
+#: src/en/reference/rest-api/report-profile.md:1
+#: src/en/reference/rest-api/report-profile.md:6
+#, fuzzy, no-wrap
+#| msgid "User Profile"
+msgid "Report profile"
+msgstr "Profilo utente"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:8
+#, no-wrap
+msgid ""
+"A report profile is a saved, reusable filter/condition for Zammad's\n"
+"reporting module. It isn't an automation and doesn't do anything by\n"
+"itself. It's a named condition that shows up as a selectable view when\n"
+"generating reports with Zammad's reporting feature, scoped to whichever\n"
+"roles (`role_ids`) can see it.\n"
+"\n"
+"Compare to [core workflows](/en/reference/rest-api/core-workflow), which\n"
+"uses a similarly-shaped condition object but does not validate referenced\n"
+"fields.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:23
+#: src/en/reference/rest-api/report-profile.md:41
+#: src/en/reference/rest-api/report-profile.md:53
+#: src/en/reference/rest-api/report-profile.md:95
+#: src/en/reference/rest-api/report-profile.md:125
+#, fuzzy
+#| msgid "Required permission: `admin.role`"
+msgid "Required permission: `admin.report_profile`"
+msgstr "Permesso richiesto: `admin.role`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:25
+#, fuzzy
+#| msgid "`GET` -Request sent: `/api/v1/roles`"
+msgid "`GET`-Request sent: `/api/v1/report_profiles`"
+msgstr "Richiesta `GET` inviata: `/api/v1/roles`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/report-profile.md:26
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/get-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:32
+#, no-wrap
+msgid ""
+"The list returns the full record for each profile, same field set as the\n"
+"Show response below. Entry `1` (`-all-`) is Zammad's built-in default\n"
+"profile.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:43
+#, fuzzy
+#| msgid "`GET` -Request sent: `/api/v1/roles/{id}`"
+msgid "`GET`-Request sent: `/api/v1/report_profiles/{id}`"
+msgstr "Richiesta `GET` inviata: `/api/v1/roles/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/report-profile.md:44
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/get-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:55
+#, fuzzy
+#| msgid "`POST` -Request sent: `/api/v1/roles`"
+msgid "`POST`-Request sent: `/api/v1/report_profiles`"
+msgstr "Richiesta `POST` inviata: `/api/v1/roles`"
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/report-profile.md:56
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/post-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:72
+#, no-wrap
+msgid ""
+"Role ids aren't guaranteed to be the same across instances. Look up the\n"
+"ids of the roles you need via the [roles API](/en/reference/rest-api/role)\n"
+"first instead of hard-coding them.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:78
+#, no-wrap
+msgid ""
+"Unlike core workflows, a report profile's `condition` _does_ validate\n"
+"that referenced fields are real, fully-migrated ticket fields.\n"
+"Referencing a custom field that exists but hasn't finished its schema\n"
+"migration yet (`to_create`/`to_migrate` still `true` on that field) fails\n"
+"with:\n"
+"\n"
+msgstr ""
+
+#. type: Fenced div block (info|details)
+#: src/en/reference/rest-api/report-profile.md:78
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/post-invalid-condition-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:97
+#, fuzzy
+#| msgid "`PUT` -Request sent: `/api/v1/roles/{id}`"
+msgid "`PUT`-Request sent: `/api/v1/report_profiles/{id}`"
+msgstr "Richiesta `PUT` inviata: `/api/v1/roles/{id}`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:100
+msgid ""
+"Payload shape is identical to Create. The response is the updated record, "
+"same shape as Create's response."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/report-profile.md:101
+#, no-wrap
+msgid ""
+"Sending the full Create payload to an existing profile's `id` updates\n"
+"that record in place. It doesn't create a duplicate.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/report-profile.md:106
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/put-id-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/put-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/put-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/report-profile.md:126
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**This is a permanent removal!**\n"
+#| "\n"
+#| "Please note that removing SLA configurations cannot be undone.\n"
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing report profiles cannot be undone.\n"
+msgstr ""
+"**Questa è una rimozione permanente!**\n"
+"\n"
+"Tieni presente che rimuovere configurazioni SLA non può essere annullato.\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/report-profile.md:133
+#, fuzzy
+#| msgid "`DELETE`-Request sent: `/api/v1/ticket_priorities/{id}`"
+msgid "`DELETE`-Request sent: `/api/v1/report_profiles/{id}`"
+msgstr "Richiesta `DELETE` inviata: `/api/v1/ticket_priorities/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/report-profile.md:134
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/groups/delete-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/report_profiles/delete-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/groups/delete-id-res.json\n"
 "\n"
 
 #. type: Yaml Front Matter Hash Value: title
@@ -29972,6 +31848,250 @@ msgstr ""
 "\n"
 
 #. type: Title #
+#: src/en/reference/rest-api/trigger.md:1
+#: src/en/reference/rest-api/trigger.md:6
+#, fuzzy, no-wrap
+#| msgid "Show/Trigger"
+msgid "Trigger"
+msgstr "Mostra/Attiva"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/trigger.md:8
+#, no-wrap
+msgid ""
+"Triggers can run a `notification.webhook` action that references a\n"
+"[webhook](/en/reference/rest-api/webhook) by id\n"
+"(`{\"notification.webhook\": {\"webhook_id\": <id>}}`) instead of, or\n"
+"alongside, `notification.email`. Create the webhook first, then point\n"
+"the trigger's perform action at its `id`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:19
+#: src/en/reference/rest-api/trigger.md:40
+#: src/en/reference/rest-api/trigger.md:52
+#: src/en/reference/rest-api/trigger.md:83
+#: src/en/reference/rest-api/trigger.md:115
+#, fuzzy
+#| msgid "Required permission: `admin.tag`"
+msgid "Required permission: `admin.trigger`"
+msgstr "Permesso richiesto: `admin.tag`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:21
+#, fuzzy
+#| msgid "`GET`-Request sent: `/api/v1/tickets`"
+msgid "`GET`-Request sent: `/api/v1/triggers`"
+msgstr "Richiesta `GET` inviata: `/api/v1/tickets`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/trigger.md:22
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/tags/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/triggers/get-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/tags/get-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/trigger.md:28
+#, no-wrap
+msgid ""
+"`recipient: \"article_last_sender\"` emails whoever wrote the triggering\n"
+"article. In this example that is always the customer, because the\n"
+"condition requires `article.sender_id` to be `2` (Customer). If an agent\n"
+"wrote the article, the agent would receive the email instead. Use\n"
+"`recipient: \"ticket_customer\"` (see Create below) to always target the\n"
+"customer regardless of who performed the action.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:42
+#, fuzzy
+#| msgid "`GET`-Request sent: `/api/v1/users/{id}`"
+msgid "`GET`-Request sent: `/api/v1/triggers/{id}`"
+msgstr "Richiesta `GET` inviata: `/api/v1/users/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/trigger.md:43
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/triggers/get-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:54
+#, fuzzy
+#| msgid "`POST`-Request sent: `/api/v1/tickets`"
+msgid "`POST`-Request sent: `/api/v1/triggers`"
+msgstr "Richiesta `POST` inviata: `/api/v1/tickets`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:58
+msgid ""
+"`condition` accepts two shapes: a flat object keyed by field name (as shown "
+"in the List example above, matching Zammad's stock triggers) and the "
+"explicit `{\"operator\": \"AND\", \"conditions\": [...]}` form used below."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:63
+msgid ""
+"In the example below, closing a ticket results in the ticket's customer "
+"receiving a confirmation email, because `recipient: \"ticket_customer\"` "
+"always resolves to the customer regardless of who performed the closing "
+"action."
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/trigger.md:64
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/tickets/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/tickets/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/post-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/tickets/post-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:85
+#, fuzzy
+#| msgid "`PUT`-Request sent: `/api/v1/users/{id}`"
+msgid "`PUT`-Request sent: `/api/v1/triggers/{id}`"
+msgstr "Richiesta `PUT` inviata: `/api/v1/users/{id}`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:88
+#: src/en/reference/rest-api/webhook.md:82
+msgid ""
+"Payload shape is identical to Create. The response is the updated record, "
+"same shape as Show/Create with `updated_at` refreshed."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/trigger.md:89
+#, no-wrap
+msgid ""
+"A partial payload works too, e.g. `{\"active\": false}` to toggle just\n"
+"that field. To update a trigger by name, look up its `id` via\n"
+"`GET /api/v1/triggers` first, then send the `PUT` request to\n"
+"`/api/v1/triggers/{id}`.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/trigger.md:96
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/put-id-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/put-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/triggers/put-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/users/put-id-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/users/put-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/trigger.md:116
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**This is a permanent removal!**\n"
+#| "\n"
+#| "Please note that removing SLA configurations cannot be undone.\n"
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing triggers cannot be undone.\n"
+msgstr ""
+"**Questa è una rimozione permanente!**\n"
+"\n"
+"Tieni presente che rimuovere configurazioni SLA non può essere annullato.\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/trigger.md:123
+#, fuzzy
+#| msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
+msgid "`DELETE`-Request sent: `/api/v1/triggers/{id}`"
+msgstr "Richiesta `DELETE` inviata: `/api/v1/users/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/trigger.md:124
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/triggers/delete-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+"\n"
+
+#. type: Title #
 #: src/en/reference/rest-api/user-access-token.md:1
 #: src/en/reference/rest-api/user-access-token.md:6
 #, fuzzy, no-wrap
@@ -30228,20 +32348,39 @@ msgstr "Richiesta `PUT` inviata: `/api/v1/users/{id}`"
 
 #. type: Fenced div block (tip)
 #: src/en/reference/rest-api/user.md:101
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**This depends on permissions**\n"
+#| "\n"
+#| "Agents can't set user passwords, roles or group permission. Instead\n"
+#| "Zammad will apply the default sign up role. Check Zammad's admin interface\n"
+#| "under _Manage > Roles_ and check which is selected as **Default at signup**.\n"
+#| "\n"
+#| "Technically, unauthenticated user creation is possible if you manage\n"
+#| "to provide the required CSRF token (out of scope of this\n"
+#| "documentation). If you don't want that, consider\n"
+#| "disabling user registration under _Settings > Security > Base_ by setting\n"
+#| "**New user accounts** to no.\n"
 msgid ""
 "**This depends on permissions**\n"
 "\n"
 "Agents can't set user passwords, roles or group permission. Instead\n"
 "Zammad will apply the default sign up role. Check Zammad's admin interface\n"
 "under _Manage > Roles_ and check which is selected as **Default at signup**.\n"
+"\n"
+"Zammad strips `group_ids` and `roles` from an agent's request before it\n"
+"writes anything, then answers `200 Ok` as if the update had gone through.\n"
+"Re-read the record to see whether the change actually landed.\n"
+"\n"
+"Agents can only edit customer-role targets. Sending a request for an\n"
+"agent-role target fails with `403 Not authorized` and changes nothing.\n"
 msgstr ""
 "**Questo dipende dai permessi**\n"
 "\n"
 "Gli agenti non possono impostare password utente, ruoli o permessi di gruppo.\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/user.md:109
+#: src/en/reference/rest-api/user.md:116
 #, no-wrap
 msgid ""
 "\n"
@@ -30265,7 +32404,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/user.md:126
+#: src/en/reference/rest-api/user.md:133
 #, no-wrap
 msgid ""
 "**This is a permanent removal**\n"
@@ -30278,7 +32417,7 @@ msgstr ""
 "Tieni presente che rimuovere utenti non può essere annullato. Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:137
+#: src/en/reference/rest-api/user.md:144
 msgid ""
 "Technically, you can delete users via `/api/v1/users/{id}`. However, we "
 "strongly encourage you to use the data privacy in Zammad's UI or the data "
@@ -30289,24 +32428,24 @@ msgstr ""
 "raccomandiamo vivamente."
 
 #. type: Title ###
-#: src/en/reference/rest-api/user.md:138
+#: src/en/reference/rest-api/user.md:145
 #, fuzzy, no-wrap
 #| msgid "Via Data Privacy Endpoint"
 msgid "Via data privacy endpoint"
 msgstr "Tramite endpoint privacy dati"
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:141
+#: src/en/reference/rest-api/user.md:148
 msgid "Required permission: `admin.data_privacy`"
 msgstr "Permesso richiesto: `admin.data_privacy`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:143
+#: src/en/reference/rest-api/user.md:150
 msgid "`POST`-Request sent: `/api/v1/data_privacy_task`"
 msgstr "Richiesta `POST` inviata: `/api/v1/data_privacy_task`"
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/user.md:144
+#: src/en/reference/rest-api/user.md:151
 #, no-wrap
 msgid ""
 "\n"
@@ -30330,28 +32469,275 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/reference/rest-api/user.md:159
+#: src/en/reference/rest-api/user.md:166
 #, fuzzy, no-wrap
 #| msgid "Via User Endpoint <Badge type=\"danger\" text=\"not recommended\" />"
 msgid "Via user endpoint <Badge type=\"danger\" text=\"not recommended\" />"
 msgstr "Tramite endpoint utente <Badge type=\"danger\" text=\"non consigliato\" />"
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:162
+#: src/en/reference/rest-api/user.md:169
 msgid "Required permission: `admin.user`"
 msgstr "Permesso richiesto: `admin.user`"
 
 #. type: Plain text
-#: src/en/reference/rest-api/user.md:164
+#: src/en/reference/rest-api/user.md:171
 msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
 msgstr "Richiesta `DELETE` inviata: `/api/v1/users/{id}`"
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/user.md:165
+#: src/en/reference/rest-api/user.md:172
 #, no-wrap
 msgid ""
 "\n"
 "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+"\n"
+
+#. type: Title #
+#: src/en/reference/rest-api/webhook.md:1
+#: src/en/reference/rest-api/webhook.md:6
+#, no-wrap
+msgid "Webhook"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/webhook.md:8
+#, no-wrap
+msgid ""
+"Webhooks are referenced by [triggers](/en/reference/rest-api/trigger) via\n"
+"the `notification.webhook` perform action\n"
+"(`{\"notification.webhook\": {\"webhook_id\": <id>}}`). Create the webhook\n"
+"first, then point one or more triggers at its `id`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:18
+#: src/en/reference/rest-api/webhook.md:36
+#: src/en/reference/rest-api/webhook.md:48
+#: src/en/reference/rest-api/webhook.md:77
+#: src/en/reference/rest-api/webhook.md:107
+#, fuzzy
+#| msgid "Required permission: `admin`"
+msgid "Required permission: `admin.webhook`"
+msgstr "Permesso richiesto: `admin`"
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:20
+#, fuzzy
+#| msgid "`GET`-Request sent: `/api/v1/links`"
+msgid "`GET`-Request sent: `/api/v1/webhooks`"
+msgstr "Richiesta `GET` inviata: `/api/v1/links`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:21
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/get-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/webhook.md:27
+#, no-wrap
+msgid ""
+"`signature_token`, `basic_auth_password` and `bearer_token` are returned\n"
+"as `**********` once they're set. The API never returns the stored\n"
+"secrets. Fields that aren't set are returned as `null`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:38
+#, fuzzy
+#| msgid "`GET`-Request sent: `/api/v1/users/{id}`"
+msgid "`GET`-Request sent: `/api/v1/webhooks/{id}`"
+msgstr "Richiesta `GET` inviata: `/api/v1/users/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:39
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/get-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/roles/get-id-res.json\n"
+"\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:50
+#, fuzzy
+#| msgid "`POST`-Request sent: `/api/v1/users`"
+msgid "`POST`-Request sent: `/api/v1/webhooks`"
+msgstr "Richiesta `POST` inviata: `/api/v1/users`"
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/webhook.md:51
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/post-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/post-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/post-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/post-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/post-res.json\n"
+"\n"
+
+#. type: Fenced div block (info)
+#: src/en/reference/rest-api/webhook.md:67
+#, no-wrap
+msgid ""
+"`ssl_verify` matters for `https://` endpoints, set it `true` to actually\n"
+"validate the endpoint's TLS certificate. It only makes sense to set it\n"
+"`false` for a plain `http://` endpoint, which has no certificate to\n"
+"verify in the first place.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:79
+#, fuzzy
+#| msgid "`PUT`-Request sent: `/api/v1/users/{id}`"
+msgid "`PUT`-Request sent: `/api/v1/webhooks/{id}`"
+msgstr "Richiesta `PUT` inviata: `/api/v1/users/{id}`"
+
+#. type: Fenced div block (tip)
+#: src/en/reference/rest-api/webhook.md:83
+#, no-wrap
+msgid ""
+"A partial payload works too, e.g. `{\"active\": false}` to toggle just\n"
+"that field.\n"
+msgstr ""
+
+#. type: Fenced div block (details|tabs key:reqres)
+#: src/en/reference/rest-api/webhook.md:88
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Request\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/put-id-req.json\n"
+#| "\n"
+#| "=== Response\n"
+#| "\n"
+#| "<<< @/fixtures/rest-api/roles/put-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"=== Request\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/put-id-req.json\n"
+"\n"
+"=== Response\n"
+"\n"
+"<<< @/fixtures/rest-api/webhooks/put-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"=== Richiesta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-req.json\n"
+"\n"
+"=== Risposta\n"
+"\n"
+"<<< @/fixtures/rest-api/roles/put-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (danger)
+#: src/en/reference/rest-api/webhook.md:108
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**This is a permanent removal!**\n"
+#| "\n"
+#| "Please note that removing SLA configurations cannot be undone.\n"
+msgid ""
+"**This is a permanent removal**\n"
+"\n"
+"Please note that removing webhooks cannot be undone.\n"
+msgstr ""
+"**Questa è una rimozione permanente!**\n"
+"\n"
+"Tieni presente che rimuovere configurazioni SLA non può essere annullato.\n"
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:118
+msgid ""
+"A webhook that is still referenced by the `perform` action of another object "
+"(e.g. a [trigger](/en/reference/rest-api/trigger)) can't be deleted. The API "
+"responds with `422 Unprocessable Entity` and lists the referencing objects. "
+"Remove the reference first."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/webhook.md:120
+#, fuzzy
+#| msgid "`DELETE`-Request sent: `/api/v1/users/{id}`"
+msgid "`DELETE`-Request sent: `/api/v1/webhooks/{id}`"
+msgstr "Richiesta `DELETE` inviata: `/api/v1/users/{id}`"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:121
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/delete-id-res.json\n"
+"\n"
+msgstr ""
+"\n"
+"<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+"\n"
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/webhook.md:127
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "<<< @/fixtures/rest-api/users/delete-id-res.json\n"
+#| "\n"
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/webhooks/delete-referenced-res.json\n"
 "\n"
 msgstr ""
 "\n"
@@ -35790,12 +38176,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:87
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "For best results, set up the LDAP integration to make sure\n"
+#| "your Active Directory and Zammad user accounts are always in sync. You\n"
+#| "can find it in Zammad's admin interface under\n"
+#| "_Settings > Security > Third-party Applications_.\n"
 msgid ""
 "For best results, set up the LDAP integration to make sure\n"
 "your Active Directory and Zammad user accounts are always in sync. You\n"
 "can find it in Zammad's admin interface under\n"
-"_Settings > Security > Third-party Applications_.\n"
+"_System > Integrations > LDAP_.\n"
 msgstr ""
 "Per risultati ottimali, configura l'integrazione LDAP per assicurarti\n"
 "che il tuo Active Directory e Zammad.\n"
@@ -36599,9 +38990,12 @@ msgstr "Passo 3: Abilita SSO in Zammad"
 
 #. type: Plain text
 #: src/en/tutorials/sso-kerberos.md:503
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
+#| "_Settings > Security > Third-party Applications_\n"
 msgid ""
-"Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
+"Next, enable \"Authentication via SSO\" in Zammad's admin interface under\n"
 "_Settings > Security > Third-party Applications_\n"
 msgstr ""
 "Successivamente, abilita \"Autenticazione tramite SSO\" nel Pannello di amministrazione di Zammad sotto\n"
@@ -37424,6 +39818,60 @@ msgid ""
 "  RequestHeader set X_FORWARDED_PROTO 'https'\n"
 "  RequestHeader set X-Forwarded-Ssl on\n"
 msgstr ""
+
+#~ msgid "Choose the language in which Zammad's UI is displayed."
+#~ msgstr ""
+#~ "Scegli la lingua in cui viene visualizzata l'interfaccia utente di Zammad."
+
+#~ msgid ""
+#~ "The Zammad stack can be customized by loading additional scenario files "
+#~ "for common use cases. For example, you can deploy the stack with an "
+#~ "included Nginx Proxy Manager (NPM) or with disabled PostgreSQL or "
+#~ "Elasticsearch services, in case you already have these services running."
+#~ msgstr ""
+#~ "Lo stack Zammad può essere personalizzato caricando file di scenario "
+#~ "aggiuntivi per casi d'uso comuni."
+
+#~ msgid ""
+#~ "Please see the [Docker Compose scenarios page](/en/reference/docker-"
+#~ "compose-scenarios)."
+#~ msgstr ""
+#~ "Consulta la [pagina degli scenari Docker Compose](/it/reference/docker-"
+#~ "compose-scenarios)."
+
+#~ msgid ""
+#~ "To adjust the stack and settings, use [Docker specific environment "
+#~ "variables](/en/reference/environment-variables)."
+#~ msgstr ""
+#~ "Per regolare lo stack e le impostazioni, utilizzare le [variabili "
+#~ "d'ambiente specifiche di Docker](/it/reference/environment-variables)."
+
+#, no-wrap
+#~ msgid ""
+#~ "Ensure to provide `data_option`. Zammad is very picky if you leave out\n"
+#~ "this attribute. Please note that changing the object type _after_\n"
+#~ "creation is not possible.\n"
+#~ msgstr ""
+#~ "Assicurati di fornire `data_option`. Zammad è molto esigente se ometti\n"
+#~ "questo attributo.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "**This depends on permissions**\n"
+#~ "\n"
+#~ "Agents can't set user passwords, roles or group permission. Instead\n"
+#~ "Zammad will apply the default sign up role. Check Zammad's admin interface\n"
+#~ "under _Manage > Roles_ and check which is selected as **Default at signup**.\n"
+#~ msgstr ""
+#~ "**Questo dipende dai permessi**\n"
+#~ "\n"
+#~ "Gli agenti non possono impostare password utente, ruoli o permessi di gruppo.\n"
+
+#~ msgid ""
+#~ "Inline images can be used by providing data URIs in your HTML markup."
+#~ msgstr ""
+#~ "Le immagini inline possono essere usate fornendo data URI nel tuo markup "
+#~ "HTML."
 
 #, fuzzy, no-wrap
 #~| msgid "Insert Knowledge Base Article"
