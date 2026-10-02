@@ -5,306 +5,360 @@ title: 'Knowledge Base'
 
 # Knowledge Base
 
-The knowledge base is Zammad's built-in library for FAQs, how-tos and
-internal documentation. Customers browse published answers for self-service,
-agents use them as a reference or insert them directly into ticket replies.
+Die Knowledge Base ist die in Zammad integrierte Bibliothek für FAQs,
+Anleitungen und interne Dokumentation. Kunden durchsuchen die
+veröffentlichten Antworten zur eigenen Problemlösung, während Agenten diese
+als Nachschlagewerk nutzen oder direkt in Ticket-Antworten einfügen.
 
-![Screenshot shows a knowledge base category with its subcategories and
-answers](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)
+![Der Screenshot zeigt eine Kategorie der Knowledge Base mit ihren
+Unterkategorien und
+Antworten](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)
 
 ## Grundlagen
 
-Your administrator has to activate the knowledge base and grant you the
-reader or editor permission before you can work with it. Whether you can
-read internal answers or edit content depends on this configuration. Zammad
-supports one knowledge base per system, which can hold content in several
-languages. To open the knowledge base, click on **Knowledge Base** in the
-primary navigation.
+Ihr Administrator muss die Knowledge Base aktivieren und Ihnen die
+Berechtigung als Leser oder Bearbeiter erteilen, bevor Sie damit arbeiten
+können. Ob Sie interne Antworten lesen oder Inhalte bearbeiten können, hängt
+von dieser Konfiguration ab. Zammad unterstützt eine Knowledge Base pro
+System, die Inhalte in mehreren Sprachen enthalten kann. Um die Knowledge
+Base zu öffnen, klicken Sie in der primären Navigation auf **Knowledge
+Base**.
 
-### Structure
+### Struktur
 
-The knowledge base is built from two kinds of content. **Categories** work
-like folders in a file system: they group content, can contain further
-subcategories and each one needs a title and an icon. **Answers** are the
-pages or articles themselves and have a title plus rich content, living
-inside a category.
+Die Knowledge Base besteht aus zwei Arten von Inhalten. **Kategorien**
+funktionieren wie Ordner in einem Dateisystem: Sie gruppieren Inhalte,
+können weitere Unterkategorien enthalten und benötigen jeweils einen Titel
+sowie ein Symbol. **Antworten** sind die Seiten bzw. Artikel selbst und
+bestehen aus einem Titel sowie diversen Inhalten, die einer Kategorie
+zugeordnet sind.
 
-### Multiple languages
+### Mehrere Sprachen
 
-If your administrator enabled several locales for the knowledge base, an
-answer can exist in more than one language, one translation per language. To
-switch the language, use the selector in the top bar to read or edit another
-language.  An answer that has no translation in the selected language yet
-opens in an empty state in the editor.
+Falls Ihr Administrator mehrere Sprachen für die Knowledge Base
+freigeschaltet hat, kann eine Antwort in mehr als einer Sprache vorliegen,
+wobei pro Sprache jeweils eine Übersetzung möglich ist. Um die Sprache zu
+wechseln, nutzen Sie die Auswahl in der oberen Leiste, um eine andere
+Sprache anzuschauen oder zu bearbeiten. Eine Antwort, für die noch keine
+Übersetzung in der ausgewählten Sprache vorliegt, wird im Editor als leer
+angezeigt.
 
 ### Sichtbarkeit
 
-Every answer has one of four visibility states. The state is shown as a
-colored icon on the answer and on its category tile:
+Jede Antwort weist eine von vier Sichtbarkeiten auf. Dieser
+Sichtbarkeits-Status wird als farbiges Symbol auf der Antwort und auf der
+zugehörigen Kategorie-Kachel angezeigt:
 
-| Color | Visibility | Who can see it                                        |
-|-------|------------|--------------------------------------------------------|
-| Green | Published  | Everyone, including customers on the public help site  |
-| Blue  | Internal   | Agents with knowledge base reader permission           |
-| Gray  | Draft      | Editors only                                           |
-| Gray  | Archived   | Editors only                                           |
+| Farbe | Sichtbarkeit     | Wer kann es sehen                                        |
+|-------|-----------|--------------------------------------------------------|
+| Grün | Veröffentlicht | Alle, einschließlich Kunden in der öffentlichen Hilfe-Website  |
+| Blau  | Intern  | Agenten mit Leseberechtigung für die Knowledge Base           |
+| Grau  | Entwurf     | Nur Bearbeiter                                           |
+| Grau  | Archiviert  | Nur Bearbeiter                                           |
 
-When viewing or editing an answer, a badge in the top bar shows you the
-current or planned (scheduled) visibility too.
+Wenn Sie eine Antwort anzeigen oder bearbeiten, zeigt Ihnen ein Symbol in
+der oberen Leiste zudem die aktuelle oder geplante Sichtbarkeit an.
 
-### Use in tickets
+### Verwendung in Tickets
 
-The knowledge base unfolds part of its value inside tickets: insert an
-answer into a reply with [[?]][[?]], link related answers to a ticket and
-let AI suggest or draft knowledge base answers based on the ticket
-content. These workflows are covered in [Insert knowledge base
-article](/en/documentation/use/advanced-features#insert-knowledge-base-article)
-and in the [knowledge base
-assistant](/en/documentation/use/guides/ai#knowledge-base-assistant) section
-of the AI guide.
+Die Knowledge Base entfaltet einen Teil ihres Nutzens innerhalb von Tickets:
+Fügen Sie eine Antwort mithilfe von [[?]][[?]] in einen Artikel ein,
+verknüpfen Sie relevante Antworten mit einem Ticket und lassen Sie die KI
+auf Grundlage des Ticketinhalts Antworten aus der Knowledge Base vorschlagen
+oder entwerfen. Diese Abläufe werden in [Knowledge Base-Artikel
+einfügen](/de/documentation/use/advanced-features#insert-knowledge-base-article)
+sowie in [Knowledge
+Base-Assistent](/de/documentation/use/guides/ai#knowledge-base-assistant)
+des KI-Leitfadens behandelt.
 
-## Read the knowledge base
+## Die Knowledge Base lesen
 
-### Browse
+### Anschauen
 
-The knowledge base home shows one tile for every top-level category,
-arranged in a grid. Each tile shows the category icon, its title, its
-publication state and two counts: the number of subcategories and the number
-of answers it contains across all subcategories.
+Auf der Startseite der Knowledge Base wird für jede Kategorie der obersten
+Ebene eine Kachel in einem Raster angezeigt. Jede Kachel zeigt das
+Kategoriesymbol, den Titel, den Status der Veröffentlichung sowie zwei
+Zahlen an: die Anzahl der Unterkategorien und die Anzahl der Antworten, die
+in der Kategorie und allen Unterkategorien enthalten sind.
 
-To open a category, simply click on its tile. Its subcategories appear as
-tiles on top, its answers below them as a list. Select an answer to read
-it. Use the back and forward buttons in the top bar to jump between previous
-and next answers inside the same category.
+Um eine Kategorie zu öffnen, klicken Sie einfach auf die entsprechende
+Kachel. Die Unterkategorien werden oben als Kacheln angezeigt, die Antworten
+darunter als Liste. Wählen Sie eine Antwort aus, um sie zu lesen. Verwenden
+Sie die Schaltflächen für die nächste und vorherige Antwort in der oberen
+Leiste, um zwischen vorherigen und nächsten Antworten in dieser Kategorie zu
+wechseln.
 
-Use the search bar on top to search the knowledge base. Use the language
-selector to switch between translated content.  The knowledge base icon at
-the start of the breadcrumb in the top bar takes you back to the knowledge
-base home. The preview button with the tooltip **View public knowledge
-base** on the right side of the top bar shows the knowledge base as your
-customers see it.
+Verwenden Sie die Suchleiste oben, um die Knowledge Base zu durchsuchen. Mit
+der Sprachauswahl können Sie zwischen den übersetzten Inhalten wechseln. Das
+Symbol der Knowledge Base am Anfang der Pfad-Navigation in der oberen Leiste
+führt Sie zurück zur Startseite der Knowledge Base. Die
+Vorschau-Schaltfläche mit dem Tooltip **Öffentliche Knowledge Base
+anzeigen** auf der rechten Seite der oberen Leiste zeigt die Knowledge Base
+so an, wie sie Ihren Kunden angezeigt wird.
 
 ### Suche
 
-The search bar on top of the knowledge base searches answer titles and
-content as well as category titles. When you start the search from within a
-category, only this category and its subcategories are searched.
+Die Suchleiste oben in der Knowledge Base durchsucht sowohl die Titel und
+Inhalte der Antworten als auch die Titel der Kategorien. Wenn Sie die Suche
+innerhalb einer Kategorie starten, wird nur diese Kategorie und ihre
+Unterkategorien durchsucht.
 
-Search terms support Elasticsearch syntax. All terms have to match and plain
-terms also match word beginnings, so `refund` finds `refunds`. To filter by
-a field, name the field in your search:
+Suchbegriffe erlauben die Verwendung von Elasticsearch-Syntax. Alle
+Suchbegriffe müssen übereinstimmen und einfache Suchbegriffe liefern auch
+Treffer wenn sie einem Wortanfang entsprechen. So findet die Suchanfrage
+`refund` auch die Ergebnisse `refunds`. Um nach einem spezifischen Feld zu
+filtern, geben Sie den Feldnamen in Ihrer Suche an:
 
-| Example                   | Finds                                   |
+| Beispiel                   | Findet                                   |
 |---------------------------|------------------------------------------|
-| `created_at:>now-14d`     | Answers created within the last 14 days  |
-| `edited_at:>now-3d`       | Answers updated within the last 3 days   |
-| `tags:ai-generated`       | Answers tagged `ai-generated`            |
-| `publication_state:draft` | All draft answers                        |
+| `created_at:>now-14d`    | Antworten, die in den letzten 14 Tagen erstellt wurden  |
+| `edited_at:>now-3d`      | Antworten, die innerhalb der letzten 3 Tage aktualisiert wurden   |
+| `tags:ai-generated`      | Antworten mit dem Tag `ai-generated` versehen sind           |
+| `publication_state:draft` | Alle Antwortentwürfe                        |
 
-The `tags:` and `publication_state:` fields require Elasticsearch. Searches
-that name a field match exactly and do not use prefix matching.
+Die `tags:` und `publication_state:` Felder erfordern
+Elasticsearch. Suchanfragen, bei denen ein spezifisches Feld angegeben wird,
+müssen exakt übereinstimmen; es findet kein Präfix-Matching statt.
 
-Select the light bulb in the search bar for suggested searches. It offers
-the most common filters as one-click shortcuts and a link to this
-documentation.
+Wählen Sie das Glühbirnen-Symbol in der Suchleiste aus, um Suchvorschläge
+anzuzeigen. Dort finden Sie die gängigsten Filter als
+Ein-Klick-Verknüpfungen sowie einen Link zu dieser Dokumentation.
 
-Knowledge base answers also appear in the global search. In the detailed
-search, they are available as a separate search entity with title,
-visibility and update date as result columns. See
-[Search](/en/documentation/use/guides/search)  for the detailed search and
-the full Elasticsearch syntax.
+Antworten aus der Knowledge Base werden ebenfalls in der globalen Suche
+angezeigt. In der erweiterten Suche stehen sie als eigenständiger
+Suchbereich zur Verfügung, wobei Titel, Sichtbarkeit und Datum der
+Aktualisierung als Ergebnisspalten angezeigt werden. Informationen zur
+erweiterten Suche und zur vollständigen Elasticsearch-Syntax finden Sie
+unter [Suche](/de/documentation/use/guides/search).
 
-## Edit the knowledge base
+## Die Knowledge Base bearbeiten
 
 ### Kategorien
 
-![Screenshot shows the edit category flyout with title, icon and parent
-fields](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-category-flyout.png)
+![Screenshot zeigt das Bearbeitungs-Seitenmenü mit Titel, Symbol und
+übergeordneter
+Kategorie](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-category-flyout.png)
 
-To create a **category**, select the `+ Add category` card. This works on
-the knowledge base home for top-level categories as well as inside a
-category for subcategories. Another way to create a new category inside
-another category is to use the ::a:: button on the category tile and select
-**Add sub-category**.
+Um eine **Kategorie** anzulegen, wählen Sie die Karte `+ Kategorie
+hinzufügen` Kachel aus. Dies funktioniert sowohl auf der Startseite der
+Knowledge Base für Kategorien der obersten Ebene als auch innerhalb einer
+Kategorie für Unterkategorien. Eine weitere Möglichkeit, eine neue Kategorie
+innerhalb einer anderen Kategorie anzulegen, besteht darin, die Schaltfläche
+::a:: auf einer Kategorie-Kachel zu verwenden und **Unterkategorie
+hinzufügen** auszuwählen.
 
-Each category consists of a title and an icon. Icons help users recognize
-categories at a glance, so pick the one that fits the content best.
+Jede Kategorie besteht aus einem Titel und einem Symbol. Symbole helfen den
+Benutzern, Kategorien auf einen Blick zu erkennen; wählen Sie daher das
+Symbol aus, das am besten zum Inhalt passt.
 
-To edit a category, click the ::a:: menu on its tile and select **Edit
-category** or use the identical button on the top of the right sidebar when
-inside a category.
+Um eine Kategorie zu bearbeiten, klicken Sie auf das ::a::-Menü auf der
+entsprechenden Kachel und wählen Sie **Kategorie bearbeiten** oder verwenden
+Sie die entsprechende Schaltfläche oben in der rechten Seitenleiste, wenn
+Sie sich in einer Kategorie befinden.
 
-### Category permissions
+### Kategorie-Berechtigungen
 
-The category flyout contains a **Permissions** matrix that assigns
-individual roles their own access level to a category. Three levels are
-available: **Editor** to read and edit the content of the category,
-**Reader** to read it including internally published answers and **None** to
-hide it from the role (published answers are always visible in the published
-knowledge base). Roles without the knowledge base reader or editor
-permission have no row in the matrix.
+Das Kategorie-Seitenmenü enthält eine Matrix unter **Berechtigungen**, die
+Zugriffe für die einzelnen Rollen zuweist. Es stehen drei Ebenen zur
+Verfügung: **Bearbeiter** zum Lesen und Bearbeiten der Inhalte der
+Kategorie, **Leser** zum Lesen der Inhalte einschließlich intern
+veröffentlichter Antworten und **Keine**, um die Inhalte vor der jeweiligen
+Rolle auszublenden (veröffentlichte Antworten sind in der veröffentlichten
+Knowledge Base stets sichtbar). Rollen ohne die Knowledge Base-Leser-oder
+-Bearbeiter-Berechtigung haben keinen Eintrag in der Matrix.
 
-By default, access is managed globally: everyone with the knowledge base
-reader permission sees all internally published answers, editors can work
-with everything. Saving a permission matrix for the knowledge base or a
-single category that differs from these defaults switches the whole
-knowledge base to granular access: content visibility then follows the
-per-category permissions. Selecting only the access a role already has by
-default is not stored and keeps the global behavior.
+Standardmäßig erfolgt die Zugriffsverwaltung global: Alle Benutzer mit der
+Berechtigung Knowledge Base-Leser sehen alle intern veröffentlichten
+Antworten, während Bearbeiter auf alle Inhalte zugreifen können. Wenn Sie
+eine Berechtigungsmatrix für die Knowledge Base oder eine einzelne Kategorie
+speichern, die von diesen Standardeinstellungen abweicht, wird die gesamte
+Knowledge Base auf granularen Zugriff umgestellt: Die Sichtbarkeit der
+Inhalte richtet sich dann nach den berechtigungsspezifischen Einstellungen
+pro Kategorie. Die Auswahl der Zugriffsrechte, über die eine Rolle
+standardmäßig bereits verfügt, behält das globale Verhalten bei.
 
-Permissions of a parent category are inherited by its subcategories. An
-inherited **Editor** or **None** level cannot be overridden in the
-subcategory, the matching options are locked. An inherited **Reader** level
-can be changed. The **Editor** option is locked for roles that only have the
-knowledge base reader permission. A change that would take away your own
-editor access to a category is rejected, regardless of your other
-roles. Published answers stay available to everyone, granular permissions
-only affect internal answers and the editing of content.
+Die Berechtigungen einer übergeordneten Kategorie werden von deren
+Unterkategorien geerbt. Eine vererbte **Bearbeiter**- oder
+**Keine**-Berechtigung kann in der Unterkategorie nicht überschrieben
+werden; die entsprechenden Optionen sind gesperrt. Eine vererbte
+**Leser**-Berechtigung kann geändert werden. Die **Bearbeiter**-Option ist
+für Rollen gesperrt, die lediglich über die Leseberechtigung verfügen. Eine
+Änderung, durch die Ihnen der eigene Bearbeitungs-Zugriff auf eine Kategorie
+entzogen würde, wird abgelehnt, unabhängig von Ihren sonstigen
+Rollen. Veröffentlichte Antworten bleiben für alle verfügbar; granulare
+Berechtigungen wirken sich nur auf interne Antworten und die Bearbeitung von
+Inhalten aus.
 
 ### Antworten
 
-To add an **answer**, open a category and select the `+ Add answer` entry or
-use the category's ::a:: menu and select **Add answer** there. An answer
-consists of a title and rich content. The editor provides the same
-formatting capabilities as the ticket article editor. See the [formatting
-section](/en/documentation/use/guides/editor#apply-formatting) of the editor
-guide for details. Tags make answers easier to find, both in the knowledge
-base search and while working on tickets.
+Um eine **Antwort** hinzuzufügen, öffnen Sie eine Kategorie und wählen Sie
+die Karte `+ Antwort hinzufügen` aus, oder nutzen Sie das ::a::-Menü der
+Kategorie und wählen Sie dort **Antwort hinzufügen** aus. Eine Antwort
+besteht aus einem Titel und diversen Inhalten. Der Editor bietet dieselben
+Formatierungsmöglichkeiten wie der Editor für Ticket-Artikel. Weitere
+Informationen finden Sie im [Abschnitt
+Formatierung](/de/documentation/use/guides/editor#apply-formatting) des
+Editor-Leitfadens. Tags erleichtern das Auffinden von Antworten, sowohl bei
+der Suche in der Knowledge Base als auch bei der Arbeit mit Tickets.
 
-Within an answer you can link to other knowledge base answers. Select the
-corresponding tool in the editor toolbar and pick the answer to link
-to. Knowledge base links stay correct when the target answer moves to
-another category.
+Innerhalb einer Antwort können Sie auf andere Antworten in der Knowledge
+Base verweisen. Wählen Sie dazu das entsprechende Symbol in der Symbolleiste
+des Editors aus und wählen Sie die Antwort aus, auf die Sie verweisen
+möchten. Verweise auf die Knowledge Base bleiben auch dann korrekt, wenn die
+Zielantwort in eine andere Kategorie verschoben wird.
 
-Answers support live collaboration: when several editors open the same
-answer for editing, Zammad shows who else is editing and keeps everyone's
-changes together.
+Antworten unterstützen die Zusammenarbeit in Echtzeit: Wenn mehrere
+Bearbeiter dieselbe Antwort bearbeiten, zeigt Zammad an, wer sonst noch
+daran arbeitet, und fasst die Änderungen aller Beteiligten zusammen.
 
-While you edit, your work is saved automatically as a draft. If you close
-the tab or the browser, come back to it later and continue where you left
-off. Until you save the answer explicitly, you can discard the unsaved
-changes.
+Während Ihrer Bearbeitung wird der aktuelle Stand automatisch als Entwurf
+gespeichert. Wenn Sie den Tab oder den Browser schließen, können Sie später
+zurückkehren und dort weitermachen, wo Sie aufgehört haben. Solange Sie die
+Antwort nicht ausdrücklich speichern, können Sie die nicht gespeicherten
+Änderungen verwerfen.
 
-The editor offers more than formatted text. You can embed images from your
-computer directly in the answer body, embed videos via a video URL and add
-file attachments which readers download from the attachment section below
-the answer.  For videos, YouTube and Vimeo work out of the box, while
-self-hosted PeerTube and MediaCMS instances can be added by your
-administrator. Readers can select an image in an answer to open a larger
-preview of it.
+Der Editor bietet mehr als nur formatierten Text. Sie können Bilder von
+Ihrem Computer direkt in den Antworttext einbetten, Videos über eine
+Video-URL einbinden und Anhänge hinzufügen, die die Leser im Anhangsbereich
+unterhalb der Antwort herunterladen können.  Bei Videos funktionieren
+YouTube und Vimeo standardmäßig, während selbst gehostete PeerTube- und
+MediaCMS-Instanzen von Ihrem Administrator hinzugefügt werden können. Leser
+können ein Bild in einer Antwort anklicken, um eine größere Vorschau davon
+zu öffnen.
 
-### Move content
+### Inhalt verschieben
 
-To move a category including its content to another parent category, open
-the ::a:: menu of the category and select **Edit category**. Pick the new
-parent in the **Parent category** field and save. The category and all its
-subcategories and answers move along.
+Um eine Kategorie einschließlich ihres Inhalts in eine andere Kategorie zu
+verschieben, öffnen Sie das ::a:: Menü der Kategorie und wählen Sie
+**Kategorie bearbeiten**. Wählen Sie im Feld **Übergeordnete Kategorie** die
+neue übergeordnete Kategorie aus und speichern Sie die Änderung. Die
+Kategorie sowie alle ihre Unterkategorien und Antworten werden dabei
+ebenfalls verschoben.
 
-To move an answer, edit the answer and select another category in the right
-sidebar.
+Um eine Antwort zu verschieben, bearbeiten Sie die Antwort und wählen Sie in
+der rechten Seitenleiste eine andere Kategorie aus.
 
-### Delete content
+### Inhalt löschen
 
-Categories and answers can be deleted from their ::a:: menus (**Delete
-category**, **Delete answer**). Deleting a category requires you to delete
-its subcategories and answers before. A deletion can't be undone so consider
-archiving an answer instead to not lose its content.
+Kategorien und Antworten können über ihre jeweiligen ::a:: Menüs gelöscht
+werden (**Kategorie löschen**, **Antwort löschen**). Bevor Sie eine
+Kategorie löschen können, müssen Sie deren Unterkategorien und Antworten
+löschen. Ein Löschvorgang kann nicht rückgängig gemacht werden; erwägen Sie
+daher stattdessen, eine Antwort zu archivieren, um deren Inhalt nicht zu
+verlieren.
 
-### Sort content
+### Inhalt sortieren
 
-![Screenshot shows the sorting bar with the mode switcher highlighted and
-the answers tab
-active](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-sort-content.png)
+![Der Screenshot zeigt die Sortierleiste mit hervorgehobenem
+Modus-Umschalter und aktivem
+Antworten-Tab](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-sort-content.png)
 
-Categories and answers can be sorted per category. Open the ::a:: menu in
-the top bar and select **Sort content**.  The sorting bar appears at the
-bottom of the screen. Inside a category, switch between the **Categories**
-and **Answers** tabs to arrange the two lists separately; the knowledge base
-home sorts its top-level categories.
+Kategorien und Antworten können pro Kategorie sortiert werden. Öffnen Sie
+das ::a:: Menü in der oberen Leiste und wählen Sie **Inhalt sortieren**. Die
+Sortierleiste erscheint am unteren Bildschirmrand. Wechseln Sie innerhalb
+einer Kategorie zwischen den Tabs **Kategorien** und **Antworten**, um die
+beiden Bereiche separat anzuordnen; auf der Startseite der Knowledge Base
+werden die Haupt-Kategorien sortiert.
 
-Three sorting modes are available for both answers and categories. Answers
-and categories can be sorted independently.
+Sowohl für Antworten als auch für Kategorien stehen drei Sortiermodi zur
+Verfügung. Antworten und Kategorien können unabhängig voneinander sortiert
+werden.
 
-| Mode                       | Effect                                                               |
+| Modus                       | Auswirkung                                                               |
 |----------------------------|----------------------------------------------------------------------|
-| **Sort alphabetically**    | Entries ordered by title, regardless of manual changes               |
-| **Sort by latest updates** | Most recently updated entries first                                  |
-| **Sort by drag & drop**    | Your hand-picked order; drag the entries into place                  |
+| **Alphabetisch sortieren** | Einträge nach Titel sortiert, unabhängig von manuellen Änderungen               |
+| **Nach neuesten Aktualisierungen sortieren** | Zuletzt aktualisierte Einträge zuerst                                  |
+| **Per Drag & Drop sortieren**   | Ihre selbst gewählte Reihenfolge; ziehen Sie die Einträge an die gewünschte Stelle                  |
 
-For categories, _latest updates_ means the category's own editorial changes
-like a renamed title or a new icon.  Changes to the answers inside it do not
-affect the category's position. Answers are dated by their content edits.
+Für Kategorien bedeutet _neueste Aktualisierung_, dass die Kategorie eigene
+Änderungen wie eine geänderte Bezeichnung oder ein neues Symbol bekommen
+hat. Änderungen an den darin enthaltenen Antworten beeinflussen nicht die
+Position der Kategorie. Antworten werden anhand der Bearbeitungen ihres
+Inhalts datiert.
 
-Select the mode, arrange the entries if needed and save. The order applies
-for everyone who views the knowledge base.
+Wählen Sie den Modus aus, ordnen Sie die Einträge bei Bedarf an und
+speichern Sie die Änderungen. Die Reihenfolge gilt für alle, die die
+Knowledge Base ansehen.
 
-### Visibility and scheduling
+### Sichtbarkeit und Planung
 
-![Screenshot shows the scheduled visibility section in the answer sidebar,
-highlighted](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-scheduled-visibility.png)
+![Screenshot zeigt die hervorgehobene geplante Sichtbarkeit in der
+Antwort-Seitenleiste](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-scheduled-visibility.png)
 
-To change the visibility of an answer, edit the answer and select the new
-visibility in the answer sidebar; it takes effect immediately when you click
-`Update`. Use drafts to prepare content that is not ready for release, and
-archiving to retire outdated answers without deleting them.
+Um die Sichtbarkeit einer Antwort zu ändern, bearbeiten Sie die Antwort und
+wählen Sie die neue Sichtbarkeit aus; die Aktualisierung wird sofort
+wirksam, sobald Sie auf `Aktualisieren` klicken. Nutzen Sie Entwürfe, um
+Inhalte vorzubereiten, die noch nicht zur Veröffentlichung bereit sind, und
+die Archivierung, um veraltete Antworten nicht mehr sichtbar für Leser zu
+machen, ohne sie zu löschen.
 
-Instead of changing the visibility manually, you can schedule visibility
-changes: an answer can be published automatically on a given date, or
-archived when it becomes obsolete. Scheduled changes are listed in the
-answer sidebar and only visible to editors. Create a new schedule by
-clicking the ::+:: button in the **Scheduled visibility** section in the
-answer edit mode.
+Anstatt die Sichtbarkeit manuell zu ändern können Sie eine Veränderung der
+Sichtbarkeit planen: Eine Antwort kann zu einem bestimmten Datum automatisch
+veröffentlicht oder archiviert werden, sobald sie veraltet ist. Geplante
+Änderungen werden in der Seitenleiste der Antwort aufgelistet und sind nur
+für Bearbeiter sichtbar. Erstellen Sie einen neuen Zeitplan, indem Sie im
+Bearbeitungsmodus der Antwort auf die Schaltfläche ::+:: im Abschnitt
+**Geplante Sichtbarkeit** klicken.
 
-Schedules follow the order of the visibility states: an answer can become
-internal, then published, then archived, each with its own date. Drafts
-cannot be scheduled and a visibility state that the answer has already
-reached cannot be scheduled again.
+Die Zeitpläne richten sich nach dem Reihenfolge der Sichtbarkeit: Eine
+Antwort kann zunächst den Status intern erhalten, anschließend
+veröffentlicht und schließlich archiviert werden, wobei jede
+Sichtbarkeitsänderung mit einem eigenen Datum versehen werden kann. Entwürfe
+können nicht geplant werden und eine Sichtbarkeit, die die Antwort bereits
+erreicht hat, kann nicht erneut geplant werden.
 
-## Advanced
+## Erweitert
 
-### Save behavior
+### Aktualisierungs-Verhalten
 
-Next to the **Create** and **Update** buttons you can choose what happens
-when you save an answer: **Stay on tab** keeps the editor open, **Close tab
-and open the answer** returns to the saved answer, **Close tab and open the
-category** returns to its category and after creating an answer **Close tab
-and add another answer** opens a fresh form in the same category. Your
-choice is remembered for future saves.
+Neben den Schaltflächen **Erstellen** und **Aktualisierung** können Sie
+wählen, was beim Speichern einer Antwort passiert: **Tab beibehalten** lässt
+den Editor öffnen, **Tab schließen und Antwort öffnen** kehrt zur
+gespeicherten Antwort zurück, **Tab schließen und Kategorie öffnen** kehrt
+zur Kategorie zurück und die Option **Tab schließen und weitere Antwort
+hinzufügen** bei der Erstellung einer neuen Antwort öffnet die Erstellung
+einer neuen Antwort in derselben Kategorie. Ihre Auswahl wird für die
+zukünftigen Speicher- und Aktualisierungsvorgänge gespeichert.
 
-### The public help site
+### Die öffentliche Hilfeseite
 
-Customers reach published answers either in Zammad itself or on the public
-help site, depending on how your administrator configured the knowledge
-base. By default, the public site is available at `/help` on your Zammad
-host, for example `https://zammad.example.com/help/en-us`. The public site
-shows exactly the published content, organized by categories and works
-without a Zammad account.
+Kunden können auf veröffentlichte Antworten entweder direkt in Zammad selbst
+oder auf der öffentlichen Hilfeseite zugreifen, je nachdem, wie Ihr
+Administrator die Knowledge Base konfiguriert hat. Standardmäßig ist die
+öffentliche Seite unter `/help` auf Ihrem Zammad-Host erreichbar, zum
+Beispiel unter `https://zammad.example.com/help/de-de`. Die öffentliche
+Seite zeigt genau die veröffentlichten Inhalte, geordnet nach Kategorien,
+und funktioniert auch ohne Zammad-Konto.
 
-To see the knowledge base as your customers see it, use the preview button
-described in the Browse section above.  Unlike the public site, the preview
-also includes unpublished answers, so you can check drafts before releasing
-them.
+Um die Knowledge Base so zu sehen, wie Ihre Kunden sie sehen, verwenden Sie
+die Vorschau-Funktion über die Schaltfläche, die im obigen Abschnitt
+beschrieben ist. Im Gegensatz zur öffentlichen Website enthält die Vorschau
+auch noch nicht veröffentlichte Antworten, sodass Sie Entwürfe vor ihrer
+Veröffentlichung überprüfen können.
 
 ### Feeds
 
-The knowledge base allows you to subscribe to the knowledge base or
-individual categories via Atom/RSS feed. This feature is optional and has to
-be enabled by your administrator.
+Die Knowledge Base erlaubt es, die gesamte Knowledge Base oder einzelne
+Kategorien per Atom-/RSS-Feed zu abonnieren. Diese Funktion ist optional und
+muss von Ihrem Administrator aktiviert werden.
 
-For **agents**: go to the level of your knowledge base you want to subscribe
-to and select **Set up RSS feed** from the ::a:: menu in the top bar, or
-from the ::a:: menu in the answer sidebar when viewing an answer. In the
-flyout you can select between a feed for the whole knowledge base and a feed
-of the category you are currently in. The feed URL includes a personal token
-and the feed includes internal answers based on your permissions. Treat the
-feed URL like a password. If it leaks, renew the token, which invalidates
-the URLs handed out so far.
+Für **Agenten**: Navigieren Sie zu der Ebene Ihrer Knowledge Base, die Sie
+abonnieren möchten, und wählen Sie **RSS-Feed einrichten** aus dem ::a::
+Menü in der oberen Leiste oder aus dem ::a:: Menü in der
+Antwort-Seitenleiste, wenn Sie eine Antwort lesen. Im Seitenmenü können Sie
+zwischen einem Feed für die gesamte Knowledge Base und einem Feed der
+Kategorie wählen, in der Sie sich gerade befinden. Die Feed-URL enthält ein
+persönliches Token, und der Feed umfasst interne Antworten entsprechend
+Ihren Berechtigungen. Behandeln Sie die Feed-URL wie ein Passwort. Sollte
+sie bekannt werden, erneuern Sie das Token, wodurch die bisherigen URLs
+ungültig werden.
 
-**Customers** on the public help site get their own feed of the published content only, without a token. They can
-download a feed file by clicking the feed icon in the footer bar.
+**Kunden**, die sich auf der öffentlichen Hilfeseite unter befinden, erhalten ausschließlich einen Feed mit den veröffentlichten Inhalten, ohne dass ein Token erforderlich ist. Sie können
+eine Feed-Datei herunterladen, indem sie auf das Feed-Symbol in der Fußzeile klicken.
 
-### Copy the title
+### Titel kopieren
 
-The ::c:: button next to the title in the top bar copies the name of the
-category or answer you are viewing to the clipboard, ready to paste it into
-a ticket or a search.
+Über die ::c:: Schaltfläche neben dem Titel in der oberen Leiste kopieren
+Sie den Namen der Kategorie oder der Antwort, die Sie gerade betrachten, in
+die Zwischenablage, sodass Sie ihn in ein Ticket oder eine Suche einfügen
+können.

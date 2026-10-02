@@ -1,93 +1,99 @@
 ---
 order: 7
-title: 'Article translation'
+title: 'Tradução de artigos'
 ---
 
-# Article translation
+# Tradução de artigos
 
-Agents can translate ticket articles into their preferred language. This
-feature is optional and has to be configured and activated by your admin.
+Os agentes podem traduzir os artigos do ticket para o idioma de sua
+preferência. Esse recurso é opcional e precisa ser configurado e ativado
+pelo seu administrador.
 
-Depending on the configuration, you can either translate single articles
-yourself or have Zammad translate every article of the tickets you open. You
-can always switch back to the original content.
+Dependendo da configuração, você pode traduzir artigos individuais por conta
+própria ou fazer o Zammad traduzir todos os artigos dos tickets que você
+abrir. Você sempre pode voltar ao conteúdo original.
 
-A translation replaces the original article content, and a note below the
-article tells you that you are reading a translation. Zammad keeps the
-formatting of the original text wherever it can, but some of it can get lost
-when the wording changes.
+Uma tradução substitui o conteúdo original do artigo, e uma nota abaixo do
+artigo informa que você está lendo uma tradução. O Zammad mantém a
+formatação do texto original sempre que possível, mas parte dela pode se
+perder quando o texto muda.
 
-Next to a translated article, Zammad shows a translate button in the article
-action row whose icon turns blue while you read the translation. This button
-lets you switch between the translation and the original content.
+Ao lado de um artigo traduzido, o Zammad mostra um botão de tradução na
+linha de ações do artigo, cujo ícone fica azul enquanto você lê a
+tradução. Esse botão permite alternar entre a tradução e o conteúdo
+original.
 
-![Screenshot shows a translated ticket
-article](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-article.png)
+![Captura de tela mostra um artigo de ticket
+traduzido](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-article.png)
 
 ::: info
-The [text highlighting feature](../advanced-features#highlight-text) is only available in the original text. Switch
-back to the original content if you want to highlight something in the article.
+O [recurso de destaque de texto](../advanced-features#highlight-text) só está disponível no texto original. Volte
+ao conteúdo original se quiser destacar algo no artigo.
 :::
 
-## Choose your language
+## Escolha o seu idioma
 
-The language button in the ticket top bar shows the language code of your
-target language for translations, for example `EN-US` and the full language
-name in a tooltip on hover. Click the button to open the language menu,
-which lists the languages the configured translation service supports. Use
-the search field if you are looking for a specific language.
+O botão de idioma na barra superior do ticket mostra o código do seu idioma
+de destino para traduções, por exemplo `EN-US`, e o nome completo do idioma
+em uma dica ao passar o mouse. Clique no botão para abrir o menu de idiomas,
+que lista os idiomas suportados pelo serviço de tradução configurado. Use o
+campo de pesquisa se estiver procurando um idioma específico.
 
-![Screenshot shows the language menu with the language list and the switch
-for translating all
-articles](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-target-menu.png)
+![Captura de tela mostra o menu de idiomas com a lista de idiomas e a chave
+para traduzir todos os
+artigos](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-target-menu.png)
 
-Zammad uses the language of your personal user settings as default. If the
-translation service doesn't support this language, it is set to Zammad's
-system default or English, if the system default isn't supported either.
+O Zammad usa o idioma das suas configurações pessoais como padrão. Se o
+serviço de tradução não suportar esse idioma, ele é definido como o padrão
+do sistema do Zammad ou, se o padrão do sistema também não for suportado,
+como inglês.
 
-Your translation target language is a personal setting: Zammad remembers it
-for your user account and applies it to every ticket you open, including
-tickets in other browser tabs.
+O seu idioma de destino para traduções é uma configuração pessoal: o Zammad
+o lembra para a sua conta de usuário e o aplica a todo ticket que você
+abrir, inclusive tickets em outras abas do navegador.
 
-The translation target language is independent of the language of Zammad's
-UI, which you set in your [personal settings](../user-profile).
+O idioma de destino para traduções é independente do idioma da interface do
+Zammad, que você define nas suas [configurações pessoais](../user-profile).
 
-## Translate a single article
+## Traduzir um único artigo
 
-Click the translate button in the article action row to translate this
-article into your target language. Click it again to switch back to the
-original text.
+Clique no botão de tradução na linha de ações do artigo para traduzir esse
+artigo para o seu idioma de destino. Clique novamente para voltar ao texto
+original.
 
-![Screenshot shows an article with the translate button in its action row,
-highlighted with a
-frame](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-button.png)
+![Captura de tela mostra um artigo com o botão de tradução na linha de
+ações, destacado com uma
+moldura](/screenshots/cypress/documentation/use/guide-translation.cy.js/translation-button.png)
 
-If the target language is not the one you want to read the article in,
-change it in the ticket top bar as described above.
+Se o idioma de destino não for aquele em que você quer ler o artigo,
+altere-o na barra superior do ticket, conforme descrito acima.
 
-## Translate every article automatically
+## Traduzir todos os artigos automaticamente
 
-If your admin enabled automatic translation for your role, the language menu
-in the ticket top bar also contains the **Translate all articles** switch
-(see screenshot under **Choose your language**). While it is on, Zammad
-translates the articles of every ticket you open, so you don't have to
-translate them one by one. Articles which are already in your target
-language keep their original text; this requires the article language
-detection to be enabled by your admin.
+Se o seu administrador ativou a tradução automática para a sua função, o
+menu de idiomas na barra superior do ticket também contém a chave
+**Translate all articles** (veja a captura de tela em **Escolha o seu
+idioma**). Enquanto ela estiver ativada, o Zammad traduz os artigos de todo
+ticket que você abrir, para que você não precise traduzi-los um por
+um. Artigos que já estão no seu idioma de destino mantêm o texto original;
+isso exige que a detecção de idioma do artigo esteja ativada pelo seu
+administrador.
 
-Turn the switch off if you prefer to translate individual articles. Like
-your target language, this setting applies to every ticket you view.
+Desative a chave se preferir traduzir artigos individualmente. Assim como o
+seu idioma de destino, essa configuração se aplica a todo ticket que você
+visualizar.
 
-If you want to read a single article in its original language again while
-the switch stays on for the others, use **Show original** on it.
+Se quiser ler um único artigo no idioma original novamente enquanto a chave
+continua ativada para os outros, use **Show original** nele.
 
-## Translation quality and feedback
+## Qualidade da tradução e feedback
 
-Translations are generated automatically, so double-check the result before
-you rely on it.
+As traduções são geradas automaticamente, então confira o resultado antes de
+confiar nele.
 
-Use the thumbs up or thumbs down buttons below a translated article to help
-your admin evaluate the quality of the translation service; a thumbs down
-opens a field where you can explain what went wrong. If you are not
-satisfied with a translation, use the regenerate button in the same row
-(tooltip **Regenerate**) to have the article translated again.
+Use os botões de joinha para cima ou para baixo abaixo de um artigo
+traduzido para ajudar o seu administrador a avaliar a qualidade do serviço
+de tradução; o joinha para baixo abre um campo onde você pode explicar o que
+deu errado. Se não estiver satisfeito com uma tradução, use o botão de gerar
+novamente na mesma linha (dica **Regenerate**) para traduzir o artigo outra
+vez.

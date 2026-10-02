@@ -9,7 +9,7 @@ If you want to publish Zammad's knowledge base under a different URL than
 the default one, you can follow our configuration example using [NPM (Nginx
 Proxy Manager)](https://nginxproxymanager.com/){target=_blank} below.
 
-## Configure Zammad
+## 2. Подесите Zammad
 
 - Go to **Knowledge Base** in Zammad's admin settings and select the
   **Custom URL** tab.

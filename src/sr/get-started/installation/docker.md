@@ -21,7 +21,7 @@ Zammad се може покренути преко Docker Compose. Можете 
 - Make sure your Docker Compose setup matches the
   [requirements](https://github.com/zammad/zammad-docker-compose#requirements){target=_blank}
   you can find in the README of Zammad's Docker Compose repository.
-- Make sure to have at least 4 GB of RAM to run the containers.
+- Обезбедите најмање 4 GB RAM за контејнере.
 - Подесите ваш сервер да правилно извршава Elasticsearch сервис:
 
   ```sh

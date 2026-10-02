@@ -20,7 +20,8 @@ verwenden, wenn Sie nicht mindestens eine 2FA-Methode eingerichtet haben.
 
 ## Einrichtung
 
-Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie sie unter _Avatar > Persönliche Einstellungen > Zwei-Faktor-Authentifizierung_
+Wenn der Systemadministrator diese Funktion aktiviert hat, können Sie sie unter
+_Avatar > Persönliche Einstellungen > Zwei-Faktor-Authentifizierung_
 einrichten. Je nach aktivierten Zwei-Faktor-Methoden sehen Sie eine oder mehrere Optionen in der Tabelle.
 
 Um eine Zwei-Faktor-Methode einzurichten, klicken Sie auf die ::+::

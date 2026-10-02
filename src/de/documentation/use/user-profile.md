@@ -58,9 +58,10 @@ Wenn Sie schnell zwischen dunklem und hellem Modus umschalten möchten, können 
 
 ### Sprache
 
-Choose the language in which Zammad's UI is displayed. Ticket translations
-use their own target language, which you select in the ticket top bar. See
-[Article translation](guides/article-translation).
+Wählen Sie die Sprache aus, in der die Benutzeroberfläche von Zammad
+angezeigt werden soll. Für die Übersetzung von Tickets wird die jeweilige
+Zielsprache verwendet, die Sie in der oberen Leiste des Tickets auswählen
+können. Siehe [Artikelübersetzung](guides/article-translation).
 
 ### Avatar
 

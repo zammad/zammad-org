@@ -1,9 +1,9 @@
 ---
 order: 10
-title: Trigger
+title: Окидач
 ---
 
-# Trigger
+# Окидач
 
 ::: info
 Triggers can run a `notification.webhook` action that references a

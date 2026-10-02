@@ -29,7 +29,7 @@ Os seguintes cenários são suportados e explicados mais abaixo:
 - [Cenários adicionais](#additional-scenarios)
   - Desativar o serviço de backup
   - Adicionar uma instância do Ollama à stack
-  - Add a LibreTranslate instance to the stack
+  - Adicionar uma instância do LibreTranslate à stack
   - Limitar recursos de hardware da stack
 
 Você pode encontrar os arquivos no [repositório Zammad Docker
@@ -41,35 +41,47 @@ Compose](https://github.com/zammad/zammad-docker-compose){{target=_blank}}.
 
 === Docker Compose
 
-To use a scenario, list its compose file in the `COMPOSE_FILE` environment variable. Either create a `.env` file or
-copy and rename the `.env.dist` in the cloned repository folder. The main compose file must be specified first,
-followed by one or more scenarios, separated by a colon (`:`). The files are applied in the order given. Replace the
-placeholder in curly brackets with the filename of the scenario you want to use.
+Para usar um cenário, liste o arquivo compose dele na variável de ambiente `COMPOSE_FILE`. Crie um arquivo `.env` ou
+copie e renomeie o `.env.dist` na pasta do repositório clonado. O arquivo compose principal deve ser especificado primeiro,
+seguido por um ou mais cenários, separados por dois-pontos (`:`). Os arquivos são aplicados na ordem informada. Substitua o
+espaço reservado entre chaves pelo nome do arquivo do cenário que você quer usar.
 
-**Example with two scenario placeholders:**
+**Exemplo com dois espaços reservados de cenário:**
 
 ``` sh
-COMPOSE_FILE=docker-compose.yml:scenarios/{scenario you want to use}.yml:scenarios/{another scenario you want to use}.yml
+COMPOSE_FILE=docker-compose.yml:scenarios/{cenário que você quer usar}.yml:scenarios/{outro cenário que você quer usar}.yml
 ```
 
-After specifying the scenarios, start the stack with `docker compose up -d`.
+Depois de especificar os cenários, inicie a stack com `docker compose up -d`.
 
 ::: info
 
-When using the `COMPOSE_FILE` variable, the `docker-compose.override.yml` is not automatically picked up. If you want
-to use it, make sure to append it to the environment variable's list.
+Ao usar a variável `COMPOSE_FILE`, o `docker-compose.override.yml` não é carregado automaticamente. Se você quiser
+usá-lo, certifique-se de acrescentá-lo à lista da variável de ambiente.
 
 :::
 
 === Portainer
 
-Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
+Siga o [guia geral de implantação](/pt_BR/get-started/installation/docker) e aplique as seguintes alterações.
 
-Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
-can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
-`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
+Abaixo do campo "Compose path", clique no botão `Add file`. Isso abre a seção "Additional paths", onde você
+pode especificar o cenário que deseja usar. Adicione `scenarios/{cenário que você quer usar}.yml` e substitua a última parte entre
+`{}` pelo nome de um dos arquivos de cenário. Você pode até combinar cenários adicionando caminhos adicionais.
 
-![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)
+![Configuração de caminhos adicionais do Portainer](/screenshots/get-started/installation/portainer-additional-paths.png)
+
+=== Docker Compose
+
+Siga as duas primeiras etapas do [guia geral de implantação](/pt_BR/get-started/installation/docker). Para iniciar a stack com
+um ou mais cenários adicionais, use o seguinte comando para a etapa 3, na pasta do repositório clonado:
+
+``` sh
+docker compose -f docker-compose.yml -f scenarios/{cenário que você quer usar}.yml up -d
+```
+
+Substitua a parte entre `{}` pelo nome do arquivo de um dos arquivos de cenário. Você pode até combinar os cenários
+adicionando arquivos adicionais de acordo com o exemplo acima.
 
 ::::
 
@@ -208,61 +220,61 @@ os recursos de IA imediatamente.
 Para usá-lo no Zammad, adicione o nome do serviço e a porta
 (`http://ollama:11434`) à configuração do provedor.
 
-### Add LibreTranslate
+### Adicionar o LibreTranslate
 
-You can run an additional
-[LibreTranslate](https://libretranslate.com/){target=_blank} container to
-power Zammad's article translation on your own hardware. For details on the
-integration itself, see the translation services section of the admin
-documentation.
+Você pode executar um container adicional do
+[LibreTranslate](https://libretranslate.com/){target=_blank} para fornecer a
+tradução de artigos do Zammad no seu próprio hardware. Para detalhes sobre a
+integração em si, veja a seção de serviços de tradução da documentação de
+administração.
 
-To deploy a LibreTranslate container inside the Zammad stack, use the
-scenario file `scenarios/add-libretranslate.yml`. The service doesn't
-publish any ports to the host; Zammad reaches it inside the stack network as
+Para implantar um container LibreTranslate dentro da stack do Zammad, use o
+arquivo de cenário `scenarios/add-libretranslate.yml`. O serviço não publica
+nenhuma porta para o host; o Zammad o acessa dentro da rede da stack como
 `http://libretranslate:5000`.
 
 ::: tip
 
-The first start takes a while, as the container downloads the language models before the service becomes available.
-The models are kept in a Docker volume, so they survive stack restarts.
+A primeira inicialização demora um pouco, pois o container baixa os modelos de idioma antes que o serviço fique disponível.
+Os modelos ficam armazenados em um volume do Docker, então sobrevivem a reinicializações da stack.
 
 :::
 
-The scenario supports the following environment variables:
+O cenário suporta as seguintes variáveis de ambiente:
 
 LT_LOAD_ONLY
-: Comma-separated list of languages to load, e.g. `en,de,fr`. If unset, all language models are downloaded, which can
-  take minutes on cold starts.
+: Lista de idiomas a carregar, separados por vírgula, por exemplo `en,de,fr`. Se não for definida, todos os modelos de idioma
+  são baixados, o que pode levar minutos em inicializações a frio.
 
 LT_UPDATE_MODELS
-: Set to `true` to check for updated language models on every stack startup. Only models with a newer available
-  version are redownloaded. Without it, the models are downloaded on the first start only.
+: Defina como `true` para verificar modelos de idioma atualizados a cada inicialização da stack. Somente modelos com uma
+  versão mais nova disponível são baixados novamente. Sem isso, os modelos são baixados apenas na primeira inicialização.
 
 LT_API_KEYS
-: Set to `true` to enable API key support. Each key carries its own allowed requests per minute. To issue a key,
-  start the service and run:
+: Defina como `true` para ativar o suporte a chaves de API. Cada chave tem seu próprio limite de solicitações por minuto.
+  Para emitir uma chave, inicie o serviço e execute:
 
   ``` sh
   docker compose exec libretranslate ltmanage keys add 120
   ```
 
-  The number is the allowed requests per minute for this key. The command prints the generated key, which is a UUID
-  created by LibreTranslate itself. You can also provide your own key with the `--key` option instead.
+  O número é o limite de solicitações por minuto para essa chave. O comando exibe a chave gerada, que é um UUID
+  criado pelo próprio LibreTranslate. Você também pode fornecer sua própria chave com a opção `--key`.
 
 LT_REQUIRE_API_KEY_SECRET
-: Set to `true` to make API keys mandatory for all requests. Requires
+: Defina como `true` para tornar as chaves de API obrigatórias em todas as solicitações. Requer
   `LT_API_KEYS=true`.
 
 ::: info
 
-LibreTranslate supports many more options. They are described in the
-[official documentation](https://docs.libretranslate.com/){target=_blank}, which also lists the environment variables
-the container accepts.
+O LibreTranslate suporta muitas outras opções. Elas estão descritas na
+[documentação oficial](https://docs.libretranslate.com/){target=_blank}, que também lista as variáveis de ambiente
+aceitas pelo container.
 
 :::
 
-Once the stack is up, configure the service in Zammad's admin settings (_System > Integrations > Translation services_):
-point the URL to `http://libretranslate:5000` and provide an API key if your instance requires one.
+Depois que a stack estiver no ar, configure o serviço nas configurações de administração do Zammad (_System > Integrations > Translation services_):
+aponte a URL para `http://libretranslate:5000` e informe uma chave de API, se sua instância exigir uma.
 
 ### Limitar recursos
 
@@ -280,41 +292,46 @@ de uso. Planejamos adicionar mais casos de uso comuns à stack no futuro.
 
 ## Personalizar a stack localmente
 
-The default stack fits most environments, but sometimes you need to adapt
-it: add another service, change settings or use your own files. Whichever
-applies, don't change `docker-compose.yml` itself. Keeping your changes in
-separate files lets `git pull` update the stack without conflicts.
+A stack padrão atende a maioria dos ambientes, mas às vezes é preciso
+adaptá-la: adicionar outro serviço, alterar configurações ou usar seus
+próprios arquivos. Em qualquer caso, não altere o próprio
+`docker-compose.yml`. Manter suas alterações em arquivos separados permite
+que o `git pull` atualize a stack sem conflitos.
 
-How you do this depends on what you want to achieve:
+Como fazer isso depende do que você quer alcançar:
 
-### Change settings of the existing services
+### Alterar configurações dos serviços existentes
 
-The override file changes settings of the services that the main compose
-file already defines. Create a `docker-compose.override.yml` file. Docker
-Compose [automatically loads this file and merges its changes into your
+O arquivo de override altera configurações dos serviços que o arquivo
+compose principal já define. Crie um arquivo
+`docker-compose.override.yml`. O Docker Compose [carrega automaticamente
+esse arquivo e mescla suas alterações na sua
 stack](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/){target=_blank}.
-The stack repository ships an inactive example file you can copy and adjust:
+O repositório da stack traz um arquivo de exemplo inativo que você pode
+copiar e ajustar:
 
 ``` sh
 cp docker-compose.override.yml.dist docker-compose.override.yml
 ```
 
-Loading scenarios is not supported here. To load a scenario, use the
-`COMPOSE_FILE` variable in your `.env` file, as described in the [general
-usage](#general-usage) section above.
+Carregar cenários por aqui não é suportado. Para carregar um cenário, use a
+variável `COMPOSE_FILE` no seu arquivo `.env`, conforme descrito na seção
+[uso geral](#general-usage) acima.
 
-### Add your own files
+### Adicionar seus próprios arquivos
 
-With a Docker Compose deployment done by cloning the repository, you can
-store files that belong only to your instance in the stack's `local/`
-directory, e.g. configuration snippets, custom scenario files, scripts,
-notes or certificates. Git ignores the directory's contents except for
-README.md, so `git pull` neither reports nor changes these files.
+Em uma implantação com Docker Compose feita clonando o repositório, você
+pode guardar os arquivos que pertencem apenas à sua instância no diretório
+`local/` da stack, por exemplo trechos de configuração, arquivos de cenário
+personalizados, scripts, anotações ou certificados. O Git ignora o conteúdo
+do diretório, exceto o README.md, então o `git pull` não relata nem altera
+esses arquivos.
 
-Files in `local/` are not loaded automatically. To use a custom Compose
-file, reference it from the override file or from `COMPOSE_FILE` in your
-.env file, using a path such as `./local/my-file`. Keep in mind that setting
-`COMPOSE_FILE` turns off the automatic pickup of the override file, see the
-[general usage](#general-usage) section above. Docker Compose resolves
-relative paths against the directory containing the main compose file,
-including paths used by custom scenario files in `local/`.
+Os arquivos em `local/` não são carregados automaticamente. Para usar um
+arquivo Compose personalizado, referencie-o no arquivo de override ou em
+`COMPOSE_FILE` no seu arquivo .env, usando um caminho como
+`./local/my-file`. Lembre-se de que definir `COMPOSE_FILE` desativa o
+carregamento automático do arquivo de override; veja a seção [uso
+geral](#general-usage) acima. O Docker Compose resolve caminhos relativos a
+partir do diretório que contém o arquivo compose principal, inclusive
+caminhos usados por arquivos de cenário personalizados em `local/`.

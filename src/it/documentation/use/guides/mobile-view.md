@@ -64,7 +64,7 @@ quotidiane comuni di Zammad in mobilità:
 - Modifica gli attributi del ticket
 - Modifica gli attributi del cliente
 - Modifica gli attributi dell'organizzazione
-- Track time on ticket articles
+- Traccia il tempo sugli articoli dei ticket
 
 ## Limitazioni
 

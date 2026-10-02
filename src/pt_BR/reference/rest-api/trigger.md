@@ -1,23 +1,23 @@
 ---
 order: 10
-title: Trigger
+title: Gatilho
 ---
 
-# Trigger
+# Gatilho
 
 ::: info
-Triggers can run a `notification.webhook` action that references a
-[webhook](/en/reference/rest-api/webhook) by id
-(`{"notification.webhook": {"webhook_id": <id>}}`) instead of, or
-alongside, `notification.email`. Create the webhook first, then point
-the trigger's perform action at its `id`.
+Os gatilhos podem executar uma ação `notification.webhook` que referencia um
+[webhook](/pt_BR/reference/rest-api/webhook) pelo id
+(`{"notification.webhook": {"webhook_id": <id>}}`) em vez de, ou
+junto com, `notification.email`. Crie o webhook primeiro e depois aponte
+a ação perform do gatilho para o `id` dele.
 :::
 
 ## Listar
 
-Required permission: `admin.trigger`
+Permissão necessária: `admin.trigger`
 
-`GET`-Request sent: `/api/v1/triggers`
+Solicitação `GET` enviada: `/api/v1/triggers`
 
 ::: details
 
@@ -26,19 +26,19 @@ Required permission: `admin.trigger`
 :::
 
 ::: info
-`recipient: "article_last_sender"` emails whoever wrote the triggering
-article. In this example that is always the customer, because the
-condition requires `article.sender_id` to be `2` (Customer). If an agent
-wrote the article, the agent would receive the email instead. Use
-`recipient: "ticket_customer"` (see Create below) to always target the
-customer regardless of who performed the action.
+`recipient: "article_last_sender"` envia o email para quem escreveu o artigo
+que disparou o gatilho. Neste exemplo, é sempre o cliente, porque a
+condição exige que `article.sender_id` seja `2` (Customer). Se um agente
+tivesse escrito o artigo, o agente receberia o email. Use
+`recipient: "ticket_customer"` (veja Create abaixo) para sempre direcionar ao
+cliente, independentemente de quem realizou a ação.
 :::
 
 ## Mostrar
 
-Required permission: `admin.trigger`
+Permissão necessária: `admin.trigger`
 
-`GET`-Request sent: `/api/v1/triggers/{id}`
+Solicitação `GET` enviada: `/api/v1/triggers/{id}`
 
 ::: details
 
@@ -48,18 +48,18 @@ Required permission: `admin.trigger`
 
 ## Criar
 
-Required permission: `admin.trigger`
+Permissão necessária: `admin.trigger`
 
-`POST`-Request sent: `/api/v1/triggers`
+Solicitação `POST` enviada: `/api/v1/triggers`
 
-`condition` accepts two shapes: a flat object keyed by field name (as shown
-in the List example above, matching Zammad's stock triggers) and the
-explicit `{"operator": "AND", "conditions": [...]}` form used below.
+`condition` aceita dois formatos: um objeto plano indexado pelo nome do
+campo (como mostrado no exemplo de List acima, igual aos gatilhos padrão do
+Zammad) e a forma explícita `{"operator": "AND", "conditions": [...]}` usada
+abaixo.
 
-In the example below, closing a ticket results in the ticket's customer
-receiving a confirmation email, because `recipient: "ticket_customer"`
-always resolves to the customer regardless of who performed the closing
-action.
+No exemplo abaixo, fechar um ticket faz o cliente do ticket receber um email
+de confirmação, porque `recipient: "ticket_customer"` sempre aponta para o
+cliente, independentemente de quem realizou o fechamento.
 
 :::: details
 
@@ -79,17 +79,17 @@ action.
 
 ## Atualização
 
-Required permission: `admin.trigger`
+Permissão necessária: `admin.trigger`
 
-`PUT`-Request sent: `/api/v1/triggers/{id}`
+Solicitação `PUT` enviada: `/api/v1/triggers/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Show/Create with `updated_at` refreshed.
+O formato do payload é idêntico ao de Create. A resposta é o registro
+atualizado, no mesmo formato de Show/Create, com `updated_at` atualizado.
 
 ::: tip
-A partial payload works too, e.g. `{"active": false}` to toggle just
-that field. To update a trigger by name, look up its `id` via
-`GET /api/v1/triggers` first, then send the `PUT` request to
+Um payload parcial também funciona, por exemplo `{"active": false}` para alternar apenas
+esse campo. Para atualizar um gatilho pelo nome, consulte primeiro o `id` dele via
+`GET /api/v1/triggers` e depois envie a solicitação `PUT` para
 `/api/v1/triggers/{id}`.
 :::
 
@@ -111,15 +111,15 @@ that field. To update a trigger by name, look up its `id` via
 
 ## Excluir
 
-Required permission: `admin.trigger`
+Permissão necessária: `admin.trigger`
 
 ::: danger
-**This is a permanent removal**
+**Esta é uma remoção permanente**
 
-Please note that removing triggers cannot be undone.
+Observe que remover gatilhos não pode ser desfeito.
 :::
 
-`DELETE`-Request sent: `/api/v1/triggers/{id}`
+Solicitação `DELETE` enviada: `/api/v1/triggers/{id}`
 
 ::: details
 

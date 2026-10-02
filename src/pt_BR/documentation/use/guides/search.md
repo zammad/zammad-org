@@ -20,16 +20,17 @@ detalhada e o uso da sintaxe do Elasticsearch.
 
 ## Pesquisa básica
 
-The search is located in the top left corner of the primary
-navigation. Either select it via mouse or use the keyboard shortcut
-[[s]]. After activation, you can see the tickets that were recently closed
-from your taskbar as well as your recent search queries. To search, simply
-type a term. The search then displays matching items for which you have at
-least view or read permissions, grouped by type like users and
-tickets. Selecting one of those results opens the item as tab in the
-taskbar. The number of results per type is limited: as soon as your search
-matches more than two types, each group shows up to five results. Use the
-detailed search to get the full result set.
+A pesquisa está localizada no canto superior esquerdo da navegação
+principal. Selecione-a com o mouse ou use o atalho de teclado [[s]]. Depois
+de ativada, você pode ver os tickets fechados recentemente na sua barra de
+tarefas, assim como suas consultas de pesquisa recentes. Para pesquisar,
+basta digitar um termo. A pesquisa então exibe todos os itens
+correspondentes para os quais você tem pelo menos permissão de visualização
+ou leitura, agrupados por tipo, como usuários e tickets. Selecionar um
+desses resultados abre o item como aba na barra de tarefas. O número de
+resultados por tipo é limitado: assim que sua pesquisa corresponder a mais
+de dois tipos, cada grupo mostra até cinco resultados. Use a pesquisa
+detalhada para obter o conjunto completo de resultados.
 
 Pesquisar por um termo também encontra valores que começam com ele. Por
 exemplo, pesquisar por `brooks` também encontra valores como
@@ -69,15 +70,16 @@ vice-versa.
 
 ### Limitar a pesquisa a um tipo de objeto
 
-Limit the search to an object type by using the **Search entity** tab
-selector below the search field (e.g. user or ticket). This limits the
-search to the selected object type and its related data. For example, when
-you select **Ticket**, the search also returns tickets where the owner or
-customer matches the search term. Knowledge base answers are available as an
-object type of their own, with title, visibility and update date as result
-columns. See [Knowledge
-base](/en/documentation/use/guides/knowledge-base#search) for searching
-within the knowledge base.
+Limite a pesquisa a um tipo de objeto usando o seletor de abas **Search
+entity** abaixo do campo de pesquisa (por exemplo, usuário ou ticket). Isso
+limita a pesquisa ao tipo de objeto selecionado e seus dados
+relacionados. Por exemplo, ao selecionar **Ticket**, a pesquisa também
+retorna tickets onde o responsável ou cliente corresponde ao termo de
+pesquisa. Respostas da base de conhecimento estão disponíveis como um tipo
+de objeto próprio, com título, visibilidade e data de atualização como
+colunas de resultado. Veja [Base de
+conhecimento](/pt_BR/documentation/use/guides/knowledge-base#search) para
+pesquisar dentro da base de conhecimento.
 
 ### Usar filtros avançados
 

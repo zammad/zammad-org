@@ -542,7 +542,7 @@ ihn im Anmeldebildschirm, indem Sie auf den Link "Oder von einem anderen System 
 am unteren Rand klicken.
 
 Je nach Anzahl der Benutzer, Tickets und des Zendesk-Plans kann dies eine
-eine Weile dauern.
+Weile dauern.
 
 === Per Konsole
 

@@ -1,9 +1,9 @@
 ---
 order: 10
-title: 'Lista de verificação'
+title: Checklist
 ---
 
-# Lista de verificação
+# Checklist
 
 O Zammad tem diferentes endpoints de checklist:
 
@@ -12,7 +12,7 @@ O Zammad tem diferentes endpoints de checklist:
 - [Modelos de checklist](#checklist-templates)
 
 ::: info
-_Modelos de checklist_ incluem seus itens, enquanto a _checklist
+_Modelos de checklist_ incluem seus itens, enquanto o _checklist
 padrão_ tem um endpoint de item separado.
 :::
 

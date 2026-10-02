@@ -63,7 +63,7 @@ comuns do Zammad enquanto está em movimento:
 - Modificar atributos do ticket
 - Modificar atributos do cliente
 - Modificar atributos da organização
-- Track time on ticket articles
+- Registrar tempo em artigos de ticket
 
 ## Limitações
 
@@ -74,7 +74,7 @@ visualização desktop:
 - Vincular tickets e ver tickets vinculados
 - Execução de macros
 - Histórico do ticket
-- Article translation
+- Tradução de artigos
 - Criação de modelos e rascunhos compartilhados
 
 Além disso, certos recursos foram intencionalmente omitidos para melhorar o

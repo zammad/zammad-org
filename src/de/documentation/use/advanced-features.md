@@ -87,11 +87,12 @@ kopieren/einfügen müssen.
 
 **Wie?**
 
-Use the button in the toolbar of the editor or simply write [[?]][[?]] in
-the editor. Both ways let you search for the desired knowledge base article
-by typing some characters or words. See [Knowledge
-base](/en/documentation/use/guides/knowledge-base) to learn more about
-working with the knowledge base.
+Verwenden Sie die Schaltfläche in der Symbolleiste des Editors oder
+schreiben Sie einfach [[?]][[?]] in den Editor. Auf beiden Wegen können Sie
+nach dem gewünschten Knowledge Base Artikel suchen, indem Sie einige Zeichen
+oder Wörter eingeben. Weitere Informationen zur Arbeit mit der Knowledge
+Base finden Sie unter [Knowledge
+Base](/de/documentation/use/guides/knowledge-base).
 
 ## Einen Benutzer erwähnen
 

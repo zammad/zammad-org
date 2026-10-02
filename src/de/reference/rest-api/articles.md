@@ -177,9 +177,9 @@ Telefonnotiz), verwenden Sie das Attribut `origin_by_id`. Die Berechtigung
 
 ### Artikel mit Inline-Bildern
 
-Inline images can be used by providing data URIs in your HTML markup.  In
-the response, they are listed under `inline_attachments`, while
-`attachments` only contains regular file attachments.
+Inline-Bilder können verwendet werden, indem Sie Daten-URIs in Ihrem
+HTML-Code angeben. In der Antwort werden diese unter `inline_attachments`
+aufgeführt, während `attachments` lediglich reguläre Anhänge enthält.
 
 :::: details
 

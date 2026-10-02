@@ -232,12 +232,11 @@ Datenbankmigrationen aktiv).
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Provide the full record shape shown above, not just the fields you're
-changing. Zammad is very picky if you leave out required fields: a
-payload missing `data_type` fails with an unhandled
-`undefined method 'match?' for nil` error rather than a clean
-validation error. Please note that changing the object type _after_
-creation is not possible.
+Geben Sie die oben gezeigte vollständige Datenstruktur an, nicht nur die Felder, die Sie
+ändern. Zammad reagiert sehr empfindlich, wenn Sie Pflichtfelder auslassen: Eine
+Nutzlast, in der `data_type` fehlt, führt zu einem `undefined method 'match?' for nil` Fehler
+anstatt zu einem eindeutigen Validierungsfehler. Bitte beachten Sie, dass eine Änderung des
+Objekttyps _nach_ der Erstellung nicht möglich ist.
 :::
 
 === Response

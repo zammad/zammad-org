@@ -1,28 +1,28 @@
 ---
 order: 10
-title: 'Core workflow'
+title: 'Fluxo de trabalho principal'
 ---
 
-# Core workflow
+# Fluxo de trabalho principal
 
 ::: info
-Core Workflows are different from [triggers](/en/reference/rest-api/trigger):
-they control the ticket create/edit form while someone fills it out, for
-example by restricting which values are selectable in another field. The
-form sends its current values to Zammad, which evaluates the workflows
-and returns the resulting field changes. Unlike triggers, they don't act
-on existing tickets in the background.
+Os fluxos de trabalho principais são diferentes dos [gatilhos](/pt_BR/reference/rest-api/trigger):
+eles controlam o formulário de criação/edição de ticket enquanto alguém o preenche, por
+exemplo restringindo quais valores podem ser selecionados em outro campo. O
+formulário envia seus valores atuais ao Zammad, que avalia os fluxos de trabalho
+e retorna as alterações de campo resultantes. Diferente dos gatilhos, eles não atuam
+em tickets existentes em segundo plano.
 
-Compare to [report profiles](/en/reference/rest-api/report-profile), whose
-`condition` field, unlike Core Workflow, does validate that referenced
-fields are real.
+Compare com os [perfis de relatório](/pt_BR/reference/rest-api/report-profile), cujo
+campo `condition`, diferente do fluxo de trabalho principal, valida que os campos
+referenciados realmente existem.
 :::
 
 ## Listar
 
-Required permission: `admin.core_workflow`
+Permissão necessária: `admin.core_workflow`
 
-`GET`-Request sent: `/api/v1/core_workflows`
+Solicitação `GET` enviada: `/api/v1/core_workflows`
 
 ::: details
 
@@ -31,17 +31,17 @@ Required permission: `admin.core_workflow`
 :::
 
 ::: info
-This endpoint only returns workflows with `changeable: true`. Zammad's
-built-in system workflows are not changeable and are not included, so
-the response on a fresh instance is an empty array. Show, Update and
-Delete also only operate on changeable workflows.
+Este endpoint retorna apenas fluxos de trabalho com `changeable: true`. Os fluxos
+de trabalho de sistema integrados ao Zammad não são alteráveis e não são incluídos, então
+a resposta em uma instância nova é um array vazio. Show, Update e
+Delete também operam apenas em fluxos de trabalho alteráveis.
 :::
 
 ## Mostrar
 
-Required permission: `admin.core_workflow`
+Permissão necessária: `admin.core_workflow`
 
-`GET`-Request sent: `/api/v1/core_workflows/{id}`
+Solicitação `GET` enviada: `/api/v1/core_workflows/{id}`
 
 ::: details
 
@@ -57,9 +57,9 @@ Required permission: `admin.core_workflow`
 
 ## Criar
 
-Required permission: `admin.core_workflow`
+Permissão necessária: `admin.core_workflow`
 
-`POST`-Request sent: `/api/v1/core_workflows`
+Solicitação `POST` enviada: `/api/v1/core_workflows`
 
 :::: details
 
@@ -78,24 +78,24 @@ Required permission: `admin.core_workflow`
 ::::
 
 ::: info
-Core Workflow does _not_ validate that fields referenced in
-`condition_selected` or `perform` exist. A workflow that references a
-field that doesn't exist yet is saved without error. It has no visible
-effect in the ticket form until the referenced field exists.
+O fluxo de trabalho principal _não_ valida se os campos referenciados em
+`condition_selected` ou `perform` existem. Um fluxo de trabalho que referencia um
+campo que ainda não existe é salvo sem erro. Ele não tem efeito visível
+no formulário do ticket até que o campo referenciado exista.
 :::
 
 ## Atualização
 
-Required permission: `admin.core_workflow`
+Permissão necessária: `admin.core_workflow`
 
-`PUT`-Request sent: `/api/v1/core_workflows/{id}`
+Solicitação `PUT` enviada: `/api/v1/core_workflows/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Show/Create.
+O formato do payload é idêntico ao de Create. A resposta é o registro
+atualizado, no mesmo formato de Show/Create.
 
 ::: info
-Sending the full Create payload to an existing workflow's `id` updates
-that record in place. It doesn't create a duplicate.
+Enviar o payload completo de Create para o `id` de um fluxo de trabalho existente atualiza
+esse registro no lugar. Não cria uma duplicata.
 :::
 
 :::: details
@@ -116,15 +116,15 @@ that record in place. It doesn't create a duplicate.
 
 ## Excluir
 
-Required permission: `admin.core_workflow`
+Permissão necessária: `admin.core_workflow`
 
 ::: danger
-**This is a permanent removal**
+**Esta é uma remoção permanente**
 
-Please note that removing core workflows cannot be undone.
+Observe que remover fluxos de trabalho principais não pode ser desfeito.
 :::
 
-`DELETE`-Request sent: `/api/v1/core_workflows/{id}`
+Solicitação `DELETE` enviada: `/api/v1/core_workflows/{id}`
 
 ::: details
 

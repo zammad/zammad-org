@@ -82,11 +82,11 @@ base de conhecimento e copiar/colar conteúdo.
 
 **Como?**
 
-Use the button in the toolbar of the editor or simply write [[?]][[?]] in
-the editor. Both ways let you search for the desired knowledge base article
-by typing some characters or words. See [Knowledge
-base](/en/documentation/use/guides/knowledge-base) to learn more about
-working with the knowledge base.
+Use o botão na barra de ferramentas do editor ou simplesmente escreva
+[[?]][[?]] no editor. Ambas as formas permitem pesquisar o artigo de base de
+conhecimento desejado digitando alguns caracteres ou palavras. Veja [Base de
+conhecimento](/pt_BR/documentation/use/guides/knowledge-base) para saber
+mais sobre como trabalhar com a base de conhecimento.
 
 ## Mencionar um usuário
 
@@ -160,7 +160,7 @@ olhada em [ações em massa](#bulk-actions) para saber como fazer isso.
 
 ## Checklists
 
-![Captura de tela mostra uma checklist a partir da barra lateral de
+![Captura de tela mostra um checklist a partir da barra lateral de
 checklist](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
 
 **Por quê?**
@@ -173,23 +173,23 @@ checklist](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket
 **Como?**
 
 Selecione a aba **Checklist** na barra lateral. Se você não conseguir vê-la,
-o administrador do Zammad a desativou. Você só pode adicionar ou editar uma
+o administrador do Zammad a desativou. Você só pode adicionar ou editar um
 checklist se tiver permissão para editar o ticket.
 
 Na barra lateral de checklist, você pode:
 
-- Adicionar uma checklist: seja criando uma nova clicando em `Add Empty
+- Adicionar um checklist: seja criando um novo clicando em `Add Empty
   Checklist`, seja a partir de um modelo usando `Add From a Template` (se
   você não vir o botão de modelo, não há nenhum).
-- Editar a checklist atual:
+- Editar o checklist atual:
   - Renomeá-la clicando no título ou usando o menu ::a:: no cabeçalho da
     barra lateral.
-  - Adicionar itens à checklist clicando no botão ::+::.
-  - Alterar o texto dos itens da checklist, seja clicando neles diretamente,
+  - Adicionar itens ao checklist clicando no botão ::+::.
+  - Alterar o texto dos itens do checklist, seja clicando neles diretamente,
     seja usando o menu ::a:: ao lado do item.
   - `Reorder` os itens clicando neste botão e arrastando e soltando os
     itens.
-- Excluir a checklist completa usando o menu ::a:: no cabeçalho da barra
+- Excluir o checklist completo usando o menu ::a:: no cabeçalho da barra
   lateral.
 
 Há dois recursos que não são diretamente visíveis:
@@ -200,13 +200,13 @@ Há dois recursos que não são diretamente visíveis:
   refletem o estado do ticket referenciado.
   ::: tip
   Obtenha o gancho e o número do ticket indo até o ticket desejado e usando o botão de copiar ::c:: no cabeçalho ou
-  o atalho de teclado [[.]]. Depois você pode colá-lo na checklist onde deseja incluí-lo.
+  o atalho de teclado [[.]]. Depois você pode colá-lo no checklist onde deseja incluí-lo.
   :::
-- O Zammad verifica automaticamente se todos os itens da checklist foram
+- O Zammad verifica automaticamente se todos os itens do checklist foram
   concluídos. A verificação é feita quando você define um ticket como
   "fechado". Se nem todos os itens estiverem concluídos, o Zammad solicitará
   que você trabalhe nas tarefas restantes e mantenha o ticket aberto, ou que
-  o feche mesmo assim. Ao referenciar outros tickets na sua checklist,
+  o feche mesmo assim. Ao referenciar outros tickets no seu checklist,
   apenas aqueles que estão fechados (com um círculo verde) são considerados
   concluídos.
 

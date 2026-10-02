@@ -86,7 +86,7 @@ Barra lateral de conteúdo
 : barra lateral direita na visualização do ticket, que inclui as abas da barra lateral e a
   barra lateral ativa (se aberta).
 
-Core Workflows
+Fluxos de trabalho principais
 : este recurso permite configurar campos dinâmicos e máscaras de ticket com base em
   atributos disponíveis no Zammad. Por exemplo, você pode desativar ou ocultar campos,
   torná-los visíveis com base em outros campos ou atributos, torná-los obrigatórios e

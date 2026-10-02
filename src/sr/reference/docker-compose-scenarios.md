@@ -63,13 +63,13 @@ to use it, make sure to append it to the environment variable's list.
 
 === Portainer
 
-Follow the [general deployment guide](/en/get-started/installation/docker) and apply the following changes.
+Пратите [опште упутство за инсталацију](/sr/get-started/installation/docker) и промените следеће кораке.
 
-Below the "Compose path" field, click on the `Add file` button. This opens the "Additional paths" section where you
-can specify the scenario you want to use. Add `scenarios/{scenario you want to use}.yml` and replace the last part in
-`{}` brackets with the name of one of the scenario files. You can even combine the scenarios by adding additional paths.
+Испод поља „Compose path” кликните на дугме `Add file`. Ово отвара одељак „Additional paths” где можете
+дефинисати сценарио који желите да користите. Додајте `scenarios/{назив сценарија}.yml` и замените задњи део у
+`{}` заградама називом једног од датотека сценарија. Можете чак и комбиновати сценарије уносом додатних путања.
 
-![Portainer additional paths configuration](/screenshots/get-started/installation/portainer-additional-paths.png)
+![Portainer конфигурација додатних путања](/screenshots/get-started/installation/portainer-additional-paths.png)
 
 ::::
 
@@ -215,9 +215,9 @@ power Zammad's article translation on your own hardware. For details on the
 integration itself, see the translation services section of the admin
 documentation.
 
-To deploy a LibreTranslate container inside the Zammad stack, use the
-scenario file `scenarios/add-libretranslate.yml`. The service doesn't
-publish any ports to the host; Zammad reaches it inside the stack network as
+Да бисте покренули LibreTranslate контејнер унутар Zammad стека, користите
+датотеку сценарија `scenarios/add-libretranslate.yml`. Сервис не објављује
+портове на хост серверу; Zammad може да се повеже путем интерне мреже преко
 `http://libretranslate:5000`.
 
 ::: tip

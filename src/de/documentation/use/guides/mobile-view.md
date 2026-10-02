@@ -63,7 +63,7 @@ Zammad auch unterwegs zu erledigen:
 - Ändern von Ticketattributen
 - Ändern von Kundenattributen
 - Ändern von Organisations-Attributen
-- Track time on ticket articles
+- Zeiterfassung für Ticket-Artikel
 
 ## Einschränkungen
 
@@ -74,7 +74,7 @@ vorhanden sind:
 - Tickets verknüpfen und verknüpfte Tickets anzeigen
 - Ausführung von Makros
 - Ticket-Historie
-- Article translation
+- Artikel-Übersetzung
 - Erstellung von Vorlagen und gemeinsamen Entwürfen
 
 Außerdem wurden bestimmte Features weggelassen, um Ihren Fokus auf die

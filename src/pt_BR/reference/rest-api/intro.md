@@ -133,7 +133,7 @@ usuário:
 ::::
 
 ::: tip
-Observe que Core Workflows podem restringir o acesso a atributos ou
+Observe que os fluxos de trabalho principais podem restringir o acesso a atributos ou
 valores.
 :::
 

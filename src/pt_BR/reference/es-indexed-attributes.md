@@ -98,7 +98,7 @@ Exemplo: `1`
 
 ### `checklist`
 
-Estrutura completa da checklist e seus elementos.
+Estrutura completa do checklist e seus elementos.
 
 ::: details
 

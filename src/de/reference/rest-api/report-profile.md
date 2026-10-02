@@ -1,27 +1,27 @@
 ---
 order: 10
-title: 'Report profile'
+title: Berichts-Profil
 ---
 
-# Report profile
+# Berichts-Profil
 
 ::: info
-A report profile is a saved, reusable filter/condition for Zammad's
-reporting module. It isn't an automation and doesn't do anything by
-itself. It's a named condition that shows up as a selectable view when
-generating reports with Zammad's reporting feature, scoped to whichever
-roles (`role_ids`) can see it.
+Ein Berichts-Profil ist ein gespeicherter, wiederverwendbarer Filter bzw. eine Bedingung für das
+Berichtsmodul von Zammad. Es handelt sich dabei nicht um eine Automatisierung und es führt von
+sich aus keine Aktionen aus. Es handelt sich um eine benannte Bedingung, die bei der
+Erstellung von Berichten mit der Berichtsfunktion von Zammad als auswählbare Ansicht angezeigt wird,
+wobei der Zugriff auf diejenigen Rollen beschränkt ist (`role_ids`), die diese einsehen dürfen.
 
-Compare to [core workflows](/en/reference/rest-api/core-workflow), which
-uses a similarly-shaped condition object but does not validate referenced
-fields.
+Vergleichen Sie dies mit [Core Workflows](/de/reference/rest-api/core-workflow), die
+ein ähnlich strukturiertes Bedingungsobjekt verwenden, jedoch die referenzierten
+Felder nicht validieren.
 :::
 
 ## Auflisten
 
-Required permission: `admin.report_profile`
+Erforderliche Berechtigung: `admin.report_profile`
 
-`GET`-Request sent: `/api/v1/report_profiles`
+`GET`-Request gesendet: `/api/v1/report_profiles`
 
 ::: details
 
@@ -30,16 +30,16 @@ Required permission: `admin.report_profile`
 :::
 
 ::: info
-The list returns the full record for each profile, same field set as the
-Show response below. Entry `1` (`-all-`) is Zammad's built-in default
-profile.
+Die Liste gibt den vollständigen Datensatz für jedes Profil zurück,
+mit denselben Feldern wie in der unten stehenden Show-Response.
+Der Eintrag `1` (`-all-`) ist das in Zammad integrierte Standardprofil.
 :::
 
 ## Anzeigen
 
-Required permission: `admin.report_profile`
+Erforderliche Berechtigung: `admin.report_profile`
 
-`GET`-Request sent: `/api/v1/report_profiles/{id}`
+`GET`-Request gesendet: `/api/v1/report_profiles/{id}`
 
 ::: details
 
@@ -49,9 +49,9 @@ Required permission: `admin.report_profile`
 
 ## Erstellen
 
-Required permission: `admin.report_profile`
+Erforderliche Berechtigung: `admin.report_profile`
 
-`POST`-Request sent: `/api/v1/report_profiles`
+`POST`-Request gesendet: `/api/v1/report_profiles`
 
 :::: details
 
@@ -70,17 +70,17 @@ Required permission: `admin.report_profile`
 ::::
 
 ::: info
-Role ids aren't guaranteed to be the same across instances. Look up the
-ids of the roles you need via the [roles API](/en/reference/rest-api/role)
-first instead of hard-coding them.
+Es ist nicht gewährleistet, dass die Rollen-IDs in allen Instanzen identisch sind. Schauen Sie sich
+daher zunächst die IDs der benötigten Rollen über die [Rollen-API](/de/reference/rest-api/role)
+heraus, anstatt eine Annahme zu treffen.
 :::
 
 :::: info
-Unlike core workflows, a report profile's `condition` _does_ validate
-that referenced fields are real, fully-migrated ticket fields.
-Referencing a custom field that exists but hasn't finished its schema
-migration yet (`to_create`/`to_migrate` still `true` on that field) fails
-with:
+Im Gegensatz zu Core Workflows überprüft die Berichts-Profils `condition` _nicht_,
+ob die referenzierten Felder echte, vollständig migrierte Ticketfelder sind.
+Der Verweis auf ein benutzerdefiniertes Feld, das zwar existiert, dessen Schemamigration jedoch
+noch nicht abgeschlossen ist (`to_create`/`to_migrate` weiterhin `true` ), schlägt
+mit folgender Fehlermeldung fehl:
 
 ::: details
 
@@ -91,16 +91,17 @@ with:
 
 ## Aktualisierung
 
-Required permission: `admin.report_profile`
+Erforderliche Berechtigung: `admin.report_profile`
 
-`PUT`-Request sent: `/api/v1/report_profiles/{id}`
+`PUT`-Request gesendet: `/api/v1/report_profiles/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Create's response.
+Die Struktur der Nutzlast entspricht der von Create. Die Antwort besteht aus
+dem aktualisierten Datensatz, dessen Struktur mit der Create-Response
+übereinstimmt.
 
 ::: info
-Sending the full Create payload to an existing profile's `id` updates
-that record in place. It doesn't create a duplicate.
+Das Senden der vollständigen Create-Nutzlast an die `id` eines bestehenden Profils führt zu
+dessen direkter Aktualisierung. Es wird kein Duplikat erstellt.
 :::
 
 :::: details
@@ -121,15 +122,15 @@ that record in place. It doesn't create a duplicate.
 
 ## Löschen
 
-Required permission: `admin.report_profile`
+Erforderliche Berechtigung: `admin.report_profile`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing report profiles cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Berichts-Profilen nicht rückgängig gemacht werden kann.
 :::
 
-`DELETE`-Request sent: `/api/v1/report_profiles/{id}`
+`DELETE`-Request gesendet: `/api/v1/report_profiles/{id}`
 
 ::: details
 

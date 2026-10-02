@@ -1,28 +1,28 @@
 ---
 order: 10
-title: 'Core workflow'
+title: 'Core Workflow'
 ---
 
-# Core workflow
+# Core Workflow
 
 ::: info
-Core Workflows are different from [triggers](/en/reference/rest-api/trigger):
-they control the ticket create/edit form while someone fills it out, for
-example by restricting which values are selectable in another field. The
-form sends its current values to Zammad, which evaluates the workflows
-and returns the resulting field changes. Unlike triggers, they don't act
-on existing tickets in the background.
+Core Workflows unterscheiden sich von [Triggern](/de/reference/rest-api/trigger):
+Sie steuern das Formular zum Erstellen bzw. Bearbeiten von Tickets, während es ausgefüllt wird,
+beispielsweise indem sie einschränken, welche Werte in einem anderen Feld ausgewählt werden können. Das
+Formular übermittelt seine aktuellen Werte an Zammad, das die Workflows auswertet
+und die daraus resultierenden Feldänderungen zurückgibt. Im Gegensatz zu Triggen wirken sie nicht
+im Hintergrund auf bestehende Tickets ein.
 
-Compare to [report profiles](/en/reference/rest-api/report-profile), whose
-`condition` field, unlike Core Workflow, does validate that referenced
-fields are real.
+Vergleichen Sie dies mit [Berichts-Profilen](/de/reference/rest-api/report-profile), deren `condition`
+im Gegensatz zum Core Workflow überprüft, ob die referenzierten
+Felder tatsächlich vorhanden sind.
 :::
 
 ## Auflisten
 
-Required permission: `admin.core_workflow`
+Erforderliche Berechtigung: `admin.core_workflow`
 
-`GET`-Request sent: `/api/v1/core_workflows`
+`GET`-Anfrage gesendet: `/api/v1/core_workflows`
 
 ::: details
 
@@ -31,17 +31,17 @@ Required permission: `admin.core_workflow`
 :::
 
 ::: info
-This endpoint only returns workflows with `changeable: true`. Zammad's
-built-in system workflows are not changeable and are not included, so
-the response on a fresh instance is an empty array. Show, Update and
-Delete also only operate on changeable workflows.
+Dieser Endpunkt gibt ausschließlich Workflows zurück, bei denen `changeable: true` gesetzt ist. Die
+eingebauten System-Workflows von Zammad sind nicht änderbar und werden daher nicht berücksichtigt, sodass
+die Antwort bei einer neu installierten Instanz ein leeres Array ist. Die Funktionen Show, Update und
+Delete wirken sich ebenfalls nur auf änderbare Workflows aus.
 :::
 
 ## Anzeigen
 
-Required permission: `admin.core_workflow`
+Erforderliche Berechtigung: `admin.core_workflow`
 
-`GET`-Request sent: `/api/v1/core_workflows/{id}`
+`GET`-Anfrage gesendet: `/api/v1/core_workflows/{id}`
 
 ::: details
 
@@ -57,9 +57,9 @@ Required permission: `admin.core_workflow`
 
 ## Erstellen
 
-Required permission: `admin.core_workflow`
+Erforderliche Berechtigung: `admin.core_workflow`
 
-`POST`-Request sent: `/api/v1/core_workflows`
+`POST`-Anfrage gesendet: `/api/v1/core_workflows`
 
 :::: details
 
@@ -67,35 +67,36 @@ Required permission: `admin.core_workflow`
 
 === Request
 
-<<< @/fixtures/rest-api/core_workflows/post-req.json
+<<< @/fixtures/rest-api/roles/post-req.json
 
 === Response
 
-<<< @/fixtures/rest-api/core_workflows/post-res.json
+<<< @/fixtures/rest-api/roles/post-res.json
 
 :::
 
 ::::
 
 ::: info
-Core Workflow does _not_ validate that fields referenced in
-`condition_selected` or `perform` exist. A workflow that references a
-field that doesn't exist yet is saved without error. It has no visible
-effect in the ticket form until the referenced field exists.
+Der Core Workflow validiert _nicht_, ob die in
+`condition_selected` oder `perform` referenzierten Felder
+existieren. Ein Workflow, der ein nicht existierendes Feld referenziert,
+wird ohne Fehler gespeichert. Er hat keine sichtbaren Auswirkungen in der Ticket-Maske,
+bis das referenzierte Feld existiert.
 :::
 
 ## Aktualisierung
 
-Required permission: `admin.core_workflow`
+Erforderliche Berechtigung: `admin.core_workflow`
 
-`PUT`-Request sent: `/api/v1/core_workflows/{id}`
+`PUT`-Request gesendet: `/api/v1/core_workflows/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Show/Create.
+Die Nutzlast-Struktur ist identisch mit Erstellen. Die Antwort ist der
+aktualisierte Datensatz, in der gleichen Form wie Show/Create.
 
 ::: info
-Sending the full Create payload to an existing workflow's `id` updates
-that record in place. It doesn't create a duplicate.
+Das Senden einer vollständigen Create-Nutzlast an die `id` eines bestehenden Workflows aktualisiert
+diesen Datensatz direkt. Es wird kein Duplikat erstellt.
 :::
 
 :::: details
@@ -116,15 +117,15 @@ that record in place. It doesn't create a duplicate.
 
 ## Löschen
 
-Required permission: `admin.core_workflow`
+Erforderliche Berechtigung: `admin.core_workflow`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine endgültige Entfernung**
 
-Please note that removing core workflows cannot be undone.
+Bitte beachten Sie, dass das Löschen von Core Workflows nicht rückgängig gemacht werden kann.
 :::
 
-`DELETE`-Request sent: `/api/v1/core_workflows/{id}`
+`DELETE`-Request gesendet: `/api/v1/core_workflows/{id}`
 
 ::: details
 

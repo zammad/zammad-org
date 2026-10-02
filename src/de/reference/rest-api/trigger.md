@@ -6,18 +6,18 @@ title: Trigger
 # Trigger
 
 ::: info
-Triggers can run a `notification.webhook` action that references a
-[webhook](/en/reference/rest-api/webhook) by id
-(`{"notification.webhook": {"webhook_id": <id>}}`) instead of, or
-alongside, `notification.email`. Create the webhook first, then point
-the trigger's perform action at its `id`.
+Trigger können eine `notification.webhook`-Aktion ausführen, die einen
+[Webhook](/de/reference/rest-api/webhook) anhand der ID
+(`{"notification.webhook": {"webhook_id": <id>}}`) anstelle von oder
+parallel zu `notification.email` ausführt. Erstellen Sie den Webhook zuerst und
+verweisen Sie dann in der Trigger-Aktionsausführung auf diese `id`.
 :::
 
 ## Auflisten
 
-Required permission: `admin.trigger`
+Erforderliche Berechtigung: `admin.trigger`
 
-`GET`-Request sent: `/api/v1/triggers`
+`GET`-Request gesendet: `/api/v1/triggers`
 
 ::: details
 
@@ -26,19 +26,19 @@ Required permission: `admin.trigger`
 :::
 
 ::: info
-`recipient: "article_last_sender"` emails whoever wrote the triggering
-article. In this example that is always the customer, because the
-condition requires `article.sender_id` to be `2` (Customer). If an agent
-wrote the article, the agent would receive the email instead. Use
-`recipient: "ticket_customer"` (see Create below) to always target the
-customer regardless of who performed the action.
+`recipient: "article_last_sender"` sendet eine E-Mail an jeden, der den auslösenden
+Artikel verfasst hat. In diesem Beispiel ist dies immer der Kunde, da die
+Bedingung `article.sender_id` auf `2` (Kunde) gesetzt sein muss. Wenn ein
+Agent den Artikel verfasst hat, erhält der Agent die E-Mail stattdessen. Verwenden
+Sie `recipient: "ticket_customer"` (siehe Create unten), um immer den
+Kunden anzusprechen, ungeachtet dessen, wer die Aktion ausgeführt hat.
 :::
 
 ## Anzeigen
 
-Required permission: `admin.trigger`
+Erforderliche Berechtigung: `admin.trigger`
 
-`GET`-Request sent: `/api/v1/triggers/{id}`
+`GET`-Request gesendet: `/api/v1/triggers/{id}`
 
 ::: details
 
@@ -48,18 +48,19 @@ Required permission: `admin.trigger`
 
 ## Erstellen
 
-Required permission: `admin.trigger`
+Erforderliche Berechtigung: `admin.trigger`
 
-`POST`-Request sent: `/api/v1/triggers`
+`POST`-Request gesendet: `/api/v1/triggers`
 
-`condition` accepts two shapes: a flat object keyed by field name (as shown
-in the List example above, matching Zammad's stock triggers) and the
-explicit `{"operator": "AND", "conditions": [...]}` form used below.
+`condition` akzeptiert zwei Formen: ein flaches Objekt, das über Feldnamen
+indiziert (wie im List-Beispiel oben, das Zammads Standard-Trigger
+entspricht), und die explizite `{"operator": "AND", "conditions": [...]}`
+Form, die unten verwendet wird.
 
-In the example below, closing a ticket results in the ticket's customer
-receiving a confirmation email, because `recipient: "ticket_customer"`
-always resolves to the customer regardless of who performed the closing
-action.
+Im folgenden Beispiel führt das Schließen eines Tickets dazu, dass der Kunde
+des Tickets eine Bestätigungs-E-Mail empfängt, weil `recipient:
+"ticket_customer"` immer auf den Kunden aufgelöst wird, unabhängig davon,
+wer die Schließaktion ausgeführt hat.
 
 :::: details
 
@@ -79,18 +80,19 @@ action.
 
 ## Aktualisierung
 
-Required permission: `admin.trigger`
+Erforderliche Berechtigung: `admin.trigger`
 
-`PUT`-Request sent: `/api/v1/triggers/{id}`
+`PUT`-Request gesendet: `/api/v1/triggers/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Show/Create with `updated_at` refreshed.
+Die Struktur der Nutzlast entspricht der von Create. Die Antwort besteht aus
+dem aktualisierten Datensatz, dessen Struktur der von Show/Create
+entspricht, wobei `updated_at` aktualisiert wird.
 
 ::: tip
-A partial payload works too, e.g. `{"active": false}` to toggle just
-that field. To update a trigger by name, look up its `id` via
-`GET /api/v1/triggers` first, then send the `PUT` request to
-`/api/v1/triggers/{id}`.
+Eine teilweise Nutzlast funktioniert ebenfalls, z.B. `{"active": false}`, um nur dieses
+Feld umzuschalten. Um einen Trigger auf Basis seines Namens zu aktualisieren, suchen
+Sie zuerst dessen `ID` mit `GET /api/v1/triggers`, und senden dann einen `PUT`-Request
+an `/api/v1/triggers/{id}`.
 :::
 
 :::: details
@@ -111,15 +113,15 @@ that field. To update a trigger by name, look up its `id` via
 
 ## Löschen
 
-Required permission: `admin.trigger`
+Erforderliche Berechtigung: `admin.trigger`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing triggers cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Triggern nicht rückgängig gemacht werden kann.
 :::
 
-`DELETE`-Request sent: `/api/v1/triggers/{id}`
+`DELETE`-Request gesendet: `/api/v1/triggers/{id}`
 
 ::: details
 

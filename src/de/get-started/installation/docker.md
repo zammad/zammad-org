@@ -18,10 +18,12 @@ als Anwendung geleistet werden.
 
 ## Voraussetzungen
 
-- Make sure your Docker Compose setup matches the
-  [requirements](https://github.com/zammad/zammad-docker-compose#requirements){target=_blank}
-  you can find in the README of Zammad's Docker Compose repository.
-- Make sure to have at least 4 GB of RAM to run the containers.
+- Stellen Sie sicher, dass Ihre Docker-Compose-Konfiguration den
+  [Anforderungen](https://github.com/zammad/zammad-docker-compose#requirements){target=_blank}
+  entspricht, die Sie in der README-Datei des Docker-Compose-Repositorys von
+  Zammad finden.
+- Stellen Sie sicher, dass mindestens 4 GB RAM zur Verfügung stehen, um die
+  Container auszuführen.
 - Passen Sie die Einstellungen Ihres Hosts an, damit Elasticsearch
   ordnungsgemäß läuft:
 
@@ -60,9 +62,9 @@ cd zammad-docker-compose
 docker compose up -d
 ```
 
-Optional: Use an additional `.yml` file to use a pre-defined scenario. Read
-on in the [Customizing the Zammad Stack](#customizing-the-zammad-stack)
-section.
+Optional: Verwenden Sie eine zusätzliche `.yml`-Datei, um ein vordefiniertes
+Szenario zu verwenden. Lesen Sie im Abschnitt [Anpassung des
+Stacks](#customizing-the-zammad-stack) weiter.
 
 Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten
 Docker-Host und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
@@ -104,16 +106,17 @@ Repository-Ansicht](/screenshots/get-started/installation/portainer-stack-creati
 
 ### Schritt 3: Starten des Stacks
 
-Finally, click the `Deploy the stack` button. The first time, it may take
-some time until the Docker images are fetched.
+Klicken Sie schließlich auf die Schaltfläche `Deploy the stack`. Beim ersten
+Mal kann es eine Weile dauern, bis die Docker-Images heruntergeladen wurden.
 
 Nachdem der Stack hochgefahren ist, können Sie über den konfigurierten
 Docker-Host und -Port auf Zammad zugreifen, z.B. `http://localhost:8080/`.
 
 ## Stack per HTTPS freigeben
 
-To publish a Zammad stack on the internet, it needs to be secured via the
-HTTPS protocol. To achieve that without modifying the Zammad stack, you can:
+Um einen Zammad-Stack im Internet zu veröffentlichen, muss dieser über das
+HTTPS-Protokoll gesichert sein. Um dies zu erreichen, ohne den Zammad-Stack
+zu ändern, haben Sie folgende Möglichkeiten:
 
 - Verwenden Sie einen Reverse-Proxy wie Nginx Proxy Manager (NPM). Er hat
   eine grafische Benutzeroberfläche, die eine einfache [Let's
@@ -126,22 +129,21 @@ Szenarien](/de/reference/docker-compose-scenarios) beschrieben.
 
 ## Anpassen des Zammad-Stacks
 
-The Zammad Docker Compose stack is ready to run with its default
-settings. You can adapt it to your environment by loading predefined
-scenario files, adjusting environment variables and adding files specific to
-your instance.
+Der Zammad-Docker-Compose-Stack ist mit seinen Standardeinstellungen
+einsatzbereit. Sie können ihn an Ihre Umgebung anpassen, indem Sie
+vordefinierte Szenariodateien laden, Umgebungsvariablen anpassen und für
+Ihre Instanz spezifische Dateien hinzufügen.
 
-See the [Docker Compose scenarios
-page](/en/reference/docker-compose-scenarios) for supported use cases and
-detailed instructions on loading scenario files. To change individual
-settings, use [Docker specific environment
-variables](/en/reference/environment-variables).
+Sehen Sie sich die [Docker Compose Szenario
+Seite](/de/reference/docker-compose-scenarios) für unterstützte
+Anwendungsfälle und detaillierte Anweisungen zum Laden von Szenarios
+an. Ändern Sie einzelne Einstellungen über [Docker-spezifische
+Umgebungsvariablen](/de/reference/environment-variables).
 
-If you deployed the stack with Docker Compose by cloning the repository, use
-its `local/` directory for files that belong only to your instance. See the
-[customize the stack
-locally](/en/reference/docker-compose-scenarios#customize-the-stack-locally)
-section for details.
+Wenn Sie Docker Compose für den Stack verwenden und das Repository geklont
+haben, verwenden Sie dessen `local/` Verzeichnis für eigene Dateien. Weitere
+Details finden Sie im Abschnitt [Stack lokal
+anpassen](/de/reference/docker-compose-scenarios#customize-the-stack-locally].
 
 ## Ausführen von Befehlen im Stack
 

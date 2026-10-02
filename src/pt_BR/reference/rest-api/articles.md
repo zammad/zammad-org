@@ -176,9 +176,9 @@ nota de telefone), use o atributo `origin_by_id`. A permissão `ticket.agent`
 
 ### Artigo com imagens inline
 
-Inline images can be used by providing data URIs in your HTML markup.  In
-the response, they are listed under `inline_attachments`, while
-`attachments` only contains regular file attachments.
+Imagens inline podem ser usadas fornecendo data URIs na sua marcação HTML.
+Na resposta, elas são listadas em `inline_attachments`, enquanto
+`attachments` contém apenas anexos de arquivo comuns.
 
 :::: details
 

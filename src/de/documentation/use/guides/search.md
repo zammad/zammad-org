@@ -19,16 +19,18 @@ Erweiterten Suche und der Verwendung von Elasticsearch-Syntax.
 
 ## Einfache Suche
 
-The search is located in the top left corner of the primary
-navigation. Either select it via mouse or use the keyboard shortcut
-[[s]]. After activation, you can see the tickets that were recently closed
-from your taskbar as well as your recent search queries. To search, simply
-type a term. The search then displays matching items for which you have at
-least view or read permissions, grouped by type like users and
-tickets. Selecting one of those results opens the item as tab in the
-taskbar. The number of results per type is limited: as soon as your search
-matches more than two types, each group shows up to five results. Use the
-detailed search to get the full result set.
+Die Suche befindet sich in der oberen linken Ecke in der primären
+Navigation. Wählen Sie sie entweder mit der Maus aus oder verwenden Sie das
+Tastaturkürzel [[s]]. Nach der Aktivierung sehen Sie in Ihrer Taskleiste die
+Tickets, die kürzlich dort geschlossen wurden sowie Ihre letzten
+Suchanfragen. Um zu suchen, geben Sie einfach einen Begriff ein. Die Suche
+zeigt dann alle übereinstimmenden Elemente an, für die Sie mindestens über
+Ansichts- bzw. Leserechte verfügen, gruppiert nach Typ wie Benutzer und
+Tickets. Wenn Sie eines dieser Ergebnisse auswählen, wird das Element als
+Tab in der Taskleiste geöffnet. Die Anzahl der Ergebnisse pro Typ ist
+begrenzt: Sobald die Ergebnisse Ihrer Suche mehr als zwei Typen beinhaltet,
+werden pro Gruppe bis zu fünf Ergebnisse angezeigt. Verwenden Sie die
+erweiterte Suche, um die vollständige Ergebnisliste zu erhalten.
 
 Bei der Suche nach einem Begriff werden auch alle Werte gefunden, die mit
 diesem Begriff beginnen. Wenn Sie beispielsweise nach `brooks` suchen werden
@@ -69,15 +71,16 @@ aufsteigend zu absteigend und zurück zu ändern.
 
 ### Suche auf Objekttyp beschränken
 
-Limit the search to an object type by using the **Search entity** tab
-selector below the search field (e.g. user or ticket). This limits the
-search to the selected object type and its related data. For example, when
-you select **Ticket**, the search also returns tickets where the owner or
-customer matches the search term. Knowledge base answers are available as an
-object type of their own, with title, visibility and update date as result
-columns. See [Knowledge
-base](/en/documentation/use/guides/knowledge-base#search) for searching
-within the knowledge base.
+Begrenzen Sie die Suche auf einen Objekttyp, indem Sie den die Tab-Auswahl
+unter dem Suchfeld verwenden (z.B. Benutzer oder Ticket). Dadurch wird die
+Suche auf den ausgewählten Objekttyp und seine zugehörigen Daten
+beschränkt. Wenn Sie beispielsweise **Ticket** auswählen, werden auch
+Tickets zurückgegeben, bei denen der Besitzer oder der Kunde mit dem
+Suchbegriff übereinstimmt. Knowledge Base-Antworten sind als eigener
+Objekttyp verfügbar, mit Titel, Sichtbarkeit und Aktualisierungsdatum als
+Ergebnisspalten. Weitere Informationen zum Durchsuchen der Knowledge Base
+finden Sie unter [Knowledge
+Base](/de/documentation/use/guides/knowledge-base#search).
 
 ### Erweiterte Filter verwenden
 

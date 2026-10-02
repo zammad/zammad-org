@@ -1,29 +1,29 @@
 ---
 order: 10
-title: 'Email notification'
+title: E-Mail-Benachrichtigung
 ---
 
-# Email notification
+# E-Mail-Benachrichtigung
 
 ::: info
-This page covers the system's outbound _notification_ email
-configuration: the SMTP (or local MTA) settings Zammad uses to send its
-own internal notifications, like "you were assigned a ticket", plus the
-local sender identity (`EmailAddress`) that gets attached to it. This is
-distinct from a ticket mailbox / support-inbox channel, which is a
-separate feature not covered by this page.
+Diese Seite beschreibt die Konfiguration des E-Mail-Kanals für ausgehenden _Benachrichtigungen_:
+die SMTP- (oder lokale MTA-) Einstellungen, die Zammad zum Senden seiner
+eigenen internen Benachrichtigungen verwendet, wie z.B. dass Ihnen ein Ticket zugewiesen wurde, sowie die
+zugehörige lokale Absenderidentität (`EmailAddress`). Dies unterscheidet sich von einem normal E-Mail-Kanal, was eine
+separate Funktion ist und auf dieser Seite nicht behandelt wird.
 :::
 
 ## Auflisten
 
-Required permission: `admin.channel_email`
+Erforderliche Berechtigung: `admin.channel_email`
 
-`GET`-Request sent: `/api/v1/channels_email`
+`GET`-Request gesendet: `/api/v1/channels_email`
 
-This is a combined index: it returns the notification channel(s), the ticket
-mailbox channel(s) and the local sender addresses in one response.  The
-response below is trimmed to the fields relevant to notification email
-configuration.
+Hierbei handelt es sich um einen kombinierten Index: Er gibt den bzw. die
+Benachrichtigungskanäle, den bzw. die Ticket-Postfachkanäle sowie die
+lokalen Absenderadressen in einer einzigen Antwort zurück. Die nachstehende
+Antwort wurde auf die Felder gekürzt, die für die Konfiguration von
+Benachrichtigungs-E-Mails relevant sind.
 
 ::: details
 
@@ -32,25 +32,25 @@ configuration.
 :::
 
 ::: info
-Only one channel can be `active: true` per notification setup at a time.
-Configuring a new one (see _Configure_ below) automatically deactivates
-whichever one was previously active. In the response above, `sendmail`
-(id `2`) is now `active: false` because `smtp` (id `1`) was configured
-afterward.
+Pro Benachrichtigungseinrichtung kann jeweils nur ein Kanal `active: true` sein.
+Die Konfiguration eines neuen Kanals (siehe _Konfigurieren_ unten) deaktiviert automatisch
+den zuvor aktiven Kanal. In der obigen Antwort ist `sendmail`
+(ID `2`) nun `active: false`, da `smtp` (ID `1`)
+danach konfiguriert wurde.
 :::
 
-## Configure
+## Konfigurieren
 
-Required permission: `admin.channel_email`
+Erforderliche Berechtigung: `admin.channel_email`
 
-`POST`-Request sent: `/api/v1/channels_email_notification`
+`POST`-Request gesendet: `/api/v1/channels_email_notification`
 
 ::: info
-Pass the adapter settings in a top-level `options` key as shown below.
-Other key names, such as `new_configuration` (the parameter name of the
-internal service class `Service::System::SetEmailNotificationConfiguration`),
-are not rejected with a validation error. The request fails with an
-unhandled `undefined method 'downcase' for nil` error instead.
+übergeben Sie die Adaptereinstellungen in einem Top-Level-`options`-Schlüssel wie unten gezeigt.
+Andere Key-Namen wie `new_configuration` (der Parametername der
+internen Service-Klasse `Service::System::SetEmailNotificationConfiguration`),
+scheitern nicht mit einem Validierungsfehler. Die Anfrage schlägt stattdessen mit einem
+`undefined method 'downcase' for nil` Fehler fehl.
 :::
 
 :::: details
@@ -70,14 +70,15 @@ unhandled `undefined method 'downcase' for nil` error instead.
 ::::
 
 ::: info
-This call does double duty: it tests the connection live, sending a real
-test email as a side effect, and if the test succeeds, saves the
-configuration as the active notification channel in the same call. There
-is no separate "save" step; `notification_channel_ids` in
-`/api/v1/channels_email` immediately reflects the new channel.
+Dieser Aufruf erfüllt zwei Aufgaben: Er testet die Verbindung live und versendet
+dabei als Nebeneffekt eine echte
+Test-E-Mail. Ist der Test erfolgreich, wird die
+Konfiguration im selben Aufruf als aktiver Benachrichtigungskanal gespeichert. Es
+gibt keinen separaten "Speichern"-Schritt; `notification_channel_ids` in
+`/api/v1/channels_email` spiegelt den neuen Kanal sofort wider.
 
-If the connection can't be established, the response is `200 OK` with
-`result: invalid` and the saved configuration is left untouched.
+Kann die Verbindung nicht hergestellt werden, lautet die Antwort `200 OK` mit
+`result: invalid` und die gespeicherte Konfiguration bleibt unverändert.
 :::
 
 ::: details
@@ -87,12 +88,12 @@ If the connection can't be established, the response is `200 OK` with
 :::
 
 ::: info
-`POST /api/v1/channels_email_probe` is not an alternative to this
-endpoint for a notification-only setup. It always validates a _full_
-inbound and outbound mailbox (`EmailHelper::Probe.full`). Sending
-outbound-only SMTP settings to it returns
-`{"result": "failed", "reason": "inbound failed"}`, even when the
-outbound settings are correct.
+`POST /api/v1/channels_email_probe` ist keine Alternative zu diesem
+Endpunkt für eine ausschließliche Benachrichtigungs-Einrichtung. Es validiert immer ein _vollständiges_
+eingehendes und ausgehendes Postfach (`EmailHelper::Probe.full`). Das Senden
+einzeln ausgehender SMTP-Einstellungen dazu gibt
+`{"result": "failed", "reason": "inbound failed"}` zurück, selbst wenn die
+ausgehenden Einstellungen korrekt sind.
 :::
 
 ::: details
@@ -101,19 +102,20 @@ outbound settings are correct.
 
 :::
 
-## Sender address
+## Absenderadresse
 
-The local sender identity used for outbound notification email is managed as
-an `EmailAddress` resource.
+Die lokale Absenderidentität, die für ausgehende Benachrichtigungs-E-Mails
+verwendet wird, wird als `EmailAddress` verwaltet.
 
 ### Auflisten
 
-Required permission: `admin.channel_email` **or** `ticket.agent`
+Erforderliche Berechtigungen: `admin.channel_email` **oder** `ticket.agent`
 
-`GET`-Request sent: `/api/v1/email_addresses`
+`GET`-Request gesendet: `/api/v1/email_addresses`
 
-Returns an array of objects, each shaped like the single object shown in the
-_Show_ response below.
+Gibt ein Array von Objekten zurück, die jeweils der Struktur des einzelnen
+Objekts entsprechen, das in der untenstehenden_Show_ Response dargestellt
+ist.
 
 ::: details
 
@@ -123,9 +125,9 @@ _Show_ response below.
 
 ### Anzeigen
 
-Required permission: `admin.channel_email` **or** `ticket.agent`
+Erforderliche Berechtigungen: `admin.channel_email` **oder** `ticket.agent`
 
-`GET`-Request sent: `/api/v1/email_addresses/{id}`
+`GET`-Request gesendet: `/api/v1/email_addresses/{id}`
 
 ::: details
 
@@ -135,15 +137,15 @@ Required permission: `admin.channel_email` **or** `ticket.agent`
 
 ### Erstellen
 
-Required permission: `admin.channel_email`
+Erforderliche Berechtigung: `admin.channel_email`
 
-`POST`-Request sent: `/api/v1/email_addresses`
+`POST`-Request gesendet: `/api/v1/email_addresses`
 
 ::: info
-`channel_id` is a reference, not a validation target: an ID that doesn't
-exist is accepted, and the address is then stored with `channel_id: null`
-and `active: false`. Addresses are commonly attached to a ticket mailbox
-channel rather than to the notification channel.
+`channel_id` ist eine Referenz und kein Validierungsziel: Eine ID, die nicht
+besteht, wird akzeptiert, und die Adresse wird dann mit `channel_id: null`
+und `active: false` gespeichert. Adressen werden üblicherweise einem Ticket-Postfach-Kanal
+und nicht dem Benachrichtigungskanal zugeordnet.
 :::
 
 :::: details
@@ -164,14 +166,15 @@ channel rather than to the notification channel.
 
 ### Aktualisierung
 
-Required permission: `admin.channel_email`
+Erforderliche Berechtigung: `admin.channel_email`
 
-`PUT`-Request sent: `/api/v1/email_addresses/{id}`
+`PUT`-Request gesendet: `/api/v1/email_addresses/{id}`
 
-Payload shape is identical to Create. Sending the full Create payload to an
-existing address's `id` updates that record in place. It doesn't create a
-duplicate. Response is the updated record, same shape as the Create response
-above.
+Die Form der Nutzlast ist identisch mit Create. Durch das Senden der
+vollständigen Create-Nutzlast an die `id` einer bestehenden Adresse wird
+dieser Datensatz direkt aktualisiert. Es wird kein Duplikat erstellt. Die
+Antwort ist der aktualisierte Datensatz, der die gleiche Form wie die
+Create-Antwort hat.
 
 :::: details
 
@@ -191,18 +194,18 @@ above.
 
 ### Löschen
 
-Required permission: `admin.channel_email`
+Erforderliche Berechtigung: `admin.channel_email`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine permanente Entfernung**
 
-Please note that removing email addresses cannot be undone.
+Bitte beachten Sie, dass das Entfernen von E-Mail-Adressen nicht rückgängig gemacht werden kann.
 
-Groups that use the deleted address as their sender address
-(`email_address_id`) are reset to no sender address.
+Gruppen, die die gelöschte Adresse als Absenderadresse verwenden
+(`email_address_id`) werden auf keine Absenderadresse zurückgesetzt.
 :::
 
-`DELETE`-Request sent: `/api/v1/email_addresses/{id}`
+`DELETE`-Request gesendet: `/api/v1/email_addresses/{id}`
 
 ::: details
 

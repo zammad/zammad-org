@@ -6,17 +6,18 @@ title: Webhook
 # Webhook
 
 ::: info
-Webhooks are referenced by [triggers](/en/reference/rest-api/trigger) via
-the `notification.webhook` perform action
-(`{"notification.webhook": {"webhook_id": <id>}}`). Create the webhook
-first, then point one or more triggers at its `id`.
+Webhooks werden von [Triggern](/de/reference/rest-api/trigger) über
+den Parameter `notification.webhook` zur Aktions-Ausführung angesprochen
+(`{"notification.webhook": {"webhook_id": <id>}}`). Erstellen Sie
+zunächst den Webhook und verweisen Sie anschließend in einem oder mehreren
+Triggern auf dessen `id`.
 :::
 
 ## Auflisten
 
-Required permission: `admin.webhook`
+Erforderliche Berechtigung: `admin.webhook`
 
-`GET`-Request sent: `/api/v1/webhooks`
+`GET`-Request gesendet: `/api/v1/webhooks`
 
 ::: details
 
@@ -25,16 +26,16 @@ Required permission: `admin.webhook`
 :::
 
 ::: info
-`signature_token`, `basic_auth_password` and `bearer_token` are returned
-as `**********` once they're set. The API never returns the stored
-secrets. Fields that aren't set are returned as `null`.
+`signature_token`, `basic_auth_password` und `bearer_token` werden
+nach ihrer Festlegung als `**********` zurückgegeben. Die API gibt die gespeicherten
+Geheimnisse niemals aus. Felder, die nicht gesetzt sind, werden als `null` ausgegeben.
 :::
 
 ## Anzeigen
 
-Required permission: `admin.webhook`
+Erforderliche Berechtigung: `admin.webhook`
 
-`GET`-Request sent: `/api/v1/webhooks/{id}`
+`GET`-Request gesendet: `/api/v1/webhooks/{id}`
 
 ::: details
 
@@ -44,9 +45,9 @@ Required permission: `admin.webhook`
 
 ## Erstellen
 
-Required permission: `admin.webhook`
+Erforderliche Berechtigung: `admin.webhook`
 
-`POST`-Request sent: `/api/v1/webhooks`
+`POST`-Request gesendet: `/api/v1/webhooks`
 
 :::: details
 
@@ -65,24 +66,25 @@ Required permission: `admin.webhook`
 ::::
 
 ::: info
-`ssl_verify` matters for `https://` endpoints, set it `true` to actually
-validate the endpoint's TLS certificate. It only makes sense to set it
-`false` for a plain `http://` endpoint, which has no certificate to
-verify in the first place.
+`ssl_verify` ist für `https://` Endpunkte von Bedeutung; setzen Sie den Wert
+auf `true`, um das TLS-Zertifikat des Endpunkts zu überprüfen. Es ist nur für einen
+reinen `http://` Endpunkt sinnvoll, den Wert auf `false` zu setzen, falls dieser gar kein
+Zertifikat besitzt, das überprüft werden kann.
 :::
 
 ## Aktualisierung
 
-Required permission: `admin.webhook`
+Erforderliche Berechtigung: `admin.webhook`
 
-`PUT`-Request sent: `/api/v1/webhooks/{id}`
+`PUT`-Request gesendet: `/api/v1/webhooks/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Show/Create with `updated_at` refreshed.
+Die Struktur der Nutzlast entspricht der von Create. Die Antwort besteht aus
+dem aktualisierten Datensatz, dessen Struktur der von Show/Create
+entspricht, wobei `updated_at` aktualisiert wird.
 
 ::: tip
-A partial payload works too, e.g. `{"active": false}` to toggle just
-that field.
+Auch eine teilweise Nutzlast funktioniert, z.B. `{"active": false}`, um nur
+dieses Feld umzuschalten.
 :::
 
 :::: details
@@ -103,20 +105,21 @@ that field.
 
 ## Löschen
 
-Required permission: `admin.webhook`
+Erforderliche Berechtigung: `admin.webhook`
 
 ::: danger
-**This is a permanent removal**
+**Dies ist eine dauerhafte Entfernung**
 
-Please note that removing webhooks cannot be undone.
+Bitte beachten Sie, dass das Entfernen von Webhooks nicht rückgängig gemacht werden kann.
 :::
 
-A webhook that is still referenced by the `perform` action of another object
-(e.g. a [trigger](/en/reference/rest-api/trigger)) can't be deleted. The API
-responds with `422 Unprocessable Entity` and lists the referencing
-objects. Remove the reference first.
+Ein Webhook, der noch von der `perform` Aktion eines anderen Objekts
+(z.B. einem [Trigger](/de/reference/rest-api/trigger)) referenziert wird,
+kann nicht gelöscht werden. Die API antwortet mit `422 Unprocessable Entity`
+und listet die referenzierenden Objekte auf. Entfernen Sie zuerst diese
+Referenzen.
 
-`DELETE`-Request sent: `/api/v1/webhooks/{id}`
+`DELETE`-Request gesendet: `/api/v1/webhooks/{id}`
 
 ::: details
 

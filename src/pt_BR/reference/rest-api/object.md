@@ -10,7 +10,7 @@ Ajustar objetos via API pode causar problemas sérios na sua instância.
 Prossiga com extrema cautela e certifique-se de ajustar quaisquer
 campos padrão do Zammad.
 
-Se você quiser ocultar campos, considere usar os core workflows do Zammad em vez disso!
+Se você quiser ocultar campos, considere usar os fluxos de trabalho principais do Zammad em vez disso!
 :::
 
 ## Listar
@@ -232,12 +232,12 @@ Solicitação `PUT` enviada: `/api/v1/object_manager_attributes/{id}`
 <<< @/fixtures/rest-api/object_manager_attributes/put-id-req.json
 
 ::: info
-Provide the full record shape shown above, not just the fields you're
-changing. Zammad is very picky if you leave out required fields: a
-payload missing `data_type` fails with an unhandled
-`undefined method 'match?' for nil` error rather than a clean
-validation error. Please note that changing the object type _after_
-creation is not possible.
+Forneça o registro completo mostrado acima, e não apenas os campos que você está
+alterando. O Zammad é muito exigente se você omitir campos obrigatórios: um
+payload sem `data_type` falha com um erro não tratado
+`undefined method 'match?' for nil`, em vez de um erro de validação
+claro. Observe que alterar o tipo do objeto _depois_ da
+criação não é possível.
 :::
 
 === Response

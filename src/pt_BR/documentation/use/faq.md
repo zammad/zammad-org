@@ -98,11 +98,11 @@ inferior esquerdo e mude a chave para o estado desejado, ou use o atalho de
 teclado [[d]]. Se nenhum campo de entrada estiver ativado, ele alterna entre
 os diferentes modos.
 
-### How can I read a ticket that is written in another language?
+### Como posso ler um ticket escrito em outro idioma?
 
-Agents can have the ticket articles translated into a language of their
-choice, either per article or automatically for every ticket they open. See
-the [article translation guide](./guides/article-translation).
+Os agentes podem traduzir os artigos do ticket para o idioma de sua escolha,
+seja artigo por artigo, seja automaticamente para todo ticket que
+abrirem. Veja o [guia de tradução de artigos](./guides/article-translation).
 
 ## Perfil do usuário
 

@@ -6,17 +6,17 @@ title: Webhook
 # Webhook
 
 ::: info
-Webhooks are referenced by [triggers](/en/reference/rest-api/trigger) via
-the `notification.webhook` perform action
-(`{"notification.webhook": {"webhook_id": <id>}}`). Create the webhook
-first, then point one or more triggers at its `id`.
+Os webhooks são referenciados por [gatilhos](/pt_BR/reference/rest-api/trigger) por meio
+da ação perform `notification.webhook`
+(`{"notification.webhook": {"webhook_id": <id>}}`). Crie o webhook
+primeiro e depois aponte um ou mais gatilhos para o `id` dele.
 :::
 
 ## Listar
 
-Required permission: `admin.webhook`
+Permissão necessária: `admin.webhook`
 
-`GET`-Request sent: `/api/v1/webhooks`
+Solicitação `GET` enviada: `/api/v1/webhooks`
 
 ::: details
 
@@ -25,16 +25,16 @@ Required permission: `admin.webhook`
 :::
 
 ::: info
-`signature_token`, `basic_auth_password` and `bearer_token` are returned
-as `**********` once they're set. The API never returns the stored
-secrets. Fields that aren't set are returned as `null`.
+`signature_token`, `basic_auth_password` e `bearer_token` são retornados
+como `**********` depois de definidos. A API nunca retorna os segredos
+armazenados. Campos não definidos são retornados como `null`.
 :::
 
 ## Mostrar
 
-Required permission: `admin.webhook`
+Permissão necessária: `admin.webhook`
 
-`GET`-Request sent: `/api/v1/webhooks/{id}`
+Solicitação `GET` enviada: `/api/v1/webhooks/{id}`
 
 ::: details
 
@@ -44,9 +44,9 @@ Required permission: `admin.webhook`
 
 ## Criar
 
-Required permission: `admin.webhook`
+Permissão necessária: `admin.webhook`
 
-`POST`-Request sent: `/api/v1/webhooks`
+Solicitação `POST` enviada: `/api/v1/webhooks`
 
 :::: details
 
@@ -65,24 +65,24 @@ Required permission: `admin.webhook`
 ::::
 
 ::: info
-`ssl_verify` matters for `https://` endpoints, set it `true` to actually
-validate the endpoint's TLS certificate. It only makes sense to set it
-`false` for a plain `http://` endpoint, which has no certificate to
-verify in the first place.
+`ssl_verify` importa para endpoints `https://`: defina-o como `true` para realmente
+validar o certificado TLS do endpoint. Só faz sentido defini-lo como
+`false` para um endpoint `http://` simples, que de qualquer forma não tem certificado a
+verificar.
 :::
 
 ## Atualização
 
-Required permission: `admin.webhook`
+Permissão necessária: `admin.webhook`
 
-`PUT`-Request sent: `/api/v1/webhooks/{id}`
+Solicitação `PUT` enviada: `/api/v1/webhooks/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Show/Create with `updated_at` refreshed.
+O formato do payload é idêntico ao de Create. A resposta é o registro
+atualizado, no mesmo formato de Show/Create, com `updated_at` atualizado.
 
 ::: tip
-A partial payload works too, e.g. `{"active": false}` to toggle just
-that field.
+Um payload parcial também funciona, por exemplo `{"active": false}` para alternar apenas
+esse campo.
 :::
 
 :::: details
@@ -103,20 +103,20 @@ that field.
 
 ## Excluir
 
-Required permission: `admin.webhook`
+Permissão necessária: `admin.webhook`
 
 ::: danger
-**This is a permanent removal**
+**Esta é uma remoção permanente**
 
-Please note that removing webhooks cannot be undone.
+Observe que remover webhooks não pode ser desfeito.
 :::
 
-A webhook that is still referenced by the `perform` action of another object
-(e.g. a [trigger](/en/reference/rest-api/trigger)) can't be deleted. The API
-responds with `422 Unprocessable Entity` and lists the referencing
-objects. Remove the reference first.
+Um webhook que ainda é referenciado pela ação `perform` de outro objeto (por
+exemplo, um [gatilho](/pt_BR/reference/rest-api/trigger)) não pode ser
+excluído. A API responde com `422 Unprocessable Entity` e lista os objetos
+que fazem a referência. Remova a referência primeiro.
 
-`DELETE`-Request sent: `/api/v1/webhooks/{id}`
+Solicitação `DELETE` enviada: `/api/v1/webhooks/{id}`
 
 ::: details
 

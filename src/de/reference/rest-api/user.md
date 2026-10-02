@@ -99,18 +99,18 @@ Erforderliche Berechtigung: `admin.user` **oder** `ticket.agent`
 `PUT`-Anfrage gesendet: `/api/v1/users/{id}`
 
 ::: tip
-**This depends on permissions**
+**Dies hängt von den Berechtigungen ab**
 
-Agents can't set user passwords, roles or group permission. Instead
-Zammad will apply the default sign up role. Check Zammad's admin interface
-under _Manage > Roles_ and check which is selected as **Default at signup**.
+Agenten können keine Benutzer-Passwörter, Rollen- oder Gruppenberechtigungen festlegen. Stattdessen
+wendet Zammad die Standardrolle bei der Registrierung an. Überprüfen Sie in den Zammad-Einstellungen
+unter _Verwalten > Rollen_, welche Rolle als **Aktiv bei Neuanmeldung** ausgewählt ist.
 
-Zammad strips `group_ids` and `roles` from an agent's request before it
-writes anything, then answers `200 Ok` as if the update had gone through.
-Re-read the record to see whether the change actually landed.
+Zammad entfernt `group_ids` und `roles` aus der Anfrage eines Agenten, bevor es
+etwas schreibt, und gibt `200 Ok` aus, als ob die Aktualisierung erfolgreich durchgeführt worden wäre.
+Lesen Sie den Datensatz erneut ein, um zu überprüfen, ob die Änderung tatsächlich übernommen wurde.
 
-Agents can only edit customer-role targets. Sending a request for an
-agent-role target fails with `403 Not authorized` and changes nothing.
+Agenten können nur Ziele mit der Rolle Kunde bearbeiten. Das Senden einer Anfrage für ein
+Ziel mit der Rolle Agent schlägt mit dem Fehler `403 Not authorized` fehl und führt zu keiner Änderung.
 :::
 
 :::: details

@@ -1,27 +1,27 @@
 ---
 order: 10
-title: 'Report profile'
+title: 'Perfil de relatório'
 ---
 
-# Report profile
+# Perfil de relatório
 
 ::: info
-A report profile is a saved, reusable filter/condition for Zammad's
-reporting module. It isn't an automation and doesn't do anything by
-itself. It's a named condition that shows up as a selectable view when
-generating reports with Zammad's reporting feature, scoped to whichever
-roles (`role_ids`) can see it.
+Um perfil de relatório é um filtro/condição salvo e reutilizável para o módulo de
+relatórios do Zammad. Ele não é uma automação e não faz nada por
+si só. É uma condição nomeada que aparece como uma visualização selecionável ao
+gerar relatórios com o recurso de relatórios do Zammad, restrita às
+funções (`role_ids`) que podem vê-la.
 
-Compare to [core workflows](/en/reference/rest-api/core-workflow), which
-uses a similarly-shaped condition object but does not validate referenced
-fields.
+Compare com os [fluxos de trabalho principais](/pt_BR/reference/rest-api/core-workflow), que
+usam um objeto de condição de formato semelhante, mas não validam os campos
+referenciados.
 :::
 
 ## Listar
 
-Required permission: `admin.report_profile`
+Permissão necessária: `admin.report_profile`
 
-`GET`-Request sent: `/api/v1/report_profiles`
+Solicitação `GET` enviada: `/api/v1/report_profiles`
 
 ::: details
 
@@ -30,16 +30,16 @@ Required permission: `admin.report_profile`
 :::
 
 ::: info
-The list returns the full record for each profile, same field set as the
-Show response below. Entry `1` (`-all-`) is Zammad's built-in default
-profile.
+A lista retorna o registro completo de cada perfil, com o mesmo conjunto de campos da
+resposta de Show abaixo. A entrada `1` (`-all-`) é o perfil padrão
+integrado ao Zammad.
 :::
 
 ## Mostrar
 
-Required permission: `admin.report_profile`
+Permissão necessária: `admin.report_profile`
 
-`GET`-Request sent: `/api/v1/report_profiles/{id}`
+Solicitação `GET` enviada: `/api/v1/report_profiles/{id}`
 
 ::: details
 
@@ -49,9 +49,9 @@ Required permission: `admin.report_profile`
 
 ## Criar
 
-Required permission: `admin.report_profile`
+Permissão necessária: `admin.report_profile`
 
-`POST`-Request sent: `/api/v1/report_profiles`
+Solicitação `POST` enviada: `/api/v1/report_profiles`
 
 :::: details
 
@@ -70,17 +70,17 @@ Required permission: `admin.report_profile`
 ::::
 
 ::: info
-Role ids aren't guaranteed to be the same across instances. Look up the
-ids of the roles you need via the [roles API](/en/reference/rest-api/role)
-first instead of hard-coding them.
+Os IDs de funções não são garantidamente os mesmos entre instâncias. Consulte primeiro os
+IDs das funções de que você precisa pela [API de funções](/pt_BR/reference/rest-api/role)
+em vez de fixá-los no código.
 :::
 
 :::: info
-Unlike core workflows, a report profile's `condition` _does_ validate
-that referenced fields are real, fully-migrated ticket fields.
-Referencing a custom field that exists but hasn't finished its schema
-migration yet (`to_create`/`to_migrate` still `true` on that field) fails
-with:
+Diferente dos fluxos de trabalho principais, a `condition` de um perfil de relatório _valida_
+que os campos referenciados são campos de ticket reais e totalmente migrados.
+Referenciar um campo personalizado que existe, mas cuja migração de schema ainda não
+terminou (`to_create`/`to_migrate` ainda `true` nesse campo), falha
+com:
 
 ::: details
 
@@ -91,16 +91,16 @@ with:
 
 ## Atualização
 
-Required permission: `admin.report_profile`
+Permissão necessária: `admin.report_profile`
 
-`PUT`-Request sent: `/api/v1/report_profiles/{id}`
+Solicitação `PUT` enviada: `/api/v1/report_profiles/{id}`
 
-Payload shape is identical to Create. The response is the updated record,
-same shape as Create's response.
+O formato do payload é idêntico ao de Create. A resposta é o registro
+atualizado, no mesmo formato da resposta de Create.
 
 ::: info
-Sending the full Create payload to an existing profile's `id` updates
-that record in place. It doesn't create a duplicate.
+Enviar o payload completo de Create para o `id` de um perfil existente atualiza
+esse registro no lugar. Não cria uma duplicata.
 :::
 
 :::: details
@@ -121,15 +121,15 @@ that record in place. It doesn't create a duplicate.
 
 ## Excluir
 
-Required permission: `admin.report_profile`
+Permissão necessária: `admin.report_profile`
 
 ::: danger
-**This is a permanent removal**
+**Esta é uma remoção permanente**
 
-Please note that removing report profiles cannot be undone.
+Observe que remover perfis de relatório não pode ser desfeito.
 :::
 
-`DELETE`-Request sent: `/api/v1/report_profiles/{id}`
+Solicitação `DELETE` enviada: `/api/v1/report_profiles/{id}`
 
 ::: details
 
