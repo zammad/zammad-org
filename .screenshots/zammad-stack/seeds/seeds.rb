@@ -1124,6 +1124,46 @@ Ticket::TimeAccounting::Type.create!(name: 'B2C Support', created_by_id: 1, upda
 #                         ])
 
 # CTI/phone
+#
+# Phone numbers for the CTI screenshots.
+#
+# Internal numbers (the agents and the queue they work in) are the official Zammad
+# GmbH number +49 30 55 57 160 00 with a different extension per seat, so a
+# screenshot never shows a made-up number next to a real agent name. External
+# callers get obviously mocked numbers of the same +49 30 shape instead.
+#
+# The internal side of a call is the extension of the agent who took it, which is
+# what a phone system reports as the called number.
+cti_extension = ->(nr) { "4930555716#{nr.to_s.rjust(2, '0')}" }   # +49 30 55 57 160 NN
+
+# The caller log needs a configured telephony backend to show up in the navigation sidebar at
+# all, so the integration is enabled here. Without it the Phone entry stays hidden and every
+# screenshot of the feature would be of an empty navigation.
+puts 'Enabling CTI integration for caller log screenshots...'
+
+SeedHelpers.set_setting_without_validation(name: 'cti_integration', value: true)
+
+# The caller notification reads the user preference 'cti', the same key the old interface
+# writes. With it off the sidebar entry renders quiet: no counter and no ringing calls.
+# The Cypress specs log in as the admin account, so that one needs it as well.
+puts 'Enabling caller notification for agents...'
+
+cti_agents = [johndoe, liamchen, User.find_by!(login: 'lauren@fastlane.inc')]
+
+# A caller log is filtered by queue, and the queues an agent sees are derived from
+# their own phone number (see Cti::Log.queues_of_user). An agent without a phone
+# number therefore matches no queue and sees an empty caller log, so every agent
+# who should see the seeded calls needs an extension number first.
+cti_agents.each_with_index do |agent, index|
+  agent.phone = cti_extension.call(index + 10)
+  agent.save!
+end
+
+cti_agents.each do |agent|
+  agent.preferences[:cti] = true
+  agent.save!
+end
+
 calc_plus = 1
 if Cti::Log.last.nil?
   # empty, can start by '1'
@@ -1133,31 +1173,178 @@ else
   call_id_counter = Cti::Log.last.call_id.to_i
 end
 
-call_id_counter = call_id_counter + calc_plus
-Cti::Log.create(
-  direction:    'in',
-  from:         '4930609854180',
-  from_comment: johndoe.fullname,
-  to:           '4930609811111',
-  to_comment:   liamchen.fullname,
-  call_id:      call_id_counter.to_s.rjust(5, '0'),
-  comment:      '',
-  state:        'newCall',
-  done:         false,
-  preferences:  {
-    from: [
-      {
-        caller_id: '4930726128135',
+# The ringing calls. The sidebar crop shows both of them at once: one from a
+# customer Zammad can name and one from a number it knows nobody, so a reader
+# sees both the known and the unknown case side by side.
+#
+# A call only rings while its state is newCall, its direction is 'in' and it is
+# not marked as done — that is the `ringing` scope the sidebar reads.
+#
+# The known caller has to come from auto_wizard.json, the fixture AutoWizard.run
+# loads before this file. A user that only exists after Zammad's own db:seed
+# would be missing on a freshly built stack, and the find_by! below would abort
+# the whole seeding run. Mind the spelling: the fixture has "evely", not "evelyn".
+cti_known_caller = User.find_by!(login: 'evely.smith@midlandbank.biz')
+
+[
+  {
+    # A customer on the Zammad number, extension 30.
+    from:       cti_extension.call(30),
+    from_match: cti_known_caller.id,
+  },
+  {
+    # Mocked external caller, no customer behind it.
+    from:       '4930123456789',
+    from_match: nil,
+  },
+].each_with_index do |call, index|
+  call_id_counter = call_id_counter + calc_plus
+
+  # create! so a validation or uniqueness failure raises here instead of
+  # silently producing a caller log without its ringing calls, which would
+  # break the sidebar screenshots further down.
+  Cti::Log.create!(
+    direction:    'in',
+    from:         call[:from],
+    from_comment: nil,
+    to:           cti_extension.call(10),   # the agent extension that got the call
+    to_comment:   liamchen.fullname,
+    call_id:      call_id_counter.to_s.rjust(5, '0'),
+    comment:      '',
+    state:        'newCall',
+    done:         false,
+    preferences:  {
+      from: call[:from_match] ? [{
+        caller_id: call[:from],
         comment:   nil,
         level:     'known',
         object:    'User',
-        o_id:      2,
-        user_id:   2,
-      }
-    ]
+        o_id:      call[:from_match],
+        user_id:   call[:from_match],
+      }] : []
+    },
+    # Stagger the two so the newest one leads, matching the newest-first order
+    # of the sidebar block.
+    created_at:   index.minutes.ago,
+  )
+end
+
+# Call history so the caller log table has something to show. The states and comments cover
+# the status vocabulary the CTI guide documents: an answered call, a normal hangup, and the
+# reasons a call ended without anyone picking up.
+#
+# The second row carries two known matches for one number so the additional-matches badge and
+# its popover are visible. The third row carries a single maybe match, which is where the
+# Maybe badge shows up: a row with several matches only lists them in its popover. The last
+# number is unknown to Zammad, so the new-user button appears next to it.
+#
+# call_id has a SQL UNIQUE constraint, so every row takes the next one instead of a fixed value.
+cti_call_history = [
+  {
+    direction:             'in',
+    from:                  '4930111111111',
+    to:                    cti_extension.call(10),
+    from_comment:          johndoe.fullname,
+    to_comment:            liamchen.fullname,
+    comment:               'normalClearing',
+    state:                 'hangup',
+    done:                  true,
+    duration_waiting_time: 4,
+    duration_talking_time: 118,
+    created_at:            2.hours.ago,
+    matches:               [],
   },
-  created_at:   Time.zone.now,
-)
+  {
+    direction:             'in',
+    from:                  '4930222222222',
+    to:                    cti_extension.call(10),
+    from_comment:          nil,
+    to_comment:            liamchen.fullname,
+    comment:               'busy',
+    state:                 'hangup',
+    done:                  false,
+    duration_waiting_time: 6,
+    duration_talking_time: nil,
+    created_at:            3.hours.ago,
+    matches:               %w[emily@known thomas@known],
+  },
+  {
+    direction:             'in',
+    from:                  '4930333333333',
+    to:                    cti_extension.call(10),
+    from_comment:          nil,
+    to_comment:            liamchen.fullname,
+    comment:               'voicemail',
+    state:                 'hangup',
+    done:                  false,
+    duration_waiting_time: 11,
+    duration_talking_time: nil,
+    created_at:            4.hours.ago,
+    matches:               %w[morgan@maybe],
+  },
+  {
+    direction:             'in',
+    from:                  '4930444444444',
+    to:                    cti_extension.call(10),
+    from_comment:          nil,
+    to_comment:            liamchen.fullname,
+    comment:               'noAnswer',
+    state:                 'hangup',
+    done:                  false,
+    duration_waiting_time: 27,
+    duration_talking_time: nil,
+    created_at:            5.hours.ago,
+    matches:               [],
+  },
+  {
+    direction:             'out',
+    from:                  cti_extension.call(10),
+    to:                    '4930222222222',
+    from_comment:          liamchen.fullname,
+    to_comment:            nil,
+    comment:               'normalClearing',
+    state:                 'hangup',
+    done:                  true,
+    duration_waiting_time: 2,
+    duration_talking_time: 64,
+    created_at:            6.hours.ago,
+    matches:               [],
+  },
+]
+
+cti_call_history.each do |call|
+  call_id_counter += 1
+
+  Cti::Log.create!(
+    direction:              call[:direction],
+    from:                   call[:from],
+    to:                     call[:to],
+    from_comment:           call[:from_comment],
+    to_comment:             call[:to_comment],
+    call_id:                call_id_counter.to_s.rjust(5, '0'),
+    comment:                call[:comment],
+    state:                  call[:state],
+    done:                   call[:done],
+    duration_waiting_time:  call[:duration_waiting_time],
+    duration_talking_time:  call[:duration_talking_time],
+    created_at:             call[:created_at],
+    preferences:            {
+      from: call[:matches].map do |match|
+        login, level = match.split('@')
+        user = User.find_by!(login: "#{login}@fastlane.inc")
+
+        {
+          caller_id: call[:from],
+          comment:   nil,
+          level:     level,
+          object:    'User',
+          o_id:      user.id,
+          user_id:   user.id,
+        }
+      end
+    },
+  )
+end
 
 puts 'Enabling AI providers...'
 
