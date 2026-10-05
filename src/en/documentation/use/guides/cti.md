@@ -61,9 +61,9 @@ anymore. The call is still present in the caller log, so you can pick it up ther
 
 ## Reading the caller log
 
-The caller log lists every call Zammad recorded. Open it with the **Phone** entry in the navigation sidebar. The
-list is ordered by time, with the newest call first, and it fills in on its own while you are on the page. Scroll
-down to load more.
+The caller log lists every call your phone system reported. Open it with the **Phone** entry in the navigation
+sidebar. The list is ordered by time, with the newest call first, and it fills in on its own while you are on the
+page. Scroll down to load more.
 
 Each row shows:
 

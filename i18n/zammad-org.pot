@@ -5559,9 +5559,9 @@ msgstr ""
 #: src/en/documentation/use/guides/cti.md:67
 #, markdown-text
 msgid ""
-"The caller log lists every call Zammad recorded. Open it with the **Phone** "
-"entry in the navigation sidebar. The list is ordered by time, with the "
-"newest call first, and it fills in on its own while you are on the "
+"The caller log lists every call your phone system reported. Open it with the "
+"**Phone** entry in the navigation sidebar. The list is ordered by time, with "
+"the newest call first, and it fills in on its own while you are on the "
 "page. Scroll down to load more."
 msgstr ""
 
