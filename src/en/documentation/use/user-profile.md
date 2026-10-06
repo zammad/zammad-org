@@ -50,6 +50,10 @@ If you want to switch quickly between dark and light mode, you can also use the 
 Choose the language in which Zammad's UI is displayed. Ticket translations use their own target language,
 which you select in the ticket top bar. See [Article translation](guides/article-translation).
 
+**Languages you understand** lists further languages you can read. Zammad keeps an article in its original form
+instead of translating it automatically when its detected language is one of them. The field is only available if
+your admin enabled automatic translation for your role and article language detection.
+
 ### Avatar
 
 Adjust your avatar image. By default, the initials of your user are displayed on a colored background. If you want to
