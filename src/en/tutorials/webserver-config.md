@@ -137,6 +137,11 @@ server block on port 80, one in the HTTPS server block on port 443)
 and adjust `example.com` to the subdomain you have chosen for your
 Zammad instance.
 
+Use the same domain as the fully qualified domain name in Zammad's
+Base settings (_Settings > System > Base_). Zammad only accepts live
+updates from that origin, so a differing server name breaks the real-time
+channel.
+
 Now you'll need to adjust the path and file names for your SSL
 certificates you obtained on the prior steps. Adjust the following
 directives to match your setup:
@@ -225,6 +230,11 @@ vi or nano). Locate any `ServerName` directive and adjust `example.com`
 to the subdomain you have chosen for your Zammad instance. The first
 `ServerName` (in the HTTP VirtualHost) defaults to `example.com` and
 the second (in the HTTPS VirtualHost) to `localhost`.
+
+Use the same domain as the fully qualified domain name in Zammad's
+Base settings (_Settings > System > Base_). Zammad only accepts live
+updates from that origin, so a differing server name breaks the real-time
+channel.
 
 Now you'll need to adjust the path and file names for your SSL
 certificates you obtained on the prior steps. Adjust the following
@@ -329,3 +339,12 @@ Apache 2
   RequestHeader set X_FORWARDED_PROTO 'https'
   RequestHeader set X-Forwarded-Ssl on
   ```
+
+### Ticket changes not saved or missing live updates
+
+If agents change ticket fields but the save button does nothing, or changes
+made by other users only appear after a manual reload, the webserver host
+name likely differs from the fully qualified domain name in Zammad's
+Base settings (_Settings > System > Base_). Zammad accepts live updates
+only from that origin. Adjust `server_name` (Nginx) or `ServerName`
+(Apache 2) to match the setting.
