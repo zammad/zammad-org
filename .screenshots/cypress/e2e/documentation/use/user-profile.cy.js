@@ -19,11 +19,34 @@ describe('user profile screenshot', () => {
     cy.loginAs('AGENT1')
     cy.get('button#user-menu').should('be.visible').click()
     cy.get('[id="user-menu-popover"]').should('be.visible', { timeout: 10000 })
-    cy.get('[aria-label="New ticket"]').should('be.visible')
+    // The navigation sidebar shows the ringing calls above its footer, and every
+    //   call row carries its own "New ticket" button (aria-label comes from
+    //   v-tooltip). Anchor the clip on the footer's button next to the avatar,
+    //   otherwise a ringing call row drags the merged crop up the whole sidebar.
+    const footerNewTicket = () =>
+      cy.get('button#user-menu').parent().next().find('[aria-label="New ticket"]')
+    footerNewTicket().should('be.visible')
+    // The avatar photo is a CSS background image, so the shot can catch the
+    //   plain colour fallback when it fires before the image has painted (seen
+    //   on a cold stack). Decode it in the app's context and let it paint.
+    cy.get('button#user-menu [aria-label^="Avatar"]').then(($avatar) => {
+      const url = /url\(["']?([^"')]+)["']?\)/.exec($avatar[0].style.backgroundImage)?.[1]
+      expect(url, 'avatar background image url').to.be.a('string')
+      return cy.window().then(
+        (win) =>
+          new Cypress.Promise((resolve, reject) => {
+            const image = new win.Image()
+            image.onload = () => resolve()
+            image.onerror = () => reject(new Error(`avatar image failed to load: ${url}`))
+            image.src = url
+          }),
+      )
+    })
+    cy.wait(250) // let the decoded avatar paint before the screenshot
     cy.get('[id="user-menu-popover"]').clip({ padding: 5 }).then((PopoverClip) => {
       cy.get('button#user-menu').should('be.visible').clip({ padding: 5 }).then((AvatarClip) => {
         cy.mergeClips(PopoverClip, AvatarClip).then((mergedClip) => {
-          cy.get('[aria-label="New ticket"]').should('be.visible').clip({ padding: 5 }).then((NewTicketClip) => {
+          footerNewTicket().should('be.visible').clip({ padding: 5 }).then((NewTicketClip) => {
             cy.mergeClips(mergedClip, NewTicketClip).then((clip) => {
               cy.screenshot('avatar-menu', { clip })
             })

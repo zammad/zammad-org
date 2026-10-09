@@ -14,7 +14,7 @@ for more details.
 To open the avatar menu, click on your avatar icon in the bottom left corner in the sidebar. This icon either shows
 your initials or a profile picture.
 
-![Screenshot shows user detail panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
+![Screenshot shows the avatar menu with the entries User documentation, Appearance (dark mode toggle), Personal settings and Sign out](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
 
 The menu contains the following entries:
 
