@@ -83,8 +83,7 @@ wichtigsten Informationen zu richten:
 - Die meisten Verwaltungs-Funktionen (außer Benutzer- und
   Organisations-Verwaltung)
 - Ein Großteil der Knowledge Base Features (außer Ticketintegration)
-- Die meisten Profilfunktionen für Benutzer (außer Avatar- und
-  Spracheinstellungen)
+- Most account functions (except avatar and language preferences)
 - Berichte
 - Anrufprotokoll
 - Live-Chat
@@ -99,8 +98,8 @@ Sowohl in der Desktop- als auch in der Mobilansicht finden Sie unter der
 Schaltfläche `Anmelden` einen Link, über den Sie explizit in die andere
 Ansicht wechseln können (siehe Login-Screenshot von oben als Beispiel).
 
-Wenn Sie angemeldet sind und von der Mobilansicht zur Desktop-Ansicht
-wechseln möchten, gehen Sie zu Ihrem Profil, indem Sie unten Ihren Avatar
-auswählen und **Weiter mit Desktop** wählen (siehe Screenshot zum Konto oben
-als Beispiel). Der umgekehrte Weg ist ähnlich: im Avatar-Menü finden Sie
-einen Eintrag, um zur Mobilansicht zu wechseln.
+While you are signed in and want to switch from the mobile to the desktop
+view, go to your account by selecting your avatar at the bottom and select
+**Continue to desktop** (see account screenshot from above as an
+example). The other way round is similar: in the avatar menu, you can find
+an entry to switch to the mobile view.

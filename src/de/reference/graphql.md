@@ -47,10 +47,10 @@ GraphQL-Unterstützung sind:
 
 ### Authentifizierung
 
-Falls noch nicht vorhanden, erstellen Sie ein [Token im
-Zammad-Profil](/de/documentation/use/user-profile#token-zugriff), das Sie
-als API-Benutzer verwenden möchten. Je nachdem, worauf Sie per API zugreifen
-wollen, legen Sie die Berechtigungen entsprechend fest.
+If not already present, create a [token in your personal
+settings](/en/documentation/use/personal-settings#token-access)  that you
+want to use as API user. Depending what you want to achieve via API, set the
+permissions accordingly.
 
 Achten Sie darauf, dass Sie es vor dem Schließen des Dialogs kopieren, da
 Sie es nicht noch einmal sehen können. Falls Sie es versäumt haben,

@@ -41,10 +41,10 @@ opzioni. Alcuni esempi di client popolari con supporto GraphQL sono:
 
 ### Autenticazione
 
-Se non già presente, crea un [token nel profilo
-Zammad](/en/documentation/use/user-profile#token-access) che vuoi utilizzare
-come utente API. A seconda di ciò che vuoi ottenere tramite API, imposta le
-autorizzazioni di conseguenza.
+If not already present, create a [token in your personal
+settings](/en/documentation/use/personal-settings#token-access)  that you
+want to use as API user. Depending what you want to achieve via API, set the
+permissions accordingly.
 
 Assicurati di copiarlo prima di chiudere la finestra di dialogo perché non
 potrai visualizzarlo di nuovo.

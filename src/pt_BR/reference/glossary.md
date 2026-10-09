@@ -369,9 +369,9 @@ Função
 
   Você pode até adicionar novas funções ao seu Zammad.
 
-Navegação secundária
-: refere-se a um menu adicional ao lado da navegação (por exemplo, ao abrir configurações
-  de perfil).
+Secondary navigation
+: Refers to an additional menu next to the navigation (e.g. when opening personal
+  settings).
 
 Painel flutuante
 : o painel que desliza a partir do lado direito da tela para ações como

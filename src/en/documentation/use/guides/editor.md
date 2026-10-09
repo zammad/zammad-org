@@ -65,7 +65,7 @@ processing tools. Important shortcuts are:
 [[ctrl]] + [[u]]               | <u>Underline</u>
 
 Have a look at the keyboard shortcuts in Zammad where you can find all shortcuts. Open it via the
-[avatar menu](/en/documentation/use/user-profile#avatar-menu) in the bottom left corner or type [[?]].
+[avatar menu](/en/documentation/use/personal-settings#avatar-menu) in the bottom left corner or type [[?]].
 
 Have a look at the next section to use even more formatting via keyboard. Regardless if you are used to write Markdown
 or not, some of them might still be helpful in your daily work.

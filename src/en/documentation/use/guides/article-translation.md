@@ -40,7 +40,7 @@ Your translation target language is a personal setting: Zammad remembers it for 
 every ticket you open, including tickets in other browser tabs.
 
 The translation target language is independent of the language of Zammad's UI, which you set in your
-[personal settings](../user-profile).
+[personal settings](../personal-settings).
 
 ## Translate a single article
 
@@ -67,7 +67,7 @@ If you want to read a single article in its original language again while the sw
 
 ## Languages you understand
 
-If automatic translation is available for your role, your [personal settings](../user-profile) contain the
+If automatic translation is available for your role, your [personal settings](../personal-settings) contain the
 **Languages you understand** field. Use it to select the languages you can read without a translation.
 
 While the **Translate all articles** switch is on, Zammad skips the automatic translation of an article whose

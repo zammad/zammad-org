@@ -290,7 +290,7 @@ Ruolo
   Puoi persino aggiungere nuovi ruoli al tuo Zammad.
 
 Secondary navigation
-: Refers to an additional menu next to the navigation (e.g. when opening profile
+: Refers to an additional menu next to the navigation (e.g. when opening personal
   settings).
 
 Flyout

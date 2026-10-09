@@ -85,8 +85,7 @@ focus on important information:
   gestione degli utenti ticket e delle organizzazioni)
 - La maggior parte delle funzionalità della base di conoscenza (ad eccezione
   dell'integrazione dei ticket)
-- La maggior parte delle funzioni del profilo utente (ad eccezione delle
-  preferenze di avatar e lingua)
+- Most account functions (except avatar and language preferences)
 - Rapporti
 - Registro chiamate
 - Chat in tempo reale
@@ -102,7 +101,8 @@ Nelle schermate di accesso sia della visualizzazione desktop che mobile,
 puoi trovare un link sotto il pulsante `Accedi` per passare esplicitamente
 all'altra visualizzazione.
 
-Mentre sei connesso e vuoi passare dalla visualizzazione mobile a quella
-desktop, vai al tuo profilo selezionando il tuo avatar in basso e seleziona
-**Continua al desktop**. Il contrario è simile: nel menu avatar, puoi
-trovare una voce per passare alla visualizzazione mobile.
+While you are signed in and want to switch from the mobile to the desktop
+view, go to your account by selecting your avatar at the bottom and select
+**Continue to desktop** (see account screenshot from above as an
+example). The other way round is similar: in the avatar menu, you can find
+an entry to switch to the mobile view.

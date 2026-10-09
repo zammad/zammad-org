@@ -80,10 +80,10 @@ texto. Atalhos importantes são:
 [[ctrl]] + [[i]]               | _Itálico_
 [[ctrl]] + [[u]]               | <u>Sublinhado</u>
 
-Dê uma olhada nos atalhos de teclado no Zammad, onde você pode encontrar
-todos os atalhos. Abra-o pelo [menu do
-avatar](/pt_BR/documentation/use/user-profile#avatar-menu) no canto inferior
-esquerdo ou digite [[?]].
+Have a look at the keyboard shortcuts in Zammad where you can find all
+shortcuts. Open it via the [avatar
+menu](/en/documentation/use/personal-settings#avatar-menu) in the bottom
+left corner or type [[?]].
 
 Dê uma olhada na próxima seção para usar ainda mais formatação via
 teclado. Independentemente de você estar acostumado a escrever em Markdown

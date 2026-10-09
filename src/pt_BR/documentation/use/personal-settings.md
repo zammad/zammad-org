@@ -1,14 +1,17 @@
 ---
 order: 7
-title: 'Perfil do usuário'
+title: 'Configurações pessoais'
 ---
 
-# Perfil do usuário
+# Configurações pessoais
 
-Ajuste sua conta e configurações pessoais no seu perfil de usuário. Algumas
-das opções podem não estar disponíveis, dependendo de como seu sistema está
-configurado e de suas permissões. Abra-o pelo menu do avatar na barra
-lateral. Continue lendo para mais detalhes.
+Adjust your account and personal settings here. Some of the options may not
+be available, depending on how your system is configured and your
+permissions. Open them from the avatar menu in the sidebar. Read on for more
+details.
+
+![Captura de tela mostra as configurações de perfil do
+usuário](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ## Menu do avatar
 
@@ -29,16 +32,11 @@ O menu contém as seguintes entradas:
 - **Keyboard shortcuts**: abre um popup com os atalhos de teclado
   disponíveis. Como alternativa, pressione [[?]] no seu teclado para
   exibi-lo também.
-- **Configurações pessoais**: abre as configurações do seu perfil, onde você
-  pode ajustar seu avatar, senha, configurações de notificação e muito mais;
-  veja a próxima seção.
+- **Personal settings**: opens your personal settings where you can adjust
+  your avatar, password, notification settings and much more. See the
+  sections below.
 
-## Configurações pessoais
-
-![Captura de tela mostra as configurações de perfil do
-usuário](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
-
-### Aparência
+## Aparência
 
 Altere a aparência do Zammad. Opções disponíveis:
 
@@ -54,13 +52,17 @@ Se você quiser alternar rapidamente entre o modo escuro e claro, também pode u
 [menu do avatar](#avatar-menu) ou usar o atalho de teclado simplesmente pressionando [[d]].
 :::
 
-### Idioma
+## Idioma
 
 Escolha o idioma em que a interface do Zammad é exibida. As traduções de
 tickets usam o seu próprio idioma de destino, que você seleciona na barra
 superior do ticket. Veja [Tradução de artigos](guides/article-translation).
 
-### Avatar
+**Languages you understand** lists further languages you can read. Zammad keeps an article in its original form
+instead of translating it automatically when its detected language is one of them. The field is only available if
+your admin enabled automatic translation for your role and article language detection.
+
+## Avatar
 
 Ajuste sua imagem de avatar. Por padrão, as iniciais do seu usuário são
 exibidas em um fundo colorido. Se você quiser adicionar uma imagem, basta
@@ -69,7 +71,7 @@ enviar uma ou usar sua câmera, se tiver uma.
 Depois de capturar ou enviar uma imagem, você pode recortá-la. Dê uma olhada
 na pré-visualização no topo do painel flutuante à direita.
 
-### Fora do escritório
+## Fora do escritório
 
 Defina períodos de ausência (por exemplo, para suas férias) e designe um
 substituto para lidar com seus tickets enquanto você estiver fora.
@@ -79,12 +81,12 @@ alterações nos existentes enquanto você estiver fora. Além disso, suas
 visões gerais personalizadas ficam disponíveis para esse agente acompanhar
 seus tickets. Você também recebe notificações enquanto estiver ausente.
 
-### Senha
+## Senha
 
 Altere a senha da sua conta. Para atualizá-la, informe sua senha antiga, a
 nova senha e confirme a nova digitando-a novamente.
 
-### Autenticação de dois fatores
+## Autenticação de dois fatores
 
 Configure uma autenticação de dois fatores (2FA) para aumentar a segurança
 da sua conta. Seu administrador precisa ter ativado pelo menos um método de
@@ -96,14 +98,14 @@ fornecer seu segundo fator no próximo login. Se você não conseguir fornecer
 seu método de 2FA configurado, entre em contato com seu administrador para
 redefini-lo.
 
-### Dispositivos
+## Dispositivos
 
 Aqui você encontra uma lista de todos os dispositivos conectados à sua conta
 do Zammad. Se necessário, você pode revogar o acesso clicando no ícone de
 exclusão na coluna "Actions". Isso encerra a sessão nesse dispositivo e
 exige um novo login nele.
 
-### Acesso por token
+## Acesso por token
 
 Gere um token de acesso pessoal para que um aplicativo de terceiros acesse a
 API do Zammad. Depois de clicar no botão `New Personal Access Token`, você
@@ -116,7 +118,7 @@ vez. Certifique-se de copiá-lo, pois não há como acessá-lo novamente.
 ![Captura de tela mostra o painel flutuante com o token criado e o botão de
 copiar](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
-### Notificações
+## Notificações
 
 Ajuste as notificações que você recebe. Você pode ajustar:
 
@@ -147,14 +149,14 @@ mais de nove meses.
 A limpeza é executada a cada duas horas, então uma notificação pode permanecer visível um pouco mais do que os tempos indicados acima.
 :::
 
-### Visões gerais
+## Visões gerais
 
 Altere a ordem das visões gerais da sua conta. Basta arrastar e soltar
 clicando nas alças no lado esquerdo. Se seu administrador alterar a ordem,
 sua ordem personalizada permanece. Você pode voltar à ordem do administrador
 clicando no botão `Reset Overview Order`.
 
-### Calendário
+## Calendário
 
 O Zammad permite que você se inscreva em um feed de calendário (ical) para
 ver tickets no seu aplicativo de calendário favorito. Use a **Combined

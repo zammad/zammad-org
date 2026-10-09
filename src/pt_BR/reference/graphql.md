@@ -43,10 +43,10 @@ clientes populares com suporte a GraphQL são:
 
 ### Autenticação
 
-Se ainda não estiver presente, crie um [token no perfil do
-Zammad](/pt_BR/documentation/use/user-profile#token-access) que deseja usar
-como usuário de API. Dependendo do que você deseja fazer via API, defina as
-permissões adequadamente.
+If not already present, create a [token in your personal
+settings](/en/documentation/use/personal-settings#token-access)  that you
+want to use as API user. Depending what you want to achieve via API, set the
+permissions accordingly.
 
 Certifique-se de copiá-lo antes de fechar a caixa de diálogo, pois você não
 pode visualizá-lo novamente. Caso algo dê errado, basta criar um novo token.

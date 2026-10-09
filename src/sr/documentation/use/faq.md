@@ -33,11 +33,10 @@ title: FAQ
 
 ### Како добити обавештења за промене тикета?
 
-Промените [подешавања обавештења у вашим личним
-подешавањима](user-profile#notifications). Можете направити разлику између
-радње (нпр. отварање тикета), канала обавештења (имејл порука и/или
-претраживач), ваш однос према тикету (нпр. да ли сте његов власник) и
-ограничивање обавештења на одговорајућу групу.
+Adjust the [notification settings](personal-settings#notifications). You can
+distinguish between the action (e.g. ticket creation), the notification
+channel (email and/or browser), your relation to the ticket (e.g. if you are
+the owner) and limit the notifications to a specific group.
 
 ### Зашто је тикет поново отворен? Већ сам га затворио
 
@@ -78,22 +77,21 @@ to the customer.
 
 ### Како да користим пречице на тастатури?
 
-Само их користите! Преглед доступних пречаца можете наћи притиском на [[?]]
-на тастатури или отворити преглед из [аватар
-менија](user-profile#avatar-menu) (кликните на свог аватара у доњем левом
-углу и изаберите **Пречице на тастатури**).
+Just use them! You can find an overview of the available shortcuts by
+pressing [[?]] on your keyboard or open the overview from the [avatar
+menu](personal-settings#avatar-menu) (click on your avatar in the bottom
+left corner and select **Keyboard shortcuts**).
 
 Неки од њих зависе од локације на којој се налазите или радње коју
 извршавате (нпр. када сте у едитору или у приказу детаља тикете).
 
 ### Како да пребаците корисничко сучеље између тамног и светлог режима?
 
-Пребацивање између светлог, тамног и аутоматског режима (покушава да се
-прилагоди вашем претраживачу) можете обавити у [аватар
-менију](user-profile#avatar-menu). Отворите га кликом на аватара у доњем
-левом углу и пребаците прекидач у жељени положај или користите пречац на
-тастатури [[d]]. Ако није активирано ниједно поље за унос, режими се
-циклички мењају.
+You can switch between light, dark and automatic mode (tries to adapt to
+your browser) in the [avatar menu](personal-settings#avatar-menu). Open it
+by clicking your avatar in the bottom left corner and switch the toggle to
+the desired state or use the keyboard shortcut [[d]]. If no input field is
+activated, it cycles between the different modes.
 
 ### How can I read a ticket that is written in another language?
 
@@ -101,26 +99,26 @@ Agents can have the ticket articles translated into a language of their
 choice, either per article or automatically for every ticket they open. See
 the [article translation guide](./guides/article-translation).
 
-## Кориснички профил
+## Personal settings
 
-### Како да променим слику профила/аватара?
+### How to change my avatar image?
 
-Go to the [avatar section](user-profile#avatar) in your personal settings by
-opening the avatar menu in the bottom left corner and select **Personal
-settings**. There you can upload an image, capture a photo (if your device
-has a camera) or delete already present images.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [avatar section](personal-settings#avatar). There you can
+upload an image, capture a photo (if your device has a camera) or delete
+already present images.
 
 ### Како да променим језик корисничког сучеља Zammad-а?
 
-Go to the [language section](user-profile#language) in your personal
-settings by opening the avatar menu in the bottom left corner and select
-**Personal settings**.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [language section](personal-settings#language).
 
 ### Шта треба да урадим пре одласка на одмор?
 
-Go to the [out of office section](user-profile#out-of-office) in your
-personal settings by opening the avatar menu in the bottom left corner and
-select **Personal settings**. There you can define a replacement agent.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [out of office
+section](personal-settings#out-of-office). There you can define a
+replacement agent.
 
 ### Како прилагодити редослед прегледа?
 

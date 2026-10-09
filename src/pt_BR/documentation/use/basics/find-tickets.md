@@ -45,11 +45,11 @@ mais detalhes.
 
 ## Notificações
 
-Dependendo das [configurações de
-notificação](/pt_BR/documentation/use/user-profile#notifications) no seu
-perfil, você recebe atualizações para diferentes eventos baseados em ticket,
-como a criação ou atualização de um ticket. Isso garante que nenhuma
-alteração importante em um ticket passe despercebida.
+Depending on your [notification
+settings](/en/documentation/use/personal-settings#notifications), you
+receive updates for different ticket based events like the creation or the
+update of a ticket. This ensures that no important change to a ticket gets
+overlooked.
 
 Você pode abri-las clicando no contador de notificações no canto superior
 esquerdo. Se houver um selo com um contador, ele mostra o número de

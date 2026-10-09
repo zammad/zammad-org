@@ -275,13 +275,12 @@ individuellen Fristen für bestimmte Kunden. Wenn eine solche Frist
 
 **Wie?**
 
-Zammad benachrichtigt Sie standardmäßig, wenn sich Tickets Fristen nähern
-oder diese überschreiten. Konfigurieren Sie diese Benachrichtigungen in
-Ihren [persönlichen
-Einstellungen](/de/documentation/use/user-profile#notifications). Zammad
-bietet außerdem eine Standard-Übersicht namens "Eskalierte Tickets"
-an. Diese Übersicht umfasst bereits eskalierte Tickets sowie Tickets, bei
-denen innerhalb der nächsten 10 Minuten mit einer Eskalation zu rechnen ist.
+Zammad notifies you by default when tickets approach or exceed their
+deadlines. Configure these notifications in your [personal
+settings](/en/documentation/use/personal-settings#notifications). Zammad
+also ships a default overview called "Escalated Tickets". This overview
+includes already escalated tickets and tickets which are expected to
+escalate within the next 10 minutes.
 
 SLA-relevante Tickets zeigen einen Zeitstempel in der Kopfzeile des Tickets
 an. Bewegen Sie den Mauszeiger über diesen Zeitstempel, um alle

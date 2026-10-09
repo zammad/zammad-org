@@ -82,10 +82,10 @@ testi. Le scorciatoie importanti sono:
 [[ctrl]] + [[i]]               | _Corsivo_
 [[ctrl]] + [[u]]               | <u>Sottolineato</u>
 
-Dai un'occhiata alle scorciatoie da tastiera in Zammad dove puoi trovare
-tutte le scorciatoie. Aprile tramite il [menu
-avatar](/it/documentation/use/user-profile#menu-avatar) nell'angolo in basso
-a sinistra o digita [[?]].
+Have a look at the keyboard shortcuts in Zammad where you can find all
+shortcuts. Open it via the [avatar
+menu](/en/documentation/use/personal-settings#avatar-menu) in the bottom
+left corner or type [[?]].
 
 Dai un'occhiata alla sezione successiva per usare ancora più formattazione
 tramite tastiera. Indipendentemente dal fatto che tu sia abituato a scrivere

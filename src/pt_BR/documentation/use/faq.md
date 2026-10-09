@@ -33,11 +33,10 @@ gerais, seu administrador do Zammad deve conseguir ajudar.
 
 ### Como ser notificado sobre alterações de ticket?
 
-Ajuste as [configurações de notificação no seu
-perfil](user-profile#notifications). Você pode diferenciar entre a ação (por
-exemplo, criação de ticket), o canal de notificação (email e/ou navegador),
-sua relação com o ticket (por exemplo, se você é o responsável) e limitar as
-notificações a um grupo específico.
+Adjust the [notification settings](personal-settings#notifications). You can
+distinguish between the action (e.g. ticket creation), the notification
+channel (email and/or browser), your relation to the ticket (e.g. if you are
+the owner) and limit the notifications to a specific group.
 
 ### Por que o ticket está aberto de novo? Eu já o fechei
 
@@ -80,10 +79,10 @@ diferente. Em caso de dúvida, você deve perguntar ao seu administrador.
 
 ### Como usar atalhos de teclado?
 
-Basta usá-los! Você pode encontrar uma visão geral dos atalhos disponíveis
-pressionando [[?]] no seu teclado ou abrir a visão geral no [menu do
-avatar](user-profile#avatar-menu) (clique no seu avatar no canto inferior
-esquerdo e selecione **Keyboard shortcuts**).
+Just use them! You can find an overview of the available shortcuts by
+pressing [[?]] on your keyboard or open the overview from the [avatar
+menu](personal-settings#avatar-menu) (click on your avatar in the bottom
+left corner and select **Keyboard shortcuts**).
 
 Alguns deles dependem do local em que você está ou da ação que está
 realizando (por exemplo, estar no editor ou na visualização de detalhes do
@@ -91,12 +90,11 @@ ticket).
 
 ### Como alternar entre o modo escuro e claro para a interface do usuário?
 
-Você pode alternar entre os modos claro, escuro e automático (tenta se
-adaptar ao seu navegador) no [menu do
-avatar](user-profile#avatar-menu). Abra-o clicando no seu avatar no canto
-inferior esquerdo e mude a chave para o estado desejado, ou use o atalho de
-teclado [[d]]. Se nenhum campo de entrada estiver ativado, ele alterna entre
-os diferentes modos.
+You can switch between light, dark and automatic mode (tries to adapt to
+your browser) in the [avatar menu](personal-settings#avatar-menu). Open it
+by clicking your avatar in the bottom left corner and switch the toggle to
+the desired state or use the keyboard shortcut [[d]]. If no input field is
+activated, it cycles between the different modes.
 
 ### Como posso ler um ticket escrito em outro idioma?
 
@@ -104,27 +102,26 @@ Os agentes podem traduzir os artigos do ticket para o idioma de sua escolha,
 seja artigo por artigo, seja automaticamente para todo ticket que
 abrirem. Veja o [guia de tradução de artigos](./guides/article-translation).
 
-## Perfil do usuário
+## Configurações pessoais
 
-### Como alterar minha imagem de perfil/avatar?
+### How to change my avatar image?
 
-Vá até a [seção do avatar](user-profile#avatar) nas configurações do seu
-perfil, abrindo o menu do avatar no canto inferior esquerdo e selecionando
-**Configurações pessoais**. Ali você pode enviar uma imagem, capturar uma
-foto (se seu dispositivo tiver câmera) ou excluir imagens já presentes.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [avatar section](personal-settings#avatar). There you can
+upload an image, capture a photo (if your device has a camera) or delete
+already present images.
 
 ### Como alterar o idioma da interface do usuário do Zammad?
 
-Vá até a [seção de idioma](user-profile#language) nas configurações do seu
-perfil, abrindo o menu do avatar no canto inferior esquerdo e selecionando
-**Configurações pessoais**.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [language section](personal-settings#language).
 
 ### O que devo fazer antes de sair de férias?
 
-Vá até a [seção de fora do escritório](user-profile#out-of-office) nas
-configurações do seu perfil, abrindo o menu do avatar no canto inferior
-esquerdo e selecionando **Configurações pessoais**. Ali você pode definir um
-agente substituto.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [out of office
+section](personal-settings#out-of-office). There you can define a
+replacement agent.
 
 ### Como ajustar a ordem das visões gerais?
 

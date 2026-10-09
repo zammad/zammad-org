@@ -44,11 +44,11 @@ closed from your taskbar and your last search queries.
 
 ## Обавештења
 
-Зависно од [подешавања
-обавештења](/en/documentation/use/user-profile#notifications) у свом
-профилу, добијате ажурирања за различите догађаје везане за тикете, попут
-креирања или ажурирања тикета. Ово осигурава да се ниједна важна измена на
-тикету не пропусти.
+Depending on your [notification
+settings](/en/documentation/use/personal-settings#notifications), you
+receive updates for different ticket based events like the creation or the
+update of a ticket. This ensures that no important change to a ticket gets
+overlooked.
 
 Можете их отворити кликом на бројилац обавештења у горњем левом углу. Ако
 постоји ознака са бројем, он приказује број неопрочитаних обавештења.

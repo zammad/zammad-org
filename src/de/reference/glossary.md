@@ -366,9 +366,9 @@ Rolle
 
   Sie können sogar neue Rollen zu Ihrem Zammad hinzufügen.
 
-Sekundäre Navigation
-: Bezeichnet ein zusätzliches Menü neben der Haupt-Navigation (z.B. beim geöffneten
-  Profileinstellungen).
+Secondary navigation
+: Refers to an additional menu next to the navigation (e.g. when opening personal
+  settings).
 
 Seitenmenü
 : Der Bereich, der von der rechten Seite des Bildschirms eingeblendet wird und Aktionen wie

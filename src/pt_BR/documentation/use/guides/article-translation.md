@@ -52,8 +52,8 @@ O seu idioma de destino para traduções é uma configuração pessoal: o Zammad
 o lembra para a sua conta de usuário e o aplica a todo ticket que você
 abrir, inclusive tickets em outras abas do navegador.
 
-O idioma de destino para traduções é independente do idioma da interface do
-Zammad, que você define nas suas [configurações pessoais](../user-profile).
+The translation target language is independent of the language of Zammad's
+UI, which you set in your [personal settings](../personal-settings).
 
 ## Traduzir um único artigo
 
@@ -85,6 +85,24 @@ visualizar.
 
 Se quiser ler um único artigo no idioma original novamente enquanto a chave
 continua ativada para os outros, use **Show original** nele.
+
+## Languages you understand
+
+If automatic translation is available for your role, your [personal
+settings](../personal-settings) contain the **Languages you understand**
+field. Use it to select the languages you can read without a translation.
+
+While the **Translate all articles** switch is on, Zammad skips the
+automatic translation of an article whose detected language is one of the
+languages you listed and leaves the article in its original form. A note
+**Not translated due to your preferences.** below such an article tells you
+that it was skipped. Articles whose language Zammad could not detect are
+translated as usual. Click the translate button in the article action row if
+you want to read it in your target language anyway.
+
+Because the skipped articles are matched by their detected language, the
+field only appears if your admin enabled article language detection, in
+addition to automatic translation for your role.
 
 ## Qualidade da tradução e feedback
 

@@ -84,8 +84,7 @@ foco em informações importantes:
   e organizações do ticket)
 - A maioria dos recursos da base de conhecimento (exceto integração com
   ticket)
-- A maioria das funções de perfil de usuário (exceto preferências de avatar
-  e idioma)
+- Most account functions (except avatar and language preferences)
 - Relatórios
 - Registro de chamadas
 - Chat ao vivo
@@ -101,8 +100,8 @@ Tanto na tela de login desktop quanto na mobile, você encontra um link
 abaixo do botão `Sign in` para alternar explicitamente para a outra
 visualização (veja a captura de tela de login acima como exemplo).
 
-Enquanto estiver conectado e quiser mudar da visualização mobile para a
-desktop, vá até seu perfil selecionando seu avatar na parte inferior e
-selecione **Continue to desktop** (veja a captura de tela de conta acima
-como exemplo). O caminho inverso é semelhante: no menu do avatar, você
-encontra uma opção para mudar para a visualização mobile.
+While you are signed in and want to switch from the mobile to the desktop
+view, go to your account by selecting your avatar at the bottom and select
+**Continue to desktop** (see account screenshot from above as an
+example). The other way round is similar: in the avatar menu, you can find
+an entry to switch to the mobile view.

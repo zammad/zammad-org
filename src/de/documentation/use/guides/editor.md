@@ -87,10 +87,10 @@ Textverarbeitungsprogrammen üblich. Wichtige Tastenkombinationen sind:
 [[ctrl]] + [[i]]        | _Kursiv_
 [[ctrl]] + [[u]]        | <u>Unterstrichen</u>
 
-Werfen Sie einen Blick auf die Tastaturkürzel-Übersicht in Zammad, wo Sie
-alle Tastenkürzel finden können. Öffnen Sie diese über das
-[Avatar-Menü](/de/documentation/use/user-profile#avatar-menu) in der unteren
-linken Ecke oder drücken Sie [[?]].
+Have a look at the keyboard shortcuts in Zammad where you can find all
+shortcuts. Open it via the [avatar
+menu](/en/documentation/use/personal-settings#avatar-menu) in the bottom
+left corner or type [[?]].
 
 Schauen Sie sich den nächsten Abschnitt an, wo Sie weitere
 Formatierungsoptionen per Tastatur finden können. Unabhängig davon, ob Sie

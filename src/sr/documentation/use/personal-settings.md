@@ -1,14 +1,17 @@
 ---
 order: 7
-title: 'Кориснички профил'
+title: 'Personal settings'
 ---
 
-# Кориснички профил
+# Personal settings
 
-Подесите подешавања налога и лична подешавања у свом корисничком
-профилу. Неке од опција можда неће бити доступне, зависно од конфигурације
-вашег система и ваших дозвола. Отворите га из менија аватара на бочној
-траци. Прочитајте даље за више детаља.
+Adjust your account and personal settings here. Some of the options may not
+be available, depending on how your system is configured and your
+permissions. Open them from the avatar menu in the sidebar. Read on for more
+details.
+
+![Screenshot shows personal settings of a
+user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
 
 ## Кориснички мени
 
@@ -30,15 +33,10 @@ title: 'Кориснички профил'
   тастатури. Алтернативно, притисните [[?]] на тастатури да га такође
   прикажете.
 - **Personal settings**: opens your personal settings where you can adjust
-  your avatar, password, notification settings and much more, see next
-  section.
+  your avatar, password, notification settings and much more. See the
+  sections below.
 
-## Personal settings
-
-![Screenshot shows personal settings of a
-user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)
-
-### Изглед
+## Изглед
 
 Промените изглед Zammad-а. Доступне опције:
 
@@ -54,13 +52,17 @@ user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-set
 [менију аватара](#avatar-menu) или употребити пречицу на тастатури тако што ћете једноставно притиснути [[d]].
 :::
 
-### Језик
+## Језик
 
 Choose the language in which Zammad's UI is displayed. Ticket translations
 use their own target language, which you select in the ticket top bar. See
 [Article translation](guides/article-translation).
 
-### Аватар
+**Languages you understand** lists further languages you can read. Zammad keeps an article in its original form
+instead of translating it automatically when its detected language is one of them. The field is only available if
+your admin enabled automatic translation for your role and article language detection.
+
+## Аватар
 
 Подесите своју слику аватара. Подразумевано, иницијали вашег корисника се
 приказују на обојеној позадини. Ако желите да додате слику, једноставно је
@@ -69,7 +71,7 @@ use their own target language, which you select in the ticket top bar. See
 Након фотографисања или отпремања слике, можете је исећи. Погледајте преглед
 на врху десног бочног панела.
 
-### Ван канцеларије
+## Ван канцеларије
 
 Дефинишите периоде одсуства (нпр. за ваш одмор) и одредите замену за
 руковање вашим тикетима док сте одсутни.
@@ -79,12 +81,12 @@ use their own target language, which you select in the ticket top bar. See
 овом оператеру ради праћења ваших тикета. Добијате обавештења током ваше
 одсутности, такође.
 
-### Лозинка
+## Лозинка
 
 Промените лозинку вашег налога. Да бисте је ажурирали, унесите стару
 лозинку, нову лозинку и потврдите нову тако што ћете је поново укуцати.
 
-### Двофакторска аутентификација
+## Двофакторска аутентификација
 
 Подесите двофакторску аутентификацију (2FA) за повећање безбедности вашег
 налога. Ваш администратор мора бити активирао барем једну 2FA методу. Могуће
@@ -95,14 +97,14 @@ use their own target language, which you select in the ticket top bar. See
 користите конфигурисану 2FA методу, контактирајте администратора да је
 ресетује.
 
-### Уређаји
+## Уређаји
 
 Овде можете пронаћи листу свих уређаја на којима је извршено улазак у ваш
 Zammad налог. У потреби, можете опозвати приступ кликом на икону за брисање
 у колони "Радње". Ово прекида сесију на овом уређају и захтева поновно
 улазак.
 
-### Приступ путем кључа
+## Приступ путем кључа
 
 Генеришите лични приступни токен за апликацију треће стране како бисте
 приступили Zammad API-ју. Након клика на дугме `Novi lični pristupni token`,
@@ -114,7 +116,7 @@ Zammad налог. У потреби, можете опозвати присту
 ![Пример снимка екрана (пуна
 страна)](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)
 
-### Обавештења
+## Обавештења
 
 Подесите обавештења која добијате. Можете подесити:
 
@@ -146,14 +148,14 @@ longer than nine months.
 The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.
 :::
 
-### Прегледи
+## Прегледи
 
 Промените редослед прегледа за ваш налог. Једноставно превуците их кликом на
 ручице са леве стране. Ако администратор промени редослед, ваш прилагођени
 редослед остаје непромењен. Можете се вратити на редослед администратора
 кликом на дугме `Resetuj redosled pregleda`.
 
-### Календар
+## Календар
 
 Zammad вам омогућава да се претплатите на календар (ицал) како бисте видели
 тикете у вашој омиљеној апликацији. Користите горњу **Комбиновани URL за

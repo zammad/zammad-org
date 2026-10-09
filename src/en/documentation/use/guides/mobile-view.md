@@ -75,7 +75,7 @@ Additionally, certain features were intentionally omitted to improve the focus o
 
 - Most management features (except ticket user and organization management)
 - Most knowledge base features (except ticket integration)
-- Most user profile functions (except avatar and language preferences)
+- Most account functions (except avatar and language preferences)
 - Reports
 - Caller log
 - Live chat
@@ -88,6 +88,6 @@ mechanism in place, it's possible to explicitly switch between the views by usin
 In both desktop and mobile view login screens, you can find a link below the `Sign in` button to explicitly switch to
 the other view (see login screenshot from above as an example).
 
-While you are signed in and want to switch from the mobile to the desktop view, go to your profile by selecting your
+While you are signed in and want to switch from the mobile to the desktop view, go to your account by selecting your
 avatar at the bottom and select **Continue to desktop** (see account screenshot from above as an example). The other
 way round is similar: in the avatar menu, you can find an entry to switch to the mobile view.

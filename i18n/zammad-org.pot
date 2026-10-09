@@ -2216,8 +2216,8 @@ msgstr ""
 msgid ""
 "Zammad notifies you by default when tickets approach or exceed their "
 "deadlines. Configure these notifications in your [personal "
-"settings](/en/documentation/use/user-profile#notifications). Zammad also "
-"ships a default overview called \"Escalated Tickets\". This overview "
+"settings](/en/documentation/use/personal-settings#notifications). Zammad "
+"also ships a default overview called \"Escalated Tickets\". This overview "
 "includes already escalated tickets and tickets which are expected to "
 "escalate within the next 10 minutes."
 msgstr ""
@@ -3247,26 +3247,26 @@ msgid ""
 "more details."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/basics/find-tickets.md:37
-#: src/en/documentation/use/user-profile.md:97
+#: src/en/documentation/use/personal-settings.md:99
 #, markdown-text, no-wrap
 msgid "Notifications"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/find-tickets.md:43
+#: src/en/documentation/use/basics/find-tickets.md:42
 #, markdown-text
 msgid ""
-"Depending on the [notification "
-"settings](/en/documentation/use/user-profile#notifications) in your profile, "
-"you receive updates for different ticket based events like the creation or "
-"the update of a ticket. This ensures that no important change to a ticket "
-"gets overlooked."
+"Depending on your [notification "
+"settings](/en/documentation/use/personal-settings#notifications), you "
+"receive updates for different ticket based events like the creation or the "
+"update of a ticket. This ensures that no important change to a ticket gets "
+"overlooked."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/find-tickets.md:46
+#: src/en/documentation/use/basics/find-tickets.md:45
 #, markdown-text
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
@@ -3275,7 +3275,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/find-tickets.md:48
+#: src/en/documentation/use/basics/find-tickets.md:47
 #, markdown-text
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
@@ -4450,11 +4450,10 @@ msgstr ""
 #: src/en/documentation/use/faq.md:34
 #, markdown-text
 msgid ""
-"Adjust the [notification settings in your "
-"profile](user-profile#notifications). You can distinguish between the action "
-"(e.g. ticket creation), the notification channel (email and/or browser), "
-"your relation to the ticket (e.g. if you are the owner) and limit the "
-"notifications to a specific group."
+"Adjust the [notification settings](personal-settings#notifications). You can "
+"distinguish between the action (e.g. ticket creation), the notification "
+"channel (email and/or browser), your relation to the ticket (e.g. if you are "
+"the owner) and limit the notifications to a specific group."
 msgstr ""
 
 #. type: Title ###
@@ -4553,8 +4552,8 @@ msgstr ""
 msgid ""
 "Just use them! You can find an overview of the available shortcuts by "
 "pressing [[?]] on your keyboard or open the overview from the [avatar "
-"menu](user-profile#avatar-menu) (click on your avatar in the bottom left "
-"corner and select **Keyboard shortcuts**)."
+"menu](personal-settings#avatar-menu) (click on your avatar in the bottom "
+"left corner and select **Keyboard shortcuts**)."
 msgstr ""
 
 #. type: Plain text
@@ -4576,9 +4575,9 @@ msgstr ""
 #, markdown-text
 msgid ""
 "You can switch between light, dark and automatic mode (tries to adapt to "
-"your browser) in the [avatar menu](user-profile#avatar-menu). Open it by "
-"clicking your avatar in the bottom left corner and switch the toggle to the "
-"desired state or use the keyboard shortcut [[d]]. If no input field is "
+"your browser) in the [avatar menu](personal-settings#avatar-menu). Open it "
+"by clicking your avatar in the bottom left corner and switch the toggle to "
+"the desired state or use the keyboard shortcut [[d]]. If no input field is "
 "activated, it cycles between the different modes."
 msgstr ""
 
@@ -4599,26 +4598,26 @@ msgstr ""
 
 #. type: Title #
 #: src/en/documentation/use/faq.md:86
-#: src/en/documentation/use/user-profile.md:1
-#: src/en/documentation/use/user-profile.md:6
+#: src/en/documentation/use/personal-settings.md:1
+#: src/en/documentation/use/personal-settings.md:6
 #, markdown-text, no-wrap
-msgid "User profile"
+msgid "Personal settings"
 msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/faq.md:88
 #, markdown-text, no-wrap
-msgid "How to change my profile/avatar image?"
+msgid "How to change my avatar image?"
 msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/faq.md:93
 #, markdown-text
 msgid ""
-"Go to the [avatar section](user-profile#avatar) in your personal settings by "
-"opening the avatar menu in the bottom left corner and select **Personal "
-"settings**. There you can upload an image, capture a photo (if your device "
-"has a camera) or delete already present images."
+"Open the avatar menu in the bottom left corner, select **Personal settings** "
+"and go to the [avatar section](personal-settings#avatar). There you can "
+"upload an image, capture a photo (if your device has a camera) or delete "
+"already present images."
 msgstr ""
 
 #. type: Title ###
@@ -4631,9 +4630,8 @@ msgstr ""
 #: src/en/documentation/use/faq.md:98
 #, markdown-text
 msgid ""
-"Go to the [language section](user-profile#language) in your personal "
-"settings by opening the avatar menu in the bottom left corner and select "
-"**Personal settings**."
+"Open the avatar menu in the bottom left corner, select **Personal settings** "
+"and go to the [language section](personal-settings#language)."
 msgstr ""
 
 #. type: Title ###
@@ -4646,9 +4644,10 @@ msgstr ""
 #: src/en/documentation/use/faq.md:103
 #, markdown-text
 msgid ""
-"Go to the [out of office section](user-profile#out-of-office) in your "
-"personal settings by opening the avatar menu in the bottom left corner and "
-"select **Personal settings**. There you can define a replacement agent."
+"Open the avatar menu in the bottom left corner, select **Personal settings** "
+"and go to the [out of office "
+"section](personal-settings#out-of-office). There you can define a "
+"replacement agent."
 msgstr ""
 
 #. type: Title ###
@@ -5286,7 +5285,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "The translation target language is independent of the language of Zammad's "
-"UI, which you set in your [personal settings](../user-profile)."
+"UI, which you set in your [personal settings](../personal-settings)."
 msgstr ""
 
 #. type: Title ##
@@ -5359,11 +5358,48 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/guides/article-translation.md:68
 #, markdown-text, no-wrap
+msgid "Languages you understand"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:72
+#, markdown-text
+msgid ""
+"If automatic translation is available for your role, your [personal "
+"settings](../personal-settings) contain the **Languages you understand** "
+"field. Use it to select the languages you can read without a translation."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:78
+#, markdown-text
+msgid ""
+"While the **Translate all articles** switch is on, Zammad skips the "
+"automatic translation of an article whose detected language is one of the "
+"languages you listed and leaves the article in its original form. A note "
+"**Not translated due to your preferences.** below such an article tells you "
+"that it was skipped. Articles whose language Zammad could not detect are "
+"translated as usual. Click the translate button in the article action row if "
+"you want to read it in your target language anyway."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/article-translation.md:81
+#, markdown-text
+msgid ""
+"Because the skipped articles are matched by their detected language, the "
+"field only appears if your admin enabled article language detection, in "
+"addition to automatic translation for your role."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/article-translation.md:82
+#, markdown-text, no-wrap
 msgid "Translation quality and feedback"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:71
+#: src/en/documentation/use/guides/article-translation.md:85
 #, markdown-text
 msgid ""
 "Translations are generated automatically, so double-check the result before "
@@ -5371,7 +5407,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:74
+#: src/en/documentation/use/guides/article-translation.md:88
 #, markdown-text
 msgid ""
 "Use the thumbs up or thumbs down buttons below a translated article to help "
@@ -5949,8 +5985,8 @@ msgstr ""
 msgid ""
 "Have a look at the keyboard shortcuts in Zammad where you can find all "
 "shortcuts. Open it via the [avatar "
-"menu](/en/documentation/use/user-profile#avatar-menu) in the bottom left "
-"corner or type [[?]]."
+"menu](/en/documentation/use/personal-settings#avatar-menu) in the bottom "
+"left corner or type [[?]]."
 msgstr ""
 
 #. type: Plain text
@@ -6869,7 +6905,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mobile-view.md:82
 #, markdown-text
-msgid "Most user profile functions (except avatar and language preferences)"
+msgid "Most account functions (except avatar and language preferences)"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -6919,16 +6955,16 @@ msgstr ""
 #, markdown-text
 msgid ""
 "While you are signed in and want to switch from the mobile to the desktop "
-"view, go to your profile by selecting your avatar at the bottom and select "
+"view, go to your account by selecting your avatar at the bottom and select "
 "**Continue to desktop** (see account screenshot from above as an "
 "example). The other way round is similar: in the avatar menu, you can find "
 "an entry to switch to the mobile view."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/user-profile.md:127
+#: src/en/documentation/use/personal-settings.md:129
 #, markdown-text, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -7196,9 +7232,9 @@ msgid ""
 "just like to have a different order, you can re-arrange them for your "
 "account. Use the `reorder items` button at the very top of the second level "
 "navigation, which opens your [personal "
-"settings](/en/documentation/use/user-profile#overviews) where you can define "
-"a custom order for your overviews. To change the order, simply drag & drop "
-"them by clicking the handles on the left side."
+"settings](/en/documentation/use/personal-settings#overviews) where you can "
+"define a custom order for your overviews. To change the order, simply drag & "
+"drop them by clicking the handles on the left side."
 msgstr ""
 
 #. type: Plain text
@@ -7951,10 +7987,10 @@ msgid ""
 "enabled and send your email."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/guides/two-factor-auth.md:1
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/user-profile.md:73
+#: src/en/documentation/use/personal-settings.md:75
 #, markdown-text, no-wrap
 msgid "Two-factor authentication"
 msgstr ""
@@ -8434,6 +8470,388 @@ msgstr ""
 msgid "Use Zammad"
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:11
+#, markdown-text
+msgid ""
+"Adjust your account and personal settings here. Some of the options may not "
+"be available, depending on how your system is configured and your "
+"permissions. Open them from the avatar menu in the sidebar. Read on for more "
+"details."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:13
+#, markdown-text
+msgid ""
+"![Screenshot shows personal settings of a "
+"user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:14
+#, markdown-text, no-wrap
+msgid "Avatar menu"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:18
+#, markdown-text
+msgid ""
+"To open the avatar menu, click on your avatar icon in the bottom left corner "
+"in the sidebar. This icon either shows your initials or a profile picture."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:20
+#, markdown-text
+msgid ""
+"![Screenshot shows user detail "
+"panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:22
+#, markdown-text
+msgid "The menu contains the following entries:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+#, markdown-text
+msgid ""
+"**Link(s) to documentation**: depending on your roles you can see one or "
+"more documentation links."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+#, markdown-text
+msgid ""
+"**Appearance**: switch between dark, light and automatic mode. The automatic "
+"mode displays Zammad according to your web browser's current preference."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+#, markdown-text
+msgid ""
+"**Keyboard shortcuts**: opens a popup with the available keyboard "
+"shortcuts. Alternatively, press [[?]] on your keyboard to show it too."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+#, markdown-text
+msgid ""
+"**Personal settings**: opens your personal settings where you can adjust "
+"your avatar, password, notification settings and much more. See the sections "
+"below."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:31
+#, markdown-text, no-wrap
+msgid "Appearance"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:34
+#, markdown-text
+msgid "Change the appearance of Zammad. Available options:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:38
+#, markdown-text
+msgid "Dark mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:38
+#, markdown-text
+msgid "Light mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:38
+#, markdown-text
+msgid "Automatic mode"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:40
+#, markdown-text
+msgid ""
+"The last option tries to detect your browser's preference. It depends on "
+"your web browser if it works."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/personal-settings.md:41
+#, no-wrap
+msgid ""
+"If you want to switch quickly between dark and light mode, you can also use "
+"the toggle in the\n"
+"[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing "
+"[[d]].\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:46
+#, markdown-text, no-wrap
+msgid "Language"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:50
+#, markdown-text
+msgid ""
+"Choose the language in which Zammad's UI is displayed. Ticket translations "
+"use their own target language, which you select in the ticket top bar. See "
+"[Article translation](guides/article-translation)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:54
+#, markdown-text, no-wrap
+msgid ""
+"**Languages you understand** lists further languages you can read. Zammad "
+"keeps an article in its original form\n"
+"instead of translating it automatically when its detected language is one of "
+"them. The field is only available if\n"
+"your admin enabled automatic translation for your role and article language "
+"detection.\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:55
+#, markdown-text, no-wrap
+msgid "Avatar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:59
+#, markdown-text
+msgid ""
+"Adjust your avatar image. By default, the initials of your user are "
+"displayed on a colored background. If you want to add an image, simply "
+"upload one or use your camera, if you have one."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:61
+#, markdown-text
+msgid ""
+"After capturing or uploading an image, you can crop it. Have a look at the "
+"preview at the top of the right flyout."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:62
+#, markdown-text, no-wrap
+msgid "Out of office"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:65
+#, markdown-text
+msgid ""
+"Define absence periods (e.g. for your vacation) and designate a substitute "
+"to handle your tickets while you are away."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:69
+#, markdown-text
+msgid ""
+"Your designated substitute will receive updates on new tickets and changes "
+"to existing ones while you're away.  Additionally, your custom overviews are "
+"available for this agent to keep track of your tickets. You receive "
+"notifications while you are absent, too."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:70
+#, markdown-text, no-wrap
+msgid "Password"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:74
+#, markdown-text
+msgid ""
+"Change the password of your account. To update it, provide your old "
+"password, the new password and confirm the new one by typing it again."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:79
+#, markdown-text
+msgid ""
+"Set up a two-factor authentication (2FA) to increase the security of your "
+"account. Your admin must have activated at least one 2FA method. It may be "
+"even enforced to use a 2FA method by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:82
+#, markdown-text
+msgid ""
+"After following the [2FA guide](./guides/two-factor-auth), you have to "
+"provide your second factor at the next login.  If you can't provide your "
+"configured 2FA method, contact your admin to reset it."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:83
+#, markdown-text, no-wrap
+msgid "Devices"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:88
+#, markdown-text
+msgid ""
+"Here you can find a list of all devices logged into your Zammad account. If "
+"necessary, you can revoke the access by clicking the delete icon in the "
+"\"Actions\" column. This ends the session on this device and requires a new "
+"login on this device."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:89
+#, markdown-text, no-wrap
+msgid "Token access"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:93
+#, markdown-text
+msgid ""
+"Generate a personal access token for a third party application to access the "
+"Zammad API. After clicking the `New Personal Access Token` button, you can "
+"set a name, an expiration date and configure the permissions for this token."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:96
+#, markdown-text
+msgid ""
+"After creating the token, it gets displayed in a dialog only once. Make sure "
+"to copy it because there is no possibility to access it again."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:98
+#, markdown-text
+msgid ""
+"![Screenshot shows flyout with created token and copy "
+"button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:102
+#, markdown-text
+msgid "Adjust the notifications you get. You can adjust:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:108
+#, markdown-text
+msgid ""
+"For which ticket actions you get notified (e.g. for new tickets, for "
+"escalated tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:108
+#, markdown-text
+msgid ""
+"For which ticket you get notified based on the assignment and your relation "
+"to it (e.g. only yours, not assigned, subscribed tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:108
+#, markdown-text
+msgid "On which way you get notified (only in browser or additionally via email)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:108
+#, markdown-text
+msgid "For tickets in which group you get notified"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:110
+#, markdown-text
+msgid "Additionally, you can select a notification sound or disable it."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/personal-settings.md:111
+#, no-wrap
+msgid ""
+"To get notified via sound and notification on your operating system, you "
+"have to allow Zammad to send you notifications.\n"
+"This is requested when Zammad tries to send you a notification the first "
+"time.\n"
+"\n"
+"If you refused it and want to allow it now, look for an icon in the address "
+"bar where you can adjust the permissions of\n"
+"the site. It depends on your web browser, how to do it exactly. If you can't "
+"find it, search for it in the web or have\n"
+"a look at your browser's settings.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/personal-settings.md:120
+#, no-wrap
+msgid ""
+"Notifications you have already read are removed from the list "
+"automatically. Ones you marked as read yourself disappear\n"
+"after about ten minutes. Ones Zammad marked as read for you - which happens "
+"when someone else changes the state of the\n"
+"ticket the notification belongs to - remain for about eight "
+"hours. Independently of this, no notification is kept for\n"
+"longer than nine months.\n"
+"\n"
+"The clean-up runs every two hours, so a notification can stay visible "
+"somewhat longer than the times given above.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:134
+#, markdown-text
+msgid ""
+"Change the order of overviews for your account. Simply drag & drop them by "
+"clicking the handles on the left side.  If your admin changes the order, "
+"your custom order remains. You can switch back to your admin's order by "
+"clicking the `Reset Overview Order` button."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/personal-settings.md:135
+#: src/en/reference/rest-api/calendar.md:1
+#: src/en/reference/rest-api/calendar.md:6
+#, markdown-text, no-wrap
+msgid "Calendar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:140
+#, markdown-text
+msgid ""
+"Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
+"your favorite calendar application.  Use either the upper **Combined "
+"subscription URL** to subscribe to all tickets or the lower **Direct "
+"subscription URL**.  By choosing the latter, you can define which tickets "
+"based on ticket you want to include based on the state and assignment "
+"status."
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/use/start.md:1
 #, no-wrap
@@ -8527,382 +8945,6 @@ msgid ""
 "page outside of the user documentation section (e.g. by clicking on the "
 "**Zammad Hub** in the top left corner).\n"
 "\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:11
-#, markdown-text
-msgid ""
-"Adjust your account and personal settings in your user profile. Some of the "
-"options may not be available, depending on how your system is configured and "
-"your permissions. Open it from the avatar menu in the sidebar. Read on for "
-"more details."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/user-profile.md:12
-#, markdown-text, no-wrap
-msgid "Avatar menu"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:16
-#, markdown-text
-msgid ""
-"To open the avatar menu, click on your avatar icon in the bottom left corner "
-"in the sidebar. This icon either shows your initials or a profile picture."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:18
-#, markdown-text
-msgid ""
-"![Screenshot shows user detail "
-"panel](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:20
-#, markdown-text
-msgid "The menu contains the following entries:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-#, markdown-text
-msgid ""
-"**Link(s) to documentation**: depending on your roles you can see one or "
-"more documentation links."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-#, markdown-text
-msgid ""
-"**Appearance**: switch between dark, light and automatic mode. The automatic "
-"mode displays Zammad according to your web browser's current preference."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-#, markdown-text
-msgid ""
-"**Keyboard shortcuts**: opens a popup with the available keyboard "
-"shortcuts. Alternatively, press [[?]] on your keyboard to show it too."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-#, markdown-text
-msgid ""
-"**Personal settings**: opens your personal settings where you can adjust "
-"your avatar, password, notification settings and much more, see next "
-"section."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/user-profile.md:29
-#, markdown-text, no-wrap
-msgid "Personal settings"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:32
-#, markdown-text
-msgid ""
-"![Screenshot shows personal settings of a "
-"user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:33
-#, markdown-text, no-wrap
-msgid "Appearance"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:36
-#, markdown-text
-msgid "Change the appearance of Zammad. Available options:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:40
-#, markdown-text
-msgid "Dark mode"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:40
-#, markdown-text
-msgid "Light mode"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:40
-#, markdown-text
-msgid "Automatic mode"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:42
-#, markdown-text
-msgid ""
-"The last option tries to detect your browser's preference. It depends on "
-"your web browser if it works."
-msgstr ""
-
-#. type: Fenced div block (tip)
-#: src/en/documentation/use/user-profile.md:43
-#, no-wrap
-msgid ""
-"If you want to switch quickly between dark and light mode, you can also use "
-"the toggle in the\n"
-"[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing "
-"[[d]].\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:48
-#, markdown-text, no-wrap
-msgid "Language"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:52
-#, markdown-text
-msgid ""
-"Choose the language in which Zammad's UI is displayed. Ticket translations "
-"use their own target language, which you select in the ticket top bar. See "
-"[Article translation](guides/article-translation)."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:53
-#, markdown-text, no-wrap
-msgid "Avatar"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:57
-#, markdown-text
-msgid ""
-"Adjust your avatar image. By default, the initials of your user are "
-"displayed on a colored background. If you want to add an image, simply "
-"upload one or use your camera, if you have one."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:59
-#, markdown-text
-msgid ""
-"After capturing or uploading an image, you can crop it. Have a look at the "
-"preview at the top of the right flyout."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:60
-#, markdown-text, no-wrap
-msgid "Out of office"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:63
-#, markdown-text
-msgid ""
-"Define absence periods (e.g. for your vacation) and designate a substitute "
-"to handle your tickets while you are away."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:67
-#, markdown-text
-msgid ""
-"Your designated substitute will receive updates on new tickets and changes "
-"to existing ones while you're away.  Additionally, your custom overviews are "
-"available for this agent to keep track of your tickets. You receive "
-"notifications while you are absent, too."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:68
-#, markdown-text, no-wrap
-msgid "Password"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:72
-#, markdown-text
-msgid ""
-"Change the password of your account. To update it, provide your old "
-"password, the new password and confirm the new one by typing it again."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:77
-#, markdown-text
-msgid ""
-"Set up a two-factor authentication (2FA) to increase the security of your "
-"account. Your admin must have activated at least one 2FA method. It may be "
-"even enforced to use a 2FA method by your admin."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:80
-#, markdown-text
-msgid ""
-"After following the [2FA guide](./guides/two-factor-auth), you have to "
-"provide your second factor at the next login.  If you can't provide your "
-"configured 2FA method, contact your admin to reset it."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:81
-#, markdown-text, no-wrap
-msgid "Devices"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:86
-#, markdown-text
-msgid ""
-"Here you can find a list of all devices logged into your Zammad account. If "
-"necessary, you can revoke the access by clicking the delete icon in the "
-"\"Actions\" column. This ends the session on this device and requires a new "
-"login on this device."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:87
-#, markdown-text, no-wrap
-msgid "Token access"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:91
-#, markdown-text
-msgid ""
-"Generate a personal access token for a third party application to access the "
-"Zammad API. After clicking the `New Personal Access Token` button, you can "
-"set a name, an expiration date and configure the permissions for this token."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:94
-#, markdown-text
-msgid ""
-"After creating the token, it gets displayed in a dialog only once. Make sure "
-"to copy it because there is no possibility to access it again."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:96
-#, markdown-text
-msgid ""
-"![Screenshot shows flyout with created token and copy "
-"button](/screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:100
-#, markdown-text
-msgid "Adjust the notifications you get. You can adjust:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-#, markdown-text
-msgid ""
-"For which ticket actions you get notified (e.g. for new tickets, for "
-"escalated tickets)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-#, markdown-text
-msgid ""
-"For which ticket you get notified based on the assignment and your relation "
-"to it (e.g. only yours, not assigned, subscribed tickets)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-#, markdown-text
-msgid "On which way you get notified (only in browser or additionally via email)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-#, markdown-text
-msgid "For tickets in which group you get notified"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:108
-#, markdown-text
-msgid "Additionally, you can select a notification sound or disable it."
-msgstr ""
-
-#. type: Fenced div block (tip)
-#: src/en/documentation/use/user-profile.md:109
-#, no-wrap
-msgid ""
-"To get notified via sound and notification on your operating system, you "
-"have to allow Zammad to send you notifications.\n"
-"This is requested when Zammad tries to send you a notification the first "
-"time.\n"
-"\n"
-"If you refused it and want to allow it now, look for an icon in the address "
-"bar where you can adjust the permissions of\n"
-"the site. It depends on your web browser, how to do it exactly. If you can't "
-"find it, search for it in the web or have\n"
-"a look at your browser's settings.\n"
-msgstr ""
-
-#. type: Fenced div block (info)
-#: src/en/documentation/use/user-profile.md:118
-#, no-wrap
-msgid ""
-"Notifications you have already read are removed from the list "
-"automatically. Ones you marked as read yourself disappear\n"
-"after about ten minutes. Ones Zammad marked as read for you - which happens "
-"when someone else changes the state of the\n"
-"ticket the notification belongs to - remain for about eight "
-"hours. Independently of this, no notification is kept for\n"
-"longer than nine months.\n"
-"\n"
-"The clean-up runs every two hours, so a notification can stay visible "
-"somewhat longer than the times given above.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:132
-#, markdown-text
-msgid ""
-"Change the order of overviews for your account. Simply drag & drop them by "
-"clicking the handles on the left side.  If your admin changes the order, "
-"your custom order remains. You can switch back to your admin's order by "
-"clicking the `Reset Overview Order` button."
-msgstr ""
-
-#. type: Title #
-#: src/en/documentation/use/user-profile.md:133
-#: src/en/reference/rest-api/calendar.md:1
-#: src/en/reference/rest-api/calendar.md:6
-#, markdown-text, no-wrap
-msgid "Calendar"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:138
-#, markdown-text
-msgid ""
-"Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
-"your favorite calendar application.  Use either the upper **Combined "
-"subscription URL** to subscribe to all tickets or the lower **Direct "
-"subscription URL**.  By choosing the latter, you can define which tickets "
-"based on ticket you want to include based on the state and assignment "
-"status."
 msgstr ""
 
 #. type: Plain text
@@ -17686,7 +17728,7 @@ msgstr ""
 msgid ""
 "Secondary navigation\n"
 ": Refers to an additional menu next to the navigation (e.g. when opening "
-"profile\n"
+"personal\n"
 "  settings).\n"
 msgstr ""
 
@@ -18012,10 +18054,10 @@ msgstr ""
 #: src/en/reference/graphql.md:42
 #, markdown-text
 msgid ""
-"If not already present, create a [token in the Zammad "
-"profile](/en/documentation/use/user-profile#token-access) you want to use as "
-"API user. Depending what you want to achieve via API, set the permissions "
-"accordingly."
+"If not already present, create a [token in your personal "
+"settings](/en/documentation/use/personal-settings#token-access)  that you "
+"want to use as API user. Depending what you want to achieve via API, set the "
+"permissions accordingly."
 msgstr ""
 
 #. type: Plain text

@@ -232,10 +232,10 @@ alle richieste dei clienti.
 
 Zammad notifies you by default when tickets approach or exceed their
 deadlines. Configure these notifications in your [personal
-settings](/en/documentation/use/user-profile#notifications). Zammad also
-ships a default overview called "Escalated Tickets". This overview includes
-already escalated tickets and tickets which are expected to escalate within
-the next 10 minutes.
+settings](/en/documentation/use/personal-settings#notifications). Zammad
+also ships a default overview called "Escalated Tickets". This overview
+includes already escalated tickets and tickets which are expected to
+escalate within the next 10 minutes.
 
 I ticket rilevanti per l'SLA mostrano un timestamp nell'intestazione dei
 dettagli del ticket. Passando il mouse sopra questo timestamp, vengono

@@ -44,11 +44,11 @@ ricerca](/it/documentation/use/guides/search) per ulteriori dettagli.
 
 ## Notifiche
 
-A seconda delle [impostazioni di
-notifica](/it/documentation/use/user-profile#notifiche) nel tuo profilo,
-ricevi aggiornamenti per diversi eventi basati sui ticket come la creazione
-o l'aggiornamento di un ticket. Questo garantisce che nessuna modifica
-importante a un ticket venga trascurata.
+Depending on your [notification
+settings](/en/documentation/use/personal-settings#notifications), you
+receive updates for different ticket based events like the creation or the
+update of a ticket. This ensures that no important change to a ticket gets
+overlooked.
 
 Puoi aprirle facendo clic sul contatore delle notifiche nell'angolo in alto
 a sinistra. Se c'è un badge con un contatore, il contatore mostra il numero

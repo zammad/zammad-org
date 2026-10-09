@@ -78,10 +78,10 @@ Zammad едитор укључује неке паметне функције. �
 [[ctrl]] + [[i]]               | _Курзив_
 [[ctrl]] + [[u]]               | <u>Задено</u>
 
-Погледајте пречаце на тастатури у Zammad-у где можете пронаћи све
-пречаце. Отворите га путем [аватар
-менија](/en/documentation/use/user-profile#avatar-menu) у доњем левом углу
-или укуцајте [[?]].
+Have a look at the keyboard shortcuts in Zammad where you can find all
+shortcuts. Open it via the [avatar
+menu](/en/documentation/use/personal-settings#avatar-menu) in the bottom
+left corner or type [[?]].
 
 Погледајте следећи одељак да бисте користили још више форматирања путем
 тастатуре. Без обзира на то да ли сте навикли на писање MarkDown-a или не,

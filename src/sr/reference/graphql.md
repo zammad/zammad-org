@@ -43,10 +43,10 @@ GraphQL подршком су:
 
 ### Аутентификација
 
-Ако већ није присутан, креирајте [токен у профилу
-Zammad-а](/en/documentation/use/user-profile#token-access) који желите да
-користите као API корисник. Зависно од онога што желите постићи путем
-API-ја, подесите дозволе одговарајуће.
+If not already present, create a [token in your personal
+settings](/en/documentation/use/personal-settings#token-access)  that you
+want to use as API user. Depending what you want to achieve via API, set the
+permissions accordingly.
 
 Обавезно га копирајте пре затварања дијалога јер га нећете моћи поново
 видети. У случају грешке, једноставно креирајте нови токен.

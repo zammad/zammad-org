@@ -34,12 +34,10 @@ und was derzeit keine Bearbeitung erfordert. Falls Sie Probleme mit diesen
 
 ### Wie kann ich über Ticket-Änderungen informiert werden?
 
-Passen Sie die [Benachrichtigungseinstellungen in Ihrem
-Profil](user-profile#benachrichtigungen) an. Sie können unterscheiden
-zwischen der Aktion (z.B. Ticketerstellung), dem Benachrichtigungskanal
-(E-Mail und/oder Browser) und Ihrer Beziehung zum Ticket (z.B. ob Sie der
-Besitzer sind) sowie die Benachrichtigungen auf eine bestimmte Gruppe
-beschränken.
+Adjust the [notification settings](personal-settings#notifications). You can
+distinguish between the action (e.g. ticket creation), the notification
+channel (email and/or browser), your relation to the ticket (e.g. if you are
+the owner) and limit the notifications to a specific group.
 
 ### Warum ist das Ticket wieder offen? Ich habe es bereits geschlossen
 
@@ -84,23 +82,21 @@ anders sein kann. Im Zweifelsfall sollten Sie Ihren Administrator fragen.
 
 ### Wie verwende ich Tastaturkürzel?
 
-Benutzen Sie diese einfach! Sie finden eine Übersicht der verfügbaren
-Tastaturkürzel, indem Sie [[?]] auf Ihrer Tastatur drücken oder die
-Übersicht über das [Avatar-Menü](user-profile#avatar-Menu) öffnen (klicken
-Sie auf Ihren Avatar in der unteren linken Ecke und wählen Sie
-**Tastaturkürzel**).
+Just use them! You can find an overview of the available shortcuts by
+pressing [[?]] on your keyboard or open the overview from the [avatar
+menu](personal-settings#avatar-menu) (click on your avatar in the bottom
+left corner and select **Keyboard shortcuts**).
 
 Einige davon hängen davon ab, wo Sie sich befinden oder welche Aktion Sie
 durchführen (z.B. im Editor oder in der Ticket Detailansicht).
 
 ### Wie schaltet man die Benutzeroberfläche zwischen Dunkel- und Hellmodus um?
 
-Sie können im [Avatar-Menü](user-profile#avatar-menu) zwischen hellem,
-dunklem und automatischem Modus (versucht, sich an Ihren Browser anzupassen)
-umschalten. Öffnen Sie es, indem Sie auf Ihren Avatar in der linken unteren
-Ecke klicken und den Schalter auf den gewünschten Modus stellen oder das
-Tastaturkürzel [[d]] verwenden. Wenn kein Eingabefeld aktiviert ist,
-wechselt es zwischen den verschiedenen Modi.
+You can switch between light, dark and automatic mode (tries to adapt to
+your browser) in the [avatar menu](personal-settings#avatar-menu). Open it
+by clicking your avatar in the bottom left corner and switch the toggle to
+the desired state or use the keyboard shortcut [[d]]. If no input field is
+activated, it cycles between the different modes.
 
 ### Wie kann ich ein Ticket lesen, das in einer anderen Sprache verfasst ist?
 
@@ -109,28 +105,26 @@ lassen, entweder pro Artikel oder automatisch für jedes Ticket, das sie
 öffnen. Siehe Anleitung zur
 [Artikelübersetzung](./guides/article-translation).
 
-## Benutzerprofil
+## Persönliche Einstellungen
 
-### Wie kann ich mein Profil-/Avatarbild ändern?
+### How to change my avatar image?
 
-Gehen Sie in Ihren persönlichen Einstellungen zum Abschnitt
-[Avatar](user-profile#avatar), indem Sie das Avatar-Menü unten links öffnen
-und **Persönliche Einstellungen** wählen. Dort können Sie ein Bild
-hochladen, ein Foto aufnehmen (wenn Ihr Gerät über eine Kamera verfügt) oder
-bereits vorhandene Bilder löschen.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [avatar section](personal-settings#avatar). There you can
+upload an image, capture a photo (if your device has a camera) or delete
+already present images.
 
 ### Wie ändert man die Sprache der Benutzeroberfläche von Zammad?
 
-Gehen Sie in Ihren persönlichen Einstellungen zum Bereich
-[Sprache](user-profile#sprache), indem Sie das Avatar-Menü unten links
-öffnen und **Persönliche Einstellungen** wählen.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [language section](personal-settings#language).
 
 ### Was sollte ich in Zammad tun, bevor ich meinen Urlaub antrete?
 
-Gehen Sie in Ihren persönlichen Einstellungen in den Bereich
-[Abwesenheit](user-profile#abwesenheit), indem Sie das Avatar-Menü in der in
-der linken unteren Ecke öffnen und **Persönliche Einstellungen**
-wählen. Dort können Sie einen anderen Agenten als Vertretung festlegen.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [out of office
+section](personal-settings#out-of-office). There you can define a
+replacement agent.
 
 ### Wie lässt sich die Reihenfolge der Übersichten anpassen?
 

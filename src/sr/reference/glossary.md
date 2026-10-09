@@ -369,9 +369,9 @@ Placetel
 
   Можете чак додати и нове улоге на свој Zammad.
 
-Навигација другог нивоа
-: Односи се на додатни мени поред навигације (нпр. при отварању подешавања
-  профила).
+Secondary navigation
+: Refers to an additional menu next to the navigation (e.g. when opening personal
+  settings).
 
 Бочна трака (Панел)
 : Ово је панел који се приказује са десне стране за радње као што су повезивање

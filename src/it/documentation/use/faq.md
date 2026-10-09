@@ -33,11 +33,10 @@ il tuo amministratore Zammad dovrebbe essere in grado di aiutare.
 
 ### Come ricevere notifiche per le modifiche ai ticket?
 
-Regola le [impostazioni di notifica nel tuo
-profilo](user-profile#notifiche). Puoi distinguere tra l'azione (ad esempio
-la creazione del ticket), il canale di notifica (email e/o browser), la tua
-relazione con il ticket (ad esempio se sei il proprietario) e limitare le
-notifiche a un gruppo specifico.
+Adjust the [notification settings](personal-settings#notifications). You can
+distinguish between the action (e.g. ticket creation), the notification
+channel (email and/or browser), your relation to the ticket (e.g. if you are
+the owner) and limit the notifications to a specific group.
 
 ### Perché il ticket è di nuovo aperto? L'ho già chiuso
 
@@ -80,10 +79,10 @@ diversa. In caso di dubbio, dovresti chiedere al tuo amministratore.
 
 ### Come posso usare le scorciatoie da tastiera?
 
-Usale e basta! Puoi trovare una panoramica delle scorciatoie disponibili
-premendo [[?]] sulla tastiera o aprire la panoramica dal [menu
-avatar](user-profile#menu-avatar) (fai clic sul tuo avatar nell'angolo in
-basso a sinistra e seleziona **Scorciatoie da tastiera**).
+Just use them! You can find an overview of the available shortcuts by
+pressing [[?]] on your keyboard or open the overview from the [avatar
+menu](personal-settings#avatar-menu) (click on your avatar in the bottom
+left corner and select **Keyboard shortcuts**).
 
 Alcune di esse dipendono dalla posizione in cui ti trovi o dall'azione che
 esegui (ad esempio essere nell'editor o nella visualizzazione dettagli
@@ -91,11 +90,11 @@ ticket).
 
 ### Come passare dalla modalità scura a quella chiara per l'interfaccia utente?
 
-Puoi passare tra modalità chiara, scura e automatica (cerca di adattarsi al
-tuo browser) nel [menu avatar](user-profile#menu-avatar). Aprilo facendo
-clic sul tuo avatar nell'angolo in basso a sinistra e cambia il pulsante
-allo stato desiderato o usa la scorciatoia da tastiera [[d]]. Se nessun
-campo di input è attivato, scorre tra le diverse modalità.
+You can switch between light, dark and automatic mode (tries to adapt to
+your browser) in the [avatar menu](personal-settings#avatar-menu). Open it
+by clicking your avatar in the bottom left corner and switch the toggle to
+the desired state or use the keyboard shortcut [[d]]. If no input field is
+activated, it cycles between the different modes.
 
 ### How can I read a ticket that is written in another language?
 
@@ -103,26 +102,26 @@ Agents can have the ticket articles translated into a language of their
 choice, either per article or automatically for every ticket they open. See
 the [article translation guide](./guides/article-translation).
 
-## User profile
+## Personal settings
 
-### Come cambiare la mia immagine profilo/avatar?
+### How to change my avatar image?
 
-Go to the [avatar section](user-profile#avatar) in your personal settings by
-opening the avatar menu in the bottom left corner and select **Personal
-settings**. There you can upload an image, capture a photo (if your device
-has a camera) or delete already present images.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [avatar section](personal-settings#avatar). There you can
+upload an image, capture a photo (if your device has a camera) or delete
+already present images.
 
 ### Come cambiare la lingua dell'interfaccia utente di Zammad?
 
-Go to the [language section](user-profile#language) in your personal
-settings by opening the avatar menu in the bottom left corner and select
-**Personal settings**.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [language section](personal-settings#language).
 
 ### Cosa dovrei fare prima di andare in vacanza?
 
-Go to the [out of office section](user-profile#out-of-office) in your
-personal settings by opening the avatar menu in the bottom left corner and
-select **Personal settings**. There you can define a replacement agent.
+Open the avatar menu in the bottom left corner, select **Personal settings**
+and go to the [out of office
+section](personal-settings#out-of-office). There you can define a
+replacement agent.
 
 ### Come regolare l'ordine delle panoramiche?
 

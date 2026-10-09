@@ -28,7 +28,7 @@ your Zammad admin should be able to help.
 
 ### How to get notified for ticket changes?
 
-Adjust the [notification settings in your profile](user-profile#notifications). You can distinguish between the
+Adjust the [notification settings](personal-settings#notifications). You can distinguish between the
 action (e.g. ticket creation), the notification channel (email and/or browser), your relation to the ticket (e.g. if
 you are the owner) and limit the notifications to a specific group.
 
@@ -65,7 +65,7 @@ different. If in doubt, you should ask your admin.
 ### How can I use keyboard shortcuts?
 
 Just use them! You can find an overview of the available shortcuts by pressing [[?]] on your keyboard or open the
-overview from the [avatar menu](user-profile#avatar-menu) (click on your avatar in the bottom left corner and select
+overview from the [avatar menu](personal-settings#avatar-menu) (click on your avatar in the bottom left corner and select
 **Keyboard shortcuts**).
 
 Some of them depend on the location you are or action you perform (e.g. being in the editor or in the ticket
@@ -74,7 +74,7 @@ detail view).
 ### How to switch between dark and light mode for the user interface?
 
 You can switch between light, dark and automatic mode (tries to adapt to your browser) in the
-[avatar menu](user-profile#avatar-menu). Open it by clicking your avatar in the bottom left corner and switch the toggle
+[avatar menu](personal-settings#avatar-menu). Open it by clicking your avatar in the bottom left corner and switch the toggle
 to the desired state or use the keyboard shortcut [[d]]. If no input field is activated, it cycles between the
 different modes.
 
@@ -83,23 +83,23 @@ different modes.
 Agents can have the ticket articles translated into a language of their choice, either per article or automatically for
 every ticket they open. See the [article translation guide](./guides/article-translation).
 
-## User profile
+## Personal settings
 
-### How to change my profile/avatar image?
+### How to change my avatar image?
 
-Go to the [avatar section](user-profile#avatar) in your personal settings by opening the avatar menu in the bottom
-left corner and select **Personal settings**. There you can upload an image, capture a photo (if your device has a
+Open the avatar menu in the bottom left corner, select **Personal settings** and go to the
+[avatar section](personal-settings#avatar). There you can upload an image, capture a photo (if your device has a
 camera) or delete already present images.
 
 ### How to change the language of the Zammad user interface?
 
-Go to the [language section](user-profile#language) in your personal settings by opening the avatar menu in the bottom
-left corner and select **Personal settings**.
+Open the avatar menu in the bottom left corner, select **Personal settings** and go to the
+[language section](personal-settings#language).
 
 ### What should I do before going on vacation?
 
-Go to the [out of office section](user-profile#out-of-office) in your personal settings by opening the avatar menu in
-the bottom left corner and select **Personal settings**. There you can define a replacement agent.
+Open the avatar menu in the bottom left corner, select **Personal settings** and go to the
+[out of office section](personal-settings#out-of-office). There you can define a replacement agent.
 
 ### How to adjust the order of the overviews?
 

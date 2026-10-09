@@ -82,7 +82,7 @@ focus on important information:
 - Већина функција за управљање (осим управљања корисницима тицкета и
   организацијама)
 - Већина функција базе знања (осим интеграције са тицкетом)
-- Већина функција корисничког профила (осим аватара и поставки језика)
+- Most account functions (except avatar and language preferences)
 - Извештаји
 - Дневник позива
 - Разговор уживо
@@ -97,8 +97,8 @@ Zammad имплементира детекцију мобилних уређај
 испод дугмета `Prijava` за експлицитно пребацивање на други приказ
 (погледајте слику екрана за пријаву изнад као пример).
 
-Док сте пријављени и желите да пребаците са мобилног на десктоп приказ,
-идите на свој профил тако што ћете изабрати свој аватар на дну и кликнути на
-**Настави на десктоп** (погледајте слику рачуна изнад као пример). Обрнуто
-је слично: у менију аватара можете пронаћи ставку за пребацивање на мобилни
-приказ.
+While you are signed in and want to switch from the mobile to the desktop
+view, go to your account by selecting your avatar at the bottom and select
+**Continue to desktop** (see account screenshot from above as an
+example). The other way round is similar: in the avatar menu, you can find
+an entry to switch to the mobile view.
