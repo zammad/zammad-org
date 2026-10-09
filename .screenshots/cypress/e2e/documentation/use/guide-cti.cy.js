@@ -1,7 +1,65 @@
 describe('caller log screenshots', () => {
+  // The caller notification is a real per-user preference on the account every
+  // test logs in as, and the "switched off" shot below flips it. The switch
+  // updates optimistically, so its aria-checked state proves nothing about what
+  // the server stored — and two rapid clicks (off for the shot, on again for the
+  // next test) can land out of order. Read the persisted value back and retry
+  // until the server agrees instead of trusting the click. Running this before
+  // each test also repairs a stack an earlier run left dirty.
+  const callerNotificationOnServer = () =>
+    cy
+      .request({
+        method: 'POST',
+        url: '/graphql',
+        failOnStatusCode: false,
+        body: {
+          query: 'query { currentUser { personalSettings { callerNotificationEnabled } } }',
+        },
+      })
+      .then((res) => {
+        const { body } = res
+        if (!body.data) {
+          throw new Error(`caller notification query failed: ${JSON.stringify(body)}`)
+        }
+        return body.data.currentUser.personalSettings.callerNotificationEnabled
+      })
+
+  const ensureCallerNotification = (enabled, rounds = 3) => {
+    const attempt = (left) =>
+      callerNotificationOnServer().then((actual) => {
+        if (actual === enabled) return
+
+        if (left === 0) {
+          expect(actual, 'caller notification could not be brought to the wanted state').to.equal(
+            enabled,
+          )
+          return
+        }
+
+        // The switch sits in the navigation, so the caller log route has to be
+        // open before it can be clicked. Re-visit rather than relying on
+        // wherever the previous test left the browser, then give the mutation
+        // time to land before asking the server again.
+        cy.visit('/desktop/cti')
+        cy.get('button[role="switch"]', { timeout: 15000 }).should('exist')
+        cy.get('button[role="switch"]').click()
+        cy.wait(2000)
+
+        return attempt(left - 1)
+      })
+
+    return attempt(rounds)
+  }
+
   beforeEach(() => {
     cy.loginAs('ADMIN')
+    ensureCallerNotification(true)
   })
+
+  // Restore in afterEach instead of as a trailing step of the test that flips
+  // it: a failed assertion skips trailing steps, and a leaked "off" empties the
+  // navigation for every shot after it.
+  afterEach(() => ensureCallerNotification(true))
 
   // The caller log renders once its rows have content: the navigation falls
   // back to its own skeletons and the table to a full skeleton page while the
@@ -23,42 +81,6 @@ describe('caller log screenshots', () => {
   // the sidebar" could never pass — the table kept matching it. Scope to nav
   // so these assertions mean what they say.
   const sidebar = () => cy.get('nav')
-
-  // The "switched off" shot switches the caller notification off, which is a
-  // real user preference on the account every test logs in as. Restore it
-  // after each test instead of at the end of that test: a failed assertion
-  // skips trailing steps, and a leaked "off" empties the navigation for the
-  // other shots in the run.
-  //
-  // The restore has to wait for the server round-trip. The switch updates
-  // optimistically, so the next test's page load can read the stale "off" from
-  // before the write landed and then fail on the missing counter. Waiting on
-  // the GraphQL response is what makes the next test see the restored state.
-  afterEach(() => {
-    cy.get('body', { log: false }).then(($body) => {
-      const switchEl = $body.find('button[role="switch"]')
-
-      if (switchEl.length === 0) return
-      if (switchEl.attr('aria-checked') !== 'false') return
-
-      // Alias on the exact mutation field rather than a loose substring: the
-      // caller log page fires other GraphQL traffic too.
-      cy.intercept('POST', '/graphql', (req) => {
-        if (JSON.stringify(req.body).includes('userCurrentCallerNotificationUpdate')) {
-          req.alias = 'callerNotification'
-        }
-      })
-
-      cy.wrap(switchEl, { log: false }).click()
-
-      cy.wait('@callerNotification', { timeout: 15000 })
-      cy.get('button[role="switch"]', { timeout: 15000 }).should(
-        'have.attr',
-        'aria-checked',
-        'true',
-      )
-    })
-  })
 
   it('caller log full page', () => {
     cy.visit('/desktop/cti')
@@ -83,8 +105,8 @@ describe('caller log screenshots', () => {
     sidebar().contains('Phone', { timeout: 15000 }).should('be.visible')
     sidebar().contains('unhandled calls', { timeout: 15000 }).should('be.visible')
 
-    // The switch is switched on for this shot and back off afterwards by the
-    // afterEach below, which runs even when an assertion fails.
+    // This shot needs the caller notification off. The afterEach below turns it
+    // back on, and runs even when an assertion fails.
     //
     // Click the switch itself. It renders as a <button role="switch">, not an
     // input, and the surrounding .formkit-wrapper is layout only.
