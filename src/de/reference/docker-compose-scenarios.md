@@ -222,11 +222,9 @@ Um ihn in Zammad zu verwenden, fügen Sie den Dienstnamen und den Port
 
 ### LibreTranslate hinzufügen
 
-Sie können einen zusätzlichen
-[LibreTranslate](https://libretranslate.com/){target=_blank} Container
-ausführen, um die Artikelübersetzung für Zammad auf Ihrer eigenen Hardware
-zu betreiben. Weitere Informationen zur Integration finden Sie im Abschnitt
-zum übersetzungsdienst in der Admin-Dokumentation.
+You can run an additional
+[LibreTranslate](https://libretranslate.com/){target=_blank} container as a
+self-hosted translation service inside the Zammad stack.
 
 Um einen LibreTranslate-Container innerhalb des Zammad-Stacks
 bereitzustellen, verwenden Sie die Szenariodatei
@@ -273,9 +271,6 @@ LibreTranslate unterstützt zahlreiche weitere Optionen. Diese werden in der
 die der Container akzeptiert.
 
 :::
-
-Sobald der Stack eingerichtet ist und gestartet wurde, konfigurieren Sie den Dienst in den Admin-Einstellungen von Zammad (_System > Integrationen > Translation services_):
-Geben Sie als URL `http://libretranslate:5000` an und geben Sie einen API-Schlüssel an, falls Ihre Instanz einen solchen erfordert.
 
 ### Ressourcen begrenzen
 

@@ -96,12 +96,6 @@ by clicking your avatar in the bottom left corner and switch the toggle to
 the desired state or use the keyboard shortcut [[d]]. If no input field is
 activated, it cycles between the different modes.
 
-### Como posso ler um ticket escrito em outro idioma?
-
-Os agentes podem traduzir os artigos do ticket para o idioma de sua escolha,
-seja artigo por artigo, seja automaticamente para todo ticket que
-abrirem. Veja o [guia de tradução de artigos](./guides/article-translation).
-
 ## Configurações pessoais
 
 ### How to change my avatar image?

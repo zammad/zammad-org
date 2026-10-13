@@ -19,8 +19,9 @@ Per aprire il menu avatar, fai clic sulla tua icona avatar nell'angolo in
 basso a sinistra nella barra laterale. Questa icona mostra le tue iniziali o
 un'immagine del profilo.
 
-![Screenshot che mostra il pannello dettagli
-utente](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
+![Screenshot shows the avatar menu with the entries User documentation,
+Appearance (dark mode toggle), Personal settings and Sign
+out](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
 
 Il menu contiene le seguenti voci:
 
@@ -53,13 +54,7 @@ Se vuoi passare rapidamente tra la modalità scura e quella chiara, puoi anche u
 
 ## Lingua
 
-Choose the language in which Zammad's UI is displayed. Ticket translations
-use their own target language, which you select in the ticket top bar. See
-[Article translation](guides/article-translation).
-
-**Languages you understand** lists further languages you can read. Zammad keeps an article in its original form
-instead of translating it automatically when its detected language is one of them. The field is only available if
-your admin enabled automatic translation for your role and article language detection.
+Scegli la lingua in cui viene visualizzata l'interfaccia utente di Zammad.
 
 ## Avatar
 

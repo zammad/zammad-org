@@ -222,11 +222,9 @@ Para usá-lo no Zammad, adicione o nome do serviço e a porta
 
 ### Adicionar o LibreTranslate
 
-Você pode executar um container adicional do
-[LibreTranslate](https://libretranslate.com/){target=_blank} para fornecer a
-tradução de artigos do Zammad no seu próprio hardware. Para detalhes sobre a
-integração em si, veja a seção de serviços de tradução da documentação de
-administração.
+You can run an additional
+[LibreTranslate](https://libretranslate.com/){target=_blank} container as a
+self-hosted translation service inside the Zammad stack.
 
 Para implantar um container LibreTranslate dentro da stack do Zammad, use o
 arquivo de cenário `scenarios/add-libretranslate.yml`. O serviço não publica
@@ -272,9 +270,6 @@ O LibreTranslate suporta muitas outras opções. Elas estão descritas na
 aceitas pelo container.
 
 :::
-
-Depois que a stack estiver no ar, configure o serviço nas configurações de administração do Zammad (_System > Integrations > Translation services_):
-aponte a URL para `http://libretranslate:5000` e informe uma chave de API, se sua instância exigir uma.
 
 ### Limitar recursos
 

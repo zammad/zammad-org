@@ -19,8 +19,9 @@ user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-set
 левом углу на бочној траци. Ова иконица приказује ваше иницијале или
 профилну слику.
 
-![Пример снимка екрана (пуна
-страна)](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
+![Screenshot shows the avatar menu with the entries User documentation,
+Appearance (dark mode toggle), Personal settings and Sign
+out](/screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)
 
 Прикупљамо податке о уређају коришћењем следећих технологија:
 
@@ -54,13 +55,7 @@ user](/screenshots/cypress/documentation/use/user-profile.cy.js/user-profile-set
 
 ## Језик
 
-Choose the language in which Zammad's UI is displayed. Ticket translations
-use their own target language, which you select in the ticket top bar. See
-[Article translation](guides/article-translation).
-
-**Languages you understand** lists further languages you can read. Zammad keeps an article in its original form
-instead of translating it automatically when its detected language is one of them. The field is only available if
-your admin enabled automatic translation for your role and article language detection.
+Изаберите језик у којем се приказује Zammad UI.
 
 ## Аватар
 

@@ -73,7 +73,6 @@ UX треба да буде интуитивно и самообјашњиво �
 - Повежи тицкете и прикажи повезане тицкете
 - Извршавање макроа
 - Историјат тикета
-- Article translation
 - Креирање предложака и заједничких скица
 
 Additionally, certain features were intentionally omitted to improve the

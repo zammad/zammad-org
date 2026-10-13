@@ -74,7 +74,6 @@ vorhanden sind:
 - Tickets verknüpfen und verknüpfte Tickets anzeigen
 - Ausführung von Makros
 - Ticket-Historie
-- Artikel-Übersetzung
 - Erstellung von Vorlagen und gemeinsamen Entwürfen
 
 Außerdem wurden bestimmte Features weggelassen, um Ihren Fokus auf die

@@ -98,13 +98,6 @@ by clicking your avatar in the bottom left corner and switch the toggle to
 the desired state or use the keyboard shortcut [[d]]. If no input field is
 activated, it cycles between the different modes.
 
-### Wie kann ich ein Ticket lesen, das in einer anderen Sprache verfasst ist?
-
-Agenten können die Ticket-Artikel in eine Sprache ihrer Wahl übersetzen
-lassen, entweder pro Artikel oder automatisch für jedes Ticket, das sie
-öffnen. Siehe Anleitung zur
-[Artikelübersetzung](./guides/article-translation).
-
 ## Persönliche Einstellungen
 
 ### How to change my avatar image?

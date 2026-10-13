@@ -75,7 +75,6 @@ fornite dalla visualizzazione desktop:
 - Collega ticket e visualizza i ticket collegati
 - Esecuzione di macro
 - Cronologia ticket
-- Article translation
 - Creazione modelli e bozze condivise
 
 Additionally, certain features were intentionally omitted to improve the
