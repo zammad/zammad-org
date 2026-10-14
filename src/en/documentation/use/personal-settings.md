@@ -103,6 +103,9 @@ Adjust the notifications you get. You can adjust:
 
 Additionally, you can select a notification sound or disable it.
 
+Push notifications in the mobile view follow these notification settings and have no settings of their own. See the
+[mobile view](/en/documentation/use/guides/mobile-view) to turn them on for a device.
+
 ::: tip
 To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.
 This is requested when Zammad tries to send you a notification the first time.

@@ -39,7 +39,7 @@ describe('usage advanced features', () => {
     cy.wait(500) // transition
     cy.get('label').contains('Text').click().type('??')
     cy.wait(1000)
-    cy.get('[aria-label="Insert text from knowledge base answer"]').highlight()
+    cy.get('[aria-label="Insert knowledge base answer"]').highlight()
     cy.get('#ticketArticleReplyForm').screenshot('ticket-article-insert-kba', { padding: [10, 0, 0, 0] })
     cy.get('button').contains('Discard your unsaved changes').click()
     cy.get('button').contains('Discard changes').click()
