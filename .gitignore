@@ -6,9 +6,27 @@ node_modules
 cache
 dist
 
+# Left behind by vitepress when loading the config is aborted.
+.vitepress/config.mts.timestamp-*
+
 .screenshots/zammad-stack/zammad-docker-compose
 .screenshots/cypress/downloads
 src/public/screenshots/cypress
+
+# Content generated from the PO files by `pnpm i18n` / `pnpm i18n:locale`.
+src/de
+src/it
+src/sr
+src/pt_BR
+.vitepress/config.de.yaml*
+.vitepress/config.it.yaml*
+.vitepress/config.sr.yaml*
+.vitepress/config.pt_BR.yaml*
+.vitepress/search.de.yaml*
+.vitepress/search.it.yaml*
+.vitepress/search.sr.yaml*
+.vitepress/search.pt_BR.yaml*
+.po4a.*.conf
 
 # Vale sync cache (created by `vale sync` if packages are added later).
 .vale/styles/config

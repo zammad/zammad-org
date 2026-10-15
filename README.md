@@ -8,12 +8,26 @@ It contains the new documentation system which is based on Vitepress. Their docu
 
 - Clone this repository.
 - Install dependencies via `pnpm install --frozen-lockfile`.
-- Get the dev system running via `pnpm dev` and access it  at `http://localhost:5173`.
-- To build the output for production, use `pnpm build`. The build can be located under `/dist`, and `pnpm preview` used to serve it at `http://localhost:4173/`.
+- Get the dev system running via `pnpm dev` and access it at `http://localhost:5173/en/`. This serves the English app; use `pnpm dev:de` to generate that language's content and serve it at `http://localhost:5173/de/`.
+- Every language is an app of its own and built into its own directory. `pnpm build` builds all of them into `dist/<language>/`, a single one can be built with e.g. `pnpm build:de`. Serve the build with `pnpm preview` at `http://localhost:4173/`. To build locally, the screenshots are required, see below.
 
 ## Internationalization (i18n)
 
-Only the content in `src/en/` directory and child directories should be modified. The content in other language directories is auto-generated. Please submit your translations via [Weblate](https://translations.zammad.org) and they will be automatically applied.
+Only the content in `src/en/` directory and child directories should be modified. The content of all other languages is generated from the PO files in `i18n/` and is not tracked by Git:
+
+- `LOCALE=de pnpm i18n:locale` generates the content of a single language and everything that language's app needs. `pnpm i18n` does the same for all languages.
+- The content is generated automatically before the language is built, see `.gitlab/i18n_locale.sh`.
+- Please submit your translations via [Weblate](https://translations.zammad.org) and they will be automatically applied.
+
+## Deployment
+
+Every language is served as an app of its own from its own directory (`/en/`, `/de/`, …), which is why each app is built with its language as its base path. The web server takes care of the rest:
+
+- `/` redirects to the language detected from the `Accept-Language` header.
+- Links without a language prefix are redirected to the detected language.
+- Internal links that carry a language prefix of their own (`/en/...` links in the German content, for example) are collapsed back to the app they point to.
+
+See `.docker-compose/vitepress.conf` for the configuration used for local testing. `pnpm preview` serves the build as plain files, so the redirects above and the per-language error pages only take effect with the web server.
 
 ## Automatic Screenshots (Cypress)
 
@@ -34,4 +48,4 @@ Finally, the Zammad stack can be shut down via `pnpm screenshots:stop-stack`. Th
 ## Additional Info
 
 - Before pushing your changes, make sure to update the translation catalog by executing `pnpm i18n`.
-- Make sure to change the English source files only. All other languages are automatically built based on the translations from [Weblate](https://translations.zammad.org).
+- Make sure to change the English source files only. All other languages are generated from the translations of [Weblate](https://translations.zammad.org) when they are built.

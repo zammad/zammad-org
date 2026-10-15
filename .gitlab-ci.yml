@@ -51,7 +51,8 @@ disable squash for weblate MRs:
   after_script: []
 
 # This job will create commits in pipelines pushed from Weblate.
-# It re-generates the catalog, and any additional files such as view templates and chat assets.
+# It re-generates the translation catalog (.po4a.conf and the POT file). The
+# translated content itself is not tracked, it is generated at build time.
 push translations update commit:
   stage: pre
   rules:
@@ -111,6 +112,7 @@ build:
   stage: build
   script:
     - pnpm install
+    # Builds every language into its own directory below dist/.
     - pnpm build
   artifacts:
     name: static-html

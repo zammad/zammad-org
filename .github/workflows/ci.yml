@@ -50,9 +50,11 @@ jobs:
         name: screenshots-${{ needs.screenshots.outputs.sha_short }}
         path: src/public/screenshots/cypress
     - uses: pnpm/action-setup@v6
-    - run: |
-        pnpm install
-        pnpm build
+    # po4a generates the content of the non-English locales.
+    - run: sudo apt-get update && sudo apt-get install -y po4a
+    - run: pnpm install
+    # Builds every language into its own directory below dist/.
+    - run: pnpm build
     - uses: actions/upload-artifact@v7
       id: build-artifact
       with:

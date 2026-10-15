@@ -1,3 +1,4 @@
+import { existsSync, readFileSync } from 'node:fs'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
@@ -6,36 +7,99 @@ import definitionListMarkdownPlugin from 'markdown-it-deflist'
 import footnote from 'markdown-it-footnote'
 import kbd from 'markdown-it-kbd'
 import { icon } from '@mdit/plugin-icon'
-import configEN from './config.en.yaml.json'
-import configDE from './config.de.yaml.json'
-import configSR from './config.sr.yaml.json'
-import configIT from './config.it.yaml.json'
-import configPTBR from './config.pt_BR.yaml.json'
-import searchEN from './search.en.yaml.json'
-import searchDE from './search.de.yaml.json'
-import searchSR from './search.sr.yaml.json'
-import searchIT from './search.it.yaml.json'
-import searchPTBR from './search.pt_BR.yaml.json'
 
 const supportedLocales = ['en', 'de', 'sr', 'it', 'pt_BR']
 
-const configByLocale = {
-  en: configEN,
-  de: configDE,
-  sr: configSR,
-  it: configIT,
-  pt_BR: configPTBR,
-}
+// Avoids a `@types/node` dependency for reading the environment.
+const env: Record<string, string | undefined> = (globalThis as any).process?.env ?? {}
 
-const searchConfigByLocale = {
-  en: searchEN,
-  de: searchDE,
-  sr: searchSR,
-  it: searchIT,
-  pt_BR: searchPTBR,
+const localeLabels: Record<string, string> = {
+  en: 'English',
+  de: 'Deutsch',
+  sr: 'српски',
+  it: 'Italiano',
+  pt_BR: 'Português (Brasil)',
 }
 
 const userSearchRegex = new RegExp(`^/(${supportedLocales.join('|')})/documentation/use/`)
+
+/*
+ * Every locale is built as its own app with its own base path (`/<locale>/`),
+ * so that `dist/<locale>/` can be deployed as a self-contained directory.
+ * See README.md and .gitlab-ci.yml.
+ */
+const locale = env.BUILD_LOCALE || 'en'
+
+if (!supportedLocales.includes(locale)) {
+  throw new Error(
+    `Unsupported BUILD_LOCALE "${locale}" (expected one of: ${supportedLocales.join(', ')})`
+  )
+}
+
+/*
+ * The config files of a language are generated from the PO files (see
+ * README.md). Only the requested language is loaded, because the files of the
+ * other languages may not exist: each app is built on its own.
+ */
+function loadGenerated(name: string) {
+  const file = fileURLToPath(new URL(`./${name}`, import.meta.url))
+
+  if (!existsSync(file)) {
+    throw new Error(
+      `Missing ${name} - run \`LOCALE=${locale} pnpm i18n:locale\` before using "${locale}".`
+    )
+  }
+
+  return JSON.parse(readFileSync(file, 'utf-8'))
+}
+
+const localeConfigFile = loadGenerated(`config.${locale}.yaml.json`)
+const localeConfig = localeConfigFile.themeConfig
+const searchConfig = loadGenerated(`search.${locale}.yaml.json`)
+const rootPath = fileURLToPath(new URL('./../src', import.meta.url))
+const otherLocales = supportedLocales.filter((l) => l !== locale)
+
+/*
+ * Links in the content and in the configuration carry the language prefix of
+ * their own app (`/en/documentation/...` in the English content, `/de/...` in
+ * the German one). VitePress prepends the base path to every internal link, so
+ * those links are emitted as `/en/en/...`. The web server collapses the
+ * duplicated prefix, but only for requests that reach it — and a click never
+ * does: the client router handles it, finds no page at the doubled path and
+ * shows the app's own 404 page instead of the target.
+ *
+ * Stripping the own prefix where the links are made leaves an ordinary internal
+ * link behind, which the router can follow. Links that point at another
+ * language's app keep their prefix and are collapsed by the web server as
+ * before. The dead link check resolves the stripped form through the rewrites,
+ * see `rewrites.inv` in VitePress's markdown-to-page step.
+ */
+function withoutOwnLocalePrefix(link: string): string {
+  if (link === `/${locale}`) return '/'
+  return link.startsWith(`/${locale}/`) ? link.slice(locale.length + 1) : link
+}
+
+/** Strip the own locale prefix from every `link` value in `data`, at any depth. */
+function stripOwnLocalePrefix(data: unknown): void {
+  if (Array.isArray(data)) {
+    data.forEach(stripOwnLocalePrefix)
+  } else if (data && typeof data === 'object') {
+    const record = data as Record<string, unknown>
+
+    for (const key of Object.keys(record)) {
+      const value = record[key]
+
+      if (key === 'link' && typeof value === 'string') {
+        record[key] = withoutOwnLocalePrefix(value)
+      } else {
+        stripOwnLocalePrefix(value)
+      }
+    }
+  }
+}
+
+// Navigation, footer and sidebar entries of the generated configuration.
+stripOwnLocalePrefix(localeConfig)
 
 const commonSidebarConfig = {
   collapsed: true,
@@ -50,10 +114,32 @@ const commonSidebarConfig = {
 export default defineConfig(
   withSidebar({
     title: 'Zammad Hub',
-    outDir: 'dist',
-    cacheDir: 'cache',
-    srcDir: 'src',
-    srcExclude: ['README.md', 'modules/*'],
+    outDir: env.OUT_DIR || `dist/${locale}`,
+    cacheDir: env.CACHE_DIR || `cache/${locale}`,
+    srcDir: rootPath,
+    base: `/${locale}/`,
+    /*
+     * All locales share one source tree (that is where the fixtures and the
+     * public directory live), but only the requested locale is built. Its
+     * pages are re-rooted so that they sit directly under the app's base path.
+     */
+    rewrites: (page: string) =>
+      page.startsWith(`${locale}/`) ? page.slice(locale.length + 1) : page,
+    srcExclude: [
+      'README.md',
+      'index.md',
+      'modules/*',
+      ...otherLocales.map((l) => `${l}/**`),
+    ],
+    /*
+     * Links that carry a locale prefix (`/en/...`, `/de/...`) are resolved at
+     * the web server level: the base path of the app is prepended to them, so
+     * `/en/foo` inside the English app becomes `/en/en/foo`. A rewrite rule in
+     * the nginx configuration collapses that duplicated prefix again, which is
+     * why these links must not be reported as dead pages of this app.
+     * See .docker-compose/vitepress.conf.
+     */
+    ignoreDeadLinks: [new RegExp(`^/(${supportedLocales.join('|')})/`)],
     description: 'Documentation for Zammad Users and Administrators',
     head: [
       ['link', { rel: 'icon', href: 'https://zammad.org/assets/images/favicon.ico' }],
@@ -131,14 +217,51 @@ export default defineConfig(
 
           return `[${n}]`
         }
+
+        /*
+         * Content links carry the language prefix of their own app, see
+         * `withoutOwnLocalePrefix`. Strip it while the markdown is parsed, so
+         * that VitePress's link normalisation adds the base path only once.
+         * Links into another language keep their prefix and are collapsed by
+         * the web server, which only happens on a real request — so the router
+         * has to leave those alone.
+         */
+        md.core.ruler.push('strip-own-locale-prefix', (state) => {
+          for (const token of state.tokens) {
+            for (const child of token.children ?? []) {
+              if (child.type !== 'link_open') continue
+
+              const href = child.attrGet('href')
+              if (!href) continue
+
+              const stripped = withoutOwnLocalePrefix(href)
+
+              if (stripped !== href) {
+                child.attrSet('href', stripped)
+              } else if (
+                otherLocales.some((l) => href === `/${l}` || href.startsWith(`/${l}/`))
+              ) {
+                child.attrSet('target', '_self')
+              }
+            }
+          }
+        })
       },
     },
+    /*
+     * Front matter links — the actions of the home page and the cards of the
+     * documentation pages — never pass a markdown parser, see
+     * `withoutOwnLocalePrefix`.
+     */
+    transformPageData(pageData) {
+      stripOwnLocalePrefix(pageData.frontmatter)
+    },
+    /*
+     * Each app knows only its own locale. The language switcher therefore has
+     * to link to the other apps explicitly, see .vitepress/theme/VPLangSwitcher.vue.
+     */
     locales: {
-      root: { label: 'English', link: '/en/', ...configEN },
-      de: { label: 'Deutsch', ...configDE },
-      sr: { label: 'српски', ...configSR },
-      it: { label: 'Italiano', ...configIT },
-      pt_BR: { label: 'Português (Brasil)', ...configPTBR },
+      root: { label: localeLabels[locale], ...localeConfigFile },
     },
     vite: {
       resolve: {
@@ -159,6 +282,12 @@ export default defineConfig(
       },
     },
     themeConfig: {
+      ...localeConfig,
+      langLinks: supportedLocales.map((l) => ({
+        label: localeLabels[l],
+        link: `/${l}/`,
+        current: l === locale,
+      })),
       logo: {
         light: '/assets/logo-flat-light.svg',
         dark: '/assets/logo-flat-dark.svg',
@@ -174,9 +303,7 @@ export default defineConfig(
         provider: 'local',
         options: {
           locales: {
-            root: searchEN,
-            de:   searchDE,
-            sr:   searchSR,
+            root: searchConfig,
           },
           miniSearch: {
             options: {
@@ -187,11 +314,13 @@ export default defineConfig(
                 if (fieldName === 'user') return userSearchRegex.test(document.id)
 
                 // Add localized prefix to the breadcrumb of user documentation pages.
+                // An app contains its own language only, so the matched prefix is
+                // always the one of this app.
                 if (fieldName === 'titles') {
                   const matches = document.id.match(userSearchRegex)
 
                   if (matches) {
-                    const localizedPrefix = searchConfigByLocale[ matches[1] ].translations.user
+                    const localizedPrefix = searchConfig.translations.user
 
                     return [localizedPrefix, ...document.titles]
                   }
@@ -215,25 +344,23 @@ export default defineConfig(
       },
     }
   }, [
-    ...supportedLocales.map((locale) => ({
-        ...commonSidebarConfig,
-        documentRootPath: `/src/${locale}`,
-        resolvePath: `/${locale}/`,
-        excludePattern: [
-          'gdpr.md',
-          'imprint.md',
-          'TEMPLATE.md',
-          'modules/',
-        ],
-      }),
-    ),
-    ...supportedLocales.map((locale) => ({
-        ...commonSidebarConfig,
-        documentRootPath: `/src/${locale}/documentation/use`,
-        resolvePath: `/${locale}/documentation/use/`,
-        rootGroupText: `\u2039 ${configByLocale[locale].themeConfig.user.rootGroupText}`, // guillemet (‹)
-        rootGroupLink: '../introduction.html',
-      }),
-    ),
+    {
+      ...commonSidebarConfig,
+      documentRootPath: `/src/${locale}`,
+      resolvePath: '/',
+      excludePattern: [
+        'gdpr.md',
+        'imprint.md',
+        'TEMPLATE.md',
+        'modules/',
+      ],
+    },
+    {
+      ...commonSidebarConfig,
+      documentRootPath: `/src/${locale}/documentation/use`,
+      resolvePath: '/documentation/use/',
+      rootGroupText: `\u2039 ${localeConfig.user.rootGroupText}`, // guillemet (‹)
+      rootGroupLink: '../introduction.html',
+    },
   ]),
 )

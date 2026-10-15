@@ -1,12 +1,11 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import { useRouter, useData } from 'vitepress'
-import { computed, onMounted, nextTick } from 'vue'
+import { onMounted, nextTick } from 'vue'
 import VPHeader from './VPHeader.vue'
+import VPLangSwitcher from './VPLangSwitcher.vue'
 
 const { site } = useData()
-
-const acceptLanguage = computed(() => window.navigator.language || '')
 
 /**
  * Scroll-settle generation counter. Incremented on every route change so a
@@ -124,17 +123,7 @@ function settleAnchorScroll(hash, gen) {
   setTimeout(() => { stopListening(); reanchor() }, 1600)
 }
 
-const supportedLocales = ['en', 'de', 'sr', 'it', 'pt_BR']
-
-const targetLocale = computed(() => {
-  const normalized = acceptLanguage.value.replace('-', '_').toLowerCase()
-  return supportedLocales.find((locale) => normalized.startsWith(locale.toLowerCase())) || 'en'
-})
-
 const router = useRouter()
-const { route, go } = router
-
-const hasNoLocaleSet = computed(() => supportedLocales.every((locale) => !route.path.startsWith(`/${locale}/`)))
 
 /**
  * Activate a tab based on ?tab=<name> in the URL.
@@ -182,18 +171,6 @@ function activateTabFromUrl() {
 }
 
 onMounted(() => {
-  // Always redirect to the target language for the root path.
-  if (route.path === '/') {
-    go(`/${targetLocale.value}/`)
-    return
-  }
-
-  // Redirect to the requested page under target language, if locale is not set (meta-links).
-  if (route.data?.isNotFound && hasNoLocaleSet.value) {
-    go(`/${targetLocale.value}${route.path}`)
-    return
-  }
-
   // Activate tab from URL parameter
   activateTabFromUrl()
 
@@ -230,6 +207,12 @@ router.onAfterRouteChange = (to) => {
     <!-- https://vitepress.dev/guide/extending-default-theme#layout-slots -->
     <template #layout-top>
       <VPHeader />
+    </template>
+    <template #nav-bar-content-after>
+      <VPLangSwitcher />
+    </template>
+    <template #nav-screen-content-after>
+      <VPLangSwitcher screen />
     </template>
   </DefaultTheme.Layout>
 </template>
