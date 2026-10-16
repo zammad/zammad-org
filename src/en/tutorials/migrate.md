@@ -36,6 +36,14 @@ General limitations for all migrations:
 - Zammad migrates all or nothing. This means that you can't deselect
   specific information specific groups, tickets or users.
 
+::: warning
+
+Import mode also activates the maintenance mode, for as long as import mode is
+enabled. Zammad then denies every request of a user without the `admin.maintenance`
+permission. Turn import mode off again before letting users work in the instance.
+
+:::
+
 ## Specific migration guides
 
 ::: info

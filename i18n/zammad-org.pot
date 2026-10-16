@@ -5083,7 +5083,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:112
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:97
 #, markdown-text, no-wrap
 msgid "Ticket history"
 msgstr ""
@@ -6584,16 +6584,82 @@ msgstr ""
 msgid "Track time on ticket articles"
 msgstr ""
 
-#. type: Title ####
+#. type: Title ##
 #: src/en/documentation/use/guides/mobile-view.md:63
-#: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
-#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:477
+#, markdown-text, no-wrap
+msgid "Push notifications"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:68
+#, markdown-text
+msgid ""
+"The mobile view can notify you about your tickets on your mobile device, "
+"even when the app is not open. Push notifications are turned on per device, "
+"not for your account as a whole: you can have them on your phone and leave "
+"them off on a tablet."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:71
+#, markdown-text
+msgid ""
+"Turn them on with the **Push notifications on this device** switch in the "
+"**Notifications** section of your account page. If the switch is locked, the "
+"text below it tells you what is missing."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:75
+#, markdown-text
+msgid ""
+"Every notification Zammad creates for you is also sent to your device, for "
+"example about new tickets, ticket updates, reached reminders or "
+"escalations. A push shows the same text as the entry in the notification "
+"list, and tapping it opens the ticket in the app."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:79
+#, markdown-text
+msgid ""
+"On iPhone and iPad, push notifications are only available in the app added "
+"to the home screen with iOS or iPadOS 16.4 or later. Open the mobile view in "
+"Safari, tap `Share` and then `Add to Home Screen`. On Android, the installed "
+"app and the browser can both receive them."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:83
+#, markdown-text
+msgid ""
+"If you turned notifications off for the app in the settings of your device, "
+"the switch stays locked until you allow them there again. A browser whose "
+"push service Zammad does not support cannot enable push notifications at "
+"all. Turn the switch off again to stop receiving them; signing out removes "
+"the device as well."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:87
+#, markdown-text
+msgid ""
+"Push notifications are delivered by the push service of your browser and not "
+"by Zammad, so they can be delayed, for example by battery optimization on "
+"Android devices. While you are working in the desktop view, Zammad does not "
+"send push notifications to your mobile devices."
+msgstr ""
+
+#. type: Title ####
+#: src/en/documentation/use/guides/mobile-view.md:88
+#: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:64
+#: src/en/tutorials/migrate.md:364 src/en/tutorials/migrate.md:485
 #, markdown-text, no-wrap
 msgid "Limitations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:66
+#: src/en/documentation/use/guides/mobile-view.md:91
 #, markdown-text
 msgid ""
 "Mobile view is also currently missing some features which are provided by "
@@ -6601,31 +6667,31 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:97
 #, markdown-text
 msgid "Split article"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:97
 #, markdown-text
 msgid "Link tickets and see linked tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:97
 #, markdown-text
 msgid "Execution of macros"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:72
+#: src/en/documentation/use/guides/mobile-view.md:97
 #, markdown-text
 msgid "Template creation & shared drafts"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:74
+#: src/en/documentation/use/guides/mobile-view.md:99
 #, markdown-text
 msgid ""
 "Additionally, certain features were intentionally omitted to improve the "
@@ -6633,49 +6699,49 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:106
 #, markdown-text
 msgid "Most management features (except ticket user and organization management)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:106
 #, markdown-text
 msgid "Most knowledge base features (except ticket integration)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:106
 #, markdown-text
 msgid "Most account functions (except avatar and language preferences)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:106
 #, markdown-text
 msgid "Reports"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:106
 #, markdown-text
 msgid "Caller log"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:81
+#: src/en/documentation/use/guides/mobile-view.md:106
 #, markdown-text
 msgid "Live chat"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:107
 #, markdown-text, no-wrap
 msgid "Switch the views"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:86
+#: src/en/documentation/use/guides/mobile-view.md:111
 #, markdown-text
 msgid ""
 "Zammad implements a mobile device detection, which results in automatic "
@@ -6684,7 +6750,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:89
+#: src/en/documentation/use/guides/mobile-view.md:114
 #, markdown-text
 msgid ""
 "In both desktop and mobile view login screens, you can find a link below the "
@@ -6693,20 +6759,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:92
+#: src/en/documentation/use/guides/mobile-view.md:118
 #, markdown-text
 msgid ""
 "While you are signed in and want to switch from the mobile to the desktop "
 "view, go to your account by selecting your avatar at the bottom and select "
 "**Continue to desktop** (see account screenshot from above as an "
-"example). The other way round is similar: in the avatar menu, you can find "
-"an entry to switch to the mobile view."
+"example). The other way round is similar: in the user menu, which your "
+"avatar at the bottom of the navigation sidebar opens, you can find the "
+"**Continue to mobile** entry."
 msgstr ""
 
 #. type: Title ##
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/personal-settings.md:124
+#: src/en/documentation/use/personal-settings.md:127
 #, markdown-text, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -7436,8 +7503,8 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:18
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
-#: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
-#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:492
+#: src/en/tutorials/migrate.md:80 src/en/tutorials/migrate.md:228
+#: src/en/tutorials/migrate.md:376 src/en/tutorials/migrate.md:500
 #: src/en/tutorials/reporting-grafana.md:26
 #, markdown-text, no-wrap
 msgid "Prerequisites"
@@ -8518,8 +8585,18 @@ msgstr ""
 msgid "Additionally, you can select a notification sound or disable it."
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:108
+#, markdown-text
+msgid ""
+"Push notifications in the mobile view follow these notification settings and "
+"have no settings of their own. See the [mobile "
+"view](/en/documentation/use/guides/mobile-view) to turn them on for a "
+"device."
+msgstr ""
+
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/personal-settings.md:106
+#: src/en/documentation/use/personal-settings.md:109
 #, no-wrap
 msgid ""
 "To get notified via sound and notification on your operating system, you "
@@ -8535,7 +8612,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/personal-settings.md:115
+#: src/en/documentation/use/personal-settings.md:118
 #, no-wrap
 msgid ""
 "Notifications you have already read are removed from the list "
@@ -8551,7 +8628,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/personal-settings.md:129
+#: src/en/documentation/use/personal-settings.md:132
 #, markdown-text
 msgid ""
 "Change the order of overviews for your account. Simply drag & drop them by "
@@ -8561,7 +8638,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/personal-settings.md:130
+#: src/en/documentation/use/personal-settings.md:133
 #: src/en/reference/rest-api/calendar.md:1
 #: src/en/reference/rest-api/calendar.md:6
 #, markdown-text, no-wrap
@@ -8569,7 +8646,7 @@ msgid "Calendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/personal-settings.md:135
+#: src/en/documentation/use/personal-settings.md:138
 #, markdown-text
 msgid ""
 "Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
@@ -13558,7 +13635,7 @@ msgstr ""
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:116
 #: src/en/reference/rest-api/user.md:151
 #: src/en/reference/rest-api/webhook.md:51
-#: src/en/reference/rest-api/webhook.md:88 src/en/tutorials/migrate.md:510
+#: src/en/reference/rest-api/webhook.md:88 src/en/tutorials/migrate.md:518
 #: src/en/tutorials/webserver-config.md:113
 #, no-wrap
 msgid "\n"
@@ -18636,6 +18713,92 @@ msgstr ""
 #: src/en/reference/proxy-connections.md:94
 #, no-wrap
 msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:98
+#, markdown-text, no-wrap
+msgid "Web push notifications"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:104
+#, markdown-text
+msgid ""
+"Zammad can notify agents about their tickets on mobile devices. These "
+"notifications are delivered as web push messages of the device's browser. On "
+"Android, a supported browser and the installed mobile view can both receive "
+"them. On iPhone and iPad, the mobile view has to be added to the home screen "
+"first. How to set them up on a device is described in the [mobile view "
+"documentation](/en/documentation/use/guides/mobile-view)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:107
+#, markdown-text
+msgid ""
+"The messages are sent by the background worker of Zammad over HTTPS (port "
+"443) to the push service of the browser vendor. A firewall that restricts "
+"outgoing traffic has to allow the following addresses, including their "
+"subdomains:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:115
+#, markdown-text, no-wrap
+msgid ""
+"| Address                     | Comment                                               "
+"|\n"
+"|-----------------------------|-------------------------------------------------------|\n"
+"| fcm.googleapis.com          | Web push for Chrome and other Chromium-based "
+"browsers |\n"
+"| jmt17.google.com            | Alternative address of the Google push "
+"service        |\n"
+"| notify.windows.com          | Web push for Microsoft Edge                           "
+"|\n"
+"| push.services.mozilla.com   | Web push for Mozilla Firefox                          "
+"|\n"
+"| web.push.apple.com          | Web push for Safari on iPhone, iPad and Mac           "
+"|\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:118
+#, markdown-text
+msgid ""
+"The proxy configuration described above applies to these connections as "
+"well, including the no-proxy list of the GUI configuration and the "
+"`NO_PROXY` environment variable."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:121
+#, markdown-text
+msgid ""
+"Zammad only accepts device subscriptions of the push services listed "
+"above. A browser that uses another push service cannot enable push "
+"notifications."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:124
+#, markdown-text
+msgid ""
+"There is nothing to configure in Zammad. The key pair used to sign the "
+"messages (VAPID) is generated once per installation and is not meant to be "
+"changed: all existing device subscriptions become invalid if it changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:128
+#, markdown-text
+msgid ""
+"The push service of the browser vendor delivers the messages, not "
+"Zammad. Depending on the device, delivery can take a while, for example when "
+"battery optimization delays it on Android devices. A message that cannot be "
+"delivered right away is kept by the push service for up to one day. On "
+"iPhone and iPad, several messages about the same ticket stay as separate "
+"notifications, while other platforms replace the previous one."
 msgstr ""
 
 #. type: Title #
@@ -30664,14 +30827,28 @@ msgid ""
 "information specific groups, tickets or users."
 msgstr ""
 
-#. type: Title ##
+#. type: Fenced div block (warning)
 #: src/en/tutorials/migrate.md:39
+#, no-wrap
+msgid ""
+"\n"
+"Import mode also activates the maintenance mode, for as long as import mode "
+"is\n"
+"enabled. Zammad then denies every request of a user without the "
+"`admin.maintenance`\n"
+"permission. Turn import mode off again before letting users work in the "
+"instance.\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate.md:47
 #, markdown-text, no-wrap
 msgid "Specific migration guides"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/migrate.md:41
+#: src/en/tutorials/migrate.md:49
 #, no-wrap
 msgid ""
 "\n"
@@ -30690,13 +30867,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:54
+#: src/en/tutorials/migrate.md:62
 #, markdown-text, no-wrap
 msgid "Freshdesk"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:60 src/en/tutorials/migrate.md:204
+#: src/en/tutorials/migrate.md:68 src/en/tutorials/migrate.md:212
 #, markdown-text
 msgid ""
 "Please note Freshdesk specific limitations below. These are additional "
@@ -30704,8 +30881,8 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:227
+#: src/en/tutorials/migrate.md:499
 #, markdown-text
 msgid ""
 "Differential migrations are not supported! The general suggestion is to run "
@@ -30713,7 +30890,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71
+#: src/en/tutorials/migrate.md:79
 #, markdown-text
 msgid ""
 "Important: Please note that migration speed highly depends on your Freshdesk "
@@ -30721,7 +30898,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71
+#: src/en/tutorials/migrate.md:79
 #, markdown-text
 msgid ""
 "Due to API limitations, Zammad will not show the total number of objects to "
@@ -30729,7 +30906,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71
+#: src/en/tutorials/migrate.md:79
 #, markdown-text
 msgid ""
 "Your Freshdesk plan has to provide API support. This may not apply to all "
@@ -30737,7 +30914,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid ""
 "User passwords are not migrated and will require the user to use the "
@@ -30745,7 +30922,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:78
+#: src/en/tutorials/migrate.md:86
 #, markdown-text
 msgid ""
 "Zammad requires API access which is why you'll need to [create an API "
@@ -30755,7 +30932,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:87 src/en/tutorials/migrate.md:507
 #, no-wrap
 msgid ""
 "Ensure to retrieve the API key with a full administrator account. Less\n"
@@ -30763,15 +30940,15 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/migrate.md:84 src/en/tutorials/migrate.md:230
-#: src/en/tutorials/migrate.md:400 src/en/tutorials/migrate.md:504
+#: src/en/tutorials/migrate.md:92 src/en/tutorials/migrate.md:238
+#: src/en/tutorials/migrate.md:408 src/en/tutorials/migrate.md:512
 #, markdown-text, no-wrap
 msgid "Import"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:89 src/en/tutorials/migrate.md:235
-#: src/en/tutorials/migrate.md:509
+#: src/en/tutorials/migrate.md:97 src/en/tutorials/migrate.md:243
+#: src/en/tutorials/migrate.md:517
 #, markdown-text
 msgid ""
 "In general, you have two options on how to migrate data. If you have a "
@@ -30780,7 +30957,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:90
+#: src/en/tutorials/migrate.md:98
 #, no-wrap
 msgid ""
 "\n"
@@ -30862,7 +31039,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:510
+#: src/en/tutorials/migrate.md:98 src/en/tutorials/migrate.md:518
 #, no-wrap
 msgid ""
 "\n"
@@ -30879,42 +31056,42 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/migrate.md:178 src/en/tutorials/migrate.md:332
-#: src/en/tutorials/migrate.md:459 src/en/tutorials/migrate.md:600
+#: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
+#: src/en/tutorials/migrate.md:467 src/en/tutorials/migrate.md:608
 #, markdown-text, no-wrap
 msgid "After migration"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:181 src/en/tutorials/migrate.md:335
-#: src/en/tutorials/migrate.md:462 src/en/tutorials/migrate.md:603
+#: src/en/tutorials/migrate.md:189 src/en/tutorials/migrate.md:343
+#: src/en/tutorials/migrate.md:470 src/en/tutorials/migrate.md:611
 #, markdown-text
 msgid "Run the following commands:"
-msgstr ""
-
-#. type: Fenced code block (ruby)
-#: src/en/tutorials/migrate.md:182 src/en/tutorials/migrate.md:336
-#: src/en/tutorials/migrate.md:463 src/en/tutorials/migrate.md:604
-#, no-wrap
-msgid "Setting.set('import_mode', false)\n"
-msgstr ""
-
-#. type: Fenced code block (ruby)
-#: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
-#: src/en/tutorials/migrate.md:467 src/en/tutorials/migrate.md:608
-#, no-wrap
-msgid "Setting.set('system_init_done', true)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:190 src/en/tutorials/migrate.md:344
 #: src/en/tutorials/migrate.md:471 src/en/tutorials/migrate.md:612
 #, no-wrap
+msgid "Setting.set('import_mode', false)\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/tutorials/migrate.md:194 src/en/tutorials/migrate.md:348
+#: src/en/tutorials/migrate.md:475 src/en/tutorials/migrate.md:616
+#, no-wrap
+msgid "Setting.set('system_init_done', true)\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/tutorials/migrate.md:198 src/en/tutorials/migrate.md:352
+#: src/en/tutorials/migrate.md:479 src/en/tutorials/migrate.md:620
+#, no-wrap
 msgid "Rails.cache.clear\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:618
+#: src/en/tutorials/migrate.md:204 src/en/tutorials/migrate.md:626
 #, markdown-text
 msgid ""
 "Log in with the user whose API token you provided. Use the admins email "
@@ -30922,8 +31099,8 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:199 src/en/tutorials/migrate.md:353
-#: src/en/tutorials/migrate.md:620
+#: src/en/tutorials/migrate.md:207 src/en/tutorials/migrate.md:361
+#: src/en/tutorials/migrate.md:628
 #, markdown-text
 msgid ""
 "All other users will have to use the password reset function or login "
@@ -30931,19 +31108,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:200
+#: src/en/tutorials/migrate.md:208
 #, markdown-text, no-wrap
 msgid "Kayako"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid "Selfhosted installations (Kayako classic) are not supported."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid ""
 "The following ticket field customizations are being ignored (affects “Scale” "
@@ -30951,25 +31128,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid "Custom ticket states"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid "Custom ticket priorities"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid "Custom ticket types"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid ""
 "Important: Please note that migration speed highly depends on your Kayako "
@@ -30977,7 +31154,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 #, markdown-text
 msgid ""
 "Your Kayako plan has to provide API support. This may not apply to all "
@@ -30985,7 +31162,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:224
+#: src/en/tutorials/migrate.md:232
 #, markdown-text
 msgid ""
 "Zammad requires API access which is why the migrator will request your "
@@ -30993,7 +31170,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:225
+#: src/en/tutorials/migrate.md:233
 #, no-wrap
 msgid ""
 "Ensure to provide an user account with full administrative "
@@ -31002,7 +31179,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:236
+#: src/en/tutorials/migrate.md:244
 #, no-wrap
 msgid ""
 "\n"
@@ -31092,7 +31269,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:236
+#: src/en/tutorials/migrate.md:244
 #, no-wrap
 msgid ""
 "\n"
@@ -31109,7 +31286,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:350
+#: src/en/tutorials/migrate.md:358
 #, markdown-text
 msgid ""
 "Log in with the user whose login credentials you provided. Use the admins "
@@ -31117,25 +31294,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:354
+#: src/en/tutorials/migrate.md:362
 #, markdown-text, no-wrap
 msgid "OTRS"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:367 src/en/tutorials/migrate.md:488
 #, markdown-text
 msgid "Additional limitations to the general one:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 #, markdown-text
 msgid "Supported OTRS versions are: 3.1 - 6.x"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 #, markdown-text
 msgid ""
 "Password migration works for OTRS >= 3.3 only (on older instances a password "
@@ -31143,7 +31320,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 #, markdown-text
 msgid ""
 "If you plan to import a differential migration after the main one, do not "
@@ -31151,19 +31328,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 #, markdown-text
 msgid "Only customers of tickets are imported"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 #, markdown-text
 msgid "Zammad expects your OTRS timestamps to be UTC and won't adjust them"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:371
+#: src/en/tutorials/migrate.md:379
 #, markdown-text, no-wrap
 msgid ""
 "**Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the "
@@ -31171,7 +31348,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31179,7 +31356,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31187,7 +31364,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31195,7 +31372,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31203,13 +31380,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:378
+#: src/en/tutorials/migrate.md:386
 #, markdown-text, no-wrap
 msgid "**Install OTRS migration plugin that matches your OTRS version:**\n"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31217,7 +31394,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31225,7 +31402,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31233,7 +31410,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 #, markdown-text
 msgid ""
 "[OTRS "
@@ -31241,7 +31418,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/migrate.md:384
+#: src/en/tutorials/migrate.md:392
 #, no-wrap
 msgid ""
 "In some cases restarting your webserver may help to solve internal server\n"
@@ -31249,13 +31426,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:389
+#: src/en/tutorials/migrate.md:397
 #, markdown-text, no-wrap
 msgid "Timeout adjustments"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:394
+#: src/en/tutorials/migrate.md:402
 #, markdown-text
 msgid ""
 "If your import runs in a timeout or you already know that this could be an "
@@ -31266,7 +31443,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:399
+#: src/en/tutorials/migrate.md:407
 #, markdown-text, no-wrap
 msgid ""
 "|                                    | Zammad < 7.0 | Zammad ≥ 7.0  |\n"
@@ -31276,7 +31453,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:402
+#: src/en/tutorials/migrate.md:410
 #, no-wrap
 msgid ""
 "\n"
@@ -31340,13 +31517,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:475
+#: src/en/tutorials/migrate.md:483
 #, markdown-text, no-wrap
 msgid "Zendesk"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 #, markdown-text
 msgid ""
 "Important: Please note that migration speed highly depends on your Zendesk "
@@ -31354,7 +31531,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 #, markdown-text
 msgid ""
 "Your Zendesk plan has to provide API support. This may not apply to all "
@@ -31362,7 +31539,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 #, markdown-text
 msgid ""
 "User passwords are not migrated and will require the user to use the "
@@ -31370,7 +31547,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 #, markdown-text
 msgid ""
 "Objects with cyrillic strings can't be migrated. Make sure to rename them "
@@ -31378,7 +31555,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:498
+#: src/en/tutorials/migrate.md:506
 #, markdown-text
 msgid ""
 "Zammad requires API access which is why you’ll need to [create an API "
@@ -31388,7 +31565,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:510
+#: src/en/tutorials/migrate.md:518
 #, no-wrap
 msgid ""
 "\n"
