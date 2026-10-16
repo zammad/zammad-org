@@ -5208,16 +5208,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:23
+#: src/en/documentation/use/guides/cti.md:26
 #, markdown-text
 msgid ""
 "When it's switched on, you get a counter of unhandled calls, see ringing "
-"calls in the sidebar and get the customer or ticket view after you answer a "
-"call. Switched off, none of that happens."
+"calls in the sidebar, get the customer or ticket view after you answer a "
+"call and, while the Zammad window is not in front, a browser notification "
+"for a call that starts ringing. Clicking that notification brings Zammad up "
+"and opens the caller log. The browser shows such a notification only if you "
+"allowed notifications for Zammad and only in the Zammad tab you used last.  "
+"Switched off, none of that happens."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:25
+#: src/en/documentation/use/guides/cti.md:28
 #, markdown-text
 msgid ""
 "![Screenshot shows the Phone entry with call notifications switched off, "
@@ -5226,37 +5230,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:27
+#: src/en/documentation/use/guides/cti.md:30
 #, markdown-text
 msgid "With the toggle switched off:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 #, markdown-text
 msgid "the counter next to **Phone** stays hidden"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 #, markdown-text
 msgid "no ringing calls appear in the sidebar"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 #, markdown-text
 msgid "picking up a call does not open a customer or ticket view"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 #, markdown-text
 msgid "no browser notifications appear"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:36
+#: src/en/documentation/use/guides/cti.md:39
 #, markdown-text
 msgid ""
 "The caller log itself is not affected by this toggle. You can still open it "
@@ -5266,13 +5270,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:37
+#: src/en/documentation/use/guides/cti.md:40
 #, markdown-text, no-wrap
 msgid "Answer calls"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:42
+#: src/en/documentation/use/guides/cti.md:45
 #, markdown-text
 msgid ""
 "You answer a call in your phone software or on your headset, not in "
@@ -5282,7 +5286,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:44
+#: src/en/documentation/use/guides/cti.md:47
 #, markdown-text
 msgid ""
 "![Screenshot shows the Phone entry in the navigation sidebar with a ringing "
@@ -5291,7 +5295,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:48
+#: src/en/documentation/use/guides/cti.md:51
 #, markdown-text
 msgid ""
 "Next to a ringing call you find a ::+:: button to create a new ticket for "
@@ -5301,7 +5305,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:54
+#: src/en/documentation/use/guides/cti.md:57
 #, markdown-text
 msgid ""
 "Once your phone system reports that you answered, Zammad decides which view "
@@ -5314,7 +5318,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/cti.md:55
+#: src/en/documentation/use/guides/cti.md:58
 #, no-wrap
 msgid ""
 "Zammad opens that view only while you are looking at the Zammad browser "
@@ -5328,13 +5332,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:62
+#: src/en/documentation/use/guides/cti.md:65
 #, markdown-text, no-wrap
 msgid "Reading the caller log"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:67
+#: src/en/documentation/use/guides/cti.md:70
 #, markdown-text
 msgid ""
 "The caller log lists every call your phone system reported. Open it with the "
@@ -5344,13 +5348,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:69
+#: src/en/documentation/use/guides/cti.md:72
 #, markdown-text
 msgid "Each row shows:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 #, markdown-text
 msgid ""
 "**Handled** (no column heading): whether the call was answered. A call that "
@@ -5359,7 +5363,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 #, markdown-text
 msgid ""
 "**From** and **To**: the numbers involved, together with the name Zammad "
@@ -5367,7 +5371,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 #, markdown-text
 msgid ""
 "**Status**: how the call ended, for example `Connected`, `Call ended`, "
@@ -5376,7 +5380,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 #, markdown-text
 msgid ""
 "**Waiting** and **Duration**: how long the call waited before it was "
@@ -5384,13 +5388,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 #, markdown-text
 msgid "**Time**: when the call happened."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:79
+#: src/en/documentation/use/guides/cti.md:82
 #, markdown-text
 msgid ""
 "![Screenshot shows the caller log with call entries and the different caller "
@@ -5398,7 +5402,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:82
+#: src/en/documentation/use/guides/cti.md:85
 #, markdown-text
 msgid ""
 "Handled calls stay in the list but are greyed out, so you can still tell "
@@ -5406,7 +5410,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/guides/cti.md:83
+#: src/en/documentation/use/guides/cti.md:86
 #, no-wrap
 msgid ""
 "The caller log shows all calls of the entire instance, not only yours. It "
@@ -5417,13 +5421,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:89
+#: src/en/documentation/use/guides/cti.md:92
 #, markdown-text, no-wrap
 msgid "Marking calls as handled"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:95
+#: src/en/documentation/use/guides/cti.md:98
 #, markdown-text
 msgid ""
 "Answering a call marks it as handled for you. You only need the checkbox for "
@@ -5434,7 +5438,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:99
+#: src/en/documentation/use/guides/cti.md:102
 #, markdown-text
 msgid ""
 "The checkbox stays locked while the call is still ringing and younger than a "
@@ -5443,13 +5447,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:100
+#: src/en/documentation/use/guides/cti.md:103
 #, markdown-text, no-wrap
 msgid "Caller matches"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:103
+#: src/en/documentation/use/guides/cti.md:106
 #, markdown-text
 msgid ""
 "Zammad tries to identify the caller and show you their name next to the "
@@ -5457,7 +5461,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:109
+#: src/en/documentation/use/guides/cti.md:112
 #, markdown-text
 msgid ""
 "A **known match**: Zammad found the number in your customer data and shows "
@@ -5465,7 +5469,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:109
+#: src/en/documentation/use/guides/cti.md:112
 #, markdown-text
 msgid ""
 "A **Maybe** badge: Zammad only guesses that the number belongs to this "
@@ -5475,7 +5479,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:109
+#: src/en/documentation/use/guides/cti.md:112
 #, markdown-text
 msgid ""
 "An **unknown caller**: Zammad has no customer for the number. The number "
@@ -5483,7 +5487,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:112
+#: src/en/documentation/use/guides/cti.md:115
 #, markdown-text
 msgid ""
 "If more than one customer matches a number, the row shows a badge with the "
@@ -5492,13 +5496,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:113
+#: src/en/documentation/use/guides/cti.md:116
 #, markdown-text, no-wrap
 msgid "Creating a customer from a call"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:118
+#: src/en/documentation/use/guides/cti.md:121
 #, markdown-text
 msgid ""
 "For an unknown number you can create the customer without leaving the caller "
@@ -5509,7 +5513,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:122
+#: src/en/documentation/use/guides/cti.md:125
 #, markdown-text
 msgid ""
 "An unknown number cannot be added to an existing customer this way. If the "
@@ -5519,13 +5523,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:123
+#: src/en/documentation/use/guides/cti.md:126
 #, markdown-text, no-wrap
 msgid "Dialing a number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:127
+#: src/en/documentation/use/guides/cti.md:130
 #, markdown-text
 msgid ""
 "Phone numbers in the caller log and in customer details are links. Clicking "

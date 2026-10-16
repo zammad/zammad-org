@@ -18,8 +18,11 @@ This feature is optional. Your admin has to connect Zammad to a telephony backen
 The toggle next to the **Phone** entry decides whether Zammad tells you about calls. It is switched off by
 default, so switch it on to see incoming calls.
 
-When it's switched on, you get a counter of unhandled calls, see ringing calls in the sidebar and get the
-customer or ticket view after you answer a call. Switched off, none of that happens.
+When it's switched on, you get a counter of unhandled calls, see ringing calls in the sidebar, get the customer
+or ticket view after you answer a call and, while the Zammad window is not in front, a browser notification for
+a call that starts ringing. Clicking that notification brings Zammad up and opens the caller log. The browser
+shows such a notification only if you allowed notifications for Zammad and only in the Zammad tab you used last.
+Switched off, none of that happens.
 
 ![Screenshot shows the Phone entry with call notifications switched off, without a counter and without ringing calls](/screenshots/cypress/documentation/use/guide-cti.cy.js/sidebar-notifications-off.png)
 
