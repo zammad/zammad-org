@@ -11,13 +11,23 @@ This page covers the required steps for a host upgrade and to switch to Zammad's
 want to update Zammad itself, please refer to [Updating Zammad](update). To just switch to the new repositories without
 a host upgrade, skip the host upgrade steps.
 
-Starting with Zammad 7, packages are being built using a new toolchain and hosted under another URL. The packages are
-being built via old toolchain as well (except for Debian 13) for some time, but we encourage you to switch to the new
-repositories in a timely manner. This means you need to add a new repository key and change your repository
-configuration.
+Zammad packages are being built with a new toolchain and are hosted under another URL. The old toolchain is no longer
+in use, so the packages in the old repositories no longer receive updates. This means you need to add a new repository
+key and change your repository configuration.
+
+The repository channel in the URL selects the release line: `stable` contains the current stable release, while release
+lines that are out of support have a channel of their own, for example `stable-6.5`.
 
 ::: warning
 Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.
+:::
+
+<!-- TODO: remove this warning box with the next Zammad release (added for the 6.5.5 emergency release). -->
+
+::: warning
+Zammad 6.5.5 is an emergency release that fixes a security issue. Zammad 6.5 is out of support and its packages are only
+available in the `stable-6.5` channel. See [Update an out-of-support release](#update-an-out-of-support-release) below
+for the steps.
 :::
 
 The following operating systems are supported:
@@ -373,6 +383,195 @@ sudo dnf upgrade zammad
 :::
 
 ### Start Zammad
+
+```sh
+sudo systemctl start zammad
+```
+
+<!-- TODO: remove this section with the next Zammad release (added for the 6.5.5 emergency release). -->
+
+## Update an out-of-support release
+
+Zammad 6.5.5 is an emergency release that fixes a security issue. Zammad 6.5 has been out of support for some time and
+no longer receives security updates, so updating to the current stable release is the recommended action. Follow the
+steps below only if you cannot update to a supported release right now.
+
+Zammad builds 6.5.5 packages for Ubuntu 20.04, 22.04 and 24.04, Debian 11 and 12, CentOS/RHEL 8 and 9, and OpenSUSE
+Leap/SLES 15.
+
+### Add the 6.5 repository
+
+Remove the old repository and its key first, as described in Adjust package repository above. Otherwise your package
+manager keeps reading the old repository, which offers packages of a newer release line.
+
+Add the new repository with the `stable-6.5` channel:
+
+:::: tabs key:distros
+
+=== Ubuntu
+Add repository key:
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+```
+
+Add repository (Ubuntu 20.04):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/20.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Ubuntu 22.04):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/22.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Ubuntu 24.04):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/24.04.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+=== Debian
+
+Add repository key:
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg" \
+  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg
+```
+
+Add repository (Debian 11):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/debian/11.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+Add repository (Debian 12):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/debian/12.list" \
+  -o /etc/apt/sources.list.d/zammad.list
+```
+
+=== OpenSUSE/SLES
+
+Add repository (OpenSUSE/SLES 15):
+
+```sh
+sudo curl -o /etc/zypp/repos.d/zammad.repo \
+  "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/sles/15.repo"
+```
+
+=== CentOS/RHEL
+
+Add repository key:
+
+```sh
+sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc
+```
+
+Add repository (CentOS/RHEL 8):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/el/8.repo" \
+  -o /etc/yum.repos.d/zammad.repo
+```
+
+Add repository (CentOS/RHEL 9):
+
+```sh
+sudo curl -fsSL "https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/el/9.repo" \
+  -o /etc/yum.repos.d/zammad.repo
+```
+
+::::
+
+### Update Zammad to 6.5.5
+
+Stop Zammad:
+
+```sh
+sudo systemctl stop zammad
+```
+
+:::: tabs key:distros
+
+=== Ubuntu
+
+Update package index:
+
+```sh
+sudo apt update
+```
+
+Re-enable updates for Zammad:
+
+```sh
+sudo apt-mark unhold zammad
+```
+
+Update Zammad:
+
+```sh
+sudo apt upgrade zammad
+```
+
+=== Debian
+
+Update package index:
+
+```sh
+sudo apt update
+```
+
+Re-enable updates for Zammad:
+
+```sh
+sudo apt-mark unhold zammad
+```
+
+Update Zammad:
+
+```sh
+sudo apt upgrade zammad
+```
+
+=== OpenSUSE/SLES
+
+Update package index:
+
+```sh
+sudo zypper refresh
+```
+
+Re-enable updates for Zammad:
+
+```sh
+sudo zypper removelock zammad
+```
+
+Update Zammad:
+
+```sh
+sudo zypper update zammad
+```
+
+=== CentOS/RHEL
+
+```sh
+sudo dnf upgrade zammad
+```
+
+::::
+
+Start Zammad:
 
 ```sh
 sudo systemctl start zammad

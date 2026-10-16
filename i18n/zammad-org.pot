@@ -9138,18 +9138,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:18
+#: src/en/get-started/host-upgrade-repo-migration.md:17
 #, markdown-text
 msgid ""
-"Starting with Zammad 7, packages are being built using a new toolchain and "
-"hosted under another URL. The packages are being built via old toolchain as "
-"well (except for Debian 13) for some time, but we encourage you to switch to "
-"the new repositories in a timely manner. This means you need to add a new "
+"Zammad packages are being built with a new toolchain and are hosted under "
+"another URL. The old toolchain is no longer in use, so the packages in the "
+"old repositories no longer receive updates. This means you need to add a new "
 "repository key and change your repository configuration."
 msgstr ""
 
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:20
+#, markdown-text
+msgid ""
+"The repository channel in the URL selects the release line: `stable` "
+"contains the current stable release, while release lines that are out of "
+"support have a channel of their own, for example `stable-6.5`."
+msgstr ""
+
 #. type: Fenced div block (warning)
-#: src/en/get-started/host-upgrade-repo-migration.md:19
+#: src/en/get-started/host-upgrade-repo-migration.md:21
 #, no-wrap
 msgid ""
 "Always make sure to have a [backup](/en/tutorials/backup-restore) of your "
@@ -9157,13 +9165,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:24
+#: src/en/get-started/host-upgrade-repo-migration.md:26
+#, markdown-text, no-wrap
+msgid ""
+"<!-- TODO: remove this warning box with the next Zammad release (added for "
+"the 6.5.5 emergency release). -->\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/get-started/host-upgrade-repo-migration.md:27
+#, no-wrap
+msgid ""
+"Zammad 6.5.5 is an emergency release that fixes a security issue. Zammad 6.5 "
+"is out of support and its packages are only\n"
+"available in the `stable-6.5` channel. See [Update an out-of-support "
+"release](#update-an-out-of-support-release) below\n"
+"for the steps.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:34
 #, markdown-text
 msgid "The following operating systems are supported:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:31
+#: src/en/get-started/host-upgrade-repo-migration.md:41
 #: src/en/get-started/installation/package.md:20
 #, markdown-text, no-wrap
 msgid ""
@@ -9176,33 +9203,34 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:32
+#: src/en/get-started/host-upgrade-repo-migration.md:42
 #: src/en/get-started/update.md:33
 #, markdown-text, no-wrap
 msgid "Stop Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:34
+#: src/en/get-started/host-upgrade-repo-migration.md:44
+#: src/en/get-started/host-upgrade-repo-migration.md:500
 #: src/en/get-started/update.md:35 src/en/tutorials/migrate-host.md:54
 #, no-wrap
 msgid "sudo systemctl stop zammad\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/host-upgrade-repo-migration.md:38
+#: src/en/get-started/host-upgrade-repo-migration.md:48
 #, markdown-text, no-wrap
 msgid "Host upgrade steps"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:40
+#: src/en/get-started/host-upgrade-repo-migration.md:50
 #, markdown-text, no-wrap
 msgid "Disable updates for Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:42
+#: src/en/get-started/host-upgrade-repo-migration.md:52
 #, no-wrap
 msgid ""
 "\n"
@@ -9233,13 +9261,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:70
+#: src/en/get-started/host-upgrade-repo-migration.md:80
 #, markdown-text, no-wrap
 msgid "Perform host upgrade"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:74
+#: src/en/get-started/host-upgrade-repo-migration.md:84
 #, markdown-text
 msgid ""
 "Perform the host upgrade according to the documentation of your operating "
@@ -9248,13 +9276,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:75
+#: src/en/get-started/host-upgrade-repo-migration.md:85
 #, markdown-text, no-wrap
 msgid "Reboot host"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:80
+#: src/en/get-started/host-upgrade-repo-migration.md:90
 #, markdown-text
 msgid ""
 "In case you did not reboot your system after the upgrade, make sure to "
@@ -9264,19 +9292,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/host-upgrade-repo-migration.md:81
+#: src/en/get-started/host-upgrade-repo-migration.md:91
 #, markdown-text, no-wrap
 msgid "Adjust package repository"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:83
+#: src/en/get-started/host-upgrade-repo-migration.md:93
 #, markdown-text, no-wrap
 msgid "Remove old repository"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:86
+#: src/en/get-started/host-upgrade-repo-migration.md:96
 #, markdown-text
 msgid ""
 "Remove the old repository configuration file or disable/delete the old "
@@ -9284,7 +9312,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:87
+#: src/en/get-started/host-upgrade-repo-migration.md:97
 #, no-wrap
 msgid ""
 "\n"
@@ -9323,13 +9351,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:123
+#: src/en/get-started/host-upgrade-repo-migration.md:133
 #, markdown-text, no-wrap
 msgid "Remove old repository key"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:127
+#: src/en/get-started/host-upgrade-repo-migration.md:137
 #, markdown-text
 msgid ""
 "Remove the old repository key from your system. Depending on your operating "
@@ -9337,7 +9365,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:128
+#: src/en/get-started/host-upgrade-repo-migration.md:138
 #, no-wrap
 msgid ""
 "\n"
@@ -9386,13 +9414,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:172
+#: src/en/get-started/host-upgrade-repo-migration.md:182
 #, markdown-text, no-wrap
 msgid "Add new repository"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:176
+#: src/en/get-started/host-upgrade-repo-migration.md:186
 #, markdown-text
 msgid ""
 "If the repository key is different for the old and new version your "
@@ -9402,7 +9430,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:177
+#: src/en/get-started/host-upgrade-repo-migration.md:187
 #: src/en/get-started/installation/package.md:175
 #, no-wrap
 msgid ""
@@ -9518,14 +9546,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:270
+#: src/en/get-started/host-upgrade-repo-migration.md:280
 #: src/en/get-started/installation/package.md:268
 #, markdown-text, no-wrap
 msgid "Install Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:272
+#: src/en/get-started/host-upgrade-repo-migration.md:282
 #, no-wrap
 msgid ""
 "\n"
@@ -9552,14 +9580,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:296
+#: src/en/get-started/host-upgrade-repo-migration.md:306
 #: src/en/get-started/update.md:44
 #, markdown-text, no-wrap
 msgid "Update Zammad"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/get-started/host-upgrade-repo-migration.md:298
+#: src/en/get-started/host-upgrade-repo-migration.md:308
 #, no-wrap
 msgid ""
 "If there is a new Zammad version available and you want to update to it, "
@@ -9569,7 +9597,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:304
+#: src/en/get-started/host-upgrade-repo-migration.md:314
 #, markdown-text
 msgid ""
 "Re-enable updates for Zammad and update Zammad to the latest version "
@@ -9577,7 +9605,8 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:305
+#: src/en/get-started/host-upgrade-repo-migration.md:315
+#: src/en/get-started/host-upgrade-repo-migration.md:504
 #, no-wrap
 msgid ""
 "\n"
@@ -9650,18 +9679,200 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:375
+#: src/en/get-started/host-upgrade-repo-migration.md:385
 #: src/en/get-started/update.md:194
 #, markdown-text, no-wrap
 msgid "Start Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:377
+#: src/en/get-started/host-upgrade-repo-migration.md:387
+#: src/en/get-started/host-upgrade-repo-migration.md:576
 #: src/en/get-started/installation/package.md:327
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:392
+#, markdown-text, no-wrap
+msgid ""
+"<!-- TODO: remove this section with the next Zammad release (added for the "
+"6.5.5 emergency release). -->\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/host-upgrade-repo-migration.md:393
+#, markdown-text, no-wrap
+msgid "Update an out-of-support release"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:398
+#, markdown-text
+msgid ""
+"Zammad 6.5.5 is an emergency release that fixes a security issue. Zammad 6.5 "
+"has been out of support for some time and no longer receives security "
+"updates, so updating to the current stable release is the recommended "
+"action. Follow the steps below only if you cannot update to a supported "
+"release right now."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:401
+#, markdown-text
+msgid ""
+"Zammad builds 6.5.5 packages for Ubuntu 20.04, 22.04 and 24.04, Debian 11 "
+"and 12, CentOS/RHEL 8 and 9, and OpenSUSE Leap/SLES 15."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:402
+#, markdown-text, no-wrap
+msgid "Add the 6.5 repository"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:406
+#, markdown-text
+msgid ""
+"Remove the old repository and its key first, as described in Adjust package "
+"repository above. Otherwise your package manager keeps reading the old "
+"repository, which offers packages of a newer release line."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:408
+#, markdown-text
+msgid "Add the new repository with the `stable-6.5` channel:"
+msgstr ""
+
+#. type: Fenced div block (tabs key:distros)
+#: src/en/get-started/host-upgrade-repo-migration.md:409
+#, no-wrap
+msgid ""
+"\n"
+"=== Ubuntu\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
+"\\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 "
+"/usr/share/keyrings/zammad.gpg\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 20.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/20.04.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 22.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/22.04.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 24.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/24.04.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" "
+"\\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 "
+"/usr/share/keyrings/zammad.gpg\n"
+"```\n"
+"\n"
+"Add repository (Debian 11):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/debian/11.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Debian 12):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/debian/12.list\" "
+"\\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"Add repository (OpenSUSE/SLES 15):\n"
+"\n"
+"```sh\n"
+"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+"  "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/sles/15.repo\"\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
+"```\n"
+"\n"
+"Add repository (CentOS/RHEL 8):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/el/8.repo\" "
+"\\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
+"Add repository (CentOS/RHEL 9):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL "
+"\"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/el/9.repo\" "
+"\\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:496
+#, markdown-text, no-wrap
+msgid "Update Zammad to 6.5.5"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:499
+#, markdown-text
+msgid "Stop Zammad:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:575
+#, markdown-text
+msgid "Start Zammad:"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
