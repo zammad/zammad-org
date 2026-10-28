@@ -264,6 +264,7 @@ export default defineConfig(
       root: { label: localeLabels[locale], ...localeConfigFile },
     },
     vite: {
+      clearScreen: false,
       resolve: {
         alias: [
           {
