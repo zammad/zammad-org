@@ -1678,7 +1678,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:422
 #: src/en/documentation/use/advanced-features.md:442
 #: src/en/documentation/use/advanced-features.md:460
-#: src/en/documentation/use/advanced-features.md:477
+#: src/en/documentation/use/advanced-features.md:490
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1713,7 +1713,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:433
 #: src/en/documentation/use/advanced-features.md:453
 #: src/en/documentation/use/advanced-features.md:466
-#: src/en/documentation/use/advanced-features.md:483
+#: src/en/documentation/use/advanced-features.md:496
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2924,7 +2924,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:468
 #, markdown-text
 msgid ""
-"![Screenshot shows GitLab content sidebar with \"Link Issue\" "
+"![Screenshot shows GitLab content sidebar with \"Link issue\" "
 "button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)"
 msgstr ""
 
@@ -2933,21 +2933,54 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
-"with the respective icon (see GitLab example in screenshot above). Click the "
-"button to link to an issue by entering the URL of it or select the item from "
-"a select field (i-doit). Afterwards, you can see the linked item with "
-"additional metadata. By clicking on the linked item, you are redirected to "
-"it in the respective system."
+"with the respective icon (see GitLab example in screenshot above). An empty "
+"panel shows the `Link issue` button. Once an issue is linked, the button "
+"disappears and **Link issue** moves into the action menu in the panel "
+"header. Link to an issue by entering the URL of it or select the item from a "
+"select field (i-doit)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:475
+#, markdown-text
+msgid ""
+"![Screenshot shows GitLab content sidebar with a linked "
+"issue](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-issue.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:481
+#, markdown-text
+msgid ""
+"The linked issue shows its state, number and title, plus **Milestone**, "
+"**Assignees** and **Labels**. GitHub issues also show **Type** when one is "
+"set, and a field appears only when the issue has one. The badge on the "
+"sidebar tab counts all linked issues, open and closed. Zammad stores only "
+"the issue URL on the ticket and reads everything else from GitHub or GitLab "
+"each time the panel opens, so no notification is sent when an issue "
+"changes. Nothing is written back to the tracker. By clicking on the linked "
+"item, you are redirected to it in the respective system."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:486
+#, markdown-text
+msgid ""
+"Linking fails with an error message when the issue is already linked to the "
+"ticket or when the URL cannot be resolved, usually because the issue doesn't "
+"exist or the API token cannot read its repository or project. Only issues "
+"can be linked, no pull or merge requests. If the panel shows a loading error "
+"instead of the linked issues, ask your administrator to check the token."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:474
+#: src/en/documentation/use/advanced-features.md:487
 #, markdown-text, no-wrap
 msgid "Highlight text"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:481
+#: src/en/documentation/use/advanced-features.md:494
 #, markdown-text
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
@@ -2957,7 +2990,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:485
+#: src/en/documentation/use/advanced-features.md:498
 #, markdown-text
 msgid ""
 "![Screenshot shows highlight menu from ticket detail "
@@ -2965,7 +2998,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:489
+#: src/en/documentation/use/advanced-features.md:502
 #, markdown-text
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "

@@ -464,12 +464,25 @@ in Zammad's settings.
 
 **How?**
 
-![Screenshot shows GitLab content sidebar with "Link Issue" button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+![Screenshot shows GitLab content sidebar with "Link issue" button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
 
 If activated, simply open a ticket and choose the right content sidebar tab with the respective icon (see GitLab example
-in screenshot above). Click the button to link to an issue by entering the URL of it or select the item from a
-select field (i-doit). Afterwards, you can see the linked item with additional metadata. By clicking on the linked
-item, you are redirected to it in the respective system.
+in screenshot above). An empty panel shows the `Link issue` button. Once an issue is linked, the button disappears and
+**Link issue** moves into the action menu in the panel header. Link to an issue by entering the URL of it or select the
+item from a select field (i-doit).
+
+![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-issue.png)
+
+The linked issue shows its state, number and title, plus **Milestone**, **Assignees** and **Labels**. GitHub issues
+also show **Type** when one is set, and a field appears only when the issue has one. The badge on the sidebar tab
+counts all linked issues, open and closed. Zammad stores only the issue URL on the ticket and reads everything else
+from GitHub or GitLab each time the panel opens, so no notification is sent when an issue changes. Nothing is written
+back to the tracker. By clicking on the linked item, you are redirected to it in the respective system.
+
+Linking fails with an error message when the issue is already linked to the ticket or when the URL cannot be resolved,
+usually because the issue doesn't exist or the API token cannot read its repository or project. Only issues can be
+linked, no pull or merge requests. If the panel shows a loading error instead of the linked issues, ask your
+administrator to check the token.
 
 ## Highlight text
 

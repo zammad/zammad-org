@@ -271,6 +271,63 @@ describe('usage advanced features', () => {
     })
   })
 
+  it('gitlab sidebar tab with linked issue', () => {
+    // The linked issue is mocked for the figure only: the screenshot stack has
+    // no GitLab token, so the real resolver cannot return data. The GraphQL
+    // responses are patched in flight instead — the ticket answer gains one
+    // GitLab link, the list answer is swapped for a fake item.
+    const linkedIssue = {
+      __typename: 'TicketExternalReferencesIssueTrackerItem',
+      assignees: ['Evelyn Smith'],
+      issueId: 583,
+      issueType: {
+        __typename: 'TicketExternalReferencesIssueTrackerItemIssueType',
+        color: 'BLUE',
+        name: 'Documentation',
+      },
+      labels: [
+        {
+          __typename: 'TicketExternalReferencesIssueTrackerItemLabel',
+          color: '#009966',
+          textColor: '#FFFFFF',
+          title: 'docs',
+        },
+      ],
+      milestone: '7.4',
+      state: 'open',
+      title: 'Overhaul GitHub & GitLab page',
+      url: 'https://git.zammad.com/zammad/zammad/-/issues/583',
+    }
+
+    cy.loginAs('ADMIN')
+    cy.intercept('POST', '/graphql', (req) => {
+      req.continue((res) => {
+        const requests = Array.isArray(req.body) ? req.body : [req.body]
+        const answers = Array.isArray(res.body) ? res.body : [res.body]
+        answers.forEach((answer, i) => {
+          if (requests[i]?.operationName === 'ticketExternalReferencesIssueTrackerItemList') {
+            answer.data = { ticketExternalReferencesIssueTrackerItemList: [linkedIssue] }
+            delete answer.errors
+            return
+          }
+          if (!answer?.data) return
+          Object.values(answer.data).forEach((node) => {
+            if (node && typeof node === 'object' && 'externalReferences' in node) {
+              node.externalReferences = { github: null, gitlab: [linkedIssue.url] }
+            }
+          })
+        })
+      })
+    })
+    cy.visit('/desktop/tickets/6')
+    cy.wait(2000) // loading
+    cy.get('[aria-label="GitLab"]').click()
+    cy.contains('#583 Overhaul GitHub & GitLab page', { timeout: 10000 }).should('be.visible')
+    cy.get('#content-sidebar').clip({ padding: 5 }).then((clip) => {
+      cy.screenshot('gitlab-sidebar-linked-issue', { clip })
+    })
+  })
+
   it('user detail page', () => {
     cy.loginAs('ADMIN')
     cy.visit('/desktop/users/10')
