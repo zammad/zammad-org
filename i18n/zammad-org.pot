@@ -22355,11 +22355,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
-#: src/en/reference/rest-api/checklist.md:193
-#: src/en/reference/rest-api/checklist.md:214
-#: src/en/reference/rest-api/checklist.md:236
+#: src/en/reference/rest-api/checklist.md:180
 #, markdown-text
-msgid "Required permission: `admin.checklists`"
+msgid "Required permission: `admin.checklist` or `ticket.agent`"
 msgstr ""
 
 #. type: Plain text
@@ -22379,12 +22377,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:180
-#, markdown-text
-msgid "Required permission: `admin.checklists` or `ticket.agent`"
-msgstr ""
-
-#. type: Plain text
 #: src/en/reference/rest-api/checklist.md:183
 #, markdown-text
 msgid "`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
@@ -22398,6 +22390,14 @@ msgid ""
 "<<< "
 "@/fixtures/rest-api/checklist_templates/get-checklist-template-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:193
+#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:236
+#, markdown-text
+msgid "Required permission: `admin.checklist`"
 msgstr ""
 
 #. type: Plain text

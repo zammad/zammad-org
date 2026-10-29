@@ -164,7 +164,7 @@ Required permission: `ticket.agent`
 
 ### List
 
-Required permission: `admin.checklists`
+Required permission: `admin.checklist` or `ticket.agent`
 
 `GET`-Request sent: `/api/v1/checklist_templates`
 
@@ -176,7 +176,7 @@ Required permission: `admin.checklists`
 
 ### Show
 
-Required permission: `admin.checklists` or `ticket.agent`
+Required permission: `admin.checklist` or `ticket.agent`
 
 `GET`-Request sent:
 `/api/v1/checklist_templates/{checklist template id}`
@@ -189,7 +189,7 @@ Required permission: `admin.checklists` or `ticket.agent`
 
 ### Create
 
-Required permission: `admin.checklists`
+Required permission: `admin.checklist`
 
 `POST`-Request sent: `/api/v1/checklist_templates`
 
@@ -210,7 +210,7 @@ Required permission: `admin.checklists`
 
 ### Update
 
-Required permission: `admin.checklists`
+Required permission: `admin.checklist`
 
 `PATCH`-Request sent:
 `/api/v1/checklist_templates/{checklist template id}`
@@ -232,7 +232,7 @@ Required permission: `admin.checklists`
 
 ### Delete
 
-Required permission: `admin.checklists`
+Required permission: `admin.checklist`
 
 `DELETE`-Request sent:
 `/api/v1/checklist_templates/{checklist template id}`
