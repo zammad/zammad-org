@@ -249,6 +249,18 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: prev link
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "/en/link/to/site"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: prev text
+#: src/en/TEMPLATE.md:1
+#, no-wrap
+msgid "Name of site"
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: hero actions text
 #: src/en/contribute/contribute.md:5 src/en/contribute/index.md:1
 #: src/en/index.md:1
@@ -1535,7 +1547,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:422
 #: src/en/documentation/use/advanced-features.md:442
 #: src/en/documentation/use/advanced-features.md:460
-#: src/en/documentation/use/advanced-features.md:477
+#: src/en/documentation/use/advanced-features.md:489
 #, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1569,7 +1581,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:433
 #: src/en/documentation/use/advanced-features.md:453
 #: src/en/documentation/use/advanced-features.md:466
-#: src/en/documentation/use/advanced-features.md:483
+#: src/en/documentation/use/advanced-features.md:495
 #, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2018,10 +2030,10 @@ msgstr ""
 msgid ""
 "Zammad notifies you by default when tickets approach or exceed their "
 "deadlines. Configure these notifications in your [personal settings](/en/"
-"documentation/use/user-profile#notifications). Zammad also ships a default "
-"overview called \"Escalated Tickets\". This overview includes already "
-"escalated tickets and tickets which are expected to escalate within the next "
-"10 minutes."
+"documentation/use/personal-settings#notifications). Zammad also ships a "
+"default overview called \"Escalated Tickets\". This overview includes "
+"already escalated tickets and tickets which are expected to escalate within "
+"the next 10 minutes."
 msgstr ""
 
 #. type: Plain text
@@ -2646,32 +2658,59 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:468
+#: src/en/documentation/use/advanced-features.md:470
 msgid ""
-"![Screenshot shows GitLab content sidebar with \"Link Issue\" button](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-"
-"sidebar.png)"
+"If activated, simply open a ticket and choose the right content sidebar tab "
+"with the respective icon. An empty panel shows the `Link issue` button. Once "
+"an issue is linked, the button disappears and **Link issue** moves into the "
+"action menu in the panel header. Link to an issue by entering the URL of it "
+"or select the item from a select field (i-doit)."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:473
+#: src/en/documentation/use/advanced-features.md:472
+msgid "The screenshot shows a linked issue in the GitLab content sidebar."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:474
 msgid ""
-"If activated, simply open a ticket and choose the right content sidebar tab "
-"with the respective icon (see GitLab example in screenshot above). Click the "
-"button to link to an issue by entering the URL of it or select the item from "
-"a select field (i-doit). Afterwards, you can see the linked item with "
-"additional metadata. By clicking on the linked item, you are redirected to "
-"it in the respective system."
+"![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/"
+"cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-"
+"issue.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:480
+msgid ""
+"The linked issue shows its state, number and title, plus **Milestone**, "
+"**Assignees** and **Labels**. GitHub issues also show **Type** when one is "
+"set, and a field appears only when the issue has one. The badge on the "
+"sidebar tab counts all linked issues, open and closed. Zammad stores only "
+"the issue URL on the ticket and reads everything else from GitHub or GitLab "
+"each time the panel opens, so no notification is sent when an issue changes. "
+"Nothing is written back to the tracker. By clicking on the linked item, you "
+"are redirected to it in the respective system."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:485
+msgid ""
+"Linking fails with an error message when the issue is already linked to the "
+"ticket or when the URL cannot be resolved, usually because the issue doesn't "
+"exist or the API token cannot read its repository or project. Only issues "
+"can be linked, no pull or merge requests. If the panel shows a loading error "
+"instead of the linked issues, ask your administrator to check the token."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:474
+#: src/en/documentation/use/advanced-features.md:486
 #, no-wrap
 msgid "Highlight text"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:481
+#: src/en/documentation/use/advanced-features.md:493
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
 "ticket and to make sure important parts aren't getting overlooked. Be aware "
@@ -2680,14 +2719,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:485
+#: src/en/documentation/use/advanced-features.md:497
 msgid ""
 "![Screenshot shows highlight menu from ticket detail view](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:489
+#: src/en/documentation/use/advanced-features.md:501
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "
 "the ticket detail view. To highlight text, either select text first and then "
@@ -2943,24 +2982,24 @@ msgid ""
 "more details."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/basics/find-tickets.md:37
-#: src/en/documentation/use/user-profile.md:97
+#: src/en/documentation/use/personal-settings.md:94
 #, no-wrap
 msgid "Notifications"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/find-tickets.md:43
+#: src/en/documentation/use/basics/find-tickets.md:42
 msgid ""
-"Depending on the [notification settings](/en/documentation/use/user-"
-"profile#notifications) in your profile, you receive updates for different "
-"ticket based events like the creation or the update of a ticket. This "
-"ensures that no important change to a ticket gets overlooked."
+"Depending on your [notification settings](/en/documentation/use/personal-"
+"settings#notifications), you receive updates for different ticket based "
+"events like the creation or the update of a ticket. This ensures that no "
+"important change to a ticket gets overlooked."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/find-tickets.md:46
+#: src/en/documentation/use/basics/find-tickets.md:45
 msgid ""
 "You can open them by clicking on the notification counter in the top left "
 "corner. If there is a badge with a counter, the counter shows the number of "
@@ -2968,7 +3007,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/find-tickets.md:48
+#: src/en/documentation/use/basics/find-tickets.md:47
 msgid ""
 "By default, you get notified when one of your tickets (means you are the "
 "owner) got updated. By clicking on the link in the notification, this ticket "
@@ -4031,11 +4070,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/faq.md:34
 msgid ""
-"Adjust the [notification settings in your profile](user-"
-"profile#notifications). You can distinguish between the action (e.g. ticket "
-"creation), the notification channel (email and/or browser), your relation to "
-"the ticket (e.g. if you are the owner) and limit the notifications to a "
-"specific group."
+"Adjust the [notification settings](personal-settings#notifications). You can "
+"distinguish between the action (e.g. ticket creation), the notification "
+"channel (email and/or browser), your relation to the ticket (e.g. if you are "
+"the owner) and limit the notifications to a specific group."
 msgstr ""
 
 #. type: Title ###
@@ -4126,8 +4164,8 @@ msgstr ""
 msgid ""
 "Just use them! You can find an overview of the available shortcuts by "
 "pressing [[?]] on your keyboard or open the overview from the [avatar menu]"
-"(user-profile#avatar-menu) (click on your avatar in the bottom left corner "
-"and select **Keyboard shortcuts**)."
+"(personal-settings#avatar-menu) (click on your avatar in the bottom left "
+"corner and select **Keyboard shortcuts**)."
 msgstr ""
 
 #. type: Plain text
@@ -4147,102 +4185,87 @@ msgstr ""
 #: src/en/documentation/use/faq.md:80
 msgid ""
 "You can switch between light, dark and automatic mode (tries to adapt to "
-"your browser) in the [avatar menu](user-profile#avatar-menu). Open it by "
-"clicking your avatar in the bottom left corner and switch the toggle to the "
-"desired state or use the keyboard shortcut [[d]]. If no input field is "
+"your browser) in the [avatar menu](personal-settings#avatar-menu). Open it "
+"by clicking your avatar in the bottom left corner and switch the toggle to "
+"the desired state or use the keyboard shortcut [[d]]. If no input field is "
 "activated, it cycles between the different modes."
 msgstr ""
 
-#. type: Title ###
-#: src/en/documentation/use/faq.md:81
-#, no-wrap
-msgid "How can I read a ticket that is written in another language?"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/faq.md:85
-msgid ""
-"Agents can have the ticket articles translated into a language of their "
-"choice, either per article or automatically for every ticket they open. See "
-"the [article translation guide](./guides/article-translation)."
-msgstr ""
-
 #. type: Title #
-#: src/en/documentation/use/faq.md:86
-#: src/en/documentation/use/user-profile.md:1
-#: src/en/documentation/use/user-profile.md:6
+#: src/en/documentation/use/faq.md:81
+#: src/en/documentation/use/personal-settings.md:1
+#: src/en/documentation/use/personal-settings.md:6
 #, no-wrap
-msgid "User profile"
+msgid "Personal settings"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:88
+#: src/en/documentation/use/faq.md:83
 #, no-wrap
-msgid "How to change my profile/avatar image?"
+msgid "How to change my avatar image?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:93
+#: src/en/documentation/use/faq.md:88
 msgid ""
-"Go to the [avatar section](user-profile#avatar) in your personal settings by "
-"opening the avatar menu in the bottom left corner and select **Personal "
-"settings**. There you can upload an image, capture a photo (if your device "
-"has a camera) or delete already present images."
+"Open the avatar menu in the bottom left corner, select **Personal settings** "
+"and go to the [avatar section](personal-settings#avatar). There you can "
+"upload an image, capture a photo (if your device has a camera) or delete "
+"already present images."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:94
+#: src/en/documentation/use/faq.md:89
 #, no-wrap
 msgid "How to change the language of the Zammad user interface?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:98
+#: src/en/documentation/use/faq.md:93
 msgid ""
-"Go to the [language section](user-profile#language) in your personal "
-"settings by opening the avatar menu in the bottom left corner and select "
-"**Personal settings**."
+"Open the avatar menu in the bottom left corner, select **Personal settings** "
+"and go to the [language section](personal-settings#language)."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:99
+#: src/en/documentation/use/faq.md:94
 #, no-wrap
 msgid "What should I do before going on vacation?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:103
+#: src/en/documentation/use/faq.md:98
 msgid ""
-"Go to the [out of office section](user-profile#out-of-office) in your "
-"personal settings by opening the avatar menu in the bottom left corner and "
-"select **Personal settings**. There you can define a replacement agent."
+"Open the avatar menu in the bottom left corner, select **Personal settings** "
+"and go to the [out of office section](personal-settings#out-of-office). "
+"There you can define a replacement agent."
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:104
+#: src/en/documentation/use/faq.md:99
 #, no-wrap
 msgid "How to adjust the order of the overviews?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:107
+#: src/en/documentation/use/faq.md:102
 msgid "Read on in the [overview guide](guides/overviews#reorder-overviews)."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/faq.md:108
+#: src/en/documentation/use/faq.md:103
 #, no-wrap
 msgid "Work on tickets"
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:110
+#: src/en/documentation/use/faq.md:105
 #, no-wrap
 msgid "How to assign somebody to a ticket?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:114
+#: src/en/documentation/use/faq.md:109
 msgid ""
 "In the ticket sidebar tab, you can find an **Owner** field. Choose from the "
 "offered agents and make sure to leave an internal note so the other agent "
@@ -4250,7 +4273,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:117
+#: src/en/documentation/use/faq.md:112
 msgid ""
 "If you only have a question or need some information, you could also just "
 "[mention a colleague](advanced-features#mention-a-user) in an article by "
@@ -4258,13 +4281,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:118
+#: src/en/documentation/use/faq.md:113
 #, no-wrap
 msgid "How to delete a ticket?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:123
+#: src/en/documentation/use/faq.md:118
 msgid ""
 "First of all, tickets can't be deleted by agents. This is done for the "
 "reason of transparency and to prevent deletion by accident and arbitrary "
@@ -4274,13 +4297,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:124
+#: src/en/documentation/use/faq.md:119
 #, no-wrap
 msgid "How to use text templates?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:128
+#: src/en/documentation/use/faq.md:123
 msgid ""
 "Use Zammad's [text modules](advanced-features#text-modules) by typing [[:]]"
 "[[:]] in the article editor or choose it from the editor toolbar. If you "
@@ -4288,13 +4311,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:129
+#: src/en/documentation/use/faq.md:124
 #, no-wrap
 msgid "How to ask a colleague for help in the ticket?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:134
+#: src/en/documentation/use/faq.md:129
 msgid ""
 "The best way to do this is to [mention a colleague](advanced-"
 "features#mention-a-user) in an article by using [[@]][[@]] and raise your "
@@ -4304,13 +4327,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/faq.md:135
+#: src/en/documentation/use/faq.md:130
 #, no-wrap
 msgid "How to cite the customer's email or parts of it?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:139
+#: src/en/documentation/use/faq.md:134
 msgid ""
 "To partially or selective cite the article or parts of it, mark the text, "
 "you want to cite, and click on the `Reply` button next to the article. This "
@@ -4319,7 +4342,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/faq.md:141
+#: src/en/documentation/use/faq.md:136
 msgid ""
 "The citation of the whole article depends on how your Zammad is configured. "
 "If you want to apply changes to this behavior, ask your admin to change it."
@@ -4620,7 +4643,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/ai.md:112
-#: src/en/documentation/use/guides/mobile-view.md:73
+#: src/en/documentation/use/guides/mobile-view.md:97
 #, no-wrap
 msgid "Ticket history"
 msgstr ""
@@ -4689,192 +4712,6 @@ msgid ""
 "indicator.png)"
 msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/documentation/use/guides/article-translation.md:1
-#: src/en/documentation/use/guides/article-translation.md:6
-#: src/en/documentation/use/guides/mobile-view.md:73
-#, no-wrap
-msgid "Article translation"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:10
-msgid ""
-"Agents can translate ticket articles into their preferred language. This "
-"feature is optional and has to be configured and activated by your admin."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:13
-msgid ""
-"Depending on the configuration, you can either translate single articles "
-"yourself or have Zammad translate every article of the tickets you open. You "
-"can always switch back to the original content."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:17
-msgid ""
-"A translation replaces the original article content, and a note below the "
-"article tells you that you are reading a translation. Zammad keeps the "
-"formatting of the original text wherever it can, but some of it can get lost "
-"when the wording changes."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:20
-msgid ""
-"Next to a translated article, Zammad shows a translate button in the article "
-"action row whose icon turns blue while you read the translation. This button "
-"lets you switch between the translation and the original content."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:22
-msgid ""
-"![Screenshot shows a translated ticket article](/screenshots/cypress/"
-"documentation/use/guide-translation.cy.js/translation-article.png)"
-msgstr ""
-
-#. type: Fenced div block (info)
-#: src/en/documentation/use/guides/article-translation.md:23
-#, no-wrap
-msgid ""
-"The [text highlighting feature](../advanced-features#highlight-text) is only available in the original text. Switch\n"
-"back to the original content if you want to highlight something in the article.\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/guides/article-translation.md:28
-#, no-wrap
-msgid "Choose your language"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:33
-msgid ""
-"The language button in the ticket top bar shows the language code of your "
-"target language for translations, for example `EN-US` and the full language "
-"name in a tooltip on hover. Click the button to open the language menu, "
-"which lists the languages the configured translation service supports. Use "
-"the search field if you are looking for a specific language."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:35
-msgid ""
-"![Screenshot shows the language menu with the language list and the switch "
-"for translating all articles](/screenshots/cypress/documentation/use/guide-"
-"translation.cy.js/translation-target-menu.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:38
-msgid ""
-"Zammad uses the language of your personal user settings as default. If the "
-"translation service doesn't support this language, it is set to Zammad's "
-"system default or English, if the system default isn't supported either."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:41
-msgid ""
-"Your translation target language is a personal setting: Zammad remembers it "
-"for your user account and applies it to every ticket you open, including "
-"tickets in other browser tabs."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:44
-msgid ""
-"The translation target language is independent of the language of Zammad's "
-"UI, which you set in your [personal settings](../user-profile)."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/guides/article-translation.md:45
-#, no-wrap
-msgid "Translate a single article"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:49
-msgid ""
-"Click the translate button in the article action row to translate this "
-"article into your target language. Click it again to switch back to the "
-"original text."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:51
-msgid ""
-"![Screenshot shows an article with the translate button in its action row, "
-"highlighted with a frame](/screenshots/cypress/documentation/use/guide-"
-"translation.cy.js/translation-button.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:54
-msgid ""
-"If the target language is not the one you want to read the article in, "
-"change it in the ticket top bar as described above."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/guides/article-translation.md:55
-#, no-wrap
-msgid "Translate every article automatically"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:61
-msgid ""
-"If your admin enabled automatic translation for your role, the language menu "
-"in the ticket top bar also contains the **Translate all articles** switch "
-"(see screenshot under **Choose your language**). While it is on, Zammad "
-"translates the articles of every ticket you open, so you don't have to "
-"translate them one by one. Articles which are already in your target "
-"language keep their original text; this requires the article language "
-"detection to be enabled by your admin."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:64
-msgid ""
-"Turn the switch off if you prefer to translate individual articles. Like "
-"your target language, this setting applies to every ticket you view."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:67
-msgid ""
-"If you want to read a single article in its original language again while "
-"the switch stays on for the others, use **Show original** on it."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/guides/article-translation.md:68
-#, no-wrap
-msgid "Translation quality and feedback"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:71
-msgid ""
-"Translations are generated automatically, so double-check the result before "
-"you rely on it."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/guides/article-translation.md:74
-msgid ""
-"Use the thumbs up or thumbs down buttons below a translated article to help "
-"your admin evaluate the quality of the translation service; a thumbs down "
-"opens a field where you can explain what went wrong. If you are not "
-"satisfied with a translation, use the regenerate button in the same row "
-"(tooltip **Regenerate**) to have the article translated again."
-msgstr ""
-
 #. type: Title #
 #: src/en/documentation/use/guides/cti.md:1
 #: src/en/documentation/use/guides/cti.md:6
@@ -4920,15 +4757,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:23
+#: src/en/documentation/use/guides/cti.md:26
 msgid ""
 "When it's switched on, you get a counter of unhandled calls, see ringing "
-"calls in the sidebar and get the customer or ticket view after you answer a "
-"call. Switched off, none of that happens."
+"calls in the sidebar, get the customer or ticket view after you answer a "
+"call and, while the Zammad window is not in front, a browser notification "
+"for a call that starts ringing. Clicking that notification brings Zammad up "
+"and opens the caller log. The browser shows such a notification only if you "
+"allowed notifications for Zammad and only in the Zammad tab you used last.  "
+"Switched off, none of that happens."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:25
+#: src/en/documentation/use/guides/cti.md:28
 msgid ""
 "![Screenshot shows the Phone entry with call notifications switched off, "
 "without a counter and without ringing calls](/screenshots/cypress/"
@@ -4936,32 +4777,32 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:27
+#: src/en/documentation/use/guides/cti.md:30
 msgid "With the toggle switched off:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 msgid "the counter next to **Phone** stays hidden"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 msgid "no ringing calls appear in the sidebar"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 msgid "picking up a call does not open a customer or ticket view"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:32
+#: src/en/documentation/use/guides/cti.md:35
 msgid "no browser notifications appear"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:36
+#: src/en/documentation/use/guides/cti.md:39
 msgid ""
 "The caller log itself is not affected by this toggle. You can still open it "
 "and read every call. The setting is personal, so switching it off only "
@@ -4970,13 +4811,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:37
+#: src/en/documentation/use/guides/cti.md:40
 #, no-wrap
 msgid "Answer calls"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:42
+#: src/en/documentation/use/guides/cti.md:45
 msgid ""
 "You answer a call in your phone software or on your headset, not in Zammad. "
 "Incoming calls show up in the navigation sidebar directly below the "
@@ -4985,7 +4826,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:44
+#: src/en/documentation/use/guides/cti.md:47
 msgid ""
 "![Screenshot shows the Phone entry in the navigation sidebar with a ringing "
 "call from a known and an unknown caller below it](/screenshots/cypress/"
@@ -4993,7 +4834,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:48
+#: src/en/documentation/use/guides/cti.md:51
 msgid ""
 "Next to a ringing call you find a ::+:: button to create a new ticket for "
 "that call. For a caller Zammad does not know, a `New user` button creates "
@@ -5002,7 +4843,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:54
+#: src/en/documentation/use/guides/cti.md:57
 msgid ""
 "Once your phone system reports that you answered, Zammad decides which view "
 "to open for you. You get the customer detail page if it detected a customer "
@@ -5014,7 +4855,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/documentation/use/guides/cti.md:55
+#: src/en/documentation/use/guides/cti.md:58
 #, no-wrap
 msgid ""
 "Zammad opens that view only while you are looking at the Zammad browser tab. If you answer a call while the Zammad\n"
@@ -5024,41 +4865,41 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:62
+#: src/en/documentation/use/guides/cti.md:65
 #, no-wrap
 msgid "Reading the caller log"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:67
+#: src/en/documentation/use/guides/cti.md:70
 msgid ""
-"The caller log lists every call Zammad recorded. Open it with the **Phone** "
-"entry in the navigation sidebar. The list is ordered by time, with the "
-"newest call first, and it fills in on its own while you are on the page. "
+"The caller log lists every call your phone system reported. Open it with the "
+"**Phone** entry in the navigation sidebar. The list is ordered by time, with "
+"the newest call first, and it fills in on its own while you are on the page. "
 "Scroll down to load more."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:69
+#: src/en/documentation/use/guides/cti.md:72
 msgid "Each row shows:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 msgid ""
 "**Handled** (no column heading): whether the call was answered. A call that "
 "rang without anyone picking it up stays unchecked until you mark it yourself."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 msgid ""
 "**From** and **To**: the numbers involved, together with the name Zammad "
 "matched to them."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 msgid ""
 "**Status**: how the call ended, for example `Connected`, `Call ended`, "
 "`Busy`, `Voicemail`, `Not reached` or `Does not exist`. A call that is still "
@@ -5066,19 +4907,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 msgid ""
 "**Waiting** and **Duration**: how long the call waited before it was "
 "answered and how long it lasted."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:77
+#: src/en/documentation/use/guides/cti.md:80
 msgid "**Time**: when the call happened."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:79
+#: src/en/documentation/use/guides/cti.md:82
 msgid ""
 "![Screenshot shows the caller log with call entries and the different caller "
 "matches](/screenshots/cypress/documentation/use/guide-cti.cy.js/caller-log-"
@@ -5086,14 +4927,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:82
+#: src/en/documentation/use/guides/cti.md:85
 msgid ""
 "Handled calls stay in the list but are greyed out, so you can still tell "
 "them apart from the ones you have not processed yet."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/guides/cti.md:83
+#: src/en/documentation/use/guides/cti.md:86
 #, no-wrap
 msgid ""
 "The caller log shows all calls of the entire instance, not only yours. It holds the 1000 most recent calls at\n"
@@ -5102,13 +4943,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:89
+#: src/en/documentation/use/guides/cti.md:92
 #, no-wrap
 msgid "Marking calls as handled"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:95
+#: src/en/documentation/use/guides/cti.md:98
 msgid ""
 "Answering a call marks it as handled for you. You only need the checkbox for "
 "calls that stayed unanswered, for example one you called back later or one a "
@@ -5118,7 +4959,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:99
+#: src/en/documentation/use/guides/cti.md:102
 msgid ""
 "The checkbox stays locked while the call is still ringing and younger than a "
 "minute, so that you do not mark away a call that is still in progress. Hover "
@@ -5126,27 +4967,27 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:100
+#: src/en/documentation/use/guides/cti.md:103
 #, no-wrap
 msgid "Caller matches"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:103
+#: src/en/documentation/use/guides/cti.md:106
 msgid ""
 "Zammad tries to identify the caller and show you their name next to the "
 "number. There are three cases:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:109
+#: src/en/documentation/use/guides/cti.md:112
 msgid ""
 "A **known match**: Zammad found the number in your customer data and shows "
 "the customer with their avatar."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:109
+#: src/en/documentation/use/guides/cti.md:112
 msgid ""
 "A **Maybe** badge: Zammad only guesses that the number belongs to this "
 "customer. It collects phone numbers from places like email signatures, so a "
@@ -5155,14 +4996,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/cti.md:109
+#: src/en/documentation/use/guides/cti.md:112
 msgid ""
 "An **unknown caller**: Zammad has no customer for the number. The number "
 "shows with a plain avatar instead."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:112
+#: src/en/documentation/use/guides/cti.md:115
 msgid ""
 "If more than one customer matches a number, the row shows a badge with the "
 "number of additional matches, for example `+2`. Click it to see all matching "
@@ -5170,13 +5011,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:113
+#: src/en/documentation/use/guides/cti.md:116
 #, no-wrap
 msgid "Creating a customer from a call"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:118
+#: src/en/documentation/use/guides/cti.md:121
 msgid ""
 "For an unknown number you can create the customer without leaving the caller "
 "log. Use the `New user` button next to the call. Zammad opens the customer "
@@ -5186,7 +5027,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:122
+#: src/en/documentation/use/guides/cti.md:125
 msgid ""
 "An unknown number cannot be added to an existing customer this way. If the "
 "caller is a customer you already know, copy the number and paste it into "
@@ -5195,13 +5036,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/cti.md:123
+#: src/en/documentation/use/guides/cti.md:126
 #, no-wrap
 msgid "Dialing a number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/cti.md:127
+#: src/en/documentation/use/guides/cti.md:130
 msgid ""
 "Phone numbers in the caller log and in customer details are links. Clicking "
 "one hands the number to your phone software, which then starts the call. "
@@ -5383,8 +5224,8 @@ msgstr ""
 #: src/en/documentation/use/guides/editor.md:69
 msgid ""
 "Have a look at the keyboard shortcuts in Zammad where you can find all "
-"shortcuts. Open it via the [avatar menu](/en/documentation/use/user-"
-"profile#avatar-menu) in the bottom left corner or type [[?]]."
+"shortcuts. Open it via the [avatar menu](/en/documentation/use/personal-"
+"settings#avatar-menu) in the bottom left corner or type [[?]]."
 msgstr ""
 
 #. type: Plain text
@@ -6158,87 +5999,147 @@ msgstr ""
 msgid "Track time on ticket articles"
 msgstr ""
 
-#. type: Title ####
+#. type: Title ##
 #: src/en/documentation/use/guides/mobile-view.md:63
-#: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:56
-#: src/en/tutorials/migrate.md:356 src/en/tutorials/migrate.md:477
+#, no-wrap
+msgid "Push notifications"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:68
+msgid ""
+"The mobile view can notify you about your tickets on your mobile device, "
+"even when the app is not open. Push notifications are turned on per device, "
+"not for your account as a whole: you can have them on your phone and leave "
+"them off on a tablet."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:71
+msgid ""
+"Turn them on with the **Push notifications on this device** switch in the "
+"**Notifications** section of your account page. If the switch is locked, the "
+"text below it tells you what is missing."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:75
+msgid ""
+"Every notification Zammad creates for you is also sent to your device, for "
+"example about new tickets, ticket updates, reached reminders or escalations. "
+"A push shows the same text as the entry in the notification list, and "
+"tapping it opens the ticket in the app."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:79
+msgid ""
+"On iPhone and iPad, push notifications are only available in the app added "
+"to the home screen with iOS or iPadOS 16.4 or later. Open the mobile view in "
+"Safari, tap `Share` and then `Add to Home Screen`. On Android, the installed "
+"app and the browser can both receive them."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:83
+msgid ""
+"If you turned notifications off for the app in the settings of your device, "
+"the switch stays locked until you allow them there again. A browser whose "
+"push service Zammad does not support cannot enable push notifications at "
+"all. Turn the switch off again to stop receiving them; signing out removes "
+"the device as well."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mobile-view.md:87
+msgid ""
+"Push notifications are delivered by the push service of your browser and not "
+"by Zammad, so they can be delayed, for example by battery optimization on "
+"Android devices. While you are working in the desktop view, Zammad does not "
+"send push notifications to your mobile devices."
+msgstr ""
+
+#. type: Title ####
+#: src/en/documentation/use/guides/mobile-view.md:88
+#: src/en/tutorials/backup-restore.md:310 src/en/tutorials/migrate.md:64
+#: src/en/tutorials/migrate.md:364 src/en/tutorials/migrate.md:485
 #, no-wrap
 msgid "Limitations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:66
+#: src/en/documentation/use/guides/mobile-view.md:91
 msgid ""
 "Mobile view is also currently missing some features which are provided by "
 "the desktop view:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:73
+#: src/en/documentation/use/guides/mobile-view.md:97
 msgid "Split article"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:73
+#: src/en/documentation/use/guides/mobile-view.md:97
 msgid "Link tickets and see linked tickets"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:73
+#: src/en/documentation/use/guides/mobile-view.md:97
 msgid "Execution of macros"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:73
+#: src/en/documentation/use/guides/mobile-view.md:97
 msgid "Template creation & shared drafts"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:75
+#: src/en/documentation/use/guides/mobile-view.md:99
 msgid ""
 "Additionally, certain features were intentionally omitted to improve the "
 "focus on important information:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:106
 msgid ""
 "Most management features (except ticket user and organization management)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:106
 msgid "Most knowledge base features (except ticket integration)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:82
-msgid "Most user profile functions (except avatar and language preferences)"
+#: src/en/documentation/use/guides/mobile-view.md:106
+msgid "Most account functions (except avatar and language preferences)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:106
 msgid "Reports"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:106
 msgid "Caller log"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/mobile-view.md:82
+#: src/en/documentation/use/guides/mobile-view.md:106
 msgid "Live chat"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/mobile-view.md:83
+#: src/en/documentation/use/guides/mobile-view.md:107
 #, no-wrap
 msgid "Switch the views"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:87
+#: src/en/documentation/use/guides/mobile-view.md:111
 msgid ""
 "Zammad implements a mobile device detection, which results in automatic "
 "redirection to mobile view. Even with this mechanism in place, it's possible "
@@ -6246,7 +6147,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:90
+#: src/en/documentation/use/guides/mobile-view.md:114
 msgid ""
 "In both desktop and mobile view login screens, you can find a link below the "
 "`Sign in` button to explicitly switch to the other view (see login "
@@ -6254,19 +6155,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/mobile-view.md:93
+#: src/en/documentation/use/guides/mobile-view.md:118
 msgid ""
 "While you are signed in and want to switch from the mobile to the desktop "
-"view, go to your profile by selecting your avatar at the bottom and select "
+"view, go to your account by selecting your avatar at the bottom and select "
 "**Continue to desktop** (see account screenshot from above as an example). "
-"The other way round is similar: in the avatar menu, you can find an entry to "
-"switch to the mobile view."
+"The other way round is similar: in the user menu, which your avatar at the "
+"bottom of the navigation sidebar opens, you can find the **Continue to "
+"mobile** entry."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/guides/overviews.md:1
 #: src/en/documentation/use/guides/overviews.md:6
-#: src/en/documentation/use/user-profile.md:127
+#: src/en/documentation/use/personal-settings.md:127
 #, no-wrap
 msgid "Overviews"
 msgstr ""
@@ -6501,10 +6403,10 @@ msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
 "account. Use the `reorder items` button at the very top of the second level "
-"navigation, which opens your [personal settings](/en/documentation/use/user-"
-"profile#overviews) where you can define a custom order for your overviews. "
-"To change the order, simply drag & drop them by clicking the handles on the "
-"left side."
+"navigation, which opens your [personal settings](/en/documentation/use/"
+"personal-settings#overviews) where you can define a custom order for your "
+"overviews. To change the order, simply drag & drop them by clicking the "
+"handles on the left side."
 msgstr ""
 
 #. type: Plain text
@@ -6920,8 +6822,8 @@ msgstr ""
 #: src/en/get-started/installation/docker.md:18
 #: src/en/get-started/installation/prerequisites.md:1
 #: src/en/get-started/installation/prerequisites.md:6
-#: src/en/tutorials/migrate.md:72 src/en/tutorials/migrate.md:220
-#: src/en/tutorials/migrate.md:368 src/en/tutorials/migrate.md:492
+#: src/en/tutorials/migrate.md:80 src/en/tutorials/migrate.md:228
+#: src/en/tutorials/migrate.md:376 src/en/tutorials/migrate.md:500
 #: src/en/tutorials/reporting-grafana.md:26
 #, no-wrap
 msgid "Prerequisites"
@@ -7082,7 +6984,7 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:76
 #: src/en/tutorials/connect-config-elasticsearch.md:131
 #: src/en/tutorials/sso-kerberos.md:553
-#: src/en/tutorials/webserver-config.md:293
+#: src/en/tutorials/webserver-config.md:303
 #, no-wrap
 msgid "Troubleshooting"
 msgstr ""
@@ -7176,10 +7078,10 @@ msgid ""
 "and send your email."
 msgstr ""
 
-#. type: Title ###
+#. type: Title ##
 #: src/en/documentation/use/guides/two-factor-auth.md:1
 #: src/en/documentation/use/guides/two-factor-auth.md:6
-#: src/en/documentation/use/user-profile.md:73
+#: src/en/documentation/use/personal-settings.md:70
 #, no-wrap
 msgid "Two-factor authentication"
 msgstr ""
@@ -7615,6 +7517,338 @@ msgstr ""
 msgid "Use Zammad"
 msgstr ""
 
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:11
+msgid ""
+"Adjust your account and personal settings here. Some of the options may not "
+"be available, depending on how your system is configured and your "
+"permissions. Open them from the avatar menu in the sidebar. Read on for more "
+"details."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:13
+msgid ""
+"![Screenshot shows personal settings of a user](/screenshots/cypress/"
+"documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:14
+#, no-wrap
+msgid "Avatar menu"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:18
+msgid ""
+"To open the avatar menu, click on your avatar icon in the bottom left corner "
+"in the sidebar. This icon either shows your initials or a profile picture."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:20
+msgid ""
+"![Screenshot shows the avatar menu with the entries User documentation, "
+"Appearance (dark mode toggle), Personal settings and Sign out](/screenshots/"
+"cypress/documentation/use/user-profile.cy.js/avatar-menu.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:22
+msgid "The menu contains the following entries:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+msgid ""
+"**Link(s) to documentation**: depending on your roles you can see one or "
+"more documentation links."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+msgid ""
+"**Appearance**: switch between dark, light and automatic mode. The automatic "
+"mode displays Zammad according to your web browser's current preference."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+msgid ""
+"**Keyboard shortcuts**: opens a popup with the available keyboard shortcuts. "
+"Alternatively, press [[?]] on your keyboard to show it too."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:30
+msgid ""
+"**Personal settings**: opens your personal settings where you can adjust "
+"your avatar, password, notification settings and much more. See the sections "
+"below."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:31
+#, no-wrap
+msgid "Appearance"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:34
+msgid "Change the appearance of Zammad. Available options:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:38
+msgid "Dark mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:38
+msgid "Light mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:38
+msgid "Automatic mode"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:40
+msgid ""
+"The last option tries to detect your browser's preference. It depends on "
+"your web browser if it works."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/personal-settings.md:41
+#, no-wrap
+msgid ""
+"If you want to switch quickly between dark and light mode, you can also use the toggle in the\n"
+"[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing [[d]].\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:46
+#, no-wrap
+msgid "Language"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:49
+msgid "Choose the language in which Zammad's UI is displayed."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:50
+#, no-wrap
+msgid "Avatar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:54
+msgid ""
+"Adjust your avatar image. By default, the initials of your user are "
+"displayed on a colored background. If you want to add an image, simply "
+"upload one or use your camera, if you have one."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:56
+msgid ""
+"After capturing or uploading an image, you can crop it. Have a look at the "
+"preview at the top of the right flyout."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:57
+#, no-wrap
+msgid "Out of office"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:60
+msgid ""
+"Define absence periods (e.g. for your vacation) and designate a substitute "
+"to handle your tickets while you are away."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:64
+msgid ""
+"Your designated substitute will receive updates on new tickets and changes "
+"to existing ones while you're away.  Additionally, your custom overviews are "
+"available for this agent to keep track of your tickets. You receive "
+"notifications while you are absent, too."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:65
+#, no-wrap
+msgid "Password"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:69
+msgid ""
+"Change the password of your account. To update it, provide your old "
+"password, the new password and confirm the new one by typing it again."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:74
+msgid ""
+"Set up a two-factor authentication (2FA) to increase the security of your "
+"account. Your admin must have activated at least one 2FA method. It may be "
+"even enforced to use a 2FA method by your admin."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:77
+msgid ""
+"After following the [2FA guide](./guides/two-factor-auth), you have to "
+"provide your second factor at the next login.  If you can't provide your "
+"configured 2FA method, contact your admin to reset it."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:78
+#, no-wrap
+msgid "Devices"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:83
+msgid ""
+"Here you can find a list of all devices logged into your Zammad account. If "
+"necessary, you can revoke the access by clicking the delete icon in the "
+"\"Actions\" column. This ends the session on this device and requires a new "
+"login on this device."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/personal-settings.md:84
+#, no-wrap
+msgid "Token access"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:88
+msgid ""
+"Generate a personal access token for a third party application to access the "
+"Zammad API. After clicking the `New Personal Access Token` button, you can "
+"set a name, an expiration date and configure the permissions for this token."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:91
+msgid ""
+"After creating the token, it gets displayed in a dialog only once. Make sure "
+"to copy it because there is no possibility to access it again."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:93
+msgid ""
+"![Screenshot shows flyout with created token and copy button](/screenshots/"
+"cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:97
+msgid "Adjust the notifications you get. You can adjust:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:103
+msgid ""
+"For which ticket actions you get notified (e.g. for new tickets, for "
+"escalated tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:103
+msgid ""
+"For which ticket you get notified based on the assignment and your relation "
+"to it (e.g. only yours, not assigned, subscribed tickets)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:103
+msgid ""
+"On which way you get notified (only in browser or additionally via email)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/personal-settings.md:103
+msgid "For tickets in which group you get notified"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:105
+msgid "Additionally, you can select a notification sound or disable it."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:108
+msgid ""
+"Push notifications in the mobile view follow these notification settings and "
+"have no settings of their own. See the [mobile view](/en/documentation/use/"
+"guides/mobile-view) to turn them on for a device."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: src/en/documentation/use/personal-settings.md:109
+#, no-wrap
+msgid ""
+"To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.\n"
+"This is requested when Zammad tries to send you a notification the first time.\n"
+"\n"
+"If you refused it and want to allow it now, look for an icon in the address bar where you can adjust the permissions of\n"
+"the site. It depends on your web browser, how to do it exactly. If you can't find it, search for it in the web or have\n"
+"a look at your browser's settings.\n"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/documentation/use/personal-settings.md:118
+#, no-wrap
+msgid ""
+"Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear\n"
+"after about ten minutes. Ones Zammad marked as read for you - which happens when someone else changes the state of the\n"
+"ticket the notification belongs to - remain for about eight hours. Independently of this, no notification is kept for\n"
+"longer than nine months.\n"
+"\n"
+"The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:132
+msgid ""
+"Change the order of overviews for your account. Simply drag & drop them by "
+"clicking the handles on the left side.  If your admin changes the order, "
+"your custom order remains. You can switch back to your admin's order by "
+"clicking the `Reset Overview Order` button."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/personal-settings.md:133
+#: src/en/reference/rest-api/calendar.md:1
+#: src/en/reference/rest-api/calendar.md:6
+#, no-wrap
+msgid "Calendar"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/personal-settings.md:138
+msgid ""
+"Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
+"your favorite calendar application.  Use either the upper **Combined "
+"subscription URL** to subscribe to all tickets or the lower **Direct "
+"subscription URL**.  By choosing the latter, you can define which tickets "
+"based on ticket you want to include based on the state and assignment status."
+msgstr ""
+
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/use/start.md:1
 #, no-wrap
@@ -7697,337 +7931,6 @@ msgid ""
 "the section. To see the whole documentation structure and/or to search in the whole documentation, simply switch to a\n"
 "page outside of the user documentation section (e.g. by clicking on the **Zammad Hub** in the top left corner).\n"
 "\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:11
-msgid ""
-"Adjust your account and personal settings in your user profile. Some of the "
-"options may not be available, depending on how your system is configured and "
-"your permissions. Open it from the avatar menu in the sidebar. Read on for "
-"more details."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/user-profile.md:12
-#, no-wrap
-msgid "Avatar menu"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:16
-msgid ""
-"To open the avatar menu, click on your avatar icon in the bottom left corner "
-"in the sidebar. This icon either shows your initials or a profile picture."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:18
-msgid ""
-"![Screenshot shows user detail panel](/screenshots/cypress/documentation/use/"
-"user-profile.cy.js/avatar-menu.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:20
-msgid "The menu contains the following entries:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-msgid ""
-"**Link(s) to documentation**: depending on your roles you can see one or "
-"more documentation links."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-msgid ""
-"**Appearance**: switch between dark, light and automatic mode. The automatic "
-"mode displays Zammad according to your web browser's current preference."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-msgid ""
-"**Keyboard shortcuts**: opens a popup with the available keyboard shortcuts. "
-"Alternatively, press [[?]] on your keyboard to show it too."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:28
-msgid ""
-"**Personal settings**: opens your personal settings where you can adjust "
-"your avatar, password, notification settings and much more, see next section."
-msgstr ""
-
-#. type: Title ##
-#: src/en/documentation/use/user-profile.md:29
-#, no-wrap
-msgid "Personal settings"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:32
-msgid ""
-"![Screenshot shows personal settings of a user](/screenshots/cypress/"
-"documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:33
-#, no-wrap
-msgid "Appearance"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:36
-msgid "Change the appearance of Zammad. Available options:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:40
-msgid "Dark mode"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:40
-msgid "Light mode"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:40
-msgid "Automatic mode"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:42
-msgid ""
-"The last option tries to detect your browser's preference. It depends on "
-"your web browser if it works."
-msgstr ""
-
-#. type: Fenced div block (tip)
-#: src/en/documentation/use/user-profile.md:43
-#, no-wrap
-msgid ""
-"If you want to switch quickly between dark and light mode, you can also use the toggle in the\n"
-"[avatar menu](#avatar-menu) or use the keyboard shortcut by simply pressing [[d]].\n"
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:48
-#, no-wrap
-msgid "Language"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:52
-msgid ""
-"Choose the language in which Zammad's UI is displayed. Ticket translations "
-"use their own target language, which you select in the ticket top bar. See "
-"[Article translation](guides/article-translation)."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:53
-#, no-wrap
-msgid "Avatar"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:57
-msgid ""
-"Adjust your avatar image. By default, the initials of your user are "
-"displayed on a colored background. If you want to add an image, simply "
-"upload one or use your camera, if you have one."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:59
-msgid ""
-"After capturing or uploading an image, you can crop it. Have a look at the "
-"preview at the top of the right flyout."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:60
-#, no-wrap
-msgid "Out of office"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:63
-msgid ""
-"Define absence periods (e.g. for your vacation) and designate a substitute "
-"to handle your tickets while you are away."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:67
-msgid ""
-"Your designated substitute will receive updates on new tickets and changes "
-"to existing ones while you're away.  Additionally, your custom overviews are "
-"available for this agent to keep track of your tickets. You receive "
-"notifications while you are absent, too."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:68
-#, no-wrap
-msgid "Password"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:72
-msgid ""
-"Change the password of your account. To update it, provide your old "
-"password, the new password and confirm the new one by typing it again."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:77
-msgid ""
-"Set up a two-factor authentication (2FA) to increase the security of your "
-"account. Your admin must have activated at least one 2FA method. It may be "
-"even enforced to use a 2FA method by your admin."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:80
-msgid ""
-"After following the [2FA guide](./guides/two-factor-auth), you have to "
-"provide your second factor at the next login.  If you can't provide your "
-"configured 2FA method, contact your admin to reset it."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:81
-#, no-wrap
-msgid "Devices"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:86
-msgid ""
-"Here you can find a list of all devices logged into your Zammad account. If "
-"necessary, you can revoke the access by clicking the delete icon in the "
-"\"Actions\" column. This ends the session on this device and requires a new "
-"login on this device."
-msgstr ""
-
-#. type: Title ###
-#: src/en/documentation/use/user-profile.md:87
-#, no-wrap
-msgid "Token access"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:91
-msgid ""
-"Generate a personal access token for a third party application to access the "
-"Zammad API. After clicking the `New Personal Access Token` button, you can "
-"set a name, an expiration date and configure the permissions for this token."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:94
-msgid ""
-"After creating the token, it gets displayed in a dialog only once. Make sure "
-"to copy it because there is no possibility to access it again."
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:96
-msgid ""
-"![Screenshot shows flyout with created token and copy button](/screenshots/"
-"cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:100
-msgid "Adjust the notifications you get. You can adjust:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-msgid ""
-"For which ticket actions you get notified (e.g. for new tickets, for "
-"escalated tickets)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-msgid ""
-"For which ticket you get notified based on the assignment and your relation "
-"to it (e.g. only yours, not assigned, subscribed tickets)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-msgid ""
-"On which way you get notified (only in browser or additionally via email)"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/documentation/use/user-profile.md:106
-msgid "For tickets in which group you get notified"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:108
-msgid "Additionally, you can select a notification sound or disable it."
-msgstr ""
-
-#. type: Fenced div block (tip)
-#: src/en/documentation/use/user-profile.md:109
-#, no-wrap
-msgid ""
-"To get notified via sound and notification on your operating system, you have to allow Zammad to send you notifications.\n"
-"This is requested when Zammad tries to send you a notification the first time.\n"
-"\n"
-"If you refused it and want to allow it now, look for an icon in the address bar where you can adjust the permissions of\n"
-"the site. It depends on your web browser, how to do it exactly. If you can't find it, search for it in the web or have\n"
-"a look at your browser's settings.\n"
-msgstr ""
-
-#. type: Fenced div block (info)
-#: src/en/documentation/use/user-profile.md:118
-#, no-wrap
-msgid ""
-"Notifications you have already read are removed from the list automatically. Ones you marked as read yourself disappear\n"
-"after about ten minutes. Ones Zammad marked as read for you - which happens when someone else changes the state of the\n"
-"ticket the notification belongs to - remain for about eight hours. Independently of this, no notification is kept for\n"
-"longer than nine months.\n"
-"\n"
-"The clean-up runs every two hours, so a notification can stay visible somewhat longer than the times given above.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:132
-msgid ""
-"Change the order of overviews for your account. Simply drag & drop them by "
-"clicking the handles on the left side.  If your admin changes the order, "
-"your custom order remains. You can switch back to your admin's order by "
-"clicking the `Reset Overview Order` button."
-msgstr ""
-
-#. type: Title #
-#: src/en/documentation/use/user-profile.md:133
-#: src/en/reference/rest-api/calendar.md:1
-#: src/en/reference/rest-api/calendar.md:6
-#, no-wrap
-msgid "Calendar"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/user-profile.md:138
-msgid ""
-"Zammad allows you to subscribe to a calendar feed (ical) to see tickets in "
-"your favorite calendar application.  Use either the upper **Combined "
-"subscription URL** to subscribe to all tickets or the lower **Direct "
-"subscription URL**.  By choosing the latter, you can define which tickets "
-"based on ticket you want to include based on the state and assignment status."
 msgstr ""
 
 #. type: Plain text
@@ -8389,28 +8292,50 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:18
+#: src/en/get-started/host-upgrade-repo-migration.md:17
 msgid ""
-"Starting with Zammad 7, packages are being built using a new toolchain and "
-"hosted under another URL. The packages are being built via old toolchain as "
-"well (except for Debian 13) for some time, but we encourage you to switch to "
-"the new repositories in a timely manner. This means you need to add a new "
+"Zammad packages are being built with a new toolchain and are hosted under "
+"another URL. The old toolchain is no longer in use, so the packages in the "
+"old repositories no longer receive updates. This means you need to add a new "
 "repository key and change your repository configuration."
 msgstr ""
 
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:20
+msgid ""
+"The repository channel in the URL selects the release line: `stable` "
+"contains the current stable release, while release lines that are out of "
+"support have a channel of their own, for example `stable-6.5`."
+msgstr ""
+
 #. type: Fenced div block (warning)
-#: src/en/get-started/host-upgrade-repo-migration.md:19
+#: src/en/get-started/host-upgrade-repo-migration.md:21
 #, no-wrap
 msgid "Always make sure to have a [backup](/en/tutorials/backup-restore) of your data before performing an upgrade.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:24
+#: src/en/get-started/host-upgrade-repo-migration.md:26
+#, no-wrap
+msgid "<!-- TODO: remove this warning box with the next Zammad release (added for the 6.5.5 emergency release). -->\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/get-started/host-upgrade-repo-migration.md:27
+#, no-wrap
+msgid ""
+"Zammad 6.5.5 is an emergency release that fixes a security issue. Zammad 6.5 is out of support and its packages are only\n"
+"available in the `stable-6.5` channel. See [Update an out-of-support release](#update-an-out-of-support-release) below\n"
+"for the steps.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:34
 msgid "The following operating systems are supported:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:31
+#: src/en/get-started/host-upgrade-repo-migration.md:41
 #: src/en/get-started/installation/package.md:20
 #, no-wrap
 msgid ""
@@ -8423,33 +8348,34 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:32
+#: src/en/get-started/host-upgrade-repo-migration.md:42
 #: src/en/get-started/update.md:33
 #, no-wrap
 msgid "Stop Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:34
+#: src/en/get-started/host-upgrade-repo-migration.md:44
+#: src/en/get-started/host-upgrade-repo-migration.md:500
 #: src/en/get-started/update.md:35 src/en/tutorials/migrate-host.md:54
 #, no-wrap
 msgid "sudo systemctl stop zammad\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/host-upgrade-repo-migration.md:38
+#: src/en/get-started/host-upgrade-repo-migration.md:48
 #, no-wrap
 msgid "Host upgrade steps"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:40
+#: src/en/get-started/host-upgrade-repo-migration.md:50
 #, no-wrap
 msgid "Disable updates for Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:42
+#: src/en/get-started/host-upgrade-repo-migration.md:52
 #, no-wrap
 msgid ""
 "\n"
@@ -8480,13 +8406,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:70
+#: src/en/get-started/host-upgrade-repo-migration.md:80
 #, no-wrap
 msgid "Perform host upgrade"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:74
+#: src/en/get-started/host-upgrade-repo-migration.md:84
 msgid ""
 "Perform the host upgrade according to the documentation of your operating "
 "system. Because this is an advanced task, we don't provide detailed steps "
@@ -8494,13 +8420,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:75
+#: src/en/get-started/host-upgrade-repo-migration.md:85
 #, no-wrap
 msgid "Reboot host"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:80
+#: src/en/get-started/host-upgrade-repo-migration.md:90
 msgid ""
 "In case you did not reboot your system after the upgrade, make sure to "
 "reboot your system now. Afterwards, check if everything is running as "
@@ -8509,26 +8435,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/host-upgrade-repo-migration.md:81
+#: src/en/get-started/host-upgrade-repo-migration.md:91
 #, no-wrap
 msgid "Adjust package repository"
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:83
+#: src/en/get-started/host-upgrade-repo-migration.md:93
 #, no-wrap
 msgid "Remove old repository"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:86
+#: src/en/get-started/host-upgrade-repo-migration.md:96
 msgid ""
 "Remove the old repository configuration file or disable/delete the old "
 "repository in your package manager."
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:87
+#: src/en/get-started/host-upgrade-repo-migration.md:97
 #, no-wrap
 msgid ""
 "\n"
@@ -8567,20 +8493,20 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:123
+#: src/en/get-started/host-upgrade-repo-migration.md:133
 #, no-wrap
 msgid "Remove old repository key"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:127
+#: src/en/get-started/host-upgrade-repo-migration.md:137
 msgid ""
 "Remove the old repository key from your system. Depending on your operating "
 "system and version, the location or method differs."
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:128
+#: src/en/get-started/host-upgrade-repo-migration.md:138
 #, no-wrap
 msgid ""
 "\n"
@@ -8627,13 +8553,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:172
+#: src/en/get-started/host-upgrade-repo-migration.md:182
 #, no-wrap
 msgid "Add new repository"
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:176
+#: src/en/get-started/host-upgrade-repo-migration.md:186
 msgid ""
 "If the repository key is different for the old and new version your "
 "distribution or your distribution expects it in a different location, add "
@@ -8642,7 +8568,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:177
+#: src/en/get-started/host-upgrade-repo-migration.md:187
 #: src/en/get-started/installation/package.md:175
 #, no-wrap
 msgid ""
@@ -8739,14 +8665,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:270
+#: src/en/get-started/host-upgrade-repo-migration.md:280
 #: src/en/get-started/installation/package.md:268
 #, no-wrap
 msgid "Install Zammad"
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:272
+#: src/en/get-started/host-upgrade-repo-migration.md:282
 #, no-wrap
 msgid ""
 "\n"
@@ -8773,14 +8699,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:296
+#: src/en/get-started/host-upgrade-repo-migration.md:306
 #: src/en/get-started/update.md:44
 #, no-wrap
 msgid "Update Zammad"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/get-started/host-upgrade-repo-migration.md:298
+#: src/en/get-started/host-upgrade-repo-migration.md:308
 #, no-wrap
 msgid ""
 "If there is a new Zammad version available and you want to update to it, check the\n"
@@ -8788,14 +8714,15 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/host-upgrade-repo-migration.md:304
+#: src/en/get-started/host-upgrade-repo-migration.md:314
 msgid ""
 "Re-enable updates for Zammad and update Zammad to the latest version "
 "available for your operating system."
 msgstr ""
 
 #. type: Fenced div block (tabs key:distros)
-#: src/en/get-started/host-upgrade-repo-migration.md:305
+#: src/en/get-started/host-upgrade-repo-migration.md:315
+#: src/en/get-started/host-upgrade-repo-migration.md:504
 #, no-wrap
 msgid ""
 "\n"
@@ -8868,18 +8795,173 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/get-started/host-upgrade-repo-migration.md:375
+#: src/en/get-started/host-upgrade-repo-migration.md:385
 #: src/en/get-started/update.md:194
 #, no-wrap
 msgid "Start Zammad"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/get-started/host-upgrade-repo-migration.md:377
+#: src/en/get-started/host-upgrade-repo-migration.md:387
+#: src/en/get-started/host-upgrade-repo-migration.md:576
 #: src/en/get-started/installation/package.md:327
 #: src/en/get-started/update.md:196 src/en/tutorials/migrate-host.md:169
 #, no-wrap
 msgid "sudo systemctl start zammad\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:392
+#, no-wrap
+msgid "<!-- TODO: remove this section with the next Zammad release (added for the 6.5.5 emergency release). -->\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/get-started/host-upgrade-repo-migration.md:393
+#, no-wrap
+msgid "Update an out-of-support release"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:398
+msgid ""
+"Zammad 6.5.5 is an emergency release that fixes a security issue. Zammad 6.5 "
+"has been out of support for some time and no longer receives security "
+"updates, so updating to the current stable release is the recommended "
+"action. Follow the steps below only if you cannot update to a supported "
+"release right now."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:401
+msgid ""
+"Zammad builds 6.5.5 packages for Ubuntu 20.04, 22.04 and 24.04, Debian 11 "
+"and 12, CentOS/RHEL 8 and 9, and OpenSUSE Leap/SLES 15."
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:402
+#, no-wrap
+msgid "Add the 6.5 repository"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:406
+msgid ""
+"Remove the old repository and its key first, as described in Adjust package "
+"repository above. Otherwise your package manager keeps reading the old "
+"repository, which offers packages of a newer release line."
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:408
+msgid "Add the new repository with the `stable-6.5` channel:"
+msgstr ""
+
+#. type: Fenced div block (tabs key:distros)
+#: src/en/get-started/host-upgrade-repo-migration.md:409
+#, no-wrap
+msgid ""
+"\n"
+"=== Ubuntu\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 20.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/20.04.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 22.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/22.04.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Ubuntu 24.04):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/ubuntu/24.04.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"=== Debian\n"
+"\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/deb/zammad/zammad/gpg-key.gpg\" \\\n"
+"  -o /usr/share/keyrings/zammad.gpg && sudo chmod 644 /usr/share/keyrings/zammad.gpg\n"
+"```\n"
+"\n"
+"Add repository (Debian 11):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/debian/11.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"Add repository (Debian 12):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/debian/12.list\" \\\n"
+"  -o /etc/apt/sources.list.d/zammad.list\n"
+"```\n"
+"\n"
+"=== OpenSUSE/SLES\n"
+"\n"
+"Add repository (OpenSUSE/SLES 15):\n"
+"\n"
+"```sh\n"
+"sudo curl -o /etc/zypp/repos.d/zammad.repo \\\n"
+"  \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/sles/15.repo\"\n"
+"```\n"
+"\n"
+"=== CentOS/RHEL\n"
+"\n"
+"Add repository key:\n"
+"\n"
+"```sh\n"
+"sudo rpm --import https://go.packager.io/srv/rpm/zammad/zammad/gpg-key.asc\n"
+"```\n"
+"\n"
+"Add repository (CentOS/RHEL 8):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/el/8.repo\" \\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
+"Add repository (CentOS/RHEL 9):\n"
+"\n"
+"```sh\n"
+"sudo curl -fsSL \"https://go.packager.io/srv/zammad/zammad/stable-6.5/installer/el/9.repo\" \\\n"
+"  -o /etc/yum.repos.d/zammad.repo\n"
+"```\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/get-started/host-upgrade-repo-migration.md:496
+#, no-wrap
+msgid "Update Zammad to 6.5.5"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:499
+msgid "Stop Zammad:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/get-started/host-upgrade-repo-migration.md:575
+msgid "Start Zammad:"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
@@ -10136,7 +10218,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:53
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
-#: src/en/reference/rest-api/ticket.md:105
+#: src/en/reference/rest-api/ticket.md:109
 #: src/en/reference/rest-api/time-accounting.md:54
 #: src/en/reference/rest-api/trigger.md:80 src/en/reference/rest-api/user.md:95
 #: src/en/reference/rest-api/webhook.md:74
@@ -11376,16 +11458,15 @@ msgid "Add LibreTranslate"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:191
+#: src/en/reference/docker-compose-scenarios.md:190
 msgid ""
 "You can run an additional [LibreTranslate](https://libretranslate.com/)"
-"{target=_blank} container to power Zammad's article translation on your own "
-"hardware. For details on the integration itself, see the translation "
-"services section of the admin documentation."
+"{target=_blank} container as a self-hosted translation service inside the "
+"Zammad stack."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:195
+#: src/en/reference/docker-compose-scenarios.md:194
 msgid ""
 "To deploy a LibreTranslate container inside the Zammad stack, use the "
 "scenario file `scenarios/add-libretranslate.yml`. The service doesn't "
@@ -11394,7 +11475,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/docker-compose-scenarios.md:196
+#: src/en/reference/docker-compose-scenarios.md:195
 #, no-wrap
 msgid ""
 "\n"
@@ -11404,12 +11485,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:204
+#: src/en/reference/docker-compose-scenarios.md:203
 msgid "The scenario supports the following environment variables:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:208
+#: src/en/reference/docker-compose-scenarios.md:207
 #, no-wrap
 msgid ""
 "LT_LOAD_ONLY\n"
@@ -11418,7 +11499,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:212
+#: src/en/reference/docker-compose-scenarios.md:211
 #, no-wrap
 msgid ""
 "LT_UPDATE_MODELS\n"
@@ -11427,7 +11508,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:216
+#: src/en/reference/docker-compose-scenarios.md:215
 #, no-wrap
 msgid ""
 "LT_API_KEYS\n"
@@ -11436,13 +11517,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/docker-compose-scenarios.md:217
+#: src/en/reference/docker-compose-scenarios.md:216
 #, no-wrap
 msgid "  docker compose exec libretranslate ltmanage keys add 120\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:223
+#: src/en/reference/docker-compose-scenarios.md:222
 #, no-wrap
 msgid ""
 "  The number is the allowed requests per minute for this key. The command prints the generated key, which is a UUID\n"
@@ -11450,7 +11531,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:227
+#: src/en/reference/docker-compose-scenarios.md:226
 #, no-wrap
 msgid ""
 "LT_REQUIRE_API_KEY_SECRET\n"
@@ -11459,7 +11540,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/docker-compose-scenarios.md:228
+#: src/en/reference/docker-compose-scenarios.md:227
 #, no-wrap
 msgid ""
 "\n"
@@ -11469,22 +11550,14 @@ msgid ""
 "\n"
 msgstr ""
 
-#. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:238
-#, no-wrap
-msgid ""
-"Once the stack is up, configure the service in Zammad's admin settings (_System > Integrations > Translation services_):\n"
-"point the URL to `http://libretranslate:5000` and provide an API key if your instance requires one.\n"
-msgstr ""
-
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:239
+#: src/en/reference/docker-compose-scenarios.md:235
 #, no-wrap
 msgid "Limit resources"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:245
+#: src/en/reference/docker-compose-scenarios.md:241
 msgid ""
 "If you want to limit the hardware resources the Zammad stack is allowed to "
 "use, use the `scenarios/apply-resource-limits.yml` scenario. Default values "
@@ -11495,26 +11568,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:246
+#: src/en/reference/docker-compose-scenarios.md:242
 #, no-wrap
 msgid "Other use cases"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:250
+#: src/en/reference/docker-compose-scenarios.md:246
 msgid ""
 "Your scenario is not covered yet? Feel free to suggest your use case. We "
 "plan to add more common use cases to the stack in future."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:251
+#: src/en/reference/docker-compose-scenarios.md:247
 #, no-wrap
 msgid "Customize the stack locally"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:256
+#: src/en/reference/docker-compose-scenarios.md:252
 msgid ""
 "The default stack fits most environments, but sometimes you need to adapt "
 "it: add another service, change settings or use your own files. Whichever "
@@ -11523,18 +11596,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:258
+#: src/en/reference/docker-compose-scenarios.md:254
 msgid "How you do this depends on what you want to achieve:"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:259
+#: src/en/reference/docker-compose-scenarios.md:255
 #, no-wrap
 msgid "Change settings of the existing services"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:265
+#: src/en/reference/docker-compose-scenarios.md:261
 msgid ""
 "The override file changes settings of the services that the main compose "
 "file already defines. Create a `docker-compose.override.yml` file. Docker "
@@ -11545,13 +11618,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/docker-compose-scenarios.md:266
+#: src/en/reference/docker-compose-scenarios.md:262
 #, no-wrap
 msgid "cp docker-compose.override.yml.dist docker-compose.override.yml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:272
+#: src/en/reference/docker-compose-scenarios.md:268
 msgid ""
 "Loading scenarios is not supported here. To load a scenario, use the "
 "`COMPOSE_FILE` variable in your `.env` file, as described in the [general "
@@ -11559,13 +11632,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:273
+#: src/en/reference/docker-compose-scenarios.md:269
 #, no-wrap
 msgid "Add your own files"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:279
+#: src/en/reference/docker-compose-scenarios.md:275
 msgid ""
 "With a Docker Compose deployment done by cloning the repository, you can "
 "store files that belong only to your instance in the stack's `local/` "
@@ -11575,7 +11648,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:284
+#: src/en/reference/docker-compose-scenarios.md:280
 msgid ""
 "Files in `local/` are not loaded automatically. To use a custom Compose "
 "file, reference it from the override file or from `COMPOSE_FILE` in "
@@ -12495,8 +12568,8 @@ msgstr ""
 #: src/en/reference/rest-api/states.md:54
 #: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
 #: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
-#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:85
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:89
+#: src/en/reference/rest-api/ticket.md:115
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/trigger.md:64
@@ -12505,7 +12578,7 @@ msgstr ""
 #: src/en/reference/rest-api/user.md:80 src/en/reference/rest-api/user.md:116
 #: src/en/reference/rest-api/user.md:151
 #: src/en/reference/rest-api/webhook.md:51
-#: src/en/reference/rest-api/webhook.md:88 src/en/tutorials/migrate.md:510
+#: src/en/reference/rest-api/webhook.md:88 src/en/tutorials/migrate.md:518
 #: src/en/tutorials/webserver-config.md:113
 #, no-wrap
 msgid "\n"
@@ -16018,7 +16091,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Secondary navigation\n"
-": Refers to an additional menu next to the navigation (e.g. when opening profile\n"
+": Refers to an additional menu next to the navigation (e.g. when opening personal\n"
 "  settings).\n"
 msgstr ""
 
@@ -16305,9 +16378,10 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/graphql.md:42
 msgid ""
-"If not already present, create a [token in the Zammad profile](/en/"
-"documentation/use/user-profile#token-access) you want to use as API user. "
-"Depending what you want to achieve via API, set the permissions accordingly."
+"If not already present, create a [token in your personal settings](/en/"
+"documentation/use/personal-settings#token-access)  that you want to use as "
+"API user. Depending what you want to achieve via API, set the permissions "
+"accordingly."
 msgstr ""
 
 #. type: Plain text
@@ -17091,6 +17165,79 @@ msgstr ""
 #: src/en/reference/proxy-connections.md:94
 #, no-wrap
 msgid "/opt/zammad/contrib/packager.io/test_download_dependencies_connection.sh\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/proxy-connections.md:98
+#, no-wrap
+msgid "Web push notifications"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:104
+msgid ""
+"Zammad can notify agents about their tickets on mobile devices. These "
+"notifications are delivered as web push messages of the device's browser. On "
+"Android, a supported browser and the installed mobile view can both receive "
+"them. On iPhone and iPad, the mobile view has to be added to the home screen "
+"first. How to set them up on a device is described in the [mobile view "
+"documentation](/en/documentation/use/guides/mobile-view)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:107
+msgid ""
+"The messages are sent by the background worker of Zammad over HTTPS (port "
+"443) to the push service of the browser vendor. A firewall that restricts "
+"outgoing traffic has to allow the following addresses, including their "
+"subdomains:"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:115
+#, no-wrap
+msgid ""
+"| Address                     | Comment                                               |\n"
+"|-----------------------------|-------------------------------------------------------|\n"
+"| fcm.googleapis.com          | Web push for Chrome and other Chromium-based browsers |\n"
+"| jmt17.google.com            | Alternative address of the Google push service        |\n"
+"| notify.windows.com          | Web push for Microsoft Edge                           |\n"
+"| push.services.mozilla.com   | Web push for Mozilla Firefox                          |\n"
+"| web.push.apple.com          | Web push for Safari on iPhone, iPad and Mac           |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:118
+msgid ""
+"The proxy configuration described above applies to these connections as "
+"well, including the no-proxy list of the GUI configuration and the "
+"`NO_PROXY` environment variable."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:121
+msgid ""
+"Zammad only accepts device subscriptions of the push services listed above. "
+"A browser that uses another push service cannot enable push notifications."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:124
+msgid ""
+"There is nothing to configure in Zammad. The key pair used to sign the "
+"messages (VAPID) is generated once per installation and is not meant to be "
+"changed: all existing device subscriptions become invalid if it changes."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/proxy-connections.md:128
+msgid ""
+"The push service of the browser vendor delivers the messages, not Zammad. "
+"Depending on the device, delivery can take a while, for example when battery "
+"optimization delays it on Android devices. A message that cannot be "
+"delivered right away is kept by the push service for up to one day. On "
+"iPhone and iPad, several messages about the same ticket stay as separate "
+"notifications, while other platforms replace the previous one."
 msgstr ""
 
 #. type: Title #
@@ -19369,11 +19516,10 @@ msgstr ""
 #: src/en/reference/rest-api/articles.md:109
 #: src/en/reference/rest-api/articles.md:121
 #: src/en/reference/rest-api/articles.md:133
-#: src/en/reference/rest-api/mentions.md:17
 #: src/en/reference/rest-api/ticket.md:29
 #: src/en/reference/rest-api/ticket.md:41
 #: src/en/reference/rest-api/ticket.md:53
-#: src/en/reference/rest-api/ticket.md:108
+#: src/en/reference/rest-api/ticket.md:112
 msgid "Required permission: `ticket.agent` **or** `ticket.customer`"
 msgstr ""
 
@@ -19969,7 +20115,7 @@ msgstr ""
 #: src/en/reference/rest-api/priorities.md:76
 #: src/en/reference/rest-api/report-profile.md:122
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
-#: src/en/reference/rest-api/ticket.md:138
+#: src/en/reference/rest-api/ticket.md:142
 #: src/en/reference/rest-api/trigger.md:112
 #: src/en/reference/rest-api/user-access-token.md:46
 #: src/en/reference/rest-api/user.md:131
@@ -20056,7 +20202,6 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:112
 #: src/en/reference/rest-api/checklist.md:133
 #: src/en/reference/rest-api/checklist.md:154
-#: src/en/reference/rest-api/mentions.md:29
 #: src/en/reference/rest-api/mentions.md:58
 #: src/en/reference/rest-api/shared-draft.md:44
 #: src/en/reference/rest-api/shared-draft.md:65
@@ -20220,10 +20365,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
-#: src/en/reference/rest-api/checklist.md:193
-#: src/en/reference/rest-api/checklist.md:214
-#: src/en/reference/rest-api/checklist.md:236
-msgid "Required permission: `admin.checklists`"
+#: src/en/reference/rest-api/checklist.md:180
+msgid "Required permission: `admin.checklist` or `ticket.agent`"
 msgstr ""
 
 #. type: Plain text
@@ -20241,11 +20384,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/checklist.md:180
-msgid "Required permission: `admin.checklists` or `ticket.agent`"
-msgstr ""
-
-#. type: Plain text
 #: src/en/reference/rest-api/checklist.md:183
 msgid ""
 "`GET`-Request sent: `/api/v1/checklist_templates/{checklist template id}`"
@@ -20258,6 +20396,13 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/checklist_templates/get-checklist-template-id-res.json\n"
 "\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/checklist.md:193
+#: src/en/reference/rest-api/checklist.md:214
+#: src/en/reference/rest-api/checklist.md:236
+msgid "Required permission: `admin.checklist`"
 msgstr ""
 
 #. type: Plain text
@@ -22942,9 +23087,17 @@ msgstr ""
 #: src/en/reference/rest-api/mentions.md:8
 #, no-wrap
 msgid ""
-"The mention endpoint depends on the group permissions and if the user\n"
-"you're using is an **agent**. Because of this tickets may or may not\n"
-"be available.\n"
+"Mentioning other users requires the `ticket.agent` permission and at least\n"
+"`read` access to the group of the ticket, `full` access also qualifies.\n"
+"Otherwise the request fails with HTTP status 403.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/mentions.md:17
+#: src/en/reference/rest-api/mentions.md:29
+msgid ""
+"Required permission: `ticket.agent` and at least `read` access to the group "
+"of the ticket, `full` access also qualifies"
 msgstr ""
 
 #. type: Plain text
@@ -24535,6 +24688,76 @@ msgid ""
 "\n"
 msgstr ""
 
+#. type: Title ##
+#: src/en/reference/rest-api/ticket-summary.md:8
+#, no-wrap
+msgid "Show/Trigger"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:13
+msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:15
+msgid ""
+"The ticket summarize endpoint uses `POST` because creating and fetching the "
+"summary happen in a single operation:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid "If a summary exists, it is returned."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/reference/rest-api/ticket-summary.md:19
+msgid ""
+"If a summary does not exist, creation is triggered in the background (async "
+"job)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:22
+msgid ""
+"Using `GET` would be incorrect since the call may also create data. If you "
+"want a summary to exist, call the endpoint; if it's not ready yet, retry "
+"after at least 30 seconds."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:25
+msgid ""
+"Sample response if the generation of a new summary was just triggered by the "
+"request:"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:26
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/ticket-summary.md:33
+msgid ""
+"Sample response for an existing summary (e.g. for the same ticket like above "
+"after waiting until creation has finished):"
+msgstr ""
+
+#. type: Fenced div block (details)
+#: src/en/reference/rest-api/ticket-summary.md:34
+#, no-wrap
+msgid ""
+"\n"
+"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
+"\n"
+msgstr ""
+
 #. type: Fenced div block (warning)
 #: src/en/reference/rest-api/ticket.md:8
 #, no-wrap
@@ -24625,10 +24848,14 @@ msgid ""
 "\n"
 "E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
+"Mentioning other users requires the `ticket.agent` permission and at least `read` access to the group of the\n"
+"ticket, `full` access also qualifies. With `create` access alone the request fails with HTTP status 403 and the\n"
+"message \"You have insufficient permissions to mention other users.\"\n"
+"\n"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:85
+#: src/en/reference/rest-api/ticket.md:89
 #, no-wrap
 msgid ""
 "\n"
@@ -24643,7 +24870,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:100
+#: src/en/reference/rest-api/ticket.md:104
 #, no-wrap
 msgid ""
 "The `sender` attribute of the initial article determines the ticket's `create_article_sender_id` and contact timestamps.\n"
@@ -24651,12 +24878,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:110
+#: src/en/reference/rest-api/ticket.md:114
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/ticket.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -24667,7 +24894,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres|info)
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/ticket.md:115
 #, no-wrap
 msgid ""
 "Above example provides an article. This article is a _new article_ and\n"
@@ -24675,7 +24902,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/ticket.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -24686,7 +24913,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:131
+#: src/en/reference/rest-api/ticket.md:135
 #, no-wrap
 msgid ""
 "**Adding attachments**\n"
@@ -24696,17 +24923,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:141
+#: src/en/reference/rest-api/ticket.md:145
 msgid "Required permission: `admin`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:143
+#: src/en/reference/rest-api/ticket.md:147
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/ticket.md:144
+#: src/en/reference/rest-api/ticket.md:148
 #, no-wrap
 msgid ""
 "\n"
@@ -24717,83 +24944,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:152
+#: src/en/reference/rest-api/ticket.md:156
 #, no-wrap
 msgid ""
 "\n"
 "Response:\n"
 "\n"
 "<<< @/fixtures/rest-api/tickets/delete-ticket-id-res.json\n"
-"\n"
-msgstr ""
-
-#. type: Title ##
-#: src/en/reference/rest-api/ticket-summary.md:8
-#, no-wrap
-msgid "Show/Trigger"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:13
-msgid "`POST`-Request sent: `/api/v1/tickets/{ticket id}/summarize`"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:15
-msgid ""
-"The ticket summarize endpoint uses `POST` because creating and fetching the "
-"summary happen in a single operation:"
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid "If a summary exists, it is returned."
-msgstr ""
-
-#. type: Bullet: '- '
-#: src/en/reference/rest-api/ticket-summary.md:19
-msgid ""
-"If a summary does not exist, creation is triggered in the background (async "
-"job)."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:22
-msgid ""
-"Using `GET` would be incorrect since the call may also create data. If you "
-"want a summary to exist, call the endpoint; if it's not ready yet, retry "
-"after at least 30 seconds."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:25
-msgid ""
-"Sample response if the generation of a new summary was just triggered by the "
-"request:"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:26
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-null.json\n"
-"\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/rest-api/ticket-summary.md:33
-msgid ""
-"Sample response for an existing summary (e.g. for the same ticket like above "
-"after waiting until creation has finished):"
-msgstr ""
-
-#. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket-summary.md:34
-#, no-wrap
-msgid ""
-"\n"
-"<<< @/fixtures/rest-api/ticket-summary/post-res-summary.json\n"
 "\n"
 msgstr ""
 
@@ -25540,18 +25697,6 @@ msgid ""
 "\n"
 "<<< @/fixtures/rest-api/webhooks/delete-referenced-res.json\n"
 "\n"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev link
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "/en/link/to/site"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: prev text
-#: src/en/TEMPLATE.md:1
-#, no-wrap
-msgid "Name of site"
 msgstr ""
 
 #. type: Title #
@@ -28283,14 +28428,25 @@ msgid ""
 "information specific groups, tickets or users."
 msgstr ""
 
-#. type: Title ##
+#. type: Fenced div block (warning)
 #: src/en/tutorials/migrate.md:39
+#, no-wrap
+msgid ""
+"\n"
+"Import mode also activates the maintenance mode, for as long as import mode is\n"
+"enabled. Zammad then denies every request of a user without the `admin.maintenance`\n"
+"permission. Turn import mode off again before letting users work in the instance.\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: src/en/tutorials/migrate.md:47
 #, no-wrap
 msgid "Specific migration guides"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/migrate.md:41
+#: src/en/tutorials/migrate.md:49
 #, no-wrap
 msgid ""
 "\n"
@@ -28306,56 +28462,56 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:54
+#: src/en/tutorials/migrate.md:62
 #, no-wrap
 msgid "Freshdesk"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:60 src/en/tutorials/migrate.md:204
+#: src/en/tutorials/migrate.md:68 src/en/tutorials/migrate.md:212
 msgid ""
 "Please note Freshdesk specific limitations below. These are additional "
 "limitations to the general ones listed."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:227
+#: src/en/tutorials/migrate.md:499
 msgid ""
 "Differential migrations are not supported! The general suggestion is to run "
 "a test import before to learn how long the migration will take."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71
+#: src/en/tutorials/migrate.md:79
 msgid ""
 "Important: Please note that migration speed highly depends on your Freshdesk "
 "plan (API rate limits apply)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71
+#: src/en/tutorials/migrate.md:79
 msgid ""
 "Due to API limitations, Zammad will not show the total number of objects to "
 "import, but instead correct them in steps of 100."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71
+#: src/en/tutorials/migrate.md:79
 msgid ""
 "Your Freshdesk plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:71 src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:227
 msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on Zammad's login page."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:78
+#: src/en/tutorials/migrate.md:86
 msgid ""
 "Zammad requires API access which is why you'll need to [create an API key]"
 "(https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-"
@@ -28364,7 +28520,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:79 src/en/tutorials/migrate.md:499
+#: src/en/tutorials/migrate.md:87 src/en/tutorials/migrate.md:507
 #, no-wrap
 msgid ""
 "Ensure to retrieve the API key with a full administrator account. Less\n"
@@ -28372,15 +28528,15 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/migrate.md:84 src/en/tutorials/migrate.md:230
-#: src/en/tutorials/migrate.md:400 src/en/tutorials/migrate.md:504
+#: src/en/tutorials/migrate.md:92 src/en/tutorials/migrate.md:238
+#: src/en/tutorials/migrate.md:408 src/en/tutorials/migrate.md:512
 #, no-wrap
 msgid "Import"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:89 src/en/tutorials/migrate.md:235
-#: src/en/tutorials/migrate.md:509
+#: src/en/tutorials/migrate.md:97 src/en/tutorials/migrate.md:243
+#: src/en/tutorials/migrate.md:517
 msgid ""
 "In general, you have two options on how to migrate data. If you have a "
 "fairly big instance with a lot of data, you may want to consider using the "
@@ -28388,7 +28544,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:90
+#: src/en/tutorials/migrate.md:98
 #, no-wrap
 msgid ""
 "\n"
@@ -28466,7 +28622,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:90 src/en/tutorials/migrate.md:510
+#: src/en/tutorials/migrate.md:98 src/en/tutorials/migrate.md:518
 #, no-wrap
 msgid ""
 "\n"
@@ -28483,110 +28639,110 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/migrate.md:178 src/en/tutorials/migrate.md:332
-#: src/en/tutorials/migrate.md:459 src/en/tutorials/migrate.md:600
+#: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
+#: src/en/tutorials/migrate.md:467 src/en/tutorials/migrate.md:608
 #, no-wrap
 msgid "After migration"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:181 src/en/tutorials/migrate.md:335
-#: src/en/tutorials/migrate.md:462 src/en/tutorials/migrate.md:603
+#: src/en/tutorials/migrate.md:189 src/en/tutorials/migrate.md:343
+#: src/en/tutorials/migrate.md:470 src/en/tutorials/migrate.md:611
 msgid "Run the following commands:"
-msgstr ""
-
-#. type: Fenced code block (ruby)
-#: src/en/tutorials/migrate.md:182 src/en/tutorials/migrate.md:336
-#: src/en/tutorials/migrate.md:463 src/en/tutorials/migrate.md:604
-#, no-wrap
-msgid "Setting.set('import_mode', false)\n"
-msgstr ""
-
-#. type: Fenced code block (ruby)
-#: src/en/tutorials/migrate.md:186 src/en/tutorials/migrate.md:340
-#: src/en/tutorials/migrate.md:467 src/en/tutorials/migrate.md:608
-#, no-wrap
-msgid "Setting.set('system_init_done', true)\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
 #: src/en/tutorials/migrate.md:190 src/en/tutorials/migrate.md:344
 #: src/en/tutorials/migrate.md:471 src/en/tutorials/migrate.md:612
 #, no-wrap
+msgid "Setting.set('import_mode', false)\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/tutorials/migrate.md:194 src/en/tutorials/migrate.md:348
+#: src/en/tutorials/migrate.md:475 src/en/tutorials/migrate.md:616
+#, no-wrap
+msgid "Setting.set('system_init_done', true)\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/tutorials/migrate.md:198 src/en/tutorials/migrate.md:352
+#: src/en/tutorials/migrate.md:479 src/en/tutorials/migrate.md:620
+#, no-wrap
 msgid "Rails.cache.clear\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:196 src/en/tutorials/migrate.md:618
+#: src/en/tutorials/migrate.md:204 src/en/tutorials/migrate.md:626
 msgid ""
 "Log in with the user whose API token you provided. Use the admins email "
 "address and API token provided during the migration to login."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:199 src/en/tutorials/migrate.md:353
-#: src/en/tutorials/migrate.md:620
+#: src/en/tutorials/migrate.md:207 src/en/tutorials/migrate.md:361
+#: src/en/tutorials/migrate.md:628
 msgid ""
 "All other users will have to use the password reset function or login "
 "methods like LDAP or one click logins."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:200
+#: src/en/tutorials/migrate.md:208
 #, no-wrap
 msgid "Kayako"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 msgid "Selfhosted installations (Kayako classic) are not supported."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 msgid ""
 "The following ticket field customizations are being ignored (affects “Scale” "
 "plan):"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 msgid "Custom ticket states"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 msgid "Custom ticket priorities"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 msgid "Custom ticket types"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 msgid ""
 "Important: Please note that migration speed highly depends on your Kayako "
 "plan (API rate limits apply)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:219
+#: src/en/tutorials/migrate.md:227
 msgid ""
 "Your Kayako plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:224
+#: src/en/tutorials/migrate.md:232
 msgid ""
 "Zammad requires API access which is why the migrator will request your "
 "Kayako-URL, email address and password."
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/migrate.md:225
+#: src/en/tutorials/migrate.md:233
 #, no-wrap
 msgid ""
 "Ensure to provide an user account with full administrative permissions. Less\n"
@@ -28594,7 +28750,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:236
+#: src/en/tutorials/migrate.md:244
 #, no-wrap
 msgid ""
 "\n"
@@ -28680,7 +28836,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/migrate.md:236
+#: src/en/tutorials/migrate.md:244
 #, no-wrap
 msgid ""
 "\n"
@@ -28697,122 +28853,122 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:350
+#: src/en/tutorials/migrate.md:358
 msgid ""
 "Log in with the user whose login credentials you provided. Use the admins "
 "email address and password provided during the migration to login."
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:354
+#: src/en/tutorials/migrate.md:362
 #, no-wrap
 msgid "OTRS"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:359 src/en/tutorials/migrate.md:480
+#: src/en/tutorials/migrate.md:367 src/en/tutorials/migrate.md:488
 msgid "Additional limitations to the general one:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 msgid "Supported OTRS versions are: 3.1 - 6.x"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 msgid ""
 "Password migration works for OTRS >= 3.3 only (on older instances a password "
 "reset within Zammad will be required)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 msgid ""
 "If you plan to import a differential migration after the main one, do not "
 "change any data in Zammad!"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 msgid "Only customers of tickets are imported"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:367
+#: src/en/tutorials/migrate.md:375
 msgid "Zammad expects your OTRS timestamps to be UTC and won't adjust them"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:371
+#: src/en/tutorials/migrate.md:379
 #, no-wrap
 msgid "**Install Znuny4OTRS-Repo that matches your OTRS version (dependency of the OTRS migration plugin):**\n"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 msgid ""
 "[OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "Repo-6.0.76.opm){target=_blank}"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 msgid ""
 "[OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "Repo-5.0.56.opm){target=_blank}"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 msgid ""
 "[OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "Repo-4.0.25.opm){target=_blank}"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:376
+#: src/en/tutorials/migrate.md:384
 msgid ""
 "[OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "Repo-3.3.2.opm){target=_blank}"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:378
+#: src/en/tutorials/migrate.md:386
 #, no-wrap
 msgid "**Install OTRS migration plugin that matches your OTRS version:**\n"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 msgid ""
 "[OTRS 6](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "ZammadMigrator-6.0.7.opm){target=_blank}"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 msgid ""
 "[OTRS 5](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "ZammadMigrator-5.0.4.opm){target=_blank}"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 msgid ""
 "[OTRS 4](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "ZammadMigrator-4.1.12.opm){target=_blank}"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:383
+#: src/en/tutorials/migrate.md:391
 msgid ""
 "[OTRS 3](https://ftp.zammad.com/otrs-migrator-plugins/Znuny4OTRS-"
 "ZammadMigrator-3.0.33.opm){target=_blank}"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/migrate.md:384
+#: src/en/tutorials/migrate.md:392
 #, no-wrap
 msgid ""
 "In some cases restarting your webserver may help to solve internal server\n"
@@ -28820,13 +28976,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:389
+#: src/en/tutorials/migrate.md:397
 #, no-wrap
 msgid "Timeout adjustments"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:394
+#: src/en/tutorials/migrate.md:402
 msgid ""
 "If your import runs in a timeout or you already know that this could be an "
 "issue, you can adjust timeouts via environment variables. To do so, set the "
@@ -28836,7 +28992,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:399
+#: src/en/tutorials/migrate.md:407
 #, no-wrap
 msgid ""
 "|                                    | Zammad < 7.0 | Zammad ≥ 7.0  |\n"
@@ -28846,7 +29002,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:402
+#: src/en/tutorials/migrate.md:410
 #, no-wrap
 msgid ""
 "\n"
@@ -28906,41 +29062,41 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/migrate.md:475
+#: src/en/tutorials/migrate.md:483
 #, no-wrap
 msgid "Zendesk"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 msgid ""
 "Important: Please note that migration speed highly depends on your Zendesk "
 "plan (API rate limits apply)."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 msgid ""
 "Your Zendesk plan has to provide API support. This may not apply to all "
 "available plans."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 msgid ""
 "User passwords are not migrated and will require the user to use the "
 "password reset link on the login page."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/migrate.md:491
+#: src/en/tutorials/migrate.md:499
 msgid ""
 "Objects with cyrillic strings can't be migrated. Make sure to rename them "
 "before starting the migration."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/migrate.md:498
+#: src/en/tutorials/migrate.md:506
 msgid ""
 "Zammad requires API access which is why you’ll need to [create an API key]"
 "(https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-"
@@ -28949,7 +29105,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/migrate.md:510
+#: src/en/tutorials/migrate.md:518
 #, no-wrap
 msgid ""
 "\n"
@@ -30870,6 +31026,11 @@ msgid ""
 "and adjust `example.com` to the subdomain you have chosen for your\n"
 "Zammad instance.\n"
 "\n"
+"Use the same domain as the fully qualified domain name in Zammad's\n"
+"Base settings (_Settings > System > Base_). Zammad only accepts live\n"
+"updates from that origin, so a differing server name breaks the real-time\n"
+"channel.\n"
+"\n"
 "Now you'll need to adjust the path and file names for your SSL\n"
 "certificates you obtained on the prior steps. Adjust the following\n"
 "directives to match your setup:\n"
@@ -30959,6 +31120,11 @@ msgid ""
 "`ServerName` (in the HTTP VirtualHost) defaults to `example.com` and\n"
 "the second (in the HTTPS VirtualHost) to `localhost`.\n"
 "\n"
+"Use the same domain as the fully qualified domain name in Zammad's\n"
+"Base settings (_Settings > System > Base_). Zammad only accepts live\n"
+"updates from that origin, so a differing server name breaks the real-time\n"
+"channel.\n"
+"\n"
 "Now you'll need to adjust the path and file names for your SSL\n"
 "certificates you obtained on the prior steps. Adjust the following\n"
 "directives to match your setup:\n"
@@ -31021,13 +31187,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:288
+#: src/en/tutorials/webserver-config.md:298
 #, no-wrap
 msgid "<!-- markdownlint-enable MD036 -->\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:292
+#: src/en/tutorials/webserver-config.md:302
 msgid ""
 "Now visit your configured Zammad domain in a browser to reach the Zammad UI. "
 "If you don't see Zammad's setup wizard or Zammad UI at all, check the "
@@ -31035,13 +31201,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/webserver-config.md:295
+#: src/en/tutorials/webserver-config.md:305
 #, no-wrap
 msgid "Default landing page instead of Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:301
+#: src/en/tutorials/webserver-config.md:311
 msgid ""
 "If you reach the webserver's default landing page rather than Zammad, your "
 "`zammad.conf` may be overruled by another config file. Check the vhost "
@@ -31049,13 +31215,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/webserver-config.md:302
+#: src/en/tutorials/webserver-config.md:312
 #, no-wrap
 msgid "DNS not resolving"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:308
+#: src/en/tutorials/webserver-config.md:318
 msgid ""
 "If the subdomain does not resolve, double-check the DNS records for your "
 "domain and wait for them to propagate. Replace the `zammad.example.com` in "
@@ -31064,19 +31230,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/webserver-config.md:309
+#: src/en/tutorials/webserver-config.md:319
 #, no-wrap
 msgid "host zammad.example.com\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/webserver-config.md:313
+#: src/en/tutorials/webserver-config.md:323
 #, no-wrap
 msgid "CSRF token errors"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:318
+#: src/en/tutorials/webserver-config.md:328
 msgid ""
 "If users cannot log in because of CSRF token errors, your webserver chain "
 "may not pass the original connection type to Zammad. Tell the proxy directly "
@@ -31084,7 +31250,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:323
+#: src/en/tutorials/webserver-config.md:333
 #, no-wrap
 msgid ""
 "Nginx\n"
@@ -31094,7 +31260,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/webserver-config.md:327
+#: src/en/tutorials/webserver-config.md:337
 #, no-wrap
 msgid ""
 "Apache 2\n"
@@ -31103,9 +31269,27 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (apache)
-#: src/en/tutorials/webserver-config.md:328
+#: src/en/tutorials/webserver-config.md:338
 #, no-wrap
 msgid ""
 "  RequestHeader set X_FORWARDED_PROTO 'https'\n"
 "  RequestHeader set X-Forwarded-Ssl on\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/webserver-config.md:343
+#, no-wrap
+msgid "Ticket changes not saved or missing live updates"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/webserver-config.md:350
+#, no-wrap
+msgid ""
+"If agents change ticket fields but the save button does nothing, or changes\n"
+"made by other users only appear after a manual reload, the webserver host\n"
+"name likely differs from the fully qualified domain name in Zammad's\n"
+"Base settings (_Settings > System > Base_). Zammad accepts live updates\n"
+"only from that origin. Adjust `server_name` (Nginx) or `ServerName`\n"
+"(Apache 2) to match the setting.\n"
 msgstr ""
