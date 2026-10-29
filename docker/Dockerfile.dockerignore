@@ -1,0 +1,4 @@
+# Build context is the repository root; only send what the image needs.
+*
+!dist
+!docker/nginx

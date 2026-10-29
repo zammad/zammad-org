@@ -35,3 +35,17 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   // failing the test
   return false
 })
+
+// Force Englisch UI / content in Cypress browser, tests rely on it.
+Cypress.on('window:before:load', (win) => {
+  Object.defineProperty(win.navigator, 'language', {
+    value: 'en-US',
+    writable: true,
+    configurable: true,
+  });
+  Object.defineProperty(win.navigator, 'languages', {
+    value: ['en-US', 'en'],
+    writable: true,
+    configurable: true,
+  });
+});

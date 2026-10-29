@@ -1,0 +1,8 @@
+# Local testing only: build the image from the current `dist/` instead of
+# pulling it. Docker Compose loads this file automatically next to
+# docker-compose.yml. The deploy job does not copy it to the web host.
+services:
+  nginx:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile

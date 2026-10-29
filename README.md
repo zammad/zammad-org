@@ -27,7 +27,7 @@ Every language is served as an app of its own from its own directory (`/en/`, `/
 - Links without a language prefix are redirected to the detected language.
 - Internal links that carry a language prefix of their own (`/en/...` links in the German content, for example) are collapsed back to the app they point to.
 
-See `.docker-compose/vitepress.conf` for the configuration used for local testing. `pnpm preview` serves the build as plain files, so the redirects above and the per-language error pages only take effect with the web server.
+The web server runs as a Docker container in production and locally. See `docker/README.md` for the configuration, local testing and deployment. `pnpm preview` serves the build as plain files, so the redirects above and the per-language error pages only take effect with the web server.
 
 ## Automatic Screenshots (Cypress)
 

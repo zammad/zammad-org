@@ -137,7 +137,7 @@ export default defineConfig(
      * `/en/foo` inside the English app becomes `/en/en/foo`. A rewrite rule in
      * the nginx configuration collapses that duplicated prefix again, which is
      * why these links must not be reported as dead pages of this app.
-     * See .docker-compose/vitepress.conf.
+     * See docker/nginx/conf.d/default.conf.
      */
     ignoreDeadLinks: [new RegExp(`^/(${supportedLocales.join('|')})/`)],
     description: 'Documentation for Zammad Users and Administrators',
@@ -283,8 +283,16 @@ export default defineConfig(
     },
     themeConfig: {
       ...localeConfig,
+      /*
+       * `locale` and `link` are what the language switcher needs: the built
+       * app of the current language cannot know the other apps' route tables,
+       * so the switcher derives the target page from the current one and the
+       * locale code, falling back to `link` (that app's start page) where no
+       * corresponding page exists. See theme/VPLangSwitcher.vue.
+       */
       langLinks: supportedLocales.map((l) => ({
         label: localeLabels[l],
+        locale: l,
         link: `/${l}/`,
         current: l === locale,
       })),

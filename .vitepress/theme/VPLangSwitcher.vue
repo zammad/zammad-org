@@ -29,7 +29,7 @@ defineProps({
   screen: { type: Boolean, default: false },
 })
 
-const { theme } = useData()
+const { theme, page } = useData()
 
 const currentLanguage = computed(() =>
   theme.value.langLinks?.find((language) => language.current)
@@ -38,6 +38,32 @@ const currentLanguage = computed(() =>
 const otherLanguages = computed(() =>
   (theme.value.langLinks ?? []).filter((language) => !language.current)
 )
+
+/*
+ * The language switcher of the default theme keeps the reader on the same page
+ * (`correspondingLink` in VitePress's `useLangs`), but it is fed from
+ * `site.locales`, which holds only the app's own locale here. This component
+ * does the same step itself: `page.relativePath` is free of the language
+ * prefix — `rewrites` strips it — so prefixing it with another language code
+ * yields that language's page. The path is computed at build time, which keeps
+ * the href in the static HTML and leaves the anchors plain documents.
+ */
+function linkFor(language) {
+  if (!language.locale) return language.link
+
+  /*
+   * `relativePath` is `404.md` on the not-found page. That page has no nav bar,
+   * so the switcher never renders there; the guard keeps the fallback honest
+   * should that change.
+   */
+  if (page.value.isNotFound) return language.link
+
+  const path = page.value.relativePath
+    .replace(/(^|\/)index\.md$/, '$1')
+    .replace(/\.md$/, '.html')
+
+  return path ? `/${language.locale}/${path}` : `/${language.locale}/`
+}
 
 const isOpen = ref(false)
 </script>
@@ -54,9 +80,9 @@ const isOpen = ref(false)
 
       <a
         v-for="language in otherLanguages"
-        :key="language.link"
+        :key="language.locale"
         class="link"
-        :href="language.link"
+        :href="linkFor(language)"
         target="_self"
       >{{ language.label }}</a>
     </div>
@@ -74,8 +100,8 @@ const isOpen = ref(false)
     </button>
 
     <ul class="list">
-      <li v-for="language in otherLanguages" :key="language.link" class="item">
-        <a class="link" :href="language.link" target="_self">{{ language.label }}</a>
+      <li v-for="language in otherLanguages" :key="language.locale" class="item">
+        <a class="link" :href="linkFor(language)" target="_self">{{ language.label }}</a>
       </li>
     </ul>
   </div>

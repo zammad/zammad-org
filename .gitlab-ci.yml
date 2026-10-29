@@ -1,5 +1,5 @@
 ---
-image: registry.zammad.com/docker/zammad-ci:stable
+image: $CI_REGISTRY/docker/zammad-ci:stable
 
 workflow:
   rules:
@@ -15,8 +15,13 @@ stages:
   - pre
   - lint
   - screenshots
-  - build
+  - build documentation
+  - build docker image
   - deploy
+
+variables:
+  # Workaround: https://github.com/moby/buildkit/issues/7007
+  BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 push to github:
   stage: pre
@@ -108,8 +113,8 @@ screenshots:
     paths:
       - src/public/screenshots/cypress
 
-build:
-  stage: build
+build documentation:
+  stage: build documentation
   script:
     - pnpm install
     # Builds every language into its own directory below dist/.
@@ -121,16 +126,35 @@ build:
     paths:
       - dist
 
+# Only needed for the container deployment, see `deploy to website`.
+build docker image:
+  stage: build docker image
+  image: docker:latest
+  variables:
+    IMAGE: $CI_REGISTRY_IMAGE:develop
+  script:
+    - docker build --pull -f docker/Dockerfile -t "$IMAGE" .
+    - docker run --rm "$IMAGE" nginx -t
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
+    - docker push "$IMAGE"
+    - docker logout "$CI_REGISTRY"
+  only:
+    - develop
+
 deploy to website:
   stage: deploy
+  before_script:
+    - apt update && apt install -y --no-install-recommends rsync
   script:
     - test -d $HOME/.ssh || mkdir $HOME/.ssh
-    - ssh-keyscan -p $DEPLOYPORT $DEPLOYHOST_COMMUNITY >> $HOME/.ssh/known_hosts
+    - ssh-keyscan -4 $DEPLOYHOST_COMMUNITY >> $HOME/.ssh/known_hosts
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$SSH_PRIVATE_KEY_COMMUNITY")
-    - ls -al
-    - apt update && apt install -y --no-install-recommends rsync
-    - rsync -avz --delete -e "ssh -p $DEPLOYPORT" dist/ $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY:/home/next.zammad.org/pub/
-    - ssh $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo systemctl reload nginx"
+    - rsync -avz docker/docker-compose.yml $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY:/opt/zammad-org/
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY"
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml pull"
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --remove-orphans --wait"
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker logout $CI_REGISTRY"
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker image prune -a -f"
   only:
     - develop

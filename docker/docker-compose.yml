@@ -1,0 +1,24 @@
+# Production stack: the CI deploy job copies this file to the web host.
+# Locally, `docker-compose.override.yml` adds the image build, see README.md.
+services:
+  nginx:
+    image: ${IMAGE_REPO:-zammad-org}:${IMAGE_VERSION:-local}
+    restart: unless-stopped
+    ports:
+    # Only the reverse proxy on the host talks to the container. 8081 instead
+    # of 80: the image runs as non-root, and 8080 is often taken by Zammad.
+    - 127.0.0.1:${ZAMMAD_ORG_PORT:-8081}:8080
+    # `docker compose up --wait` in the deploy job waits for this check.
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3
+    read_only: true
+    tmpfs:
+    - /tmp
+    cap_drop:
+    - ALL
+    security_opt:
+    - no-new-privileges:true
