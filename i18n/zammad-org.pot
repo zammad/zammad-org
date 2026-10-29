@@ -1678,7 +1678,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:422
 #: src/en/documentation/use/advanced-features.md:442
 #: src/en/documentation/use/advanced-features.md:460
-#: src/en/documentation/use/advanced-features.md:490
+#: src/en/documentation/use/advanced-features.md:489
 #, markdown-text, no-wrap
 msgid "**Why?**\n"
 msgstr ""
@@ -1713,7 +1713,7 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:433
 #: src/en/documentation/use/advanced-features.md:453
 #: src/en/documentation/use/advanced-features.md:466
-#: src/en/documentation/use/advanced-features.md:496
+#: src/en/documentation/use/advanced-features.md:495
 #, markdown-text, no-wrap
 msgid "**How?**\n"
 msgstr ""
@@ -2921,27 +2921,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:468
-#, markdown-text
-msgid ""
-"![Screenshot shows GitLab content sidebar with \"Link issue\" "
-"button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)"
-msgstr ""
-
-#. type: Plain text
-#: src/en/documentation/use/advanced-features.md:473
+#: src/en/documentation/use/advanced-features.md:470
 #, markdown-text
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
-"with the respective icon (see GitLab example in screenshot above). An empty "
-"panel shows the `Link issue` button. Once an issue is linked, the button "
-"disappears and **Link issue** moves into the action menu in the panel "
-"header. Link to an issue by entering the URL of it or select the item from a "
-"select field (i-doit)."
+"with the respective icon. An empty panel shows the `Link issue` button. Once "
+"an issue is linked, the button disappears and **Link issue** moves into the "
+"action menu in the panel header. Link to an issue by entering the URL of it "
+"or select the item from a select field (i-doit)."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:475
+#: src/en/documentation/use/advanced-features.md:472
+#, markdown-text
+msgid "The screenshot shows a linked issue in the GitLab content sidebar."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/advanced-features.md:474
 #, markdown-text
 msgid ""
 "![Screenshot shows GitLab content sidebar with a linked "
@@ -2949,7 +2946,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:481
+#: src/en/documentation/use/advanced-features.md:480
 #, markdown-text
 msgid ""
 "The linked issue shows its state, number and title, plus **Milestone**, "
@@ -2963,7 +2960,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:486
+#: src/en/documentation/use/advanced-features.md:485
 #, markdown-text
 msgid ""
 "Linking fails with an error message when the issue is already linked to the "
@@ -2974,13 +2971,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/advanced-features.md:487
+#: src/en/documentation/use/advanced-features.md:486
 #, markdown-text, no-wrap
 msgid "Highlight text"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:494
+#: src/en/documentation/use/advanced-features.md:493
 #, markdown-text
 msgid ""
 "It allows you to give your colleagues a hint about important aspects of the "
@@ -2990,7 +2987,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:498
+#: src/en/documentation/use/advanced-features.md:497
 #, markdown-text
 msgid ""
 "![Screenshot shows highlight menu from ticket detail "
@@ -2998,7 +2995,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/advanced-features.md:502
+#: src/en/documentation/use/advanced-features.md:501
 #, markdown-text
 msgid ""
 "Use the highlighting tool with the pencil icon in the upper right corner in "

@@ -252,25 +252,6 @@ describe('usage advanced features', () => {
     cy.get('.popover*').should('be.visible').screenshot('user-detail-panel', {padding:[ 57, 0, 5, 15 ]})
   })
 
-  it('gitlab sidebar tab', () => {
-    cy.loginAs('ADMIN')
-    cy.visit('/desktop/tickets/6')
-    cy.wait(1000) // loading
-    cy.get('[aria-label="GitLab"]').click()
-    cy.wait(2000)
-    cy.get('h2').contains('GitLab').should('be.visible').clip({ padding: 5 }).then((TopClip) => {
-      cy.contains('Link issue').should('be.visible').clip({ padding: 5 }).then((ButtonClip) => {
-        cy.mergeClips(TopClip, ButtonClip).then((mergedClip) => {
-          cy.get('[aria-label="Checklist"]').should('be.visible').clip({ padding: 5 }).then((ChecklistClip) => {
-            cy.mergeClips(mergedClip, ChecklistClip).then((clip) => {
-              cy.screenshot('gitlab-content-sidebar', { clip })
-            })
-          })
-        })
-      })
-    })
-  })
-
   it('gitlab sidebar tab with linked issue', () => {
     // The linked issue is mocked for the figure only: the screenshot stack has
     // no GitLab token, so the real resolver cannot return data. The GraphQL
@@ -323,9 +304,31 @@ describe('usage advanced features', () => {
     cy.wait(2000) // loading
     cy.get('[aria-label="GitLab"]').click()
     cy.contains('#583 Overhaul GitHub & GitLab page', { timeout: 10000 }).should('be.visible')
-    cy.get('#content-sidebar').clip({ padding: 5 }).then((clip) => {
-      cy.screenshot('gitlab-sidebar-linked-issue', { clip })
-    })
+    // Crop at the bottom of the linked issue: keep the clipped panel's width
+    // and top, but end at the issue item's own bounding box, so the figure
+    // loses the sidebar's otherwise empty lower part.
+    cy.contains('#583 Overhaul GitHub & GitLab page')
+      .closest('div.group.flex.gap-2')
+      .then(($leaf) => {
+        expect($leaf, 'linked issue item block').to.have.length.greaterThan(0)
+        return cy.window().then((win) => {
+          const panelRect = win.document.querySelector('#content-sidebar').getBoundingClientRect()
+          const top = Math.max(0, Math.floor(panelRect.top - 5))
+          const x = Math.max(0, Math.floor(panelRect.left - 5))
+          const itemRect = $leaf[0].getBoundingClientRect()
+
+          cy.screenshot('gitlab-sidebar-linked-issue', {
+            clip: {
+              x,
+              y: top,
+              // Keep the 5px right padding, but never let the clip's right edge
+              // pass the AUT viewport (Cypress's crop does not clamp, fixes/220).
+              width: Math.min(Math.ceil(panelRect.width + 10), Math.ceil(win.innerWidth - x)),
+              height: Math.ceil(itemRect.bottom + 5 - top),
+            },
+          })
+        })
+      })
   })
 
   it('user detail page', () => {

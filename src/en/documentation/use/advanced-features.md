@@ -464,12 +464,11 @@ in Zammad's settings.
 
 **How?**
 
-![Screenshot shows GitLab content sidebar with "Link issue" button](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-content-sidebar.png)
+If activated, simply open a ticket and choose the right content sidebar tab with the respective icon. An empty panel
+shows the `Link issue` button. Once an issue is linked, the button disappears and **Link issue** moves into the action
+menu in the panel header. Link to an issue by entering the URL of it or select the item from a select field (i-doit).
 
-If activated, simply open a ticket and choose the right content sidebar tab with the respective icon (see GitLab example
-in screenshot above). An empty panel shows the `Link issue` button. Once an issue is linked, the button disappears and
-**Link issue** moves into the action menu in the panel header. Link to an issue by entering the URL of it or select the
-item from a select field (i-doit).
+The screenshot shows a linked issue in the GitLab content sidebar.
 
 ![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-issue.png)
 
