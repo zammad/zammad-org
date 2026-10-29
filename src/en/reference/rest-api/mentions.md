@@ -6,14 +6,14 @@ title: Mentions
 # Mentions
 
 ::: warning
-The mention endpoint depends on the group permissions and if the user
-you're using is an **agent**. Because of this tickets may or may not
-be available.
+Mentioning other users requires the `ticket.agent` permission and at least
+`read` access to the group of the ticket, `full` access also qualifies.
+Otherwise the request fails with HTTP status 403.
 :::
 
 ## List
 
-Required permission: `ticket.agent` **or** `ticket.customer`
+Required permission: `ticket.agent` and at least `read` access to the group of the ticket, `full` access also qualifies
 
 `GET`-Request sent: `/api/v1/mentions`
 
@@ -25,7 +25,7 @@ Required permission: `ticket.agent` **or** `ticket.customer`
 
 ## Create
 
-Required permission: `ticket.agent`
+Required permission: `ticket.agent` and at least `read` access to the group of the ticket, `full` access also qualifies
 
 `POST`-Request sent: `/api/v1/mentions`
 

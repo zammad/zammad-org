@@ -80,6 +80,10 @@ ticket creation.
 
 E.g.: `"mentions": [1, 5, 7, 8],`
 
+Mentioning other users requires the `ticket.agent` permission and at least `read` access to the group of the
+ticket, `full` access also qualifies. With `create` access alone the request fails with HTTP status 403 and the
+message "You have insufficient permissions to mention other users."
+
 :::
 
 :::: details

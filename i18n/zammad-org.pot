@@ -11250,7 +11250,7 @@ msgstr ""
 #: src/en/reference/rest-api/role.md:53
 #: src/en/reference/rest-api/shared-draft.md:41
 #: src/en/reference/rest-api/sla.md:59 src/en/reference/rest-api/states.md:69
-#: src/en/reference/rest-api/ticket.md:105
+#: src/en/reference/rest-api/ticket.md:109
 #: src/en/reference/rest-api/time-accounting.md:54
 #: src/en/reference/rest-api/trigger.md:80 src/en/reference/rest-api/user.md:95
 #: src/en/reference/rest-api/webhook.md:74
@@ -13840,8 +13840,8 @@ msgstr ""
 #: src/en/reference/rest-api/states.md:54
 #: src/en/reference/rest-api/states.md:75 src/en/reference/rest-api/tags.md:28
 #: src/en/reference/rest-api/tags.md:54 src/en/reference/rest-api/tags.md:89
-#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:85
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/tags.md:110 src/en/reference/rest-api/ticket.md:89
+#: src/en/reference/rest-api/ticket.md:115
 #: src/en/reference/rest-api/time-accounting.md:39
 #: src/en/reference/rest-api/time-accounting.md:61
 #: src/en/reference/rest-api/trigger.md:64
@@ -21460,11 +21460,10 @@ msgstr ""
 #: src/en/reference/rest-api/articles.md:109
 #: src/en/reference/rest-api/articles.md:121
 #: src/en/reference/rest-api/articles.md:133
-#: src/en/reference/rest-api/mentions.md:17
 #: src/en/reference/rest-api/ticket.md:29
 #: src/en/reference/rest-api/ticket.md:41
 #: src/en/reference/rest-api/ticket.md:53
-#: src/en/reference/rest-api/ticket.md:108
+#: src/en/reference/rest-api/ticket.md:112
 #, markdown-text
 msgid "Required permission: `ticket.agent` **or** `ticket.customer`"
 msgstr ""
@@ -22085,7 +22084,7 @@ msgstr ""
 #: src/en/reference/rest-api/priorities.md:76
 #: src/en/reference/rest-api/report-profile.md:122
 #: src/en/reference/rest-api/sla.md:80 src/en/reference/rest-api/states.md:90
-#: src/en/reference/rest-api/ticket.md:138
+#: src/en/reference/rest-api/ticket.md:142
 #: src/en/reference/rest-api/trigger.md:112
 #: src/en/reference/rest-api/user-access-token.md:46
 #: src/en/reference/rest-api/user.md:131
@@ -22180,7 +22179,6 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:112
 #: src/en/reference/rest-api/checklist.md:133
 #: src/en/reference/rest-api/checklist.md:154
-#: src/en/reference/rest-api/mentions.md:29
 #: src/en/reference/rest-api/mentions.md:58
 #: src/en/reference/rest-api/shared-draft.md:44
 #: src/en/reference/rest-api/shared-draft.md:65
@@ -25299,9 +25297,18 @@ msgstr ""
 #: src/en/reference/rest-api/mentions.md:8
 #, no-wrap
 msgid ""
-"The mention endpoint depends on the group permissions and if the user\n"
-"you're using is an **agent**. Because of this tickets may or may not\n"
-"be available.\n"
+"Mentioning other users requires the `ticket.agent` permission and at least\n"
+"`read` access to the group of the ticket, `full` access also qualifies.\n"
+"Otherwise the request fails with HTTP status 403.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rest-api/mentions.md:17
+#: src/en/reference/rest-api/mentions.md:29
+#, markdown-text
+msgid ""
+"Required permission: `ticket.agent` and at least `read` access to the group "
+"of the ticket, `full` access also qualifies"
 msgstr ""
 
 #. type: Plain text
@@ -27153,10 +27160,16 @@ msgid ""
 "\n"
 "E.g.: `\"mentions\": [1, 5, 7, 8],`\n"
 "\n"
+"Mentioning other users requires the `ticket.agent` permission and at least "
+"`read` access to the group of the\n"
+"ticket, `full` access also qualifies. With `create` access alone the request "
+"fails with HTTP status 403 and the\n"
+"message \"You have insufficient permissions to mention other users.\"\n"
+"\n"
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:85
+#: src/en/reference/rest-api/ticket.md:89
 #, no-wrap
 msgid ""
 "\n"
@@ -27171,7 +27184,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:100
+#: src/en/reference/rest-api/ticket.md:104
 #, no-wrap
 msgid ""
 "The `sender` attribute of the initial article determines the ticket's "
@@ -27181,13 +27194,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:110
+#: src/en/reference/rest-api/ticket.md:114
 #, markdown-text
 msgid "`PUT`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/ticket.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -27198,7 +27211,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres|info)
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/ticket.md:115
 #, no-wrap
 msgid ""
 "Above example provides an article. This article is a _new article_ and\n"
@@ -27206,7 +27219,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details|tabs key:reqres)
-#: src/en/reference/rest-api/ticket.md:111
+#: src/en/reference/rest-api/ticket.md:115
 #, no-wrap
 msgid ""
 "\n"
@@ -27217,7 +27230,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rest-api/ticket.md:131
+#: src/en/reference/rest-api/ticket.md:135
 #, no-wrap
 msgid ""
 "**Adding attachments**\n"
@@ -27227,19 +27240,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:141
+#: src/en/reference/rest-api/ticket.md:145
 #, markdown-text
 msgid "Required permission: `admin`"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rest-api/ticket.md:143
+#: src/en/reference/rest-api/ticket.md:147
 #, markdown-text
 msgid "`DELETE`-Request sent: `/api/v1/tickets/{ticket id}`"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rest-api/ticket.md:144
+#: src/en/reference/rest-api/ticket.md:148
 #, no-wrap
 msgid ""
 "\n"
@@ -27250,7 +27263,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/reference/rest-api/ticket.md:152
+#: src/en/reference/rest-api/ticket.md:156
 #, no-wrap
 msgid ""
 "\n"
