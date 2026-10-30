@@ -195,7 +195,7 @@ importers:
         version: 0.9.1(vitepress@1.6.4(@algolia/client-search@5.57.0)(postcss@8.5.28)(search-insights@2.17.3))(vue@3.5.42)
       vitepress-sidebar:
         specifier: ^1.31.1
-        version: 1.40.0
+        version: 1.41.0
       yaml:
         specifier: ^2.7.0
         version: 2.9.1
@@ -1228,9 +1228,9 @@ packages:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
     engines: {node: '>=6'}
 
-  qsu@1.18.0:
-    resolution: {integrity: sha512-YMfqHAbfQzyJueKDW0E+khjn4HrRxfTLSYZ7/U1kaywn3YQDyUUNvCFnZ/SyfPypvRVA6jpx3Dm5wIi8T0rN7g==}
-    engines: {node: '>=18.0.0'}
+  qsu@1.100.0:
+    resolution: {integrity: sha512-esVtSwI4AetasN5wl6olIoNGNkK26+5lN769d5JCiCYxRGFEEgjV1zGvrU/4uImz9iVNQCrIxmy9nQh5KhZ8dA==}
+    engines: {node: '>=20.0.0'}
 
   range-parser@1.2.0:
     resolution: {integrity: sha512-kA5WQoNVo4t9lNx2kQNFCxKeBl5IbbSNBl1M/tLkw9WCn+hxNBAW5Qh8gdhs63CJnhjJ2zQWFoqPJP2sK1AV5A==}
@@ -1439,8 +1439,8 @@ packages:
       vitepress: ^1.0.0 || ^2.0.0-alpha.17
       vue: ^3.5.0
 
-  vitepress-sidebar@1.40.0:
-    resolution: {integrity: sha512-HwcZHixwwnLSbcDAbh+TRISX0zNerzL4UUpVlIEjbQleae095lfOQEFtB0Jkbxajy2yUiluH+TgLTLVMOj7+Tw==}
+  vitepress-sidebar@1.41.0:
+    resolution: {integrity: sha512-nL+jWlSgmn0Ssg8/PBcZmwbJ2vBFFg3nur+pX1qWihuP/ihTCI12Z/U2cFG54e/jTsWAGLm0KVfaid0NpA/jsQ==}
     engines: {node: '>=20.0.0'}
 
   vitepress@1.6.4:
@@ -2415,7 +2415,7 @@ snapshots:
 
   punycode.js@2.3.1: {}
 
-  qsu@1.18.0: {}
+  qsu@1.100.0: {}
 
   range-parser@1.2.0: {}
 
@@ -2647,11 +2647,11 @@ snapshots:
       vitepress: 1.6.4(@algolia/client-search@5.57.0)(postcss@8.5.28)(search-insights@2.17.3)
       vue: 3.5.42
 
-  vitepress-sidebar@1.40.0:
+  vitepress-sidebar@1.41.0:
     dependencies:
       glob: 13.0.6
       gray-matter: 4.0.3
-      qsu: 1.18.0
+      qsu: 1.100.0
 
   vitepress@1.6.4(@algolia/client-search@5.57.0)(postcss@8.5.28)(search-insights@2.17.3):
     dependencies:
