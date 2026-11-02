@@ -41,7 +41,6 @@
     "admin.channel_google",
     "admin.channel_microsoft365",
     "admin.channel_microsoft_graph",
-    "admin.channel_twitter",
     "admin.channel_facebook",
     "admin.channel_telegram",
     "admin.channel_whatsapp",
