@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-27 09:12+0000\n"
+"PO-Revision-Date: 2026-11-02 12:47+0000\n"
 "Last-Translator: Mixer <mixer@mixercz.cz>\n"
 "Language-Team: Czech <https://translations.zammad.org/projects/"
 "documentations/zammad-org/cs/>\n"
@@ -3230,14 +3230,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:470
-#, fuzzy
-#| msgid ""
-#| "If activated, simply open a ticket and choose the right content sidebar "
-#| "tab with the respective icon (see GitLab example in screenshot above). "
-#| "Click the button to link to an issue by entering the URL of it or select "
-#| "the item from a select field (i-doit). Afterwards, you can see the linked "
-#| "item with additional metadata. By clicking on the linked item, you are "
-#| "redirected to it in the respective system."
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon. An empty panel shows the `Link issue` button. Once "
@@ -3246,32 +3238,29 @@ msgid ""
 "or select the item from a select field (i-doit)."
 msgstr ""
 "Pokud je funkce zapnutá, jednoduše otevřete tiket a zvolte příslušnou kartu "
-"postranního panelu obsahu s odpovídající ikonou (viz příklad GitLabu na "
-"snímku obrazovky výše). Klikněte na tlačítko a propojte issue zadáním jeho "
-"URL, nebo vyberte položku z výběrového pole (i-doit). Poté uvidíte "
-"propojenou položku s dalšími metadaty. Kliknutím na propojenou položku "
-"přejdete na ni v příslušném systému."
+"postranního panelu obsahu s odpovídající ikonou. Prázdný panel zobrazuje "
+"tlačítko `Propojit problém`. Jakmile je problém propojen, tlačítko zmizí a "
+"**Propojit problém** se přesune do nabídky akcí v záhlaví panelu. Problém "
+"propojíte zadáním jeho URL, případně vyberte položku z výběrového pole (i-"
+"doit)."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:472
 msgid "The screenshot shows a linked issue in the GitLab content sidebar."
 msgstr ""
+"Snímek obrazovky zobrazuje propojený problém v postranním panelu obsahu "
+"GitLab."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:474
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows GitLab content sidebar with \"Link Issue\" button](/"
-#| "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
-#| "content-sidebar.png)"
 msgid ""
 "![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-"
 "issue.png)"
 msgstr ""
-"![Snímek obrazovky zobrazující postranní panel obsahu GitLab s tlačítkem "
-"\"Propojit problém\"](/screenshots/cypress/documentation/use/advanced-"
-"features.cy.js/gitlab-content-sidebar.png)"
+"![Snímek obrazovky zobrazující postranní panel obsahu GitLab s propojeným "
+"problémem](/screenshots/cypress/documentation/use/advanced-features.cy.js/"
+"gitlab-sidebar-linked-issue.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:480
@@ -3285,6 +3274,15 @@ msgid ""
 "Nothing is written back to the tracker. By clicking on the linked item, you "
 "are redirected to it in the respective system."
 msgstr ""
+"Propojený problém zobrazuje svůj stav, číslo a název a také **Milník**, "
+"**Přiřazené osoby** a **Štítky**. Problémy z GitHubu zobrazují také **Typ**, "
+"pokud je nastaven; pole se zobrazí jen tehdy, pokud ho problém má. Odznak na "
+"kartě postranního panelu počítá všechny propojené problémy, otevřené i "
+"uzavřené. Zammad u tiketu ukládá pouze URL problému a vše ostatní načítá z "
+"GitHubu nebo GitLabu při každém otevření panelu, takže při změně problému se "
+"neodesílá žádné oznámení. Do systému pro sledování problémů se nic "
+"nezapisuje zpět. Kliknutím na propojenou položku přejdete na ni v příslušném "
+"systému."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:485
@@ -3295,6 +3293,12 @@ msgid ""
 "can be linked, no pull or merge requests. If the panel shows a loading error "
 "instead of the linked issues, ask your administrator to check the token."
 msgstr ""
+"Propojení selže s chybovou zprávou, pokud je problém s tiketem už propojený "
+"nebo pokud URL nelze rozpoznat – obvykle proto, že problém neexistuje nebo "
+"API token nemá oprávnění číst jeho repozitář či projekt. Propojit lze pouze "
+"problémy, ne pull requesty ani merge requesty. Pokud panel místo propojených "
+"problémů zobrazí chybu načítání, požádejte administrátora, aby zkontroloval "
+"token."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:486
@@ -25346,10 +25350,8 @@ msgstr "Šablony kontrolních seznamů"
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
 #: src/en/reference/rest-api/checklist.md:180
-#, fuzzy
-#| msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgid "Required permission: `admin.checklist` or `ticket.agent`"
-msgstr "Požadované oprávnění: `admin.checklists` nebo `ticket.agent`"
+msgstr "Požadované oprávnění: `admin.checklist` nebo `ticket.agent`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:170
@@ -25392,10 +25394,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:193
 #: src/en/reference/rest-api/checklist.md:214
 #: src/en/reference/rest-api/checklist.md:236
-#, fuzzy
-#| msgid "Required permission: `admin.checklists`"
 msgid "Required permission: `admin.checklist`"
-msgstr "Požadované oprávnění: `admin.checklists`"
+msgstr "Požadované oprávnění: `admin.checklist`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:195
@@ -28958,6 +28958,10 @@ msgid ""
 "`read` access to the group of the ticket, `full` access also qualifies.\n"
 "Otherwise the request fails with HTTP status 403.\n"
 msgstr ""
+"Zmínění jiných uživatelů vyžaduje oprávnění `ticket.agent` a alespoň "
+"přístup\n"
+"`read` ke skupině tiketu, vyhovuje i přístup `full`.\n"
+"Jinak požadavek selže se stavovým kódem HTTP 403.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/mentions.md:17
@@ -28966,6 +28970,8 @@ msgid ""
 "Required permission: `ticket.agent` and at least `read` access to the group "
 "of the ticket, `full` access also qualifies"
 msgstr ""
+"Požadované oprávnění: `ticket.agent` a alespoň přístup `read` ke skupině "
+"tiketu, vyhovuje i přístup `full`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/mentions.md:19
@@ -31284,6 +31290,20 @@ msgid ""
 "message \"You have insufficient permissions to mention other users.\"\n"
 "\n"
 msgstr ""
+"**Okamžité přidání sledování pomocí zmínek**\n"
+"\n"
+"Přidejte do obsahu tiketu atribut `mentions` s polem ID uživatelů, kteří "
+"budou tiket sledovat hned\n"
+"při jeho vytvoření.\n"
+"\n"
+"Např.: `\"mentions\": [1, 5, 7, 8],`\n"
+"\n"
+"Zmínění jiných uživatelů vyžaduje oprávnění `ticket.agent` a alespoň přístup "
+"`read` ke skupině\n"
+"tiketu, vyhovuje i přístup `full`. Pouze s přístupem `create` požadavek "
+"selže se stavovým kódem HTTP 403\n"
+"a zprávou \"You have insufficient permissions to mention other users.\"\n"
+"\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/ticket.md:89

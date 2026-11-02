@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-29 14:42+0000\n"
+"PO-Revision-Date: 2026-11-02 12:47+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: German <https://translations.zammad.org/projects/"
 "documentations/zammad-org/de/>\n"
@@ -3332,14 +3332,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:470
-#, fuzzy
-#| msgid ""
-#| "If activated, simply open a ticket and choose the right content sidebar "
-#| "tab with the respective icon (see GitLab example in screenshot above). "
-#| "Click the button to link to an issue by entering the URL of it or select "
-#| "the item from a select field (i-doit). Afterwards, you can see the linked "
-#| "item with additional metadata. By clicking on the linked item, you are "
-#| "redirected to it in the respective system."
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon. An empty panel shows the `Link issue` button. Once "
@@ -3347,34 +3339,28 @@ msgid ""
 "action menu in the panel header. Link to an issue by entering the URL of it "
 "or select the item from a select field (i-doit)."
 msgstr ""
-"Falls aktiviert, öffnen Sie einfach ein Ticket und wählen Sie den rechten "
-"Seitenleisten-Tab mit dem entsprechenden Symbol (siehe GitLab-Beispiel im "
-"Screenshot oben). Klicken Sie auf die Schaltfläche, um einen Link zu einem "
-"Issue zu erstellen und geben Sie die URL ein oder wählen das Element aus "
-"einem Auswahlfeld aus (i-doit). Anschließend sehen Sie das verlinkte Element "
-"mit zusätzlichen Metadaten. Wenn Sie auf das verlinkte Element klicken, "
-"werden Sie zu diesem im jeweiligen System weitergeleitet."
+"Wenn aktiviert, öffnen Sie einfach ein Ticket und wählen Sie den passenden "
+"Seitenleisten-Tab mit dem jeweiligen Symbol aus. Ein leerer Bereich zeigt "
+"die `Issue verknüpfen` Schaltfläche. Sobald ein Issue verknüpft ist, "
+"verschwindet die Schaltfläche und **Issue verknüpfen** ist im Aktionsmenü "
+"Seitenleisten-Titel verfügbar. Verlinken Sie auf ein Issue, indem Sie dessen "
+"URL einfügen oder das Element aus einem Auswahlliste (i-doit) auswählen."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:472
 msgid "The screenshot shows a linked issue in the GitLab content sidebar."
-msgstr ""
+msgstr "Der Screenshot zeigt ein verknüpftes Issue in der GitLab-Seitenleiste."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:474
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows GitLab content sidebar with \"Link Issue\" button](/"
-#| "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
-#| "content-sidebar.png)"
 msgid ""
 "![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-"
 "issue.png)"
 msgstr ""
-"![Screenshot zeigt GitLab Seitenleiste mit \"Issue verknüpfen\" Schaltfläche]"
-"(/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
-"content-sidebar.png)"
+"![Screenshot zeigt die GitLab-Seitenleiste mit einem verlinkten Issue](/"
+"screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-"
+"linked-issue.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:480
@@ -3388,6 +3374,17 @@ msgid ""
 "Nothing is written back to the tracker. By clicking on the linked item, you "
 "are redirected to it in the respective system."
 msgstr ""
+"Das verknüpfte Issue zeigt seinen Status, seine Nummer und seinen Titel, "
+"sowie **Milestone**, **Assignees** und **Labels**. GitHub-Issues zeigen "
+"ebenfalls einen **Type**, sofern dieser gesetzt ist, und Felder erscheinen "
+"nur, wenn das Issue solche gesetzt hat. Das Abzeichen auf dem Seitenleisten-"
+"Tab zählt alle verknüpften Tickets, offene und geschlossene. Zammad "
+"speichert nur die Issue-URL für das Ticket und liest die verknüpften "
+"Informationen jedes Mal aus, wenn der Bereich geöffnet wird. Es gibt keine "
+"Benachrichtigung in Zammad, wenn sich was an einem verknüpften Issue ändert. "
+"Außerdem wird nichts an den externe System zurückgeschrieben bzw. "
+"aktualisiert. Durch Klicken auf das verknüpfte Element werden Sie zu öffnet "
+"sich dies im jeweiligen System."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:485
@@ -3398,6 +3395,13 @@ msgid ""
 "can be linked, no pull or merge requests. If the panel shows a loading error "
 "instead of the linked issues, ask your administrator to check the token."
 msgstr ""
+"Die Verknüpfung schlägt mit einer Fehlermeldung fehl, wenn das Issue bereits "
+"mit dem Ticket verknüpft ist oder wenn die URL nicht aufgelöst werden kann. "
+"In der Regel tritt letzteres auf, wenn das Issue nicht existiert oder das "
+"API-Token keinen Zugriff auf das entsprechende Repository oder Projekt hat. "
+"Es können nur Issues verknüpft werden, keine Pull- oder Merge-Requests. "
+"Falls im Bereich anstelle der verknüpften Issues ein Ladefehler angezeigt "
+"wird, bitten Sie Ihren Administrator, das Token zu überprüfen."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:486
@@ -25940,10 +25944,8 @@ msgstr "Checklisten-Vorlagen"
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
 #: src/en/reference/rest-api/checklist.md:180
-#, fuzzy
-#| msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgid "Required permission: `admin.checklist` or `ticket.agent`"
-msgstr "Erforderliche Berechtigung: `admin.checklists` oder `ticket.agent`"
+msgstr "Erforderliche Berechtigung: `admin.checklist` oder `ticket.agent`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:170
@@ -25985,10 +25987,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:193
 #: src/en/reference/rest-api/checklist.md:214
 #: src/en/reference/rest-api/checklist.md:236
-#, fuzzy
-#| msgid "Required permission: `admin.checklists`"
 msgid "Required permission: `admin.checklist`"
-msgstr "Erforderliche Berechtigung: `admin.checklists`"
+msgstr "Erforderliche Berechtigung: `admin.checklist`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:195
@@ -29583,6 +29583,11 @@ msgid ""
 "`read` access to the group of the ticket, `full` access also qualifies.\n"
 "Otherwise the request fails with HTTP status 403.\n"
 msgstr ""
+"Um andere Benutzer zu erwähnen, benötigen Sie die Berechtigung "
+"`ticket.agent` sowie\n"
+"mindestens die `read` Berechtigung für Tickets der Gruppe. Die Berechtigung "
+"`full` ist ebenfalls zulässig.\n"
+"Andernfalls schlägt die Anfrage mit dem HTTP-Status 403 fehl.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/mentions.md:17
@@ -29591,6 +29596,9 @@ msgid ""
 "Required permission: `ticket.agent` and at least `read` access to the group "
 "of the ticket, `full` access also qualifies"
 msgstr ""
+"Erforderliche Berechtigungen: `ticket.agent` sowie mindestens `read` "
+"Berechtigung auf die Tickets der Gruppe. Die Berechtigung `full` ist "
+"ebenfalls zulässig"
 
 #. type: Plain text
 #: src/en/reference/rest-api/mentions.md:19
@@ -31912,6 +31920,22 @@ msgid ""
 "message \"You have insufficient permissions to mention other users.\"\n"
 "\n"
 msgstr ""
+"**Fügen Sie das Abonnement für Erwähnungen sofort hinzu:**\n"
+"\n"
+"Fügen Sie das `mentions` Attribut zu Ihrer Ticket-Nutzlast hinzu und geben "
+"Sie ein Array mit Benutzer-IDs an, um für diese direkt bei der\n"
+"Ticket-Erstellung Benachrichtigungen zu abonnieren.\n"
+"\n"
+"Beispiel: `\"mentions\": [1, 5, 7, 8],`\n"
+"\n"
+"Um andere Benutzer zu erwähnen, benötigen Sie die Berechtigung "
+"`ticket.agent` sowie mindestens die Berechtigung `read` für die Tickets der\n"
+"Gruppe. Die Berechtigung `full` ist ebenfalls ausreichend. Mit der "
+"Berechtigung `create` allein schlägt die Anfrage mit dem HTTP-Status 403 und "
+"der\n"
+"Meldung \"Sie verfügen nicht über ausreichende Berechtigungen, um andere "
+"Benutzer zu erwähnen.\" fehl.\n"
+"\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/ticket.md:89

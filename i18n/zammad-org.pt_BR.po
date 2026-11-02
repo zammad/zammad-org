@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-20 20:12+0000\n"
+"PO-Revision-Date: 2026-10-31 19:12+0000\n"
 "Last-Translator: Igor Costa <igor_sfx@yahoo.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.zammad.org/projects/"
 "documentations/zammad-org/pt_BR/>\n"
@@ -3289,14 +3289,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:470
-#, fuzzy
-#| msgid ""
-#| "If activated, simply open a ticket and choose the right content sidebar "
-#| "tab with the respective icon (see GitLab example in screenshot above). "
-#| "Click the button to link to an issue by entering the URL of it or select "
-#| "the item from a select field (i-doit). Afterwards, you can see the linked "
-#| "item with additional metadata. By clicking on the linked item, you are "
-#| "redirected to it in the respective system."
 msgid ""
 "If activated, simply open a ticket and choose the right content sidebar tab "
 "with the respective icon. An empty panel shows the `Link issue` button. Once "
@@ -3305,32 +3297,29 @@ msgid ""
 "or select the item from a select field (i-doit)."
 msgstr ""
 "Se ativado, basta abrir um ticket e escolher a aba de conteúdo da barra "
-"lateral correta com o ícone correspondente (veja o exemplo do GitLab na "
-"captura de tela acima). Clique no botão para vincular a uma issue informando "
-"a URL dela ou selecionando o item em um campo de seleção (i-doit). Depois, "
-"você pode ver o item vinculado com metadados adicionais. Ao clicar no item "
-"vinculado, você é redirecionado a ele no respectivo sistema."
+"lateral correta com o ícone correspondente. Um painel vazio mostra o botão "
+"`Link issue`. Depois que uma issue é vinculada, o botão desaparece e **Link "
+"issue** passa para o menu de ações no cabeçalho do painel. Vincule a uma "
+"issue informando a URL dela ou selecione o item em um campo de seleção (i-"
+"doit)."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:472
 msgid "The screenshot shows a linked issue in the GitLab content sidebar."
 msgstr ""
+"A captura de tela mostra uma issue vinculada na barra lateral de conteúdo do "
+"GitLab."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:474
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows GitLab content sidebar with \"Link Issue\" button](/"
-#| "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
-#| "content-sidebar.png)"
 msgid ""
 "![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-"
 "issue.png)"
 msgstr ""
-"![Captura de tela mostra a barra lateral de conteúdo do GitLab com o botão "
-"\"Link Issue\"](/screenshots/cypress/documentation/use/advanced-"
-"features.cy.js/gitlab-content-sidebar.png)"
+"![Captura de tela mostra a barra lateral de conteúdo do GitLab com uma issue "
+"vinculada](/screenshots/cypress/documentation/use/advanced-features.cy.js/"
+"gitlab-sidebar-linked-issue.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:480
@@ -3344,6 +3333,15 @@ msgid ""
 "Nothing is written back to the tracker. By clicking on the linked item, you "
 "are redirected to it in the respective system."
 msgstr ""
+"A issue vinculada mostra o estado, o número e o título, além de "
+"**Milestone**, **Assignees** e **Labels**. As issues do GitHub também "
+"mostram **Type** quando definido, e um campo só aparece quando a issue o "
+"tem. O selo na aba da barra lateral conta todas as issues vinculadas, "
+"abertas e fechadas. O Zammad armazena apenas a URL da issue no ticket e lê "
+"todo o resto do GitHub ou do GitLab cada vez que o painel é aberto, então "
+"nenhuma notificação é enviada quando uma issue muda. Nada é gravado de volta "
+"no rastreador. Ao clicar no item vinculado, você é redirecionado a ele no "
+"respectivo sistema."
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:485
@@ -3354,6 +3352,12 @@ msgid ""
 "can be linked, no pull or merge requests. If the panel shows a loading error "
 "instead of the linked issues, ask your administrator to check the token."
 msgstr ""
+"A vinculação falha com uma mensagem de erro quando a issue já está vinculada "
+"ao ticket ou quando a URL não pode ser resolvida, geralmente porque a issue "
+"não existe ou porque o token de API não consegue ler o repositório ou "
+"projeto dela. Apenas issues podem ser vinculadas, não pull requests nem "
+"merge requests. Se o painel mostrar um erro de carregamento em vez das "
+"issues vinculadas, peça ao seu administrador que verifique o token."
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:486
@@ -25658,10 +25662,8 @@ msgstr "Modelos de checklist"
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:168
 #: src/en/reference/rest-api/checklist.md:180
-#, fuzzy
-#| msgid "Required permission: `admin.checklists` or `ticket.agent`"
 msgid "Required permission: `admin.checklist` or `ticket.agent`"
-msgstr "Permissão necessária: `admin.checklists` ou `ticket.agent`"
+msgstr "Permissão necessária: `admin.checklist` ou `ticket.agent`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:170
@@ -25704,10 +25706,8 @@ msgstr ""
 #: src/en/reference/rest-api/checklist.md:193
 #: src/en/reference/rest-api/checklist.md:214
 #: src/en/reference/rest-api/checklist.md:236
-#, fuzzy
-#| msgid "Required permission: `admin.checklists`"
 msgid "Required permission: `admin.checklist`"
-msgstr "Permissão necessária: `admin.checklists`"
+msgstr "Permissão necessária: `admin.checklist`"
 
 #. type: Plain text
 #: src/en/reference/rest-api/checklist.md:195
@@ -29289,6 +29289,10 @@ msgid ""
 "`read` access to the group of the ticket, `full` access also qualifies.\n"
 "Otherwise the request fails with HTTP status 403.\n"
 msgstr ""
+"Mencionar outros usuários exige a permissão `ticket.agent` e pelo menos "
+"acesso\n"
+"`read` ao grupo do ticket; acesso `full` também serve.\n"
+"Caso contrário, a requisição falha com o status HTTP 403.\n"
 
 #. type: Plain text
 #: src/en/reference/rest-api/mentions.md:17
@@ -29297,6 +29301,8 @@ msgid ""
 "Required permission: `ticket.agent` and at least `read` access to the group "
 "of the ticket, `full` access also qualifies"
 msgstr ""
+"Permissão necessária: `ticket.agent` e pelo menos acesso `read` ao grupo do "
+"ticket; acesso `full` também serve"
 
 #. type: Plain text
 #: src/en/reference/rest-api/mentions.md:19
@@ -31619,6 +31625,20 @@ msgid ""
 "message \"You have insufficient permissions to mention other users.\"\n"
 "\n"
 msgstr ""
+"**Adicione a inscrição por menção imediatamente**\n"
+"\n"
+"Adicione o atributo `mentions` ao payload do seu ticket e forneça um array "
+"de IDs de usuário para inscrevê-los diretamente durante\n"
+"a criação do ticket.\n"
+"\n"
+"Ex.: `\"mentions\": [1, 5, 7, 8],`\n"
+"\n"
+"Mencionar outros usuários exige a permissão `ticket.agent` e pelo menos "
+"acesso `read` ao grupo do\n"
+"ticket; acesso `full` também serve. Com apenas acesso `create`, a requisição "
+"falha com o status HTTP 403 e a\n"
+"mensagem \"You have insufficient permissions to mention other users.\"\n"
+"\n"
 
 #. type: Fenced div block (details|tabs key:reqres)
 #: src/en/reference/rest-api/ticket.md:89
