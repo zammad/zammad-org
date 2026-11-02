@@ -22,7 +22,11 @@ describe('search screenshots', () => {
   it('detailed search', () => {
     cy.visit('desktop/search/supp?entity=Ticket&filter.0.name=ticket.state_id&filter.0.operator=is&filter.0.value[0]=5&filter.0.value[1]=1&filter.0.value[2]=2&filter.1.name=ticket.last_contact_agent_at&filter.1.operator=within+last+(relative)&filter.1.value=7&filter.1.range=day')
     cy.get('label').contains('State').should('be.visible')
-    cy.get('[aria-label="Laptop not working [Order 931529477]"]', { timeout: 10000 }).should('be.visible')
+    // Since Zammad #6460 the title cell renders through TicketPopoverWithTrigger,
+    // which carries no title aria-label any more. Anchor on the title column.
+    cy.contains('td[headers="title-header"]', 'Laptop not working [Order 931529477]', {
+      timeout: 60000,
+    }).should('be.visible')
     cy.get('[aria-label="Breadcrumb navigation"]').clip({ padding: 10 }).then((TopClip) => {
       cy.get('table').clip({ padding: 10 }).then((BottomClip) => {
         cy.mergeClips(TopClip, BottomClip).then((clip) => {
