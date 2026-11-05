@@ -75,6 +75,9 @@ to `.env`. That way it will be picked up by Docker Compose automatically and not
   Note that in Docker context, Zammad may see the network   gateway IP address instead of the actual proxy server
   IP address, if it is placed in another network.
 
+  The same list decides which address Zammad treats as the client's, and single sign-on checks that address against
+  the **Trusted SSO Proxy IPs** setting, see [Single sign-on with Kerberos](/en/tutorials/sso-kerberos).
+
 `ZAMMAD_MANAGE_SESSIONS_JOBS_WORKERS` <Badge type="tip" text="0" />
 : Allows to fork the job that dispatches the session jobs to their workers to a child process. Allowed value to enable
   it: `1`.

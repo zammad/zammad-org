@@ -27,14 +27,24 @@ login, you can use alternatives like GitHub, Google, Facebook and more.
 
 ## How does it work?
 
-Once enabled, single sign-on activates an endpoint at
-`https://your.zammad.host/auth/sso`. When the Zammad server receives a
-GET request at this endpoint with a valid username in **any one of the
-following** entities, it creates a new session for that user:
+Zammad does not speak Kerberos itself. It provides the endpoint `https://your.zammad.host/auth/sso` and relies on
+the web server in front of it to authenticate the user before a request reaches that endpoint. The web server passes
+the user name along, Zammad looks up the user by their login and starts a session.
 
-- an `X-Forwarded-User` request header
-- a `REMOTE_USER` web server environment variable
-- an `HTTP_REMOTE_USER` web server environment variable
+The user name can arrive in one of three forms, which Zammad checks in this order:
+
+- the `REMOTE_USER` variable of the web server, only when the web server runs Zammad in its own process
+- the `Remote-User` request header, which Zammad sees as `HTTP_REMOTE_USER`
+- the `X-Forwarded-User` request header
+
+Which one applies depends on your installation:
+
+Package installation
+: Apache replaces Nginx on the Zammad host, authenticates `/auth/sso` and sets `X-Forwarded-User`.
+
+Docker stack
+: The stack's own Nginx stays in place. An additional container in front of `/auth/sso` authenticates, sets
+  `X-Forwarded-User` and forwards the request to Zammad's application server directly.
 
 ::: info
 **Wait. SSO allows you to sign in with only a username?**
@@ -75,9 +85,10 @@ You will need:
 - a Microsoft Active Directory environment with
   - root access
   - support for AES 256-bit encryption
-- a Zammad host with
-  - root access
-  - a fully-qualified domain name (FQDN)
+- a Zammad installation with a fully-qualified domain name (FQDN), either
+  - a package installation with root access on the host, or
+  - the Docker stack behind a reverse proxy that terminates TLS and routes by path, such as the
+    [Nginx Proxy Manager scenario](/en/reference/docker-compose-scenarios#add-nginx-proxy-manager)
 - some familiarity with system administration (e.g. Apache configuration)
 
 For best results, set up the LDAP integration to make sure
@@ -108,6 +119,9 @@ privileges are not required; a normal user account will do.
 Reset service account password after enabling the "This account supports
 Kerberos AES 256 bit encryption".
 
+Without this option, the keytab carries only RC4 keys, which current Kerberos libraries reject. The Docker SSO
+container is one of them.
+
 ### 1c. Register a SPN for Zammad
 
 Replace the following placeholders in the commands below:
@@ -137,8 +151,10 @@ ktpass /princ HTTP/<zammad-host>@<DOMAIN> \
 
 ### 1d. Note the secret key and version number
 
-The output of the command above contains important data for Step 2e
-below:
+This step is for the package installation only. The Docker stack uses the `zammad.keytab` file written by the command
+above as it is.
+
+The output of the command above contains important data for Step 2f below:
 
 ```sh
 Using legacy password setting method
@@ -158,7 +174,13 @@ On the last line, take note of:
 - the secret key in parentheses at the end (**0x5ee827...**)
 - the secret key version number preceded by `vno` (**3**)
 
-## Step 2: Remove NGINX, set up Apache + Kerberos
+## Step 2: Set up the Kerberos endpoint
+
+Next, requests to `/auth/sso` must pass a web server that performs the Kerberos authentication before they reach
+Zammad. How you set this up depends on your installation: follow [Package installation](#package-installation) or
+[Docker installation](#docker-installation).
+
+### Package installation
 
 Next, the Zammad host must be configured to support Kerberos (and to
 accept auth credentials provided by the Active Directory server).
@@ -171,7 +193,7 @@ Apache, which offers Kerberos support through a plug-in module instead.
 All commands in this section must be run as root (or with `sudo`).
 :::
 
-### 2a. Turn off NGINX
+#### 2a. Turn off NGINX
 
 ::: warning
 This will take your Zammad instance **offline** until Apache is fully
@@ -217,14 +239,14 @@ sudo systemctl start nginx
 
 :::
 
-### 2b. Pre-configure Apache
+#### 2b. Pre-configure Apache
 
 This documentation expects an already working Apache configuration.
 You should have a look at the
 [webserver configuration guide](/en/tutorials/webserver-config) before
 continuing.
 
-### 2c. Install further Apache dependencies
+#### 2c. Install further Apache dependencies
 
 ::: tabs
 
@@ -256,7 +278,7 @@ sudo zypper install krb5-client apache2-mod_auth_kerb
 
 :::
 
-### 2d. Enable Apache modules
+#### 2d. Enable Apache modules
 
 SSO requires modules that are not enabled by default. By default you can
 use `a2enmod` to do so.
@@ -297,7 +319,7 @@ LoadModule rewrite_module modules/mod_rewrite.so
 
 :::
 
-### 2e. Configure Kerberos
+#### 2e. Configure Kerberos
 
 Kerberos realm configuration is how you tell the Zammad server how to
 reach the _domain controller_ (Active Directory server).
@@ -342,7 +364,7 @@ Replace the following placeholders in the sample config below:
          <domain> = <DOMAIN>
 ```
 
-### 2f. Generate keytab
+#### 2f. Generate keytab
 
 Apache needs a Kerberos _keytab_ (key table) to manage its shared
 secrets with the domain controller.
@@ -354,8 +376,8 @@ Replace the following placeholders in the commands below:
 - `<secret-key>`: Secret key (**omit the leading** `0x`)
 - `<vno>`: Secret key version number
 
-The secret key and version number were found in `sso-register-spn` (Step 1d)
-above.
+The secret key and version number were found in
+[Step 1: Configure active directory](#step-1-configure-active-directory) above.
 
 Enter ktutil:
 
@@ -426,7 +448,7 @@ sudo chmod 640 /etc/httpd/zammad.keytab
 
 :::
 
-### 2g. Configure Apache
+#### 2g. Configure Apache
 
 Add the following directive to the end of the virtual host configuration
 file to create your Kerberos SSO endpoint at `/auth/sso`:
@@ -475,10 +497,13 @@ The configuration for CentOS and OpenSUSE below contains two
    KrbVerifyKDC On
    KrbMethodK5Passwd On
    KrbAuthRealms <DOMAIN>
-   KrbLocalUserMapping on                 # strips @REALM suffix from REMOTE_USER variable
+   # strips @REALM suffix from REMOTE_USER variable
+   KrbLocalUserMapping on
    KrbServiceName HTTP/<zammad-host>@<DOMAIN>
-   Krb5KeyTab /etc/apache2/zammad.keytab  # Ubuntu, Debian, & openSUSE
-   Krb5KeyTab /etc/httpd/zammad.keytab    # CentOS
+   # Ubuntu, Debian, & openSUSE
+   Krb5KeyTab /etc/apache2/zammad.keytab
+   # CentOS
+   Krb5KeyTab /etc/httpd/zammad.keytab
    require valid-user
 
    RewriteEngine On
@@ -490,16 +515,314 @@ The configuration for CentOS and OpenSUSE below contains two
 
 :::
 
-### 2g. Restart Apache to apply changes
+#### 2h. Restart Apache to apply changes
 
 ```sh
 sudo systemctl restart apache2
 ```
 
+### Docker installation
+
+The Docker stack runs its web server inside the `zammad-nginx` image, so you cannot swap it for Apache as in the
+package installation. Instead, a small additional container does the Kerberos part: the reverse proxy in front of the
+stack sends only `/auth/sso` through it, everything else goes straight to `zammad-nginx` as before. Zammad and the
+stack's compose files stay as they are. The SSO container is part of your infrastructure, like the reverse proxy that
+terminates TLS.
+
+```text
+browser ──► reverse proxy (TLS)
+              ├─ /auth/sso ──► zammad-sso ──(Kerberos ok, sets X-Forwarded-User)──► zammad-railsserver
+              └─ everything else ──────────────────────────────────────────────► zammad-nginx ──► zammad-railsserver
+```
+
+The SSO container forwards `/auth/sso` to Zammad's application server directly and passes the user name in the
+`X-Forwarded-User` header, as the package installation does. One hop fewer, and `zammad-nginx` is not involved in the
+login.
+
+::: info
+**Your reverse proxy can do Kerberos itself?**
+
+Then you don't need the SSO container. Configure the proxy to authenticate `/auth/sso` via Negotiate, put the user
+name without the realm into the `X-Forwarded-User` header, drop `Remote-User` and `X-Forwarded-User` sent by clients
+on every path, send `/auth/sso` to `zammad-railsserver:3000`, pass all other requests unchanged, and continue with
+[Trusted proxies](#trusted-proxies).
+:::
+
+You need:
+
+- the stack behind a reverse proxy that routes by path. This guide uses the
+  [Nginx Proxy Manager scenario](/en/reference/docker-compose-scenarios#add-nginx-proxy-manager). Any proxy with
+  path-based routing works the same way. If your proxy runs in a separate compose project, use the
+  [external network scenario](/en/reference/docker-compose-scenarios#add-external-docker-network-to-nginx) and add that
+  network to the `zammad-sso` service in the override file as well, so that the proxy can reach it.
+- the `zammad.keytab` file written by `ktpass` in [1c. Register a SPN for Zammad](/en/tutorials/sso-kerberos#_1c-register-a-spn-for-zammad),
+  copied to the Docker host. The `ktutil` step of the package installation is not needed.
+
+#### Files
+
+The SSO container consists of the following files next to the stack's `docker-compose.yml`:
+
+```text
+docker-compose.override.yml   adds the SSO container to the stack
+zammad-sso/                   build context of the SSO image
+  Dockerfile
+  apache2-foreground
+  zammad-sso.conf
+local/zammad-sso/             files mounted into the container
+  krb5.conf
+  zammad.keytab
+```
+
+Keep the keytab out of the build context: Docker reads every file in `zammad-sso/` when it builds the image, and a
+keytab that only the container's user may read makes the build fail. The container runs as `www-data` with user ID
+33, so on a Linux host:
+
+```sh
+sudo chown 33 local/zammad-sso/zammad.keytab
+```
+
+```sh
+sudo chmod 0400 local/zammad-sso/zammad.keytab
+```
+
+`zammad-sso/Dockerfile` builds Apache with `mod_auth_gssapi` from the Debian packages and runs it unprivileged:
+
+```dockerfile
+FROM debian:trixie-slim
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends apache2 libapache2-mod-auth-gssapi krb5-user curl && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN a2enmod auth_gssapi proxy proxy_http headers rewrite && \
+    a2dissite 000-default
+
+COPY zammad-sso.conf /etc/apache2/sites-available/zammad-sso.conf
+RUN a2ensite zammad-sso
+
+# Debian's envvars assigns the APACHE_* variables unconditionally. Turn every
+# "export VAR=value" into ": ${VAR:=value}; export VAR", so that values from the
+# environment win, the same way the official php:apache image does it.
+RUN sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' /etc/apache2/envvars
+
+# Run unprivileged: listen on 8080, pid/lock/logs under /tmp.
+ENV APACHE_RUN_DIR=/tmp/apache2 \
+    APACHE_PID_FILE=/tmp/apache2/apache2.pid \
+    APACHE_LOCK_DIR=/tmp/apache2 \
+    APACHE_LOG_DIR=/tmp/apache2
+
+RUN echo 'Listen 8080' > /etc/apache2/ports.conf && \
+    { echo 'ServerName zammad-sso'; \
+      echo 'ErrorLog /proc/self/fd/2'; \
+      echo 'CustomLog /proc/self/fd/1 combined'; } > /etc/apache2/conf-available/zz-docker.conf && \
+    a2enconf zz-docker
+
+COPY apache2-foreground /usr/local/bin/apache2-foreground
+
+USER www-data
+EXPOSE 8080
+
+# Healthy = the keytab is readable and apache answers /auth/sso with the Negotiate
+# challenge (401). A keytab with a wrong key is not detected here: apache still
+# answers 401 and logs a GSS ERROR for every sign-in attempt.
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s \
+  CMD klist -k /etc/apache2/zammad.keytab >/dev/null 2>&1 && \
+      [ "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/auth/sso)" = "401" ] || exit 1
+
+CMD ["apache2-foreground"]
+```
+
+`zammad-sso/apache2-foreground` starts Apache as the container's main process. Make it executable with `chmod +x`:
+
+```sh
+#!/bin/sh
+# Start apache directly instead of through apache2ctl, so that it runs as PID 1
+# and receives the container's signals. The run directory is created on every
+# start and a stale pid file from a previous run is removed.
+set -e
+. /etc/apache2/envvars
+mkdir -p "$APACHE_RUN_DIR" "$APACHE_LOCK_DIR" "$APACHE_LOG_DIR"
+rm -f "$APACHE_PID_FILE"
+exec apache2 -DFOREGROUND "$@"
+```
+
+`zammad-sso/zammad-sso.conf` authenticates `/auth/sso` and forwards it to the stack:
+
+```apache
+<VirtualHost *:8080>
+  <Location "/auth/sso">
+    AuthType GSSAPI
+    AuthName "Zammad SSO"
+    GssapiCredStore keytab:/etc/apache2/zammad.keytab
+    GssapiAllowedMech krb5
+    # strips @REALM
+    GssapiLocalName On
+    Require valid-user
+
+    # inbound client values never survive
+    RequestHeader unset Remote-User
+    RequestHeader unset X-Forwarded-User
+    RewriteEngine On
+    RewriteCond %{LA-U:REMOTE_USER} (.+)
+    RewriteRule . - [E=RU:%1,NS]
+    RequestHeader set X-Forwarded-User "%{RU}e" env=RU
+    # don't leak the Negotiate token downstream
+    RequestHeader unset Authorization
+
+    ProxyPreserveHost On
+    ProxyPass        http://zammad-railsserver:3000/auth/sso
+    ProxyPassReverse http://zammad-railsserver:3000/auth/sso
+  </Location>
+</VirtualHost>
+```
+
+Add the `zammad-sso` service to your `docker-compose.override.yml`. If the stack has no override file yet, create it
+from the shipped template, see
+[Customize the stack locally](/en/reference/docker-compose-scenarios#customize-the-stack-locally):
+
+```yaml
+---
+services:
+  zammad-sso:
+    build: ./zammad-sso
+    restart: ${RESTART:-always}
+    volumes:
+      - ./local/zammad-sso/krb5.conf:/etc/krb5.conf:ro
+      - ./local/zammad-sso/zammad.keytab:/etc/apache2/zammad.keytab:ro
+```
+
+`local/zammad-sso/krb5.conf` tells the container how to reach your domain controller. Replace the placeholders as
+described in [2e. Configure Kerberos](/en/tutorials/sso-kerberos#_2e-configure-kerberos):
+
+```text
+[libdefaults]
+    default_realm = <DOMAIN>
+    dns_lookup_realm = false
+    dns_lookup_kdc = false
+    rdns = false
+
+[realms]
+    <DOMAIN> = {
+        kdc = <domain-controller>
+        admin_server = <master-domain-controller>
+    }
+
+[domain_realm]
+    .<domain> = <DOMAIN>
+    <domain> = <DOMAIN>
+```
+
+Add the override file and the reverse proxy as trusted proxy to your `.env`:
+
+```text
+COMPOSE_FILE=docker-compose.yml:scenarios/add-nginx-proxy-manager.yml:docker-compose.override.yml
+ZAMMAD_FQDN=<zammad-host>
+ZAMMAD_HTTP_TYPE=https
+RAILS_TRUSTED_PROXIES=nginx-proxy-manager
+```
+
+Then build and start the stack:
+
+```sh
+docker compose up -d --build
+```
+
+The `zammad-sso` container reports `healthy` once the keytab is readable and Apache answers `/auth/sso` with the
+Kerberos challenge. If it stays unhealthy, the keytab is missing or not readable by user ID 33.
+
+#### Configure the reverse proxy
+
+In Nginx Proxy Manager:
+
+1. Create a proxy host for your Zammad FQDN with scheme `http`, forward host `zammad-nginx` and port `8080`. Enable
+   **Websockets Support** and set up the certificate on the **SSL** tab.
+2. Add a **Custom Location** for `/auth/sso` with scheme `http`, forward host `zammad-sso` and port `8080`.
+
+Do not rely on the **Advanced** field to strip headers: `proxy_set_header` lines entered there do not reach the
+generated locations and would only give a false sense of security. Client-sent headers are removed in the SSO
+container.
+
+With Traefik, the equivalent is a router that points at the SSO container, with a higher priority than the router for
+the rest of the stack and the rule:
+
+```text
+Host(`<zammad-host>`) && PathPrefix(`/auth/sso`)
+```
+
+#### Trusted proxies
+
+Zammad has to trust the reverse proxy, so that it takes the address of the user's browser as the client instead of a
+container address. That is what `RAILS_TRUSTED_PROXIES` in `.env` does. With another proxy, name that one instead,
+see [environment variables](/en/reference/environment-variables). The SSO container does not need to be listed:
+Zammad takes the address the reverse proxy forwarded and falls back to the sending container only when no untrusted
+forwarded address is left.
+
+The **Trusted SSO Proxy IPs** setting in [Step 3](#step-3-enable-sso-in-zammad) then holds the address ranges from
+which users may sign in via SSO, typically your intranet. A changed value applies after at most 15 seconds. Without
+the reverse proxy in `RAILS_TRUSTED_PROXIES`, Zammad takes a container's address as the client, and the setting would
+have to hold the stack's network range, which admits every container.
+
+::: warning
+The setting guards the way in through the reverse proxy only. Inside the stack's network, `zammad-railsserver`
+accepts an `X-Forwarded-User` header from any container, and a container can send the `X-Forwarded-For` header the
+check relies on along with it. Keep `zammad-railsserver` reachable only from the stack's own containers and the SSO
+container, and set the trusted IPs before you enable SSO.
+:::
+
+#### Portainer
+
+Without shell access to the Docker host, you can build and run the same container through the Portainer UI:
+
+1. Under **Images**, choose **Build a new image**, upload a tarball that contains the three files of `zammad-sso/` at
+   its top level (not the directory itself) and tag the image, e.g. `zammad-sso:local`. The image contains no keytab,
+   so it holds no secret.
+2. Under **Volumes**, choose **Add volume** and create `zammad-sso-secrets`.
+3. Put `zammad.keytab` and `krb5.conf` into the volume. Portainer Business has a volume browser with upload. In the
+   Community Edition, deploy a throwaway container (`alpine` with the command `sleep infinity`) that mounts the volume
+   at `/secrets`, paste the files through its console (for example via `base64 -d`), set owner `33` and mode `0400`
+   on the keytab, and remove the container again.
+4. Under **Stacks**, choose **Add stack** and deploy the SSO container with the web editor as a stack of its own that
+   joins the Zammad stack's network. Replace `<zammad-stack>` with the name of your Zammad stack in Portainer.
+
+   ```yaml
+   services:
+     zammad-sso:
+       image: zammad-sso:local
+       restart: always
+       volumes:
+         - type: volume
+           source: zammad-sso-secrets
+           target: /etc/krb5.conf
+           read_only: true
+           volume:
+             subpath: krb5.conf
+         - type: volume
+           source: zammad-sso-secrets
+           target: /etc/apache2/zammad.keytab
+           read_only: true
+           volume:
+             subpath: zammad.keytab
+       networks:
+         - zammad
+
+   networks:
+     zammad:
+       external: true
+       name: <zammad-stack>_default
+
+   volumes:
+     zammad-sso-secrets:
+       external: true
+   ```
+
+The reverse proxy is configured as above and has to be a trusted proxy of the Zammad stack, see
+[Trusted proxies](#trusted-proxies).
+
 ## Step 3: Enable SSO in Zammad
 
 Next, enable "Authentication via SSO" in Zammad's admin interface under
-_Settings > Security > Third-party Applications_
+_Settings > Security > Third-party Applications_. Make sure to configure the trusted SSO proxy IPs for production
+systems. For the Docker stack, [Trusted proxies](#trusted-proxies) explains which addresses belong there.
 
 ::: tip
 On older versions of Zammad, visit `https://your.zammad.host/auth/sso`
@@ -578,15 +901,15 @@ the LDAP Wiki has
 
 #### Failed to verify krb5 credentials: Key version is not available
 
-Did you use the exact **version number** (`vno`) provided by `ktpass`
-when `generating your keytab <sso-generate-keytab>`?
+Did you use the exact **version number** (`vno`) provided by `ktpass` when
+[generating your keytab](/en/tutorials/sso-kerberos#_2f-generate-keytab)?
 
 Try generating it again, just to be sure.
 
 #### Unspecified GSS failure. Minor code may provide more information (, no key table entry found for HTTP/FQDN@DOMAIN)
 
 Does the **service name** you provided to `setspn` exactly match the one
-you used when `generating your keytab <sso-generate-keytab>`?
+you used when [generating your keytab](/en/tutorials/sso-kerberos#_2f-generate-keytab)?
 
 Try generating it again, just to be sure.
 
@@ -625,3 +948,24 @@ Ensure your Active Directory supports the encryption method configured.
 If all above is correct and the rest of FAQ also is ensured, make sure
 your client does not cache the results. `klist purge` clears the clients
 cache - a reboot of your client would do too.
+
+### Docker stack
+
+#### 502 Bad Gateway on /auth/sso only, after recreating the SSO container
+
+The reverse proxy still holds the container's old address. Nginx Proxy Manager resolves the name only when it loads
+its configuration, so reload it: `docker compose exec nginx-proxy-manager nginx -s reload`.
+
+#### SSO request from untrusted IP address, after recreating the reverse proxy
+
+Zammad resolves the names in `RAILS_TRUSTED_PROXIES` when it starts, see
+[environment variables](/en/reference/environment-variables), so it still trusts the proxy's old address, sees the new
+one as the client and checks it against **Trusted SSO Proxy IPs**. Restart the services that trust the proxy:
+`docker compose restart zammad-railsserver zammad-websocket`.
+
+#### Signing in via SSO fails although the zammad-sso container is healthy
+
+The health check verifies that the keytab is readable and that Apache issues the Kerberos challenge. It cannot verify
+the key itself. Check `docker compose logs zammad-sso`: a line `GSS ERROR … cannot decrypt ticket` means the keytab
+does not match the service account's current key, usually because it was exported before the last password reset.
+Export it again as described in [1c. Register a SPN for Zammad](/en/tutorials/sso-kerberos#_1c-register-a-spn-for-zammad).

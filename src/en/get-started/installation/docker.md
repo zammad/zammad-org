@@ -108,6 +108,9 @@ modifying the Zammad stack, you can:
 
 Both scenarios are covered in the separate [Docker Compose Scenarios](/en/reference/docker-compose-scenarios) page.
 
+Single sign-on with Kerberos uses the same reverse proxy, see
+[Single sign-on with Kerberos](/en/tutorials/sso-kerberos).
+
 ## Customizing the Zammad stack
 
 The Zammad Docker Compose stack is ready to run with its default settings. You can adapt it to your environment by

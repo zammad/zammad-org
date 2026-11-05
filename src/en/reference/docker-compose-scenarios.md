@@ -97,6 +97,9 @@ next section.
 - Configure your DNS. The chosen Zammad FQDN should point to the IP address of the NPM host
 - Configure a new proxy host in your NPM and follow the steps to get an SSL certificate
 
+Kerberos single sign-on for the Docker stack builds on this scenario, see
+[Single sign-on with Kerberos](/en/tutorials/sso-kerberos).
+
 ### Add external Docker network to Nginx
 
 If you already have a reverse proxy which takes care about the SSL termination, this scenario is helpful. It adds an
