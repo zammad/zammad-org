@@ -30,3 +30,6 @@ src/pt_BR
 
 # Vale sync cache (created by `vale sync` if packages are added later).
 .vale/styles/config
+
+# Search documents extracted at build time, see .vitepress/search/.
+/search-index/

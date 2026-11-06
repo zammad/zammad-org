@@ -1,0 +1,56 @@
+{
+  "stopwords": [
+    "и",
+    "у",
+    "на",
+    "је",
+    "да",
+    "се",
+    "за",
+    "од",
+    "са",
+    "о",
+    "по",
+    "из",
+    "а",
+    "као",
+    "како",
+    "шта",
+    "где",
+    "када",
+    "зашто",
+    "могу",
+    "мој",
+    "моја",
+    "или"
+  ],
+  "synonyms": [
+    [
+      "2fa",
+      "mfa"
+    ],
+    [
+      "sso",
+      "single sign-on"
+    ],
+    [
+      "e-mail",
+      "email",
+      "имејл",
+      "мејл"
+    ]
+  ],
+  "pinned": [],
+  "checks": [
+    {
+      "q": "2fa",
+      "expect": "/sr/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    },
+    {
+      "q": "sso",
+      "expect": "/sr/tutorials/sso-kerberos.html",
+      "top": 3
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "stopwords": [
+    "a",
+    "an",
+    "the",
+    "how",
+    "do",
+    "does",
+    "i",
+    "can",
+    "my",
+    "is",
+    "are",
+    "what",
+    "where",
+    "when",
+    "why",
+    "to",
+    "of",
+    "for",
+    "in",
+    "on",
+    "with"
+  ],
+  "synonyms": [
+    [
+      "2fa",
+      "mfa",
+      "two-factor authentication",
+      "two factor authentication"
+    ],
+    [
+      "sso",
+      "single sign-on",
+      "single sign on"
+    ],
+    [
+      "kb",
+      "knowledge base"
+    ],
+    [
+      "e-mail",
+      "email",
+      "mail"
+    ],
+    [
+      "password",
+      "passphrase"
+    ]
+  ],
+  "pinned": [
+    {
+      "query": "password reset",
+      "urls": [
+        "/en/documentation/use/personal-settings.html#password"
+      ]
+    },
+    {
+      "query": "reset password",
+      "urls": [
+        "/en/documentation/use/personal-settings.html#password"
+      ]
+    },
+    {
+      "query": "change password",
+      "urls": [
+        "/en/documentation/use/personal-settings.html#password"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "q": "insall",
+      "expect": "/en/get-started/installation/"
+    },
+    {
+      "q": "sla escalation",
+      "expect": "/en/documentation/use/advanced-features.html",
+      "top": 3
+    },
+    {
+      "q": "password reset",
+      "expect": "/en/documentation/use/personal-settings.html",
+      "top": 1
+    },
+    {
+      "q": "how do i change my password",
+      "expect": "/en/documentation/use/personal-settings.html",
+      "top": 3
+    },
+    {
+      "q": "2fa",
+      "expect": "/en/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    },
+    {
+      "q": "mfa",
+      "expect": "/en/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    },
+    {
+      "q": "sso",
+      "expect": "/en/tutorials/sso-kerberos.html",
+      "top": 3
+    }
+  ]
+}

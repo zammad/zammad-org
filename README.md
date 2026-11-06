@@ -11,6 +11,38 @@ It contains the new documentation system which is based on Vitepress. Their docu
 - Get the dev system running via `pnpm dev` and access it at `http://localhost:5173/en/`. This serves the English app; use `pnpm dev:de` to generate that language's content and serve it at `http://localhost:5173/de/`.
 - Every language is an app of its own and built into its own directory. `pnpm build` builds all of them into `dist/<language>/`, a single one can be built with e.g. `pnpm build:de`. Serve the build with `pnpm preview` at `http://localhost:4173/`. To build locally, the screenshots are required, see below.
 
+## Search
+
+The search is served by [Typesense](https://typesense.org/), not by the browser. `pnpm build` writes the search documents of each language to `search-index/<language>.jsonl` (one document per page section), and `pnpm search:index` loads them into Typesense. See `.vitepress/search/` for the code and `docker/README.md` for the production setup.
+
+Local development needs no access to any production system, only Docker:
+
+- `pnpm search:start` starts a local Typesense (the `typesense` service of `docker/docker-compose.yml`, with the dev keys from `docker/.env`). `pnpm search:stop` stops it again; the index survives in a Docker volume.
+- `pnpm search:dev` starts Typesense, builds the English app and indexes it. Use `LOCALE=de pnpm search:dev` for another language. Run it again after content changes you want to find.
+- `pnpm dev` then searches the local Typesense: the dev server forwards `/search-api/multi_search` to it and adds the search-only key, like nginx does in production.
+
+Without a running Typesense, the site works as usual and the search reports that it is unavailable. The same applies to `pnpm preview` and to downloaded build artifacts, which have no search backend.
+
+For reindexing, restoring, rolling back and key rotation in production, see the runbook in `docker/README.md`.
+
+Typesense is expected at `http://localhost:8108`; set `TYPESENSE_URL` to use another address (the dev container sets it to the Docker host). `TYPESENSE_ADMIN_KEY` and `TYPESENSE_SEARCH_KEY` default to the dev keys for `pnpm search:dev` and `pnpm dev`.
+
+### Tuning the search
+
+Each language has a file `.vitepress/search/relevance/<language>.json`. It is maintained by hand (not via Weblate) and applied on every indexing run:
+
+- `stopwords`: words left out of every query, so that "how do I change my password" searches for "change password". Keep it to question words, articles and the like.
+- `synonyms`: lists of words that find each other, e.g. `["kanal", "anbindung", "channel"]`: a search for "Anbindung" also finds the sections that only say "Kanal" or "channel". Words of four or more letters also cover longer forms (`rolle` covers `rollen`); list other forms (`kanal`, `kanäle`) separately. `{ "root": "kanal", "synonyms": ["anbindung"] }` works in one direction only: "Anbindung" finds "Kanal", not the other way round.
+- `pinned`: sections that come first for a query, e.g. `{ "query": "passwort zurücksetzen", "urls": ["/de/documentation/use/personal-settings.html#passwort"] }`. The query has to match exactly (`"match": "contains"` for queries that only contain it). The URL is the address of the section as shown by the search; if a heading is renamed or retranslated, its anchor changes and the indexing fails until the pin is updated.
+- `checks`: what the search has to find, e.g. `{ "q": "passwort reset", "expect": "/de/documentation/use/personal-settings.html", "top": 1 }` — the page has to be among the first `top` pages (default 5). The indexer runs them on the new index before switching to it — in CI on every pipeline, and on deploy before the new site goes live.
+
+When a search does not find what it should: add a check that fails, then adjust the content, a synonym or a pin until it passes. Every indexing run checks the new index before switching to it, so a failing check keeps the previous index in place. To try out settings locally while a check still fails, index without the checks and run them on their own (with the dev keys from `docker/.env`):
+
+```sh
+TYPESENSE_ADMIN_KEY=local-dev-admin-key pnpm search:index en --no-checks
+TYPESENSE_SEARCH_KEY=local-dev-search-key pnpm search:check en
+```
+
 ## Internationalization (i18n)
 
 Only the content in `src/en/` directory and child directories should be modified. The content of all other languages is generated from the PO files in `i18n/` and is not tracked by Git:

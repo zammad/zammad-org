@@ -1,5 +1,11 @@
 # Production stack: the CI deploy job copies this file to the web host.
 # Locally, `docker-compose.override.yml` adds the image build, see README.md.
+#
+# Both keys are required (see README.md, "Keys"): the admin key of Typesense
+# and the search-only key that nginx adds to the search requests of browsers.
+# On the web host, they are in the root-only .env next to this file, prepared
+# by the host's administrators; the deploy job does not touch it. Locally, the
+# dev keys of docker/.env are used.
 services:
   nginx:
     image: ${IMAGE_REPO:-zammad-org}:${IMAGE_VERSION:-local}
@@ -8,6 +14,10 @@ services:
     # Only the reverse proxy on the host talks to the container. 8081 instead
     # of 80: the image runs as non-root, and 8080 is often taken by Zammad.
     - 127.0.0.1:${ZAMMAD_ORG_PORT:-8081}:8080
+    environment:
+      # Rendered into the search proxy by the image's entrypoint, see
+      # nginx/templates/.
+      TYPESENSE_SEARCH_KEY: ${TYPESENSE_SEARCH_KEY:?TYPESENSE_SEARCH_KEY is not set, see docker/README.md}
     # `docker compose up --wait` in the deploy job waits for this check.
     healthcheck:
       test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/healthz"]
@@ -22,3 +32,41 @@ services:
     - ALL
     security_opt:
     - no-new-privileges:true
+    # No `depends_on` on Typesense: the site has to be served even when the
+    # search is down. nginx resolves `typesense` per request instead.
+
+  # Search index of all languages, see .vitepress/search/. Not reachable from
+  # outside: browsers search through nginx (`/search-api/`), CI indexes through
+  # an SSH tunnel to the port below.
+  typesense:
+    image: typesense/typesense:30.2
+    restart: unless-stopped
+    ports:
+    - 127.0.0.1:${TYPESENSE_PORT:-8108}:8108
+    environment:
+      TYPESENSE_API_KEY: ${TYPESENSE_ADMIN_KEY:?TYPESENSE_ADMIN_KEY is not set, see docker/README.md}
+      TYPESENSE_DATA_DIR: /data
+      # On start, Typesense restores its last snapshot and replays the changes
+      # since; without a snapshot, the replay can lose the latest changes. The
+      # default interval is an hour; the indexer also requests a snapshot after
+      # every run, this covers changes by hand (e.g. a rollback of an alias).
+      TYPESENSE_SNAPSHOT_INTERVAL_SECONDS: 60
+    volumes:
+    - typesense-data:/data
+    # The image has neither curl nor wget.
+    healthcheck:
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/8108 && printf 'GET /health HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q '\"ok\":true' <&3"]
+      interval: 30s
+      timeout: 3s
+      start_period: 10s
+      retries: 3
+    read_only: true
+    tmpfs:
+    - /tmp
+    cap_drop:
+    - ALL
+    security_opt:
+    - no-new-privileges:true
+
+volumes:
+  typesense-data:

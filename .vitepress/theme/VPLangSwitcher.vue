@@ -214,7 +214,14 @@ const isOpen = ref(false)
     order: 1;
   }
 
+  /*
+   * The menu is a flex container as tall as the nav bar (its links take the
+   * full nav height) without `align-items`; a fixed-height item would sit at
+   * its top. Centered like the theme's own dividers, which are in containers
+   * with `align-items: center`.
+   */
   .VPNavBar .content-body > .menu::after {
+    align-self: center;
     margin-right: 8px;
     margin-left: 8px;
     width: 1px;

@@ -1,13 +1,15 @@
 ---
+# Texts of the search, see .vitepress/theme/search/. Translated via po4a: every
+# key below has to be listed in the `search-yaml` alias of .po4a.conf.
 translations:
   button:
     buttonText: 'Search'
     buttonAriaLabel: 'Search'
   modal:
-    displayDetails: 'Display detailed list'
     resetButtonTitle: 'Reset search'
     backButtonTitle: 'Close search'
     noResultsText: 'No results for'
+    unavailableText: 'The search is not available right now. Please try again later.'
     footer:
       selectText: 'to select'
       selectKeyAriaLabel: 'enter'
@@ -16,4 +18,8 @@ translations:
       navigateDownKeyAriaLabel: 'down arrow'
       closeText: 'to close'
       closeKeyAriaLabel: 'escape'
-  user: 'Use Zammad'
+  filters:
+    label: 'Show results from'
+    all: 'All documentation'
+    user: 'User documentation'
+    admin: 'Administrator documentation'

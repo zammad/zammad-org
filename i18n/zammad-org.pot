@@ -186,16 +186,34 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#. type: Yaml Front Matter Hash Value: features title
+#: .vitepress/search.en.yaml:1 src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "Administrator documentation"
+msgstr ""
+
+#. type: Hash Value: translations filters all
+#: .vitepress/search.en.yaml:1
+#, no-wrap
+msgid "All documentation"
+msgstr ""
+
+#. type: Hash Value: translations filters label
+#: .vitepress/search.en.yaml:1
+#, no-wrap
+msgid "Show results from"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: features title
+#: .vitepress/search.en.yaml:1 src/en/documentation/introduction.md:1
+#, no-wrap
+msgid "User documentation"
+msgstr ""
+
 #. type: Hash Value: translations modal backButtonTitle
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Close search"
-msgstr ""
-
-#. type: Hash Value: translations modal displayDetails
-#: .vitepress/search.en.yaml:1
-#, no-wrap
-msgid "Display detailed list"
 msgstr ""
 
 #. type: Hash Value: translations modal footer closeKeyAriaLabel
@@ -250,6 +268,12 @@ msgstr ""
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Reset search"
+msgstr ""
+
+#. type: Hash Value: translations modal unavailableText
+#: .vitepress/search.en.yaml:1
+#, no-wrap
+msgid "The search is not available right now. Please try again later."
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: prev link
@@ -1521,12 +1545,6 @@ msgstr ""
 msgid "/en/documentation/use/start"
 msgstr ""
 
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/introduction.md:1
-#, no-wrap
-msgid "User documentation"
-msgstr ""
-
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/introduction.md:1
 #, no-wrap
@@ -1537,12 +1555,6 @@ msgstr ""
 #: src/en/documentation/introduction.md:1 src/en/documentation/use/start.md:1
 #, no-wrap
 msgid "/en/documentation/manage/start"
-msgstr ""
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/introduction.md:1
-#, no-wrap
-msgid "Administrator documentation"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: features details

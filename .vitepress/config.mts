@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs'
+import { relative, resolve } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
@@ -7,6 +8,9 @@ import definitionListMarkdownPlugin from 'markdown-it-deflist'
 import footnote from 'markdown-it-footnote'
 import kbd from 'markdown-it-kbd'
 import { icon } from '@mdit/plugin-icon'
+import { builtPagePath, extractSearchDocuments } from './search/extract.mts'
+import { loadRelevance } from './search/relevance.mts'
+import { aliasName } from './search/schema.mts'
 
 const supportedLocales = ['en', 'de', 'sr', 'it', 'pt_BR']
 
@@ -20,8 +24,6 @@ const localeLabels: Record<string, string> = {
   it: 'Italiano',
   pt_BR: 'Português (Brasil)',
 }
-
-const userSearchRegex = new RegExp(`^/(${supportedLocales.join('|')})/documentation/use/`)
 
 /*
  * Every locale is built as its own app with its own base path (`/<locale>/`),
@@ -100,6 +102,15 @@ function stripOwnLocalePrefix(data: unknown): void {
 
 // Navigation, footer and sidebar entries of the generated configuration.
 stripOwnLocalePrefix(localeConfig)
+
+/*
+ * Collected while the pages are built, for the search extraction in `buildEnd`:
+ * pages (`foo/bar.html`) with `search: false` in their front matter, the title
+ * and the rendered Markdown of every page.
+ */
+const searchExcludedPages = new Set<string>()
+const searchPageTitles = new Map<string, string>()
+const searchRenderedMarkdown = new Map<string, string>()
 
 const commonSidebarConfig = {
   collapsed: true,
@@ -208,6 +219,18 @@ export default defineConfig(
         // Remove the sub ID from the footnote caption in case of multiple source references.
         //   https://github.com/markdown-it/markdown-it-footnote/blob/master/index.mjs#L17
         //   https://github.com/zammad/zammad-org/issues/37
+        /*
+         * Keep the rendered Markdown of every page for the search extraction:
+         * it holds all tabs of a tab group, the built page only the selected
+         * one. See `withAllTabs` in .vitepress/search/extract.mts.
+         */
+        const render = md.render.bind(md)
+        md.render = (src, env) => {
+          const html = render(src, env)
+          if (env?.relativePath) searchRenderedMarkdown.set(builtPagePath(env.relativePath), html)
+          return html
+        }
+
         md.renderer.rules.footnote_caption = (tokens, idx/*, options, env, slf */) => {
           let n = Number(tokens[idx].meta.id + 1).toString()
 
@@ -255,6 +278,35 @@ export default defineConfig(
      */
     transformPageData(pageData) {
       stripOwnLocalePrefix(pageData.frontmatter)
+
+      const builtPage = builtPagePath(pageData.relativePath)
+
+      searchPageTitles.set(builtPage, pageData.title)
+      if (pageData.frontmatter.search === false) searchExcludedPages.add(builtPage)
+    },
+    /*
+     * Writes the search documents of this locale to `search-index/<locale>.jsonl`,
+     * from which the indexer fills Typesense. A failed extraction fails the build.
+     * See .vitepress/search/ and https://github.com/zammad/zammad-org/issues/242.
+     */
+    buildEnd(siteConfig) {
+      const indexFile = resolve(
+        env.SEARCH_INDEX_DIR || resolve(siteConfig.root, 'search-index'),
+        `${locale}.jsonl`
+      )
+
+      const { pages, documents } = extractSearchDocuments({
+        locale,
+        outDir: siteConfig.outDir,
+        indexFile,
+        excludedPages: searchExcludedPages,
+        pageTitles: searchPageTitles,
+        renderedMarkdown: searchRenderedMarkdown,
+      })
+
+      console.log(
+        `Search: ${documents.length} documents from ${pages} pages written to ${relative(siteConfig.root, indexFile)}`
+      )
     },
     /*
      * Each app knows only its own locale. The language switcher therefore has
@@ -279,7 +331,30 @@ export default defineConfig(
               new URL('./theme/VPSidebarItem.vue', import.meta.url)
             )
           },
+          // The Typesense search, see .vitepress/theme/search/.
+          {
+            find: /^.*\/VPNavBarSearch\.vue$/,
+            replacement: fileURLToPath(
+              new URL('./theme/search/VPNavBarSearch.vue', import.meta.url)
+            )
+          },
         ],
+      },
+      /*
+       * `pnpm dev` searches a local Typesense the way the site does in
+       * production: through `/search-api/multi_search`, with the search-only
+       * key added on the server side. See the nginx configuration in
+       * docker/nginx/conf.d/default.conf and README.md.
+       */
+      server: {
+        proxy: {
+          '/search-api/multi_search': {
+            target: env.TYPESENSE_URL || 'http://localhost:8108',
+            changeOrigin: true,
+            rewrite: () => '/multi_search',
+            headers: { 'X-TYPESENSE-API-KEY': env.TYPESENSE_SEARCH_KEY || 'local-dev-search-key' },
+          },
+        },
       },
     },
     themeConfig: {
@@ -308,48 +383,17 @@ export default defineConfig(
           timeStyle: 'short',
         }
       },
-      search: {
-        provider: 'local',
-        options: {
-          locales: {
-            root: searchConfig,
-          },
-          miniSearch: {
-            options: {
-              fields: ['title', 'titles', 'text', 'user'],
-              storeFields: ['title', 'titles', 'user'],
-              extractField(document, fieldName) {
-                // Mark all user pages in search index for later filtering.
-                if (fieldName === 'user') return userSearchRegex.test(document.id)
-
-                // Add localized prefix to the breadcrumb of user documentation pages.
-                // An app contains its own language only, so the matched prefix is
-                // always the one of this app.
-                if (fieldName === 'titles') {
-                  const matches = document.id.match(userSearchRegex)
-
-                  if (matches) {
-                    const localizedPrefix = searchConfig.translations.user
-
-                    return [localizedPrefix, ...document.titles]
-                  }
-
-                  return document.titles
-                }
-
-                return document[fieldName]
-              },
-            },
-            searchOptions: {
-              filter: (document) => {
-                // Show only user pages in search results, when in the user documentation section.
-                if (/\/documentation\/use\//.test(location.pathname))
-                  return document.user
-                return true
-              },
-            },
-          },
-        },
+      /*
+       * The search runs against Typesense instead of a VitePress search
+       * provider, see .vitepress/theme/search/. It needs the collection alias
+       * of this app's language and the texts from `search.<locale>.yaml`.
+       */
+      typesenseSearch: {
+        collection: aliasName(locale),
+        // Stop word set of the locale, created by the indexer; only when the
+        // locale has stop words, see .vitepress/search/relevance.mts.
+        stopwords: loadRelevance(locale).stopwords.length ? aliasName(locale) : undefined,
+        translations: searchConfig.translations,
       },
     }
   }, [

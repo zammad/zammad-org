@@ -1,0 +1,64 @@
+{
+  "stopwords": [
+    "il",
+    "lo",
+    "la",
+    "i",
+    "gli",
+    "le",
+    "un",
+    "uno",
+    "una",
+    "di",
+    "da",
+    "con",
+    "su",
+    "per",
+    "come",
+    "cosa",
+    "dove",
+    "quando",
+    "perché",
+    "posso",
+    "mio",
+    "mia",
+    "è",
+    "del",
+    "della",
+    "dei",
+    "delle",
+    "nel",
+    "nella",
+    "al",
+    "alla"
+  ],
+  "synonyms": [
+    [
+      "2fa",
+      "mfa",
+      "autenticazione a due fattori"
+    ],
+    [
+      "sso",
+      "single sign-on"
+    ],
+    [
+      "e-mail",
+      "email",
+      "mail"
+    ]
+  ],
+  "pinned": [],
+  "checks": [
+    {
+      "q": "2fa",
+      "expect": "/it/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    },
+    {
+      "q": "sso",
+      "expect": "/it/tutorials/sso-kerberos.html",
+      "top": 3
+    }
+  ]
+}

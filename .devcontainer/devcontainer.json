@@ -70,7 +70,9 @@
     "LC_ALL" : "C.UTF-8",
     "LANG": "C.UTF-8",
     "LANGUAGE": "C.UTF-8",
-    "CYPRESS_BASE_URL": "http://host.docker.internal:8080"
+    "CYPRESS_BASE_URL": "http://host.docker.internal:8080",
+    // Local Typesense of `pnpm search:start`, published on the Docker host.
+    "TYPESENSE_URL": "http://host.docker.internal:8108"
   },
 
   // Use 'postCreateCommand' to run commands after the container is created.

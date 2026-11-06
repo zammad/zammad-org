@@ -1,0 +1,146 @@
+{
+  "stopwords": [
+    "der",
+    "die",
+    "das",
+    "den",
+    "dem",
+    "des",
+    "ein",
+    "eine",
+    "einen",
+    "einem",
+    "einer",
+    "und",
+    "oder",
+    "wie",
+    "was",
+    "wo",
+    "wann",
+    "warum",
+    "ich",
+    "mein",
+    "meine",
+    "meinen",
+    "kann",
+    "können",
+    "man",
+    "ist",
+    "sind",
+    "im",
+    "am",
+    "auf",
+    "für",
+    "mit",
+    "zu",
+    "zum",
+    "zur",
+    "von",
+    "vom"
+  ],
+  "synonyms": [
+    [
+      "kanal",
+      "kanäle",
+      "anbindung",
+      "anbindungen",
+      "channel",
+      "channels"
+    ],
+    [
+      "gruppe",
+      "gruppen",
+      "group",
+      "groups"
+    ],
+    [
+      "rolle",
+      "rollen",
+      "role",
+      "roles"
+    ],
+    [
+      "berechtigung",
+      "berechtigungen",
+      "permission",
+      "permissions"
+    ],
+    [
+      "passwort",
+      "kennwort",
+      "password"
+    ],
+    [
+      "2fa",
+      "mfa",
+      "zwei-faktor-authentifizierung"
+    ],
+    [
+      "sso",
+      "single sign-on",
+      "einmalanmeldung"
+    ],
+    [
+      "wissensdatenbank",
+      "knowledge base",
+      "kb"
+    ],
+    [
+      "e-mail",
+      "email",
+      "mail"
+    ]
+  ],
+  "pinned": [
+    {
+      "query": "passwort reset",
+      "urls": [
+        "/de/documentation/use/personal-settings.html#passwort"
+      ]
+    },
+    {
+      "query": "passwort zurücksetzen",
+      "urls": [
+        "/de/documentation/use/personal-settings.html#passwort"
+      ]
+    },
+    {
+      "query": "passwort ändern",
+      "urls": [
+        "/de/documentation/use/personal-settings.html#passwort"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "q": "sla eskalation",
+      "expect": "/de/documentation/use/advanced-features.html",
+      "top": 3
+    },
+    {
+      "q": "passwort reset",
+      "expect": "/de/documentation/use/personal-settings.html",
+      "top": 1
+    },
+    {
+      "q": "wie kann ich mein passwort ändern",
+      "expect": "/de/documentation/use/personal-settings.html",
+      "top": 3
+    },
+    {
+      "q": "anbindung",
+      "expect": "/de/tutorials/first-steps.html",
+      "top": 5
+    },
+    {
+      "q": "2fa",
+      "expect": "/de/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    },
+    {
+      "q": "sso",
+      "expect": "/de/tutorials/sso-kerberos.html",
+      "top": 3
+    }
+  ]
+}

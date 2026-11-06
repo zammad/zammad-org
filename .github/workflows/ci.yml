@@ -43,6 +43,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     needs: screenshots
+    # Throwaway search index for the checks below, see .vitepress/search/. The
+    # keys are made up for this job; GitHub never gets production credentials.
+    services:
+      typesense:
+        image: typesense/typesense:30.2
+        env:
+          TYPESENSE_API_KEY: ci-check-admin-key
+          TYPESENSE_DATA_DIR: /tmp
+        ports:
+          - 8108:8108
     steps:
     - uses: actions/checkout@v7
     - uses: actions/download-artifact@v8
@@ -50,11 +60,27 @@ jobs:
         name: screenshots-${{ needs.screenshots.outputs.sha_short }}
         path: src/public/screenshots/cypress
     - uses: pnpm/action-setup@v6
+    # The search scripts run as TypeScript with Node's type stripping.
+    - uses: actions/setup-node@v7
+      with:
+        node-version: 24
     # po4a generates the content of the non-English locales.
     - run: sudo apt-get update && sudo apt-get install -y po4a
     - run: pnpm install
-    # Builds every language into its own directory below dist/.
+    # Builds every language into its own directory below dist/, and its search
+    # documents into search-index/.
     - run: pnpm build
+    # The local search of VitePress must not come back.
+    - run: "! grep -rl --include='*.js' localSearchIndex dist/"
+    - run: pnpm search:index en de sr it pt_BR
+      env:
+        TYPESENSE_URL: http://localhost:8108
+        TYPESENSE_ADMIN_KEY: ci-check-admin-key
+        TYPESENSE_SEARCH_KEY: ci-check-search-key
+    - run: pnpm search:check en de sr it pt_BR
+      env:
+        TYPESENSE_URL: http://localhost:8108
+        TYPESENSE_SEARCH_KEY: ci-check-search-key
     - uses: actions/upload-artifact@v7
       id: build-artifact
       with:
