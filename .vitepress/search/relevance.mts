@@ -9,7 +9,8 @@
  *   work together with stemming, which the languages need.
  * - `pinned`: results that come first for a query, by URL of the section.
  * - `checks`: query → page that has to be among the first results; run by
- *   ./check.mts in CI and on deploy.
+ *   the indexer on every new collection (in CI and in `search-init` on
+ *   deploy) and by ./check.mts on the live aliases.
  *
  * Applied by ./indexer.mts. See README.md ("Tuning the search") for how to use it.
  */

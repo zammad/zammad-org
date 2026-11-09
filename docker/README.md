@@ -3,14 +3,14 @@
 Zammad Hub runs in production as a Docker container: nginx with the built site and its configuration baked into one
 image. A reverse proxy on the web host terminates TLS and forwards every request to the container. Everything else
 (redirects, language detection, caching, security headers, error pages, the search proxy) is configured in this
-directory. The search index lives in a second container, Typesense, see [Search](#search).
+directory. The search index lives in a second container, Typesense, and a third one loads it, see [Search](#search).
 
 | File | Purpose |
 | --- | --- |
-| `Dockerfile` | Production image, based on the unprivileged nginx image (runs as non-root, listens on `8080`). |
+| `Dockerfile` | The images: the website (default target, based on the unprivileged nginx image, runs as non-root, listens on `8080`) and `search-init` (the search index of the same build, see [Search](#search)). |
 | `nginx/**` | nginx server configuration. `nginx/templates/` is rendered with environment variables at start. |
-| `docker-compose.yml` | Production stack: nginx and Typesense. The deploy job copies it to the web host. |
-| `docker-compose.override.yml` | Local testing only: builds the image from `dist/` instead of pulling it. |
+| `docker-compose.yml` | Production stack: nginx, Typesense and `search-init`. The deploy job copies it to the web host. |
+| `docker-compose.override.yml` | Local testing only: builds the images from `dist/` and `search-index/` instead of pulling them. |
 | `.env` | Local testing only: dev keys for Typesense. The web host has its own, see [Keys](#keys). |
 | `reverse-proxy.example.conf` | Example vhost for the reverse proxy on the web host. |
 
@@ -19,28 +19,23 @@ directory. The search index lives in a second container, Typesense, see [Search]
 Prerequisites: a Docker engine with Docker Compose 2.17 or newer and free `8081` and `8108` ports. Set
 `ZAMMAD_ORG_PORT` and `TYPESENSE_PORT` to use other ones.
 
-From the root directory, first build the app:
+From the root directory, first build the app; this also writes the search documents to `search-index/`:
 
 ```sh
 pnpm build
 ```
 
-Then build the image and start the stack:
+Then build the images and start the stack. Without `--wait`: `search-init` exits once it has loaded the index, which
+`--wait` would take for a failure.
 
 ```sh
 cd docker
-docker compose up -d --build --wait
+docker compose up -d --build
+docker compose logs -f search-init   # until it has loaded the index
 ```
 
-Fill the search index (from the root directory, with the dev keys from `docker/.env`):
-
-```sh
-TYPESENSE_URL=http://localhost:${TYPESENSE_PORT:-8108} \
-  TYPESENSE_ADMIN_KEY=local-dev-admin-key TYPESENSE_SEARCH_KEY=local-dev-search-key pnpm search:index
-```
-
-The service is available via <http://localhost:8081/>. Rebuild the image (`--build`) and re-run the indexing after
-every `pnpm build`.
+The service is available via <http://localhost:8081/>. Rebuild the images (`--build`) after every `pnpm build`; the
+next start loads the languages that changed.
 
 Stop the stack:
 
@@ -54,8 +49,8 @@ The search index survives in the `typesense-data` volume; `docker compose down -
 ## Search
 
 The search of all languages is served by [Typesense](https://typesense.org/), self-hosted as the `typesense` service
-of the stack. `pnpm build` writes the search documents to `search-index/`, `pnpm search:index` loads them into one
-collection per language behind the alias `docs_<locale>`. See `.vitepress/search/` for the details.
+of the stack. `pnpm build` writes the search documents to `search-index/`; they are loaded into one collection per
+language behind the alias `docs_<locale>`. See `.vitepress/search/` for the details.
 
 Browsers never talk to Typesense directly. They send their searches to `/search-api/multi_search` on the same origin,
 and nginx:
@@ -69,55 +64,64 @@ and nginx:
   after the 2 s connect timeout while nginx still has the address of Typesense cached (up to 30 s), with `502` once the
   name no longer resolves. The search dialog reports either as unavailable.
 
-Typesense publishes its port on `127.0.0.1` of the web host only. The deploy job reaches it through an SSH tunnel to
-index the new content.
+The `search-init` service loads the index. Its image is built from the same pipeline as the website and contains the
+search documents of that build, the relevance settings and the indexer (`pnpm search:index`). It runs whenever the
+stack is started — on every deploy — and exits:
+
+- Languages whose index is loaded already are skipped: the name of a collection carries a hash of everything that goes
+  into it. A start without changes loads nothing and keeps the previous collection of each language for a rollback.
+- Changed languages are loaded into new collections and checked before the aliases switch to them; a failure while
+  loading or checking leaves the previous index in place.
+- It makes sure that the search-only key exists in Typesense.
+
+nginx does not wait for it: the site goes live right away, and until the new index is in, the search uses the previous
+one — or reports itself unavailable, on the first start or when loading fails. The deploy job does not wait for it
+either, so a failed load does not fail the deploy: it only shows on the web host, see [Check the search after a
+deploy](#check-the-search-after-a-deploy). A reboot of the host does not start it again; Typesense keeps its index.
 
 Typesense keeps its data in the `typesense-data` volume. On start, it restores its last snapshot and replays the changes
 made since; without a snapshot, that replay can lose the latest changes. So Typesense writes a snapshot every minute
-(`TYPESENSE_SNAPSHOT_INTERVAL_SECONDS` in `docker-compose.yml`, default an hour), and the indexer requests one after
-every run: a restart of Typesense or of the host keeps the index.
+(`TYPESENSE_SNAPSHOT_INTERVAL_SECONDS` in `docker-compose.yml`, default an hour), and `search-init` requests one after
+loading: a restart of Typesense or of the host keeps the index.
+
+Typesense publishes its port on `127.0.0.1` of the web host, for the host's administrators only, see
+[Runbook](#runbook).
 
 ### Keys
 
 | Variable | Used by | Can |
 | --- | --- | --- |
-| `TYPESENSE_ADMIN_KEY` | Typesense (bootstrap key), the indexer in CI | Everything. |
-| `TYPESENSE_SEARCH_KEY` | nginx, the indexer in CI (creates the key in Typesense) | Search the `docs_*` collections, nothing else. |
+| `TYPESENSE_ADMIN_KEY` | Typesense (bootstrap key), `search-init` | Everything. |
+| `TYPESENSE_SEARCH_KEY` | nginx, `search-init` (creates the key in Typesense) | Search the `docs_*` collections, nothing else. |
 
 `docker compose` refuses to start the stack without both. On the web host, they are in `/opt/zammad-org/.env` next to
 `docker-compose.yml`, which the host's administrators prepare before the first deploy (see [Prepare the web
 host](#prepare-the-web-host)). The file belongs to root and is readable by root only; the deploy job neither writes
-nor reads it, its user has no rights to it, and `sudo docker compose` reads it. The indexer in the deploy job needs the
-same two values as GitLab CI variables, masked and protected (so `develop` has to be a protected branch). Generate them
-as plain hex (`openssl rand -hex 32`): Compose interpolates `$` in `.env` values.
+nor reads it, its user has no rights to it, and `sudo docker compose` reads it. No CI variables are needed: nginx,
+Typesense and `search-init` all get the keys from this one file. Generate them as plain hex (`openssl rand -hex 32`):
+Compose interpolates `$` in `.env` values. Consequences of the self-hosting:
 
-On every deploy, the job starts Typesense, indexes the new content through an SSH tunnel and checks it — and only then
-rolls out the new site. A failure up to there stops the deploy with the previous site and index in place. Finally, the
-job runs one search through nginx: it fails when the search-only key in `.env` differs from the CI variable, because
-the indexer makes sure of the key from the CI variable, while nginx uses the one from `.env`. Consequences of the
-self-hosting:
-
-- The admin key is never in the repository, an image or the browser. Apart from the CI variables, it exists only on the
-  web host: in the root-only `.env` file and in the runtime environment of the Typesense container.
-- The search-only key exists in the CI variables, in the root-only `.env` file and in the runtime environment of the
-  nginx container. It is not secret in the sense that it could do harm — it only searches public content — but keeping
-  it server-side lets the rate limit and the endpoint restriction above apply to every client.
-- The index is derived data: losing the volume loses nothing that the next indexing run cannot restore.
+- The admin key is never in the repository, an image, CI or the browser. It exists only on the web host: in the
+  root-only `.env` file and in the runtime environment of the Typesense and `search-init` containers.
+- The search-only key exists in the root-only `.env` file and in the runtime environment of the nginx and `search-init`
+  containers. It is not secret in the sense that it could do harm — it only searches public content — but keeping it
+  server-side lets the rate limit and the endpoint restriction above apply to every client.
+- The index is derived data: losing the volume loses nothing that the next start of `search-init` cannot restore.
 
 The values in `docker/.env` of this repository are for local testing only and protect nothing but a local container.
 
 ### Runbook
 
-Production commands run on the web host (`cd /opt/zammad-org`, `sudo docker compose …`). Calls to the Typesense API
-need the admin key (`TYPESENSE_ADMIN_KEY`, in the CI variables and in `/opt/zammad-org/.env`) and an SSH tunnel from
-your machine, because Typesense only listens on `127.0.0.1` of the host:
+Commands run on the web host, in `/opt/zammad-org` (`sudo docker compose …`). Calls to the Typesense API go to its port
+on `127.0.0.1` of the host and need the admin key, which only root can read from `.env`; they use `curl` and `jq`:
 
 ```sh
-ssh -N -L 18108:127.0.0.1:8108 <user>@<web host>   # keep it open in another terminal
-export TS=http://127.0.0.1:18108 KEY=<admin key>
+cd /opt/zammad-org
+export TS=http://127.0.0.1:8108   # or the TYPESENSE_PORT of .env
+export KEY=$(sudo sh -c '. ./.env && printf %s "$TYPESENSE_ADMIN_KEY"')
 ```
 
-Locally, use `TS=http://localhost:${TYPESENSE_PORT:-8108} KEY=local-dev-admin-key` instead, without a tunnel.
+Locally, use `TS=http://localhost:${TYPESENSE_PORT:-8108} KEY=local-dev-admin-key` instead.
 
 #### Prepare the web host
 
@@ -137,26 +141,55 @@ TYPESENSE_SEARCH_KEY=<64 hex characters>
 ```
 
 If the file exists already (e.g. with `ZAMMAD_ORG_PORT`), add the two lines and make sure that it is root's and
-readable by root only: `sudo chown root:root /opt/zammad-org/.env && sudo chmod 600 /opt/zammad-org/.env`. Leave
-`TYPESENSE_PORT` unset: the deploy job's SSH tunnel expects Typesense on port `8108` of the host, which has to be free.
+readable by root only: `sudo chown root:root /opt/zammad-org/.env && sudo chmod 600 /opt/zammad-org/.env`. Set
+`TYPESENSE_PORT` there if port `8108` of the host is taken.
 
-Then store the same two values as the GitLab CI variables `TYPESENSE_ADMIN_KEY` and `TYPESENSE_SEARCH_KEY`, masked and
-protected. The first deploy creates the volume, loads all languages and creates the search-only key in Typesense.
+The first deploy creates the volume, loads all languages and creates the search-only key in Typesense.
+
+#### Check the search after a deploy
+
+The deploy job does not report whether `search-init` loaded the index: a failed run is a possible failure point that
+only shows on the web host. The site works either way. After a deploy:
+
+```sh
+sudo docker compose ps -a search-init   # Exited (0): loaded, or nothing to load
+sudo docker compose logs search-init
+```
+
+On another exit code, the end of the log names the cause. What the search uses then depends on when the run failed:
+
+- While loading or checking (Typesense not healthy, a rejected document, a pin to an unknown URL, a failed check), no
+  alias has changed: the search keeps the previous index, or reports itself unavailable if there is none.
+- While switching the aliases, the languages switched up to then use the new index and the others the previous one.
+- After the switch (cleaning up, creating the search-only key, requesting the snapshot), the new index is active;
+  without the search-only key the search is unavailable, and without the snapshot a restart may lose the latest
+  changes.
+
+So after any failed run, check which collection each alias points to — the log lists every switch (`docs_de → …`):
+
+```sh
+curl -s "$TS/aliases" -H "X-TYPESENSE-API-KEY: $KEY" | jq -r '.aliases[] | "\(.name) → \(.collection_name)"'
+```
+
+Fix the cause, then start `search-init` again (see below) or deploy the fix. A new run completes what is missing:
+languages already on the new index are skipped, the others are loaded and switched, and the search-only key and the
+snapshot are taken care of on every run.
 
 #### Reindex after content changes
 
-Nothing to do: every deploy of `develop` indexes the new content before the new site goes live. To reindex without a
-content change, re-run the `deploy to website` job of the latest `develop` pipeline.
-
-To index by hand (e.g. a single language), build it and run the indexer through the tunnel:
+Nothing to do: every deploy starts the stack, and `search-init` loads the languages that changed. To run it again
+without a deploy — it skips what is loaded already:
 
 ```sh
-pnpm build:de
-TYPESENSE_URL=$TS TYPESENSE_ADMIN_KEY=$KEY TYPESENSE_SEARCH_KEY=<search key> pnpm search:index de
-TYPESENSE_URL=$TS TYPESENSE_SEARCH_KEY=<search key> pnpm search:check de
+sudo docker compose up -d search-init
+sudo docker compose logs -f search-init
 ```
 
-Instead of building, the `search-index/` directory can be taken from the artifacts of a pipeline.
+To load all languages again even though nothing changed:
+
+```sh
+sudo docker compose run --rm search-init node .vitepress/search/indexer.mts --force
+```
 
 #### Restore a lost index
 
@@ -170,7 +203,7 @@ curl -s "$TS/collections" -H "X-TYPESENSE-API-KEY: $KEY" | jq -r '.[] | "\(.name
 ```
 
 When the index is lost (volume deleted, container broken, collections gone), the site keeps working; only the search
-reports that it is unavailable. The index holds nothing that cannot be rebuilt from the repository:
+reports that it is unavailable. The index holds nothing that `search-init` cannot load again:
 
 1. Recreate Typesense, with an empty volume if the old one is broken:
 
@@ -180,8 +213,13 @@ reports that it is unavailable. The index holds nothing that cannot be rebuilt f
    sudo docker compose up -d --wait typesense
    ```
 
-2. Re-run the `deploy to website` job of the latest `develop` pipeline. It loads all languages, creates the search-only
-   key again and runs the checks.
+2. Start `search-init`. It loads every language whose collection is missing, creates the search-only key again and
+   runs the checks:
+
+   ```sh
+   sudo docker compose up -d search-init
+   sudo docker compose logs -f search-init
+   ```
 
 #### Roll back the index
 
@@ -196,19 +234,18 @@ curl -s -X POST "$TS/operations/snapshot?snapshot_path=/tmp/typesense-snapshot" 
 
 The last command makes Typesense write a snapshot, so that the rollback survives a restart right away; without it, it
 does from the next scheduled snapshot on, within a minute. The synonyms and pinned results roll back with the
-collection; the stop words do not (they are not versioned). The next indexing run replaces the rolled-back collection,
-so fix the cause before the next deploy.
+collection; the stop words do not (they are not versioned). The next start of `search-init` — the next deploy, or
+`docker compose up` by hand — loads the index of the release again, so fix the cause first.
 
 #### Rotate the keys
 
-A new value goes into `/opt/zammad-org/.env` on the web host and into the CI variable of the same name; change both
-before the next deploy. The running containers keep the old values until the deploy restarts them.
+A key is changed in `/opt/zammad-org/.env`; `sudo docker compose up -d` then restarts the containers that use it.
 
-Search-only key, without downtime:
+Search-only key:
 
-1. Set the new value for `TYPESENSE_SEARCH_KEY` in `.env` and in the CI variable, then re-run the `deploy to website`
-   job. The indexer creates the new key in Typesense, the job restarts nginx with it from `.env` and checks that the
-   site can search. The old key still exists.
+1. Set the new value for `TYPESENSE_SEARCH_KEY` in `.env`, then run `sudo docker compose up -d`. It restarts nginx and
+   `search-init` with the new value, and `search-init` creates the new key in Typesense. Until it has, a few seconds,
+   the search may fail. The old key still exists.
 2. Delete the old key. Find it by the first four characters of its value:
 
    ```sh
@@ -216,10 +253,10 @@ Search-only key, without downtime:
    curl -s -X DELETE "$TS/keys/<id>" -H "X-TYPESENSE-API-KEY: $KEY"
    ```
 
-Admin key: set the new value for `TYPESENSE_ADMIN_KEY` in `.env` and in the CI variable, then re-run the `deploy to
-website` job. It restarts Typesense with the new key from `.env` before the indexer uses the one from the CI variable;
-the index and the search-only key are kept, the old admin key stops working at once. The site search is not
-interrupted. If the two values differ, the indexer is refused and the deploy stops before anything changes.
+Admin key: set the new value for `TYPESENSE_ADMIN_KEY` in `.env`, then run `sudo docker compose up -d`. It restarts
+Typesense and `search-init` with the new key; the index and the search-only key are kept, the old admin key stops
+working at once. The search is unavailable for the few seconds Typesense takes to restart. Read `KEY` again for the
+runbook commands.
 
 #### Upgrade Typesense
 

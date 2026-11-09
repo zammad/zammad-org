@@ -13,7 +13,7 @@ It contains the new documentation system which is based on Vitepress. Their docu
 
 ## Search
 
-The search is served by [Typesense](https://typesense.org/), not by the browser. `pnpm build` writes the search documents of each language to `search-index/<language>.jsonl` (one document per page section), and `pnpm search:index` loads them into Typesense. See `.vitepress/search/` for the code and `docker/README.md` for the production setup.
+The search is served by [Typesense](https://typesense.org/), not by the browser. `pnpm build` writes the search documents of each language to `search-index/<language>.jsonl` (one document per page section), and `pnpm search:index` loads them into Typesense — in production, the `search-init` service of the Docker stack does that on every deploy. See `.vitepress/search/` for the code and `docker/README.md` for the production setup.
 
 Local development needs no access to any production system, only Docker:
 
@@ -34,7 +34,7 @@ Each language has a file `.vitepress/search/relevance/<language>.json`. It is ma
 - `stopwords`: words left out of every query, so that "how do I change my password" searches for "change password". Keep it to question words, articles and the like.
 - `synonyms`: lists of words that find each other, e.g. `["kanal", "anbindung", "channel"]`: a search for "Anbindung" also finds the sections that only say "Kanal" or "channel". Words of four or more letters also cover longer forms (`rolle` covers `rollen`); list other forms (`kanal`, `kanäle`) separately. `{ "root": "kanal", "synonyms": ["anbindung"] }` works in one direction only: "Anbindung" finds "Kanal", not the other way round.
 - `pinned`: sections that come first for a query, e.g. `{ "query": "passwort zurücksetzen", "urls": ["/de/documentation/use/personal-settings.html#passwort"] }`. The query has to match exactly (`"match": "contains"` for queries that only contain it). The URL is the address of the section as shown by the search; if a heading is renamed or retranslated, its anchor changes and the indexing fails until the pin is updated.
-- `checks`: what the search has to find, e.g. `{ "q": "passwort reset", "expect": "/de/documentation/use/personal-settings.html", "top": 1 }` — the page has to be among the first `top` pages (default 5). The indexer runs them on the new index before switching to it — in CI on every pipeline, and on deploy before the new site goes live.
+- `checks`: what the search has to find, e.g. `{ "q": "passwort reset", "expect": "/de/documentation/use/personal-settings.html", "top": 1 }` — the page has to be among the first `top` pages (default 5). The indexer runs them on the new index before switching to it — in CI on every pipeline, and on every deploy for each language that changed.
 
 When a search does not find what it should: add a check that fails, then adjust the content, a synonym or a pin until it passes. Every indexing run checks the new index before switching to it, so a failing check keeps the previous index in place. To try out settings locally while a check still fails, index without the checks and run them on their own (with the dev keys from `docker/.env`):
 

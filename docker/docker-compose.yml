@@ -6,6 +6,9 @@
 # On the web host, they are in the root-only .env next to this file, prepared
 # by the host's administrators; the deploy job does not touch it. Locally, the
 # dev keys of docker/.env are used.
+#
+# Starting the stack also loads the search index of this release: the
+# `search-init` service runs once and exits.
 services:
   nginx:
     image: ${IMAGE_REPO:-zammad-org}:${IMAGE_VERSION:-local}
@@ -36,8 +39,9 @@ services:
     # search is down. nginx resolves `typesense` per request instead.
 
   # Search index of all languages, see .vitepress/search/. Not reachable from
-  # outside: browsers search through nginx (`/search-api/`), CI indexes through
-  # an SSH tunnel to the port below.
+  # outside: browsers search through nginx (`/search-api/`), `search-init`
+  # loads the index over the stack's network. The port below is for the host's
+  # administrators only, see the runbook in README.md.
   typesense:
     image: typesense/typesense:30.2
     restart: unless-stopped
@@ -48,8 +52,8 @@ services:
       TYPESENSE_DATA_DIR: /data
       # On start, Typesense restores its last snapshot and replays the changes
       # since; without a snapshot, the replay can lose the latest changes. The
-      # default interval is an hour; the indexer also requests a snapshot after
-      # every run, this covers changes by hand (e.g. a rollback of an alias).
+      # default interval is an hour; `search-init` also requests a snapshot
+      # after loading, this covers changes by hand (e.g. a rollback of an alias).
       TYPESENSE_SNAPSHOT_INTERVAL_SECONDS: 60
     volumes:
     - typesense-data:/data
@@ -63,6 +67,30 @@ services:
     read_only: true
     tmpfs:
     - /tmp
+    cap_drop:
+    - ALL
+    security_opt:
+    - no-new-privileges:true
+
+  # Loads the search index of this release into Typesense, then exits: the
+  # image of the same build as the site, with its `search-index/` (see
+  # Dockerfile). Languages whose index is loaded already are skipped, so a
+  # start without changes loads nothing. nginx does not wait for it: the site
+  # goes live right away, and until the new index is in, the search uses the
+  # previous one (or reports itself unavailable, e.g. on the first start). The
+  # deploy job does not wait for it; see README.md for how to check it.
+  search-init:
+    image: ${IMAGE_REPO:-zammad-org}:${IMAGE_VERSION:-local}-search-init
+    restart: "no"
+    depends_on:
+      typesense:
+        condition: service_healthy
+    environment:
+      TYPESENSE_URL: http://typesense:8108
+      TYPESENSE_ADMIN_KEY: ${TYPESENSE_ADMIN_KEY:?TYPESENSE_ADMIN_KEY is not set, see docker/README.md}
+      # Created in Typesense unless it exists, for nginx.
+      TYPESENSE_SEARCH_KEY: ${TYPESENSE_SEARCH_KEY:?TYPESENSE_SEARCH_KEY is not set, see docker/README.md}
+    read_only: true
     cap_drop:
     - ALL
     security_opt:

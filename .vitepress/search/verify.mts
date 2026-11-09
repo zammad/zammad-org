@@ -11,8 +11,8 @@
  * - The checks in ./relevance/<locale>.json: query → expected page among the
  *   first results.
  *
- * No dependencies beyond Node, so that the deploy job can run it without
- * installing packages.
+ * No dependencies beyond Node, so that the `search-init` image (see
+ * docker/Dockerfile) needs nothing else.
  */
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'

@@ -132,7 +132,7 @@ build documentation:
 # Loads the search documents of every language into a throwaway Typesense and
 # runs the search checks against it, see .vitepress/search/. Fails the pipeline
 # when the index cannot be built or does not answer as expected. The keys are
-# made up for this job; the production keys are only used by the deploy job.
+# made up for this job; the production keys exist only on the web host.
 check search index:
   stage: check search index
   needs:
@@ -162,10 +162,15 @@ build docker image:
   variables:
     IMAGE: $CI_REGISTRY_IMAGE:develop
   script:
+    # The website, and `search-init` with the search index of the same build
+    # (see the `search-init` service in docker/docker-compose.yml).
     - docker build --pull -f docker/Dockerfile -t "$IMAGE" .
+    - docker build --pull -f docker/Dockerfile --target search-init -t "$IMAGE-search-init" .
     - docker run --rm "$IMAGE" nginx -t
+    - test "$(docker run --rm "$IMAGE-search-init" ls search-index | grep -c '\.jsonl$')" -eq 5
     - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
     - docker push "$IMAGE"
+    - docker push "$IMAGE-search-init"
     - docker logout "$CI_REGISTRY"
   only:
     - develop
@@ -175,15 +180,12 @@ deploy to website:
   before_script:
     - apt update && apt install -y --no-install-recommends rsync
   script:
-    # The keys of the stack are in the .env file next to docker-compose.yml on
-    # the web host, prepared by its administrators; this job neither writes nor
-    # reads it. The indexer needs the same values as masked and protected CI
-    # variables, see docker/README.md ("Keys").
-    - |
-      if [ -z "$TYPESENSE_ADMIN_KEY" ] || [ -z "$TYPESENSE_SEARCH_KEY" ]; then
-        echo "TYPESENSE_ADMIN_KEY and TYPESENSE_SEARCH_KEY must be set, see docker/README.md."
-        exit 1
-      fi
+    # The stack reads its keys from the .env next to docker-compose.yml on the
+    # web host, prepared by its administrators; this job does not touch it.
+    # Starting the stack also loads the search index of this release, see the
+    # `search-init` service. The job does not wait for it: a failed load shows
+    # on the web host only, see docker/README.md ("Check the search after a
+    # deploy").
     - test -d $HOME/.ssh || mkdir $HOME/.ssh
     - ssh-keyscan -4 $DEPLOYHOST_COMMUNITY >> $HOME/.ssh/known_hosts
     - eval $(ssh-agent -s)
@@ -191,24 +193,10 @@ deploy to website:
     - rsync -avz docker/docker-compose.yml $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY:/opt/zammad-org/
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY"
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml pull"
-    # Search first: the new content is indexed before the new site goes live.
-    # The indexer checks the new collections before it switches the aliases
-    # to them, so a failure stops the deploy with the previous site and index
-    # still in place. Typesense listens on 127.0.0.1 of the host only, so the
-    # indexer reaches it through an SSH tunnel.
-    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --wait typesense"
-    - ssh -4 -f -N -o ExitOnForwardFailure=yes -L 18108:127.0.0.1:8108 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY
-    - TYPESENSE_URL=http://127.0.0.1:18108 node .vitepress/search/indexer.mts en de sr it pt_BR
-    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --remove-orphans --wait"
-    # nginx searches with the search-only key from the .env on the web host,
-    # the indexer made sure of the one from the CI variable. One search through
-    # nginx shows that they are the same: a mismatch would leave the site
-    # searching with a key that Typesense refuses.
-    - |
-      ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml exec -T nginx wget -q -O - --header 'Content-Type: application/json' --post-data '{\"searches\":[{\"collection\":\"docs_en\",\"q\":\"*\",\"per_page\":0}]}' http://127.0.0.1:8080/search-api/multi_search" | grep -q '"found"' || {
-        echo "The site cannot search through nginx. Most likely TYPESENSE_SEARCH_KEY in the .env on the web host differs from the CI variable, see docker/README.md."
-        exit 1
-      }
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --remove-orphans"
+    # Waits for the services that keep running: `--wait` takes a container that
+    # exits — even successfully, like `search-init` — for a failure.
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --wait nginx typesense"
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker logout $CI_REGISTRY"
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker image prune -a -f"
   only:

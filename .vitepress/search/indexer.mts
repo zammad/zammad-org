@@ -4,15 +4,23 @@
  *
  *   TYPESENSE_URL=http://localhost:8108 TYPESENSE_ADMIN_KEY=… pnpm search:index [locale…]
  *
- * Without locales, every file in `search-index/` is indexed. All or nothing:
+ * Without locales, every file in `search-index/` is indexed. In production, the
+ * `search-init` service of the Docker stack runs it whenever the stack starts,
+ * see docker/docker-compose.yml. All or nothing:
  *
- * 1. Every locale is loaded into a new collection `docs_<locale>_<version>`,
- *    with the relevance settings of `relevance/<locale>.json` (synonyms,
- *    pinned results, stop words; see ./relevance.mts), and the new collections
- *    are checked (./verify.mts). A rejected document, a missing one, a pin to
- *    an unknown URL or a failed check fails the run, and the new collections
- *    are dropped again — the live search stays untouched. `--no-checks` skips
- *    the checks, for trying out relevance settings locally.
+ * 1. Every locale is loaded into a new collection
+ *    `docs_<locale>_<version>_<hash>`, with the relevance settings of
+ *    `relevance/<locale>.json` (synonyms, pinned results, stop words; see
+ *    ./relevance.mts), and the new collections are checked (./verify.mts). A
+ *    rejected document, a missing one, a pin to an unknown URL or a failed
+ *    check fails the run, and the new collections are dropped again — the live
+ *    search stays untouched. `--no-checks` skips the checks, for trying out
+ *    relevance settings locally.
+ *
+ *    The hash covers everything that goes into Typesense for the locale. When
+ *    the alias already points to a complete collection with the same hash,
+ *    the locale is skipped: a run without changes loads nothing and keeps the
+ *    previous collection for a rollback. `--force` loads it anyway.
  * 2. Only when all locales are complete, the aliases `docs_<locale>` are
  *    switched to the new collections. The search queries the aliases only.
  * 3. Of the older collections of a locale, the previous one is kept for a
@@ -20,7 +28,8 @@
  *
  * With `TYPESENSE_SEARCH_KEY`, the run also makes sure that this key exists
  * and can search the aliases — nothing else. nginx adds it to the searches of
- * the browsers, see docker/nginx/conf.d/default.conf.
+ * the browsers, see docker/nginx/conf.d/default.conf; both get it from the same
+ * `.env` of the Docker stack.
  *
  * Finally, Typesense writes a snapshot, so that the new index survives a
  * restart (see `snapshot`).
@@ -28,6 +37,7 @@
  * Plain `fetch` against the Typesense HTTP API, run with Node's type stripping.
  * See https://github.com/zammad/zammad-org/issues/242.
  */
+import { createHash } from 'node:crypto'
 import { readdirSync, readFileSync } from 'node:fs'
 import { basename, resolve } from 'node:path'
 import { keywordsOf, loadRelevance, type Relevance } from './relevance.mts'
@@ -68,6 +78,7 @@ async function typesense<T>(method: string, path: string, body?: unknown, key = 
 
 const args = process.argv.slice(2)
 const runChecks = !args.includes('--no-checks')
+const force = args.includes('--force')
 
 function localesToIndex(): string[] {
   const requested = args.filter((arg) => !arg.startsWith('--'))
@@ -99,15 +110,24 @@ function curationItems(locale: string, relevance: Relevance, idOf: Map<string, s
   }))
 }
 
+/** Everything that goes into Typesense for a locale, and the name of its new collection. */
+interface Plan {
+  locale: string
+  name: string
+  hash: string
+  documents: (SearchDocument & { keywords?: string[] })[]
+  curations: ReturnType<typeof curationItems>
+  stopwords: string[]
+}
+
 /**
- * Creates and fills the collection of a locale; returns its name. The pinned
- * results are a curation set of the same name, linked to the collection: they
- * switch (and roll back) together with it. Synonyms become the `keywords` of
- * the documents, see ./relevance.mts.
+ * Prepares the collection of a locale without touching Typesense. Synonyms
+ * become the `keywords` of the documents, see ./relevance.mts. The hash covers
+ * the whole payload, so any change of the content, the relevance settings or
+ * of what this script makes of them leads to a new collection.
  */
-async function load(locale: string): Promise<string> {
+function prepare(locale: string): Plan {
   const lines: string[] = readFileSync(resolve(indexDir, `${locale}.jsonl`), 'utf8').split('\n').filter(Boolean)
-  const name = `${collectionPrefix(locale)}${version}`
   const relevance = loadRelevance(locale)
   const documents = lines.map((line) => {
     const d = JSON.parse(line) as SearchDocument
@@ -116,8 +136,35 @@ async function load(locale: string): Promise<string> {
     return keywords.length ? { ...d, keywords } : d
   })
   const idOf = new Map(documents.map((d): [string, string] => [d.url, d.id]))
+  const curations = curationItems(locale, relevance, idOf)
+  const { stopwords } = relevance
+  const hash = createHash('sha256')
+    .update(JSON.stringify({ schema: collectionSchema(locale, ''), documents, curations, stopwords }))
+    .digest('hex')
+    .slice(0, 12)
 
-  await typesense('PUT', `/curation_sets/${name}`, { items: curationItems(locale, relevance, idOf) })
+  return { locale, name: `${collectionPrefix(locale)}${version}_${hash}`, hash, documents, curations, stopwords }
+}
+
+/** Whether the alias of the locale points to a complete collection with this payload already. */
+async function isLoaded(plan: Plan): Promise<boolean> {
+  const alias = await typesense<{ collection_name: string }>('GET', `/aliases/${aliasName(plan.locale)}`).catch(() => null)
+
+  if (!alias?.collection_name.endsWith(`_${plan.hash}`)) return false
+
+  // A collection lost with a restart may leave its alias behind.
+  const collection = await typesense<Collection>('GET', `/collections/${alias.collection_name}`).catch(() => null)
+
+  return collection?.num_documents === plan.documents.length
+}
+
+/**
+ * Creates and fills the collection of a locale. The pinned results are a
+ * curation set of the same name, linked to the collection: they switch (and
+ * roll back) together with it.
+ */
+async function load({ locale, name, documents, curations, stopwords }: Plan) {
+  await typesense('PUT', `/curation_sets/${name}`, { items: curations })
   await typesense('POST', '/collections', { ...collectionSchema(locale, name), curation_sets: [name] })
 
   const body = documents.map((d) => JSON.stringify(d)).join('\n')
@@ -131,22 +178,27 @@ async function load(locale: string): Promise<string> {
   if (failed.length) {
     const urlOf = new Map(documents.map((d): [string, string] => [d.id, d.url]))
     const sample = failed.slice(0, 5).map((r) => `  ${urlOf.get(r.id) ?? r.id}: ${r.error}`).join('\n')
-    throw new Error(`${locale}: ${failed.length} of ${lines.length} documents rejected\n${sample}`)
+    throw new Error(`${locale}: ${failed.length} of ${documents.length} documents rejected\n${sample}`)
   }
 
   const { num_documents } = await typesense<Collection>('GET', `/collections/${name}`)
 
-  if (num_documents !== lines.length) {
-    throw new Error(`${locale}: ${num_documents} documents in Typesense, expected ${lines.length}`)
+  if (num_documents !== documents.length) {
+    throw new Error(`${locale}: ${num_documents} documents in Typesense, expected ${documents.length}`)
+  }
+
+  // Stop words of the new collection, in a set of its own name for the checks;
+  // the live set (named like the alias) is only replaced when the alias
+  // switches. Typesense rejects an empty set.
+  if (stopwords.length) {
+    await typesense('PUT', `/stopwords/${name}`, { stopwords, locale: typesenseLocale(locale) })
   }
 
   console.log(
     `${locale}: ${num_documents} documents loaded into ${name}` +
-      ` (${documents.filter((d) => 'keywords' in d).length} with synonyms, ${relevance.pinned.length} pinned,` +
-      ` ${relevance.stopwords.length} stop words)`
+      ` (${documents.filter((d) => 'keywords' in d).length} with synonyms, ${curations.length} pinned,` +
+      ` ${stopwords.length} stop words)`
   )
-
-  return name
 }
 
 /** Deletes all collections of the locale except the aliased one and the one before it. */
@@ -170,40 +222,57 @@ async function drop(name: string) {
   }
 }
 
-/** Waits for Typesense to be up, e.g. a service container that is still starting in CI. */
+/**
+ * Waits for Typesense to be up, e.g. a service container that is still
+ * starting in CI. Reports the last error, so that a failure says why.
+ */
 async function waitUntilHealthy(timeoutSeconds = 60) {
+  let last = 'no answer'
+
   for (let second = 0; second < timeoutSeconds; second++) {
-    const healthy = await typesense<{ ok: boolean }>('GET', '/health').then((h) => h.ok).catch(() => false)
+    const healthy = await typesense<{ ok: boolean }>('GET', '/health')
+      .then((h) => {
+        last = `health ${JSON.stringify(h)}`
+        return h.ok
+      })
+      .catch((error: Error & { cause?: { code?: string; message?: string } }) => {
+        last = [error.message, error.cause?.code ?? error.cause?.message].filter(Boolean).join(': ')
+        return false
+      })
 
     if (healthy) return
 
     await new Promise((done) => setTimeout(done, 1000))
   }
 
-  throw new Error(`Typesense at ${url} is not healthy after ${timeoutSeconds}s`)
+  throw new Error(`Typesense at ${url} is not healthy after ${timeoutSeconds}s (${last})`)
 }
 
 async function main() {
   if (!apiKey) throw new Error('TYPESENSE_ADMIN_KEY is not set')
 
   const locales = localesToIndex()
+  // Prepared before anything is loaded: an invalid pin fails the run here.
+  const plans = locales.map(prepare)
 
   await waitUntilHealthy()
+
+  const changed: Plan[] = []
+
+  for (const plan of plans) {
+    if (!force && (await isLoaded(plan))) {
+      console.log(`${plan.locale}: unchanged, ${aliasName(plan.locale)} keeps its collection`)
+    } else {
+      changed.push(plan)
+    }
+  }
 
   const loaded = new Map<string, string>()
 
   try {
-    for (const locale of locales) loaded.set(locale, await load(locale))
-
-    // Stop words of the new collections, in a set of their own name for the
-    // checks below; the live set (named like the alias) is only replaced when
-    // the aliases switch. Typesense rejects an empty set.
-    for (const [locale, name] of loaded) {
-      const { stopwords } = loadRelevance(locale)
-
-      if (stopwords.length) {
-        await typesense('PUT', `/stopwords/${name}`, { stopwords, locale: typesenseLocale(locale) })
-      }
+    for (const plan of changed) {
+      await load(plan)
+      loaded.set(plan.locale, plan.name)
     }
 
     // Check the new collections before any alias points to them. The admin key,
@@ -224,9 +293,7 @@ async function main() {
     }
   } catch (error) {
     // Leave no half-filled collection behind; the aliases were not touched.
-    const created = [...loaded.values(), ...locales.map((l) => `${collectionPrefix(l)}${version}`)]
-
-    for (const name of new Set(created)) await drop(name)
+    for (const plan of changed) await drop(plan.name)
 
     throw error
   }
@@ -280,7 +347,7 @@ async function searchKeyWorks(alias: string): Promise<boolean> {
 /**
  * Creates the search-only key with the configured value unless it works
  * already. Typesense accepts a given value for a new key, so the same value can
- * live in the CI variables and in the nginx configuration.
+ * live in the `.env` of the Docker stack, from which nginx gets it as well.
  */
 async function ensureSearchKey(alias: string) {
   if (await searchKeyWorks(alias)) return

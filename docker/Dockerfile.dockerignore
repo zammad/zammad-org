@@ -1,4 +1,9 @@
-# Build context is the repository root; only send what the image needs.
+# Build context is the repository root; only send what the images need.
 *
 !dist
 !docker/nginx
+# search-init: the search documents of the build, the indexer and the search
+# client it shares with the site.
+!search-index
+!.vitepress/search
+!.vitepress/theme/search/typesense.mts
