@@ -1,0 +1,36 @@
+[
+  {
+    "url": "/de/documentation/use/guides/search.html",
+    "path": "documentation/use/guides/search.html",
+    "markdown": "documentation/use/guides/search.md",
+    "title": "Suche",
+    "breadcrumb": [
+      "Dokumentation",
+      "Zammad verwenden",
+      "Anleitungen"
+    ],
+    "section": "documentation/use",
+    "audience": "user",
+    "lastUpdated": "2026-10-01T08:00:00.000Z",
+    "sections": [
+      {
+        "heading": "Einfache Suche",
+        "anchor": "einfache-suche",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "url": "/de/reference/glossary.html",
+    "path": "reference/glossary.html",
+    "markdown": "reference/glossary.md",
+    "title": "Glossar",
+    "breadcrumb": [
+      "Referenz"
+    ],
+    "section": "reference",
+    "audience": "general",
+    "lastUpdated": "2026-10-01T08:00:00.000Z",
+    "sections": []
+  }
+]

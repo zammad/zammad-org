@@ -1,0 +1,38 @@
+[
+  {
+    "text": "Dokumentation",
+    "section": "documentation",
+    "items": [
+      {
+        "text": "Zammad verwenden",
+        "section": "documentation/use",
+        "items": [
+          {
+            "text": "Anleitungen",
+            "section": "documentation/use",
+            "items": [
+              {
+                "text": "Suche",
+                "url": "/de/documentation/use/guides/search.html",
+                "markdown": "documentation/use/guides/search.md",
+                "section": "documentation/use"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Referenz",
+    "section": "reference",
+    "items": [
+      {
+        "text": "Glossar",
+        "url": "/de/reference/glossary.html",
+        "markdown": "reference/glossary.md",
+        "section": "reference"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+# Build context is the repository root; only send what the image needs.
+*
+!agent-data
+!dist
+!mcp
+mcp/spec
+mcp/.rspec
+mcp/.rubocop.yml
+mcp/Dockerfile*

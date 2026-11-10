@@ -1,0 +1,29 @@
+plugins:
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 4.0
+
+Layout/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Exclude:
+    - spec/**/*
+
+# Tool classes describe themselves with long schema literals.
+Metrics/MethodLength:
+  Max: 25
+Metrics/ClassLength:
+  Max: 200
+Metrics/AbcSize:
+  Max: 30
+# The keyword arguments of a tool are the properties of its input schema.
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+RSpec/ExampleLength:
+  Max: 20
+RSpec/MultipleExpectations:
+  Max: 6

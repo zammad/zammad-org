@@ -4,13 +4,15 @@ Zammad Hub runs in production as a Docker container: nginx with the built site a
 image. A reverse proxy on the web host terminates TLS and forwards every request to the container. Everything else
 (redirects, language detection, caching, security headers, error pages, the search proxy) is configured in this
 directory. The search index lives in a second container, Typesense, and a third one loads it, see [Search](#search).
+Another one, the MCP server of the documentation, answers assistants and agents at `/mcp`, see
+[MCP server](#mcp-server).
 
 | File | Purpose |
 | --- | --- |
 | `Dockerfile` | The images: the website (default target, based on the unprivileged nginx image, runs as non-root, listens on `8080`) and `search-init` (the search index of the same build, see [Search](#search)). |
 | `nginx/**` | nginx server configuration. `nginx/templates/` is rendered with environment variables at start. |
-| `docker-compose.yml` | Production stack: nginx, Typesense and `search-init`. The deploy job copies it to the web host. |
-| `docker-compose.override.yml` | Local testing only: builds the images from `dist/` and `search-index/` instead of pulling them. |
+| `docker-compose.yml` | Production stack: nginx, Typesense, `search-init` and the MCP server. The deploy job copies it to the web host. |
+| `docker-compose.override.yml` | Local testing only: builds the images from `dist/`, `search-index/` and `agent-data/` instead of pulling them. |
 | `.env` | Local testing only: dev keys for Typesense. The web host has its own, see [Keys](#keys). |
 | `reverse-proxy.example.conf` | Example vhost for the reverse proxy on the web host. |
 
@@ -34,8 +36,9 @@ docker compose up -d --build
 docker compose logs -f search-init   # until it has loaded the index
 ```
 
-The service is available via <http://localhost:8081/>. Rebuild the images (`--build`) after every `pnpm build`; the
-next start loads the languages that changed.
+The service is available via <http://localhost:8081/>, the MCP server via <http://localhost:8081/mcp> (see
+`mcp/README.md` for a client). Rebuild the images (`--build`) after every `pnpm build`; the next start loads the
+languages that changed.
 
 Stop the stack:
 
@@ -92,19 +95,19 @@ Typesense publishes its port on `127.0.0.1` of the web host, for the host's admi
 | Variable | Used by | Can |
 | --- | --- | --- |
 | `TYPESENSE_ADMIN_KEY` | Typesense (bootstrap key), `search-init` | Everything. |
-| `TYPESENSE_SEARCH_KEY` | nginx, `search-init` (creates the key in Typesense) | Search the `docs_*` collections, nothing else. |
+| `TYPESENSE_SEARCH_KEY` | nginx, the MCP server, `search-init` (creates the key in Typesense) | Search the `docs_*` collections, nothing else. |
 
 `docker compose` refuses to start the stack without both. On the web host, they are in `/opt/zammad-org/.env` next to
 `docker-compose.yml`, which the host's administrators prepare before the first deploy (see [Prepare the web
 host](#prepare-the-web-host)). The file belongs to root and is readable by root only; the deploy job neither writes
 nor reads it, its user has no rights to it, and `sudo docker compose` reads it. No CI variables are needed: nginx,
-Typesense and `search-init` all get the keys from this one file. Generate them as plain hex (`openssl rand -hex 32`):
-Compose interpolates `$` in `.env` values. Consequences of the self-hosting:
+Typesense, `search-init` and the MCP server all get the keys from this one file. Generate them as plain hex (`openssl
+rand -hex 32`): Compose interpolates `$` in `.env` values. Consequences of the self-hosting:
 
 - The admin key is never in the repository, an image, CI or the browser. It exists only on the web host: in the
   root-only `.env` file and in the runtime environment of the Typesense and `search-init` containers.
-- The search-only key exists in the root-only `.env` file and in the runtime environment of the nginx and `search-init`
-  containers. It is not secret in the sense that it could do harm — it only searches public content — but keeping it
+- The search-only key exists in the root-only `.env` file and in the runtime environment of the nginx, `search-init`
+  and MCP server containers. It is not secret in the sense that it could do harm — it only searches public content — but keeping it
   server-side lets the rate limit and the endpoint restriction above apply to every client.
 - The index is derived data: losing the volume loses nothing that the next start of `search-init` cannot restore.
 
@@ -243,9 +246,9 @@ A key is changed in `/opt/zammad-org/.env`; `sudo docker compose up -d` then res
 
 Search-only key:
 
-1. Set the new value for `TYPESENSE_SEARCH_KEY` in `.env`, then run `sudo docker compose up -d`. It restarts nginx and
-   `search-init` with the new value, and `search-init` creates the new key in Typesense. Until it has, a few seconds,
-   the search may fail. The old key still exists.
+1. Set the new value for `TYPESENSE_SEARCH_KEY` in `.env`, then run `sudo docker compose up -d`. It restarts nginx,
+   the MCP server and `search-init` with the new value, and `search-init` creates the new key in Typesense. Until it
+   has, a few seconds, the search may fail. The old key still exists.
 2. Delete the old key. Find it by the first four characters of its value:
 
    ```sh
@@ -264,3 +267,50 @@ The version is pinned in three places: `docker/docker-compose.yml`, the `check s
 and the `build` job in `.github/workflows/ci.yml`. Renovate updates all three in one merge request, whose pipeline
 runs the checks against the new version. The deploy pulls the new image and restarts Typesense with its data. If a new
 version cannot read the data, restore the index as described above (with an empty volume).
+
+## MCP server
+
+The MCP server of the documentation (`mcp/`, see `mcp/README.md`) runs as the `mcp` service of the stack: the image of
+the pipeline, which carries the agent data and Markdown pages of the same build as the deployed site and index. It is
+public at `https://next.zammad.org/mcp` and only reads.
+
+- **Network:** the service is only on the internal `search` network, together with Typesense and nginx. It has no
+  route out of it: no internet, no other host, no Zammad. Typesense and nginx are also on the default network, for the
+  published ports.
+- **Index access:** it searches with `TYPESENSE_SEARCH_KEY`, the search-only key of nginx (see [Keys](#keys)); there is
+  nothing to set up for it.
+- **nginx** (`location = /mcp`): `POST` only (other methods `405`), at most 64 KB per request, 10 requests per second
+  per client with bursts of 40 (the internal chat sends the requests of all its users from one address), `429` beyond
+  that. The client address is not passed on. nginx resolves the service per request: while it is down, the site and its
+  search keep working, and `/mcp` answers `504` or `502`.
+- **Container:** read-only file system, no capabilities, an unprivileged user. It writes nothing; its call log goes to
+  stdout, like the logs of the other services.
+
+The deploy job waits for the service to get healthy, like for nginx and Typesense. Whether it finds something depends on
+the index, which `search-init` may still be loading; see [Check the search after a deploy](#check-the-search-after-a-deploy).
+
+### Call log
+
+Every tool call is logged on stdout as one JSON line, without anything the client typed (see `mcp/README.md`): tool,
+language, filters, number of results, fallback, duration and error. Calls without results show where the documentation
+has gaps, by tool, language and section:
+
+```sh
+cd /opt/zammad-org
+sudo docker compose logs --no-log-prefix mcp | grep '"event":"tool_call"'
+sudo docker compose logs --no-log-prefix mcp | grep '"event":"tool_call"' | grep '"results":0'
+```
+
+### When the MCP server is down
+
+```sh
+cd /opt/zammad-org
+sudo docker compose ps mcp
+sudo docker compose logs --tail 50 mcp
+sudo docker compose up -d --wait mcp
+```
+
+The server refuses to start without its content, which would show in the log; the image of the last deploy always has
+it. If searches fail while the server is up (the tools answer that the search is unavailable), check the index as
+described in [Check the search after a deploy](#check-the-search-after-a-deploy) and [Restore a lost
+index](#restore-a-lost-index).

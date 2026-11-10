@@ -1,0 +1,17 @@
+[
+  {
+    "term": "Agent",
+    "definition": "Ein Agent ist ein Benutzer, der Tickets bearbeitet.",
+    "url": "/de/reference/glossary.html#section-a"
+  },
+  {
+    "term": "Automatisches Speichern (Autosave)",
+    "definition": "Zammad speichert Entwürfe automatisch.",
+    "url": "/de/reference/glossary.html#section-a"
+  },
+  {
+    "term": "Übersicht",
+    "definition": "Eine Übersicht listet Tickets nach Bedingungen.",
+    "url": "/de/reference/glossary.html#section-u"
+  }
+]

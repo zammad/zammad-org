@@ -65,7 +65,6 @@ interface Section {
 
 export function extractSearchDocuments(options: ExtractOptions): ExtractResult {
   const { locale, outDir, indexFile } = options
-  const base = `/${locale}/`
   const excluded = new Set(options.excludedPages ?? [])
   const pageTitles = options.pageTitles ?? new Map<string, string>()
 
@@ -91,7 +90,7 @@ export function extractSearchDocuments(options: ExtractOptions): ExtractResult {
 
     const section = sectionOf(pagePath)
     const label = section === 'general' ? '' : (pageTitles.get(`${section}/index.html`) ?? '')
-    const pageUrl = base + pagePath.replace(/(^|\/)index\.html$/, '$1')
+    const pageUrl = pageUrlOf(locale, pagePath)
     const title = sections[0]?.level === 1 ? sections[0].heading : ''
 
     if (!title) {
@@ -259,6 +258,14 @@ function validate(locale: string, documents: SearchDocument[]) {
     if (urls.has(d.url)) throw new Error(`Search: duplicate URL in "${locale}": ${d.url}`)
     urls.add(d.url)
   }
+}
+
+/**
+ * Link of a built page (`foo/bar.html`, `foo/index.html`) without anchor, as
+ * the site links to it: `/<locale>/foo/bar.html`, `/<locale>/foo/`.
+ */
+export function pageUrlOf(locale: string, pagePath: string): string {
+  return `/${locale}/` + pagePath.replace(/(^|\/)index\.html$/, '$1')
 }
 
 /** Path of a built page relative to the app, from a page's path relative to the source root. */

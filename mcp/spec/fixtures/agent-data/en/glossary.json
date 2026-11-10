@@ -1,0 +1,22 @@
+[
+  {
+    "term": "Agent",
+    "definition": "An agent is a user who works on tickets. See the [glossary](/en/reference/glossary.html).",
+    "url": "/en/reference/glossary.html#section-a"
+  },
+  {
+    "term": "Custom development (CD)",
+    "definition": "Development for a customer.",
+    "url": "/en/reference/glossary.html#section-c"
+  },
+  {
+    "term": "(Ticket) template",
+    "definition": "Prefilled ticket fields.",
+    "url": "/en/reference/glossary.html#section-t"
+  },
+  {
+    "term": "Trigger",
+    "definition": "Triggers run actions when a ticket changes.",
+    "url": "/en/reference/glossary.html#section-t"
+  }
+]

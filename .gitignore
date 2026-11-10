@@ -33,3 +33,7 @@ src/pt_BR
 
 # Search documents extracted at build time, see .vitepress/search/.
 /search-index/
+
+# Navigation, pages and glossary for the MCP server, written at build time,
+# see .vitepress/llms/agent-data.mts.
+/agent-data/

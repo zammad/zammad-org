@@ -1,0 +1,81 @@
+[
+  {
+    "url": "/en/get-started/installation/docker.html",
+    "path": "get-started/installation/docker.html",
+    "markdown": "get-started/installation/docker.md",
+    "title": "Install with Docker",
+    "breadcrumb": [
+      "Get started",
+      "Installation"
+    ],
+    "section": "get-started",
+    "audience": "general",
+    "lastUpdated": "2026-10-01T08:00:00.000Z",
+    "sections": [
+      {
+        "heading": "Requirements",
+        "anchor": "requirements",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "url": "/en/documentation/use/guides/search.html",
+    "path": "documentation/use/guides/search.html",
+    "markdown": "documentation/use/guides/search.md",
+    "title": "Search",
+    "breadcrumb": [
+      "Documentation",
+      "Use Zammad",
+      "Guides"
+    ],
+    "section": "documentation/use",
+    "audience": "user",
+    "lastUpdated": "2026-10-01T08:00:00.000Z",
+    "sections": [
+      {
+        "heading": "Basic search",
+        "anchor": "basic-search",
+        "level": 2
+      },
+      {
+        "heading": "Detailed search",
+        "anchor": "detailed-search",
+        "level": 2
+      },
+      {
+        "heading": "Options",
+        "anchor": "options",
+        "level": 3
+      },
+      {
+        "heading": "Elasticsearch optional",
+        "anchor": "elasticsearch",
+        "level": 2
+      },
+      {
+        "heading": "Options",
+        "anchor": "options-1",
+        "level": 3
+      },
+      {
+        "heading": "Претрага",
+        "anchor": "претрага",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "url": "/en/reference/glossary.html",
+    "path": "reference/glossary.html",
+    "markdown": "reference/glossary.md",
+    "title": "Glossary",
+    "breadcrumb": [
+      "Reference"
+    ],
+    "section": "reference",
+    "audience": "general",
+    "lastUpdated": "2026-10-01T08:00:00.000Z",
+    "sections": []
+  }
+]

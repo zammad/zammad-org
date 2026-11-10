@@ -1,0 +1,70 @@
+# Questions the MCP server has to answer from the right page, in the right
+# language, on the real index (see golden_spec.rb). They come on top of the
+# checks of the site search in .vitepress/search/relevance/<locale>.json,
+# which the server has to pass as well.
+#
+# search:   `expect` is the start of a page URL, optionally with an anchor
+#           (then the exact section); it has to be among the first `top`
+#           pages (default 3). `fallback: true` expects an answer from the
+#           English documentation, marked as such; otherwise every result
+#           has to be in the requested language.
+# pages:    get_page; `starts_with` is the start of the returned Markdown,
+#           `url` the start of the page URL (both optional).
+# glossary: get_glossary_term; `term` is the expected entry.
+
+search:
+  # English, typos
+  - { locale: en, query: insall docker, expect: /en/get-started/installation/docker.html }
+  - { locale: en, query: elasticserach, expect: /en/tutorials/install-elasticsearch.html, top: 1 }
+  - { locale: en, query: kubernets, expect: /en/get-started/installation/kubernetes.html, top: 1 }
+  - { locale: en, query: mutli factor, expect: /en/documentation/use/guides/two-factor-auth.html }
+  # English
+  - { locale: en, query: two factor authentication, expect: /en/documentation/use/guides/two-factor-auth.html, top: 1 }
+  - { locale: en, query: backup restore docker, expect: /en/tutorials/backup-restore-docker.html, top: 1 }
+  - { locale: en, query: knowledge base custom url, expect: /en/tutorials/custom-kb-url.html, top: 1 }
+  - { locale: en, query: mobile view, expect: /en/documentation/use/guides/mobile-view.html, top: 1 }
+  - { locale: en, query: ticket merge, expect: "/en/documentation/use/advanced-features.html#merge-tickets", top: 1 }
+  - { locale: en, query: user access token, expect: /en/reference/rest-api/user-access-token.html, top: 1 }
+  - { locale: en, query: import grafana dashboard, expect: "/en/tutorials/reporting-grafana.html#importing-a-dashboard", top: 1 }
+  - { locale: en, query: firewall ports, expect: "/en/tutorials/firewall-selinux.html#firewall", top: 1 }
+  - { locale: en, query: kerberos sso, expect: /en/tutorials/sso-kerberos.html, top: 1 }
+  # English documentation, German word
+  - { locale: en, query: eskalation, expect: /en/documentation/use/advanced-features.html, top: 1 }
+
+  # German
+  - { locale: de, query: passwort zurücksetzen, expect: "/de/documentation/use/personal-settings.html#passwort", top: 1 }
+  - { locale: de, query: zwei faktor authentifizierung, expect: /de/documentation/use/guides/two-factor-auth.html }
+  - { locale: de, query: ticket zusammenführen, expect: "/de/documentation/use/advanced-features.html#ticket-zusammenfassen", top: 1 }
+  - { locale: de, query: grafana dashboard importieren, expect: "/de/tutorials/reporting-grafana.html#importieren-eines-dashboards", top: 1 }
+  - { locale: de, query: sicherung wiederherstellen docker, expect: /de/tutorials/backup-restore-docker.html }
+  - { locale: de, query: mobile ansicht, expect: /de/documentation/use/guides/mobile-view.html, top: 1 }
+  - { locale: de, query: kerberos keytab, expect: /de/tutorials/sso-kerberos.html, top: 1 }
+  - { locale: de, query: selinux, expect: /de/tutorials/firewall-selinux.html, top: 1 }
+  - { locale: de, query: memory allocator jemalloc, expect: /de/reference/memory-allocator.html, top: 1 }
+  - { locale: de, query: grafana reporting, expect: /de/tutorials/reporting-grafana.html, top: 1 }
+  # German, typos
+  - { locale: de, query: elastiksearch, expect: /de/tutorials/install-elasticsearch.html, top: 1 }
+  - { locale: de, query: zwei-faktor, expect: /de/documentation/use/guides/two-factor-auth.html }
+  # German with English terms, answered in German
+  - { locale: de, query: backup docker, expect: /de/tutorials/backup-restore-docker.html, top: 1 }
+  - { locale: de, query: helm chart, expect: /de/get-started/installation/kubernetes.html, top: 1 }
+  - { locale: de, query: reverse proxy, expect: "/de/get-started/installation/package.html#reverse-proxy", top: 1 }
+  # German question, English term the German documentation does not use
+  # ("Tastenkombinationen"): answered from English, marked as such.
+  - { locale: de, query: shortcuts, expect: /en/documentation/use/guides/editor.html, top: 1, fallback: true }
+
+pages:
+  - { page: "https://next.zammad.org/en/documentation/use/guides/search.html#basic-search", locale: en, starts_with: "## Basic search" }
+  - { page: "/de/documentation/use/personal-settings.html#passwort", locale: de, starts_with: "## Passwort" }
+  # The German version of an English URL.
+  - { page: "https://next.zammad.org/en/tutorials/sso-kerberos.html", request_locale: de, locale: de, url: /de/tutorials/sso-kerberos.html }
+  - { page: get-started/installation/docker, locale: en, starts_with: "# " }
+
+glossary:
+  - { locale: en, query: text module, term: Text module }
+  - { locale: en, query: taskbar, term: Taskbar }
+  - { locale: de, query: textbaustein, term: Textbaustein }
+  - { locale: de, query: vorlage, term: (Ticket) Vorlage }
+  - { locale: de, query: sla, term: SLA }
+  # An English term in a German question: from the English glossary, marked.
+  - { locale: de, query: text module, term: Text module, fallback: true }

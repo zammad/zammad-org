@@ -81,6 +81,20 @@ jobs:
       env:
         TYPESENSE_URL: http://localhost:8108
         TYPESENSE_SEARCH_KEY: ci-check-search-key
+    # The MCP server (mcp/): RuboCop and the specs, then the specs against the
+    # build output and the index above.
+    - uses: ruby/setup-ruby@v1
+      with:
+        working-directory: mcp
+        bundler-cache: true
+    - run: bundle exec rubocop && bundle exec rspec
+      working-directory: mcp
+    - run: bundle exec rspec --tag integration
+      working-directory: mcp
+      env:
+        MCP_INTEGRATION: 1
+        TYPESENSE_URL: http://localhost:8108
+        TYPESENSE_SEARCH_KEY: ci-check-search-key
     - uses: actions/upload-artifact@v7
       id: build-artifact
       with:

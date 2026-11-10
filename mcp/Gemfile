@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+# .ruby-version pins the version of the dev container and CI; any 4.0 runs it.
+ruby '~> 4.0'
+
+gem 'mcp', '~> 1.9.0'
+gem 'puma', '~> 8.0'
+gem 'rack', '~> 3.2'
+
+group :development, :test do
+  gem 'rack-test', '~> 2.2'
+  gem 'rspec', '~> 3.13'
+  gem 'rubocop', '~> 1.92', require: false
+  gem 'rubocop-rspec', '~> 3.10', require: false
+  gem 'webmock', '~> 3.34'
+end

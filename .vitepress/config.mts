@@ -8,6 +8,10 @@ import definitionListMarkdownPlugin from 'markdown-it-deflist'
 import footnote from 'markdown-it-footnote'
 import kbd from 'markdown-it-kbd'
 import { icon } from '@mdit/plugin-icon'
+import llmstxt from 'vitepress-plugin-llms'
+import { writeAgentData } from './llms/agent-data.mts'
+import { checkLlmsTxt } from './llms/check.mts'
+import { indexPages, mainSidebar, renderToc, sidebarLinks, type Sidebar } from './llms/sidebar.mts'
 import { builtPagePath, extractSearchDocuments } from './search/extract.mts'
 import { loadRelevance } from './search/relevance.mts'
 import { aliasName } from './search/schema.mts'
@@ -62,6 +66,13 @@ const rootPath = fileURLToPath(new URL('./../src', import.meta.url))
 const otherLocales = supportedLocales.filter((l) => l !== locale)
 
 /*
+ * Public origin of the site, without trailing slash. Absolute links that leave
+ * the site with the content — `llms.txt` and the Markdown pages for agents —
+ * are built from it. See https://github.com/zammad/zammad-org/issues/239.
+ */
+const siteUrl = (env.SITE_URL || 'https://next.zammad.org').replace(/\/+$/, '')
+
+/*
  * Links in the content and in the configuration carry the language prefix of
  * their own app (`/en/documentation/...` in the English content, `/de/...` in
  * the German one). VitePress prepends the base path to every internal link, so
@@ -110,7 +121,23 @@ stripOwnLocalePrefix(localeConfig)
  */
 const searchExcludedPages = new Set<string>()
 const searchPageTitles = new Map<string, string>()
+// Last change of every page (ms since epoch), for the agent data in `buildEnd`.
+const pageLastUpdated = new Map<string, number>()
 const searchRenderedMarkdown = new Map<string, string>()
+
+/*
+ * The sidebar `withSidebar` generates for this app. The `llms.txt` table of
+ * contents is rendered from it once the site is built, see `vite.plugins`.
+ */
+let appSidebar: Sidebar | undefined
+
+/** Index pages of this app's sources by folder, and whether they have content. */
+const localeIndexPages = indexPages(resolve(rootPath, locale))
+
+function withAppSidebar<T extends { themeConfig?: { sidebar?: unknown } }>(config: T): T {
+  appSidebar = config.themeConfig?.sidebar as Sidebar | undefined
+  return config
+}
 
 const commonSidebarConfig = {
   collapsed: true,
@@ -123,7 +150,7 @@ const commonSidebarConfig = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig(
-  withSidebar({
+  withAppSidebar(withSidebar({
     title: 'Zammad Hub',
     outDir: env.OUT_DIR || `dist/${locale}`,
     cacheDir: env.CACHE_DIR || `cache/${locale}`,
@@ -282,6 +309,7 @@ export default defineConfig(
       const builtPage = builtPagePath(pageData.relativePath)
 
       searchPageTitles.set(builtPage, pageData.title)
+      if (pageData.lastUpdated) pageLastUpdated.set(builtPage, pageData.lastUpdated)
       if (pageData.frontmatter.search === false) searchExcludedPages.add(builtPage)
     },
     /*
@@ -307,6 +335,38 @@ export default defineConfig(
       console.log(
         `Search: ${documents.length} documents from ${pages} pages written to ${relative(siteConfig.root, indexFile)}`
       )
+
+      // `llms.txt` has to list every page of the sidebar, see .vitepress/llms/check.mts.
+      const sidebar = mainSidebar(appSidebar)
+      const problems = checkLlmsTxt({ locale, outDir: siteConfig.outDir, siteUrl, sidebar })
+
+      if (problems.length) {
+        throw new Error(`llms.txt does not match the sidebar:\n${problems.map((p) => `  ${p}`).join('\n')}`)
+      }
+
+      console.log(`llms.txt: all ${sidebarLinks(sidebar.items, sidebar.base).length} sidebar entries listed`)
+
+      /*
+       * Navigation, pages and glossary for the MCP server, written to
+       * `agent-data/<locale>/`. See .vitepress/llms/agent-data.mts.
+       */
+      const dataDir = resolve(env.AGENT_DATA_DIR || resolve(siteConfig.root, 'agent-data'), locale)
+      const agentData = writeAgentData({
+        locale,
+        outDir: siteConfig.outDir,
+        dataDir,
+        sidebar,
+        pageData: new Map(
+          [...searchPageTitles].map(([page, title]) => [page, { title, lastUpdated: pageLastUpdated.get(page) }])
+        ),
+        groupHasPage: (folder) => localeIndexPages.get(folder) === true,
+        hasStopwords: loadRelevance(locale).stopwords.length > 0,
+        documents,
+      })
+
+      console.log(
+        `Agent data: ${agentData.pages} pages and ${agentData.terms} glossary terms written to ${relative(siteConfig.root, dataDir)}`
+      )
     },
     /*
      * Each app knows only its own locale. The language switcher therefore has
@@ -317,6 +377,53 @@ export default defineConfig(
     },
     vite: {
       clearScreen: false,
+      /*
+       * `llms.txt` of this app and one Markdown file per page next to its HTML
+       * (`foo/bar.html` → `foo/bar.md`), for assistants and coding agents.
+       * `llms-full.txt` (all pages in one file) is not generated: it is too
+       * heavy for models. See https://github.com/zammad/zammad-org/issues/239.
+       */
+      plugins: [
+        llmstxt({
+          domain: siteUrl,
+          generateLLMsFullTxt: false,
+          // The hint is a hidden element on the start page; the `describedby`
+          // link in the head of every page points agents to `llms.txt` anyway.
+          injectLLMHint: false,
+          // Relative to the source root that all locales share. Index pages
+          // without content only name a sidebar group, see `indexPages`.
+          ignoreFiles: [
+            `${locale}/TEMPLATE.md`,
+            `${locale}/modules/**`,
+            ...[...localeIndexPages]
+              .filter(([, hasContent]) => !hasContent)
+              .map(([folder]) => `${locale}/${folder}/index.md`),
+          ],
+          customLLMsTxtTemplate: '# {title}\n\n{description}\n\n{details}\n\n{toc}\n',
+          customTemplateVariables: {
+            details: [
+              'Other languages:',
+              '',
+              ...otherLocales.map((l) => `- [${localeLabels[l]}](${siteUrl}/${l}/llms.txt)`),
+            ].join('\n'),
+            /*
+             * The table of contents follows the main sidebar, rendered here
+             * instead of by the plugin: the plugin drops the base path (`/en/`)
+             * of the pages in nested sidebar groups. Read when the file is
+             * written, after `withSidebar` has generated the sidebar.
+             */
+            get toc() {
+              const { base, items } = mainSidebar(appSidebar)
+
+              return renderToc(items, {
+                base,
+                pageUrl: (page) => `${siteUrl}/${locale}/${page}`,
+                groupHasPage: (folder) => localeIndexPages.get(folder) === true,
+              })
+            },
+          },
+        }),
+      ],
       resolve: {
         alias: [
           {
@@ -415,5 +522,5 @@ export default defineConfig(
       rootGroupText: `\u2039 ${localeConfig.user.rootGroupText}`, // guillemet (‹)
       rootGroupLink: '../introduction.html',
     },
-  ]),
+  ])),
 )

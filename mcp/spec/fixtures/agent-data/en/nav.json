@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Get started",
+    "section": "get-started",
+    "items": [
+      {
+        "text": "Installation",
+        "section": "get-started",
+        "items": [
+          {
+            "text": "Install with Docker",
+            "url": "/en/get-started/installation/docker.html",
+            "markdown": "get-started/installation/docker.md",
+            "section": "get-started"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Documentation",
+    "section": "documentation",
+    "items": [
+      {
+        "text": "Use Zammad",
+        "section": "documentation/use",
+        "items": [
+          {
+            "text": "Guides",
+            "section": "documentation/use",
+            "items": [
+              {
+                "text": "Search",
+                "url": "/en/documentation/use/guides/search.html",
+                "markdown": "documentation/use/guides/search.md",
+                "section": "documentation/use"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Reference",
+    "section": "reference",
+    "items": [
+      {
+        "text": "Glossary",
+        "url": "/en/reference/glossary.html",
+        "markdown": "reference/glossary.md",
+        "section": "reference"
+      }
+    ]
+  }
+]

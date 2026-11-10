@@ -43,6 +43,20 @@ TYPESENSE_ADMIN_KEY=local-dev-admin-key pnpm search:index en --no-checks
 TYPESENSE_SEARCH_KEY=local-dev-search-key pnpm search:check en
 ```
 
+## Agents (`llms.txt`, MCP)
+
+For assistants and coding agents, `pnpm build` writes an [`llms.txt`](https://llmstxt.org/) into every app (`dist/<language>/llms.txt`) and the Markdown version of every page next to its HTML (`foo/bar.html` → `foo/bar.md`), with [vitepress-plugin-llms](https://github.com/okineadev/vitepress-plugin-llms). nginx also serves the English `llms.txt` at `/llms.txt`; it links to the other languages.
+
+- The table of contents follows the main sidebar. It is rendered by `.vitepress/llms/sidebar.mts`, not by the plugin, which drops the base path (`/en/`) of the pages in nested sidebar groups.
+- Index pages that only name a sidebar group (front matter without content) get no Markdown version and no entry. An index page with content of its own is linked from its group.
+- `llms-full.txt` (all pages in one file) is not generated: it is too heavy for models.
+- At the end of every build, `.vitepress/llms/check.mts` checks that `llms.txt` lists every page of the sidebar and that every Markdown page it links to was built. Otherwise the build fails, locally and in both CI pipelines.
+- The plugin advises against multilingual sites, because it would mix the languages in one file. Here every language is built as an app of its own, so the plugin only ever sees one language.
+- Absolute links use `SITE_URL` (default `https://next.zammad.org`).
+- The MCP server in `mcp/` gives agents search, pages, navigation and glossary at `https://next.zammad.org/mcp`; see
+  `mcp/README.md` for its tools, client setup and development, and `docker/README.md` for its operation.
+- For the MCP server, the build also writes `agent-data/<language>/` (outside `dist/`, never served): the navigation (`nav.json`), the pages with their Markdown versions and outlines (`pages.json`), the glossary (`glossary.json`) and the search settings of the language (`search.json`). See `.vitepress/llms/agent-data.mts`.
+
 ## Internationalization (i18n)
 
 Only the content in `src/en/` directory and child directories should be modified. The content of all other languages is generated from the PO files in `i18n/` and is not tracked by Git:

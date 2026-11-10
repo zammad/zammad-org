@@ -3,7 +3,10 @@
 {
   "name": "zammad-org-devcontainer",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/base:debian-13",
+  // Debian 13 with Ruby for the MCP server in mcp/ (see mcp/README.md); keep
+  // the version in line with mcp/.ruby-version. The Ruby feature of
+  // devcontainers has no Ruby 4.0.
+  "image": "ghcr.io/rails/devcontainer/images/ruby:4.0.9",
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "moby": false

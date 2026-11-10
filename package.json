@@ -10,6 +10,7 @@
     "node-html-parser": "^9.0.6",
     "serve": "^14.2.6",
     "vitepress": "^1.6.3",
+    "vitepress-plugin-llms": "^1.14.0",
     "vitepress-plugin-tabs": "^0.9.0",
     "vitepress-sidebar": "^1.31.1",
     "yaml": "^2.7.0"
@@ -36,6 +37,9 @@
     "search:check": "node .vitepress/search/check.mts",
     "search:start": "cd docker && docker compose up -d --wait typesense",
     "search:stop": "cd docker && docker compose stop typesense",
+    "mcp:install": "cd mcp && bundle install",
+    "mcp:dev": "cd mcp && TYPESENSE_SEARCH_KEY=${TYPESENSE_SEARCH_KEY:-local-dev-search-key} bundle exec puma -C config/puma.rb",
+    "mcp:test": "cd mcp && bundle exec rspec && bundle exec rubocop",
     "search:dev": "pnpm search:start && pnpm build:${LOCALE:-en} && TYPESENSE_ADMIN_KEY=${TYPESENSE_ADMIN_KEY:-local-dev-admin-key} TYPESENSE_SEARCH_KEY=${TYPESENSE_SEARCH_KEY:-local-dev-search-key} pnpm search:index ${LOCALE:-en}",
     "build-language-config-json-files": "(cd .vitepress; for FILE in *.yaml; do npx yaml < $FILE --json --single > $FILE.json; done)",
     "reset-po-changes": "echo 'Only weblate may update .po files, reverting any changes.' && git restore i18n/*.po",

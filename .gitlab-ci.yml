@@ -118,8 +118,9 @@ build documentation:
   stage: build documentation
   script:
     - pnpm install
-    # Builds every language into its own directory below dist/, and its search
-    # documents into search-index/.
+    # Builds every language into its own directory below dist/, its search
+    # documents into search-index/ and the data of the MCP server into
+    # agent-data/.
     - pnpm build
   artifacts:
     name: static-html
@@ -128,6 +129,7 @@ build documentation:
     paths:
       - dist
       - search-index
+      - agent-data
 
 # Loads the search documents of every language into a throwaway Typesense and
 # runs the search checks against it, see .vitepress/search/. Fails the pipeline
@@ -155,7 +157,42 @@ check search index:
     - TYPESENSE_URL=http://typesense:8108 TYPESENSE_ADMIN_KEY=ci-check-admin-key TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/indexer.mts en de sr it pt_BR
     - TYPESENSE_URL=http://typesense:8108 TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/check.mts en de sr it pt_BR
 
-# Only needed for the container deployment, see `deploy to website`.
+# The MCP server (mcp/, see mcp/README.md): RuboCop and the specs, then the
+# specs against the build output of this pipeline, with its own throwaway
+# Typesense loaded with the search documents of this pipeline. The keys are
+# made up for this job.
+test mcp:
+  stage: check search index
+  needs:
+    - build documentation
+  services:
+    - name: typesense/typesense:30.2
+      alias: typesense
+  variables:
+    # Configuration of the Typesense service container.
+    TYPESENSE_API_KEY: ci-check-admin-key
+    TYPESENSE_DATA_DIR: /tmp
+    BUNDLE_PATH: vendor/bundle
+    BUNDLE_FROZEN: "true"
+  cache:
+    key:
+      files:
+        - mcp/Gemfile.lock
+    paths:
+      - mcp/vendor/bundle
+  script:
+    - source /etc/profile.d/rvm.sh
+    - ruby --version
+    - TYPESENSE_URL=http://typesense:8108 TYPESENSE_ADMIN_KEY=ci-check-admin-key TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/indexer.mts en de sr it pt_BR
+    - cd mcp
+    - bundle install
+    - bundle exec rubocop
+    - bundle exec rspec
+    - MCP_INTEGRATION=1 TYPESENSE_URL=http://typesense:8108 TYPESENSE_SEARCH_KEY=ci-check-search-key bundle exec rspec --tag integration
+
+# Only needed for the container deployment, see `deploy to website`. The
+# image of the MCP server carries the agent data and Markdown pages of this
+# pipeline's build, like the website image its HTML.
 build docker image:
   stage: build docker image
   image: docker:latest
@@ -167,10 +204,11 @@ build docker image:
     - docker build --pull -f docker/Dockerfile -t "$IMAGE" .
     - docker build --pull -f docker/Dockerfile --target search-init -t "$IMAGE-search-init" .
     - docker run --rm "$IMAGE" nginx -t
-    - test "$(docker run --rm "$IMAGE-search-init" ls search-index | grep -c '\.jsonl$')" -eq 5
+    - docker build --pull -f mcp/Dockerfile -t "$IMAGE-mcp" .
     - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
     - docker push "$IMAGE"
     - docker push "$IMAGE-search-init"
+    - docker push "$IMAGE-mcp"
     - docker logout "$CI_REGISTRY"
   only:
     - develop
@@ -196,7 +234,7 @@ deploy to website:
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --remove-orphans"
     # Waits for the services that keep running: `--wait` takes a container that
     # exits — even successfully, like `search-init` — for a failure.
-    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --wait nginx typesense"
+    - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker compose -f /opt/zammad-org/docker-compose.yml up -d --wait nginx typesense mcp"
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker logout $CI_REGISTRY"
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker image prune -a -f"
   only:

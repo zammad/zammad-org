@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Health check of the container: exits 0 if the server answers on /healthz.
+# The image has no curl or wget; Ruby's standard library does the request.
+require 'net/http'
+
+begin
+  response = Net::HTTP.get_response(URI("http://127.0.0.1:#{ENV.fetch('PORT', 9292)}/healthz"))
+  exit(response.is_a?(Net::HTTPOK) ? 0 : 1)
+rescue StandardError
+  exit 1
+end

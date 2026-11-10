@@ -1,7 +1,7 @@
-# Local testing only: build the images from the current `dist/` and
-# `search-index/` instead of pulling them. Docker Compose loads this file
-# automatically next to docker-compose.yml. The deploy job does not copy it to
-# the web host.
+# Local testing only: build the images from the current build (`dist/`,
+# `search-index/`, `agent-data/`) instead of pulling them. Docker Compose loads
+# this file automatically next to docker-compose.yml. The deploy job does not
+# copy it to the web host.
 services:
   nginx:
     build:
@@ -12,3 +12,7 @@ services:
       context: ..
       dockerfile: docker/Dockerfile
       target: search-init
+  mcp:
+    build:
+      context: ..
+      dockerfile: mcp/Dockerfile
