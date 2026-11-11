@@ -4802,15 +4802,17 @@ msgid "AI features"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:12
+#: src/en/documentation/use/guides/ai.md:13
 #, markdown-text
 msgid ""
 "Zammad is getting even smarter! We are expanding Zammad's AI capabilities to "
-"help you manage support tickets even more efficiently. ✨🚀"
+"help you manage support tickets even more efficiently. ✨🚀 To work on your "
+"tickets from an AI application you already use, such as a chat application "
+"or a coding tool, see [MCP server](/en/documentation/use/guides/mcp-server)."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/guides/ai.md:13
+#: src/en/documentation/use/guides/ai.md:14
 #, no-wrap
 msgid ""
 "The AI features have to be configured and activated by your "
@@ -4820,7 +4822,7 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/guides/ai.md:18
+#: src/en/documentation/use/guides/ai.md:19
 #: src/en/reference/rest-api/ticket-summary.md:1
 #: src/en/reference/rest-api/ticket-summary.md:6
 #, markdown-text, no-wrap
@@ -4828,7 +4830,7 @@ msgid "Ticket summary"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:22
+#: src/en/documentation/use/guides/ai.md:23
 #, markdown-text
 msgid ""
 "The ticket summary feature does what it says: it summarizes the ticket's "
@@ -4837,7 +4839,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:25
+#: src/en/documentation/use/guides/ai.md:26
 #, markdown-text
 msgid ""
 "If the feature is activated, a summary of the ticket is generated when the "
@@ -4846,7 +4848,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:27
+#: src/en/documentation/use/guides/ai.md:28
 #, markdown-text
 msgid ""
 "![Screenshot shows Zammad's ticket detail view with highlighted ticket "
@@ -4855,7 +4857,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:29
+#: src/en/documentation/use/guides/ai.md:30
 #, markdown-text
 msgid ""
 "Depending on the configuration of your Zammad instance, the summary includes "
@@ -4863,43 +4865,43 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 #, markdown-text
 msgid "Customer intent"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 #, markdown-text
 msgid "Conversation summary"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 #, markdown-text
 msgid "Open questions (optional)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 #, markdown-text
 msgid "Upcoming events (optional)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 #, markdown-text
 msgid "Customer sentiment (optional)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:36
+#: src/en/documentation/use/guides/ai.md:37
 #, markdown-text, no-wrap
 msgid "Writing assistant tools"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:43
+#: src/en/documentation/use/guides/ai.md:44
 #, markdown-text
 msgid ""
 "The AI-powered writing assistant tools are designed to simplify and enhance "
@@ -4911,7 +4913,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:45
+#: src/en/documentation/use/guides/ai.md:46
 #, markdown-text
 msgid ""
 "![Screenshot shows Zammad's smart editor "
@@ -4919,7 +4921,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/ai.md:46
+#: src/en/documentation/use/guides/ai.md:47
 #, no-wrap
 msgid ""
 "\n"
@@ -4933,7 +4935,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:57
+#: src/en/documentation/use/guides/ai.md:58
 #, markdown-text
 msgid ""
 "Zammad ships default writing assistant tools. The availability depends on "
@@ -4942,7 +4944,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 #, markdown-text
 msgid ""
 "**Expand draft into well-written section**: Uses your draft as a base and "
@@ -4953,7 +4955,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 #, markdown-text
 msgid ""
 "**Fix spelling and grammar**: Proofreads your text and removes spelling and "
@@ -4961,7 +4963,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 #, markdown-text
 msgid ""
 "**Summarize section to about half its current size**: Shrinks your text "
@@ -4969,7 +4971,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 #, markdown-text
 msgid ""
 "**Rewrite complex section and make it easy to understand**: Removes "
@@ -4977,13 +4979,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:67
+#: src/en/documentation/use/guides/ai.md:68
 #, markdown-text, no-wrap
 msgid "Knowledge base assistant"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:70
+#: src/en/documentation/use/guides/ai.md:71
 #, markdown-text
 msgid ""
 "![Screenshot shows the related knowledge section of the ticket sidebar with "
@@ -4992,13 +4994,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:71
+#: src/en/documentation/use/guides/ai.md:72
 #, markdown-text, no-wrap
 msgid "Knowledge base answer generation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:77
+#: src/en/documentation/use/guides/ai.md:78
 #, markdown-text
 msgid ""
 "This feature allows you to trigger an AI-based generation of a [knowledge "
@@ -5011,7 +5013,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:81
 #, markdown-text
 msgid ""
 "This feature is available in the **Related knowledge** section of the ticket "
@@ -5019,13 +5021,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:82
+#: src/en/documentation/use/guides/ai.md:83
 #, markdown-text
 msgid "Things to consider:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text
 msgid ""
 "The knowledge base answer is generated as draft and not published "
@@ -5033,19 +5035,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text
 msgid "You are set as the answer's author."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text
 msgid "The answer is generated in the default language of your knowledge base."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text
 msgid ""
 "The answer includes a note in the content and a tag (`ai-generated`) about "
@@ -5053,7 +5055,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text
 msgid ""
 "A link to the answer is added to the ticket from which you triggered the "
@@ -5061,7 +5063,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 #, markdown-text
 msgid ""
 "The answer is created in a knowledge base category for which you have editor "
@@ -5069,7 +5071,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:93
+#: src/en/documentation/use/guides/ai.md:94
 #, markdown-text
 msgid ""
 "If a similar knowledge base answer already exists, Zammad shows it in a "
@@ -5078,13 +5080,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:95
 #, markdown-text, no-wrap
 msgid "Knowledge base answer suggestion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:102
+#: src/en/documentation/use/guides/ai.md:103
 #, markdown-text
 msgid ""
 "This feature compares the ticket content against the knowledge base and "
@@ -5097,7 +5099,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:104
+#: src/en/documentation/use/guides/ai.md:105
 #, markdown-text
 msgid ""
 "If no suggestions are available, the message \"No suggestions.\" is "
@@ -5105,13 +5107,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:105
+#: src/en/documentation/use/guides/ai.md:106
 #, markdown-text, no-wrap
 msgid "AI agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:111
+#: src/en/documentation/use/guides/ai.md:112
 #, markdown-text
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. In "
@@ -5124,14 +5126,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:112
+#: src/en/documentation/use/guides/ai.md:113
 #: src/en/documentation/use/guides/mobile-view.md:97
 #, markdown-text, no-wrap
 msgid "Ticket history"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:116
+#: src/en/documentation/use/guides/ai.md:117
 #, markdown-text
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
@@ -5141,7 +5143,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:118
+#: src/en/documentation/use/guides/ai.md:119
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
@@ -5149,13 +5151,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:119
+#: src/en/documentation/use/guides/ai.md:120
 #, markdown-text, no-wrap
 msgid "Simultaneous work detection"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:124
+#: src/en/documentation/use/guides/ai.md:125
 #, markdown-text
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
@@ -5165,13 +5167,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:126
+#: src/en/documentation/use/guides/ai.md:127
 #, markdown-text
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:128
+#: src/en/documentation/use/guides/ai.md:129
 #, markdown-text
 msgid ""
 "![Screenshot shows avatar of an AI "
@@ -5179,13 +5181,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:129
+#: src/en/documentation/use/guides/ai.md:130
 #, markdown-text, no-wrap
 msgid "Overview indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:132
+#: src/en/documentation/use/guides/ai.md:133
 #, markdown-text
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
@@ -5193,7 +5195,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:133
+#: src/en/documentation/use/guides/ai.md:134
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
@@ -6480,6 +6482,294 @@ msgid ""
 "The ::c:: button next to the title in the top bar copies the name of the "
 "category or answer you are viewing to the clipboard, ready to paste it into "
 "a ticket or a search."
+msgstr ""
+
+#. type: Title #
+#: src/en/documentation/use/guides/mcp-server.md:1
+#: src/en/documentation/use/guides/mcp-server.md:6
+#, markdown-text, no-wrap
+msgid "MCP server"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:11
+#, markdown-text
+msgid ""
+"Zammad has its own server for the _Model Context Protocol_ (MCP). Connect an "
+"AI client you already use to it, for example a chat application or a coding "
+"tool, and read, find and update your tickets from there. The server is part "
+"of every installation, you do not install or run anything in addition."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:14
+#, markdown-text
+msgid ""
+"Whether the server accepts connections is a decision of your "
+"administrator. If a connection to `https://zammad.example.com/mcp` fails, "
+"ask your administrator whether the server is enabled."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mcp-server.md:15
+#, markdown-text, no-wrap
+msgid "Connect an AI client"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:18
+#, markdown-text
+msgid ""
+"Connecting takes a personal access token and the address of the server in "
+"your client."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/mcp-server.md:19
+#, markdown-text, no-wrap
+msgid "Create a personal access token"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:25
+#, markdown-text
+msgid ""
+"The client connects with a personal access token of your account. Open your "
+"profile and its `Token access` section (see [personal "
+"settings](/en/documentation/use/personal-settings#token-access)) and create "
+"a token with the `ticket.agent` permission, so that the client can work with "
+"tickets. You can give the token an expiration date. Copy the token that "
+"Zammad shows you when the token is created."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/mcp-server.md:26
+#, markdown-text, no-wrap
+msgid "Add Zammad to your client"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:31
+#, markdown-text
+msgid ""
+"Add Zammad to the client as an MCP server. The client needs the MCP "
+"transport _Streamable HTTP_ and the ability to send a fixed `Authorization: "
+"Bearer` header with every request. Supporting the transport alone is not "
+"enough. Such a configuration asks for the same three entries:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:35
+#, markdown-text
+msgid ""
+"the server address: the domain you open Zammad with and `/mcp` after it, as "
+"in `https://zammad.example.com/mcp`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:35
+#, markdown-text
+msgid "the transport, _Streamable HTTP_"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:35
+#, markdown-text
+msgid ""
+"the token, sent as an HTTP header with every request: `Authorization: Bearer "
+"{your_token}`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:38
+#, markdown-text
+msgid ""
+"Clients that read a JSON configuration, as many do, take Zammad as a server "
+"with the address and the header. Replace `zammad.example.com` with the "
+"domain you open Zammad with and `{your_token}` with the token you copied:"
+msgstr ""
+
+#. type: Fenced code block (json)
+#: src/en/documentation/use/guides/mcp-server.md:39
+#, no-wrap
+msgid ""
+"{\n"
+"  \"mcpServers\": {\n"
+"    \"zammad\": {\n"
+"      \"type\": \"http\",\n"
+"      \"url\": \"https://zammad.example.com/mcp\",\n"
+"      \"headers\": {\n"
+"        \"Authorization\": \"Bearer {your_token}\"\n"
+"      }\n"
+"    }\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/mcp-server.md:53
+#, no-wrap
+msgid ""
+"The token works like your password. Do not put it in a configuration file "
+"that others can read or that ends up in a\n"
+"repository. Keep the file private, or use the reference to a stored secret "
+"where your client supports one.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:60
+#, markdown-text
+msgid ""
+"Other clients ask for the same three entries in their own form. Once the "
+"connection works, a first request such as \"Show my assigned tickets\" shows "
+"whether the client reaches Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:63
+#, markdown-text
+msgid ""
+"Zammad answers only under the address it is configured for, the one you open "
+"Zammad with. If the connection fails, check that the client uses exactly "
+"that address."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mcp-server.md:64
+#, markdown-text, no-wrap
+msgid "What the client can do"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:70
+#, markdown-text
+msgid ""
+"The connected client works with your permissions: it can do exactly what the "
+"token and your account may do, nothing more, and it records its changes as "
+"made by you. A user without agent permissions, such as a customer, gets no "
+"tools from the server. The complete list of the tools, with the access of "
+"each and its limits, is in the [MCP server tools](/en/reference/mcp-tools) "
+"reference."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid ""
+"Open a ticket by its number, its ID or a pasted link, and read its messages, "
+"internal notes, attachments, history and shared draft."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid "Read a ticket's customer and organization."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid ""
+"Find tickets by words and by names, such as the customer, organization, "
+"state, owner, group or priority of a ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid ""
+"List your own overviews and their tickets, and sort the lists, for example "
+"by creation or last update, so that the client can start at the oldest "
+"ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid "Search users, organizations and the knowledge base."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid ""
+"Read the text of files attached to a message: text files up to 10 MB, other "
+"files come back as a link to download them."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid "Change ticket attributes, set tags and add internal notes."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid "Save and send shared drafts, and link tickets and knowledge base answers."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, markdown-text
+msgid "Create tickets and write messages."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:87
+#, markdown-text
+msgid ""
+"Messages, notes and drafts can be written as plain text or as HTML. Zammad "
+"removes unsafe markup from the latter. SMS, Telegram, WhatsApp and Facebook "
+"accept plain text only, HTML is refused there. Files cannot be sent through "
+"the client: if you want to send one, add it to the message in Zammad itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:90
+#, markdown-text
+msgid ""
+"Where a ticket asks for time accounting, the client asks you for the time "
+"and records it. You can also tell it that you account no time, and Zammad "
+"then records the message without accounted time."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mcp-server.md:91
+#, markdown-text, no-wrap
+msgid "Approval of outgoing messages"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:95
+#, markdown-text
+msgid ""
+"Where the client can show it, Zammad asks you to approve a message before it "
+"reaches a customer. The approval request shows the complete text of the "
+"message, the recipients and the visibility, and Zammad sends only after you "
+"accept."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:98
+#, markdown-text
+msgid ""
+"If you decline, Zammad sends nothing and changes nothing on the ticket. The "
+"client can then offer to save the text as the ticket's shared draft, where "
+"the group allows shared drafts, for you to send it from Zammad itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:102
+#, markdown-text
+msgid ""
+"A client that cannot show the approval form relies on its own approval of "
+"the tool call, as it does for every change, and Zammad does not ask a second "
+"time. Zammad still wants your yes for two changes: replacing a shared draft "
+"that is already saved and closing a ticket whose checklist is "
+"incomplete. Keep the approval of tool calls enabled in your client, because "
+"a client that runs them without a prompt sends a message without any further "
+"question."
 msgstr ""
 
 #. type: Title #
@@ -18400,6 +18690,190 @@ msgstr ""
 #: src/en/reference/index.md:1
 #, no-wrap
 msgid "Reference"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/mcp-tools.md:1 src/en/reference/mcp-tools.md:6
+#, markdown-text, no-wrap
+msgid "MCP server tools"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:11
+#, markdown-text
+msgid ""
+"Zammad answers the _Model Context Protocol_ (MCP) on a server of its own, "
+"next to the REST API. An AI client, a chat application or a coding tool for "
+"example, reads, finds, updates and creates tickets through it. The server is "
+"part of every installation, nothing has to be installed or run in addition."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:15
+#, markdown-text
+msgid ""
+"This page describes the tools the server offers and the limits that apply to "
+"them. How a user connects a client is described in the [MCP server "
+"guide](/en/documentation/use/guides/mcp-server). Whether the server answers "
+"at all is a decision of the administrator, who switches it on in the API "
+"settings of Zammad."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/mcp-tools.md:16
+#, markdown-text, no-wrap
+msgid "Access"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:21
+#, markdown-text
+msgid ""
+"The server answers at `https://{fqdn}/mcp` over the MCP transport "
+"_Streamable HTTP_, and only to `POST` requests. A client has to send a fixed "
+"`Authorization: Bearer {your_token}` header with every request. Supporting "
+"the transport alone is not enough, a client that cannot set the header stays "
+"out."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:25
+#, markdown-text
+msgid ""
+"Requests reach the server only at the `Fully Qualified Domain Name`, the "
+"`Alternative fully qualified domain name` or a loopback address "
+"(`localhost`, `127.0.0.1`, `::1`). Requests at another address are refused, "
+"as are browser requests from another origin, which protects the server "
+"against DNS rebinding."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:31
+#, markdown-text
+msgid ""
+"The `MCP server` toggle is off by default. While it is off the server "
+"refuses every request, whatever token the request carries. Clients "
+"authenticate with personal access tokens only: neither a password nor an "
+"OAuth2 token gets in, and neither does a request acting on behalf of another "
+"user. The token and its owner both keep their limits, so a client can do "
+"exactly what they may do and nothing more. Every tool requires the "
+"`ticket.agent` permission, and a user without agent permissions, a customer "
+"for example, gets no tools at all."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/mcp-tools.md:32
+#, markdown-text, no-wrap
+msgid "Tools"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:36
+#, markdown-text
+msgid ""
+"The client gets the following tools, in an order it decides itself. The "
+"access column names what a tool does with the data: `read` changes nothing, "
+"`write` changes a ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:65
+#, markdown-text, no-wrap
+msgid ""
+"| Tool | Access | What it does |\n"
+"| --- | --- | --- |\n"
+"| `add_internal_note` | write | Adds an internal note to a ticket. The "
+"customer never sees it. |\n"
+"| `create_article` | write | Adds an article to a ticket or sends a reply to "
+"the customer. |\n"
+"| `create_ticket` | write | Creates a ticket with a first message from a "
+"phone call or an email, or as an internal note. |\n"
+"| `get_current_user` | read | Reads the user the connection works as, with "
+"their groups and their knowledge base access. |\n"
+"| `get_knowledge_base_answer` | read | Reads one knowledge base answer in "
+"full, in the locale asked for. |\n"
+"| `get_organization` | read | Reads an organization with its domain, VIP "
+"flag, note, custom fields and members. |\n"
+"| `get_overview_tickets` | read | Reads the tickets of an overview, such as "
+"\"My Assigned Tickets\". |\n"
+"| `get_shared_draft` | read | Reads the shared draft saved for a ticket. |\n"
+"| `get_ticket` | read | Reads a ticket with its customer, organization, "
+"owner, links and messages. |\n"
+"| `get_ticket_articles` | read | Reads the messages of a ticket: an index, a "
+"search in them or chosen ones with their text. |\n"
+"| `get_ticket_fields` | read | Lists the fields a ticket has, with the "
+"values to choose from. |\n"
+"| `get_ticket_history` | read | Reads what changed on a ticket, when and by "
+"whom or by which automation. |\n"
+"| `get_user` | read | Reads a user with email, phone, mobile, organizations "
+"and custom fields. |\n"
+"| `link_knowledge_base_answer` | write | Links a knowledge base answer to a "
+"ticket. |\n"
+"| `link_tickets` | write | Links two tickets. |\n"
+"| `list_overviews` | read | Lists the overviews with their number of "
+"tickets. |\n"
+"| `list_tags` | read | Lists the tags that exist, the most used first. |\n"
+"| `read_attachment` | read | Reads the text of a file attached to a ticket "
+"message. See [Limits](#limits) for which files it reads. |\n"
+"| `save_shared_draft` | write | Saves a reply as the shared draft of a "
+"ticket. Nothing is sent. |\n"
+"| `search_knowledge_base` | read | Searches the knowledge base by words or "
+"by meaning. |\n"
+"| `search_organizations` | read | Finds organizations by their name or their "
+"domain. |\n"
+"| `search_tickets` | read | Searches tickets by a query, by filters or "
+"both. |\n"
+"| `search_users` | read | Finds users by name, email, login or phone "
+"number. |\n"
+"| `send_shared_draft` | write | Sends the shared draft of a ticket as it is "
+"saved. |\n"
+"| `set_ticket_tags` | write | Adds tags to a ticket and removes tags from "
+"it. |\n"
+"| `update_ticket` | write | Changes state, priority, group, owner, pending "
+"time or custom fields of a ticket. |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:68
+#, markdown-text
+msgid ""
+"The three knowledge base tools, `get_knowledge_base_answer`, "
+"`link_knowledge_base_answer` and `search_knowledge_base`, appear only where "
+"a knowledge base is active."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/mcp-tools.md:69
+#, markdown-text, no-wrap
+msgid "Limits"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:74
+#, markdown-text
+msgid ""
+"A tool reads the text of a text file: plain text, logs, CSV, JSON, XML or "
+"HTML, up to 10 MB. Any other file, and a larger one, is not read. The tool "
+"then says why and returns the file's download link, so the client can hand "
+"the link to the user. A long text arrives in parts, one part per call."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:77
+#, markdown-text
+msgid ""
+"Files cannot be sent through the server. `create_article` and "
+"`create_ticket` take text only, a user who wants to send a file adds it to "
+"the message in Zammad itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:79
+#, markdown-text
+msgid ""
+"Which messages a client sends without a further approval, and when Zammad "
+"asks the user for one, is described in the admin documentation of the API "
+"settings."
 msgstr ""
 
 #. type: Title #
