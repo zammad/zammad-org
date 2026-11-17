@@ -70,6 +70,22 @@ The **priority** is represented by the color of the ticket title:
 - 2 normal: blue
 - 3 high: red
 
+### Ticket details on hover
+
+Hover over the title or the ticket number of a ticket in an overview to see its details without opening it. A click
+on the title or on the ticket number opens the ticket as usual.
+
+Besides the title, the number and a button that copies the number, the popover shows the following if available:
+
+- A **Checked** badge with the number of completed and total checklist items. It opens the checklist of the ticket.
+- A **Customer sentiment** badge with the customer mood detected by AI. It opens the AI summary of the ticket.
+- The customer intent from the AI summary.
+- The first and the latest article, each with a short preview of its text. If the AI summary contains a customer
+  intent, only the latest article is shown.
+
+The badges and the AI text require the matching feature. The checklist badge appears only while the ticket has an open
+checklist, the AI parts only if the AI summary feature is enabled and a summary already exists for the ticket.
+
 ### Open a ticket
 
 Open a ticket by simply clicking on the row. This opens the ticket as a tab in your taskbar and shows you the

@@ -2273,7 +2273,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:226
-#: src/en/documentation/use/guides/overviews.md:82
+#: src/en/documentation/use/guides/overviews.md:98
 #, markdown-text, no-wrap
 msgid "Bulk actions"
 msgstr ""
@@ -7394,11 +7394,74 @@ msgstr ""
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:73
 #, markdown-text, no-wrap
+msgid "Ticket details on hover"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:77
+#, markdown-text
+msgid ""
+"Hover over the title or the ticket number of a ticket in an overview to see "
+"its details without opening it. A click on the title or on the ticket number "
+"opens the ticket as usual."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:79
+#, markdown-text
+msgid ""
+"Besides the title, the number and a button that copies the number, the "
+"popover shows the following if available:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+#, markdown-text
+msgid ""
+"A **Checked** badge with the number of completed and total checklist "
+"items. It opens the checklist of the ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+#, markdown-text
+msgid ""
+"A **Customer sentiment** badge with the customer mood detected by AI. It "
+"opens the AI summary of the ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+#, markdown-text
+msgid "The customer intent from the AI summary."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+#, markdown-text
+msgid ""
+"The first and the latest article, each with a short preview of its text. If "
+"the AI summary contains a customer intent, only the latest article is shown."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:88
+#, markdown-text
+msgid ""
+"The badges and the AI text require the matching feature. The checklist badge "
+"appears only while the ticket has an open checklist, the AI parts only if "
+"the AI summary feature is enabled and a summary already exists for the "
+"ticket."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:89
+#, markdown-text, no-wrap
 msgid "Open a ticket"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:94
 #, markdown-text
 msgid ""
 "Open a ticket by simply clicking on the row. This opens the ticket as a tab "
@@ -7408,7 +7471,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:81
+#: src/en/documentation/use/guides/overviews.md:97
 #, markdown-text
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
@@ -7417,7 +7480,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:87
+#: src/en/documentation/use/guides/overviews.md:103
 #, markdown-text
 msgid ""
 "Perform bulk actions by selecting multiple tickets and either use the bulk "
@@ -7428,13 +7491,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:88
+#: src/en/documentation/use/guides/overviews.md:104
 #, markdown-text, no-wrap
 msgid "Reorder overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:94
+#: src/en/documentation/use/guides/overviews.md:110
 #, markdown-text
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
@@ -7447,7 +7510,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:96
+#: src/en/documentation/use/guides/overviews.md:112
 #, markdown-text
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
