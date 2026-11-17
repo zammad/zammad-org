@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-29 15:15+0000\n"
+"PO-Revision-Date: 2026-11-17 14:55+0000\n"
 "Last-Translator: Ralf Schmid <rsc@zammad.com>\n"
 "Language-Team: Italian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/it/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.11.1\n"
 
 #. type: Hash Value: themeConfig docFooter next
 #: .vitepress/config.en.yaml:1
@@ -184,17 +184,39 @@ msgstr "https://github.com/zammad"
 msgid "Search"
 msgstr "Cerca"
 
+#. type: Yaml Front Matter Hash Value: features title
+#: .vitepress/search.en.yaml:1 src/en/documentation/introduction.md:1
+#, fuzzy, no-wrap
+#| msgid "Administrator Documentation"
+msgid "Administrator documentation"
+msgstr "Documentazione amministratore"
+
+#. type: Hash Value: translations filters all
+#: .vitepress/search.en.yaml:1
+#, fuzzy, no-wrap
+#| msgid "User Documentation"
+msgid "All documentation"
+msgstr "Documentazione utente"
+
+#. type: Hash Value: translations filters label
+#: .vitepress/search.en.yaml:1
+#, fuzzy, no-wrap
+#| msgid "No results for"
+msgid "Show results from"
+msgstr "Nessun risultato per"
+
+#. type: Yaml Front Matter Hash Value: features title
+#: .vitepress/search.en.yaml:1 src/en/documentation/introduction.md:1
+#, fuzzy, no-wrap
+#| msgid "User Documentation"
+msgid "User documentation"
+msgstr "Documentazione utente"
+
 #. type: Hash Value: translations modal backButtonTitle
 #: .vitepress/search.en.yaml:1
 #, no-wrap
 msgid "Close search"
 msgstr "Chiudi ricerca"
-
-#. type: Hash Value: translations modal displayDetails
-#: .vitepress/search.en.yaml:1
-#, no-wrap
-msgid "Display detailed list"
-msgstr "Mostra elenco dettagliato"
 
 #. type: Hash Value: translations modal footer closeKeyAriaLabel
 #: .vitepress/search.en.yaml:1
@@ -249,6 +271,12 @@ msgstr "Nessun risultato per"
 #, no-wrap
 msgid "Reset search"
 msgstr "Azzera ricerca"
+
+#. type: Hash Value: translations modal unavailableText
+#: .vitepress/search.en.yaml:1
+#, no-wrap
+msgid "The search is not available right now. Please try again later."
+msgstr ""
 
 #. type: Yaml Front Matter Hash Value: prev link
 #: src/en/TEMPLATE.md:1
@@ -1762,13 +1790,6 @@ msgstr "Trova tutto su come lavorare con Zammad quotidianamente, con suggeriment
 msgid "/en/documentation/use/start"
 msgstr "/it/documentation/use/start"
 
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
-#| msgid "User Documentation"
-msgid "User documentation"
-msgstr "Documentazione utente"
-
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/introduction.md:1
 #, no-wrap
@@ -1781,13 +1802,6 @@ msgstr "Scopri come configurare Zammad e collegarlo a sistemi remoti."
 #| msgid "/en/documentation/manage-zammad/start"
 msgid "/en/documentation/manage/start"
 msgstr "/it/documentation/manage-zammad/start"
-
-#. type: Yaml Front Matter Hash Value: features title
-#: src/en/documentation/introduction.md:1
-#, fuzzy, no-wrap
-#| msgid "Administrator Documentation"
-msgid "Administrator documentation"
-msgstr "Documentazione amministratore"
 
 #. type: Yaml Front Matter Hash Value: features details
 #: src/en/documentation/introduction.md:1
@@ -2588,7 +2602,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/documentation/use/advanced-features.md:226
-#: src/en/documentation/use/guides/overviews.md:82
+#: src/en/documentation/use/guides/overviews.md:98
 #, fuzzy, no-wrap
 #| msgid "Bulk Actions"
 msgid "Bulk actions"
@@ -3396,11 +3410,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:474
-#, fuzzy
-#| msgid ""
-#| "![Screenshot shows Gitlab content sidebar with \"Link Issue\" button](/"
-#| "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
-#| "content-sidebar.png)"
 msgid ""
 "![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/"
 "cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-"
@@ -3408,7 +3417,7 @@ msgid ""
 msgstr ""
 "![Screenshot che mostra la barra laterale del contenuto di Gitlab con il "
 "pulsante \"Collega issue\"](/screenshots/cypress/documentation/use/advanced-"
-"features.cy.js/gitlab-content-sidebar.png)"
+"features.cy.js/gitlab-sidebar-linked-issue.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:480
@@ -4921,8 +4930,66 @@ msgid ""
 "  Reassign the ticket to another customer.\n"
 msgstr "Cambia cliente : Riassegna il ticket a un altro cliente."
 
+#. type: Title ##
+#: src/en/documentation/use/basics/work-with-tickets.md:159
+#, fuzzy, no-wrap
+#| msgid "Reprocess Failed Emails"
+msgid "Unprocessable email tickets"
+msgstr "Riprocessa email fallite"
+
 #. type: Plain text
-#: src/en/documentation/use/basics/work-with-tickets.md:163
+#: src/en/documentation/use/basics/work-with-tickets.md:164
+msgid ""
+"Zammad turns incoming emails into tickets. When an email could not be "
+"processed at all, the ticket does not show the email as an article. Instead, "
+"a warning above the conversation states that the ticket was created because "
+"the email could not be processed. Two buttons let you look at what arrived:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:167
+msgid "`Download raw email`: the email as the sender sent it."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:167
+msgid ""
+"`Download processing log`: the technical details Zammad logged when "
+"processing failed."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:170
+msgid ""
+"The ticket may show no customer at all or a customer without an email "
+"address, because Zammad could not read a usable sender address. What you do "
+"next depends on what the raw email reveals:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:177
+msgid ""
+"**Broken sender address**: the raw email shows who wrote. Correct the "
+"missing address via **Edit customer**, or use **Change customer** to pick "
+"the customer you want to answer."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:177
+msgid ""
+"**No sender at all**: the ticket has no customer. Look up who wrote in the "
+"raw email and use **Change customer** to pick them."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/basics/work-with-tickets.md:177
+msgid ""
+"**Nothing readable**: check the processing log, close the ticket and hand "
+"the raw email and the processing log to your administrator."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/basics/work-with-tickets.md:182
 msgid ""
 "You now know the basics and how to work with tickets in general. However, "
 "there are many more features in Zammad which can be very useful in your "
@@ -5683,17 +5750,23 @@ msgid "AI features"
 msgstr "Funzionalità AI"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:12
+#: src/en/documentation/use/guides/ai.md:13
+#, fuzzy
+#| msgid ""
+#| "Zammad is getting even smarter! We are expanding Zammad's AI capabilities "
+#| "to help you manage support tickets even more efficiently. ✨🚀"
 msgid ""
 "Zammad is getting even smarter! We are expanding Zammad's AI capabilities to "
-"help you manage support tickets even more efficiently. ✨🚀"
+"help you manage support tickets even more efficiently. ✨🚀 To work on your "
+"tickets from an AI application you already use, such as a chat application "
+"or a coding tool, see [MCP server](/en/documentation/use/guides/mcp-server)."
 msgstr ""
 "Zammad sta diventando ancora più intelligente! Stiamo espandendo le capacità "
 "AI di Zammad per aiutarti a gestire i ticket di supporto in modo ancora più "
 "efficiente. ✨🚀"
 
 #. type: Fenced div block (info)
-#: src/en/documentation/use/guides/ai.md:13
+#: src/en/documentation/use/guides/ai.md:14
 #, no-wrap
 msgid ""
 "The AI features have to be configured and activated by your administrator. If you can't see it, it is not configured.\n"
@@ -5703,7 +5776,7 @@ msgstr ""
 "Ulteriori informazioni su come configurarle e attivarle sono disponibili nella sezione amministratore.\n"
 
 #. type: Title #
-#: src/en/documentation/use/guides/ai.md:18
+#: src/en/documentation/use/guides/ai.md:19
 #: src/en/reference/rest-api/ticket-summary.md:1
 #: src/en/reference/rest-api/ticket-summary.md:6
 #, fuzzy, no-wrap
@@ -5712,7 +5785,7 @@ msgid "Ticket summary"
 msgstr "Riepilogo del Ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:22
+#: src/en/documentation/use/guides/ai.md:23
 msgid ""
 "The ticket summary feature does what it says: it summarizes the ticket's "
 "content. This can be a huge time saver when dealing with large tickets and/"
@@ -5723,7 +5796,7 @@ msgstr ""
 "quando si tratta di ticket grandi e/o molti passaggi di consegna tra agenti."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:25
+#: src/en/documentation/use/guides/ai.md:26
 msgid ""
 "If the feature is activated, a summary of the ticket is generated when the "
 "ticket got updated and you either open the ticket or open the summary "
@@ -5734,7 +5807,7 @@ msgstr ""
 "laterale del riepilogo del ticket, a seconda della configurazione."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:27
+#: src/en/documentation/use/guides/ai.md:28
 msgid ""
 "![Screenshot shows Zammad's ticket detail view with highlighted ticket "
 "summary banner and summary sidebar](/screenshots/cypress/documentation/use/"
@@ -5746,7 +5819,7 @@ msgstr ""
 "sidebar.png)"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:29
+#: src/en/documentation/use/guides/ai.md:30
 msgid ""
 "Depending on the configuration of your Zammad instance, the summary includes "
 "the following sections:"
@@ -5755,39 +5828,39 @@ msgstr ""
 "include le seguenti sezioni:"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 msgid "Customer intent"
 msgstr "Intento del cliente"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 msgid "Conversation summary"
 msgstr "Riepilogo della conversazione"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 msgid "Open questions (optional)"
 msgstr "Domande aperte (opzionale)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 msgid "Upcoming events (optional)"
 msgstr "Prossimi eventi (opzionale)"
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:35
+#: src/en/documentation/use/guides/ai.md:36
 msgid "Customer sentiment (optional)"
 msgstr "Sentiment del cliente (opzionale)"
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:36
+#: src/en/documentation/use/guides/ai.md:37
 #, fuzzy, no-wrap
 #| msgid "Writing Assistant Tools"
 msgid "Writing assistant tools"
 msgstr "Strumenti dell'assistente di scrittura"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:43
+#: src/en/documentation/use/guides/ai.md:44
 msgid ""
 "The AI-powered writing assistant tools are designed to simplify and enhance "
 "your ticket response workflow while you create an article.  To use such a "
@@ -5804,7 +5877,7 @@ msgstr ""
 "della barra degli strumenti dell'editor e scegli uno dei seguenti strumenti."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:45
+#: src/en/documentation/use/guides/ai.md:46
 msgid ""
 "![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/"
 "documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
@@ -5814,7 +5887,7 @@ msgstr ""
 "tools.png)"
 
 #. type: Fenced div block (warning)
-#: src/en/documentation/use/guides/ai.md:46
+#: src/en/documentation/use/guides/ai.md:47
 #, no-wrap
 msgid ""
 "\n"
@@ -5832,7 +5905,7 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:57
+#: src/en/documentation/use/guides/ai.md:58
 msgid ""
 "Zammad ships default writing assistant tools. The availability depends on "
 "the configuration of your Zammad instance. You might even have additional "
@@ -5844,7 +5917,7 @@ msgstr ""
 "tuo amministratore li abbia aggiunti."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 #, fuzzy
 #| msgid ""
 #| "**Expand draft into well-written section**: Uses your draft as a base and "
@@ -5867,7 +5940,7 @@ msgstr ""
 "risposta."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 msgid ""
 "**Fix spelling and grammar**: Proofreads your text and removes spelling and "
 "grammar mistakes."
@@ -5876,7 +5949,7 @@ msgstr ""
 "rimuove errori di ortografia e grammatica."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 msgid ""
 "**Summarize section to about half its current size**: Shrinks your text "
 "while keeping the message and the tone of the text."
@@ -5885,7 +5958,7 @@ msgstr ""
 "il tuo testo mantenendo il messaggio e il tono del testo."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:66
+#: src/en/documentation/use/guides/ai.md:67
 msgid ""
 "**Rewrite complex section and make it easy to understand**: Removes "
 "unnecessary parts and rewrites your text in a clear and understandable way."
@@ -5894,14 +5967,14 @@ msgstr ""
 "parti non necessarie e riscrive il tuo testo in modo chiaro e comprensibile."
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:67
+#: src/en/documentation/use/guides/ai.md:68
 #, fuzzy, no-wrap
 #| msgid "Knowledge base"
 msgid "Knowledge base assistant"
 msgstr "Base di conoscenza"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:70
+#: src/en/documentation/use/guides/ai.md:71
 #, fuzzy
 #| msgid ""
 #| "![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/"
@@ -5916,14 +5989,14 @@ msgstr ""
 "tools.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:71
+#: src/en/documentation/use/guides/ai.md:72
 #, fuzzy, no-wrap
 #| msgid "Knowledge Base General"
 msgid "Knowledge base answer generation"
 msgstr "Base di conoscenza generale"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:77
+#: src/en/documentation/use/guides/ai.md:78
 msgid ""
 "This feature allows you to trigger an AI-based generation of a [knowledge "
 "base](/en/documentation/use/guides/knowledge-base)  answer from a ticket. "
@@ -5935,19 +6008,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:80
+#: src/en/documentation/use/guides/ai.md:81
 msgid ""
 "This feature is available in the **Related knowledge** section of the ticket "
 "sidebar. Click the `Add AI draft` button to trigger the answer generation."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:82
+#: src/en/documentation/use/guides/ai.md:83
 msgid "Things to consider:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 msgid ""
 "The knowledge base answer is generated as draft and not published "
 "automatically."
@@ -5956,24 +6029,24 @@ msgstr ""
 "pubblicata automaticamente."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 msgid "You are set as the answer's author."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 msgid "The answer is generated in the default language of your knowledge base."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 msgid ""
 "The answer includes a note in the content and a tag (`ai-generated`) about "
 "the AI generation."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 msgid ""
 "A link to the answer is added to the ticket from which you triggered the "
 "answer generation."
@@ -5982,7 +6055,7 @@ msgstr ""
 "aggiunto un link alla risposta."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:90
+#: src/en/documentation/use/guides/ai.md:91
 msgid ""
 "The answer is created in a knowledge base category for which you have editor "
 "permissions. The AI chooses one of these categories."
@@ -5991,7 +6064,7 @@ msgstr ""
 "si dispone dei permessi di modifica. L'IA sceglie una di queste categorie."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:93
+#: src/en/documentation/use/guides/ai.md:94
 msgid ""
 "If a similar knowledge base answer already exists, Zammad shows it in a "
 "dialog before creating a new one. This gives you the chance to review "
@@ -5999,14 +6072,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:94
+#: src/en/documentation/use/guides/ai.md:95
 #, fuzzy, no-wrap
 #| msgid "Knowledge Base General"
 msgid "Knowledge base answer suggestion"
 msgstr "Base di conoscenza generale"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:102
+#: src/en/documentation/use/guides/ai.md:103
 msgid ""
 "This feature compares the ticket content against the knowledge base and "
 "shows relevant answers under **Suggested knowledge** if they meet the admin-"
@@ -6018,21 +6091,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:104
+#: src/en/documentation/use/guides/ai.md:105
 msgid ""
 "If no suggestions are available, the message \"No suggestions.\" is "
 "displayed instead."
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:105
+#: src/en/documentation/use/guides/ai.md:106
 #, fuzzy, no-wrap
 #| msgid "AI Agents"
 msgid "AI agents"
 msgstr "Agenti AI"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:111
+#: src/en/documentation/use/guides/ai.md:112
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. In "
 "general, this feature operates behind the scenes but if configured, you may "
@@ -6051,14 +6124,14 @@ msgstr ""
 "funzionalità avanzate."
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:112
+#: src/en/documentation/use/guides/ai.md:113
 #: src/en/documentation/use/guides/mobile-view.md:97
 #, no-wrap
 msgid "Ticket history"
 msgstr "Cronologia ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:116
+#: src/en/documentation/use/guides/ai.md:117
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
 "you the name of the AI agent. If you notice ongoing issues with what the AI "
@@ -6071,7 +6144,7 @@ msgstr ""
 "Zammad. Esempio di una voce della cronologia di un agente AI:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:118
+#: src/en/documentation/use/guides/ai.md:119
 msgid ""
 "![Screenshot shows AI agent ticket history entry](/screenshots/documentation/"
 "use/ai/ai-agent-ticket-history.png)"
@@ -6080,14 +6153,14 @@ msgstr ""
 "screenshots/documentation/use/ai/ai-agent-ticket-history.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:119
+#: src/en/documentation/use/guides/ai.md:120
 #, fuzzy, no-wrap
 #| msgid "Simultaneous Work Detection"
 msgid "Simultaneous work detection"
 msgstr "Rilevamento del lavoro simultaneo"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:124
+#: src/en/documentation/use/guides/ai.md:125
 #, fuzzy
 #| msgid ""
 #| "AI agents which are currently working on a ticket are displayed like "
@@ -6107,12 +6180,12 @@ msgstr ""
 "altro ticket."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:126
+#: src/en/documentation/use/guides/ai.md:127
 msgid "Avatar of AI agent:"
 msgstr "Avatar dell'agente AI:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:128
+#: src/en/documentation/use/guides/ai.md:129
 msgid ""
 "![Screenshot shows avatar of an AI agent](/screenshots/documentation/use/ai/"
 "ai-live-user.png)"
@@ -6121,14 +6194,14 @@ msgstr ""
 "use/ai/ai-live-user.png)"
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:129
+#: src/en/documentation/use/guides/ai.md:130
 #, fuzzy, no-wrap
 #| msgid "Overview Indicator"
 msgid "Overview indicator"
 msgstr "Indicatore panoramica"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:132
+#: src/en/documentation/use/guides/ai.md:133
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
 "status circle changes to a blue/pink gradient circle:"
@@ -6138,7 +6211,7 @@ msgstr ""
 "rosa:"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:133
+#: src/en/documentation/use/guides/ai.md:134
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
 "currently working on it](/screenshots/documentation/use/ai/overview-ai-agent-"
@@ -7475,6 +7548,270 @@ msgid ""
 msgstr ""
 
 #. type: Title #
+#: src/en/documentation/use/guides/mcp-server.md:1
+#: src/en/documentation/use/guides/mcp-server.md:6
+#, no-wrap
+msgid "MCP server"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:11
+msgid ""
+"Zammad has its own server for the _Model Context Protocol_ (MCP). Connect an "
+"AI client you already use to it, for example a chat application or a coding "
+"tool, and read, find and update your tickets from there. The server is part "
+"of every installation, you do not install or run anything in addition."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:14
+msgid ""
+"Whether the server accepts connections is a decision of your administrator. "
+"If a connection to `https://zammad.example.com/mcp` fails, ask your "
+"administrator whether the server is enabled."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mcp-server.md:15
+#, no-wrap
+msgid "Connect an AI client"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:18
+msgid ""
+"Connecting takes a personal access token and the address of the server in "
+"your client."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/mcp-server.md:19
+#, fuzzy, no-wrap
+#| msgid "User Access Token"
+msgid "Create a personal access token"
+msgstr "Token di accesso utente"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:25
+msgid ""
+"The client connects with a personal access token of your account. Open your "
+"profile and its `Token access` section (see [personal settings](/en/"
+"documentation/use/personal-settings#token-access)) and create a token with "
+"the `ticket.agent` permission, so that the client can work with tickets. You "
+"can give the token an expiration date. Copy the token that Zammad shows you "
+"when the token is created."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/mcp-server.md:26
+#, fuzzy, no-wrap
+#| msgid "Add Zammad Repository"
+msgid "Add Zammad to your client"
+msgstr "Aggiungi il repository Zammad"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:31
+msgid ""
+"Add Zammad to the client as an MCP server. The client needs the MCP "
+"transport _Streamable HTTP_ and the ability to send a fixed `Authorization: "
+"Bearer` header with every request. Supporting the transport alone is not "
+"enough. Such a configuration asks for the same three entries:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:35
+msgid ""
+"the server address: the domain you open Zammad with and `/mcp` after it, as "
+"in `https://zammad.example.com/mcp`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:35
+msgid "the transport, _Streamable HTTP_"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:35
+msgid ""
+"the token, sent as an HTTP header with every request: `Authorization: Bearer "
+"{your_token}`"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:38
+msgid ""
+"Clients that read a JSON configuration, as many do, take Zammad as a server "
+"with the address and the header. Replace `zammad.example.com` with the "
+"domain you open Zammad with and `{your_token}` with the token you copied:"
+msgstr ""
+
+#. type: Fenced code block (json)
+#: src/en/documentation/use/guides/mcp-server.md:39
+#, no-wrap
+msgid ""
+"{\n"
+"  \"mcpServers\": {\n"
+"    \"zammad\": {\n"
+"      \"type\": \"http\",\n"
+"      \"url\": \"https://zammad.example.com/mcp\",\n"
+"      \"headers\": {\n"
+"        \"Authorization\": \"Bearer {your_token}\"\n"
+"      }\n"
+"    }\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/documentation/use/guides/mcp-server.md:53
+#, no-wrap
+msgid ""
+"The token works like your password. Do not put it in a configuration file that others can read or that ends up in a\n"
+"repository. Keep the file private, or use the reference to a stored secret where your client supports one.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:60
+msgid ""
+"Other clients ask for the same three entries in their own form. Once the "
+"connection works, a first request such as \"Show my assigned tickets\" shows "
+"whether the client reaches Zammad."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:63
+msgid ""
+"Zammad answers only under the address it is configured for, the one you open "
+"Zammad with. If the connection fails, check that the client uses exactly "
+"that address."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mcp-server.md:64
+#, no-wrap
+msgid "What the client can do"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:70
+msgid ""
+"The connected client works with your permissions: it can do exactly what the "
+"token and your account may do, nothing more, and it records its changes as "
+"made by you. A user without agent permissions, such as a customer, gets no "
+"tools from the server. The complete list of the tools, with the access of "
+"each and its limits, is in the [MCP server tools](/en/reference/mcp-tools) "
+"reference."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid ""
+"Open a ticket by its number, its ID or a pasted link, and read its messages, "
+"internal notes, attachments, history and shared draft."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+#, fuzzy
+#| msgid "ID of the customers organization of the ticket."
+msgid "Read a ticket's customer and organization."
+msgstr "ID dell'organizzazione del cliente del ticket."
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid ""
+"Find tickets by words and by names, such as the customer, organization, "
+"state, owner, group or priority of a ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid ""
+"List your own overviews and their tickets, and sort the lists, for example "
+"by creation or last update, so that the client can start at the oldest "
+"ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid "Search users, organizations and the knowledge base."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid ""
+"Read the text of files attached to a message: text files up to 10 MB, other "
+"files come back as a link to download them."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid "Change ticket attributes, set tags and add internal notes."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid ""
+"Save and send shared drafts, and link tickets and knowledge base answers."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/mcp-server.md:83
+msgid "Create tickets and write messages."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:87
+msgid ""
+"Messages, notes and drafts can be written as plain text or as HTML. Zammad "
+"removes unsafe markup from the latter. SMS, Telegram, WhatsApp and Facebook "
+"accept plain text only, HTML is refused there. Files cannot be sent through "
+"the client: if you want to send one, add it to the message in Zammad itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:90
+msgid ""
+"Where a ticket asks for time accounting, the client asks you for the time "
+"and records it. You can also tell it that you account no time, and Zammad "
+"then records the message without accounted time."
+msgstr ""
+
+#. type: Title ##
+#: src/en/documentation/use/guides/mcp-server.md:91
+#, no-wrap
+msgid "Approval of outgoing messages"
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:95
+msgid ""
+"Where the client can show it, Zammad asks you to approve a message before it "
+"reaches a customer. The approval request shows the complete text of the "
+"message, the recipients and the visibility, and Zammad sends only after you "
+"accept."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:98
+msgid ""
+"If you decline, Zammad sends nothing and changes nothing on the ticket. The "
+"client can then offer to save the text as the ticket's shared draft, where "
+"the group allows shared drafts, for you to send it from Zammad itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/mcp-server.md:102
+msgid ""
+"A client that cannot show the approval form relies on its own approval of "
+"the tool call, as it does for every change, and Zammad does not ask a second "
+"time. Zammad still wants your yes for two changes: replacing a shared draft "
+"that is already saved and closing a ticket whose checklist is incomplete. "
+"Keep the approval of tool calls enabled in your client, because a client "
+"that runs them without a prompt sends a message without any further question."
+msgstr ""
+
+#. type: Title #
 #: src/en/documentation/use/guides/mobile-view.md:1
 #: src/en/documentation/use/guides/mobile-view.md:6
 #, fuzzy, no-wrap
@@ -8125,12 +8462,69 @@ msgstr "3 alta: rosso"
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:73
 #, fuzzy, no-wrap
+#| msgid "Ticket Creation"
+msgid "Ticket details on hover"
+msgstr "Creazione ticket"
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:77
+msgid ""
+"Hover over the title or the ticket number of a ticket in an overview to see "
+"its details without opening it. A click on the title or on the ticket number "
+"opens the ticket as usual."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:79
+msgid ""
+"Besides the title, the number and a button that copies the number, the "
+"popover shows the following if available:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+msgid ""
+"A **Checked** badge with the number of completed and total checklist items. "
+"It opens the checklist of the ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+msgid ""
+"A **Customer sentiment** badge with the customer mood detected by AI. It "
+"opens the AI summary of the ticket."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+msgid "The customer intent from the AI summary."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/documentation/use/guides/overviews.md:85
+msgid ""
+"The first and the latest article, each with a short preview of its text. If "
+"the AI summary contains a customer intent, only the latest article is shown."
+msgstr ""
+
+#. type: Plain text
+#: src/en/documentation/use/guides/overviews.md:88
+msgid ""
+"The badges and the AI text require the matching feature. The checklist badge "
+"appears only while the ticket has an open checklist, the AI parts only if "
+"the AI summary feature is enabled and a summary already exists for the "
+"ticket."
+msgstr ""
+
+#. type: Title ###
+#: src/en/documentation/use/guides/overviews.md:89
+#, fuzzy, no-wrap
 #| msgid "Open a Ticket"
 msgid "Open a ticket"
 msgstr "Apri un ticket"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:78
+#: src/en/documentation/use/guides/overviews.md:94
 #, fuzzy
 #| msgid ""
 #| "Open a ticket by simply clicking on the line. This opens the ticket as a "
@@ -8150,7 +8544,7 @@ msgstr ""
 "duplicata."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:81
+#: src/en/documentation/use/guides/overviews.md:97
 msgid ""
 "If an overview contains more than one ticket and you open one of the "
 "tickets, you can find arrows in the ticket detail view header to switch to "
@@ -8161,7 +8555,7 @@ msgstr ""
 "al ticket successivo/precedente di questa panoramica."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:87
+#: src/en/documentation/use/guides/overviews.md:103
 #, fuzzy
 #| msgid ""
 #| "Perform bulk actions by selecting multiple tickets and either use the "
@@ -8180,14 +8574,14 @@ msgstr ""
 "advanced-features#azioni-bulk) nella pagina delle funzionalità avanzate."
 
 #. type: Title ###
-#: src/en/documentation/use/guides/overviews.md:88
+#: src/en/documentation/use/guides/overviews.md:104
 #, fuzzy, no-wrap
 #| msgid "Reorder Overviews"
 msgid "Reorder overviews"
 msgstr "Riordina panoramiche"
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:94
+#: src/en/documentation/use/guides/overviews.md:110
 msgid ""
 "If the order of the overviews doesn't reflect your working process or you "
 "just like to have a different order, you can re-arrange them for your "
@@ -8205,7 +8599,7 @@ msgstr ""
 "ordine personalizzato per le tue panoramiche."
 
 #. type: Plain text
-#: src/en/documentation/use/guides/overviews.md:96
+#: src/en/documentation/use/guides/overviews.md:112
 msgid ""
 "If your admin changes the order, your custom order is preserved. You can "
 "switch back to your admin's order by clicking the `Reset Overview Order` "
@@ -8962,7 +9356,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/guides/secure-email.md:76
 #: src/en/tutorials/connect-config-elasticsearch.md:131
-#: src/en/tutorials/sso-kerberos.md:553
+#: src/en/tutorials/sso-kerberos.md:882
 #: src/en/tutorials/webserver-config.md:303
 #, no-wrap
 msgid "Troubleshooting"
@@ -12181,8 +12575,9 @@ msgstr "https://raw.githubusercontent.com/zammad/zammad-org/refs/heads/develop/i
 msgid "Docker"
 msgstr "Docker"
 
-#. type: Title #
+#. type: Title ###
 #: src/en/get-started/installation/docker.md:6
+#: src/en/tutorials/sso-kerberos.md:530
 #, fuzzy, no-wrap
 #| msgid "Docker Installation"
 msgid "Docker installation"
@@ -12496,15 +12891,22 @@ msgstr ""
 "Entrambi gli scenari sono descritti nella pagina separata [Scenari di Docker "
 "Compose](/it/reference/docker-compose-scenarios)."
 
+#. type: Plain text
+#: src/en/get-started/installation/docker.md:113
+msgid ""
+"Single sign-on with Kerberos uses the same reverse proxy, see [Single sign-"
+"on with Kerberos](/en/tutorials/sso-kerberos)."
+msgstr ""
+
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:111
+#: src/en/get-started/installation/docker.md:114
 #, fuzzy, no-wrap
 #| msgid "Customizing the Zammad Stack"
 msgid "Customizing the Zammad stack"
 msgstr "Personalizzare lo stack Zammad"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:115
+#: src/en/get-started/installation/docker.md:118
 msgid ""
 "The Zammad Docker Compose stack is ready to run with its default settings. "
 "You can adapt it to your environment by loading predefined scenario files, "
@@ -12512,7 +12914,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:119
+#: src/en/get-started/installation/docker.md:122
 msgid ""
 "See the [Docker Compose scenarios page](/en/reference/docker-compose-"
 "scenarios) for supported use cases and detailed instructions on loading "
@@ -12521,7 +12923,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:123
+#: src/en/get-started/installation/docker.md:126
 msgid ""
 "If you deployed the stack with Docker Compose by cloning the repository, use "
 "its `local/` directory for files that belong only to your instance. See the "
@@ -12530,14 +12932,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/get-started/installation/docker.md:124
+#: src/en/get-started/installation/docker.md:127
 #, fuzzy, no-wrap
 #| msgid "How to Run Commands in the Stack"
 msgid "How to run commands in the stack"
 msgstr "Come eseguire comandi nello stack"
 
 #. type: Plain text
-#: src/en/get-started/installation/docker.md:128
+#: src/en/get-started/installation/docker.md:131
 msgid ""
 "Execute commands in your Docker stack by calling `rails` or `rake` via one "
 "of the following methods by using `bundle exec`."
@@ -12546,7 +12948,7 @@ msgstr ""
 "dei seguenti metodi."
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:129
+#: src/en/get-started/installation/docker.md:132
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -12656,7 +13058,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs key:docker-portainer|tip)
-#: src/en/get-started/installation/docker.md:129
+#: src/en/get-started/installation/docker.md:132
 #, no-wrap
 msgid ""
 "If you need to retrieve information from the Rails server, you can, for example,\n"
@@ -12667,7 +13069,7 @@ msgstr ""
 "inserire `pp` (pretty print) davanti al tuo comando Rails. Questo genera un output nel tuo terminale.\n"
 
 #. type: Fenced div block (tabs key:docker-portainer)
-#: src/en/get-started/installation/docker.md:129
+#: src/en/get-started/installation/docker.md:132
 #, fuzzy, no-wrap
 #| msgid ""
 #| "\n"
@@ -12822,8 +13224,9 @@ msgstr "Non forniamo supporto per problemi specifici di Kubernetes. Se si scegli
 msgid "Package"
 msgstr "Pacchetto"
 
-#. type: Title #
+#. type: Title ###
 #: src/en/get-started/installation/package.md:6
+#: src/en/tutorials/sso-kerberos.md:183
 #, fuzzy, no-wrap
 #| msgid "Package Installation"
 msgid "Package installation"
@@ -13462,7 +13865,7 @@ msgstr "Node.js"
 
 #. type: Title ##
 #: src/en/get-started/installation/package.md:351
-#: src/en/reference/environment-variables.md:157
+#: src/en/reference/environment-variables.md:160
 #, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
@@ -13470,7 +13873,7 @@ msgstr "PostgreSQL"
 #. type: Title ##
 #: src/en/get-started/installation/package.md:351
 #: src/en/get-started/installation/package.md:372
-#: src/en/reference/environment-variables.md:212
+#: src/en/reference/environment-variables.md:215
 #, no-wrap
 msgid "Nginx"
 msgstr "Nginx"
@@ -14670,7 +15073,7 @@ msgstr "/it/get-started/get-zammad"
 
 #. type: Title ##
 #: src/en/index.md:1 src/en/reference/graphql.md:24
-#: src/en/tutorials/sso-kerberos.md:63
+#: src/en/tutorials/sso-kerberos.md:73
 #, no-wrap
 msgid "Getting started"
 msgstr "Per iniziare"
@@ -15019,7 +15422,7 @@ msgstr "[Usare servizi esterni](#usare-servizi-esterni)"
 
 #. type: Title ###
 #: src/en/reference/docker-compose-scenarios.md:31
-#: src/en/reference/docker-compose-scenarios.md:111
+#: src/en/reference/docker-compose-scenarios.md:114
 #, no-wrap
 msgid "Disable Elasticsearch service"
 msgstr "Disabilita il servizio Elasticsearch"
@@ -15303,15 +15706,22 @@ msgstr ""
 "Configura un nuovo host proxy nel tuo NPM e segui i passaggi per ottenere un "
 "certificato SSL"
 
+#. type: Plain text
+#: src/en/reference/docker-compose-scenarios.md:102
+msgid ""
+"Kerberos single sign-on for the Docker stack builds on this scenario, see "
+"[Single sign-on with Kerberos](/en/tutorials/sso-kerberos)."
+msgstr ""
+
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:100
+#: src/en/reference/docker-compose-scenarios.md:103
 #, fuzzy, no-wrap
 #| msgid "Add an external Docker network to Nginx"
 msgid "Add external Docker network to Nginx"
 msgstr "Aggiungi una rete Docker esterna a Nginx"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:105
+#: src/en/reference/docker-compose-scenarios.md:108
 msgid ""
 "If you already have a reverse proxy which takes care about the SSL "
 "termination, this scenario is helpful. It adds an external Docker network to "
@@ -15322,7 +15732,7 @@ msgstr ""
 "scenario fa per te."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:108
+#: src/en/reference/docker-compose-scenarios.md:111
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-nginx.yml` for "
 "deployment"
@@ -15331,7 +15741,7 @@ msgstr ""
 "distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:108
+#: src/en/reference/docker-compose-scenarios.md:111
 msgid ""
 "Provide the name of your external network by using the environment variable "
 "`ZAMMAD_NGINX_EXTERNAL_NETWORK`"
@@ -15340,14 +15750,14 @@ msgstr ""
 "`ZAMMAD_NGINX_"
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:109
+#: src/en/reference/docker-compose-scenarios.md:112
 #, fuzzy, no-wrap
 #| msgid "Using External Services"
 msgid "Using external services"
 msgstr "Usare servizi esterni"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:115
+#: src/en/reference/docker-compose-scenarios.md:118
 msgid ""
 "Do you have an Elasticsearch instance already running and want to use it for "
 "Zammad, too? Then you can disable the Elasticsearch service in the Zammad "
@@ -15357,7 +15767,7 @@ msgstr ""
 "Zammad?"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:125
+#: src/en/reference/docker-compose-scenarios.md:128
 msgid ""
 "Use the scenario file `scenarios/disable-elasticsearch-service.yml` for "
 "deployment - this will turn off the built-in service for Elasticsearch"
@@ -15366,7 +15776,7 @@ msgstr ""
 "distribuzione - questo"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:125
+#: src/en/reference/docker-compose-scenarios.md:128
 msgid ""
 "Use the following environment variables to provide information about the "
 "connection to your existing Elasticsearch instance:"
@@ -15375,39 +15785,39 @@ msgstr ""
 "connessione alla tua istanza:"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:125
+#: src/en/reference/docker-compose-scenarios.md:128
 msgid "`ELASTICSEARCH_SCHEMA`"
 msgstr "`ELASTICSEARCH_SCHEMA`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:125
+#: src/en/reference/docker-compose-scenarios.md:128
 msgid "`ELASTICSEARCH_HOST`"
 msgstr "`ELASTICSEARCH_HOST`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:125
+#: src/en/reference/docker-compose-scenarios.md:128
 msgid "`ELASTICSEARCH_PORT`"
 msgstr "`ELASTICSEARCH_PORT`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:125
+#: src/en/reference/docker-compose-scenarios.md:128
 msgid "`ELASTICSEARCH_USER`"
 msgstr "`ELASTICSEARCH_USER`"
 
 #. type: Bullet: '  - '
-#: src/en/reference/docker-compose-scenarios.md:125
+#: src/en/reference/docker-compose-scenarios.md:128
 msgid "`ELASTICSEARCH_PASS`"
 msgstr "`ELASTICSEARCH_PASS`"
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:126
+#: src/en/reference/docker-compose-scenarios.md:129
 #, fuzzy, no-wrap
 #| msgid "Making Services Externally Available"
 msgid "Making services externally available"
 msgstr "Rendere i servizi disponibili esternamente"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:130
+#: src/en/reference/docker-compose-scenarios.md:133
 msgid ""
 "These scenarios are meant to connect from external applications to Zammad "
 "services. Depending on where your external service is hosted, you can use "
@@ -15417,7 +15827,7 @@ msgstr ""
 "Zammad. A seconda"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/docker-compose-scenarios.md:131
+#: src/en/reference/docker-compose-scenarios.md:134
 #, no-wrap
 msgid ""
 "\n"
@@ -15430,7 +15840,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/docker-compose-scenarios.md:138
+#: src/en/reference/docker-compose-scenarios.md:141
 #, no-wrap
 msgid ""
 "\n"
@@ -15442,14 +15852,14 @@ msgstr ""
 "\n"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:144
+#: src/en/reference/docker-compose-scenarios.md:147
 #, fuzzy, no-wrap
 #| msgid "Add an external Docker network to Elasticsearch"
 msgid "Add external Docker network to Elasticsearch"
 msgstr "Aggiungi una rete Docker esterna a Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:149
+#: src/en/reference/docker-compose-scenarios.md:152
 msgid ""
 "A common use case for this is to use a reporting/visualization tool like "
 "Grafana on the same host in another stack.  Because such tools need to "
@@ -15460,7 +15870,7 @@ msgstr ""
 "visualizzazione come Grafana sulla stessa rete."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:152
+#: src/en/reference/docker-compose-scenarios.md:155
 msgid ""
 "Use the scenario file `scenarios/add-external-network-to-elasticsearch.yml` "
 "for deployment"
@@ -15469,7 +15879,7 @@ msgstr ""
 "elasticsearch.yml` per la distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:152
+#: src/en/reference/docker-compose-scenarios.md:155
 msgid ""
 "Provide the name of your external network by using the environment variable "
 "`ZAMMAD_ELASTICSEARCH_EXTERNAL_NETWORK`"
@@ -15478,14 +15888,14 @@ msgstr ""
 "`ZAMMAD_ELASTI"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:153
+#: src/en/reference/docker-compose-scenarios.md:156
 #, fuzzy, no-wrap
 #| msgid "Add an host port to Elasticsearch"
 msgid "Add host port to Elasticsearch"
 msgstr "Aggiungi una porta host a Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:157
+#: src/en/reference/docker-compose-scenarios.md:160
 msgid ""
 "In case you want to expose the Elasticsearch service of the Zammad stack in "
 "the network, you can assign a host port to the container. This is useful if "
@@ -15495,7 +15905,7 @@ msgstr ""
 "nella rete."
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:161
+#: src/en/reference/docker-compose-scenarios.md:164
 msgid ""
 "Use the scenario file `scenarios/add-hostport-to-elasticsearch.yml` for "
 "deployment"
@@ -15504,7 +15914,7 @@ msgstr ""
 "distribuzione"
 
 #. type: Bullet: '- '
-#: src/en/reference/docker-compose-scenarios.md:161
+#: src/en/reference/docker-compose-scenarios.md:164
 msgid ""
 "The default port for Elasticsearch is `9200`. Change it to another port by "
 "using the environment variable `ELASTICSEARCH_EXPOSE_HTTP_PORT`"
@@ -15513,21 +15923,21 @@ msgstr ""
 "usando la variabile d'ambiente."
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:162
+#: src/en/reference/docker-compose-scenarios.md:165
 #, fuzzy, no-wrap
 #| msgid "Additional Scenarios"
 msgid "Additional scenarios"
 msgstr "Scenari aggiuntivi"
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:164
+#: src/en/reference/docker-compose-scenarios.md:167
 #, fuzzy, no-wrap
 #| msgid "Disable the backup service"
 msgid "Disable backup service"
 msgstr "Disabilita il servizio di backup"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:168
+#: src/en/reference/docker-compose-scenarios.md:171
 msgid ""
 "In case you want to handle backups in a different way, you can disable the "
 "built in backup service in the stack to save resources."
@@ -15536,7 +15946,7 @@ msgstr ""
 "servizio di backup integrato."
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:170
+#: src/en/reference/docker-compose-scenarios.md:173
 msgid ""
 "You can do so by just using the scenario file `scenarios/disable-backup-"
 "service.yml` for deployment."
@@ -15545,13 +15955,13 @@ msgstr ""
 "backup-service.yml`."
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:171
+#: src/en/reference/docker-compose-scenarios.md:174
 #, no-wrap
 msgid "Add Ollama"
 msgstr "Aggiungi Ollama"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:175
+#: src/en/reference/docker-compose-scenarios.md:178
 #, fuzzy
 #| msgid ""
 #| "You can spin up an additional [Ollama](https://ollama.com/) container to "
@@ -15564,13 +15974,13 @@ msgstr ""
 "le funzionalità AI di Zammad."
 
 #. type: Fenced div block (info)
-#: src/en/reference/docker-compose-scenarios.md:176
+#: src/en/reference/docker-compose-scenarios.md:179
 #, no-wrap
 msgid "This is intended for development or testing purposes as running a productive LLM stack is complex.\n"
 msgstr "Questo è pensato per scopi di sviluppo o test, poiché eseguire uno stack LLM produttivo è.\n"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:183
+#: src/en/reference/docker-compose-scenarios.md:186
 msgid ""
 "To deploy an Ollama container inside the Zammad stack, use the scenario file "
 "`scenarios/add-ollama.yml`. This creates an Ollama container which "
@@ -15581,7 +15991,7 @@ msgstr ""
 "file di scenario `scenarios/ad`."
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:185
+#: src/en/reference/docker-compose-scenarios.md:188
 msgid ""
 "To use it in Zammad, add the service name and port (`http://ollama:11434`) "
 "to the provider configuration."
@@ -15590,13 +16000,13 @@ msgstr ""
 "ollama:11434`) al provider."
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:186
+#: src/en/reference/docker-compose-scenarios.md:189
 #, no-wrap
 msgid "Add LibreTranslate"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:190
+#: src/en/reference/docker-compose-scenarios.md:193
 #, fuzzy
 #| msgid ""
 #| "You can spin up an additional [Ollama](https://ollama.com/) container to "
@@ -15610,7 +16020,7 @@ msgstr ""
 "le funzionalità AI di Zammad."
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:194
+#: src/en/reference/docker-compose-scenarios.md:197
 #, fuzzy
 #| msgid ""
 #| "To deploy an Ollama container inside the Zammad stack, use the scenario "
@@ -15627,7 +16037,7 @@ msgstr ""
 "file di scenario `scenarios/ad`."
 
 #. type: Fenced div block (tip)
-#: src/en/reference/docker-compose-scenarios.md:195
+#: src/en/reference/docker-compose-scenarios.md:198
 #, no-wrap
 msgid ""
 "\n"
@@ -15637,14 +16047,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:203
+#: src/en/reference/docker-compose-scenarios.md:206
 #, fuzzy
 #| msgid "The menu contains the following entries:"
 msgid "The scenario supports the following environment variables:"
 msgstr "Il menu contiene le seguenti voci:"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:207
+#: src/en/reference/docker-compose-scenarios.md:210
 #, no-wrap
 msgid ""
 "LT_LOAD_ONLY\n"
@@ -15653,7 +16063,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:211
+#: src/en/reference/docker-compose-scenarios.md:214
 #, no-wrap
 msgid ""
 "LT_UPDATE_MODELS\n"
@@ -15662,7 +16072,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:215
+#: src/en/reference/docker-compose-scenarios.md:218
 #, no-wrap
 msgid ""
 "LT_API_KEYS\n"
@@ -15671,13 +16081,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/docker-compose-scenarios.md:216
+#: src/en/reference/docker-compose-scenarios.md:219
 #, no-wrap
 msgid "  docker compose exec libretranslate ltmanage keys add 120\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:222
+#: src/en/reference/docker-compose-scenarios.md:225
 #, no-wrap
 msgid ""
 "  The number is the allowed requests per minute for this key. The command prints the generated key, which is a UUID\n"
@@ -15685,7 +16095,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:226
+#: src/en/reference/docker-compose-scenarios.md:229
 #, no-wrap
 msgid ""
 "LT_REQUIRE_API_KEY_SECRET\n"
@@ -15694,7 +16104,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/docker-compose-scenarios.md:227
+#: src/en/reference/docker-compose-scenarios.md:230
 #, no-wrap
 msgid ""
 "\n"
@@ -15705,14 +16115,14 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:235
+#: src/en/reference/docker-compose-scenarios.md:238
 #, fuzzy, no-wrap
 #| msgid "Limit Resources"
 msgid "Limit resources"
 msgstr "Limita le risorse"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:241
+#: src/en/reference/docker-compose-scenarios.md:244
 msgid ""
 "If you want to limit the hardware resources the Zammad stack is allowed to "
 "use, use the `scenarios/apply-resource-limits.yml` scenario. Default values "
@@ -15725,14 +16135,14 @@ msgstr ""
 "file `s`."
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:242
+#: src/en/reference/docker-compose-scenarios.md:245
 #, fuzzy, no-wrap
 #| msgid "Other Use Cases"
 msgid "Other use cases"
 msgstr "Altri casi d'uso"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:246
+#: src/en/reference/docker-compose-scenarios.md:249
 msgid ""
 "Your scenario is not covered yet? Feel free to suggest your use case. We "
 "plan to add more common use cases to the stack in future."
@@ -15741,14 +16151,14 @@ msgstr ""
 "Prevediamo di aggiungerne altri."
 
 #. type: Title ##
-#: src/en/reference/docker-compose-scenarios.md:247
+#: src/en/reference/docker-compose-scenarios.md:250
 #, fuzzy, no-wrap
 #| msgid "Customize the Stack Locally"
 msgid "Customize the stack locally"
 msgstr "Personalizza lo stack localmente"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:252
+#: src/en/reference/docker-compose-scenarios.md:255
 msgid ""
 "The default stack fits most environments, but sometimes you need to adapt "
 "it: add another service, change settings or use your own files. Whichever "
@@ -15757,19 +16167,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:254
+#: src/en/reference/docker-compose-scenarios.md:257
 msgid "How you do this depends on what you want to achieve:"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:255
+#: src/en/reference/docker-compose-scenarios.md:258
 #, fuzzy, no-wrap
 #| msgid "Change Font Settings for Outgoing HTML Emails"
 msgid "Change settings of the existing services"
 msgstr "Cambia le impostazioni del font per le email HTML in uscita"
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:261
+#: src/en/reference/docker-compose-scenarios.md:264
 #, fuzzy
 #| msgid ""
 #| "Sometimes it's necessary to apply local changes to the Zammad Docker "
@@ -15796,13 +16206,13 @@ msgstr ""
 "files/merge/)."
 
 #. type: Fenced code block (sh)
-#: src/en/reference/docker-compose-scenarios.md:262
+#: src/en/reference/docker-compose-scenarios.md:265
 #, no-wrap
 msgid "cp docker-compose.override.yml.dist docker-compose.override.yml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:268
+#: src/en/reference/docker-compose-scenarios.md:271
 msgid ""
 "Loading scenarios is not supported here. To load a scenario, use the "
 "`COMPOSE_FILE` variable in your `.env` file, as described in the [general "
@@ -15810,13 +16220,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/docker-compose-scenarios.md:269
+#: src/en/reference/docker-compose-scenarios.md:272
 #, no-wrap
 msgid "Add your own files"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:275
+#: src/en/reference/docker-compose-scenarios.md:278
 msgid ""
 "With a Docker Compose deployment done by cloning the repository, you can "
 "store files that belong only to your instance in the stack's `local/` "
@@ -15826,7 +16236,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/docker-compose-scenarios.md:280
+#: src/en/reference/docker-compose-scenarios.md:283
 msgid ""
 "Files in `local/` are not loaded automatically. To use a custom Compose "
 "file, reference it from the override file or from `COMPOSE_FILE` in "
@@ -16039,7 +16449,15 @@ msgid ""
 msgstr "  Nota che nel contesto Docker, Zammad potrebbe vedere l'indirizzo IP del gateway di rete invece di.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:81
+#: src/en/reference/environment-variables.md:80
+#, no-wrap
+msgid ""
+"  The same list decides which address Zammad treats as the client's, and single sign-on checks that address against\n"
+"  the **Trusted SSO Proxy IPs** setting, see [Single sign-on with Kerberos](/en/tutorials/sso-kerberos).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/environment-variables.md:84
 #, no-wrap
 msgid ""
 "`ZAMMAD_MANAGE_SESSIONS_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
@@ -16050,7 +16468,7 @@ msgstr ""
 ": Permette di forkare il worker.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:87
+#: src/en/reference/environment-variables.md:90
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
@@ -16063,7 +16481,7 @@ msgstr ""
 ": Tale worker gestisce.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:90
+#: src/en/reference/environment-variables.md:93
 #, no-wrap
 msgid ""
 "  Self hosted AI users should be careful in increasing it, your AI service might collapse. For AI cloud service users\n"
@@ -16071,7 +16489,7 @@ msgid ""
 msgstr "  Gli utenti AI self-hosted dovrebbero fare attenzione ad aumentarlo, il tuo servizio AI potrebbe collassare.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:95
+#: src/en/reference/environment-variables.md:98
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_AI_JOBS_WORKERS_THREADS` <Badge type=\"tip\" text=\"5\" />\n"
@@ -16083,7 +16501,7 @@ msgstr ""
 ": Quanti.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:100
+#: src/en/reference/environment-variables.md:103
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
@@ -16093,7 +16511,7 @@ msgid ""
 msgstr "`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKERS` <Badge type=\"tip\" text=\"0\" />\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:104
+#: src/en/reference/environment-variables.md:107
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKER_THREADS` <Badge type=\"tip\" text=\"1\" />\n"
@@ -16102,7 +16520,7 @@ msgid ""
 msgstr "`ZAMMAD_PROCESS_DELAYED_COMMUNICATION_INBOUND_JOBS_WORKER_THREADS` <Badge type=\"tip\" text=\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:108
+#: src/en/reference/environment-variables.md:111
 #, no-wrap
 msgid ""
 "`MEMCACHE_SERVERS` <Badge type=\"tip\" text=\"Docker: zammad-memcached:11211\" /> <Badge type=\"tip\" text=\"Package: unset\" />\n"
@@ -16111,7 +16529,7 @@ msgid ""
 msgstr "`MEMCACHE_SERVERS` <Badge type=\"tip\" text=\"Docker: zammad-memcached:11211\" /> <Badge type=\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:112
+#: src/en/reference/environment-variables.md:115
 #, no-wrap
 msgid ""
 "`REDIS_URL` <Badge type=\"tip\" text=\"Docker: redis://zammad-redis:6379\" /> <Badge type=\"tip\" text=\"Package: unset\" />\n"
@@ -16123,7 +16541,7 @@ msgstr ""
 "  `/opt/zammad/tmp/websocket_*`. Consulta [Variabili Redis](/en/reference/redis) per una configurazione con Sentinel.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:117
+#: src/en/reference/environment-variables.md:120
 #, no-wrap
 msgid ""
 "`LD_PRELOAD` <Badge type=\"tip\" text=\"libjemalloc.so.2\" /> ::p::\n"
@@ -16133,7 +16551,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:122
+#: src/en/reference/environment-variables.md:125
 #, no-wrap
 msgid ""
 "`ZAMMAD_USE_JEMALLOC` ::p::\n"
@@ -16143,13 +16561,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:123
+#: src/en/reference/environment-variables.md:126
 #, no-wrap
 msgid "Elasticsearch"
 msgstr "Elasticsearch"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:128
+#: src/en/reference/environment-variables.md:131
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_ENABLED` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -16160,7 +16578,7 @@ msgstr ""
 ": Impostare questa variabile su.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:132
+#: src/en/reference/environment-variables.md:135
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ELASTICSEARCH_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-elasticsearch\" />\n"
@@ -16174,7 +16592,7 @@ msgstr ""
 ": Fornisci un host.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:136
+#: src/en/reference/environment-variables.md:139
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ELASTICSEARCH_PORT` ::d:: <Badge type=\"tip\" text=\"9200\" />\n"
@@ -16188,7 +16606,7 @@ msgstr ""
 ": Fornisci una porta diversa per.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:140
+#: src/en/reference/environment-variables.md:143
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ELASTICSEARCH_SCHEMA` ::d:: <Badge type=\"tip\" text=\"http\" />\n"
@@ -16202,7 +16620,7 @@ msgstr ""
 ": Cambialo in `https` se.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:144
+#: src/en/reference/environment-variables.md:147
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ELASTICSEARCH_NAMESPACE` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -16216,7 +16634,7 @@ msgstr ""
 ": Con questo namespace.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:148
+#: src/en/reference/environment-variables.md:151
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_REINDEX` ::d::\n"
@@ -16227,7 +16645,7 @@ msgstr ""
 ": L'indice di ricerca viene ricostruito automaticamente quando nessun indice.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:152
+#: src/en/reference/environment-variables.md:155
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_SSL_VERIFY` ::d:: <Badge type=\"tip\" text=\"true\" />\n"
@@ -16238,7 +16656,7 @@ msgstr ""
 ": Ti permette di far.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:156
+#: src/en/reference/environment-variables.md:159
 #, no-wrap
 msgid ""
 "`ELASTICSEARCH_HEAP_SIZE` ::d:: <Badge type=\"tip\" text=\"1G\" />\n"
@@ -16249,7 +16667,7 @@ msgstr ""
 ": Imposta la memoria disponibile.\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/environment-variables.md:159
+#: src/en/reference/environment-variables.md:162
 #, no-wrap
 msgid ""
 "Variables for Docker and package installation are partially different. Check the limitation badge and make sure to pick\n"
@@ -16257,7 +16675,7 @@ msgid ""
 msgstr "Le variabili per l'installazione Docker e tramite pacchetto sono parzialmente diverse. Controlla le limitazioni.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:167
+#: src/en/reference/environment-variables.md:170
 #, no-wrap
 msgid ""
 "`POSTGRESQL_HOST` ::p:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
@@ -16268,7 +16686,7 @@ msgstr ""
 ": Nome host o indirizzo IP.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:171
+#: src/en/reference/environment-variables.md:174
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRESQL_PORT` ::p:: <Badge type=\"tip\" text=\"5432\" />\n"
@@ -16282,7 +16700,7 @@ msgstr ""
 ": Regola la porta del tuo PostgreSQL.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:175
+#: src/en/reference/environment-variables.md:178
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRESQL_USER` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -16296,7 +16714,7 @@ msgstr ""
 ": L'utente database per Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:179
+#: src/en/reference/environment-variables.md:182
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRESQL_PASS` ::p:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -16310,7 +16728,7 @@ msgstr ""
 ": La password del database di Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:183
+#: src/en/reference/environment-variables.md:186
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRESQL_DB` ::p:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
@@ -16324,7 +16742,7 @@ msgstr ""
 ": Il database di Zammad da.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:187
+#: src/en/reference/environment-variables.md:190
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRES_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-postgresql\" />\n"
@@ -16339,7 +16757,7 @@ msgstr ""
 ": Nome host o indirizzo IP.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:191
+#: src/en/reference/environment-variables.md:194
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRES_PORT` ::d:: <Badge type=\"tip\" text=\"5432\" />\n"
@@ -16353,7 +16771,7 @@ msgstr ""
 ": Regola la porta del tuo PostgreSQL.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:195
+#: src/en/reference/environment-variables.md:198
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRES_USER` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -16367,7 +16785,7 @@ msgstr ""
 ": L'utente database per Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:199
+#: src/en/reference/environment-variables.md:202
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRES_PASS` ::d:: <Badge type=\"tip\" text=\"zammad\" />\n"
@@ -16381,7 +16799,7 @@ msgstr ""
 ": La password del database di Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:203
+#: src/en/reference/environment-variables.md:206
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRES_DB` ::d:: <Badge type=\"tip\" text=\"zammad_production\" />\n"
@@ -16395,7 +16813,7 @@ msgstr ""
 ": Il database di Zammad da usare.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:207
+#: src/en/reference/environment-variables.md:210
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`POSTGRESQL_OPTIONS` <Badge type=\"tip\" text=\"?pool=50\" />\n"
@@ -16409,7 +16827,7 @@ msgstr ""
 ": Parametri PostgreSQL aggiuntivi da.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:211
+#: src/en/reference/environment-variables.md:214
 #, no-wrap
 msgid ""
 "`POSTGRESQL_DB_CREATE` <Badge type=\"tip\" text=\"true\" />\n"
@@ -16421,7 +16839,7 @@ msgstr ""
 "  causare problemi.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:217
+#: src/en/reference/environment-variables.md:220
 #, no-wrap
 msgid ""
 "`NGINX_EXPOSE_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
@@ -16432,7 +16850,7 @@ msgstr ""
 ": La porta da esporre per l'accesso.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:221
+#: src/en/reference/environment-variables.md:224
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`NGINX_PORT` ::d:: <Badge type=\"tip\" text=\"8080\" />\n"
@@ -16446,7 +16864,7 @@ msgstr ""
 ": La porta interna che il servizio Nginx usa.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:225
+#: src/en/reference/environment-variables.md:228
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`NGINX_SERVER_NAME` ::d:: <Badge type=\"tip\" text=\"_\" />\n"
@@ -16460,7 +16878,7 @@ msgstr ""
 ": Per impostazione predefinita, il container Nginx.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:230
+#: src/en/reference/environment-variables.md:233
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`NGINX_SERVER_SCHEME` ::d:: <Badge type=\"tip\" text=\"\\$scheme\" />\n"
@@ -16477,7 +16895,7 @@ msgstr ""
 ": Se il container Nginx.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:234
+#: src/en/reference/environment-variables.md:237
 #, fuzzy, no-wrap
 #| msgid "`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Define the maximum size of data that a client can send to the server."
 msgid ""
@@ -16487,7 +16905,7 @@ msgid ""
 msgstr "`NGINX_CLIENT_MAX_BODY_SIZE` ::d:: : Definisce la dimensione massima dei dati che un client può inviare."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:238
+#: src/en/reference/environment-variables.md:241
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ZAMMAD_RAILSSERVER_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-railsserver\" />\n"
@@ -16501,7 +16919,7 @@ msgstr ""
 ": Nome host.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:242
+#: src/en/reference/environment-variables.md:245
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ZAMMAD_RAILSSERVER_PORT` ::d:: <Badge type=\"tip\" text=\"3000\" />\n"
@@ -16515,7 +16933,7 @@ msgstr ""
 ": Porta del server Rails di Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:246
+#: src/en/reference/environment-variables.md:249
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ZAMMAD_RAILS_PORT` ::p:: <Badge type=\"tip\" text=\"3000\" />\n"
@@ -16529,7 +16947,7 @@ msgstr ""
 ": Porta del server Rails di Zammad.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:250
+#: src/en/reference/environment-variables.md:253
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ZAMMAD_WEBSOCKET_HOST` ::d:: <Badge type=\"tip\" text=\"zammad-websocket\" />\n"
@@ -16543,7 +16961,7 @@ msgstr ""
 ": Nome host di.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:254
+#: src/en/reference/environment-variables.md:257
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ZAMMAD_WEBSOCKET_PORT` ::d:: <Badge type=\"tip\" text=\"6042\" />\n"
@@ -16557,14 +16975,14 @@ msgstr ""
 ": Porta del websocket di Zammad.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:255
+#: src/en/reference/environment-variables.md:258
 #, fuzzy, no-wrap
 #| msgid "Performance Tuning"
 msgid "Performance tuning"
 msgstr "Ottimizzazione delle prestazioni"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:259
+#: src/en/reference/environment-variables.md:262
 msgid ""
 "Each of below settings comes with its own tradeoffs. There are no "
 "recommended values here; the optimal configuration depends on your system's "
@@ -16574,7 +16992,7 @@ msgstr ""
 "valori consigliati qui."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:262
+#: src/en/reference/environment-variables.md:265
 msgid ""
 "Proceed with caution; when adjusting any of these settings, there is a point "
 "at which performance will begin to degrade rather than improve, or other "
@@ -16584,7 +17002,7 @@ msgstr ""
 "in cui le prestazioni."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:265
+#: src/en/reference/environment-variables.md:268
 msgid ""
 "Below settings may consume all available database connections. Please "
 "consider the [Configure Database Server](config-db-server) for more "
@@ -16595,7 +17013,7 @@ msgstr ""
 "(config-db-server) per maggiori informazioni."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:270
+#: src/en/reference/environment-variables.md:273
 #, no-wrap
 msgid ""
 "`ZAMMAD_WEB_CONCURRENCY`\n"
@@ -16609,7 +17027,7 @@ msgstr ""
 "  dovrebbe corrispondere al valore di questa variabile.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:275
+#: src/en/reference/environment-variables.md:278
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SESSION_JOBS_WORKERS`\n"
@@ -16621,9 +17039,9 @@ msgstr ""
 ": Quanti processi del worker di sessione eseguire.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:278
-#: src/en/reference/environment-variables.md:285
-#: src/en/reference/environment-variables.md:292
+#: src/en/reference/environment-variables.md:281
+#: src/en/reference/environment-variables.md:288
+#: src/en/reference/environment-variables.md:295
 #, no-wrap
 msgid ""
 "  In case you applied [Docker hardware resource limits](docker-compose-scenarios#limit-resources), the zammad-scheduler\n"
@@ -16633,7 +17051,7 @@ msgstr ""
 "  dovrebbe corrispondere alla somma di tutte le variabili di impostazione dei worker.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:282
+#: src/en/reference/environment-variables.md:285
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS`\n"
@@ -16644,7 +17062,7 @@ msgstr ""
 ": Permette di generare `1` worker indipendente per i job pianificati.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:289
+#: src/en/reference/environment-variables.md:292
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKERS`\n"
@@ -16655,7 +17073,7 @@ msgstr ""
 ": Permette di generare `n` processi worker per rilasciare.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:296
+#: src/en/reference/environment-variables.md:299
 #, no-wrap
 msgid ""
 "`ZAMMAD_PROCESS_DELAYED_JOBS_WORKER_THREADS`\n"
@@ -16666,14 +17084,14 @@ msgstr ""
 ": Thread usati da **un** worker dei job ritardati.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:297
+#: src/en/reference/environment-variables.md:300
 #, fuzzy, no-wrap
 #| msgid "HTTP Client Settings"
 msgid "HTTP client settings"
 msgstr "Impostazioni client HTTP"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:301
+#: src/en/reference/environment-variables.md:304
 msgid ""
 "Global HTTP timeout settings. These variables control the default timeout "
 "behavior for Zammad's internal HTTP client when connecting to external "
@@ -16683,7 +17101,7 @@ msgstr ""
 "comportamento di timeout predefinito."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:305
+#: src/en/reference/environment-variables.md:308
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_OPEN_TIMEOUT` <Badge type=\"tip\" text=\"30\" />\n"
@@ -16694,7 +17112,7 @@ msgstr ""
 ": Definisce il tempo massimo in secondi.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:309
+#: src/en/reference/environment-variables.md:312
 #, no-wrap
 msgid ""
 "`ZAMMAD_HTTP_READ_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -16705,7 +17123,7 @@ msgstr ""
 ": Definisce il tempo massimo in secondi.\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:314
+#: src/en/reference/environment-variables.md:317
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`ZAMMAD_HTTP_TOTAL_TIMEOUT` <Badge type=\"tip\" text=\"60\" />\n"
@@ -16722,14 +17140,14 @@ msgstr ""
 ": Definisce il tempo totale massimo.\n"
 
 #. type: Title ##
-#: src/en/reference/environment-variables.md:315
+#: src/en/reference/environment-variables.md:318
 #, fuzzy, no-wrap
 #| msgid "How to Set Environment Variables"
 msgid "How to set environment variables"
 msgstr "Come impostare le variabili d'ambiente"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:320
+#: src/en/reference/environment-variables.md:323
 msgid ""
 "It depends on how you installed Zammad (package, Docker). Either set it via "
 "`zammad config` command as you can see below, use your system's way of "
@@ -16741,50 +17159,50 @@ msgstr ""
 "`zammad config`."
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:322
+#: src/en/reference/environment-variables.md:325
 msgid "Examples for package installations:"
 msgstr "Esempi per installazioni tramite pacchetto:"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:324
+#: src/en/reference/environment-variables.md:327
 msgid "Set OPTION to \"value\":"
 msgstr "Imposta OPZIONE a \"valore\":"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:325
+#: src/en/reference/environment-variables.md:328
 #, no-wrap
 msgid "zammad config:set OPTION=value\n"
 msgstr "zammad config:set OPTION=value\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:330
+#: src/en/reference/environment-variables.md:333
 msgid "Get OPTION:"
 msgstr "Ottieni OPZIONE:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:331
+#: src/en/reference/environment-variables.md:334
 #, no-wrap
 msgid "zammad config:get OPTION\n"
 msgstr "zammad config:get OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:336
+#: src/en/reference/environment-variables.md:339
 msgid "Unset OPTION:"
 msgstr "Rimuovi OPZIONE:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:337
+#: src/en/reference/environment-variables.md:340
 #, no-wrap
 msgid "zammad config:unset OPTION\n"
 msgstr "zammad config:unset OPTION\n"
 
 #. type: Plain text
-#: src/en/reference/environment-variables.md:342
+#: src/en/reference/environment-variables.md:345
 msgid "Restart Zammad after changing settings:"
 msgstr "Riavvia Zammad dopo aver modificato le impostazioni:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/environment-variables.md:343
+#: src/en/reference/environment-variables.md:346
 #: src/en/reference/memory-allocator.md:39
 #, no-wrap
 msgid "sudo systemctl restart zammad\n"
@@ -21679,6 +22097,158 @@ msgid "Reference"
 msgstr "Riferimento"
 
 #. type: Title #
+#: src/en/reference/mcp-tools.md:1 src/en/reference/mcp-tools.md:6
+#, no-wrap
+msgid "MCP server tools"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:11
+msgid ""
+"Zammad answers the _Model Context Protocol_ (MCP) on a server of its own, "
+"next to the REST API. An AI client, a chat application or a coding tool for "
+"example, reads, finds, updates and creates tickets through it. The server is "
+"part of every installation, nothing has to be installed or run in addition."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:15
+msgid ""
+"This page describes the tools the server offers and the limits that apply to "
+"them. How a user connects a client is described in the [MCP server guide](/"
+"en/documentation/use/guides/mcp-server). Whether the server answers at all "
+"is a decision of the administrator, who switches it on in the API settings "
+"of Zammad."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/mcp-tools.md:16
+#, no-wrap
+msgid "Access"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:21
+msgid ""
+"The server answers at `https://{fqdn}/mcp` over the MCP transport "
+"_Streamable HTTP_, and only to `POST` requests. A client has to send a fixed "
+"`Authorization: Bearer {your_token}` header with every request. Supporting "
+"the transport alone is not enough, a client that cannot set the header stays "
+"out."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:25
+msgid ""
+"Requests reach the server only at the `Fully Qualified Domain Name`, the "
+"`Alternative fully qualified domain name` or a loopback address "
+"(`localhost`, `127.0.0.1`, `::1`). Requests at another address are refused, "
+"as are browser requests from another origin, which protects the server "
+"against DNS rebinding."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:31
+msgid ""
+"The `MCP server` toggle is off by default. While it is off the server "
+"refuses every request, whatever token the request carries. Clients "
+"authenticate with personal access tokens only: neither a password nor an "
+"OAuth2 token gets in, and neither does a request acting on behalf of another "
+"user. The token and its owner both keep their limits, so a client can do "
+"exactly what they may do and nothing more. Every tool requires the "
+"`ticket.agent` permission, and a user without agent permissions, a customer "
+"for example, gets no tools at all."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/mcp-tools.md:32
+#, no-wrap
+msgid "Tools"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:36
+msgid ""
+"The client gets the following tools, in an order it decides itself. The "
+"access column names what a tool does with the data: `read` changes nothing, "
+"`write` changes a ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:65
+#, no-wrap
+msgid ""
+"| Tool | Access | What it does |\n"
+"| --- | --- | --- |\n"
+"| `add_internal_note` | write | Adds an internal note to a ticket. The customer never sees it. |\n"
+"| `create_article` | write | Adds an article to a ticket or sends a reply to the customer. |\n"
+"| `create_ticket` | write | Creates a ticket with a first message from a phone call or an email, or as an internal note. |\n"
+"| `get_current_user` | read | Reads the user the connection works as, with their groups and their knowledge base access. |\n"
+"| `get_knowledge_base_answer` | read | Reads one knowledge base answer in full, in the locale asked for. |\n"
+"| `get_organization` | read | Reads an organization with its domain, VIP flag, note, custom fields and members. |\n"
+"| `get_overview_tickets` | read | Reads the tickets of an overview, such as \"My Assigned Tickets\". |\n"
+"| `get_shared_draft` | read | Reads the shared draft saved for a ticket. |\n"
+"| `get_ticket` | read | Reads a ticket with its customer, organization, owner, links and messages. |\n"
+"| `get_ticket_articles` | read | Reads the messages of a ticket: an index, a search in them or chosen ones with their text. |\n"
+"| `get_ticket_fields` | read | Lists the fields a ticket has, with the values to choose from. |\n"
+"| `get_ticket_history` | read | Reads what changed on a ticket, when and by whom or by which automation. |\n"
+"| `get_user` | read | Reads a user with email, phone, mobile, organizations and custom fields. |\n"
+"| `link_knowledge_base_answer` | write | Links a knowledge base answer to a ticket. |\n"
+"| `link_tickets` | write | Links two tickets. |\n"
+"| `list_overviews` | read | Lists the overviews with their number of tickets. |\n"
+"| `list_tags` | read | Lists the tags that exist, the most used first. |\n"
+"| `read_attachment` | read | Reads the text of a file attached to a ticket message. See [Limits](#limits) for which files it reads. |\n"
+"| `save_shared_draft` | write | Saves a reply as the shared draft of a ticket. Nothing is sent. |\n"
+"| `search_knowledge_base` | read | Searches the knowledge base by words or by meaning. |\n"
+"| `search_organizations` | read | Finds organizations by their name or their domain. |\n"
+"| `search_tickets` | read | Searches tickets by a query, by filters or both. |\n"
+"| `search_users` | read | Finds users by name, email, login or phone number. |\n"
+"| `send_shared_draft` | write | Sends the shared draft of a ticket as it is saved. |\n"
+"| `set_ticket_tags` | write | Adds tags to a ticket and removes tags from it. |\n"
+"| `update_ticket` | write | Changes state, priority, group, owner, pending time or custom fields of a ticket. |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:68
+msgid ""
+"The three knowledge base tools, `get_knowledge_base_answer`, "
+"`link_knowledge_base_answer` and `search_knowledge_base`, appear only where "
+"a knowledge base is active."
+msgstr ""
+
+#. type: Title ##
+#: src/en/reference/mcp-tools.md:69
+#, fuzzy, no-wrap
+#| msgid "Limitations"
+msgid "Limits"
+msgstr "Limitazioni"
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:74
+msgid ""
+"A tool reads the text of a text file: plain text, logs, CSV, JSON, XML or "
+"HTML, up to 10 MB. Any other file, and a larger one, is not read. The tool "
+"then says why and returns the file's download link, so the client can hand "
+"the link to the user. A long text arrives in parts, one part per call."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:77
+msgid ""
+"Files cannot be sent through the server. `create_article` and "
+"`create_ticket` take text only, a user who wants to send a file adds it to "
+"the message in Zammad itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/mcp-tools.md:79
+msgid ""
+"Which messages a client sends without a further approval, and when Zammad "
+"asks the user for one, is described in the admin documentation of the API "
+"settings."
+msgstr ""
+
+#. type: Title #
 #: src/en/reference/memory-allocator.md:1
 #: src/en/reference/memory-allocator.md:6
 #, no-wrap
@@ -24075,18 +24645,32 @@ msgstr "Channel.fetch\n"
 msgid "Reprocess failed emails"
 msgstr "Riprocessa email fallite"
 
-#. type: Plain text
-#: src/en/reference/rails-commands.md:780
+#. type: Fenced div block (info)
+#: src/en/reference/rails-commands.md:777
+#, no-wrap
 msgid ""
-"When Zammad fetches an email it cannot parse (e.g. due to a parser bug or a "
-"malformed message), it will store the email in the database and warn in the "
+"Since Zammad 7.3, an email that cannot be processed becomes a ticket titled `Unprocessable email` instead of a failed\n"
+"email record. The commands below only handle records that were created before the update. Reprocessing such a record\n"
+"creates a ticket from it, which can be an error ticket as well.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/rails-commands.md:786
+#, fuzzy
+#| msgid ""
+#| "When Zammad fetches an email it cannot parse (e.g. due to a parser bug or "
+#| "a malformed message), it will store the email in the database and warn in "
+#| "the monitoring section about it."
+msgid ""
+"When Zammad fetched an email it could not parse (e.g. due to a parser bug or "
+"a malformed message), it stored the email in the database and warned in the "
 "monitoring section about it."
 msgstr ""
 "Quando Zammad recupera un'email che non riesce ad analizzare (ad esempio a "
 "causa di un bug del parser o di un messaggio malformato)."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:784
+#: src/en/reference/rails-commands.md:790
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
 "header fields), you may need to manually edit the email before Zammad can "
@@ -24096,20 +24680,20 @@ msgstr ""
 "valido in uno dei campi di intestazione)."
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:785
+#: src/en/reference/rails-commands.md:791
 #, fuzzy, no-wrap
 #| msgid "Export all Failed Emails to a Local Folder"
 msgid "Export all failed emails to a local folder"
 msgstr "Esporta tutte le email fallite in una cartella locale"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:787
+#: src/en/reference/rails-commands.md:793
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr "rake zammad:email_parser:failed_email:export_all`\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:794
+#: src/en/reference/rails-commands.md:800
 msgid ""
 "You can find the location of the exported email in the output of your "
 "console.  Every time you perform an export of failed (unprocessable) emails, "
@@ -24119,14 +24703,14 @@ msgstr ""
 "console. Ogni volta."
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:795
+#: src/en/reference/rails-commands.md:801
 #, fuzzy, no-wrap
 #| msgid "Edit the Email"
 msgid "Edit the email"
 msgstr "Modifica l'email"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:800
+#: src/en/reference/rails-commands.md:806
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
 "and try to repair it. Make sure to leave the file name untouched, as the "
@@ -24136,25 +24720,25 @@ msgstr ""
 "provare a."
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:801
+#: src/en/reference/rails-commands.md:807
 #, fuzzy, no-wrap
 #| msgid "Import and Reprocess Locally Modified Email"
 msgid "Import and reprocess locally modified email"
 msgstr "Importa e riprocessa l'email modificata localmente"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:804
+#: src/en/reference/rails-commands.md:810
 msgid "After editing the email, run:"
 msgstr "Dopo aver modificato l'email, esegui:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:805
+#: src/en/reference/rails-commands.md:811
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:813
+#: src/en/reference/rails-commands.md:819
 msgid ""
 "This will apply your changes from the file to the database. You can also "
 "pass the entire folder as argument, so all `.eml` files in it will we "
@@ -24165,7 +24749,7 @@ msgstr ""
 "l'intera cartella."
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:814
+#: src/en/reference/rails-commands.md:820
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -24176,14 +24760,14 @@ msgstr ""
 "`/opt/zammad`. Potrebbero esserci.\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:820
+#: src/en/reference/rails-commands.md:826
 #, fuzzy, no-wrap
 #| msgid "Delete Unwanted Emails"
 msgid "Delete unwanted emails"
 msgstr "Elimina email indesiderate"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:824
+#: src/en/reference/rails-commands.md:830
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
 "database after exporting them with the following command:"
@@ -24192,13 +24776,13 @@ msgstr ""
 "l'esportazione."
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:825
+#: src/en/reference/rails-commands.md:831
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:832
+#: src/en/reference/rails-commands.md:838
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
 "be removed from the database, their files deleted and finally the empty "
@@ -24208,14 +24792,14 @@ msgstr ""
 "contenute verranno rimosse."
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:833
+#: src/en/reference/rails-commands.md:839
 #, fuzzy, no-wrap
 #| msgid "Show and Retry Failed Data Privacy Jobs"
 msgid "Show and retry failed data privacy jobs"
 msgstr "Mostra e riprova i job sulla privacy dei dati falliti"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:837
+#: src/en/reference/rails-commands.md:843
 msgid ""
 "In rare cases, Zammad's data privacy jobs might fail. To show them, you can "
 "use the following rake command:"
@@ -24224,13 +24808,13 @@ msgstr ""
 "mostrarli, puoi usare il seguente."
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:838
+#: src/en/reference/rails-commands.md:844
 #, no-wrap
 msgid "rake zammad:data_privacy:failed:show\n"
 msgstr "rake zammad:data_privacy:failed:show\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:846
+#: src/en/reference/rails-commands.md:852
 msgid ""
 "To retry failed data privacy jobs, you can use the following command. "
 "However, without changing the underlying issue that caused the failure, the "
@@ -24241,20 +24825,20 @@ msgstr ""
 "comando. Tuttavia, senza modifiche."
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:847
+#: src/en/reference/rails-commands.md:853
 #, no-wrap
 msgid "rake zammad:data_privacy:failed:retry\n"
 msgstr "rake zammad:data_privacy:failed:retry\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:851
+#: src/en/reference/rails-commands.md:857
 #, fuzzy, no-wrap
 #| msgid "Fill a Test System With Test Data"
 msgid "Fill a test system with test data"
 msgstr "Riempi un sistema di test con dati di test"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:853
+#: src/en/reference/rails-commands.md:859
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -24264,7 +24848,7 @@ msgstr ""
 "ed è difficile da annullare.\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:862
+#: src/en/reference/rails-commands.md:868
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
 "organizations, `5` new overviews and `100` tickets. You can always use `0` "
@@ -24275,20 +24859,20 @@ msgstr ""
 "`40` organizzazioni,"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:863
+#: src/en/reference/rails-commands.md:869
 #, no-wrap
 msgid "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets: 100,)\n"
 msgstr "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: 40,overviews: 5,tickets:\n"
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:867
+#: src/en/reference/rails-commands.md:873
 #, fuzzy, no-wrap
 #| msgid "Deleting Records"
 msgid "Deleting records"
 msgstr "Eliminazione record"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:869
+#: src/en/reference/rails-commands.md:875
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -24299,61 +24883,61 @@ msgstr ""
 "se sai cosa stai facendo.\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:875
+#: src/en/reference/rails-commands.md:881
 #, fuzzy, no-wrap
 #| msgid "Removing Tickets (And Their Articles)"
 msgid "Removing tickets (and their articles)"
 msgstr "Rimozione ticket (e i loro articoli)"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:878
+#: src/en/reference/rails-commands.md:884
 msgid "Delete a ticket (specified by database ID):"
 msgstr "Elimina un ticket (specificato tramite ID database):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:879
+#: src/en/reference/rails-commands.md:885
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr "Ticket.find(4).destroy\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:884
+#: src/en/reference/rails-commands.md:890
 msgid "Delete all tickets:"
 msgstr "Elimina tutti i ticket:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:885
+#: src/en/reference/rails-commands.md:891
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr "Ticket.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:890
+#: src/en/reference/rails-commands.md:896
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 "Mantieni alcuni ticket (specificati tramite ID database); elimina il resto:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:891
+#: src/en/reference/rails-commands.md:897
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr "tickets_to_keep = [1, 2, 3]\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:895
+#: src/en/reference/rails-commands.md:901
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:899
+#: src/en/reference/rails-commands.md:905
 #, fuzzy, no-wrap
 #| msgid "Removing Users"
 msgid "Removing users"
 msgstr "Rimozione utenti"
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rails-commands.md:901
+#: src/en/reference/rails-commands.md:907
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -24369,7 +24953,7 @@ msgstr ""
 "Comè tale\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:910
+#: src/en/reference/rails-commands.md:916
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -24381,28 +24965,28 @@ msgstr ""
 "quando rimuove.\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:918
+#: src/en/reference/rails-commands.md:924
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr "Rimuovere utenti è possibile in 2 modi: un singolo utente e in blocco."
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:920
+#: src/en/reference/rails-commands.md:926
 msgid "Remove a single user:"
 msgstr "Rimuovi un singolo utente:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:921
+#: src/en/reference/rails-commands.md:927
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr "User.find_by(email: '<email address>').destroy\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:926
+#: src/en/reference/rails-commands.md:932
 msgid "Remove several users:"
 msgstr "Rimuovi più utenti:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:927
+#: src/en/reference/rails-commands.md:933
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -24414,78 +24998,78 @@ msgstr ""
 "   ).destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:933
+#: src/en/reference/rails-commands.md:939
 #, fuzzy, no-wrap
 #| msgid "Removing Organizations"
 msgid "Removing organizations"
 msgstr "Rimozione organizzazioni"
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:935
+#: src/en/reference/rails-commands.md:941
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr "Rimuovere un'organizzazione **non** elimina i clienti associati.\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:939
+#: src/en/reference/rails-commands.md:945
 #, no-wrap
 msgid "Step 1: Select organizations"
 msgstr "Passo 1: Seleziona organizzazioni"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:942
+#: src/en/reference/rails-commands.md:948
 msgid "By \"active\" status:"
 msgstr "Per stato \"attivo\":"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:943
+#: src/en/reference/rails-commands.md:949
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr "organizations = Organization.where(active: false)\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:948
+#: src/en/reference/rails-commands.md:954
 msgid "By name:"
 msgstr "Per nome:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:949
+#: src/en/reference/rails-commands.md:955
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr "organizations = Organization.where(name: 'Acme')\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:954
+#: src/en/reference/rails-commands.md:960
 msgid "By partial match on notes:"
 msgstr "Per corrispondenza parziale sulle note:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:955
+#: src/en/reference/rails-commands.md:961
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:959
+#: src/en/reference/rails-commands.md:965
 #, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr "Passo 2: Anteprima delle organizzazioni interessate"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:961
+#: src/en/reference/rails-commands.md:967
 #, no-wrap
 msgid "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 msgstr "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" }.join(\"\\n\")\n"
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:965
+#: src/en/reference/rails-commands.md:971
 #, fuzzy, no-wrap
 #| msgid "Step 3: Proceed with Deletion"
 msgid "Step 3: Proceed with deletion"
 msgstr "Passo 3: Procedi con l'eliminazione"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:967
+#: src/en/reference/rails-commands.md:973
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -24495,7 +25079,7 @@ msgstr ""
 "    puts %{Preparazione eliminazione organizzazione \"#{org.name}\"...\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:972
+#: src/en/reference/rails-commands.md:978
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -24507,7 +25091,7 @@ msgstr ""
 "    puts \"  Rimozione di #{member.fullname} dall'organizzazione...\"\n"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:979
+#: src/en/reference/rails-commands.md:985
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -24519,36 +25103,36 @@ msgstr ""
 "   end\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:985
+#: src/en/reference/rails-commands.md:991
 #, fuzzy, no-wrap
 #| msgid "Removing System Records"
 msgid "Removing system records"
 msgstr "Rimozione record di sistema"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:988
+#: src/en/reference/rails-commands.md:994
 msgid "Remove all online notifications:"
 msgstr "Rimuovi tutte le notifiche online:"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:989
+#: src/en/reference/rails-commands.md:995
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr "OnlineNotification.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:994
+#: src/en/reference/rails-commands.md:1000
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr "Rimuovi tutte le voci dall'Activity Stream (dashboard):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:995
+#: src/en/reference/rails-commands.md:1001
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr "ActivityStream.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1000
+#: src/en/reference/rails-commands.md:1006
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
 "organizations):"
@@ -24557,13 +25141,13 @@ msgstr ""
 "utenti, organizzazioni):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1001
+#: src/en/reference/rails-commands.md:1007
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr "RecentView.destroy_all\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1007
+#: src/en/reference/rails-commands.md:1013
 msgid ""
 "Remove all history information from tickets, users and organizations "
 "(dangerous!):"
@@ -24572,20 +25156,20 @@ msgstr ""
 "organizzazioni (pericoloso!):"
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1008
+#: src/en/reference/rails-commands.md:1014
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr "History.destroy_all\n"
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:1012
+#: src/en/reference/rails-commands.md:1018
 #, fuzzy, no-wrap
 #| msgid "Reset Zammad Installation"
 msgid "Reset Zammad installation"
 msgstr "Reimposta installazione Zammad"
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:1014
+#: src/en/reference/rails-commands.md:1020
 #, no-wrap
 msgid ""
 "\n"
@@ -24599,51 +25183,51 @@ msgstr ""
 "I comandi seguenti sono intenzionalmente incompleti, gli output di errore ti guideranno!\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1024
+#: src/en/reference/rails-commands.md:1030
 msgid "Truncate the database:"
 msgstr "Tronca il database:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1025
+#: src/en/reference/rails-commands.md:1031
 #, no-wrap
 msgid "rake zammad:db:truncate\n"
 msgstr "rake zammad:db:truncate\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1030
+#: src/en/reference/rails-commands.md:1036
 msgid "Migrate the database:"
 msgstr "Migra il database:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1031
+#: src/en/reference/rails-commands.md:1037
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr "rake db:migrate\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1036
+#: src/en/reference/rails-commands.md:1042
 msgid "Load the seed data:"
 msgstr "Carica i dati seed:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1037
+#: src/en/reference/rails-commands.md:1043
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr "rake db:seed\n"
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1042
+#: src/en/reference/rails-commands.md:1048
 msgid "Clear cache and reload the settings:"
 msgstr "Svuota la cache e ricarica le impostazioni:"
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1043
+#: src/en/reference/rails-commands.md:1049
 #, no-wrap
 msgid "rake zammad:db:rebuild\n"
 msgstr "rake zammad:db:rebuild\n"
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:1047
+#: src/en/reference/rails-commands.md:1053
 #, no-wrap
 msgid ""
 "\n"
@@ -37744,6 +38328,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:29
+#: src/en/tutorials/sso-kerberos.md:558
 msgid "You need:"
 msgstr "Ti serve:"
 
@@ -38430,33 +39015,65 @@ msgid "How does it work?"
 msgstr "Come funziona?"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:34
+#: src/en/tutorials/sso-kerberos.md:33
 msgid ""
-"Once enabled, single sign-on activates an endpoint at `https://"
-"your.zammad.host/auth/sso`. When the Zammad server receives a GET request at "
-"this endpoint with a valid username in **any one of the following** "
-"entities, it creates a new session for that user:"
+"Zammad does not speak Kerberos itself. It provides the endpoint `https://"
+"your.zammad.host/auth/sso` and relies on the web server in front of it to "
+"authenticate the user before a request reaches that endpoint. The web server "
+"passes the user name along, Zammad looks up the user by their login and "
+"starts a session."
 msgstr ""
-"Una volta abilitato, il single sign-on attiva un endpoint su `https://"
-"your.zammad.host/auth/sso`."
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:35
+msgid ""
+"The user name can arrive in one of three forms, which Zammad checks in this "
+"order:"
+msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:38
-msgid "an `X-Forwarded-User` request header"
+#: src/en/tutorials/sso-kerberos.md:39
+msgid ""
+"the `REMOTE_USER` variable of the web server, only when the web server runs "
+"Zammad in its own process"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:39
+msgid ""
+"the `Remote-User` request header, which Zammad sees as `HTTP_REMOTE_USER`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:39
+#, fuzzy
+#| msgid "an `X-Forwarded-User` request header"
+msgid "the `X-Forwarded-User` request header"
 msgstr "un'intestazione di richiesta `X-Forwarded-User`"
 
-#. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:38
-msgid "a `REMOTE_USER` web server environment variable"
-msgstr "una variabile d'ambiente del server web `REMOTE_USER`"
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:41
+msgid "Which one applies depends on your installation:"
+msgstr ""
 
-#. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:38
-msgid "an `HTTP_REMOTE_USER` web server environment variable"
-msgstr "una variabile d'ambiente del server web `HTTP_REMOTE_USER`"
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:44
+msgid ""
+"Package installation : Apache replaces Nginx on the Zammad host, "
+"authenticates `/auth/sso` and sets `X-Forwarded-User`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:48
+#, no-wrap
+msgid ""
+"Docker stack\n"
+": The stack's own Nginx stays in place. An additional container in front of `/auth/sso` authenticates, sets\n"
+"  `X-Forwarded-User` and forwards the request to Zammad's application server directly.\n"
+msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/sso-kerberos.md:39
+#: src/en/tutorials/sso-kerberos.md:49
 #, fuzzy, no-wrap
 #| msgid ""
 #| "**Wait. SSO allows you to sign in with only a username?**\n"
@@ -38510,7 +39127,7 @@ msgstr ""
 "**Come è.\n"
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:65
+#: src/en/tutorials/sso-kerberos.md:75
 #, no-wrap
 msgid ""
 "**Too busy to handle it on your own?**\n"
@@ -38526,44 +39143,54 @@ msgstr ""
 "[Scrivici un messaggio](https://zammad.com/contact){target=_blank}!\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:74
+#: src/en/tutorials/sso-kerberos.md:84
 msgid "You will need:"
 msgstr "Avrai bisogno di:"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:82
+#: src/en/tutorials/sso-kerberos.md:93
 msgid "a Microsoft Active Directory environment with"
 msgstr "un ambiente Microsoft Active Directory con"
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/sso-kerberos.md:82
+#: src/en/tutorials/sso-kerberos.md:93
 msgid "root access"
 msgstr "accesso root"
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/sso-kerberos.md:82
+#: src/en/tutorials/sso-kerberos.md:93
 msgid "support for AES 256-bit encryption"
 msgstr "supporto per crittografia AES a 256 bit"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:82
-msgid "a Zammad host with"
-msgstr "un host Zammad con"
-
-#. type: Bullet: '  - '
-#: src/en/tutorials/sso-kerberos.md:82
-msgid "a fully-qualified domain name (FQDN)"
+#: src/en/tutorials/sso-kerberos.md:93
+#, fuzzy
+#| msgid "a fully-qualified domain name (FQDN)"
+msgid "a Zammad installation with a fully-qualified domain name (FQDN), either"
 msgstr "un nome di dominio completamente qualificato (FQDN)"
 
+#. type: Bullet: '  - '
+#: src/en/tutorials/sso-kerberos.md:93
+msgid "a package installation with root access on the host, or"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: src/en/tutorials/sso-kerberos.md:93
+msgid ""
+"the Docker stack behind a reverse proxy that terminates TLS and routes by "
+"path, such as the [Nginx Proxy Manager scenario](/en/reference/docker-"
+"compose-scenarios#add-nginx-proxy-manager)"
+msgstr ""
+
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:82
+#: src/en/tutorials/sso-kerberos.md:93
 msgid "some familiarity with system administration (e.g. Apache configuration)"
 msgstr ""
 "una certa familiarità con l'amministrazione di sistema (ad esempio "
 "configurazione Apache)"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:87
+#: src/en/tutorials/sso-kerberos.md:98
 #, fuzzy, no-wrap
 #| msgid ""
 #| "For best results, set up the LDAP integration to make sure\n"
@@ -38580,14 +39207,14 @@ msgstr ""
 "che il tuo Active Directory e Zammad.\n"
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:88
+#: src/en/tutorials/sso-kerberos.md:99
 #, fuzzy, no-wrap
 #| msgid "Step 1: Configure Active Directory"
 msgid "Step 1: Configure active directory"
 msgstr "Passo 1: Configura Active Directory"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:94
+#: src/en/tutorials/sso-kerberos.md:105
 msgid ""
 "In the Kerberos authentication scheme, the **authentication server** (Active "
 "Directory) needs to maintain shared secrets with the **service** (Zammad). "
@@ -38598,19 +39225,19 @@ msgstr ""
 "(Active Directory) deve."
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/sso-kerberos.md:95
+#: src/en/tutorials/sso-kerberos.md:106
 #, no-wrap
 msgid "These directions have been confirmed on Windows Server 2016.\n"
 msgstr "Queste istruzioni sono state confermate su Windows Server 2016.\n"
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:99
+#: src/en/tutorials/sso-kerberos.md:110
 #, no-wrap
 msgid "1a. Create a service account"
 msgstr "1a. Crea un account di servizio"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:103
+#: src/en/tutorials/sso-kerberos.md:114
 msgid ""
 "You may use an existing service account if you have one. Admin privileges "
 "are not required; a normal user account will do."
@@ -38619,7 +39246,7 @@ msgstr ""
 "richiesti privilegi amministrativi."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:105
+#: src/en/tutorials/sso-kerberos.md:116
 msgid ""
 "![Screenshot Active Directory service account settings](/screenshots/"
 "tutorials/sso-kerberos/active-directory-service-account-settings.png)"
@@ -38628,14 +39255,14 @@ msgstr ""
 "tutorials/sso-kerberos/active-directory-service-account-settings.png)"
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:106
+#: src/en/tutorials/sso-kerberos.md:117
 #, fuzzy, no-wrap
 #| msgid "1b. Reset Password"
 msgid "1b. Reset password"
 msgstr "1b. Reimposta password"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:110
+#: src/en/tutorials/sso-kerberos.md:121
 msgid ""
 "Reset service account password after enabling the \"This account supports "
 "Kerberos AES 256 bit encryption\"."
@@ -38643,30 +39270,37 @@ msgstr ""
 "Reimposta la password dell'account di servizio dopo aver abilitato l'opzione "
 "\"Questo account supporta Kerberos AES 256."
 
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:124
+msgid ""
+"Without this option, the keytab carries only RC4 keys, which current "
+"Kerberos libraries reject. The Docker SSO container is one of them."
+msgstr ""
+
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:111
+#: src/en/tutorials/sso-kerberos.md:125
 #, no-wrap
 msgid "1c. Register a SPN for Zammad"
 msgstr "1c. Registra un SPN per Zammad"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:114 src/en/tutorials/sso-kerberos.md:351
+#: src/en/tutorials/sso-kerberos.md:128 src/en/tutorials/sso-kerberos.md:373
 msgid "Replace the following placeholders in the commands below:"
 msgstr "Sostituisci i seguenti segnaposto nei comandi seguenti:"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:121 src/en/tutorials/sso-kerberos.md:356
-#: src/en/tutorials/sso-kerberos.md:438
+#: src/en/tutorials/sso-kerberos.md:135 src/en/tutorials/sso-kerberos.md:378
+#: src/en/tutorials/sso-kerberos.md:460
 msgid "`<zammad-host>`: Zammad FQDN"
 msgstr "`<zammad-host>`: FQDN di Zammad"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:121
+#: src/en/tutorials/sso-kerberos.md:135
 msgid "`<service-acct>`: Service account logon name"
 msgstr "`<service-acct>`: Nome di accesso dell'account di servizio"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:121
+#: src/en/tutorials/sso-kerberos.md:135
 msgid ""
 "`<password>`: Password of the service account (Option `/pass *` did prove to "
 "not work)"
@@ -38675,29 +39309,29 @@ msgstr ""
 "dimostrata non funzionante)"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:121 src/en/tutorials/sso-kerberos.md:311
-#: src/en/tutorials/sso-kerberos.md:356 src/en/tutorials/sso-kerberos.md:438
+#: src/en/tutorials/sso-kerberos.md:135 src/en/tutorials/sso-kerberos.md:333
+#: src/en/tutorials/sso-kerberos.md:378 src/en/tutorials/sso-kerberos.md:460
 msgid "`<domain>`: Windows domain"
 msgstr "`<domain>`: Dominio Windows"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:121
+#: src/en/tutorials/sso-kerberos.md:135
 msgid "`<master-domain-controller>`: Master domain controller IP/FQD"
 msgstr "`<master-domain-controller>`: IP/FQDN del controller di dominio master"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:123
+#: src/en/tutorials/sso-kerberos.md:137
 msgid "The commands below will prompt for the users password:"
 msgstr "I comandi seguenti chiederanno la password dell'utente:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:124
+#: src/en/tutorials/sso-kerberos.md:138
 #, no-wrap
 msgid "setspn -s HTTP/<zammad-host> <service-acct>\n"
 msgstr "setspn -s HTTP/<zammad-host> <service-acct>\n"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:128
+#: src/en/tutorials/sso-kerberos.md:142
 #, no-wrap
 msgid ""
 "ktpass /princ HTTP/<zammad-host>@<DOMAIN> \\\n"
@@ -38713,21 +39347,31 @@ msgstr ""
 "        /cry\n"
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:138
+#: src/en/tutorials/sso-kerberos.md:152
 #, no-wrap
 msgid "1d. Note the secret key and version number"
 msgstr "1d. Annota la chiave segreta e il numero di versione"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:142
+#: src/en/tutorials/sso-kerberos.md:156
 msgid ""
-"The output of the command above contains important data for Step 2e below:"
+"This step is for the package installation only. The Docker stack uses the "
+"`zammad.keytab` file written by the command above as it is."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:158
+#, fuzzy
+#| msgid ""
+#| "The output of the command above contains important data for Step 2e below:"
+msgid ""
+"The output of the command above contains important data for Step 2f below:"
 msgstr ""
 "L'output del comando sopra contiene dati importanti per il Passo 2e di "
 "seguito:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:143
+#: src/en/tutorials/sso-kerberos.md:159
 #, no-wrap
 msgid ""
 "Using legacy password setting method\n"
@@ -38745,29 +39389,38 @@ msgstr ""
 "Impossibile impostare la proprietà 'servicePrincipalName' su 'HTT\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:157
+#: src/en/tutorials/sso-kerberos.md:173
 msgid "On the last line, take note of:"
 msgstr "Sull'ultima riga, prendi nota di:"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:160
+#: src/en/tutorials/sso-kerberos.md:176
 msgid "the secret key in parentheses at the end (**0x5ee827...**)"
 msgstr "la chiave segreta tra parentesi alla fine (**0x5ee827...**)"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:160
+#: src/en/tutorials/sso-kerberos.md:176
 msgid "the secret key version number preceded by `vno` (**3**)"
 msgstr "il numero di versione della chiave segreta preceduto da `vno` (**3**)"
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:161
+#: src/en/tutorials/sso-kerberos.md:177
 #, fuzzy, no-wrap
 #| msgid "Step 2: Remove NGINX, Set up Apache + Kerberos"
-msgid "Step 2: Remove NGINX, set up Apache + Kerberos"
+msgid "Step 2: Set up the Kerberos endpoint"
 msgstr "Passo 2: Rimuovi NGINX, configura Apache + Kerberos"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:165
+#: src/en/tutorials/sso-kerberos.md:182
+msgid ""
+"Next, requests to `/auth/sso` must pass a web server that performs the "
+"Kerberos authentication before they reach Zammad. How you set this up "
+"depends on your installation: follow [Package installation](#package-"
+"installation) or [Docker installation](#docker-installation)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:187
 msgid ""
 "Next, the Zammad host must be configured to support Kerberos (and to accept "
 "auth credentials provided by the Active Directory server)."
@@ -38776,7 +39429,7 @@ msgstr ""
 "Kerberos (e accettare credenziali di autenticazione."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:169
+#: src/en/tutorials/sso-kerberos.md:191
 msgid ""
 "In most cases, you would have to recompile NGINX from source with an extra "
 "module to enable Kerberos support. To get around this, we will use Apache, "
@@ -38786,20 +39439,20 @@ msgstr ""
 "modulo aggiuntivo per abilitare."
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/sso-kerberos.md:170
+#: src/en/tutorials/sso-kerberos.md:192
 #, no-wrap
 msgid "All commands in this section must be run as root (or with `sudo`).\n"
 msgstr "Tutti i comandi in questa sezione devono essere eseguiti come root (o con `sudo`).\n"
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:174
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:196
 #, fuzzy, no-wrap
 #| msgid "2a. Turn Off NGINX"
 msgid "2a. Turn off NGINX"
 msgstr "2a. Disattiva NGINX"
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/sso-kerberos.md:176
+#: src/en/tutorials/sso-kerberos.md:198
 #, no-wrap
 msgid ""
 "This will take your Zammad instance **offline** until Apache is fully\n"
@@ -38809,29 +39462,29 @@ msgstr ""
 "configurato e in esecuzione.\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:182
+#: src/en/tutorials/sso-kerberos.md:204
 msgid "Turn off Nginx:"
 msgstr "Disattiva Nginx:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:183
+#: src/en/tutorials/sso-kerberos.md:205
 #, no-wrap
 msgid "sudo systemctl stop nginx\n"
 msgstr "sudo systemctl stop nginx\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:188
+#: src/en/tutorials/sso-kerberos.md:210
 msgid "Keep it off after reboot:"
 msgstr "Mantienilo disattivato dopo il riavvio:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:189
+#: src/en/tutorials/sso-kerberos.md:211
 #, no-wrap
 msgid "sudo systemctl disable nginx\n"
 msgstr "sudo systemctl disable nginx\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:196
+#: src/en/tutorials/sso-kerberos.md:218
 msgid ""
 "If you wish to minimize downtime, you can save this step for last; just bear "
 "in mind that Apache will not start if the port it wants to listen on is "
@@ -38841,7 +39494,7 @@ msgstr ""
 "tieni solo presente che."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:199
+#: src/en/tutorials/sso-kerberos.md:221
 msgid ""
 "If you can't complete this tutorial for any reason, simply turn off Apache "
 "and restore NGINX:"
@@ -38850,7 +39503,7 @@ msgstr ""
 "semplicemente Apache e ripristina NGI"
 
 #. type: Fenced div block (details)
-#: src/en/tutorials/sso-kerberos.md:200
+#: src/en/tutorials/sso-kerberos.md:222
 #, no-wrap
 msgid ""
 "\n"
@@ -38884,15 +39537,15 @@ msgstr ""
 "su\n"
 "\n"
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:220
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:242
 #, fuzzy, no-wrap
 #| msgid "2b. Pre-Configure Apache"
 msgid "2b. Pre-configure Apache"
 msgstr "2b. Pre-configura Apache"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:226
+#: src/en/tutorials/sso-kerberos.md:248
 msgid ""
 "This documentation expects an already working Apache configuration.  You "
 "should have a look at the [webserver configuration guide](/en/tutorials/"
@@ -38902,15 +39555,15 @@ msgstr ""
 "Prima di continuare, si consiglia di consultare la [guida alla "
 "configurazione del server web](/en/tutorials/webserver-config)."
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:227
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:249
 #, fuzzy, no-wrap
 #| msgid "2c. Install Further Apache Dependencies"
 msgid "2c. Install further Apache dependencies"
 msgstr "2c. Installa ulteriori dipendenze Apache"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:229
+#: src/en/tutorials/sso-kerberos.md:251
 #, no-wrap
 msgid ""
 "\n"
@@ -38952,15 +39605,15 @@ msgstr ""
 "sudo apt install krb5-user libapach\n"
 "\n"
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:259
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:281
 #, fuzzy, no-wrap
 #| msgid "2d. Enable Apache Modules"
 msgid "2d. Enable Apache modules"
 msgstr "2d. Abilita i moduli Apache"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:263
+#: src/en/tutorials/sso-kerberos.md:285
 msgid ""
 "SSO requires modules that are not enabled by default. By default you can use "
 "`a2enmod` to do so."
@@ -38969,7 +39622,7 @@ msgstr ""
 "impostazione predefinita puoi usare `a2enmod` per."
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:264
+#: src/en/tutorials/sso-kerberos.md:286
 #, no-wrap
 msgid ""
 "\n"
@@ -39017,14 +39670,14 @@ msgstr ""
 "sudo systemct\n"
 "\n"
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:300
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:322
 #, no-wrap
 msgid "2e. Configure Kerberos"
 msgstr "2e. Configura Kerberos"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:304
+#: src/en/tutorials/sso-kerberos.md:326
 msgid ""
 "Kerberos realm configuration is how you tell the Zammad server how to reach "
 "the _domain controller_ (Active Directory server)."
@@ -39033,18 +39686,18 @@ msgstr ""
 "raggiungere il _domain controller_."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:306
+#: src/en/tutorials/sso-kerberos.md:328
 msgid "Replace the following placeholders in the sample config below:"
 msgstr ""
 "Sostituisci i seguenti segnaposto nella configurazione di esempio sotto:"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:311
+#: src/en/tutorials/sso-kerberos.md:333
 msgid "`<domain-controller>`: Domain controller IP/FQDN(s)"
 msgstr "`<domain-controller>`: IP/FQDN del controller di dominio"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:311
+#: src/en/tutorials/sso-kerberos.md:333
 msgid ""
 "`<master-domain-controller>`: Master domain controller IP/FQDN (must not be "
 "read-only, but can be the same as `<domain-controller>`)"
@@ -39053,7 +39706,7 @@ msgstr ""
 "deve essere sola lettura, ma"
 
 #. type: Fenced code block (ini)
-#: src/en/tutorials/sso-kerberos.md:312
+#: src/en/tutorials/sso-kerberos.md:334
 #, no-wrap
 msgid ""
 "# /etc/krb5.conf\n"
@@ -39118,15 +39771,15 @@ msgstr ""
 "         .<domain> = <DOMAIN>\n"
 "         <domain> = <DOMAIN>\n"
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:345
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:367
 #, fuzzy, no-wrap
 #| msgid "2f. Generate Keytab"
 msgid "2f. Generate keytab"
 msgstr "2f. Genera Keytab"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:349
+#: src/en/tutorials/sso-kerberos.md:371
 msgid ""
 "Apache needs a Kerberos _keytab_ (key table) to manage its shared secrets "
 "with the domain controller."
@@ -39135,42 +39788,46 @@ msgstr ""
 "suoi segreti condivisi con il dominio."
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:356
+#: src/en/tutorials/sso-kerberos.md:378
 msgid "`<secret-key>`: Secret key (**omit the leading** `0x`)"
 msgstr "`<secret-key>`: Chiave segreta (**ometti lo** `0x` iniziale)"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:356
+#: src/en/tutorials/sso-kerberos.md:378
 msgid "`<vno>`: Secret key version number"
 msgstr "`<vno>`: Numero di versione della chiave segreta"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:359
+#: src/en/tutorials/sso-kerberos.md:381
+#, fuzzy
+#| msgid ""
+#| "The secret key and version number were found in `sso-register-spn` (Step "
+#| "1d)  above."
 msgid ""
-"The secret key and version number were found in `sso-register-spn` (Step "
-"1d)  above."
+"The secret key and version number were found in [Step 1: Configure active "
+"directory](#step-1-configure-active-directory) above."
 msgstr ""
 "La chiave segreta e il numero di versione sono stati trovati in `sso-"
 "register-spn` (Passo 1d) sopra."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:361
+#: src/en/tutorials/sso-kerberos.md:383
 msgid "Enter ktutil:"
 msgstr "Entra in ktutil:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:362
+#: src/en/tutorials/sso-kerberos.md:384
 #, no-wrap
 msgid "ktutil\n"
 msgstr "ktutil\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:367
+#: src/en/tutorials/sso-kerberos.md:389
 msgid "Add keytab:"
 msgstr "Aggiungi keytab:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:368
+#: src/en/tutorials/sso-kerberos.md:390
 #, no-wrap
 msgid ""
 "ktutil: addent -key -p HTTP/<zammad-host>@<DOMAIN> -k <vno> -e aes256-cts\n"
@@ -39180,12 +39837,12 @@ msgstr ""
 "Key for HTTP/<za\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:374
+#: src/en/tutorials/sso-kerberos.md:396
 msgid "Confirm the entry was added successfully:"
 msgstr "Conferma che la voce sia stata aggiunta con successo:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:375
+#: src/en/tutorials/sso-kerberos.md:397
 #, no-wrap
 msgid ""
 "ktutil: list\n"
@@ -39198,29 +39855,29 @@ msgstr ""
 "---- ---- -----------------------------------------------\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:383
+#: src/en/tutorials/sso-kerberos.md:405
 msgid "Write keytab to disk:"
 msgstr "Scrivi keytab su disco:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:384
+#: src/en/tutorials/sso-kerberos.md:406
 #, no-wrap
 msgid "ktutil: wkt /root/zammad.keytab\n"
 msgstr "ktutil: wkt /root/zammad.keytab\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:389
+#: src/en/tutorials/sso-kerberos.md:411
 msgid "Leave ktutil:"
 msgstr "Esci da ktutil:"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:390
+#: src/en/tutorials/sso-kerberos.md:412
 #, no-wrap
 msgid "ktutil: quit\n"
 msgstr "ktutil: quit\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:396
+#: src/en/tutorials/sso-kerberos.md:418
 msgid ""
 "Then, place the keytab in the Apache config directory and set the "
 "appropriate permissions:"
@@ -39229,7 +39886,7 @@ msgstr ""
 "imposta i permessi appropriati:"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:397
+#: src/en/tutorials/sso-kerberos.md:419
 #, no-wrap
 msgid ""
 "\n"
@@ -39272,14 +39929,14 @@ msgstr ""
 "```sh\n"
 "\n"
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:429
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:451
 #, no-wrap
 msgid "2g. Configure Apache"
 msgstr "2g. Configura Apache"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:433
+#: src/en/tutorials/sso-kerberos.md:455
 msgid ""
 "Add the following directive to the end of the virtual host configuration "
 "file to create your Kerberos SSO endpoint at `/auth/sso`:"
@@ -39288,13 +39945,65 @@ msgstr ""
 "virtual host per creare la tua."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:435
+#: src/en/tutorials/sso-kerberos.md:457
 msgid "Replace the following placeholders in the command below:"
 msgstr "Sostituisci i seguenti segnaposto nel comando seguente:"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:439
-#, no-wrap
+#: src/en/tutorials/sso-kerberos.md:461
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\n"
+#| "=== Debian & Ubuntu\n"
+#| "\n"
+#| "``` apache\n"
+#| "# /etc/apache2/sites-available/zammad.conf\n"
+#| "\n"
+#| "<LocationMatch \"/auth/sso\">\n"
+#| "   SSLRequireSSL\n"
+#| "   AuthType GSSAPI\n"
+#| "   AuthName \"Your Zammad\"\n"
+#| "   GssapiBasicAuth On\n"
+#| "   GssapiCredStore keytab:/etc/apache2/zammad.keytab\n"
+#| "   GssapiLocalName On\n"
+#| "   require valid-user\n"
+#| "\n"
+#| "   RewriteEngine On\n"
+#| "   RewriteCond %{LA-U:REMOTE_USER} (.+)\n"
+#| "   RewriteRule . - [E=RU:%1,NS]\n"
+#| "   RequestHeader set X-Forwarded-User \"%{RU}e\" env=RU\n"
+#| "</LocationMatch>\n"
+#| "```\n"
+#| "\n"
+#| "=== CentOS & OpenSUSE\n"
+#| "\n"
+#| "The configuration for CentOS and OpenSUSE below contains two\n"
+#| "`Krb5KeyTab` lines! Keep only the one you need.\n"
+#| "\n"
+#| "``` apache\n"
+#| "# /etc/apache2/sites-available/zammad.conf\n"
+#| "\n"
+#| "<LocationMatch \"/auth/sso\">\n"
+#| "   SSLRequireSSL\n"
+#| "   AuthType Kerberos\n"
+#| "   AuthName \"Your Zammad\"\n"
+#| "   KrbMethodNegotiate On\n"
+#| "   KrbVerifyKDC On\n"
+#| "   KrbMethodK5Passwd On\n"
+#| "   KrbAuthRealms <DOMAIN>\n"
+#| "   KrbLocalUserMapping on                 # strips @REALM suffix from REMOTE_USER variable\n"
+#| "   KrbServiceName HTTP/<zammad-host>@<DOMAIN>\n"
+#| "   Krb5KeyTab /etc/apache2/zammad.keytab  # Ubuntu, Debian, & openSUSE\n"
+#| "   Krb5KeyTab /etc/httpd/zammad.keytab    # CentOS\n"
+#| "   require valid-user\n"
+#| "\n"
+#| "   RewriteEngine On\n"
+#| "   RewriteCond %{LA-U:REMOTE_USER} (.+)\n"
+#| "   RewriteRule . - [E=RU:%1,NS]\n"
+#| "   RequestHeader set X-Forwarded-User \"%{RU}e\" env=RU\n"
+#| "</LocationMatch>\n"
+#| "```\n"
+#| "\n"
 msgid ""
 "\n"
 "=== Debian & Ubuntu\n"
@@ -39311,6 +40020,9 @@ msgid ""
 "   GssapiLocalName On\n"
 "   require valid-user\n"
 "\n"
+"   # inbound client values never survive\n"
+"   RequestHeader unset Remote-User\n"
+"   RequestHeader unset X-Forwarded-User\n"
 "   RewriteEngine On\n"
 "   RewriteCond %{LA-U:REMOTE_USER} (.+)\n"
 "   RewriteRule . - [E=RU:%1,NS]\n"
@@ -39334,12 +40046,18 @@ msgid ""
 "   KrbVerifyKDC On\n"
 "   KrbMethodK5Passwd On\n"
 "   KrbAuthRealms <DOMAIN>\n"
-"   KrbLocalUserMapping on                 # strips @REALM suffix from REMOTE_USER variable\n"
+"   # strips @REALM suffix from REMOTE_USER variable\n"
+"   KrbLocalUserMapping on\n"
 "   KrbServiceName HTTP/<zammad-host>@<DOMAIN>\n"
-"   Krb5KeyTab /etc/apache2/zammad.keytab  # Ubuntu, Debian, & openSUSE\n"
-"   Krb5KeyTab /etc/httpd/zammad.keytab    # CentOS\n"
+"   # Ubuntu, Debian, & openSUSE\n"
+"   Krb5KeyTab /etc/apache2/zammad.keytab\n"
+"   # CentOS\n"
+"   Krb5KeyTab /etc/httpd/zammad.keytab\n"
 "   require valid-user\n"
 "\n"
+"   # inbound client values never survive\n"
+"   RequestHeader unset Remote-User\n"
+"   RequestHeader unset X-Forwarded-User\n"
 "   RewriteEngine On\n"
 "   RewriteCond %{LA-U:REMOTE_USER} (.+)\n"
 "   RewriteRule . - [E=RU:%1,NS]\n"
@@ -39357,40 +40075,530 @@ msgstr ""
 "<LocationMatc\n"
 "\n"
 
-#. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:493
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:524
 #, fuzzy, no-wrap
 #| msgid "2g. Restart Apache to Apply Changes"
-msgid "2g. Restart Apache to apply changes"
+msgid "2h. Restart Apache to apply changes"
 msgstr "2g. Riavvia Apache per applicare le modifiche"
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:495
+#: src/en/tutorials/sso-kerberos.md:526
 #, no-wrap
 msgid "sudo systemctl restart apache2\n"
 msgstr "sudo systemctl restart apache2\n"
 
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:537
+msgid ""
+"The Docker stack runs its web server inside the `zammad-nginx` image, so you "
+"cannot swap it for Apache as in the package installation. Instead, a small "
+"additional container does the Kerberos part: the reverse proxy in front of "
+"the stack sends only `/auth/sso` through it, everything else goes straight "
+"to `zammad-nginx` as before. Zammad and the stack's compose files stay as "
+"they are. The SSO container is part of your infrastructure, like the reverse "
+"proxy that terminates TLS."
+msgstr ""
+
+#. type: Fenced code block (text)
+#: src/en/tutorials/sso-kerberos.md:538
+#, no-wrap
+msgid ""
+"browser ──► reverse proxy (TLS)\n"
+"              ├─ /auth/sso ──► zammad-sso ──(Kerberos ok, sets X-Forwarded-User)──► zammad-railsserver\n"
+"              └─ everything else ──────────────────────────────────────────────► zammad-nginx ──► zammad-railsserver\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:547
+msgid ""
+"The SSO container forwards `/auth/sso` to Zammad's application server "
+"directly and passes the user name in the `X-Forwarded-User` header, as the "
+"package installation does. One hop fewer, and `zammad-nginx` is not involved "
+"in the login."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/sso-kerberos.md:548
+#, no-wrap
+msgid ""
+"**Your reverse proxy can do Kerberos itself?**\n"
+"\n"
+"Then you don't need the SSO container. Configure the proxy to authenticate `/auth/sso` via Negotiate, put the user\n"
+"name without the realm into the `X-Forwarded-User` header, drop `Remote-User` and `X-Forwarded-User` sent by clients\n"
+"on every path, send `/auth/sso` to `zammad-railsserver:3000`, pass all other requests unchanged, and continue with\n"
+"[Trusted proxies](#trusted-proxies).\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:566
+msgid ""
+"the stack behind a reverse proxy that routes by path. This guide uses the "
+"[Nginx Proxy Manager scenario](/en/reference/docker-compose-scenarios#add-"
+"nginx-proxy-manager). Any proxy with path-based routing works the same way. "
+"If your proxy runs in a separate compose project, use the [external network "
+"scenario](/en/reference/docker-compose-scenarios#add-external-docker-network-"
+"to-nginx) and add that network to the `zammad-sso` service in the override "
+"file as well, so that the proxy can reach it."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:566
+msgid ""
+"the `zammad.keytab` file written by `ktpass` in [1c. Register a SPN for "
+"Zammad](/en/tutorials/sso-kerberos#_1c-register-a-spn-for-zammad), copied to "
+"the Docker host. The `ktutil` step of the package installation is not needed."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:567
+#, no-wrap
+msgid "Files"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:570
+msgid ""
+"The SSO container consists of the following files next to the stack's "
+"`docker-compose.yml`:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: src/en/tutorials/sso-kerberos.md:571
+#, no-wrap
+msgid ""
+"docker-compose.override.yml   adds the SSO container to the stack\n"
+"zammad-sso/                   build context of the SSO image\n"
+"  Dockerfile\n"
+"  apache2-foreground\n"
+"  zammad-sso.conf\n"
+"local/zammad-sso/             files mounted into the container\n"
+"  krb5.conf\n"
+"  zammad.keytab\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:585
+msgid ""
+"Keep the keytab out of the build context: Docker reads every file in `zammad-"
+"sso/` when it builds the image, and a keytab that only the container's user "
+"may read makes the build fail. The container runs as `www-data` with user ID "
+"33, so on a Linux host:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:586
+#, no-wrap
+msgid "sudo chown 33 local/zammad-sso/zammad.keytab\n"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:590
+#, no-wrap
+msgid "sudo chmod 0400 local/zammad-sso/zammad.keytab\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:595
+msgid ""
+"`zammad-sso/Dockerfile` builds Apache with `mod_auth_gssapi` from the Debian "
+"packages and runs it unprivileged:"
+msgstr ""
+
+#. type: Fenced code block (dockerfile)
+#: src/en/tutorials/sso-kerberos.md:596
+#, no-wrap
+msgid ""
+"FROM debian:trixie-slim\n"
+"\n"
+"RUN apt-get update && \\\n"
+"    apt-get install -y --no-install-recommends apache2 libapache2-mod-auth-gssapi krb5-user curl && \\\n"
+"    rm -rf /var/lib/apt/lists/*\n"
+"\n"
+"RUN a2enmod auth_gssapi proxy proxy_http headers rewrite && \\\n"
+"    a2dissite 000-default\n"
+"\n"
+"COPY zammad-sso.conf /etc/apache2/sites-available/zammad-sso.conf\n"
+"RUN a2ensite zammad-sso\n"
+"\n"
+"# Debian's envvars assigns the APACHE_* variables unconditionally. Turn every\n"
+"# \"export VAR=value\" into \": ${VAR:=value}; export VAR\", so that values from the\n"
+"# environment win, the same way the official php:apache image does it.\n"
+"RUN sed -ri 's/^export ([^=]+)=(.*)$/: ${\\1:=\\2}\\nexport \\1/' /etc/apache2/envvars\n"
+"\n"
+"# Run unprivileged: listen on 8080, pid/lock/logs under /tmp.\n"
+"ENV APACHE_RUN_DIR=/tmp/apache2 \\\n"
+"    APACHE_PID_FILE=/tmp/apache2/apache2.pid \\\n"
+"    APACHE_LOCK_DIR=/tmp/apache2 \\\n"
+"    APACHE_LOG_DIR=/tmp/apache2\n"
+"\n"
+"RUN echo 'Listen 8080' > /etc/apache2/ports.conf && \\\n"
+"    { echo 'ServerName zammad-sso'; \\\n"
+"      echo 'ErrorLog /proc/self/fd/2'; \\\n"
+"      echo 'CustomLog /proc/self/fd/1 combined'; } > /etc/apache2/conf-available/zz-docker.conf && \\\n"
+"    a2enconf zz-docker\n"
+"\n"
+"COPY apache2-foreground /usr/local/bin/apache2-foreground\n"
+"\n"
+"USER www-data\n"
+"EXPOSE 8080\n"
+"\n"
+"# Healthy = the keytab is readable and apache answers /auth/sso with the Negotiate\n"
+"# challenge (401). A keytab with a wrong key is not detected here: apache still\n"
+"# answers 401 and logs a GSS ERROR for every sign-in attempt.\n"
+"HEALTHCHECK --interval=30s --timeout=5s --start-period=10s \\\n"
+"  CMD klist -k /etc/apache2/zammad.keytab >/dev/null 2>&1 && \\\n"
+"      [ \"$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/auth/sso)\" = \"401\" ] || exit 1\n"
+"\n"
+"CMD [\"apache2-foreground\"]\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:642
+msgid ""
+"`zammad-sso/apache2-foreground` starts Apache as the container's main "
+"process. Make it executable with `chmod +x`:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:643
+#, no-wrap
+msgid ""
+"#!/bin/sh\n"
+"# Start apache directly instead of through apache2ctl, so that it runs as PID 1\n"
+"# and receives the container's signals. The run directory is created on every\n"
+"# start and a stale pid file from a previous run is removed.\n"
+"set -e\n"
+". /etc/apache2/envvars\n"
+"mkdir -p \"$APACHE_RUN_DIR\" \"$APACHE_LOCK_DIR\" \"$APACHE_LOG_DIR\"\n"
+"rm -f \"$APACHE_PID_FILE\"\n"
+"exec apache2 -DFOREGROUND \"$@\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:656
+msgid ""
+"`zammad-sso/zammad-sso.conf` authenticates `/auth/sso` and forwards it to "
+"the stack:"
+msgstr ""
+
+#. type: Fenced code block (apache)
+#: src/en/tutorials/sso-kerberos.md:657
+#, no-wrap
+msgid ""
+"<VirtualHost *:8080>\n"
+"  <Location \"/auth/sso\">\n"
+"    AuthType GSSAPI\n"
+"    AuthName \"Zammad SSO\"\n"
+"    GssapiCredStore keytab:/etc/apache2/zammad.keytab\n"
+"    GssapiAllowedMech krb5\n"
+"    # strips @REALM\n"
+"    GssapiLocalName On\n"
+"    Require valid-user\n"
+"\n"
+"    # inbound client values never survive\n"
+"    RequestHeader unset Remote-User\n"
+"    RequestHeader unset X-Forwarded-User\n"
+"    RewriteEngine On\n"
+"    RewriteCond %{LA-U:REMOTE_USER} (.+)\n"
+"    RewriteRule . - [E=RU:%1,NS]\n"
+"    RequestHeader set X-Forwarded-User \"%{RU}e\" env=RU\n"
+"    # don't leak the Negotiate token downstream\n"
+"    RequestHeader unset Authorization\n"
+"\n"
+"    ProxyPreserveHost On\n"
+"    ProxyPass        http://zammad-railsserver:3000/auth/sso\n"
+"    ProxyPassReverse http://zammad-railsserver:3000/auth/sso\n"
+"  </Location>\n"
+"</VirtualHost>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:688
+msgid ""
+"Add the `zammad-sso` service to your `docker-compose.override.yml`. If the "
+"stack has no override file yet, create it from the shipped template, see "
+"[Customize the stack locally](/en/reference/docker-compose-"
+"scenarios#customize-the-stack-locally):"
+msgstr ""
+
+#. type: Fenced code block (yaml)
+#: src/en/tutorials/sso-kerberos.md:689
+#, no-wrap
+msgid ""
+"---\n"
+"services:\n"
+"  zammad-sso:\n"
+"    build: ./zammad-sso\n"
+"    restart: ${RESTART:-always}\n"
+"    volumes:\n"
+"      - ./local/zammad-sso/krb5.conf:/etc/krb5.conf:ro\n"
+"      - ./local/zammad-sso/zammad.keytab:/etc/apache2/zammad.keytab:ro\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:702
+msgid ""
+"`local/zammad-sso/krb5.conf` tells the container how to reach your domain "
+"controller. Replace the placeholders as described in [2e. Configure Kerberos]"
+"(/en/tutorials/sso-kerberos#_2e-configure-kerberos):"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: src/en/tutorials/sso-kerberos.md:703
+#, no-wrap
+msgid ""
+"[libdefaults]\n"
+"    default_realm = <DOMAIN>\n"
+"    dns_lookup_realm = false\n"
+"    dns_lookup_kdc = false\n"
+"    rdns = false\n"
+"\n"
+"[realms]\n"
+"    <DOMAIN> = {\n"
+"        kdc = <domain-controller>\n"
+"        admin_server = <master-domain-controller>\n"
+"    }\n"
+"\n"
+"[domain_realm]\n"
+"    .<domain> = <DOMAIN>\n"
+"    <domain> = <DOMAIN>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:722
+msgid ""
+"Add the override file and the reverse proxy as trusted proxy to your `.env`:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: src/en/tutorials/sso-kerberos.md:723
+#, no-wrap
+msgid ""
+"COMPOSE_FILE=docker-compose.yml:scenarios/add-nginx-proxy-manager.yml:docker-compose.override.yml\n"
+"ZAMMAD_FQDN=<zammad-host>\n"
+"ZAMMAD_HTTP_TYPE=https\n"
+"RAILS_TRUSTED_PROXIES=nginx-proxy-manager\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:731
+#, fuzzy
+#| msgid "Step 3: Start the Stack"
+msgid "Then build and start the stack:"
+msgstr "Passo 3: Avvia lo stack"
+
+#. type: Fenced code block (sh)
+#: src/en/tutorials/sso-kerberos.md:732
+#, fuzzy, no-wrap
+#| msgid "docker compose up -d\n"
+msgid "docker compose up -d --build\n"
+msgstr "docker compose up -d\n"
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:738
+msgid ""
+"The `zammad-sso` container reports `healthy` once the keytab is readable and "
+"Apache answers `/auth/sso` with the Kerberos challenge. If it stays "
+"unhealthy, the keytab is missing or not readable by user ID 33."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:739
+#, fuzzy, no-wrap
+#| msgid "Configure Database Server"
+msgid "Configure the reverse proxy"
+msgstr "Configura il server database"
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:742
+#, fuzzy
+#| msgid "Add Nginx Proxy Manager"
+msgid "In Nginx Proxy Manager:"
+msgstr "Aggiungi Nginx Proxy Manager"
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/sso-kerberos.md:746
+msgid ""
+"Create a proxy host for your Zammad FQDN with scheme `http`, forward host "
+"`zammad-nginx` and port `8080`. Enable **Websockets Support** and set up the "
+"certificate on the **SSL** tab."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/sso-kerberos.md:746
+msgid ""
+"Add a **Custom Location** for `/auth/sso` with scheme `http`, forward host "
+"`zammad-sso` and port `8080`."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:750
+msgid ""
+"Do not rely on the **Advanced** field to strip headers: `proxy_set_header` "
+"lines entered there do not reach the generated locations and would only give "
+"a false sense of security. Client-sent headers are removed in the SSO "
+"container."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:753
+msgid ""
+"With Traefik, the equivalent is a router that points at the SSO container, "
+"with a higher priority than the router for the rest of the stack and the "
+"rule:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: src/en/tutorials/sso-kerberos.md:754
+#, no-wrap
+msgid "Host(`<zammad-host>`) && PathPrefix(`/auth/sso`)\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:758
+#, no-wrap
+msgid "Trusted proxies"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:765
+msgid ""
+"Zammad has to trust the reverse proxy, so that it takes the address of the "
+"user's browser as the client instead of a container address. That is what "
+"`RAILS_TRUSTED_PROXIES` in `.env` does. With another proxy, name that one "
+"instead, see [environment variables](/en/reference/environment-variables). "
+"The SSO container does not need to be listed: Zammad takes the address the "
+"reverse proxy forwarded and falls back to the sending container only when no "
+"untrusted forwarded address is left."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:770
+msgid ""
+"The **Trusted SSO Proxy IPs** setting in [Step 3](#step-3-enable-sso-in-"
+"zammad) then holds the address ranges from which users may sign in via SSO, "
+"typically your intranet. A changed value applies after at most 15 seconds. "
+"Without the reverse proxy in `RAILS_TRUSTED_PROXIES`, Zammad takes a "
+"container's address as the client, and the setting would have to hold the "
+"stack's network range, which admits every container."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/sso-kerberos.md:771
+#, no-wrap
+msgid ""
+"The setting guards the way in through the reverse proxy only. Inside the stack's network, `zammad-railsserver`\n"
+"accepts an `X-Forwarded-User` header from any container, and a container can send the `X-Forwarded-For` header the\n"
+"check relies on along with it. Keep `zammad-railsserver` reachable only from the stack's own containers and the SSO\n"
+"container, and set the trusted IPs before you enable SSO.\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:778
+#, no-wrap
+msgid "Portainer"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:781
+msgid ""
+"Without shell access to the Docker host, you can build and run the same "
+"container through the Portainer UI:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: src/en/tutorials/sso-kerberos.md:792
+msgid ""
+"Under **Images**, choose **Build a new image**, upload a tarball that "
+"contains the three files of `zammad-sso/` at its top level (not the "
+"directory itself) and tag the image, e.g. `zammad-sso:local`. The image "
+"contains no keytab, so it holds no secret."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: src/en/tutorials/sso-kerberos.md:792
+msgid ""
+"Under **Volumes**, choose **Add volume** and create `zammad-sso-secrets`."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: src/en/tutorials/sso-kerberos.md:792
+msgid ""
+"Put `zammad.keytab` and `krb5.conf` into the volume. Portainer Business has "
+"a volume browser with upload. In the Community Edition, deploy a throwaway "
+"container (`alpine` with the command `sleep infinity`) that mounts the "
+"volume at `/secrets`, paste the files through its console (for example via "
+"`base64 -d`), set owner `33` and mode `0400` on the keytab, and remove the "
+"container again."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: src/en/tutorials/sso-kerberos.md:792
+msgid ""
+"Under **Stacks**, choose **Add stack** and deploy the SSO container with the "
+"web editor as a stack of its own that joins the Zammad stack's network. "
+"Replace `<zammad-stack>` with the name of your Zammad stack in Portainer."
+msgstr ""
+
+#. type: Fenced code block (yaml)
+#: src/en/tutorials/sso-kerberos.md:793
+#, no-wrap
+msgid ""
+"   services:\n"
+"     zammad-sso:\n"
+"       image: zammad-sso:local\n"
+"       restart: always\n"
+"       volumes:\n"
+"         - type: volume\n"
+"           source: zammad-sso-secrets\n"
+"           target: /etc/krb5.conf\n"
+"           read_only: true\n"
+"           volume:\n"
+"             subpath: krb5.conf\n"
+"         - type: volume\n"
+"           source: zammad-sso-secrets\n"
+"           target: /etc/apache2/zammad.keytab\n"
+"           read_only: true\n"
+"           volume:\n"
+"             subpath: zammad.keytab\n"
+"       networks:\n"
+"         - zammad\n"
+"\n"
+"   networks:\n"
+"     zammad:\n"
+"       external: true\n"
+"       name: <zammad-stack>_default\n"
+"\n"
+"   volumes:\n"
+"     zammad-sso-secrets:\n"
+"       external: true\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:826
+msgid ""
+"The reverse proxy is configured as above and has to be a trusted proxy of "
+"the Zammad stack, see [Trusted proxies](#trusted-proxies)."
+msgstr ""
+
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:499
+#: src/en/tutorials/sso-kerberos.md:827
 #, no-wrap
 msgid "Step 3: Enable SSO in Zammad"
 msgstr "Passo 3: Abilita SSO in Zammad"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:503
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
-#| "_Settings > Security > Third-party Applications_\n"
+#: src/en/tutorials/sso-kerberos.md:832
+#, no-wrap
 msgid ""
 "Next, enable \"Authentication via SSO\" in Zammad's admin interface under\n"
-"_Settings > Security > Third-party Applications_\n"
+"_Settings > Security > Third-party Applications_. Make sure to configure the trusted SSO proxy IPs for production\n"
+"systems. For the Docker stack, [Trusted proxies](#trusted-proxies) explains which addresses belong there.\n"
 msgstr ""
-"Successivamente, abilita \"Autenticazione tramite SSO\" nel Pannello di amministrazione di Zammad sotto\n"
-"_Impostazioni > Sicurezza >\n"
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:504
+#: src/en/tutorials/sso-kerberos.md:833
 #, no-wrap
 msgid ""
 "On older versions of Zammad, visit `https://your.zammad.host/auth/sso`\n"
@@ -39400,14 +40608,14 @@ msgstr ""
 "per accedere.\n"
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:509
+#: src/en/tutorials/sso-kerberos.md:838
 #, fuzzy, no-wrap
 #| msgid "Step 4: Configure Client System (Windows Only)"
 msgid "Step 4: Configure client system (Windows only)"
 msgstr "Passo 4: Configura il sistema client (solo Windows)"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:513
+#: src/en/tutorials/sso-kerberos.md:842
 msgid ""
 "For the full SSO experience (i.e. for passwordless one-click sign-in), "
 "Zammad users must:"
@@ -39416,12 +40624,12 @@ msgstr ""
 "password), gli utenti Zammad devono:"
 
 #. type: Bullet: '1. '
-#: src/en/tutorials/sso-kerberos.md:517
+#: src/en/tutorials/sso-kerberos.md:846
 msgid "be on the Active Directory server's local intranet; and"
 msgstr "essere sulla intranet locale del server Active Directory; e"
 
 #. type: Bullet: '2. '
-#: src/en/tutorials/sso-kerberos.md:517
+#: src/en/tutorials/sso-kerberos.md:846
 msgid ""
 "modify their network settings for the Zammad host to be treated as a local "
 "intranet server."
@@ -39430,7 +40638,7 @@ msgstr ""
 "trattato come un server intranet locale."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:520
+#: src/en/tutorials/sso-kerberos.md:849
 msgid ""
 "Without this step, users must enter their Active Directory credentials "
 "during SSO."
@@ -39439,7 +40647,7 @@ msgstr ""
 "Active Directory durante l'SSO."
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:521
+#: src/en/tutorials/sso-kerberos.md:850
 #, no-wrap
 msgid ""
 "\n"
@@ -39451,7 +40659,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:521
+#: src/en/tutorials/sso-kerberos.md:850
 #, no-wrap
 msgid ""
 "This setting can be centrally managed across the entire intranet using\n"
@@ -39461,7 +40669,7 @@ msgstr ""
 "un **oggetto criteri di gruppo.\n"
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:521
+#: src/en/tutorials/sso-kerberos.md:850
 #, no-wrap
 msgid ""
 "\n"
@@ -39482,7 +40690,7 @@ msgstr ""
 "\n"
 
 #. type: Fenced div block (tabs|info)
-#: src/en/tutorials/sso-kerberos.md:521
+#: src/en/tutorials/sso-kerberos.md:850
 #, no-wrap
 msgid ""
 "This option cannot be centrally managed because it is set in the\n"
@@ -39492,7 +40700,7 @@ msgstr ""
 "browser anziché in Windows.\n"
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:521
+#: src/en/tutorials/sso-kerberos.md:850
 #, no-wrap
 msgid ""
 "\n"
@@ -39510,7 +40718,7 @@ msgstr ""
 "\n"
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:560
+#: src/en/tutorials/sso-kerberos.md:889
 msgid ""
 "Are all relevant FQDNs/hostnames reachable from your Active Directory and "
 "Zammad servers (including each other's)?"
@@ -39519,7 +40727,7 @@ msgstr ""
 "Directory e Zammad ("
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:560
+#: src/en/tutorials/sso-kerberos.md:889
 msgid ""
 "Are the system clocks of your Active Directory and Zammad servers "
 "synchronized within five minutes of each other? Kerberos is a time-sensitive "
@@ -39529,14 +40737,14 @@ msgstr ""
 "sincronizzati entro cinque."
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:561
+#: src/en/tutorials/sso-kerberos.md:890
 #, fuzzy, no-wrap
 #| msgid "Errors in Apache Logs"
 msgid "Errors in Apache logs"
 msgstr "Errori nei log Apache"
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:563
+#: src/en/tutorials/sso-kerberos.md:892
 #, no-wrap
 msgid ""
 "**Try raising your Apache log level temporarily.**\n"
@@ -39549,13 +40757,13 @@ msgstr ""
 "Aggiungi `LogLevel debug` al tuo virtual host.\n"
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:570
+#: src/en/tutorials/sso-kerberos.md:899
 #, no-wrap
 msgid "An unsupported mechanism was requested"
 msgstr "È stato richiesto un meccanismo non supportato"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:574
+#: src/en/tutorials/sso-kerberos.md:903
 msgid ""
 "Does your Active Directory service account have **Kerberos AES 256-bit "
 "encryption** enabled?"
@@ -39564,7 +40772,7 @@ msgstr ""
 "Kerberos AES a 256 bit**?"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:578
+#: src/en/tutorials/sso-kerberos.md:907
 msgid ""
 "If for some reason your server does not support AES 256-bit encryption, the "
 "LDAP Wiki has [more information about Kerberos encryption types](https://"
@@ -39576,51 +40784,59 @@ msgstr ""
 "SupportedEncryptionTypes){target=_blank}."
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:579
+#: src/en/tutorials/sso-kerberos.md:908
 #, no-wrap
 msgid "Failed to verify krb5 credentials: Key version is not available"
 msgstr "Impossibile verificare le credenziali krb5: la versione della chiave non è disponibile"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:583
-#, no-wrap
+#: src/en/tutorials/sso-kerberos.md:912
+#, fuzzy
+#| msgid ""
+#| "Did you use the exact **version number** (`vno`) provided by `ktpass`\n"
+#| "when `generating your keytab <sso-generate-keytab>`?\n"
 msgid ""
-"Did you use the exact **version number** (`vno`) provided by `ktpass`\n"
-"when `generating your keytab <sso-generate-keytab>`?\n"
+"Did you use the exact **version number** (`vno`) provided by `ktpass` when "
+"[generating your keytab](/en/tutorials/sso-kerberos#_2f-generate-keytab)?"
 msgstr ""
 "Hai usato il **numero di versione** esatto (`vno`) fornito da `ktpass`\n"
 "quando hai generato.\n"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:585 src/en/tutorials/sso-kerberos.md:592
+#: src/en/tutorials/sso-kerberos.md:914 src/en/tutorials/sso-kerberos.md:921
 msgid "Try generating it again, just to be sure."
 msgstr "Prova a generarlo di nuovo, solo per essere sicuro."
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:586
+#: src/en/tutorials/sso-kerberos.md:915
 #, fuzzy, no-wrap
 #| msgid "Unspecified GSS failure. Minor code may provide more information (, No key table entry found for HTTP/FQDN@DOMAIN)"
 msgid "Unspecified GSS failure. Minor code may provide more information (, no key table entry found for HTTP/FQDN@DOMAIN)"
 msgstr "Errore GSS non specificato. Il codice minore potrebbe fornire più informazioni (, Nessuna voce nella tabella chiavi trovata"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:590
-#, no-wrap
+#: src/en/tutorials/sso-kerberos.md:919
+#, fuzzy
+#| msgid ""
+#| "Does the **service name** you provided to `setspn` exactly match the one\n"
+#| "you used when `generating your keytab <sso-generate-keytab>`?\n"
 msgid ""
-"Does the **service name** you provided to `setspn` exactly match the one\n"
-"you used when `generating your keytab <sso-generate-keytab>`?\n"
+"Does the **service name** you provided to `setspn` exactly match the one you "
+"used when [generating your keytab](/en/tutorials/sso-kerberos#_2f-generate-"
+"keytab)?"
 msgstr ""
-"Il **nome del servizio** che hai fornito a `setspn` corrisponde esattamente a quello\n"
+"Il **nome del servizio** che hai fornito a `setspn` corrisponde esattamente "
+"a quello\n"
 "che hai usato quando hai generato.\n"
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:593
+#: src/en/tutorials/sso-kerberos.md:922
 #, no-wrap
 msgid "No key table entry found for HTTP/FQDN@DOMAIN"
 msgstr "Nessuna voce nella tabella chiavi trovata per HTTP/FQDN@DOMAIN"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:597
+#: src/en/tutorials/sso-kerberos.md:926
 msgid ""
 "Does your virtual host configuration's `KrbServiceName` setting exactly "
 "match the **service name** you provided to `setspn`?"
@@ -39629,19 +40845,19 @@ msgstr ""
 "corrisponde esattamente al **nome del servizio."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:599
+#: src/en/tutorials/sso-kerberos.md:928
 msgid "This setting is case-sensitive."
 msgstr "Questa impostazione fa distinzione tra maiuscole e minuscole."
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:600
+#: src/en/tutorials/sso-kerberos.md:929
 #, fuzzy, no-wrap
 #| msgid "Warning: received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration"
 msgid "Warning: Received token seems to be NTLM, which isn't supported by the Kerberos module. Check your IE configuration"
 msgstr "Avviso: il token ricevuto sembra essere NTLM, che non è supportato dal modulo Kerberos."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:604
+#: src/en/tutorials/sso-kerberos.md:933
 msgid ""
 "Is your Zammad host accessible at an FQDN? This error may indicate that you "
 "configured your Zammad host as a numeric IP address instead."
@@ -39650,13 +40866,13 @@ msgstr ""
 "indicare che hai configurato il tuo."
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:605
+#: src/en/tutorials/sso-kerberos.md:934
 #, no-wrap
 msgid "Cannot decrypt ticket for HTTP/FQDN@DOMAIN"
 msgstr "Impossibile decrittografare il ticket per HTTP/FQDN@DOMAIN"
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:609
+#: src/en/tutorials/sso-kerberos.md:938
 msgid ""
 "Did you make sure to change the password on your Active Directory service "
 "account _after enabling 256-bit AES encryption?_"
@@ -39665,7 +40881,7 @@ msgstr ""
 "Directory _dopo aver."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:612
+#: src/en/tutorials/sso-kerberos.md:941
 msgid ""
 "And did you make sure to register the SPN (with `ktpass`) and generate your "
 "keytab (with `ktutil`) _after changing your password?_"
@@ -39674,7 +40890,7 @@ msgstr ""
 "keytab (con."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:618
+#: src/en/tutorials/sso-kerberos.md:947
 #, no-wrap
 msgid ""
 "Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.\n"
@@ -39687,27 +40903,27 @@ msgstr ""
 "Se non viene restituito alcun output.\n"
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:619
+#: src/en/tutorials/sso-kerberos.md:948
 #, no-wrap
 msgid "Failed when verifying KDC\" and \"failed to verify krb5 credentials: Decrypt integrity check failed"
 msgstr "Fallito durante la verifica del KDC\" e \"impossibile verificare le credenziali krb5: controllo integrità decrittografia."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:622
+#: src/en/tutorials/sso-kerberos.md:951
 msgid "Ensure `KrbServiceName` is the correct ServiceName provided via setspn."
 msgstr ""
 "Assicurati che `KrbServiceName` sia il ServiceName corretto fornito tramite "
 "setspn."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:624
+#: src/en/tutorials/sso-kerberos.md:953
 msgid "Ensure your Active Directory supports the encryption method configured."
 msgstr ""
 "Assicurati che il tuo Active Directory supporti il metodo di crittografia "
 "configurato."
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:627
+#: src/en/tutorials/sso-kerberos.md:957
 msgid ""
 "If all above is correct and the rest of FAQ also is ensured, make sure your "
 "client does not cache the results. `klist purge` clears the clients cache - "
@@ -39715,6 +40931,61 @@ msgid ""
 msgstr ""
 "Se tutto quanto sopra è corretto e il resto delle FAQ è anche garantito, "
 "assicurati che il tuo client non."
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:958
+#, fuzzy, no-wrap
+#| msgid "Docker"
+msgid "Docker stack"
+msgstr "Docker"
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:960
+#, no-wrap
+msgid "502 Bad Gateway on /auth/sso only, after recreating the SSO container"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:964
+msgid ""
+"The reverse proxy still holds the container's old address. Nginx Proxy "
+"Manager resolves the name only when it loads its configuration, so reload "
+"it: `docker compose exec nginx-proxy-manager nginx -s reload`."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:965
+#, no-wrap
+msgid "SSO request from untrusted IP address, after recreating the reverse proxy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:971
+msgid ""
+"Zammad resolves the names in `RAILS_TRUSTED_PROXIES` when it starts, see "
+"[environment variables](/en/reference/environment-variables), so it still "
+"trusts the proxy's old address, sees the new one as the client and checks it "
+"against **Trusted SSO Proxy IPs**. Restart the services that trust the "
+"proxy: `docker compose restart zammad-railsserver zammad-websocket`."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:972
+#, no-wrap
+msgid "Signing in via SSO fails although the zammad-sso container is healthy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:977
+msgid ""
+"The health check verifies that the keytab is readable and that Apache issues "
+"the Kerberos challenge. It cannot verify the key itself. Check `docker "
+"compose logs zammad-sso`: a line `GSS ERROR … cannot decrypt ticket` means "
+"the keytab does not match the service account's current key, usually because "
+"it was exported before the last password reset.  Export it again as "
+"described in [1c. Register a SPN for Zammad](/en/tutorials/sso-kerberos#_1c-"
+"register-a-spn-for-zammad)."
+msgstr ""
 
 #. type: Title #
 #: src/en/tutorials/webserver-config.md:5
@@ -40234,6 +41505,39 @@ msgid ""
 "only from that origin. Adjust `server_name` (Nginx) or `ServerName`\n"
 "(Apache 2) to match the setting.\n"
 msgstr ""
+
+#, no-wrap
+#~ msgid "Display detailed list"
+#~ msgstr "Mostra elenco dettagliato"
+
+#~ msgid ""
+#~ "Once enabled, single sign-on activates an endpoint at `https://"
+#~ "your.zammad.host/auth/sso`. When the Zammad server receives a GET request "
+#~ "at this endpoint with a valid username in **any one of the following** "
+#~ "entities, it creates a new session for that user:"
+#~ msgstr ""
+#~ "Una volta abilitato, il single sign-on attiva un endpoint su `https://"
+#~ "your.zammad.host/auth/sso`."
+
+#~ msgid "a `REMOTE_USER` web server environment variable"
+#~ msgstr "una variabile d'ambiente del server web `REMOTE_USER`"
+
+#~ msgid "an `HTTP_REMOTE_USER` web server environment variable"
+#~ msgstr "una variabile d'ambiente del server web `HTTP_REMOTE_USER`"
+
+#~ msgid "a Zammad host with"
+#~ msgstr "un host Zammad con"
+
+#, fuzzy, no-wrap
+#~| msgid ""
+#~| "Next, enable \"Authentication via SSO\" in Zammad's Admin Panel under\n"
+#~| "_Settings > Security > Third-party Applications_\n"
+#~ msgid ""
+#~ "Next, enable \"Authentication via SSO\" in Zammad's admin interface under\n"
+#~ "_Settings > Security > Third-party Applications_\n"
+#~ msgstr ""
+#~ "Successivamente, abilita \"Autenticazione tramite SSO\" nel Pannello di amministrazione di Zammad sotto\n"
+#~ "_Impostazioni > Sicurezza >\n"
 
 #, fuzzy
 #~| msgid ""
