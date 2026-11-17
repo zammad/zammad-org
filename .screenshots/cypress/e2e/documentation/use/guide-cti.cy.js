@@ -41,8 +41,8 @@ describe('caller log screenshots', () => {
         // wherever the previous test left the browser, then give the mutation
         // time to land before asking the server again.
         cy.visit('/desktop/cti')
-        cy.get('button[role="switch"]', { timeout: 15000 }).should('exist')
-        cy.get('button[role="switch"]').click()
+        callerNotificationSwitch().should('exist')
+        callerNotificationSwitch().click()
         cy.wait(2000)
 
         return attempt(left - 1)
@@ -82,6 +82,17 @@ describe('caller log screenshots', () => {
   // so these assertions mean what they say.
   const sidebar = () => cy.get('nav')
 
+  // The caller-notification switch is not the only switch on the page: the
+  // sidebar footer renders a BETA UI toggle, and the chat entry renders an
+  // availability switch when chat is enabled. A page-wide
+  // button[role="switch"] is therefore ambiguous — resolve the Phone entry's
+  // own toggle through its sr-only label.
+  const callerNotificationSwitch = () =>
+    sidebar()
+      .contains('Caller notification', { timeout: 15000 })
+      .closest('li')
+      .find('button[role="switch"]')
+
   it('caller log full page', () => {
     cy.visit('/desktop/cti')
     waitForCallerLog()
@@ -110,8 +121,8 @@ describe('caller log screenshots', () => {
     //
     // Click the switch itself. It renders as a <button role="switch">, not an
     // input, and the surrounding .formkit-wrapper is layout only.
-    cy.get('button[role="switch"]').click()
-    cy.get('button[role="switch"]').should('have.attr', 'aria-checked', 'false')
+    callerNotificationSwitch().click()
+    callerNotificationSwitch().should('have.attr', 'aria-checked', 'false')
 
     sidebar().contains('unhandled calls', { timeout: 15000 }).should('not.exist')
     sidebar().contains('123456789', { timeout: 15000 }).should('not.exist')

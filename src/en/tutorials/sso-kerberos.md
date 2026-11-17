@@ -474,6 +474,9 @@ Replace the following placeholders in the command below:
    GssapiLocalName On
    require valid-user
 
+   # inbound client values never survive
+   RequestHeader unset Remote-User
+   RequestHeader unset X-Forwarded-User
    RewriteEngine On
    RewriteCond %{LA-U:REMOTE_USER} (.+)
    RewriteRule . - [E=RU:%1,NS]
@@ -506,6 +509,9 @@ The configuration for CentOS and OpenSUSE below contains two
    Krb5KeyTab /etc/httpd/zammad.keytab
    require valid-user
 
+   # inbound client values never survive
+   RequestHeader unset Remote-User
+   RequestHeader unset X-Forwarded-User
    RewriteEngine On
    RewriteCond %{LA-U:REMOTE_USER} (.+)
    RewriteRule . - [E=RU:%1,NS]
