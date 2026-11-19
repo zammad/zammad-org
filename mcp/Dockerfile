@@ -7,7 +7,7 @@
 #   docker build -f mcp/Dockerfile -t zammad-org:local-mcp .
 
 # Gems, compiled with the build tools the final image does without.
-FROM ruby:4.0.9-slim AS gems
+FROM ruby:4.0.10-slim AS gems
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends build-essential \
@@ -24,12 +24,12 @@ RUN bundle install --jobs 4 \
   && rm -rf /usr/local/bundle/cache /usr/local/bundle/ruby/*/cache
 
 # The Markdown pages of the build, without the HTML and assets around them.
-FROM ruby:4.0.9-slim AS pages
+FROM ruby:4.0.10-slim AS pages
 
 COPY dist/ /dist/
 RUN mkdir /pages && cd /dist && find . -name '*.md' -exec cp --parents {} /pages/ \;
 
-FROM ruby:4.0.9-slim
+FROM ruby:4.0.10-slim
 
 RUN useradd --system --uid 10001 --no-create-home --shell /usr/sbin/nologin mcp
 
