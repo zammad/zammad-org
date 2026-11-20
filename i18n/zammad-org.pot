@@ -8157,7 +8157,7 @@ msgstr ""
 #. type: Title ##
 #: src/en/documentation/use/guides/secure-email.md:76
 #: src/en/tutorials/connect-config-elasticsearch.md:131
-#: src/en/tutorials/sso-kerberos.md:882
+#: src/en/tutorials/sso-kerberos.md:902
 #: src/en/tutorials/webserver-config.md:303
 #, markdown-text, no-wrap
 msgid "Troubleshooting"
@@ -10466,7 +10466,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/docker.md:6
-#: src/en/tutorials/sso-kerberos.md:530
+#: src/en/tutorials/sso-kerberos.md:538
 #, markdown-text, no-wrap
 msgid "Docker installation"
 msgstr ""
@@ -10909,7 +10909,7 @@ msgstr ""
 
 #. type: Title ###
 #: src/en/get-started/installation/package.md:6
-#: src/en/tutorials/sso-kerberos.md:183
+#: src/en/tutorials/sso-kerberos.md:191
 #, markdown-text, no-wrap
 msgid "Package installation"
 msgstr ""
@@ -12236,7 +12236,7 @@ msgstr ""
 
 #. type: Title ##
 #: src/en/index.md:1 src/en/reference/graphql.md:24
-#: src/en/tutorials/sso-kerberos.md:73
+#: src/en/tutorials/sso-kerberos.md:77
 #, markdown-text, no-wrap
 msgid "Getting started"
 msgstr ""
@@ -32600,7 +32600,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/en/tutorials/reporting-grafana.md:29
-#: src/en/tutorials/sso-kerberos.md:558
+#: src/en/tutorials/sso-kerberos.md:566
 #, markdown-text
 msgid "You need:"
 msgstr ""
@@ -33214,18 +33214,28 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:22
+#: src/en/tutorials/sso-kerberos.md:21
 #, markdown-text
 msgid ""
 "If your IT department keeps its own user identity store (like Active "
 "Directory), Zammad's SSO support allows you to leverage that existing auth "
-"system so that anyone with an account on your local intranet will 1) "
-"automatically have an account in Zammad and 2) be able to log in with a "
-"single click."
+"system so that users with an account on your local intranet can log in to "
+"Zammad with a single click."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:26
+#, markdown-text, no-wrap
+msgid ""
+"SSO only signs in users who already exist in Zammad; it never creates\n"
+"accounts. Use the LDAP integration (_System > Integrations > LDAP_) to\n"
+"create the Zammad accounts for your Active Directory users and keep them "
+"in\n"
+"sync.\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:23
+#: src/en/tutorials/sso-kerberos.md:27
 #, no-wrap
 msgid ""
 "If you don't have this IT infrastructure but still want one-click\n"
@@ -33233,13 +33243,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:28
+#: src/en/tutorials/sso-kerberos.md:32
 #, markdown-text, no-wrap
 msgid "How does it work?"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:33
+#: src/en/tutorials/sso-kerberos.md:37
 #, markdown-text
 msgid ""
 "Zammad does not speak Kerberos itself. It provides the endpoint "
@@ -33250,7 +33260,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:35
+#: src/en/tutorials/sso-kerberos.md:39
 #, markdown-text
 msgid ""
 "The user name can arrive in one of three forms, which Zammad checks in this "
@@ -33258,7 +33268,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:39
+#: src/en/tutorials/sso-kerberos.md:43
 #, markdown-text
 msgid ""
 "the `REMOTE_USER` variable of the web server, only when the web server runs "
@@ -33266,25 +33276,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:39
+#: src/en/tutorials/sso-kerberos.md:43
 #, markdown-text
 msgid "the `Remote-User` request header, which Zammad sees as `HTTP_REMOTE_USER`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:39
+#: src/en/tutorials/sso-kerberos.md:43
 #, markdown-text
 msgid "the `X-Forwarded-User` request header"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:41
+#: src/en/tutorials/sso-kerberos.md:45
 #, markdown-text
 msgid "Which one applies depends on your installation:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:44
+#: src/en/tutorials/sso-kerberos.md:48
 #, markdown-text
 msgid ""
 "Package installation : Apache replaces Nginx on the Zammad host, "
@@ -33292,7 +33302,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:48
+#: src/en/tutorials/sso-kerberos.md:52
 #, markdown-text, no-wrap
 msgid ""
 "Docker stack\n"
@@ -33303,7 +33313,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/sso-kerberos.md:49
+#: src/en/tutorials/sso-kerberos.md:53
 #, no-wrap
 msgid ""
 "**Wait. SSO allows you to sign in with only a username?**\n"
@@ -33330,7 +33340,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:75
+#: src/en/tutorials/sso-kerberos.md:79
 #, no-wrap
 msgid ""
 "**Too busy to handle it on your own?**\n"
@@ -33341,43 +33351,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:84
+#: src/en/tutorials/sso-kerberos.md:88
 #, markdown-text
 msgid "You will need:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:93
+#: src/en/tutorials/sso-kerberos.md:101
 #, markdown-text
 msgid "a Microsoft Active Directory environment with"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/sso-kerberos.md:93
+#: src/en/tutorials/sso-kerberos.md:101
 #, markdown-text
 msgid "root access"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/sso-kerberos.md:93
+#: src/en/tutorials/sso-kerberos.md:101
 #, markdown-text
 msgid "support for AES 256-bit encryption"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:93
+#: src/en/tutorials/sso-kerberos.md:101
 #, markdown-text
 msgid "a Zammad installation with a fully-qualified domain name (FQDN), either"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/sso-kerberos.md:93
+#: src/en/tutorials/sso-kerberos.md:101
 #, markdown-text
 msgid "a package installation with root access on the host, or"
 msgstr ""
 
 #. type: Bullet: '  - '
-#: src/en/tutorials/sso-kerberos.md:93
+#: src/en/tutorials/sso-kerberos.md:101
 #, markdown-text
 msgid ""
 "the Docker stack behind a reverse proxy that terminates TLS and routes by "
@@ -33386,29 +33396,37 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:93
+#: src/en/tutorials/sso-kerberos.md:101
+#, markdown-text
+msgid ""
+"a Zammad account for every user who signs in via SSO, whose **login** is the "
+"user's Active Directory user name without the realm (`sAMAccountName`). The "
+"LDAP integration in _System > Integrations > LDAP_ creates these accounts "
+"and maps `sAMAccountName` to the login by default."
+msgstr ""
+
+#. type: Bullet: '- '
+#: src/en/tutorials/sso-kerberos.md:101
 #, markdown-text
 msgid "some familiarity with system administration (e.g. Apache configuration)"
 msgstr ""
 
-#. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:98
-#, markdown-text, no-wrap
+#. type: Fenced div block (info)
+#: src/en/tutorials/sso-kerberos.md:102
+#, no-wrap
 msgid ""
-"For best results, set up the LDAP integration to make sure\n"
-"your Active Directory and Zammad user accounts are always in sync. You\n"
-"can find it in Zammad's admin interface under\n"
-"_System > Integrations > LDAP_.\n"
+"Zammad matches the user name against the login only, ignoring case. An\n"
+"account whose email address matches but whose login differs is not found.\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:99
+#: src/en/tutorials/sso-kerberos.md:107
 #, markdown-text, no-wrap
 msgid "Step 1: Configure active directory"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:105
+#: src/en/tutorials/sso-kerberos.md:113
 #, markdown-text
 msgid ""
 "In the Kerberos authentication scheme, the **authentication server** (Active "
@@ -33418,19 +33436,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/sso-kerberos.md:106
+#: src/en/tutorials/sso-kerberos.md:114
 #, no-wrap
 msgid "These directions have been confirmed on Windows Server 2016.\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:110
+#: src/en/tutorials/sso-kerberos.md:118
 #, markdown-text, no-wrap
 msgid "1a. Create a service account"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:114
+#: src/en/tutorials/sso-kerberos.md:122
 #, markdown-text
 msgid ""
 "You may use an existing service account if you have one. Admin privileges "
@@ -33438,7 +33456,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:116
+#: src/en/tutorials/sso-kerberos.md:124
 #, markdown-text
 msgid ""
 "![Screenshot Active Directory service account "
@@ -33446,13 +33464,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:117
+#: src/en/tutorials/sso-kerberos.md:125
 #, markdown-text, no-wrap
 msgid "1b. Reset password"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:121
+#: src/en/tutorials/sso-kerberos.md:129
 #, markdown-text
 msgid ""
 "Reset service account password after enabling the \"This account supports "
@@ -33460,7 +33478,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:124
+#: src/en/tutorials/sso-kerberos.md:132
 #, markdown-text
 msgid ""
 "Without this option, the keytab carries only RC4 keys, which current "
@@ -33468,32 +33486,32 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:125
+#: src/en/tutorials/sso-kerberos.md:133
 #, markdown-text, no-wrap
 msgid "1c. Register a SPN for Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:128 src/en/tutorials/sso-kerberos.md:373
+#: src/en/tutorials/sso-kerberos.md:136 src/en/tutorials/sso-kerberos.md:381
 #, markdown-text
 msgid "Replace the following placeholders in the commands below:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:135 src/en/tutorials/sso-kerberos.md:378
-#: src/en/tutorials/sso-kerberos.md:460
+#: src/en/tutorials/sso-kerberos.md:143 src/en/tutorials/sso-kerberos.md:386
+#: src/en/tutorials/sso-kerberos.md:468
 #, markdown-text
 msgid "`<zammad-host>`: Zammad FQDN"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:135
+#: src/en/tutorials/sso-kerberos.md:143
 #, markdown-text
 msgid "`<service-acct>`: Service account logon name"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:135
+#: src/en/tutorials/sso-kerberos.md:143
 #, markdown-text
 msgid ""
 "`<password>`: Password of the service account (Option `/pass *` did prove to "
@@ -33501,32 +33519,32 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:135 src/en/tutorials/sso-kerberos.md:333
-#: src/en/tutorials/sso-kerberos.md:378 src/en/tutorials/sso-kerberos.md:460
+#: src/en/tutorials/sso-kerberos.md:143 src/en/tutorials/sso-kerberos.md:341
+#: src/en/tutorials/sso-kerberos.md:386 src/en/tutorials/sso-kerberos.md:468
 #, markdown-text
 msgid "`<domain>`: Windows domain"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:135
+#: src/en/tutorials/sso-kerberos.md:143
 #, markdown-text
 msgid "`<master-domain-controller>`: Master domain controller IP/FQD"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:137
+#: src/en/tutorials/sso-kerberos.md:145
 #, markdown-text
 msgid "The commands below will prompt for the users password:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:138
+#: src/en/tutorials/sso-kerberos.md:146
 #, no-wrap
 msgid "setspn -s HTTP/<zammad-host> <service-acct>\n"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:142
+#: src/en/tutorials/sso-kerberos.md:150
 #, no-wrap
 msgid ""
 "ktpass /princ HTTP/<zammad-host>@<DOMAIN> \\\n"
@@ -33539,13 +33557,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:152
+#: src/en/tutorials/sso-kerberos.md:160
 #, markdown-text, no-wrap
 msgid "1d. Note the secret key and version number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:156
+#: src/en/tutorials/sso-kerberos.md:164
 #, markdown-text
 msgid ""
 "This step is for the package installation only. The Docker stack uses the "
@@ -33553,13 +33571,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:158
+#: src/en/tutorials/sso-kerberos.md:166
 #, markdown-text
 msgid "The output of the command above contains important data for Step 2f below:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:159
+#: src/en/tutorials/sso-kerberos.md:167
 #, no-wrap
 msgid ""
 "Using legacy password setting method\n"
@@ -33581,31 +33599,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:173
+#: src/en/tutorials/sso-kerberos.md:181
 #, markdown-text
 msgid "On the last line, take note of:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:176
+#: src/en/tutorials/sso-kerberos.md:184
 #, markdown-text
 msgid "the secret key in parentheses at the end (**0x5ee827...**)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:176
+#: src/en/tutorials/sso-kerberos.md:184
 #, markdown-text
 msgid "the secret key version number preceded by `vno` (**3**)"
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:177
+#: src/en/tutorials/sso-kerberos.md:185
 #, markdown-text, no-wrap
 msgid "Step 2: Set up the Kerberos endpoint"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:182
+#: src/en/tutorials/sso-kerberos.md:190
 #, markdown-text
 msgid ""
 "Next, requests to `/auth/sso` must pass a web server that performs the "
@@ -33616,7 +33634,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:187
+#: src/en/tutorials/sso-kerberos.md:195
 #, markdown-text
 msgid ""
 "Next, the Zammad host must be configured to support Kerberos (and to accept "
@@ -33624,7 +33642,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:191
+#: src/en/tutorials/sso-kerberos.md:199
 #, markdown-text
 msgid ""
 "In most cases, you would have to recompile NGINX from source with an extra "
@@ -33633,19 +33651,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/sso-kerberos.md:192
+#: src/en/tutorials/sso-kerberos.md:200
 #, no-wrap
 msgid "All commands in this section must be run as root (or with `sudo`).\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:196
+#: src/en/tutorials/sso-kerberos.md:204
 #, markdown-text, no-wrap
 msgid "2a. Turn off NGINX"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/sso-kerberos.md:198
+#: src/en/tutorials/sso-kerberos.md:206
 #, no-wrap
 msgid ""
 "This will take your Zammad instance **offline** until Apache is fully\n"
@@ -33653,31 +33671,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:204
+#: src/en/tutorials/sso-kerberos.md:212
 #, markdown-text
 msgid "Turn off Nginx:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:205
+#: src/en/tutorials/sso-kerberos.md:213
 #, no-wrap
 msgid "sudo systemctl stop nginx\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:210
+#: src/en/tutorials/sso-kerberos.md:218
 #, markdown-text
 msgid "Keep it off after reboot:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:211
+#: src/en/tutorials/sso-kerberos.md:219
 #, no-wrap
 msgid "sudo systemctl disable nginx\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:218
+#: src/en/tutorials/sso-kerberos.md:226
 #, markdown-text
 msgid ""
 "If you wish to minimize downtime, you can save this step for last; just bear "
@@ -33686,7 +33704,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:221
+#: src/en/tutorials/sso-kerberos.md:229
 #, markdown-text
 msgid ""
 "If you can't complete this tutorial for any reason, simply turn off Apache "
@@ -33694,7 +33712,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (details)
-#: src/en/tutorials/sso-kerberos.md:222
+#: src/en/tutorials/sso-kerberos.md:230
 #, no-wrap
 msgid ""
 "\n"
@@ -33717,13 +33735,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:242
+#: src/en/tutorials/sso-kerberos.md:250
 #, markdown-text, no-wrap
 msgid "2b. Pre-configure Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:248
+#: src/en/tutorials/sso-kerberos.md:256
 #, markdown-text
 msgid ""
 "This documentation expects an already working Apache configuration.  You "
@@ -33732,13 +33750,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:249
+#: src/en/tutorials/sso-kerberos.md:257
 #, markdown-text, no-wrap
 msgid "2c. Install further Apache dependencies"
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:251
+#: src/en/tutorials/sso-kerberos.md:259
 #, no-wrap
 msgid ""
 "\n"
@@ -33771,13 +33789,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:281
+#: src/en/tutorials/sso-kerberos.md:289
 #, markdown-text, no-wrap
 msgid "2d. Enable Apache modules"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:285
+#: src/en/tutorials/sso-kerberos.md:293
 #, markdown-text
 msgid ""
 "SSO requires modules that are not enabled by default. By default you can use "
@@ -33785,7 +33803,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:286
+#: src/en/tutorials/sso-kerberos.md:294
 #, no-wrap
 msgid ""
 "\n"
@@ -33824,13 +33842,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:322
+#: src/en/tutorials/sso-kerberos.md:330
 #, markdown-text, no-wrap
 msgid "2e. Configure Kerberos"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:326
+#: src/en/tutorials/sso-kerberos.md:334
 #, markdown-text
 msgid ""
 "Kerberos realm configuration is how you tell the Zammad server how to reach "
@@ -33838,19 +33856,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:328
+#: src/en/tutorials/sso-kerberos.md:336
 #, markdown-text
 msgid "Replace the following placeholders in the sample config below:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:333
+#: src/en/tutorials/sso-kerberos.md:341
 #, markdown-text
 msgid "`<domain-controller>`: Domain controller IP/FQDN(s)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:333
+#: src/en/tutorials/sso-kerberos.md:341
 #, markdown-text
 msgid ""
 "`<master-domain-controller>`: Master domain controller IP/FQDN (must not be "
@@ -33858,7 +33876,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ini)
-#: src/en/tutorials/sso-kerberos.md:334
+#: src/en/tutorials/sso-kerberos.md:342
 #, no-wrap
 msgid ""
 "# /etc/krb5.conf\n"
@@ -33895,13 +33913,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:367
+#: src/en/tutorials/sso-kerberos.md:375
 #, markdown-text, no-wrap
 msgid "2f. Generate keytab"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:371
+#: src/en/tutorials/sso-kerberos.md:379
 #, markdown-text
 msgid ""
 "Apache needs a Kerberos _keytab_ (key table) to manage its shared secrets "
@@ -33909,19 +33927,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:378
+#: src/en/tutorials/sso-kerberos.md:386
 #, markdown-text
 msgid "`<secret-key>`: Secret key (**omit the leading** `0x`)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:378
+#: src/en/tutorials/sso-kerberos.md:386
 #, markdown-text
 msgid "`<vno>`: Secret key version number"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:381
+#: src/en/tutorials/sso-kerberos.md:389
 #, markdown-text
 msgid ""
 "The secret key and version number were found in [Step 1: Configure active "
@@ -33929,25 +33947,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:383
+#: src/en/tutorials/sso-kerberos.md:391
 #, markdown-text
 msgid "Enter ktutil:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:384
+#: src/en/tutorials/sso-kerberos.md:392
 #, no-wrap
 msgid "ktutil\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:389
+#: src/en/tutorials/sso-kerberos.md:397
 #, markdown-text
 msgid "Add keytab:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:390
+#: src/en/tutorials/sso-kerberos.md:398
 #, no-wrap
 msgid ""
 "ktutil: addent -key -p HTTP/<zammad-host>@<DOMAIN> -k <vno> -e aes256-cts\n"
@@ -33955,13 +33973,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:396
+#: src/en/tutorials/sso-kerberos.md:404
 #, markdown-text
 msgid "Confirm the entry was added successfully:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:397
+#: src/en/tutorials/sso-kerberos.md:405
 #, no-wrap
 msgid ""
 "ktutil: list\n"
@@ -33971,31 +33989,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:405
+#: src/en/tutorials/sso-kerberos.md:413
 #, markdown-text
 msgid "Write keytab to disk:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:406
+#: src/en/tutorials/sso-kerberos.md:414
 #, no-wrap
 msgid "ktutil: wkt /root/zammad.keytab\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:411
+#: src/en/tutorials/sso-kerberos.md:419
 #, markdown-text
 msgid "Leave ktutil:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:412
+#: src/en/tutorials/sso-kerberos.md:420
 #, no-wrap
 msgid "ktutil: quit\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:418
+#: src/en/tutorials/sso-kerberos.md:426
 #, markdown-text
 msgid ""
 "Then, place the keytab in the Apache config directory and set the "
@@ -34003,7 +34021,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:419
+#: src/en/tutorials/sso-kerberos.md:427
 #, no-wrap
 msgid ""
 "\n"
@@ -34038,13 +34056,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:451
+#: src/en/tutorials/sso-kerberos.md:459
 #, markdown-text, no-wrap
 msgid "2g. Configure Apache"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:455
+#: src/en/tutorials/sso-kerberos.md:463
 #, markdown-text
 msgid ""
 "Add the following directive to the end of the virtual host configuration "
@@ -34052,13 +34070,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:457
+#: src/en/tutorials/sso-kerberos.md:465
 #, markdown-text
 msgid "Replace the following placeholders in the command below:"
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:461
+#: src/en/tutorials/sso-kerberos.md:469
 #, no-wrap
 msgid ""
 "\n"
@@ -34124,19 +34142,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:524
+#: src/en/tutorials/sso-kerberos.md:532
 #, markdown-text, no-wrap
 msgid "2h. Restart Apache to apply changes"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:526
+#: src/en/tutorials/sso-kerberos.md:534
 #, no-wrap
 msgid "sudo systemctl restart apache2\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:537
+#: src/en/tutorials/sso-kerberos.md:545
 #, markdown-text
 msgid ""
 "The Docker stack runs its web server inside the `zammad-nginx` image, so you "
@@ -34149,7 +34167,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (text)
-#: src/en/tutorials/sso-kerberos.md:538
+#: src/en/tutorials/sso-kerberos.md:546
 #, no-wrap
 msgid ""
 "browser ──► reverse proxy (TLS)\n"
@@ -34161,7 +34179,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:547
+#: src/en/tutorials/sso-kerberos.md:555
 #, markdown-text
 msgid ""
 "The SSO container forwards `/auth/sso` to Zammad's application server "
@@ -34171,7 +34189,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/tutorials/sso-kerberos.md:548
+#: src/en/tutorials/sso-kerberos.md:556
 #, no-wrap
 msgid ""
 "**Your reverse proxy can do Kerberos itself?**\n"
@@ -34186,7 +34204,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:566
+#: src/en/tutorials/sso-kerberos.md:574
 #, markdown-text
 msgid ""
 "the stack behind a reverse proxy that routes by path. This guide uses the "
@@ -34200,7 +34218,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:566
+#: src/en/tutorials/sso-kerberos.md:574
 #, markdown-text
 msgid ""
 "the `zammad.keytab` file written by `ktpass` in [1c. Register a SPN for "
@@ -34210,13 +34228,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:567
+#: src/en/tutorials/sso-kerberos.md:575
 #, markdown-text, no-wrap
 msgid "Files"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:570
+#: src/en/tutorials/sso-kerberos.md:578
 #, markdown-text
 msgid ""
 "The SSO container consists of the following files next to the stack's "
@@ -34224,7 +34242,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (text)
-#: src/en/tutorials/sso-kerberos.md:571
+#: src/en/tutorials/sso-kerberos.md:579
 #, no-wrap
 msgid ""
 "docker-compose.override.yml   adds the SSO container to the stack\n"
@@ -34238,29 +34256,56 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:585
+#: src/en/tutorials/sso-kerberos.md:594
 #, markdown-text
 msgid ""
 "Keep the keytab out of the build context: Docker reads every file in "
 "`zammad-sso/` when it builds the image, and a keytab that only the "
 "container's user may read makes the build fail. The container runs as "
-"`www-data` with user ID 33, so on a Linux host:"
+"`www-data` with user ID 33, so give the keytab to that user and make it "
+"readable for nobody else. Do this from a throwaway container, which works "
+"with a rootful and a rootless Docker daemon. Run it from the stack's "
+"directory:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:586
+#: src/en/tutorials/sso-kerberos.md:595
 #, no-wrap
-msgid "sudo chown 33 local/zammad-sso/zammad.keytab\n"
-msgstr ""
-
-#. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:590
-#, no-wrap
-msgid "sudo chmod 0400 local/zammad-sso/zammad.keytab\n"
+msgid ""
+"docker run --rm -v \"$PWD/local/zammad-sso:/k\" alpine \\\n"
+"    sh -c 'chown 33 /k/zammad.keytab && chmod 0400 /k/zammad.keytab'\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:595
+#: src/en/tutorials/sso-kerberos.md:602
+#, markdown-text
+msgid ""
+"Afterwards, your own user on the host can no longer read the keytab. To "
+"replace it, delete it, copy the new one in its place and run the command "
+"again."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: src/en/tutorials/sso-kerberos.md:603
+#, no-wrap
+msgid ""
+"With a rootless Docker daemon, user ID 33 inside a container is a different "
+"user ID on the host. `chown 33` on the\n"
+"host therefore fails or gives the keytab to the wrong user, and the "
+"container cannot read it.\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: src/en/tutorials/sso-kerberos.md:608
+#, no-wrap
+msgid ""
+"Don't solve the permission problem by making the keytab readable for "
+"everyone (mode `0644`): anyone who can read it\n"
+"can act as the Zammad service towards Active Directory.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:614
 #, markdown-text
 msgid ""
 "`zammad-sso/Dockerfile` builds Apache with `mod_auth_gssapi` from the Debian "
@@ -34268,7 +34313,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (dockerfile)
-#: src/en/tutorials/sso-kerberos.md:596
+#: src/en/tutorials/sso-kerberos.md:615
 #, no-wrap
 msgid ""
 "FROM debian:trixie-slim\n"
@@ -34324,7 +34369,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:642
+#: src/en/tutorials/sso-kerberos.md:661
 #, markdown-text
 msgid ""
 "`zammad-sso/apache2-foreground` starts Apache as the container's main "
@@ -34332,7 +34377,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:643
+#: src/en/tutorials/sso-kerberos.md:662
 #, no-wrap
 msgid ""
 "#!/bin/sh\n"
@@ -34349,7 +34394,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:656
+#: src/en/tutorials/sso-kerberos.md:675
 #, markdown-text
 msgid ""
 "`zammad-sso/zammad-sso.conf` authenticates `/auth/sso` and forwards it to "
@@ -34357,7 +34402,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (apache)
-#: src/en/tutorials/sso-kerberos.md:657
+#: src/en/tutorials/sso-kerberos.md:676
 #, no-wrap
 msgid ""
 "<VirtualHost *:8080>\n"
@@ -34388,7 +34433,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:688
+#: src/en/tutorials/sso-kerberos.md:707
 #, markdown-text
 msgid ""
 "Add the `zammad-sso` service to your `docker-compose.override.yml`. If the "
@@ -34398,7 +34443,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (yaml)
-#: src/en/tutorials/sso-kerberos.md:689
+#: src/en/tutorials/sso-kerberos.md:708
 #, no-wrap
 msgid ""
 "---\n"
@@ -34412,7 +34457,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:702
+#: src/en/tutorials/sso-kerberos.md:721
 #, markdown-text
 msgid ""
 "`local/zammad-sso/krb5.conf` tells the container how to reach your domain "
@@ -34421,7 +34466,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (text)
-#: src/en/tutorials/sso-kerberos.md:703
+#: src/en/tutorials/sso-kerberos.md:722
 #, no-wrap
 msgid ""
 "[libdefaults]\n"
@@ -34442,13 +34487,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:722
+#: src/en/tutorials/sso-kerberos.md:741
 #, markdown-text
 msgid "Add the override file and the reverse proxy as trusted proxy to your `.env`:"
 msgstr ""
 
 #. type: Fenced code block (text)
-#: src/en/tutorials/sso-kerberos.md:723
+#: src/en/tutorials/sso-kerberos.md:742
 #, no-wrap
 msgid ""
 "COMPOSE_FILE=docker-compose.yml:scenarios/add-nginx-proxy-manager.yml:docker-compose.override.yml\n"
@@ -34458,40 +34503,41 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:731
+#: src/en/tutorials/sso-kerberos.md:750
 #, markdown-text
 msgid "Then build and start the stack:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/tutorials/sso-kerberos.md:732
+#: src/en/tutorials/sso-kerberos.md:751
 #, no-wrap
 msgid "docker compose up -d --build\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:738
+#: src/en/tutorials/sso-kerberos.md:758
 #, markdown-text
 msgid ""
 "The `zammad-sso` container reports `healthy` once the keytab is readable and "
 "Apache answers `/auth/sso` with the Kerberos challenge. If it stays "
-"unhealthy, the keytab is missing or not readable by user ID 33."
+"unhealthy, either the keytab is missing or not readable by user ID 33 inside "
+"the container, or Apache doesn't answer `/auth/sso` with the expected `401`."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:739
+#: src/en/tutorials/sso-kerberos.md:759
 #, markdown-text, no-wrap
 msgid "Configure the reverse proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:742
+#: src/en/tutorials/sso-kerberos.md:762
 #, markdown-text
 msgid "In Nginx Proxy Manager:"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/tutorials/sso-kerberos.md:746
+#: src/en/tutorials/sso-kerberos.md:766
 #, markdown-text
 msgid ""
 "Create a proxy host for your Zammad FQDN with scheme `http`, forward host "
@@ -34500,7 +34546,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/tutorials/sso-kerberos.md:746
+#: src/en/tutorials/sso-kerberos.md:766
 #, markdown-text
 msgid ""
 "Add a **Custom Location** for `/auth/sso` with scheme `http`, forward host "
@@ -34508,7 +34554,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:750
+#: src/en/tutorials/sso-kerberos.md:770
 #, markdown-text
 msgid ""
 "Do not rely on the **Advanced** field to strip headers: `proxy_set_header` "
@@ -34518,7 +34564,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:753
+#: src/en/tutorials/sso-kerberos.md:773
 #, markdown-text
 msgid ""
 "With Traefik, the equivalent is a router that points at the SSO container, "
@@ -34527,19 +34573,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (text)
-#: src/en/tutorials/sso-kerberos.md:754
+#: src/en/tutorials/sso-kerberos.md:774
 #, no-wrap
 msgid "Host(`<zammad-host>`) && PathPrefix(`/auth/sso`)\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:758
+#: src/en/tutorials/sso-kerberos.md:778
 #, markdown-text, no-wrap
 msgid "Trusted proxies"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:765
+#: src/en/tutorials/sso-kerberos.md:785
 #, markdown-text
 msgid ""
 "Zammad has to trust the reverse proxy, so that it takes the address of the "
@@ -34553,7 +34599,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:770
+#: src/en/tutorials/sso-kerberos.md:790
 #, markdown-text
 msgid ""
 "The **Trusted SSO Proxy IPs** setting in [Step "
@@ -34566,7 +34612,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/tutorials/sso-kerberos.md:771
+#: src/en/tutorials/sso-kerberos.md:791
 #, no-wrap
 msgid ""
 "The setting guards the way in through the reverse proxy only. Inside the "
@@ -34579,13 +34625,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:778
+#: src/en/tutorials/sso-kerberos.md:798
 #, markdown-text, no-wrap
 msgid "Portainer"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:781
+#: src/en/tutorials/sso-kerberos.md:801
 #, markdown-text
 msgid ""
 "Without shell access to the Docker host, you can build and run the same "
@@ -34593,7 +34639,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/tutorials/sso-kerberos.md:792
+#: src/en/tutorials/sso-kerberos.md:812
 #, markdown-text
 msgid ""
 "Under **Images**, choose **Build a new image**, upload a tarball that "
@@ -34603,13 +34649,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/tutorials/sso-kerberos.md:792
+#: src/en/tutorials/sso-kerberos.md:812
 #, markdown-text
 msgid "Under **Volumes**, choose **Add volume** and create `zammad-sso-secrets`."
 msgstr ""
 
 #. type: Bullet: '3. '
-#: src/en/tutorials/sso-kerberos.md:792
+#: src/en/tutorials/sso-kerberos.md:812
 #, markdown-text
 msgid ""
 "Put `zammad.keytab` and `krb5.conf` into the volume. Portainer Business has "
@@ -34621,7 +34667,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '4. '
-#: src/en/tutorials/sso-kerberos.md:792
+#: src/en/tutorials/sso-kerberos.md:812
 #, markdown-text
 msgid ""
 "Under **Stacks**, choose **Add stack** and deploy the SSO container with the "
@@ -34631,7 +34677,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (yaml)
-#: src/en/tutorials/sso-kerberos.md:793
+#: src/en/tutorials/sso-kerberos.md:813
 #, no-wrap
 msgid ""
 "   services:\n"
@@ -34665,7 +34711,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:826
+#: src/en/tutorials/sso-kerberos.md:846
 #, markdown-text
 msgid ""
 "The reverse proxy is configured as above and has to be a trusted proxy of "
@@ -34673,13 +34719,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:827
+#: src/en/tutorials/sso-kerberos.md:847
 #, markdown-text, no-wrap
 msgid "Step 3: Enable SSO in Zammad"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:832
+#: src/en/tutorials/sso-kerberos.md:852
 #, markdown-text, no-wrap
 msgid ""
 "Next, enable \"Authentication via SSO\" in Zammad's admin interface under\n"
@@ -34690,7 +34736,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:833
+#: src/en/tutorials/sso-kerberos.md:853
 #, no-wrap
 msgid ""
 "On older versions of Zammad, visit `https://your.zammad.host/auth/sso`\n"
@@ -34698,13 +34744,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/tutorials/sso-kerberos.md:838
+#: src/en/tutorials/sso-kerberos.md:858
 #, markdown-text, no-wrap
 msgid "Step 4: Configure client system (Windows only)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:842
+#: src/en/tutorials/sso-kerberos.md:862
 #, markdown-text
 msgid ""
 "For the full SSO experience (i.e. for passwordless one-click sign-in), "
@@ -34712,13 +34758,13 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: src/en/tutorials/sso-kerberos.md:846
+#: src/en/tutorials/sso-kerberos.md:866
 #, markdown-text
 msgid "be on the Active Directory server's local intranet; and"
 msgstr ""
 
 #. type: Bullet: '2. '
-#: src/en/tutorials/sso-kerberos.md:846
+#: src/en/tutorials/sso-kerberos.md:866
 #, markdown-text
 msgid ""
 "modify their network settings for the Zammad host to be treated as a local "
@@ -34726,7 +34772,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:849
+#: src/en/tutorials/sso-kerberos.md:869
 #, markdown-text
 msgid ""
 "Without this step, users must enter their Active Directory credentials "
@@ -34734,7 +34780,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:850
+#: src/en/tutorials/sso-kerberos.md:870
 #, no-wrap
 msgid ""
 "\n"
@@ -34743,7 +34789,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:850
+#: src/en/tutorials/sso-kerberos.md:870
 #, no-wrap
 msgid ""
 "This setting can be centrally managed across the entire intranet using\n"
@@ -34751,7 +34797,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|tip)
-#: src/en/tutorials/sso-kerberos.md:850
+#: src/en/tutorials/sso-kerberos.md:870
 #, no-wrap
 msgid ""
 "\n"
@@ -34768,7 +34814,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs|info)
-#: src/en/tutorials/sso-kerberos.md:850
+#: src/en/tutorials/sso-kerberos.md:870
 #, no-wrap
 msgid ""
 "This option cannot be centrally managed because it is set in the\n"
@@ -34776,7 +34822,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tabs)
-#: src/en/tutorials/sso-kerberos.md:850
+#: src/en/tutorials/sso-kerberos.md:870
 #, no-wrap
 msgid ""
 "\n"
@@ -34789,7 +34835,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:889
+#: src/en/tutorials/sso-kerberos.md:909
 #, markdown-text
 msgid ""
 "Are all relevant FQDNs/hostnames reachable from your Active Directory and "
@@ -34797,7 +34843,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/tutorials/sso-kerberos.md:889
+#: src/en/tutorials/sso-kerberos.md:909
 #, markdown-text
 msgid ""
 "Are the system clocks of your Active Directory and Zammad servers "
@@ -34806,13 +34852,45 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:890
+#: src/en/tutorials/sso-kerberos.md:910
+#, markdown-text, no-wrap
+msgid "Errors in Zammad"
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:912
+#, markdown-text, no-wrap
+msgid "\"User `<name>` could not be found\""
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:917
+#, markdown-text, no-wrap
+msgid ""
+"Kerberos authentication succeeded, but Zammad has no user whose login is "
+"`<name>`. SSO does not create accounts.\n"
+"Make sure the user exists in Zammad and that their login matches their "
+"Active Directory user name, e.g. by running\n"
+"the LDAP integration with `sAMAccountName` mapped to the login.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:920
+#, markdown-text
+msgid ""
+"The LDAP integration skips Active Directory users whose first name, last "
+"name and email address are all empty, so these users never get an account in "
+"Zammad. Fill in at least one of these attributes in Active Directory."
+msgstr ""
+
+#. type: Title ###
+#: src/en/tutorials/sso-kerberos.md:921
 #, markdown-text, no-wrap
 msgid "Errors in Apache logs"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/tutorials/sso-kerberos.md:892
+#: src/en/tutorials/sso-kerberos.md:923
 #, no-wrap
 msgid ""
 "**Try raising your Apache log level temporarily.**\n"
@@ -34822,13 +34900,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:899
+#: src/en/tutorials/sso-kerberos.md:930
 #, markdown-text, no-wrap
 msgid "An unsupported mechanism was requested"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:903
+#: src/en/tutorials/sso-kerberos.md:934
 #, markdown-text
 msgid ""
 "Does your Active Directory service account have **Kerberos AES 256-bit "
@@ -34836,7 +34914,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:907
+#: src/en/tutorials/sso-kerberos.md:938
 #, markdown-text
 msgid ""
 "If for some reason your server does not support AES 256-bit encryption, the "
@@ -34845,13 +34923,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:908
+#: src/en/tutorials/sso-kerberos.md:939
 #, markdown-text, no-wrap
 msgid "Failed to verify krb5 credentials: Key version is not available"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:912
+#: src/en/tutorials/sso-kerberos.md:943
 #, markdown-text
 msgid ""
 "Did you use the exact **version number** (`vno`) provided by `ktpass` when "
@@ -34859,13 +34937,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:914 src/en/tutorials/sso-kerberos.md:921
+#: src/en/tutorials/sso-kerberos.md:945 src/en/tutorials/sso-kerberos.md:952
 #, markdown-text
 msgid "Try generating it again, just to be sure."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:915
+#: src/en/tutorials/sso-kerberos.md:946
 #, markdown-text, no-wrap
 msgid ""
 "Unspecified GSS failure. Minor code may provide more information (, no key "
@@ -34873,7 +34951,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:919
+#: src/en/tutorials/sso-kerberos.md:950
 #, markdown-text
 msgid ""
 "Does the **service name** you provided to `setspn` exactly match the one you "
@@ -34882,13 +34960,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:922
+#: src/en/tutorials/sso-kerberos.md:953
 #, markdown-text, no-wrap
 msgid "No key table entry found for HTTP/FQDN@DOMAIN"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:926
+#: src/en/tutorials/sso-kerberos.md:957
 #, markdown-text
 msgid ""
 "Does your virtual host configuration's `KrbServiceName` setting exactly "
@@ -34896,13 +34974,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:928
+#: src/en/tutorials/sso-kerberos.md:959
 #, markdown-text
 msgid "This setting is case-sensitive."
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:929
+#: src/en/tutorials/sso-kerberos.md:960
 #, markdown-text, no-wrap
 msgid ""
 "Warning: Received token seems to be NTLM, which isn't supported by the "
@@ -34910,7 +34988,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:933
+#: src/en/tutorials/sso-kerberos.md:964
 #, markdown-text
 msgid ""
 "Is your Zammad host accessible at an FQDN? This error may indicate that you "
@@ -34918,13 +34996,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:934
+#: src/en/tutorials/sso-kerberos.md:965
 #, markdown-text, no-wrap
 msgid "Cannot decrypt ticket for HTTP/FQDN@DOMAIN"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:938
+#: src/en/tutorials/sso-kerberos.md:969
 #, markdown-text
 msgid ""
 "Did you make sure to change the password on your Active Directory service "
@@ -34932,7 +35010,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:941
+#: src/en/tutorials/sso-kerberos.md:972
 #, markdown-text
 msgid ""
 "And did you make sure to register the SPN (with `ktpass`) and generate your "
@@ -34940,7 +35018,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:947
+#: src/en/tutorials/sso-kerberos.md:978
 #, markdown-text, no-wrap
 msgid ""
 "Try running `kinit -k -t <path to keytab> HTTP/<zammad-host>@<DOMAIN>`.\n"
@@ -34951,7 +35029,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:948
+#: src/en/tutorials/sso-kerberos.md:979
 #, markdown-text, no-wrap
 msgid ""
 "Failed when verifying KDC\" and \"failed to verify krb5 credentials: Decrypt "
@@ -34959,19 +35037,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:951
+#: src/en/tutorials/sso-kerberos.md:982
 #, markdown-text
 msgid "Ensure `KrbServiceName` is the correct ServiceName provided via setspn."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:953
+#: src/en/tutorials/sso-kerberos.md:984
 #, markdown-text
 msgid "Ensure your Active Directory supports the encryption method configured."
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:957
+#: src/en/tutorials/sso-kerberos.md:988
 #, markdown-text
 msgid ""
 "If all above is correct and the rest of FAQ also is ensured, make sure your "
@@ -34980,19 +35058,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/tutorials/sso-kerberos.md:958
+#: src/en/tutorials/sso-kerberos.md:989
 #, markdown-text, no-wrap
 msgid "Docker stack"
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:960
+#: src/en/tutorials/sso-kerberos.md:991
 #, markdown-text, no-wrap
 msgid "502 Bad Gateway on /auth/sso only, after recreating the SSO container"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:964
+#: src/en/tutorials/sso-kerberos.md:995
 #, markdown-text
 msgid ""
 "The reverse proxy still holds the container's old address. Nginx Proxy "
@@ -35001,13 +35079,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:965
+#: src/en/tutorials/sso-kerberos.md:996
 #, markdown-text, no-wrap
 msgid "SSO request from untrusted IP address, after recreating the reverse proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:971
+#: src/en/tutorials/sso-kerberos.md:1002
 #, markdown-text
 msgid ""
 "Zammad resolves the names in `RAILS_TRUSTED_PROXIES` when it starts, see "
@@ -35018,13 +35096,46 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/tutorials/sso-kerberos.md:972
+#: src/en/tutorials/sso-kerberos.md:1003
+#, markdown-text, no-wrap
+msgid "The zammad-sso container stays unhealthy"
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:1006
+#, markdown-text
+msgid "Two things can make the container unhealthy: the keytab and Apache itself."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:1011
+#, markdown-text
+msgid ""
+"Check whether the container's user can read the keytab: `docker compose exec "
+"zammad-sso klist -k /etc/apache2/zammad.keytab`. If it reports \"Permission "
+"denied while starting keytab scan\", the keytab's owner was set on the host, "
+"which does not work with a rootless Docker daemon. Set it from a container "
+"as described in [Docker installation](#docker-installation)."
+msgstr ""
+
+#. type: Plain text
+#: src/en/tutorials/sso-kerberos.md:1015
+#, markdown-text
+msgid ""
+"If the keytab is readable, Apache is the problem: `docker compose logs "
+"zammad-sso` shows its startup and request errors. A common cause is a syntax "
+"error in `zammad-sso/zammad-sso.conf`, which stops Apache before it can "
+"answer `/auth/sso` at all."
+msgstr ""
+
+#. type: Title ####
+#: src/en/tutorials/sso-kerberos.md:1016
 #, markdown-text, no-wrap
 msgid "Signing in via SSO fails although the zammad-sso container is healthy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/tutorials/sso-kerberos.md:977
+#: src/en/tutorials/sso-kerberos.md:1021
 #, markdown-text
 msgid ""
 "The health check verifies that the keytab is readable and that Apache issues "

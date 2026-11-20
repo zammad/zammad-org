@@ -16,9 +16,13 @@ managing their sessions.
 
 If your IT department keeps its own user identity store (like Active
 Directory), Zammad's SSO support allows you to leverage that existing
-auth system so that anyone with an account on your local intranet
-will 1) automatically have an account in Zammad and 2) be able to log in
-with a single click.
+auth system so that users with an account on your local intranet can log in
+to Zammad with a single click.
+
+SSO only signs in users who already exist in Zammad; it never creates
+accounts. Use the LDAP integration (_System > Integrations > LDAP_) to
+create the Zammad accounts for your Active Directory users and keep them in
+sync.
 
 ::: tip
 If you don't have this IT infrastructure but still want one-click
@@ -89,12 +93,16 @@ You will need:
   - a package installation with root access on the host, or
   - the Docker stack behind a reverse proxy that terminates TLS and routes by path, such as the
     [Nginx Proxy Manager scenario](/en/reference/docker-compose-scenarios#add-nginx-proxy-manager)
+- a Zammad account for every user who signs in via SSO, whose **login** is
+  the user's Active Directory user name without the realm
+  (`sAMAccountName`). The LDAP integration in _System > Integrations > LDAP_
+  creates these accounts and maps `sAMAccountName` to the login by default.
 - some familiarity with system administration (e.g. Apache configuration)
 
-For best results, set up the LDAP integration to make sure
-your Active Directory and Zammad user accounts are always in sync. You
-can find it in Zammad's admin interface under
-_System > Integrations > LDAP_.
+::: info
+Zammad matches the user name against the login only, ignoring case. An
+account whose email address matches but whose login differs is not found.
+:::
 
 ## Step 1: Configure active directory
 
@@ -581,15 +589,26 @@ local/zammad-sso/             files mounted into the container
 
 Keep the keytab out of the build context: Docker reads every file in `zammad-sso/` when it builds the image, and a
 keytab that only the container's user may read makes the build fail. The container runs as `www-data` with user ID
-33, so on a Linux host:
+33, so give the keytab to that user and make it readable for nobody else. Do this from a throwaway container, which
+works with a rootful and a rootless Docker daemon. Run it from the stack's directory:
 
 ```sh
-sudo chown 33 local/zammad-sso/zammad.keytab
+docker run --rm -v "$PWD/local/zammad-sso:/k" alpine \
+    sh -c 'chown 33 /k/zammad.keytab && chmod 0400 /k/zammad.keytab'
 ```
 
-```sh
-sudo chmod 0400 local/zammad-sso/zammad.keytab
-```
+Afterwards, your own user on the host can no longer read the keytab. To replace it, delete it, copy the new one in
+its place and run the command again.
+
+::: info
+With a rootless Docker daemon, user ID 33 inside a container is a different user ID on the host. `chown 33` on the
+host therefore fails or gives the keytab to the wrong user, and the container cannot read it.
+:::
+
+::: warning
+Don't solve the permission problem by making the keytab readable for everyone (mode `0644`): anyone who can read it
+can act as the Zammad service towards Active Directory.
+:::
 
 `zammad-sso/Dockerfile` builds Apache with `mod_auth_gssapi` from the Debian packages and runs it unprivileged:
 
@@ -734,7 +753,8 @@ docker compose up -d --build
 ```
 
 The `zammad-sso` container reports `healthy` once the keytab is readable and Apache answers `/auth/sso` with the
-Kerberos challenge. If it stays unhealthy, the keytab is missing or not readable by user ID 33.
+Kerberos challenge. If it stays unhealthy, either the keytab is missing or not readable by user ID 33 inside the
+container, or Apache doesn't answer `/auth/sso` with the expected `401`.
 
 #### Configure the reverse proxy
 
@@ -887,6 +907,17 @@ browser rather than Windows Settings.
   synchronized within five minutes of each other? Kerberos is a
   time-sensitive protocol!
 
+### Errors in Zammad
+
+#### "User `<name>` could not be found"
+
+Kerberos authentication succeeded, but Zammad has no user whose login is `<name>`. SSO does not create accounts.
+Make sure the user exists in Zammad and that their login matches their Active Directory user name, e.g. by running
+the LDAP integration with `sAMAccountName` mapped to the login.
+
+The LDAP integration skips Active Directory users whose first name, last name and email address are all empty, so
+these users never get an account in Zammad. Fill in at least one of these attributes in Active Directory.
+
 ### Errors in Apache logs
 
 ::: tip
@@ -968,6 +999,19 @@ Zammad resolves the names in `RAILS_TRUSTED_PROXIES` when it starts, see
 [environment variables](/en/reference/environment-variables), so it still trusts the proxy's old address, sees the new
 one as the client and checks it against **Trusted SSO Proxy IPs**. Restart the services that trust the proxy:
 `docker compose restart zammad-railsserver zammad-websocket`.
+
+#### The zammad-sso container stays unhealthy
+
+Two things can make the container unhealthy: the keytab and Apache itself.
+
+Check whether the container's user can read the keytab: `docker compose exec zammad-sso klist -k
+/etc/apache2/zammad.keytab`. If it reports "Permission denied while starting keytab scan", the keytab's owner was set
+on the host, which does not work with a rootless Docker daemon. Set it from a container as described in
+[Docker installation](#docker-installation).
+
+If the keytab is readable, Apache is the problem: `docker compose logs zammad-sso` shows its startup and request
+errors. A common cause is a syntax error in `zammad-sso/zammad-sso.conf`, which stops Apache before it can answer
+`/auth/sso` at all.
 
 #### Signing in via SSO fails although the zammad-sso container is healthy
 
