@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-11-12 06:12+0000\n"
+"PO-Revision-Date: 2026-11-19 13:12+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <https://translations.zammad.org/projects/"
 "documentations/zammad-org/hu/>\n"
@@ -3817,6 +3817,11 @@ msgid ""
 "a warning above the conversation states that the ticket was created because "
 "the email could not be processed. Two buttons let you look at what arrived:"
 msgstr ""
+"A Zammad a beérkező e-maileket jegyekké alakítja. Ha egy e-mailt egyáltalán "
+"nem sikerült feldolgozni, akkor a jegy nem jeleníti meg az e-mailt "
+"bejegyzésként. Ehelyett a beszélgetés fölött egy figyelmeztetés jelzi, hogy "
+"a jegy azért jött létre, mert az e-mailt nem sikerült feldolgozni. Két gomb "
+"teszi lehetővé annak megnézését, hogy mi érkezett:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:167
@@ -3837,6 +3842,10 @@ msgid ""
 "address, because Zammad could not read a usable sender address. What you do "
 "next depends on what the raw email reveals:"
 msgstr ""
+"Előfordulhat, hogy a jegy egyáltalán nem jelenít meg ügyfelet, vagy e-mail-"
+"cím nélküli ügyfelet jelenít meg, mert a Zammad nem tudott kiolvasni "
+"használható küldőcímet. A további teendő attól függ, hogy mit árul el a "
+"nyers e-mail:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:177
@@ -3845,6 +3854,10 @@ msgid ""
 "missing address via **Edit customer**, or use **Change customer** to pick "
 "the customer you want to answer."
 msgstr ""
+"**Sérült küldőcím**: a nyers e-mail megjeleníti, hogy ki írt. Javítsa ki a "
+"hiányzó címet az **Ügyfél szerkesztése** gombbal, vagy használja az **Ügyfél "
+"megváltoztatása** gombot annak az ügyfélnek a kiválasztásához, akinek "
+"válaszolni szeretne."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:177
@@ -3852,6 +3865,9 @@ msgid ""
 "**No sender at all**: the ticket has no customer. Look up who wrote in the "
 "raw email and use **Change customer** to pick them."
 msgstr ""
+"**Egyáltalán nincs küldő**: a jegynek nincs ügyfele. Keresse meg a nyers e-"
+"mailben, hogy ki írta, majd használja az **Ügyfél megváltoztatása** gombot a "
+"kiválasztásához."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/basics/work-with-tickets.md:177
@@ -3859,6 +3875,8 @@ msgid ""
 "**Nothing readable**: check the processing log, close the ticket and hand "
 "the raw email and the processing log to your administrator."
 msgstr ""
+"**Semmi nem olvasható**: nézze meg a feldolgozási naplót, zárja le a jegyet, "
+"majd adja át a nyers e-mailt és a feldolgozási naplót az adminisztrátorának."
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:182
@@ -5996,6 +6014,8 @@ msgid ""
 "Connecting takes a personal access token and the address of the server in "
 "your client."
 msgstr ""
+"A kapcsolódáshoz egy személyes hozzáférési tokenre és a kiszolgáló címére "
+"van szükség az ügyfélprogramjában."
 
 #. type: Title ###
 #: src/en/documentation/use/guides/mcp-server.md:19
@@ -6088,6 +6108,9 @@ msgid ""
 "connection works, a first request such as \"Show my assigned tickets\" shows "
 "whether the client reaches Zammad."
 msgstr ""
+"Más ügyfélprogramok is ugyanezt a három bejegyzést kérik a saját űrlapjukon. "
+"Amint a kapcsolat működik, az első kérés, például „Mutasd a hozzám rendelt "
+"jegyeket” megmutatja, hogy az ügyfélprogram eléri-e a Zammadot."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/mcp-server.md:63
@@ -6096,6 +6119,9 @@ msgid ""
 "Zammad with. If the connection fails, check that the client uses exactly "
 "that address."
 msgstr ""
+"A Zammad csak azon a címen válaszol, amelyre be van állítva, vagyis azon, "
+"amelyen a Zammadot megnyitja. Ha a kapcsolat sikertelen, akkor ellenőrizze, "
+"hogy az ügyfélprogram pontosan azt a címet használja-e."
 
 #. type: Title ##
 #: src/en/documentation/use/guides/mcp-server.md:64
@@ -6120,11 +6146,14 @@ msgid ""
 "Open a ticket by its number, its ID or a pasted link, and read its messages, "
 "internal notes, attachments, history and shared draft."
 msgstr ""
+"Jegy megnyitása a száma, az azonosítója vagy egy beillesztett hivatkozás "
+"alapján, valamint az üzenetei, a belső jegyzetei, a mellékletei, az "
+"előzményei és a megosztott piszkozatai olvasása."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
 msgid "Read a ticket's customer and organization."
-msgstr ""
+msgstr "Egy jegy ügyfelének és szervezetének olvasása."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
@@ -6132,6 +6161,8 @@ msgid ""
 "Find tickets by words and by names, such as the customer, organization, "
 "state, owner, group or priority of a ticket."
 msgstr ""
+"Jegyek keresése szavak és nevek alapján, mint például egy jegy ügyfele, "
+"szervezete, állapota, tulajdonosa, csoportja vagy prioritása."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
@@ -6140,11 +6171,14 @@ msgid ""
 "by creation or last update, so that the client can start at the oldest "
 "ticket."
 msgstr ""
+"Saját áttekintések és az azok jegyeinek felsorolása, valamint a listák "
+"rendezése, például a létrehozás vagy az utolsó frissítés szerint, hogy az "
+"ügyfélprogram a legrégebbi jeggyel kezdhesse."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
 msgid "Search users, organizations and the knowledge base."
-msgstr ""
+msgstr "Felhasználók, szervezetek és a tudásbázis keresése."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
@@ -6152,22 +6186,29 @@ msgid ""
 "Read the text of files attached to a message: text files up to 10 MB, other "
 "files come back as a link to download them."
 msgstr ""
+"Egy üzenethez csatolt fájlok szövegének olvasása: legfeljebb 10 MB méretű "
+"szövegfájlok, az egyéb fájlok a letöltésükre mutató hivatkozásként jelennek "
+"meg."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
 msgid "Change ticket attributes, set tags and add internal notes."
 msgstr ""
+"Jegyattribútumok megváltoztatása, címkék beállítása és belső jegyzetek "
+"hozzáadása."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
 msgid ""
 "Save and send shared drafts, and link tickets and knowledge base answers."
 msgstr ""
+"Megosztott piszkozatok mentése és küldése, valamint jegyek és "
+"tudásbázisválaszok hozzákapcsolása."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/mcp-server.md:83
 msgid "Create tickets and write messages."
-msgstr ""
+msgstr "Jegyek létrehozása és üzenetek írása."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/mcp-server.md:87
@@ -6177,6 +6218,12 @@ msgid ""
 "accept plain text only, HTML is refused there. Files cannot be sent through "
 "the client: if you want to send one, add it to the message in Zammad itself."
 msgstr ""
+"Az üzenetek, a jegyzetek és a piszkozatok egyszerű szövegként vagy HTML-"
+"formátumban is írhatók. A Zammad az utóbbiból eltávolítja a nem biztonságos "
+"jelöléseket. Az SMS, a Telegram, a WhatsApp és a Facebook csak egyszerű "
+"szöveget fogad el, a HTML ott elutasításra kerül. Fájlokat nem lehet az "
+"ügyfélprogramon keresztül küldeni: ha szeretne fájlt küldeni, akkor adja "
+"hozzá az üzenethez magában a Zammadban."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/mcp-server.md:90
@@ -6185,6 +6232,9 @@ msgid ""
 "and records it. You can also tell it that you account no time, and Zammad "
 "then records the message without accounted time."
 msgstr ""
+"Ahol egy jegy időelszámolást kér, az ügyfélprogram megkérdezi Öntől az időt, "
+"és rögzíti azt. Azt is megmondhatja, hogy nem számol el időt, és a Zammad "
+"ekkor elszámolt idő nélkül rögzíti az üzenetet."
 
 #. type: Title ##
 #: src/en/documentation/use/guides/mcp-server.md:91
@@ -6200,6 +6250,10 @@ msgid ""
 "message, the recipients and the visibility, and Zammad sends only after you "
 "accept."
 msgstr ""
+"Ahol az ügyfélprogram meg tudja jeleníteni, a Zammad megkéri Önt, hogy "
+"hagyjon jóvá egy üzenetet, mielőtt az eljutna egy ügyfélhez. A jóváhagyási "
+"kérés megjeleníti az üzenet teljes szövegét, a címzetteket és a "
+"láthatóságot, és a Zammad csak azután küldi el, ha Ön jóváhagyta."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/mcp-server.md:98
@@ -6208,6 +6262,10 @@ msgid ""
 "client can then offer to save the text as the ticket's shared draft, where "
 "the group allows shared drafts, for you to send it from Zammad itself."
 msgstr ""
+"Ha elutasítja, akkor a Zammad nem küld el semmit, és semmit sem változtat a "
+"jegyen. Az ügyfélprogram ekkor felajánlhatja, hogy elmenti a szöveget a jegy "
+"megosztott piszkozataként Önnek, ahol a csoport engedélyezi a megosztott "
+"piszkozatokat, hogy magából a Zammadból küldje el."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/mcp-server.md:102
@@ -6219,6 +6277,15 @@ msgid ""
 "Keep the approval of tool calls enabled in your client, because a client "
 "that runs them without a prompt sends a message without any further question."
 msgstr ""
+"Egy olyan ügyfélprogram, amely nem tudja megjeleníteni a jóváhagyási "
+"űrlapot, az eszközhívás saját jóváhagyására támaszkodik, ahogyan minden "
+"változtatás esetén, és a Zammad nem kérdezi meg másodszor. A Zammad továbbra "
+"is kéri az Ön jóváhagyását két változtatás esetén: egy már elmentett, "
+"megosztott piszkozat cseréjénél, valamint egy olyan jegy lezárásánál, "
+"amelynek ellenőrzőlistája hiányos. Folyamatosan engedélyezze az "
+"eszközhívások jóváhagyását az ügyfélprogramban, mert egy olyan "
+"ügyfélprogram, amely kérés nélkül futtatja azokat, további kérdés nélkül "
+"küld el egy üzenetet."
 
 #. type: Title #
 #: src/en/documentation/use/guides/mobile-view.md:1
@@ -6740,6 +6807,9 @@ msgid ""
 "its details without opening it. A click on the title or on the ticket number "
 "opens the ticket as usual."
 msgstr ""
+"Húzza az egérmutatót az áttekintésben lévő jegy címe vagy jegyszáma fölé, "
+"hogy megnyitás nélkül megtekintse a részleteit. A címre vagy a jegyszámra "
+"való kattintás megnyitja a jegyet a szokásos módon."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:79
@@ -6747,6 +6817,8 @@ msgid ""
 "Besides the title, the number and a button that copies the number, the "
 "popover shows the following if available:"
 msgstr ""
+"A cím, a szám és a számot lemásoló gomb mellett a felugró ablak a "
+"következőket jeleníti meg, ha elérhető:"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:85
@@ -6754,6 +6826,8 @@ msgid ""
 "A **Checked** badge with the number of completed and total checklist items. "
 "It opens the checklist of the ticket."
 msgstr ""
+"Egy **kipipált** jelvény a befejezett és az összes ellenőrzőlista-elem "
+"számával. A jegy ellenőrzőlistáját nyitja meg."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:85
@@ -6761,11 +6835,13 @@ msgid ""
 "A **Customer sentiment** badge with the customer mood detected by AI. It "
 "opens the AI summary of the ticket."
 msgstr ""
+"Egy **ügyfél hangulata** jelvény az ügyfél MI által felismert hangulatával. "
+"A jegy MI-összefoglalóját nyitja meg."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:85
 msgid "The customer intent from the AI summary."
-msgstr ""
+msgstr "Az ügyfél szándéka az MI-összefoglalóból."
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/guides/overviews.md:85
@@ -6773,6 +6849,9 @@ msgid ""
 "The first and the latest article, each with a short preview of its text. If "
 "the AI summary contains a customer intent, only the latest article is shown."
 msgstr ""
+"Az első és a legújabb bejegyzés, mindkettő a szövegének rövid előnézetével. "
+"Ha az MI-összefoglaló tartalmazza az ügyfél szándékát, akkor csak a legújabb "
+"bejegyzés jelenik meg."
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:88
@@ -6782,6 +6861,10 @@ msgid ""
 "the AI summary feature is enabled and a summary already exists for the "
 "ticket."
 msgstr ""
+"A jelvények és az MI-szöveg a megfelelő funkciót igényli. Az ellenőrzőlista-"
+"jelvény csak akkor jelenik meg, ha a jegy nyitott ellenőrzőlistával "
+"rendelkezik, az MI-részek pedig csak akkor, ha az MI-összefoglaló funkció "
+"engedélyezve van, és már létezik összefoglaló a jegyhez."
 
 #. type: Title ###
 #: src/en/documentation/use/guides/overviews.md:89
