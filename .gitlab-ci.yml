@@ -1,5 +1,10 @@
 ---
-image: $CI_REGISTRY/docker/zammad-ci:stable
+default:
+  image: $CI_REGISTRY/docker/zammad-ci:stable
+  # A new pipeline for the same branch or MR cancels the running one, see
+  # "Auto-cancel redundant pipelines" in the CI/CD settings. Jobs that change
+  # the outside world opt out with `interruptible: false`.
+  interruptible: true
 
 workflow:
   rules:
@@ -23,6 +28,26 @@ stages:
 variables:
   # Workaround: https://github.com/moby/buildkit/issues/7007
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
+  # Offered by the "Run pipeline" form, see the screenshots jobs below.
+  FORCE_SCREENSHOTS:
+    value: "false"
+    options:
+      - "false"
+      - "true"
+    description: Generate the screenshots in this pipeline instead of reusing those of develop.
+
+# Keeps the pnpm store between pipelines for as long as pnpm-lock.yaml does not
+# change, so that `pnpm install` links the packages instead of downloading them.
+.pnpm store cache:
+  cache:
+    key:
+      prefix: pnpm-store
+      files:
+        - pnpm-lock.yaml
+    paths:
+      - .pnpm-store
+  before_script:
+    - pnpm config set store-dir .pnpm-store
 
 push to github:
   stage: pre
@@ -61,12 +86,13 @@ disable squash for weblate MRs:
 # translated content itself is not tracked, it is generated at build time.
 push translations update commit:
   stage: pre
+  extends: .pnpm store cache
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_MESSAGE =~ /Translations update from translations[.]zammad[.]org/
       when: always
     - when: never
   script:
-    - pnpm install
+    - pnpm install --frozen-lockfile
     - pnpm i18n
     - git status
     - git config user.email "noreply@weblate.org"
@@ -95,29 +121,114 @@ vale:
   script:
     - vale --config=.vale.ini src/en/
 
+# Generating the screenshots takes a Zammad stack and most of the pipeline's
+# time, so only some pipelines do it: the nightly one of develop (a pipeline
+# schedule, which keeps the screenshots in step with the Zammad develop UI),
+# those of stable (another Zammad version), those that change the suite or this
+# file, and those started with FORCE_SCREENSHOTS=true. All others run
+# `screenshots:reuse` instead. Keep the rules of both jobs inverse.
+#
+# `changes` is limited to push and merge request pipelines: in all others, such
+# as those of "Run pipeline", GitLab has nothing to compare with and counts
+# every file as changed.
 screenshots:
   stage: screenshots
+  # Needs nothing from the lint jobs, so it starts right away: it is the
+  # longest job of the pipeline.
+  needs: []
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $FORCE_SCREENSHOTS == "true"
+    - if: $CI_COMMIT_BRANCH == "stable"
+    - if: $CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - .screenshots/**/*
+        - .gitlab-ci.yml
   image: docker
   before_script:
     - .screenshots/zammad-stack/start.sh
     - docker ps
   script:
     - .screenshots/zammad-stack/screenshots.sh
-    - test -d src/public/screenshots/cypress # check that screenshots were copied from the container
+    - test -d src/public/screenshots/generated # check that screenshots were copied from the container
   after_script:
     - .screenshots/zammad-stack/stop.sh
     - docker ps
   artifacts:
     name: screenshots
     expose_as: "Generated Screenshots"
-    expire_in: 1 week
+    # Long enough for `screenshots:reuse`, see there.
+    expire_in: 30 days
     paths:
-      - src/public/screenshots/cypress
+      - src/public/screenshots/generated
+
+# Takes the screenshots from the latest successful pipeline of develop. GitLab
+# looks for the job in that pipeline only, which has run either `screenshots`
+# or this job; this job passes the screenshots on as its own artifact. Both
+# keep them for 30 days, and every successful pipeline of develop starts that
+# time anew, so they expire only after 30 days without one. GitLab's "Keep
+# artifacts from most recent successful jobs" is off on this instance.
+screenshots:reuse:
+  stage: screenshots
+  needs: []
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - if: $FORCE_SCREENSHOTS == "true"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "stable"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - .screenshots/**/*
+        - .gitlab-ci.yml
+      when: never
+    - when: on_success
+  image:
+    name: alpine/curl:latest
+    entrypoint: ['']
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - rm -rf screenshots.zip src/public/screenshots/generated
+    - |
+      download() {
+        echo "Downloading the artifacts of the job $1 of develop..."
+        curl --fail --silent --show-error --location --output screenshots.zip \
+          --header "JOB-TOKEN: $CI_JOB_TOKEN" \
+          "$CI_API_V4_URL/projects/$CI_PROJECT_ID/jobs/artifacts/develop/download?job=$1"
+      }
+      # Each request looks the latest successful pipeline of develop up anew. When
+      # another one succeeds between the two, the second request asks the new
+      # pipeline for the job it does not have: ask for both once more.
+      download_either() {
+        download screenshots || download screenshots:reuse
+      }
+      download_either || download_either || {
+        echo "The latest successful pipeline of develop has no screenshots, run one with FORCE_SCREENSHOTS=true."
+        exit 1
+      }
+    - unzip -q screenshots.zip
+    - test -d src/public/screenshots/generated
+    - find src/public/screenshots/generated -name '*.png' | wc -l
+  artifacts:
+    name: screenshots
+    expose_as: "Reused Screenshots"
+    expire_in: 30 days
+    paths:
+      - src/public/screenshots/generated
 
 build documentation:
   stage: build documentation
+  extends: .pnpm store cache
+  # Either of the two runs, see their rules.
+  needs:
+    - job: screenshots
+      optional: true
+    - job: screenshots:reuse
+      optional: true
   script:
-    - pnpm install
+    - pnpm install --frozen-lockfile
     # Builds every language into its own directory below dist/, its search
     # documents into search-index/ and the data of the MCP server into
     # agent-data/.
@@ -196,6 +307,8 @@ test mcp:
 build docker image:
   stage: build docker image
   image: docker:latest
+  # Pushes the images the deploy pulls.
+  interruptible: false
   variables:
     IMAGE: $CI_REGISTRY_IMAGE:develop
   script:
@@ -212,9 +325,14 @@ build docker image:
     - docker logout "$CI_REGISTRY"
   only:
     - develop
+  # The nightly pipeline only refreshes the screenshots that later pipelines
+  # reuse; the website gets them with the next merge.
+  except:
+    - schedules
 
 deploy to website:
   stage: deploy
+  interruptible: false
   before_script:
     - apt update && apt install -y --no-install-recommends rsync
   script:
@@ -239,3 +357,6 @@ deploy to website:
     - ssh -4 $DEPLOYUSER_COMMUNITY@$DEPLOYHOST_COMMUNITY -tt "sudo docker image prune -a -f"
   only:
     - develop
+  # Not in the nightly pipeline, see `build docker image`.
+  except:
+    - schedules

@@ -1,0 +1,51 @@
+// Examples of element screenshots, clips and highlights. Copy this file to a
+// name ending in `.spec.js` to run it.
+import {
+  test,
+  loginAs,
+  screenshot,
+  screenshotOf,
+  box,
+  union,
+  button,
+  textIn,
+  highlight,
+  waitForGqlResponse,
+  closeTab,
+} from '../support/screenshots.js'
+
+test.describe('testing element screenshots', () => {
+  test.beforeEach(async ({ page }) => {
+    await loginAs(page, 'AGENT1')
+    const tags = waitForGqlResponse(page, 'autocompleteSearchTag')
+    await page.goto('/desktop/tickets/create')
+    await tags
+  })
+
+  test.afterEach(async ({ page }) => {
+    await closeTab(page, 'Received Call')
+  })
+
+  test('ticket article sender tabs', async ({ page }) => {
+    await screenshotOf(page.locator('[data-type="toggleButtons"] .formkit-block'), 'test-ticket-article-sender-tabs')
+  })
+
+  test('treeselect field with highlighted option', async ({ page }) => {
+    const group = textIn(page.locator('label'), 'Group')
+    await group.click()
+    await page.keyboard.press('Enter')
+    await page.keyboard.press('ArrowUp')
+    await page.waitForTimeout(300) // transition
+    const field = group.locator('xpath=ancestor::*[contains(concat(" ", @class, " "), " formkit-outer ")][1]')
+    await screenshot(
+      page,
+      'test-treeselect-field-with-highlighted-option',
+      await union(await box(field), await box(page.locator('#field-tree-select-input-dropdown'))),
+    )
+  })
+
+  test('highlight create button', async ({ page }) => {
+    await highlight(button(page, 'Create'))
+    await screenshot(page, 'highlight-create-button', { x: 260, y: 350, width: 1020, height: 450 })
+  })
+})

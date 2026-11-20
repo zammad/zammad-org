@@ -11,7 +11,7 @@ up who is calling, to keep a call log and to help you start working on a call ri
 This feature is optional. Your admin has to connect Zammad to a telephony backend first. Once they do, a
 **Phone** entry appears in the navigation sidebar and stays there for as long as the backend is configured.
 
-![Screenshot shows the caller log in the Zammad desktop view](/screenshots/cypress/documentation/use/guide-cti.cy.js/caller-log-full.png)
+![Screenshot shows the caller log in the Zammad desktop view](/screenshots/generated/documentation/use/guide-cti/caller-log-full.png)
 
 ## Call notifications
 
@@ -24,7 +24,7 @@ a call that starts ringing. Clicking that notification brings Zammad up and open
 shows such a notification only if you allowed notifications for Zammad and only in the Zammad tab you used last.
 Switched off, none of that happens.
 
-![Screenshot shows the Phone entry with call notifications switched off, without a counter and without ringing calls](/screenshots/cypress/documentation/use/guide-cti.cy.js/sidebar-notifications-off.png)
+![Screenshot shows the Phone entry with call notifications switched off, without a counter and without ringing calls](/screenshots/generated/documentation/use/guide-cti/sidebar-notifications-off.png)
 
 With the toggle switched off:
 
@@ -43,7 +43,7 @@ You answer a call in your phone software or on your headset, not in Zammad. Inco
 navigation sidebar directly below the **Phone** entry, one row per call. Each row shows the caller's number and,
 where Zammad could identify them, their name.
 
-![Screenshot shows the Phone entry in the navigation sidebar with a ringing call from a known and an unknown caller below it](/screenshots/cypress/documentation/use/guide-cti.cy.js/sidebar-ringing-call.png)
+![Screenshot shows the Phone entry in the navigation sidebar with a ringing call from a known and an unknown caller below it](/screenshots/generated/documentation/use/guide-cti/sidebar-ringing-call.png)
 
 Next to a ringing call you find a ::+:: button to create a new ticket for that call. For a caller Zammad does not
 know, a `New user` button creates the customer first, and Zammad then continues with a ticket create screen for
@@ -78,7 +78,7 @@ Each row shows:
 - **Waiting** and **Duration**: how long the call waited before it was answered and how long it lasted.
 - **Time**: when the call happened.
 
-![Screenshot shows the caller log with call entries and the different caller matches](/screenshots/cypress/documentation/use/guide-cti.cy.js/caller-log-table.png)
+![Screenshot shows the caller log with call entries and the different caller matches](/screenshots/generated/documentation/use/guide-cti/caller-log-table.png)
 
 Handled calls stay in the list but are greyed out, so you can still tell them apart from the ones you have not
 processed yet.

@@ -24,7 +24,7 @@ dealing with large tickets and/or many hand-overs between agents.
 If the feature is activated, a summary of the ticket is generated when the ticket got updated and you either open the
 ticket or open the summary sidebar tab of the ticket, depending on the configuration.
 
-![Screenshot shows Zammad's ticket detail view with highlighted ticket summary banner and summary sidebar](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-sidebar.png)
+![Screenshot shows Zammad's ticket detail view with highlighted ticket summary banner and summary sidebar](/screenshots/generated/documentation/use/guide-ai/ai-ticket-summary-sidebar.png)
 
 Depending on the configuration of your Zammad instance, the summary includes the following sections:
 
@@ -42,7 +42,7 @@ To use such a tool, you first have to select text you want to apply the changes 
 click the `Writing Assistant Tools` button at the left side of the editor toolbar and choose one of the following
 tools, depending on what you want to perform.
 
-![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)
+![Screenshot shows Zammad's smart editor menu](/screenshots/generated/documentation/use/guide-ai/ai-writing-assistant-tools.png)
 
 ::: warning
 
@@ -67,7 +67,7 @@ might even have additional custom tools in case your admin added them.
 
 ## Knowledge base assistant
 
-![Screenshot shows the related knowledge section of the ticket sidebar with an AI-generated draft and a suggested knowledge base answer](/screenshots/cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)
+![Screenshot shows the related knowledge section of the ticket sidebar with an AI-generated draft and a suggested knowledge base answer](/screenshots/generated/documentation/use/guide-ai/ai-knowledge-base-assistant.png)
 
 ### Knowledge base answer generation
 

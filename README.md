@@ -75,21 +75,37 @@ Every language is served as an app of its own from its own directory (`/en/`, `/
 
 The web server runs as a Docker container in production and locally. See `docker/README.md` for the configuration, local testing and deployment. `pnpm preview` serves the build as plain files, so the redirects above and the per-language error pages only take effect with the web server.
 
-## Automatic Screenshots (Cypress)
+## Automatic Screenshots
+
+The screenshots of the documentation are taken by a [Playwright](https://playwright.dev/) suite in `.screenshots/`, from a Zammad stack with seeded demo data.
 
 First, start a local Zammad stack via docker compose: `pnpm screenshots:start-stack`. This will run against the `develop` docker image of Zammad. If you want another one like `stable` or a specific version, you can pass it via environment variable like so: `ZAMMAD_VERSION=stable …`.
 
-Now you can install cypress by running `pnpm screenshots:install`.
+The stack runs without Elasticsearch and without the backup service, to keep it small and fast to start: Zammad falls back to its database search, which is enough for the screenshots. `start.sh` writes `ELASTICSEARCH_ENABLED=false` and a `COMPOSE_FILE` with the scenarios `disable-elasticsearch-service.yml` and `disable-backup-service.yml` into `.screenshots/zammad-stack/zammad-docker-compose/.env`. To start the stack with Elasticsearch, e.g. to compare a screenshot of the search, pass `ZAMMAD_ELASTICSEARCH=true pnpm screenshots:start-stack`. Run any `docker compose` command for the stack from `.screenshots/zammad-stack/zammad-docker-compose/`, so that it picks up that `.env`.
 
-A Firefox installation is required for the local screenshots: the suite is pinned to Firefox via `defaultBrowser` in `.screenshots/cypress.config.js` and Cypress aborts when that browser is missing. To run in another browser instead, pass it explicitly, e.g. `pnpm --dir ./.screenshots exec cypress run --browser chrome` (on Wayland, Electron additionally needs `ELECTRON_EXTRA_LAUNCH_ARGS='--ozone-platform=x11'`).
+Install the suite with `pnpm screenshots:install`, and Chromium for it with `pnpm --dir ./.screenshots exec playwright install --with-deps chromium` (the dev container does both when it is created). The suite runs in Chromium only, which the UI mode of `pnpm screenshots:dev` needs anyway; Playwright brings its own build of it.
 
-Then, to generate automatic screenshots, run `pnpm screenshots:build`. The screenshots will be stored under `src/public/screenshots/cypress/`, but will not be tracked by Git.
+Then, to generate the screenshots, run `pnpm screenshots:build`. They are stored under `src/public/screenshots/generated/`, but are not tracked by Git; the hand-made screenshots live next to it, in the other directories of `src/public/screenshots/`. The suite expects the stack at `http://localhost:8080`; set `SCREENSHOTS_BASE_URL` for another address (the dev container sets it to the Docker host). Zammad is set up for `localhost:8080` and shows a warning on every page reached through another address, which then shows in the screenshots as well.
 
-To implement new screenshots, run `pnpm screenshots:dev` and Cypress will open in a separate window. Make sure to run the build command when ready, so the screenshot is saved in its correct place.
+To implement new screenshots, run `pnpm screenshots:dev`: it opens Playwright's UI mode, in the dev container on its desktop (noVNC on port 6080). The specs live in `.screenshots/tests/`, the helpers for logging in, cropping and highlighting in `.screenshots/support/screenshots.js`, and `.screenshots/tests/*.spec.js.example` shows how to use them. A screenshot named `foo` in `tests/documentation/use/basics.spec.js` is written to `generated/documentation/use/basics/foo.png`, and the documentation refers to it as `/screenshots/generated/documentation/use/basics/foo.png`.
 
-> NOTE: You may need to run the build/dev command twice in succession, in case you just started the Zammad stack for the first time, otherwise Cypress may hang. This will obviously get addressed in the future, but for now just run the tests once before starting to work on it and expect it to fail.
+In CI, the suite runs in the official Playwright image, as the `screenshots-runner` service of the stack (see `start.sh` and `screenshots.sh`), in the network namespace of `zammad-nginx`, so that it reaches Zammad at `localhost:8080`. Its tag follows the version of `@playwright/test` in `.screenshots/package.json`.
 
 Finally, the Zammad stack can be shut down via `pnpm screenshots:stop-stack`. This will also remove any associated volume data.
+
+### Screenshots in CI
+
+Every build needs the screenshots, but generating them takes a Zammad stack and most of a pipeline's time. That is why most pipelines reuse the screenshots of `develop`:
+
+- **GitLab:** the `screenshots` job generates them in the nightly pipeline of `develop` (a pipeline schedule), in pipelines of `stable` (another Zammad version), and in pipelines that change `.screenshots/` or `.gitlab-ci.yml`. All other pipelines run `screenshots:reuse`, which downloads the screenshots of the latest successful pipeline of `develop`. The nightly pipeline does not deploy: the website gets the refreshed screenshots with the next merge.
+- **GitHub:** the workflow does the same. It generates the screenshots in its nightly run on `develop` and in pull requests that change `.screenshots/` or `.github/workflows/ci.yml`. All other runs take them from the last successful nightly run.
+
+The nightly run keeps the screenshots in step with the Zammad `develop` UI. When a change of that UI breaks a spec, the nightly run fails, and all other pipelines keep reusing the screenshots of the last successful night.
+
+To generate the screenshots for a branch that does not change the suite, e.g. to see a Zammad UI change:
+
+- **GitLab:** Build → Pipelines → Run pipeline, select the branch and set `FORCE_SCREENSHOTS` to `true`. Merge request pipelines take no variables, so this runs a branch pipeline.
+- **GitHub:** run the workflow manually (Actions → Run workflow) with "force" checked.
 
 ## Additional Info
 

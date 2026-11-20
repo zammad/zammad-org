@@ -22,7 +22,7 @@ Depending on the enabled two-factor methods, you may see one or more options in 
 
 To set up a two-factor method, use the ::+:: button and follow the steps.
 
-![Screenshot shows 2FA methods in personal settings](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)
+![Screenshot shows 2FA methods in personal settings](/screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-setup.png)
 
 In a modal dialog, you will be asked to confirm your current password.
 
@@ -142,14 +142,14 @@ settings' 2FA section and choose **Set as default**.
 To identify your current default two-factor authentication method, look for a small blue badge next to the
 method name.
 
-![Screenshot shows list of 2FA methods and default method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)
+![Screenshot shows list of 2FA methods and default method](/screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-overview.png)
 
 A default two-factor authentication method is just your preferred method during the sign-in process. You will always
 have an option to try signing in using another method.
 
 ## Edit a 2FA method
 
-![Screenshot shows the action menu for an already set up 2FA method](/screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-action-menu.png)
+![Screenshot shows the action menu for an already set up 2FA method](/screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-action-menu.png)
 
 To edit an already set up two-factor method, use the ::a:: actions menu next to it and choose **Edit**. In a modal
 dialog, you will be asked to confirm your current password.

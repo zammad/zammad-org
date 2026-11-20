@@ -8,7 +8,7 @@ title: Knowledge base
 The knowledge base is Zammad's built-in library for FAQs, how-tos and internal documentation. Customers browse
 published answers for self-service, agents use them as a reference or insert them directly into ticket replies.
 
-![Screenshot shows a knowledge base category with its subcategories and answers](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/knowledge-base-full.png)
+![Screenshot shows a knowledge base category with its subcategories and answers](/screenshots/generated/documentation/use/guide-knowledge-base/knowledge-base-full.png)
 
 ## Basics
 
@@ -97,7 +97,7 @@ for the detailed search and the full Elasticsearch syntax.
 
 ### Categories
 
-![Screenshot shows the edit category flyout with title, icon and parent fields](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-category-flyout.png)
+![Screenshot shows the edit category flyout with title, icon and parent fields](/screenshots/generated/documentation/use/guide-knowledge-base/kb-category-flyout.png)
 
 To create a **category**, select the `+ Add category` card. This works on the knowledge base home for top-level
 categories as well as inside a category for subcategories. Another way to create a new category inside another category
@@ -167,7 +167,7 @@ an answer instead to not lose its content.
 
 ### Sort content
 
-![Screenshot shows the sorting bar with the mode switcher highlighted and the answers tab active](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-sort-content.png)
+![Screenshot shows the sorting bar with the mode switcher highlighted and the answers tab active](/screenshots/generated/documentation/use/guide-knowledge-base/kb-sort-content.png)
 
 Categories and answers can be sorted per category. Open the ::a:: menu in the top bar and select **Sort content**.
 The sorting bar appears at the bottom of the screen. Inside a category, switch between the **Categories** and **Answers**
@@ -188,7 +188,7 @@ Select the mode, arrange the entries if needed and save. The order applies for e
 
 ### Visibility and scheduling
 
-![Screenshot shows the scheduled visibility section in the answer sidebar, highlighted](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-scheduled-visibility.png)
+![Screenshot shows the scheduled visibility section in the answer sidebar, highlighted](/screenshots/generated/documentation/use/guide-knowledge-base/kb-scheduled-visibility.png)
 
 To change the visibility of an answer, edit the answer and select the new visibility in the answer sidebar; it
 takes effect immediately when you click `Update`. Use drafts to prepare content that is not ready for release, and

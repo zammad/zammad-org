@@ -808,7 +808,7 @@ User::TwoFactorPreference.create!(user_id: morganreed.id, method: 'authenticator
 # application_secret (PasswordHash.crypt peppers with it). A pre-baked
 # argon2id hardcoded in the file will not verify once db:seed has run
 # with a different secret. Render a known plaintext (the recovery code
-# the Cypress 2FA guide expects) and repeat it many times so the test
+# the 2FA screenshots expect) and repeat it many times so the test
 # can be run multiple times against the same stack instance.
 known_code  = '7f80b91f6bcd7b60'
 hashed_codes = Array.new(50) { PasswordHash.crypt(known_code) }
@@ -1145,7 +1145,7 @@ SeedHelpers.set_setting_without_validation(name: 'cti_integration', value: true)
 
 # The caller notification reads the user preference 'cti', the same key the old interface
 # writes. With it off the sidebar entry renders quiet: no counter and no ringing calls.
-# The Cypress specs log in as the admin account, so that one needs it as well.
+# The screenshot specs log in as the admin account, so that one needs it as well.
 puts 'Enabling caller notification for agents...'
 
 cti_agents = [johndoe, liamchen, User.find_by!(login: 'lauren@fastlane.inc')]

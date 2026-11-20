@@ -1,12 +1,13 @@
 {
   "private": "true",
+  "type": "module",
   "devDependencies": {
-    "cypress": "^16.0.0"
+    "@playwright/test": "1.64.1"
   },
   "scripts": {
-    "dev": "cypress open",
-    "build": "cypress run",
-    "build:ci": "cypress run --config '{\"e2e\":{\"screenshotsFolder\":\"dist/cypress\"}}'"
+    "dev": "playwright test --ui",
+    "build": "playwright test",
+    "build:ci": "SCREENSHOTS_DIR=dist/generated playwright test"
   },
   "packageManager": "pnpm@12.21.0"
 }

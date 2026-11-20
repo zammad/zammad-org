@@ -28,7 +28,7 @@ Searching for a term also matches any values that begin with it. For example, se
 like `brookster`. This does not apply when you use an attribute notation like `owner.lastname:brooks`
 (described in the [Elasticsearch syntax](#using-elasticsearch-syntax) section below), which matches exact values only.
 
-![Screenshot shows search results in the taskbar](/screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)
+![Screenshot shows search results in the taskbar](/screenshots/generated/documentation/use/guide-search/search-sidebar.png)
 
 If you press [[enter]] or click on `detailed search`, Zammad opens the detailed search as a tab in the taskbar. There
 you can narrow down your search by selecting a specific object type (e.g. organization), using advanced filters or even
@@ -42,7 +42,7 @@ narrow down the search in the detailed search page.
 Advanced filters are not available for customer accounts. If your account has customer permissions only, the
 **Search entity** selector and the advanced filter options described below are not shown.
 
-![Screenshot shows detailed search](/screenshots/cypress/documentation/use/guide-search.cy.js/search-detail.png)
+![Screenshot shows detailed search](/screenshots/generated/documentation/use/guide-search/search-detail.png)
 
 ### Sort the results
 

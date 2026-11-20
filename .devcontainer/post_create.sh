@@ -6,4 +6,5 @@ CI=true pnpm install --frozen-lockfile
 mkdir -p .screenshots/node_modules
 sudo chown -R vscode .screenshots/node_modules
 CI=true pnpm screenshots:install
-CI=true pnpm --dir ./.screenshots exec cypress install
+# Chromium for the screenshots, with the system libraries it needs.
+CI=true pnpm --dir ./.screenshots exec playwright install --with-deps chromium

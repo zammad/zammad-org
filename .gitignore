@@ -10,8 +10,10 @@ dist
 .vitepress/config.mts.timestamp-*
 
 .screenshots/zammad-stack/zammad-docker-compose
-.screenshots/cypress/downloads
-src/public/screenshots/cypress
+# Reports and traces of the screenshot runs.
+.screenshots/test-results
+.screenshots/playwright-report
+src/public/screenshots/generated
 
 # Content generated from the PO files by `pnpm i18n` / `pnpm i18n:locale`.
 src/de

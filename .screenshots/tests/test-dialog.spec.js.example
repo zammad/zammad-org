@@ -1,0 +1,18 @@
+// Example of a dialog screenshot. Copy this file to a name ending in
+// `.spec.js` to run it.
+import { test, loginAs, screenshotOf, button, waitForGqlResponse, closeTab } from '../support/screenshots.js'
+
+test.describe('testing dialog screenshots', () => {
+  test('discarding unsaved article changes', async ({ page }) => {
+    await loginAs(page, 'AGENT1')
+    const macros = waitForGqlResponse(page, 'macros')
+    await page.goto('/desktop/tickets/2')
+    await macros
+    await button(page, 'Add internal note').click()
+    await button(page, 'Discard your unsaved changes').click()
+    await page.waitForTimeout(300) // transition
+    await screenshotOf(page.locator('[role="dialog"]'), 'test-discarding-unsaved-article-changes')
+    await button(page, 'Discard Changes').click()
+    await closeTab(page, 'Refund for order 4388019')
+  })
+})

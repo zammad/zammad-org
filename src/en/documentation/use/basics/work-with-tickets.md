@@ -36,7 +36,7 @@ To choose another article type, use the channel tabs (labeled **Note**, **Phone*
 different type. Use the **Visibility** switch to toggle the article between internal and public visibility.
 Articles with internal visibility are highlighted with a dashed blue border; public articles have no highlighting.
 
-![Screenshot shows article type selector and visibility toggle](/screenshots/cypress/documentation/use/basics.cy.js/article-type-visibility.png)
+![Screenshot shows article type selector and visibility toggle](/screenshots/generated/documentation/use/basics/article-type-visibility.png)
 
 To write and edit text, make use of the powerful editor features. You can use the toolbar or keyboard shortcuts to
 format text and trigger special functions. Because of the amount of features and their importance, you can find more
@@ -56,7 +56,7 @@ the editor with the appropriate channel and visibility selected. You can change 
 like. To answer the customer directly or to forward a specific article, use the corresponding buttons under an
 article. Read the next section for more information.
 
-![Screenshot shows the action row under the last article in the ticket detail view](/screenshots/cypress/documentation/use/basics.cy.js/new-article.png)
+![Screenshot shows the action row under the last article in the ticket detail view](/screenshots/generated/documentation/use/basics/new-article.png)
 
 ### Respond to an article
 
@@ -70,7 +70,7 @@ is similar to the behavior of an email client.
 - **Forward**: This means you can forward the original message to a third party or anybody else. The original message
   and attachments are included in your new article.
 
-![Screenshot shows article reply actions](/screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)
+![Screenshot shows article reply actions](/screenshots/generated/documentation/use/basics/article-reply.png)
 
 Zammad even allows you to **quote text** from an existing article. This is especially helpful if an answer refers to
 different parts of the original message or the text is pretty long. This feature is limited to communication type
@@ -101,7 +101,7 @@ messages - Zammad provides two conveniences:
   bottom of the ticket detail view. Resize the height by dragging the line on the top edge of the pinned
   reply form. The pin state and the panel size are saved in your browser.
 
-![Screenshot shows the article reply form pinned to the bottom of the ticket detail view](/screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)
+![Screenshot shows the article reply form pinned to the bottom of the ticket detail view](/screenshots/generated/documentation/use/basics/article-reply-pinned.png)
 
 ## Rename a ticket
 
@@ -116,7 +116,7 @@ icon next to the ticket title. It copies the complete ticket number with the tic
 `Ticket#50071`. If pasting the content to a target which can handle HTML, a link to the ticket is included. If you just
 want to paste the ticket number, use plain pasting via [[ctrl]] [[shift]] [[v]] instead.
 
-![Screenshot shows ticket header with highlighted ticket number copy button](/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-button.png)
+![Screenshot shows ticket header with highlighted ticket number copy button](/screenshots/generated/documentation/use/basics/copy-ticket-number-button.png)
 
 But wait, there is even a keyboard shortcut for that! Simply press [[.]] in the ticket detail view and the ticket number
 is copied to your clipboard. To include the ticket title as well, press [[.]] twice.

@@ -14,9 +14,6 @@
     "ghcr.io/devcontainers/features/node:2": {
       "installYarnUsingApt": "false"
     },
-    "ghcr.io/devcontainers-extra/features/apt-get-packages": {
-      "packages": "libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb" // cypress dependencies
-    },
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "password": "noPassword"
     },
@@ -73,7 +70,8 @@
     "LC_ALL" : "C.UTF-8",
     "LANG": "C.UTF-8",
     "LANGUAGE": "C.UTF-8",
-    "CYPRESS_BASE_URL": "http://host.docker.internal:8080",
+    // The Zammad stack of the screenshots, see `pnpm screenshots:start-stack`.
+    "SCREENSHOTS_BASE_URL": "http://host.docker.internal:8080",
     // Local Typesense of `pnpm search:start`, published on the Docker host.
     "TYPESENSE_URL": "http://host.docker.internal:8108"
   },

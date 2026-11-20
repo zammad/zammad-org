@@ -10,7 +10,7 @@ search the page or navigate to the section you want using the table of contents 
 
 ## Ticket update behavior
 
-![Screenshot shows behavior after update menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)
+![Screenshot shows behavior after update menu](/screenshots/generated/documentation/use/advanced-features/ticket-behavior-update.png)
 
 **Why?**
 
@@ -35,7 +35,7 @@ If your situation differs from ticket to ticket, you can leave **Stay on tab** a
 
 ## Text modules
 
-![Screenshot shows text modules feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-text-template.png)
+![Screenshot shows text modules feature](/screenshots/generated/documentation/use/advanced-features/ticket-article-text-template.png)
 
 **Why?**
 
@@ -56,7 +56,7 @@ some text modules in Zammad which are shipped by default.
 
 ## Insert knowledge base article
 
-![Screenshot shows inserting knowledge base article](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)
+![Screenshot shows inserting knowledge base article](/screenshots/generated/documentation/use/advanced-features/ticket-article-insert-kba.png)
 
 **Why?**
 
@@ -71,7 +71,7 @@ desired knowledge base article by typing some characters or words. See
 
 ## Mention a user
 
-![Screenshot shows mentioning a user](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-article-mention.png)
+![Screenshot shows mentioning a user](/screenshots/generated/documentation/use/advanced-features/ticket-article-mention.png)
 
 **Why?**
 
@@ -88,7 +88,7 @@ arrows followed by [[enter]] on your keyboard.
 
 ## Subscribe to a ticket
 
-![Screenshot shows subscribe feature](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-subscribe.png)
+![Screenshot shows subscribe feature](/screenshots/generated/documentation/use/advanced-features/ticket-subscribe.png)
 
 **Why?**
 
@@ -103,7 +103,7 @@ you who has subscribed to the ticket and is therefore notified of updates.
 
 ## Macros
 
-![Screenshot shows macro action menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-macro.png)
+![Screenshot shows macro action menu](/screenshots/generated/documentation/use/advanced-features/ticket-macro.png)
 
 **Why?**
 
@@ -125,7 +125,7 @@ You can also apply a macro to several ticket at once. Have a loot at [bulk actio
 
 ## Checklists
 
-![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)
+![Screenshot shows a checklist from checklist sidebar](/screenshots/generated/documentation/use/advanced-features/ticket-checklist.png)
 
 **Why?**
 
@@ -213,7 +213,7 @@ the next 10 minutes.
 SLA-relevant tickets display a timestamp in the ticket detail header. Hover over this timestamp to see all escalation
 stages and deadlines in a popup. It shows all upcoming or reached escalation times based on your SLA configuration:
 
-![Screenshot shows escalation panel by hovering over escalation timestamp](/screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-panel.png)
+![Screenshot shows escalation panel by hovering over escalation timestamp](/screenshots/generated/documentation/use/advanced-features/escalation-panel.png)
 
 ::: info
 The escalation times are calculated based on your business hours. This means when your business hours start at 9:00, a
@@ -256,7 +256,7 @@ However, until the bulk action is finished, you are not able to start a new bulk
 
 **Flyout:**
 
-![Screenshot shows the bulk action flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)
+![Screenshot shows the bulk action flyout](/screenshots/generated/documentation/use/advanced-features/bulk-side-panel-overviews.png)
 
 After you selected tickets, click the `Bulk Action` button in the top right corner and change/add attributes by using
 the fields in the right flyout. The available changes you can apply to tickets are:
@@ -270,7 +270,7 @@ the fields in the right flyout. The available changes you can apply to tickets a
 
 **Drag & drop with bulk overlay:**
 
-![Screenshot shows the bulk action via drag and drop](/screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)
+![Screenshot shows the bulk action via drag and drop](/screenshots/generated/documentation/use/advanced-features/bulk-action-drag-and-drop.png)
 
 After you selected tickets, drag them by pressing and holding the mouse button and drop them on the desired action in
 the bulk action overlay. You can always skip this by dropping the tickets in the middle of the page. The available
@@ -287,7 +287,7 @@ To include another unselected ticket, start dragging from there and so it is als
 
 ## Merge tickets
 
-![Screenshot shows the ticket merge flyout](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-merge.png)
+![Screenshot shows the ticket merge flyout](/screenshots/generated/documentation/use/advanced-features/ticket-merge.png)
 
 **Why?**
 
@@ -312,7 +312,7 @@ the following changes:
 
 ## Split tickets
 
-![Screenshot shows the article action split menu](/screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-split.png)
+![Screenshot shows the article action split menu](/screenshots/generated/documentation/use/advanced-features/ticket-split.png)
 
 **Why?**
 
@@ -348,7 +348,7 @@ Additionally, you can choose between different link types:
 
 ## Duplicate detection
 
-![Screenshot shows duplicate ticket warning during ticket creation](/screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-detection.png)
+![Screenshot shows duplicate ticket warning during ticket creation](/screenshots/generated/documentation/use/advanced-features/duplicate-detection.png)
 
 **Why?**
 
@@ -378,7 +378,7 @@ your company for billing or to keep track of support budgets.
 
 After updating a ticket, a time accounting dialog will appear. Enter how much time you spent on the ticket.
 
-![Screenshot shows the time accounting dialog](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-dialog.png)
+![Screenshot shows the time accounting dialog](/screenshots/generated/documentation/use/advanced-features/time-accounting-dialog.png)
 
 The feature is **optional**. If you don't see it whenever you update a ticket, your administrator hasn't enabled it yet
 or the rule for tickets to be taken into consideration doesn't match.
@@ -394,7 +394,7 @@ view at the bottom. You can find the calculated sums of each activity type (if c
 of accounted times for all activity types. Accounted time is also shown in the article meta information of each ticket
 article, if present.
 
-![Screenshot shows the time accounting overview](/screenshots/cypress/documentation/use/advanced-features.cy.js/time-accounting-overview.png)
+![Screenshot shows the time accounting overview](/screenshots/generated/documentation/use/advanced-features/time-accounting-overview.png)
 
 ## User detail panel
 
@@ -409,14 +409,14 @@ You might have seen it already: simply hover your mouse over an avatar icon, no 
 main content or the content sidebar in the ticket detail view. To see more details, click on the user avatar to open
 the [user detail page](#user-detail-page).
 
-![Screenshot shows an avatar with opened user detail panel](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)
+![Screenshot shows an avatar with opened user detail panel](/screenshots/generated/documentation/use/advanced-features/user-detail-panel.png)
 
 By the way, the crown in the screenshot represents the customer's VIP state, which can be set in the customer detail
 view and the admin settings.
 
 ## User detail page
 
-![Screenshot shows user detail page](/screenshots/cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)
+![Screenshot shows user detail page](/screenshots/generated/documentation/use/advanced-features/user-detail-page.png)
 
 **Why?**
 
@@ -436,7 +436,7 @@ detail page. In case you also have admin permissions, you can even create a dele
 
 ## Organization detail page
 
-![Screenshot shows organization detail page](/screenshots/cypress/documentation/use/advanced-features.cy.js/organization-detail-page.png)
+![Screenshot shows organization detail page](/screenshots/generated/documentation/use/advanced-features/organization-detail-page.png)
 
 **Why?**
 
@@ -470,7 +470,7 @@ menu in the panel header. Link to an issue by entering the URL of it or select t
 
 The screenshot shows a linked issue in the GitLab content sidebar.
 
-![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-issue.png)
+![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/generated/documentation/use/advanced-features/gitlab-sidebar-linked-issue.png)
 
 The linked issue shows its state, number and title, plus **Milestone**, **Assignees** and **Labels**. GitHub issues
 also show **Type** when one is set, and a field appears only when the issue has one. The badge on the sidebar tab
@@ -493,7 +493,7 @@ highlighting text in existing articles for you and other agents.
 
 **How?**
 
-![Screenshot shows highlight menu from ticket detail view](/screenshots/cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)
+![Screenshot shows highlight menu from ticket detail view](/screenshots/generated/documentation/use/advanced-features/text-highlighting.png)
 
 Use the highlighting tool with the pencil icon in the upper right corner in the ticket detail view. To highlight text,
 either select text first and then click the button. As an alternative, you can click the highlighting button first

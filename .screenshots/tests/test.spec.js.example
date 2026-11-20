@@ -1,0 +1,37 @@
+// Examples of the screenshot helpers. Copy this file to a name ending in
+// `.spec.js` to run it.
+import {
+  test,
+  expect,
+  loginAs,
+  screenshot,
+  screenshotPath,
+  button,
+  highlight,
+  closeTab,
+} from '../support/screenshots.js'
+
+test.describe('testing screenshots', () => {
+  test('full page screenshot', async ({ page }) => {
+    await page.goto('/desktop/login')
+    await expect(page.locator('main')).toBeVisible()
+    await screenshot(page, 'test-screenshot-full-page')
+  })
+
+  test('page element screenshot', async ({ page }) => {
+    await page.goto('/desktop/login')
+    // Playwright's own element screenshot, with the heading masked.
+    await page.locator('main').screenshot({
+      path: screenshotPath('test-screenshot-page-element'),
+      mask: [page.locator('h1')],
+    })
+  })
+
+  test('highlight link issue button', async ({ page }) => {
+    await loginAs(page, 'AGENT1')
+    await page.goto('/desktop/tickets/create')
+    await highlight(button(page, 'Link Issue'))
+    await screenshot(page, 'highlight-link-issue-button')
+    await closeTab(page, 'Received Call')
+  })
+})

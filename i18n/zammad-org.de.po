@@ -1913,11 +1913,11 @@ msgstr "Verhalten bei Ticket-Aktualisierung"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:14
 msgid ""
-"![Screenshot shows behavior after update menu](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-behavior-update.png)"
+"![Screenshot shows behavior after update menu](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-behavior-update.png)"
 msgstr ""
 "![Screenshot zeigt Menü über Verhalten nach Aktualisierung](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)"
+"generated/documentation/use/advanced-features/ticket-behavior-update.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:16
@@ -2048,11 +2048,11 @@ msgstr "Textbausteine"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:39
 msgid ""
-"![Screenshot shows text modules feature](/screenshots/cypress/documentation/"
-"use/advanced-features.cy.js/ticket-article-text-template.png)"
+"![Screenshot shows text modules feature](/screenshots/generated/documentation/"
+"use/advanced-features/ticket-article-text-template.png)"
 msgstr ""
-"![Screenshot zeigt Textbaustein-Feature](/screenshots/cypress/documentation/"
-"use/advanced-features.cy.js/ticket-article-text-template.png)"
+"![Screenshot zeigt Textbaustein-Feature](/screenshots/generated/documentation/"
+"use/advanced-features/ticket-article-text-template.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:45
@@ -2114,11 +2114,11 @@ msgstr "Knowledge Base Artikel einfügen"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:60
 msgid ""
-"![Screenshot shows inserting knowledge base article](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)"
+"![Screenshot shows inserting knowledge base article](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-article-insert-kba.png)"
 msgstr ""
 "![Screenshot zeigt das Einfügen eines Knowledge Base Artikels](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/ticket-article-insert-"
+"generated/documentation/use/advanced-features/ticket-article-insert-"
 "kba.png)"
 
 #. type: Plain text
@@ -2158,11 +2158,11 @@ msgstr "Einen Benutzer erwähnen"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:75
 msgid ""
-"![Screenshot shows mentioning a user](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/ticket-article-mention.png)"
+"![Screenshot shows mentioning a user](/screenshots/generated/documentation/use/"
+"advanced-features/ticket-article-mention.png)"
 msgstr ""
-"![Screenshot zeigt die Erwähnung eines Benutzers](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-article-mention.png)"
+"![Screenshot zeigt die Erwähnung eines Benutzers](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-article-mention.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:80
@@ -2207,11 +2207,11 @@ msgstr "Ein Ticket abonnieren"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:92
 msgid ""
-"![Screenshot shows subscribe feature](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/ticket-subscribe.png)"
+"![Screenshot shows subscribe feature](/screenshots/generated/documentation/use/"
+"advanced-features/ticket-subscribe.png)"
 msgstr ""
-"![Screenshot zeigt die Funktion zum Ticket abonnieren](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-subscribe.png)"
+"![Screenshot zeigt die Funktion zum Ticket abonnieren](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-subscribe.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:97
@@ -2249,11 +2249,11 @@ msgstr "Makros"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:107
 msgid ""
-"![Screenshot shows macro action menu](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/ticket-macro.png)"
+"![Screenshot shows macro action menu](/screenshots/generated/documentation/use/"
+"advanced-features/ticket-macro.png)"
 msgstr ""
-"![Screenshot zeigt Makro-Aktionsmenü](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/ticket-macro.png)"
+"![Screenshot zeigt Makro-Aktionsmenü](/screenshots/generated/documentation/use/"
+"advanced-features/ticket-macro.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:114
@@ -2314,11 +2314,11 @@ msgstr "Checklisten"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:129
 msgid ""
-"![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-checklist.png)"
+"![Screenshot shows a checklist from checklist sidebar](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-checklist.png)"
 msgstr ""
 "![Screenshot zeigt eine Checkliste in der Checklisten-Seitenleiste](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
+"screenshots/generated/documentation/use/advanced-features/ticket-"
 "checklist.png)"
 
 #. type: Bullet: '- '
@@ -2605,12 +2605,12 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:217
 msgid ""
 "![Screenshot shows escalation panel by hovering over escalation timestamp](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-"
+"screenshots/generated/documentation/use/advanced-features/escalation-"
 "panel.png)"
 msgstr ""
 "![Screenshot zeigt den Eskalationsbereich, nachdem der Mauszeiger über den "
-"Eskalations-Zeitstempel bewegt wurde](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/escalation-panel.png)"
+"Eskalations-Zeitstempel bewegt wurde](/screenshots/generated/documentation/use/"
+"advanced-features/escalation-panel.png)"
 
 #. type: Fenced div block (info)
 #: src/en/documentation/use/advanced-features.md:218
@@ -2741,11 +2741,11 @@ msgstr "**Seitenleiste:**\n"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:260
 msgid ""
-"![Screenshot shows the bulk action flyout](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
+"![Screenshot shows the bulk action flyout](/screenshots/generated/"
+"documentation/use/advanced-features/bulk-side-panel-overviews.png)"
 msgstr ""
 "![Screenshot zeigt die Seitenleiste einer Mehrfachaktion](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/bulk-side-panel-"
+"generated/documentation/use/advanced-features/bulk-side-panel-"
 "overviews.png)"
 
 #. type: Plain text
@@ -2801,11 +2801,11 @@ msgstr "**Drag & Drop mit Einblendung der Mehrfach-Aktion:**\n"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:274
 msgid ""
-"![Screenshot shows the bulk action via drag and drop](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)"
+"![Screenshot shows the bulk action via drag and drop](/screenshots/generated/"
+"documentation/use/advanced-features/bulk-action-drag-and-drop.png)"
 msgstr ""
-"![Screenshot zeigt die Mehrfach-Aktion per Drag & Drop](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)"
+"![Screenshot zeigt die Mehrfach-Aktion per Drag & Drop](/screenshots/generated/"
+"documentation/use/advanced-features/bulk-action-drag-and-drop.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:278
@@ -2858,11 +2858,11 @@ msgstr "Ticket zusammenfassen"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:291
 msgid ""
-"![Screenshot shows the ticket merge flyout](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-merge.png)"
+"![Screenshot shows the ticket merge flyout](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-merge.png)"
 msgstr ""
 "![Screenshot zeigt das Seitenmenü zum Zusammenfassen von Tickets](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
+"screenshots/generated/documentation/use/advanced-features/ticket-"
 "merge.png)"
 
 #. type: Plain text
@@ -2941,11 +2941,11 @@ msgstr "Tickets abspalten"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:316
 msgid ""
-"![Screenshot shows the article action split menu](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-split.png)"
+"![Screenshot shows the article action split menu](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-split.png)"
 msgstr ""
-"![Screenshot zeigt das Menü zum Abspalten von Artikeln](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-split.png)"
+"![Screenshot zeigt das Menü zum Abspalten von Artikeln](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-split.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:321
@@ -3048,12 +3048,12 @@ msgstr "Duplikaterkennung"
 #: src/en/documentation/use/advanced-features.md:352
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket creation](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-"
+"screenshots/generated/documentation/use/advanced-features/duplicate-"
 "detection.png)"
 msgstr ""
 "![Screenshot zeigt Warnung der Duplikaterkennung während der "
-"Ticketerstellung](/screenshots/cypress/documentation/use/advanced-"
-"features.cy.js/duplicate-detection.png)"
+"Ticketerstellung](/screenshots/generated/documentation/use/advanced-"
+"features/duplicate-detection.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:358
@@ -3133,11 +3133,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:382
 msgid ""
-"![Screenshot shows the time accounting dialog](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-dialog.png)"
+"![Screenshot shows the time accounting dialog](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-dialog.png)"
 msgstr ""
-"![Screenshot zeigt Dialog zur Zeiterfassung](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-dialog.png)"
+"![Screenshot zeigt Dialog zur Zeiterfassung](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-dialog.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:385
@@ -3196,11 +3196,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:398
 msgid ""
-"![Screenshot shows the time accounting overview](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
+"![Screenshot shows the time accounting overview](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-overview.png)"
 msgstr ""
-"![Screenshot zeigt die Übersicht der Zeiterfassung](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
+"![Screenshot zeigt die Übersicht der Zeiterfassung](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-overview.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:399
@@ -3235,10 +3235,10 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:413
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)"
+"generated/documentation/use/advanced-features/user-detail-panel.png)"
 msgstr ""
 "![Screenshot zeigt einen Avatar mit geöffneten Benutzerinfos](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)"
+"generated/documentation/use/advanced-features/user-detail-panel.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:416
@@ -3259,11 +3259,11 @@ msgstr "Benutzer-Detailseite"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:420
 msgid ""
-"![Screenshot shows user detail page](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/user-detail-page.png)"
+"![Screenshot shows user detail page](/screenshots/generated/documentation/use/"
+"advanced-features/user-detail-page.png)"
 msgstr ""
-"![Screenshot zeigt Benutzer-Detailseite](/screenshots/cypress/documentation/"
-"use/advanced-features.cy.js/user-detail-page.png)"
+"![Screenshot zeigt Benutzer-Detailseite](/screenshots/generated/documentation/"
+"use/advanced-features/user-detail-page.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:424
@@ -3328,11 +3328,11 @@ msgstr "Organisations-Detailseite"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:440
 msgid ""
-"![Screenshot shows organization detail page](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/organization-detail-page.png)"
+"![Screenshot shows organization detail page](/screenshots/generated/"
+"documentation/use/advanced-features/organization-detail-page.png)"
 msgstr ""
-"![Screenshot zeigt Organisations-Detailseite](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/organization-detail-page.png)"
+"![Screenshot zeigt Organisations-Detailseite](/screenshots/generated/"
+"documentation/use/advanced-features/organization-detail-page.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:444
@@ -3419,11 +3419,11 @@ msgstr "Der Screenshot zeigt ein verknüpftes Issue in der GitLab-Seitenleiste."
 #: src/en/documentation/use/advanced-features.md:474
 msgid ""
 "![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-"
+"generated/documentation/use/advanced-features/gitlab-sidebar-linked-"
 "issue.png)"
 msgstr ""
 "![Screenshot zeigt die GitLab-Seitenleiste mit einem verlinkten Issue](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-"
+"screenshots/generated/documentation/use/advanced-features/gitlab-sidebar-"
 "linked-issue.png)"
 
 #. type: Plain text
@@ -3491,10 +3491,10 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:497
 msgid ""
 "![Screenshot shows highlight menu from ticket detail view](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)"
+"generated/documentation/use/advanced-features/text-highlighting.png)"
 msgstr ""
 "![Screenshot zeigt Hervorhebungsmenü in der Ticket-Detailansicht](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/text-"
+"screenshots/generated/documentation/use/advanced-features/text-"
 "highlighting.png)"
 
 #. type: Plain text
@@ -3573,11 +3573,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:21
 msgid ""
-"![Screenshot shows ticket create screen](/screenshots/cypress/documentation/"
-"use/basics.cy.js/ticket-create.png)"
+"![Screenshot shows ticket create screen](/screenshots/generated/documentation/"
+"use/basics/ticket-create.png)"
 msgstr ""
-"![Screenshot zeigt den Ticket-Erstellungsdialog](/screenshots/cypress/"
-"documentation/use/basics.cy.js/ticket-create.png)"
+"![Screenshot zeigt den Ticket-Erstellungsdialog](/screenshots/generated/"
+"documentation/use/basics/ticket-create.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/basics/create-tickets.md:22
@@ -4008,11 +4008,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:39
 msgid ""
-"![Screenshot shows ticket sidebar](/screenshots/cypress/documentation/use/"
-"basics.cy.js/ticket-sidebar.png)"
+"![Screenshot shows ticket sidebar](/screenshots/generated/documentation/use/"
+"basics/ticket-sidebar.png)"
 msgstr ""
-"![Screenshot zeit Ticket-Seitenleiste](/screenshots/cypress/documentation/"
-"use/basics.cy.js/ticket-sidebar.png)"
+"![Screenshot zeit Ticket-Seitenleiste](/screenshots/generated/documentation/"
+"use/basics/ticket-sidebar.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:42
@@ -4293,11 +4293,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:111
 msgid ""
-"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-tags.png)"
+"![Screenshot shows tag area in ticket side bar](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-tags.png)"
 msgstr ""
 "![Screenshot zeigt Tag-Bereich in der Ticket-Seitenleiste](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/ticket-tags.png)"
+"generated/documentation/use/advanced-features/ticket-tags.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:117
@@ -4479,10 +4479,10 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:40
 msgid ""
 "![Screenshot shows article type selector and visibility toggle](/screenshots/"
-"cypress/documentation/use/basics.cy.js/article-type-visibility.png)"
+"generated/documentation/use/basics/article-type-visibility.png)"
 msgstr ""
 "![Der Screenshot zeigt die Auswahl für den Artikeltyp und den Schalter für "
-"die Sichtbarkeit](/screenshots/cypress/documentation/use/basics.cy.js/"
+"die Sichtbarkeit](/screenshots/generated/documentation/use/basics/"
 "article-type-visibility.png)"
 
 #. type: Plain text
@@ -4557,11 +4557,11 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:60
 msgid ""
 "![Screenshot shows the action row under the last article in the ticket "
-"detail view](/screenshots/cypress/documentation/use/basics.cy.js/new-"
+"detail view](/screenshots/generated/documentation/use/basics/new-"
 "article.png)"
 msgstr ""
 "![Screenshot zeigt die Aktionsleiste unter dem letzten Artikel in der Ticket-"
-"Detailansicht](/screenshots/cypress/documentation/use/basics.cy.js/new-"
+"Detailansicht](/screenshots/generated/documentation/use/basics/new-"
 "article.png)"
 
 #. type: Title ###
@@ -4620,11 +4620,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:74
 msgid ""
-"![Screenshot shows article reply actions](/screenshots/cypress/documentation/"
-"use/basics.cy.js/article-reply.png)"
+"![Screenshot shows article reply actions](/screenshots/generated/documentation/"
+"use/basics/article-reply.png)"
 msgstr ""
-"![Screenshot zeigt Antwortaktionen für einen Artikel](/screenshots/cypress/"
-"documentation/use/basics.cy.js/article-reply.png)"
+"![Screenshot zeigt Antwortaktionen für einen Artikel](/screenshots/generated/"
+"documentation/use/basics/article-reply.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:83
@@ -4750,12 +4750,12 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:105
 msgid ""
 "![Screenshot shows the article reply form pinned to the bottom of the ticket "
-"detail view](/screenshots/cypress/documentation/use/basics.cy.js/article-"
+"detail view](/screenshots/generated/documentation/use/basics/article-"
 "reply-pinned.png)"
 msgstr ""
 "![Der Screenshot zeigt das Antwortformular für Artikel, das am unteren Rand "
-"der Ticket-Detailansicht angeheftet ist](/screenshots/cypress/documentation/"
-"use/basics.cy.js/article-reply-pinned.png)"
+"der Ticket-Detailansicht angeheftet ist](/screenshots/generated/documentation/"
+"use/basics/article-reply-pinned.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/basics/work-with-tickets.md:106
@@ -4805,12 +4805,12 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:120
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy button]"
-"(/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-"
+"(/screenshots/generated/documentation/use/basics/copy-ticket-number-"
 "button.png)"
 msgstr ""
 "![Screenshot zeigt Ticket Kopfleiste mit hervorgehobener Schaltfläche zum "
-"Kopieren der Ticket-Nummer](/screenshots/cypress/documentation/use/"
-"basics.cy.js/copy-ticket-number-button.png)"
+"Kopieren der Ticket-Nummer](/screenshots/generated/documentation/use/"
+"basics/copy-ticket-number-button.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:124
@@ -5085,11 +5085,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:17
 msgid ""
-"![Screenshot shows the ticket detail view](/screenshots/cypress/"
-"documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)"
+"![Screenshot shows the ticket detail view](/screenshots/generated/"
+"documentation/use/basics-zammad-ui/zammad-ui-full.png)"
 msgstr ""
-"![Screenshot zeigt die Ticket-Detailansicht](/screenshots/cypress/"
-"documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)"
+"![Screenshot zeigt die Ticket-Detailansicht](/screenshots/generated/"
+"documentation/use/basics-zammad-ui/zammad-ui-full.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/basics/zammad-ui.md:18
@@ -5850,12 +5850,12 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:28
 msgid ""
 "![Screenshot shows Zammad's ticket detail view with highlighted ticket "
-"summary banner and summary sidebar](/screenshots/cypress/documentation/use/"
-"guide-ai.cy.js/ai-ticket-summary-sidebar.png)"
+"summary banner and summary sidebar](/screenshots/generated/documentation/use/"
+"guide-ai/ai-ticket-summary-sidebar.png)"
 msgstr ""
 "![Screenshot zeigt Zammads Ticket Detailansicht mit hervorgehobenem Banner "
 "für die Ticket-Zusammenfassung und der Zusammenfassungs-Seitenleiste](/"
-"screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-"
+"screenshots/generated/documentation/use/guide-ai/ai-ticket-summary-"
 "sidebar.png)"
 
 #. type: Plain text
@@ -5919,11 +5919,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:46
 msgid ""
-"![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/"
-"documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
+"![Screenshot shows Zammad's smart editor menu](/screenshots/generated/"
+"documentation/use/guide-ai/ai-writing-assistant-tools.png)"
 msgstr ""
-"![Screenshot zeigt Zammads Schreibassistent-Menü](/screenshots/cypress/"
-"documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
+"![Screenshot zeigt Zammads Schreibassistent-Menü](/screenshots/generated/"
+"documentation/use/guide-ai/ai-writing-assistant-tools.png)"
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/guides/ai.md:47
@@ -6014,12 +6014,12 @@ msgstr "Knowledge Base Assistent"
 msgid ""
 "![Screenshot shows the related knowledge section of the ticket sidebar with "
 "an AI-generated draft and a suggested knowledge base answer](/screenshots/"
-"cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)"
+"generated/documentation/use/guide-ai/ai-knowledge-base-assistant.png)"
 msgstr ""
 "![Der Screenshot zeigt den Abschnitt \"Verwandtes Wissen\" in der Ticket-"
 "Seitenleiste mit KI-Antworterstellung und einer von der KI vorgeschlagenen "
-"Antwort aus der Knowledge Base](/screenshots/cypress/documentation/use/guide-"
-"ai.cy.js/ai-knowledge-base-assistant.png)"
+"Antwort aus der Knowledge Base](/screenshots/generated/documentation/use/guide-"
+"ai/ai-knowledge-base-assistant.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/ai.md:72
@@ -6309,10 +6309,10 @@ msgstr ""
 #: src/en/documentation/use/guides/cti.md:15
 msgid ""
 "![Screenshot shows the caller log in the Zammad desktop view](/screenshots/"
-"cypress/documentation/use/guide-cti.cy.js/caller-log-full.png)"
+"generated/documentation/use/guide-cti/caller-log-full.png)"
 msgstr ""
-"![Screenshot zeigt die Anrufliste der Telefonfunktion](/screenshots/cypress/"
-"documentation/use/guide-cti.cy.js/caller-log-full.png)"
+"![Screenshot zeigt die Anrufliste der Telefonfunktion](/screenshots/generated/"
+"documentation/use/guide-cti/caller-log-full.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/cti.md:16
@@ -6357,12 +6357,12 @@ msgstr ""
 #: src/en/documentation/use/guides/cti.md:28
 msgid ""
 "![Screenshot shows the Phone entry with call notifications switched off, "
-"without a counter and without ringing calls](/screenshots/cypress/"
-"documentation/use/guide-cti.cy.js/sidebar-notifications-off.png)"
+"without a counter and without ringing calls](/screenshots/generated/"
+"documentation/use/guide-cti/sidebar-notifications-off.png)"
 msgstr ""
 "![Screenshot zeigt den Eintrag \"Telefon\" mit deaktivierten "
 "Anrufbenachrichtigungen, ohne Zähler und ohne läutende Anrufe](/screenshots/"
-"cypress/documentation/use/guide-cti.cy.js/sidebar-notifications-off.png)"
+"generated/documentation/use/guide-cti/sidebar-notifications-off.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/cti.md:30
@@ -6428,12 +6428,12 @@ msgstr ""
 #: src/en/documentation/use/guides/cti.md:47
 msgid ""
 "![Screenshot shows the Phone entry in the navigation sidebar with a ringing "
-"call from a known and an unknown caller below it](/screenshots/cypress/"
-"documentation/use/guide-cti.cy.js/sidebar-ringing-call.png)"
+"call from a known and an unknown caller below it](/screenshots/generated/"
+"documentation/use/guide-cti/sidebar-ringing-call.png)"
 msgstr ""
 "![Screenshot zeigt den Eintrag \"Telefon\" in der Navigations-Seitenleiste, "
 "darunter einen klingelnden Anruf von einem bekannten und einem unbekannten "
-"Anrufer](/screenshots/cypress/documentation/use/guide-cti.cy.js/sidebar-"
+"Anrufer](/screenshots/generated/documentation/use/guide-cti/sidebar-"
 "ringing-call.png)"
 
 #. type: Plain text
@@ -6563,12 +6563,12 @@ msgstr "**Zeit**: Zeitpunkt des Anrufs."
 #: src/en/documentation/use/guides/cti.md:82
 msgid ""
 "![Screenshot shows the caller log with call entries and the different caller "
-"matches](/screenshots/cypress/documentation/use/guide-cti.cy.js/caller-log-"
+"matches](/screenshots/generated/documentation/use/guide-cti/caller-log-"
 "table.png)"
 msgstr ""
 "![Screenshot zeigt die Anrufliste mit den Anrufeinträgen und den "
-"verschiedenen Übereinstimmungen bei den Anrufern](/screenshots/cypress/"
-"documentation/use/guide-cti.cy.js/caller-log-table.png)"
+"verschiedenen Übereinstimmungen bei den Anrufern](/screenshots/generated/"
+"documentation/use/guide-cti/caller-log-table.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/cti.md:85
@@ -6771,11 +6771,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:13
 msgid ""
-"![Screenshot shows Zammad's editor](/screenshots/cypress/documentation/use/"
-"guide-editor.cy.js/editor-overview.png)"
+"![Screenshot shows Zammad's editor](/screenshots/generated/documentation/use/"
+"guide-editor/editor-overview.png)"
 msgstr ""
-"![Screenshot zeigt Zammads Editor](/screenshots/cypress/documentation/use/"
-"guide-editor.cy.js/editor-overview.png)"
+"![Screenshot zeigt Zammads Editor](/screenshots/generated/documentation/use/"
+"guide-editor/editor-overview.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/editor.md:14
@@ -7085,12 +7085,12 @@ msgstr ""
 #: src/en/documentation/use/guides/knowledge-base.md:12
 msgid ""
 "![Screenshot shows a knowledge base category with its subcategories and "
-"answers](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/"
+"answers](/screenshots/generated/documentation/use/guide-knowledge-base/"
 "knowledge-base-full.png)"
 msgstr ""
 "![Der Screenshot zeigt eine Kategorie der Knowledge Base mit ihren "
-"Unterkategorien und Antworten](/screenshots/cypress/documentation/use/guide-"
-"knowledge-base.cy.js/knowledge-base-full.png)"
+"Unterkategorien und Antworten](/screenshots/generated/documentation/use/guide-"
+"knowledge-base/knowledge-base-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:19
@@ -7389,12 +7389,12 @@ msgstr "Kategorien"
 #: src/en/documentation/use/guides/knowledge-base.md:101
 msgid ""
 "![Screenshot shows the edit category flyout with title, icon and parent "
-"fields](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-"
+"fields](/screenshots/generated/documentation/use/guide-knowledge-base/kb-"
 "category-flyout.png)"
 msgstr ""
 "![Screenshot zeigt das Bearbeitungs-Seitenmenü mit Titel, Symbol und "
-"übergeordneter Kategorie](/screenshots/cypress/documentation/use/guide-"
-"knowledge-base.cy.js/kb-category-flyout.png)"
+"übergeordneter Kategorie](/screenshots/generated/documentation/use/guide-"
+"knowledge-base/kb-category-flyout.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:105
@@ -7652,12 +7652,12 @@ msgstr "Inhalt sortieren"
 #: src/en/documentation/use/guides/knowledge-base.md:171
 msgid ""
 "![Screenshot shows the sorting bar with the mode switcher highlighted and "
-"the answers tab active](/screenshots/cypress/documentation/use/guide-"
-"knowledge-base.cy.js/kb-sort-content.png)"
+"the answers tab active](/screenshots/generated/documentation/use/guide-"
+"knowledge-base/kb-sort-content.png)"
 msgstr ""
 "![Der Screenshot zeigt die Sortierleiste mit hervorgehobenem Modus-"
-"Umschalter und aktivem Antworten-Tab](/screenshots/cypress/documentation/use/"
-"guide-knowledge-base.cy.js/kb-sort-content.png)"
+"Umschalter und aktivem Antworten-Tab](/screenshots/generated/documentation/use/"
+"guide-knowledge-base/kb-sort-content.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:175
@@ -7739,12 +7739,12 @@ msgstr "Sichtbarkeit und Planung"
 #: src/en/documentation/use/guides/knowledge-base.md:192
 msgid ""
 "![Screenshot shows the scheduled visibility section in the answer sidebar, "
-"highlighted](/screenshots/cypress/documentation/use/guide-knowledge-"
-"base.cy.js/kb-scheduled-visibility.png)"
+"highlighted](/screenshots/generated/documentation/use/guide-knowledge-"
+"base/kb-scheduled-visibility.png)"
 msgstr ""
 "![Screenshot zeigt die hervorgehobene geplante Sichtbarkeit in der Antwort-"
-"Seitenleiste](/screenshots/cypress/documentation/use/guide-knowledge-"
-"base.cy.js/kb-scheduled-visibility.png)"
+"Seitenleiste](/screenshots/generated/documentation/use/guide-knowledge-"
+"base/kb-scheduled-visibility.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:196
@@ -8699,11 +8699,11 @@ msgstr "Übersichten"
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:9
 msgid ""
-"![Screenshot shows opened overview section](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Screenshot shows opened overview section](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 msgstr ""
-"![Screenshot zeigt geöffneten Übersichten-Bereich](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Screenshot zeigt geöffneten Übersichten-Bereich](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:16
@@ -9174,11 +9174,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:32
 msgid ""
-"![Screenshot shows search results in the taskbar](/screenshots/cypress/"
-"documentation/use/guide-search.cy.js/search-sidebar.png)"
+"![Screenshot shows search results in the taskbar](/screenshots/generated/"
+"documentation/use/guide-search/search-sidebar.png)"
 msgstr ""
-"![Screenshot zeigt Suchergebnisse in der Taskleiste](/screenshots/cypress/"
-"documentation/use/guide-search.cy.js/search-sidebar.png)"
+"![Screenshot zeigt Suchergebnisse in der Taskleiste](/screenshots/generated/"
+"documentation/use/guide-search/search-sidebar.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:36
@@ -9227,11 +9227,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:46
 msgid ""
-"![Screenshot shows detailed search](/screenshots/cypress/documentation/use/"
-"guide-search.cy.js/search-detail.png)"
+"![Screenshot shows detailed search](/screenshots/generated/documentation/use/"
+"guide-search/search-detail.png)"
 msgstr ""
-"![Screenshot zeigt die Erweiterte Suche](/screenshots/cypress/documentation/"
-"use/guide-search.cy.js/search-detail.png)"
+"![Screenshot zeigt die Erweiterte Suche](/screenshots/generated/documentation/"
+"use/guide-search/search-detail.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/search.md:47
@@ -9662,12 +9662,12 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:29
 msgid ""
 "![Screenshot showing outgoing email which just gets signed and not encrypted]"
-"(/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-"
+"(/screenshots/generated/documentation/use/guide-secure-email/secure-"
 "email-signing-only.png)"
 msgstr ""
 "![Screenshot zeigt ausgehende Email, die nur signiert und nicht "
-"verschlüsselt wird](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-signing-only.png)"
+"verschlüsselt wird](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-signing-only.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/secure-email.md:30
@@ -9726,12 +9726,12 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:46
 msgid ""
 "![Screenshot showing Encrypted and Signed status icons on an incoming email "
-"article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/"
+"article](/screenshots/generated/documentation/use/guide-secure-email/"
 "secure-email-incoming-article.png)"
 msgstr ""
 "![Screenshot zeigt Verschlüsselungs- und Signatur-Icons in einem eingehenden "
-"E-Mail-Artikel](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-incoming-article.png)"
+"E-Mail-Artikel](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-incoming-article.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/secure-email.md:47
@@ -9745,27 +9745,27 @@ msgstr "Icons für eingehende E-Mails"
 msgid ""
 "| Icon | Meaning |\n"
 "|---|---|\n"
-"| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Encrypted for you.** Even if intercepted by a third party, they will not be able to read it. |\n"
-"| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Cannot be decrypted.** Zammad lacks the required key to decrypt this message. |\n"
-"| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |\n"
-"| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |\n"
+"| ![Encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-encrypted.png) | **Encrypted for you.** Even if intercepted by a third party, they will not be able to read it. |\n"
+"| ![Not encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-encrypted.png) | **Cannot be decrypted.** Zammad lacks the required key to decrypt this message. |\n"
+"| ![Signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |\n"
+"| ![Not signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |\n"
 msgstr ""
 "| Symbol | Bedeutung |\n"
 "|---|---|\n"
-"| ![Symbol \"Verschlüsselt\"](/screenshots/cypress/documentation/use/guide-"
-"secure-email.cy.js/secure-email-encrypted.png) | **Für Sie verschlüsselt.** "
+"| ![Symbol \"Verschlüsselt\"](/screenshots/generated/documentation/use/guide-"
+"secure-email/secure-email-encrypted.png) | **Für Sie verschlüsselt.** "
 "Selbst wenn die E-Mail von einem Dritten abgefangen wird, kann dieser sie "
 "nicht lesen. |\n"
-"| ![Symbol \"Nicht verschlüsselt\"](/screenshots/cypress/documentation/use/"
-"guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Kann nicht "
+"| ![Symbol \"Nicht verschlüsselt\"](/screenshots/generated/documentation/use/"
+"guide-secure-email/secure-email-not-encrypted.png) | **Kann nicht "
 "entschlüsselt werden.** Zammad verfügt nicht über den erforderlichen "
 "Schlüssel, um diese Nachricht zu entschlüsseln. |\n"
-"| ![Symbol \"Signiert\"](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-signed.png) | **Erfolgreich verifiziert.** Sie "
+"| ![Symbol \"Signiert\"](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-signed.png) | **Erfolgreich verifiziert.** Sie "
 "können sicher sein, dass die E-Mail authentisch ist und der Inhalt nicht "
 "verändert wurde. |\n"
-"| ![Symbol \"Nicht signiert\"](/screenshots/cypress/documentation/use/guide-"
-"secure-email.cy.js/secure-email-not-signed.png) | **Die Signaturüberprüfung "
+"| ![Symbol \"Nicht signiert\"](/screenshots/generated/documentation/use/guide-"
+"secure-email/secure-email-not-signed.png) | **Die Signaturüberprüfung "
 "ist fehlgeschlagen.** Bewegen Sie den Mauszeiger über das Symbol, um weitere "
 "Informationen zu erhalten. |\n"
 
@@ -9791,12 +9791,12 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:62
 msgid ""
 "![Screenshot showing the Encrypt and Sign toggle buttons in the email reply "
-"editor](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/"
+"editor](/screenshots/generated/documentation/use/guide-secure-email/"
 "secure-email-outgoing-article.png)"
 msgstr ""
 "![Screenshot zeigt Verschlüsseln- und Signieren-Schaltflächen im Email-"
-"Artikel-Editor](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-outgoing-article.png)"
+"Artikel-Editor](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-outgoing-article.png)"
 
 #. type: Fenced div block (info)
 #: src/en/documentation/use/guides/secure-email.md:63
@@ -9818,26 +9818,26 @@ msgstr "Icons für ausgehende E-Mails"
 msgid ""
 "| Icon | Meaning |\n"
 "|---|---|\n"
-"| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Will be encrypted.** Even if intercepted by a third party, they will not be able to read it. |\n"
-"| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Will not be encrypted.** |\n"
-"| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Will be signed.** Recipients can verify that it came from you and that the content has not been modified. |\n"
-"| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Will not be signed.** |\n"
+"| ![Encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-encrypted.png) | **Will be encrypted.** Even if intercepted by a third party, they will not be able to read it. |\n"
+"| ![Not encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-encrypted.png) | **Will not be encrypted.** |\n"
+"| ![Signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-signed.png) | **Will be signed.** Recipients can verify that it came from you and that the content has not been modified. |\n"
+"| ![Not signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-signed.png) | **Will not be signed.** |\n"
 msgstr ""
 "| Symbol | Bedeutung |\n"
 "|---|---|\n"
-"| ![Symbol \"Verschlüsselt\"](/screenshots/cypress/documentation/use/guide-"
-"secure-email.cy.js/secure-email-encrypted.png) | **Wird durch "
+"| ![Symbol \"Verschlüsselt\"](/screenshots/generated/documentation/use/guide-"
+"secure-email/secure-email-encrypted.png) | **Wird durch "
 "Verschlüsselung geschützt.** Selbst wenn die E-Mail von einem Dritten "
 "abgefangen wird, kann dieser den Inhalt nicht lesen. |\n"
-"| ![Symbol \"Nicht verschlüsselt\"](/screenshots/cypress/documentation/use/"
-"guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Wird nicht "
+"| ![Symbol \"Nicht verschlüsselt\"](/screenshots/generated/documentation/use/"
+"guide-secure-email/secure-email-not-encrypted.png) | **Wird nicht "
 "verschlüsselt.** |\n"
-"| ![Symbol \"Signiert\"](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-signed.png) | **Wird signiert.** Die Empfänger "
+"| ![Symbol \"Signiert\"](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-signed.png) | **Wird signiert.** Die Empfänger "
 "können überprüfen, ob die E-Mail tatsächlich von Ihnen stammt und ob der "
 "Inhalt nicht verändert wurde. |\n"
-"| ![Symbol \"Nicht signiert\"](/screenshots/cypress/documentation/use/guide-"
-"secure-email.cy.js/secure-email-not-signed.png) | **Wird nicht signiert.** "
+"| ![Symbol \"Nicht signiert\"](/screenshots/generated/documentation/use/guide-"
+"secure-email/secure-email-not-signed.png) | **Wird nicht signiert.** "
 "|\n"
 
 #. type: Title ##
@@ -9859,11 +9859,11 @@ msgstr "Signieren: Zertifikat für Validierung nicht auffindbar"
 #: src/en/documentation/use/guides/secure-email.md:81
 msgid ""
 "![Screenshot showing Security error warning banner on an article](/"
-"screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-"
+"screenshots/generated/documentation/use/guide-secure-email/secure-email-"
 "error-banner.png)"
 msgstr ""
 "![Screenshot zeigt Banner mit einer Sicherheits-Warnung für einen Artikel](/"
-"screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-"
+"screenshots/generated/documentation/use/guide-secure-email/secure-email-"
 "error-banner.png)"
 
 #. type: Plain text
@@ -10038,11 +10038,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:26
 msgid ""
-"![Screenshot shows 2FA methods in personal settings](/screenshots/cypress/"
-"documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)"
+"![Screenshot shows 2FA methods in personal settings](/screenshots/generated/"
+"documentation/use/guide-2fa/2fa-methods-profile-setup.png)"
 msgstr ""
 "![Screenshot zeigt 2FA-Methoden in den persönlichen Einstellungen](/"
-"screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-"
+"screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-"
 "setup.png)"
 
 #. type: Plain text
@@ -10489,10 +10489,10 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:146
 msgid ""
 "![Screenshot shows list of 2FA methods and default method](/screenshots/"
-"cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)"
+"generated/documentation/use/guide-2fa/2fa-methods-profile-overview.png)"
 msgstr ""
 "![Screenshot zeigt Liste der 2FA-Methoden und Standardmethode](/screenshots/"
-"cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)"
+"generated/documentation/use/guide-2fa/2fa-methods-profile-overview.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:149
@@ -10515,11 +10515,11 @@ msgstr "Bearbeiten einer 2FA-Methode"
 #: src/en/documentation/use/guides/two-factor-auth.md:153
 msgid ""
 "![Screenshot shows the action menu for an already set up 2FA method](/"
-"screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-"
+"screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-"
 "action-menu.png)"
 msgstr ""
 "![Screenshot zeigt 2FA-Methoden in den Einstellungen des Benutzerprofils](/"
-"screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-"
+"screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-"
 "action-menu.png)"
 
 #. type: Plain text
@@ -10587,11 +10587,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/personal-settings.md:13
 msgid ""
-"![Screenshot shows personal settings of a user](/screenshots/cypress/"
-"documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
+"![Screenshot shows personal settings of a user](/screenshots/generated/"
+"documentation/use/user-profile/user-profile-settings-full.png)"
 msgstr ""
 "![Screenshot zeigt persönliche Einstellungen eines Benutzers](/screenshots/"
-"cypress/documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
+"generated/documentation/use/user-profile/user-profile-settings-full.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/personal-settings.md:14
@@ -10614,11 +10614,11 @@ msgstr ""
 msgid ""
 "![Screenshot shows the avatar menu with the entries User documentation, "
 "Appearance (dark mode toggle), Personal settings and Sign out](/screenshots/"
-"cypress/documentation/use/user-profile.cy.js/avatar-menu.png)"
+"generated/documentation/use/user-profile/avatar-menu.png)"
 msgstr ""
 "![Screenshot zeigt das Avatar Menü mit den Einträgen Benutzer-Dokumentation, "
 "Aussehen (Umschalter hell/dunkel), Persönliche Einstellungen und Abmelden](/"
-"screenshots/cypress/documentation/use/user-profile.cy.js/avatar-menu.png)"
+"screenshots/generated/documentation/use/user-profile/avatar-menu.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/personal-settings.md:22
@@ -10874,10 +10874,10 @@ msgstr ""
 #: src/en/documentation/use/personal-settings.md:93
 msgid ""
 "![Screenshot shows flyout with created token and copy button](/screenshots/"
-"cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
+"generated/documentation/use/user-profile/token-dialog.png)"
 msgstr ""
 "![Screenshot zeigt Seitenmenü mit erstelltem Token und Kopierschaltfläche](/"
-"screenshots/cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
+"screenshots/generated/documentation/use/user-profile/token-dialog.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/personal-settings.md:97
@@ -24969,11 +24969,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rails-commands.md:592
 msgid ""
-"![Screenshot shows a note during article creation](/screenshots/cypress/"
-"reference/rails-commands.cy.js/article-creation-note.png)"
+"![Screenshot shows a note during article creation](/screenshots/generated/"
+"reference/rails-commands/article-creation-note.png)"
 msgstr ""
 "![Screenshot zeigt eine Notiz bei der Artikelerstellung](/screenshots/"
-"cypress/reference/rails-commands.cy.js/article-creation-note.png)"
+"generated/reference/rails-commands/article-creation-note.png)"
 
 #. type: Title ####
 #: src/en/reference/rails-commands.md:593
@@ -43775,16 +43775,16 @@ msgstr ""
 #, fuzzy
 #~| msgid ""
 #~| "![Screenshot shows GitLab content sidebar with \"Link Issue\" button](/"
-#~| "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
+#~| "screenshots/generated/documentation/use/advanced-features/gitlab-"
 #~| "content-sidebar.png)"
 #~ msgid ""
 #~ "![Screenshot shows GitLab content sidebar with \"Link issue\" button](/"
-#~ "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
+#~ "screenshots/generated/documentation/use/advanced-features/gitlab-"
 #~ "content-sidebar.png)"
 #~ msgstr ""
 #~ "![Screenshot zeigt GitLab Seitenleiste mit \"Issue verknüpfen\" "
-#~ "Schaltfläche](/screenshots/cypress/documentation/use/advanced-"
-#~ "features.cy.js/gitlab-content-sidebar.png)"
+#~ "Schaltfläche](/screenshots/generated/documentation/use/advanced-"
+#~ "features/gitlab-content-sidebar.png)"
 
 #, no-wrap
 #~ msgid ""
@@ -43884,11 +43884,11 @@ msgstr ""
 #~ "zwischen der Übersetzung und dem Originalinhalt wechseln."
 
 #~ msgid ""
-#~ "![Screenshot shows a translated ticket article](/screenshots/cypress/"
-#~ "documentation/use/guide-translation.cy.js/translation-article.png)"
+#~ "![Screenshot shows a translated ticket article](/screenshots/generated/"
+#~ "documentation/use/guide-translation/translation-article.png)"
 #~ msgstr ""
-#~ "![Screenshot zeigt einen übersetzten Ticket-Artikel](/screenshots/cypress/"
-#~ "documentation/use/guide-translation.cy.js/translation-article.png)"
+#~ "![Screenshot zeigt einen übersetzten Ticket-Artikel](/screenshots/generated/"
+#~ "documentation/use/guide-translation/translation-article.png)"
 
 #, no-wrap
 #~ msgid ""
@@ -43920,12 +43920,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "![Screenshot shows the language menu with the language list and the "
-#~ "switch for translating all articles](/screenshots/cypress/documentation/"
-#~ "use/guide-translation.cy.js/translation-target-menu.png)"
+#~ "switch for translating all articles](/screenshots/generated/documentation/"
+#~ "use/guide-translation/translation-target-menu.png)"
 #~ msgstr ""
 #~ "![Screenshot zeigt Sprachmenü mit der Sprachenliste und der Option zur "
-#~ "Übersetzung aller Artikel](/screenshots/cypress/documentation/use/guide-"
-#~ "translation.cy.js/translation-target-menu.png)"
+#~ "Übersetzung aller Artikel](/screenshots/generated/documentation/use/guide-"
+#~ "translation/translation-target-menu.png)"
 
 #~ msgid ""
 #~ "Zammad uses the language of your personal user settings as default. If "
@@ -43977,12 +43977,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "![Screenshot shows an article with the translate button in its action "
-#~ "row, highlighted with a frame](/screenshots/cypress/documentation/use/"
-#~ "guide-translation.cy.js/translation-button.png)"
+#~ "row, highlighted with a frame](/screenshots/generated/documentation/use/"
+#~ "guide-translation/translation-button.png)"
 #~ msgstr ""
 #~ "![Screenshot zeigt einen Artikel, bei dem die Schaltfläche \"Übersetzen\" "
 #~ "in der Aktionsleiste zu sehen ist und hervorgehoben ist](/screenshots/"
-#~ "cypress/documentation/use/guide-translation.cy.js/translation-button.png)"
+#~ "generated/documentation/use/guide-translation/translation-button.png)"
 
 #~ msgid ""
 #~ "If the target language is not the one you want to read the article in, "
@@ -44391,11 +44391,11 @@ msgstr ""
 
 #~ msgid ""
 #~ "![Screenshot shows the Add internal note button below the ticket's "
-#~ "articles](/screenshots/cypress/documentation/use/basics.cy.js/new-"
+#~ "articles](/screenshots/generated/documentation/use/basics/new-"
 #~ "article.png)"
 #~ msgstr ""
 #~ "![Screenshot zeigt die Schaltfläche Interne Notiz hinzufügen unter den "
-#~ "Artikeln des Tickets](/screenshots/cypress/documentation/use/basics.cy.js/"
+#~ "Artikeln des Tickets](/screenshots/generated/documentation/use/basics/"
 #~ "new-article.png)"
 
 #~ msgid ""
@@ -49398,11 +49398,11 @@ msgstr ""
 #~ "    anderen Mechanismus verwendet.\n"
 
 #~ msgid ""
-#~ "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
-#~ "features.cy.js/ticket-tags.png)"
+#~ "![Screenshot shows macro action menu](/screenshots/generated/usage-advanced-"
+#~ "features/ticket-tags.png)"
 #~ msgstr ""
-#~ "![Screenshot zeigt Tags-Bereich](/screenshots/cypress/usage-advanced-"
-#~ "features.cy.js/ticket-tags.png)"
+#~ "![Screenshot zeigt Tags-Bereich](/screenshots/generated/usage-advanced-"
+#~ "features/ticket-tags.png)"
 
 #, no-wrap
 #~ msgid "Content of User Documentation Section"
@@ -49416,17 +49416,17 @@ msgstr ""
 #~ msgstr "Screenshots"
 
 #~ msgid ""
-#~ "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#~ "![Test Screenshot (Full Page)](/screenshots/generated/test/test-"
 #~ "screenshot-full-page.png)"
 #~ msgstr ""
-#~ "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#~ "![Test Screenshot (Full Page)](/screenshots/generated/test/test-"
 #~ "screenshot-full-page.png)"
 
 #~ msgid ""
-#~ "![Test Screenshot (Page Element)](/screenshots/cypress/test.cy.js/test-"
+#~ "![Test Screenshot (Page Element)](/screenshots/generated/test/test-"
 #~ "screenshot-page-element.png)"
 #~ msgstr ""
-#~ "![Test Screenshot (Page Element)](/screenshots/cypress/test.cy.js/test-"
+#~ "![Test Screenshot (Page Element)](/screenshots/generated/test/test-"
 #~ "screenshot-page-element.png)"
 
 #~ msgid "![Test Screenshot (Static)](/screenshots/dashboard.png)"

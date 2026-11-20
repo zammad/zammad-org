@@ -5,7 +5,7 @@ title: Overviews
 
 # Overviews
 
-![Screenshot shows opened overview section](/screenshots/cypress/documentation/use/guide-overview.cy.js/overview-full.png)
+![Screenshot shows opened overview section](/screenshots/generated/documentation/use/guide-overview/overview-full.png)
 
 ## Introduction
 

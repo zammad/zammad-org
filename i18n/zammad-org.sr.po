@@ -1866,11 +1866,11 @@ msgstr "Понашање при освежавању тикета"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:14
 msgid ""
-"![Screenshot shows behavior after update menu](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-behavior-update.png)"
+"![Screenshot shows behavior after update menu](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-behavior-update.png)"
 msgstr ""
 "![Снимак екрана приказује мени понашања након освежавања](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/ticket-behavior-update.png)"
+"generated/documentation/use/advanced-features/ticket-behavior-update.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:16
@@ -1998,11 +1998,11 @@ msgstr "Текстуални исечци"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:39
 msgid ""
-"![Screenshot shows text modules feature](/screenshots/cypress/documentation/"
-"use/advanced-features.cy.js/ticket-article-text-template.png)"
+"![Screenshot shows text modules feature](/screenshots/generated/documentation/"
+"use/advanced-features/ticket-article-text-template.png)"
 msgstr ""
-"![Снимак екрана приказује функцију текстуалних исечака](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-article-text-template.png)"
+"![Снимак екрана приказује функцију текстуалних исечака](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-article-text-template.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:45
@@ -2063,11 +2063,11 @@ msgstr "Убацивање чланка базе знања"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:60
 msgid ""
-"![Screenshot shows inserting knowledge base article](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)"
+"![Screenshot shows inserting knowledge base article](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-article-insert-kba.png)"
 msgstr ""
-"![Снимак екрана приказује убацивање чланка базе знања](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-article-insert-kba.png)"
+"![Снимак екрана приказује убацивање чланка базе знања](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-article-insert-kba.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:65
@@ -2104,11 +2104,11 @@ msgstr "Помињање корисника"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:75
 msgid ""
-"![Screenshot shows mentioning a user](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/ticket-article-mention.png)"
+"![Screenshot shows mentioning a user](/screenshots/generated/documentation/use/"
+"advanced-features/ticket-article-mention.png)"
 msgstr ""
-"![Снимак екрана приказује помињање корисника](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-article-mention.png)"
+"![Снимак екрана приказује помињање корисника](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-article-mention.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:80
@@ -2153,11 +2153,11 @@ msgstr "Претплатите се на тикет"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:92
 msgid ""
-"![Screenshot shows subscribe feature](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/ticket-subscribe.png)"
+"![Screenshot shows subscribe feature](/screenshots/generated/documentation/use/"
+"advanced-features/ticket-subscribe.png)"
 msgstr ""
-"![Снимак екрана приказује функцију претплате](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-subscribe.png)"
+"![Снимак екрана приказује функцију претплате](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-subscribe.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:97
@@ -2194,11 +2194,11 @@ msgstr "Макрои"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:107
 msgid ""
-"![Screenshot shows macro action menu](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/ticket-macro.png)"
+"![Screenshot shows macro action menu](/screenshots/generated/documentation/use/"
+"advanced-features/ticket-macro.png)"
 msgstr ""
-"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-macro.png)"
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-macro.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:114
@@ -2256,11 +2256,11 @@ msgstr "Спискови задатака"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:129
 msgid ""
-"![Screenshot shows a checklist from checklist sidebar](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-checklist.png)"
+"![Screenshot shows a checklist from checklist sidebar](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-checklist.png)"
 msgstr ""
 "![Снимак екрана приказује списак задатака у бочној траци](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/ticket-checklist.png)"
+"generated/documentation/use/advanced-features/ticket-checklist.png)"
 
 #. type: Bullet: '- '
 #: src/en/documentation/use/advanced-features.md:136
@@ -2530,11 +2530,11 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:217
 msgid ""
 "![Screenshot shows escalation panel by hovering over escalation timestamp](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/escalation-"
+"screenshots/generated/documentation/use/advanced-features/escalation-"
 "panel.png)"
 msgstr ""
 "![Снимак екрана приказује панел ескалација превлачењем курсора преко датума "
-"ескалације](/screenshots/cypress/documentation/use/advanced-features.cy.js/"
+"ескалације](/screenshots/generated/documentation/use/advanced-features/"
 "escalation-panel.png)"
 
 #. type: Fenced div block (info)
@@ -2660,11 +2660,11 @@ msgstr "**Панел:**\n"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:260
 msgid ""
-"![Screenshot shows the bulk action flyout](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
+"![Screenshot shows the bulk action flyout](/screenshots/generated/"
+"documentation/use/advanced-features/bulk-side-panel-overviews.png)"
 msgstr ""
-"![Снимак екрана приказује бочни панел масовне радње](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/bulk-side-panel-overviews.png)"
+"![Снимак екрана приказује бочни панел масовне радње](/screenshots/generated/"
+"documentation/use/advanced-features/bulk-side-panel-overviews.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:263
@@ -2718,11 +2718,11 @@ msgstr "**Механизам превуци препусти за масовну
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:274
 msgid ""
-"![Screenshot shows the bulk action via drag and drop](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/bulk-action-drag-and-drop.png)"
+"![Screenshot shows the bulk action via drag and drop](/screenshots/generated/"
+"documentation/use/advanced-features/bulk-action-drag-and-drop.png)"
 msgstr ""
 "![Снимак екрана приказује масовну радњу преко механизма превуци и пусти](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/bulk-action-"
+"screenshots/generated/documentation/use/advanced-features/bulk-action-"
 "drag-and-drop.png)"
 
 #. type: Plain text
@@ -2773,11 +2773,11 @@ msgstr "Спајање тикета"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:291
 msgid ""
-"![Screenshot shows the ticket merge flyout](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-merge.png)"
+"![Screenshot shows the ticket merge flyout](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-merge.png)"
 msgstr ""
-"![Снимак екрана приказује бочни панел спајања тикета](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-merge.png)"
+"![Снимак екрана приказује бочни панел спајања тикета](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-merge.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:297
@@ -2850,11 +2850,11 @@ msgstr "Раздељивање тикета"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:316
 msgid ""
-"![Screenshot shows the article action split menu](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-split.png)"
+"![Screenshot shows the article action split menu](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-split.png)"
 msgstr ""
 "![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
+"screenshots/generated/documentation/use/advanced-features/ticket-"
 "split.png)"
 
 #. type: Plain text
@@ -2953,11 +2953,11 @@ msgstr "Откривање дупликата"
 #: src/en/documentation/use/advanced-features.md:352
 msgid ""
 "![Screenshot shows duplicate ticket warning during ticket creation](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-"
+"screenshots/generated/documentation/use/advanced-features/duplicate-"
 "detection.png)"
 msgstr ""
 "![Снимак екрана приказује упозорење на дупликат приликом отварања тикета](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/duplicate-"
+"screenshots/generated/documentation/use/advanced-features/duplicate-"
 "detection.png)"
 
 #. type: Plain text
@@ -3033,11 +3033,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:382
 msgid ""
-"![Screenshot shows the time accounting dialog](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-dialog.png)"
+"![Screenshot shows the time accounting dialog](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-dialog.png)"
 msgstr ""
-"![Снимак екрана приказује дијалог обрачуна времена](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-dialog.png)"
+"![Снимак екрана приказује дијалог обрачуна времена](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-dialog.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:385
@@ -3092,11 +3092,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:398
 msgid ""
-"![Screenshot shows the time accounting overview](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
+"![Screenshot shows the time accounting overview](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-overview.png)"
 msgstr ""
-"![Снимак екрана приказује приказ обрачуна времена](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/time-accounting-overview.png)"
+"![Снимак екрана приказује приказ обрачуна времена](/screenshots/generated/"
+"documentation/use/advanced-features/time-accounting-overview.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/advanced-features.md:399
@@ -3130,10 +3130,10 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:413
 msgid ""
 "![Screenshot shows an avatar with opened user detail panel](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/user-detail-panel.png)"
+"generated/documentation/use/advanced-features/user-detail-panel.png)"
 msgstr ""
 "![Снимак екрана приказује аватар сличицу са отвореним панелом детаља "
-"корисника](/screenshots/cypress/documentation/use/advanced-features.cy.js/"
+"корисника](/screenshots/generated/documentation/use/advanced-features/"
 "user-detail-panel.png)"
 
 #. type: Plain text
@@ -3154,11 +3154,11 @@ msgstr "Страница корисничког профила"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:420
 msgid ""
-"![Screenshot shows user detail page](/screenshots/cypress/documentation/use/"
-"advanced-features.cy.js/user-detail-page.png)"
+"![Screenshot shows user detail page](/screenshots/generated/documentation/use/"
+"advanced-features/user-detail-page.png)"
 msgstr ""
 "![Снимак екрана који приказује страницу са детаљима корисника](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/user-detail-page.png)"
+"generated/documentation/use/advanced-features/user-detail-page.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:424
@@ -3223,11 +3223,11 @@ msgstr "Детаљни приказ организације"
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:440
 msgid ""
-"![Screenshot shows organization detail page](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/organization-detail-page.png)"
+"![Screenshot shows organization detail page](/screenshots/generated/"
+"documentation/use/advanced-features/organization-detail-page.png)"
 msgstr ""
-"![Снимак екрана приказује детаљни приказ организације](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/organization-detail-page.png)"
+"![Снимак екрана приказује детаљни приказ организације](/screenshots/generated/"
+"documentation/use/advanced-features/organization-detail-page.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:444
@@ -3314,12 +3314,12 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:474
 msgid ""
 "![Screenshot shows GitLab content sidebar with a linked issue](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/gitlab-sidebar-linked-"
+"generated/documentation/use/advanced-features/gitlab-sidebar-linked-"
 "issue.png)"
 msgstr ""
 "![Снимак екрана који приказује бочну траку GitLab садржаја са дугметом „"
-"Повежи извештај”](/screenshots/cypress/documentation/use/advanced-"
-"features.cy.js/gitlab-sidebar-linked-issue.png)"
+"Повежи извештај”](/screenshots/generated/documentation/use/advanced-"
+"features/gitlab-sidebar-linked-issue.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/advanced-features.md:480
@@ -3382,10 +3382,10 @@ msgstr ""
 #: src/en/documentation/use/advanced-features.md:497
 msgid ""
 "![Screenshot shows highlight menu from ticket detail view](/screenshots/"
-"cypress/documentation/use/advanced-features.cy.js/text-highlighting.png)"
+"generated/documentation/use/advanced-features/text-highlighting.png)"
 msgstr ""
 "![Снимак екрана приказује мени за истицање у детаљном приказу тикета](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/text-"
+"screenshots/generated/documentation/use/advanced-features/text-"
 "highlighting.png)"
 
 #. type: Plain text
@@ -3459,11 +3459,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/create-tickets.md:21
 msgid ""
-"![Screenshot shows ticket create screen](/screenshots/cypress/documentation/"
-"use/basics.cy.js/ticket-create.png)"
+"![Screenshot shows ticket create screen](/screenshots/generated/documentation/"
+"use/basics/ticket-create.png)"
 msgstr ""
-"![Снимак екрана приказује страну за отварање тикета](/screenshots/cypress/"
-"documentation/use/basics.cy.js/ticket-create.png)"
+"![Снимак екрана приказује страну за отварање тикета](/screenshots/generated/"
+"documentation/use/basics/ticket-create.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/basics/create-tickets.md:22
@@ -3871,11 +3871,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:39
 msgid ""
-"![Screenshot shows ticket sidebar](/screenshots/cypress/documentation/use/"
-"basics.cy.js/ticket-sidebar.png)"
+"![Screenshot shows ticket sidebar](/screenshots/generated/documentation/use/"
+"basics/ticket-sidebar.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/basics.cy.js/ticket-sidebar.png)"
+"screenshots/generated/documentation/use/basics/ticket-sidebar.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:42
@@ -4140,11 +4140,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/ticket-basics.md:111
 msgid ""
-"![Screenshot shows tag area in ticket side bar](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/ticket-tags.png)"
+"![Screenshot shows tag area in ticket side bar](/screenshots/generated/"
+"documentation/use/advanced-features/ticket-tags.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/advanced-features.cy.js/ticket-"
+"screenshots/generated/documentation/use/advanced-features/ticket-"
 "tags.png)"
 
 #. type: Plain text
@@ -4317,10 +4317,10 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:40
 msgid ""
 "![Screenshot shows article type selector and visibility toggle](/screenshots/"
-"cypress/documentation/use/basics.cy.js/article-type-visibility.png)"
+"generated/documentation/use/basics/article-type-visibility.png)"
 msgstr ""
 "![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
-"screenshots/cypress/documentation/use/basics.cy.js/article-type-"
+"screenshots/generated/documentation/use/basics/article-type-"
 "visibility.png)"
 
 #. type: Plain text
@@ -4390,11 +4390,11 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:60
 msgid ""
 "![Screenshot shows the action row under the last article in the ticket "
-"detail view](/screenshots/cypress/documentation/use/basics.cy.js/new-"
+"detail view](/screenshots/generated/documentation/use/basics/new-"
 "article.png)"
 msgstr ""
 "![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
-"screenshots/cypress/documentation/use/basics.cy.js/new-article.png)"
+"screenshots/generated/documentation/use/basics/new-article.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/basics/work-with-tickets.md:61
@@ -4451,11 +4451,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:74
 msgid ""
-"![Screenshot shows article reply actions](/screenshots/cypress/documentation/"
-"use/basics.cy.js/article-reply.png)"
+"![Screenshot shows article reply actions](/screenshots/generated/documentation/"
+"use/basics/article-reply.png)"
 msgstr ""
 "![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
-"screenshots/cypress/documentation/use/basics.cy.js/article-reply.png)"
+"screenshots/generated/documentation/use/basics/article-reply.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/basics/work-with-tickets.md:83
@@ -4573,11 +4573,11 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:105
 msgid ""
 "![Screenshot shows the article reply form pinned to the bottom of the ticket "
-"detail view](/screenshots/cypress/documentation/use/basics.cy.js/article-"
+"detail view](/screenshots/generated/documentation/use/basics/article-"
 "reply-pinned.png)"
 msgstr ""
 "![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
-"screenshots/cypress/documentation/use/basics.cy.js/article-reply-pinned.png)"
+"screenshots/generated/documentation/use/basics/article-reply-pinned.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/basics/work-with-tickets.md:106
@@ -4626,11 +4626,11 @@ msgstr ""
 #: src/en/documentation/use/basics/work-with-tickets.md:120
 msgid ""
 "![Screenshot shows ticket header with highlighted ticket number copy button]"
-"(/screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-"
+"(/screenshots/generated/documentation/use/basics/copy-ticket-number-"
 "button.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/basics.cy.js/copy-ticket-number-"
+"screenshots/generated/documentation/use/basics/copy-ticket-number-"
 "button.png)"
 
 #. type: Plain text
@@ -4895,11 +4895,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/basics/zammad-ui.md:17
 msgid ""
-"![Screenshot shows the ticket detail view](/screenshots/cypress/"
-"documentation/use/basics-zammad-ui.cy.js/zammad-ui-full.png)"
+"![Screenshot shows the ticket detail view](/screenshots/generated/"
+"documentation/use/basics-zammad-ui/zammad-ui-full.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"basics-zammad-ui.cy.js/zammad-ui-full.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"basics-zammad-ui/zammad-ui-full.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/basics/zammad-ui.md:18
@@ -5638,11 +5638,11 @@ msgstr ""
 #: src/en/documentation/use/guides/ai.md:28
 msgid ""
 "![Screenshot shows Zammad's ticket detail view with highlighted ticket "
-"summary banner and summary sidebar](/screenshots/cypress/documentation/use/"
-"guide-ai.cy.js/ai-ticket-summary-sidebar.png)"
+"summary banner and summary sidebar](/screenshots/generated/documentation/use/"
+"guide-ai/ai-ticket-summary-sidebar.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/guide-ai.cy.js/ai-ticket-summary-"
+"screenshots/generated/documentation/use/guide-ai/ai-ticket-summary-"
 "sidebar.png)"
 
 #. type: Plain text
@@ -5705,11 +5705,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/ai.md:46
 msgid ""
-"![Screenshot shows Zammad's smart editor menu](/screenshots/cypress/"
-"documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
+"![Screenshot shows Zammad's smart editor menu](/screenshots/generated/"
+"documentation/use/guide-ai/ai-writing-assistant-tools.png)"
 msgstr ""
-"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
-"documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/generated/"
+"documentation/use/guide-ai/ai-writing-assistant-tools.png)"
 
 #. type: Fenced div block (warning)
 #: src/en/documentation/use/guides/ai.md:47
@@ -5797,10 +5797,10 @@ msgstr "База знања"
 msgid ""
 "![Screenshot shows the related knowledge section of the ticket sidebar with "
 "an AI-generated draft and a suggested knowledge base answer](/screenshots/"
-"cypress/documentation/use/guide-ai.cy.js/ai-knowledge-base-assistant.png)"
+"generated/documentation/use/guide-ai/ai-knowledge-base-assistant.png)"
 msgstr ""
-"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
-"documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/generated/"
+"documentation/use/guide-ai/ai-writing-assistant-tools.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/ai.md:72
@@ -6074,10 +6074,10 @@ msgstr ""
 #: src/en/documentation/use/guides/cti.md:15
 msgid ""
 "![Screenshot shows the caller log in the Zammad desktop view](/screenshots/"
-"cypress/documentation/use/guide-cti.cy.js/caller-log-full.png)"
+"generated/documentation/use/guide-cti/caller-log-full.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"basics-zammad-ui.cy.js/zammad-ui-full.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"basics-zammad-ui/zammad-ui-full.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/cti.md:16
@@ -6119,11 +6119,11 @@ msgstr ""
 #: src/en/documentation/use/guides/cti.md:28
 msgid ""
 "![Screenshot shows the Phone entry with call notifications switched off, "
-"without a counter and without ringing calls](/screenshots/cypress/"
-"documentation/use/guide-cti.cy.js/sidebar-notifications-off.png)"
+"without a counter and without ringing calls](/screenshots/generated/"
+"documentation/use/guide-cti/sidebar-notifications-off.png)"
 msgstr ""
-"![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/cti.md:30
@@ -6186,11 +6186,11 @@ msgstr ""
 #: src/en/documentation/use/guides/cti.md:47
 msgid ""
 "![Screenshot shows the Phone entry in the navigation sidebar with a ringing "
-"call from a known and an unknown caller below it](/screenshots/cypress/"
-"documentation/use/guide-cti.cy.js/sidebar-ringing-call.png)"
+"call from a known and an unknown caller below it](/screenshots/generated/"
+"documentation/use/guide-cti/sidebar-ringing-call.png)"
 msgstr ""
-"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
-"documentation/use/guide-ai.cy.js/ai-writing-assistant-tools.png)"
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/generated/"
+"documentation/use/guide-ai/ai-writing-assistant-tools.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/cti.md:51
@@ -6313,11 +6313,11 @@ msgstr "**Време**: када се позив догодио."
 #: src/en/documentation/use/guides/cti.md:82
 msgid ""
 "![Screenshot shows the caller log with call entries and the different caller "
-"matches](/screenshots/cypress/documentation/use/guide-cti.cy.js/caller-log-"
+"matches](/screenshots/generated/documentation/use/guide-cti/caller-log-"
 "table.png)"
 msgstr ""
-"![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/cti.md:85
@@ -6507,11 +6507,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/editor.md:13
 msgid ""
-"![Screenshot shows Zammad's editor](/screenshots/cypress/documentation/use/"
-"guide-editor.cy.js/editor-overview.png)"
+"![Screenshot shows Zammad's editor](/screenshots/generated/documentation/use/"
+"guide-editor/editor-overview.png)"
 msgstr ""
-"![Снимак екрана који приказује мени радњи макроа](/screenshots/cypress/"
-"documentation/use/guide-editor.cy.js/editor-overview.png)"
+"![Снимак екрана који приказује мени радњи макроа](/screenshots/generated/"
+"documentation/use/guide-editor/editor-overview.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/editor.md:14
@@ -6809,11 +6809,11 @@ msgstr ""
 #: src/en/documentation/use/guides/knowledge-base.md:12
 msgid ""
 "![Screenshot shows a knowledge base category with its subcategories and "
-"answers](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/"
+"answers](/screenshots/generated/documentation/use/guide-knowledge-base/"
 "knowledge-base-full.png)"
 msgstr ""
-"![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:19
@@ -7093,11 +7093,11 @@ msgstr "Категорије"
 #: src/en/documentation/use/guides/knowledge-base.md:101
 msgid ""
 "![Screenshot shows the edit category flyout with title, icon and parent "
-"fields](/screenshots/cypress/documentation/use/guide-knowledge-base.cy.js/kb-"
+"fields](/screenshots/generated/documentation/use/guide-knowledge-base/kb-"
 "category-flyout.png)"
 msgstr ""
-"![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:105
@@ -7334,11 +7334,11 @@ msgstr "Садржај"
 #: src/en/documentation/use/guides/knowledge-base.md:171
 msgid ""
 "![Screenshot shows the sorting bar with the mode switcher highlighted and "
-"the answers tab active](/screenshots/cypress/documentation/use/guide-"
-"knowledge-base.cy.js/kb-sort-content.png)"
+"the answers tab active](/screenshots/generated/documentation/use/guide-"
+"knowledge-base/kb-sort-content.png)"
 msgstr ""
-"![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:175
@@ -7416,11 +7416,11 @@ msgstr "Видљивост и заказивање"
 #: src/en/documentation/use/guides/knowledge-base.md:192
 msgid ""
 "![Screenshot shows the scheduled visibility section in the answer sidebar, "
-"highlighted](/screenshots/cypress/documentation/use/guide-knowledge-"
-"base.cy.js/kb-scheduled-visibility.png)"
+"highlighted](/screenshots/generated/documentation/use/guide-knowledge-"
+"base/kb-scheduled-visibility.png)"
 msgstr ""
-"![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/knowledge-base.md:196
@@ -8332,11 +8332,11 @@ msgstr "Прегледи"
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:9
 msgid ""
-"![Screenshot shows opened overview section](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Screenshot shows opened overview section](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 msgstr ""
-"![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-"documentation/use/guide-overview.cy.js/overview-full.png)"
+"![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+"documentation/use/guide-overview/overview-full.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/overviews.md:16
@@ -8786,11 +8786,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:32
 msgid ""
-"![Screenshot shows search results in the taskbar](/screenshots/cypress/"
-"documentation/use/guide-search.cy.js/search-sidebar.png)"
+"![Screenshot shows search results in the taskbar](/screenshots/generated/"
+"documentation/use/guide-search/search-sidebar.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/guide-search.cy.js/search-sidebar.png)"
+"screenshots/generated/documentation/use/guide-search/search-sidebar.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:36
@@ -8838,11 +8838,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/search.md:46
 msgid ""
-"![Screenshot shows detailed search](/screenshots/cypress/documentation/use/"
-"guide-search.cy.js/search-detail.png)"
+"![Screenshot shows detailed search](/screenshots/generated/documentation/use/"
+"guide-search/search-detail.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"guide-search.cy.js/search-detail.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"guide-search/search-detail.png)"
 
 #. type: Title ###
 #: src/en/documentation/use/guides/search.md:47
@@ -9260,11 +9260,11 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:29
 msgid ""
 "![Screenshot showing outgoing email which just gets signed and not encrypted]"
-"(/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-"
+"(/screenshots/generated/documentation/use/guide-secure-email/secure-"
 "email-signing-only.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"guide-secure-email.cy.js/secure-email-signing-only.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"guide-secure-email/secure-email-signing-only.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/secure-email.md:30
@@ -9321,11 +9321,11 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:46
 msgid ""
 "![Screenshot showing Encrypted and Signed status icons on an incoming email "
-"article](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/"
+"article](/screenshots/generated/documentation/use/guide-secure-email/"
 "secure-email-incoming-article.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-"
+"screenshots/generated/documentation/use/guide-secure-email/secure-email-"
 "incoming-article.png)"
 
 #. type: Title ###
@@ -9340,24 +9340,24 @@ msgstr "Иконице статуса долазних имејл порука"
 msgid ""
 "| Icon | Meaning |\n"
 "|---|---|\n"
-"| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Encrypted for you.** Even if intercepted by a third party, they will not be able to read it. |\n"
-"| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Cannot be decrypted.** Zammad lacks the required key to decrypt this message. |\n"
-"| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |\n"
-"| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |\n"
+"| ![Encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-encrypted.png) | **Encrypted for you.** Even if intercepted by a third party, they will not be able to read it. |\n"
+"| ![Not encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-encrypted.png) | **Cannot be decrypted.** Zammad lacks the required key to decrypt this message. |\n"
+"| ![Signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-signed.png) | **Successfully verified.** You can be confident it is authentic and the content has not been modified. |\n"
+"| ![Not signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-signed.png) | **Signature verification failed.** Hover over the icon for more information. |\n"
 msgstr ""
 "| Ицоно | Сигнифицадо |\n"
 "|---|---|\n"
-"| ![Icono cifrado](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-encrypted.png) | **Цифрадо пара ти.** Инцлусо си ес "
+"| ![Icono cifrado](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-encrypted.png) | **Цифрадо пара ти.** Инцлусо си ес "
 "интерцептадо пор ун терцеро, но подрá леерло. |\n"
-"| ![Icono sin cifrar](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-not-encrypted.png) | **Но се пуеде десцифрар.** "
+"| ![Icono sin cifrar](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-not-encrypted.png) | **Но се пуеде десцифрар.** "
 "Zammad цареце де ла цлаве нецесариа пара десцифрар есте менсаје. |\n"
-"| ![Icono firmado](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-signed.png) | **Верифицадо цоррецтаменте.** Пуедес "
+"| ![Icono firmado](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-signed.png) | **Верифицадо цоррецтаменте.** Пуедес "
 "естар сегуро де que ес аутéнтицо y ел цонтенидо но ха сидо модифицадо. |\n"
-"| ![Icono sin firmar](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-not-signed.png) | **Еррор ен ла верифицациóн де ла "
+"| ![Icono sin firmar](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-not-signed.png) | **Еррор ен ла верифицациóн де ла "
 "фирма.** Паса ел цурсор собре ел ицоно пара обтенер мáс информациóн. |\n"
 
 #. type: Title ##
@@ -9381,11 +9381,11 @@ msgstr ""
 #: src/en/documentation/use/guides/secure-email.md:62
 msgid ""
 "![Screenshot showing the Encrypt and Sign toggle buttons in the email reply "
-"editor](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/"
+"editor](/screenshots/generated/documentation/use/guide-secure-email/"
 "secure-email-outgoing-article.png)"
 msgstr ""
 "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-"screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-"
+"screenshots/generated/documentation/use/guide-secure-email/secure-email-"
 "outgoing-article.png)"
 
 #. type: Fenced div block (info)
@@ -9407,24 +9407,24 @@ msgstr "Иконице статуса одлазних имејл порука"
 msgid ""
 "| Icon | Meaning |\n"
 "|---|---|\n"
-"| ![Encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-encrypted.png) | **Will be encrypted.** Even if intercepted by a third party, they will not be able to read it. |\n"
-"| ![Not encrypted icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-encrypted.png) | **Will not be encrypted.** |\n"
-"| ![Signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-signed.png) | **Will be signed.** Recipients can verify that it came from you and that the content has not been modified. |\n"
-"| ![Not signed icon](/screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-not-signed.png) | **Will not be signed.** |\n"
+"| ![Encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-encrypted.png) | **Will be encrypted.** Even if intercepted by a third party, they will not be able to read it. |\n"
+"| ![Not encrypted icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-encrypted.png) | **Will not be encrypted.** |\n"
+"| ![Signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-signed.png) | **Will be signed.** Recipients can verify that it came from you and that the content has not been modified. |\n"
+"| ![Not signed icon](/screenshots/generated/documentation/use/guide-secure-email/secure-email-not-signed.png) | **Will not be signed.** |\n"
 msgstr ""
 "| Ицоно | Сигнифицадо |\n"
 "|---|---|\n"
-"| ![Icono cifrado](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-encrypted.png) | **Се цифрарá.** Инцлусо си ес "
+"| ![Icono cifrado](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-encrypted.png) | **Се цифрарá.** Инцлусо си ес "
 "интерцептадо пор ун терцеро, но подрá леерло. |\n"
-"| ![Icono sin cifrar](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-not-encrypted.png) | **Но се цифрарá.** |\n"
-"| ![Icono firmado](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-signed.png) | **Се фирмарá.** Лос дестинатариос "
+"| ![Icono sin cifrar](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-not-encrypted.png) | **Но се цифрарá.** |\n"
+"| ![Icono firmado](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-signed.png) | **Се фирмарá.** Лос дестинатариос "
 "подрáн верифицар que провиене де ти y que ел цонтенидо но ха сидо "
 "модифицадо. |\n"
-"| ![Icono sin firmar](/screenshots/cypress/documentation/use/guide-secure-"
-"email.cy.js/secure-email-not-signed.png) | **Но се фирмарá.** |\n"
+"| ![Icono sin firmar](/screenshots/generated/documentation/use/guide-secure-"
+"email/secure-email-not-signed.png) | **Но се фирмарá.** |\n"
 
 #. type: Title ##
 #: src/en/documentation/use/guides/secure-email.md:76
@@ -9445,11 +9445,11 @@ msgstr "Потпис: Није могуће пронаћи сертификат 
 #: src/en/documentation/use/guides/secure-email.md:81
 msgid ""
 "![Screenshot showing Security error warning banner on an article](/"
-"screenshots/cypress/documentation/use/guide-secure-email.cy.js/secure-email-"
+"screenshots/generated/documentation/use/guide-secure-email/secure-email-"
 "error-banner.png)"
 msgstr ""
-"![Снимак екрана приказује убацивање чланка базе знања](/screenshots/cypress/"
-"documentation/use/guide-secure-email.cy.js/secure-email-error-banner.png)"
+"![Снимак екрана приказује убацивање чланка базе знања](/screenshots/generated/"
+"documentation/use/guide-secure-email/secure-email-error-banner.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/secure-email.md:84
@@ -9616,11 +9616,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:26
 msgid ""
-"![Screenshot shows 2FA methods in personal settings](/screenshots/cypress/"
-"documentation/use/guide-2fa.cy.js/2fa-methods-profile-setup.png)"
+"![Screenshot shows 2FA methods in personal settings](/screenshots/generated/"
+"documentation/use/guide-2fa/2fa-methods-profile-setup.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"guide-2fa.cy.js/2fa-methods-profile-setup.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"guide-2fa/2fa-methods-profile-setup.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:28
@@ -10049,10 +10049,10 @@ msgstr ""
 #: src/en/documentation/use/guides/two-factor-auth.md:146
 msgid ""
 "![Screenshot shows list of 2FA methods and default method](/screenshots/"
-"cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-overview.png)"
+"generated/documentation/use/guide-2fa/2fa-methods-profile-overview.png)"
 msgstr ""
 "![Снимак екрана који приказује пројекте превода у Weblate менију](/"
-"screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-"
+"screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-"
 "overview.png)"
 
 #. type: Plain text
@@ -10076,11 +10076,11 @@ msgstr "Уреди 2FA метод"
 #: src/en/documentation/use/guides/two-factor-auth.md:153
 msgid ""
 "![Screenshot shows the action menu for an already set up 2FA method](/"
-"screenshots/cypress/documentation/use/guide-2fa.cy.js/2fa-methods-profile-"
+"screenshots/generated/documentation/use/guide-2fa/2fa-methods-profile-"
 "action-menu.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"guide-2fa.cy.js/2fa-methods-profile-action-menu.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"guide-2fa/2fa-methods-profile-action-menu.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/guides/two-factor-auth.md:156
@@ -10145,11 +10145,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/documentation/use/personal-settings.md:13
 msgid ""
-"![Screenshot shows personal settings of a user](/screenshots/cypress/"
-"documentation/use/user-profile.cy.js/user-profile-settings-full.png)"
+"![Screenshot shows personal settings of a user](/screenshots/generated/"
+"documentation/use/user-profile/user-profile-settings-full.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"user-profile.cy.js/user-profile-settings-full.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"user-profile/user-profile-settings-full.png)"
 
 #. type: Title ##
 #: src/en/documentation/use/personal-settings.md:14
@@ -10172,10 +10172,10 @@ msgstr ""
 msgid ""
 "![Screenshot shows the avatar menu with the entries User documentation, "
 "Appearance (dark mode toggle), Personal settings and Sign out](/screenshots/"
-"cypress/documentation/use/user-profile.cy.js/avatar-menu.png)"
+"generated/documentation/use/user-profile/avatar-menu.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"user-profile.cy.js/avatar-menu.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"user-profile/avatar-menu.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/personal-settings.md:22
@@ -10421,10 +10421,10 @@ msgstr ""
 #: src/en/documentation/use/personal-settings.md:93
 msgid ""
 "![Screenshot shows flyout with created token and copy button](/screenshots/"
-"cypress/documentation/use/user-profile.cy.js/token-dialog.png)"
+"generated/documentation/use/user-profile/token-dialog.png)"
 msgstr ""
-"![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/use/"
-"user-profile.cy.js/token-dialog.png)"
+"![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/use/"
+"user-profile/token-dialog.png)"
 
 #. type: Plain text
 #: src/en/documentation/use/personal-settings.md:97
@@ -24190,11 +24190,11 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/rails-commands.md:592
 msgid ""
-"![Screenshot shows a note during article creation](/screenshots/cypress/"
-"reference/rails-commands.cy.js/article-creation-note.png)"
+"![Screenshot shows a note during article creation](/screenshots/generated/"
+"reference/rails-commands/article-creation-note.png)"
 msgstr ""
 "![Снимак екрана приказује радњу чланка за раздељивање у падајућем менију](/"
-"screenshots/cypress/reference/rails-commands.cy.js/article-creation-note.png)"
+"screenshots/generated/reference/rails-commands/article-creation-note.png)"
 
 #. type: Title ####
 #: src/en/reference/rails-commands.md:593
@@ -35742,8 +35742,8 @@ msgid ""
 "![Screenshot shows NPM configuration dialog with details tab](/screenshots/"
 "tutorials/custom-kb-url/npm-details-tab.png)"
 msgstr ""
-"![Снимак екрана приказује детаљни приказ организације](/screenshots/cypress/"
-"documentation/use/advanced-features.cy.js/organization-detail-page.png)"
+"![Снимак екрана приказује детаљни приказ организације](/screenshots/generated/"
+"documentation/use/advanced-features/organization-detail-page.png)"
 
 #. type: Title ###
 #: src/en/tutorials/custom-kb-url.md:32
@@ -42551,16 +42551,16 @@ msgstr ""
 #, fuzzy
 #~| msgid ""
 #~| "![Screenshot shows GitLab content sidebar with \"Link Issue\" button](/"
-#~| "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
+#~| "screenshots/generated/documentation/use/advanced-features/gitlab-"
 #~| "content-sidebar.png)"
 #~ msgid ""
 #~ "![Screenshot shows GitLab content sidebar with \"Link issue\" button](/"
-#~ "screenshots/cypress/documentation/use/advanced-features.cy.js/gitlab-"
+#~ "screenshots/generated/documentation/use/advanced-features/gitlab-"
 #~ "content-sidebar.png)"
 #~ msgstr ""
 #~ "![Снимак екрана који приказује бочну траку GitLab садржаја са дугметом "
-#~ "„Повежи извештај”](/screenshots/cypress/documentation/use/advanced-"
-#~ "features.cy.js/gitlab-content-sidebar.png)"
+#~ "„Повежи извештај”](/screenshots/generated/documentation/use/advanced-"
+#~ "features/gitlab-content-sidebar.png)"
 
 #, no-wrap
 #~ msgid ""
@@ -42597,14 +42597,14 @@ msgstr ""
 
 #, fuzzy
 #~| msgid ""
-#~| "![Screenshot shows detailed search](/screenshots/cypress/documentation/"
-#~| "use/guide-search.cy.js/search-detail.png)"
+#~| "![Screenshot shows detailed search](/screenshots/generated/documentation/"
+#~| "use/guide-search/search-detail.png)"
 #~ msgid ""
-#~ "![Screenshot shows a translated ticket article](/screenshots/cypress/"
-#~ "documentation/use/guide-translation.cy.js/translation-article.png)"
+#~ "![Screenshot shows a translated ticket article](/screenshots/generated/"
+#~ "documentation/use/guide-translation/translation-article.png)"
 #~ msgstr ""
-#~ "![Пример снимка екрана (пуна страна)](/screenshots/cypress/documentation/"
-#~ "use/guide-search.cy.js/search-detail.png)"
+#~ "![Пример снимка екрана (пуна страна)](/screenshots/generated/documentation/"
+#~ "use/guide-search/search-detail.png)"
 
 #, fuzzy, no-wrap
 #~| msgid "Choose your preferred language of Zammad."
@@ -42613,15 +42613,15 @@ msgstr ""
 
 #, fuzzy
 #~| msgid ""
-#~| "![Screenshot shows opened overview section](/screenshots/cypress/"
-#~| "documentation/use/guide-overview.cy.js/overview-full.png)"
+#~| "![Screenshot shows opened overview section](/screenshots/generated/"
+#~| "documentation/use/guide-overview/overview-full.png)"
 #~ msgid ""
 #~ "![Screenshot shows the language menu with the language list and the "
-#~ "switch for translating all articles](/screenshots/cypress/documentation/"
-#~ "use/guide-translation.cy.js/translation-target-menu.png)"
+#~ "switch for translating all articles](/screenshots/generated/documentation/"
+#~ "use/guide-translation/translation-target-menu.png)"
 #~ msgstr ""
-#~ "![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-#~ "documentation/use/guide-overview.cy.js/overview-full.png)"
+#~ "![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+#~ "documentation/use/guide-overview/overview-full.png)"
 
 #, fuzzy, no-wrap
 #~| msgid "Create a new article"
@@ -42630,15 +42630,15 @@ msgstr ""
 
 #, fuzzy
 #~| msgid ""
-#~| "![Screenshot shows opened overview section](/screenshots/cypress/"
-#~| "documentation/use/guide-overview.cy.js/overview-full.png)"
+#~| "![Screenshot shows opened overview section](/screenshots/generated/"
+#~| "documentation/use/guide-overview/overview-full.png)"
 #~ msgid ""
 #~ "![Screenshot shows an article with the translate button in its action "
-#~ "row, highlighted with a frame](/screenshots/cypress/documentation/use/"
-#~ "guide-translation.cy.js/translation-button.png)"
+#~ "row, highlighted with a frame](/screenshots/generated/documentation/use/"
+#~ "guide-translation/translation-button.png)"
 #~ msgstr ""
-#~ "![Снимак екрана који приказује отворен преглед](/screenshots/cypress/"
-#~ "documentation/use/guide-overview.cy.js/overview-full.png)"
+#~ "![Снимак екрана који приказује отворен преглед](/screenshots/generated/"
+#~ "documentation/use/guide-overview/overview-full.png)"
 
 #, no-wrap
 #~ msgid "User profile"
@@ -42803,11 +42803,11 @@ msgstr ""
 #, fuzzy
 #~ msgid ""
 #~ "![Screenshot shows the Add internal note button below the ticket's "
-#~ "articles](/screenshots/cypress/documentation/use/basics.cy.js/new-"
+#~ "articles](/screenshots/generated/documentation/use/basics/new-"
 #~ "article.png)"
 #~ msgstr ""
 #~ "![Снимак екрана приказује одељак ознака у траци тикета са стране](/"
-#~ "screenshots/cypress/usage-advanced-features.cy.js/ticket-tags.png)"
+#~ "screenshots/generated/usage-advanced-features/ticket-tags.png)"
 
 #, fuzzy
 #~ msgid ""
@@ -44131,10 +44131,10 @@ msgstr ""
 
 #, fuzzy
 #~ msgid ""
-#~ "![Screenshot shows macro action menu](/screenshots/cypress/usage-advanced-"
-#~ "features.cy.js/ticket-tags.png)"
+#~ "![Screenshot shows macro action menu](/screenshots/generated/usage-advanced-"
+#~ "features/ticket-tags.png)"
 #~ msgstr ""
-#~ "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/"
+#~ "![Пример снимка екрана (пуна страна)](/screenshots/generated/test/"
 #~ "test-screenshot-full-page.png)"
 
 #, no-wrap
@@ -44149,17 +44149,17 @@ msgstr ""
 #~ msgstr "Снимци екрана"
 
 #~ msgid ""
-#~ "![Test Screenshot (Full Page)](/screenshots/cypress/test.cy.js/test-"
+#~ "![Test Screenshot (Full Page)](/screenshots/generated/test/test-"
 #~ "screenshot-full-page.png)"
 #~ msgstr ""
-#~ "![Пример снимка екрана (пуна страна)](/screenshots/cypress/test.cy.js/"
+#~ "![Пример снимка екрана (пуна страна)](/screenshots/generated/test/"
 #~ "test-screenshot-full-page.png)"
 
 #~ msgid ""
-#~ "![Test Screenshot (Page Element)](/screenshots/cypress/test.cy.js/test-"
+#~ "![Test Screenshot (Page Element)](/screenshots/generated/test/test-"
 #~ "screenshot-page-element.png)"
 #~ msgstr ""
-#~ "![Пример снимка екрана (елемент стране)](/screenshots/cypress/test.cy.js/"
+#~ "![Пример снимка екрана (елемент стране)](/screenshots/generated/test/"
 #~ "test-screenshot-page-element.png)"
 
 #~ msgid "![Test Screenshot (Static)](/screenshots/dashboard.png)"

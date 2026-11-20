@@ -89,9 +89,9 @@ with some [examples](#examples) about how to format and structure the content.
 - Use key markup like [[ctrl]] and [[x]] to highlight a key press (see [examples](#text-and-ui) below).
 - Include screenshots when necessary. The preferred way of adding screenshots of Zammad is by creating them
   automatically
-  [using Cypress](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots-cypress){target=_blank}.
-  This supports the maintainability of the documentation because the screenshots are re-generated each time the build
-  pipeline runs. Please note that the usage of Cypress is not part of this documentation.
+  [with the screenshot suite](https://github.com/zammad/zammad-org?tab=readme-ov-file#automatic-screenshots){target=_blank}.
+  This supports the maintainability of the documentation because the screenshots are re-generated every night. Please
+  note that the usage of the screenshot suite is not part of this documentation.
 - Provide step-by-step instructions with clear explanations.
 - Use examples or scenarios to illustrate concepts.
 - Include relevant images or diagrams when necessary.
