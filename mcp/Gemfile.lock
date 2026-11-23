@@ -19,7 +19,7 @@ GEM
       simpleidn (~> 0.2)
     language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
-    mcp (1.10.0)
+    mcp (1.11.0)
       json_schemer (>= 2.4)
     nio4r (2.7.5)
     parallel (2.3.0)
@@ -84,7 +84,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  mcp (~> 1.10.0)
+  mcp (~> 1.11.0)
   puma (~> 8.0)
   rack (~> 3.2)
   rack-test (~> 2.2)

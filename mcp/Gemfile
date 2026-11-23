@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 # .ruby-version pins the version of the dev container and CI; any 4.0 runs it.
 ruby '~> 4.0'
 
-gem 'mcp', '~> 1.10.0'
+gem 'mcp', '~> 1.11.0'
 gem 'puma', '~> 8.0'
 gem 'rack', '~> 3.2'
 
