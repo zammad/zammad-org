@@ -5150,20 +5150,21 @@ msgid "Knowledge base answer suggestion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:103
+#: src/en/documentation/use/guides/ai.md:102
 #, markdown-text
 msgid ""
 "This feature compares the ticket content against the knowledge base and "
-"shows relevant answers under **Suggested knowledge** if they meet the "
-"admin-configured score threshold. Each suggestion shows the title of the "
-"answer and more details on hover. An additional relevance score is only "
-"shown to users with the corresponding admin permissions. Click on the title "
-"to open the answer in the knowledge base. Click the ::+:: on the right side "
-"which appears when hovering with the mouse to link it to the ticket."
+"shows relevant answers under **Suggested** if they meet the admin-configured "
+"score threshold. Each suggestion shows the title of the answer and more "
+"details on hover.  An additional relevance score is only shown to users with "
+"the corresponding admin permissions. Click on the title to open the answer "
+"in the knowledge base. Click the ::+:: on the right side which appears when "
+"hovering with the mouse to link it to the ticket. Linked answers are listed "
+"above under **Linked**."
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:105
+#: src/en/documentation/use/guides/ai.md:104
 #, markdown-text
 msgid ""
 "If no suggestions are available, the message \"No suggestions.\" is "
@@ -5171,13 +5172,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/documentation/use/guides/ai.md:106
+#: src/en/documentation/use/guides/ai.md:105
 #, markdown-text, no-wrap
 msgid "AI agents"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:112
+#: src/en/documentation/use/guides/ai.md:111
 #, markdown-text
 msgid ""
 "AI agents can be configured to work on certain types of routine tasks. In "
@@ -5190,14 +5191,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/guides/ai.md:113
+#: src/en/documentation/use/guides/ai.md:112
 #: src/en/documentation/use/guides/mobile-view.md:97
 #, markdown-text, no-wrap
 msgid "Ticket history"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:117
+#: src/en/documentation/use/guides/ai.md:116
 #, markdown-text
 msgid ""
 "If an AI agent applied changes, you can see a ticket history entry telling "
@@ -5207,7 +5208,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:119
+#: src/en/documentation/use/guides/ai.md:118
 #, markdown-text
 msgid ""
 "![Screenshot shows AI agent ticket history "
@@ -5215,13 +5216,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:120
+#: src/en/documentation/use/guides/ai.md:119
 #, markdown-text, no-wrap
 msgid "Simultaneous work detection"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:125
+#: src/en/documentation/use/guides/ai.md:124
 #, markdown-text
 msgid ""
 "AI agents which are currently working on a ticket are displayed like other "
@@ -5231,13 +5232,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:127
+#: src/en/documentation/use/guides/ai.md:126
 #, markdown-text
 msgid "Avatar of AI agent:"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:129
+#: src/en/documentation/use/guides/ai.md:128
 #, markdown-text
 msgid ""
 "![Screenshot shows avatar of an AI "
@@ -5245,13 +5246,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/guides/ai.md:130
+#: src/en/documentation/use/guides/ai.md:129
 #, markdown-text, no-wrap
 msgid "Overview indicator"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:133
+#: src/en/documentation/use/guides/ai.md:132
 #, markdown-text
 msgid ""
 "A running AI agent is indicated in the status column in overviews. The "
@@ -5259,7 +5260,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/guides/ai.md:134
+#: src/en/documentation/use/guides/ai.md:133
 #, markdown-text
 msgid ""
 "![Screenshot shows a status circle in overviews indicating an AI agent is "
