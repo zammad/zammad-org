@@ -3515,15 +3515,17 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:77
+#: src/en/documentation/use/basics/ticket-basics.md:78
 #, markdown-text
 msgid ""
-"**New**: State for new tickets on which no one has worked on. When updating "
-"a ticket for the first time, it automatically switches to open."
+"**New**: State for new tickets on which an agent has not sent a public reply "
+"yet. Adding an internal note or changing other ticket attributes does not "
+"change the state. The ticket switches to open automatically as soon as an "
+"agent sends the first public reply."
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:77
+#: src/en/documentation/use/basics/ticket-basics.md:78
 #, markdown-text
 msgid ""
 "**Open**: State for tickets which aren't resolved yet and some work needs to "
@@ -3531,7 +3533,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:77
+#: src/en/documentation/use/basics/ticket-basics.md:78
 #, markdown-text
 msgid ""
 "**Pending Close**: State for tickets which are basically resolved but you "
@@ -3540,7 +3542,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:77
+#: src/en/documentation/use/basics/ticket-basics.md:78
 #, markdown-text
 msgid ""
 "**Pending Reminder**: State for open tickets which you want to get reminded "
@@ -3550,7 +3552,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:77
+#: src/en/documentation/use/basics/ticket-basics.md:78
 #, markdown-text
 msgid ""
 "**Merged**: State for a ticket which was merged into another ticket. Check "
@@ -3559,7 +3561,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:80
+#: src/en/documentation/use/basics/ticket-basics.md:81
 #, markdown-text
 msgid ""
 "Zammad's ticket states are color coded. This helps you to understanding the "
@@ -3568,7 +3570,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:82
+#: src/en/documentation/use/basics/ticket-basics.md:83
 #, markdown-text
 msgid ""
 "![Screenshot shows different color-coded "
@@ -3576,13 +3578,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/documentation/use/basics/ticket-basics.md:83
+#: src/en/documentation/use/basics/ticket-basics.md:84
 #, markdown-text, no-wrap
 msgid "Priority"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:87
+#: src/en/documentation/use/basics/ticket-basics.md:88
 #, markdown-text
 msgid ""
 "A ticket's priority is simply a ranking (from 1 to 3) of how urgent or "
@@ -3590,25 +3592,25 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:91
+#: src/en/documentation/use/basics/ticket-basics.md:92
 #, markdown-text
 msgid "1 low"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:91
+#: src/en/documentation/use/basics/ticket-basics.md:92
 #, markdown-text
 msgid "2 normal"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:91
+#: src/en/documentation/use/basics/ticket-basics.md:92
 #, markdown-text
 msgid "3 high"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:94
+#: src/en/documentation/use/basics/ticket-basics.md:95
 #, markdown-text
 msgid ""
 "In case these priorities aren't enough, ask your Zammad admin to create "
@@ -3617,7 +3619,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:96
+#: src/en/documentation/use/basics/ticket-basics.md:97
 #, markdown-text
 msgid ""
 "![Screenshot shows different color-coded "
@@ -3625,7 +3627,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:99
+#: src/en/documentation/use/basics/ticket-basics.md:100
 #, markdown-text
 msgid ""
 "You might wonder what such a ticket priority is for. Out of the box, it "
@@ -3635,7 +3637,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:102
+#: src/en/documentation/use/basics/ticket-basics.md:103
 #, markdown-text
 msgid ""
 "Be aware that customers can't set a priority for their own "
@@ -3644,14 +3646,14 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: src/en/documentation/use/basics/ticket-basics.md:103
+#: src/en/documentation/use/basics/ticket-basics.md:104
 #: src/en/reference/rest-api/tags.md:1 src/en/reference/rest-api/tags.md:6
 #, markdown-text, no-wrap
 msgid "Tags"
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:109
+#: src/en/documentation/use/basics/ticket-basics.md:110
 #, markdown-text
 msgid ""
 "Tags are custom labels that can be assigned to tickets to make it easier to "
@@ -3662,7 +3664,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:111
+#: src/en/documentation/use/basics/ticket-basics.md:112
 #, markdown-text
 msgid ""
 "![Screenshot shows tag area in ticket side "
@@ -3670,7 +3672,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:117
+#: src/en/documentation/use/basics/ticket-basics.md:118
 #, markdown-text
 msgid ""
 "In the ticket sidebar, you can find a section which is labeled as "
@@ -3683,25 +3685,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/documentation/use/basics/ticket-basics.md:121
+#: src/en/documentation/use/basics/ticket-basics.md:122
 #, markdown-text
 msgid "Now that you know the basics, head over to one of the following pages:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:124
+#: src/en/documentation/use/basics/ticket-basics.md:125
 #, markdown-text
 msgid "[Find Tickets](/en/documentation/use/basics/find-tickets)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:124
+#: src/en/documentation/use/basics/ticket-basics.md:125
 #, markdown-text
 msgid "[Create tickets](/en/documentation/use/basics/create-tickets)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/documentation/use/basics/ticket-basics.md:124
+#: src/en/documentation/use/basics/ticket-basics.md:125
 #, markdown-text
 msgid "[Work with tickets](/en/documentation/use/basics/work-with-tickets)"
 msgstr ""

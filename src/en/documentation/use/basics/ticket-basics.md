@@ -64,8 +64,9 @@ To change the owner to a person which has only access to another group's tickets
 The state reflects the current status of a ticket (mainly if a customer request is resolved or not). Think of it as a
 representation of progress towards completion. By default, there are the following states:
 
-- **New**: State for new tickets on which no one has worked on. When updating a ticket for the first time, it
-  automatically switches to open.
+- **New**: State for new tickets on which an agent has not sent a public reply yet. Adding an internal note or
+  changing other ticket attributes does not change the state. The ticket switches to open automatically as
+  soon as an agent sends the first public reply.
 - **Open**: State for tickets which aren't resolved yet and some work needs to be done.
 - **Pending Close**: State for tickets which are basically resolved but you don't want to close immediately. This state
   requires you to enter a date and time at which the ticket automatically switches to closed.
