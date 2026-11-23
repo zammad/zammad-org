@@ -41,6 +41,7 @@ import { createHash } from 'node:crypto'
 import { readdirSync, readFileSync } from 'node:fs'
 import { basename, resolve } from 'node:path'
 import { keywordsOf, loadRelevance, type Relevance } from './relevance.mts'
+import { supportedLocales } from './locales.mts'
 import { verifyLocale } from './verify.mts'
 import { aliasName, collectionPrefix, collectionSchema, typesenseLocale, type SearchDocument } from './schema.mts'
 
@@ -91,6 +92,17 @@ function localesToIndex(): string[] {
     .sort()
 
   if (!found.length) throw new Error(`No search documents in ${indexDir} — run \`pnpm build\` first`)
+
+  // Every language the site has, not just the ones the build left behind: a
+  // locale that is missing here would leave the search silently without it.
+  const missing = supportedLocales.filter((locale) => !found.includes(locale))
+
+  if (missing.length) {
+    throw new Error(
+      `No search documents for ${missing.join(', ')} in ${indexDir} — run \`pnpm build\` first, ` +
+        'or name the locales to index explicitly'
+    )
+  }
 
   return found
 }

@@ -3,10 +3,16 @@
 module ZammadDocsMcp
   # The MCP server with the documentation tools.
   module Server
-    INSTRUCTIONS = <<~TEXT
+    # Languages in prose, from `LOCALES`: "English, German, Serbian, Italian,
+    # Brazilian Portuguese and Czech".
+    LANGUAGES = LOCALES.map { |locale| LOCALE_NAMES.fetch(locale) }
+                       .then { |names| [names[0...-1].join(', '), names.last].join(' and ') }
+                       .freeze
+
+    INSTRUCTIONS = <<~TEXT.freeze
       Read-only access to the Zammad documentation (https://next.zammad.org), the
-      helpdesk's user and administrator documentation, in English, German,
-      Serbian, Italian and Brazilian Portuguese.
+      helpdesk's user and administrator documentation, in
+      #{LANGUAGES}.
 
       Cite the canonical URL of every result you use. Results in another
       language than requested are marked with `fallback: true`; say so when you

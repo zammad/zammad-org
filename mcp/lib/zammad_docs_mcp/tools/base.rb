@@ -7,12 +7,15 @@ module ZammadDocsMcp
     # is logged (see `CallLog`): a tool implements `run` and describes a call
     # for the log with `log_entry`.
     class Base < MCP::Tool
+      # "en (English), de (German), …", built from the language list of the site.
+      LOCALE_LIST = LOCALES.map { |locale| "#{locale} (#{LOCALE_NAMES.fetch(locale)})" }.join(', ')
+
       LOCALE = {
         type: 'string',
         enum: LOCALES,
         default: FALLBACK_LOCALE,
-        description: 'Language of the documentation: en, de (German), sr (Serbian), it (Italian), ' \
-                     'pt_BR (Brazilian Portuguese). Answer in the language of the question.'
+        description: "Language of the documentation: #{LOCALE_LIST}. " \
+                     'Answer in the language of the question.'
       }.freeze
 
       FALLBACK = {

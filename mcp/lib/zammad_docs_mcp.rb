@@ -11,7 +11,18 @@ module ZammadDocsMcp
   VERSION = '1.0.0'
 
   # Languages of the site, in the order of its language switcher.
-  LOCALES = %w[en de sr it pt_BR].freeze
+  LOCALES = %w[en de sr it pt_BR cs].freeze
+
+  # Names of those languages, for anything that shows the list to a client
+  # (the server instructions, the `locale` description of the tools).
+  LOCALE_NAMES = {
+    'en' => 'English',
+    'de' => 'German',
+    'sr' => 'Serbian',
+    'it' => 'Italian',
+    'pt_BR' => 'Brazilian Portuguese',
+    'cs' => 'Czech'
+  }.freeze
 
   # Language that answers when another one has no result.
   FALLBACK_LOCALE = 'en'

@@ -13,10 +13,9 @@ import { writeAgentData } from './llms/agent-data.mts'
 import { checkLlmsTxt } from './llms/check.mts'
 import { indexPages, mainSidebar, renderToc, sidebarLinks, type Sidebar } from './llms/sidebar.mts'
 import { builtPagePath, extractSearchDocuments } from './search/extract.mts'
+import { supportedLocales } from './search/locales.mts'
 import { loadRelevance } from './search/relevance.mts'
 import { aliasName } from './search/schema.mts'
-
-const supportedLocales = ['en', 'de', 'sr', 'it', 'pt_BR']
 
 // Avoids a `@types/node` dependency for reading the environment.
 const env: Record<string, string | undefined> = (globalThis as any).process?.env ?? {}
@@ -27,6 +26,7 @@ const localeLabels: Record<string, string> = {
   sr: 'српски',
   it: 'Italiano',
   pt_BR: 'Português (Brasil)',
+  cs: 'Čeština',
 }
 
 /*

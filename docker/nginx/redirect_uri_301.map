@@ -1,4 +1,7 @@
 /.well-known/security.txt https://raw.githubusercontent.com/zammad/zammad/refs/heads/develop/security.txt;
+
+# Language names of the old site.
 /english /en/;
 /deutsch /de/;
 /srpski /sr/;
+/cestina /cs/;

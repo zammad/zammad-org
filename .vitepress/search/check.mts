@@ -10,6 +10,7 @@
  */
 import { readdirSync } from 'node:fs'
 import { basename, resolve } from 'node:path'
+import { supportedLocales } from './locales.mts'
 import { aliasName } from './schema.mts'
 import { verifyLocale } from './verify.mts'
 
@@ -23,10 +24,23 @@ function localesToCheck(): string[] {
 
   if (requested.length) return requested
 
-  return readdirSync(indexDir)
+  const found = readdirSync(indexDir)
     .filter((file: string) => file.endsWith('.jsonl'))
     .map((file: string) => basename(file, '.jsonl'))
     .sort()
+
+  // Every language the site has, not just the ones the build left behind: a
+  // locale that is missing here would pass as "nothing to check".
+  const missing = supportedLocales.filter((locale) => !found.includes(locale))
+
+  if (missing.length) {
+    throw new Error(
+      `No search documents for ${missing.join(', ')} in ${indexDir} — run \`pnpm build\` first, ` +
+        'or name the locales to check explicitly'
+    )
+  }
+
+  return found
 }
 
 async function main() {

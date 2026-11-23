@@ -65,13 +65,35 @@ export function collectionPrefix(locale: string): string {
   return `${aliasName(locale)}_`
 }
 
-/** Typesense locale of a site locale, for tokenization and stemming. */
-const typesenseLocales: Record<string, string> = {
-  en: 'en',
-  de: 'de',
-  it: 'it',
-  pt_BR: 'pt',
-  sr: 'sr',
+/**
+ * Typesense locale of a site locale, and whether its stemmer is used.
+ *
+ * The Typesense locale decides tokenization as well: `en` is its default and
+ * folds diacritics, so `přihlášení` is indexed as `prihlaseni`; the other
+ * locales keep them. Czech has no stemmer, and is indexed with `en` without
+ * stemming — the folding is what keeps its search usable without accents.
+ */
+const typesenseLocales: Record<string, { locale: string; stem: boolean }> = {
+  en: { locale: 'en', stem: true },
+  de: { locale: 'de', stem: true },
+  it: { locale: 'it', stem: true },
+  pt_BR: { locale: 'pt', stem: true },
+  sr: { locale: 'sr', stem: true },
+  cs: { locale: 'en', stem: false },
+}
+
+/** Entry of `typesenseLocales`, which has to cover every site locale. */
+function typesenseLocaleOf(locale: string) {
+  const entry = typesenseLocales[locale]
+
+  if (!entry) throw new Error(`Search: no Typesense locale for "${locale}"`)
+
+  return entry
+}
+
+/** Typesense locale of a site locale, e.g. `pt` for `pt_BR`. */
+export function typesenseLocale(locale: string): string {
+  return typesenseLocaleOf(locale).locale
 }
 
 /**
@@ -79,16 +101,9 @@ const typesenseLocales: Record<string, string> = {
  * filtered, grouped or sorted by are declared; the others (`url`, `anchor`,
  * `title`) are stored and returned with the results.
  */
-export function typesenseLocale(locale: string): string {
-  const language = typesenseLocales[locale]
-
-  if (!language) throw new Error(`Search: no Typesense locale for "${locale}"`)
-
-  return language
-}
-
 export function collectionSchema(locale: string, name: string) {
-  const text = { locale: typesenseLocale(locale), stem: true }
+  const { locale: language, stem } = typesenseLocaleOf(locale)
+  const text = { locale: language, stem }
 
   return {
     name,

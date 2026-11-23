@@ -20,14 +20,17 @@ src/de
 src/it
 src/sr
 src/pt_BR
+src/cs
 .vitepress/config.de.yaml*
 .vitepress/config.it.yaml*
 .vitepress/config.sr.yaml*
 .vitepress/config.pt_BR.yaml*
+.vitepress/config.cs.yaml*
 .vitepress/search.de.yaml*
 .vitepress/search.it.yaml*
 .vitepress/search.sr.yaml*
 .vitepress/search.pt_BR.yaml*
+.vitepress/search.cs.yaml*
 .po4a.*.conf
 
 # Vale sync cache (created by `vale sync` if packages are added later).

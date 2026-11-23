@@ -229,6 +229,9 @@ build documentation:
       optional: true
   script:
     - pnpm install --frozen-lockfile
+    # The language lists of the nginx config have to match the site's, see
+    # docker/check_nginx_locales.mts.
+    - pnpm check:nginx
     # Builds every language into its own directory below dist/, its search
     # documents into search-index/ and the data of the MCP server into
     # agent-data/.
@@ -265,8 +268,11 @@ check search index:
         echo "The VitePress local search index is part of the build, see .vitepress/config.mts."
         exit 1
       fi
-    - TYPESENSE_URL=http://typesense:8108 TYPESENSE_ADMIN_KEY=ci-check-admin-key TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/indexer.mts en de sr it pt_BR
-    - TYPESENSE_URL=http://typesense:8108 TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/check.mts en de sr it pt_BR
+    # The locale arguments are left out: the indexer and the check cover every
+    # `search-index/*.jsonl` the build produced and fail on a locale that is
+    # missing, so no list has to be kept here.
+    - TYPESENSE_URL=http://typesense:8108 TYPESENSE_ADMIN_KEY=ci-check-admin-key TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/indexer.mts
+    - TYPESENSE_URL=http://typesense:8108 TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/check.mts
 
 # The MCP server (mcp/, see mcp/README.md): RuboCop and the specs, then the
 # specs against the build output of this pipeline, with its own throwaway
@@ -294,7 +300,7 @@ test mcp:
   script:
     - source /etc/profile.d/rvm.sh
     - ruby --version
-    - TYPESENSE_URL=http://typesense:8108 TYPESENSE_ADMIN_KEY=ci-check-admin-key TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/indexer.mts en de sr it pt_BR
+    - TYPESENSE_URL=http://typesense:8108 TYPESENSE_ADMIN_KEY=ci-check-admin-key TYPESENSE_SEARCH_KEY=ci-check-search-key node .vitepress/search/indexer.mts
     - cd mcp
     - bundle install
     - bundle exec rubocop

@@ -5,8 +5,13 @@
  * - `synonyms`: lists of words that find each other (["kanal", "channel"]),
  *   or `{ "root": "…", "synonyms": […] }` where only the synonyms find the root.
  *   Applied when indexing (`keywordsOf`): a section that contains a word of a
- *   list gets the whole list as keywords. Typesense's own synonyms do not
- *   work together with stemming, which the languages need.
+ *   list gets the whole list as keywords, so it is also found by the forms it
+ *   does not contain itself. What it contains stays searchable either way —
+ *   typo tolerance covers small differences, and a prefix match finds the
+ *   longer forms of a word (`tiket` finds `tiketů`, not the other way round).
+ *   Typesense's own synonyms do not work together with the stemmer, which is
+ *   why this runs at index time; a locale without one (Czech, see
+ *   ./schema.mts) leans on the lists for the forms that neither reaches.
  * - `pinned`: results that come first for a query, by URL of the section.
  * - `checks`: query → page that has to be among the first results; run by
  *   the indexer on every new collection (in CI and in `search-init` on

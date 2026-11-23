@@ -138,17 +138,22 @@ jobs:
     # po4a generates the content of the non-English locales.
     - run: sudo apt-get update && sudo apt-get install -y po4a
     - run: pnpm install --frozen-lockfile
+    # The language lists of the nginx config have to match the site's, see
+    # docker/check_nginx_locales.mts.
+    - run: pnpm check:nginx
     # Builds every language into its own directory below dist/, and its search
     # documents into search-index/.
     - run: pnpm build
     # The local search of VitePress must not come back.
     - run: "! grep -rl --include='*.js' localSearchIndex dist/"
-    - run: pnpm search:index en de sr it pt_BR
+    # No locale arguments: both commands cover every search-index/*.jsonl the
+    # build produced, and fail on a locale that is missing.
+    - run: pnpm search:index
       env:
         TYPESENSE_URL: http://localhost:8108
         TYPESENSE_ADMIN_KEY: ci-check-admin-key
         TYPESENSE_SEARCH_KEY: ci-check-search-key
-    - run: pnpm search:check en de sr it pt_BR
+    - run: pnpm search:check
       env:
         TYPESENSE_URL: http://localhost:8108
         TYPESENSE_SEARCH_KEY: ci-check-search-key

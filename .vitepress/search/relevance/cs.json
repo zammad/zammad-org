@@ -1,0 +1,173 @@
+{
+  "stopwords": [
+    "a",
+    "aby",
+    "ale",
+    "ani",
+    "asi",
+    "až",
+    "bez",
+    "byl",
+    "byla",
+    "bylo",
+    "být",
+    "co",
+    "či",
+    "do",
+    "ho",
+    "jak",
+    "je",
+    "jeho",
+    "jejich",
+    "jen",
+    "ještě",
+    "ji",
+    "jiné",
+    "jsem",
+    "jsou",
+    "k",
+    "kde",
+    "kdo",
+    "když",
+    "ke",
+    "která",
+    "které",
+    "který",
+    "má",
+    "mají",
+    "mezi",
+    "mi",
+    "mít",
+    "může",
+    "my",
+    "na",
+    "nad",
+    "nám",
+    "nás",
+    "náš",
+    "nebo",
+    "než",
+    "nic",
+    "o",
+    "od",
+    "on",
+    "ona",
+    "oni",
+    "pak",
+    "po",
+    "pod",
+    "podle",
+    "pro",
+    "proč",
+    "proto",
+    "protože",
+    "při",
+    "s",
+    "se",
+    "si",
+    "tak",
+    "také",
+    "tam",
+    "ten",
+    "tento",
+    "to",
+    "toho",
+    "tom",
+    "tu",
+    "tyto",
+    "u",
+    "už",
+    "v",
+    "vám",
+    "vás",
+    "váš",
+    "ve",
+    "více",
+    "však",
+    "vy",
+    "z",
+    "za",
+    "zda",
+    "zde",
+    "ze",
+    "že"
+  ],
+  "synonyms": [
+    [
+      "2fa",
+      "mfa"
+    ],
+    [
+      "sso",
+      "single sign-on"
+    ],
+    [
+      "e-mail",
+      "email"
+    ],
+    [
+      "tiket",
+      "tiketu",
+      "tiketů",
+      "tiketech",
+      "tikety",
+      "ticket"
+    ],
+    [
+      "uživatel",
+      "uživatele",
+      "uživatelů",
+      "uživatelé",
+      "uživateli"
+    ],
+    [
+      "odpověď",
+      "odpovědi",
+      "odpovědí"
+    ],
+    [
+      "hovor",
+      "hovoru",
+      "hovorů"
+    ],
+    [
+      "soubor",
+      "soubory",
+      "souboru"
+    ],
+    [
+      "článek",
+      "článku",
+      "články",
+      "článků"
+    ]
+  ],
+  "pinned": [],
+  "checks": [
+    {
+      "q": "přihlášení",
+      "expect": "/cs/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    },
+    {
+      "q": "zálohování databáze",
+      "expect": "/cs/tutorials/backup-restore.html",
+      "top": 3
+    },
+    {
+      "q": "2fa",
+      "expect": "/cs/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    },
+    {
+      "q": "sso",
+      "expect": "/cs/tutorials/sso-kerberos.html",
+      "top": 3
+    },
+    {
+      "q": "prihlaseni",
+      "expect": "/cs/documentation/use/guides/two-factor-auth.html",
+      "top": 3
+    }
+  ]
+}

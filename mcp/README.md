@@ -14,7 +14,7 @@ external assistants and coding agents. See [#239](https://github.com/zammad/zamm
 ## Tools
 
 All tools only read, and every result carries the canonical URL to cite. Every tool takes `locale` (`en`, `de`, `sr`,
-`it`, `pt_BR`; default `en`). Where the language has no answer, the tools fall back to English and mark it
+`it`, `pt_BR`, `cs`; default `en`). Where the language has no answer, the tools fall back to English and mark it
 (`fallback: true`); pass `fallback: false` to prevent that.
 
 | Tool | Purpose |
