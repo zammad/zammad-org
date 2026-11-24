@@ -9,5 +9,5 @@
     "build": "playwright test",
     "build:ci": "SCREENSHOTS_DIR=dist/generated playwright test"
   },
-  "packageManager": "pnpm@12.21.0"
+  "packageManager": "pnpm@12.22.0"
 }
