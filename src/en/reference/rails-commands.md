@@ -314,7 +314,9 @@ from closed chats that haven't been updated in the last seven days:
 
 ```ruby
 Chat::Session.where(state: 'closed').where('updated_at < ?', 7.days.ago).each do |session|
-next if session.preferences['remote_ip'].blank?
+next if session.preferences['remote_ip'].blank? &&
+        session.preferences['geo_ip'].blank? &&
+        session.preferences['dns_name'].blank?
 ```
 
 ```ruby
@@ -323,6 +325,10 @@ session.preferences.delete('geo_ip')
 
 ```ruby
 session.preferences.delete('remote_ip')
+```
+
+```ruby
+session.preferences.delete('dns_name')
 ```
 
 ```ruby

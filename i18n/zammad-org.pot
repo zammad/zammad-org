@@ -5192,9 +5192,10 @@ msgid ""
 "features page."
 msgstr ""
 
-#. type: Bullet: '- '
+#. type: Title ####
 #: src/en/documentation/use/guides/ai.md:112
 #: src/en/documentation/use/guides/mobile-view.md:97
+#: src/en/reference/privacy.md:105
 #, markdown-text, no-wrap
 msgid "Ticket history"
 msgstr ""
@@ -8964,8 +8965,9 @@ msgid ""
 "configured 2FA method, contact your admin to reset it."
 msgstr ""
 
-#. type: Title ##
+#. type: Title ####
 #: src/en/documentation/use/personal-settings.md:78
+#: src/en/reference/privacy.md:116
 #, markdown-text, no-wrap
 msgid "Devices"
 msgstr ""
@@ -9390,7 +9392,7 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/gdpr.md:87 src/en/reference/privacy.md:11
+#: src/en/gdpr.md:87 src/en/reference/privacy.md:15
 #, markdown-text, no-wrap
 msgid "Data retention"
 msgstr ""
@@ -19143,164 +19145,333 @@ msgstr ""
 #. type: Plain text
 #: src/en/reference/privacy.md:14
 #, markdown-text
-msgid "The following data is stored locally on the production system:"
+msgid ""
+"Zammad stores operational and personal data in its database. Some of it is "
+"removed automatically by built-in cleanup jobs after a fixed period. Most "
+"core data, like tickets and users, stays until you delete it."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:15
+#: src/en/reference/privacy.md:17
 #, markdown-text, no-wrap
-msgid "Tickets and users"
+msgid "Automatic deletion"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:18
+#: src/en/reference/privacy.md:23
 #, markdown-text
-msgid "By default, Zammad never automatically deletes tickets or users."
+msgid ""
+"The data below is deleted by scheduled cleanup jobs. The retention column "
+"states how old the data may get before removal, measured from the point in "
+"time noted with each entry. The interval column says how often Zammad checks "
+"for entries to delete, so actual removal can lag the retention period by up "
+"to one interval."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:22
-#, markdown-text, no-wrap
-msgid ""
-"To enable **automatic** deletion of tickets after a given interval,\n"
-"use Zammad's scheduler. You can configure it in Zammad's admin interface "
-"under\n"
-"_Manage > Scheduler_.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/privacy.md:27
-#, markdown-text, no-wrap
-msgid ""
-"To **manually** delete users and all their associated tickets (e.g. in\n"
-"compliance with a \"Right to Forget\" request under the GDPR), you can use\n"
-"the data privacy functions in the admin panel under _System > Data "
-"Privacy_\n"
-"or [use the console](/en/reference/rails-commands#deleting-records).\n"
-msgstr ""
-
-#. type: Title ###
 #: src/en/reference/privacy.md:28
+#, markdown-text, no-wrap
+msgid ""
+"These cleanups are built-in. They don't appear under _Manage > Scheduler_, "
+"which\n"
+"only lists jobs you create yourself, and neither the periods\n"
+"nor the intervals can be changed through settings. Adjusting or deactivating "
+"a\n"
+"built-in task requires the Rails console.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:45
+#, markdown-text, no-wrap
+msgid ""
+"| Data                                          | Retention                                                        "
+"| Cleanup runs    |\n"
+"|-----------------------------------------------|------------------------------------------------------------------|-----------------|\n"
+"| Activity stream entries                       | 3 months after creation                                          "
+"| daily           |\n"
+"| API tokens that aren't personal access tokens | 30 days after creation, or "
+"immediately after they expire         | daily           |\n"
+"| Audit log entries                             | 12 months after the change                                       "
+"| daily           |\n"
+"| Chat sessions, once marked **closed**         | 12 months after the last "
+"update                                  | every 5 days    |\n"
+"| CTI caller log                                | 12 months after the call                                         "
+"| monthly         |\n"
+"| Data privacy tasks                            | 12 months after creation                                         "
+"| daily           |\n"
+"| HTTP logs                                     | 1 month after the request                                        "
+"| daily           |\n"
+"| MCP confirmation tokens for AI agents         | until they expire                                                "
+"| daily           |\n"
+"| Mobile taskbar entries                        | 1 day after the app was "
+"last in contact                          | every 10 minutes |\n"
+"| Online notifications                          | 9 months after creation, "
+"or shortly after being seen             | every 2 hours   |\n"
+"| Recent views and recent closes                | 3 months after last use                                          "
+"| daily           |\n"
+"| Sessions                                      | 2 hours of inactivity "
+"(non-persistent) and 60 days at most (all) | every 12 hours  |\n"
+"| Statistics data                               | 12 months after the last "
+"update                                  | every 31 days   |\n"
+"| Upload cache (never submitted draft attachments) | 1 month, except files "
+"belonging to an open draft              | monthly         |\n"
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/privacy.md:46
+#, markdown-text, no-wrap
+msgid "HTTP logs"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:60
+#, markdown-text, no-wrap
+msgid ""
+"Zammad records the HTTP calls it performs for integrations here. They appear "
+"as\n"
+"**Recent Logs** on the related admin pages, e.g. for webhooks, LDAP, SAML "
+"or\n"
+"WhatsApp. AI provider requests are logged too and show up under _AI > "
+"Feedback &\n"
+"Logs_. HttpLog masks specific credential patterns in the stored request "
+"and\n"
+"response content: Bearer, Basic and DeepL-Auth-Key Authorization headers,\n"
+"`*-token` headers such as `PRIVATE-TOKEN`, cookie values, and "
+"access_token,\n"
+"api_key and secret values in query parameters and inline text. The masking "
+"is\n"
+"pattern-based and not exhaustive. Other Authorization schemes, including\n"
+"`Token`, and credentials in other formats stay in the clear, and the "
+"request\n"
+"URL itself is stored unmasked, query string included. Request and response\n"
+"content can still include ticket and user data, and because the cleanup "
+"runs\n"
+"daily, removal can lag the one-month period by another day.\n"
+msgstr ""
+
+#. type: Title #
+#: src/en/reference/privacy.md:61 src/en/reference/rest-api/audit-log.md:1
+#: src/en/reference/rest-api/audit-log.md:6
+#, markdown-text, no-wrap
+msgid "Audit log"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:65
+#, markdown-text
+msgid ""
+"Records changes to administrative objects such as settings, groups, roles "
+"and channels. Entries name the acting user and store the source IP address."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/privacy.md:66
 #, markdown-text, no-wrap
 msgid "Chat sessions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:34
+#: src/en/reference/privacy.md:74
 #, markdown-text
 msgid ""
-"Once a chat session has been marked **closed**, it is scheduled for "
-"automatic deletion 12 months later. IP address logs for chat sessions can be "
-"deleted manually by following the [steps from the Rails console "
-"page](/en/reference/rails-commands#remove-ip-address-logs)."
+"When a closed chat is deleted, the stored IP address, geographic location "
+"and reverse DNS name disappear with it. To remove that data while keeping "
+"the chat contents, use the [Rails console "
+"recipe](/en/reference/rails-commands#remove-ip-address-logs).  The recipe "
+"only processes chats that have been closed and unchanged for seven "
+"days. Data in recently closed or still open chats is left untouched and "
+"needs another run once that delay has passed."
 msgstr ""
 
-#. type: Title ###
-#: src/en/reference/privacy.md:35
+#. type: Title ####
+#: src/en/reference/privacy.md:75
 #, markdown-text, no-wrap
-msgid "CTI caller log"
+msgid "Sessions"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:39
-#, markdown-text
+#: src/en/reference/privacy.md:82
+#, markdown-text, no-wrap
 msgid ""
-"The caller log shows only the 60 most recent entries. Each entry in the "
-"caller log is automatically deleted after 12 months."
+"Zammad keeps one session per logged-in client, holding the IP address, "
+"browser\n"
+"and location derived from the IP. A session is also deleted when the user "
+"logs\n"
+"out. Administrators can view and delete sessions under _System > Sessions_, "
+"and\n"
+"users can do so for their own devices in their profile\n"
+"settings.\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:40
+#: src/en/reference/privacy.md:83
+#, markdown-text, no-wrap
+msgid "Data without automatic deletion"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:87
+#, markdown-text
+msgid ""
+"The following data stays in the database until you remove it or delete the "
+"object it belongs to."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/privacy.md:88
+#, markdown-text, no-wrap
+msgid "Tickets and users"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:91
+#, markdown-text
+msgid "By default, Zammad never deletes tickets or users."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:99
+#, markdown-text, no-wrap
+msgid ""
+"To delete them automatically, create a scheduler job under _Manage > "
+"Scheduler_.\n"
+"Pick **Ticket** or **User** as the object, add conditions\n"
+"that select the records to remove (e.g. a state and an age) and choose an\n"
+"action: **Delete immediately** removes tickets without a trace, while **Add "
+"a\n"
+"data privacy deletion task** runs the deletion through the data privacy "
+"panel\n"
+"under _System > Data privacy_, where it is visible and\n"
+"reviewable. For users, only the data privacy task is offered.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:104
+#, markdown-text, no-wrap
+msgid ""
+"To delete users and all their associated tickets manually (e.g. in "
+"compliance\n"
+"with a \"Right to Forget\" request under the GDPR), use the data privacy\n"
+"functions under _System > Data privacy_ or\n"
+"[use the console](/en/reference/rails-commands#deleting-records).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:109
+#, markdown-text
+msgid ""
+"Entries shown on a ticket's history tab are kept as long as the ticket "
+"exists and are deleted with it. They are not purged on their own."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/privacy.md:110
+#, markdown-text, no-wrap
+msgid "Web form data in tickets"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:115
+#, markdown-text
+msgid ""
+"Tickets created through a ticket form store the submitter's IP address and "
+"an MD5 hash of their browser fingerprint inside the ticket. This data lives "
+"and dies with the ticket."
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:122
+#, markdown-text
+msgid ""
+"Zammad records one entry per login device, holding the IP address and "
+"browser fingerprint plus a location derived from the IP. There is no "
+"automatic deletion.  Users can remove entries in their profile settings "
+"under **Devices**. Deleting the user also removes their device entries."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/privacy.md:123
+#, markdown-text, no-wrap
+msgid "Imports"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:127
+#, markdown-text
+msgid ""
+"Imported tickets are regular tickets with no separate retention. The import "
+"job itself, including its error data, stays in the system until you delete "
+"it."
+msgstr ""
+
+#. type: Title ####
+#: src/en/reference/privacy.md:128
+#, markdown-text, no-wrap
+msgid "AI feedback and analytics"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:134
+#, markdown-text, no-wrap
+msgid ""
+"Ratings, free-text comments on AI results and the run data behind them are\n"
+"stored without an end date. They appear under _AI > Feedback & Logs_ and can "
+"be\n"
+"exported from there as a report. Ratings and comments are removed when "
+"their\n"
+"author is deleted, nothing else is.\n"
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:135
 #, markdown-text, no-wrap
 msgid "Log files"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:43
+#: src/en/reference/privacy.md:138
 #, markdown-text
 msgid "Zammad writes log files to disk (typically under `/opt/zammad/log/`)."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:47
+#: src/en/reference/privacy.md:142
 #, markdown-text
 msgid ""
-"Package installations will set up a separate system utility called "
-"`logrotate` to rename and archive (or _rotate_) log files on a nightly basis "
-"and remove old logs after 14 days."
+"Package installations set up a separate system utility called `logrotate` to "
+"rename and archive (or _rotate_) log files on a nightly basis and remove old "
+"logs after 14 days."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:51
+#: src/en/reference/privacy.md:146
 #, markdown-text
 msgid ""
-"If installing from source, it is strongly recommended to configure "
-"`logrotate` or a similar log management utility; Zammad will not purge old "
-"logs on its own."
-msgstr ""
-
-#. type: Title ###
-#: src/en/reference/privacy.md:52
-#, markdown-text, no-wrap
-msgid "User sessions"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/privacy.md:56
-#, markdown-text
-msgid "Zammad maintains session information about every user currently logged in."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/privacy.md:61
-#, markdown-text, no-wrap
-msgid ""
-"This information is automatically purged when a user logs out, and can\n"
-"be viewed or manually deleted via the admin panel (under _System >\n"
-"Sessions_). Users may also delete their own session information via the\n"
-"user preferences menu, under _Devices_.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/privacy.md:64
-#, markdown-text
-msgid ""
-"Session information includes IP address (and possibly geographic location), "
-"browser, time of original login, and time of last visit."
-msgstr ""
-
-#. type: Title ###
-#: src/en/reference/privacy.md:65
-#, markdown-text, no-wrap
-msgid "Data privacy tasks"
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/privacy.md:69
-#, markdown-text
-msgid ""
-"Each entry in the data privacy task list is automatically deleted after 12 "
-"months."
+"Container and Kubernetes installations usually write log output to stdout "
+"instead. There, retention is decided by your container runtime and logging "
+"stack, not by Zammad."
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/privacy.md:70
+#: src/en/reference/privacy.md:147
 #, markdown-text, no-wrap
 msgid "External services"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:76
+#: src/en/reference/privacy.md:152
 #, markdown-text, no-wrap
 msgid ""
-"Zammad utilizes third party web services for certain functions, meaning\n"
-"that user data may occasionally be sent or exposed to third parties.\n"
-"These functions can be individually disabled in the admin panel under\n"
-"_Settings > System > Services_.\n"
+"Zammad utilizes third party web services for certain functions, meaning "
+"that\n"
+"user data may occasionally be sent or exposed to third parties. These "
+"functions\n"
+"can be individually disabled in the admin settings under _System > "
+"Services_.\n"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/privacy.md:77
+#: src/en/reference/privacy.md:153
 #, no-wrap
 msgid ""
 "By default, the third party services that Zammad relies on are mostly\n"
@@ -19314,60 +19485,52 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:87
+#: src/en/reference/privacy.md:163
 #, markdown-text, no-wrap
 msgid "Images"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:91
-#, markdown-text
-msgid ""
-"No private images or personally-identifying information are stored on "
-"images.zammad.com."
-msgstr ""
-
-#. type: Plain text
-#: src/en/reference/privacy.md:97
+#: src/en/reference/privacy.md:170
 #, markdown-text
 msgid ""
 "The Images service caches publicly-available images from sources like "
 "Gravatar and serves them to the Zammad application as user avatars and "
-"organization logos. These images are discovered using MD5 digests of user "
-"email addresses and organization domain names. User avatars are cached for 7 "
-"days; organization logos are cached for 30 days."
+"organization logos. To find an image, Zammad sends the user's email address "
+"and the organization's domain name in plain text to images.zammad.com. User "
+"avatars are cached for 7 days, organization logos for 30 days."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:98
+#: src/en/reference/privacy.md:171
 #, markdown-text, no-wrap
 msgid "GeoCalendar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:101 src/en/reference/privacy.md:110
+#: src/en/reference/privacy.md:174 src/en/reference/privacy.md:183
 #, markdown-text
 msgid "No user information is stored or cached on geo.zammad.com."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:106
+#: src/en/reference/privacy.md:179
 #, markdown-text
 msgid ""
 "As part of its service-level agreement (SLA) functionality, Zammad requires "
 "detailed, localized calendar information (e.g. to set the time zone and "
-"accommodate national holidays and daylight savings time).  The GeoCalendar "
+"accommodate national holidays and daylight savings time). The GeoCalendar "
 "service is used to retrieve this information."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:107
+#: src/en/reference/privacy.md:180
 #, markdown-text, no-wrap
 msgid "GeoIP"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:116
+#: src/en/reference/privacy.md:189
 #, markdown-text
 msgid ""
 "One of Zammad's security features is to track user sessions based on the "
@@ -19378,21 +19541,42 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/privacy.md:117
+#: src/en/reference/privacy.md:190
 #, markdown-text, no-wrap
 msgid "Geolocation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/privacy.md:124
+#: src/en/reference/privacy.md:200
 #, markdown-text
 msgid ""
 "Zammad's geolocation service relies on OpenStreetMap (OSM) unless you turned "
 "it off. If you provide an address (or parts of an address) in a user object, "
 "there is a lookup of coordinates from OSM which are stored in Zammad's "
-"database. Have a look at their [privacy "
+"database. They are replaced only when the address changes and the lookup "
+"returns a result.  Clearing the address or editing other user data leaves "
+"the old coordinates in place, and they are removed only with the user. Have "
+"a look at their [privacy "
 "policy](https://osmfoundation.org/wiki/Privacy_Policy){target=_blank} for "
 "more information."
+msgstr ""
+
+#. type: Title ###
+#: src/en/reference/privacy.md:201
+#, markdown-text, no-wrap
+msgid "AI providers"
+msgstr ""
+
+#. type: Plain text
+#: src/en/reference/privacy.md:208
+#, markdown-text
+msgid ""
+"If AI features are enabled, Zammad sends content to the configured provider, "
+"e.g. ticket text for summaries or translation. How long the provider keeps "
+"that data is governed by the provider's own policies, which Zammad can't "
+"influence.  On the Zammad side, the requests fall under the HTTP log "
+"retention described above, so they exist for about a month after the call, "
+"plus the daily cleanup delay."
 msgstr ""
 
 #. type: Title #
@@ -20263,23 +20447,31 @@ msgstr ""
 msgid ""
 "Chat::Session.where(state: 'closed').where('updated_at < ?', "
 "7.days.ago).each do |session|\n"
-"next if session.preferences['remote_ip'].blank?\n"
+"next if session.preferences['remote_ip'].blank? &&\n"
+"        session.preferences['geo_ip'].blank? &&\n"
+"        session.preferences['dns_name'].blank?\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:320
+#: src/en/reference/rails-commands.md:322
 #, no-wrap
 msgid "session.preferences.delete('geo_ip')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:324
+#: src/en/reference/rails-commands.md:326
 #, no-wrap
 msgid "session.preferences.delete('remote_ip')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:328
+#: src/en/reference/rails-commands.md:330
+#, no-wrap
+msgid "session.preferences.delete('dns_name')\n"
+msgstr ""
+
+#. type: Fenced code block (ruby)
+#: src/en/reference/rails-commands.md:334
 #, no-wrap
 msgid ""
 "session.save!(touch: false)\n"
@@ -20287,13 +20479,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:333
+#: src/en/reference/rails-commands.md:339
 #, markdown-text, no-wrap
 msgid "Zammad settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:337
+#: src/en/reference/rails-commands.md:343
 #, markdown-text
 msgid ""
 "In this section, you can find some settings which you can set in the Zammad "
@@ -20301,13 +20493,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:338
+#: src/en/reference/rails-commands.md:344
 #, markdown-text, no-wrap
 msgid "Auto shutdown setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:345
+#: src/en/reference/rails-commands.md:351
 #, markdown-text
 msgid ""
 "Defines if an automatic shutdown of Zammad is performed when the database "
@@ -20318,7 +20510,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:348
+#: src/en/reference/rails-commands.md:354
 #, markdown-text
 msgid ""
 "Setting this to `false` might only make sense in very rare cases and you "
@@ -20326,19 +20518,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:349
+#: src/en/reference/rails-commands.md:355
 #, no-wrap
 msgid "Setting.set('auto_shutdown', 'true')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:353
+#: src/en/reference/rails-commands.md:359
 #, markdown-text, no-wrap
 msgid "Ticket_hook setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:358
+#: src/en/reference/rails-commands.md:364
 #, markdown-text
 msgid ""
 "This will give you the ticket hook that you'll find inside the `[]` in front "
@@ -20347,25 +20539,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:359
+#: src/en/reference/rails-commands.md:365
 #, no-wrap
 msgid "Setting.get('ticket_hook')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:363
+#: src/en/reference/rails-commands.md:369
 #, markdown-text, no-wrap
 msgid "FQDN setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:366
+#: src/en/reference/rails-commands.md:372
 #, markdown-text
 msgid "Get the current FQDN setting of Zammad and, if needed, adjust it."
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:367
+#: src/en/reference/rails-commands.md:373
 #, no-wrap
 msgid ""
 "This setting has no effect on SSL certificates or any web server\n"
@@ -20373,37 +20565,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:373
+#: src/en/reference/rails-commands.md:379
 #, markdown-text
 msgid "Get current FQDN:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:374
+#: src/en/reference/rails-commands.md:380
 #, no-wrap
 msgid "Setting.get('fqdn')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:379
+#: src/en/reference/rails-commands.md:385
 #, markdown-text
 msgid "Set a new FQDN:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:380
+#: src/en/reference/rails-commands.md:386
 #, no-wrap
 msgid "Setting.set('fqdn', 'new.domain.tld')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:384
+#: src/en/reference/rails-commands.md:390
 #, markdown-text, no-wrap
 msgid "HTTP(s) setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:388
+#: src/en/reference/rails-commands.md:394
 #, markdown-text
 msgid ""
 "This setting indirectly belongs to your FQDN setting and is relevant for "
@@ -20411,7 +20603,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rails-commands.md:389
+#: src/en/reference/rails-commands.md:395
 #, no-wrap
 msgid ""
 "This setting also affects Zammad's CSRF token behavior. If you set\n"
@@ -20422,37 +20614,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:398
+#: src/en/reference/rails-commands.md:404
 #, markdown-text
 msgid "Get the current http type:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:399
+#: src/en/reference/rails-commands.md:405
 #, no-wrap
 msgid "Setting.get('http_type')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:404
+#: src/en/reference/rails-commands.md:410
 #, markdown-text
 msgid "Change the http type to HTTPs:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:405
+#: src/en/reference/rails-commands.md:411
 #, no-wrap
 msgid "Setting.set('http_type', 'https')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:409
+#: src/en/reference/rails-commands.md:415
 #, markdown-text, no-wrap
 msgid "Storage provider setting"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:415
+#: src/en/reference/rails-commands.md:421
 #, markdown-text
 msgid ""
 "The storage provider setting is set to `DB` on default installations.  "
@@ -20462,31 +20654,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:417
+#: src/en/reference/rails-commands.md:423
 #, markdown-text
 msgid "Get the current attachment storage:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:418
+#: src/en/reference/rails-commands.md:424
 #, no-wrap
 msgid "Setting.get('storage_provider')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:423
+#: src/en/reference/rails-commands.md:429
 #, markdown-text
 msgid "Change attachment storage to database"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:424
+#: src/en/reference/rails-commands.md:430
 #, no-wrap
 msgid "Setting.set('storage_provider', 'DB')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:433
+#: src/en/reference/rails-commands.md:439
 #, markdown-text
 msgid ""
 "If you have already stored files and want to move them, you can use the "
@@ -20497,7 +20689,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:435
+#: src/en/reference/rails-commands.md:441
 #, markdown-text
 msgid ""
 "Move files from DB to File with a specified delay after each file in "
@@ -20505,37 +20697,37 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:436
+#: src/en/reference/rails-commands.md:442
 #, no-wrap
 msgid "Store::File.move('DB', 'File', delay_in_sec)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:441
+#: src/en/reference/rails-commands.md:447
 #, markdown-text
 msgid "The following settings are available in a default installation:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:444
+#: src/en/reference/rails-commands.md:450
 #, markdown-text
 msgid "`DB` (database)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:444
+#: src/en/reference/rails-commands.md:450
 #, markdown-text
 msgid "`File` (Filesystem (`/opt/zammad/storage/`))"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:445
+#: src/en/reference/rails-commands.md:451
 #, markdown-text, no-wrap
 msgid "Configuring Elasticsearch"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:449
+#: src/en/reference/rails-commands.md:455
 #, markdown-text
 msgid ""
 "If your Elasticsearch installation changes, you can use the following "
@@ -20543,61 +20735,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:451
+#: src/en/reference/rails-commands.md:457
 #, markdown-text
 msgid "Change Elasticsearch URL:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:452
+#: src/en/reference/rails-commands.md:458
 #, no-wrap
 msgid "Setting.set('es_url', 'http://127.0.0.1:9200')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:457
+#: src/en/reference/rails-commands.md:463
 #, markdown-text
 msgid "Change Elasticsearch user (e.g. for authentication):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:458
+#: src/en/reference/rails-commands.md:464
 #, no-wrap
 msgid "Setting.set('es_user', 'elasticsearch')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:463
+#: src/en/reference/rails-commands.md:469
 #, markdown-text
 msgid "Change the Elasticsearch password for authentication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:464
+#: src/en/reference/rails-commands.md:470
 #, no-wrap
 msgid "Setting.set('es_password', 'zammad')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:469
+#: src/en/reference/rails-commands.md:475
 #, markdown-text
 msgid "Change the index name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:470
+#: src/en/reference/rails-commands.md:476
 #, no-wrap
 msgid "Setting.set('es_index', Socket.gethostname + '_zammad')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:475
+#: src/en/reference/rails-commands.md:481
 #, markdown-text
 msgid "Ignore files by file extension from being indexed:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:476
+#: src/en/reference/rails-commands.md:482
 #, no-wrap
 msgid ""
 "Setting.set('es_attachment_ignore', %w[.png .jpg .jpeg .mpeg .mpg .mov .bin "
@@ -20605,67 +20797,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:481
+#: src/en/reference/rails-commands.md:487
 #, markdown-text
 msgid "Limit the attachment size:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:482
+#: src/en/reference/rails-commands.md:488
 #, no-wrap
 msgid "Setting.set('es_attachment_max_size_in_mb', 50)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:487
+#: src/en/reference/rails-commands.md:493
 #, markdown-text
 msgid "Turn SSL verification on or off:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:488
+#: src/en/reference/rails-commands.md:494
 #, no-wrap
 msgid "Setting.set('es_ssl_verify', 'false')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:492
+#: src/en/reference/rails-commands.md:498
 #, markdown-text, no-wrap
 msgid "Enable proxy"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:495
+#: src/en/reference/rails-commands.md:501
 #, markdown-text
 msgid "Set a proxy to use by Zammad:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:496
+#: src/en/reference/rails-commands.md:502
 #, no-wrap
 msgid "Setting.set('proxy', 'proxy.example.com:3128')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:500
+#: src/en/reference/rails-commands.md:506
 #, no-wrap
 msgid "Setting.set('proxy_username', 'some user')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:504
+#: src/en/reference/rails-commands.md:510
 #, no-wrap
 msgid "Setting.set('proxy_password', 'some pass')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:508
+#: src/en/reference/rails-commands.md:514
 #, markdown-text, no-wrap
 msgid "Disable Asciifold"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:511
+#: src/en/reference/rails-commands.md:517
 #, markdown-text
 msgid ""
 "This feature is turned on by default. In case you need a more exact search, "
@@ -20673,13 +20865,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:512
+#: src/en/reference/rails-commands.md:518
 #, no-wrap
 msgid "Setting.set('es_asciifolding', false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:517
+#: src/en/reference/rails-commands.md:523
 #, markdown-text
 msgid ""
 "After changing the setting, make sure to [rebuild the search "
@@ -20687,13 +20879,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:518
+#: src/en/reference/rails-commands.md:524
 #, markdown-text, no-wrap
 msgid "Hidden settings"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:523
+#: src/en/reference/rails-commands.md:529
 #, markdown-text
 msgid ""
 "In this section you can find some settings that you won't find within the "
@@ -20702,13 +20894,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:524
+#: src/en/reference/rails-commands.md:530
 #, markdown-text, no-wrap
 msgid "Send all outgoing emails to a BCC-mailbox"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:530
+#: src/en/reference/rails-commands.md:536
 #, markdown-text
 msgid ""
 "This option allows you to send all outgoing emails (not notifications)  to a "
@@ -20717,79 +20909,79 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:531
+#: src/en/reference/rails-commands.md:537
 #, no-wrap
 msgid "Setting.set('system_bcc', 'alias@domain.tld')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:536
+#: src/en/reference/rails-commands.md:542
 #, markdown-text
 msgid "You can easily check the current BCC-Setting by running the following:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:537
+#: src/en/reference/rails-commands.md:543
 #, no-wrap
 msgid "Setting.get('system_bcc')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:541
+#: src/en/reference/rails-commands.md:547
 #, markdown-text, no-wrap
 msgid "Activate counter on grouped overviews"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:544
+#: src/en/reference/rails-commands.md:550
 #, markdown-text
 msgid "This enables a ticket number value in each heading for grouped elements."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:546
+#: src/en/reference/rails-commands.md:552
 #, markdown-text
 msgid "Enable counter for grouped overviews:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:547
+#: src/en/reference/rails-commands.md:553
 #, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:552
+#: src/en/reference/rails-commands.md:558
 #, markdown-text
 msgid "Disable counter for grouped overviews:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:553
+#: src/en/reference/rails-commands.md:559
 #, no-wrap
 msgid "Setting.set('ui_table_group_by_show_count', false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:558
+#: src/en/reference/rails-commands.md:564
 #, markdown-text
 msgid "Get current setting (`nil` is false):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:559
+#: src/en/reference/rails-commands.md:565
 #, no-wrap
 msgid "Setting.get('ui_table_group_by_show_count')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:563
+#: src/en/reference/rails-commands.md:569
 #, markdown-text, no-wrap
 msgid "Default ticket type on creation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:567
+#: src/en/reference/rails-commands.md:573
 #, markdown-text
 msgid ""
 "Zammad allows you to define the default article type upon ticket "
@@ -20797,55 +20989,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:569
+#: src/en/reference/rails-commands.md:575
 #, markdown-text
 msgid "You can choose between"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:573
+#: src/en/reference/rails-commands.md:579
 #, markdown-text
 msgid "`phone-in` (incoming call, **default**),"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:573
+#: src/en/reference/rails-commands.md:579
 #, markdown-text
 msgid "`phone-out` (outgoing call) and"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:573
+#: src/en/reference/rails-commands.md:579
 #, markdown-text
 msgid "`email-out` (Sending an email out)."
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:574
+#: src/en/reference/rails-commands.md:580
 #, no-wrap
 msgid "Setting.set('ui_ticket_create_default_type', 'email-out')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:579
+#: src/en/reference/rails-commands.md:585
 #, markdown-text
 msgid "To check what setting is set currently, simply run:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:580
+#: src/en/reference/rails-commands.md:586
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_default_type')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:584
+#: src/en/reference/rails-commands.md:590
 #, markdown-text, no-wrap
 msgid "Show a note during article creation"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:590
+#: src/en/reference/rails-commands.md:596
 #, markdown-text
 msgid ""
 "If you need to show your agents a note with important information during the "
@@ -20857,7 +21049,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:592
+#: src/en/reference/rails-commands.md:598
 #, markdown-text
 msgid ""
 "![Screenshot shows a note during article "
@@ -20865,13 +21057,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:593
+#: src/en/reference/rails-commands.md:599
 #, markdown-text, no-wrap
 msgid "Ticket creation"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:595
+#: src/en/reference/rails-commands.md:601
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_create_notes', {\n"
@@ -20882,13 +21074,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:603
+#: src/en/reference/rails-commands.md:609
 #, markdown-text, no-wrap
 msgid "New article in existing tickets"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:605
+#: src/en/reference/rails-commands.md:611
 #, no-wrap
 msgid ""
 "Setting.set('ui_ticket_add_article_hint', {\n"
@@ -20905,85 +21097,85 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:616
+#: src/en/reference/rails-commands.md:622
 #, markdown-text, no-wrap
 msgid "Check current configuration"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:618
+#: src/en/reference/rails-commands.md:624
 #, no-wrap
 msgid "Setting.get('ui_ticket_create_notes')\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:622
+#: src/en/reference/rails-commands.md:628
 #, no-wrap
 msgid "Setting.get('ui_ticket_add_article_hint')\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:626
+#: src/en/reference/rails-commands.md:632
 #, markdown-text, no-wrap
 msgid "Markup options"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:629
+#: src/en/reference/rails-commands.md:635
 #, markdown-text
 msgid "To apply text formatting, use the following markup:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:637
+#: src/en/reference/rails-commands.md:643
 #, markdown-text
 msgid "`||italic||`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:637
+#: src/en/reference/rails-commands.md:643
 #, markdown-text
 msgid "`|bold|`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:637
+#: src/en/reference/rails-commands.md:643
 #, markdown-text
 msgid "`_underline_`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:637
+#: src/en/reference/rails-commands.md:643
 #, markdown-text
 msgid "`//strikethrough//`"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:637
+#: src/en/reference/rails-commands.md:643
 #, markdown-text
 msgid "`§key§` (renders a keyboard key like [[key]])"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:637
+#: src/en/reference/rails-commands.md:643
 #, markdown-text
 msgid "`¶` (newline)"
 msgstr ""
 
 #. type: Bullet: '- '
-#: src/en/reference/rails-commands.md:637
+#: src/en/reference/rails-commands.md:643
 #, markdown-text
 msgid "`[link text](/example.com)`"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:638
+#: src/en/reference/rails-commands.md:644
 #, markdown-text, no-wrap
 msgid "Show email address of customer on customer selection (ticket creation)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:642
+#: src/en/reference/rails-commands.md:648
 #, markdown-text
 msgid ""
 "By default, Zammad will not display the email addresses of customers.  The "
@@ -20991,32 +21183,32 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:643
+#: src/en/reference/rails-commands.md:649
 #, no-wrap
 msgid "Setting.set('ui_user_organization_selector_with_email', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:648
-#: src/en/reference/rails-commands.md:668
+#: src/en/reference/rails-commands.md:654
+#: src/en/reference/rails-commands.md:674
 #, markdown-text
 msgid "Get the current state of this setting with:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:649
+#: src/en/reference/rails-commands.md:655
 #, no-wrap
 msgid "Setting.get('ui_user_organization_selector_with_email')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:653
+#: src/en/reference/rails-commands.md:659
 #, markdown-text, no-wrap
 msgid "Change font settings for outgoing HTML emails"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:655
+#: src/en/reference/rails-commands.md:661
 #, no-wrap
 msgid ""
 "Some clients (like Outlook) might fallback to other settings while it\n"
@@ -21024,7 +21216,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:662
+#: src/en/reference/rails-commands.md:668
 #, markdown-text
 msgid ""
 "The below setting allows you to adjust Zammad's email font setting. This "
@@ -21032,7 +21224,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:663
+#: src/en/reference/rails-commands.md:669
 #, no-wrap
 msgid ""
 "Setting.set(\"html_email_css_font\", \"font-family:'Helvetica Neue', "
@@ -21040,19 +21232,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:669
+#: src/en/reference/rails-commands.md:675
 #, no-wrap
 msgid "Setting.get('html_email_css_font')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:673
+#: src/en/reference/rails-commands.md:679
 #, markdown-text, no-wrap
 msgid "Highlight customer's open ticket count"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:677
+#: src/en/reference/rails-commands.md:683
 #, markdown-text
 msgid ""
 "This option enhances the selected customer's open tickets count. It "
@@ -21060,13 +21252,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:678
+#: src/en/reference/rails-commands.md:684
 #, no-wrap
 msgid "Setting.set('ui_sidebar_open_ticket_indicator_colored', true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:684
+#: src/en/reference/rails-commands.md:690
 #, markdown-text
 msgid ""
 "Above settings has specific thresholds as follows. You **cannot** adjust "
@@ -21074,7 +21266,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:689
+#: src/en/reference/rails-commands.md:695
 #, markdown-text, no-wrap
 msgid ""
 "| Situation / View      | no indication | warning (orange) | danger (red) "
@@ -21087,13 +21279,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:690
+#: src/en/reference/rails-commands.md:696
 #, markdown-text, no-wrap
 msgid "Activate attachment tab in sidebar"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:694
+#: src/en/reference/rails-commands.md:700
 #, markdown-text
 msgid ""
 "This option activates a new tab in the right sidebar in the ticket view "
@@ -21101,19 +21293,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:695
+#: src/en/reference/rails-commands.md:701
 #, no-wrap
 msgid "Setting.set('ui_ticket_zoom_sidebar_article_attachments', 'true')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:699
+#: src/en/reference/rails-commands.md:705
 #, markdown-text, no-wrap
 msgid "Time period for showing customer profile on new calls"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:705
+#: src/en/reference/rails-commands.md:711
 #, markdown-text
 msgid ""
 "Zammad shows the customer profile dialog when a call of this customer is "
@@ -21123,25 +21315,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:707
+#: src/en/reference/rails-commands.md:713
 #, markdown-text
 msgid "Set the time period to 90 days:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:708
+#: src/en/reference/rails-commands.md:714
 #, no-wrap
 msgid "Setting.set('cti_customer_last_activity', '90')\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:712
+#: src/en/reference/rails-commands.md:718
 #, markdown-text, no-wrap
 msgid "Set public \"notes\" as SLA relevant"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:718
+#: src/en/reference/rails-commands.md:724
 #, markdown-text
 msgid ""
 "Normally, notes aren't SLA relevant. Use the following command to include "
@@ -21151,7 +21343,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:719
+#: src/en/reference/rails-commands.md:725
 #, no-wrap
 msgid ""
 "By default, customers are not notified when public notes are added to a\n"
@@ -21159,37 +21351,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:725
+#: src/en/reference/rails-commands.md:731
 #, markdown-text
 msgid "Enable SLA to count notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:726
+#: src/en/reference/rails-commands.md:732
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: true)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:731
+#: src/en/reference/rails-commands.md:737
 #, markdown-text
 msgid "Enable SLA to ignore notes as communication:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:732
+#: src/en/reference/rails-commands.md:738
 #, no-wrap
 msgid "Ticket::Article::Type.find_by(name:'note').update!(communication: false)\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:736
+#: src/en/reference/rails-commands.md:742
 #, markdown-text, no-wrap
 msgid "Activate priority icon"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:740
+#: src/en/reference/rails-commands.md:746
 #, markdown-text
 msgid ""
 "To activate additional icons which represent the priority, use the command "
@@ -21197,25 +21389,25 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:741
+#: src/en/reference/rails-commands.md:747
 #, no-wrap
 msgid "Setting.set('ui_ticket_priority_icons', true)\n"
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:745
+#: src/en/reference/rails-commands.md:751
 #, markdown-text, no-wrap
 msgid "Other useful commands"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:747
+#: src/en/reference/rails-commands.md:753
 #, markdown-text, no-wrap
 msgid "Remove AI feature"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:751
+#: src/en/reference/rails-commands.md:757
 #, markdown-text
 msgid ""
 "Zammad's AI feature is completely optional and requires a configuration "
@@ -21224,43 +21416,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:753
+#: src/en/reference/rails-commands.md:759
 #, markdown-text
 msgid "Disable any AI provider, in case you already configured it:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:754
+#: src/en/reference/rails-commands.md:760
 #, no-wrap
 msgid "Setting.set('ai_provider', false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:759
+#: src/en/reference/rails-commands.md:765
 #, markdown-text
 msgid "Disable permission to hide the settings from UI:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:760
+#: src/en/reference/rails-commands.md:766
 #, no-wrap
 msgid "Permission.where(\"name LIKE 'admin.ai%'\").update!(active: false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:765
+#: src/en/reference/rails-commands.md:771
 #, markdown-text
 msgid "To re-enable it, set the `active` flag to `true`."
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:766
+#: src/en/reference/rails-commands.md:772
 #, markdown-text, no-wrap
 msgid "Fetch emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:770
+#: src/en/reference/rails-commands.md:776
 #, markdown-text
 msgid ""
 "The below command will do a manual fetch of mail channels. This will also "
@@ -21268,19 +21460,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:771
+#: src/en/reference/rails-commands.md:777
 #, no-wrap
 msgid "Channel.fetch\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:775
+#: src/en/reference/rails-commands.md:781
 #, markdown-text, no-wrap
 msgid "Reprocess failed emails"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:777
+#: src/en/reference/rails-commands.md:783
 #, no-wrap
 msgid ""
 "Since Zammad 7.3, an email that cannot be processed becomes a ticket titled "
@@ -21291,7 +21483,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:786
+#: src/en/reference/rails-commands.md:792
 #, markdown-text
 msgid ""
 "When Zammad fetched an email it could not parse (e.g. due to a parser bug or "
@@ -21300,7 +21492,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:790
+#: src/en/reference/rails-commands.md:796
 #, markdown-text
 msgid ""
 "In case of a malformed message (e.g. an invalid email address in one of the "
@@ -21309,19 +21501,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:791
+#: src/en/reference/rails-commands.md:797
 #, markdown-text, no-wrap
 msgid "Export all failed emails to a local folder"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:793
+#: src/en/reference/rails-commands.md:799
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:export_all`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:800
+#: src/en/reference/rails-commands.md:806
 #, markdown-text
 msgid ""
 "You can find the location of the exported email in the output of your "
@@ -21330,13 +21522,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:801
+#: src/en/reference/rails-commands.md:807
 #, markdown-text, no-wrap
 msgid "Edit the email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:806
+#: src/en/reference/rails-commands.md:812
 #, markdown-text
 msgid ""
 "The email has been exported in the step above. Now you can have a look at it "
@@ -21345,25 +21537,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:807
+#: src/en/reference/rails-commands.md:813
 #, markdown-text, no-wrap
 msgid "Import and reprocess locally modified email"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:810
+#: src/en/reference/rails-commands.md:816
 #, markdown-text
 msgid "After editing the email, run:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:811
+#: src/en/reference/rails-commands.md:817
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:import path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:819
+#: src/en/reference/rails-commands.md:825
 #, markdown-text
 msgid ""
 "This will apply your changes from the file to the database. You can also "
@@ -21373,7 +21565,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:820
+#: src/en/reference/rails-commands.md:826
 #, no-wrap
 msgid ""
 "Make sure to run these commands only from the main Zammad folder\n"
@@ -21382,13 +21574,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:826
+#: src/en/reference/rails-commands.md:832
 #, markdown-text, no-wrap
 msgid "Delete unwanted emails"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:830
+#: src/en/reference/rails-commands.md:836
 #, markdown-text
 msgid ""
 "In case of unwanted emails such as spam, you can delete them from the "
@@ -21396,13 +21588,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:831
+#: src/en/reference/rails-commands.md:837
 #, no-wrap
 msgid "rake zammad:email_parser:failed_email:delete path/to/your/email.eml\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:838
+#: src/en/reference/rails-commands.md:844
 #, markdown-text
 msgid ""
 "If you pass the export folder as argument instead, all contained emails will "
@@ -21411,13 +21603,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:839
+#: src/en/reference/rails-commands.md:845
 #, markdown-text, no-wrap
 msgid "Show and retry failed data privacy jobs"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:843
+#: src/en/reference/rails-commands.md:849
 #, markdown-text
 msgid ""
 "In rare cases, Zammad's data privacy jobs might fail. To show them, you can "
@@ -21425,13 +21617,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:844
+#: src/en/reference/rails-commands.md:850
 #, no-wrap
 msgid "rake zammad:data_privacy:failed:show\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:852
+#: src/en/reference/rails-commands.md:858
 #, markdown-text
 msgid ""
 "To retry failed data privacy jobs, you can use the following "
@@ -21441,19 +21633,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:853
+#: src/en/reference/rails-commands.md:859
 #, no-wrap
 msgid "rake zammad:data_privacy:failed:retry\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:857
+#: src/en/reference/rails-commands.md:863
 #, markdown-text, no-wrap
 msgid "Fill a test system with test data"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:859
+#: src/en/reference/rails-commands.md:865
 #, no-wrap
 msgid ""
 "Don't run this in a productive environment! This can slow down Zammad\n"
@@ -21461,7 +21653,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:868
+#: src/en/reference/rails-commands.md:874
 #, markdown-text
 msgid ""
 "The below command will add `50` agents, `1000` customers, `20` groups, `40` "
@@ -21471,7 +21663,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:869
+#: src/en/reference/rails-commands.md:875
 #, no-wrap
 msgid ""
 "FillDb.load(agents: 50,customers: 1000,groups: 20,organizations: "
@@ -21479,13 +21671,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: src/en/reference/rails-commands.md:873
+#: src/en/reference/rails-commands.md:879
 #, markdown-text, no-wrap
 msgid "Deleting records"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:875
+#: src/en/reference/rails-commands.md:881
 #, no-wrap
 msgid ""
 "☠️ The commands listed here cause **irrecoverable data loss**! Only\n"
@@ -21494,61 +21686,61 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:881
+#: src/en/reference/rails-commands.md:887
 #, markdown-text, no-wrap
 msgid "Removing tickets (and their articles)"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:884
+#: src/en/reference/rails-commands.md:890
 #, markdown-text
 msgid "Delete a ticket (specified by database ID):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:885
+#: src/en/reference/rails-commands.md:891
 #, no-wrap
 msgid "Ticket.find(4).destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:890
+#: src/en/reference/rails-commands.md:896
 #, markdown-text
 msgid "Delete all tickets:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:891
+#: src/en/reference/rails-commands.md:897
 #, no-wrap
 msgid "Ticket.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:896
+#: src/en/reference/rails-commands.md:902
 #, markdown-text
 msgid "Keep some tickets (specified by database ID); delete the rest:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:897
+#: src/en/reference/rails-commands.md:903
 #, no-wrap
 msgid "tickets_to_keep = [1, 2, 3]\n"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:901
+#: src/en/reference/rails-commands.md:907
 #, no-wrap
 msgid "Ticket.where.not(id: tickets_to_keep).destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:905
+#: src/en/reference/rails-commands.md:911
 #, markdown-text, no-wrap
 msgid "Removing users"
 msgstr ""
 
 #. type: Fenced div block (warning)
-#: src/en/reference/rails-commands.md:907
+#: src/en/reference/rails-commands.md:913
 #, no-wrap
 msgid ""
 "Customers **may not** be deleted while they have tickets remaining in\n"
@@ -21560,7 +21752,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:916
+#: src/en/reference/rails-commands.md:922
 #, no-wrap
 msgid ""
 "If you're not sure what to do and need to learn more about what Zammad\n"
@@ -21571,31 +21763,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:924
+#: src/en/reference/rails-commands.md:930
 #, markdown-text
 msgid "Removing users is possible in 2 ways: A single user and in bulk."
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:926
+#: src/en/reference/rails-commands.md:932
 #, markdown-text
 msgid "Remove a single user:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:927
+#: src/en/reference/rails-commands.md:933
 #, no-wrap
 msgid "User.find_by(email: '<email address>').destroy\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:932
+#: src/en/reference/rails-commands.md:938
 #, markdown-text
 msgid "Remove several users:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:933
+#: src/en/reference/rails-commands.md:939
 #, no-wrap
 msgid ""
 "User.where(\n"
@@ -21604,67 +21796,67 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:939
+#: src/en/reference/rails-commands.md:945
 #, markdown-text, no-wrap
 msgid "Removing organizations"
 msgstr ""
 
 #. type: Fenced div block (info)
-#: src/en/reference/rails-commands.md:941
+#: src/en/reference/rails-commands.md:947
 #, no-wrap
 msgid "Removing an organization does **not** delete associated customers.\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:945
+#: src/en/reference/rails-commands.md:951
 #, markdown-text, no-wrap
 msgid "Step 1: Select organizations"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:948
+#: src/en/reference/rails-commands.md:954
 #, markdown-text
 msgid "By \"active\" status:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:949
+#: src/en/reference/rails-commands.md:955
 #, no-wrap
 msgid "organizations = Organization.where(active: false)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:954
+#: src/en/reference/rails-commands.md:960
 #, markdown-text
 msgid "By name:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:955
+#: src/en/reference/rails-commands.md:961
 #, no-wrap
 msgid "organizations = Organization.where(name: 'Acme')\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:960
+#: src/en/reference/rails-commands.md:966
 #, markdown-text
 msgid "By partial match on notes:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:961
+#: src/en/reference/rails-commands.md:967
 #, no-wrap
 msgid "organizations = Organization.where('note LIKE ?', '%foo%')\n"
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:965
+#: src/en/reference/rails-commands.md:971
 #, markdown-text, no-wrap
 msgid "Step 2: Preview affected organizations"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:967
+#: src/en/reference/rails-commands.md:973
 #, no-wrap
 msgid ""
 "puts organizations.map { |org| \"ORGANIZATION #{org.name}\" "
@@ -21672,13 +21864,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ####
-#: src/en/reference/rails-commands.md:971
+#: src/en/reference/rails-commands.md:977
 #, markdown-text, no-wrap
 msgid "Step 3: Proceed with deletion"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:973
+#: src/en/reference/rails-commands.md:979
 #, no-wrap
 msgid ""
 "organizations.each do |org|\n"
@@ -21686,7 +21878,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:978
+#: src/en/reference/rails-commands.md:984
 #, no-wrap
 msgid ""
 "org.members.each do |member|\n"
@@ -21696,7 +21888,7 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:985
+#: src/en/reference/rails-commands.md:991
 #, no-wrap
 msgid ""
 "    puts \"  Deleting #{org.name}...\"\n"
@@ -21705,37 +21897,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:991
+#: src/en/reference/rails-commands.md:997
 #, markdown-text, no-wrap
 msgid "Removing system records"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:994
+#: src/en/reference/rails-commands.md:1000
 #, markdown-text
 msgid "Remove all online notifications:"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:995
+#: src/en/reference/rails-commands.md:1001
 #, no-wrap
 msgid "OnlineNotification.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1000
+#: src/en/reference/rails-commands.md:1006
 #, markdown-text
 msgid "Remove all entries from the Activity Stream (dashboard):"
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1001
+#: src/en/reference/rails-commands.md:1007
 #, no-wrap
 msgid "ActivityStream.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1006
+#: src/en/reference/rails-commands.md:1012
 #, markdown-text
 msgid ""
 "Remove entries for all recently viewed objects(tickets, users, "
@@ -21743,13 +21935,13 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1007
+#: src/en/reference/rails-commands.md:1013
 #, no-wrap
 msgid "RecentView.destroy_all\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1013
+#: src/en/reference/rails-commands.md:1019
 #, markdown-text
 msgid ""
 "Remove all history information from tickets, users and organizations "
@@ -21757,19 +21949,19 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block (ruby)
-#: src/en/reference/rails-commands.md:1014
+#: src/en/reference/rails-commands.md:1020
 #, no-wrap
 msgid "History.destroy_all\n"
 msgstr ""
 
 #. type: Title ###
-#: src/en/reference/rails-commands.md:1018
+#: src/en/reference/rails-commands.md:1024
 #, markdown-text, no-wrap
 msgid "Reset Zammad installation"
 msgstr ""
 
 #. type: Fenced div block (danger)
-#: src/en/reference/rails-commands.md:1020
+#: src/en/reference/rails-commands.md:1026
 #, no-wrap
 msgid ""
 "\n"
@@ -21781,55 +21973,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1030
+#: src/en/reference/rails-commands.md:1036
 #, markdown-text
 msgid "Truncate the database:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1031
+#: src/en/reference/rails-commands.md:1037
 #, no-wrap
 msgid "rake zammad:db:truncate\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1036
+#: src/en/reference/rails-commands.md:1042
 #, markdown-text
 msgid "Migrate the database:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1037
+#: src/en/reference/rails-commands.md:1043
 #, no-wrap
 msgid "rake db:migrate\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1042
+#: src/en/reference/rails-commands.md:1048
 #, markdown-text
 msgid "Load the seed data:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1043
+#: src/en/reference/rails-commands.md:1049
 #, no-wrap
 msgid "rake db:seed\n"
 msgstr ""
 
 #. type: Plain text
-#: src/en/reference/rails-commands.md:1048
+#: src/en/reference/rails-commands.md:1054
 #, markdown-text
 msgid "Clear cache and reload the settings:"
 msgstr ""
 
 #. type: Fenced code block (sh)
-#: src/en/reference/rails-commands.md:1049
+#: src/en/reference/rails-commands.md:1055
 #, no-wrap
 msgid "rake zammad:db:rebuild\n"
 msgstr ""
 
 #. type: Fenced div block (tip)
-#: src/en/reference/rails-commands.md:1053
+#: src/en/reference/rails-commands.md:1059
 #, no-wrap
 msgid ""
 "\n"
@@ -22338,13 +22530,6 @@ msgstr ""
 msgid ""
 "If you're not sure which articles a ticket contains, please\n"
 "[list](#list-articles-by-ticket) affected articles first.\n"
-msgstr ""
-
-#. type: Title #
-#: src/en/reference/rest-api/audit-log.md:1
-#: src/en/reference/rest-api/audit-log.md:6
-#, markdown-text, no-wrap
-msgid "Audit log"
 msgstr ""
 
 #. type: Plain text
