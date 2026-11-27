@@ -178,3 +178,6 @@ bundle exec rails r '...your rails command here...'
 ```
 
 ::::
+
+The Zammad image from 7.4 on carries a [software bill of materials](/en/reference/software-bill-of-materials), which
+you can read out of the image without running it.

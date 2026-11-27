@@ -13,3 +13,6 @@ We do not provide support in terms of Kubernetes specific problems. If you
 choose to run Zammad via Kubernetes, support is only provided for the Zammad
 application.
 :::
+
+The Zammad image from 7.4 on carries a [software bill of materials](/en/reference/software-bill-of-materials), which
+you can read from the running Rails server container.

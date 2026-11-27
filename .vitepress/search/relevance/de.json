@@ -109,6 +109,12 @@
       "urls": [
         "/de/documentation/use/personal-settings.html#passwort"
       ]
+    },
+    {
+      "query": "helm chart",
+      "urls": [
+        "/de/get-started/installation/kubernetes.html"
+      ]
     }
   ],
   "checks": [
@@ -141,6 +147,11 @@
       "q": "sso",
       "expect": "/de/tutorials/sso-kerberos.html",
       "top": 3
+    },
+    {
+      "q": "helm chart",
+      "expect": "/de/get-started/installation/kubernetes.html",
+      "top": 1
     }
   ]
 }

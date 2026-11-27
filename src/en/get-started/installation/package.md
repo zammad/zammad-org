@@ -336,6 +336,9 @@ To stop or restart a service or to check its status, adjust the command as menti
 - [Adjust your SELinux rules and firewall](/en/tutorials/firewall-selinux)
 - [Configure the webserver](/en/tutorials/webserver-config)
 
+Every Zammad package from 7.4 on contains a [software bill of materials](/en/reference/software-bill-of-materials) at
+`/opt/zammad/sbom.cdx.json`.
+
 ## Dependencies
 
 Assuming a vanilla system, the following dependencies will automatically be
